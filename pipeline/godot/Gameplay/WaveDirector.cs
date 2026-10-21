@@ -17,7 +17,7 @@ public partial class WaveDirector : Node
     [Export] public int AdditionalActivePerWave { get; set; } = 3;
     [Export] public int MaximumActiveLimit { get; set; } = 36;
     [Export] public int BossWave { get; set; } = 5;
-    [Export] public int EliteEverySpawns {get;set;} = 12;
+    [Export] public int EliteEverySpawns {get;set;} = 20;
     [Export] public int EliteFirstWave {get;set;} = 2;
     [Export] public BossEncounterDefinition? BossDefinition { get; set; }
     [Export] public string RosterPath { get; set; } = "res://Gameplay/Enemies/roster.json";

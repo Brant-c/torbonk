@@ -31,6 +31,7 @@ public partial class AbilityDefinition : Resource
     [Export] public float BounceFalloff { get; set; } = 0.82f;
     [Export] public int NearbyTriggerCount { get; set; } = 3;
     [Export] public float KnockbackDistance { get; set; } = 0.3f;
+    [Export] public float StaggerSeconds { get; set; } = 0.45f; // Knocked-back enemies are slowed and cannot swing for this long.
     [Export] public AbilityEffect Effect { get; set; }
     [Export] public float Healing { get; set; }
     [Export] public float HealingCap { get; set; } = 15;
