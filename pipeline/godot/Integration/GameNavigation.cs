@@ -17,6 +17,7 @@ public static class GameNavigation
         { reason = "A scene transition is already in progress."; return false; }
         // Revalidate at the launch boundary even if the Ready button was enabled earlier.
         if (!SelectionGameplayAdapter.TryResolve(selection, out var run, out reason)) return false;
+        SwtorCursor.Instance.RestoreVisible();
         _pendingRun = run;
         var error = menu.GetTree().ChangeSceneToFile(run.WorldScene);
         if (error != Error.Ok)
@@ -42,7 +43,7 @@ public static class GameNavigation
         world.StopForMenu();
         _pendingRun = null;
         world.GetTree().Paused = false;
-        Input.MouseMode = Input.MouseModeEnum.Visible;
+        SwtorCursor.Instance.RestoreVisible();
         return world.GetTree().ChangeSceneToPacked(menu);
     }
 }

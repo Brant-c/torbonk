@@ -1,0 +1,529 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "evidence": [
+    "manifests/abilities-source.json",
+    "godot/Assets/Abilities/fx.json",
+    "godot/Assets/Abilities/source-parameters.json"
+  ],
+  "coverage": "All drawable emitter, lightning and light entries in the four recovered Force Storm FXSpecs are represented. Dummy/child emitters are accounted for separately. Audio uses the existing presentation mixer.",
+  "entries": [
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "LeftSmoke",
+      "resource": "si_forcestorm_cast_groundsmoke_01.prt",
+      "owner": "ground smoke",
+      "socket": "FxRoot",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source particle emitter: texture/hue/blend/atlas, spawn count/rate, life, dimensions, color, rotation, movement and attachment"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "chest tatters",
+      "resource": "\\art\\fx\\particles\\si_recklessness_limbs_01.prt",
+      "owner": "tatters",
+      "socket": "chest2",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source particle emitter: texture/hue/blend/atlas, spawn count/rate, life, dimensions, color, rotation, movement and attachment"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "Right elbow tatters",
+      "resource": "\\art\\fx\\particles\\si_recklessness_limbs_01.prt",
+      "owner": "tatters",
+      "socket": "RightElbow",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source particle emitter: texture/hue/blend/atlas, spawn count/rate, life, dimensions, color, rotation, movement and attachment"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "left elbow tatters",
+      "resource": "\\art\\fx\\particles\\si_recklessness_limbs_01.prt",
+      "owner": "tatters",
+      "socket": "LeftElbow",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source particle emitter: texture/hue/blend/atlas, spawn count/rate, life, dimensions, color, rotation, movement and attachment"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "CasterGroundBoltsLeft",
+      "resource": "si_forcestorm_casterbolts_parent.prt",
+      "owner": "si_forcestorm_cast",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Recovered child-FXSpec lightning group or target-area strike scheduler (bounded timing adaptation)"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "FxRootDummy",
+      "resource": "fxtemplate_dummy_point.prt",
+      "owner": "si_forcestorm_cast",
+      "socket": "FxRoot",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "LeftHandDummy",
+      "resource": "fxtemplate_dummy_point.prt",
+      "owner": "si_forcestorm_cast",
+      "socket": "leftweapon",
+      "sourceDelay": "0:00:00.00",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "RightHandDummy",
+      "resource": "fxtemplate_dummy_point.prt",
+      "owner": "si_forcestorm_cast",
+      "socket": "rightweapon",
+      "sourceDelay": "0:00:00.00",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "HeadDummy",
+      "resource": "fxtemplate_dummy_point.prt",
+      "owner": "si_forcestorm_cast",
+      "socket": "vfx_neck",
+      "sourceDelay": "0:00:00.00",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "CasterGroundBoltsRight",
+      "resource": "si_forcestorm_casterbolts_parent.prt",
+      "owner": "si_forcestorm_cast",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Recovered child-FXSpec lightning group or target-area strike scheduler (bounded timing adaptation)"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "RightSmoke",
+      "resource": "si_forcestorm_cast_groundsmoke_01.prt",
+      "owner": "ground smoke",
+      "socket": "FxRoot",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source particle emitter: texture/hue/blend/atlas, spawn count/rate, life, dimensions, color, rotation, movement and attachment"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "LeftGroundGlow",
+      "resource": "si_forcestorm_cast_groundflash_01.prt",
+      "owner": "ground smoke",
+      "socket": "FxRoot",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source particle emitter: texture/hue/blend/atlas, spawn count/rate, life, dimensions, color, rotation, movement and attachment"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "RightGroundGlows",
+      "resource": "si_forcestorm_cast_groundflash_01.prt",
+      "owner": "ground smoke",
+      "socket": "FxRoot",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source particle emitter: texture/hue/blend/atlas, spawn count/rate, life, dimensions, color, rotation, movement and attachment"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "DummyTop",
+      "resource": "fxtemplate_dummy_point.prt",
+      "owner": "si_forcestorm_cast",
+      "socket": "",
+      "sourceDelay": "0:00:00.0",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "DummyBottom",
+      "resource": "fxtemplate_dummy_point.prt",
+      "owner": "si_forcestorm_cast",
+      "socket": "FxRoot",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "leftbicep",
+      "resource": "si_forcestorm_caster_handelect_01.prt",
+      "owner": "HandGlow",
+      "socket": "LeftElbow",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source particle emitter: texture/hue/blend/atlas, spawn count/rate, life, dimensions, color, rotation, movement and attachment"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "lefthand",
+      "resource": "si_forcestorm_caster_handelec_02.prt",
+      "owner": "HandGlow",
+      "socket": "LeftWrist ",
+      "sourceDelay": "0:00:00.500",
+      "implementation": "Source particle emitter: texture/hue/blend/atlas, spawn count/rate, life, dimensions, color, rotation, movement and attachment"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "rightbicep",
+      "resource": "si_forcestorm_caster_handelect_01.prt",
+      "owner": "HandGlow",
+      "socket": "RightElbow",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source particle emitter: texture/hue/blend/atlas, spawn count/rate, life, dimensions, color, rotation, movement and attachment"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "righthand",
+      "resource": "si_forcestorm_caster_handelec_02.prt",
+      "owner": "HandGlow",
+      "socket": "RightWrist ",
+      "sourceDelay": "0:00:00.500",
+      "implementation": "Source particle emitter: texture/hue/blend/atlas, spawn count/rate, life, dimensions, color, rotation, movement and attachment"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "SparkLine",
+      "resource": "si_forcestorm_child_sparks_01.prt",
+      "owner": "HandRandomSparks",
+      "socket": "vfx_elbow_left",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source particle emitter: texture/hue/blend/atlas, spawn count/rate, life, dimensions, color, rotation, movement and attachment"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxEmitterList",
+      "name": "SparkLine1",
+      "resource": "si_forcestorm_child_sparks_01.prt",
+      "owner": "HandRandomSparks",
+      "socket": "vfx_elbow_right",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source particle emitter: texture/hue/blend/atlas, spawn count/rate, life, dimensions, color, rotation, movement and attachment"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxLightningList",
+      "name": "LeftHandStrikes",
+      "resource": "\\Engine\\zap.zzp",
+      "owner": "HandStrikes",
+      "socket": "",
+      "sourceDelay": "0:00:00.100",
+      "implementation": "Source ribbon layers"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxLightningList",
+      "name": "RightHandStrikes",
+      "resource": "\\Engine\\zap.zzp",
+      "owner": "HandStrikes",
+      "socket": "",
+      "sourceDelay": "0:00:00.100",
+      "implementation": "Source ribbon layers"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxLightningList",
+      "name": "Strike1",
+      "resource": "\\Engine\\zap.zzp",
+      "owner": "FirstStrike",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source ribbon layers"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxLightningList",
+      "name": "StrikeRight",
+      "resource": "\\Engine\\zap.zzp",
+      "owner": "FirstStrike",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source ribbon layers"
+    },
+    {
+      "spec": "si_forcestorm_cast",
+      "kind": "_fxLightList",
+      "name": "FrontLight",
+      "resource": "\\Engine\\light.lit",
+      "owner": "Lights",
+      "socket": "root",
+      "sourceDelay": "0:00:00.00",
+      "implementation": "Caster-only Godot OmniLight using source range, intensity and cyclic color"
+    },
+    {
+      "spec": "si_forcestorm_targetarea",
+      "kind": "_fxEmitterList",
+      "name": "StrikesParent",
+      "resource": "si_forcestorm_strikes_parent_01.prt",
+      "owner": "si_forcestorm_targetarea",
+      "socket": "",
+      "sourceDelay": "0:00:00.55",
+      "implementation": "Recovered child-FXSpec lightning group or target-area strike scheduler (bounded timing adaptation)"
+    },
+    {
+      "spec": "si_forcestorm_caster_groundbolts_01",
+      "kind": "_fxEmitterList",
+      "name": "DummyRandRot1",
+      "resource": "\\art\\fx\\particles\\fxtemplate_dummy_rotrandom.prt",
+      "owner": "StrikeRotate",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_caster_groundbolts_01",
+      "kind": "_fxEmitterList",
+      "name": "DummyRandRot2",
+      "resource": "\\art\\fx\\particles\\fxtemplate_dummy_rotrandom.prt",
+      "owner": "StrikeRotate",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_caster_groundbolts_01",
+      "kind": "_fxEmitterList",
+      "name": "DummyRandRot3",
+      "resource": "\\art\\fx\\particles\\fxtemplate_dummy_rotrandom.prt",
+      "owner": "StrikeRotate",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_caster_groundbolts_01",
+      "kind": "_fxEmitterList",
+      "name": "DummyRandRot1part2",
+      "resource": "\\art\\fx\\particles\\fxtemplate_dummy_rotrandom.prt",
+      "owner": "StrikeRotate",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_caster_groundbolts_01",
+      "kind": "_fxEmitterList",
+      "name": "DummyRandRot2part2",
+      "resource": "\\art\\fx\\particles\\fxtemplate_dummy_rotrandom.prt",
+      "owner": "StrikeRotate",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_caster_groundbolts_01",
+      "kind": "_fxEmitterList",
+      "name": "DummyRandRot3part2",
+      "resource": "\\art\\fx\\particles\\fxtemplate_dummy_rotrandom.prt",
+      "owner": "StrikeRotate",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_caster_groundbolts_01",
+      "kind": "_fxLightningList",
+      "name": "MiniStrike1",
+      "resource": "\\Engine\\zap.zzp",
+      "owner": "StrikeRotate",
+      "socket": "",
+      "sourceDelay": "0:00:00.100",
+      "implementation": "Source ribbon layers"
+    },
+    {
+      "spec": "si_forcestorm_caster_groundbolts_01",
+      "kind": "_fxLightningList",
+      "name": "MiniStrike11",
+      "resource": "\\Engine\\zap.zzp",
+      "owner": "StrikeRotate",
+      "socket": "",
+      "sourceDelay": "0:00:00.200",
+      "implementation": "Source ribbon layers"
+    },
+    {
+      "spec": "si_forcestorm_caster_groundbolts_01",
+      "kind": "_fxLightningList",
+      "name": "MiniStrike12",
+      "resource": "\\Engine\\zap.zzp",
+      "owner": "StrikeRotate",
+      "socket": "",
+      "sourceDelay": "0:00:00.300",
+      "implementation": "Source ribbon layers"
+    },
+    {
+      "spec": "si_forcestorm_lightningstrike",
+      "kind": "_fxEmitterList",
+      "name": "StrikeGroundFlash",
+      "resource": "si_forcestorm_groundflash_01.prt",
+      "owner": "StrikeFlash",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source particle emitter: texture/hue/blend/atlas, spawn count/rate, life, dimensions, color, rotation, movement and attachment"
+    },
+    {
+      "spec": "si_forcestorm_lightningstrike",
+      "kind": "_fxEmitterList",
+      "name": "StrikeGroundGlow",
+      "resource": "si_forcestorm_groundflash_02.prt",
+      "owner": "StrikeFlash",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source particle emitter: texture/hue/blend/atlas, spawn count/rate, life, dimensions, color, rotation, movement and attachment"
+    },
+    {
+      "spec": "si_forcestorm_lightningstrike",
+      "kind": "_fxEmitterList",
+      "name": "DummyTop",
+      "resource": "fxtemplate_dummy_point.prt",
+      "owner": "Strike",
+      "socket": "",
+      "sourceDelay": "0:00:00.0",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_lightningstrike",
+      "kind": "_fxEmitterList",
+      "name": "DummyBottom",
+      "resource": "fxtemplate_dummy_point.prt",
+      "owner": "Strike",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_lightningstrike",
+      "kind": "_fxEmitterList",
+      "name": "DummyRandRot1",
+      "resource": "\\art\\fx\\particles\\fxtemplate_dummy_rotrandom.prt",
+      "owner": "Strike",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_lightningstrike",
+      "kind": "_fxEmitterList",
+      "name": "DummyRandRot2",
+      "resource": "\\art\\fx\\particles\\fxtemplate_dummy_rotrandom.prt",
+      "owner": "Strike",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_lightningstrike",
+      "kind": "_fxEmitterList",
+      "name": "DummyRandRot3",
+      "resource": "\\art\\fx\\particles\\fxtemplate_dummy_rotrandom.prt",
+      "owner": "Strike",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_lightningstrike",
+      "kind": "_fxEmitterList",
+      "name": "DummyRandRot1part2",
+      "resource": "\\art\\fx\\particles\\fxtemplate_dummy_rotrandom.prt",
+      "owner": "Strike",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_lightningstrike",
+      "kind": "_fxEmitterList",
+      "name": "DummyRandRot2part2",
+      "resource": "\\art\\fx\\particles\\fxtemplate_dummy_rotrandom.prt",
+      "owner": "Strike",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_lightningstrike",
+      "kind": "_fxEmitterList",
+      "name": "DummyRandRot3part2",
+      "resource": "\\art\\fx\\particles\\fxtemplate_dummy_rotrandom.prt",
+      "owner": "Strike",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source attachment/dummy resolution"
+    },
+    {
+      "spec": "si_forcestorm_lightningstrike",
+      "kind": "_fxLightningList",
+      "name": "Strike1",
+      "resource": "\\Engine\\zap.zzp",
+      "owner": "Strike",
+      "socket": "",
+      "sourceDelay": "0:00:00.000",
+      "implementation": "Source ribbon layers"
+    },
+    {
+      "spec": "si_forcestorm_lightningstrike",
+      "kind": "_fxLightningList",
+      "name": "Strike2",
+      "resource": "\\Engine\\zap.zzp",
+      "owner": "Strike",
+      "socket": "",
+      "sourceDelay": "0:00:00.050",
+      "implementation": "Source ribbon layers"
+    },
+    {
+      "spec": "si_forcestorm_lightningstrike",
+      "kind": "_fxLightningList",
+      "name": "MiniStrike1",
+      "resource": "\\Engine\\zap.zzp",
+      "owner": "Strike",
+      "socket": "",
+      "sourceDelay": "0:00:00.100",
+      "implementation": "Source ribbon layers"
+    },
+    {
+      "spec": "si_forcestorm_lightningstrike",
+      "kind": "_fxLightningList",
+      "name": "MiniStrike11",
+      "resource": "\\Engine\\zap.zzp",
+      "owner": "Strike",
+      "socket": "",
+      "sourceDelay": "0:00:00.200",
+      "implementation": "Source ribbon layers"
+    },
+    {
+      "spec": "si_forcestorm_lightningstrike",
+      "kind": "_fxLightningList",
+      "name": "MiniStrike12",
+      "resource": "\\Engine\\zap.zzp",
+      "owner": "Strike",
+      "socket": "",
+      "sourceDelay": "0:00:00.300",
+      "implementation": "Source ribbon layers"
+    }
+  ],
+  "limitations": [
+    "Native zap/light primitives are Godot adaptations.",
+    "Source scalar/color keys use linear interpolation; native easing/distribution bias is not exact.",
+    "Billboard particle size/trajectory/buoyancy conversion and random emission distributions are bounded interpretations.",
+    "Nested invisible child-FXSpec emitter scheduling remains a bounded scheduler; no visible texture is substituted for invisible black driver particles.",
+    "Source light fade/category flags use caster-only Godot layer masking; exact native light falloff is unavailable.",
+    "4x1 lightning atlas plays at authored 20 fps."
+  ]
+}

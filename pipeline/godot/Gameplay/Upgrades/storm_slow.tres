@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/UpgradeDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "storm_slow"
+Title = "Clinging Storm"
+Icon = "forcestorm"
+AbilityId = "storm"
+Rarity = 1
+Effect = 9
+Mechanic = "storm_slow"
+MechanicalDescription = "Storm hits slow enemies by 35% for 1.4 seconds."
+MaximumRank = 1
+RequiresUpgrade = "storm_duration"
+D2Choice = true

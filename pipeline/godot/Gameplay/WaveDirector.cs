@@ -17,6 +17,8 @@ public partial class WaveDirector : Node
     [Export] public int AdditionalActivePerWave { get; set; } = 3;
     [Export] public int MaximumActiveLimit { get; set; } = 36;
     [Export] public int BossWave { get; set; } = 5;
+    [Export] public int EliteEverySpawns {get;set;} = 12;
+    [Export] public int EliteFirstWave {get;set;} = 2;
     [Export] public BossEncounterDefinition? BossDefinition { get; set; }
     [Export] public string RosterPath { get; set; } = "res://Gameplay/Enemies/roster.json";
     [Export] public float HealthPerWave { get; set; } = 0.12f;
@@ -79,7 +81,7 @@ public partial class WaveDirector : Node
         if (_spawnIn > 0) return;
         // One attempt per interval, with bounded retries when blocked; never catch up in a burst.
         bool allowed = Encounter.AllowRegularSpawn(Spawner.ActiveLimit);
-        bool spawned = allowed && Spawner.TrySpawn(SelectEnemy());
+        bool spawned = allowed && Spawner.TrySpawn(SelectEnemy(),elite:Wave>=EliteFirstWave && EliteEverySpawns>0 && (Spawner.Spawned+1)%EliteEverySpawns==0);
         _spawnIn = spawned || !allowed || Spawner.ActiveCount >= Spawner.ActiveLimit ? SpawnInterval * Encounter.CadenceMultiplier : 0.5;
     }
 

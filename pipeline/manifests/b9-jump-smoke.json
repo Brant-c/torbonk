@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    "five original single-saber jump clips are loaded",
+    "only airborne and falling clips loop",
+    "jump tracks bind to the existing skeleton without root motion",
+    "real Space takeoff starts the source launch clip",
+    "ascent blends into the source airborne pose",
+    "original jump actually articulates the leg bones",
+    "pausing freezes both the jump body and its animation",
+    "descent selects the source falling pose",
+    "actual floor contact selects standing landing",
+    "landing returns smoothly to idle",
+    "moving jump preserves travel and uses running landing",
+    "existing Sorcerer gesture can still begin",
+    "jump legs remain underneath existing upper-body casting layers",
+    "jump presentation creates no ability damage",
+    "death supersedes and clears jump playback",
+    "restart resets jump playback and returns to the existing locomotion"
+  ],
+  "failure": null
+}

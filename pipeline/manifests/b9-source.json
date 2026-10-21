@@ -1,0 +1,84 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 4,
+  "maximumDecodedBytes": 65536,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_misc_1.tor",
+      "archiveHash": "0x45942BC32FF63F54",
+      "entryOffset": 244135,
+      "headerSize": 36,
+      "dataOffset": 244171,
+      "compressedSize": 1048,
+      "length": 4224,
+      "compressionMethod": 1,
+      "crc32Index": "a47b6aee",
+      "path": "/resources/art/defaultassets/cursor.dds",
+      "sha256": "5f20ede3a0c40371cad0070d498bb6a66120e877b33e89526811f1c9bcb0d33c",
+      "output": "source-assets\\april2012\\resources\\art\\defaultassets\\cursor.dds",
+      "archiveSha256": "40ab95450fe3f9d3bc2adb94824e35595afed7176d2a55570ec3d3e896e3bb9d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gamedata_1.tor",
+      "archiveHash": "0xB21D669DC918FD28",
+      "entryOffset": 7292659,
+      "headerSize": 36,
+      "dataOffset": 7292695,
+      "compressedSize": 213,
+      "length": 318,
+      "compressionMethod": 1,
+      "crc32Index": "0c32cdc4",
+      "path": "/resources/guixml/_cursors.xml",
+      "sha256": "ea5e96441291e9bbff60bf69945444e435464cd3a1f1865c8ed6e7d2cf6a720b",
+      "output": "source-assets\\april2012\\resources\\guixml\\_cursors.xml",
+      "archiveSha256": "6c66e6dd3ba17b274fccaa5f354929ba3b0837a9b2f74503c229240bf8a1cf82",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_misc_1.tor",
+      "archiveHash": "0x84BBF2C99BF4551C",
+      "entryOffset": 243694,
+      "headerSize": 36,
+      "dataOffset": 243730,
+      "compressedSize": 251,
+      "length": 506,
+      "compressionMethod": 1,
+      "crc32Index": "16c93525",
+      "path": "/resources/art/defaultassets/cursor.tex",
+      "sha256": "9e856adfd7177f4ec87568640ae86a8563870ea1482925d7043ef5bebdfdd8e1",
+      "output": "source-assets\\april2012\\resources\\art\\defaultassets\\cursor.tex",
+      "archiveSha256": "40ab95450fe3f9d3bc2adb94824e35595afed7176d2a55570ec3d3e896e3bb9d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "B9 cursor investigation",
+      "to": "/resources/art/defaultassets/cursor.dds",
+      "relation": "exact cursor candidate"
+    },
+    {
+      "from": "B9 cursor investigation",
+      "to": "/resources/guixml/_cursors.xml",
+      "relation": "exact cursor candidate"
+    },
+    {
+      "from": "B9 cursor investigation",
+      "to": "/resources/art/defaultassets/cursor.dds",
+      "relation": "exact cursor resource; inspect bytes and artwork"
+    },
+    {
+      "from": "B9 cursor investigation",
+      "to": "/resources/art/defaultassets/cursor.tex",
+      "relation": "exact cursor resource; inspect bytes and artwork"
+    },
+    {
+      "from": "B9 cursor investigation",
+      "to": "/resources/guixml/_cursors.xml",
+      "relation": "exact cursor resource; inspect bytes and artwork"
+    }
+  ],
+  "unresolved": [],
+  "selection": "B9 rejected cyan engine-default candidate and definitions"
+}

@@ -1,6 +1,7 @@
 using Godot;
 using System;
 using System.Text.Json;
+using SwtorSurvivors.Equipment;
 
 namespace SwtorSurvivors;
 
@@ -15,19 +16,45 @@ public partial class EquipmentAttachment : Node3D
         foreach (var candidate in new[] { "RightWeapon", "weapon_r", "weapon_right", "WeaponRight", "r_weapon" })
             if (skeleton.FindBone(candidate) >= 0) { bone = candidate; break; }
         if (bone == "") throw new InvalidOperationException("No original right weapon socket in " + skeleton.GetPath());
-        var socket = new BoneAttachment3D { Name = "B6WeaponSocket", BoneName = bone };
+        return Equip(skeleton, $"res://Assets/Enemies/{weapon}.glb", new AttachmentDefinition(
+            bone,"res://Assets/Enemies/weapon-socket.json",[0,0,0],[0,0,0],1,redBlade));
+    }
+    public static void Validate(Skeleton3D skeleton,string scene,AttachmentDefinition profile)
+    {
+        if(skeleton.FindBone(profile.Bone)<0)throw new InvalidOperationException("Missing weapon bone: "+profile.Bone);
+        if(!ResourceLoader.Exists(scene))throw new InvalidOperationException("Unconverted weapon: "+scene);
+        if(profile.Position.Length!=3 || profile.RotationDegrees.Length!=3 || !float.IsFinite(profile.Scale) || profile.Scale<=0
+            || Array.Exists(profile.Position,x=>!float.IsFinite(x)) || Array.Exists(profile.RotationDegrees,x=>!float.IsFinite(x)))
+            throw new InvalidOperationException("Invalid weapon offset: "+scene);
+        Correction(profile);
+    }
+    private static Basis Correction(AttachmentDefinition profile)
+    {
+        if(profile.CorrectionResource=="")return Basis.Identity;
+        using var config=JsonDocument.Parse(FileAccess.GetFileAsString(profile.CorrectionResource));
+        var matrix=config.RootElement.GetProperty("attachmentCorrection");
+        Vector3 Column(int c)=>new(matrix[0][c].GetSingle(),matrix[1][c].GetSingle(),matrix[2][c].GetSingle());
+        return new Basis(Column(0),Column(1),Column(2)).Orthonormalized();
+    }
+    public static EquipmentAttachment Equip(Skeleton3D skeleton,string scene,AttachmentDefinition profile)
+    {
+        Validate(skeleton,scene,profile);
+        var model=GD.Load<PackedScene>(scene).Instantiate<Node3D>();
+        var socket = new BoneAttachment3D { Name = "B6WeaponSocket", BoneName = profile.Bone };
         skeleton.AddChild(socket);
-        var equipment = new EquipmentAttachment { Name = weapon, Socket = socket };
+        var equipment = new EquipmentAttachment { Name = "EquippedWeapon", Socket = socket };
         socket.AddChild(equipment);
-        using (var config = JsonDocument.Parse(FileAccess.GetFileAsString("res://Assets/Enemies/weapon-socket.json")))
-        {
-            var matrix = config.RootElement.GetProperty("attachmentCorrection");
-            Vector3 Column(int c) => new(matrix[0][c].GetSingle(), matrix[1][c].GetSingle(), matrix[2][c].GetSingle());
-            equipment.Basis = new Basis(Column(0), Column(1), Column(2)).Orthonormalized();
-        }
-        equipment.AddChild(GD.Load<PackedScene>($"res://Assets/Enemies/{weapon}.glb").Instantiate<Node3D>());
-        if (redBlade) equipment.AddBlade();
+        var rotation=new Vector3(profile.RotationDegrees[0],profile.RotationDegrees[1],profile.RotationDegrees[2]);
+        equipment.Basis=(Correction(profile)*Basis.FromEuler(rotation*Mathf.Pi/180)).Scaled(Vector3.One*profile.Scale);
+        equipment.Position=new Vector3(profile.Position[0],profile.Position[1],profile.Position[2]);
+        equipment.AddChild(model);
+        if (profile.RedBlade) equipment.AddBlade();
         return equipment;
+    }
+    public void Unequip()
+    {
+        // Detach synchronously; queued objects cannot overlap a newly restored visual for one frame.
+        Visible=false;Socket.GetParent()?.RemoveChild(Socket);Socket.QueueFree();
     }
     private void AddBlade()
     {

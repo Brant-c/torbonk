@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/UpgradeDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "fork"
+Title = "Forked Current"
+Icon = "sithsorcerer"
+AbilityId = "lightning"
+Rarity = 1
+Effect = 9
+Mechanic = "fork"
+MechanicalDescription = "Passive for Force Lightning: each tick forks for 45% damage to another enemy within 0.30. Does not unlock Chain Lightning."
+MaximumRank = 1
+RequiresUpgrade = ""
+D2Choice = true

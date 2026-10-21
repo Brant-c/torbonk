@@ -24,7 +24,7 @@ public sealed class SelectionConfiguration
 
 public sealed class AppearanceConfiguration
 {
-    public string PresetId { get; set; } = "sorcerer_april2012_bmn";
+    public string PresetId { get; set; } = "inquisitor_level1_april2012_bmn";
     public string SpeciesId { get; set; } = "human";
     public string BodyPresentationId { get; set; } = "male";
     public string BodyTypeId { get; set; } = "bmn";
@@ -32,9 +32,9 @@ public sealed class AppearanceConfiguration
     public string HairId { get; set; } = "hair_human_bmn_non_a01";
     public string SkinToneId { get; set; } = "source_material_a01c01";
     public string ComplexionId { get; set; } = "source_default";
-    public string EquipmentAppearanceId { get; set; } = "ss_a04_c01_s01";
-    public bool IsSupportedPreset => PresetId == "sorcerer_april2012_bmn" && SpeciesId == "human"
+    public string EquipmentAppearanceId { get; set; } = "inq_starting_cdps1_t1x1";
+    public bool IsSupportedPreset => PresetId == "inquisitor_level1_april2012_bmn" && SpeciesId == "human"
         && BodyPresentationId == "male" && BodyTypeId == "bmn" && HeadId == "head_human_bmn_caucasian_a01"
         && HairId == "hair_human_bmn_non_a01" && SkinToneId == "source_material_a01c01"
-        && ComplexionId == "source_default" && EquipmentAppearanceId == "ss_a04_c01_s01";
+        && ComplexionId == "source_default" && EquipmentAppearanceId == "inq_starting_cdps1_t1x1";
 }

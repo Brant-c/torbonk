@@ -1,0 +1,975 @@
+{
+  "Slots": [
+    {
+      "Id": "head",
+      "Categories": [
+        "light_armor",
+        "medium_armor",
+        "heavy_armor",
+        "accessory"
+      ],
+      "EmptyAppearance": "",
+      "CanHide": true
+    },
+    {
+      "Id": "chest",
+      "Categories": [
+        "light_armor",
+        "medium_armor",
+        "heavy_armor",
+        "accessory"
+      ],
+      "EmptyAppearance": "",
+      "CanHide": false
+    },
+    {
+      "Id": "hands",
+      "Categories": [
+        "light_armor",
+        "medium_armor",
+        "heavy_armor",
+        "accessory"
+      ],
+      "EmptyAppearance": "",
+      "CanHide": false
+    },
+    {
+      "Id": "legs",
+      "Categories": [
+        "light_armor",
+        "medium_armor",
+        "heavy_armor",
+        "accessory"
+      ],
+      "EmptyAppearance": "",
+      "CanHide": false
+    },
+    {
+      "Id": "feet",
+      "Categories": [
+        "light_armor",
+        "medium_armor",
+        "heavy_armor",
+        "accessory"
+      ],
+      "EmptyAppearance": "",
+      "CanHide": false
+    },
+    {
+      "Id": "waist",
+      "Categories": [
+        "light_armor",
+        "medium_armor",
+        "heavy_armor",
+        "accessory"
+      ],
+      "EmptyAppearance": "",
+      "CanHide": false
+    },
+    {
+      "Id": "wrists",
+      "Categories": [
+        "light_armor",
+        "medium_armor",
+        "heavy_armor",
+        "accessory"
+      ],
+      "EmptyAppearance": "",
+      "CanHide": true
+    },
+    {
+      "Id": "main_hand",
+      "Categories": [
+        "lightsaber",
+        "double_lightsaber",
+        "pistol",
+        "rifle",
+        "sniper_rifle",
+        "assault_cannon",
+        "vibrosword",
+        "techblade",
+        "focus",
+        "shield",
+        "generator"
+      ],
+      "EmptyAppearance": "",
+      "CanHide": true
+    },
+    {
+      "Id": "off_hand",
+      "Categories": [
+        "lightsaber",
+        "double_lightsaber",
+        "pistol",
+        "rifle",
+        "sniper_rifle",
+        "assault_cannon",
+        "vibrosword",
+        "techblade",
+        "focus",
+        "shield",
+        "generator"
+      ],
+      "EmptyAppearance": "",
+      "CanHide": true
+    },
+    {
+      "Id": "relic_1",
+      "Categories": [
+        "light_armor",
+        "medium_armor",
+        "heavy_armor",
+        "accessory"
+      ],
+      "EmptyAppearance": "",
+      "CanHide": true
+    },
+    {
+      "Id": "relic_2",
+      "Categories": [
+        "light_armor",
+        "medium_armor",
+        "heavy_armor",
+        "accessory"
+      ],
+      "EmptyAppearance": "",
+      "CanHide": true
+    },
+    {
+      "Id": "ear",
+      "Categories": [
+        "light_armor",
+        "medium_armor",
+        "heavy_armor",
+        "accessory"
+      ],
+      "EmptyAppearance": "",
+      "CanHide": true
+    },
+    {
+      "Id": "implant_1",
+      "Categories": [
+        "light_armor",
+        "medium_armor",
+        "heavy_armor",
+        "accessory"
+      ],
+      "EmptyAppearance": "",
+      "CanHide": true
+    },
+    {
+      "Id": "implant_2",
+      "Categories": [
+        "light_armor",
+        "medium_armor",
+        "heavy_armor",
+        "accessory"
+      ],
+      "EmptyAppearance": "",
+      "CanHide": true
+    }
+  ],
+  "Items": [
+    {
+      "Id": "level1.chest",
+      "DisplayName": "Level 1 Inquisitor Chest",
+      "Slot": "chest",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE000DD4FCFCC757D",
+        "Name": "itm.eq.class.inq.base.chest.light.cheap.class_quest_01_a",
+        "Evidence": "Client-derived level-1 item -> starting appearance; full spawn inventory unverified"
+      },
+      "Appearance": "level1.chest",
+      "Icon": "res://Assets/Equipment/chest.png",
+      "StatModifiers": {},
+      "CosmeticOnly": false,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "level1.hands",
+      "DisplayName": "Level 1 Inquisitor Hands",
+      "Slot": "hands",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": null,
+      "Appearance": "level1.hands",
+      "Icon": "res://Assets/Equipment/hands.png",
+      "StatModifiers": {},
+      "CosmeticOnly": false,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "level1.legs",
+      "DisplayName": "Level 1 Inquisitor Legs",
+      "Slot": "legs",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE0002314C3EE1FEA",
+        "Name": "itm.eq.class.inq.base.legs.light.cheap.class_quest_01_a",
+        "Evidence": "Client-derived level-1 item -> starting appearance; full spawn inventory unverified"
+      },
+      "Appearance": "level1.legs",
+      "Icon": "res://Assets/Equipment/legs.png",
+      "StatModifiers": {},
+      "CosmeticOnly": false,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "level1.feet",
+      "DisplayName": "Level 1 Inquisitor Feet",
+      "Slot": "feet",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE000F141271037FA",
+        "Name": "itm.eq.class.inq.base.feet.light.cheap.class_quest_01_a",
+        "Evidence": "Client-derived level-1 item -> starting appearance; full spawn inventory unverified"
+      },
+      "Appearance": "level1.feet",
+      "Icon": "res://Assets/Equipment/feet.png",
+      "StatModifiers": {},
+      "CosmeticOnly": false,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "level1.waist",
+      "DisplayName": "Level 1 Inquisitor Waist",
+      "Slot": "waist",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": null,
+      "Appearance": "level1.waist",
+      "Icon": "res://Assets/Equipment/waist.png",
+      "StatModifiers": {},
+      "CosmeticOnly": false,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "ss_a04.chest",
+      "DisplayName": "SS A04 Chest",
+      "Slot": "chest",
+      "Category": "light_armor",
+      "Rarity": "appearance_reference",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": null,
+      "Appearance": "ss_a04.chest",
+      "Icon": "",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "ss_a04.hands",
+      "DisplayName": "SS A04 Hands",
+      "Slot": "hands",
+      "Category": "light_armor",
+      "Rarity": "appearance_reference",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": null,
+      "Appearance": "ss_a04.hands",
+      "Icon": "",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "ss_a04.legs",
+      "DisplayName": "SS A04 Legs",
+      "Slot": "legs",
+      "Category": "light_armor",
+      "Rarity": "appearance_reference",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": null,
+      "Appearance": "ss_a04.legs",
+      "Icon": "",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "ss_a04.feet",
+      "DisplayName": "SS A04 Feet",
+      "Slot": "feet",
+      "Category": "light_armor",
+      "Rarity": "appearance_reference",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": null,
+      "Appearance": "ss_a04.feet",
+      "Icon": "",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "ss_a04.waist",
+      "DisplayName": "SS A04 Waist",
+      "Slot": "waist",
+      "Category": "light_armor",
+      "Rarity": "appearance_reference",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": null,
+      "Appearance": "ss_a04.waist",
+      "Icon": "",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "d1.red_saber",
+      "DisplayName": "Red lightsaber",
+      "Slot": "main_hand",
+      "Category": "lightsaber",
+      "Rarity": "development",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": null,
+      "Appearance": "red_saber",
+      "Icon": "",
+      "StatModifiers": {},
+      "CosmeticOnly": false,
+      "BlocksSlots": []
+    }
+  ],
+  "Appearances": [
+    {
+      "Id": "level1.chest",
+      "Slot": "chest",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/inquisitor-level1.glb",
+      "MeshNames": [
+        "chest_baggy_bmn_archetype",
+        "chest_baggy_bmn_light_ge_a12_loinlight"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "chest"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "level1.hands",
+      "Slot": "hands",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/inquisitor-level1.glb",
+      "MeshNames": [
+        "hand_gauntlet_bmn_archetype"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "hands"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "level1.legs",
+      "Slot": "legs",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/inquisitor-level1.glb",
+      "MeshNames": [
+        "leg_pant_bmn_archetype"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "legs"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "level1.feet",
+      "Slot": "feet",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/inquisitor-level1.glb",
+      "MeshNames": [
+        "boot_tall_bmn_archetype"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "feet"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "level1.waist",
+      "Slot": "waist",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/inquisitor-level1.glb",
+      "MeshNames": [
+        "waist_belt_bmn_archetype"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "waist"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "ss_a04.chest",
+      "Slot": "chest",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/sorcerer.glb",
+      "MeshNames": [
+        "chest_robe04_bmn_archetype",
+        "chest_robe04_bmn_light_ss_a04_back",
+        "chest_robe04_bmn_light_ss_a04_chest",
+        "chest_robe04_bmn_light_ss_a04_shld"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "chest"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "ss_a04.hands",
+      "Slot": "hands",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/sorcerer.glb",
+      "MeshNames": [
+        "hand_gauntlet_bmn_archetype",
+        "hand_gauntlet_bmn_light_ss_a04_forearm"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "hands"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "ss_a04.legs",
+      "Slot": "legs",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/sorcerer.glb",
+      "MeshNames": [
+        "leg_skirt_bmn_archetype"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "legs"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "ss_a04.feet",
+      "Slot": "feet",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/sorcerer.glb",
+      "MeshNames": [
+        "boot_tall_bmn_archetype",
+        "boot_tall_bmn_light_ss_a04_shin"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "feet"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "ss_a04.waist",
+      "Slot": "waist",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/sorcerer.glb",
+      "MeshNames": [
+        "waist_belt_bmn_archetype",
+        "waist_belt_bmn_light_ss_a04_back",
+        "waist_belt_bmn_light_ss_a04_front",
+        "waist_belt_bmn_light_ss_a04_sling"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "waist"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "red_saber",
+      "Slot": "main_hand",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Enemies/saber.glb",
+      "MeshNames": [],
+      "RequiredBones": [
+        "RightWeapon"
+      ],
+      "CoversSlots": [],
+      "HidesBaseGroups": [],
+      "Attachment": {
+        "Bone": "RightWeapon",
+        "CorrectionResource": "res://Assets/Enemies/weapon-socket.json",
+        "Position": [
+          0,
+          0,
+          0
+        ],
+        "RotationDegrees": [
+          0,
+          0,
+          0
+        ],
+        "Scale": 1,
+        "RedBlade": true
+      },
+      "Locomotion": {
+        "LibraryId": "EquipmentSaber",
+        "Scene": "res://Assets/Enemies/looter.glb",
+        "Idle": "Idle",
+        "Run": "Run"
+      }
+    }
+  ],
+  "Presets": [
+    {
+      "Id": "inquisitor_level1",
+      "DisplayName": "A \u00b7 Level 1 Inquisitor (documented alternative)",
+      "Items": {
+        "chest": "level1.chest",
+        "hands": "level1.hands",
+        "legs": "level1.legs",
+        "feet": "level1.feet",
+        "waist": "level1.waist",
+        "main_hand": "d1.red_saber"
+      },
+      "Cosmetics": {},
+      "DeveloperOnly": false
+    },
+    {
+      "Id": "sorcerer_ss_a04",
+      "DisplayName": "B \u00b7 Existing Sorcerer SS A04 (cosmetic)",
+      "Items": {
+        "chest": "level1.chest",
+        "hands": "level1.hands",
+        "legs": "level1.legs",
+        "feet": "level1.feet",
+        "waist": "level1.waist",
+        "main_hand": "d1.red_saber"
+      },
+      "Cosmetics": {
+        "chest": "ss_a04.chest",
+        "hands": "ss_a04.hands",
+        "legs": "ss_a04.legs",
+        "feet": "ss_a04.feet",
+        "waist": "ss_a04.waist"
+      },
+      "DeveloperOnly": true
+    }
+  ],
+  "Rigs": [
+    {
+      "Id": "april_bmnnew_cloth",
+      "RigFamily": "april_humanoid_bmnnew",
+      "BodyType": "bmn",
+      "Species": "human",
+      "AnimationProfile": "april_bmnnew_force",
+      "BaseScene": "res://Assets/sorcerer.glb",
+      "BaseGroups": {
+        "chest": [
+          "chest_robe04_bmn_archetype",
+          "chest_robe04_bmn_light_ss_a04_back",
+          "chest_robe04_bmn_light_ss_a04_chest",
+          "chest_robe04_bmn_light_ss_a04_shld"
+        ],
+        "hands": [
+          "hand_gauntlet_bmn_archetype",
+          "hand_gauntlet_bmn_light_ss_a04_forearm"
+        ],
+        "legs": [
+          "leg_skirt_bmn_archetype"
+        ],
+        "feet": [
+          "boot_tall_bmn_archetype",
+          "boot_tall_bmn_light_ss_a04_shin"
+        ],
+        "waist": [
+          "waist_belt_bmn_archetype",
+          "waist_belt_bmn_light_ss_a04_back",
+          "waist_belt_bmn_light_ss_a04_front",
+          "waist_belt_bmn_light_ss_a04_sling"
+        ]
+      },
+      "AttachmentBones": {
+        "main_hand": "RightWeapon",
+        "off_hand": "LeftWeapon"
+      },
+      "EmptyAppearances": {
+        "chest": "level1.chest",
+        "hands": "level1.hands",
+        "legs": "level1.legs",
+        "feet": "level1.feet",
+        "waist": "level1.waist"
+      }
+    }
+  ],
+  "Classes": [
+    {
+      "BaseClassId": "sith_warrior",
+      "AdvancedClassId": "juggernaut",
+      "AllowedWeapons": [],
+      "SupportedSlots": []
+    },
+    {
+      "BaseClassId": "sith_warrior",
+      "AdvancedClassId": "marauder",
+      "AllowedWeapons": [],
+      "SupportedSlots": []
+    },
+    {
+      "BaseClassId": "sith_inquisitor",
+      "AdvancedClassId": "sorcerer",
+      "AllowedWeapons": [
+        "lightsaber",
+        "focus"
+      ],
+      "SupportedSlots": [
+        "head",
+        "chest",
+        "hands",
+        "legs",
+        "feet",
+        "waist",
+        "wrists",
+        "main_hand",
+        "off_hand",
+        "relic_1",
+        "relic_2",
+        "ear",
+        "implant_1",
+        "implant_2"
+      ]
+    },
+    {
+      "BaseClassId": "sith_inquisitor",
+      "AdvancedClassId": "assassin",
+      "AllowedWeapons": [],
+      "SupportedSlots": []
+    },
+    {
+      "BaseClassId": "imperial_agent",
+      "AdvancedClassId": "sniper",
+      "AllowedWeapons": [],
+      "SupportedSlots": []
+    },
+    {
+      "BaseClassId": "imperial_agent",
+      "AdvancedClassId": "operative",
+      "AllowedWeapons": [],
+      "SupportedSlots": []
+    },
+    {
+      "BaseClassId": "bounty_hunter",
+      "AdvancedClassId": "mercenary",
+      "AllowedWeapons": [],
+      "SupportedSlots": []
+    },
+    {
+      "BaseClassId": "bounty_hunter",
+      "AdvancedClassId": "powertech",
+      "AllowedWeapons": [],
+      "SupportedSlots": []
+    },
+    {
+      "BaseClassId": "jedi_knight",
+      "AdvancedClassId": "guardian",
+      "AllowedWeapons": [],
+      "SupportedSlots": []
+    },
+    {
+      "BaseClassId": "jedi_knight",
+      "AdvancedClassId": "sentinel",
+      "AllowedWeapons": [],
+      "SupportedSlots": []
+    },
+    {
+      "BaseClassId": "jedi_consular",
+      "AdvancedClassId": "sage",
+      "AllowedWeapons": [],
+      "SupportedSlots": []
+    },
+    {
+      "BaseClassId": "jedi_consular",
+      "AdvancedClassId": "shadow",
+      "AllowedWeapons": [],
+      "SupportedSlots": []
+    },
+    {
+      "BaseClassId": "smuggler",
+      "AdvancedClassId": "gunslinger",
+      "AllowedWeapons": [],
+      "SupportedSlots": []
+    },
+    {
+      "BaseClassId": "smuggler",
+      "AdvancedClassId": "scoundrel",
+      "AllowedWeapons": [],
+      "SupportedSlots": []
+    },
+    {
+      "BaseClassId": "trooper",
+      "AdvancedClassId": "commando",
+      "AllowedWeapons": [],
+      "SupportedSlots": []
+    },
+    {
+      "BaseClassId": "trooper",
+      "AdvancedClassId": "vanguard",
+      "AllowedWeapons": [],
+      "SupportedSlots": []
+    }
+  ]
+}

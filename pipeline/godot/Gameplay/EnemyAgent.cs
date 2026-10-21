@@ -18,6 +18,29 @@ public partial class EnemyAgent : Combatant
     [Export] public int ExperienceReward { get; set; } = 4;
     [Export] public float CollisionRadius { get; set; } = 0.03f;
     [Export] public float CollisionHeight { get; set; } = 0.185f;
+    [Export] public int RewardTier { get; set; } // 0 ordinary, 1 elite, 2 major boss
+    [Export] public float KnockbackResistance { get; set; }
+    public double SlowRemaining { get; private set; }
+    private float _slowFactor=1;
+    public void Slow(float factor,float seconds) { _slowFactor=Math.Min(_slowFactor,Math.Clamp(factor,0.1f,1));SlowRemaining=Math.Max(SlowRemaining,seconds); }
+    public float DisplaceFrom(Vector3 origin,float distance)
+    {
+        if(!Alive || Navigation==null)return 0;
+        float length=Math.Max(0,distance)*(1-Math.Clamp(KnockbackResistance,0,1));
+        var direction=GlobalPosition-origin;direction.Y=0;direction=direction.Normalized();
+        var start=Body.GlobalPosition;
+        // Bounded controlled steps, using this enemy's own full-body collision profile.
+        int steps=Math.Clamp((int)Math.Ceiling(length/0.015f),0,64);
+        for(int i=0;i<steps;i++)
+        {
+            var before=Body.GlobalPosition;var candidate=before+direction*Math.Min(0.015f,length-i*0.015f);
+            if(!Navigation.CanWalk(before,candidate) || !Navigation.TryStandingPoint(candidate,out var feet))break;
+            Body.GlobalPosition=feet;
+        }
+        Body.Velocity=Vector3.Zero;_steerIn=0;
+        _attackIn=Math.Max(_attackIn,0.45); // Resistant enemies still take damage and delay their next melee swing.
+        return start.DistanceTo(Body.GlobalPosition);
+    }
     public EnemyPresentation? Visual { get; private set; }
     public EnemySpawner? Crowd { get; set; }
     public Combatant Target { get; set; } = null!;
@@ -51,6 +74,7 @@ public partial class EnemyAgent : Combatant
     public override void _PhysicsProcess(double delta)
     {
         if (!Alive || !Running) return;
+        SlowRemaining=Math.Max(0,SlowRemaining-delta);if(SlowRemaining<=0)_slowFactor=1;
         if (!GodotObject.IsInstanceValid(Target) || !Target.Alive) { Stop(); return; }
         if (GetNodeOrNull<BossEncounter>("BossEncounter") is { } boss && boss.Tick(delta))
         { Body.Velocity = Vector3.Zero; Visual?.Present(Vector3.Zero, Target.GlobalPosition, delta); return; }
@@ -87,6 +111,7 @@ public partial class EnemyAgent : Combatant
             }
             horizontal = _direction * MoveSpeed;
             if (Crowd != null) horizontal = (horizontal + Crowd.Separation(this) * MoveSpeed * 0.7f).LimitLength(MoveSpeed);
+            horizontal *= _slowFactor;
             if (!Navigation.CanWalk(before, before + horizontal * (float)delta))
             { horizontal = Vector3.Zero; _steerIn = 0; }
         }

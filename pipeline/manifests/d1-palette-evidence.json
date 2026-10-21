@@ -1,0 +1,650 @@
+[
+  {
+    "query": {
+      "name": "dynamic.garmenthue.garmenthue_gi_h18_p"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"identity\": {\"id\": \"0xE00014616341DE65\", \"decimalId\": \"16140923473005502053\", \"kind\": \"GomObject\", \"name\": \"dynamic.garmenthue.garmenthue_gi_h18_p\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/53.bkt\", \"uncompressedOffset\": 20764, \"blockLength\": 185, \"resourceSha256\": \"b9bfbbea7f4207514f000529e84a19b2938565c7943926eea41d007479aa32a4\"}}, \"path\": \"\", \"type\": \"GomObjectData\", \"childCount\": 9, \"children\": [{\"key\": \"Script_Type\", \"path\": \"/Script_Type\", \"type\": \"DomClass\", \"expandable\": false, \"childCount\": 0, \"value\": {\"type\": \"definitionReference\", \"definition\": {\"id\": \"0x40000002A88C00BB\", \"decimalId\": \"4611686029845070011\", \"kind\": \"DomClass\", \"name\": \"appGarmentHue\", \"nameEvidence\": \"historical gom_type_names.xml fallback; not April-verified\", \"source\": {\"path\": \"/resources/systemgenerated/client.gom\", \"uncompressedOffset\": 420504, \"blockLength\": 64, \"resourceSha256\": \"aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450\"}}}}, {\"key\": \"Script_TypeId\", \"path\": \"/Script_TypeId\", \"type\": \"UInt64\", \"expandable\": false, \"childCount\": 0, \"value\": \"0x000000000000000B\"}, {\"key\": \"Script_NumFields\", \"path\": \"/Script_NumFields\", \"type\": \"Int32\", \"expandable\": false, \"childCount\": 0, \"value\": 6}, {\"key\": \"appPaletteSaturation\", \"path\": \"/appPaletteSaturation\", \"type\": \"Single\", \"expandable\": false, \"childCount\": 0, \"value\": 0.2437}, {\"key\": \"appPaletteContrast\", \"path\": \"/appPaletteContrast\", \"type\": \"Single\", \"expandable\": false, \"childCount\": 0, \"value\": 0.7614}, {\"key\": \"appPaletteBrightness\", \"path\": \"/appPaletteBrightness\", \"type\": \"Single\", \"expandable\": false, \"childCount\": 0, \"value\": -0.0356}, {\"key\": \"appPaletteHue\", \"path\": \"/appPaletteHue\", \"type\": \"Single\", \"expandable\": false, \"childCount\": 0, \"value\": 0.8782}, {\"key\": \"appPaletteSpecular\", \"path\": \"/appPaletteSpecular\", \"type\": \"GomObjectData\", \"expandable\": true, \"childCount\": 7, \"value\": null}, {\"key\": \"appPaletteMetallicSpecular\", \"path\": \"/appPaletteMetallicSpecular\", \"type\": \"GomObjectData\", \"expandable\": true, \"childCount\": 7, \"value\": null}], \"value\": null, \"start\": 0, \"nextStart\": null, \"coverage\": \"Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    },
+    "expanded": [
+      {
+        "identity": {
+          "id": "0xE00014616341DE65",
+          "decimalId": "16140923473005502053",
+          "kind": "GomObject",
+          "name": "dynamic.garmenthue.garmenthue_gi_h18_p",
+          "nameEvidence": "April bucket/prototype",
+          "source": {
+            "path": "/resources/systemgenerated/buckets/53.bkt",
+            "uncompressedOffset": 20764,
+            "blockLength": 185,
+            "resourceSha256": "b9bfbbea7f4207514f000529e84a19b2938565c7943926eea41d007479aa32a4"
+          }
+        },
+        "path": "/appPaletteSpecular",
+        "type": "GomObjectData",
+        "childCount": 7,
+        "children": [
+          {
+            "key": "Script_Type",
+            "path": "/appPaletteSpecular/Script_Type",
+            "type": "DomClass",
+            "expandable": false,
+            "childCount": 0,
+            "value": {
+              "type": "definitionReference",
+              "definition": {
+                "id": "0x00000000DFFE887B",
+                "decimalId": "3758000251",
+                "kind": "DomClass",
+                "name": "rgba",
+                "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+                "source": {
+                  "path": "/resources/systemgenerated/client.gom",
+                  "uncompressedOffset": 362200,
+                  "blockLength": 88,
+                  "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+                }
+              }
+            }
+          },
+          {
+            "key": "Script_TypeId",
+            "path": "/appPaletteSpecular/Script_TypeId",
+            "type": "UInt64",
+            "expandable": false,
+            "childCount": 0,
+            "value": "0x0000000000000004"
+          },
+          {
+            "key": "Script_NumFields",
+            "path": "/appPaletteSpecular/Script_NumFields",
+            "type": "Int32",
+            "expandable": false,
+            "childCount": 0,
+            "value": 4
+          },
+          {
+            "key": "r",
+            "path": "/appPaletteSpecular/r",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 0.8
+          },
+          {
+            "key": "g",
+            "path": "/appPaletteSpecular/g",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 1
+          },
+          {
+            "key": "b",
+            "path": "/appPaletteSpecular/b",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 0.847059
+          },
+          {
+            "key": "a",
+            "path": "/appPaletteSpecular/a",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 1
+          }
+        ],
+        "value": null,
+        "start": 0,
+        "nextStart": null,
+        "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+        "profile": "April2012",
+        "parser": "SwtorResearch/0.2.0",
+        "accessVersion": "0.2.0",
+        "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+        "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+      },
+      {
+        "identity": {
+          "id": "0xE00014616341DE65",
+          "decimalId": "16140923473005502053",
+          "kind": "GomObject",
+          "name": "dynamic.garmenthue.garmenthue_gi_h18_p",
+          "nameEvidence": "April bucket/prototype",
+          "source": {
+            "path": "/resources/systemgenerated/buckets/53.bkt",
+            "uncompressedOffset": 20764,
+            "blockLength": 185,
+            "resourceSha256": "b9bfbbea7f4207514f000529e84a19b2938565c7943926eea41d007479aa32a4"
+          }
+        },
+        "path": "/appPaletteMetallicSpecular",
+        "type": "GomObjectData",
+        "childCount": 7,
+        "children": [
+          {
+            "key": "Script_Type",
+            "path": "/appPaletteMetallicSpecular/Script_Type",
+            "type": "DomClass",
+            "expandable": false,
+            "childCount": 0,
+            "value": {
+              "type": "definitionReference",
+              "definition": {
+                "id": "0x00000000DFFE887B",
+                "decimalId": "3758000251",
+                "kind": "DomClass",
+                "name": "rgba",
+                "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+                "source": {
+                  "path": "/resources/systemgenerated/client.gom",
+                  "uncompressedOffset": 362200,
+                  "blockLength": 88,
+                  "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+                }
+              }
+            }
+          },
+          {
+            "key": "Script_TypeId",
+            "path": "/appPaletteMetallicSpecular/Script_TypeId",
+            "type": "UInt64",
+            "expandable": false,
+            "childCount": 0,
+            "value": "0x0000000000000004"
+          },
+          {
+            "key": "Script_NumFields",
+            "path": "/appPaletteMetallicSpecular/Script_NumFields",
+            "type": "Int32",
+            "expandable": false,
+            "childCount": 0,
+            "value": 4
+          },
+          {
+            "key": "r",
+            "path": "/appPaletteMetallicSpecular/r",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 1
+          },
+          {
+            "key": "g",
+            "path": "/appPaletteMetallicSpecular/g",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 0.611765
+          },
+          {
+            "key": "b",
+            "path": "/appPaletteMetallicSpecular/b",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 0.74902
+          },
+          {
+            "key": "a",
+            "path": "/appPaletteMetallicSpecular/a",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 1
+          }
+        ],
+        "value": null,
+        "start": 0,
+        "nextStart": null,
+        "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+        "profile": "April2012",
+        "parser": "SwtorResearch/0.2.0",
+        "accessVersion": "0.2.0",
+        "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+        "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+      }
+    ]
+  },
+  {
+    "query": {
+      "name": "dynamic.garmenthue.garmenthue_gi_h01_p"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"identity\": {\"id\": \"0xE00023589D9A70C0\", \"decimalId\": \"16140939928004096192\", \"kind\": \"GomObject\", \"name\": \"dynamic.garmenthue.garmenthue_gi_h01_p\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/192.bkt\", \"uncompressedOffset\": 43580, \"blockLength\": 182, \"resourceSha256\": \"6eb90feb484d3a6daadb8153145630c82be0fc132782ce3163f961699ad7bf9a\"}}, \"path\": \"\", \"type\": \"GomObjectData\", \"childCount\": 9, \"children\": [{\"key\": \"Script_Type\", \"path\": \"/Script_Type\", \"type\": \"DomClass\", \"expandable\": false, \"childCount\": 0, \"value\": {\"type\": \"definitionReference\", \"definition\": {\"id\": \"0x40000002A88C00BB\", \"decimalId\": \"4611686029845070011\", \"kind\": \"DomClass\", \"name\": \"appGarmentHue\", \"nameEvidence\": \"historical gom_type_names.xml fallback; not April-verified\", \"source\": {\"path\": \"/resources/systemgenerated/client.gom\", \"uncompressedOffset\": 420504, \"blockLength\": 64, \"resourceSha256\": \"aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450\"}}}}, {\"key\": \"Script_TypeId\", \"path\": \"/Script_TypeId\", \"type\": \"UInt64\", \"expandable\": false, \"childCount\": 0, \"value\": \"0x000000000000000B\"}, {\"key\": \"Script_NumFields\", \"path\": \"/Script_NumFields\", \"type\": \"Int32\", \"expandable\": false, \"childCount\": 0, \"value\": 6}, {\"key\": \"appPaletteSaturation\", \"path\": \"/appPaletteSaturation\", \"type\": \"Single\", \"expandable\": false, \"childCount\": 0, \"value\": 0.7665}, {\"key\": \"appPaletteContrast\", \"path\": \"/appPaletteContrast\", \"type\": \"Single\", \"expandable\": false, \"childCount\": 0, \"value\": 0.8985}, {\"key\": \"appPaletteBrightness\", \"path\": \"/appPaletteBrightness\", \"type\": \"Single\", \"expandable\": false, \"childCount\": 0, \"value\": -0.1168}, {\"key\": \"appPaletteHue\", \"path\": \"/appPaletteHue\", \"type\": \"Single\", \"expandable\": false, \"childCount\": 0, \"value\": 0.4365}, {\"key\": \"appPaletteSpecular\", \"path\": \"/appPaletteSpecular\", \"type\": \"GomObjectData\", \"expandable\": true, \"childCount\": 7, \"value\": null}, {\"key\": \"appPaletteMetallicSpecular\", \"path\": \"/appPaletteMetallicSpecular\", \"type\": \"GomObjectData\", \"expandable\": true, \"childCount\": 7, \"value\": null}], \"value\": null, \"start\": 0, \"nextStart\": null, \"coverage\": \"Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    },
+    "expanded": [
+      {
+        "identity": {
+          "id": "0xE00023589D9A70C0",
+          "decimalId": "16140939928004096192",
+          "kind": "GomObject",
+          "name": "dynamic.garmenthue.garmenthue_gi_h01_p",
+          "nameEvidence": "April bucket/prototype",
+          "source": {
+            "path": "/resources/systemgenerated/buckets/192.bkt",
+            "uncompressedOffset": 43580,
+            "blockLength": 182,
+            "resourceSha256": "6eb90feb484d3a6daadb8153145630c82be0fc132782ce3163f961699ad7bf9a"
+          }
+        },
+        "path": "/appPaletteSpecular",
+        "type": "GomObjectData",
+        "childCount": 7,
+        "children": [
+          {
+            "key": "Script_Type",
+            "path": "/appPaletteSpecular/Script_Type",
+            "type": "DomClass",
+            "expandable": false,
+            "childCount": 0,
+            "value": {
+              "type": "definitionReference",
+              "definition": {
+                "id": "0x00000000DFFE887B",
+                "decimalId": "3758000251",
+                "kind": "DomClass",
+                "name": "rgba",
+                "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+                "source": {
+                  "path": "/resources/systemgenerated/client.gom",
+                  "uncompressedOffset": 362200,
+                  "blockLength": 88,
+                  "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+                }
+              }
+            }
+          },
+          {
+            "key": "Script_TypeId",
+            "path": "/appPaletteSpecular/Script_TypeId",
+            "type": "UInt64",
+            "expandable": false,
+            "childCount": 0,
+            "value": "0x0000000000000004"
+          },
+          {
+            "key": "Script_NumFields",
+            "path": "/appPaletteSpecular/Script_NumFields",
+            "type": "Int32",
+            "expandable": false,
+            "childCount": 0,
+            "value": 4
+          },
+          {
+            "key": "r",
+            "path": "/appPaletteSpecular/r",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 0.792157
+          },
+          {
+            "key": "g",
+            "path": "/appPaletteSpecular/g",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 0.666667
+          },
+          {
+            "key": "b",
+            "path": "/appPaletteSpecular/b",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 0.666667
+          },
+          {
+            "key": "a",
+            "path": "/appPaletteSpecular/a",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 1
+          }
+        ],
+        "value": null,
+        "start": 0,
+        "nextStart": null,
+        "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+        "profile": "April2012",
+        "parser": "SwtorResearch/0.2.0",
+        "accessVersion": "0.2.0",
+        "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+        "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+      },
+      {
+        "identity": {
+          "id": "0xE00023589D9A70C0",
+          "decimalId": "16140939928004096192",
+          "kind": "GomObject",
+          "name": "dynamic.garmenthue.garmenthue_gi_h01_p",
+          "nameEvidence": "April bucket/prototype",
+          "source": {
+            "path": "/resources/systemgenerated/buckets/192.bkt",
+            "uncompressedOffset": 43580,
+            "blockLength": 182,
+            "resourceSha256": "6eb90feb484d3a6daadb8153145630c82be0fc132782ce3163f961699ad7bf9a"
+          }
+        },
+        "path": "/appPaletteMetallicSpecular",
+        "type": "GomObjectData",
+        "childCount": 7,
+        "children": [
+          {
+            "key": "Script_Type",
+            "path": "/appPaletteMetallicSpecular/Script_Type",
+            "type": "DomClass",
+            "expandable": false,
+            "childCount": 0,
+            "value": {
+              "type": "definitionReference",
+              "definition": {
+                "id": "0x00000000DFFE887B",
+                "decimalId": "3758000251",
+                "kind": "DomClass",
+                "name": "rgba",
+                "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+                "source": {
+                  "path": "/resources/systemgenerated/client.gom",
+                  "uncompressedOffset": 362200,
+                  "blockLength": 88,
+                  "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+                }
+              }
+            }
+          },
+          {
+            "key": "Script_TypeId",
+            "path": "/appPaletteMetallicSpecular/Script_TypeId",
+            "type": "UInt64",
+            "expandable": false,
+            "childCount": 0,
+            "value": "0x0000000000000004"
+          },
+          {
+            "key": "Script_NumFields",
+            "path": "/appPaletteMetallicSpecular/Script_NumFields",
+            "type": "Int32",
+            "expandable": false,
+            "childCount": 0,
+            "value": 4
+          },
+          {
+            "key": "r",
+            "path": "/appPaletteMetallicSpecular/r",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 0.807843
+          },
+          {
+            "key": "g",
+            "path": "/appPaletteMetallicSpecular/g",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 0.94902
+          },
+          {
+            "key": "b",
+            "path": "/appPaletteMetallicSpecular/b",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 1
+          },
+          {
+            "key": "a",
+            "path": "/appPaletteMetallicSpecular/a",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 1
+          }
+        ],
+        "value": null,
+        "start": 0,
+        "nextStart": null,
+        "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+        "profile": "April2012",
+        "parser": "SwtorResearch/0.2.0",
+        "accessVersion": "0.2.0",
+        "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+        "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+      }
+    ]
+  },
+  {
+    "query": {
+      "name": "dynamic.garmenthue.garmenthue_gi_h21_p"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"identity\": {\"id\": \"0xE00083680F9E4E22\", \"decimalId\": \"16141045547457728034\", \"kind\": \"GomObject\", \"name\": \"dynamic.garmenthue.garmenthue_gi_h21_p\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/34.bkt\", \"uncompressedOffset\": 135428, \"blockLength\": 182, \"resourceSha256\": \"ad8e7176c983a1915de091091cfb3fd1100e4c8ce16ff386ac9fecd6b2ee1fba\"}}, \"path\": \"\", \"type\": \"GomObjectData\", \"childCount\": 9, \"children\": [{\"key\": \"Script_Type\", \"path\": \"/Script_Type\", \"type\": \"DomClass\", \"expandable\": false, \"childCount\": 0, \"value\": {\"type\": \"definitionReference\", \"definition\": {\"id\": \"0x40000002A88C00BB\", \"decimalId\": \"4611686029845070011\", \"kind\": \"DomClass\", \"name\": \"appGarmentHue\", \"nameEvidence\": \"historical gom_type_names.xml fallback; not April-verified\", \"source\": {\"path\": \"/resources/systemgenerated/client.gom\", \"uncompressedOffset\": 420504, \"blockLength\": 64, \"resourceSha256\": \"aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450\"}}}}, {\"key\": \"Script_TypeId\", \"path\": \"/Script_TypeId\", \"type\": \"UInt64\", \"expandable\": false, \"childCount\": 0, \"value\": \"0x000000000000000B\"}, {\"key\": \"Script_NumFields\", \"path\": \"/Script_NumFields\", \"type\": \"Int32\", \"expandable\": false, \"childCount\": 0, \"value\": 6}, {\"key\": \"appPaletteSaturation\", \"path\": \"/appPaletteSaturation\", \"type\": \"Single\", \"expandable\": false, \"childCount\": 0, \"value\": 0.868}, {\"key\": \"appPaletteContrast\", \"path\": \"/appPaletteContrast\", \"type\": \"Single\", \"expandable\": false, \"childCount\": 0, \"value\": 0.7614}, {\"key\": \"appPaletteBrightness\", \"path\": \"/appPaletteBrightness\", \"type\": \"Single\", \"expandable\": false, \"childCount\": 0, \"value\": -0.0964}, {\"key\": \"appPaletteHue\", \"path\": \"/appPaletteHue\", \"type\": \"Single\", \"expandable\": false, \"childCount\": 0, \"value\": 0.6294}, {\"key\": \"appPaletteSpecular\", \"path\": \"/appPaletteSpecular\", \"type\": \"GomObjectData\", \"expandable\": true, \"childCount\": 7, \"value\": null}, {\"key\": \"appPaletteMetallicSpecular\", \"path\": \"/appPaletteMetallicSpecular\", \"type\": \"GomObjectData\", \"expandable\": true, \"childCount\": 7, \"value\": null}], \"value\": null, \"start\": 0, \"nextStart\": null, \"coverage\": \"Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    },
+    "expanded": [
+      {
+        "identity": {
+          "id": "0xE00083680F9E4E22",
+          "decimalId": "16141045547457728034",
+          "kind": "GomObject",
+          "name": "dynamic.garmenthue.garmenthue_gi_h21_p",
+          "nameEvidence": "April bucket/prototype",
+          "source": {
+            "path": "/resources/systemgenerated/buckets/34.bkt",
+            "uncompressedOffset": 135428,
+            "blockLength": 182,
+            "resourceSha256": "ad8e7176c983a1915de091091cfb3fd1100e4c8ce16ff386ac9fecd6b2ee1fba"
+          }
+        },
+        "path": "/appPaletteSpecular",
+        "type": "GomObjectData",
+        "childCount": 7,
+        "children": [
+          {
+            "key": "Script_Type",
+            "path": "/appPaletteSpecular/Script_Type",
+            "type": "DomClass",
+            "expandable": false,
+            "childCount": 0,
+            "value": {
+              "type": "definitionReference",
+              "definition": {
+                "id": "0x00000000DFFE887B",
+                "decimalId": "3758000251",
+                "kind": "DomClass",
+                "name": "rgba",
+                "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+                "source": {
+                  "path": "/resources/systemgenerated/client.gom",
+                  "uncompressedOffset": 362200,
+                  "blockLength": 88,
+                  "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+                }
+              }
+            }
+          },
+          {
+            "key": "Script_TypeId",
+            "path": "/appPaletteSpecular/Script_TypeId",
+            "type": "UInt64",
+            "expandable": false,
+            "childCount": 0,
+            "value": "0x0000000000000004"
+          },
+          {
+            "key": "Script_NumFields",
+            "path": "/appPaletteSpecular/Script_NumFields",
+            "type": "Int32",
+            "expandable": false,
+            "childCount": 0,
+            "value": 4
+          },
+          {
+            "key": "r",
+            "path": "/appPaletteSpecular/r",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 0.8
+          },
+          {
+            "key": "g",
+            "path": "/appPaletteSpecular/g",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 1
+          },
+          {
+            "key": "b",
+            "path": "/appPaletteSpecular/b",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 0.847059
+          },
+          {
+            "key": "a",
+            "path": "/appPaletteSpecular/a",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 1
+          }
+        ],
+        "value": null,
+        "start": 0,
+        "nextStart": null,
+        "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+        "profile": "April2012",
+        "parser": "SwtorResearch/0.2.0",
+        "accessVersion": "0.2.0",
+        "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+        "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+      },
+      {
+        "identity": {
+          "id": "0xE00083680F9E4E22",
+          "decimalId": "16141045547457728034",
+          "kind": "GomObject",
+          "name": "dynamic.garmenthue.garmenthue_gi_h21_p",
+          "nameEvidence": "April bucket/prototype",
+          "source": {
+            "path": "/resources/systemgenerated/buckets/34.bkt",
+            "uncompressedOffset": 135428,
+            "blockLength": 182,
+            "resourceSha256": "ad8e7176c983a1915de091091cfb3fd1100e4c8ce16ff386ac9fecd6b2ee1fba"
+          }
+        },
+        "path": "/appPaletteMetallicSpecular",
+        "type": "GomObjectData",
+        "childCount": 7,
+        "children": [
+          {
+            "key": "Script_Type",
+            "path": "/appPaletteMetallicSpecular/Script_Type",
+            "type": "DomClass",
+            "expandable": false,
+            "childCount": 0,
+            "value": {
+              "type": "definitionReference",
+              "definition": {
+                "id": "0x00000000DFFE887B",
+                "decimalId": "3758000251",
+                "kind": "DomClass",
+                "name": "rgba",
+                "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+                "source": {
+                  "path": "/resources/systemgenerated/client.gom",
+                  "uncompressedOffset": 362200,
+                  "blockLength": 88,
+                  "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+                }
+              }
+            }
+          },
+          {
+            "key": "Script_TypeId",
+            "path": "/appPaletteMetallicSpecular/Script_TypeId",
+            "type": "UInt64",
+            "expandable": false,
+            "childCount": 0,
+            "value": "0x0000000000000004"
+          },
+          {
+            "key": "Script_NumFields",
+            "path": "/appPaletteMetallicSpecular/Script_NumFields",
+            "type": "Int32",
+            "expandable": false,
+            "childCount": 0,
+            "value": 4
+          },
+          {
+            "key": "r",
+            "path": "/appPaletteMetallicSpecular/r",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 0.784314
+          },
+          {
+            "key": "g",
+            "path": "/appPaletteMetallicSpecular/g",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 0.980392
+          },
+          {
+            "key": "b",
+            "path": "/appPaletteMetallicSpecular/b",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 1
+          },
+          {
+            "key": "a",
+            "path": "/appPaletteMetallicSpecular/a",
+            "type": "Single",
+            "expandable": false,
+            "childCount": 0,
+            "value": 1
+          }
+        ],
+        "value": null,
+        "start": 0,
+        "nextStart": null,
+        "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+        "profile": "April2012",
+        "parser": "SwtorResearch/0.2.0",
+        "accessVersion": "0.2.0",
+        "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+        "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+      }
+    ]
+  }
+]

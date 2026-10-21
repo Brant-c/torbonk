@@ -7,6 +7,16 @@ namespace SwtorSurvivors;
 public partial class AbilityController : Node
 {
     [Export] public float GlobalCooldownSeconds { get; set; } = 1.5f;
+    [Export] public int OffensiveLimit { get; set; } = 4;
+    [Export] public int UtilityLimit { get; set; } = 2;
+    public int Limit(AbilityCategory category) => Math.Max(0,category==AbilityCategory.Offensive?OffensiveLimit:UtilityLimit);
+    public int Equipped(AbilityCategory category) => Abilities.Count(a=>a.Unlocked && a.Definition.Category==category);
+    public bool CanUnlock(AutomaticAbility ability) => ability.Unlocked || Equipped(ability.Definition.Category)<Limit(ability.Definition.Category);
+    public bool Unlock(string id)
+    {
+        var ability=Find(id);if(ability==null || !CanUnlock(ability))return false;
+        ability.SetUnlocked(true);return true;
+    }
     public List<AutomaticAbility> Abilities { get; } = new();
     public TargetingService Targeting { get; set; } = null!;
     public double GlobalCooldownRemaining { get; private set; }

@@ -43,6 +43,8 @@ public partial class AbilityIcon : Control
     public void UpdateCooldown(double remaining,double duration,double globalRemaining=0,double globalDuration=1.5,bool casting=false)
     {
         _cooldown?.UpdateRemaining(remaining,duration);
+        // The ability's own cooldown takes priority over the shared cooldown sweep.
+        _gcd?.UpdateRemaining(remaining>0?0:globalRemaining,globalDuration);
         _time.Text=remaining>0 ? remaining.ToString("0.0") : casting?"ACTIVE":globalRemaining>0?"GCD":"";
         _time.AddThemeFontSizeOverride("font_size",remaining>0?15:10);
     }

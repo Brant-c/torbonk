@@ -1,5 +1,9 @@
 # SWTOR Survivors — B5
 
+The original Force Storm lightning-layer and sustained moving-cast restoration
+is documented in [STORM-SOURCE-README.md](STORM-SOURCE-README.md). It supersedes
+the simplified Storm VFX and short Storm gesture described below.
+
 Force Storm's subsequent green ground-indicator enhancement is documented in
 [STORM-RETICLE-README.md](STORM-RETICLE-README.md), including original green
 projector provenance, live-radius scaling and focused verification.

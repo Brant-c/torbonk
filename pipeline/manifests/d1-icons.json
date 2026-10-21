@@ -1,0 +1,52 @@
+[
+  {
+    "source": "/resources/gfx/icons/ipp.class.inq.starting.cdps1.t1x1.chest.dds",
+    "output": "godot\\Assets\\Equipment\\chest.png",
+    "dimensions": [
+      52,
+      52
+    ],
+    "sha256": "2ec054d8ee473370815e418eef5d28768182459929bc13892369990edbb710af",
+    "conversion": "Pillow DDS -> RGBA PNG, native size, no tint/resample"
+  },
+  {
+    "source": "/resources/gfx/icons/ipp.class.inq.starting.cdps1.t1x1.legs.dds",
+    "output": "godot\\Assets\\Equipment\\legs.png",
+    "dimensions": [
+      52,
+      52
+    ],
+    "sha256": "78e5825fcbf132a81cd16a806e6bae8c4326cb8a186fc5926cfe461c57320246",
+    "conversion": "Pillow DDS -> RGBA PNG, native size, no tint/resample"
+  },
+  {
+    "source": "/resources/gfx/icons/ipp.class.inq.starting.cdps1.t1x1.hands.dds",
+    "output": "godot\\Assets\\Equipment\\hands.png",
+    "dimensions": [
+      52,
+      52
+    ],
+    "sha256": "91408f1f6044c1a21362c3d99e0a7a6ac80050b022bbb2e4acd71d02c980b160",
+    "conversion": "Pillow DDS -> RGBA PNG, native size, no tint/resample"
+  },
+  {
+    "source": "/resources/gfx/icons/ipp.class.inq.starting.cdps1.t1x1.feet.dds",
+    "output": "godot\\Assets\\Equipment\\feet.png",
+    "dimensions": [
+      52,
+      52
+    ],
+    "sha256": "708c04399b1c16661eeb273b99a30544d57dc2a7bbc85d6f1979bc75770a1aad",
+    "conversion": "Pillow DDS -> RGBA PNG, native size, no tint/resample"
+  },
+  {
+    "source": "/resources/gfx/icons/ipp.class.inq.starting.cdps1.t1x1.waist.dds",
+    "output": "godot\\Assets\\Equipment\\waist.png",
+    "dimensions": [
+      52,
+      52
+    ],
+    "sha256": "e960221e84c1397339a33325fb3087031184142df0e2072527408c5fd1aae6d3",
+    "conversion": "Pillow DDS -> RGBA PNG, native size, no tint/resample"
+  }
+]

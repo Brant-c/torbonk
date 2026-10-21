@@ -1,0 +1,42 @@
+{
+  "sourceManifest": "manifests/b6-source.json",
+  "conversionRecipe": "b6-recipe.json",
+  "convertedScene": "godot/Assets/Enemies/looter.glb",
+  "convertedSceneSha256": "73c5e0b82c6d3a0c67fe70f6c8a3dde6d95776454e6a9069384f655488a05033",
+  "sources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x82D9270DD1218137",
+      "entryOffset": 26925939,
+      "headerSize": 36,
+      "dataOffset": 26925975,
+      "compressedSize": 15357,
+      "length": 28353,
+      "compressionMethod": 1,
+      "crc32Index": "ee19a6d5",
+      "path": "/resources/anim/humanoid/bmnnew/cb_knight_saber_idle_1.jba",
+      "sha256": "b23098c55ff73ec7c4edffee0bbd5f73945569c39443eb59691b047e15ca299e",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_knight_saber_idle_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x7151305EB23D99DC",
+      "entryOffset": 121906687,
+      "headerSize": 36,
+      "dataOffset": 121906723,
+      "compressedSize": 11409,
+      "length": 25921,
+      "compressionMethod": 1,
+      "crc32Index": "9676d8b7",
+      "path": "/resources/anim/humanoid/bmnnew/mv_saber_run_forward_01.jba",
+      "sha256": "dbb23902f44e7750a1874dfb2d991fbd83af3f156fe5fa27ccb50d1500a30130",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_saber_run_forward_01.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "policy": "Reuse existing converted Idle/Run; duplicate library, retarget matching bone names into live rig; original source scale/root policy retained; existing AnimationTree owns all blending.",
+  "newExtraction": false
+}

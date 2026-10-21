@@ -5,6 +5,7 @@ namespace SwtorSurvivors;
 
 public partial class GameWorld : Node3D
 {
+    [Export] public RunSlotRules? SlotRules {get;set;}
     [ExportGroup("B2 Gameplay Tuning (source units)")]
     [Export] public float AcquisitionRange { get; set; } = 0.85f;
     [Export] public float TargetRefreshSeconds { get; set; } = 0.2f;
@@ -38,10 +39,13 @@ public partial class GameWorld : Node3D
     public EnemySpawner? Spawner { get; private set; }
     public WaveDirector? Waves { get; private set; }
     public RunProgression? Progression { get; private set; }
+    public RunArtifacts? Artifacts {get;private set;}
+    public RunBuildEffects Build {get;private set;}=null!;
     public UI.SurvivorsHud? Hud { get; private set; }
     public CombatEvents Events { get; private set; } = null!;
     public FlytextService Flytext { get; private set; } = null!;
-    public EquipmentAttachment PlayerSaber { get; private set; } = null!;
+    public Equipment.CharacterAppearanceAssembly Equipment { get; private set; } = null!;
+    public EquipmentAttachment PlayerSaber => Equipment.Weapon("main_hand")!;
     public AudioPresentation Audio { get; private set; } = null!;
     public UI.RewardPresentation? Rewards { get; private set; }
     public Integration.GameplayConfiguration RunConfiguration { get; private set; } = null!;
@@ -49,10 +53,12 @@ public partial class GameWorld : Node3D
     private Label _combatStatus = null!;
     private Vector3 _enemySpawn;
     private MeshInstance3D? _debug;
+    private bool _leavingForMenu;
 
     public override async void _Ready()
     {
         RunConfiguration = Integration.GameNavigation.TakeRunConfiguration();
+        SlotRules??=GD.Load<RunSlotRules>("res://Gameplay/run-slots.tres");
         // The adapter selects an existing composition, never substitutes assets for an unsupported key.
         if (SceneFilePath != RunConfiguration.WorldScene
             || GetNode<Node3D>("KorribanEnvironment").SceneFilePath != RunConfiguration.EnvironmentScene
@@ -95,10 +101,16 @@ public partial class GameWorld : Node3D
             if (!AddCombat(!b2Validation)) { GetTree().Quit(1); return; }
             if (!b2Validation && !OS.GetCmdlineUserArgs().Contains("--survival-smoke"))
             {
+                Build=new RunBuildEffects {Name="RunBuildEffects",World=this};AddChild(Build);
+                Artifacts=new RunArtifacts {Name="RunArtifacts",World=this,SlotLimit=System.Math.Clamp(SlotRules.ArtifactSlots,1,6)};AddChild(Artifacts);
+                foreach(var ability in Abilities.Abilities)ability.Build=Build;
                 Progression = new RunProgression { Name = "RunProgression", World = this };
                 AddChild(Progression);
+                Progression.Changed += SyncCameraControls;
                 Hud = new UI.SurvivorsHud { Name = "SwtorHud", World = this }; AddChild(Hud);
                 Rewards = new UI.RewardPresentation { Name = "RewardPresentation", World = this }; AddChild(Rewards);
+                AddChild(new UI.ArtifactRewardsHud {Name="RunArtifactInterface",World=this});
+                if(OS.GetCmdlineUserArgs().Contains("--d2-smoke")) {var smoke=new D2Smoke();AddChild(smoke);smoke.Run(this);}
                 _legacyOverlay.Visible = false;
                 if (OS.GetCmdlineUserArgs().Contains("--b6-smoke"))
                 { var smoke = new B6Smoke(); AddChild(smoke); smoke.Run(this); }
@@ -106,6 +118,8 @@ public partial class GameWorld : Node3D
                 { var smoke = new B7Smoke(); AddChild(smoke); smoke.Run(this); }
                 if (OS.GetCmdlineUserArgs().Contains("--b8-smoke"))
                 { var smoke = new B8Smoke(); AddChild(smoke); smoke.Run(this); }
+                if (OS.GetCmdlineUserArgs().Contains("--b9-jump-smoke"))
+                { var smoke = new JumpAnimationSmoke(); AddChild(smoke); smoke.Run(this); }
                 if (OS.GetCmdlineUserArgs().Contains("--audio-polish-smoke"))
                 { var smoke = new AudioPolishSmoke(); AddChild(smoke); smoke.Run(this); }
                 if (OS.GetCmdlineUserArgs().Contains("--refinement-smoke"))
@@ -124,6 +138,8 @@ public partial class GameWorld : Node3D
                 {
                     var smoke = new StormReticleSmoke(); AddChild(smoke); smoke.Run(this);
                 }
+                if (OS.GetCmdlineUserArgs().Contains("--storm-source-smoke"))
+                {var smoke=new StormSourceSmoke();AddChild(smoke);smoke.Run(this);}
                 if (OS.GetCmdlineUserArgs().Contains("--progression-smoke"))
                 {
                     var smoke = new ProgressionSmoke(); AddChild(smoke); smoke.Run(this);
@@ -143,11 +159,17 @@ public partial class GameWorld : Node3D
             var validation = new GameplayValidation(); AddChild(validation);
             validation.Run(this, OS.GetCmdlineUserArgs().Contains("--gameplay-capture"));
         }
+        SyncCameraControls();
+        if(OS.GetCmdlineUserArgs().Contains("--d1-smoke"))
+        { var smoke=new SwtorSurvivors.Equipment.D1EquipmentSmoke();AddChild(smoke);smoke.Run(this); }
     }
+
+    private void SyncCameraControls() => Rig.SetControlsEnabled(Initialized && !_leavingForMenu && !GetTree().Paused
+        && (PlayerActor == null || PlayerActor.Alive));
 
     private static void RegisterInput()
     {
-        foreach (var entry in new[] { ("b1_forward", Key.W), ("b1_back", Key.S), ("b1_left", Key.A), ("b1_right", Key.D) })
+        foreach (var entry in new[] { ("b1_forward", Key.W), ("b1_back", Key.S), ("b1_left", Key.A), ("b1_right", Key.D), ("b9_jump", Key.Space) })
         {
             if (!InputMap.HasAction(entry.Item1)) InputMap.AddAction(entry.Item1);
             if (InputMap.ActionGetEvents(entry.Item1).Count == 0)
@@ -197,7 +219,14 @@ public partial class GameWorld : Node3D
         PlayerActor = new Combatant { Name = "PlayerCombatant", TargetId = "Player", Team = CombatTeam.Player,
             Presentation = Player.Presentation };
         PlayerActor.AddChild(new Health { Name = "Health", Maximum = 100 }); Player.AddChild(PlayerActor);
-        PlayerSaber = EquipmentAttachment.Equip(Player.Presentation.Skeleton, "saber", true);
+        Equipment = SwtorSurvivors.Equipment.EquipmentComposition.Create(this,
+            Player.Presentation.GetNode<Node3D>("OriginalSorcerer"),Player.Presentation.Skeleton,
+            RunConfiguration.BaseClassId,RunConfiguration.AdvancedClassId);
+        Player.Presentation.SetEquipmentLocomotion(Equipment.Locomotion);
+        Equipment.Loadout.Changed += _ => Player.Presentation.SetEquipmentLocomotion(Equipment.Locomotion);
+        if(OS.GetCmdlineUserArgs().Contains("--d1-equipment"))
+            AddChild(new SwtorSurvivors.Equipment.EquipmentDeveloperControls { Assembly=Equipment,
+                Expanded=OS.GetCmdlineUserArgs().Contains("--d1-equipment") });
         Targeting = new TargetingService { Name = "Targeting", OwnerActor = PlayerActor,
             AcquisitionRange = AcquisitionRange, RefreshSeconds = TargetRefreshSeconds }; AddChild(Targeting);
         var visual = new LightningPresentation { Name = "LightningPresentation", Actor = Player.Presentation }; AddChild(visual);
@@ -205,18 +234,24 @@ public partial class GameWorld : Node3D
         Combat.Configure(GD.Load<AbilityDefinition>("res://Gameplay/Abilities/lightning.tres"));
         Combat.Range=AcquisitionRange;
         AddChild(Combat);
-        Abilities=new AbilityController { Name="AutomaticAbilities",Targeting=Targeting };
+        Abilities=new AbilityController { Name="AutomaticAbilities",Targeting=Targeting,
+            OffensiveLimit=SlotRules!.OffensiveSlots,UtilityLimit=SlotRules.UtilitySlots };
         Abilities.Abilities.Add(Combat);
         if (survival && !OS.GetCmdlineUserArgs().Any(x=>x is "--survival-smoke" or "--progression-smoke"))
         {
             Player.Presentation.LoadAbilityAnimations();
-            foreach(string id in new[]{"shock","storm","deathfield","barrier","darkheal"})
+            foreach(string id in new[]{"shock","storm","deathfield","barrier","darkheal","chain","overload"})
             {
                 var definition=GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{id}.tres");
                 IAbilityPresentation presentation;
                 if(id is "shock" or "storm")
                 {
                     var original=new OriginalAbilityPresentation { Actor=Player.Presentation,Definition=definition };
+                    AddChild(original);presentation=original;
+                }
+                else if(id is "chain" or "overload")
+                {
+                    var original=new D2AbilityPresentation {Actor=Player.Presentation,Definition=definition};
                     AddChild(original);presentation=original;
                 }
                 else
@@ -232,6 +267,7 @@ public partial class GameWorld : Node3D
         AddChild(Abilities);
         PlayerActor.Health.Died += () =>
         {
+            Rig.SetControlsEnabled(false);
             Abilities.Abort(); PlayerActor.CombatEnabled = false;
             Progression?.CancelPresentation(); Rewards?.Clear(); Audio.Clear();
             Waves?.Stop(); Player.SetPhysicsProcess(false); Player.Velocity = Vector3.Zero;
@@ -285,6 +321,7 @@ public partial class GameWorld : Node3D
         }
         Player.ResetPlayer(); Player.SetPhysicsProcess(true);
         Waves?.ResetWaves();
+        SyncCameraControls();
     }
 
     public void ReturnToMainMenu()
@@ -295,6 +332,8 @@ public partial class GameWorld : Node3D
 
     internal void StopForMenu()
     {
+        _leavingForMenu = true;
+        Rig.SetControlsEnabled(false);
         Abilities?.Abort();
         if (PlayerActor != null) PlayerActor.CombatEnabled = false;
         Waves?.Stop(); Progression?.CancelPresentation();

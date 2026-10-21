@@ -13,6 +13,9 @@ public partial class CharacterPresentation : Node3D
     [Export] public float ForwardOffsetDegrees { get; set; }
     [Export] public float LowerBackCastWeight { get; set; } = 0.3f;
     [Export] public float ChestCastWeight { get; set; } = 0.65f;
+    [Export] public float JumpBlendSeconds { get; set; } = 0.06f;
+    [Export] public float TakeoffAscentFraction { get; set; } = 0.5f;
+    [Export] public float FallAnimationGraceSeconds { get; set; } = 0.08f;
     public AnimationPlayer Animator { get; private set; } = null!;
     public Skeleton3D Skeleton { get; private set; } = null!;
     public AnimationTree Tree { get; private set; } = null!;
@@ -23,15 +26,27 @@ public partial class CharacterPresentation : Node3D
     public Vector3? FacingTarget { get; set; }
     public float MovementBlend => _movement;
     public float GestureWeight => _gestureWeight;
+    public string JumpPhase { get; private set; } = "";
+    public string JumpClip => _jumpNode.Animation;
+    public float JumpWeight => _jumpWeight;
+    public double JumpClipSeconds => _jumpClock;
+    public bool JumpAnimationsLoaded => Animator.HasAnimation("Jump/Takeoff");
+    public string IdleClip => _idleNode.Animation;
+    public string RunClip => _runNode.Animation;
+    private AnimationNodeAnimation _idleNode = null!, _runNode = null!;
     private AnimationNodeStateMachine _gestures = null!;
     private AnimationNodeStateMachinePlayback _playback = null!;
     private readonly List<AnimationNodeStateMachine> _layerMachines = new();
     private readonly List<AnimationNodeStateMachinePlayback> _layerPlaybacks = new();
     private AnimationNodeAnimation _reactionNode = null!;
+    private AnimationNodeAnimation _jumpNode = null!;
     private readonly List<string> _gestureStates = new();
     private string _gestureClip = "", _reaction = "";
     private double _reactionTime;
     private float _movement, _speed, _gestureWeight, _reactionWeight;
+    private float _jumpWeight;
+    private int _gesturePriority;
+    private double _jumpClock, _takeoffDuration, _ungroundedSeconds;
 
     public override void _Ready()
     {
@@ -51,14 +66,21 @@ public partial class CharacterPresentation : Node3D
     private void BuildTree()
     {
         var graph = new AnimationNodeBlendTree();
-        graph.AddNode("Idle", new AnimationNodeAnimation { Animation = "Idle" });
-        graph.AddNode("Run", new AnimationNodeAnimation { Animation = "Run" });
+        _idleNode = new AnimationNodeAnimation { Animation = "Idle" };
+        _runNode = new AnimationNodeAnimation { Animation = "Run" };
+        graph.AddNode("Idle", _idleNode);
+        graph.AddNode("Run", _runNode);
         graph.AddNode("Locomotion", new AnimationNodeBlend2 { Sync=true });
         graph.ConnectNode("Locomotion", 0, "Idle"); graph.ConnectNode("Locomotion", 1, "Run");
+        _jumpNode = new AnimationNodeAnimation { Animation = "Idle" };
+        graph.AddNode("JumpClip", _jumpNode);
+        graph.AddNode("JumpSeek", new AnimationNodeTimeSeek()); graph.ConnectNode("JumpSeek", 0, "JumpClip");
+        graph.AddNode("JumpLocomotion", new AnimationNodeBlend2 { Sync = true });
+        graph.ConnectNode("JumpLocomotion", 0, "Locomotion"); graph.ConnectNode("JumpLocomotion", 1, "JumpSeek");
         _gestures = new AnimationNodeStateMachine { AllowTransitionToSelf = true };
         graph.AddNode("Gesture", _gestures); AddGestureClips();
         graph.AddNode("StandingCast", new AnimationNodeBlend2 { Sync=true });
-        graph.ConnectNode("StandingCast", 0, "Locomotion"); graph.ConnectNode("StandingCast", 1, "Gesture");
+        graph.ConnectNode("StandingCast", 0, "JumpLocomotion"); graph.ConnectNode("StandingCast", 1, "Gesture");
         // Root splits into Pelvis and RootSpine -> LowerBack -> Chest -> Chest1.
         // Disjoint masks soften the waist without diluting finger or hand socket motion.
         string previous = "StandingCast";
@@ -110,6 +132,7 @@ public partial class CharacterPresentation : Node3D
     {
         foreach (string clip in Animator.GetAnimationList())
         {
+            if (clip.StartsWith("Jump/", StringComparison.Ordinal)) continue;
             string state = ClipState(clip);
             if (clip == "RESET" || _gestureStates.Contains(state)) continue;
             _gestures.AddNode(state, new AnimationNodeAnimation { Animation = clip });
@@ -141,27 +164,85 @@ public partial class CharacterPresentation : Node3D
     }
     public override void _Process(double delta)
     {
+        UpdateJumpAnimation(delta);
         float step = (float)delta / Math.Max(0.01f, BlendSeconds);
         _movement = Mathf.MoveToward(_movement, Locomotion == "Run" ? 1 : 0, step);
         _gestureWeight = Mathf.MoveToward(_gestureWeight, GestureOwner != null ? 1 : 0, step);
         if (_reaction == "Hit" && (_reactionTime -= delta) <= 0) _reaction = "";
         _reactionWeight = Mathf.MoveToward(_reactionWeight, OverrideActive ? 1 : 0, step);
         Tree.Set("parameters/Locomotion/blend_amount", _movement);
+        Tree.Set("parameters/JumpLocomotion/blend_amount", _jumpWeight);
         // Briefly crossfade the original standing pose into the moving bone masks.
-        Tree.Set("parameters/StandingCast/blend_amount", (1 - _movement) * _gestureWeight);
+        Tree.Set("parameters/StandingCast/blend_amount", (1 - Mathf.Max(_movement, _jumpWeight)) * _gestureWeight);
         Tree.Set("parameters/Waist/blend_amount", _gestureWeight * Mathf.Clamp(LowerBackCastWeight, 0, 1));
         Tree.Set("parameters/Chest/blend_amount", _gestureWeight * Mathf.Clamp(ChestCastWeight, 0, 1));
         Tree.Set("parameters/Upper/blend_amount", _gestureWeight);
         Tree.Set("parameters/Reaction/blend_amount", _reactionWeight);
         Tree.Advance(delta);
-        State = OverrideActive ? _reaction : GestureOwner != null ? _gestureClip : Locomotion;
+        State = OverrideActive ? _reaction : GestureOwner != null ? _gestureClip : JumpPhase != "" ? "Jump/" + JumpPhase : Locomotion;
     }
-    // Busy gestures are skipped, never queued past their damage event.
-    public bool TryBeginGesture(object owner, string clip)
+
+    /// <summary>Physics supplies contact and ascent/descent. Animation never moves the body.</summary>
+    public void PresentJump(bool grounded, bool tookOff, float verticalVelocity, float timeToApex, double delta)
     {
-        if (OverrideActive || GestureOwner != null || _gestureWeight > 0.05f || !Animator.HasAnimation(clip)) return false;
-        GestureOwner = owner; _gestureClip = clip; _playback.Start(ClipState(clip));
-        foreach(var playback in _layerPlaybacks) playback.Start(ClipState(clip));
+        if (!JumpAnimationsLoaded || _reaction == "Death") return;
+        _ungroundedSeconds = grounded ? 0 : _ungroundedSeconds + delta;
+        if (tookOff)
+        {
+            _takeoffDuration = Math.Max(0.05, timeToApex * Mathf.Clamp(TakeoffAscentFraction, 0.1f, 1));
+            SetJumpPhase("Takeoff");
+        }
+        else if (!grounded)
+        {
+            // Floor snapping/respawn can briefly report no contact without a real fall.
+            if (JumpPhase == "" || JumpPhase.StartsWith("Land", StringComparison.Ordinal))
+            {
+                if (_ungroundedSeconds >= FallAnimationGraceSeconds) SetJumpPhase("Falling");
+            }
+            else if (JumpPhase == "Takeoff" && _jumpClock >= _takeoffDuration)
+                SetJumpPhase(verticalVelocity > 0 ? "Airborne" : "Falling");
+            else if (JumpPhase == "Airborne" && verticalVelocity <= 0) SetJumpPhase("Falling");
+        }
+        else if (JumpPhase is "Takeoff" or "Airborne" or "Falling")
+            SetJumpPhase(_speed > 0.055f ? "LandRun" : "LandIdle");
+        else if ((JumpPhase == "LandIdle" && _speed > 0.055f) || (JumpPhase == "LandRun" && _speed < 0.025f))
+            JumpPhase = ""; // Respond immediately if locomotion changes during landing.
+    }
+
+    private void SetJumpPhase(string phase)
+    {
+        JumpPhase = phase; _jumpClock = 0; _jumpNode.Animation = "Jump/" + phase;
+    }
+
+    private void UpdateJumpAnimation(double delta)
+    {
+        if (JumpPhase != "") _jumpClock += delta;
+        double length = Animator.GetAnimation(_jumpNode.Animation).Length;
+        bool landing = JumpPhase.StartsWith("Land", StringComparison.Ordinal);
+        float target = JumpPhase == "" || (landing && _jumpClock >= length - JumpBlendSeconds) ? 0 : 1;
+        _jumpWeight = Mathf.MoveToward(_jumpWeight, target, (float)delta / Mathf.Max(0.01f, JumpBlendSeconds));
+        double sample = JumpPhase == "Takeoff" ? Math.Min(length, _jumpClock / _takeoffDuration * length) :
+            JumpPhase is "Airborne" or "Falling" ? _jumpClock % Math.Max(0.01, length) : Math.Min(_jumpClock, length);
+        if (JumpPhase != "" || _jumpWeight > 0) Tree.Set("parameters/JumpSeek/seek_request", sample);
+        if (landing && _jumpClock >= length) JumpPhase = "";
+    }
+
+    public void ResetJumpPresentation()
+    {
+        JumpPhase = ""; _jumpClock = _ungroundedSeconds = _jumpWeight = 0; _jumpNode.Animation = "Idle";
+        Tree.Set("parameters/JumpLocomotion/blend_amount", 0.0);
+        Tree.Set("parameters/JumpSeek/seek_request", 0.0);
+    }
+    // Ordinary busy gestures are skipped. A sustained higher-priority cast can crossfade in; never queue.
+    public bool TryBeginGesture(object owner, string clip, int priority=0)
+    {
+        if (OverrideActive || !Animator.HasAnimation(clip) ||
+            (GestureOwner!=null && priority<=_gesturePriority) || (GestureOwner==null && _gestureWeight>0.05f && priority<=0)) return false;
+        bool crossfade=GestureOwner!=null || _gestureWeight>0.05f;
+        GestureOwner = owner; _gestureClip = clip;_gesturePriority=priority;
+        if(crossfade)_playback.Travel(ClipState(clip));else _playback.Start(ClipState(clip));
+        foreach(var playback in _layerPlaybacks)
+            if(crossfade)playback.Travel(ClipState(clip));else playback.Start(ClipState(clip));
         return true;
     }
     public void SetGestureClip(object owner, string clip)
@@ -174,9 +255,11 @@ public partial class CharacterPresentation : Node3D
     {
         if (GestureOwner != owner) return;
         GestureOwner = null; FacingTarget = null;
+        _gesturePriority=0;
     }
     public void ResetPresentation()
     {
+        ResetJumpPresentation();
         GestureOwner = null; _reaction = ""; FacingTarget = null; _speed = _movement = _gestureWeight = _reactionWeight = 0;
         Locomotion = State = "Idle"; _playback.Start("Idle");
         foreach(var playback in _layerPlaybacks) playback.Start("Idle");
@@ -186,8 +269,25 @@ public partial class CharacterPresentation : Node3D
     {
         LoadAbilityLibrary("res://Assets/Abilities/casts.glb", "B5");
         LoadAbilityLibrary("res://Assets/B8/casts.glb", "B8");
+        LoadAbilityLibrary("res://Assets/D2/casts.glb", "D2");
     }
-    private void LoadAbilityLibrary(string path, string key)
+    /// <summary>Equipment selects compatible original locomotion clips; the existing blend tree keeps running.</summary>
+    public void SetEquipmentLocomotion(Equipment.LocomotionDefinition? profile)
+    {
+        string idle="Idle",run="Run";
+        if(profile!=null)
+        {
+            if(!Animator.HasAnimationLibrary(profile.LibraryId))LoadAbilityLibrary(profile.Scene,profile.LibraryId,false);
+            idle=profile.LibraryId+"/"+profile.Idle;run=profile.LibraryId+"/"+profile.Run;
+            if(!Animator.HasAnimation(idle) || !Animator.HasAnimation(run))
+                throw new InvalidOperationException("Equipment locomotion clips unavailable: "+profile.LibraryId);
+            Animator.GetAnimation(idle).LoopMode=Animator.GetAnimation(run).LoopMode=Animation.LoopModeEnum.Linear;
+        }
+        if(IdleClip==idle && RunClip==run)return;
+        _idleNode.Animation=idle;_runNode.Animation=run;
+    }
+    public void LoadJumpAnimations() => LoadAbilityLibrary("res://Assets/Jump/jump.glb", "Jump", false);
+    private void LoadAbilityLibrary(string path, string key, bool gestureClips = true)
     {
         var imported = GD.Load<PackedScene>(path).Instantiate<Node3D>();
         var source = imported.FindChildren("*", "AnimationPlayer", true, false).OfType<AnimationPlayer>().Single();
@@ -202,14 +302,16 @@ public partial class CharacterPresentation : Node3D
                 if (Skeleton.FindBone(bone) < 0) { animation.RemoveTrack(i); continue; }
                 animation.TrackSetPath(i, new NodePath(Animator.GetNode(Animator.RootNode).GetPathTo(Skeleton) + ":" + bone));
             }
-            if (name == "StormLoop") animation.LoopMode = Animation.LoopModeEnum.Linear;
+            if (name is "StormLoop" or "Airborne" or "Falling") animation.LoopMode = Animation.LoopModeEnum.Linear;
             library.AddAnimation(name, animation);
         }
-        Animator.AddAnimationLibrary(key, library); imported.Free(); AddGestureClips();
+        Animator.AddAnimationLibrary(key, library); imported.Free();
+        if (gestureClips) AddGestureClips();
     }
     public void PlayReaction(string clip)
     {
         if (_reaction == "Death" || (_reaction == "Hit" && clip == "Hit") || !Animator.HasAnimation(clip)) return;
+        if (clip == "Death") ResetJumpPresentation();
         if (GestureOwner != null) ReleaseGesture(GestureOwner);
         _reaction = clip; _reactionTime = Animator.GetAnimation(clip).Length;
         _reactionNode.Animation = clip; Tree.Set("parameters/ReactionSeek/seek_request", 0.0);

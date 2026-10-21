@@ -32,7 +32,8 @@ public partial class C2Smoke : Node
     {
         var button = Button(root, text);
         if (button.Disabled) throw new InvalidOperationException("Disabled button: " + text);
-        button.EmitSignal(BaseButton.SignalName.Pressed); await Frames();
+        button.EmitSignal(BaseButton.SignalName.Pressed);
+        await ToSignal(GetTree().CreateTimer(.4), SceneTreeTimer.SignalName.Timeout); await Frames();
     }
 
     public override async void _Ready()
@@ -52,7 +53,7 @@ public partial class C2Smoke : Node
                         if (SelectionGameplayAdapter.TryResolve(new SelectionConfiguration {
                             FactionId = cls.FactionId, BaseClassId = cls.Id, AdvancedClassId = advanced.Id,
                             MapId = map.Id }, out _, out _)) supported++;
-            Check("All 16 advanced classes and six maps resolve to exactly one supported combination", supported == 1);
+            Check("All 16 advanced classes resolve to exactly one supported Korriban combination", supported == 1);
             var altered = new SelectionConfiguration(); altered.Appearance.HeadId = "unavailable_head";
             Check("Altered appearance and unknown schema are blocked",
                 !SelectionGameplayAdapter.TryResolve(altered, out _, out _)
@@ -62,16 +63,16 @@ public partial class C2Smoke : Node
             Check("Forged playable flag cannot cross launch boundary",
                 !GameNavigation.TryStart(menu, forged, out _) && GetTree().CurrentScene == menu);
 
-            await Press(menu, "New Run"); await Press(menu, "Allegiance Selected");
-            await Press(menu, "Continue"); await Press(menu, "Sith Inquisitor");
-            await Press(menu, "Continue"); await Press(menu, "Sorcerer");
+            await Press(menu, "New Run"); await Press(menu, "Sith Empire");
+            await Press(menu, "Sith Inquisitor"); await Press(menu, "Continue"); await Press(menu, "Sorcerer");
             Check("Sorcerer selection loads its isolated 3D preview",
                 Descendants(menu).OfType<CharacterPreview>().Count() == 1
                 && Descendants(menu).OfType<Skeleton3D>().Any());
-            await Press(menu, "Continue"); await Press(menu, "Continue");
-            await Press(menu, "Tython"); await Press(menu, "Continue");
-            Check("Unsupported map remains previewable with Play disabled", Button(menu, "Play").Disabled);
-            await Press(menu, "Back"); await Press(menu, "Korriban"); await Press(menu, "Continue");
+            await Press(menu, "Continue");
+            Check("Destination screen offers only Korriban", catalog.Maps.Length == 1
+                && catalog.Maps[0].Id == "korriban"
+                && !Descendants(menu).OfType<Button>().Any(b => b.Text.Contains("Tython")));
+            await Press(menu, "Korriban"); await Press(menu, "Continue");
             var valid = menu.CurrentConfiguration;
             menu.RestoreConfiguration(new SelectionConfiguration { BaseClassId = "sith_warrior", AdvancedClassId = "juggernaut" });
             await Frames();
@@ -118,8 +119,9 @@ public partial class C2Smoke : Node
             Check("Menu restores input, focus and last valid selection", !GetTree().Paused
                 && Input.MouseMode == Input.MouseModeEnum.Visible && Button(menu, "New Run").HasFocus()
                 && menu.CurrentConfiguration.ToJson() == valid.ToJson());
-            await Press(menu, "Character Selection");
-            for (int i = 0; i < 5; i++) await Press(menu, "Continue");
+            await Press(menu, "New Run"); await Press(menu, "Sith Empire");
+            await Press(menu, "Sith Inquisitor"); await Press(menu, "Continue"); await Press(menu, "Sorcerer");
+            await Press(menu, "Continue"); await Press(menu, "Korriban"); await Press(menu, "Continue");
             await Press(menu, "Play");
             await Until(() => GetTree().CurrentScene is GameWorld { Hud: not null, Rewards: not null });
             world = (GameWorld)GetTree().CurrentScene;

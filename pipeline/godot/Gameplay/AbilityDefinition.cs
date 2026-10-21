@@ -1,7 +1,8 @@
 using Godot;
 namespace SwtorSurvivors;
 public enum AbilityTargetRule { NearestHostile, HostileCluster }
-public enum AbilityArea { SingleTarget, GroundSphere }
+public enum AbilityArea { SingleTarget, GroundSphere, Chain, CasterRadial }
+public enum AbilityCategory { Offensive, Utility }
 public enum DamageType { Energy, Kinetic, Internal }
 public enum AbilityEffect { Damage, Shield, Heal }
 /// <summary>Survivors balance; April source facts are separately recorded in manifests.</summary>
@@ -9,6 +10,12 @@ public enum AbilityEffect { Damage, Shield, Heal }
 public partial class AbilityDefinition : Resource
 {
     [Export] public string Id { get; set; } = "lightning";
+    [Export] public AbilityCategory Category { get; set; }
+    [Export] public int BounceCount { get; set; } = 3;
+    [Export] public float BounceRange { get; set; } = 0.55f;
+    [Export] public float BounceFalloff { get; set; } = 0.82f;
+    [Export] public int NearbyTriggerCount { get; set; } = 3;
+    [Export] public float KnockbackDistance { get; set; } = 0.3f;
     [Export] public AbilityEffect Effect { get; set; }
     [Export] public float Healing { get; set; }
     [Export] public float HealingCap { get; set; } = 15;
@@ -23,6 +30,8 @@ public partial class AbilityDefinition : Resource
     // Persistent ground effects validate only on activation, then outlive caster range.
     [Export] public bool PersistentArea { get; set; }
     [Export] public float GestureSeconds { get; set; } = 1.4f;
+    [Export] public bool MaintainChannelGesture {get;set;}
+    [Export] public int GesturePriority {get;set;}
     [Export] public DamageType DamageType { get; set; } = DamageType.Energy;
     [Export] public float Damage { get; set; } = 8;
     [Export] public float CooldownSeconds { get; set; } = 1;

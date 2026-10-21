@@ -1,11 +1,24 @@
 # SWTOR Survivors: Tasks 1–3 conversion proof
 
-The full game now starts at the **C2 main menu and character selection**.
-Use `Open-Survivors.ps1`; see [C2-README.md](C2-README.md) for selection,
-launch instructions, integration boundaries and manual review.
+**D1.1 adds Main Menu → Collections → Appearances.** Sorcerer cosmetics save
+between runs and application restarts. See [D11-README.md](D11-README.md) for
+launch instructions, developer alternate-outfit unlocks, and manual review.
+Normal gameplay no longer exposes the temporary D1 Gear Review controls.
+
+The full game starts at the **B10.1 SWTOR main menu**.
+Use `Open-Survivors.ps1`; see [B10.1-README.md](B10.1-README.md) for the
+refined selection flow, UI provenance, validation and manual review.
+The existing gameplay integration boundary is documented in [C2-README.md](C2-README.md).
 `Open-Gameplay.ps1` still opens gameplay directly.
 
-Current gameplay is **B8 Sorcerer Death Field, Static Barrier and Dark Heal**.
+**B9 adds the original SWTOR cursor and free third-person orbit camera.**
+Hold RMB or drag LMB in the world to orbit; use the wheel to zoom and Space to
+jump. The camera anchors directly to the character with a wide pitch range.
+WASD remains camera-relative and combat remains automatic. See [B9-README.md](B9-README.md)
+for settings, launch and manual review, [B9-PROVENANCE.md](B9-PROVENANCE.md)
+for cursor evidence and limitations, and [B9-RESULTS.md](B9-RESULTS.md) for validation.
+
+Retained B8 gameplay includes **Sorcerer Death Field, Static Barrier and Dark Heal**.
 See [B8-README.md](B8-README.md) for launch, tuning and focused validation, and
 [B8-PROVENANCE.md](B8-PROVENANCE.md) for original resources and approximations.
 The retained B7 boss, leveling, XP pickup and audio presentation remains documented below.

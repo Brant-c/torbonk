@@ -67,8 +67,8 @@ public partial class CombatHud : Control
         _xp=Bar("bwaui_bars_45",new Vector2(118,130),new Vector2(564,12),3,10,true);
 
         AddChild(new CharacterPortrait {Position=new Vector2(11,28),
-            TooltipText="Survivor · Sith Inquisitor\nWASD move · Abilities attack automatically\nR restart · F3 diagnostics · Esc quit"});
-        _targetPortrait=new CharacterPortrait {Position=new Vector2(711,28),Mirrored=true,TooltipText="Current Lightning target"};
+            TooltipText="Survivor · Sith Inquisitor\nWASD move relative to camera · Space jump · Abilities attack automatically\nHold RMB or drag LMB to orbit · Wheel zoom\nR restart · F3 diagnostics · Esc quit"});
+        _targetPortrait=new CharacterPortrait {Position=new Vector2(711,28),Mirrored=true,ShowPlayerOnReady=false,TooltipText="Current Lightning target"};
         AddChild(_targetPortrait);_targetPortrait.FaceVisible=false;
     }
 
@@ -81,7 +81,8 @@ public partial class CombatHud : Control
             var ability=column<unlocked.Length?unlocked[column]:null;
             var slot=new AbilityIcon {IconName=ability?.Definition.Icon??"",SlotSize=46,IconPadding=4,
                 FrameTexture=SwtorSkin.HudArt("player_slot"),Position=new Vector2(118+column*47,77),Size=new Vector2(46,46),
-                TooltipText=ability!=null?ability.Definition.Title+" · automatic":"Empty player quickbar slot"};
+                TooltipText=ability!=null?ability.Definition.Title+" · automatic":"Empty player quickbar slot. Only abilities unlocked this run appear here.\n"+
+                    $"Offensive: {World.Abilities.Equipped(AbilityCategory.Offensive)}/{World.Abilities.Limit(AbilityCategory.Offensive)} · Utility: {World.Abilities.Equipped(AbilityCategory.Utility)}/{World.Abilities.Limit(AbilityCategory.Utility)}. Full categories stop offering new unlocks; owned abilities can still be upgraded."};
             AddChild(slot);_slotNodes.Add(slot);SlotCount++;
             if(ability!=null) _abilitySlots.Add((slot,ability));
         }
@@ -111,6 +112,8 @@ public partial class CombatHud : Control
             slot.UpdateGlobalCooldown(World.Abilities.GlobalCooldownRemaining,World.Abilities.GlobalCooldownDuration);
         foreach(var (slot,ability) in _abilitySlots)
         {
+            var category=ability.Definition.Category;var controller=World.Abilities;
+            string slots=$"{category}: {controller.Equipped(category)}/{controller.Limit(category)} equipped. Passive talents use no ability slots.";
             slot.UpdateCooldown(ability.CooldownRemaining,ability.CooldownDuration,
                 ability.Definition.UsesGlobalCooldown?World.Abilities.GlobalCooldownRemaining:0,
                 World.Abilities.GlobalCooldownDuration,ability.Casting);
@@ -130,12 +133,15 @@ public partial class CombatHud : Control
                     : $"Heals {ability.Healing:0.#} missing HP below {ability.HealthThreshold:P0} of maximum health ({health.Maximum:0.#}).\nLast healing +{ability.LastHealing:0.#} HP. Never revives.";
                 tooltip=$"{ability.Definition.Title} · automatic · {ability.State}\n{effect}\nCooldown {ability.CooldownSeconds:0.0}s · ignores offensive GCD\nWorks while moving. "+(ranks>0?$"{rarity} · {ranks} trained ranks":"Unlocked · no stat upgrades");
             }
+            if(ability.Definition.Id=="chain")tooltip+=$"\n{ability.Definition.BounceCount+ability.ExtraBounces} extra links · bounce range {ability.Definition.BounceRange:0.00} · {ability.Definition.BounceFalloff:P0} damage retained per bounce. Distinct targets only.";
+            if(ability.Definition.Id=="overload")tooltip+=$"\nTriggers with {ability.Definition.NearbyTriggerCount} hostiles within {ability.Radius:0.00}. Pushes up to {ability.Definition.KnockbackDistance:0.00} along safe terrain. Resistant enemies still take damage and delay their next melee swing by at least 0.45s.";
+            tooltip+="\n"+slots;
             if(slot.TooltipText!=tooltip)slot.TooltipText=tooltip;
         }
         var activeTarget=World.Abilities.Active?.CastTarget;
         var target=activeTarget?.Team==CombatTeam.Hostile?activeTarget:World.Targeting.Current;
         bool valid=GodotObject.IsInstanceValid(target)&&target!.Alive;
-        _targetPortrait.FaceVisible=valid;
+        _targetPortrait.SetTarget(valid?target:null);
         _targetHealth.UpdateValue(valid?target!.Health.Current:0,valid?target!.Health.Maximum:1,valid?$"{target!.Health.Current:0} / {target.Health.Maximum:0}":"");
         _targetName.Text=valid?"HOSTILE":"";
         _targetPortrait.TooltipText=valid?target!.SelectionKey:"No hostile target";

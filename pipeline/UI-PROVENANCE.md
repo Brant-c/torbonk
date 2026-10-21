@@ -137,3 +137,25 @@ JavaScript archive/file browser. The research MCP had no verified saved reader
 view for `bwaui_skilltree.gfx` (hash `0xA50A1A1BDCBD319C`); local preserved bytes
 and the bounded parser supplied the deciding evidence. No live/PTS resource
 identity was substituted for the April archives.
+
+## B10.1 side run-status panel
+
+The arena/wave/timer/defeated grouping is now a compact 180×156 upper-left tracker using the same recovered `bwaui_standard_window_1` artwork as the menu. Its NinePatchRect renders at uniform 0.5 scale with native source margins left 128, right 184, top 72, bottom 64. The title sits inside the original cap and three label/value rows sit below it. Narrow windows place it below the existing boss dock if their horizontal bounds overlap. This is a Survivors layout of original menu chrome, not a native SWTOR score widget. Boss phase/warning text now uses the shared pale text color; the existing blue boss name, health frame and bar behavior remain unchanged. No source pixels or gameplay counter logic changed.
+
+PvP scorecard/scoreboard candidates were inspected through exact April resource lookups and bounded data-only GFX parsing. Selected bytes and atlas rectangles are recorded in `manifests/b101-pvp-source.json`. These remain research inputs; no PvP or character-portrait frame is used by the side tracker.
+
+## B10.1 level-up refinement
+
+The original level-up popup subimages 1 (397×105 gold frame), 4 (442×104 flare) and 7 (40×47 level icon) remain unchanged at their native aspect. They are recovered from `bwaui_levelup_popup_window.gfx`; bindings and source rectangles remain in `manifests/b7-research.json` and `b7-visuals.json`. The final composition follows the supplied SWTOR reference: original frame at (62,20), original flare above it at (-104,9), original icon at (98.35,52.85), and left-aligned recovered Eurostile Bold text at 18px/20px in muted cream. The flare/icon placement follows the recovered GFX sprite offsets; text-field sizing/color and the existing SURVIVOR display name are Godot adaptations to the reference, not newly proven native text-field settings. Banner wording is 'SURVIVOR Has Reached:' / 'Level N'.
+
+The selection pane retains standard-window slice 1, skill-tree slices 30/32, original ability icons, original rarity icon frames and recovered regular Eurostile. Its three-card composition is unchanged. Removed explanatory subtext and its Restart action, reserved space for wrapping titles and reduced unused panel height. No new artwork, external fonts or drawn card borders were introduced. Confirmation/pause/choice behavior and source artwork are unchanged.
+# D1.1 Collections reuse
+
+D1.1 reuses the existing converted SWTOR windows, standard buttons/highlights,
+character-creation preview frame, square `bwaui_buttons_381` icon frame, D1 item
+icons, class artwork, Eurostile and tooltip frame. No source archives changed.
+These are Survivors layout/state assignments of original artwork; they do not
+claim the exact native inventory layout. Missing alternate/saber item icons use
+the recovered empty icon frame with explicit names. See
+[D11-README.md](D11-README.md) for exact resources, scope and validation.
+

@@ -1,0 +1,40 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+B9: one shared native cursor loads original gold art and recovered hotspot
+B9: frontend button uses native gold hand with its own hotspot
+B9: menu launches existing composition
+B9: camera starts elevated with B1 framing and auto-centering disabled
+B9: camera has a direct character anchor and no automatic lifting
+B9: Space jumps from the floor
+B9: jumping retains horizontal movement and the ground-footprint guard
+B9: Space in the air does not add a second jump
+B9: jump lands normally without a queued repeat
+B9: world test point is outside interactive HUD
+B9: RMB captures and rotates independently of a stationary character
+B9: pitch reaches below the horizon directly without easing or flips
+B9: pitch clamps below vertical
+B9: downward orbit follows the mouse immediately
+B9: wheel also works while orbit is captured
+B9: RMB release restores native cursor
+B9: LMB click waits for drag threshold
+B9: LMB world drag orbits
+B9: movement preserves orbit yaw and remains camera-relative
+B9: camera focus remains exactly anchored to character
+B9: wheel zoom interpolates toward its target
+B9: minimum zoom clamps
+B9: maximum zoom clamps
+B9: tooltip icon is recognized as UI
+B9: HUD tooltip blocks both drag starts and wheel zoom
+B9: releasing an orbit leaves no capture owner
+B9: upgrade pause immediately releases capture and disables orbit
+B9: paused upgrade presentation cannot queue a jump
+B9: upgrade cards cannot orbit or zoom
+B9: real upgrade choice applies
+B9: disabled upgrade card uses native unavailable hand and hotspot
+B9: choice restores camera controls with cursor visible
+B9: focus loss releases capture
+B9: death releases capture and disables orbit
+B9: restart restores controls without capture
+B9: capture works again before transition
+B9: gameplay to frontend restores original cursor without duplicate controller

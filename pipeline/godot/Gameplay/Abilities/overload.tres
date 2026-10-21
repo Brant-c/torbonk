@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "overload"
+Title = "Overload"
+Icon = "overload"
+StartsUnlocked = false
+Category = 1
+Damage = 14
+CooldownSeconds = 16
+Range = 0.32
+Radius = 0.32
+Area = 3
+NearbyTriggerCount = 3
+KnockbackDistance = 0.3
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+WindupSeconds = 0.15
+ChannelSeconds = 0
+TickSeconds = 1
+RecoverySeconds = 0.4
+GestureSeconds = 0.55
+StartClip = "D2/Overload"
+SourceFx = "si_overload_casterimpacts"
+CastAudioEvent = "Play_ability_sithinquisitor_overload_quickcharge"
+ImpactAudioEvent = "Play_ability_sithinquisitor_overload_usplode"

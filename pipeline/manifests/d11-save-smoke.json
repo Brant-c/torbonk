@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": [
+    "Main menu contains New Run, Collections, Settings, Exit",
+    "Enabled: Collections",
+    "Collections opens from menu with shared assembly",
+    "16 distinct profiles for 8 base classes",
+    "Head disabled without converted content",
+    "Starter equipped by default",
+    "Alternate locked",
+    "Enabled: DEV \u00B7 Unlock SS A04",
+    "Enabled: Sorcerer SS A04 \u00B7 Unlocked",
+    "Immediate chest preview",
+    "Enabled: Reset Slot",
+    "Per-slot reset",
+    "Enabled: Sorcerer SS A04 \u00B7 Unlocked",
+    "Enabled: Reset Outfit",
+    "Full reset retains unlock",
+    "Enabled: Sorcerer SS A04 \u00B7 Unlocked",
+    "Enabled: Feet",
+    "Enabled: Sorcerer SS A04 \u00B7 Unlocked",
+    "Enabled: Sith Warrior",
+    "Other class uses artwork and unavailable state",
+    "Enabled: Sith Inquisitor",
+    "Sorcerer profile survives class switching",
+    "Preview zoom responds",
+    "Preview rotation responds"
+  ],
+  "failure": null
+}

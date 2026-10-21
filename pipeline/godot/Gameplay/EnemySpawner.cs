@@ -23,6 +23,7 @@ public partial class EnemySpawner : Node3D
     public int Spawned { get; private set; }
     public event Action<Vector3>? EnemyDefeated;
     public event Action<Vector3, int>? EnemyReward;
+    public event Action<EnemyAgent>? EnemyKilled;
     public string LastPlacement { get; private set; } = "Waiting to spawn";
     public IReadOnlyList<EnemyAgent> Enemies => _enemies;
     public int ActiveCount => _enemies.Count(e => GodotObject.IsInstanceValid(e) && e.Alive);
@@ -35,11 +36,12 @@ public partial class EnemySpawner : Node3D
 
     public override void _Ready() => _random.Randomize();
 
-    public bool TrySpawn(PackedScene? scene = null, bool ignoreLimit = false)
+    public bool TrySpawn(PackedScene? scene = null, bool ignoreLimit = false, bool elite = false)
     {
         if (!Running || !Player.Alive || (!ignoreLimit && ActiveCount >= ActiveLimit)) return false;
         var body = (scene ?? EnemyScene).Instantiate<CharacterBody3D>();
         var enemy = body.GetNode<EnemyAgent>("Actor");
+        if(elite) { enemy.RewardTier=1;enemy.KnockbackResistance=0.65f;enemy.DisplayName="Elite "+enemy.DisplayName;enemy.GetNode<Health>("Health").Maximum*=2;enemy.ExperienceReward*=2; }
         string key = $"{enemy.CollisionRadius}/{enemy.CollisionHeight}";
         if (!_navigationProfiles.TryGetValue(key, out var navigation))
         {
@@ -67,6 +69,7 @@ public partial class EnemySpawner : Node3D
                 Defeated++; _corpses[enemy] = Math.Max(0.5f, CorpseSeconds);
                 EnemyDefeated?.Invoke(enemy.GlobalPosition);
                 EnemyReward?.Invoke(enemy.GlobalPosition, enemy.ExperienceReward);
+                EnemyKilled?.Invoke(enemy);
             };
             enemy.TreeExiting += () => { _enemies.Remove(enemy); _corpses.Remove(enemy); };
             LastPlacement = "Spawning normally";

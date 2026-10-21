@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\SWTORClassic\torbonk\pipeline\scripts\convert_d1_icons.py", line 9, in <module>
+    image.filepath_raw=str(ROOT/'godot/Assets/Equipment'/(slot+'.png'));image.file_format='PNG';image.save()
+                                                                                                ~~~~~~~~~~^^
+RuntimeError: Error: Image 'ipp.class.inq.starting.cdps1.t1x1.chest.dds' does not have any image data
+
+
+Error: script failed, file: 'pipeline\scripts\convert_d1_icons.py', exiting.
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="SwtorCursorTheme" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://Integration/SwtorCursorTheme.cs" id="1"]
+[ext_resource type="Texture2D" path="res://Assets/UI/Cursor/gold_default.png" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/UI/Cursor/gold_hover.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/UI/Cursor/gold_disabled.png" id="4"]
+
+[resource]
+script = ExtResource("1")
+Normal = ExtResource("2")
+Hover = ExtResource("3")
+Disabled = ExtResource("4")
+Hotspot = Vector2(8, 3)
+HoverHotspot = Vector2(13, 1)
+DisabledHotspot = Vector2(13, 2)

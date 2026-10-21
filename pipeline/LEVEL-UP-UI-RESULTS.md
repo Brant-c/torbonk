@@ -1,5 +1,7 @@
 # Level-up text and cosmetic rarity
 
+Historical report. The current B10.1 refinement keeps the three SWTOR-art cards, removes pane subtext/Restart, aligns wrapped titles and restores the earlier banner palette/font. See [B10.1-README.md](B10.1-README.md#level-up-refinement-follow-up) for current presentation and focused validation. Later progression tuning supersedes this report’s older cosmetic-rarity notes.
+
 Replaced the oversized bold gold header with a smaller cyan `CHOOSE A POWER`
 title and a separate level/pause subtitle. Card names use regular Eurostile;
 descriptions show short benefits with consistent alignment. The offered rank

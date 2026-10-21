@@ -1,5 +1,9 @@
 # SWTOR Survivors — C2 integration
 
+**Historical integration report.** B10.1 supersedes the menu/navigation details below:
+Character Selection and repetitive Continue buttons have been removed. For current
+launch instructions and UI behavior, see [B10.1-README.md](B10.1-README.md).
+
 C2 connects the C1 selection module to the current B7 survival game in the
 same Godot project and process. Stop here for manual review.
 
@@ -40,7 +44,8 @@ New Run intentionally starts fresh. No disk save is added.
 - `Integration/MainMenu.cs` hosts the reusable `FrontendFlow`; the flow exposes
   compatibility and Play callbacks. The Ready screen and its Play action both
   validate. Faction, class, preview, appearance and galaxy presentation are
-  otherwise retained. Stale integration-pending labels now describe availability.
+  otherwise retained. Later manual-review changes remove availability badges
+  from the menu and simplify destination selection to Korriban only.
 - `SelectionGameplayAdapter` explicitly maps schema 1 frontend identifiers to
   the existing GameWorld, Korriban environment and Sorcerer model. It checks
   faction, base class, advanced class, map, preset and every appearance field.
@@ -98,6 +103,12 @@ Frontend import passed with no Godot errors. One rendered runtime session passed
 all **20 integration checks**, also without Godot errors. See
 [C2-RESULTS.md](C2-RESULTS.md) for the delivery receipt.
 
+That receipt describes the initial C2 run, before the later menu revisions.
+The Korriban-only revision compiles successfully (zero errors; the existing
+package-audit and gameplay nullability warnings remain). Its smoke navigation
+was updated for the single destination but has not been rerun; no gameplay
+runtime or screenshot suite was launched for this revision.
+
 `Run-C2-Smoke.ps1` builds the existing project, imports local frontend resources
 and runs a single bounded rendered integration session. Its receipt is
 `manifests/c2-smoke.json`, with `logs/c2-runtime.log` and `logs/c2-import.log`.
@@ -106,10 +117,14 @@ scene changes, preview release, restart, paused progression teardown, live boss
 cleanup, fresh re-entry and the game-over return button. It is not a historical
 asset regression, comprehensive combat suite or performance benchmark.
 
-C1's eight base classes, sixteen advanced classes and six planets remain
-browseable. Other classes use their original artwork; only Sorcerer has a 3D
-preview. All appearance editing remains disabled. Other class/map/appearance
-combinations cannot start gameplay. Galaxy positions remain schematic. Settings
+C1's eight base classes and sixteen advanced classes remain browseable.
+Destination selection now offers only Korriban, using a single original
+illustration and selection button rather than a galaxy chart or projected
+planet markers. Future planet assets remain stored for later use. Availability
+badges have been removed from the menu; launch validation still restricts runs
+to the existing Sorcerer/Korriban composition. Other classes use their original
+artwork; only Sorcerer has a 3D preview. All appearance editing remains disabled.
+Settings
 only mute menu interface cues for the current menu instance. Broader settings,
 class narration, persistence and additional gameplay content remain outside C2.
 

@@ -1,0 +1,53 @@
+{
+  "updated": [
+    {
+      "path": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Frontend\\Scripts\\FrontendFlow.cs",
+      "beforeSha256": "7f172c7a2c85edacad343154a18a0b2342193617e0ffb4d2ec65567a543561fa",
+      "afterSha256": "3bda5ddbf0cba0e1580da88a98da44a8615afba172de74aee25844076f00e2a0",
+      "backup": "D:\\SWTORClassic\\torbonk\\character-selection\\work\\integration-review\\before\\Scripts\\FrontendFlow.cs"
+    },
+    {
+      "path": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Frontend\\Scripts\\FrontendSkin.cs",
+      "beforeSha256": "de87db35cffd31447d285e08f7ee3f67e7496369e049fd606b0b8e9b65569a79",
+      "afterSha256": "52f1155a0a95be87351b8466b4fb8cd26582b85d1c40f2fc70621948588b23a8",
+      "backup": "D:\\SWTORClassic\\torbonk\\character-selection\\work\\integration-review\\before\\Scripts\\FrontendSkin.cs"
+    },
+    {
+      "path": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Frontend\\Scripts\\GalaxyChart.cs",
+      "beforeSha256": "6ead1ce7a20f39362058f549b8ffef21bd27adf0be4bf316c0c6ab81638ab99d",
+      "afterSha256": "f7895287366559173a7a30961464f3fdfb823c076bc71c116a5b451aeb315906",
+      "backup": "D:\\SWTORClassic\\torbonk\\character-selection\\work\\integration-review\\before\\Scripts\\GalaxyChart.cs"
+    },
+    {
+      "path": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Frontend\\Data\\catalog.json",
+      "beforeSha256": "a62b934250f99c736261f6b87990824ced5ef1c8e14cd8858dd347df0aefb71c",
+      "afterSha256": "ff1df27ec7b83e1655284664b7366d201cb89e9b661b3214e010119a1cc2b1af",
+      "backup": "D:\\SWTORClassic\\torbonk\\character-selection\\work\\integration-review\\before\\Data\\catalog.json"
+    }
+  ],
+  "protectedIntegrationFiles": {
+    "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\project.godot": "5f8b6aa6e843f14a94a12aba6b1c6e769ee36458b895db13f8d7c58e06605caf",
+    "D:\\SWTORClassic\\torbonk\\pipeline\\Open-Survivors.ps1": "c9ba5b18427e2425d07d25e2780fe60bd1a5f731aabd4a66d322d45640c80381",
+    "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Frontend\\Scenes\\MainMenu.tscn": "036687ba10480be219c556761fc8a7513801d8b762fdbd25ee603d2b17efb8f6",
+    "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Frontend\\Scripts\\SelectionConfiguration.cs": "273af7e83143269fc2c0b37e6551ff50392d387205f88e43b276ddda8cd5c710",
+    "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Integration\\C2Smoke.cs": "849904d9f8f8dc80c6f5c6ebd8e1a6f090776951f479264303b8e8dbda3243b0",
+    "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Integration\\GameNavigation.cs": "6e34e855fe9708349f1d04f8904a059e1c14f77c7996c645ec0e5ca70e317ca0",
+    "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Integration\\MainMenu.cs": "b818ca4dedb34507d2a4ab103d28b29a55f71df94ec6d23fed97a1cd0974e2db",
+    "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Integration\\SelectionGameplayAdapter.cs": "da44bcbeac391c06d2bcea5adc5eb9aee9b9c0eddeb62f31ae452e7f3cdf9cc7"
+  },
+  "protectedFilesUnchanged": true,
+  "runtimeLaunched": false,
+  "validation": {
+    "integratedBuild": "passed",
+    "errors": 0,
+    "warnings": [
+      "NU1900: package vulnerability service unavailable",
+      "CS8600: existing Gameplay/StormAreaIndicator.cs nullability warning"
+    ],
+    "checkedRuntimeResourcePaths": 54,
+    "visualComponentsMatchReviewedC1": true,
+    "destinationGroupOverlaps": 0,
+    "integrationFilesStillUnchanged": true,
+    "integratedRuntimeLaunched": false
+  }
+}

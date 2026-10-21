@@ -1,4 +1,4 @@
-"""Additive B5 animation GLB from original JBA on the established Blender rig."""
+"""Separate animation libraries from original JBA on the established Blender rig."""
 import bpy, sys, json, hashlib, tempfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -14,7 +14,8 @@ bpy.ops.object.select_all(action='DESELECT');rig.select_set(True);bpy.context.vi
 class Reporter:
     def report(self,kind,message): print(kind,message)
 b8='--b8' in sys.argv
-profile='b8' if b8 else 'abilities'
+jump='--jump' in sys.argv
+profile='d2' if '--d2' in sys.argv else 'b9-jump' if jump else 'b8' if b8 else 'abilities'
 clips=json.loads((ROOT/f'manifests/{profile}-conversion.json').read_text())['clips']
 records=[]
 for name,stem in clips.items():
@@ -41,10 +42,10 @@ bpy.ops.object.select_all(action='DESELECT');rig.select_set(True)
 next(o for o in bpy.data.objects if o.type=='MESH' and any(m.type=='ARMATURE' and m.object==rig for m in o.modifiers)).select_set(True)
 bpy.context.view_layer.objects.active=rig
 # Preserve the established skeleton/node hierarchy. No mesh or animation in sorcerer.glb is changed.
-output=ROOT/('godot/Assets/B8/casts.glb' if b8 else 'godot/Assets/Abilities/casts.glb')
+output=ROOT/('godot/Assets/D2/casts.glb' if profile=='d2' else 'godot/Assets/Jump/jump.glb' if jump else 'godot/Assets/B8/casts.glb' if b8 else 'godot/Assets/Abilities/casts.glb')
 bpy.ops.export_scene.gltf(filepath=str(output),export_format='GLB',use_selection=True,export_yup=True,
     export_animations=True,export_animation_mode='ACTIONS',export_force_sampling=True,export_anim_slide_to_zero=True,
     export_frame_range=False,export_frame_step=1,export_skins=True,export_def_bones=False,export_leaf_bone=False,export_extras=True)
 (ROOT/f'manifests/{profile}-animation-conversion.json').write_text(json.dumps(dict(clips=records,output=str(output.relative_to(ROOT)),sha256=hashlib.sha256(output.read_bytes()).hexdigest(),
     policy='Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB'),indent=2))
-print('B5 animation conversion complete')
+print(profile+' animation conversion complete')

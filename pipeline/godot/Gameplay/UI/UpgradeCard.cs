@@ -29,7 +29,7 @@ public partial class UpgradeCard : SwtorButton
             Modulate = _selected ? Colors.White.Lerp(_rarityColor, 0.22f) * flash : new Color(0.4f,0.4f,0.4f);
         }
     }
-    public UpgradeCard(UpgradeDefinition definition,int rank,int number)
+    public UpgradeCard(UpgradeDefinition definition,int rank,int number,string itemType="")
     {
         CustomMinimumSize=new Vector2(228,320);
         SizeFlagsHorizontal=SizeFlags.ExpandFill;
@@ -42,31 +42,31 @@ public partial class UpgradeCard : SwtorButton
         _rarityColor = rarityColor;
         bool unlock=definition.Effect==UpgradeEffect.UnlockAbility;
         TooltipText=definition.Title+" · "+definition.Rarity+"\n"+definition.Description+
-            (unlock?"":$"\nBonuses last for this run. Rarity strength ×{definition.RarityRules?.Multiplier(definition.Rarity)??1:0.##}.");
+            (unlock?"":definition.Effect==UpgradeEffect.Mechanic?"\nFixed mechanical effect; rarity identifies its tier.":$"\nBonuses last for this run. Rarity strength ×{definition.RarityRules?.Multiplier(definition.Rarity)??1:0.##}.");
         AddThemeStyleboxOverride("normal",SwtorSkin.Box("bwaui_skilltree_30",24,24,24,24));
         AddThemeStyleboxOverride("hover",SwtorSkin.Box("bwaui_skilltree_32",24,24,24,24));
         AddThemeStyleboxOverride("pressed",SwtorSkin.Box("bwaui_skilltree_32",24,24,24,24));
         AddThemeStyleboxOverride("disabled",SwtorSkin.Box("bwaui_skilltree_30",24,24,24,24));
-        AddThemeStyleboxOverride("focus",new StyleBoxFlat {BgColor=Colors.Transparent,BorderColor=SwtorSkin.Blue,
-            BorderWidthLeft=1,BorderWidthRight=1,BorderWidthTop=1,BorderWidthBottom=1,
-            CornerRadiusTopLeft=3,CornerRadiusTopRight=3,CornerRadiusBottomLeft=3,CornerRadiusBottomRight=3});
+        var focus=SwtorSkin.Box("bwaui_skilltree_32",24,24,24,24); focus.DrawCenter=false;
+        AddThemeStyleboxOverride("focus",focus);
         var content=new VBoxContainer { MouseFilter=MouseFilterEnum.Ignore };
         content.AddThemeConstantOverride("separation",8);
         AddChild(content); content.SetAnchorsAndOffsetsPreset(LayoutPreset.FullRect);
         content.OffsetLeft=18;content.OffsetTop=20;content.OffsetRight=-18;content.OffsetBottom=-20;
-        var title=SwtorSkin.Text(definition.Title,18);title.HorizontalAlignment=HorizontalAlignment.Center;
+        var title=SwtorSkin.Text(definition.Title,17);title.HorizontalAlignment=HorizontalAlignment.Center;
+        title.CustomMinimumSize=new Vector2(0,42);title.VerticalAlignment=VerticalAlignment.Center;
         title.AddThemeColorOverride("font_color",rarityColor);
         title.AutowrapMode=TextServer.AutowrapMode.WordSmart;content.AddChild(title);
         var center=new CenterContainer {MouseFilter=MouseFilterEnum.Ignore}; content.AddChild(center);
         var icon=new AbilityIcon { IconName=definition.Icon,SlotSize=56,IconPadding=4,
             FrameTexture=SwtorSkin.HudArt(rarityFrame),MouseFilter=MouseFilterEnum.Ignore };center.AddChild(icon);
-        var rankLabel=SwtorSkin.Text($"{definition.Rarity.ToString().ToUpperInvariant()}  ·  "+(unlock?"NEW ABILITY":$"RANK {rank+1}"),12);
+        var rankLabel=SwtorSkin.Text($"{definition.Rarity.ToString().ToUpperInvariant()}  ·  "+(itemType!=""?itemType:unlock?"NEW ABILITY":definition.Effect==UpgradeEffect.Mechanic?$"PASSIVE RANK {rank+1}":$"RANK {rank+1}"),12);
         rankLabel.AddThemeColorOverride("font_color",rarityColor);
         rankLabel.HorizontalAlignment=HorizontalAlignment.Center;content.AddChild(rankLabel);
         var description=SwtorSkin.Text(Summary(definition),15);description.AutowrapMode=TextServer.AutowrapMode.WordSmart;
         description.HorizontalAlignment=HorizontalAlignment.Center;description.VerticalAlignment=VerticalAlignment.Center;
         description.SizeFlagsVertical=SizeFlags.ExpandFill;content.AddChild(description);
-        _select=SwtorSkin.Text($"{(unlock?"UNLOCK":"TRAIN")}  [{number}]",14);_select.AddThemeColorOverride("font_color",SwtorSkin.Gold);
+        _select=SwtorSkin.Text($"{(itemType!=""?"SELECT":unlock?"UNLOCK":"TRAIN")}  [{number}]",14);_select.AddThemeColorOverride("font_color",SwtorSkin.Blue);
         _select.HorizontalAlignment=HorizontalAlignment.Center;content.AddChild(_select);
     }
 

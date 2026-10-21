@@ -1,0 +1,19 @@
+{
+  "clips": [
+    {
+      "name": "Chain",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\fp_2h_elect_instant_right_1.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Overload",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\fp_force_slam_1.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    }
+  ],
+  "output": "godot\\Assets\\D2\\casts.glb",
+  "sha256": "5308cb1e4cd6d4c74203dfd5895d326c769d9859f751d3f056f034cdf75d59be",
+  "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
+}

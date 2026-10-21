@@ -1,0 +1,29 @@
+{
+  "source": "/resources/art/defaultassets/cursor.dds",
+  "output": "godot/Assets/UI/Cursor/default.png",
+  "sha256": "f7d72c009f278bfebdc3bea746a334982b1537c5605226fcff2c14576a1007d4",
+  "dimensions": [
+    32,
+    32
+  ],
+  "alphaBounds": [
+    5,
+    6,
+    26,
+    27
+  ],
+  "conversion": "DDS to RGBA PNG; no crop, recolor or scaling",
+  "hotspot": [
+    5,
+    5
+  ],
+  "hotspotEvidence": "Adapted to visible arrow tip; original hotspot not recovered",
+  "missingVariants": [
+    "hover/interactable",
+    "pressed",
+    "disabled",
+    "other contextual/animated cursors"
+  ],
+  "fallback": "Not used by the current cursor theme.",
+  "status": "Retired engine-default candidate; NOT the active SWTOR gold cursor. See b9-native-cursor.json."
+}

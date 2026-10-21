@@ -19,10 +19,12 @@ public partial class Health : Node
     public event Action<float>? Damaged;
     public event Action<HealthChange>? Resolved;
     public event Action? Died;
+    public double VulnerabilitySeconds {get;set;}
 
     public override void _Ready() => Restore();
     public override void _PhysicsProcess(double delta)
     {
+        VulnerabilitySeconds=Math.Max(0,VulnerabilitySeconds-delta);
         if (!Shielded) return;
         ShieldSeconds = Math.Max(0, ShieldSeconds - delta);
         if (ShieldSeconds <= 0) ClearShield();
@@ -64,6 +66,7 @@ public partial class Health : Node
 
     public void Restore()
     {
+        VulnerabilitySeconds=0;
         ClearShield();
         Current = Math.Max(1, float.IsFinite(Maximum) ? Maximum : 100);
         DamageEvents = 0;

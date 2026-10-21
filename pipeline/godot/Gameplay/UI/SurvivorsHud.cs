@@ -11,7 +11,7 @@ public partial class SurvivorsHud : CanvasLayer
     [Export] public string ArenaName { get; set; }="Korriban";
     private Control _root=null!;
     private CombatHud _combatHud=null!;
-    private Label _wave=null!, _elapsed=null!, _defeated=null!, _ranks=null!, _deathText=null!;
+    private Label _wave=null!, _elapsed=null!, _defeated=null!, _deathText=null!;
     private Control _statusRoot=null!;
     private PanelContainer _deathFrame=null!;
     public int ActionSlotCount => _combatHud.SlotCount;
@@ -20,7 +20,7 @@ public partial class SurvivorsHud : CanvasLayer
     private Control _selectionLayout=null!;
     private int _offerLevel = -1;
     private HBoxContainer _choices=null!;
-    private Label _chooseTitle=null!, _chooseHint=null!;
+    private Label _chooseTitle=null!;
     public int VisibleChoiceCount => _choices.GetChildCount();
     public bool SelectionVisible => _modal.Visible;
 
@@ -62,23 +62,28 @@ public partial class SurvivorsHud : CanvasLayer
 
     private void BuildStatus()
     {
-        // Area heading and separate counters float over the world; no stretched quickbar frame.
-        _statusRoot=new Control {Size=new Vector2(380,64),MouseFilter=Control.MouseFilterEnum.Ignore};
+        // Compact menu-style tracker. Scale the source chrome uniformly before
+        // nine-slicing so its cap and bevels fit without flattening the artwork.
+        _statusRoot=new Control {Name="RunStatusPanel",Size=new Vector2(180,156),MouseFilter=Control.MouseFilterEnum.Ignore};
         _root.AddChild(_statusRoot);
-        Label Counter(string text,int font,Vector2 at,Vector2 size)
+        _statusRoot.AddChild(new NinePatchRect {Name="RunStatusFrame",Texture=SwtorSkin.Slice("bwaui_standard_window_1"),
+            Size=_statusRoot.Size*2,Scale=Vector2.One*.5f,
+            PatchMarginLeft=128,PatchMarginRight=184,PatchMarginTop=72,PatchMarginBottom=64,
+            MouseFilter=Control.MouseFilterEnum.Ignore});
+        Label Counter(string text,int font,Vector2 at,Vector2 size,HorizontalAlignment alignment=HorizontalAlignment.Left)
         {
             var label=SwtorSkin.Text(text,font);label.Position=at;label.Size=size;
-            label.HorizontalAlignment=HorizontalAlignment.Center;label.VerticalAlignment=VerticalAlignment.Center;
+            label.HorizontalAlignment=alignment;label.VerticalAlignment=VerticalAlignment.Center;
             _statusRoot.AddChild(label);return label;
         }
-        var arena=Counter(ArenaName.ToUpperInvariant(),20,Vector2.Zero,new Vector2(380,25));
+        var arena=Counter(ArenaName.ToUpperInvariant(),14,new Vector2(15,11),new Vector2(150,20));
         arena.AddThemeColorOverride("font_color",SwtorSkin.Blue);
-        _statusRoot.AddChild(new TextureRect {Texture=SwtorSkin.Slice("bwaui_bars_183"),
-            ExpandMode=TextureRect.ExpandModeEnum.IgnoreSize,Position=new Vector2(52,28),Size=new Vector2(276,1),
-            MouseFilter=Control.MouseFilterEnum.Ignore});
-        _wave=Counter("",14,new Vector2(8,34),new Vector2(112,22));
-        _elapsed=Counter("",15,new Vector2(128,34),new Vector2(100,22));
-        _defeated=Counter("",14,new Vector2(236,34),new Vector2(140,22));
+        Counter("Wave",14,new Vector2(16,44),new Vector2(76,22));
+        Counter("Time",14,new Vector2(16,70),new Vector2(76,22));
+        Counter("Defeated",14,new Vector2(16,96),new Vector2(76,22));
+        _wave=Counter("",17,new Vector2(92,44),new Vector2(72,22),HorizontalAlignment.Right);
+        _elapsed=Counter("",16,new Vector2(92,70),new Vector2(72,22),HorizontalAlignment.Right);
+        _defeated=Counter("",17,new Vector2(92,96),new Vector2(72,22),HorizontalAlignment.Right);
     }
 
     private void LayoutDock()
@@ -86,10 +91,14 @@ public partial class SurvivorsHud : CanvasLayer
         float scale=Mathf.Max(0.1f,Mathf.Min(1.12f,Mathf.Min((_root.Size.X-32)/CombatHud.DesignWidth,_root.Size.Y/900)));
         _combatHud.Scale=Vector2.One*scale;
         _combatHud.Position=new Vector2((_root.Size.X-CombatHud.DesignWidth*scale)/2,_root.Size.Y-CombatHud.DesignHeight*scale-6);
-        float statusScale=Mathf.Clamp((_root.Size.X-256)/380,0.5f,1);
+        float statusScale=Mathf.Clamp(Mathf.Min(_root.Size.X/800,_root.Size.Y/600),0.6f,1);
         _statusRoot.Scale=Vector2.One*statusScale;
-        _statusRoot.Position=new Vector2((_root.Size.X-380*statusScale)/2,14);
-        float choiceScale = Mathf.Min(1, Mathf.Min((_root.Size.X-24)/836, (_root.Size.Y-32)/540));
+        // Match the existing boss dock's bounds; on narrow windows put the tracker below it.
+        float bossScale=Mathf.Max(.35f,Mathf.Min(1.25f,Mathf.Min((_root.Size.X-24)/600,_root.Size.Y/800)));
+        float bossLeft=(_root.Size.X-600*bossScale)/2;
+        float statusTop=16+_statusRoot.Size.X*statusScale+8>bossLeft ? 170*bossScale+12 : 16;
+        _statusRoot.Position=new Vector2(16,statusTop);
+        float choiceScale = Mathf.Min(1, Mathf.Min((_root.Size.X-24)/(_selectionLayout.Size.X+24), (_root.Size.Y-32)/(_selectionLayout.Size.Y+40)));
         _selectionLayout.Scale = Vector2.One * Mathf.Max(0.3f, choiceScale);
         _selectionLayout.Position = (_root.Size - _selectionLayout.Size * _selectionLayout.Scale) / 2;
     }
@@ -100,25 +109,17 @@ public partial class SurvivorsHud : CanvasLayer
         _modal.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.FullRect);
         var shade=new ColorRect {Color=new Color(0,0.015f,0.035f,0.65f),MouseFilter=Control.MouseFilterEnum.Stop};
         _modal.AddChild(shade);shade.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.FullRect);
-        _selectionLayout=new Control {Size=new Vector2(812,500), MouseFilter=Control.MouseFilterEnum.Ignore};_modal.AddChild(_selectionLayout);
-        var frame=new SwtorPanel {CustomMinimumSize=new Vector2(812,500)};_selectionLayout.AddChild(frame);
+        _selectionLayout=new Control {Size=new Vector2(812,460), MouseFilter=Control.MouseFilterEnum.Ignore};_modal.AddChild(_selectionLayout);
+        var frame=new SwtorPanel {CustomMinimumSize=_selectionLayout.Size};_selectionLayout.AddChild(frame);
         frame.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.FullRect);
-        var selectionBox=SwtorSkin.Box("bwaui_standard_window_1",12,14,12,12);
+        var selectionBox=SwtorSkin.Box("bwaui_standard_window_1",128,72,184,64);
         selectionBox.ContentMarginLeft=24;selectionBox.ContentMarginRight=24;
-        selectionBox.ContentMarginTop=24;selectionBox.ContentMarginBottom=20;
+        selectionBox.ContentMarginTop=24;selectionBox.ContentMarginBottom=64;
         frame.AddThemeStyleboxOverride("panel",selectionBox);
-        var body=new VBoxContainer();frame.AddChild(body);
-        _chooseTitle=SwtorSkin.Text("CHOOSE A POWER",22);_chooseTitle.AddThemeColorOverride("font_color",SwtorSkin.Blue);
+        var body=new VBoxContainer();body.AddThemeConstantOverride("separation",20);frame.AddChild(body);
+        _chooseTitle=SwtorSkin.Text("CHOOSE A POWER",20);_chooseTitle.AddThemeColorOverride("font_color",SwtorSkin.Blue);
         _chooseTitle.HorizontalAlignment=HorizontalAlignment.Center;body.AddChild(_chooseTitle);
-        _chooseHint=SwtorSkin.Text("",14);_chooseHint.HorizontalAlignment=HorizontalAlignment.Center;body.AddChild(_chooseHint);
-        _choices=new HBoxContainer {SizeFlagsVertical=Control.SizeFlags.ExpandFill};body.AddChild(_choices);
-        _ranks=SwtorSkin.Text("",13);_ranks.AutowrapMode=TextServer.AutowrapMode.WordSmart;
-        _ranks.AddThemeColorOverride("font_color",new Color("a5bac7"));body.AddChild(_ranks);
-        var footer=new HBoxContainer();body.AddChild(footer);
-        var instructions=SwtorSkin.Text("Click a power or press 1 / 2 / 3.",14);
-        instructions.VerticalAlignment=VerticalAlignment.Center;instructions.SizeFlagsHorizontal=Control.SizeFlags.ExpandFill;footer.AddChild(instructions);
-        var reset=new SwtorButton {Text="RESTART [R]",CustomMinimumSize=new Vector2(112,30)};
-        reset.AddThemeFontSizeOverride("font_size",13);footer.AddChild(reset);reset.Pressed+=World.ResetCombatWorld;
+        _choices=new HBoxContainer {SizeFlagsVertical=Control.SizeFlags.Fill};body.AddChild(_choices);
     }
 
     private void RefreshChoices()
@@ -130,8 +131,6 @@ public partial class SurvivorsHud : CanvasLayer
         {
             bool confirming = progression.PresentationPhase == ProgressionPresentationPhase.Confirming;
             _chooseTitle.Text = confirming ? "POWER APPLIED" : "CHOOSE A POWER";
-            _chooseHint.Text = confirming ? progression.Offers[progression.SelectedOfferIndex].Title.ToUpperInvariant() + "  ·  " + progression.Offers[progression.SelectedOfferIndex].Rarity.ToString().ToUpperInvariant()
-                : $"LEVEL {progression.Level}  ·  COMBAT PAUSED";
             for (int i=0; i<_choices.GetChildCount(); i++)
             {
                 var card = _choices.GetChild<UpgradeCard>(i); card.Disabled = !progression.CanChoose;
@@ -144,7 +143,6 @@ public partial class SurvivorsHud : CanvasLayer
         foreach (var child in _choices.GetChildren()) { _choices.RemoveChild(child); child.QueueFree(); }
         if (!progression.Selecting) { _offerLevel = -1; return; }
         _offerLevel = progression.Level; _chooseTitle.Text = "CHOOSE A POWER";
-        _chooseHint.Text=$"LEVEL {progression.Level}  ·  COMBAT PAUSED";
         for (int i=0;i<progression.Offers.Count;i++)
         {
             int index=i;var definition=progression.Offers[i];
@@ -152,9 +150,6 @@ public partial class SurvivorsHud : CanvasLayer
             card.Disabled = !progression.CanChoose;
             card.Pressed+=()=>progression.Choose(index);_choices.AddChild(card);
         }
-        _ranks.Text="TRAINED  ·  "+string.Join("   /   ",progression.Upgrades.Where(u=>progression.Rank(u)>0)
-            .Select(u=>u.Effect==UpgradeEffect.UnlockAbility?$"{u.Title} unlocked":$"{u.Title} {progression.Rank(u)}"));
-        if (progression.Ranks.Count==0) _ranks.Text="Power bonuses last for this run.";
         if (progression.CanChoose) _choices.GetChild<Control>(0).GrabFocus();
     }
 
@@ -162,9 +157,9 @@ public partial class SurvivorsHud : CanvasLayer
     {
         _combatHud.UpdateHud();
         var time=TimeSpan.FromSeconds(World.Progression!.ElapsedSeconds);
-        _wave.Text=$"WAVE {World.Waves!.Wave}";
+        _wave.Text=$"{World.Waves!.Wave}";
         _elapsed.Text=$"{(int)time.TotalMinutes:00}:{time.Seconds:00}";
-        _defeated.Text=$"{World.Spawner!.Defeated} DEFEATED";
+        _defeated.Text=$"{World.Spawner!.Defeated}";
         _deathFrame.Visible=!World.PlayerActor.Alive;
     }
 

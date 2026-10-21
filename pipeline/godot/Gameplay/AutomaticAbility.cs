@@ -21,6 +21,8 @@ public partial class AutomaticAbility : Node
     public float ShieldCapacity { get; set; }
     public float ShieldDuration { get; set; }
     public float HealthThreshold { get; set; }
+    public int ExtraBounces { get; set; }
+    public RunBuildEffects? Build { get; set; }
     public int LastDistinctHits => _damaged.Count;
     public float LastHealing { get; private set; }
     private readonly HashSet<ulong> _damaged = new();
@@ -36,6 +38,7 @@ public partial class AutomaticAbility : Node
     public int DamageEvents { get; private set; }
     public string LastEvent { get; private set; } = "Waiting for a hostile target";
     public event Action<Combatant, float>? DamageDealt;
+    public void ReduceCooldown(float seconds) { CooldownRemaining=Math.Max(0,CooldownRemaining-Math.Max(0,seconds)); }
     private readonly ChannelClock _clock = new();
     private double _phaseRemaining;
     private bool _presented;
@@ -61,14 +64,22 @@ public partial class AutomaticAbility : Node
         if(State==LightningState.Cooldown && CooldownRemaining<=0) State=LightningState.Idle;
         if(!Casting) return;
         _gestureRemaining-=delta;
+        if(Definition.MaintainChannelGesture && State is LightningState.Starting or LightningState.Channeling)
+        {
+            _gestureRemaining=Math.Max(0.2,_gestureRemaining);
+            Present(()=> {
+                if(Presentation.Actor.GestureOwner!=this)
+                    Presentation.Actor.TryBeginGesture(this,State==LightningState.Starting?Definition.StartClip:Definition.LoopClip,Definition.GesturePriority);
+            });
+        }
         if(_gestureRemaining<=0) Present(()=>Presentation.Actor.ReleaseGesture(this));
         if(State!=LightningState.Ending)
         {
-            bool valid=Definition.Effect!=AbilityEffect.Damage || (Definition.Area==AbilityArea.GroundSphere
+            bool valid=Definition.Area==AbilityArea.CasterRadial || Definition.Effect!=AbilityEffect.Damage || (Definition.Area==AbilityArea.GroundSphere
                 ? Definition.PersistentArea && State==LightningState.Channeling || Caster.GlobalPosition.DistanceSquaredTo(GroundCenter)<=Range*Range
                 : Targeting.IsValidTarget(CastTarget,Range));
             if(!valid) { Finish(true,"Target lost");return; }
-            if(Presentation.Actor.GestureOwner==this)
+            if(Presentation.Actor.GestureOwner==this && Definition.Area!=AbilityArea.CasterRadial)
                 Presentation.Actor.FacingTarget=Definition.Area==AbilityArea.GroundSphere?GroundCenter:CastTarget!.GlobalPosition;
         }
         if(State==LightningState.Starting)
@@ -98,7 +109,8 @@ public partial class AutomaticAbility : Node
         if(!Unlocked || !CombatEnabled || !Caster.Alive || State!=LightningState.Idle || CooldownRemaining>0) return false;
         if(Definition.Effect==AbilityEffect.Heal && (Caster.Health.Current>=Caster.Health.Maximum || Caster.Health.Current>=Caster.Health.Maximum*HealthThreshold)) return false;
         if(Definition.Effect==AbilityEffect.Shield && (Caster.Health.Shielded || Targeting.Acquire(Range,AbilityTargetRule.NearestHostile,0)==null)) return false;
-        var target=Definition.Effect==AbilityEffect.Damage?Targeting.Acquire(Range,Definition.TargetRule,Radius):Caster;
+        if(Definition.Area==AbilityArea.CasterRadial && Targeting.InArea(Caster.GlobalPosition,Radius,Radius).Count()<Math.Max(1,Definition.NearbyTriggerCount)) return false;
+        var target=Definition.Area==AbilityArea.CasterRadial || Definition.Effect!=AbilityEffect.Damage?Caster:Targeting.Acquire(Range,Definition.TargetRule,Radius);
         if(target==null) return false;
         if(!float.IsFinite(DamagePerTick) || (Definition.Effect==AbilityEffect.Damage && DamagePerTick<=0) || !float.IsFinite(TickSeconds) || TickSeconds<=0 ||
             !float.IsFinite(ChannelSeconds) || ChannelSeconds<0 || !float.IsFinite(Range) || Range<=0 ||
@@ -115,12 +127,13 @@ public partial class AutomaticAbility : Node
         State=LightningState.Starting;_phaseRemaining=Definition.WindupSeconds;
         CooldownRemaining=CooldownDuration=CooldownSeconds;
         _gestureRemaining=Definition.GestureSeconds;
-        if(_gestureRemaining>0) Present(()=>Presentation.Actor.TryBeginGesture(this,Definition.StartClip));
+        if(_gestureRemaining>0) Present(()=>Presentation.Actor.TryBeginGesture(this,Definition.StartClip,Definition.GesturePriority));
         // Presentation failures are reported and cannot suppress damage.
         try { _presented=Presentation.Begin(target,GroundCenter,Radius); }
         catch(Exception ex) { _presented=false;GD.PushWarning(Definition.Title+": "+ex.Message); }
         if(!_presented) GD.PushWarning(Definition.Title+": original presentation unavailable; see B5 provenance.");
         Casts++;LastEvent="Cast started: "+target.SelectionKey;
+        Build?.Activated(this);
         if(Definition.Effect!=AbilityEffect.Damage)
         { State=LightningState.Channeling;Tick();Finish(false,"Self effect applied"); }
         return true;
@@ -131,11 +144,14 @@ public partial class AutomaticAbility : Node
         if(Definition.Effect!=AbilityEffect.Damage)
         {
             if(Definition.Effect==AbilityEffect.Shield) Caster.Health.ApplyShield(ShieldCapacity,ShieldDuration);
-            else LastHealing=Caster.Health.ApplyHealing(Healing);
+            else LastHealing=Caster.Health.ApplyHealing(Build?.HealingAmount(Healing)??Healing);
             if(_presented) Present(()=>Presentation.Impact(Caster.AimPosition));
             return true;
         }
-        var targets=Definition.Area==AbilityArea.GroundSphere
+        if(Definition.Area==AbilityArea.Chain) return ChainTick();
+        var targets=Definition.Area==AbilityArea.CasterRadial
+            ? Targeting.InArea(Caster.GlobalPosition,Radius,Radius).ToArray()
+            : Definition.Area==AbilityArea.GroundSphere
             ? Targeting.InArea(GroundCenter,Radius,Range,Definition.PersistentArea).ToArray()
             : Targeting.IsValidTarget(CastTarget,Range)?new[]{CastTarget!}:Array.Empty<Combatant>();
         if(_presented) Present(()=>Presentation.Impact(Definition.Area==AbilityArea.GroundSphere?GroundCenter:CastTarget?.AimPosition??GroundCenter));
@@ -143,12 +159,14 @@ public partial class AutomaticAbility : Node
         {
             if(State!=LightningState.Channeling || !Caster.Alive || !CombatEnabled) return false;
             if(!GodotObject.IsInstanceValid(target) || !target.Alive) continue;
-            float applied=target.Health.ApplyDamage(DamagePerTick,Definition.DamageType);
+            float applied=DealHit(target,DamagePerTick);
+            if(Definition.Area==AbilityArea.CasterRadial && target is EnemyAgent enemy && enemy.Alive) enemy.DisplaceFrom(Caster.GlobalPosition,Definition.KnockbackDistance);
             if(applied<=0) continue;
             _damaged.Add(target.GetInstanceId());
             if(_presented && Presentation is SurvivalAbilityPresentation original) Present(()=>original.TargetImpact(target));
             DamageEvents++;LastEvent=$"{Definition.Title}: {target.SelectionKey} −{applied:0.#}";
             DamageDealt?.Invoke(target,applied);
+            Build?.Hit(this,target,targets);
         }
         if(Healing>0 && ChannelSeconds<=0)
         {
@@ -158,6 +176,29 @@ public partial class AutomaticAbility : Node
         if(State!=LightningState.Channeling) return false;
         if(Definition.Area==AbilityArea.SingleTarget && !Targeting.IsValidTarget(CastTarget,Range))
         { Finish(true,"Target died / invalidated");return false; }
+        return true;
+    }
+    private float DealHit(Combatant target,float amount) => target.Health.ApplyDamage(amount*(Build?.DamageMultiplier(this,target)??1),Definition.DamageType);
+    private bool ChainTick()
+    {
+        if(!Targeting.IsValidTarget(CastTarget,Range))return false;
+        if(_presented)Present(()=>Presentation.Impact(CastTarget!.AimPosition));
+        var current=CastTarget!;var from=Presentation is D2AbilityPresentation source?source.Hand:Caster.AimPosition;float damage=DamagePerTick;
+        var visited=new HashSet<ulong>();
+        for(int i=0;i<=Math.Clamp(Definition.BounceCount+ExtraBounces,0,24);i++)
+        {
+            if(!GodotObject.IsInstanceValid(current) || !current.Alive || !visited.Add(current.GetInstanceId()))break;
+            var point=current.AimPosition;
+            // One gameplay hit per link. Rendering an arc has no combat authority.
+            float applied=DealHit(current,damage);
+            if(_presented && Presentation is D2AbilityPresentation visual)Present(()=>visual.Arc(from,point));
+            if(applied>0) { _damaged.Add(current.GetInstanceId());DamageEvents++;DamageDealt?.Invoke(current,applied);Build?.Hit(this,current,new[]{current}); }
+            from=point;
+            var next=Targeting.ChainTarget(point,Definition.BounceRange,visited);
+            if(next==null)break;
+            current=next;damage*=Math.Clamp(Definition.BounceFalloff,0,1);
+        }
+        LastEvent=$"Chain Lightning: {_damaged.Count} distinct hits";
         return true;
     }
     private void Finish(bool interrupted,string reason)

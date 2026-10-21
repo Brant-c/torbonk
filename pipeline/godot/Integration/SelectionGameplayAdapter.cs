@@ -14,7 +14,7 @@ public static class SelectionGameplayAdapter
     // Register future compositions here; the menu does not need class/map-specific launch branches.
     private static readonly GameplayConfiguration[] Supported =
     [
-        new("empire", "sith_inquisitor", "sorcerer", "korriban", "sorcerer_april2012_bmn",
+        new("empire", "sith_inquisitor", "sorcerer", "korriban", "inquisitor_level1_april2012_bmn",
             "res://Gameplay/GameWorld.tscn", "res://Assets/Korriban/KorribanEnvironment.tscn",
             "res://Assets/sorcerer.glb")
     ];
@@ -28,11 +28,11 @@ public static class SelectionGameplayAdapter
         out GameplayConfiguration configuration, out string reason)
     {
         configuration = null!;
-        reason = "Preview only. Choose Sith Empire / Sith Inquisitor / Sorcerer / Korriban with the original appearance.";
+        reason = "Choose Sith Empire / Sith Inquisitor / Sorcerer with the original appearance to start a run on Korriban.";
         if (selection == null || selection.SchemaVersion != 1) return false;
         // Validate every frozen appearance field, not just the preset name or serialized Playable flag.
         if (selection.Appearance is not { IsSupportedPreset: true })
-        { reason = "This appearance is unavailable. Only the original Sorcerer preset is supported."; return false; }
+        { reason = "This appearance is unavailable. Only the documented level-1 Inquisitor preset is supported."; return false; }
         var match = Supported.SingleOrDefault(content =>
             content.FactionId == selection.FactionId && content.BaseClassId == selection.BaseClassId
             && content.AdvancedClassId == selection.AdvancedClassId && content.MapId == selection.MapId

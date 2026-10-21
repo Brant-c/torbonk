@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    "original Storm channel is loaded",
+    "original upper-body Storm gesture begins",
+    "running legs match the original run animation and keep moving",
+    "Storm retains its original upper-body pose and hand sockets",
+    "the real Storm target has terrain",
+    "Storm starts with original phase clips and source-based lightning",
+    "all thirteen visible caster particle emitters and the source light initialize",
+    "movement continues while the sustained original Storm gesture remains active",
+    "original layered strikes and caster arcs render together",
+    "every source smoke, tatter, glow, hand, spark and strike-flash layer emits",
+    "Storm keeps its existing damage balance",
+    "another ability can activate during Storm",
+    "other ability damage is independent of the casting gesture",
+    "death clears original Storm layers and gesture",
+    "restart cleans up and relocks Storm",
+    "rendered session completed"
+  ],
+  "failure": null
+}

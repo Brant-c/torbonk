@@ -1,0 +1,116 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 5,
+  "maximumDecodedBytes": 1048576,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x1E277FCF25685FA0",
+      "entryOffset": 121525475,
+      "headerSize": 36,
+      "dataOffset": 121525511,
+      "compressedSize": 9099,
+      "length": 19009,
+      "compressionMethod": 1,
+      "crc32Index": "d6239d6a",
+      "path": "/resources/anim/humanoid/bmnnew/mv_saber_jump_start.jba",
+      "sha256": "9db7177c327174c163837ccd648ce91d1ae399056fd69a702ee710eec72a5bae",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_saber_jump_start.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x0BC697FA7DB96A88",
+      "entryOffset": 121485573,
+      "headerSize": 36,
+      "dataOffset": 121485609,
+      "compressedSize": 39866,
+      "length": 78529,
+      "compressionMethod": 1,
+      "crc32Index": "a8f141ff",
+      "path": "/resources/anim/humanoid/bmnnew/mv_saber_jump_mid_idle.jba",
+      "sha256": "90d01615395ef995fe03bd51adf77f18fd188bd5a43da5d81ecfcb1aa21533a2",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_saber_jump_mid_idle.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0xE471E0169A8D32AE",
+      "entryOffset": 121411148,
+      "headerSize": 36,
+      "dataOffset": 121411184,
+      "compressedSize": 39584,
+      "length": 77889,
+      "compressionMethod": 1,
+      "crc32Index": "f4d37e30",
+      "path": "/resources/anim/humanoid/bmnnew/mv_saber_fall.jba",
+      "sha256": "b8f946aaffa0026ff88428793c3903fcdd9cd0462d100ad87934fef289b621b5",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_saber_fall.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x5CF4381F0529515B",
+      "entryOffset": 121475251,
+      "headerSize": 36,
+      "dataOffset": 121475287,
+      "compressedSize": 10286,
+      "length": 19137,
+      "compressionMethod": 1,
+      "crc32Index": "dda4c95e",
+      "path": "/resources/anim/humanoid/bmnnew/mv_saber_jump_end.jba",
+      "sha256": "976d0cc8d4763f216e78ddbd579a8f42b65651342b530b7779a233d40b0a92bc",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_saber_jump_end.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x1AB84AF50C27A55B",
+      "entryOffset": 121973350,
+      "headerSize": 36,
+      "dataOffset": 121973386,
+      "compressedSize": 15534,
+      "length": 28225,
+      "compressionMethod": 1,
+      "crc32Index": "4d58218e",
+      "path": "/resources/anim/humanoid/bmnnew/mv_saber_run_jump_end.jba",
+      "sha256": "3b2d42dcb6e56621f6695af4f144cd3fcf9c81e5d47e8922cafd57f380e5fc60",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_saber_run_jump_end.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "Takeoff",
+      "to": "/resources/anim/humanoid/bmnnew/mv_saber_jump_start.jba",
+      "relation": "Original single-saber locomotion clip; April unique hash entry"
+    },
+    {
+      "from": "Airborne",
+      "to": "/resources/anim/humanoid/bmnnew/mv_saber_jump_mid_idle.jba",
+      "relation": "Original single-saber locomotion clip; April unique hash entry"
+    },
+    {
+      "from": "Falling",
+      "to": "/resources/anim/humanoid/bmnnew/mv_saber_fall.jba",
+      "relation": "Original single-saber locomotion clip; April unique hash entry"
+    },
+    {
+      "from": "LandIdle",
+      "to": "/resources/anim/humanoid/bmnnew/mv_saber_jump_end.jba",
+      "relation": "Original single-saber locomotion clip; April unique hash entry"
+    },
+    {
+      "from": "LandRun",
+      "to": "/resources/anim/humanoid/bmnnew/mv_saber_run_jump_end.jba",
+      "relation": "Original single-saber locomotion clip; April unique hash entry"
+    }
+  ],
+  "unresolved": [],
+  "selection": "B9 current bmnnew single-saber jump locomotion, physics driven Godot adaptation"
+}

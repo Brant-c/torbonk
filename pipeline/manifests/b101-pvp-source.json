@@ -1,0 +1,541 @@
+{
+  "profile": "operator-labelled April2012",
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xA2864049761DE272",
+      "entryOffset": 71139709,
+      "headerSize": 36,
+      "dataOffset": 71139745,
+      "compressedSize": 1177,
+      "length": 1177,
+      "compressionMethod": 0,
+      "crc32Index": "00a0ae2b",
+      "path": "/resources/gfx/gfx_production/warzone_alderaan_overlay.gfx",
+      "sha256": "fa202081b31982d07270f38a6be49db762ac8bcc93a9c076fd61aaa45c968c68",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\warzone_alderaan_overlay.gfx"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xF5140EF72D96BFA2",
+      "entryOffset": 71143321,
+      "headerSize": 36,
+      "dataOffset": 71143357,
+      "compressedSize": 1195,
+      "length": 1195,
+      "compressionMethod": 0,
+      "crc32Index": "1c8e526f",
+      "path": "/resources/gfx/gfx_production/warzone_voidstar_overlay.gfx",
+      "sha256": "c0d8b93401294415429182d159947f3de9739f63d98afdea0574cea441ee0a0f",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\warzone_voidstar_overlay.gfx"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x2918CB0661D37735",
+      "entryOffset": 68869938,
+      "headerSize": 36,
+      "dataOffset": 68869974,
+      "compressedSize": 2704,
+      "length": 2704,
+      "compressionMethod": 0,
+      "crc32Index": "be28a11a",
+      "path": "/resources/gfx/gfx_production/bwaui_scoreboard.gfx",
+      "sha256": "544603f541bb81c7833147c3650d6cc83d3f3010c1e6c00eb0ecaf63ee8c92a6",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_scoreboard.gfx"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x45D2AB718B7C2D5C",
+      "entryOffset": 67823257,
+      "headerSize": 36,
+      "dataOffset": 67823293,
+      "compressedSize": 776,
+      "length": 776,
+      "compressionMethod": 0,
+      "crc32Index": "3465425a",
+      "path": "/resources/gfx/gfx_production/bwaui_genericscorecard.gfx",
+      "sha256": "273143c17a5fdf98f7785dc6629cea65e18f99ce4f2ebe57dc50056d06bf988d",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_genericscorecard.gfx"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x0B4AF5E2461C16A1",
+      "entryOffset": 66252623,
+      "headerSize": 36,
+      "dataOffset": 66252659,
+      "compressedSize": 1824,
+      "length": 1824,
+      "compressionMethod": 0,
+      "crc32Index": "74a71657",
+      "path": "/resources/gfx/gfx_production/bwaui_alderaanscorecard.gfx",
+      "sha256": "702b6255a32abd775e25e1256039b003b5633a75b66ecfe1598189a62639ade3",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_alderaanscorecard.gfx"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x4D102EC89879F62C",
+      "entryOffset": 67797572,
+      "headerSize": 36,
+      "dataOffset": 67797608,
+      "compressedSize": 2055,
+      "length": 2055,
+      "compressionMethod": 0,
+      "crc32Index": "cb9e1692",
+      "path": "/resources/gfx/gfx_production/bwaui_denovascorecard.gfx",
+      "sha256": "98b59c2e02794dc62adc3fc5ac37222c2c6e5ab8c3821c01e09937e8804e5b26",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_denovascorecard.gfx"
+    }
+  ],
+  "definitions": {
+    "warzone_alderaan_overlay": {
+      "images": {
+        "17": "bwa_uitexture_4.dds",
+        "8": "bwa_uitexture_2.dds",
+        "12": "bwa_uitexture_8.dds"
+      },
+      "subimages": [
+        [
+          1,
+          12,
+          0,
+          0,
+          685,
+          528
+        ],
+        [
+          4,
+          8,
+          0,
+          0,
+          685,
+          662
+        ],
+        [
+          5,
+          17,
+          628,
+          660,
+          783,
+          814
+        ],
+        [
+          6,
+          17,
+          785,
+          504,
+          940,
+          658
+        ],
+        [
+          7,
+          17,
+          314,
+          192,
+          469,
+          346
+        ]
+      ],
+      "imports": [],
+      "exports": []
+    },
+    "warzone_voidstar_overlay": {
+      "images": {
+        "16": "bwa_uitexture_3.dds",
+        "17": "bwa_uitexture_4.dds",
+        "8": "bwa_uitexture_2.dds",
+        "9": "bwa_uitexture_21.dds",
+        "12": "bwa_uitexture_8.dds"
+      },
+      "subimages": [
+        [
+          1,
+          12,
+          0,
+          0,
+          685,
+          528
+        ],
+        [
+          4,
+          9,
+          0,
+          0,
+          685,
+          662
+        ],
+        [
+          5,
+          8,
+          864,
+          162,
+          1019,
+          316
+        ],
+        [
+          6,
+          16,
+          807,
+          408,
+          962,
+          562
+        ],
+        [
+          7,
+          17,
+          628,
+          192,
+          783,
+          346
+        ]
+      ],
+      "imports": [],
+      "exports": []
+    },
+    "bwaui_scoreboard": {
+      "images": {
+        "0": "bwa_uitexture_9.dds",
+        "9": "bwa_uitexture_21.dds",
+        "12": "bwa_uitexture_8.dds",
+        "16": "bwa_uitexture_3.dds",
+        "17": "bwa_uitexture_4.dds",
+        "19": "bwa_uitexture_15.dds",
+        "20": "bwa_uitexture_1.dds"
+      },
+      "subimages": [
+        [
+          3,
+          9,
+          0,
+          664,
+          627,
+          877
+        ],
+        [
+          6,
+          16,
+          0,
+          408,
+          627,
+          621
+        ],
+        [
+          9,
+          16,
+          0,
+          623,
+          627,
+          836
+        ],
+        [
+          14,
+          19,
+          305,
+          847,
+          608,
+          912
+        ],
+        [
+          17,
+          19,
+          407,
+          776,
+          710,
+          843
+        ],
+        [
+          20,
+          19,
+          0,
+          847,
+          303,
+          913
+        ],
+        [
+          29,
+          12,
+          791,
+          426,
+          891,
+          528
+        ],
+        [
+          32,
+          0,
+          642,
+          750,
+          803,
+          814
+        ],
+        [
+          35,
+          16,
+          967,
+          789,
+          1013,
+          834
+        ],
+        [
+          37,
+          16,
+          684,
+          789,
+          726,
+          835
+        ],
+        [
+          40,
+          20,
+          763,
+          405,
+          809,
+          450
+        ],
+        [
+          42,
+          16,
+          728,
+          789,
+          770,
+          835
+        ],
+        [
+          45,
+          20,
+          754,
+          352,
+          805,
+          403
+        ],
+        [
+          46,
+          20,
+          595,
+          352,
+          646,
+          403
+        ],
+        [
+          47,
+          17,
+          557,
+          972,
+          601,
+          1021
+        ],
+        [
+          49,
+          16,
+          604,
+          356,
+          660,
+          406
+        ],
+        [
+          51,
+          20,
+          370,
+          126,
+          426,
+          182
+        ],
+        [
+          53,
+          20,
+          544,
+          126,
+          600,
+          182
+        ],
+        [
+          55,
+          20,
+          312,
+          126,
+          368,
+          182
+        ],
+        [
+          57,
+          20,
+          486,
+          126,
+          542,
+          182
+        ]
+      ],
+      "imports": [
+        "bwaui_gridview.swf",
+        "bwaui_standard_window.swf",
+        "bwaui_standard_window.swf",
+        "bwaui_tabs.swf",
+        "bwaui_textbox.swf",
+        "bwaui_buttons.swf",
+        "bwaui_buttons.swf",
+        "bwaui_selectable_component.swf"
+      ],
+      "exports": [
+        [
+          2,
+          "SharedLibrary"
+        ]
+      ]
+    },
+    "bwaui_genericscorecard": {
+      "images": {},
+      "subimages": [],
+      "imports": [
+        "bwaui_standard_window.swf",
+        "bwaui_textbox.swf"
+      ],
+      "exports": []
+    },
+    "bwaui_alderaanscorecard": {
+      "images": {
+        "3": "bwa_uitexture_7.dds",
+        "2": "bwa_uitexture_6.dds",
+        "12": "bwa_uitexture_8.dds",
+        "13": "bwa_uitexture_5.dds"
+      },
+      "subimages": [
+        [
+          1,
+          2,
+          1010,
+          49,
+          1022,
+          62
+        ],
+        [
+          2,
+          13,
+          989,
+          43,
+          1021,
+          83
+        ],
+        [
+          5,
+          13,
+          514,
+          892,
+          761,
+          992
+        ],
+        [
+          10,
+          2,
+          856,
+          967,
+          884,
+          989
+        ],
+        [
+          15,
+          3,
+          891,
+          707,
+          915,
+          737
+        ],
+        [
+          21,
+          12,
+          996,
+          323,
+          1018,
+          351
+        ]
+      ],
+      "imports": [
+        "bwaui_bars.swf",
+        "bwaui_bars.swf",
+        "bwaui_textbox.swf"
+      ],
+      "exports": []
+    },
+    "bwaui_denovascorecard": {
+      "images": {
+        "2": "bwa_uitexture_6.dds",
+        "6": "bwa_uitexture_12.dds",
+        "7": "bwa_uitexture_10.dds",
+        "10": "bwa_uitexture_20.dds",
+        "17": "bwa_uitexture_4.dds",
+        "19": "bwa_uitexture_15.dds",
+        "20": "bwa_uitexture_1.dds"
+      },
+      "subimages": [
+        [
+          1,
+          6,
+          825,
+          399,
+          963,
+          607
+        ],
+        [
+          4,
+          20,
+          348,
+          352,
+          437,
+          403
+        ],
+        [
+          10,
+          10,
+          897,
+          359,
+          1009,
+          471
+        ],
+        [
+          15,
+          19,
+          618,
+          915,
+          756,
+          978
+        ],
+        [
+          18,
+          7,
+          982,
+          614,
+          1016,
+          646
+        ],
+        [
+          23,
+          17,
+          942,
+          269,
+          1016,
+          342
+        ],
+        [
+          29,
+          2,
+          1010,
+          64,
+          1022,
+          77
+        ],
+        [
+          31,
+          2,
+          1010,
+          34,
+          1022,
+          47
+        ]
+      ],
+      "imports": [
+        "bwaui_bars.swf",
+        "bwaui_bars.swf",
+        "bwaui_textbox.swf"
+      ],
+      "exports": []
+    }
+  },
+  "conversions": []
+}

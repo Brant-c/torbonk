@@ -1,0 +1,19 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+JUMP: five original single-saber jump clips are loaded
+JUMP: only airborne and falling clips loop
+JUMP: jump tracks bind to the existing skeleton without root motion
+JUMP: real Space takeoff starts the source launch clip
+JUMP: ascent blends into the source airborne pose
+JUMP: original jump actually articulates the leg bones
+JUMP: pausing freezes both the jump body and its animation
+JUMP: descent selects the source falling pose
+JUMP: actual floor contact selects standing landing
+JUMP: landing returns smoothly to idle
+JUMP: moving jump preserves travel and uses running landing
+JUMP: existing Sorcerer gesture can still begin
+JUMP: jump legs remain underneath existing upper-body casting layers
+JUMP: jump presentation creates no ability damage
+JUMP: death supersedes and clears jump playback
+JUMP: restart resets jump playback and returns to the existing locomotion

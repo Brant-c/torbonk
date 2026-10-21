@@ -26,6 +26,7 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
     public int PlayingAudioVoices => _sounds.Count(s => s.Playing);
     public int LoopingAudioVoices => _sounds.Count(s => s.Playing && s.Stream is AudioStreamWav wav && wav.LoopMode != AudioStreamWav.LoopModeEnum.Disabled);
     public int AudioVoicesStarted { get; private set; }
+    public OriginalStormLightning? StormLightning {get;private set;}
     private ShaderMaterial _material=null!;
     private JsonElement _beam;
 
@@ -34,6 +35,11 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
         _fx=JsonDocument.Parse(FileAccess.GetFileAsString("res://Assets/Abilities/fx.json"));
         _audio=JsonDocument.Parse(FileAccess.GetFileAsString("res://Assets/Abilities/audio.json"));
         _random.Randomize();
+        if(Definition.Id=="storm")
+        {
+            StormLightning=new OriginalStormLightning {Name="OriginalStormLightning",Actor=Actor,Source=_fx.RootElement};
+            AddChild(StormLightning);
+        }
         var list=_fx.RootElement.GetProperty(Definition.SourceFx).GetProperty("_fxLightningList");
         _beam=list[0];
         string texture=Text(_beam,"_fxTextureName");
@@ -75,6 +81,7 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
         _active=true;_age=0;_redraw=0;_ending=false;_impact=false;SetProcess(true);
         if(Definition.Id=="storm")
         {
+            StormLightning!.Begin();
             AreaIndicator=new StormAreaIndicator {Name="OriginalGreenStormArea"};AddChild(AreaIndicator);
             AreaIndicator.UpdateArea(_center,_radius);
         }
@@ -96,12 +103,14 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
     {
         ClearAreaIndicator();
         _ending=true;_age=0;ClearBolts();
+        StormLightning?.Clear();
         StopLoops();
     }
     private void ClearVisuals()
     {
         ClearAreaIndicator();
         _active=false;ClearBolts();
+        StormLightning?.Clear();
         foreach(var (node,_) in _flashes) node.Free();_flashes.Clear();
         SetProcess(false);
     }
@@ -131,6 +140,11 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
             // Impacts finish independently of the short casting recovery. End already stopped channel loops.
             return;
         }
+        if(StormLightning!=null)
+        {
+            StormLightning.Advance(delta,_center,_radius,Actor.GestureOwner is AutomaticAbility ability && ability.Definition.Id==Definition.Id);
+            return;
+        }
         if(_redraw>0)return;
         _redraw=Definition.Area==AbilityArea.GroundSphere?0.12:0.06;ClearBolts();
         if(Definition.Area==AbilityArea.SingleTarget)
@@ -139,19 +153,6 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
             // April Shock explicitly uses vfx_hand_left and vfx_elbow_left.
             DrawBolt(Socket("vfx_hand_left"),Aim(),_beam);
             DrawBolt(Socket("vfx_elbow_left"),Socket("vfx_hand_left"),_beam);
-        }
-        else if(_age>=0.55)
-        {
-            // Particle EmitFXSpec places original lightning strikes around a fixed ground center.
-            for(int i=0;i<3;i++)
-            {
-                float angle=_random.RandfRange(0,Mathf.Tau),r=Mathf.Sqrt(_random.Randf())*_radius;
-                var end=_center+new Vector3(Mathf.Cos(angle)*r,0.012f,Mathf.Sin(angle)*r);
-                DrawBolt(end+Vector3.Up*_random.RandfRange(0.35f,0.65f),end,_beam);
-                Flash(end,"glow_basic_alpha",0.065f,0.18);
-            }
-            if(Actor.GestureOwner is AutomaticAbility ability && ability.Definition.Id==Definition.Id)
-                DrawBolt(Socket("vfx_elbow_right"),Actor.GlobalPosition+Vector3.Right*0.07f,_beam);
         }
     }
     private void DrawBolt(Vector3 start,Vector3 end,JsonElement source)

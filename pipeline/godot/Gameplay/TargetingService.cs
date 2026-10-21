@@ -79,4 +79,9 @@ public partial class TargetingService : Node
         query.HitBackFaces=true;
         return OwnerActor.GetWorld3D().DirectSpaceState.IntersectRay(query).Count==0;
     }
+    public Combatant? ChainTarget(Vector3 from,float range,ISet<ulong> visited) =>
+        GetTree().GetNodesInGroup(Combatant.GroupName).OfType<Combatant>()
+            .Where(c=>c.Alive && OwnerActor.IsHostileTo(c) && !visited.Contains(c.GetInstanceId()) &&
+                c.AimPosition.DistanceSquaredTo(from)<=range*range && AreaLineOfSight(from,c))
+            .OrderBy(c=>c.AimPosition.DistanceSquaredTo(from)).ThenBy(c=>c.SelectionKey,StringComparer.Ordinal).FirstOrDefault();
 }

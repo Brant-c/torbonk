@@ -1,0 +1,74 @@
+{
+  "source": "C:\\Program Files (x86)\\Electronic Arts\\BioWare\\Star Wars - The Old Republic\\swtor\\retailclient\\swtor.exe",
+  "sourceSha256": "d82746520dfeea3cdacd0b3f40bc46771b6fe62bc4b8873f23b50b49233df295",
+  "sourceBytes": 30681088,
+  "sourceKind": "Installed SWTOR client PE resources, read-only; NOT April TOR archive provenance",
+  "conversion": "RT_CURSOR hotspot + original 32-bit BGRA DIB to RGBA PNG, no resize/crop/recolor",
+  "binding": "Gold arrow for default; gold hand for enabled buttons; blue hand for disabled buttons. Godot UI mapping is adapted.",
+  "pressed": "No separately identified original pressed artwork; retain the current hover/default cursor on press.",
+  "resources": [
+    {
+      "role": "default",
+      "language": 1033,
+      "groupId": 201,
+      "cursorId": 31,
+      "groupOffset": 30265016,
+      "groupSha256": "3cfefd3778e01d95cc22dc2386bbe27123798507a8b340b8505dab9e2115d381",
+      "cursorOffset": 30260744,
+      "cursorBytes": 4268,
+      "cursorSha256": "43b0130f75ae9ca1eff9c5d40bc9e8856cdacbda04b4eb5514a1c7e7588428c3",
+      "dimensions": [
+        32,
+        32
+      ],
+      "hotspot": [
+        8,
+        3
+      ],
+      "output": "godot\\Assets\\UI\\Cursor\\gold_default.png",
+      "sha256": "9db0d501c0bef8c7d0f7f6e04b52f7ae58724c51b46cf6c4a5069b07b16ccdcf"
+    },
+    {
+      "role": "hover",
+      "language": 1033,
+      "groupId": 204,
+      "cursorId": 34,
+      "groupOffset": 30277904,
+      "groupSha256": "908e3e908bad6b8cd8bccbb79c8e91c4fac0366e03c3ba64009d1471b68deced",
+      "cursorOffset": 30273632,
+      "cursorBytes": 4268,
+      "cursorSha256": "b5e6b5d5575ae5f742760e0050ec75b604f24b7f10cac4402477fbe1b8650121",
+      "dimensions": [
+        32,
+        32
+      ],
+      "hotspot": [
+        13,
+        1
+      ],
+      "output": "godot\\Assets\\UI\\Cursor\\gold_hover.png",
+      "sha256": "91e9df2dd2b1fe6cd7de3ac99d175d272fba2d38a84b99fcbecaa7ee6eeee971"
+    },
+    {
+      "role": "disabled",
+      "language": 1033,
+      "groupId": 205,
+      "cursorId": 35,
+      "groupOffset": 30282200,
+      "groupSha256": "72fc750a957303dd395e1fb1911734ab3fdd43988b8f6341db4484413a5efdb0",
+      "cursorOffset": 30277928,
+      "cursorBytes": 4268,
+      "cursorSha256": "62f38bdded5b58f8c62f3382518184d1cb725799adfdfc15e0fd4d8d077adc38",
+      "dimensions": [
+        32,
+        32
+      ],
+      "hotspot": [
+        13,
+        2
+      ],
+      "output": "godot\\Assets\\UI\\Cursor\\gold_disabled.png",
+      "sha256": "d8bae4afac6f3739735d5cdf42c6509e44051485ca10b65436f5fe1d9ac8b3c9"
+    }
+  ]
+}

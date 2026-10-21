@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "Level UI review launches the existing composition",
+    "Level banner appears before choices and pauses combat",
+    "Three existing upgrade choices replace the banner",
+    "Keyboard selection enters existing confirmation",
+    "Choosing a power resumes the same run"
+  ],
+  "failure": null
+}

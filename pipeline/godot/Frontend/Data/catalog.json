@@ -50,9 +50,9 @@
           "Id": "sorcerer",
           "Name": "Sorcerer",
           "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.sith_sorcerer.png",
-          "Description": "Command Force lightning from range. The existing Survivors combat kit is available for future integration.",
+          "Description": "Command Force lightning from range and channel the dark side against your enemies.",
           "GameplayImplemented": true,
-          "PreviewScene": "res://Frontend/Assets/Character/sorcerer.glb",
+          "PreviewScene": "res://Assets/sorcerer.glb",
           "IdleAnimation": "Idle",
           "FacingDegrees": 0
         },
@@ -215,67 +215,12 @@
       "Id": "korriban",
       "Name": "Korriban",
       "Region": "Sith Worlds",
-      "Description": "Ancient tombs and red sands beneath the Sith Academy. The existing Survivors arena is available for future integration.",
+      "Description": "Ancient tombs and red sands beneath the Sith Academy. Enter the Valley of the Dark Lords and face the dangers of Korriban.",
       "Artwork": "res://Frontend/Assets/Recovered/cdx.planets.korriban.png",
       "Surface": "res://Frontend/Assets/Recovered/planets_korriban_d.png",
-      "X": 0.73,
-      "Y": 0.24,
+      "X": 0.8,
+      "Y": 0.28,
       "GameplayImplemented": true
-    },
-    {
-      "Id": "tython",
-      "Name": "Tython",
-      "Region": "Deep Core",
-      "Description": "Forested birthplace of the Jedi Order. Environment and gameplay are planned.",
-      "Artwork": "res://Frontend/Assets/Recovered/cdx.planets.tython.png",
-      "Surface": "res://Frontend/Assets/Recovered/planets_tython_d.png",
-      "X": 0.35,
-      "Y": 0.56,
-      "GameplayImplemented": false
-    },
-    {
-      "Id": "dromund_kaas",
-      "Name": "Dromund Kaas",
-      "Region": "Sith Worlds",
-      "Description": "Storm-wreathed capital of the Sith Empire. Environment and gameplay are planned.",
-      "Artwork": "res://Frontend/Assets/Recovered/cdx.planets.dromund_kaas.png",
-      "Surface": "res://Frontend/Assets/Recovered/planets_dromund_kass_d.png",
-      "X": 0.77,
-      "Y": 0.39,
-      "GameplayImplemented": false
-    },
-    {
-      "Id": "coruscant",
-      "Name": "Coruscant",
-      "Region": "Core Worlds",
-      "Description": "The vast city-world at the heart of the Republic. Environment and gameplay are planned.",
-      "Artwork": "res://Frontend/Assets/Recovered/cdx.planets.coruscant.png",
-      "Surface": "res://Frontend/Assets/Recovered/planets_coruscant_d.png",
-      "X": 0.45,
-      "Y": 0.4,
-      "GameplayImplemented": false
-    },
-    {
-      "Id": "hutta",
-      "Name": "Hutta",
-      "Region": "Hutt Space",
-      "Description": "Industrial swamps and Hutt domains. Environment and gameplay are planned.",
-      "Artwork": "res://Frontend/Assets/Recovered/cdx.planets.hutta.png",
-      "Surface": "res://Frontend/Assets/Recovered/planets_hutta_d.png",
-      "X": 0.76,
-      "Y": 0.68,
-      "GameplayImplemented": false
-    },
-    {
-      "Id": "ord_mantell",
-      "Name": "Ord Mantell",
-      "Region": "Mid Rim",
-      "Description": "A contested world of smugglers and soldiers. Environment and gameplay are planned.",
-      "Artwork": "res://Frontend/Assets/Recovered/cdx.planets.ordmantell.png",
-      "Surface": "res://Frontend/Assets/Recovered/planets_ord_mantell_d.png",
-      "X": 0.28,
-      "Y": 0.27,
-      "GameplayImplemented": false
     }
   ]
 }

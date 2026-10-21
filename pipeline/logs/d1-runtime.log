@@ -1,0 +1,70 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+D1: All 8 frontend base classes and 16 advanced IDs registered without new gameplay
+D1: Sorcerer menu uses artwork
+D1: Level-1 preset loads on existing rig
+D1: Red lightsaber initialized on original RightWeapon
+D1: Equipped saber selects original saber idle and run
+D1: Gear review opens from a normal development run
+D1: Visible outfit button changes to alternate cosmetic
+D1: Visible outfit button restores starting appearance
+D1: Original animation library retained
+D1: inquisitor_level1 loads
+D1: inquisitor_level1 idle
+D1: inquisitor_level1 run
+D1: inquisitor_level1 starts upper-body cast
+D1: Swap during moving cast
+D1: Cast owner and saber instance retained during armor swap
+D1: Moving cast keeps saber locomotion after outfit swap
+D1: Live rig, animation tree, health, abilities, progression and position preserved
+D1: Saber follows animated socket after swap
+D1: Original attachment bone remains: LeftWrist
+D1: Original attachment bone remains: RightWrist
+D1: Original attachment bone remains: RightWeapon
+D1: Original attachment bone remains: LeftWeapon
+D1: Original attachment bone remains: vfx_hand_left
+D1: Original attachment bone remains: vfx_hand_right
+D1: Original attachment bone remains: RightIndexFinger1
+D1: Original finger bones remain
+D1: Swap during hit reaction
+D1: sorcerer_ss_a04 loads
+D1: sorcerer_ss_a04 idle
+D1: sorcerer_ss_a04 run
+D1: sorcerer_ss_a04 starts upper-body cast
+D1: Swap during moving cast
+D1: Cast owner and saber instance retained during armor swap
+D1: Moving cast keeps saber locomotion after outfit swap
+D1: Live rig, animation tree, health, abilities, progression and position preserved
+D1: Saber follows animated socket after swap
+D1: Original attachment bone remains: LeftWrist
+D1: Original attachment bone remains: RightWrist
+D1: Original attachment bone remains: RightWeapon
+D1: Original attachment bone remains: LeftWeapon
+D1: Original attachment bone remains: vfx_hand_left
+D1: Original attachment bone remains: vfx_hand_right
+D1: Original attachment bone remains: RightIndexFinger1
+D1: Original finger bones remain
+D1: Swap during hit reaction
+D1: A default cannot unlock developer preset
+D1: Single-slot cosmetic applies
+D1: Cosmetic removal restores functional visual
+D1: Armor unequip uses rig fallback without geometry holes
+D1: Armor re-equip
+D1: Weapon visual unequips
+D1: Unequip returns to base unarmed locomotion
+D1: Weapon visual restores
+D1: Re-equip restores saber locomotion without rebuilding tree
+D1: Visible saber button removes weapon
+D1: Visible saber button restores weapon pose
+D1: Hidden weapon supported
+D1: Unhide restores weapon
+D1: Wrong item slot rejected
+D1: Unknown equipment rejected
+D1: Incompatible rig rejected clearly
+D1: Missing accessory bone rejected
+D1: Failed operations leave loadout and visuals intact
+D1: Functional stats counted once with separate cosmetic
+D1: Outfit swap preserves death animation
+D1: Live rig, animation tree, health, abilities, progression and position preserved
+D1: One live skeleton; no competing imported animator

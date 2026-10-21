@@ -16,18 +16,18 @@ public partial class BossHealthDisplay : Control
     public override void _Ready()
     {
         MouseFilter = MouseFilterEnum.Ignore;
-        var chrome = new NinePatchRect { Texture = SwtorSkin.Slice("bwaui_standard_window_1"),
-            PatchMarginLeft = 12, PatchMarginRight = 12, PatchMarginTop = 14, PatchMarginBottom = 12, MouseFilter = MouseFilterEnum.Ignore };
+        var chrome = new NinePatchRect { Texture = SwtorSkin.Slice("bwaui_tooltip_1"),
+            PatchMarginLeft = 8, PatchMarginRight = 8, PatchMarginTop = 12, PatchMarginBottom = 12, MouseFilter = MouseFilterEnum.Ignore };
         AddChild(chrome); chrome.SetAnchorsAndOffsetsPreset(LayoutPreset.FullRect);
-        _name = SwtorSkin.Text("", 22, true); _name.HorizontalAlignment = HorizontalAlignment.Center;
-        _name.AddThemeColorOverride("font_color", SwtorSkin.Gold); _name.Position = new Vector2(16, 6); _name.Size = new Vector2(568, 28); AddChild(_name);
+        _name = SwtorSkin.Text("", 20, true); _name.HorizontalAlignment = HorizontalAlignment.Center;
+        _name.Position = new Vector2(16, 6); _name.Size = new Vector2(568, 28); AddChild(_name);
         _loss = new SwtorBar { DrawFrame = false, FillHeight = 17, MinimumHeight = 28, FillSlice = "bwaui_bars_21", Modulate = new Color(1, 0.72f, 0.4f, 0.8f) };
         _loss.Position = new Vector2(18, 34); _loss.Size = new Vector2(564, 28); AddChild(_loss);
         _health = new SwtorBar { DrawFrame = true, FillHeight = 17, MinimumHeight = 28, LabelSize = 15, FillSlice = "bwaui_bars_21" };
         _health.Position = _loss.Position; _health.Size = _loss.Size; AddChild(_health);
         _attack = SwtorSkin.Text("", 13, true); _attack.HorizontalAlignment = HorizontalAlignment.Center;
         _attack.Position = new Vector2(12, 63); _attack.Size = new Vector2(576, 22); AddChild(_attack);
-        _attack.AddThemeColorOverride("font_color", new Color("ffb567")); Visible = false;
+        _attack.AddThemeColorOverride("font_color", SwtorSkin.TextColor); Visible = false;
     }
     public override void _Process(double delta)
     {

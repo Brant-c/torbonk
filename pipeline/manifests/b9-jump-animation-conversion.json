@@ -1,0 +1,37 @@
+{
+  "clips": [
+    {
+      "name": "Takeoff",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_saber_jump_start.jba",
+      "seconds": 0.30000001192092896,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "Airborne",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_saber_jump_mid_idle.jba",
+      "seconds": 2.133333444595337,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "Falling",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_saber_fall.jba",
+      "seconds": 2.133333444595337,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "LandIdle",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_saber_jump_end.jba",
+      "seconds": 0.30000001192092896,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "LandRun",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_saber_run_jump_end.jba",
+      "seconds": 0.699999988079071,
+      "sourceFps": 30.0
+    }
+  ],
+  "output": "godot\\Assets\\Jump\\jump.glb",
+  "sha256": "d2b44848c3658841c35518c31fdea4fca0019778eaf2ef2bda64aa6fdbf2b5c4",
+  "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
+}
