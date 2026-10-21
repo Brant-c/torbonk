@@ -1,0 +1,115 @@
+{
+  "clips": [
+    {
+      "name": "Smash",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_saber_ground_smash_01.jba",
+      "seconds": 8.0,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Rupture",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2saber_sp2_attack_right_13.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Lacerate",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_pole_blade_dance_end.jba",
+      "seconds": 1.399999976158142,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Dart",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_bracer_fire_1.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Sniper",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_sniper_fire_big_1.jba",
+      "seconds": 1.2666666507720947,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Missile",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2pistol_bracer_fire_big_1.jba",
+      "seconds": 2.2666666507720947,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Flame",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_bounty_flame_sweep.jba",
+      "seconds": 2.0,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "DualIdle",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2saber_idle_right_1.jba",
+      "seconds": 1.2666666507720947,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "DualRun",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_2saber_run_forward_01.jba",
+      "seconds": 0.5,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "PoleIdle",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_pole_idle_right_1.jba",
+      "seconds": 1.3333333730697632,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "PoleRun",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_pole_run_forward_01.jba",
+      "seconds": 0.6333333253860474,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "RifleIdle",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_idle_1.jba",
+      "seconds": 2.933333396911621,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "RifleRun",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_rifle_run_forward.jba",
+      "seconds": 0.6333333253860474,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "PistolsIdle",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2pistol_idle_1.jba",
+      "seconds": 2.933333396911621,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "PistolsRun",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_2pistol_run_forward.jba",
+      "seconds": 0.5666666626930237,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "PistolIdle",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_pistol_idle_1.jba",
+      "seconds": 2.933333396911621,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "PistolRun",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_pistol_run_forward.jba",
+      "seconds": 0.5666666626930237,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "SniperIdle",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_sniper_idle_1.jba",
+      "seconds": 4.266666889190674,
+      "sourceFps": 15.0
+    }
+  ],
+  "output": "godot\\Assets\\D3\\casts.glb",
+  "sha256": "59d58690772432cad0be9edc2dbbb2b8ec1459366e3c9e25098c9945873092e6",
+  "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
+}

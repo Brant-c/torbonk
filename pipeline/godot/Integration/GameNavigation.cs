@@ -31,7 +31,16 @@ public static class GameNavigation
         var run = _pendingRun;
         _pendingRun = null;
         // Only direct development launches have no menu handoff; their composition stays unchanged.
-        return run ?? SelectionGameplayAdapter.DevelopmentDefault;
+        if(run!=null)return run;
+        foreach(string arg in OS.GetCmdlineUserArgs())
+            if(arg.StartsWith("--advanced-class="))
+            {
+                var profile=ClassProfile.Find(arg[17..])??throw new System.InvalidOperationException("Unknown development class: "+arg);
+                var selected=new SelectionConfiguration {FactionId=profile.Faction,BaseClassId=profile.BaseClass,AdvancedClassId=profile.Id,Appearance=AppearanceConfiguration.ForClass(profile.Id)};
+                if(!SelectionGameplayAdapter.TryResolve(selected,out var configured,out string reason))throw new System.InvalidOperationException(reason);
+                return configured;
+            }
+        return SelectionGameplayAdapter.DevelopmentDefault;
     }
 
     public static Error ReturnToMenu(GameWorld world)

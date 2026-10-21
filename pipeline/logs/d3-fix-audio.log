@@ -1,0 +1,28 @@
+wwiser v20260808 (python 3.12.14)
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\weapons_data.bnk
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\init.bnk
+parser: done
+names: loading names
+names: couldn't find D:\SWTORClassic\torbonk\pipeline\tools\wwnames.db3 name file
+names: done
+generator: start
+generator: processing nodes
+generator: elapsed 0.317513s
+generator: WARNING! missing 177 memory audio (load more banks?)
+generator: done (created 20, 65 duplicates)
+(done)
+wwiser v20260808 (python 3.12.14)
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\abilities_imperialranged_data.bnk
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\init.bnk
+parser: done
+names: loading names
+names: couldn't find D:\SWTORClassic\torbonk\pipeline\tools\wwnames.db3 name file
+names: done
+generator: start
+generator: processing nodes
+generator: elapsed 0.127987s
+generator: WARNING! missing 6 memory audio (load more banks?)
+generator: done (created 3)
+(done)
+{"events": {"play_weapon_lightsaber_awesomeness_left": "588727889", "play_weapon_lightsaber_awesomeness_right": "2763959236", "play_weapon_melee_lefthand_swing_normal": "2395327321", "play_weapon_melee_righthand_swing_normal": "398856974"}, "missing": [], "media": 177}
+{"events": {"Play_ability_spy_poisondart_fire": "1474951948", "Play_ability_spy_poisondart_impact": "2119783558", "Play_ability_spy_snipe_fire": "3187354386"}, "missing": [], "media": 6}

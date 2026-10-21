@@ -54,6 +54,7 @@ public partial class CharacterPreview : Control
         if (!hasModel) return;
         var placement = new Node3D(); _rotation.AddChild(placement);
         var model = GD.Load<PackedScene>(advanced!.PreviewScene).Instantiate<Node3D>(); placement.AddChild(model);
+        var profile=ClassProfile.Find(advanced.Id);
         var skeleton = model.FindChildren("*", "Skeleton3D", true, false).OfType<Skeleton3D>().FirstOrDefault();
         var animator = model.FindChildren("*", "AnimationPlayer", true, false).OfType<AnimationPlayer>().FirstOrDefault();
         if (animator != null && animator.HasAnimation(advanced.IdleAnimation))
@@ -61,14 +62,25 @@ public partial class CharacterPreview : Control
             // Imported resources are shared; duplicate the library before changing its loop flag.
             foreach (var key in animator.GetAnimationLibraryList())
             { var lib = (AnimationLibrary)animator.GetAnimationLibrary(key).Duplicate(true); animator.RemoveAnimationLibrary(key); animator.AddAnimationLibrary(key, lib); }
-            string idle=advanced.Id=="sorcerer" && skeleton!=null ? AddSaberStance(animator,skeleton) : advanced.IdleAnimation;
+            string idle=ClassProfile.Find(advanced.Id)?.Idle=="" && skeleton!=null ? AddSaberStance(animator,skeleton) : advanced.IdleAnimation;
             animator.GetAnimation(idle).LoopMode = Animation.LoopModeEnum.Linear;
             animator.Play(idle); animator.Advance(0);
         }
         // The same D1 composition restores cosmetic saves in both preview and gameplay.
         // This instance owns only its rig/assembly; no actor, ability or audio service is created.
-        if (advanced.Id=="sorcerer" && skeleton!=null)
-            Assembly=EquipmentComposition.Create(model,model,skeleton,"sith_inquisitor",advanced.Id);
+        if (profile!=null && skeleton!=null)
+        {
+            Assembly=EquipmentComposition.Create(model,model,skeleton,profile.BaseClass,advanced.Id);
+            if(profile.Idle!="" && animator!=null)
+            {
+                var source=GD.Load<PackedScene>(profile.AnimationScene).Instantiate<Node3D>();
+                var sourcePlayer=source.FindChildren("*","AnimationPlayer",true,false).OfType<AnimationPlayer>().Single();
+                var clip=(Animation)sourcePlayer.GetAnimation(profile.Idle).Duplicate(true);
+                for(int t=clip.GetTrackCount()-1;t>=0;t--)
+                { string bone=clip.TrackGetPath(t).GetConcatenatedSubNames();if(skeleton.FindBone(bone)<0){clip.RemoveTrack(t);continue;}clip.TrackSetPath(t,new NodePath(animator.GetNode(animator.RootNode).GetPathTo(skeleton)+":"+bone)); }
+                clip.LoopMode=Animation.LoopModeEnum.Linear;var library=new AnimationLibrary();library.AddAnimation("Idle",clip);animator.AddAnimationLibrary("Class",library);animator.Play("Class/Idle");animator.Advance(0);source.Free();
+            }
+        }
         float height = .18f;
         if (skeleton != null && skeleton.FindBone("Head") >= 0)
             height = (skeleton.GlobalTransform * skeleton.GetBoneGlobalPose(skeleton.FindBone("Head")).Origin).Y * 1.12f;

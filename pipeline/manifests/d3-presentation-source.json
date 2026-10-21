@@ -1,0 +1,194 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 180,
+  "maximumDecodedBytes": 104857600,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x9CE7379D226C7B73",
+      "entryOffset": 33461013,
+      "headerSize": 36,
+      "dataOffset": 33461049,
+      "compressedSize": 79293,
+      "length": 143681,
+      "compressionMethod": 1,
+      "crc32Index": "239f07d6",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_ground_smash_01.jba",
+      "sha256": "52aaa1f80f46b8887f8892eeaefb6a7b1c155860e31a81e697516625cc431c9b",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_saber_ground_smash_01.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0xEBC9F38D40EED8A6",
+      "entryOffset": 32412425,
+      "headerSize": 36,
+      "dataOffset": 32412461,
+      "compressedSize": 15059,
+      "length": 26945,
+      "compressionMethod": 1,
+      "crc32Index": "9236ad48",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_sniper_fire_big_1.jba",
+      "sha256": "95e7458b891a4d47301bc1c1791189057413d7eb3b3f4213f9f0320a472b86b8",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_sniper_fire_big_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x94E32A7DDA79F3FE",
+      "entryOffset": 30522363,
+      "headerSize": 36,
+      "dataOffset": 30522399,
+      "compressedSize": 17796,
+      "length": 31681,
+      "compressionMethod": 1,
+      "crc32Index": "e40dff9c",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_bracer_fire_1.jba",
+      "sha256": "cb7a1a8f91555a7ae8fd3773dd13937544fccdd0b2506f895db9274169aa6052",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_bracer_fire_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x79155EF6BB4FEFB7",
+      "entryOffset": 75036777,
+      "headerSize": 36,
+      "dataOffset": 75036813,
+      "compressedSize": 1526,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "c4e049a3",
+      "path": "/resources/gfx/icons/forceslam.dds",
+      "sha256": "1ebeece7ee719f20f91a3b23462bc83b9151fbb6c243107a833e52576aaf97e7",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\forceslam.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x2CA56738F59E0EC6",
+      "entryOffset": 148655911,
+      "headerSize": 36,
+      "dataOffset": 148655947,
+      "compressedSize": 1438,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "af28391e",
+      "path": "/resources/gfx/icons/smash.dds",
+      "sha256": "d6af0d55675ad1c81a2096f989719fd7d736f0709d8f1ad49a9efdef5cb1b080",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\smash.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xA9211489E0C961E0",
+      "entryOffset": 148778738,
+      "headerSize": 36,
+      "dataOffset": 148778774,
+      "compressedSize": 1412,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "de00b9af",
+      "path": "/resources/gfx/icons/sweep.dds",
+      "sha256": "11ba19cb8c98d4834ba6fdc6cde867e4582de4e5c94f699ae8d681ca5b9bf961",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\sweep.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audiodata_1.tor",
+      "archiveHash": "0x6850DEF11F035531",
+      "entryOffset": 8581589,
+      "headerSize": 36,
+      "dataOffset": 8581625,
+      "compressedSize": 74374,
+      "length": 282855,
+      "compressionMethod": 1,
+      "crc32Index": "07abaa3d",
+      "path": "/resources/bnk2/weapons_data.bnk",
+      "sha256": "d4a082451897af50861e30487b425058cb2f0308433e9654dd88cd850a7569c5",
+      "output": "source-assets\\april2012\\resources\\bnk2\\weapons_data.bnk",
+      "archiveSha256": "932a885608e1a1b1f4a9f5c55a02bc8e426558371ae5a58faf88642ebe5f4491",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x6AC6A0D3DBECB789",
+      "entryOffset": 32472565,
+      "headerSize": 36,
+      "dataOffset": 32472601,
+      "compressedSize": 39091,
+      "length": 69441,
+      "compressionMethod": 1,
+      "crc32Index": "00275b7f",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_sniper_idle_1.jba",
+      "sha256": "d6f455b746cf9e037bef96b7a722544edb6cfe6dfa0304f6b185efb00cf8e43f",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_sniper_idle_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "D3 presentation correction",
+      "to": "/resources/anim/humanoid/bmnnew/cb_saber_ground_smash_01.jba",
+      "relation": "WarriorGroundSmash"
+    },
+    {
+      "from": "D3 presentation correction",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_sniper_fire_big_1.jba",
+      "relation": "SniperFire"
+    },
+    {
+      "from": "D3 presentation correction",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_bracer_fire_1.jba",
+      "relation": "AgentDart"
+    },
+    {
+      "from": "D3 Warrior icon review",
+      "to": "/resources/gfx/icons/forceslam.dds",
+      "relation": "original April icon"
+    },
+    {
+      "from": "D3 Warrior icon review",
+      "to": "/resources/gfx/icons/smash.dds",
+      "relation": "original April icon"
+    },
+    {
+      "from": "D3 Warrior icon review",
+      "to": "/resources/gfx/icons/sweep.dds",
+      "relation": "original April icon"
+    },
+    {
+      "from": "D3 saber sounds",
+      "to": "/resources/bnk2/weapons_data.bnk",
+      "relation": "original weapon event bank"
+    },
+    {
+      "from": "D3 presentation correction",
+      "to": "/resources/anim/humanoid/bmnnew/cb_saber_ground_smash_01.jba",
+      "relation": "Smash"
+    },
+    {
+      "from": "D3 presentation correction",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_sniper_fire_big_1.jba",
+      "relation": "Sniper"
+    },
+    {
+      "from": "D3 presentation correction",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_sniper_idle_1.jba",
+      "relation": "SniperIdle"
+    },
+    {
+      "from": "D3 presentation correction",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_bracer_fire_1.jba",
+      "relation": "Dart"
+    }
+  ],
+  "unresolved": [],
+  "selection": "human male body type 2; bmnnew skeleton"
+}

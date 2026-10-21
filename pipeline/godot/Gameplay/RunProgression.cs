@@ -61,6 +61,18 @@ public partial class RunProgression : Node3D
             foreach(string name in new[]{"unlock_chain","unlock_overload","chain_reach","fork","storm_duration","storm_slow","backlash","haste","bloodlust"})
                 Upgrades.Add(GD.Load<UpgradeDefinition>($"res://Gameplay/Upgrades/{name}.tres"));
         }
+        if(World.RunConfiguration.Profile.TalentPool.Length>0)
+        {
+            Upgrades.Clear();
+            foreach(string id in World.RunConfiguration.Profile.TalentPool)
+            {
+                var u=(UpgradeDefinition)GD.Load<UpgradeDefinition>($"res://Gameplay/Upgrades/{id}.tres").Duplicate();
+                if(u.Effect is UpgradeEffect.Damage or UpgradeEffect.Range or UpgradeEffect.Cooldown)u.AbilityId=World.Combat.Definition.Id;
+                if(u.Effect==UpgradeEffect.Damage)u.Title="Combat Training";
+                if(u.Effect is UpgradeEffect.Damage or UpgradeEffect.Range or UpgradeEffect.Cooldown or UpgradeEffect.Radius)u.Icon=World.Combat.Definition.Icon;
+                Upgrades.Add(u);
+            }
+        }
         var rarity=GD.Load<RarityTuning>("res://Gameplay/Upgrades/rarity.tres");
         foreach(var upgrade in Upgrades) upgrade.RarityRules??=rarity;
         if (Upgrades.Count < 3 || Upgrades.Select(x=>x.Id).Distinct().Count()!=Upgrades.Count)
@@ -175,7 +187,7 @@ public partial class RunProgression : Node3D
     public int AbilityRanks(string id) => Upgrades.Where(u=>Affects(u,id)).Sum(Rank);
     private static bool Affects(UpgradeDefinition u,string id) => u.Effect is not (UpgradeEffect.Health or UpgradeEffect.Speed or UpgradeEffect.UnlockAbility)
         && (u.AbilityId=="" || u.AbilityId==id) && (u.Effect!=UpgradeEffect.TickRate || id is "lightning" or "storm")
-        && (u.Effect!=UpgradeEffect.Radius || id is "storm" or "deathfield")
+        && (u.Effect!=UpgradeEffect.Radius || id is "storm" or "deathfield" || ClassProfile.All.Any(p=>p.StartingAbility==id))
         && (u.Effect!=UpgradeEffect.Damage || id is not ("barrier" or "darkheal"))
         && (u.Effect!=UpgradeEffect.Range || id!="darkheal");
     public PowerRarity AbilityRarity(string id) => Upgrades.Where(u=>Rank(u)>0 && Affects(u,id))

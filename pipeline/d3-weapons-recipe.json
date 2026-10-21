@@ -1,0 +1,61 @@
+{
+  "weapons": {
+    "pistol": {
+      "model": "/resources/art/dynamic/weapon/model/blaster_low01_a01_v01.gr2",
+      "materials": [
+        {
+          "path": "/resources/art/shaders/materials/blaster_low01_a01_v01.mat",
+          "derived": "Uber",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_low01_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_low01_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_low01_a01_v01_s.dds"
+          }
+        }
+      ]
+    },
+    "rifle": {
+      "model": "/resources/art/dynamic/weapon/model/rifle_low01_a01_v01.gr2",
+      "materials": [
+        {
+          "path": "/resources/art/shaders/materials/rifle_low01_a01_v01.mat",
+          "derived": "Uber",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/weapon/rifle/texture/___psd/rifle_low01_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/weapon/rifle/texture/___psd/rifle_low01_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/weapon/rifle/texture/___psd/rifle_low01_a01_v01_s.dds"
+          }
+        }
+      ]
+    },
+    "sniper": {
+      "model": "/resources/art/dynamic/weapon/model/rifle_sniperlow01_a01_v01.gr2",
+      "materials": [
+        {
+          "path": "/resources/art/shaders/materials/rifle_sniperlow01_a01_v01.mat",
+          "derived": "Uber",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/weapon/texture/rifle_sniperlow01_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/weapon/texture/rifle_sniperlow01_a01_v_04_n.dds",
+            "GlossMap": "/resources/art/dynamic/weapon/texture/rifle_sniperlow01_a01_v01_s.dds",
+            "EmissiveMap": "/resources/art/defaultassets/black.dds"
+          }
+        }
+      ]
+    },
+    "staff": {
+      "model": "/resources/art/dynamic/weapon/model/dualsaber_low01_a01_v01.gr2",
+      "materials": [
+        {
+          "path": "/resources/art/shaders/materials/dualsaber_low01_a01_v01.mat",
+          "derived": "Uber",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_low01_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_low01_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_low01_a01_v01_s.dds"
+          }
+        }
+      ]
+    }
+  }
+}

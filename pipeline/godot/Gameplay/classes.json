@@ -1,0 +1,133 @@
+[
+  {
+    "Id": "sorcerer",
+    "Faction": "empire",
+    "BaseClass": "sith_inquisitor",
+    "Appearance": "inquisitor_level1_april2012_bmn",
+    "EquipmentPreset": "inquisitor_level1",
+    "StartingAbility": "lightning",
+    "Presentation": "sorcerer",
+    "AnimationScene": "res://Assets/Abilities/casts.glb",
+    "ArtifactEffects": [],
+    "TalentPool": []
+  },
+  {
+    "Id": "juggernaut",
+    "BaseClass": "sith_warrior",
+    "Appearance": "d3.war.bmn",
+    "EquipmentPreset": "d3.juggernaut",
+    "StartingAbility": "smash",
+    "Idle": "",
+    "Run": "",
+    "TalentPool": [
+      "damage",
+      "d3_area_smash",
+      "cooldown",
+      "health",
+      "speed",
+      "d3_smash"
+    ]
+  },
+  {
+    "Id": "marauder",
+    "BaseClass": "sith_warrior",
+    "Appearance": "d3.war.bmn",
+    "EquipmentPreset": "d3.marauder",
+    "StartingAbility": "rupture",
+    "Idle": "DualIdle",
+    "Run": "DualRun",
+    "TalentPool": [
+      "damage",
+      "range",
+      "cooldown",
+      "health",
+      "speed",
+      "d3_rupture"
+    ]
+  },
+  {
+    "Id": "assassin",
+    "BaseClass": "sith_inquisitor",
+    "Appearance": "d3.inq.bmn",
+    "EquipmentPreset": "d3.assassin",
+    "StartingAbility": "lacerate",
+    "Idle": "PoleIdle",
+    "Run": "PoleRun",
+    "TalentPool": [
+      "damage",
+      "d3_area_lacerate",
+      "cooldown",
+      "health",
+      "speed",
+      "d3_lacerate"
+    ]
+  },
+  {
+    "Id": "operative",
+    "BaseClass": "imperial_agent",
+    "Appearance": "d3.spy.bmn",
+    "EquipmentPreset": "d3.operative",
+    "StartingAbility": "dart",
+    "Idle": "RifleIdle",
+    "Run": "RifleRun",
+    "TalentPool": [
+      "damage",
+      "range",
+      "cooldown",
+      "health",
+      "speed",
+      "d3_dart"
+    ]
+  },
+  {
+    "Id": "sniper",
+    "BaseClass": "imperial_agent",
+    "Appearance": "d3.spy.bmn",
+    "EquipmentPreset": "d3.sniper",
+    "StartingAbility": "snipershot",
+    "Idle": "SniperIdle",
+    "Run": "RifleRun",
+    "TalentPool": [
+      "damage",
+      "range",
+      "cooldown",
+      "health",
+      "speed",
+      "d3_snipershot"
+    ]
+  },
+  {
+    "Id": "mercenary",
+    "BaseClass": "bounty_hunter",
+    "Appearance": "d3.bh.bmn",
+    "EquipmentPreset": "d3.mercenary",
+    "StartingAbility": "tracer",
+    "Idle": "PistolsIdle",
+    "Run": "PistolsRun",
+    "TalentPool": [
+      "damage",
+      "range",
+      "cooldown",
+      "health",
+      "speed",
+      "d3_tracer"
+    ]
+  },
+  {
+    "Id": "powertech",
+    "BaseClass": "bounty_hunter",
+    "Appearance": "d3.bh.bmn",
+    "EquipmentPreset": "d3.powertech",
+    "StartingAbility": "flamesweep",
+    "Idle": "PistolIdle",
+    "Run": "PistolRun",
+    "TalentPool": [
+      "damage",
+      "d3_area_flamesweep",
+      "cooldown",
+      "health",
+      "speed",
+      "d3_flamesweep"
+    ]
+  }
+]

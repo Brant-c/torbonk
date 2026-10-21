@@ -27,14 +27,18 @@
           "Name": "Juggernaut",
           "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.juggernaut.png",
           "Description": "A single lightsaber and heavy armor turn the Warrior into an unyielding force.",
-          "GameplayImplemented": false
+          "GameplayImplemented": true,
+          "PreviewScene": "res://Assets/sorcerer.glb",
+          "IdleAnimation": "Idle"
         },
         {
           "Id": "marauder",
           "Name": "Marauder",
           "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.marauder.png",
           "Description": "Twin lightsabers and aggressive assaults overwhelm opponents.",
-          "GameplayImplemented": false
+          "GameplayImplemented": true,
+          "PreviewScene": "res://Assets/sorcerer.glb",
+          "IdleAnimation": "Idle"
         }
       ]
     },
@@ -61,7 +65,9 @@
           "Name": "Assassin",
           "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.sith_assassin.png",
           "Description": "A double-bladed lightsaber, stealth, and dark-side techniques define the Assassin.",
-          "GameplayImplemented": false
+          "GameplayImplemented": true,
+          "PreviewScene": "res://Assets/sorcerer.glb",
+          "IdleAnimation": "Idle"
         }
       ]
     },
@@ -78,14 +84,18 @@
           "Name": "Sniper",
           "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.sniper.png",
           "Description": "Strike from cover with a sniper rifle and carefully placed long-range shots.",
-          "GameplayImplemented": false
+          "GameplayImplemented": true,
+          "PreviewScene": "res://Assets/sorcerer.glb",
+          "IdleAnimation": "Idle"
         },
         {
           "Id": "operative",
           "Name": "Operative",
           "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.operative.png",
           "Description": "Use concealment, a vibroknife, and field medicine at close quarters.",
-          "GameplayImplemented": false
+          "GameplayImplemented": true,
+          "PreviewScene": "res://Assets/sorcerer.glb",
+          "IdleAnimation": "Idle"
         }
       ]
     },
@@ -102,14 +112,18 @@
           "Name": "Mercenary",
           "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.mercenary.png",
           "Description": "Twin blasters, missiles, and support technology provide ranged firepower.",
-          "GameplayImplemented": false
+          "GameplayImplemented": true,
+          "PreviewScene": "res://Assets/sorcerer.glb",
+          "IdleAnimation": "Idle"
         },
         {
           "Id": "powertech",
           "Name": "Powertech",
           "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.powertech.png",
           "Description": "Heavy armor, a flamethrower, and close-range tools keep the pressure on.",
-          "GameplayImplemented": false
+          "GameplayImplemented": true,
+          "PreviewScene": "res://Assets/sorcerer.glb",
+          "IdleAnimation": "Idle"
         }
       ]
     },

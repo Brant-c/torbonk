@@ -1,5 +1,10 @@
 # SWTOR Survivors: Tasks 1–3 conversion proof
 
+**D3 makes all eight Imperial advanced classes playable on Korriban.** See
+[D3-README.md](D3-README.md) for launch instructions, class starters, original
+asset provenance, presentation limits and the manual review checklist.
+The focused C# build and 107-check Godot smoke pass; stop for manual review.
+
 **D1.1 adds Main Menu → Collections → Appearances.** Sorcerer cosmetics save
 between runs and application restarts. See [D11-README.md](D11-README.md) for
 launch instructions, developer alternate-outfit unlocks, and manual review.

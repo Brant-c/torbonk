@@ -48,7 +48,19 @@ public partial class EquipmentAttachment : Node3D
         equipment.Basis=(Correction(profile)*Basis.FromEuler(rotation*Mathf.Pi/180)).Scaled(Vector3.One*profile.Scale);
         equipment.Position=new Vector3(profile.Position[0],profile.Position[1],profile.Position[2]);
         equipment.AddChild(model);
-        if (profile.RedBlade) equipment.AddBlade();
+        if (profile.RedBlade) equipment.AddBlade(profile.BladeStart,profile.BladeLength);
+        if(profile.DoubleBlade)
+        {
+            var reverse=new EquipmentAttachment {RotationDegrees=new Vector3(0,180,0)};
+            equipment.AddChild(reverse);reverse.AddBlade(profile.BladeStart,profile.BladeLength);
+        }
+        if(profile.RedBlade && profile.HumAudio!="" && AudioPresentation.Find(skeleton)!=null)
+        {
+            var stream=(AudioStreamWav)GD.Load<AudioStreamWav>(profile.HumAudio).Duplicate();
+            stream.LoopMode=AudioStreamWav.LoopModeEnum.Forward;stream.LoopBegin=0;stream.LoopEnd=(int)(stream.GetLength()*stream.MixRate);
+            var hum=new AudioStreamPlayer3D {Name="OriginalSaberHum",Stream=stream,Bus="B7Combat",VolumeDb=-32,AttenuationModel=AudioStreamPlayer3D.AttenuationModelEnum.Disabled};
+            equipment.AddChild(hum);hum.Play();
+        }
         return equipment;
     }
     public void Unequip()
@@ -56,7 +68,7 @@ public partial class EquipmentAttachment : Node3D
         // Detach synchronously; queued objects cannot overlap a newly restored visual for one frame.
         Visible=false;Socket.GetParent()?.RemoveChild(Socket);Socket.QueueFree();
     }
-    private void AddBlade()
+    private void AddBlade(float start=.017f,float length=.105f)
     {
         // Reconstructed blade renderer; hilt mesh and weapon socket are original April resources.
         // Converted GR2 bounds place the emitter at -Z; preserve that original weapon axis.
@@ -65,8 +77,8 @@ public partial class EquipmentAttachment : Node3D
             var mat = new StandardMaterial3D { ShadingMode = BaseMaterial3D.ShadingModeEnum.Unshaded,
                 AlbedoColor = layer.Item2, EmissionEnabled = true, Emission = new Color(1, 0.015f, 0.005f),
                 EmissionEnergyMultiplier = layer.Item3, Transparency = BaseMaterial3D.TransparencyEnum.Alpha };
-            AddChild(new MeshInstance3D { Name = "RedBlade", Position = new Vector3(0, 0, -0.0695f), RotationDegrees = new Vector3(90, 0, 0),
-                Mesh = new CylinderMesh { TopRadius = layer.Item1, BottomRadius = layer.Item1, Height = 0.105f, RadialSegments = 10 },
+            AddChild(new MeshInstance3D { Name = "RedBlade", Position = new Vector3(0, 0, -(start+length/2)), RotationDegrees = new Vector3(90, 0, 0),
+                Mesh = new CylinderMesh { TopRadius = layer.Item1, BottomRadius = layer.Item1, Height = length, RadialSegments = 10 },
                 MaterialOverride = mat, CastShadow = GeometryInstance3D.ShadowCastingSetting.Off });
         }
         // Original April red-base particle references this recovered soft tip texture.
@@ -77,7 +89,7 @@ public partial class EquipmentAttachment : Node3D
             CullMode = BaseMaterial3D.CullModeEnum.Disabled, NoDepthTest = false };
         foreach (float angle in new[] { 0f, Mathf.Pi / 2 })
             AddChild(new MeshInstance3D { Name = "OriginalTextureHalo", Mesh = new QuadMesh { Size = new Vector2(0.018f, 0.135f) },
-                Transform = new Transform3D(new Basis(Vector3.Forward, angle) * new Basis(Vector3.Right, Mathf.Pi / 2), new Vector3(0, 0, -0.0695f)),
+                Transform = new Transform3D(new Basis(Vector3.Forward, angle) * new Basis(Vector3.Right, Mathf.Pi / 2), new Vector3(0, 0, -(start+length/2))),
                 MaterialOverride = haloMaterial, CastShadow = GeometryInstance3D.ShadowCastingSetting.Off });
         BladeInitialized = true;
     }

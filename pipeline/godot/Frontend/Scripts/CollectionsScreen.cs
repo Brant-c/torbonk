@@ -102,12 +102,12 @@ public partial class CollectionsScreen : Control
         foreach(var child in _choices.GetChildren()) {_choices.RemoveChild(child);child.QueueFree();}
         _choices.AddChild(FrontendSkin.Heading(SlotName(_slot),21));
         var assembly=Preview.Assembly!;
-        string equipped=assembly.Loadout.Current.Cosmetics.GetValueOrDefault(_slot) ?? Collection.DefaultAppearance(_slot);
+        string equipped=assembly.Loadout.Current.Cosmetics.GetValueOrDefault(_slot) ?? Collection.DefaultAppearance(_slot,_advanced);
         foreach(var a in Collection.Catalog.Appearances.Where(a=>a.Slot==_slot))
         {
             bool compatible=Collection.Compatible(a,assembly.Loadout.Context),unlocked=Collection.State.Unlocked.Contains(a.Id),selected=equipped==a.Id;
             string state=!compatible ? "Incompatible" : selected ? "Equipped" : unlocked ? "Unlocked" : "Locked";
-            string name=a.Id.StartsWith("level1.") ? "Starting Inquisitor" : a.Id.StartsWith("ss_a04.") ? "Sorcerer SS A04" : "Red Lightsaber";
+            string name=Collection.Catalog.Items.FirstOrDefault(i=>i.Appearance==a.Id)?.DisplayName??a.Id;
             var b=FrontendSkin.Button(name+" · "+state,()=>Equip(a.Id,false),selected);
             b.Name="Appearance_"+a.Id;b.Disabled=!compatible || !unlocked;b.CustomMinimumSize=new Vector2(0,64);
             // Only use an item icon when D1 actually recovered one for that appearance.

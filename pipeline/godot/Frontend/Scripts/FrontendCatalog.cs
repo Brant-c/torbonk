@@ -29,7 +29,8 @@ public sealed class AdvancedClassDefinition
     public string Name { get; set; } = "";
     public string Description { get; set; } = "";
     public string Artwork { get; set; } = "";
-    public bool GameplayImplemented { get; set; }
+    private bool _implemented;
+    public bool GameplayImplemented { get=>_implemented && ClassProfile.Find(Id)?.Ready==true; set=>_implemented=value; }
     public string PreviewScene { get; set; } = "";
     public string IdleAnimation { get; set; } = "Idle";
     public float FacingDegrees { get; set; } = 180;

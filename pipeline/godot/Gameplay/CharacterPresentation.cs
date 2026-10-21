@@ -44,6 +44,7 @@ public partial class CharacterPresentation : Node3D
     private string _gestureClip = "", _reaction = "";
     private double _reactionTime;
     private float _movement, _speed, _gestureWeight, _reactionWeight;
+    public bool FullBodyGesture {get;private set;}
     private float _jumpWeight;
     private int _gesturePriority;
     private double _jumpClock, _takeoffDuration, _ungroundedSeconds;
@@ -173,7 +174,7 @@ public partial class CharacterPresentation : Node3D
         Tree.Set("parameters/Locomotion/blend_amount", _movement);
         Tree.Set("parameters/JumpLocomotion/blend_amount", _jumpWeight);
         // Briefly crossfade the original standing pose into the moving bone masks.
-        Tree.Set("parameters/StandingCast/blend_amount", (1 - Mathf.Max(_movement, _jumpWeight)) * _gestureWeight);
+        Tree.Set("parameters/StandingCast/blend_amount", (FullBodyGesture ? 1 : 1 - Mathf.Max(_movement, _jumpWeight)) * _gestureWeight);
         Tree.Set("parameters/Waist/blend_amount", _gestureWeight * Mathf.Clamp(LowerBackCastWeight, 0, 1));
         Tree.Set("parameters/Chest/blend_amount", _gestureWeight * Mathf.Clamp(ChestCastWeight, 0, 1));
         Tree.Set("parameters/Upper/blend_amount", _gestureWeight);
@@ -234,12 +235,13 @@ public partial class CharacterPresentation : Node3D
         Tree.Set("parameters/JumpSeek/seek_request", 0.0);
     }
     // Ordinary busy gestures are skipped. A sustained higher-priority cast can crossfade in; never queue.
-    public bool TryBeginGesture(object owner, string clip, int priority=0)
+    public bool TryBeginGesture(object owner, string clip, int priority=0, bool fullBody=false)
     {
         if (OverrideActive || !Animator.HasAnimation(clip) ||
             (GestureOwner!=null && priority<=_gesturePriority) || (GestureOwner==null && _gestureWeight>0.05f && priority<=0)) return false;
         bool crossfade=GestureOwner!=null || _gestureWeight>0.05f;
         GestureOwner = owner; _gestureClip = clip;_gesturePriority=priority;
+        FullBodyGesture=fullBody;
         if(crossfade)_playback.Travel(ClipState(clip));else _playback.Start(ClipState(clip));
         foreach(var playback in _layerPlaybacks)
             if(crossfade)playback.Travel(ClipState(clip));else playback.Start(ClipState(clip));
@@ -247,7 +249,7 @@ public partial class CharacterPresentation : Node3D
     }
     public void SetGestureClip(object owner, string clip)
     {
-        if (GestureOwner != owner || string.IsNullOrEmpty(clip) || !Animator.HasAnimation(clip)) return;
+        if (GestureOwner != owner || string.IsNullOrEmpty(clip) || !Animator.HasAnimation(clip) || _gestureClip==clip) return;
         _gestureClip = clip; _playback.Travel(ClipState(clip));
         foreach(var playback in _layerPlaybacks) playback.Travel(ClipState(clip));
     }
@@ -255,12 +257,13 @@ public partial class CharacterPresentation : Node3D
     {
         if (GestureOwner != owner) return;
         GestureOwner = null; FacingTarget = null;
+        FullBodyGesture=false;
         _gesturePriority=0;
     }
     public void ResetPresentation()
     {
         ResetJumpPresentation();
-        GestureOwner = null; _reaction = ""; FacingTarget = null; _speed = _movement = _gestureWeight = _reactionWeight = 0;
+        GestureOwner = null; FullBodyGesture=false; _reaction = ""; FacingTarget = null; _speed = _movement = _gestureWeight = _reactionWeight = 0;
         Locomotion = State = "Idle"; _playback.Start("Idle");
         foreach(var playback in _layerPlaybacks) playback.Start("Idle");
         _Process(0);
@@ -287,7 +290,7 @@ public partial class CharacterPresentation : Node3D
         _idleNode.Animation=idle;_runNode.Animation=run;
     }
     public void LoadJumpAnimations() => LoadAbilityLibrary("res://Assets/Jump/jump.glb", "Jump", false);
-    private void LoadAbilityLibrary(string path, string key, bool gestureClips = true)
+    public void LoadAbilityLibrary(string path, string key, bool gestureClips = true)
     {
         var imported = GD.Load<PackedScene>(path).Instantiate<Node3D>();
         var source = imported.FindChildren("*", "AnimationPlayer", true, false).OfType<AnimationPlayer>().Single();

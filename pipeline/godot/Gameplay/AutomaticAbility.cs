@@ -23,6 +23,7 @@ public partial class AutomaticAbility : Node
     public float HealthThreshold { get; set; }
     public int ExtraBounces { get; set; }
     public RunBuildEffects? Build { get; set; }
+    public PeriodicEffects? Periodic {get;set;}
     public int LastDistinctHits => _damaged.Count;
     public float LastHealing { get; private set; }
     private readonly HashSet<ulong> _damaged = new();
@@ -69,7 +70,7 @@ public partial class AutomaticAbility : Node
             _gestureRemaining=Math.Max(0.2,_gestureRemaining);
             Present(()=> {
                 if(Presentation.Actor.GestureOwner!=this)
-                    Presentation.Actor.TryBeginGesture(this,State==LightningState.Starting?Definition.StartClip:Definition.LoopClip,Definition.GesturePriority);
+                    Presentation.Actor.TryBeginGesture(this,State==LightningState.Starting?Definition.StartClip:Definition.LoopClip,Definition.GesturePriority,Definition.FullBodyGesture);
             });
         }
         if(_gestureRemaining<=0) Present(()=>Presentation.Actor.ReleaseGesture(this));
@@ -127,7 +128,7 @@ public partial class AutomaticAbility : Node
         State=LightningState.Starting;_phaseRemaining=Definition.WindupSeconds;
         CooldownRemaining=CooldownDuration=CooldownSeconds;
         _gestureRemaining=Definition.GestureSeconds;
-        if(_gestureRemaining>0) Present(()=>Presentation.Actor.TryBeginGesture(this,Definition.StartClip,Definition.GesturePriority));
+        if(_gestureRemaining>0) Present(()=>Presentation.Actor.TryBeginGesture(this,Definition.StartClip,Definition.GesturePriority,Definition.FullBodyGesture));
         // Presentation failures are reported and cannot suppress damage.
         try { _presented=Presentation.Begin(target,GroundCenter,Radius); }
         catch(Exception ex) { _presented=false;GD.PushWarning(Definition.Title+": "+ex.Message); }
@@ -149,7 +150,9 @@ public partial class AutomaticAbility : Node
             return true;
         }
         if(Definition.Area==AbilityArea.Chain) return ChainTick();
-        var targets=Definition.Area==AbilityArea.CasterRadial
+        var targets=Definition.Area==AbilityArea.TargetSplash && Targeting.IsValidTarget(CastTarget,Range)
+            ? Targeting.InArea(CastTarget!.GlobalPosition,Radius,Range,true).Append(CastTarget!).Distinct().ToArray()
+            : Definition.Area==AbilityArea.CasterRadial
             ? Targeting.InArea(Caster.GlobalPosition,Radius,Radius).ToArray()
             : Definition.Area==AbilityArea.GroundSphere
             ? Targeting.InArea(GroundCenter,Radius,Range,Definition.PersistentArea).ToArray()
@@ -159,7 +162,8 @@ public partial class AutomaticAbility : Node
         {
             if(State!=LightningState.Channeling || !Caster.Alive || !CombatEnabled) return false;
             if(!GodotObject.IsInstanceValid(target) || !target.Alive) continue;
-            float applied=DealHit(target,DamagePerTick);
+            float applied=DealHit(target,DamagePerTick*(Definition.Area==AbilityArea.TargetSplash && target!=CastTarget?Definition.SplashMultiplier:1));
+            if(target.Alive && Definition.PeriodicDuration>0)Periodic?.Apply(this,target);
             if(Definition.Area==AbilityArea.CasterRadial && target is EnemyAgent enemy && enemy.Alive) enemy.DisplaceFrom(Caster.GlobalPosition,Definition.KnockbackDistance);
             if(applied<=0) continue;
             _damaged.Add(target.GetInstanceId());
@@ -175,10 +179,17 @@ public partial class AutomaticAbility : Node
         }
         if(State!=LightningState.Channeling) return false;
         if(Definition.Area==AbilityArea.SingleTarget && !Targeting.IsValidTarget(CastTarget,Range))
-        { Finish(true,"Target died / invalidated");return false; }
+        { Finish(!(Definition.ImpactTailsOnTargetDeath && ChannelSeconds<=0),"Target died / invalidated");return false; }
         return true;
     }
     private float DealHit(Combatant target,float amount) => target.Health.ApplyDamage(amount*(Build?.DamageMultiplier(this,target)??1),Definition.DamageType);
+    public void ApplyPeriodicHit(Combatant target,float amount)
+    {
+        if(!Caster.Alive || !target.Alive || !Caster.IsHostileTo(target))return;
+        float applied=DealHit(target,amount);
+        if(applied<=0)return;
+        DamageEvents++;DamageDealt?.Invoke(target,applied);Build?.Hit(this,target,new[]{target});
+    }
     private bool ChainTick()
     {
         if(!Targeting.IsValidTarget(CastTarget,Range))return false;

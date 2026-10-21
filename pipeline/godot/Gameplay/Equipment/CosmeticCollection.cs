@@ -25,17 +25,15 @@ public sealed class CosmeticCollection
     public CosmeticSave State { get; private set; } = new();
     public string Notice { get; private set; } = "";
     public static string Key(string baseClass,string advanced) => baseClass+"/"+advanced;
-    public CharacterEquipmentContext Context(string baseClass,string advanced) => new(
-        Catalog.Rigs.Single(r=>r.Id=="april_bmnnew_cloth"),
-        Catalog.Classes.Single(c=>c.BaseClassId==baseClass && c.AdvancedClassId==advanced));
+    public CharacterEquipmentContext Context(string baseClass,string advanced) => EquipmentComposition.Context(Catalog,baseClass,advanced);
     public bool Available(string baseClass,string advanced) =>
         Catalog.Classes.Any(c=>c.BaseClassId==baseClass && c.AdvancedClassId==advanced && c.SupportedSlots.Length>0);
     public bool Compatible(AppearanceDefinition appearance, CharacterEquipmentContext context) =>
         context.Class.SupportedSlots.Contains(appearance.Slot)
         && EquipmentCatalog.Compatible(appearance.Compatibility,context,out _)
         && ResourceLoader.Exists(appearance.Scene);
-    public string DefaultAppearance(string slot) => Catalog.Items.Single(i=>
-        i.Id==Catalog.Presets.Single(p=>p.Id=="inquisitor_level1").Items[slot]).Appearance;
+    public string DefaultAppearance(string slot,string advanced="sorcerer") => Catalog.Items.Single(i=>
+        i.Id==Catalog.Presets.Single(p=>p.Id==(ClassProfile.Find(advanced)?.EquipmentPreset??"inquisitor_level1")).Items[slot]).Appearance;
     public CosmeticProfile Profile(string baseClass,string advanced) => State.Profiles[Key(baseClass,advanced)];
     public CosmeticCollection()
     {
@@ -59,7 +57,9 @@ public sealed class CosmeticCollection
         {
             string key=Key(cl.BaseClassId,cl.AdvancedClassId);
             if(!State.Profiles.TryGetValue(key,out var profile) || profile==null) State.Profiles[key]=profile=new();
-            profile.DefaultLoadout=cl.SupportedSlots.Length>0 ? starter.Id : "";
+            profile.DefaultLoadout=ClassProfile.Find(cl.AdvancedClassId)?.EquipmentPreset??"";
+            if(profile.DefaultLoadout!="")foreach(var item in Catalog.Presets.Single(p=>p.Id==profile.DefaultLoadout).Items.Values)
+                State.Unlocked.Add(Catalog.Items.Single(i=>i.Id==item).Appearance);
             profile.Equipped ??= new();
             var context=Context(cl.BaseClassId,cl.AdvancedClassId);
             foreach(var slot in profile.Equipped.Keys.ToArray())

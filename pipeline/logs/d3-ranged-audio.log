@@ -1,0 +1,23 @@
+wwiser v20260808 (python 3.12.14)
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\abilities_imperialranged_data.bnk
+parser: done
+names: loading names
+names: couldn't find D:\SWTORClassic\torbonk\pipeline\tools\wwnames.db3 name file
+names: done
+dumper: writting D:\SWTORClassic\torbonk\pipeline\work\d3\ranged.xml
+dumper: done
+(done)
+wwiser v20260808 (python 3.12.14)
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\abilities_imperialranged_data.bnk
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\init.bnk
+parser: done
+names: loading names
+names: couldn't find D:\SWTORClassic\torbonk\pipeline\tools\wwnames.db3 name file
+names: done
+generator: start
+generator: processing nodes
+generator: elapsed 0.134292s
+generator: WARNING! missing 20 memory audio (load more banks?)
+generator: done (created 10)
+(done)
+{"events": {"Play_ability_bountyhunter_flamesweep_bracerfire": "2217392902", "Play_ability_bountyhunter_flamesweep_fireburst": "487253119", "Play_ability_bountyhunter_flamesweep_flamethrowerloop": "2626878967", "Play_ability_bountyhunter_fusionmissile_launch": "1217303421", "Play_ability_bountyhunter_fusionmissile_projectile": "2621961465", "Play_ability_bountyhunter_rechargeandreload_jetpackactivate": "3712200252", "Play_ability_bountyhunter_rechargeandreload_jetpackloop": "4101149757", "Play_ability_bountyhunter_tacticalnuke_explosion": "649924111", "Play_ability_spy_painsupressiondart_prep": "2667112646", "Play_ability_spy_snipe_activate": "3213767617", "Stop_ability_bountyhunter_flamesweep_flamethrowerloop": "3079095993", "Stop_ability_bountyhunter_fusionmissile_projectile": "2851546287", "Stop_ability_bountyhunter_rechargeandreload_jetpackloop": "2927406799"}, "missing": ["Play_ability_sithwarrior_smash_coarseburstsingle", "Play_ability_sithwarrior_smash_wave", "Play_ability_sithwarrior_impale_impact"], "media": 20}

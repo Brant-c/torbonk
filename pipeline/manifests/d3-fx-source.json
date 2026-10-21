@@ -1,0 +1,3753 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 240,
+  "maximumDecodedBytes": 104857600,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xBBD8A59168D24A08",
+      "entryOffset": 157209716,
+      "headerSize": 36,
+      "dataOffset": 157209752,
+      "compressedSize": 2616,
+      "length": 67494,
+      "compressionMethod": 1,
+      "crc32Index": "3edb829d",
+      "path": "/resources/art/fx/fxspec/sw_smash.fxspec",
+      "sha256": "ca837b722b871d420b46612930f374bb905b4ec55eb60c3b27b3fa3b1a61d51b",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\sw_smash.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x8F4B6AA5C8CBD7EB",
+      "entryOffset": 169742680,
+      "headerSize": 36,
+      "dataOffset": 169742716,
+      "compressedSize": 556,
+      "length": 1101,
+      "compressionMethod": 1,
+      "crc32Index": "e997fd3d",
+      "path": "/resources/art/fx/particles/whirlandblow_ring01.prt",
+      "sha256": "8b4411da439eb65a3157e1c3285595434627c6fcff00225dd276a0001161632d",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\whirlandblow_ring01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xC7144B3DF16EA798",
+      "entryOffset": 169744153,
+      "headerSize": 36,
+      "dataOffset": 169744189,
+      "compressedSize": 555,
+      "length": 1111,
+      "compressionMethod": 1,
+      "crc32Index": "af61935e",
+      "path": "/resources/art/fx/particles/whirlandblow_ringsparks01.prt",
+      "sha256": "81625d6c9dfd1b1a11f0c60f4189f393f7b9e9cb38b011d420395ed1ada729ea",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\whirlandblow_ringsparks01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xA0D45D0D55EAE56A",
+      "entryOffset": 157217049,
+      "headerSize": 36,
+      "dataOffset": 157217085,
+      "compressedSize": 578,
+      "length": 1132,
+      "compressionMethod": 1,
+      "crc32Index": "ab25d268",
+      "path": "/resources/art/fx/particles/sw_smash_smokering_rot01.prt",
+      "sha256": "fc71bf43ae7787dc7ad89d536262cdd37f730fdcaa6b3afdd8105f1a1443abac",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sw_smash_smokering_rot01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x1AF4330CCEF80AC8",
+      "entryOffset": 45667343,
+      "headerSize": 36,
+      "dataOffset": 45667379,
+      "compressedSize": 433,
+      "length": 756,
+      "compressionMethod": 1,
+      "crc32Index": "8b0a2963",
+      "path": "/resources/art/fx/particles/flamethrower_dummy.prt",
+      "sha256": "4e1e49a05197e69f606eb1a3b1a74b2e8a75fccea56bb3c6aa6acd238cad7e76",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\flamethrower_dummy.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xB880701A0D952C18",
+      "entryOffset": 157212368,
+      "headerSize": 36,
+      "dataOffset": 157212404,
+      "compressedSize": 574,
+      "length": 1126,
+      "compressionMethod": 1,
+      "crc32Index": "e9833edf",
+      "path": "/resources/art/fx/particles/sw_smash_blastlines_01.prt",
+      "sha256": "1f21e7831641b33781c78e67ffd5ed4c87f7f072c884f8ac696fb921aad88ddf",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sw_smash_blastlines_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD3D6037EFF710E1F",
+      "entryOffset": 157213849,
+      "headerSize": 36,
+      "dataOffset": 157213885,
+      "compressedSize": 566,
+      "length": 1126,
+      "compressionMethod": 1,
+      "crc32Index": "6fc2834a",
+      "path": "/resources/art/fx/particles/sw_smash_ground_elec_01.prt",
+      "sha256": "970b82628e900bc12b21451e5c595ee7ec3ab83f8874fd9728c7d3262b2eafff",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sw_smash_ground_elec_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xE5E4AEA76676A73B",
+      "entryOffset": 156884010,
+      "headerSize": 36,
+      "dataOffset": 156884046,
+      "compressedSize": 1994,
+      "length": 38752,
+      "compressionMethod": 1,
+      "crc32Index": "257a4032",
+      "path": "/resources/art/fx/fxspec/sw_impale_impact_01.fxspec",
+      "sha256": "8a6587b745fc08abbd2f511170d9dd06601d05602853c85322ce1150ff857db6",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\sw_impale_impact_01.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xF97DF9F26D162129",
+      "entryOffset": 157363087,
+      "headerSize": 36,
+      "dataOffset": 157363123,
+      "compressedSize": 451,
+      "length": 801,
+      "compressionMethod": 1,
+      "crc32Index": "929385d9",
+      "path": "/resources/art/fx/particles/sweep_impact_flash_01.prt",
+      "sha256": "a033eeb0afffbbb5f6b1452e43d84e0b267104f4104f701c6b88eb1caa227ad5",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sweep_impact_flash_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x1993601A68C87169",
+      "entryOffset": 157364489,
+      "headerSize": 36,
+      "dataOffset": 157364525,
+      "compressedSize": 548,
+      "length": 1105,
+      "compressionMethod": 1,
+      "crc32Index": "bf193e29",
+      "path": "/resources/art/fx/particles/sweep_impact_flash_02.prt",
+      "sha256": "aa5e4241c3775308e97206aea243ed49e91fa33ecece018779296952e4b0ae18",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sweep_impact_flash_02.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x4D0E4035D4D3434C",
+      "entryOffset": 156881177,
+      "headerSize": 36,
+      "dataOffset": 156881213,
+      "compressedSize": 439,
+      "length": 836,
+      "compressionMethod": 1,
+      "crc32Index": "096960ff",
+      "path": "/resources/art/fx/particles/sw_impale_burstring_01.prt",
+      "sha256": "a4cede16ec0e31c1027fe0f9b589cc295bc5c735add4eb76e24862082b800aef",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sw_impale_burstring_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x7848C9B63960D863",
+      "entryOffset": 138268671,
+      "headerSize": 36,
+      "dataOffset": 138268707,
+      "compressedSize": 564,
+      "length": 1129,
+      "compressionMethod": 1,
+      "crc32Index": "838672fb",
+      "path": "/resources/art/fx/particles/leap_impact_smokeburst_01.prt",
+      "sha256": "1b8cfbe676831f6acf726693a90bfae55cba60cfd01d9bab61bad543adb2d38c",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\leap_impact_smokeburst_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x9AD6FC82F7BF8158",
+      "entryOffset": 156891662,
+      "headerSize": 36,
+      "dataOffset": 156891698,
+      "compressedSize": 435,
+      "length": 815,
+      "compressionMethod": 1,
+      "crc32Index": "7290bdbd",
+      "path": "/resources/art/fx/particles/sw_impale_sparks_01.prt",
+      "sha256": "7d30998227d2746b989d3f1a2c5caa65633e3e51e980c65c61f1c53a5710b622",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sw_impale_sparks_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x50704BFDB5558F0C",
+      "entryOffset": 138271373,
+      "headerSize": 36,
+      "dataOffset": 138271409,
+      "compressedSize": 437,
+      "length": 787,
+      "compressionMethod": 1,
+      "crc32Index": "748629dd",
+      "path": "/resources/art/fx/particles/leap_impact_sparks_02.prt",
+      "sha256": "3e402dfe77c8cdf0c5ba3436e59bbfb37782f906491c744b7b59a971cce3a806",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\leap_impact_sparks_02.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xC6B9BC2E3FDA5B1C",
+      "entryOffset": 156882575,
+      "headerSize": 36,
+      "dataOffset": 156882611,
+      "compressedSize": 441,
+      "length": 834,
+      "compressionMethod": 1,
+      "crc32Index": "80bbace9",
+      "path": "/resources/art/fx/particles/sw_impale_colliding_sparks_01.prt",
+      "sha256": "7a4838332ad32f9d73d454d16d715887f51419e561fae274343d7a868aeae51c",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sw_impale_colliding_sparks_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x7B30290F15285B9B",
+      "entryOffset": 156893082,
+      "headerSize": 36,
+      "dataOffset": 156893118,
+      "compressedSize": 549,
+      "length": 1103,
+      "compressionMethod": 1,
+      "crc32Index": "3af43fd1",
+      "path": "/resources/art/fx/particles/sw_impale_sparks_02.prt",
+      "sha256": "abc38703e2e802ba2524fcaa0166014852ec634412e325fe1431569d0f5e51e7",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sw_impale_sparks_02.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xEE77FD543A32DF78",
+      "entryOffset": 14185064,
+      "headerSize": 36,
+      "dataOffset": 14185100,
+      "compressedSize": 1472,
+      "length": 10634,
+      "compressionMethod": 1,
+      "crc32Index": "89e1d208",
+      "path": "/resources/art/fx/fxspec/abilities/all/all_dynamic_saber_trail_alphagrad_01.fxspec",
+      "sha256": "e2746a97ae3ef32a2ee6a6a331d11ebc19d195155f8905b9e939fc6004b80deb",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\all\\all_dynamic_saber_trail_alphagrad_01.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD3C8A36119BD7673",
+      "entryOffset": 36083728,
+      "headerSize": 36,
+      "dataOffset": 36083764,
+      "compressedSize": 545,
+      "length": 1111,
+      "compressionMethod": 1,
+      "crc32Index": "696861ac",
+      "path": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01.prt",
+      "sha256": "e2fb24a417f67ac0ed0dab2a85014f544d61f538abf0f861e996295b2c780dd4",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\dynamic_saber_trail_alphagrad_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x4F5C8891BABB18A4",
+      "entryOffset": 16634860,
+      "headerSize": 36,
+      "dataOffset": 16634896,
+      "compressedSize": 3308,
+      "length": 87800,
+      "compressionMethod": 1,
+      "crc32Index": "7e249424",
+      "path": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_flamesweep_bracer_flames_01.fxspec",
+      "sha256": "44bed0a50f1daf9d4add52867326dd3f8f6cb7f89cb161c0daa5d196649d806b",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\bounty_hunter\\bh_flamesweep_bracer_flames_01.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xC4B76A38E9136E30",
+      "entryOffset": 16626394,
+      "headerSize": 36,
+      "dataOffset": 16626430,
+      "compressedSize": 555,
+      "length": 1127,
+      "compressionMethod": 1,
+      "crc32Index": "c9d6a2b1",
+      "path": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_main.prt",
+      "sha256": "4c1510fe2ae02dc7b9976d1e538eaca84f6a3774061bc9a92566ac228d5adfb6",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_flame_sweep_flamethrower_main.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x5B3ADFCDF3F5FC4B",
+      "entryOffset": 16629453,
+      "headerSize": 36,
+      "dataOffset": 16629489,
+      "compressedSize": 574,
+      "length": 1146,
+      "compressionMethod": 1,
+      "crc32Index": "144cc025",
+      "path": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_support.prt",
+      "sha256": "7b53009b4a6f4bfaa027a53d3ef823a24acafd12ce59320018978bd7d0074e67",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_flame_sweep_flamethrower_support.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x06EF7F3C8D1A5652",
+      "entryOffset": 16510029,
+      "headerSize": 36,
+      "dataOffset": 16510065,
+      "compressedSize": 459,
+      "length": 837,
+      "compressionMethod": 1,
+      "crc32Index": "4a393bb9",
+      "path": "/resources/art/fx/particles/bh_determination_jetsmoke_01.prt",
+      "sha256": "8a1198892cc2e6d7f7d97244cab6ab5bfcd130f98caa4c22dabdc602846c2f6d",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_determination_jetsmoke_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xC7011DEF101105B9",
+      "entryOffset": 136488633,
+      "headerSize": 36,
+      "dataOffset": 136488669,
+      "compressedSize": 433,
+      "length": 792,
+      "compressionMethod": 1,
+      "crc32Index": "b1ced36c",
+      "path": "/resources/art/fx/particles/jet_head_01.prt",
+      "sha256": "dd2548848bce110867bb2258380ca26785810be5003f591e5f9609a93398c65c",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\jet_head_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x2FA2DA5AC9E9EDEB",
+      "entryOffset": 136491158,
+      "headerSize": 36,
+      "dataOffset": 136491194,
+      "compressedSize": 436,
+      "length": 770,
+      "compressionMethod": 1,
+      "crc32Index": "5b3a59a0",
+      "path": "/resources/art/fx/particles/jet_head_03.prt",
+      "sha256": "8f4d6b717fb5fccd05b1059d1b2ff552106edc280a6c98eae24688d245d9ea10",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\jet_head_03.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x0E174C66C754893D",
+      "entryOffset": 16627972,
+      "headerSize": 36,
+      "dataOffset": 16628008,
+      "compressedSize": 551,
+      "length": 1128,
+      "compressionMethod": 1,
+      "crc32Index": "6e6cb2d9",
+      "path": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_smoke.prt",
+      "sha256": "b11dc7622492815ed395c68c1b5cab78c87fe463804773bd0a310faa9fb1803d",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_flame_sweep_flamethrower_smoke.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x6F6B0149D0931002",
+      "entryOffset": 16277890,
+      "headerSize": 36,
+      "dataOffset": 16277926,
+      "compressedSize": 5106,
+      "length": 9944,
+      "compressionMethod": 1,
+      "crc32Index": "d70886e4",
+      "path": "/resources/art/fx/geometry/bountyhunter/bh_bracerweapon_01.gr2",
+      "sha256": "c19749962525b5265b927f9c6a511bdd67c13c14e7895d9ad703e03cb114f07d",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\geometry\\bountyhunter\\bh_bracerweapon_01.gr2",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xBE04D31A8C633855",
+      "entryOffset": 16641372,
+      "headerSize": 36,
+      "dataOffset": 16641408,
+      "compressedSize": 3109,
+      "length": 55028,
+      "compressionMethod": 1,
+      "crc32Index": "8af09e6c",
+      "path": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_fusion_missile_fire.fxspec",
+      "sha256": "4c3b53be0aae3b7464c59746dbb2507ae629e1b9dc7f5bb555c9237c1ae6cc6e",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\bounty_hunter\\bh_fusion_missile_fire.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD1D520141B653EA8",
+      "entryOffset": 16677243,
+      "headerSize": 36,
+      "dataOffset": 16677279,
+      "compressedSize": 435,
+      "length": 829,
+      "compressionMethod": 1,
+      "crc32Index": "71043e38",
+      "path": "/resources/art/fx/particles/bh_heatseeker_missile_jet.prt",
+      "sha256": "0cacb64fbdfdfc97754258e70f75b1da73dc49bb9e63b1ffd1bb2890e59d9157",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_heatseeker_missile_jet.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x3F2B34A2C964F509",
+      "entryOffset": 18494252,
+      "headerSize": 36,
+      "dataOffset": 18494288,
+      "compressedSize": 548,
+      "length": 1095,
+      "compressionMethod": 1,
+      "crc32Index": "c918d40d",
+      "path": "/resources/art/fx/particles/bh_tactical_nuke_muzzleflare.prt",
+      "sha256": "f1677c25bf6b1925e721d71131923beb0a92c3a7350cf8a3069b869683229476",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_tactical_nuke_muzzleflare.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x128FB4476BFD7A18",
+      "entryOffset": 17827622,
+      "headerSize": 36,
+      "dataOffset": 17827658,
+      "compressedSize": 545,
+      "length": 1106,
+      "compressionMethod": 1,
+      "crc32Index": "19e3f58a",
+      "path": "/resources/art/fx/particles/bh_nuke_horizontal_flare_blue.prt",
+      "sha256": "1cf70e768af3acbf4ba65e8f2f809ca285c8dfd2654a356bf5eed99a611e2604",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_horizontal_flare_blue.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x0E064FF6B7B52BEA",
+      "entryOffset": 16476569,
+      "headerSize": 36,
+      "dataOffset": 16476605,
+      "compressedSize": 567,
+      "length": 1121,
+      "compressionMethod": 1,
+      "crc32Index": "8510cf43",
+      "path": "/resources/art/fx/particles/bh_chaffsparks_trail.prt",
+      "sha256": "5f264919f1cba4c46ff565afba8229853adf24dcd3bd660be48a11ba9fe35ac2",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_chaffsparks_trail.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD80989329F3C219D",
+      "entryOffset": 17836469,
+      "headerSize": 36,
+      "dataOffset": 17836505,
+      "compressedSize": 545,
+      "length": 1055,
+      "compressionMethod": 1,
+      "crc32Index": "30fc57fe",
+      "path": "/resources/art/fx/particles/bh_nuke_smoketrail.prt",
+      "sha256": "d1930fddb82309b8d0d80a5574f0a2d3ce89879cd237e3e23d740a969700ea91",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_smoketrail.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xCB1C9B3A02A89FE8",
+      "entryOffset": 102557926,
+      "headerSize": 36,
+      "dataOffset": 102557962,
+      "compressedSize": 248,
+      "length": 373,
+      "compressionMethod": 1,
+      "crc32Index": "b91b0dba",
+      "path": "/resources/art/fx/particles/fxtemplate_dummy_point.prt",
+      "sha256": "8362bf8b01842d0919a029bc1837842beedc7313347d4f12fe91af191e13387c",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\fxtemplate_dummy_point.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x336785DCB4DE8D51",
+      "entryOffset": 146965466,
+      "headerSize": 36,
+      "dataOffset": 146965502,
+      "compressedSize": 541,
+      "length": 1076,
+      "compressionMethod": 1,
+      "crc32Index": "e2ad09d3",
+      "path": "/resources/art/fx/particles/rocketblast_dummy.prt",
+      "sha256": "719c48beb7346e8118ea59510920851a7685914cf89fe49b687c5eeada734b61",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\rocketblast_dummy.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x90713C64B970CE13",
+      "entryOffset": 16268703,
+      "headerSize": 36,
+      "dataOffset": 16268739,
+      "compressedSize": 4478,
+      "length": 10392,
+      "compressionMethod": 1,
+      "crc32Index": "bca8c480",
+      "path": "/resources/art/fx/geometry/bh_bracer_missile_spin.gr2",
+      "sha256": "898dbcf52c3d75e4519ea4695dccc8ddb1371fe5ba7312ab2d7fad3be7e0cdda",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\geometry\\bh_bracer_missile_spin.gr2",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x9C69205FADED0103",
+      "entryOffset": 18490463,
+      "headerSize": 36,
+      "dataOffset": 18490499,
+      "compressedSize": 3753,
+      "length": 68674,
+      "compressionMethod": 1,
+      "crc32Index": "5e2fcd27",
+      "path": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_explosion.fxspec",
+      "sha256": "67e1724c750f28ca821b1cc643c486e0bfb95634efb9bc60b86ec0f752945e3c",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\bounty_hunter\\bh_tactical_nuke_explosion.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x2B7676F52501BF42",
+      "entryOffset": 17837983,
+      "headerSize": 36,
+      "dataOffset": 17838019,
+      "compressedSize": 553,
+      "length": 1094,
+      "compressionMethod": 1,
+      "crc32Index": "999540f8",
+      "path": "/resources/art/fx/particles/bh_nuke_xplode_smoke.prt",
+      "sha256": "6d586fbfa90fa6ccfbb4fef8ebe0994bcd2cd14c8ae62041cdc33e7300269642",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_xplode_smoke.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x2CF9490C330ADA91",
+      "entryOffset": 17834902,
+      "headerSize": 36,
+      "dataOffset": 17834938,
+      "compressedSize": 555,
+      "length": 1116,
+      "compressionMethod": 1,
+      "crc32Index": "ed545816",
+      "path": "/resources/art/fx/particles/bh_nuke_smoke_highlights.prt",
+      "sha256": "711ff61dad5013a436309fb42bcab1bdd0e1597cd7337cb2e63b65ac95a482b7",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_smoke_highlights.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x74304243033D29A7",
+      "entryOffset": 17840996,
+      "headerSize": 36,
+      "dataOffset": 17841032,
+      "compressedSize": 549,
+      "length": 1085,
+      "compressionMethod": 1,
+      "crc32Index": "ffca04b6",
+      "path": "/resources/art/fx/particles/bh_nuke_xplosion_flash.prt",
+      "sha256": "b3fb93dc4c24046d6fc34d42fcea07e2bb8574ed0a4c4a4835c118ff1a50344f",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_xplosion_flash.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD2FCA007720C6AA2",
+      "entryOffset": 35865212,
+      "headerSize": 36,
+      "dataOffset": 35865248,
+      "compressedSize": 545,
+      "length": 1040,
+      "compressionMethod": 1,
+      "crc32Index": "4038b5be",
+      "path": "/resources/art/fx/particles/dummy_random_y_rotation.prt",
+      "sha256": "aa5843d4ab64ded1f6daf9e9540b9154864ba1507c9daab75b70910c14d75322",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\dummy_random_y_rotation.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x3E629E2213C40AE4",
+      "entryOffset": 17846935,
+      "headerSize": 36,
+      "dataOffset": 17846971,
+      "compressedSize": 553,
+      "length": 1106,
+      "compressionMethod": 1,
+      "crc32Index": "7a423f2e",
+      "path": "/resources/art/fx/particles/bh_nuke_xplosion_sparks.prt",
+      "sha256": "2992afc16598aa0700e5e39a9f6b45203dcfb6d3057a1f192f60a313040b37e9",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_xplosion_sparks.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xC4B7F54B09CFD2D0",
+      "entryOffset": 18655913,
+      "headerSize": 36,
+      "dataOffset": 18655949,
+      "compressedSize": 537,
+      "length": 1071,
+      "compressionMethod": 1,
+      "crc32Index": "629f54c5",
+      "path": "/resources/art/fx/particles/bh_xplosion_arm_parent.prt",
+      "sha256": "4ecf43b3e1f7275538a10c7d7374047930905e824c98c1fbff9835a3b19d3552",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_xplosion_arm_parent.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x4547A0C0D49335A5",
+      "entryOffset": 17843953,
+      "headerSize": 36,
+      "dataOffset": 17843989,
+      "compressedSize": 567,
+      "length": 1168,
+      "compressionMethod": 1,
+      "crc32Index": "8e88ba97",
+      "path": "/resources/art/fx/particles/bh_nuke_xplosion_long_horiz_flash.prt",
+      "sha256": "86764cd9c4cf4adbeea7b83225c51530b5956c35ac7355fde4513ba3a3b4e377",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_xplosion_long_horiz_flash.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD7F836D662E3C71E",
+      "entryOffset": 17842451,
+      "headerSize": 36,
+      "dataOffset": 17842487,
+      "compressedSize": 579,
+      "length": 1172,
+      "compressionMethod": 1,
+      "crc32Index": "e2c15b47",
+      "path": "/resources/art/fx/particles/bh_nuke_xplosion_long_flash.prt",
+      "sha256": "34bbb3258947a643016660a604186b9b13fe30b73865c6846d4460c9b3689e95",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_xplosion_long_flash.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x0A11448D0F60FCC6",
+      "entryOffset": 17839502,
+      "headerSize": 36,
+      "dataOffset": 17839538,
+      "compressedSize": 578,
+      "length": 1168,
+      "compressionMethod": 1,
+      "crc32Index": "0ca3ca51",
+      "path": "/resources/art/fx/particles/bh_nuke_xplode_smoke_ring.prt",
+      "sha256": "be3431cd6e8bc69eb5be1dff15eea10441d72221dede1bce8a7fbfbcc408f700",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_xplode_smoke_ring.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x9D6CBA1B110581DF",
+      "entryOffset": 17845455,
+      "headerSize": 36,
+      "dataOffset": 17845491,
+      "compressedSize": 559,
+      "length": 1081,
+      "compressionMethod": 1,
+      "crc32Index": "4d824dbc",
+      "path": "/resources/art/fx/particles/bh_nuke_xplosion_shock_ring.prt",
+      "sha256": "531203a36675662faf5e2e4d5a079eaadff4d3356635d811e21ed01b3524388f",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_xplosion_shock_ring.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x9D40496846301F10",
+      "entryOffset": 19712136,
+      "headerSize": 36,
+      "dataOffset": 19712172,
+      "compressedSize": 29466,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "20d8bb44",
+      "path": "/resources/art/fx/texture/debris/blast_mark_rim.dds",
+      "sha256": "5f6019e1a9817e5e1557956274ecb9422df63fa1e317dd901e4fe7c97ff679e9",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\debris\\blast_mark_rim.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xDEC198E4A2488BB3",
+      "entryOffset": 155528519,
+      "headerSize": 36,
+      "dataOffset": 155528555,
+      "compressedSize": 1334,
+      "length": 11788,
+      "compressionMethod": 1,
+      "crc32Index": "856b1c07",
+      "path": "/resources/art/fx/fxspec/abilities/spy/sp_toxic_dart_muzzle_flash.fxspec",
+      "sha256": "9bca416fb66f7e99f66f5da3ac88e28ad2e2d9868dd27844c9576eedb8828ce4",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\spy\\sp_toxic_dart_muzzle_flash.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x9FD259C7E21826F3",
+      "entryOffset": 139873568,
+      "headerSize": 36,
+      "dataOffset": 139873604,
+      "compressedSize": 448,
+      "length": 782,
+      "compressionMethod": 1,
+      "crc32Index": "ef030924",
+      "path": "/resources/art/fx/particles/muzzle_smoke_01.prt",
+      "sha256": "95a5ab2033683b4aa92f5a5486192fdbd508d43a5535ee85eec5e51b7681cf5c",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\muzzle_smoke_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x2C9B9145D5FF4826",
+      "entryOffset": 139874951,
+      "headerSize": 36,
+      "dataOffset": 139874987,
+      "compressedSize": 549,
+      "length": 1097,
+      "compressionMethod": 1,
+      "crc32Index": "e10dbd35",
+      "path": "/resources/art/fx/particles/muzzle_sparks_01.prt",
+      "sha256": "f93cdde44c716d4fd5380be3f77120d2583b01ed826feb658c35d44d02681dcb",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\muzzle_sparks_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x9A68880C5293CC99",
+      "entryOffset": 169743272,
+      "headerSize": 36,
+      "dataOffset": 169743308,
+      "compressedSize": 845,
+      "length": 1703,
+      "compressionMethod": 1,
+      "crc32Index": "7bf19aad",
+      "path": "/resources/art/fx/particles/whirlandblow_ring01_p.prt",
+      "sha256": "eb8160e1a577f63af0941a65722ab0008c753750c4e0b158cbb4977dcc1d7758",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\whirlandblow_ring01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x3BFD7E3FF98A0447",
+      "entryOffset": 169744744,
+      "headerSize": 36,
+      "dataOffset": 169744780,
+      "compressedSize": 610,
+      "length": 1111,
+      "compressionMethod": 1,
+      "crc32Index": "a6e3d206",
+      "path": "/resources/art/fx/particles/whirlandblow_ringsparks01_p.prt",
+      "sha256": "e0be81bc6303a7b68469ad4e5fed6efb2a6eb92c88e7d245c5706c2887fcbeb4",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\whirlandblow_ringsparks01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xC167CC9A394118B0",
+      "entryOffset": 157217663,
+      "headerSize": 36,
+      "dataOffset": 157217699,
+      "compressedSize": 913,
+      "length": 1866,
+      "compressionMethod": 1,
+      "crc32Index": "12620b91",
+      "path": "/resources/art/fx/particles/sw_smash_smokering_rot01_p.prt",
+      "sha256": "8687ca09749dfcce5aab934b20fbb5992ec60bba99c90f5cb90449c39fb38fd2",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sw_smash_smokering_rot01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD3F4BD5B27F34E44",
+      "entryOffset": 157212978,
+      "headerSize": 36,
+      "dataOffset": 157213014,
+      "compressedSize": 835,
+      "length": 1697,
+      "compressionMethod": 1,
+      "crc32Index": "8e2339a7",
+      "path": "/resources/art/fx/particles/sw_smash_blastlines_01_p.prt",
+      "sha256": "9927f283a5b943b9394cebef969d5909a8619383a70047e50399b2c16e472f46",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sw_smash_blastlines_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xE4BE9B13EA2E44E8",
+      "entryOffset": 157214451,
+      "headerSize": 36,
+      "dataOffset": 157214487,
+      "compressedSize": 782,
+      "length": 1590,
+      "compressionMethod": 1,
+      "crc32Index": "d347010e",
+      "path": "/resources/art/fx/particles/sw_smash_ground_elec_01_p.prt",
+      "sha256": "e0d358358e7325ea7a99f43c7415e20b7a17122d6351b45ca7d61fe71b6e071b",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sw_smash_ground_elec_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD0E592EA2D13DE2E",
+      "entryOffset": 157363574,
+      "headerSize": 36,
+      "dataOffset": 157363610,
+      "compressedSize": 879,
+      "length": 1772,
+      "compressionMethod": 1,
+      "crc32Index": "210dd888",
+      "path": "/resources/art/fx/particles/sweep_impact_flash_01_p.prt",
+      "sha256": "b63d3ebdb22ef8e19cad892ee442d17c0ba5f8661bc985e44bc866630f69aa10",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sweep_impact_flash_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xF419C63B5A65E8D0",
+      "entryOffset": 157365073,
+      "headerSize": 36,
+      "dataOffset": 157365109,
+      "compressedSize": 794,
+      "length": 1574,
+      "compressionMethod": 1,
+      "crc32Index": "2b4c40d4",
+      "path": "/resources/art/fx/particles/sweep_impact_flash_02_p.prt",
+      "sha256": "4584f6d8c560fbd3672bcbb17c22f52ec1438c5813846467b47bb40b04a127c0",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sweep_impact_flash_02_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x35DAD2F3A73ED755",
+      "entryOffset": 156881652,
+      "headerSize": 36,
+      "dataOffset": 156881688,
+      "compressedSize": 887,
+      "length": 1762,
+      "compressionMethod": 1,
+      "crc32Index": "ffbf8d58",
+      "path": "/resources/art/fx/particles/sw_impale_burstring_01_p.prt",
+      "sha256": "725b6dc84f9bd5b8920ce19d0538fd74cc2804ff73b4956a926d8d2536dc6265",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sw_impale_burstring_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xC1FC1115C4CD9A9D",
+      "entryOffset": 138269271,
+      "headerSize": 36,
+      "dataOffset": 138269307,
+      "compressedSize": 826,
+      "length": 1663,
+      "compressionMethod": 1,
+      "crc32Index": "7055a303",
+      "path": "/resources/art/fx/particles/leap_impact_smokeburst_01_p.prt",
+      "sha256": "b0e187c65fe9d61a6d1e1ab1dd34c3f917ec3d37daf62c05400c7f64a85312cd",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\leap_impact_smokeburst_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x444213C2C26550FE",
+      "entryOffset": 156892133,
+      "headerSize": 36,
+      "dataOffset": 156892169,
+      "compressedSize": 913,
+      "length": 1817,
+      "compressionMethod": 1,
+      "crc32Index": "3424caaf",
+      "path": "/resources/art/fx/particles/sw_impale_sparks_01_p.prt",
+      "sha256": "6ed86cb561d6b7efb12ff8584e821ce934e8a08bca6341a5c65022007f305b4f",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sw_impale_sparks_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x385C5D01B0E3F248",
+      "entryOffset": 138271846,
+      "headerSize": 36,
+      "dataOffset": 138271882,
+      "compressedSize": 712,
+      "length": 1363,
+      "compressionMethod": 1,
+      "crc32Index": "54a9f478",
+      "path": "/resources/art/fx/particles/leap_impact_sparks_02_p.prt",
+      "sha256": "1691adba8a5723ffe64ee89a270b058a58db28bdd7e2cacf514acc0293e8dd36",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\leap_impact_sparks_02_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x2F0A2AD6375546FF",
+      "entryOffset": 156883052,
+      "headerSize": 36,
+      "dataOffset": 156883088,
+      "compressedSize": 922,
+      "length": 1816,
+      "compressionMethod": 1,
+      "crc32Index": "f4f90986",
+      "path": "/resources/art/fx/particles/sw_impale_colliding_sparks_01_p.prt",
+      "sha256": "8cc6a5ca06abe7b14d25097a2cafbd1efd995755fd64423b4f501ddfb1223347",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sw_impale_colliding_sparks_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x57864CC3E2AF318C",
+      "entryOffset": 156893667,
+      "headerSize": 36,
+      "dataOffset": 156893703,
+      "compressedSize": 915,
+      "length": 1819,
+      "compressionMethod": 1,
+      "crc32Index": "759e11e8",
+      "path": "/resources/art/fx/particles/sw_impale_sparks_02_p.prt",
+      "sha256": "044d169045073b0ea71b34f3c94c8250ea41e8ded1ded679fdf81151702a473c",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sw_impale_sparks_02_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x5CE4BF41BAA477B5",
+      "entryOffset": 36084309,
+      "headerSize": 36,
+      "dataOffset": 36084345,
+      "compressedSize": 989,
+      "length": 2587,
+      "compressionMethod": 1,
+      "crc32Index": "b5d0356b",
+      "path": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01_p.prt",
+      "sha256": "a8acd907933ea04e8521364d5bf8ace2b759abf9e98dc38dd6e077b48b39c813",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\dynamic_saber_trail_alphagrad_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xFC08F5BD20526588",
+      "entryOffset": 16626985,
+      "headerSize": 36,
+      "dataOffset": 16627021,
+      "compressedSize": 951,
+      "length": 1972,
+      "compressionMethod": 1,
+      "crc32Index": "7f2fe612",
+      "path": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_main_p.prt",
+      "sha256": "cd9f43a8e342704c680a8aad62451f90e0a8151adc66b8dd5c42d7ea9362731e",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_flame_sweep_flamethrower_main_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x04F1ED5B8A89E979",
+      "entryOffset": 16630063,
+      "headerSize": 36,
+      "dataOffset": 16630099,
+      "compressedSize": 921,
+      "length": 1873,
+      "compressionMethod": 1,
+      "crc32Index": "cd6784e0",
+      "path": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_support_p.prt",
+      "sha256": "fbea6ff6d9b26232866f3402c84d0e3fa102383c288a264bb502374654c85b74",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_flame_sweep_flamethrower_support_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x836DC276A3D063DC",
+      "entryOffset": 16510524,
+      "headerSize": 36,
+      "dataOffset": 16510560,
+      "compressedSize": 808,
+      "length": 1664,
+      "compressionMethod": 1,
+      "crc32Index": "2e1d4732",
+      "path": "/resources/art/fx/particles/bh_determination_jetsmoke_01_p.prt",
+      "sha256": "e081daa3154f340b51ef6846c2a537250f5450dc13477a0cc5a7fa4c8436a1ef",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_determination_jetsmoke_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xFF2C2E1AD5E27D68",
+      "entryOffset": 136489102,
+      "headerSize": 36,
+      "dataOffset": 136489138,
+      "compressedSize": 763,
+      "length": 1468,
+      "compressionMethod": 1,
+      "crc32Index": "6619adef",
+      "path": "/resources/art/fx/particles/jet_head_01_p.prt",
+      "sha256": "00840f2cadf801a0b4bc51cc652766cbead29b0990ae49c7efee70e7729034dc",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\jet_head_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xB2475CEFC9DA9809",
+      "entryOffset": 136491630,
+      "headerSize": 36,
+      "dataOffset": 136491666,
+      "compressedSize": 760,
+      "length": 1458,
+      "compressionMethod": 1,
+      "crc32Index": "3e107f6c",
+      "path": "/resources/art/fx/particles/jet_head_03_p.prt",
+      "sha256": "44bf7fc7807a8b0d2e6c888cb8485c6beee1867ea94d56ba7c13d4ad7a0092c2",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\jet_head_03_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x373A164A3C15D717",
+      "entryOffset": 16628559,
+      "headerSize": 36,
+      "dataOffset": 16628595,
+      "compressedSize": 858,
+      "length": 1767,
+      "compressionMethod": 1,
+      "crc32Index": "621c1da9",
+      "path": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_smoke_p.prt",
+      "sha256": "9043cd0af723c63a6cd4195b31d3c963a10cab53a5ae62a045b0851097a7e18d",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_flame_sweep_flamethrower_smoke_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xBC389164A5B111D3",
+      "entryOffset": 16677714,
+      "headerSize": 36,
+      "dataOffset": 16677750,
+      "compressedSize": 791,
+      "length": 1604,
+      "compressionMethod": 1,
+      "crc32Index": "c9685788",
+      "path": "/resources/art/fx/particles/bh_heatseeker_missile_jet_p.prt",
+      "sha256": "8c13c1684de8d5a9c2c9c1cd1930faef3ae7e00fe86cc0b49aacd2efd6aaeb3a",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_heatseeker_missile_jet_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x43AF2733EBC80E66",
+      "entryOffset": 18496339,
+      "headerSize": 36,
+      "dataOffset": 18496375,
+      "compressedSize": 855,
+      "length": 1709,
+      "compressionMethod": 1,
+      "crc32Index": "b2788f85",
+      "path": "/resources/art/fx/particles/bh_tactical_nuke_muzzleflare_p.prt",
+      "sha256": "d23baafcafdd73582d989b121e24fe6d76275276e98977b792f426fc0709fef2",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_tactical_nuke_muzzleflare_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x4A71CBA73E3073C2",
+      "entryOffset": 17828203,
+      "headerSize": 36,
+      "dataOffset": 17828239,
+      "compressedSize": 839,
+      "length": 1680,
+      "compressionMethod": 1,
+      "crc32Index": "60fab0c0",
+      "path": "/resources/art/fx/particles/bh_nuke_horizontal_flare_blue_p.prt",
+      "sha256": "c5710b6f6c4e5b96cae928758e127549aaf9f7d6730cd8a88f6725d93b3cd5ed",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_horizontal_flare_blue_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xF4392B98639CAAC0",
+      "entryOffset": 16477172,
+      "headerSize": 36,
+      "dataOffset": 16477208,
+      "compressedSize": 958,
+      "length": 1911,
+      "compressionMethod": 1,
+      "crc32Index": "f535338b",
+      "path": "/resources/art/fx/particles/bh_chaffsparks_trail_p.prt",
+      "sha256": "8d29356ded33303303ad848ed5976d279269b8341339e811c0196e51592aad39",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_chaffsparks_trail_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x1C6A2C9B580B08BF",
+      "entryOffset": 17837050,
+      "headerSize": 36,
+      "dataOffset": 17837086,
+      "compressedSize": 897,
+      "length": 1867,
+      "compressionMethod": 1,
+      "crc32Index": "06bfcd2c",
+      "path": "/resources/art/fx/particles/bh_nuke_smoketrail_p.prt",
+      "sha256": "4e4019c9935b51ae210a76b13c64ace7a81008c4d5e3a64819d15a74f07c168d",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_smoketrail_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x0ED06FB995D15A83",
+      "entryOffset": 17838572,
+      "headerSize": 36,
+      "dataOffset": 17838608,
+      "compressedSize": 894,
+      "length": 1821,
+      "compressionMethod": 1,
+      "crc32Index": "718c9474",
+      "path": "/resources/art/fx/particles/bh_nuke_xplode_smoke_p.prt",
+      "sha256": "dbbe9e17bf2255841655575b32acf91542478536a98b67c1fdf4f1d21830163e",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_xplode_smoke_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xF64F9A94AB74A3F9",
+      "entryOffset": 17835493,
+      "headerSize": 36,
+      "dataOffset": 17835529,
+      "compressedSize": 940,
+      "length": 2023,
+      "compressionMethod": 1,
+      "crc32Index": "e2e9e1ee",
+      "path": "/resources/art/fx/particles/bh_nuke_smoke_highlights_p.prt",
+      "sha256": "e6347d99161b9df160e3f2cb6c6c7c017ffb676858e7905b828c1121d3d08def",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_smoke_highlights_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x256FF95A94E76D74",
+      "entryOffset": 17841581,
+      "headerSize": 36,
+      "dataOffset": 17841617,
+      "compressedSize": 834,
+      "length": 1672,
+      "compressionMethod": 1,
+      "crc32Index": "2e9d56c8",
+      "path": "/resources/art/fx/particles/bh_nuke_xplosion_flash_p.prt",
+      "sha256": "a6c60b39ef1d1512711a33bd128d91471f1bdc237c44c4c8645caffc4125093b",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_xplosion_flash_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xE11170F86DE88A92",
+      "entryOffset": 17847524,
+      "headerSize": 36,
+      "dataOffset": 17847560,
+      "compressedSize": 956,
+      "length": 1908,
+      "compressionMethod": 1,
+      "crc32Index": "4130990f",
+      "path": "/resources/art/fx/particles/bh_nuke_xplosion_sparks_p.prt",
+      "sha256": "52863fd835bb246cba462718d0f7efafe092d6a48f925c2488705050aa57ced6",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_xplosion_sparks_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x0A60D2F22159F2CC",
+      "entryOffset": 18658817,
+      "headerSize": 36,
+      "dataOffset": 18658853,
+      "compressedSize": 840,
+      "length": 1692,
+      "compressionMethod": 1,
+      "crc32Index": "60e51fac",
+      "path": "/resources/art/fx/particles/bh_xplosion_arm_parent_p.prt",
+      "sha256": "f8948e36fe837c04ff61f66952b38088d747d3997f88dfb25d63cf77ebb2155b",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_xplosion_arm_parent_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xB31D54CBA8F556E8",
+      "entryOffset": 17844556,
+      "headerSize": 36,
+      "dataOffset": 17844592,
+      "compressedSize": 863,
+      "length": 1722,
+      "compressionMethod": 1,
+      "crc32Index": "6bd86cfb",
+      "path": "/resources/art/fx/particles/bh_nuke_xplosion_long_horiz_flash_p.prt",
+      "sha256": "f3d8c26eb9dca5017b5671b973e4813779453681650f2c67c30a3dc520988361",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_xplosion_long_horiz_flash_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x18F9A22BB3CDE622",
+      "entryOffset": 17843066,
+      "headerSize": 36,
+      "dataOffset": 17843102,
+      "compressedSize": 851,
+      "length": 1709,
+      "compressionMethod": 1,
+      "crc32Index": "4644545f",
+      "path": "/resources/art/fx/particles/bh_nuke_xplosion_long_flash_p.prt",
+      "sha256": "3c5b02961f6e78426f225fff8d555f940f6aaddc8c30f75303bec6618bcf926c",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_xplosion_long_flash_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x6F65BF49E44116D3",
+      "entryOffset": 17840116,
+      "headerSize": 36,
+      "dataOffset": 17840152,
+      "compressedSize": 844,
+      "length": 1671,
+      "compressionMethod": 1,
+      "crc32Index": "4cffdecb",
+      "path": "/resources/art/fx/particles/bh_nuke_xplode_smoke_ring_p.prt",
+      "sha256": "1289883e109eb866ebd8fc9b2d2504f7dba5b4c986c4c3196e0e3784a5dabd01",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_xplode_smoke_ring_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD5A567D68952AD58",
+      "entryOffset": 17846050,
+      "headerSize": 36,
+      "dataOffset": 17846086,
+      "compressedSize": 849,
+      "length": 1734,
+      "compressionMethod": 1,
+      "crc32Index": "5302dc46",
+      "path": "/resources/art/fx/particles/bh_nuke_xplosion_shock_ring_p.prt",
+      "sha256": "43943160f0f9ea14321520d35a57f36e8d812f0c001e91e30ec2152fbbbf7180",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_nuke_xplosion_shock_ring_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x5B5501C0E0DB3D78",
+      "entryOffset": 139874052,
+      "headerSize": 36,
+      "dataOffset": 139874088,
+      "compressedSize": 863,
+      "length": 1756,
+      "compressionMethod": 1,
+      "crc32Index": "6cd93911",
+      "path": "/resources/art/fx/particles/muzzle_smoke_01_p.prt",
+      "sha256": "d60d6b2c406200cc420a3bcd66f7443d9c209a53688e3713196830c28a66b698",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\muzzle_smoke_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x2F9B6CFE9FA74F30",
+      "entryOffset": 139875536,
+      "headerSize": 36,
+      "dataOffset": 139875572,
+      "compressedSize": 932,
+      "length": 1910,
+      "compressionMethod": 1,
+      "crc32Index": "c5e52d44",
+      "path": "/resources/art/fx/particles/muzzle_sparks_01_p.prt",
+      "sha256": "cefa8a2e65e0893d88cbfa7e127a5650f414012c3ec0927a9dbedba0e5061f0a",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\muzzle_sparks_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x04F651B5D84EDEEB",
+      "entryOffset": 3167511,
+      "headerSize": 36,
+      "dataOffset": 3167547,
+      "compressedSize": 162091,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "59abfa79",
+      "path": "/resources/art/fx/texture/smoke/2x2_graysmoke_alpha.dds",
+      "sha256": "5c6e568546ddde5d0b82ec6eedb107eb395c2b52c413345d628b28bc3b835610",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\smoke\\2x2_graysmoke_alpha.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD42530B5DE2AA310",
+      "entryOffset": 144914691,
+      "headerSize": 36,
+      "dataOffset": 144914727,
+      "compressedSize": 46170,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "08f68c3c",
+      "path": "/resources/art/fx/texture/fire/radial_trails_out.dds",
+      "sha256": "cc6058b48828f6e0227001e1dd5a07dc4d02dac842aa25d1494c6076c5a60bb3",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\fire\\radial_trails_out.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x3418C9F59F72B9D4",
+      "entryOffset": 97897123,
+      "headerSize": 36,
+      "dataOffset": 97897159,
+      "compressedSize": 65005,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "c6c17819",
+      "path": "/resources/art/fx/texture/smoke/fx_smoke_10_alpha.dds",
+      "sha256": "52241d3e5a49ac8d2ec7cee5bc56c1cb80a6817133a219c750872e51289effca",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\smoke\\fx_smoke_10_alpha.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xF23EA976E8662040",
+      "entryOffset": 20702090,
+      "headerSize": 36,
+      "dataOffset": 20702126,
+      "compressedSize": 17981,
+      "length": 43832,
+      "compressionMethod": 1,
+      "crc32Index": "96680a65",
+      "path": "/resources/art/fx/texture/electricity/bw_2x2_electricity_multi_01.dds",
+      "sha256": "4fdd36eaf4267ff14888697e52c0e7ca42dc9d5ee98041a78e3d2d467f3039e1",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\electricity\\bw_2x2_electricity_multi_01.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x3AD8C1041231ABA1",
+      "entryOffset": 138507767,
+      "headerSize": 36,
+      "dataOffset": 138507803,
+      "compressedSize": 55640,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "a1c0f4b7",
+      "path": "/resources/art/fx/texture/electricity/lightning_core.dds",
+      "sha256": "03c0cd056d1a6c943da458ec6dd964eed0088c46ca8bbbe429f18b3c357edcdb",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\electricity\\lightning_core.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xCACB0D6351A8BBC0",
+      "entryOffset": 23715490,
+      "headerSize": 36,
+      "dataOffset": 23715526,
+      "compressedSize": 30405,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "a8b99307",
+      "path": "/resources/art/fx/texture/glow/bw_flare_gray.dds",
+      "sha256": "f375d79f322cbdcb2cdcc8fcf61153f4a903dbbff4639e4bf7ef9bc8e9132558",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\glow\\bw_flare_gray.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x067CF1C32285738A",
+      "entryOffset": 26579144,
+      "headerSize": 36,
+      "dataOffset": 26579180,
+      "compressedSize": 37656,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "8e23be1f",
+      "path": "/resources/art/fx/texture/glow/bw_orange_flare02.dds",
+      "sha256": "554eeaf98d2ed1387a41805b03a4f20e76e099d27e50c7c363ed573794d8584e",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\glow\\bw_orange_flare02.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xA664F6B358E1A591",
+      "entryOffset": 1760615,
+      "headerSize": 36,
+      "dataOffset": 1760651,
+      "compressedSize": 158916,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "70f6ca64",
+      "path": "/resources/art/fx/texture/glow/2x2_electrical_blast_alpha.dds",
+      "sha256": "de0ea6581c25690965f8fbc618ea3234faf5d793545b46e416fc3bc9045a8a2e",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\glow\\2x2_electrical_blast_alpha.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xC2ED0BBF1453AF82",
+      "entryOffset": 46245500,
+      "headerSize": 36,
+      "dataOffset": 46245536,
+      "compressedSize": 192238,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "26c89a13",
+      "path": "/resources/art/fx/texture/smoke/fx_2x2_white_smoke_alpha.dds",
+      "sha256": "6fe1723cb6c344d048bf297c20ad917cd969a284c682d16c62549903ad4d43d9",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\smoke\\fx_2x2_white_smoke_alpha.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xDFB0CC504C9D3FF2",
+      "entryOffset": 23962121,
+      "headerSize": 36,
+      "dataOffset": 23962157,
+      "compressedSize": 15295,
+      "length": 43832,
+      "compressionMethod": 1,
+      "crc32Index": "2d3f212d",
+      "path": "/resources/art/fx/texture/spark/bw_fx_2x2_sparknglow_01.dds",
+      "sha256": "976ea6f566f7c262e2d7845bff6e6d690608c92c02f3273dc2f729d0502a9733",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\spark\\bw_fx_2x2_sparknglow_01.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD0E11424B1C6C9CF",
+      "entryOffset": 98365968,
+      "headerSize": 36,
+      "dataOffset": 98366004,
+      "compressedSize": 39808,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "e7158fd3",
+      "path": "/resources/art/fx/texture/glow/glow_basic_alpha.dds",
+      "sha256": "0854735cae85522b3f67413bec7fb8a2eae61facd9f4aa961b828e550945bc09",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\glow\\glow_basic_alpha.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x9949C8E82FFD31C2",
+      "entryOffset": 139007720,
+      "headerSize": 36,
+      "dataOffset": 139007756,
+      "compressedSize": 5619,
+      "length": 16512,
+      "compressionMethod": 1,
+      "crc32Index": "f47fc1cd",
+      "path": "/resources/art/fx/texture/weapon_melee/lightsaber_critblade.dds",
+      "sha256": "84255d37c20eb14d489d63152ec524f7b59d918ee981b1cd810cebfc23e2d2ff",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\weapon_melee\\lightsaber_critblade.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD2C5428D31493DF4",
+      "entryOffset": 138790018,
+      "headerSize": 36,
+      "dataOffset": 138790054,
+      "compressedSize": 21191,
+      "length": 65664,
+      "compressionMethod": 1,
+      "crc32Index": "0ccb1583",
+      "path": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_nomips.dds",
+      "sha256": "f52c36010668f5827e7a3a0f51c2f89a87a2510c18360194752762074288373c",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\weapon_melee\\lightsaber02_trail_nomips.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xAB805F02012E4F57",
+      "entryOffset": 138868930,
+      "headerSize": 36,
+      "dataOffset": 138868966,
+      "compressedSize": 21813,
+      "length": 65664,
+      "compressionMethod": 1,
+      "crc32Index": "461c09d0",
+      "path": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_red_nomips.dds",
+      "sha256": "4bb46d945610cb92fc70cb87aae509e776c5a3f251b94268f979a861d755b656",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\weapon_melee\\lightsaber02_trail_red_nomips.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xEE0A70CA7F995A37",
+      "entryOffset": 138812467,
+      "headerSize": 36,
+      "dataOffset": 138812503,
+      "compressedSize": 23278,
+      "length": 65664,
+      "compressionMethod": 1,
+      "crc32Index": "f8b29b07",
+      "path": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_orange_nomips.dds",
+      "sha256": "7b1f2aef0578d02f1833f613f6a530500ed1e56b129e1365cc96cbed62b456be",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\weapon_melee\\lightsaber02_trail_orange_nomips.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xF579122D8509EF45",
+      "entryOffset": 138891976,
+      "headerSize": 36,
+      "dataOffset": 138892012,
+      "compressedSize": 22979,
+      "length": 65664,
+      "compressionMethod": 1,
+      "crc32Index": "3c6a0bba",
+      "path": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_yellow_nomips.dds",
+      "sha256": "15f344366cd4a54a2618d9455025a3e7412141c59e9a539949bc023be863558a",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\weapon_melee\\lightsaber02_trail_yellow_nomips.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xB480C2D30DD21354",
+      "entryOffset": 138767317,
+      "headerSize": 36,
+      "dataOffset": 138767353,
+      "compressedSize": 21465,
+      "length": 65664,
+      "compressionMethod": 1,
+      "crc32Index": "1d7ea843",
+      "path": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_green_nomips.dds",
+      "sha256": "0e548fe79f96a9b06410b620b38f031308efa22f4abda4db1cbe6d1b7b41e8ee",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\weapon_melee\\lightsaber02_trail_green_nomips.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xC1E30B0491194E44",
+      "entryOffset": 138669670,
+      "headerSize": 36,
+      "dataOffset": 138669706,
+      "compressedSize": 21986,
+      "length": 65664,
+      "compressionMethod": 1,
+      "crc32Index": "1418bf80",
+      "path": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_blue_nomips.dds",
+      "sha256": "67e64ae9412f3a26da31b56f3c85e58c35624533494bb06c15d4ae6faea8c3bc",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\weapon_melee\\lightsaber02_trail_blue_nomips.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x15FFEB4D47F1D6AD",
+      "entryOffset": 138836966,
+      "headerSize": 36,
+      "dataOffset": 138837002,
+      "compressedSize": 21496,
+      "length": 65664,
+      "compressionMethod": 1,
+      "crc32Index": "8edd5df9",
+      "path": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_purple_nomips.dds",
+      "sha256": "b43490a5ddb714117d055d207f9088c0cfdc773b484968babb2d6d87dc85f76b",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\weapon_melee\\lightsaber02_trail_purple_nomips.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xEC69907F035DE91D",
+      "entryOffset": 9535338,
+      "headerSize": 36,
+      "dataOffset": 9535374,
+      "compressedSize": 66680,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "e8a9a553",
+      "path": "/resources/art/fx/texture/fire/5x5_flame_lick_04_bw.dds",
+      "sha256": "e7efaa33129e65b1648f0c4c88aabdd8a1783c71d1b4a293f653447e604ee9fe",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\fire\\5x5_flame_lick_04_bw.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x2A8B0642A8389DB1",
+      "entryOffset": 16631020,
+      "headerSize": 36,
+      "dataOffset": 16631056,
+      "compressedSize": 557,
+      "length": 1116,
+      "compressionMethod": 1,
+      "crc32Index": "06c5ce94",
+      "path": "/resources/art/fx/particles/bh_flame_sweep_swirls_01.prt",
+      "sha256": "a7e0fafed024b1969186ebe3621a527df6a7b53e4416825a1b59b7b77fb8354d",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_flame_sweep_swirls_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x682D5758AF99F042",
+      "entryOffset": 46083823,
+      "headerSize": 36,
+      "dataOffset": 46083859,
+      "compressedSize": 63476,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "e17feed6",
+      "path": "/resources/art/fx/texture/fire/fx_2x2_roundflames_01_desat.dds",
+      "sha256": "b2add63735b5613090b8a4a5a5dd8259b6a34b0f87ae24a0aa9c97331d3e430c",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\fire\\fx_2x2_roundflames_01_desat.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x4DC1D8EDA17E3C7F",
+      "entryOffset": 159463341,
+      "headerSize": 36,
+      "dataOffset": 159463377,
+      "compressedSize": 13825,
+      "length": 21992,
+      "compressionMethod": 1,
+      "crc32Index": "4b82c9a9",
+      "path": "/resources/art/fx/texture/trail/trail_glob.dds",
+      "sha256": "4c19e5dfd69aecce3d05d8b9c06eba7a2ea9d5f8bce024113e4b4b5f11d2c9d7",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\trail\\trail_glob.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x68EB3B93FC6B753D",
+      "entryOffset": 159534101,
+      "headerSize": 36,
+      "dataOffset": 159534137,
+      "compressedSize": 7027,
+      "length": 22000,
+      "compressionMethod": 1,
+      "crc32Index": "77f8ae75",
+      "path": "/resources/art/fx/texture/trail/trail_misc_03.dds",
+      "sha256": "7d7b12894f040a11cefcf662d1b0c2b6cc48cff69e352d61e0cab181a4352283",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\trail\\trail_misc_03.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xACAA0E6BD90BE776",
+      "entryOffset": 24855692,
+      "headerSize": 36,
+      "dataOffset": 24855728,
+      "compressedSize": 12634,
+      "length": 87568,
+      "compressionMethod": 1,
+      "crc32Index": "253e3d64",
+      "path": "/resources/art/fx/texture/glow/bw_fx_horizontal_flare_orange_hot.dds",
+      "sha256": "4f8ba44e6007105291c96002290d0e75431da9c71f7e682db0560651947e5b27",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\glow\\bw_fx_horizontal_flare_orange_hot.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xE864712CE49A3479",
+      "entryOffset": 46047744,
+      "headerSize": 36,
+      "dataOffset": 46047780,
+      "compressedSize": 33968,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "ef5892fd",
+      "path": "/resources/art/fx/texture/fire/fx_2x2_flames_emmissive_bw_01_d.dds",
+      "sha256": "0f6376eeadcfbd56bdea58d1c5b2d093bcc9fe5367fabc7c522a2aa258b75013",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\fire\\fx_2x2_flames_emmissive_bw_01_d.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x23C62180F46222DB",
+      "entryOffset": 5881182,
+      "headerSize": 36,
+      "dataOffset": 5881218,
+      "compressedSize": 140018,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "2a4b607b",
+      "path": "/resources/art/fx/texture/smoke/2x2volumesmokegradient_blur2.dds",
+      "sha256": "89b16ab9e473840c3f23fec2317d09ab3561245c00cb7ee9811f4885fa4464a0",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\smoke\\2x2volumesmokegradient_blur2.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xE4ADB29080343E46",
+      "entryOffset": 18653450,
+      "headerSize": 36,
+      "dataOffset": 18653486,
+      "compressedSize": 535,
+      "length": 1069,
+      "compressionMethod": 1,
+      "crc32Index": "b7eccfec",
+      "path": "/resources/art/fx/particles/bh_xplosion_arm_child.prt",
+      "sha256": "19b6ce6465abe95c5e7fe672b45767323c4de8f67a3099a4a92d6932e74f42fd",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_xplosion_arm_child.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_misc_1.tor",
+      "archiveHash": "0x927EC4C4BF51BF0E",
+      "entryOffset": 47364813,
+      "headerSize": 36,
+      "dataOffset": 47364849,
+      "compressedSize": 56,
+      "length": 384,
+      "compressionMethod": 1,
+      "crc32Index": "084a80b4",
+      "path": "/resources/art/defaultassets/black.dds",
+      "sha256": "f6fc96233461b12b33ffd2e0c79c96216fbee0af5c31597d1cc1fa940a16057d",
+      "output": "source-assets\\april2012\\resources\\art\\defaultassets\\black.dds",
+      "archiveSha256": "9ac8eae93e1ed26e964a9b1146f653b73276ea7294f2311329c1699dbca7b7d6",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x858FD00C6B508652",
+      "entryOffset": 155872431,
+      "headerSize": 36,
+      "dataOffset": 155872467,
+      "compressedSize": 18477,
+      "length": 43832,
+      "compressionMethod": 1,
+      "crc32Index": "79d3c3c4",
+      "path": "/resources/art/fx/texture/glow/sphere_displaced_01.dds",
+      "sha256": "6cbdc8cf2f73fd729b6f6212116fa02d9c9bc6b23eb5b909f2af42b7d7ba1dc3",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\glow\\sphere_displaced_01.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x05E080630359DB14",
+      "entryOffset": 16631613,
+      "headerSize": 36,
+      "dataOffset": 16631649,
+      "compressedSize": 932,
+      "length": 1886,
+      "compressionMethod": 1,
+      "crc32Index": "ccb2c8e3",
+      "path": "/resources/art/fx/particles/bh_flame_sweep_swirls_01_p.prt",
+      "sha256": "f96720a4accd895d314fa34a620006c810b4d88bce9936f7a32b742e4e15a49b",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_flame_sweep_swirls_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x6F3E6FEA948F9B20",
+      "entryOffset": 18654021,
+      "headerSize": 36,
+      "dataOffset": 18654057,
+      "compressedSize": 247,
+      "length": 342,
+      "compressionMethod": 1,
+      "crc32Index": "fef902aa",
+      "path": "/resources/art/fx/particles/bh_xplosion_arm_child_p.prt",
+      "sha256": "5b466f46e85e1e6e3194ec161b7b4bbdb6d81aea9de4465354005baf6daa9781",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_xplosion_arm_child_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xEC95C0228838A173",
+      "entryOffset": 99936596,
+      "headerSize": 36,
+      "dataOffset": 99936632,
+      "compressedSize": 44741,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "5289827d",
+      "path": "/resources/art/fx/texture/fire/fx_thick_fire_smoke_bw.dds",
+      "sha256": "e6a68aa3f54df5d84562ff4380ab22d3b7fb95ed1c3af51d3916fb9c20ceeda3",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\fire\\fx_thick_fire_smoke_bw.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x82BCD74EE05AE70A",
+      "entryOffset": 18497230,
+      "headerSize": 36,
+      "dataOffset": 18497266,
+      "compressedSize": 1809,
+      "length": 20896,
+      "compressionMethod": 1,
+      "crc32Index": "7e63eccb",
+      "path": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_xplosionarms.fxspec",
+      "sha256": "d03f5fbd7c4ab4ea0e94b83601bba9f78cb344546b2d82b1a02c3f597a6c51e5",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\bounty_hunter\\bh_tactical_nuke_xplosionarms.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD69B94D44DFFBF70",
+      "entryOffset": 18659693,
+      "headerSize": 36,
+      "dataOffset": 18659729,
+      "compressedSize": 558,
+      "length": 1099,
+      "compressionMethod": 1,
+      "crc32Index": "ea0b730a",
+      "path": "/resources/art/fx/particles/bh_xposion_arm_smoke.prt",
+      "sha256": "f6a1726b2b09eeb61534e151149e5ce63e749050478561af657d2c7b3ddf3511",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_xposion_arm_smoke.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xB6BAD32080394669",
+      "entryOffset": 18654304,
+      "headerSize": 36,
+      "dataOffset": 18654340,
+      "compressedSize": 565,
+      "length": 1091,
+      "compressionMethod": 1,
+      "crc32Index": "0d0cf74a",
+      "path": "/resources/art/fx/particles/bh_xplosion_arm_flames.prt",
+      "sha256": "c7ead7d3a447f64a859af5baa02f7a6df644e8c72b3b554a3ba6cab0b4e5a9dd",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_xplosion_arm_flames.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xADCF5645138C2E17",
+      "entryOffset": 18660287,
+      "headerSize": 36,
+      "dataOffset": 18660323,
+      "compressedSize": 840,
+      "length": 1675,
+      "compressionMethod": 1,
+      "crc32Index": "dfcfa468",
+      "path": "/resources/art/fx/particles/bh_xposion_arm_smoke_p.prt",
+      "sha256": "a6e252a857d22aeac64a375da28fef7a7a7c9b5540534ab4b417d6a01a824bae",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_xposion_arm_smoke_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x57011001B3ED8128",
+      "entryOffset": 18654905,
+      "headerSize": 36,
+      "dataOffset": 18654941,
+      "compressedSize": 972,
+      "length": 1951,
+      "compressionMethod": 1,
+      "crc32Index": "c56412a6",
+      "path": "/resources/art/fx/particles/bh_xplosion_arm_flames_p.prt",
+      "sha256": "633d3a4ee357c53b9764aa09d99123c8548b8a32cbcddf8b5fd90691f478aa76",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\bh_xplosion_arm_flames_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audiodata_1.tor",
+      "archiveHash": "0x1BB564160C392422",
+      "entryOffset": 122374,
+      "headerSize": 36,
+      "dataOffset": 122410,
+      "compressedSize": 53703,
+      "length": 173496,
+      "compressionMethod": 1,
+      "crc32Index": "6c8edefb",
+      "path": "/resources/bnk2/abilities_imperialranged_data.bnk",
+      "sha256": "ec374a9eec6353a9b46f09446890de81ef5c130c36427d274942a590d076a5e8",
+      "output": "source-assets\\april2012\\resources\\bnk2\\abilities_imperialranged_data.bnk",
+      "archiveSha256": "932a885608e1a1b1f4a9f5c55a02bc8e426558371ae5a58faf88642ebe5f4491",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/sw_smash.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/sw_smash.fxspec",
+      "to": "/resources/art/fx/particles/whirlandblow_ring01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/sw_smash.fxspec",
+      "to": "/resources/art/fx/particles/whirlandblow_ringsparks01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/sw_smash.fxspec",
+      "to": "/resources/art/fx/particles/sw_smash_smokering_rot01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/sw_smash.fxspec",
+      "to": "/resources/art/fx/particles/flamethrower_dummy.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/sw_smash.fxspec",
+      "to": "/resources/art/fx/particles/sw_smash_blastlines_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/sw_smash.fxspec",
+      "to": "/resources/art/fx/particles/sw_smash_ground_elec_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/sw_impale_impact_01.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/sw_impale_impact_01.fxspec",
+      "to": "/resources/art/fx/particles/sweep_impact_flash_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/sw_impale_impact_01.fxspec",
+      "to": "/resources/art/fx/particles/sweep_impact_flash_02.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/sw_impale_impact_01.fxspec",
+      "to": "/resources/art/fx/particles/sw_impale_burstring_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/sw_impale_impact_01.fxspec",
+      "to": "/resources/art/fx/particles/leap_impact_smokeburst_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/sw_impale_impact_01.fxspec",
+      "to": "/resources/art/fx/particles/sw_impale_sparks_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/sw_impale_impact_01.fxspec",
+      "to": "/resources/art/fx/particles/leap_impact_sparks_02.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/sw_impale_impact_01.fxspec",
+      "to": "/resources/art/fx/particles/sw_impale_colliding_sparks_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/sw_impale_impact_01.fxspec",
+      "to": "/resources/art/fx/particles/sw_impale_sparks_02.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/abilities/all/all_dynamic_saber_trail_alphagrad_01.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/all/all_dynamic_saber_trail_alphagrad_01.fxspec",
+      "to": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_flamesweep_bracer_flames_01.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_flamesweep_bracer_flames_01.fxspec",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_main.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_flamesweep_bracer_flames_01.fxspec",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_support.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_flamesweep_bracer_flames_01.fxspec",
+      "to": "/resources/art/fx/particles/bh_determination_jetsmoke_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_flamesweep_bracer_flames_01.fxspec",
+      "to": "/resources/art/fx/particles/jet_head_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_flamesweep_bracer_flames_01.fxspec",
+      "to": "/resources/art/fx/particles/jet_head_03.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_flamesweep_bracer_flames_01.fxspec",
+      "to": "/resources/art/fx/particles/flamethrower_dummy.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_flamesweep_bracer_flames_01.fxspec",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_smoke.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_flamesweep_bracer_flames_01.fxspec",
+      "to": "/resources/art/fx/geometry/bountyhunter/bh_bracerweapon_01.gr2",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_fusion_missile_fire.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_fusion_missile_fire.fxspec",
+      "to": "/resources/art/fx/particles/bh_heatseeker_missile_jet.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_fusion_missile_fire.fxspec",
+      "to": "/resources/art/fx/particles/bh_tactical_nuke_muzzleflare.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_fusion_missile_fire.fxspec",
+      "to": "/resources/art/fx/particles/bh_nuke_horizontal_flare_blue.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_fusion_missile_fire.fxspec",
+      "to": "/resources/art/fx/particles/bh_chaffsparks_trail.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_fusion_missile_fire.fxspec",
+      "to": "/resources/art/fx/particles/bh_nuke_smoketrail.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_fusion_missile_fire.fxspec",
+      "to": "/resources/art/fx/particles/fxtemplate_dummy_point.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_fusion_missile_fire.fxspec",
+      "to": "/resources/art/fx/particles/rocketblast_dummy.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_fusion_missile_fire.fxspec",
+      "to": "/resources/art/fx/geometry/bh_bracer_missile_spin.gr2",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_explosion.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_explosion.fxspec",
+      "to": "/resources/art/fx/particles/bh_nuke_xplode_smoke.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_explosion.fxspec",
+      "to": "/resources/art/fx/particles/bh_nuke_smoke_highlights.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_explosion.fxspec",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_flash.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_explosion.fxspec",
+      "to": "/resources/art/fx/particles/dummy_random_y_rotation.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_explosion.fxspec",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_sparks.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_explosion.fxspec",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_parent.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_explosion.fxspec",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_long_horiz_flash.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_explosion.fxspec",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_long_flash.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_explosion.fxspec",
+      "to": "/resources/art/fx/particles/bh_nuke_xplode_smoke_ring.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_explosion.fxspec",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_shock_ring.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_explosion.fxspec",
+      "to": "/resources/art/fx/texture/debris/blast_mark_rim.dds",
+      "relation": "_fxProjectionTexture"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/abilities/spy/sp_toxic_dart_muzzle_flash.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/spy/sp_toxic_dart_muzzle_flash.fxspec",
+      "to": "/resources/art/fx/particles/muzzle_smoke_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/spy/sp_toxic_dart_muzzle_flash.fxspec",
+      "to": "/resources/art/fx/particles/muzzle_sparks_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/whirlandblow_ring01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/whirlandblow_ring01.prt",
+      "to": "/resources/art/fx/particles/whirlandblow_ring01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/whirlandblow_ring01.prt",
+      "to": "/resources/art/fx/particles/whirlandblow_ring01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/whirlandblow_ringsparks01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/whirlandblow_ringsparks01.prt",
+      "to": "/resources/art/fx/particles/whirlandblow_ringsparks01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/whirlandblow_ringsparks01.prt",
+      "to": "/resources/art/fx/particles/whirlandblow_ringsparks01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sw_smash_smokering_rot01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_smash_smokering_rot01.prt",
+      "to": "/resources/art/fx/particles/sw_smash_smokering_rot01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_smash_smokering_rot01.prt",
+      "to": "/resources/art/fx/particles/sw_smash_smokering_rot01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/flamethrower_dummy.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/flamethrower_dummy.prt",
+      "to": "/resources/art/fx/particles/flamethrower_dummy.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sw_smash_blastlines_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_smash_blastlines_01.prt",
+      "to": "/resources/art/fx/particles/sw_smash_blastlines_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_smash_blastlines_01.prt",
+      "to": "/resources/art/fx/particles/sw_smash_blastlines_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sw_smash_ground_elec_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_smash_ground_elec_01.prt",
+      "to": "/resources/art/fx/particles/sw_smash_ground_elec_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_smash_ground_elec_01.prt",
+      "to": "/resources/art/fx/particles/sw_smash_ground_elec_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sweep_impact_flash_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sweep_impact_flash_01.prt",
+      "to": "/resources/art/fx/particles/sweep_impact_flash_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sweep_impact_flash_01.prt",
+      "to": "/resources/art/fx/particles/sweep_impact_flash_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sweep_impact_flash_02.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sweep_impact_flash_02.prt",
+      "to": "/resources/art/fx/particles/sweep_impact_flash_02.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sweep_impact_flash_02.prt",
+      "to": "/resources/art/fx/particles/sweep_impact_flash_02_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sw_impale_burstring_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_impale_burstring_01.prt",
+      "to": "/resources/art/fx/particles/sw_impale_burstring_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_impale_burstring_01.prt",
+      "to": "/resources/art/fx/particles/sw_impale_burstring_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/leap_impact_smokeburst_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/leap_impact_smokeburst_01.prt",
+      "to": "/resources/art/fx/particles/leap_impact_smokeburst_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/leap_impact_smokeburst_01.prt",
+      "to": "/resources/art/fx/particles/leap_impact_smokeburst_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sw_impale_sparks_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_impale_sparks_01.prt",
+      "to": "/resources/art/fx/particles/sw_impale_sparks_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_impale_sparks_01.prt",
+      "to": "/resources/art/fx/particles/sw_impale_sparks_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/leap_impact_sparks_02.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/leap_impact_sparks_02.prt",
+      "to": "/resources/art/fx/particles/leap_impact_sparks_02.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/leap_impact_sparks_02.prt",
+      "to": "/resources/art/fx/particles/leap_impact_sparks_02_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sw_impale_colliding_sparks_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_impale_colliding_sparks_01.prt",
+      "to": "/resources/art/fx/particles/sw_impale_colliding_sparks_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_impale_colliding_sparks_01.prt",
+      "to": "/resources/art/fx/particles/sw_impale_colliding_sparks_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sw_impale_sparks_02.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_impale_sparks_02.prt",
+      "to": "/resources/art/fx/particles/sw_impale_sparks_02.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_impale_sparks_02.prt",
+      "to": "/resources/art/fx/particles/sw_impale_sparks_02_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01.prt",
+      "to": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01.prt",
+      "to": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_main.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_main.prt",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_main.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_main.prt",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_main_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_support.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_support.prt",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_support.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_support.prt",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_support_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_determination_jetsmoke_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_determination_jetsmoke_01.prt",
+      "to": "/resources/art/fx/particles/bh_determination_jetsmoke_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_determination_jetsmoke_01.prt",
+      "to": "/resources/art/fx/particles/bh_determination_jetsmoke_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/jet_head_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/jet_head_01.prt",
+      "to": "/resources/art/fx/particles/jet_head_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/jet_head_01.prt",
+      "to": "/resources/art/fx/particles/jet_head_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/jet_head_03.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/jet_head_03.prt",
+      "to": "/resources/art/fx/particles/jet_head_03.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/jet_head_03.prt",
+      "to": "/resources/art/fx/particles/jet_head_03_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_smoke.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_smoke.prt",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_smoke.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_smoke.prt",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_smoke_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/geometry/bountyhunter/bh_bracerweapon_01.gr2",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_heatseeker_missile_jet.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_heatseeker_missile_jet.prt",
+      "to": "/resources/art/fx/particles/bh_heatseeker_missile_jet.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_heatseeker_missile_jet.prt",
+      "to": "/resources/art/fx/particles/bh_heatseeker_missile_jet_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_tactical_nuke_muzzleflare.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_tactical_nuke_muzzleflare.prt",
+      "to": "/resources/art/fx/particles/bh_tactical_nuke_muzzleflare.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_tactical_nuke_muzzleflare.prt",
+      "to": "/resources/art/fx/particles/bh_tactical_nuke_muzzleflare_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_horizontal_flare_blue.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_horizontal_flare_blue.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_horizontal_flare_blue.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_horizontal_flare_blue.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_horizontal_flare_blue_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_chaffsparks_trail.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_chaffsparks_trail.prt",
+      "to": "/resources/art/fx/particles/bh_chaffsparks_trail.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_chaffsparks_trail.prt",
+      "to": "/resources/art/fx/particles/bh_chaffsparks_trail_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_smoketrail.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_smoketrail.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_smoketrail.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_smoketrail.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_smoketrail_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/fxtemplate_dummy_point.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/fxtemplate_dummy_point.prt",
+      "to": "/resources/art/fx/particles/fxtemplate_dummy_point.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/rocketblast_dummy.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/rocketblast_dummy.prt",
+      "to": "/resources/art/fx/particles/rocketblast_dummy.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/geometry/bh_bracer_missile_spin.gr2",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_xplode_smoke.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplode_smoke.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplode_smoke.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplode_smoke.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplode_smoke_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_smoke_highlights.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_smoke_highlights.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_smoke_highlights.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_smoke_highlights.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_smoke_highlights_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_flash.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_flash.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_flash.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_flash.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_flash_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/dummy_random_y_rotation.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/dummy_random_y_rotation.prt",
+      "to": "/resources/art/fx/particles/dummy_random_y_rotation.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_sparks.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_sparks.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_sparks.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_sparks.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_sparks_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_parent.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xplosion_arm_parent.prt",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_parent.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xplosion_arm_parent.prt",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_parent_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_long_horiz_flash.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_long_horiz_flash.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_long_horiz_flash.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_long_horiz_flash.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_long_horiz_flash_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_long_flash.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_long_flash.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_long_flash.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_long_flash.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_long_flash_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_xplode_smoke_ring.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplode_smoke_ring.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplode_smoke_ring.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplode_smoke_ring.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplode_smoke_ring_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_shock_ring.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_shock_ring.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_shock_ring.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_shock_ring.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_shock_ring_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/debris/blast_mark_rim.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/muzzle_smoke_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/muzzle_smoke_01.prt",
+      "to": "/resources/art/fx/particles/muzzle_smoke_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/muzzle_smoke_01.prt",
+      "to": "/resources/art/fx/particles/muzzle_smoke_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/muzzle_sparks_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/muzzle_sparks_01.prt",
+      "to": "/resources/art/fx/particles/muzzle_sparks_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/muzzle_sparks_01.prt",
+      "to": "/resources/art/fx/particles/muzzle_sparks_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/whirlandblow_ring01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/whirlandblow_ring01_p.prt",
+      "to": "/resources/art/fx/particles/whirlandblow_ring01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/whirlandblow_ring01_p.prt",
+      "to": "/resources/art/fx/texture/smoke/2x2_graysmoke_alpha.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/whirlandblow_ringsparks01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/whirlandblow_ringsparks01_p.prt",
+      "to": "/resources/art/fx/particles/whirlandblow_ringsparks01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/whirlandblow_ringsparks01_p.prt",
+      "to": "/resources/art/fx/texture/fire/radial_trails_out.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sw_smash_smokering_rot01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_smash_smokering_rot01_p.prt",
+      "to": "/resources/art/fx/particles/sw_smash_smokering_rot01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_smash_smokering_rot01_p.prt",
+      "to": "/resources/art/fx/texture/smoke/fx_smoke_10_alpha.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sw_smash_blastlines_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_smash_blastlines_01_p.prt",
+      "to": "/resources/art/fx/particles/sw_smash_blastlines_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_smash_blastlines_01_p.prt",
+      "to": "/resources/art/fx/texture/electricity/bw_2x2_electricity_multi_01.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sw_smash_ground_elec_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_smash_ground_elec_01_p.prt",
+      "to": "/resources/art/fx/particles/sw_smash_ground_elec_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_smash_ground_elec_01_p.prt",
+      "to": "/resources/art/fx/texture/electricity/lightning_core.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sweep_impact_flash_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sweep_impact_flash_01_p.prt",
+      "to": "/resources/art/fx/particles/sweep_impact_flash_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sweep_impact_flash_01_p.prt",
+      "to": "/resources/art/fx/texture/glow/bw_flare_gray.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sweep_impact_flash_02_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sweep_impact_flash_02_p.prt",
+      "to": "/resources/art/fx/particles/sweep_impact_flash_02_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sweep_impact_flash_02_p.prt",
+      "to": "/resources/art/fx/texture/glow/bw_orange_flare02.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sw_impale_burstring_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_impale_burstring_01_p.prt",
+      "to": "/resources/art/fx/particles/sw_impale_burstring_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_impale_burstring_01_p.prt",
+      "to": "/resources/art/fx/texture/glow/2x2_electrical_blast_alpha.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/leap_impact_smokeburst_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/leap_impact_smokeburst_01_p.prt",
+      "to": "/resources/art/fx/particles/leap_impact_smokeburst_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/leap_impact_smokeburst_01_p.prt",
+      "to": "/resources/art/fx/texture/smoke/fx_2x2_white_smoke_alpha.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sw_impale_sparks_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_impale_sparks_01_p.prt",
+      "to": "/resources/art/fx/particles/sw_impale_sparks_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_impale_sparks_01_p.prt",
+      "to": "/resources/art/fx/texture/spark/bw_fx_2x2_sparknglow_01.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/leap_impact_sparks_02_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/leap_impact_sparks_02_p.prt",
+      "to": "/resources/art/fx/particles/leap_impact_sparks_02_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/leap_impact_sparks_02_p.prt",
+      "to": "/resources/art/fx/texture/glow/glow_basic_alpha.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sw_impale_colliding_sparks_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_impale_colliding_sparks_01_p.prt",
+      "to": "/resources/art/fx/particles/sw_impale_colliding_sparks_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_impale_colliding_sparks_01_p.prt",
+      "to": "/resources/art/fx/texture/spark/bw_fx_2x2_sparknglow_01.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sw_impale_sparks_02_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_impale_sparks_02_p.prt",
+      "to": "/resources/art/fx/particles/sw_impale_sparks_02_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sw_impale_sparks_02_p.prt",
+      "to": "/resources/art/fx/texture/spark/bw_fx_2x2_sparknglow_01.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01_p.prt",
+      "to": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01_p.prt",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber_critblade.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01_p.prt",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_nomips.dds",
+      "relation": "TrailTexture"
+    },
+    {
+      "from": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01_p.prt",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_red_nomips.dds",
+      "relation": "TrailTexture_Red"
+    },
+    {
+      "from": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01_p.prt",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_orange_nomips.dds",
+      "relation": "TrailTexture_Orange"
+    },
+    {
+      "from": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01_p.prt",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_yellow_nomips.dds",
+      "relation": "TrailTexture_Yellow"
+    },
+    {
+      "from": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01_p.prt",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_green_nomips.dds",
+      "relation": "TrailTexture_Green"
+    },
+    {
+      "from": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01_p.prt",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_blue_nomips.dds",
+      "relation": "TrailTexture_Blue"
+    },
+    {
+      "from": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01_p.prt",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_purple_nomips.dds",
+      "relation": "TrailTexture_Purple"
+    },
+    {
+      "from": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01_p.prt",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_nomips.dds",
+      "relation": "TrailTexture_White"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_main_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_main_p.prt",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_main_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_main_p.prt",
+      "to": "/resources/art/fx/texture/fire/5x5_flame_lick_04_bw.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_main_p.prt",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_swirls_01.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_support_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_support_p.prt",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_support_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_support_p.prt",
+      "to": "/resources/art/fx/texture/fire/fx_2x2_roundflames_01_desat.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_determination_jetsmoke_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_determination_jetsmoke_01_p.prt",
+      "to": "/resources/art/fx/particles/bh_determination_jetsmoke_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_determination_jetsmoke_01_p.prt",
+      "to": "/resources/art/fx/texture/smoke/fx_smoke_10_alpha.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/jet_head_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/jet_head_01_p.prt",
+      "to": "/resources/art/fx/particles/jet_head_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/jet_head_01_p.prt",
+      "to": "/resources/art/fx/texture/trail/trail_glob.dds",
+      "relation": "TrailTexture"
+    },
+    {
+      "from": "/resources/art/fx/particles/jet_head_01_p.prt",
+      "to": "/resources/art/fx/texture/smoke/fx_2x2_white_smoke_alpha.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/jet_head_03_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/jet_head_03_p.prt",
+      "to": "/resources/art/fx/particles/jet_head_03_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/jet_head_03_p.prt",
+      "to": "/resources/art/fx/texture/trail/trail_glob.dds",
+      "relation": "TrailTexture"
+    },
+    {
+      "from": "/resources/art/fx/particles/jet_head_03_p.prt",
+      "to": "/resources/art/fx/texture/glow/glow_basic_alpha.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_smoke_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_smoke_p.prt",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_smoke_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_flamethrower_smoke_p.prt",
+      "to": "/resources/art/fx/texture/smoke/fx_smoke_10_alpha.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_heatseeker_missile_jet_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_heatseeker_missile_jet_p.prt",
+      "to": "/resources/art/fx/particles/bh_heatseeker_missile_jet_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_heatseeker_missile_jet_p.prt",
+      "to": "/resources/art/fx/texture/trail/trail_misc_03.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_tactical_nuke_muzzleflare_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_tactical_nuke_muzzleflare_p.prt",
+      "to": "/resources/art/fx/particles/bh_tactical_nuke_muzzleflare_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_tactical_nuke_muzzleflare_p.prt",
+      "to": "/resources/art/fx/texture/glow/bw_flare_gray.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_horizontal_flare_blue_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_horizontal_flare_blue_p.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_horizontal_flare_blue_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_horizontal_flare_blue_p.prt",
+      "to": "/resources/art/fx/texture/glow/bw_fx_horizontal_flare_orange_hot.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_chaffsparks_trail_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_chaffsparks_trail_p.prt",
+      "to": "/resources/art/fx/particles/bh_chaffsparks_trail_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_chaffsparks_trail_p.prt",
+      "to": "/resources/art/fx/texture/fire/fx_2x2_flames_emmissive_bw_01_d.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_smoketrail_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_smoketrail_p.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_smoketrail_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_smoketrail_p.prt",
+      "to": "/resources/art/fx/texture/smoke/2x2volumesmokegradient_blur2.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_xplode_smoke_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplode_smoke_p.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplode_smoke_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplode_smoke_p.prt",
+      "to": "/resources/art/fx/texture/smoke/2x2volumesmokegradient_blur2.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_smoke_highlights_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_smoke_highlights_p.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_smoke_highlights_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_smoke_highlights_p.prt",
+      "to": "/resources/art/fx/texture/fire/fx_2x2_roundflames_01_desat.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_flash_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_flash_p.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_flash_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_flash_p.prt",
+      "to": "/resources/art/fx/texture/glow/bw_flare_gray.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_sparks_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_sparks_p.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_sparks_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_sparks_p.prt",
+      "to": "/resources/art/fx/texture/spark/bw_fx_2x2_sparknglow_01.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_parent_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xplosion_arm_parent_p.prt",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_parent_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xplosion_arm_parent_p.prt",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_child.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xplosion_arm_parent_p.prt",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_long_horiz_flash_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_long_horiz_flash_p.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_long_horiz_flash_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_long_horiz_flash_p.prt",
+      "to": "/resources/art/fx/texture/glow/bw_fx_horizontal_flare_orange_hot.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_long_flash_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_long_flash_p.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_long_flash_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_long_flash_p.prt",
+      "to": "/resources/art/fx/texture/glow/bw_flare_gray.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_xplode_smoke_ring_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplode_smoke_ring_p.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplode_smoke_ring_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplode_smoke_ring_p.prt",
+      "to": "/resources/art/fx/texture/smoke/2x2volumesmokegradient_blur2.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_shock_ring_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_shock_ring_p.prt",
+      "to": "/resources/art/fx/particles/bh_nuke_xplosion_shock_ring_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_nuke_xplosion_shock_ring_p.prt",
+      "to": "/resources/art/fx/texture/glow/sphere_displaced_01.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/muzzle_smoke_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/muzzle_smoke_01_p.prt",
+      "to": "/resources/art/fx/particles/muzzle_smoke_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/muzzle_smoke_01_p.prt",
+      "to": "/resources/art/fx/texture/smoke/fx_2x2_white_smoke_alpha.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/muzzle_sparks_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/muzzle_sparks_01_p.prt",
+      "to": "/resources/art/fx/particles/muzzle_sparks_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/muzzle_sparks_01_p.prt",
+      "to": "/resources/art/fx/texture/spark/bw_fx_2x2_sparknglow_01.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/smoke/2x2_graysmoke_alpha.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/fire/radial_trails_out.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/smoke/fx_smoke_10_alpha.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/electricity/bw_2x2_electricity_multi_01.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/electricity/lightning_core.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/glow/bw_flare_gray.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/glow/bw_orange_flare02.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/glow/2x2_electrical_blast_alpha.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/smoke/fx_2x2_white_smoke_alpha.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/spark/bw_fx_2x2_sparknglow_01.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/glow/glow_basic_alpha.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber_critblade.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_nomips.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_red_nomips.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_orange_nomips.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_yellow_nomips.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_green_nomips.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_blue_nomips.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/weapon_melee/lightsaber02_trail_purple_nomips.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/fire/5x5_flame_lick_04_bw.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_swirls_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_swirls_01.prt",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_swirls_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_swirls_01.prt",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_swirls_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/fire/fx_2x2_roundflames_01_desat.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/trail/trail_glob.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/trail/trail_misc_03.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/glow/bw_fx_horizontal_flare_orange_hot.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/fire/fx_2x2_flames_emmissive_bw_01_d.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/smoke/2x2volumesmokegradient_blur2.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_child.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xplosion_arm_child.prt",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_child.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xplosion_arm_child.prt",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_child_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/glow/sphere_displaced_01.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_swirls_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_swirls_01_p.prt",
+      "to": "/resources/art/fx/particles/bh_flame_sweep_swirls_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_flame_sweep_swirls_01_p.prt",
+      "to": "/resources/art/fx/texture/fire/fx_thick_fire_smoke_bw.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_child_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xplosion_arm_child_p.prt",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_child_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xplosion_arm_child_p.prt",
+      "to": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_xplosionarms.fxspec",
+      "relation": "EmitFXSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/fire/fx_thick_fire_smoke_bw.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_xplosionarms.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_xplosionarms.fxspec",
+      "to": "/resources/art/fx/particles/bh_xposion_arm_smoke.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_xplosionarms.fxspec",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_flames.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_xposion_arm_smoke.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xposion_arm_smoke.prt",
+      "to": "/resources/art/fx/particles/bh_xposion_arm_smoke.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xposion_arm_smoke.prt",
+      "to": "/resources/art/fx/particles/bh_xposion_arm_smoke_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_flames.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xplosion_arm_flames.prt",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_flames.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xplosion_arm_flames.prt",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_flames_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_xposion_arm_smoke_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xposion_arm_smoke_p.prt",
+      "to": "/resources/art/fx/particles/bh_xposion_arm_smoke_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xposion_arm_smoke_p.prt",
+      "to": "/resources/art/fx/texture/smoke/2x2volumesmokegradient_blur2.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_flames_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xplosion_arm_flames_p.prt",
+      "to": "/resources/art/fx/particles/bh_xplosion_arm_flames_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/bh_xplosion_arm_flames_p.prt",
+      "to": "/resources/art/fx/texture/fire/fx_2x2_flames_emmissive_bw_01_d.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D3 audio",
+      "to": "/resources/bnk2/abilities_imperialranged_data.bnk",
+      "relation": "original ranged HIRC"
+    }
+  ],
+  "unresolved": [
+    {
+      "source": "/resources/art/fx/fxspec/abilities/bounty_hunter/bh_tactical_nuke_explosion.fxspec",
+      "field": "_fxResourceName",
+      "target": "/resources/engine/light.lit",
+      "status": "Engine primitive"
+    }
+  ],
+  "selection": "D2 Chain Lightning / Overload / run item icons"
+}

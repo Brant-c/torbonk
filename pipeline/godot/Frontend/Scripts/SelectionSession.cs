@@ -22,11 +22,13 @@ public sealed class SelectionSession
         if (selected.FactionId != Configuration.FactionId) throw new ArgumentException("Class belongs to another faction.");
         Configuration.BaseClassId = id;
         Configuration.AdvancedClassId = _advancedByBase.TryGetValue(id, out var remembered) ? remembered : selected.AdvancedClasses[0].Id;
+        Configuration.Appearance=AppearanceConfiguration.ForClass(Configuration.AdvancedClassId);
     }
     public void SelectAdvanced(string id, FrontendCatalog catalog)
     {
         if (!catalog.Class(Configuration.BaseClassId).AdvancedClasses.Any(a => a.Id == id)) throw new ArgumentException("Advanced class belongs to another base class.");
         Configuration.AdvancedClassId = id;
+        Configuration.Appearance=AppearanceConfiguration.ForClass(id);
         _advancedByBase[Configuration.BaseClassId] = id;
     }
     public void SelectMap(string id, FrontendCatalog catalog) { catalog.Map(id); Configuration.MapId = id; }

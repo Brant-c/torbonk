@@ -1,338 +1,221 @@
 {
   "profile": "April2012 (operator labelled)",
-  "maximumFiles": 80,
-  "maximumDecodedBytes": 67108864,
+  "maximumFiles": 180,
+  "maximumDecodedBytes": 104857600,
   "resources": [
     {
-      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
-      "archiveHash": "0x0F00586C4A00B362",
-      "entryOffset": 152085174,
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x9CE7379D226C7B73",
+      "entryOffset": 33461013,
       "headerSize": 36,
-      "dataOffset": 152085210,
-      "compressedSize": 3281,
-      "length": 44852,
+      "dataOffset": 33461049,
+      "compressedSize": 79293,
+      "length": 143681,
       "compressionMethod": 1,
-      "crc32Index": "d9284c13",
-      "path": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_force_lightning_caster.fxspec",
-      "sha256": "7d15279b1340f945e5705e7884f61497bd6e346e7546a2dbee2a93865368f366",
-      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\sith_inquisitor\\si_force_lightning_caster.fxspec",
-      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "crc32Index": "239f07d6",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_ground_smash_01.jba",
+      "sha256": "52aaa1f80f46b8887f8892eeaefb6a7b1c155860e31a81e697516625cc431c9b",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_saber_ground_smash_01.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
       "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
     },
     {
-      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
-      "archiveHash": "0x2F93FE9521C60B9C",
-      "entryOffset": 152228776,
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0xEBC9F38D40EED8A6",
+      "entryOffset": 32412425,
       "headerSize": 36,
-      "dataOffset": 152228812,
-      "compressedSize": 4120,
-      "length": 85896,
+      "dataOffset": 32412461,
+      "compressedSize": 15059,
+      "length": 26945,
       "compressionMethod": 1,
-      "crc32Index": "1adc2b01",
-      "path": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightningdrain_bodyarcs.fxspec",
-      "sha256": "32069fa84ff69bb511531eb2f321bc3dda4bb8153b47cc9800a0643b452df62e",
-      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\sith_inquisitor\\si_lightningdrain_bodyarcs.fxspec",
-      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "crc32Index": "9236ad48",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_sniper_fire_big_1.jba",
+      "sha256": "95e7458b891a4d47301bc1c1791189057413d7eb3b3f4213f9f0320a472b86b8",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_sniper_fire_big_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
       "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
     },
     {
-      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
-      "archiveHash": "0x0C52FDEF32CFC09C",
-      "entryOffset": 60697689,
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x94E32A7DDA79F3FE",
+      "entryOffset": 30522363,
       "headerSize": 36,
-      "dataOffset": 60697725,
-      "compressedSize": 362,
-      "length": 1096,
+      "dataOffset": 30522399,
+      "compressedSize": 17796,
+      "length": 31681,
       "compressionMethod": 1,
-      "crc32Index": "505ca9ac",
-      "path": "/resources/art/fx/geometry/fx_dummy_cube.gr2",
-      "sha256": "5c57af35d528cd570e48e4c2ab9fd1b1c499d3217d21c9d104fb60a9c50d067a",
-      "output": "source-assets\\april2012\\resources\\art\\fx\\geometry\\fx_dummy_cube.gr2",
-      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "crc32Index": "e40dff9c",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_bracer_fire_1.jba",
+      "sha256": "cb7a1a8f91555a7ae8fd3773dd13937544fccdd0b2506f895db9274169aa6052",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_bracer_fire_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
       "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
     },
     {
-      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
-      "archiveHash": "0x4E12D6AE790D5A4F",
-      "entryOffset": 9329105,
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x79155EF6BB4FEFB7",
+      "entryOffset": 75036777,
       "headerSize": 36,
-      "dataOffset": 9329141,
-      "compressedSize": 10036,
-      "length": 32896,
+      "dataOffset": 75036813,
+      "compressedSize": 1526,
+      "length": 2832,
       "compressionMethod": 1,
-      "crc32Index": "f33623f9",
-      "path": "/resources/art/fx/texture/electricity/512_singlearcb_bw.dds",
-      "sha256": "09123b2387a3aedbacb3e8d88e4279fa65b345a72b3023fffef808d8400c35b4",
-      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\electricity\\512_singlearcb_bw.dds",
-      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "crc32Index": "c4e049a3",
+      "path": "/resources/gfx/icons/forceslam.dds",
+      "sha256": "1ebeece7ee719f20f91a3b23462bc83b9151fbb6c243107a833e52576aaf97e7",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\forceslam.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
       "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
     },
     {
-      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
-      "archiveHash": "0xB52F5672DA66AA79",
-      "entryOffset": 152232932,
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x2CA56738F59E0EC6",
+      "entryOffset": 148655911,
       "headerSize": 36,
-      "dataOffset": 152232968,
-      "compressedSize": 577,
-      "length": 1137,
+      "dataOffset": 148655947,
+      "compressedSize": 1438,
+      "length": 2832,
       "compressionMethod": 1,
-      "crc32Index": "f4060226",
-      "path": "/resources/art/fx/particles/si_lightningdrain_bodyarcs.prt",
-      "sha256": "7e3f6876e0877846ccbf7e33a33991ae528739602421be08a6910df28efda5cf",
-      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_lightningdrain_bodyarcs.prt",
-      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "crc32Index": "af28391e",
+      "path": "/resources/gfx/icons/smash.dds",
+      "sha256": "d6af0d55675ad1c81a2096f989719fd7d736f0709d8f1ad49a9efdef5cb1b080",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\smash.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
       "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
     },
     {
-      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
-      "archiveHash": "0xA633C669589F7DBA",
-      "entryOffset": 152236594,
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xA9211489E0C961E0",
+      "entryOffset": 148778738,
       "headerSize": 36,
-      "dataOffset": 152236630,
-      "compressedSize": 870,
-      "length": 1793,
+      "dataOffset": 148778774,
+      "compressedSize": 1412,
+      "length": 2832,
       "compressionMethod": 1,
-      "crc32Index": "a02cc0bc",
-      "path": "/resources/art/fx/particles/si_lightningdrain_bodyarcs_p.prt",
-      "sha256": "b7ff03dbca257b13e376a4fbe04bab5dd2ea0197ed296465f3737914711b6ce1",
-      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_lightningdrain_bodyarcs_p.prt",
-      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
-      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
-    },
-    {
-      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
-      "archiveHash": "0x141D0204D1DDA67D",
-      "entryOffset": 36285116,
-      "headerSize": 36,
-      "dataOffset": 36285152,
-      "compressedSize": 37708,
-      "length": 87536,
-      "compressionMethod": 1,
-      "crc32Index": "5542be04",
-      "path": "/resources/art/fx/texture/electricity/electric_rings_bw_02.dds",
-      "sha256": "1d8afb288152f78fcb0c32aa4de03cc57d1b212c3384594aab47dbb1932454ac",
-      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\electricity\\electric_rings_bw_02.dds",
-      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "crc32Index": "de00b9af",
+      "path": "/resources/gfx/icons/sweep.dds",
+      "sha256": "11ba19cb8c98d4834ba6fdc6cde867e4582de4e5c94f699ae8d681ca5b9bf961",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\sweep.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
       "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
     },
     {
       "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audiodata_1.tor",
-      "archiveHash": "0x30583E2CDA806B52",
-      "entryOffset": 60022,
+      "archiveHash": "0x6850DEF11F035531",
+      "entryOffset": 8581589,
       "headerSize": 36,
-      "dataOffset": 60058,
-      "compressedSize": 62316,
-      "length": 215558,
+      "dataOffset": 8581625,
+      "compressedSize": 74374,
+      "length": 282855,
       "compressionMethod": 1,
-      "crc32Index": "9d2a78cc",
-      "path": "/resources/bnk2/abilities_imperialmelee_data.bnk",
-      "sha256": "a0fc90e145da0b7d7b0abc537d5f8853761c59921f54d79e696e4cb12720d1bc",
-      "output": "source-assets\\april2012\\resources\\bnk2\\abilities_imperialmelee_data.bnk",
+      "crc32Index": "07abaa3d",
+      "path": "/resources/bnk2/weapons_data.bnk",
+      "sha256": "d4a082451897af50861e30487b425058cb2f0308433e9654dd88cd850a7569c5",
+      "output": "source-assets\\april2012\\resources\\bnk2\\weapons_data.bnk",
       "archiveSha256": "932a885608e1a1b1f4a9f5c55a02bc8e426558371ae5a58faf88642ebe5f4491",
       "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
     },
     {
-      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
-      "archiveHash": "0x4766B193D4E0F612",
-      "entryOffset": 27128130,
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xBC6CE5D75D5B892E",
+      "entryOffset": 15402302,
       "headerSize": 36,
-      "dataOffset": 27128166,
-      "compressedSize": 13186832,
-      "length": 13186832,
-      "compressionMethod": 0,
-      "crc32Index": "8706242d",
-      "path": "/resources/bnk2/abilities_imperialmelee_media.bnk",
-      "sha256": "e1b31a2292fc4043ebe81376fb7d9e2e5cb02739abaceab86405b0591edd8bc0",
-      "output": "source-assets\\april2012\\resources\\bnk2\\abilities_imperialmelee_media.bnk",
-      "archiveSha256": "ef501addc5eb48b0b0d788efa82d321d21d790ca310e73a0f709f9bfc32117fc",
-      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
-    },
-    {
-      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audiodata_1.tor",
-      "archiveHash": "0x805938F7D0519917",
-      "entryOffset": 501413,
-      "headerSize": 36,
-      "dataOffset": 501449,
-      "compressedSize": 993,
-      "length": 3100,
+      "dataOffset": 15402338,
+      "compressedSize": 1348,
+      "length": 10904,
       "compressionMethod": 1,
-      "crc32Index": "9aea375f",
-      "path": "/resources/bnk2/init.bnk",
-      "sha256": "37beca98181ef54f20fce93037d93b02ac99e1ccdaf95290a1ff3852f64502ba",
-      "output": "source-assets\\april2012\\resources\\bnk2\\init.bnk",
-      "archiveSha256": "932a885608e1a1b1f4a9f5c55a02bc8e426558371ae5a58faf88642ebe5f4491",
+      "crc32Index": "e8413476",
+      "path": "/resources/art/fx/fxspec/audio_weapon_melee_swingright_normal.fxspec",
+      "sha256": "d7c97383c89e7eb11d17ab884f7de65af3adb9112f9c08f9391191ba1aa62aec",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\audio_weapon_melee_swingright_normal.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
       "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
     },
     {
-      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_global_1.tor",
-      "archiveHash": "0x08A5352818DAC371",
-      "entryOffset": 41565834,
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x5116382523590C46",
+      "entryOffset": 15400919,
       "headerSize": 36,
-      "dataOffset": 41565870,
-      "compressedSize": 324024,
-      "length": 324024,
-      "compressionMethod": 0,
-      "crc32Index": "42b19a8f",
-      "path": "/resources/systemgenerated/buckets/132.bkt",
-      "sha256": "8003c38e27a8014b96e9a5b1d3fcb66f0579c4c7e3f06dbf653c13d950f04758",
-      "output": "source-assets\\april2012\\resources\\systemgenerated\\buckets\\132.bkt",
-      "archiveSha256": "ef2857bbf2527021c925c4c5bbe461d85b97ae58a238ede9be5ef9baa74300f2",
+      "dataOffset": 15400955,
+      "compressedSize": 1347,
+      "length": 10890,
+      "compressionMethod": 1,
+      "crc32Index": "82da3d54",
+      "path": "/resources/art/fx/fxspec/audio_weapon_melee_swingleft_normal.fxspec",
+      "sha256": "6927f2cdaed0ecf4d9aecf36004649a65a7d93b5ddf71a4fd1e2170b9fe862c5",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\audio_weapon_melee_swingleft_normal.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
       "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
     },
     {
-      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_global_1.tor",
-      "archiveHash": "0xED2BEAA44E1B3CE3",
-      "entryOffset": 133097454,
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x2DDF57AB35F9847D",
+      "entryOffset": 36112860,
       "headerSize": 36,
-      "dataOffset": 133097490,
-      "compressedSize": 331928,
-      "length": 331928,
-      "compressionMethod": 0,
-      "crc32Index": "25c75bd2",
-      "path": "/resources/systemgenerated/buckets/435.bkt",
-      "sha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256",
-      "output": "source-assets\\april2012\\resources\\systemgenerated\\buckets\\435.bkt",
-      "archiveSha256": "ef2857bbf2527021c925c4c5bbe461d85b97ae58a238ede9be5ef9baa74300f2",
+      "dataOffset": 36112896,
+      "compressedSize": 1937,
+      "length": 35036,
+      "compressionMethod": 1,
+      "crc32Index": "5bf10ea4",
+      "path": "/resources/art/fx/fxspec/abilities/blasterfire/dynamic_standard_blaster_muzzle_flash.fxspec",
+      "sha256": "249a8487f4685975565ee07373febd4a6b70d7aa9db8585a6f71dddd1f49b455",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\blasterfire\\dynamic_standard_blaster_muzzle_flash.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
       "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
     }
   ],
   "dependencies": [
     {
-      "from": "epp.sith_inquisitor.force_lightning.channel_loop",
-      "to": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_force_lightning_caster.fxspec",
-      "relation": "appearance FX action"
+      "from": "D3 presentation correction",
+      "to": "/resources/anim/humanoid/bmnnew/cb_saber_ground_smash_01.jba",
+      "relation": "WarriorGroundSmash"
     },
     {
-      "from": "epp.sith_inquisitor.force_lightning.channel_loop",
-      "to": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightningdrain_bodyarcs.fxspec",
-      "relation": "appearance FX action"
+      "from": "D3 presentation correction",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_sniper_fire_big_1.jba",
+      "relation": "SniperFire"
     },
     {
-      "from": "character selection",
-      "to": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_force_lightning_caster.fxspec",
-      "relation": "selected dependency"
+      "from": "D3 presentation correction",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_bracer_fire_1.jba",
+      "relation": "AgentDart"
     },
     {
-      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_force_lightning_caster.fxspec",
-      "to": "/resources/art/fx/geometry/fx_dummy_cube.gr2",
-      "relation": "_fxResourceName"
+      "from": "D3 Warrior icon review",
+      "to": "/resources/gfx/icons/forceslam.dds",
+      "relation": "original April icon"
     },
     {
-      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_force_lightning_caster.fxspec",
-      "to": "/resources/art/fx/texture/electricity/512_singlearcb_bw.dds",
-      "relation": "_fxTextureName"
+      "from": "D3 Warrior icon review",
+      "to": "/resources/gfx/icons/smash.dds",
+      "relation": "original April icon"
     },
     {
-      "from": "character selection",
-      "to": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightningdrain_bodyarcs.fxspec",
-      "relation": "selected dependency"
+      "from": "D3 Warrior icon review",
+      "to": "/resources/gfx/icons/sweep.dds",
+      "relation": "original April icon"
     },
     {
-      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightningdrain_bodyarcs.fxspec",
-      "to": "/resources/art/fx/particles/si_lightningdrain_bodyarcs.prt",
-      "relation": "_fxResourceName"
+      "from": "D3 saber sounds",
+      "to": "/resources/bnk2/weapons_data.bnk",
+      "relation": "original weapon event bank"
     },
     {
-      "from": "Force Lightning dependency traversal",
-      "to": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_force_lightning_caster.fxspec",
-      "relation": "read selected source"
+      "from": "D3 weapon audio",
+      "to": "/resources/art/fx/fxspec/audio_weapon_melee_swingright_normal.fxspec",
+      "relation": "source appearance weapon FX"
     },
     {
-      "from": "Force Lightning dependency traversal",
-      "to": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightningdrain_bodyarcs.fxspec",
-      "relation": "read selected source"
+      "from": "D3 weapon audio",
+      "to": "/resources/art/fx/fxspec/audio_weapon_melee_swingleft_normal.fxspec",
+      "relation": "source appearance weapon FX"
     },
     {
-      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightningdrain_bodyarcs.fxspec",
-      "to": "/resources/art/fx/geometry/fx_dummy_cube.gr2",
-      "relation": "_fxResourceName"
-    },
-    {
-      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightningdrain_bodyarcs.fxspec",
-      "to": "/resources/art/fx/texture/electricity/512_singlearcb_bw.dds",
-      "relation": "_fxTextureName"
-    },
-    {
-      "from": "Force Lightning dependency traversal",
-      "to": "/resources/art/fx/particles/si_lightningdrain_bodyarcs.prt",
-      "relation": "read selected source"
-    },
-    {
-      "from": "/resources/art/fx/particles/si_lightningdrain_bodyarcs.prt",
-      "to": "/resources/art/fx/particles/si_lightningdrain_bodyarcs.prt",
-      "relation": "Name"
-    },
-    {
-      "from": "/resources/art/fx/particles/si_lightningdrain_bodyarcs.prt",
-      "to": "/resources/art/fx/particles/si_lightningdrain_bodyarcs_p.prt",
-      "relation": "EmitSpec"
-    },
-    {
-      "from": "Force Lightning dependency traversal",
-      "to": "/resources/art/fx/particles/si_lightningdrain_bodyarcs_p.prt",
-      "relation": "read selected source"
-    },
-    {
-      "from": "/resources/art/fx/particles/si_lightningdrain_bodyarcs_p.prt",
-      "to": "/resources/art/fx/particles/si_lightningdrain_bodyarcs_p.prt",
-      "relation": "Name"
-    },
-    {
-      "from": "/resources/art/fx/particles/si_lightningdrain_bodyarcs_p.prt",
-      "to": "/resources/art/fx/texture/electricity/electric_rings_bw_02.dds",
-      "relation": "TextureName"
-    },
-    {
-      "from": "Force Lightning Wwise events",
-      "to": "/resources/bnk2/abilities_imperialmelee_data.bnk",
-      "relation": "bank graph / media bank"
-    },
-    {
-      "from": "Force Lightning Wwise events",
-      "to": "/resources/bnk2/abilities_imperialmelee_media.bnk",
-      "relation": "bank graph / media bank"
-    },
-    {
-      "from": "Force Lightning Wwise events",
-      "to": "/resources/bnk2/init.bnk",
-      "relation": "bank graph / media bank"
-    },
-    {
-      "from": "Force Lightning GOM trace",
-      "to": "/resources/systemgenerated/buckets/132.bkt",
-      "relation": "ability or appearance evidence bucket"
-    },
-    {
-      "from": "Force Lightning GOM trace",
-      "to": "/resources/systemgenerated/buckets/435.bkt",
-      "relation": "ability or appearance evidence bucket"
+      "from": "D3 weapon audio",
+      "to": "/resources/art/fx/fxspec/abilities/blasterfire/dynamic_standard_blaster_muzzle_flash.fxspec",
+      "relation": "source appearance weapon FX"
     }
   ],
-  "unresolved": [
-    {
-      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_force_lightning_caster.fxspec",
-      "to": "/resources/engine/light.lit",
-      "field": "_fxResourceName",
-      "status": "unsupported engine primitive"
-    },
-    {
-      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_force_lightning_caster.fxspec",
-      "to": "/resources/engine/zap.zzp",
-      "field": "_fxResourceName",
-      "status": "unsupported engine primitive"
-    },
-    {
-      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightningdrain_bodyarcs.fxspec",
-      "to": "/resources/engine/light.lit",
-      "field": "_fxResourceName",
-      "status": "unsupported engine primitive"
-    },
-    {
-      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightningdrain_bodyarcs.fxspec",
-      "to": "/resources/engine/zap.zzp",
-      "field": "_fxResourceName",
-      "status": "unsupported engine primitive"
-    }
-  ],
-  "selection": "Force Lightning only"
+  "unresolved": [],
+  "selection": "human male body type 2; bmnnew skeleton"
 }

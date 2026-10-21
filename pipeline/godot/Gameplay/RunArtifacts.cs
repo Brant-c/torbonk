@@ -54,7 +54,7 @@ public partial class RunArtifacts : Node
         if(enemy.Health.IsAlive || enemy.RewardTier<=0 || !World.PlayerActor.Alive || !_paid.Add(enemy.GetInstanceId()))return;
         _pending.Enqueue(enemy.RewardTier);
     }
-    public bool Eligible(RunArtifactDefinition item,int tier) => item.MinimumTier<=tier &&
+    public bool Eligible(RunArtifactDefinition item,int tier) => (World.RunConfiguration.Profile.ArtifactEffects.Length==0 || World.RunConfiguration.Profile.ArtifactEffects.Contains(item.Effect)) && item.MinimumTier<=tier &&
         !_equipped.Any(a=>a.Id==item.Id) && (item.RequiresAbility=="" || World.Abilities.Find(item.RequiresAbility)?.Unlocked==true);
     public override void _Process(double delta)
     {

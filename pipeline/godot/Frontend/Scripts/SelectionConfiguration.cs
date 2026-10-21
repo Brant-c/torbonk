@@ -15,8 +15,7 @@ public sealed class SelectionConfiguration
     public AppearanceConfiguration Appearance { get; set; } = new();
     public string MapId { get; set; } = "korriban";
     // Never deserialize a cached playable flag as authority. Always derive from current content.
-    public bool Playable => FactionId == "empire" && BaseClassId == "sith_inquisitor"
-        && AdvancedClassId == "sorcerer" && MapId == "korriban" && Appearance is { IsSupportedPreset:true };
+    public bool Playable => Integration.SelectionGameplayAdapter.TryResolve(this,out _,out _);
     public string PlayableStatus => Playable ? "content_available" : "preview_only";
     public string ToJson() => JsonSerializer.Serialize(this, new JsonSerializerOptions { WriteIndented = true });
     public SelectionConfiguration Snapshot() => JsonSerializer.Deserialize<SelectionConfiguration>(ToJson())!;
@@ -33,8 +32,14 @@ public sealed class AppearanceConfiguration
     public string SkinToneId { get; set; } = "source_material_a01c01";
     public string ComplexionId { get; set; } = "source_default";
     public string EquipmentAppearanceId { get; set; } = "inq_starting_cdps1_t1x1";
-    public bool IsSupportedPreset => PresetId == "inquisitor_level1_april2012_bmn" && SpeciesId == "human"
+    public static AppearanceConfiguration ForClass(string advanced)
+    {
+        var p=ClassProfile.Find(advanced);
+        return p==null?new():new() {PresetId=p.Appearance,EquipmentAppearanceId=p.EquipmentPreset};
+    }
+    public bool IsSupportedPreset => ClassProfile.All.Any(p=>p.Appearance==PresetId &&
+        (p.EquipmentPreset==EquipmentAppearanceId || p.Id=="sorcerer" && EquipmentAppearanceId=="inq_starting_cdps1_t1x1")) && SpeciesId == "human"
         && BodyPresentationId == "male" && BodyTypeId == "bmn" && HeadId == "head_human_bmn_caucasian_a01"
         && HairId == "hair_human_bmn_non_a01" && SkinToneId == "source_material_a01c01"
-        && ComplexionId == "source_default" && EquipmentAppearanceId == "inq_starting_cdps1_t1x1";
+        && ComplexionId == "source_default";
 }

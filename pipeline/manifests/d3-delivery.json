@@ -1,0 +1,799 @@
+{
+  "sourceReceipts": [
+    "d3-source.json",
+    "d3-fx-source.json",
+    "d3-lacerate-source.json"
+  ],
+  "uniqueSelectedResources": 300,
+  "decodedSelectedBytes": 40113328,
+  "sourcePolicy": "Original TORs opened rb; baseline size/mtime checked; selected decoded bytes only hashed; historical filename hints verified by unique April path hash.",
+  "outputs": [
+    {
+      "path": "godot\\Assets\\D3\\2x2volumesmokegradient_blur2.png",
+      "sha256": "78c94508154cd5c588bc25f1eafa29bd72c68756ee60ef0ff18a6be895dfd177"
+    },
+    {
+      "path": "godot\\Assets\\D3\\2x2_electrical_blast_alpha.png",
+      "sha256": "cf26ee030ad79c102ae7307d1dd204c6d481b30525b8ba9cd4cfbef729d7b57d"
+    },
+    {
+      "path": "godot\\Assets\\D3\\2x2_graysmoke_alpha.png",
+      "sha256": "7041a2d861dc70eb99c431111106a0f9e147aefc4574cf66c01328a241e520e9"
+    },
+    {
+      "path": "godot\\Assets\\D3\\5x5_flame_lick_04_bw.png",
+      "sha256": "863d031494d958479754e8222fb38dbd8f0cba6983a378f4fc571b34b1c2297a"
+    },
+    {
+      "path": "godot\\Assets\\D3\\audio.json",
+      "sha256": "428795fa0f104a0878a355092b9d9bcab23c6da9fc2fe5aa9a401a831d929a34"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh.glb",
+      "sha256": "cb968df942460a12f295a7f64b3909b0f90aa4e5878ec273fa76c8d818607437"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_boot_tall_heavy_ge_a16military02_u_basecolor.png",
+      "sha256": "b8c272497a805f34a770711e4b4abe4ee5ea76210f9d4313f4b1d9ef21fd2946"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_boot_tall_heavy_ge_a16military02_u_normal.png",
+      "sha256": "846513380df4dc8d925d01bf1d4a991c79f365922161dcc400a39c8b0a13ffcd"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_boot_tall_heavy_ge_a16military02_u_roughness.png",
+      "sha256": "85a32f8e6dc90bcb32c572b5b80477bfd1a90bbd6e4335dd9a273b9b37b6077d"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_chest_baggy_heavy_ge_a16military02_m_basecolor.png",
+      "sha256": "6e046c538ba02b984b3e0168b0e42180c4d17bcf634da79e89f3f5f2771d9d17"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_chest_baggy_heavy_ge_a16military02_m_normal.png",
+      "sha256": "e93d59f03c8dedeac102e7e6d3a31d3d055a2b9cbdcc93b8cf1d7e6f163e8e21"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_chest_baggy_heavy_ge_a16military02_m_roughness.png",
+      "sha256": "61336e92d5016eaa6cda123be2c0b9b94695eca66f9988d871794ea0a4fe5005"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_eye_human_non_a01_c01_basecolor.png",
+      "sha256": "bcc12f077085943e3403e11c9045d2ec81aa3df433e52c89c97d9348871ca89c"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_eye_human_non_a01_c01_normal.png",
+      "sha256": "715a6417b4d3f0e15e1b2d3a31040ad53e505c95dd59286b7756fbef8a71b3f9"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_eye_human_non_a01_c01_roughness.png",
+      "sha256": "e9f5b750a11e76db652932bc0a818a37d49d0cdc4de52ad42967bd51e42966ed"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_hair_human_non_a01_v01_m_basecolor.png",
+      "sha256": "cfca228184d5b0679179bb3b1bb57798f81cb74c2167f3de63805ec108c8c3e6"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_hair_human_non_a01_v01_m_normal.png",
+      "sha256": "e695b506aec91ea4861041c54820b1d1dded9ecdf57e1712674c18bbeca24bc6"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_hair_human_non_a01_v01_m_roughness.png",
+      "sha256": "3e39aef771b0274501076f5863327dffcf80e2f2eda367dcd066f98138f1d065"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_hand_gauntlet_heavy_ge_a16military02_u_basecolor.png",
+      "sha256": "420fcce7f1014b0f478191a093ffee27308932160a34ea821a2ba08beec86d26"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_hand_gauntlet_heavy_ge_a16military02_u_normal.png",
+      "sha256": "e259e4e47641c15ea06d4dc6846de05db8139d44ff3fd26d3ff06dde15551f95"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_hand_gauntlet_heavy_ge_a16military02_u_roughness.png",
+      "sha256": "ef184aaa36c06a3d3695c827ffab2ca7018bdc90b0f32c638ab5477b483078f8"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_head_human_caucasian_a01c01_m_basecolor.png",
+      "sha256": "2fa833ee2c1403d7369490107a49383d285a65c510365ba8353ce23b7462cca7"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_head_human_caucasian_a01c01_m_normal.png",
+      "sha256": "c2a80c6815cf7c1a7e9c917556b22581d17aef780d115aa22ed6b5356aa97bcc"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_head_human_caucasian_a01c01_m_roughness.png",
+      "sha256": "abfe0478d110b92a21b4e6e6176e984f545802677a38cabdfb2618cfa93d1326"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_leg_pant_heavy_ge_a16military02_m_v01_basecolor.png",
+      "sha256": "1126f57e098ea98aa281fcc1044f504117a1ec59232beada9040be885c0c5b77"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_leg_pant_heavy_ge_a16military02_m_v01_normal.png",
+      "sha256": "a8592b8f5e4d00d3c4ee920432c651f8b87c5f83f1ad589c2442b6c52f9f4b70"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_leg_pant_heavy_ge_a16military02_m_v01_roughness.png",
+      "sha256": "091ba057f9ad0d63ae5c8745400d838bf8988354b4dda5833639f3aacaa36ae3"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_waist_belt_heavy_ge_a16military02_u_basecolor.png",
+      "sha256": "d0e1c38ef71984b45d55fccf633f2549724a9be1658a6f7d96ead27dda134e87"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_waist_belt_heavy_ge_a16military02_u_normal.png",
+      "sha256": "0aa081f7018975d9fd6e40321770731b051a8f2bb74f606ac336829b9c4da1ba"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh_waist_belt_heavy_ge_a16military02_u_roughness.png",
+      "sha256": "c17cd5ce163bfa6abdbbb53037e6df7bf220452d90067406b383e93ba3d66290"
+    },
+    {
+      "path": "godot\\Assets\\D3\\black.png",
+      "sha256": "52dfe43025076f8a3b6d08d341916b9e38c0ecf7f4e6c75f0097e9ead901da27"
+    },
+    {
+      "path": "godot\\Assets\\D3\\blast_mark_rim.png",
+      "sha256": "26493d771ff69059c21c54d9086eb07efbbf10752603827d3b75b53fa53661c5"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bw_2x2_electricity_multi_01.png",
+      "sha256": "e0bde0398851d37eaf6a6b584f1fe9cc6ef25309fe8a880a62b902f350944315"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bw_flare_gray.png",
+      "sha256": "3a05aa3f7e8f429f7d45eb192177c6b6ac127f48978e5a2af53bea26f6848039"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bw_fx_2x2_sparknglow_01.png",
+      "sha256": "d5dfc9edc3a1f84913173f02881d32d2cada87ea07720b475e6c15f5ff9ed60f"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bw_fx_horizontal_flare_orange_hot.png",
+      "sha256": "2b5150930e92f21ed05a9a3c947dd69ed69316086d7a6213df104123afd8ee22"
+    },
+    {
+      "path": "godot\\Assets\\D3\\bw_orange_flare02.png",
+      "sha256": "908a3264c7971eba9fc0ac42ab8ead7d9da734470ef92b12a4cb9b61f4cbf16e"
+    },
+    {
+      "path": "godot\\Assets\\D3\\casts.glb",
+      "sha256": "7a70169ea947ff5a2383a62108fce8f10e10c83d34335b39a4394e38d2d8ec27"
+    },
+    {
+      "path": "godot\\Assets\\D3\\casts_boot_tall_light_ss_a04c01_u_basecolor.png",
+      "sha256": "e0664339e67d91dbb70f207007cbcd2e3d17c9b674b6e25ca3b957df64c2058c"
+    },
+    {
+      "path": "godot\\Assets\\D3\\casts_boot_tall_light_ss_a04c01_u_normal.png",
+      "sha256": "049589599cb0f25c02ef8f8a7b6723f5d524cc0c62d296c2b8e6094a229b3f22"
+    },
+    {
+      "path": "godot\\Assets\\D3\\casts_boot_tall_light_ss_a04c01_u_roughness.png",
+      "sha256": "2c29bdef71d23fd2bc86479aa21a1321d6b34ac394a9966c0cee0e9e01f43717"
+    },
+    {
+      "path": "godot\\Assets\\D3\\fx.json",
+      "sha256": "73e67dde5d856fc4604f4c24da9ed74b411d55160ef40a67261bb8ab219531b3"
+    },
+    {
+      "path": "godot\\Assets\\D3\\fx_2x2_flames_emmissive_bw_01_d.png",
+      "sha256": "eb2c44d122e5b9e0b5cfed3988b1644331a6bad433559661f83b7df55a7086b4"
+    },
+    {
+      "path": "godot\\Assets\\D3\\fx_2x2_roundflames_01_desat.png",
+      "sha256": "f05c04fa19dd00055e72683258a9f41ac36ebe23fb05f488b4dc9c9f8a4be90e"
+    },
+    {
+      "path": "godot\\Assets\\D3\\fx_2x2_white_smoke_alpha.png",
+      "sha256": "2d05e31f34848e978e9da3b0fb5b386e7236055b72ad4db0c88fe6637e6504e6"
+    },
+    {
+      "path": "godot\\Assets\\D3\\fx_smoke_10_alpha.png",
+      "sha256": "6eb24a2e58a09290ee99e6bc2fb78be08fbf3d6c339b182ea3bc1b1b6b571c6b"
+    },
+    {
+      "path": "godot\\Assets\\D3\\fx_thick_fire_smoke_bw.png",
+      "sha256": "2ccb602e9b5f71888398493d4020761ec38eaf4990f518423c59349319289698"
+    },
+    {
+      "path": "godot\\Assets\\D3\\glow_basic_alpha.png",
+      "sha256": "67e72842c2894ade952a0645fdd73d1da2d2563e3688331d39b8bda98f183a6c"
+    },
+    {
+      "path": "godot\\Assets\\D3\\lightning_core.png",
+      "sha256": "c22dd84842d3bb2df1e02ba341d8c3654baafece7adfacaab2f57627dfa15196"
+    },
+    {
+      "path": "godot\\Assets\\D3\\lightsaber02_trail_blue_nomips.png",
+      "sha256": "026c1ec294f1ff5b4f30b2112d126a3e991877c29bb0d6b26a4b5e4f9865c0e5"
+    },
+    {
+      "path": "godot\\Assets\\D3\\lightsaber02_trail_green_nomips.png",
+      "sha256": "363c7f2a193e8c2b316362d346e97dee6fd07b9c7e5f6299a4ff44490dfcf328"
+    },
+    {
+      "path": "godot\\Assets\\D3\\lightsaber02_trail_nomips.png",
+      "sha256": "13e021da70a6275a59c2faeee55e90d16304f185533e72090182bdedc715a357"
+    },
+    {
+      "path": "godot\\Assets\\D3\\lightsaber02_trail_orange_nomips.png",
+      "sha256": "63fc36e6e4446a98328c6914acda4857bdeccc36a37aafb0b73adc86586ce337"
+    },
+    {
+      "path": "godot\\Assets\\D3\\lightsaber02_trail_purple_nomips.png",
+      "sha256": "860d13433c980c069b6eac594472f7ebc72abe4e5bc8c9a336c9ec730018f075"
+    },
+    {
+      "path": "godot\\Assets\\D3\\lightsaber02_trail_red_nomips.png",
+      "sha256": "2d627a35f5143175bc6c82759f9b86a2011cab48f050ea4bc8ff584bb4d0cb6b"
+    },
+    {
+      "path": "godot\\Assets\\D3\\lightsaber02_trail_yellow_nomips.png",
+      "sha256": "6744e0c38c9da59738f328c20586f4a3553ea5a4809ea8787435ddb7d2ae7763"
+    },
+    {
+      "path": "godot\\Assets\\D3\\lightsaber_critblade.png",
+      "sha256": "b792e419bb5a8f6f29b5249ecbb8d858832e25e5ce673c7bc751d4065c69c145"
+    },
+    {
+      "path": "godot\\Assets\\D3\\pistol.glb",
+      "sha256": "d8c935f2eb3750d18022ed4a0ffb49e10fbe8d33f134a823e388916f08b01e25"
+    },
+    {
+      "path": "godot\\Assets\\D3\\pistol_blaster_low01_a01_v01_base.png",
+      "sha256": "36d88470040e71801bd463a930da12d3d90ee414be4ce234aae6196ca7d811bf"
+    },
+    {
+      "path": "godot\\Assets\\D3\\pistol_blaster_low01_a01_v01_normal.png",
+      "sha256": "c34a17152b03aeaf4de57af77d5d4e498792c8ac1a025bdf042b1c2b836e21cd"
+    },
+    {
+      "path": "godot\\Assets\\D3\\pistol_blaster_low01_a01_v01_rough.png",
+      "sha256": "ff5360e9ad80f940ee9b3bc0913b468f91557596e0a2f245490b1aa7c5bcf7a5"
+    },
+    {
+      "path": "godot\\Assets\\D3\\radial_trails_out.png",
+      "sha256": "c7515937233ab403f00a36d6dbbb973d893dbcc93eeaa8a1cc848b3fe6f8a256"
+    },
+    {
+      "path": "godot\\Assets\\D3\\rifle.glb",
+      "sha256": "71ba297c32316211b7c8663af3bc93b63174bc350cee05620122962ca494bde9"
+    },
+    {
+      "path": "godot\\Assets\\D3\\rifle_rifle_low01_a01_v01_base.png",
+      "sha256": "0f8c835dc4eb07953ef0be3bb59705b1ca15ad39a7d505f99512cd11d660007a"
+    },
+    {
+      "path": "godot\\Assets\\D3\\rifle_rifle_low01_a01_v01_normal.png",
+      "sha256": "5f83a1d4af7553a8a1fd68a61a62929fe030675af3edeaaa29b0b63d1ba97702"
+    },
+    {
+      "path": "godot\\Assets\\D3\\rifle_rifle_low01_a01_v01_rough.png",
+      "sha256": "d8bbbb75b82fc18ce68b9e78452021c1973a3d33948339e546dfde2ba84d55c9"
+    },
+    {
+      "path": "godot\\Assets\\D3\\sniper.glb",
+      "sha256": "b5ee57ad7b880f6cb338a384c56f6cea06a2786ac1738e12c326db60228e8d5b"
+    },
+    {
+      "path": "godot\\Assets\\D3\\sniper_rifle_sniperlow01_a01_v01_base.png",
+      "sha256": "f992c681ebf7d74b9cf1d3db97205f262a316c2cd83e2b24bd3f9d025b658031"
+    },
+    {
+      "path": "godot\\Assets\\D3\\sniper_rifle_sniperlow01_a01_v01_normal.png",
+      "sha256": "d7ae54c09d30a95172832ee0f584f809de458c7441600afb3457239624830839"
+    },
+    {
+      "path": "godot\\Assets\\D3\\sniper_rifle_sniperlow01_a01_v01_rough.png",
+      "sha256": "40e882a0f3fba726f64f89c4e179b9e33f56915545170bccdabd00067bcfee9d"
+    },
+    {
+      "path": "godot\\Assets\\D3\\source-parameters.json",
+      "sha256": "80d5e0bccbcc920aacbc01ba9ab759dc820f677df2b8d647ab2200be924adea9"
+    },
+    {
+      "path": "godot\\Assets\\D3\\sphere_displaced_01.png",
+      "sha256": "ea14390362b6cbfc9d0cd8b1f6d28ab4f61598d1f62e04507812dbad4d45d752"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy.glb",
+      "sha256": "10b693bc2465b7278120431a40eafde7de5d65becf916c674fda7d658682241b"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_boot_tall_med_sp_a01c01_u_basecolor.png",
+      "sha256": "b4937f440d06ae31d86cb6decf79b9f421cd291b0340e9c2b01b3c18ff28097a"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_boot_tall_med_sp_a01c01_u_normal.png",
+      "sha256": "2fecd14ab9fa3448782c0acef89d9d6e1ad61e505cb25009afda587f3fe7a718"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_boot_tall_med_sp_a01c01_u_roughness.png",
+      "sha256": "5d3705e1966167421a20a1190fae6b16b2fd0b5dc418e28dc4f74c6e88644338"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_chest_tight_med_sp_a01c01_m_basecolor.png",
+      "sha256": "232d9f80a3de9cce58199fee2c5f9c489a3446a58b658408264cb3ef13539fd2"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_chest_tight_med_sp_a01c01_m_normal.png",
+      "sha256": "1b2983242f4713d648002b20c77b6910ab57b595de9116d8aeb06529ea6b1149"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_chest_tight_med_sp_a01c01_m_roughness.png",
+      "sha256": "6bebc0f22ecf087ef6184c20e8fdc4b7c2b7b44cd1296195ab08b8f1381c475f"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_eye_human_non_a01_c01_basecolor.png",
+      "sha256": "bcc12f077085943e3403e11c9045d2ec81aa3df433e52c89c97d9348871ca89c"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_eye_human_non_a01_c01_normal.png",
+      "sha256": "715a6417b4d3f0e15e1b2d3a31040ad53e505c95dd59286b7756fbef8a71b3f9"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_eye_human_non_a01_c01_roughness.png",
+      "sha256": "e9f5b750a11e76db652932bc0a818a37d49d0cdc4de52ad42967bd51e42966ed"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_hair_human_non_a01_v01_m_basecolor.png",
+      "sha256": "cfca228184d5b0679179bb3b1bb57798f81cb74c2167f3de63805ec108c8c3e6"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_hair_human_non_a01_v01_m_normal.png",
+      "sha256": "e695b506aec91ea4861041c54820b1d1dded9ecdf57e1712674c18bbeca24bc6"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_hair_human_non_a01_v01_m_roughness.png",
+      "sha256": "3e39aef771b0274501076f5863327dffcf80e2f2eda367dcd066f98138f1d065"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_hand_glove_med_sp_a01c01_u_basecolor.png",
+      "sha256": "b91c78f063239b90a219ab26331ba60e0da57aafc6ffff65a0049ffabaccd49a"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_hand_glove_med_sp_a01c01_u_normal.png",
+      "sha256": "44e6b502b8c5c07accaaa10e3c98397630c9880f5061804dd00f94ced31b1d11"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_hand_glove_med_sp_a01c01_u_roughness.png",
+      "sha256": "7c02e427e69a9dfe46b87c9d62ea4e55a5e87f01cde6d1826996ceef7343a989"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_head_human_caucasian_a01c01_m_basecolor.png",
+      "sha256": "2fa833ee2c1403d7369490107a49383d285a65c510365ba8353ce23b7462cca7"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_head_human_caucasian_a01c01_m_normal.png",
+      "sha256": "c2a80c6815cf7c1a7e9c917556b22581d17aef780d115aa22ed6b5356aa97bcc"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_head_human_caucasian_a01c01_m_roughness.png",
+      "sha256": "abfe0478d110b92a21b4e6e6176e984f545802677a38cabdfb2618cfa93d1326"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_leg_pant_med_sp_a01c01_m_v01_basecolor.png",
+      "sha256": "078772812eb30760cd1ebc1affb88e0bba202f848ecacb2486816552b54b8fc9"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_leg_pant_med_sp_a01c01_m_v01_normal.png",
+      "sha256": "215f6d942d9b608d75601f10a20a76f754e6781cff4ce5f30b27f7595d674a1a"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_leg_pant_med_sp_a01c01_m_v01_roughness.png",
+      "sha256": "238758589a32bbede375057396b0ed10053e9170e538e160dae7399de9d2abbe"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_waist_belt_med_sp_a01c01_u_basecolor.png",
+      "sha256": "d87fee4856faf537506115b06b1c0af2b8b614f220c891264b295f28ea74bff2"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_waist_belt_med_sp_a01c01_u_normal.png",
+      "sha256": "bfe451158a59e008c49a2af5c835c195f49f1a0015793869b3ef237d003f7aad"
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy_waist_belt_med_sp_a01c01_u_roughness.png",
+      "sha256": "7679ad20fa86ff8574e7ecc0e1be95be669a9cf9f9e48634d6666e28f1d49896"
+    },
+    {
+      "path": "godot\\Assets\\D3\\staff.glb",
+      "sha256": "f136f94572c0de0afb75a231a60a8b8d6b9a5dc42ab8d47012cf84b9a6a853e2"
+    },
+    {
+      "path": "godot\\Assets\\D3\\staff_dualsaber_low01_a01_v01_base.png",
+      "sha256": "78bbb7338e748439b1b4a0bfeea2c9f1431d75531b13db4de2cfe51f8d0d27e6"
+    },
+    {
+      "path": "godot\\Assets\\D3\\staff_dualsaber_low01_a01_v01_normal.png",
+      "sha256": "80a531f6a773ee7ee1e0a350a25b53742e2b8a2becbe83499372c78b0181a98d"
+    },
+    {
+      "path": "godot\\Assets\\D3\\staff_dualsaber_low01_a01_v01_rough.png",
+      "sha256": "8c1f831fbc64d3e50b72fc9b54c0d613cd282129589c7b2e580590512f6c932b"
+    },
+    {
+      "path": "godot\\Assets\\D3\\trail_glob.png",
+      "sha256": "7829047a60adfd243125829fce265a79014960f435df4108dd7c3dd3fe878e71"
+    },
+    {
+      "path": "godot\\Assets\\D3\\trail_misc_03.png",
+      "sha256": "1f0f3acc734b65d07745284eebfa0ab1291366c9ec29a6712edca9074be68b1c"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war.glb",
+      "sha256": "7c223f2fbf26b724c08e9f4444909c18004474cce5a9395d2b64c28b093cf0e0"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_boot_tall_med_sw_a01c01_u_basecolor.png",
+      "sha256": "1ea0611127d17c215be176e44d3e3f66e91061b4f6837cdb63a89c2fdad24698"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_boot_tall_med_sw_a01c01_u_normal.png",
+      "sha256": "dfb4200f7ec007e870531a914cc64c4e53ce3398a4f8e4f263e405e7a854fafd"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_boot_tall_med_sw_a01c01_u_roughness.png",
+      "sha256": "250fda8d2d6ec82b10b72bb7504966d860e2dc5a0cda3e5daf9c4f3cb603c807"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_chest_tight_med_sw_a01c01_m_basecolor.png",
+      "sha256": "39668206ec07327ca3d8215918ba3922ebce96c04c53d11bcc0fbe0639cb64ca"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_chest_tight_med_sw_a01c01_m_normal.png",
+      "sha256": "ed9f1d63e42ceedbc0f9adf3c4d5ebdc223514b2724c7dad77904ff2788f3bee"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_chest_tight_med_sw_a01c01_m_roughness.png",
+      "sha256": "86c4e0075d21429d12129c761ca55b458f53ad9327813cac24f9f7b0f572cd31"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_eye_human_non_a01_c01_basecolor.png",
+      "sha256": "bcc12f077085943e3403e11c9045d2ec81aa3df433e52c89c97d9348871ca89c"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_eye_human_non_a01_c01_normal.png",
+      "sha256": "715a6417b4d3f0e15e1b2d3a31040ad53e505c95dd59286b7756fbef8a71b3f9"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_eye_human_non_a01_c01_roughness.png",
+      "sha256": "e9f5b750a11e76db652932bc0a818a37d49d0cdc4de52ad42967bd51e42966ed"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_hair_human_non_a01_v01_m_basecolor.png",
+      "sha256": "cfca228184d5b0679179bb3b1bb57798f81cb74c2167f3de63805ec108c8c3e6"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_hair_human_non_a01_v01_m_normal.png",
+      "sha256": "e695b506aec91ea4861041c54820b1d1dded9ecdf57e1712674c18bbeca24bc6"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_hair_human_non_a01_v01_m_roughness.png",
+      "sha256": "3e39aef771b0274501076f5863327dffcf80e2f2eda367dcd066f98138f1d065"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_hand_gauntlet_med_sw_a01c01_u_basecolor.png",
+      "sha256": "54f8818ea2cf5e0ffeefc7ceec79436452d0b80e47e6923b37ae416deeada76e"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_hand_gauntlet_med_sw_a01c01_u_normal.png",
+      "sha256": "fc4cd80eeea41ac033c3bcb360f674b6f959625548431f6b8929a14338a4376b"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_hand_gauntlet_med_sw_a01c01_u_roughness.png",
+      "sha256": "1248ccd5da36f53d01be5612d295d5ba343a202f65f138c78efcc7221dd3e47d"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_head_human_caucasian_a01c01_m_basecolor.png",
+      "sha256": "2fa833ee2c1403d7369490107a49383d285a65c510365ba8353ce23b7462cca7"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_head_human_caucasian_a01c01_m_normal.png",
+      "sha256": "c2a80c6815cf7c1a7e9c917556b22581d17aef780d115aa22ed6b5356aa97bcc"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_head_human_caucasian_a01c01_m_roughness.png",
+      "sha256": "abfe0478d110b92a21b4e6e6176e984f545802677a38cabdfb2618cfa93d1326"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_leg_pant_med_sw_a01c01_m_v02_basecolor.png",
+      "sha256": "9d604074ee77a4b4e596e750dae34a01ccec31ae635e5f7612680a22510daf4a"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_leg_pant_med_sw_a01c01_m_v02_normal.png",
+      "sha256": "ed118e3f6e855fc2f915921ef6b05a09ec491d57d2ba21f4f3297bbc1ba66cd1"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_leg_pant_med_sw_a01c01_m_v02_roughness.png",
+      "sha256": "babe5f300db301af6d577b8095f9fa0c52d462ff93277f11ddaceb16245205ad"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_waist_belt_med_sw_a01c01_u_basecolor.png",
+      "sha256": "d3cc9dc54292548bb735806d67e75223412858ede53dd2095bf995de496f22b4"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_waist_belt_med_sw_a01c01_u_normal.png",
+      "sha256": "5a95a20e4fd8f85b89765d1e5db264c755967524126f7e1dace1e0c4f2cab416"
+    },
+    {
+      "path": "godot\\Assets\\D3\\war_waist_belt_med_sw_a01c01_u_roughness.png",
+      "sha256": "b44f730466920eee6306aeaadce0fbb6f843fb7b72f08b344556d2ac67b64e54"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\100287467.wav",
+      "sha256": "a31fafbcb6e25c5e8b0e1a28af839395599d6744d3c043064ce24981a4656c99"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\102072883.wav",
+      "sha256": "6c1553499e839f92e83646f61051b180fa2bc6018bd4f52fb9bc479bd2ae263e"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\103210703.wav",
+      "sha256": "577698c690481388a70290b37058be14a00d5833827547d0d1c66333d0836237"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\106642098.wav",
+      "sha256": "a9db7c933da1335fe855633885957c0050c5ca1a423fe373724e3b536bd8baee"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\10681804.wav",
+      "sha256": "e48cd57ca8b1a0ce823f210ca4bf8c914f7ab074c6b62467de86f51194754f14"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\10879047.wav",
+      "sha256": "d72dd863f149bdbf667f20490e91d1dbc80bc57f3ec9e7ef5baf0febbcd88a5d"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\120788897.wav",
+      "sha256": "8b714bae63ee901fecd5863da01307926667b1506d18d3a11c671b44d2d9638f"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\12207239.wav",
+      "sha256": "bf9a94006797949a0e2d7922d9d9f4b4af53747ca9df9998a5d644b8458ced95"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\12305225.wav",
+      "sha256": "a05203d3437bda4debf6b1d955bdcdb260f0d420c474296ac1a81fb544ccbe82"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\12809334.wav",
+      "sha256": "42c97afbd4354c5dda4246c905ee80ced4e1596cfe45658fc478795b5930db7c"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\132030954.wav",
+      "sha256": "d8173d2cee94d10197a0ca6ba795581c259383d723945bf5c523e5ed34b5151f"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\13240087.wav",
+      "sha256": "d5ba84a7ece3da8e556de35e4a4478eaf9aefaf75d8293678c03feb0d55148d4"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\142158238.wav",
+      "sha256": "d15c4d21aa93dd563db757d233dc1f0fa347ffbd67930c35b50ccfdc4d3ff9c1"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\157531335.wav",
+      "sha256": "3fa451976ba26eebb839f4d1fca01e806297e22f86b58c4af26a852ea6ca1cd5"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\158633579.wav",
+      "sha256": "b8ce4bb9d835e140c5e7f56c4a49d4d527a7e6c7db6494a24bb75db2ceb65cb5"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\187700138.wav",
+      "sha256": "8a78b0dbc71bfcb8a24de3f0cfc29258e81d4c38735b7578a963c32f67954df9"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\1932904.wav",
+      "sha256": "4eeefa9647ea37266fadbaf0c1ee1500673b05d2ecb8b09b4175566f0692b228"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\19710093.wav",
+      "sha256": "94570411fa9551141b1098560c75345c1fc411d100aca57559efe457116eb605"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\197171683.wav",
+      "sha256": "3eb4519589fa9ae635c1e13d35f5a3c568938272cdf4c4bf9a45a78cd8cbd73f"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\21044873.wav",
+      "sha256": "a89756627608f15514302c4a435c771c838a1e8778864d2062c9632ed79a9873"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\240667660.wav",
+      "sha256": "f48266c7f5f966cfbffbb19b550d77d121ad6fcd9d3436cb304ca4d8b4c2a0e2"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\247316237.wav",
+      "sha256": "6b3058d73ca75f5ef6ddf9408cd261387521c804817212e327abb5a241df045c"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\251411076.wav",
+      "sha256": "59196f39a7663f8d933255ce6ed5d13b4a3f624652fbaea5dbf466b4ee089318"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\29107890.wav",
+      "sha256": "4f1548e67d35d52b42829ab2fd527c5c770a8f97b87604b9acb440a4b2b3a6e2"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\308814803.wav",
+      "sha256": "1e7160c79ef0b42c4be05209e9d52bb84aedb4ad4e0ffe0403cf993f96cd7e14"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\37165785.wav",
+      "sha256": "3eca01b34e6f24cf711586222de8ecf0c4344a4f119170efb6a61634f17337b9"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\37734748.wav",
+      "sha256": "be21ac08657c2b11ab6fb15a25f6363f54cb3b76f9c9cd57966a8b1dd23ca88f"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\39998375.wav",
+      "sha256": "93fb9fc5cc68174fe100cf1cb5ff93d1f44af16e2cf8c677f5fcf7ac1d0f374a"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\400181815.wav",
+      "sha256": "8fcaede32f242866dac4c8786733061b280074056ffc8a4eacef877c0ef9d57a"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\40442308.wav",
+      "sha256": "2f4e33161ab782160ab12dbc8bffad772f62276462623f4e3487b1ce58d841bb"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\40682880.wav",
+      "sha256": "aec10423edca2ed94fcceeaa9713806336f69b7dd09f5d514bd620233a7fa96d"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\416939.wav",
+      "sha256": "f4c2f73618d39c1cfbc92a8ca0c0e8be98b2a01650c56bd1c5097c0fed763d7a"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\43121669.wav",
+      "sha256": "97bf6a30e1e36e8ce781c5d4bb474fa14828ab1cb59359586be7b4b564ce92d7"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\47208767.wav",
+      "sha256": "48b1442af099bf702bd2600e163acbda2d10c149559f3afada0a55666b71478f"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\487704814.wav",
+      "sha256": "70fe4b41ea1f7f539a78e2a06abd9d2f90460b96cf216726bd9f5f167a6c7bc9"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\57489726.wav",
+      "sha256": "70b8e5cad6c4e751040680109abb90a82f18b842ad2c7b4ce20e3f3ade796b86"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\5798633.wav",
+      "sha256": "71c2b594f37b7838bbfe8e981ea2b5872523ea5ea8f414182320ec1f0a9eb18b"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\69058290.wav",
+      "sha256": "e7b933ee7bd5bbdd7cd7223a35f0ac0bb34deef7ef9aa2a0987eb4a9389e40ec"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\697648918.wav",
+      "sha256": "d0f9a8d6c9f207a5c09c68dfd4e5d3238446bef586062ed78ef0212de099232d"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\700121126.wav",
+      "sha256": "476c6d0a995be4547e4a57f325ff792d295064f17ffff68151d64d196a6350aa"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\72893356.wav",
+      "sha256": "a5e3391cc2388a2766be0a991413c914eac8952229050e997ef53298f9c2a29f"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\75273465.wav",
+      "sha256": "71e6d5e8e56fb1b278781e0ffb6def7b48f0bb38b90c794f90a1e9d4769b2632"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\7696765.wav",
+      "sha256": "6dc814a58504537920179520311394b0fe563fc4c11c6db4e8b9235db188a051"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\80469902.wav",
+      "sha256": "2cb84dfe6ebb00e908d9c2917d1d30b72784898b5d37aef1c6cda2ea8b8f5a1a"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\80721193.wav",
+      "sha256": "72e3b370412dae784b4914c45e1e05ff5858186fd6367cc920841c7f8ffab900"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\91423842.wav",
+      "sha256": "3818e13ea8362d9951b3d12e30654a42749516f4919308ef3b47798ca83bb872"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\94288275.wav",
+      "sha256": "184795799104fd18e53837d64f62c30d5688b3d8082d9b14b17ebb20d4471b67"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\94289125.wav",
+      "sha256": "56bc50f89a19fcb1e96afd59eeceb5aa96e9c8e922e1b0be37bbade7381f8db2"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\9460359.wav",
+      "sha256": "f978ed59c612d88208144d20d7cfa3030e334ca036bdfcbcc1f13a270e9e1f3b"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\9611007.wav",
+      "sha256": "b60abf287a80b14e4d7a7b0153cd1aa2b015e9acd8e3a571c6e28533fad3cadc"
+    },
+    {
+      "path": "godot\\Assets\\D3\\Audio\\97757946.wav",
+      "sha256": "91994caec60ba127b2cbbd05e13a210de3b3da0ba168e1ddef11b189ee91f582"
+    },
+    {
+      "path": "godot\\Gameplay\\Abilities\\barrier.tres",
+      "sha256": "486a6bab36b1f822c8880a994f59141608cf5746c31d075225a837b8fb03d23a"
+    },
+    {
+      "path": "godot\\Gameplay\\Abilities\\chain.tres",
+      "sha256": "8c826ad8653911d9f3f0283d53f332535dddc4cd754b28539a7775a4b0ea53a8"
+    },
+    {
+      "path": "godot\\Gameplay\\Abilities\\darkheal.tres",
+      "sha256": "d3ba881ab4fc7465a59f651c39ed99026091819781785b8ebe9726fc18ea5aa2"
+    },
+    {
+      "path": "godot\\Gameplay\\Abilities\\dart.tres",
+      "sha256": "46f36fdb2f0675c34c984cf0c7c9eb75e4992939f9f00abf139baa6c733ef9d6"
+    },
+    {
+      "path": "godot\\Gameplay\\Abilities\\deathfield.tres",
+      "sha256": "e28582afd39648889942b21a4b1e4e75e80e333c0e70f67e721ea2cd0bd5ec85"
+    },
+    {
+      "path": "godot\\Gameplay\\Abilities\\flamesweep.tres",
+      "sha256": "4908e8d9520033cc5ffda0c7549545c4caa5408354b1caedea58f7f422891027"
+    },
+    {
+      "path": "godot\\Gameplay\\Abilities\\lacerate.tres",
+      "sha256": "cbea184de5adef0892d5d0443f5bd862cf1e8b52c38bba92e2a092de9ddfb86d"
+    },
+    {
+      "path": "godot\\Gameplay\\Abilities\\lightning.tres",
+      "sha256": "8fe596493906a08ee57947f4ef56af4c616e0dd7b6e3cbb134db82a91bdebdf8"
+    },
+    {
+      "path": "godot\\Gameplay\\Abilities\\overload.tres",
+      "sha256": "28a7e77c4d23f116aca9103466b710edf80ad0c3c6dee1faf8ba2584ae1e777e"
+    },
+    {
+      "path": "godot\\Gameplay\\Abilities\\rupture.tres",
+      "sha256": "381eb1125cb96ae539c22d5ae8aca6ad5f6f7f52b3f351b3e72126c16376fde1"
+    },
+    {
+      "path": "godot\\Gameplay\\Abilities\\shock.tres",
+      "sha256": "f803c52ac518564655a38df62770643b7f2aa2cf2fb9cb1a7a3d4c9033eae3cd"
+    },
+    {
+      "path": "godot\\Gameplay\\Abilities\\smash.tres",
+      "sha256": "db91b47b3afd8e9d29b18226a35213f9de139a1a9a69286d598f53ea52dd7c33"
+    },
+    {
+      "path": "godot\\Gameplay\\Abilities\\snipershot.tres",
+      "sha256": "778bf86add78b786acf0d53c85dca7c64c84d795bb5a5d9c8ce81b6ebb06ab7e"
+    },
+    {
+      "path": "godot\\Gameplay\\Abilities\\storm.tres",
+      "sha256": "b7f9e6d2551d41686151612600920f40a5b17e9cd2b119545bbc8b571d284c94"
+    },
+    {
+      "path": "godot\\Gameplay\\Abilities\\tracer.tres",
+      "sha256": "6dd4b928c584db114090b1c4b55a7272428d7902c3f3af1736db156a0886fa7d"
+    }
+  ],
+  "definitionEvidence": [
+    "d3-definitions.json",
+    "d3-appearance-evidence.json",
+    "d3-impact-evidence.json"
+  ],
+  "audioReceipts": [
+    "d3-fx-audio.json",
+    "d3-ranged-audio.json",
+    "d3-lacerate-audio.json"
+  ],
+  "limitation": "Source-derived appearance/gesture/FX adaptations; no native MMO animation graph or FX runtime parity claimed. Exact complete spawn inventories unverified."
+}

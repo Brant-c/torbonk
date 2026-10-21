@@ -67,8 +67,8 @@ public partial class CombatHud : Control
         _xp=Bar("bwaui_bars_45",new Vector2(118,130),new Vector2(564,12),3,10,true);
 
         AddChild(new CharacterPortrait {Position=new Vector2(11,28),
-            TooltipText="Survivor · Sith Inquisitor\nWASD move relative to camera · Space jump · Abilities attack automatically\nHold RMB or drag LMB to orbit · Wheel zoom\nR restart · F3 diagnostics · Esc quit"});
-        _targetPortrait=new CharacterPortrait {Position=new Vector2(711,28),Mirrored=true,ShowPlayerOnReady=false,TooltipText="Current Lightning target"};
+            TooltipText=$"Survivor · {World.RunConfiguration.AdvancedClassId}\nWASD move relative to camera · Space jump · Abilities attack automatically\nHold RMB or drag LMB to orbit · Wheel zoom\nR restart · F3 diagnostics · Esc quit"});
+        _targetPortrait=new CharacterPortrait {Position=new Vector2(711,28),Mirrored=true,ShowPlayerOnReady=false,TooltipText="Current hostile target"};
         AddChild(_targetPortrait);_targetPortrait.FaceVisible=false;
     }
 
@@ -120,10 +120,12 @@ public partial class CombatHud : Control
             int ranks=p.AbilityRanks(ability.Definition.Id);var rarity=p.AbilityRarity(ability.Definition.Id);
             slot.UpdateUpgrade(ranks,rarity);
             string cadence=ability.ChannelSeconds>0?$"per tick · {ability.TickSeconds:0.00}s interval\n{(ability.Definition.PersistentArea?"Persistent area":"Burst channel")} {ability.ChannelSeconds:0.0}s":"burst";
-            string area=ability.Definition.Area==AbilityArea.GroundSphere?$"\nArea radius {ability.Radius:0.00}":"";
+            string area=ability.Definition.Area is AbilityArea.GroundSphere or AbilityArea.CasterRadial or AbilityArea.TargetSplash?$"\nArea radius {ability.Radius:0.00}":"";
             string tooltip=$"{ability.Definition.Title} · automatic · {ability.State}\n{ability.DamagePerTick:0.#} {ability.Definition.DamageType} damage {cadence}\nRange {ability.Range:0.00}{area}\nCooldown {ability.CooldownSeconds:0.00}s\n"+(ranks>0?$"{rarity} · {ranks} trained ranks":"Unlocked · no stat upgrades")+
                 $"\n{(ability.Definition.UsesGlobalCooldown?"Waits for shared GCD":"Ignores shared GCD")} · {(ability.Definition.TriggersGlobalCooldown?"triggers GCD":"no GCD trigger")}."+
                 "\nIndividual cooldown seconds. Shared vertical wipe: GCD. Clear slot: ready.";
+            if(ability.Definition.Description!="")tooltip+="\n"+ability.Definition.Description;
+            if(ability.Definition.PeriodicDuration>0)tooltip+=$"\n{ability.Definition.PeriodicDamage*ability.DamagePerTick/ability.Definition.Damage:0.#} periodic damage every {ability.Definition.PeriodicInterval:0.#}s for {ability.Definition.PeriodicDuration:0.#}s. Refreshes; no stacking.";
             if(ability.Definition.Id=="deathfield")tooltip+=$"\nHeal {ability.Healing:0.#} HP per distinct enemy damaged, capped at {ability.Definition.HealingCap:0.#} per activation. Last: {ability.LastDistinctHits} hits, +{ability.LastHealing:0.#} HP.";
             if(ability.Definition.Effect!=AbilityEffect.Damage)
             {

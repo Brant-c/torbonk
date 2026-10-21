@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "lacerate"
+Title = "Lacerate"
+Icon = "spinningstrike"
+Damage = 22
+CooldownSeconds = 2
+Range = 0.28
+Radius = 0.28
+Area = 3
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+WindupSeconds = 0.0
+ChannelSeconds = 0.0
+RecoverySeconds = 1.4
+GestureSeconds = 1.4
+StartClip = "D3/Lacerate"
+LoopClip = "D3/Lacerate"
+EndClip = ""
+PeriodicDamage = 0
+PeriodicDuration = 0
+PeriodicInterval = 1
+DamageType = 0
+Description = "Fast double-bladed saber sweep."
+ImpactTexture = ""
+CastAudio = "res://Assets/D3/Audio/94289125.wav"
+ImpactAudio = ""
+PresentationKind = "saber"
+WeaponAudio = "res://Assets/D3/Audio/173808209.wav"
+ImpactTailsOnTargetDeath = true

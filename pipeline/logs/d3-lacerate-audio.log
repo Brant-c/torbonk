@@ -1,0 +1,23 @@
+wwiser v20260808 (python 3.12.14)
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\abilities_republicmelee_data.bnk
+parser: done
+names: loading names
+names: couldn't find D:\SWTORClassic\torbonk\pipeline\tools\wwnames.db3 name file
+names: done
+dumper: writting D:\SWTORClassic\torbonk\pipeline\work\d3\republic.xml
+dumper: done
+(done)
+wwiser v20260808 (python 3.12.14)
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\abilities_republicmelee_data.bnk
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\init.bnk
+parser: done
+names: loading names
+names: couldn't find D:\SWTORClassic\torbonk\pipeline\tools\wwnames.db3 name file
+names: done
+generator: start
+generator: processing nodes
+generator: elapsed 0.105747s
+generator: WARNING! missing 5 memory audio (load more banks?)
+generator: done (created 1)
+(done)
+{"events": {"Play_ability_jediconsular_hiddenstrike_mediumgrip": "3889283881"}, "missing": ["Play_ability_bountyhunter_flamesweep_fireburst", "Play_ability_bountyhunter_rechargeandreload_jetpackloop", "Play_ability_bountyhunter_flamesweep_bracerfire", "Play_ability_bountyhunter_tacticalnuke_explosion", "Play_ability_sithwarrior_smash_wave", "Play_ability_bountyhunter_rechargeandreload_jetpackactivate", "Play_ability_sithwarrior_smash_coarseburstsingle", "Play_ability_bountyhunter_fusionmissile_projectile", "Stop_ability_bountyhunter_flamesweep_flamethrowerloop", "Play_ability_sithwarrior_impale_impact", "Stop_ability_bountyhunter_rechargeandreload_jetpackloop", "Stop_ability_bountyhunter_fusionmissile_projectile", "Play_ability_bountyhunter_flamesweep_flamethrowerloop", "Play_ability_bountyhunter_fusionmissile_launch"], "media": 5}

@@ -1,7 +1,7 @@
 using Godot;
 namespace SwtorSurvivors;
 public enum AbilityTargetRule { NearestHostile, HostileCluster }
-public enum AbilityArea { SingleTarget, GroundSphere, Chain, CasterRadial }
+public enum AbilityArea { SingleTarget, GroundSphere, Chain, CasterRadial, TargetSplash }
 public enum AbilityCategory { Offensive, Utility }
 public enum DamageType { Energy, Kinetic, Internal }
 public enum AbilityEffect { Damage, Shield, Heal }
@@ -9,6 +9,21 @@ public enum AbilityEffect { Damage, Shield, Heal }
 [GlobalClass]
 public partial class AbilityDefinition : Resource
 {
+    [Export] public float PeriodicDamage {get;set;}
+    [Export] public float PeriodicDuration {get;set;}
+    [Export] public float PeriodicInterval {get;set;}=1;
+    [Export] public float SplashMultiplier {get;set;}=.4f;
+    [Export] public string Description {get;set;}="";
+    [Export] public string ImpactTexture {get;set;}="";
+    [Export] public string CastAudio {get;set;}="";
+    [Export] public string ImpactAudio {get;set;}="";
+    [Export] public bool FullBodyGesture {get;set;}
+    [Export] public bool ImpactTailsOnTargetDeath {get;set;}
+    [Export] public string WeaponAudio {get;set;}="";
+    [Export] public string OffhandAudio {get;set;}="";
+    [Export] public string PresentationKind {get;set;}="impact";
+    [Export] public string MuzzleBone {get;set;}="RightWeapon";
+    [Export] public Color EffectTint {get;set;}=new(1,.28f,.045f);
     [Export] public string Id { get; set; } = "lightning";
     [Export] public AbilityCategory Category { get; set; }
     [Export] public int BounceCount { get; set; } = 3;

@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "smash"
+Title = "Smash"
+Icon = "forceslam"
+Damage = 42
+CooldownSeconds = 4
+Range = 0.34
+Radius = 0.34
+Area = 3
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+WindupSeconds = 0.0
+ChannelSeconds = 0.0
+RecoverySeconds = 1.6
+GestureSeconds = 1.6
+StartClip = "D3/Smash"
+LoopClip = "D3/Smash"
+EndClip = ""
+PeriodicDamage = 0
+PeriodicDuration = 0
+PeriodicInterval = 1
+DamageType = 0
+Description = "Heavy point-blank Force-assisted strike."
+ImpactTexture = "res://Assets/D3/radial_trails_out.png"
+CastAudio = "res://Assets/D3/Audio/142158238.wav"
+ImpactAudio = "res://Assets/D3/Audio/157531335.wav"
+FullBodyGesture = true
+PresentationKind = "slam"
+WeaponAudio = "res://Assets/D3/Audio/173808209.wav"
+ImpactTailsOnTargetDeath = true

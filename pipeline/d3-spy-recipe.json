@@ -1,0 +1,651 @@
+{
+  "profile": "April2012",
+  "bodyType": "bmn",
+  "skeleton": "/resources/art/dynamic/spec/bmnnew_skeleton.gr2",
+  "outfit": "April spy starting appearance family; full spawn inventory unverified",
+  "coordinatePolicy": "scale 1; GR2 +90 X applied; glTF Y up; JBA original root rotation retained",
+  "colorScheme": {
+    "id": "1413918",
+    "xml": "<Asset>\n    <ID>1413918</ID>\n    <ArtName>colorscheme_sp_a01_c01_s08</ArtName>\n    <DesignerName>colorscheme sp a01 c01 s08</DesignerName>\n    <BaseFile />\n    <Attachments />\n    <Materials />\n    <Bodytypes>\n      <Bodytype>bfa</Bodytype>\n      <Bodytype>bfb</Bodytype>\n      <Bodytype>bfn</Bodytype>\n      <Bodytype>bfs</Bodytype>\n      <Bodytype>bma</Bodytype>\n      <Bodytype>bmf</Bodytype>\n      <Bodytype>bmn</Bodytype>\n      <Bodytype>bms</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>-1</SkinHueIndex>\n    <Filters />\n    <Identities />\n    <Tags />\n    <CustomData>\n      <ColorScheme>\n        <Name>colorscheme_sp_a01_c01_s08</Name>\n        <Guid>1413918</Guid>\n        <slot name=\"boot\" primary=\"1000740\" secondary=\"1000739\" />\n        <slot name=\"bracer\" primary=\"1000740\" secondary=\"1000739\" />\n        <slot name=\"chest\" primary=\"1000740\" secondary=\"1000739\" />\n        <slot name=\"face\" primary=\"1000740\" secondary=\"1000739\" />\n        <slot name=\"hand\" primary=\"1000740\" secondary=\"1002425\" />\n        <slot name=\"leg\" primary=\"1000740\" secondary=\"1000739\" />\n        <slot name=\"waist\" primary=\"1000740\" secondary=\"1000739\" />\n      </ColorScheme>\n    </CustomData>\n  </Asset>\n  ",
+    "hues": {
+      "1000740": {
+        "id": "1000740",
+        "xml": "<Palette>\r\n  <Brightness>0.1788</Brightness>\r\n  <Contrast>1.0434</Contrast>\r\n  <Hue>0.4348</Hue>\r\n  <Metallicspecular>0.823529,0.85098,1,1</Metallicspecular>\r\n  <Name>garmenthue_sp_h04_p</Name>\r\n  <Precedence>002</Precedence>\r\n  <Representativecolor>0.397703102668024,0.509938548421635,0.511214120721177</Representativecolor>\r\n  <Saturation>0.7778</Saturation>\r\n  <Specular>1,0.772549,0.772549,1</Specular>\r\n</Palette>"
+      },
+      "1000739": {
+        "id": "1000739",
+        "xml": "<Palette>\r\n  <Brightness>0.0242</Brightness>\r\n  <Contrast>1.0581</Contrast>\r\n  <Hue>0.4831</Hue>\r\n  <Metallicspecular>0.823529,0.85098,1,1</Metallicspecular>\r\n  <Name>garmenthue_sp_h03_p</Name>\r\n  <Precedence>001</Precedence>\r\n  <Representativecolor>0.337402546774731,0.356556229933959,0.364805563795611</Representativecolor>\r\n  <Saturation>0.9227</Saturation>\r\n  <Specular>0.988235,1,0.843137,1</Specular>\r\n</Palette>"
+      },
+      "1002425": {
+        "id": "1002425",
+        "xml": "<Palette>\r\n  <Brightness>-0.066</Brightness>\r\n  <Contrast>0.942</Contrast>\r\n  <Hue>0.5362</Hue>\r\n  <Metallicspecular>0.894118,0.823529,1,1</Metallicspecular>\r\n  <Name>garmenthue_sp_h17_p</Name>\r\n  <Precedence>015</Precedence>\r\n  <Representativecolor>0.251665539428932,0.284402161485934,0.337732426066695</Representativecolor>\r\n  <Saturation>0.7462</Saturation>\r\n  <Specular>0.890196,1,0.772549,1</Specular>\r\n</Palette>"
+      }
+    }
+  },
+  "parts": [
+    {
+      "slot": "head",
+      "modelId": "1000257",
+      "materialId": "1583105",
+      "artName": "head_human_bmn_caucasian_a01",
+      "registryPath": "/resources/art/dynamic/head/index.xml",
+      "registryXml": "<Asset>\n    <ID>1000257</ID>\n    <ArtName>head_human_bmn_caucasian_a01</ArtName>\n    <DesignerName>head human bmn caucasian a01</DesignerName>\n    <BaseFile>/art/dynamic/head/model/head_human_bmn_caucasian_a01.gr2</BaseFile>\n    <Attachments />\n    <Materials>\n      <Material id=\"1005440\" name=\"DO NOT USE\" filename=\"/art/shaders/materials/head_human_[bt]_caucasian_a01_c01.mat\">\n        <ColorSchemes />\n        <MaterialOverrides>\n          <MaterialOverride index=\"1\" filename=\"/art/shaders/materials/eye_human_non_a01_c01.mat\" />\n        </MaterialOverrides>\n      </Material>\n      <Material id=\"1143209\" name=\"DO NOT USE\" filename=\"/art/shaders/materials/head_human_[bt]_caucasian_a01_c02.mat\">\n        <ColorSchemes />\n        <MaterialOverrides>\n          <MaterialOverride index=\"1\" filename=\"/art/shaders/materials/eye_human_non_a01_c01.mat\" />\n        </MaterialOverrides>\n      </Material>\n      <Material id=\"1143210\" name=\"DO NOT USE\" filename=\"/art/shaders/materials/head_human_[bt]_caucasian_a01_c03.mat\">\n        <ColorSchemes />\n        <MaterialOverrides>\n          <MaterialOverride index=\"1\" filename=\"/art/shaders/materials/eye_human_non_a01_c01.mat\" />\n        </MaterialOverrides>\n      </Material>\n      <Material id=\"1143211\" name=\"DO NOT USE\" filename=\"/art/shaders/materials/head_human_[bt]_caucasian_a01_c04.mat\">\n        <ColorSchemes />\n        <MaterialOverrides>\n          <MaterialOverride index=\"1\" filename=\"/art/shaders/materials/eye_human_non_a01_c01.mat\" />\n        </MaterialOverrides>\n      </Material>\n      <Material id=\"1583105\" name=\"caucasian a01c01 m\" filename=\"/art/shaders/materials/head_human_caucasian_a01c01_m.mat\">\n        <ColorSchemes />\n        <MaterialOverrides>\n          <MaterialOverride index=\"-1\" filename=\"/art/shaders/materials/eye_human_non_a01_c01.mat\" />\n        </MaterialOverrides>\n      </Material>\n      <Material id=\"1585665\" name=\"non npc01 m\" filename=\"/art/shaders/materials/head_human_non_npc01_m.mat\">\n        <ColorSchemes />\n        <MaterialOverrides>\n          <MaterialOverride index=\"-1\" filename=\"/art/shaders/materials/eye_human_non_a01_c01.mat\" />\n        </MaterialOverrides>\n      </Material>\n      <Material id=\"1585840\" name=\"head human non npc_old_m\" filename=\"/art/shaders/materials/head_human_non_npc07_m.mat\">\n        <ColorSchemes />\n        <MaterialOverrides>\n          <MaterialOverride index=\"-1\" filename=\"/art/shaders/materials/eye_human_non_a01_c01.mat\" />\n        </MaterialOverrides>\n      </Material>\n    </Materials>\n    <Bodytypes>\n      <Bodytype>bmn</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>0</SkinHueIndex>\n    <Filters>\n      <Filter name=\"Race\" value=\"caucasian\" />\n    </Filters>\n    <Identities>\n      <Identity name=\"Race\" value=\"caucasian\" />\n    </Identities>\n    <Tags />\n    <CustomData>\n      <SkinMaterials>\n        <SkinMaterial slot=\"boot\" filename=\"/art/shaders/materials/boot_naked_caucasian_young_a01c01_[bt].mat\" />\n        <SkinMaterial slot=\"chest\" filename=\"/art/shaders/materials/chest_naked_caucasian_young_a01c01_[bt].mat\" />\n        <SkinMaterial slot=\"hand\" filename=\"/art/shaders/materials/hand_naked_caucasian_young_a01c01_[bt].mat\" />\n        <SkinMaterial slot=\"leg\" filename=\"/art/shaders/materials/leg_naked_caucasian_young_a01c01_[bt].mat\" />\n      </SkinMaterials>\n    </CustomData>\n  </Asset>\n  ",
+      "models": [
+        {
+          "path": "/resources/art/dynamic/head/model/head_human_bmn_caucasian_a01.gr2",
+          "id": "1000257"
+        }
+      ],
+      "skinMaterialIndex": -1,
+      "material": {
+        "path": "/resources/art/shaders/materials/head_human_caucasian_a01c01_m.mat",
+        "derived": "SkinB",
+        "textures": {
+          "DiffuseMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_caucasian_a01c01_m_d.dds",
+          "RotationMap1": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_caucasian_a01c01_m_n.dds",
+          "GlossMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_caucasian_a01c01_m_s.dds",
+          "PaletteMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_caucasian_a01c01_m_h.dds",
+          "PaletteMaskMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_non_a01c01_u_m.dds",
+          "ComplexionMap": "/resources/art/defaultassets/white.dds",
+          "FacepaintMap": "/resources/art/defaultassets/default_facepaint.dds",
+          "AgeMap": "/resources/art/defaultassets/default_age.dds"
+        },
+        "values": {
+          "palette1": "0,0.5,0,1",
+          "palette2": "0,0.5,0,1",
+          "palette1Specular": "1,1,1",
+          "palette2Specular": "1,1,1",
+          "palette1MetallicSpecular": "1,1,1",
+          "palette2MetallicSpecular": "1,1,1",
+          "RimWidth": "1.55",
+          "RimStrength": "0.5",
+          "FlushTone": "0.47451,0.121569,0.121569",
+          "FleshBrightness": "0.1",
+          "UsesReflection": "False",
+          "UvScaling": "1,1",
+          "ReflectionIntensity": "1",
+          "ReflectionBlurIntensity": "1",
+          "ReflectionSpecInfluence": "1",
+          "ReflectionContrast": "0"
+        }
+      },
+      "overrides": [
+        {
+          "index": -1,
+          "material": {
+            "path": "/resources/art/shaders/materials/eye_human_non_a01_c01.mat",
+            "derived": "Eye",
+            "textures": {
+              "DiffuseMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_d.dds",
+              "RotationMap1": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_n.dds",
+              "GlossMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_s.dds",
+              "PaletteMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_h.dds",
+              "PaletteMaskMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_m.dds"
+            },
+            "values": {
+              "palette1": "0,0.5,0,1",
+              "palette2": "0,0.5,0,1",
+              "palette1Specular": "1,1,1",
+              "palette2Specular": "1,1,1",
+              "palette1MetallicSpecular": "1,1,1",
+              "palette2MetallicSpecular": "1,1,1",
+              "UsesReflection": "True",
+              "UsesEmissive": "False",
+              "UvScaling": "1,1",
+              "ReflectionIntensity": "3.88",
+              "ReflectionBlurIntensity": "1",
+              "ReflectionSpecInfluence": "1",
+              "ReflectionContrast": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slot": "hair",
+      "modelId": "1000620",
+      "materialId": "1027364",
+      "artName": "hair_human_non_a01_m",
+      "registryPath": "/resources/art/dynamic/hair/index.xml",
+      "registryXml": "<Asset>\n    <ID>1000620</ID>\n    <ArtName>hair_human_non_a01_m</ArtName>\n    <DesignerName>hair human non a01 m</DesignerName>\n    <BaseFile>/art/dynamic/hair/model/hair_human_[bt]_non_a01.gr2</BaseFile>\n    <Attachments />\n    <Materials>\n      <Material id=\"1027364\" name=\"hair human non a01 m\" filename=\"/art/shaders/materials/hair_human_non_a01_v01_m.mat\">\n        <ColorSchemes />\n        <MaterialOverrides />\n      </Material>\n    </Materials>\n    <Bodytypes>\n      <Bodytype>bma</Bodytype>\n      <Bodytype>bmf</Bodytype>\n      <Bodytype>bmn</Bodytype>\n      <Bodytype>bms</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>-1</SkinHueIndex>\n    <Filters>\n      <Filter name=\"Race\" value=\"african\" />\n      <Filter name=\"Race\" value=\"asian\" />\n      <Filter name=\"Race\" value=\"caucasian\" />\n      <Filter name=\"Race\" value=\"bloodsith\" />\n      <Filter name=\"Race\" value=\"chiss\" />\n      <Filter name=\"Race\" value=\"miralukan\" />\n      <Filter name=\"Race\" value=\"mirialan\" />\n      <Filter name=\"Race\" value=\"sith\" />\n    </Filters>\n    <Identities />\n    <Tags>\n      <Tag name=\"Race\" value=\"african\" />\n      <Tag name=\"Race\" value=\"asian\" />\n      <Tag name=\"Race\" value=\"caucasian\" />\n      <Tag name=\"Race\" value=\"chiss\" />\n      <Tag name=\"Race\" value=\"chiss_african\" />\n      <Tag name=\"Race\" value=\"chiss_asian\" />\n      <Tag name=\"Race\" value=\"czerka\" />\n      <Tag name=\"Race\" value=\"joiner\" />\n      <Tag name=\"Race\" value=\"miralukan\" />\n      <Tag name=\"Race\" value=\"miralukan_african\" />\n      <Tag name=\"Race\" value=\"miralukan_asian\" />\n      <Tag name=\"Race\" value=\"mirialan\" />\n      <Tag name=\"Race\" value=\"mirialan_asian\" />\n      <Tag name=\"Race\" value=\"mirialan_caucasian\" />\n      <Tag name=\"Race\" value=\"sith\" />\n      <Tag name=\"Race\" value=\"sith_african\" />\n      <Tag name=\"Race\" value=\"sith_caucasian\" />\n    </Tags>\n    <CustomData />\n  </Asset>\n  ",
+      "models": [
+        {
+          "path": "/resources/art/dynamic/hair/model/hair_human_bmn_non_a01.gr2",
+          "id": "1000620"
+        }
+      ],
+      "skinMaterialIndex": -1,
+      "material": {
+        "path": "/resources/art/shaders/materials/hair_human_non_a01_v01_m.mat",
+        "derived": "HairC",
+        "textures": {
+          "DiffuseMap": "/resources/art/dynamic/player_character/hair/texture/___psd/hair_human_non_a01_v01_m_d.dds",
+          "RotationMap1": "/resources/art/dynamic/player_character/hair/texture/___psd/hair_human_non_a01_v01_m_n.dds",
+          "GlossMap": "/resources/art/dynamic/player_character/hair/texture/___psd/hair_human_non_a01_v01_m_s.dds",
+          "PaletteMap": "/resources/art/dynamic/player_character/hair/texture/___psd/hair_human_non_a01_v01_m_h.dds",
+          "PaletteMaskMap": "/resources/art/dynamic/player_character/hair/texture/___psd/hair_human_non_a15_v01_m_m.dds",
+          "DirectionMap": "/resources/art/lookupTables/table_hair_02.dds"
+        },
+        "values": {
+          "palette1": "0,0.5,0,1",
+          "palette2": "0,0.5,0,1",
+          "palette1Specular": "0.584314,0.482353,0.529412",
+          "palette2Specular": "0.482353,0,1",
+          "palette1MetallicSpecular": "1,1,1",
+          "palette2MetallicSpecular": "1,1,1",
+          "RimWidth": "1.5",
+          "RimStrength": "0.5",
+          "UsesReflection": "False",
+          "UvScaling": "1,1",
+          "ReflectionIntensity": "1",
+          "ReflectionBlurIntensity": "1",
+          "ReflectionSpecInfluence": "1",
+          "ReflectionContrast": "0"
+        }
+      },
+      "overrides": []
+    },
+    {
+      "slot": "chest",
+      "modelId": "1003477",
+      "materialId": "1006235",
+      "artName": "chest_tight_med_sp_a01",
+      "registryXml": "<Asset>\n    <ID>1003477</ID>\n    <ArtName>chest_tight_med_sp_a01</ArtName>\n    <DesignerName>chest tight med sp a01</DesignerName>\n    <BaseFile>/art/dynamic/chest/model/chest_tight_[bt]_archetype.gr2</BaseFile>\n    <Attachments>\n      <Attachment id=\"1003478\" name=\"chest tight med sp a01\" filename=\"/art/dynamic/chest/model/chest_tight_[bt]_med_sp_a01_shld.gr2\" />\n      <Attachment id=\"1003479\" name=\"chest tight med sp a01\" filename=\"/art/dynamic/chest/model/chest_tight_[bt]_med_sp_a01_chest.gr2\" />\n      <Attachment id=\"1003480\" name=\"chest tight med sp a01\" filename=\"/art/dynamic/chest/model/chest_tight_[bt]_med_sp_a01_back.gr2\" />\n    </Attachments>\n    <Materials>\n      <Material id=\"1006235\" name=\"chest tight med sp a01\" filename=\"/art/shaders/materials/chest_tight_med_sp_a01c01_[gen].mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002815\" />\n          <ColorScheme guid=\"1002816\" />\n          <ColorScheme guid=\"1002817\" />\n          <ColorScheme guid=\"1413914\" />\n          <ColorScheme guid=\"1413915\" />\n          <ColorScheme guid=\"1413916\" />\n          <ColorScheme guid=\"1413917\" />\n          <ColorScheme guid=\"1413918\" />\n          <ColorScheme guid=\"1413919\" />\n          <ColorScheme guid=\"1413920\" />\n          <ColorScheme guid=\"1413921\" />\n          <ColorScheme guid=\"1413922\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1142997\" name=\"chest tight med sp a01\" filename=\"/art/shaders/materials/chest_tight_med_sp_a01c02_[gen].mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002818\" />\n          <ColorScheme guid=\"1002819\" />\n          <ColorScheme guid=\"1002820\" />\n          <ColorScheme guid=\"1413925\" />\n          <ColorScheme guid=\"1413926\" />\n          <ColorScheme guid=\"1413927\" />\n          <ColorScheme guid=\"1413928\" />\n          <ColorScheme guid=\"1413929\" />\n          <ColorScheme guid=\"1413930\" />\n          <ColorScheme guid=\"1413931\" />\n          <ColorScheme guid=\"1413932\" />\n          <ColorScheme guid=\"1413933\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1142998\" name=\"chest tight med sp a01\" filename=\"/art/shaders/materials/chest_tight_med_sp_a01c03_[gen].mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002821\" />\n          <ColorScheme guid=\"1002822\" />\n          <ColorScheme guid=\"1002823\" />\n          <ColorScheme guid=\"1413942\" />\n          <ColorScheme guid=\"1413943\" />\n          <ColorScheme guid=\"1413944\" />\n          <ColorScheme guid=\"1413945\" />\n          <ColorScheme guid=\"1413946\" />\n          <ColorScheme guid=\"1413947\" />\n          <ColorScheme guid=\"1413948\" />\n          <ColorScheme guid=\"1413949\" />\n          <ColorScheme guid=\"1413950\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n    </Materials>\n    <Bodytypes>\n      <Bodytype>bfa</Bodytype>\n      <Bodytype>bfb</Bodytype>\n      <Bodytype>bfn</Bodytype>\n      <Bodytype>bfs</Bodytype>\n      <Bodytype>bma</Bodytype>\n      <Bodytype>bmf</Bodytype>\n      <Bodytype>bmn</Bodytype>\n      <Bodytype>bms</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>-1</SkinHueIndex>\n    <Filters>\n      <Filter name=\"Archetype\" value=\"tight\" />\n      <Filter name=\"Style\" value=\"med\" />\n      <Filter name=\"Class\" value=\"sp\" />\n    </Filters>\n    <Identities />\n    <Tags />\n    <CustomData />\n  </Asset>\n  ",
+      "skinMaterialIndex": -1,
+      "material": {
+        "path": "/resources/art/shaders/materials/chest_tight_med_sp_a01c01_m.mat",
+        "derived": "Garment",
+        "textures": {
+          "DiffuseMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/chest_tight_med_sp_a01c01_u_d.dds",
+          "RotationMap1": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/chest_tight_med_sp_a01c01_m_02_n.dds",
+          "GlossMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/chest_tight_med_sp_a01c01_u_s.dds",
+          "PaletteMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/chest_tight_med_sp_a01c01_u_h.dds",
+          "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/chest_tight_med_sp_a01c01_u_m.dds",
+          "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+        },
+        "values": {
+          "palette1": "0,0.5,0,1",
+          "palette2": "0,0.5,0,1",
+          "palette1Specular": "0,0.490196,0",
+          "palette2Specular": "0,0.490196,0",
+          "palette1MetallicSpecular": "0,0.490196,0",
+          "palette2MetallicSpecular": "0,0.490196,0",
+          "RimWidth": "1.55",
+          "RimStrength": "0.5",
+          "UsesReflection": "False",
+          "UsesEmissive": "False",
+          "UvScaling": "1,1",
+          "ReflectionIntensity": "1",
+          "ReflectionBlurIntensity": "1",
+          "ReflectionSpecInfluence": "1",
+          "ReflectionContrast": "0",
+          "UsesGuildInsignia": "False",
+          "GuildInsigniaPosition": "0,0",
+          "GuildInsigniaScale": "1,1",
+          "GuildInsigniaRotation": "0",
+          "GuildInsigniaColor1": "0,0,0,1",
+          "GuildInsigniaColor2": "0,0,0,1"
+        }
+      },
+      "paletteIds": [
+        "1000740",
+        "1000739"
+      ],
+      "models": [
+        {
+          "path": "/resources/art/dynamic/chest/model/chest_tight_bmn_archetype.gr2",
+          "id": "1003477"
+        }
+      ],
+      "overrides": [],
+      "sourceAppearance": {
+        "id": "0xE000BA011CFF5528",
+        "decimalId": "16141105578440086824",
+        "kind": "GomObject",
+        "name": "ipp.class.spy.starting.tdps1.t1x1.chest",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/324.bkt",
+          "uncompressedOffset": 217060,
+          "blockLength": 199,
+          "resourceSha256": "c85bf29faf8c59bf014798fb8d7cc0248aa3fe4f77228f50153264216f5065da"
+        }
+      }
+    },
+    {
+      "slot": "hand",
+      "modelId": "1003475",
+      "materialId": "1006331",
+      "artName": "hand_glove_med_sp_a01",
+      "registryXml": "<Asset>\n    <ID>1003475</ID>\n    <ArtName>hand_glove_med_sp_a01</ArtName>\n    <DesignerName>hand glove med sp a01</DesignerName>\n    <BaseFile>/art/dynamic/hand/model/hand_glove_[bt]_archetype.gr2</BaseFile>\n    <Attachments>\n      <Attachment id=\"1003476\" name=\"hand glove med sp a01\" filename=\"/art/dynamic/hand/model/hand_glove_[bt]_med_sp_a01_back.gr2\" />\n    </Attachments>\n    <Materials>\n      <Material id=\"1006331\" name=\"hand glove med sp a01\" filename=\"/art/shaders/materials/hand_glove_med_sp_a01c01_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002815\" />\n          <ColorScheme guid=\"1002816\" />\n          <ColorScheme guid=\"1002817\" />\n          <ColorScheme guid=\"1413914\" />\n          <ColorScheme guid=\"1413915\" />\n          <ColorScheme guid=\"1413916\" />\n          <ColorScheme guid=\"1413917\" />\n          <ColorScheme guid=\"1413918\" />\n          <ColorScheme guid=\"1413919\" />\n          <ColorScheme guid=\"1413920\" />\n          <ColorScheme guid=\"1413921\" />\n          <ColorScheme guid=\"1413922\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1109923\" name=\"hand glove med sp a01\" filename=\"/art/shaders/materials/hand_glove_med_sp_a01c02_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002818\" />\n          <ColorScheme guid=\"1002819\" />\n          <ColorScheme guid=\"1002820\" />\n          <ColorScheme guid=\"1413925\" />\n          <ColorScheme guid=\"1413926\" />\n          <ColorScheme guid=\"1413927\" />\n          <ColorScheme guid=\"1413928\" />\n          <ColorScheme guid=\"1413929\" />\n          <ColorScheme guid=\"1413930\" />\n          <ColorScheme guid=\"1413931\" />\n          <ColorScheme guid=\"1413932\" />\n          <ColorScheme guid=\"1413933\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1110031\" name=\"hand glove med sp a01\" filename=\"/art/shaders/materials/hand_glove_med_sp_a01c03_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002821\" />\n          <ColorScheme guid=\"1002822\" />\n          <ColorScheme guid=\"1002823\" />\n          <ColorScheme guid=\"1413942\" />\n          <ColorScheme guid=\"1413943\" />\n          <ColorScheme guid=\"1413944\" />\n          <ColorScheme guid=\"1413945\" />\n          <ColorScheme guid=\"1413946\" />\n          <ColorScheme guid=\"1413947\" />\n          <ColorScheme guid=\"1413948\" />\n          <ColorScheme guid=\"1413949\" />\n          <ColorScheme guid=\"1413950\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n    </Materials>\n    <Bodytypes>\n      <Bodytype>bfa</Bodytype>\n      <Bodytype>bfb</Bodytype>\n      <Bodytype>bfn</Bodytype>\n      <Bodytype>bfs</Bodytype>\n      <Bodytype>bma</Bodytype>\n      <Bodytype>bmf</Bodytype>\n      <Bodytype>bmn</Bodytype>\n      <Bodytype>bms</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>-1</SkinHueIndex>\n    <Filters>\n      <Filter name=\"Archetype\" value=\"glove\" />\n      <Filter name=\"Style\" value=\"med\" />\n      <Filter name=\"Class\" value=\"sp\" />\n    </Filters>\n    <Identities />\n    <Tags />\n    <CustomData />\n  </Asset>\n  ",
+      "skinMaterialIndex": -1,
+      "material": {
+        "path": "/resources/art/shaders/materials/hand_glove_med_sp_a01c01_u.mat",
+        "derived": "Garment",
+        "textures": {
+          "DiffuseMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/hand_glove_med_sp_a01c01_u_d.dds",
+          "RotationMap1": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/hand_glove_med_sp_a01c01_u_n.dds",
+          "GlossMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/hand_glove_med_sp_a01c01_u_s.dds",
+          "PaletteMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/hand_glove_med_sp_a01c01_u_h.dds",
+          "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/hand_glove_med_sp_a01c01_u_m.dds",
+          "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+        },
+        "values": {
+          "palette1": "0,0.5,0,1",
+          "palette2": "0,0.5,0,1",
+          "palette1Specular": "0,0.490196,0",
+          "palette2Specular": "0,0.490196,0",
+          "palette1MetallicSpecular": "0,0.490196,0",
+          "palette2MetallicSpecular": "0,0.490196,0",
+          "RimWidth": "1.55",
+          "RimStrength": "0.5",
+          "UsesReflection": "False",
+          "UsesEmissive": "False",
+          "UvScaling": "1,1",
+          "ReflectionIntensity": "1",
+          "ReflectionBlurIntensity": "1",
+          "ReflectionSpecInfluence": "1",
+          "ReflectionContrast": "0",
+          "UsesGuildInsignia": "False",
+          "GuildInsigniaPosition": "0,0",
+          "GuildInsigniaScale": "1,1",
+          "GuildInsigniaRotation": "0",
+          "GuildInsigniaColor1": "0,0,0,1",
+          "GuildInsigniaColor2": "0,0,0,1"
+        }
+      },
+      "paletteIds": [
+        "1000740",
+        "1002425"
+      ],
+      "models": [
+        {
+          "path": "/resources/art/dynamic/hand/model/hand_glove_bmn_archetype.gr2",
+          "id": "1003475"
+        }
+      ],
+      "overrides": [],
+      "sourceAppearance": {
+        "id": "0xE0008F9D6443D336",
+        "decimalId": "16141058970650661686",
+        "kind": "GomObject",
+        "name": "ipp.class.spy.starting.tdps1.t1x1.hands",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/186.bkt",
+          "uncompressedOffset": 168284,
+          "blockLength": 199,
+          "resourceSha256": "ddfe655584e129f90f40c221ddb9766a1c77b658b549c543e8bc690dcbc12532"
+        }
+      }
+    },
+    {
+      "slot": "leg",
+      "modelId": "1134813",
+      "materialId": "1143262",
+      "artName": "leg_pant_med_sp_a01",
+      "registryXml": "<Asset>\n    <ID>1134813</ID>\n    <ArtName>leg_pant_med_sp_a01</ArtName>\n    <DesignerName>leg pant med sp a01</DesignerName>\n    <BaseFile>/art/dynamic/leg/model/leg_pant_[bt]_archetype.gr2</BaseFile>\n    <Attachments />\n    <Materials>\n      <Material id=\"1143262\" name=\"a01c01 [gen] v01\" filename=\"/art/shaders/materials/leg_pant_med_sp_a01c01_[gen]_v01.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002815\" />\n          <ColorScheme guid=\"1002816\" />\n          <ColorScheme guid=\"1002817\" />\n          <ColorScheme guid=\"1413914\" />\n          <ColorScheme guid=\"1413915\" />\n          <ColorScheme guid=\"1413916\" />\n          <ColorScheme guid=\"1413917\" />\n          <ColorScheme guid=\"1413918\" />\n          <ColorScheme guid=\"1413919\" />\n          <ColorScheme guid=\"1413920\" />\n          <ColorScheme guid=\"1413921\" />\n          <ColorScheme guid=\"1413922\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143263\" name=\"a01c01 [gen] v02\" filename=\"/art/shaders/materials/leg_pant_med_sp_a01c01_[gen]_v02.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002815\" />\n          <ColorScheme guid=\"1002816\" />\n          <ColorScheme guid=\"1002817\" />\n          <ColorScheme guid=\"1413914\" />\n          <ColorScheme guid=\"1413915\" />\n          <ColorScheme guid=\"1413916\" />\n          <ColorScheme guid=\"1413917\" />\n          <ColorScheme guid=\"1413918\" />\n          <ColorScheme guid=\"1413919\" />\n          <ColorScheme guid=\"1413920\" />\n          <ColorScheme guid=\"1413921\" />\n          <ColorScheme guid=\"1413922\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143264\" name=\"a01c02 [gen] v01\" filename=\"/art/shaders/materials/leg_pant_med_sp_a01c02_[gen]_v01.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002818\" />\n          <ColorScheme guid=\"1002819\" />\n          <ColorScheme guid=\"1002820\" />\n          <ColorScheme guid=\"1413925\" />\n          <ColorScheme guid=\"1413926\" />\n          <ColorScheme guid=\"1413927\" />\n          <ColorScheme guid=\"1413928\" />\n          <ColorScheme guid=\"1413929\" />\n          <ColorScheme guid=\"1413930\" />\n          <ColorScheme guid=\"1413931\" />\n          <ColorScheme guid=\"1413932\" />\n          <ColorScheme guid=\"1413933\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143265\" name=\"a01c02 [gen] v02\" filename=\"/art/shaders/materials/leg_pant_med_sp_a01c02_[gen]_v02.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002818\" />\n          <ColorScheme guid=\"1002819\" />\n          <ColorScheme guid=\"1002820\" />\n          <ColorScheme guid=\"1413925\" />\n          <ColorScheme guid=\"1413926\" />\n          <ColorScheme guid=\"1413927\" />\n          <ColorScheme guid=\"1413928\" />\n          <ColorScheme guid=\"1413929\" />\n          <ColorScheme guid=\"1413930\" />\n          <ColorScheme guid=\"1413931\" />\n          <ColorScheme guid=\"1413932\" />\n          <ColorScheme guid=\"1413933\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143266\" name=\"a01c03 [gen] v01\" filename=\"/art/shaders/materials/leg_pant_med_sp_a01c03_[gen]_v01.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002821\" />\n          <ColorScheme guid=\"1002822\" />\n          <ColorScheme guid=\"1002823\" />\n          <ColorScheme guid=\"1413942\" />\n          <ColorScheme guid=\"1413943\" />\n          <ColorScheme guid=\"1413944\" />\n          <ColorScheme guid=\"1413945\" />\n          <ColorScheme guid=\"1413946\" />\n          <ColorScheme guid=\"1413947\" />\n          <ColorScheme guid=\"1413948\" />\n          <ColorScheme guid=\"1413949\" />\n          <ColorScheme guid=\"1413950\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143267\" name=\"a01c03 [gen] v02\" filename=\"/art/shaders/materials/leg_pant_med_sp_a01c03_[gen]_v02.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002821\" />\n          <ColorScheme guid=\"1002822\" />\n          <ColorScheme guid=\"1002823\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n    </Materials>\n    <Bodytypes>\n      <Bodytype>bmn</Bodytype>\n      <Bodytype>bma</Bodytype>\n      <Bodytype>bfs</Bodytype>\n      <Bodytype>bmf</Bodytype>\n      <Bodytype>bms</Bodytype>\n      <Bodytype>bfa</Bodytype>\n      <Bodytype>bfb</Bodytype>\n      <Bodytype>bfn</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>-1</SkinHueIndex>\n    <Filters>\n      <Filter name=\"Archetype\" value=\"pant\" />\n      <Filter name=\"Style\" value=\"med\" />\n      <Filter name=\"Class\" value=\"sp\" />\n    </Filters>\n    <Identities />\n    <Tags />\n    <CustomData />\n  </Asset>\n  ",
+      "skinMaterialIndex": -1,
+      "material": {
+        "path": "/resources/art/shaders/materials/leg_pant_med_sp_a01c01_m_v01.mat",
+        "derived": "Garment",
+        "textures": {
+          "DiffuseMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/leg_pant_med_sp_a01c01_u_v01_d.dds",
+          "RotationMap1": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/leg_pant_med_sp_a01c01_m_v01_n.dds",
+          "GlossMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/leg_pant_med_sp_a01c01_u_v01_s.dds",
+          "PaletteMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/leg_pant_med_sp_a01c01_u_v01_h.dds",
+          "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/leg_pant_med_sp_a01c01_u_v01_m.dds",
+          "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+        },
+        "values": {
+          "palette1": "0,0.5,0,1",
+          "palette2": "0,0.5,0,1",
+          "palette1Specular": "0,0.490196,0",
+          "palette2Specular": "0,0.490196,0",
+          "palette1MetallicSpecular": "0,0.490196,0",
+          "palette2MetallicSpecular": "0,0.490196,0",
+          "RimWidth": "1.55",
+          "RimStrength": "0.5",
+          "UsesReflection": "False",
+          "UsesEmissive": "False",
+          "UvScaling": "1,1",
+          "ReflectionIntensity": "1",
+          "ReflectionBlurIntensity": "1",
+          "ReflectionSpecInfluence": "1",
+          "ReflectionContrast": "0",
+          "UsesGuildInsignia": "False",
+          "GuildInsigniaPosition": "0,0",
+          "GuildInsigniaScale": "1,1",
+          "GuildInsigniaRotation": "0",
+          "GuildInsigniaColor1": "0,0,0,1",
+          "GuildInsigniaColor2": "0,0,0,1"
+        }
+      },
+      "paletteIds": [
+        "1000740",
+        "1000739"
+      ],
+      "models": [
+        {
+          "path": "/resources/art/dynamic/leg/model/leg_pant_bmn_archetype.gr2",
+          "id": "1134813"
+        }
+      ],
+      "overrides": [],
+      "sourceAppearance": {
+        "id": "0xE000AFA528FEDE6C",
+        "decimalId": "16141094188388114028",
+        "kind": "GomObject",
+        "name": "ipp.class.spy.starting.tdps1.t1x1.legs",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/28.bkt",
+          "uncompressedOffset": 230196,
+          "blockLength": 198,
+          "resourceSha256": "006fe23219b699dfced0a7e97e83e94a74071d8a40632f42499d455ad06189ca"
+        }
+      }
+    },
+    {
+      "slot": "boot",
+      "modelId": "1003471",
+      "materialId": "1006221",
+      "artName": "boot_tall_med_sp_a01",
+      "registryXml": "<Asset>\n    <ID>1003471</ID>\n    <ArtName>boot_tall_med_sp_a01</ArtName>\n    <DesignerName>boot tall med sp a01</DesignerName>\n    <BaseFile>/art/dynamic/boot/model/boot_tall_[bt]_archetype.gr2</BaseFile>\n    <Attachments>\n      <Attachment id=\"1003472\" name=\"boot tall med sp a01\" filename=\"/art/dynamic/boot/model/boot_tall_[bt]_med_sp_a01_shin.gr2\" />\n    </Attachments>\n    <Materials>\n      <Material id=\"1006221\" name=\"boot tall med sp a01\" filename=\"/art/shaders/materials/boot_tall_med_sp_a01c01_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002815\" />\n          <ColorScheme guid=\"1002816\" />\n          <ColorScheme guid=\"1002817\" />\n          <ColorScheme guid=\"1413914\" />\n          <ColorScheme guid=\"1413915\" />\n          <ColorScheme guid=\"1413916\" />\n          <ColorScheme guid=\"1413917\" />\n          <ColorScheme guid=\"1413918\" />\n          <ColorScheme guid=\"1413919\" />\n          <ColorScheme guid=\"1413920\" />\n          <ColorScheme guid=\"1413921\" />\n          <ColorScheme guid=\"1413922\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1109920\" name=\"boot tall med sp a01\" filename=\"/art/shaders/materials/boot_tall_med_sp_a01c02_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002818\" />\n          <ColorScheme guid=\"1002819\" />\n          <ColorScheme guid=\"1002820\" />\n          <ColorScheme guid=\"1413925\" />\n          <ColorScheme guid=\"1413926\" />\n          <ColorScheme guid=\"1413927\" />\n          <ColorScheme guid=\"1413928\" />\n          <ColorScheme guid=\"1413929\" />\n          <ColorScheme guid=\"1413930\" />\n          <ColorScheme guid=\"1413931\" />\n          <ColorScheme guid=\"1413932\" />\n          <ColorScheme guid=\"1413933\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1110028\" name=\"boot tall med sp a01\" filename=\"/art/shaders/materials/boot_tall_med_sp_a01c03_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002821\" />\n          <ColorScheme guid=\"1002822\" />\n          <ColorScheme guid=\"1002823\" />\n          <ColorScheme guid=\"1413942\" />\n          <ColorScheme guid=\"1413943\" />\n          <ColorScheme guid=\"1413944\" />\n          <ColorScheme guid=\"1413945\" />\n          <ColorScheme guid=\"1413946\" />\n          <ColorScheme guid=\"1413947\" />\n          <ColorScheme guid=\"1413948\" />\n          <ColorScheme guid=\"1413949\" />\n          <ColorScheme guid=\"1413950\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n    </Materials>\n    <Bodytypes>\n      <Bodytype>bfa</Bodytype>\n      <Bodytype>bfb</Bodytype>\n      <Bodytype>bfn</Bodytype>\n      <Bodytype>bfs</Bodytype>\n      <Bodytype>bma</Bodytype>\n      <Bodytype>bmf</Bodytype>\n      <Bodytype>bmn</Bodytype>\n      <Bodytype>bms</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>-1</SkinHueIndex>\n    <Filters>\n      <Filter name=\"Archetype\" value=\"tall\" />\n      <Filter name=\"Style\" value=\"med\" />\n      <Filter name=\"Class\" value=\"sp\" />\n    </Filters>\n    <Identities />\n    <Tags />\n    <CustomData />\n  </Asset>\n  ",
+      "skinMaterialIndex": -1,
+      "material": {
+        "path": "/resources/art/shaders/materials/boot_tall_med_sp_a01c01_u.mat",
+        "derived": "Garment",
+        "textures": {
+          "DiffuseMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/boot_tall_med_sp_a01c01_u_d.dds",
+          "RotationMap1": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/boot_tall_med_sp_a01c01_u_n.dds",
+          "GlossMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/boot_tall_med_sp_a01c01_u_s.dds",
+          "PaletteMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/boot_tall_med_sp_a01c01_u_h.dds",
+          "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/boot_tall_med_sp_a01c01_u_m.dds",
+          "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+        },
+        "values": {
+          "palette1": "0,0.5,0,1",
+          "palette2": "0,0.5,0,1",
+          "palette1Specular": "0,0.490196,0",
+          "palette2Specular": "0,0.490196,0",
+          "palette1MetallicSpecular": "0,0.490196,0",
+          "palette2MetallicSpecular": "0,0.490196,0",
+          "RimWidth": "1.55",
+          "RimStrength": "0.5",
+          "UsesReflection": "False",
+          "UsesEmissive": "False",
+          "UvScaling": "1,1",
+          "ReflectionIntensity": "1",
+          "ReflectionBlurIntensity": "1",
+          "ReflectionSpecInfluence": "1",
+          "ReflectionContrast": "0",
+          "UsesGuildInsignia": "False",
+          "GuildInsigniaPosition": "0,0",
+          "GuildInsigniaScale": "1,1",
+          "GuildInsigniaRotation": "0",
+          "GuildInsigniaColor1": "0,0,0,1",
+          "GuildInsigniaColor2": "0,0,0,1"
+        }
+      },
+      "paletteIds": [
+        "1000740",
+        "1000739"
+      ],
+      "models": [
+        {
+          "path": "/resources/art/dynamic/boot/model/boot_tall_bmn_archetype.gr2",
+          "id": "1003471"
+        }
+      ],
+      "overrides": [],
+      "sourceAppearance": {
+        "id": "0xE00070D9C9630DF9",
+        "decimalId": "16141025145184783865",
+        "kind": "GomObject",
+        "name": "ipp.class.spy.starting.tdps1.t1x1.feet",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/365.bkt",
+          "uncompressedOffset": 111084,
+          "blockLength": 197,
+          "resourceSha256": "9adffbb4dd6a9f387de533384ecb7135a0d150952e6d6ee1e4d80bf2b1d610ed"
+        }
+      }
+    },
+    {
+      "slot": "waist",
+      "modelId": "1003473",
+      "materialId": "1006471",
+      "artName": "waist_belt_med_sp_a01",
+      "registryXml": "<Asset>\n    <ID>1003473</ID>\n    <ArtName>waist_belt_med_sp_a01</ArtName>\n    <DesignerName>waist belt med sp a01</DesignerName>\n    <BaseFile>/art/dynamic/waist/model/waist_belt_[bt]_archetype.gr2</BaseFile>\n    <Attachments>\n      <Attachment id=\"1005334\" name=\"waist belt med sp a01\" filename=\"/art/dynamic/waist/model/waist_belt_[bt]_med_sp_a01_front.gr2\" />\n      <Attachment id=\"1169955\" name=\"back\" filename=\"/art/dynamic/waist/model/waist_belt_[bt]_med_sp_a01_back.gr2\" />\n    </Attachments>\n    <Materials>\n      <Material id=\"1006471\" name=\"waist belt med sp a01\" filename=\"/art/shaders/materials/waist_belt_med_sp_a01c01_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002815\" />\n          <ColorScheme guid=\"1002816\" />\n          <ColorScheme guid=\"1002817\" />\n          <ColorScheme guid=\"1413914\" />\n          <ColorScheme guid=\"1413915\" />\n          <ColorScheme guid=\"1413916\" />\n          <ColorScheme guid=\"1413917\" />\n          <ColorScheme guid=\"1413918\" />\n          <ColorScheme guid=\"1413919\" />\n          <ColorScheme guid=\"1413920\" />\n          <ColorScheme guid=\"1413921\" />\n          <ColorScheme guid=\"1413922\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1109922\" name=\"waist belt med sp a01\" filename=\"/art/shaders/materials/waist_belt_med_sp_a01c02_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002818\" />\n          <ColorScheme guid=\"1002819\" />\n          <ColorScheme guid=\"1002820\" />\n          <ColorScheme guid=\"1413925\" />\n          <ColorScheme guid=\"1413926\" />\n          <ColorScheme guid=\"1413927\" />\n          <ColorScheme guid=\"1413928\" />\n          <ColorScheme guid=\"1413929\" />\n          <ColorScheme guid=\"1413930\" />\n          <ColorScheme guid=\"1413931\" />\n          <ColorScheme guid=\"1413932\" />\n          <ColorScheme guid=\"1413933\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1110030\" name=\"sp a01c03 u\" filename=\"/art/shaders/materials/waist_belt_med_sp_a01c03_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1002821\" />\n          <ColorScheme guid=\"1002822\" />\n          <ColorScheme guid=\"1002823\" />\n          <ColorScheme guid=\"1413942\" />\n          <ColorScheme guid=\"1413943\" />\n          <ColorScheme guid=\"1413944\" />\n          <ColorScheme guid=\"1413945\" />\n          <ColorScheme guid=\"1413946\" />\n          <ColorScheme guid=\"1413947\" />\n          <ColorScheme guid=\"1413948\" />\n          <ColorScheme guid=\"1413949\" />\n          <ColorScheme guid=\"1413950\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n    </Materials>\n    <Bodytypes>\n      <Bodytype>bfa</Bodytype>\n      <Bodytype>bfb</Bodytype>\n      <Bodytype>bfn</Bodytype>\n      <Bodytype>bfs</Bodytype>\n      <Bodytype>bma</Bodytype>\n      <Bodytype>bmf</Bodytype>\n      <Bodytype>bmn</Bodytype>\n      <Bodytype>bms</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>-1</SkinHueIndex>\n    <Filters>\n      <Filter name=\"Archetype\" value=\"belt\" />\n      <Filter name=\"Style\" value=\"med\" />\n      <Filter name=\"Class\" value=\"sp\" />\n    </Filters>\n    <Identities />\n    <Tags />\n    <CustomData />\n  </Asset>\n  ",
+      "skinMaterialIndex": -1,
+      "material": {
+        "path": "/resources/art/shaders/materials/waist_belt_med_sp_a01c01_u.mat",
+        "derived": "Garment",
+        "textures": {
+          "DiffuseMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/waist_belt_med_sp_a01c01_u_d.dds",
+          "RotationMap1": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/waist_belt_med_sp_a01c01_u_n.dds",
+          "GlossMap": "/resources/art/dynamic/player_character/outfit/sp_tight_med_a01/texture/___psd/waist_belt_med_sp_a01c01_u_s.dds",
+          "PaletteMap": "/resources/art/defaultassets/black.dds",
+          "PaletteMaskMap": "/resources/art/defaultassets/black.dds",
+          "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+        },
+        "values": {
+          "palette1": "0,0.5,0,1",
+          "palette2": "0,0.5,0,1",
+          "palette1Specular": "0,0.490196,0",
+          "palette2Specular": "0,0.490196,0",
+          "palette1MetallicSpecular": "0,0.490196,0",
+          "palette2MetallicSpecular": "0,0.490196,0",
+          "RimWidth": "1.55",
+          "RimStrength": "0.5",
+          "UsesReflection": "False",
+          "UsesEmissive": "False",
+          "UvScaling": "1,1",
+          "ReflectionIntensity": "1",
+          "ReflectionBlurIntensity": "1",
+          "ReflectionSpecInfluence": "1",
+          "ReflectionContrast": "0",
+          "UsesGuildInsignia": "False",
+          "GuildInsigniaPosition": "0,0",
+          "GuildInsigniaScale": "1,1",
+          "GuildInsigniaRotation": "0",
+          "GuildInsigniaColor1": "0,0,0,1",
+          "GuildInsigniaColor2": "0,0,0,1"
+        }
+      },
+      "paletteIds": [
+        "1000740",
+        "1000739"
+      ],
+      "models": [
+        {
+          "path": "/resources/art/dynamic/waist/model/waist_belt_bmn_archetype.gr2",
+          "id": "1003473"
+        }
+      ],
+      "overrides": [],
+      "sourceAppearance": {
+        "id": "0xE0004C644227C3C8",
+        "decimalId": "16140985057986200520",
+        "kind": "GomObject",
+        "name": "ipp.class.spy.starting.tdps1.t1x1.waist",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/20.bkt",
+          "uncompressedOffset": 84004,
+          "blockLength": 199,
+          "resourceSha256": "fca0a620453111180d4bf1505d1de6bb40978c72e0d5ca4e17bd17f69279ab83"
+        }
+      }
+    }
+  ],
+  "customization": {
+    "skincolor": {
+      "id": "1437794",
+      "path": "/resources/art/dynamic/skincolor/skincolor_human_caucasian_h01_p.xml",
+      "resolution": "compiled April GOM palette; registry XML absent",
+      "gomIdentity": {
+        "id": "0xE000DAD3E774DC2B",
+        "decimalId": "16141141668152007723",
+        "kind": "GomObject",
+        "name": "dynamic.skincolor.skincolor_human_caucasian_h01_p",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/223.bkt",
+          "uncompressedOffset": 248580,
+          "blockLength": 170,
+          "resourceSha256": "9e3beb2a8fbd78ecde5ed3dcf51cdd5f4e897a7070310837d9ff797dd17f5cac"
+        }
+      },
+      "values": {
+        "appPaletteSaturation": 0.5,
+        "appPaletteContrast": 1,
+        "appPaletteSpecular": [
+          0.827451,
+          0.890196,
+          1,
+          1
+        ],
+        "appPaletteMetallicSpecular": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "eyecolor": {
+      "id": "1001086",
+      "path": "/resources/art/dynamic/eyecolor/eyecolor_human_non_h01_s.xml",
+      "resolution": "compiled April GOM palette; registry XML absent",
+      "gomIdentity": {
+        "id": "0xE0000CFAF1059DEE",
+        "decimalId": "16140915336420892142",
+        "kind": "GomObject",
+        "name": "dynamic.eyecolor.eyecolor_human_non_h01_s",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/142.bkt",
+          "uncompressedOffset": 19372,
+          "blockLength": 166,
+          "resourceSha256": "1dd04ba3043ef3a83340ceacb4711f043036f263affede7de414a4e15fa6333f"
+        }
+      },
+      "values": {
+        "appPaletteSaturation": 0.7056,
+        "appPaletteContrast": 1.1118,
+        "appPaletteBrightness": -0.005000055,
+        "appPaletteHue": 0.426399976,
+        "appPaletteSpecular": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "appPaletteMetallicSpecular": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "haircolor": {
+      "id": "1000998",
+      "path": "/resources/art/dynamic/haircolor/haircolor_human_non_h01_p.xml",
+      "resolution": "compiled April GOM palette; registry XML absent",
+      "gomIdentity": {
+        "id": "0xE0004FED46118EBB",
+        "decimalId": "16140988944997256891",
+        "kind": "GomObject",
+        "name": "dynamic.haircolor.haircolor_human_non_h01_p",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/391.bkt",
+          "uncompressedOffset": 108164,
+          "blockLength": 184,
+          "resourceSha256": "cf610f8888530f0d78c46a7803676e0a77e591519a55b2841f9bc1b123ad28f9"
+        }
+      },
+      "values": {
+        "appPaletteSaturation": 0.401,
+        "appPaletteContrast": 0.7311,
+        "appPaletteBrightness": -0.0456,
+        "appPaletteHue": 0.0203,
+        "appPaletteSpecular": [
+          0.929412,
+          0.894118,
+          0.698039,
+          1
+        ],
+        "appPaletteMetallicSpecular": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "complexion": {
+      "id": "1001008",
+      "path": "/resources/art/dynamic/player_character/face_customization/complexion/comp_human_non_c01_m.dds"
+    }
+  },
+  "animations": [
+    {
+      "name": "Idle",
+      "sourceName": "cb_unarmed_idle_right_1",
+      "path": "/resources/anim/humanoid/bmnnew/cb_unarmed_idle_right_1.jba",
+      "loop": true
+    },
+    {
+      "name": "Run",
+      "sourceName": "mv_cb_unarmed_run_forward",
+      "path": "/resources/anim/humanoid/bmnnew/mv_cb_unarmed_run_forward.jba",
+      "loop": true
+    },
+    {
+      "name": "LightningStart",
+      "sourceName": "fp_2h_elect_drain_start",
+      "path": "/resources/anim/humanoid/bmnnew/fp_2h_elect_drain_start.jba",
+      "loop": false
+    },
+    {
+      "name": "LightningLoop",
+      "sourceName": "fp_2h_elect_drain_loop",
+      "path": "/resources/anim/humanoid/bmnnew/fp_2h_elect_drain_loop.jba",
+      "loop": true
+    },
+    {
+      "name": "Hit",
+      "sourceName": "dg_unarmed_crit_damage_right_1",
+      "path": "/resources/anim/humanoid/bmnnew/dg_unarmed_crit_damage_right_1.jba",
+      "loop": false
+    },
+    {
+      "name": "Death",
+      "sourceName": "dg_death_1",
+      "path": "/resources/anim/humanoid/bmnnew/dg_death_1.jba",
+      "loop": false
+    },
+    {
+      "name": "LightningEnd",
+      "sourceName": "fp_2h_elect_drain_end",
+      "path": "/resources/anim/humanoid/bmnnew/fp_2h_elect_drain_end.jba",
+      "loop": false
+    }
+  ],
+  "excluded": {
+    "head:1000247": "bma, incompatible; use bmn 1000257",
+    "fullNakedBody": "body replacement uses equipped modular meshes; no hidden duplicate naked torso",
+    "weapon": "unarmed inspection clips; no weapon selected",
+    "faceHairAndFacePaint": "clean shaven, no optional tattoo/scar/paint slot",
+    "clothSimulation": "original weighted cloth only; no runtime CLO simulation"
+  },
+  "clothBoneSources": [
+    "/resources/art/dynamic/chest/model/chest_robe04_bmn_archetype.clo",
+    "/resources/art/dynamic/leg/model/leg_skirt_bmn_archetype.clo"
+  ]
+}

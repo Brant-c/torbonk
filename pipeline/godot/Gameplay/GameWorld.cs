@@ -46,6 +46,7 @@ public partial class GameWorld : Node3D
     public FlytextService Flytext { get; private set; } = null!;
     public Equipment.CharacterAppearanceAssembly Equipment { get; private set; } = null!;
     public EquipmentAttachment PlayerSaber => Equipment.Weapon("main_hand")!;
+    public PeriodicEffects Periodic {get;private set;}=null!;
     public AudioPresentation Audio { get; private set; } = null!;
     public UI.RewardPresentation? Rewards { get; private set; }
     public Integration.GameplayConfiguration RunConfiguration { get; private set; } = null!;
@@ -160,6 +161,8 @@ public partial class GameWorld : Node3D
             validation.Run(this, OS.GetCmdlineUserArgs().Contains("--gameplay-capture"));
         }
         SyncCameraControls();
+        if(OS.GetCmdlineUserArgs().Contains("--d3-smoke"))
+        {var smoke=new D3Smoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--d1-smoke"))
         { var smoke=new SwtorSurvivors.Equipment.D1EquipmentSmoke();AddChild(smoke);smoke.Run(this); }
     }
@@ -223,7 +226,7 @@ public partial class GameWorld : Node3D
             Player.Presentation.GetNode<Node3D>("OriginalSorcerer"),Player.Presentation.Skeleton,
             RunConfiguration.BaseClassId,RunConfiguration.AdvancedClassId);
         Player.Presentation.SetEquipmentLocomotion(Equipment.Locomotion);
-        Equipment.Loadout.Changed += _ => Player.Presentation.SetEquipmentLocomotion(Equipment.Locomotion);
+        Equipment.Loadout.Changed += _ => Player.Presentation.SetEquipmentLocomotion(SwtorSurvivors.Equipment.EquipmentComposition.Locomotion(Equipment,RunConfiguration.Profile));
         if(OS.GetCmdlineUserArgs().Contains("--d1-equipment"))
             AddChild(new SwtorSurvivors.Equipment.EquipmentDeveloperControls { Assembly=Equipment,
                 Expanded=OS.GetCmdlineUserArgs().Contains("--d1-equipment") });
@@ -231,13 +234,23 @@ public partial class GameWorld : Node3D
             AcquisitionRange = AcquisitionRange, RefreshSeconds = TargetRefreshSeconds }; AddChild(Targeting);
         var visual = new LightningPresentation { Name = "LightningPresentation", Actor = Player.Presentation }; AddChild(visual);
         Combat = new AutomaticLightning { Name = "AutomaticLightning", Caster = PlayerActor, Targeting = Targeting, Visual = visual };
-        Combat.Configure(GD.Load<AbilityDefinition>("res://Gameplay/Abilities/lightning.tres"));
-        Combat.Range=AcquisitionRange;
+        var profile=RunConfiguration.Profile;
+        PlayerActor.Health.Maximum=profile.Health;PlayerActor.Health.Restore();Player.MoveSpeed*=profile.Movement;
+        Combat.Configure(GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{profile.StartingAbility}.tres"));
+        if(profile.Presentation=="sorcerer") Combat.Range=AcquisitionRange;
+        else
+        {
+            Player.Presentation.LoadAbilityLibrary(profile.AnimationScene,"D3");
+            if(profile.Idle!="")Player.Presentation.SetEquipmentLocomotion(new Equipment.LocomotionDefinition("D3",profile.AnimationScene,profile.Idle,profile.Run));
+            var presentation=new D3AbilityPresentation {Actor=Player.Presentation,Definition=Combat.Definition};AddChild(presentation);Combat.Presentation=presentation;
+            AcquisitionRange=Combat.Range;Targeting.AcquisitionRange=Combat.Range;
+        }
+        Periodic=new PeriodicEffects {Name="PeriodicEffects"};AddChild(Periodic);Combat.Periodic=Periodic;
         AddChild(Combat);
         Abilities=new AbilityController { Name="AutomaticAbilities",Targeting=Targeting,
             OffensiveLimit=SlotRules!.OffensiveSlots,UtilityLimit=SlotRules.UtilitySlots };
         Abilities.Abilities.Add(Combat);
-        if (survival && !OS.GetCmdlineUserArgs().Any(x=>x is "--survival-smoke" or "--progression-smoke"))
+        if (survival && RunConfiguration.Profile.Presentation=="sorcerer" && !OS.GetCmdlineUserArgs().Any(x=>x is "--survival-smoke" or "--progression-smoke"))
         {
             Player.Presentation.LoadAbilityAnimations();
             foreach(string id in new[]{"shock","storm","deathfield","barrier","darkheal","chain","overload"})
@@ -268,7 +281,7 @@ public partial class GameWorld : Node3D
         PlayerActor.Health.Died += () =>
         {
             Rig.SetControlsEnabled(false);
-            Abilities.Abort(); PlayerActor.CombatEnabled = false;
+            Periodic.Clear();Abilities.Abort(); PlayerActor.CombatEnabled = false;
             Progression?.CancelPresentation(); Rewards?.Clear(); Audio.Clear();
             Waves?.Stop(); Player.SetPhysicsProcess(false); Player.Velocity = Vector3.Zero;
             Player.Presentation.PlayReaction("Death");
@@ -311,6 +324,7 @@ public partial class GameWorld : Node3D
 
     public void ResetCombatWorld()
     {
+        Periodic?.Clear();
         Rewards?.Clear(); Audio?.Clear();
         Flytext?.Clear();
         Progression?.ResetRun();
@@ -332,6 +346,7 @@ public partial class GameWorld : Node3D
 
     internal void StopForMenu()
     {
+        Periodic?.Clear();
         _leavingForMenu = true;
         Rig.SetControlsEnabled(false);
         Abilities?.Abort();

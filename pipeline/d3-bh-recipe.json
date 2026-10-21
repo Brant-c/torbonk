@@ -1,0 +1,616 @@
+{
+  "profile": "April2012",
+  "bodyType": "bmn",
+  "skeleton": "/resources/art/dynamic/spec/bmnnew_skeleton.gr2",
+  "outfit": "April bh starting appearance family; full spawn inventory unverified",
+  "coordinatePolicy": "scale 1; GR2 +90 X applied; glTF Y up; JBA original root rotation retained",
+  "colorScheme": {
+    "id": "1003055",
+    "xml": "<Asset>\n    <ID>1003055</ID>\n    <ArtName>colorscheme_ge_a16_c02_s01</ArtName>\n    <DesignerName>colorscheme ge a16 c02 s01</DesignerName>\n    <BaseFile />\n    <Attachments />\n    <Materials />\n    <Bodytypes>\n      <Bodytype>bfa</Bodytype>\n      <Bodytype>bfb</Bodytype>\n      <Bodytype>bfn</Bodytype>\n      <Bodytype>bfs</Bodytype>\n      <Bodytype>bma</Bodytype>\n      <Bodytype>bmf</Bodytype>\n      <Bodytype>bmn</Bodytype>\n      <Bodytype>bms</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>-1</SkinHueIndex>\n    <Filters />\n    <Identities />\n    <Tags />\n    <CustomData>\n      <ColorScheme>\n        <Name>colorscheme_ge_a16_c02_s01</Name>\n        <Guid>1003055</Guid>\n        <slot name=\"boot\" primary=\"1002180\" secondary=\"1002184\" />\n        <slot name=\"bracer\" primary=\"1002180\" secondary=\"1002184\" />\n        <slot name=\"chest\" primary=\"1002180\" secondary=\"1002184\" />\n        <slot name=\"face\" primary=\"1002180\" secondary=\"1002184\" />\n        <slot name=\"hand\" primary=\"1002180\" secondary=\"1002184\" />\n        <slot name=\"leg\" primary=\"1002180\" secondary=\"1002184\" />\n        <slot name=\"waist\" primary=\"1002180\" secondary=\"1002184\" />\n      </ColorScheme>\n    </CustomData>\n  </Asset>\n  ",
+    "hues": {
+      "1002180": {
+        "id": "1002180",
+        "xml": "<Palette>\r\n  <Brightness>0.0455999</Brightness>\r\n  <Contrast>1.0965</Contrast>\r\n  <Hue>0.9848</Hue>\r\n  <Metallicspecular>0.737255,0.709804,0.666667,1</Metallicspecular>\r\n  <Name>garmenthue_gr_h10_p</Name>\r\n  <Precedence>009</Precedence>\r\n  <Representativecolor>0.521175159373342,0.303827308027796,0.205612349614696</Representativecolor>\r\n  <Saturation>0.4112</Saturation>\r\n  <Specular>0.831373,1,0.937255,1</Specular>\r\n</Palette>"
+      },
+      "1002184": {
+        "id": "1002184",
+        "xml": "<Palette><Brightness>0.2792</Brightness><Precedence>13</Precedence><Representativecolor>0.498039,0.305882,0.176471,1</Representativecolor><Name>garmenthue_gr_h14_p</Name><Hue>0.0314</Hue><Contrast>1.5075</Contrast><Metallicspecular>0.917647,0.87451,0.588235,1</Metallicspecular><Saturation>0.2487</Saturation><Specular>0.831373,1,0.937255,1</Specular></Palette>"
+      }
+    }
+  },
+  "parts": [
+    {
+      "slot": "head",
+      "modelId": "1000257",
+      "materialId": "1583105",
+      "artName": "head_human_bmn_caucasian_a01",
+      "registryPath": "/resources/art/dynamic/head/index.xml",
+      "registryXml": "<Asset>\n    <ID>1000257</ID>\n    <ArtName>head_human_bmn_caucasian_a01</ArtName>\n    <DesignerName>head human bmn caucasian a01</DesignerName>\n    <BaseFile>/art/dynamic/head/model/head_human_bmn_caucasian_a01.gr2</BaseFile>\n    <Attachments />\n    <Materials>\n      <Material id=\"1005440\" name=\"DO NOT USE\" filename=\"/art/shaders/materials/head_human_[bt]_caucasian_a01_c01.mat\">\n        <ColorSchemes />\n        <MaterialOverrides>\n          <MaterialOverride index=\"1\" filename=\"/art/shaders/materials/eye_human_non_a01_c01.mat\" />\n        </MaterialOverrides>\n      </Material>\n      <Material id=\"1143209\" name=\"DO NOT USE\" filename=\"/art/shaders/materials/head_human_[bt]_caucasian_a01_c02.mat\">\n        <ColorSchemes />\n        <MaterialOverrides>\n          <MaterialOverride index=\"1\" filename=\"/art/shaders/materials/eye_human_non_a01_c01.mat\" />\n        </MaterialOverrides>\n      </Material>\n      <Material id=\"1143210\" name=\"DO NOT USE\" filename=\"/art/shaders/materials/head_human_[bt]_caucasian_a01_c03.mat\">\n        <ColorSchemes />\n        <MaterialOverrides>\n          <MaterialOverride index=\"1\" filename=\"/art/shaders/materials/eye_human_non_a01_c01.mat\" />\n        </MaterialOverrides>\n      </Material>\n      <Material id=\"1143211\" name=\"DO NOT USE\" filename=\"/art/shaders/materials/head_human_[bt]_caucasian_a01_c04.mat\">\n        <ColorSchemes />\n        <MaterialOverrides>\n          <MaterialOverride index=\"1\" filename=\"/art/shaders/materials/eye_human_non_a01_c01.mat\" />\n        </MaterialOverrides>\n      </Material>\n      <Material id=\"1583105\" name=\"caucasian a01c01 m\" filename=\"/art/shaders/materials/head_human_caucasian_a01c01_m.mat\">\n        <ColorSchemes />\n        <MaterialOverrides>\n          <MaterialOverride index=\"-1\" filename=\"/art/shaders/materials/eye_human_non_a01_c01.mat\" />\n        </MaterialOverrides>\n      </Material>\n      <Material id=\"1585665\" name=\"non npc01 m\" filename=\"/art/shaders/materials/head_human_non_npc01_m.mat\">\n        <ColorSchemes />\n        <MaterialOverrides>\n          <MaterialOverride index=\"-1\" filename=\"/art/shaders/materials/eye_human_non_a01_c01.mat\" />\n        </MaterialOverrides>\n      </Material>\n      <Material id=\"1585840\" name=\"head human non npc_old_m\" filename=\"/art/shaders/materials/head_human_non_npc07_m.mat\">\n        <ColorSchemes />\n        <MaterialOverrides>\n          <MaterialOverride index=\"-1\" filename=\"/art/shaders/materials/eye_human_non_a01_c01.mat\" />\n        </MaterialOverrides>\n      </Material>\n    </Materials>\n    <Bodytypes>\n      <Bodytype>bmn</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>0</SkinHueIndex>\n    <Filters>\n      <Filter name=\"Race\" value=\"caucasian\" />\n    </Filters>\n    <Identities>\n      <Identity name=\"Race\" value=\"caucasian\" />\n    </Identities>\n    <Tags />\n    <CustomData>\n      <SkinMaterials>\n        <SkinMaterial slot=\"boot\" filename=\"/art/shaders/materials/boot_naked_caucasian_young_a01c01_[bt].mat\" />\n        <SkinMaterial slot=\"chest\" filename=\"/art/shaders/materials/chest_naked_caucasian_young_a01c01_[bt].mat\" />\n        <SkinMaterial slot=\"hand\" filename=\"/art/shaders/materials/hand_naked_caucasian_young_a01c01_[bt].mat\" />\n        <SkinMaterial slot=\"leg\" filename=\"/art/shaders/materials/leg_naked_caucasian_young_a01c01_[bt].mat\" />\n      </SkinMaterials>\n    </CustomData>\n  </Asset>\n  ",
+      "models": [
+        {
+          "path": "/resources/art/dynamic/head/model/head_human_bmn_caucasian_a01.gr2",
+          "id": "1000257"
+        }
+      ],
+      "skinMaterialIndex": -1,
+      "material": {
+        "path": "/resources/art/shaders/materials/head_human_caucasian_a01c01_m.mat",
+        "derived": "SkinB",
+        "textures": {
+          "DiffuseMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_caucasian_a01c01_m_d.dds",
+          "RotationMap1": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_caucasian_a01c01_m_n.dds",
+          "GlossMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_caucasian_a01c01_m_s.dds",
+          "PaletteMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_caucasian_a01c01_m_h.dds",
+          "PaletteMaskMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_non_a01c01_u_m.dds",
+          "ComplexionMap": "/resources/art/defaultassets/white.dds",
+          "FacepaintMap": "/resources/art/defaultassets/default_facepaint.dds",
+          "AgeMap": "/resources/art/defaultassets/default_age.dds"
+        },
+        "values": {
+          "palette1": "0,0.5,0,1",
+          "palette2": "0,0.5,0,1",
+          "palette1Specular": "1,1,1",
+          "palette2Specular": "1,1,1",
+          "palette1MetallicSpecular": "1,1,1",
+          "palette2MetallicSpecular": "1,1,1",
+          "RimWidth": "1.55",
+          "RimStrength": "0.5",
+          "FlushTone": "0.47451,0.121569,0.121569",
+          "FleshBrightness": "0.1",
+          "UsesReflection": "False",
+          "UvScaling": "1,1",
+          "ReflectionIntensity": "1",
+          "ReflectionBlurIntensity": "1",
+          "ReflectionSpecInfluence": "1",
+          "ReflectionContrast": "0"
+        }
+      },
+      "overrides": [
+        {
+          "index": -1,
+          "material": {
+            "path": "/resources/art/shaders/materials/eye_human_non_a01_c01.mat",
+            "derived": "Eye",
+            "textures": {
+              "DiffuseMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_d.dds",
+              "RotationMap1": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_n.dds",
+              "GlossMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_s.dds",
+              "PaletteMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_h.dds",
+              "PaletteMaskMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_m.dds"
+            },
+            "values": {
+              "palette1": "0,0.5,0,1",
+              "palette2": "0,0.5,0,1",
+              "palette1Specular": "1,1,1",
+              "palette2Specular": "1,1,1",
+              "palette1MetallicSpecular": "1,1,1",
+              "palette2MetallicSpecular": "1,1,1",
+              "UsesReflection": "True",
+              "UsesEmissive": "False",
+              "UvScaling": "1,1",
+              "ReflectionIntensity": "3.88",
+              "ReflectionBlurIntensity": "1",
+              "ReflectionSpecInfluence": "1",
+              "ReflectionContrast": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slot": "hair",
+      "modelId": "1000620",
+      "materialId": "1027364",
+      "artName": "hair_human_non_a01_m",
+      "registryPath": "/resources/art/dynamic/hair/index.xml",
+      "registryXml": "<Asset>\n    <ID>1000620</ID>\n    <ArtName>hair_human_non_a01_m</ArtName>\n    <DesignerName>hair human non a01 m</DesignerName>\n    <BaseFile>/art/dynamic/hair/model/hair_human_[bt]_non_a01.gr2</BaseFile>\n    <Attachments />\n    <Materials>\n      <Material id=\"1027364\" name=\"hair human non a01 m\" filename=\"/art/shaders/materials/hair_human_non_a01_v01_m.mat\">\n        <ColorSchemes />\n        <MaterialOverrides />\n      </Material>\n    </Materials>\n    <Bodytypes>\n      <Bodytype>bma</Bodytype>\n      <Bodytype>bmf</Bodytype>\n      <Bodytype>bmn</Bodytype>\n      <Bodytype>bms</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>-1</SkinHueIndex>\n    <Filters>\n      <Filter name=\"Race\" value=\"african\" />\n      <Filter name=\"Race\" value=\"asian\" />\n      <Filter name=\"Race\" value=\"caucasian\" />\n      <Filter name=\"Race\" value=\"bloodsith\" />\n      <Filter name=\"Race\" value=\"chiss\" />\n      <Filter name=\"Race\" value=\"miralukan\" />\n      <Filter name=\"Race\" value=\"mirialan\" />\n      <Filter name=\"Race\" value=\"sith\" />\n    </Filters>\n    <Identities />\n    <Tags>\n      <Tag name=\"Race\" value=\"african\" />\n      <Tag name=\"Race\" value=\"asian\" />\n      <Tag name=\"Race\" value=\"caucasian\" />\n      <Tag name=\"Race\" value=\"chiss\" />\n      <Tag name=\"Race\" value=\"chiss_african\" />\n      <Tag name=\"Race\" value=\"chiss_asian\" />\n      <Tag name=\"Race\" value=\"czerka\" />\n      <Tag name=\"Race\" value=\"joiner\" />\n      <Tag name=\"Race\" value=\"miralukan\" />\n      <Tag name=\"Race\" value=\"miralukan_african\" />\n      <Tag name=\"Race\" value=\"miralukan_asian\" />\n      <Tag name=\"Race\" value=\"mirialan\" />\n      <Tag name=\"Race\" value=\"mirialan_asian\" />\n      <Tag name=\"Race\" value=\"mirialan_caucasian\" />\n      <Tag name=\"Race\" value=\"sith\" />\n      <Tag name=\"Race\" value=\"sith_african\" />\n      <Tag name=\"Race\" value=\"sith_caucasian\" />\n    </Tags>\n    <CustomData />\n  </Asset>\n  ",
+      "models": [
+        {
+          "path": "/resources/art/dynamic/hair/model/hair_human_bmn_non_a01.gr2",
+          "id": "1000620"
+        }
+      ],
+      "skinMaterialIndex": -1,
+      "material": {
+        "path": "/resources/art/shaders/materials/hair_human_non_a01_v01_m.mat",
+        "derived": "HairC",
+        "textures": {
+          "DiffuseMap": "/resources/art/dynamic/player_character/hair/texture/___psd/hair_human_non_a01_v01_m_d.dds",
+          "RotationMap1": "/resources/art/dynamic/player_character/hair/texture/___psd/hair_human_non_a01_v01_m_n.dds",
+          "GlossMap": "/resources/art/dynamic/player_character/hair/texture/___psd/hair_human_non_a01_v01_m_s.dds",
+          "PaletteMap": "/resources/art/dynamic/player_character/hair/texture/___psd/hair_human_non_a01_v01_m_h.dds",
+          "PaletteMaskMap": "/resources/art/dynamic/player_character/hair/texture/___psd/hair_human_non_a15_v01_m_m.dds",
+          "DirectionMap": "/resources/art/lookupTables/table_hair_02.dds"
+        },
+        "values": {
+          "palette1": "0,0.5,0,1",
+          "palette2": "0,0.5,0,1",
+          "palette1Specular": "0.584314,0.482353,0.529412",
+          "palette2Specular": "0.482353,0,1",
+          "palette1MetallicSpecular": "1,1,1",
+          "palette2MetallicSpecular": "1,1,1",
+          "RimWidth": "1.5",
+          "RimStrength": "0.5",
+          "UsesReflection": "False",
+          "UvScaling": "1,1",
+          "ReflectionIntensity": "1",
+          "ReflectionBlurIntensity": "1",
+          "ReflectionSpecInfluence": "1",
+          "ReflectionContrast": "0"
+        }
+      },
+      "overrides": []
+    },
+    {
+      "slot": "chest",
+      "modelId": "1000072",
+      "materialId": "1003739",
+      "artName": "chest_baggy_heavy_ge_a16",
+      "registryXml": "<Asset>\n    <ID>1000072</ID>\n    <ArtName>chest_baggy_heavy_ge_a16</ArtName>\n    <DesignerName>chest baggy heavy ge a16</DesignerName>\n    <BaseFile>/art/dynamic/chest/model/chest_baggy_[bt]_archetype.gr2</BaseFile>\n    <Attachments>\n      <Attachment id=\"1003347\" name=\"chest baggy heavy ge a16\" filename=\"/art/dynamic/chest/model/chest_baggy_[bt]_heavy_ge_a16_loin.gr2\" />\n      <Attachment id=\"1003349\" name=\"chest baggy heavy ge a16\" filename=\"/art/dynamic/chest/model/chest_baggy_[bt]_heavy_ge_a16_plate.gr2\" />\n      <Attachment id=\"1003353\" name=\"chest baggy heavy ge a16\" filename=\"/art/dynamic/chest/model/chest_baggy_[bt]_heavy_ge_a16_back.gr2\" />\n    </Attachments>\n    <Materials>\n      <Material id=\"1001292\" name=\"chest baggy heavy ge a16\" filename=\"/art/shaders/materials/chest_baggy_heavy_ge_a16military07_[gen].mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003071\" />\n          <ColorScheme guid=\"1003072\" />\n          <ColorScheme guid=\"1003073\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1003726\" name=\"chest baggy heavy ge a16\" filename=\"/art/shaders/materials/chest_baggy_heavy_ge_a16military05_[gen].mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003099\" />\n          <ColorScheme guid=\"1003100\" />\n          <ColorScheme guid=\"1003101\" />\n          <ColorScheme guid=\"1215623\" />\n          <ColorScheme guid=\"1215624\" />\n          <ColorScheme guid=\"1215625\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1003739\" name=\"chest baggy heavy ge a16\" filename=\"/art/shaders/materials/chest_baggy_heavy_ge_a16military02_[gen].mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003055\" />\n          <ColorScheme guid=\"1003056\" />\n          <ColorScheme guid=\"1003057\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005040\" name=\"chest baggy heavy ge a16\" filename=\"/art/shaders/materials/chest_baggy_heavy_ge_a16military09_[gen].mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003615\" />\n          <ColorScheme guid=\"1003619\" />\n          <ColorScheme guid=\"1003626\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005089\" name=\"chest baggy heavy ge a16\" filename=\"/art/shaders/materials/chest_baggy_heavy_ge_a16military06_[gen].mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003654\" />\n          <ColorScheme guid=\"1003655\" />\n          <ColorScheme guid=\"1003656\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143381\" name=\"chest baggy heavy ge a16\" filename=\"/art/shaders/materials/chest_baggy_heavy_ge_a16military08_[gen].mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1006047\" />\n          <ColorScheme guid=\"1006048\" />\n          <ColorScheme guid=\"1006049\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143379\" name=\"chest baggy heavy ge a16\" filename=\"/art/shaders/materials/chest_baggy_heavy_ge_a16military01_[gen].mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003030\" />\n          <ColorScheme guid=\"1003031\" />\n          <ColorScheme guid=\"1003032\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143380\" name=\"chest baggy heavy ge a16\" filename=\"/art/shaders/materials/chest_baggy_heavy_ge_a16military03_[gen].mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1006209\" />\n          <ColorScheme guid=\"1006210\" />\n          <ColorScheme guid=\"1006211\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005625\" name=\"chest baggy heavy ge a16\" filename=\"/art/shaders/materials/chest_baggy_heavy_ge_a16military04_[gen].mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003058\" />\n          <ColorScheme guid=\"1003061\" />\n          <ColorScheme guid=\"1003070\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143382\" name=\"chest baggy heavy ge a16\" filename=\"/art/shaders/materials/chest_baggy_heavy_ge_a16military10_[gen].mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1005269\" />\n          <ColorScheme guid=\"1005270\" />\n          <ColorScheme guid=\"1005271\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n    </Materials>\n    <Bodytypes>\n      <Bodytype>bfa</Bodytype>\n      <Bodytype>bfb</Bodytype>\n      <Bodytype>bfn</Bodytype>\n      <Bodytype>bfs</Bodytype>\n      <Bodytype>bma</Bodytype>\n      <Bodytype>bmf</Bodytype>\n      <Bodytype>bmn</Bodytype>\n      <Bodytype>bms</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>-1</SkinHueIndex>\n    <Filters>\n      <Filter name=\"Archetype\" value=\"baggy\" />\n      <Filter name=\"Style\" value=\"heavy\" />\n      <Filter name=\"Class\" value=\"ge\" />\n    </Filters>\n    <Identities />\n    <Tags />\n    <CustomData />\n  </Asset>\n  ",
+      "skinMaterialIndex": -1,
+      "material": {
+        "path": "/resources/art/shaders/materials/chest_baggy_heavy_ge_a16military02_m.mat",
+        "derived": "Garment",
+        "textures": {
+          "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/chest_baggy_heavy_ge_a16military02_u_d.dds",
+          "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/chest_baggy_heavy_ge_a16military01_m_03_n.dds",
+          "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/chest_baggy_heavy_ge_a16military02_u_s.dds",
+          "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/chest_baggy_heavy_ge_a16military02_u_h.dds",
+          "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/chest_baggy_heavy_ge_a16military02_u_m.dds"
+        },
+        "values": {
+          "palette1": "0,0.5,0,1",
+          "palette2": "0,0.5,0,1",
+          "palette1Specular": "1,1,1",
+          "palette2Specular": "1,1,1",
+          "palette1MetallicSpecular": "1,1,1",
+          "palette2MetallicSpecular": "1,1,1",
+          "RimWidth": "1.55",
+          "RimStrength": "0.5",
+          "UsesReflection": "True",
+          "UsesEmissive": "False",
+          "UvScaling": "1,1",
+          "ReflectionIntensity": "1",
+          "ReflectionBlurIntensity": "1.5",
+          "ReflectionSpecInfluence": "1",
+          "ReflectionContrast": "0"
+        }
+      },
+      "paletteIds": [
+        "1002180",
+        "1002184"
+      ],
+      "models": [
+        {
+          "path": "/resources/art/dynamic/chest/model/chest_baggy_bmn_archetype.gr2",
+          "id": "1000072"
+        },
+        {
+          "path": "/resources/art/dynamic/chest/model/chest_baggy_bmn_heavy_ge_a16_back.gr2",
+          "id": "1003353"
+        }
+      ],
+      "overrides": [],
+      "sourceAppearance": {
+        "id": "0xE0005D971F932536",
+        "decimalId": "16141003968147039542",
+        "kind": "GomObject",
+        "name": "ipp.class.bh.starting.rdps1.t1x1.chest",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/42.bkt",
+          "uncompressedOffset": 83836,
+          "blockLength": 204,
+          "resourceSha256": "0a59e45acbfab48db609aa89edb115d727af05ab0e96108bc02982387f704018"
+        }
+      }
+    },
+    {
+      "slot": "hand",
+      "modelId": "1000184",
+      "materialId": "1003738",
+      "artName": "hand_gauntlet_heavy_ge_a16",
+      "registryXml": "<Asset>\n    <ID>1000184</ID>\n    <ArtName>hand_gauntlet_heavy_ge_a16</ArtName>\n    <DesignerName>hand gauntlet heavy ge a16</DesignerName>\n    <BaseFile>/art/dynamic/hand/model/hand_gauntlet_[bt]_archetype.gr2</BaseFile>\n    <Attachments>\n      <Attachment id=\"1003352\" name=\"hand gauntlet heavy ge a16\" filename=\"/art/dynamic/hand/model/hand_gauntlet_[bt]_heavy_ge_a16_forearm.gr2\" />\n    </Attachments>\n    <Materials>\n      <Material id=\"1001573\" name=\"ge a16military07 u\" filename=\"/art/shaders/materials/hand_gauntlet_heavy_ge_a16military07_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003071\" />\n          <ColorScheme guid=\"1003072\" />\n          <ColorScheme guid=\"1003073\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1003725\" name=\"ge a16military05 u\" filename=\"/art/shaders/materials/hand_gauntlet_heavy_ge_a16military05_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003099\" />\n          <ColorScheme guid=\"1003100\" />\n          <ColorScheme guid=\"1003101\" />\n          <ColorScheme guid=\"1215623\" />\n          <ColorScheme guid=\"1215624\" />\n          <ColorScheme guid=\"1215625\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1003738\" name=\"ge a16military02 u\" filename=\"/art/shaders/materials/hand_gauntlet_heavy_ge_a16military02_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003055\" />\n          <ColorScheme guid=\"1003056\" />\n          <ColorScheme guid=\"1003057\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005039\" name=\"ge a16military09 u\" filename=\"/art/shaders/materials/hand_gauntlet_heavy_ge_a16military09_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003615\" />\n          <ColorScheme guid=\"1003619\" />\n          <ColorScheme guid=\"1003626\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005088\" name=\"ge a16military06 u\" filename=\"/art/shaders/materials/hand_gauntlet_heavy_ge_a16military06_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003654\" />\n          <ColorScheme guid=\"1003655\" />\n          <ColorScheme guid=\"1003656\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1050124\" name=\"ge a16military08 u\" filename=\"/art/shaders/materials/hand_gauntlet_heavy_ge_a16military08_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1006047\" />\n          <ColorScheme guid=\"1006048\" />\n          <ColorScheme guid=\"1006049\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1050544\" name=\"hand gauntlet heavy ge a16\" filename=\"/art/shaders/materials/hand_gauntlet_heavy_ge_a16military01_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003030\" />\n          <ColorScheme guid=\"1003031\" />\n          <ColorScheme guid=\"1003032\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1049444\" name=\"ge a16military03 u\" filename=\"/art/shaders/materials/hand_gauntlet_heavy_ge_a16military03_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1006209\" />\n          <ColorScheme guid=\"1006210\" />\n          <ColorScheme guid=\"1006211\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005624\" name=\"hand gauntlet heavy ge a16\" filename=\"/art/shaders/materials/hand_gauntlet_heavy_ge_a16military04_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003058\" />\n          <ColorScheme guid=\"1003061\" />\n          <ColorScheme guid=\"1003070\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1050373\" name=\"hand gauntlet heavy ge a16\" filename=\"/art/shaders/materials/hand_gauntlet_heavy_ge_a16military10_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1005269\" />\n          <ColorScheme guid=\"1005270\" />\n          <ColorScheme guid=\"1005271\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n    </Materials>\n    <Bodytypes>\n      <Bodytype>bfa</Bodytype>\n      <Bodytype>bfb</Bodytype>\n      <Bodytype>bfn</Bodytype>\n      <Bodytype>bfs</Bodytype>\n      <Bodytype>bma</Bodytype>\n      <Bodytype>bmf</Bodytype>\n      <Bodytype>bmn</Bodytype>\n      <Bodytype>bms</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>-1</SkinHueIndex>\n    <Filters>\n      <Filter name=\"Archetype\" value=\"gauntlet\" />\n      <Filter name=\"Style\" value=\"heavy\" />\n      <Filter name=\"Class\" value=\"ge\" />\n    </Filters>\n    <Identities />\n    <Tags />\n    <CustomData />\n  </Asset>\n  ",
+      "skinMaterialIndex": -1,
+      "material": {
+        "path": "/resources/art/shaders/materials/hand_gauntlet_heavy_ge_a16military02_u.mat",
+        "derived": "Garment",
+        "textures": {
+          "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/hand_gauntlet_heavy_ge_a16military02_u_d.dds",
+          "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/hand_gauntlet_heavy_ge_a16military01_u_02_n.dds",
+          "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/hand_gauntlet_heavy_ge_a16military02_u_s.dds",
+          "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/hand_gauntlet_heavy_ge_a16military02_u_h.dds",
+          "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/hand_gauntlet_heavy_ge_a16military02_u_m.dds"
+        },
+        "values": {
+          "palette1": "0,0.5,0,1",
+          "palette2": "0,0.5,0,1",
+          "palette1Specular": "1,1,1",
+          "palette2Specular": "1,1,1",
+          "palette1MetallicSpecular": "1,1,1",
+          "palette2MetallicSpecular": "1,1,1",
+          "RimWidth": "1.55",
+          "RimStrength": "0.5",
+          "UsesReflection": "True",
+          "UsesEmissive": "False",
+          "UvScaling": "1,1",
+          "ReflectionIntensity": "1",
+          "ReflectionBlurIntensity": "1",
+          "ReflectionSpecInfluence": "1",
+          "ReflectionContrast": "0"
+        }
+      },
+      "paletteIds": [
+        "1002180",
+        "1002184"
+      ],
+      "models": [
+        {
+          "path": "/resources/art/dynamic/hand/model/hand_gauntlet_bmn_archetype.gr2",
+          "id": "1000184"
+        }
+      ],
+      "overrides": [],
+      "sourceAppearance": {
+        "id": "0xE00049310ABD9B8B",
+        "decimalId": "16140981539478281099",
+        "kind": "GomObject",
+        "name": "ipp.class.bh.starting.rdps1.t1x1.hands",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/99.bkt",
+          "uncompressedOffset": 93724,
+          "blockLength": 196,
+          "resourceSha256": "6c2bf4dd2d5c80f2ec4d09a8f197cb380bdabd0108ae33a5740e31b5e11869bd"
+        }
+      }
+    },
+    {
+      "slot": "leg",
+      "modelId": "1000294",
+      "materialId": "1003734",
+      "artName": "leg_pant_heavy_ge_a16",
+      "registryXml": "<Asset>\n    <ID>1000294</ID>\n    <ArtName>leg_pant_heavy_ge_a16</ArtName>\n    <DesignerName>leg pant heavy ge a16</DesignerName>\n    <BaseFile>/art/dynamic/leg/model/leg_pant_[bt]_archetype.gr2</BaseFile>\n    <Attachments />\n    <Materials>\n      <Material id=\"1001700\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military07_[gen]_v01.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003071\" />\n          <ColorScheme guid=\"1003072\" />\n          <ColorScheme guid=\"1003073\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1001701\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military07_[gen]_v02.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003071\" />\n          <ColorScheme guid=\"1003072\" />\n          <ColorScheme guid=\"1003073\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1003727\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military05_[gen]_v01.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003099\" />\n          <ColorScheme guid=\"1003100\" />\n          <ColorScheme guid=\"1003101\" />\n          <ColorScheme guid=\"1215623\" />\n          <ColorScheme guid=\"1215624\" />\n          <ColorScheme guid=\"1215625\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1003728\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military05_[gen]_v02.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003099\" />\n          <ColorScheme guid=\"1003100\" />\n          <ColorScheme guid=\"1003101\" />\n          <ColorScheme guid=\"1215623\" />\n          <ColorScheme guid=\"1215624\" />\n          <ColorScheme guid=\"1215625\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1003734\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military02_[gen]_v01.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003055\" />\n          <ColorScheme guid=\"1003056\" />\n          <ColorScheme guid=\"1003057\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1003735\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military02_[gen]_v02.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003055\" />\n          <ColorScheme guid=\"1003056\" />\n          <ColorScheme guid=\"1003057\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005042\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military09_[gen]_v01.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003615\" />\n          <ColorScheme guid=\"1003619\" />\n          <ColorScheme guid=\"1003626\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005043\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military09_[gen]_v02.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003615\" />\n          <ColorScheme guid=\"1003619\" />\n          <ColorScheme guid=\"1003626\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005090\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military06_[gen]_v01.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003654\" />\n          <ColorScheme guid=\"1003655\" />\n          <ColorScheme guid=\"1003656\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005091\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military06_[gen]_v02.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003654\" />\n          <ColorScheme guid=\"1003655\" />\n          <ColorScheme guid=\"1003656\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143240\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military08_[gen]_v01.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1006047\" />\n          <ColorScheme guid=\"1006048\" />\n          <ColorScheme guid=\"1006049\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143241\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military08_[gen]_v02.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1006047\" />\n          <ColorScheme guid=\"1006048\" />\n          <ColorScheme guid=\"1006049\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143236\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military01_[gen]_v01.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003030\" />\n          <ColorScheme guid=\"1003031\" />\n          <ColorScheme guid=\"1003032\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143237\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military01_[gen]_v02.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003030\" />\n          <ColorScheme guid=\"1003031\" />\n          <ColorScheme guid=\"1003032\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143238\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military03_[gen]_v01.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1006209\" />\n          <ColorScheme guid=\"1006210\" />\n          <ColorScheme guid=\"1006211\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143239\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military03_[gen]_v02.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1006209\" />\n          <ColorScheme guid=\"1006210\" />\n          <ColorScheme guid=\"1006211\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005627\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military04_[gen]_v02.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003058\" />\n          <ColorScheme guid=\"1003061\" />\n          <ColorScheme guid=\"1003070\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005626\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military04_[gen]_v01.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003058\" />\n          <ColorScheme guid=\"1003061\" />\n          <ColorScheme guid=\"1003070\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143242\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military10_[gen]_v01.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1005269\" />\n          <ColorScheme guid=\"1005270\" />\n          <ColorScheme guid=\"1005271\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1143243\" name=\"leg pant heavy ge a16\" filename=\"/art/shaders/materials/leg_pant_heavy_ge_a16military10_[gen]_v02.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1005269\" />\n          <ColorScheme guid=\"1005270\" />\n          <ColorScheme guid=\"1005271\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n    </Materials>\n    <Bodytypes>\n      <Bodytype>bfa</Bodytype>\n      <Bodytype>bfb</Bodytype>\n      <Bodytype>bfn</Bodytype>\n      <Bodytype>bfs</Bodytype>\n      <Bodytype>bma</Bodytype>\n      <Bodytype>bmf</Bodytype>\n      <Bodytype>bmn</Bodytype>\n      <Bodytype>bms</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>-1</SkinHueIndex>\n    <Filters>\n      <Filter name=\"Archetype\" value=\"pant\" />\n      <Filter name=\"Style\" value=\"heavy\" />\n      <Filter name=\"Class\" value=\"ge\" />\n    </Filters>\n    <Identities />\n    <Tags />\n    <CustomData />\n  </Asset>\n  ",
+      "skinMaterialIndex": -1,
+      "material": {
+        "path": "/resources/art/shaders/materials/leg_pant_heavy_ge_a16military02_m_v01.mat",
+        "derived": "Garment",
+        "textures": {
+          "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/leg_pant_heavy_ge_a16military02_u_v01_d.dds",
+          "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/leg_pant_heavy_ge_a16military01_m_v01_n.dds",
+          "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/leg_pant_heavy_ge_a16military02_u_v01_s.dds",
+          "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/leg_pant_heavy_ge_a16military02_u_v01_h.dds",
+          "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/leg_pant_heavy_ge_a16military02_u_v01_m.dds"
+        },
+        "values": {
+          "palette1": "0,0.5,0,1",
+          "palette2": "0,0.5,0,1",
+          "palette1Specular": "1,1,1",
+          "palette2Specular": "1,1,1",
+          "palette1MetallicSpecular": "1,1,1",
+          "palette2MetallicSpecular": "1,1,1",
+          "RimWidth": "1.55",
+          "RimStrength": "0.5",
+          "UsesReflection": "True",
+          "UsesEmissive": "False",
+          "UvScaling": "1,1",
+          "ReflectionIntensity": "1",
+          "ReflectionBlurIntensity": "1",
+          "ReflectionSpecInfluence": "1",
+          "ReflectionContrast": "0"
+        }
+      },
+      "paletteIds": [
+        "1002180",
+        "1002184"
+      ],
+      "models": [
+        {
+          "path": "/resources/art/dynamic/leg/model/leg_pant_bmn_archetype.gr2",
+          "id": "1000294"
+        }
+      ],
+      "overrides": [],
+      "sourceAppearance": {
+        "id": "0xE000C79BDB95D9D4",
+        "decimalId": "16141120536713746900",
+        "kind": "GomObject",
+        "name": "ipp.class.bh.starting.rdps1.t1x1.legs",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/400.bkt",
+          "uncompressedOffset": 223908,
+          "blockLength": 193,
+          "resourceSha256": "5fdd6067e716537500ad5ace93f4f964aa82c954279f6395b934e3526952303c"
+        }
+      }
+    },
+    {
+      "slot": "boot",
+      "modelId": "1000012",
+      "materialId": "1003736",
+      "artName": "boot_tall_heavy_ge_a16",
+      "registryXml": "<Asset>\n    <ID>1000012</ID>\n    <ArtName>boot_tall_heavy_ge_a16</ArtName>\n    <DesignerName>boot tall heavy ge a16</DesignerName>\n    <BaseFile>/art/dynamic/boot/model/boot_tall_[bt]_archetype.gr2</BaseFile>\n    <Attachments>\n      <Attachment id=\"1003346\" name=\"boot tall heavy ge a16\" filename=\"/art/dynamic/boot/model/boot_tall_[bt]_heavy_ge_a16_shin.gr2\" />\n    </Attachments>\n    <Materials>\n      <Material id=\"1001131\" name=\"ge a16military07 u\" filename=\"/art/shaders/materials/boot_tall_heavy_ge_a16military07_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003071\" />\n          <ColorScheme guid=\"1003072\" />\n          <ColorScheme guid=\"1003073\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1003723\" name=\"ge a16military05 u\" filename=\"/art/shaders/materials/boot_tall_heavy_ge_a16military05_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003099\" />\n          <ColorScheme guid=\"1003100\" />\n          <ColorScheme guid=\"1003101\" />\n          <ColorScheme guid=\"1215623\" />\n          <ColorScheme guid=\"1215624\" />\n          <ColorScheme guid=\"1215625\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1003736\" name=\"ge a16military02 u\" filename=\"/art/shaders/materials/boot_tall_heavy_ge_a16military02_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003055\" />\n          <ColorScheme guid=\"1003056\" />\n          <ColorScheme guid=\"1003057\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005037\" name=\"ge a16military09 u\" filename=\"/art/shaders/materials/boot_tall_heavy_ge_a16military09_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003615\" />\n          <ColorScheme guid=\"1003619\" />\n          <ColorScheme guid=\"1003626\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005086\" name=\"ge a16military06 u\" filename=\"/art/shaders/materials/boot_tall_heavy_ge_a16military06_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003654\" />\n          <ColorScheme guid=\"1003655\" />\n          <ColorScheme guid=\"1003656\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1050122\" name=\"ge a16military08 u\" filename=\"/art/shaders/materials/boot_tall_heavy_ge_a16military08_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1006047\" />\n          <ColorScheme guid=\"1006048\" />\n          <ColorScheme guid=\"1006049\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1050542\" name=\"boot tall heavy ge a16\" filename=\"/art/shaders/materials/boot_tall_heavy_ge_a16military01_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003030\" />\n          <ColorScheme guid=\"1003031\" />\n          <ColorScheme guid=\"1003032\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1049442\" name=\"ge a16military03 u\" filename=\"/art/shaders/materials/boot_tall_heavy_ge_a16military03_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1006209\" />\n          <ColorScheme guid=\"1006210\" />\n          <ColorScheme guid=\"1006211\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005622\" name=\"boot tall heavy ge a16\" filename=\"/art/shaders/materials/boot_tall_heavy_ge_a16military04_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003058\" />\n          <ColorScheme guid=\"1003061\" />\n          <ColorScheme guid=\"1003070\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1050371\" name=\"boot tall heavy ge a16\" filename=\"/art/shaders/materials/boot_tall_heavy_ge_a16military10_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1005269\" />\n          <ColorScheme guid=\"1005270\" />\n          <ColorScheme guid=\"1005271\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n    </Materials>\n    <Bodytypes>\n      <Bodytype>bfa</Bodytype>\n      <Bodytype>bfb</Bodytype>\n      <Bodytype>bfn</Bodytype>\n      <Bodytype>bfs</Bodytype>\n      <Bodytype>bma</Bodytype>\n      <Bodytype>bmf</Bodytype>\n      <Bodytype>bmn</Bodytype>\n      <Bodytype>bms</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>-1</SkinHueIndex>\n    <Filters>\n      <Filter name=\"Archetype\" value=\"tall\" />\n      <Filter name=\"Style\" value=\"heavy\" />\n      <Filter name=\"Class\" value=\"ge\" />\n    </Filters>\n    <Identities />\n    <Tags />\n    <CustomData />\n  </Asset>\n  ",
+      "skinMaterialIndex": -1,
+      "material": {
+        "path": "/resources/art/shaders/materials/boot_tall_heavy_ge_a16military02_u.mat",
+        "derived": "Garment",
+        "textures": {
+          "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/boot_tall_heavy_ge_a16military02_u_d.dds",
+          "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/boot_tall_heavy_ge_a16military01_u_n.dds",
+          "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/boot_tall_heavy_ge_a16military02_u_s.dds",
+          "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/boot_tall_heavy_ge_a16military02_u_h.dds",
+          "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/boot_tall_heavy_ge_a16military02_u_m.dds"
+        },
+        "values": {
+          "palette1": "0,0.5,0,1",
+          "palette2": "0,0.5,0,1",
+          "palette1Specular": "1,1,1",
+          "palette2Specular": "1,1,1",
+          "palette1MetallicSpecular": "1,1,1",
+          "palette2MetallicSpecular": "1,1,1",
+          "RimWidth": "1.55",
+          "RimStrength": "0.5",
+          "UsesReflection": "True",
+          "UsesEmissive": "False",
+          "UvScaling": "1,1",
+          "ReflectionIntensity": "1",
+          "ReflectionBlurIntensity": "1",
+          "ReflectionSpecInfluence": "1",
+          "ReflectionContrast": "0"
+        }
+      },
+      "paletteIds": [
+        "1002180",
+        "1002184"
+      ],
+      "models": [
+        {
+          "path": "/resources/art/dynamic/boot/model/boot_tall_bmn_archetype.gr2",
+          "id": "1000012"
+        }
+      ],
+      "overrides": [],
+      "sourceAppearance": {
+        "id": "0xE0003C6739BFDAC3",
+        "decimalId": "16140967478544030403",
+        "kind": "GomObject",
+        "name": "ipp.class.bh.starting.rdps1.t1x1.feet",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/403.bkt",
+          "uncompressedOffset": 81972,
+          "blockLength": 193,
+          "resourceSha256": "e46e2081c8e302d18fea82acf4cee92e5e14672ade458a13e199d0d9a0e96ff4"
+        }
+      }
+    },
+    {
+      "slot": "waist",
+      "modelId": "1000320",
+      "materialId": "1003737",
+      "artName": "waist_belt_heavy_ge_a16",
+      "registryXml": "<Asset>\n    <ID>1000320</ID>\n    <ArtName>waist_belt_heavy_ge_a16</ArtName>\n    <DesignerName>waist belt heavy ge a16</DesignerName>\n    <BaseFile>/art/dynamic/waist/model/waist_belt_[bt]_archetype.gr2</BaseFile>\n    <Attachments>\n      <Attachment id=\"1003348\" name=\"waist belt heavy ge a16\" filename=\"/art/dynamic/waist/model/waist_belt_[bt]_heavy_ge_a16_front.gr2\" />\n      <Attachment id=\"1003354\" name=\"waist belt heavy ge a16\" filename=\"/art/dynamic/waist/model/waist_belt_[bt]_heavy_ge_a16_back.gr2\" />\n    </Attachments>\n    <Materials>\n      <Material id=\"1001794\" name=\"ge a16military07 u\" filename=\"/art/shaders/materials/waist_belt_heavy_ge_a16military07_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003071\" />\n          <ColorScheme guid=\"1003072\" />\n          <ColorScheme guid=\"1003073\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1003724\" name=\"ge a16military05 u\" filename=\"/art/shaders/materials/waist_belt_heavy_ge_a16military05_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003099\" />\n          <ColorScheme guid=\"1003100\" />\n          <ColorScheme guid=\"1003101\" />\n          <ColorScheme guid=\"1215623\" />\n          <ColorScheme guid=\"1215624\" />\n          <ColorScheme guid=\"1215625\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1003737\" name=\"ge a16military02 u\" filename=\"/art/shaders/materials/waist_belt_heavy_ge_a16military02_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003055\" />\n          <ColorScheme guid=\"1003056\" />\n          <ColorScheme guid=\"1003057\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005038\" name=\"ge a16military09 u\" filename=\"/art/shaders/materials/waist_belt_heavy_ge_a16military09_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003615\" />\n          <ColorScheme guid=\"1003619\" />\n          <ColorScheme guid=\"1003626\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005087\" name=\"ge a16military06 u\" filename=\"/art/shaders/materials/waist_belt_heavy_ge_a16military06_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003654\" />\n          <ColorScheme guid=\"1003655\" />\n          <ColorScheme guid=\"1003656\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1050123\" name=\"ge a16military08 u\" filename=\"/art/shaders/materials/waist_belt_heavy_ge_a16military08_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1006047\" />\n          <ColorScheme guid=\"1006048\" />\n          <ColorScheme guid=\"1006049\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1050543\" name=\"waist belt heavy ge a16\" filename=\"/art/shaders/materials/waist_belt_heavy_ge_a16military01_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003030\" />\n          <ColorScheme guid=\"1003031\" />\n          <ColorScheme guid=\"1003032\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1050793\" name=\"ge a16military03 u\" filename=\"/art/shaders/materials/waist_belt_heavy_ge_a16military03_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1006209\" />\n          <ColorScheme guid=\"1006210\" />\n          <ColorScheme guid=\"1006211\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1005623\" name=\"waist belt heavy ge a16\" filename=\"/art/shaders/materials/waist_belt_heavy_ge_a16military04_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1003058\" />\n          <ColorScheme guid=\"1003061\" />\n          <ColorScheme guid=\"1003070\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n      <Material id=\"1050372\" name=\"waist belt heavy ge a16\" filename=\"/art/shaders/materials/waist_belt_heavy_ge_a16military10_u.mat\">\n        <ColorSchemes>\n          <ColorScheme guid=\"1005269\" />\n          <ColorScheme guid=\"1005270\" />\n          <ColorScheme guid=\"1005271\" />\n        </ColorSchemes>\n        <MaterialOverrides />\n      </Material>\n    </Materials>\n    <Bodytypes>\n      <Bodytype>bfa</Bodytype>\n      <Bodytype>bfb</Bodytype>\n      <Bodytype>bfn</Bodytype>\n      <Bodytype>bfs</Bodytype>\n      <Bodytype>bma</Bodytype>\n      <Bodytype>bmf</Bodytype>\n      <Bodytype>bmn</Bodytype>\n      <Bodytype>bms</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>-1</SkinHueIndex>\n    <Filters>\n      <Filter name=\"Archetype\" value=\"belt\" />\n      <Filter name=\"Style\" value=\"heavy\" />\n      <Filter name=\"Class\" value=\"ge\" />\n    </Filters>\n    <Identities />\n    <Tags />\n    <CustomData />\n  </Asset>\n  ",
+      "skinMaterialIndex": -1,
+      "material": {
+        "path": "/resources/art/shaders/materials/waist_belt_heavy_ge_a16military02_u.mat",
+        "derived": "Garment",
+        "textures": {
+          "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/waist_belt_heavy_ge_a16military02_u_d.dds",
+          "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/waist_belt_heavy_ge_a16military01_u_n.dds",
+          "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/waist_belt_heavy_ge_a16military02_u_s.dds",
+          "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/waist_belt_heavy_ge_a16military02_u_h.dds",
+          "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a16/texture/___psd/waist_belt_heavy_ge_a16military02_u_m.dds"
+        },
+        "values": {
+          "palette1": "0,0.5,0,1",
+          "palette2": "0,0.5,0,1",
+          "palette1Specular": "1,1,1",
+          "palette2Specular": "1,1,1",
+          "palette1MetallicSpecular": "1,1,1",
+          "palette2MetallicSpecular": "1,1,1",
+          "RimWidth": "1.55",
+          "RimStrength": "0.5",
+          "UsesReflection": "True",
+          "UsesEmissive": "False",
+          "UvScaling": "1,1",
+          "ReflectionIntensity": "1",
+          "ReflectionBlurIntensity": "1",
+          "ReflectionSpecInfluence": "1",
+          "ReflectionContrast": "0"
+        }
+      },
+      "paletteIds": [
+        "1002180",
+        "1002184"
+      ],
+      "models": [
+        {
+          "path": "/resources/art/dynamic/waist/model/waist_belt_bmn_archetype.gr2",
+          "id": "1000320"
+        }
+      ],
+      "overrides": [],
+      "sourceAppearance": {
+        "id": "0xE0007D4C63605421",
+        "decimalId": "16141038831534101537",
+        "kind": "GomObject",
+        "name": "ipp.class.bh.starting.rdps1.t1x1.waist",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/37.bkt",
+          "uncompressedOffset": 132396,
+          "blockLength": 195,
+          "resourceSha256": "7d28e779f41f5839e7dbb6b2e907f6dbc6a9eb84456f11f9bc7085fb34607fff"
+        }
+      }
+    }
+  ],
+  "customization": {
+    "skincolor": {
+      "id": "1437794",
+      "path": "/resources/art/dynamic/skincolor/skincolor_human_caucasian_h01_p.xml",
+      "resolution": "compiled April GOM palette; registry XML absent",
+      "gomIdentity": {
+        "id": "0xE000DAD3E774DC2B",
+        "decimalId": "16141141668152007723",
+        "kind": "GomObject",
+        "name": "dynamic.skincolor.skincolor_human_caucasian_h01_p",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/223.bkt",
+          "uncompressedOffset": 248580,
+          "blockLength": 170,
+          "resourceSha256": "9e3beb2a8fbd78ecde5ed3dcf51cdd5f4e897a7070310837d9ff797dd17f5cac"
+        }
+      },
+      "values": {
+        "appPaletteSaturation": 0.5,
+        "appPaletteContrast": 1,
+        "appPaletteSpecular": [
+          0.827451,
+          0.890196,
+          1,
+          1
+        ],
+        "appPaletteMetallicSpecular": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "eyecolor": {
+      "id": "1001086",
+      "path": "/resources/art/dynamic/eyecolor/eyecolor_human_non_h01_s.xml",
+      "resolution": "compiled April GOM palette; registry XML absent",
+      "gomIdentity": {
+        "id": "0xE0000CFAF1059DEE",
+        "decimalId": "16140915336420892142",
+        "kind": "GomObject",
+        "name": "dynamic.eyecolor.eyecolor_human_non_h01_s",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/142.bkt",
+          "uncompressedOffset": 19372,
+          "blockLength": 166,
+          "resourceSha256": "1dd04ba3043ef3a83340ceacb4711f043036f263affede7de414a4e15fa6333f"
+        }
+      },
+      "values": {
+        "appPaletteSaturation": 0.7056,
+        "appPaletteContrast": 1.1118,
+        "appPaletteBrightness": -0.005000055,
+        "appPaletteHue": 0.426399976,
+        "appPaletteSpecular": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "appPaletteMetallicSpecular": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "haircolor": {
+      "id": "1000998",
+      "path": "/resources/art/dynamic/haircolor/haircolor_human_non_h01_p.xml",
+      "resolution": "compiled April GOM palette; registry XML absent",
+      "gomIdentity": {
+        "id": "0xE0004FED46118EBB",
+        "decimalId": "16140988944997256891",
+        "kind": "GomObject",
+        "name": "dynamic.haircolor.haircolor_human_non_h01_p",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/391.bkt",
+          "uncompressedOffset": 108164,
+          "blockLength": 184,
+          "resourceSha256": "cf610f8888530f0d78c46a7803676e0a77e591519a55b2841f9bc1b123ad28f9"
+        }
+      },
+      "values": {
+        "appPaletteSaturation": 0.401,
+        "appPaletteContrast": 0.7311,
+        "appPaletteBrightness": -0.0456,
+        "appPaletteHue": 0.0203,
+        "appPaletteSpecular": [
+          0.929412,
+          0.894118,
+          0.698039,
+          1
+        ],
+        "appPaletteMetallicSpecular": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "complexion": {
+      "id": "1001008",
+      "path": "/resources/art/dynamic/player_character/face_customization/complexion/comp_human_non_c01_m.dds"
+    }
+  },
+  "animations": [
+    {
+      "name": "Idle",
+      "sourceName": "cb_unarmed_idle_right_1",
+      "path": "/resources/anim/humanoid/bmnnew/cb_unarmed_idle_right_1.jba",
+      "loop": true
+    },
+    {
+      "name": "Run",
+      "sourceName": "mv_cb_unarmed_run_forward",
+      "path": "/resources/anim/humanoid/bmnnew/mv_cb_unarmed_run_forward.jba",
+      "loop": true
+    },
+    {
+      "name": "LightningStart",
+      "sourceName": "fp_2h_elect_drain_start",
+      "path": "/resources/anim/humanoid/bmnnew/fp_2h_elect_drain_start.jba",
+      "loop": false
+    },
+    {
+      "name": "LightningLoop",
+      "sourceName": "fp_2h_elect_drain_loop",
+      "path": "/resources/anim/humanoid/bmnnew/fp_2h_elect_drain_loop.jba",
+      "loop": true
+    },
+    {
+      "name": "Hit",
+      "sourceName": "dg_unarmed_crit_damage_right_1",
+      "path": "/resources/anim/humanoid/bmnnew/dg_unarmed_crit_damage_right_1.jba",
+      "loop": false
+    },
+    {
+      "name": "Death",
+      "sourceName": "dg_death_1",
+      "path": "/resources/anim/humanoid/bmnnew/dg_death_1.jba",
+      "loop": false
+    },
+    {
+      "name": "LightningEnd",
+      "sourceName": "fp_2h_elect_drain_end",
+      "path": "/resources/anim/humanoid/bmnnew/fp_2h_elect_drain_end.jba",
+      "loop": false
+    }
+  ],
+  "excluded": {
+    "head:1000247": "bma, incompatible; use bmn 1000257",
+    "fullNakedBody": "body replacement uses equipped modular meshes; no hidden duplicate naked torso",
+    "weapon": "unarmed inspection clips; no weapon selected",
+    "faceHairAndFacePaint": "clean shaven, no optional tattoo/scar/paint slot",
+    "clothSimulation": "original weighted cloth only; no runtime CLO simulation"
+  },
+  "clothBoneSources": [
+    "/resources/art/dynamic/chest/model/chest_robe04_bmn_archetype.clo",
+    "/resources/art/dynamic/leg/model/leg_skirt_bmn_archetype.clo"
+  ]
+}

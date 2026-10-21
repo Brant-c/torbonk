@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "flamesweep"
+Title = "Flame Sweep"
+Icon = "flamingsweep"
+Damage = 4.25
+CooldownSeconds = 1.8
+Range = 0.31
+Radius = 0.31
+Area = 3
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+WindupSeconds = 0.25
+ChannelSeconds = 1.2
+RecoverySeconds = 0.5
+GestureSeconds = 2.0
+StartClip = "D3/Flame"
+LoopClip = "D3/Flame"
+EndClip = ""
+PeriodicDamage = 0
+PeriodicDuration = 0
+PeriodicInterval = 1
+DamageType = 0
+Description = "360-degree moving Flame Sweep. Four radial damage pulses during the spin; 17 total base damage to enemies caught throughout."
+ImpactTexture = "res://Assets/D3/fx_2x2_flames_emmissive_bw_01_d.png"
+CastAudio = "res://Assets/D3/Audio/251411076.wav"
+ImpactAudio = "res://Assets/D3/Audio/13240087.wav"
+FullBodyGesture = true
+PresentationKind = "flame"
+MuzzleBone = "LeftWrist"
+TickSeconds = 0.3
+ImpactTailsOnTargetDeath = true

@@ -1,0 +1,32 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 180,
+  "maximumDecodedBytes": 104857600,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audiodata_1.tor",
+      "archiveHash": "0xCE0F39D6F95AC030",
+      "entryOffset": 176113,
+      "headerSize": 36,
+      "dataOffset": 176149,
+      "compressedSize": 45126,
+      "length": 154182,
+      "compressionMethod": 1,
+      "crc32Index": "48556596",
+      "path": "/resources/bnk2/abilities_republicmelee_data.bnk",
+      "sha256": "43d6ee515e4a54693f583f2d476417b0f134fbed548d71c3e2a4d7b3b990241b",
+      "output": "source-assets\\april2012\\resources\\bnk2\\abilities_republicmelee_data.bnk",
+      "archiveSha256": "932a885608e1a1b1f4a9f5c55a02bc8e426558371ae5a58faf88642ebe5f4491",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "Lacerate original appearance audio",
+      "to": "/resources/bnk2/abilities_republicmelee_data.bnk",
+      "relation": "original source-named event bank"
+    }
+  ],
+  "unresolved": [],
+  "selection": "human male body type 2; bmnnew skeleton"
+}

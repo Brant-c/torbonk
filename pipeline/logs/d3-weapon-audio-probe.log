@@ -1,0 +1,14 @@
+wwiser v20260808 (python 3.12.14)
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\weapons_data.bnk
+parser: done
+names: loading names
+names: couldn't find D:\SWTORClassic\torbonk\pipeline\tools\wwnames.db3 name file
+names: done
+dumper: writting D:\SWTORClassic\torbonk\pipeline\work\d3\weapons.xml
+dumper: done
+(done)
+audio_weapon_melee_swingright_normal ['audio_weapon_melee_swingright_normal', 'RightWeapon', 'play_weapon_melee_righthand_swing_normal', 'audio_weapon_lightsaber_awesomeness_right', 'play_weapon_lightsaber_awesomeness_right', 'audio_weapon_melee_swingright_normal', 'Melee Weapon Swing Right Normal']
+audio_weapon_melee_swingleft_normal ['audio_weapon_melee_swingleft_normal', 'LeftWeapon', 'play_weapon_melee_lefthand_swing_normal', 'audio_weapon_lightsaber_awesomeness_left', 'play_weapon_lightsaber_awesomeness_left', 'audio_weapon_melee_swingleft_normal', 'Melee Weapon Swing Left Normal']
+abilities/blasterfire/dynamic_standard_blaster_muzzle_flash ['\\art\\fx\\particles\\standard_muzzle_flash_dynamic_weapon_color.prt', 'standard_muzzle_flash_dynamic_weapon_color 45', '\\art\\fx\\particles\\standard_muzzle_flash_dynamic_weapon_color.prt', 'standard_muzzle_flash_dynamic_weapon_color -45', '\\art\\fx\\particles\\standard_muzzle_flash_dynamic_weapon_color.prt', 'standard_muzzle_flash_dynamic_weapon_color -90', '\\art\\fx\\particles\\standard_muzzle_flash_dynamic_no_weapon_color.prt', '\\art\\fx\\particles\\standard_muzzle_flash_dynamic_no_weapon_color.prt', '\\art\\fx\\particles\\standard_muzzle_flash_dynamic_no_weapon_color.prt', '@fxAttachBone=fx_muzzle (default) - FxLight will need to be turned on, once weapon color can be used\n']
+STID []
+EVENT COUNT 101

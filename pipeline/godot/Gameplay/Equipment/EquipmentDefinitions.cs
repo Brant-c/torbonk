@@ -14,7 +14,7 @@ public sealed record SlotDefinition(string Id, string[] Categories, string Empty
 public sealed record ItemDefinition(string Id, string DisplayName, string Slot, string Category, string Rarity,
     Compatibility Compatibility, SourceIdentity? Source, string Appearance, string Icon,
     Dictionary<string, float> StatModifiers, bool CosmeticOnly, string[] BlocksSlots);
-public sealed record AttachmentDefinition(string Bone, string CorrectionResource, float[] Position, float[] RotationDegrees, float Scale, bool RedBlade);
+public sealed record AttachmentDefinition(string Bone, string CorrectionResource, float[] Position, float[] RotationDegrees, float Scale, bool RedBlade, bool DoubleBlade=false, float BladeStart=.017f, float BladeLength=.105f, string HumAudio="");
 public sealed record LocomotionDefinition(string LibraryId, string Scene, string Idle, string Run);
 public sealed record AppearanceDefinition(string Id, string Slot, Compatibility Compatibility, string Scene,
     string[] MeshNames, string[] RequiredBones, string[] CoversSlots, string[] HidesBaseGroups,

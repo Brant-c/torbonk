@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "tracer"
+Title = "Tracer Missile"
+Icon = "unexplodedmortarshell"
+Damage = 38
+CooldownSeconds = 3
+Range = 1.3
+Radius = 0.22
+Area = 4
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+WindupSeconds = 0.0
+ChannelSeconds = 0.0
+RecoverySeconds = 2.266667
+GestureSeconds = 2.266667
+StartClip = "D3/Missile"
+LoopClip = "D3/Missile"
+EndClip = ""
+PeriodicDamage = 0
+PeriodicDuration = 0
+PeriodicInterval = 1
+DamageType = 0
+Description = "Primary missile hit and 40% splash damage. The primary target is hit once."
+ImpactTexture = "res://Assets/D3/fx_2x2_roundflames_01_desat.png"
+CastAudio = "res://Assets/D3/Audio/106642098.wav"
+ImpactAudio = "res://Assets/D3/Audio/19710093.wav"
