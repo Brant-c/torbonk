@@ -10,12 +10,12 @@ public partial class GameWorld : Node3D
     [Export] public float TargetRefreshSeconds { get; set; } = 0.2f;
     [ExportGroup("B3 Waves")]
     [Export] public float WaveSeconds { get; set; } = 30;
-    [Export] public float InitialSpawnInterval { get; set; } = 0.28f;
-    [Export] public float SpawnIntervalMultiplier { get; set; } = 0.88f;
-    [Export] public float MinimumSpawnInterval { get; set; } = 0.10f;
-    [Export] public int InitialActiveLimit { get; set; } = 16;
-    [Export] public int AdditionalActivePerWave { get; set; } = 7;
-    [Export] public int MaximumActiveLimit { get; set; } = 75;
+    [Export] public float InitialSpawnInterval { get; set; } = 0.75f;
+    [Export] public float SpawnIntervalMultiplier { get; set; } = 0.94f;
+    [Export] public float MinimumSpawnInterval { get; set; } = 0.30f;
+    [Export] public int InitialActiveLimit { get; set; } = 8;
+    [Export] public int AdditionalActivePerWave { get; set; } = 3;
+    [Export] public int MaximumActiveLimit { get; set; } = 36;
     [Export] public int BossWave { get; set; } = 5;
     [Export] public float HealthPerWave { get; set; } = 0.12f;
     [Export] public float DamagePerWave { get; set; } = 0.10f;
@@ -44,6 +44,7 @@ public partial class GameWorld : Node3D
     public EquipmentAttachment PlayerSaber { get; private set; } = null!;
     public AudioPresentation Audio { get; private set; } = null!;
     public UI.RewardPresentation? Rewards { get; private set; }
+    public Integration.GameplayConfiguration RunConfiguration { get; private set; } = null!;
     private CanvasLayer _legacyOverlay = null!;
     private Label _combatStatus = null!;
     private Vector3 _enemySpawn;
@@ -51,6 +52,12 @@ public partial class GameWorld : Node3D
 
     public override async void _Ready()
     {
+        RunConfiguration = Integration.GameNavigation.TakeRunConfiguration();
+        // The adapter selects an existing composition, never substitutes assets for an unsupported key.
+        if (SceneFilePath != RunConfiguration.WorldScene
+            || GetNode<Node3D>("KorribanEnvironment").SceneFilePath != RunConfiguration.EnvironmentScene
+            || GetNode<Node3D>("Player/Presentation/OriginalSorcerer").SceneFilePath != RunConfiguration.CharacterScene)
+        { GD.PushError("Selected gameplay composition does not match its registered resources."); GetTree().Quit(1); return; }
         Player = GetNode<PlayerController>("Player"); Player.SetPhysicsProcess(false);
         Rig = GetNode<CameraRig>("CameraRig"); Arena = GetNode<ArenaBounds>("ArenaBounds");
         EnvironmentRoot = GetNode<Node3D>("KorribanEnvironment");
@@ -97,6 +104,10 @@ public partial class GameWorld : Node3D
                 { var smoke = new B6Smoke(); AddChild(smoke); smoke.Run(this); }
                 if (OS.GetCmdlineUserArgs().Contains("--b7-smoke"))
                 { var smoke = new B7Smoke(); AddChild(smoke); smoke.Run(this); }
+                if (OS.GetCmdlineUserArgs().Contains("--b8-smoke"))
+                { var smoke = new B8Smoke(); AddChild(smoke); smoke.Run(this); }
+                if (OS.GetCmdlineUserArgs().Contains("--audio-polish-smoke"))
+                { var smoke = new AudioPolishSmoke(); AddChild(smoke); smoke.Run(this); }
                 if (OS.GetCmdlineUserArgs().Contains("--refinement-smoke"))
                 {
                     var smoke=new RefinementSmoke();AddChild(smoke);smoke.Run(this);
@@ -199,13 +210,22 @@ public partial class GameWorld : Node3D
         if (survival && !OS.GetCmdlineUserArgs().Any(x=>x is "--survival-smoke" or "--progression-smoke"))
         {
             Player.Presentation.LoadAbilityAnimations();
-            foreach(string id in new[]{"shock","storm"})
+            foreach(string id in new[]{"shock","storm","deathfield","barrier","darkheal"})
             {
                 var definition=GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{id}.tres");
-                var presentation=new OriginalAbilityPresentation { Actor=Player.Presentation,Definition=definition };
-                AddChild(presentation);
+                IAbilityPresentation presentation;
+                if(id is "shock" or "storm")
+                {
+                    var original=new OriginalAbilityPresentation { Actor=Player.Presentation,Definition=definition };
+                    AddChild(original);presentation=original;
+                }
+                else
+                {
+                    var original=new SurvivalAbilityPresentation { Actor=Player.Presentation,Definition=definition,Health=PlayerActor.Health };
+                    AddChild(original);presentation=original;
+                }
                 var ability=new AutomaticAbility {Name=id,Caster=PlayerActor,Targeting=Targeting,Presentation=presentation};
-                if(id=="storm") presentation.EffectiveRadius=()=>ability.Radius;
+                if(id=="storm") ((OriginalAbilityPresentation)presentation).EffectiveRadius=()=>ability.Radius;
                 ability.Configure(definition);AddChild(ability);Abilities.Abilities.Add(ability);
             }
         }
@@ -265,6 +285,22 @@ public partial class GameWorld : Node3D
         }
         Player.ResetPlayer(); Player.SetPhysicsProcess(true);
         Waves?.ResetWaves();
+    }
+
+    public void ReturnToMainMenu()
+    {
+        var error = Integration.GameNavigation.ReturnToMenu(this);
+        if (error != Error.Ok) GD.PushError("Unable to return to main menu: " + error);
+    }
+
+    internal void StopForMenu()
+    {
+        Abilities?.Abort();
+        if (PlayerActor != null) PlayerActor.CombatEnabled = false;
+        Waves?.Stop(); Progression?.CancelPresentation();
+        Rewards?.Clear(); Flytext?.Clear(); Audio?.Clear();
+        Player.SetPhysicsProcess(false); Player.Velocity = Vector3.Zero;
+        // ChangeScene frees this entire world, including spawns, effects, portraits and all HUD layers.
     }
 
     public override void _Process(double delta)

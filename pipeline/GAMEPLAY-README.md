@@ -1,5 +1,11 @@
 # SWTOR Survivors — playable gameplay
 
+**C2 is current:** the default scene is now the integrated main menu, backed by
+the latest B7 gameplay and subsequent spawn/audio tuning. Use
+`Open-Survivors.ps1` for the complete flow or the unchanged `Open-Gameplay.ps1`
+for direct gameplay. See [C2-README.md](C2-README.md). The earlier milestone
+notes below are historical; their old default-entry statements no longer apply.
+
 **B5 is current:** Force Lightning, Shock and Force Storm share the automatic
 ability system and existing single action bar. See [ABILITIES-README.md](ABILITIES-README.md)
 for launch, tuning, original asset provenance, validation and limitations.

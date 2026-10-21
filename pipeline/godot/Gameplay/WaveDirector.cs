@@ -10,12 +10,12 @@ namespace SwtorSurvivors;
 public partial class WaveDirector : Node
 {
     [Export] public float WaveSeconds { get; set; } = 30;
-    [Export] public float InitialSpawnInterval { get; set; } = 0.28f;
-    [Export] public float SpawnIntervalMultiplier { get; set; } = 0.88f;
-    [Export] public float MinimumSpawnInterval { get; set; } = 0.10f;
-    [Export] public int InitialActiveLimit { get; set; } = 16;
-    [Export] public int AdditionalActivePerWave { get; set; } = 7;
-    [Export] public int MaximumActiveLimit { get; set; } = 75;
+    [Export] public float InitialSpawnInterval { get; set; } = 0.75f;
+    [Export] public float SpawnIntervalMultiplier { get; set; } = 0.94f;
+    [Export] public float MinimumSpawnInterval { get; set; } = 0.30f;
+    [Export] public int InitialActiveLimit { get; set; } = 8;
+    [Export] public int AdditionalActivePerWave { get; set; } = 3;
+    [Export] public int MaximumActiveLimit { get; set; } = 36;
     [Export] public int BossWave { get; set; } = 5;
     [Export] public BossEncounterDefinition? BossDefinition { get; set; }
     [Export] public string RosterPath { get; set; } = "res://Gameplay/Enemies/roster.json";

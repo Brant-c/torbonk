@@ -39,6 +39,7 @@ public partial class RunProgression : Node3D
     private readonly RandomNumberGenerator _random = new();
     private float _damage, _tick, _range, _cooldown, _health, _speed;
     private readonly Dictionary<string,(float damage,float tick,float range,float cooldown,float radius)> _abilityBases=new();
+    private readonly Dictionary<string,(float healing,float shield,float duration,float threshold)> _survivalBases=new();
 
     public override void _Ready()
     {
@@ -48,9 +49,13 @@ public partial class RunProgression : Node3D
         _range=World.Targeting.AcquisitionRange; _cooldown=World.Combat.CooldownSeconds;
         _health=World.PlayerActor.Health.Maximum; _speed=World.Player.MoveSpeed;
         foreach(var ability in World.Abilities.Abilities)
+        {
             _abilityBases[ability.Definition.Id]=(ability.DamagePerTick,ability.TickSeconds,ability.Range,ability.CooldownSeconds,ability.Radius);
+            _survivalBases[ability.Definition.Id]=(ability.Healing,ability.ShieldCapacity,ability.ShieldDuration,ability.HealthThreshold);
+        }
         if (Upgrades.Count == 0)
-            foreach (string name in new[] { "damage", "tick", "range", "cooldown", "health", "speed", "unlock_shock", "unlock_storm", "shock_damage", "storm_radius" })
+            foreach (string name in new[] { "damage", "tick", "range", "cooldown", "health", "speed", "unlock_shock", "unlock_storm", "shock_damage", "storm_radius",
+                "unlock_deathfield", "unlock_barrier", "unlock_darkheal", "deathfield_power", "barrier_power", "darkheal_power" })
                 Upgrades.Add(GD.Load<UpgradeDefinition>($"res://Gameplay/Upgrades/{name}.tres"));
         var rarity=GD.Load<RarityTuning>("res://Gameplay/Upgrades/rarity.tres");
         foreach(var upgrade in Upgrades) upgrade.RarityRules??=rarity;
@@ -154,8 +159,10 @@ public partial class RunProgression : Node3D
         .Where(u=>u.Effect==effect && (u.AbilityId=="" || u.AbilityId==ability)).Sum(u=>Rank(u)*u.EffectiveAmount);
     public int AbilityRanks(string id) => Upgrades.Where(u=>Affects(u,id)).Sum(Rank);
     private static bool Affects(UpgradeDefinition u,string id) => u.Effect is not (UpgradeEffect.Health or UpgradeEffect.Speed or UpgradeEffect.UnlockAbility)
-        && (u.AbilityId=="" || u.AbilityId==id) && (u.Effect!=UpgradeEffect.TickRate || id!="shock")
-        && (u.Effect!=UpgradeEffect.Radius || id=="storm");
+        && (u.AbilityId=="" || u.AbilityId==id) && (u.Effect!=UpgradeEffect.TickRate || id is "lightning" or "storm")
+        && (u.Effect!=UpgradeEffect.Radius || id is "storm" or "deathfield")
+        && (u.Effect!=UpgradeEffect.Damage || id is not ("barrier" or "darkheal"))
+        && (u.Effect!=UpgradeEffect.Range || id!="darkheal");
     public PowerRarity AbilityRarity(string id) => Upgrades.Where(u=>Rank(u)>0 && Affects(u,id))
         .Select(u=>u.Rarity).DefaultIfEmpty(PowerRarity.Premium).Max();
     private void ApplyStats(float heal=0)
@@ -163,11 +170,18 @@ public partial class RunProgression : Node3D
         foreach(var ability in World.Abilities.Abilities)
         {
             string id=ability.Definition.Id;var original=_abilityBases[id];
-            ability.DamagePerTick=original.damage*(1+Bonus(UpgradeEffect.Damage,id));
+            var survival=_survivalBases[id];
+            float Power(Func<UpgradeDefinition,float> select) => Upgrades.Where(u=>u.Effect==UpgradeEffect.AbilityPower && u.AbilityId==id)
+                .Sum(u=>Rank(u)*u.RarityMultiplier*select(u));
+            ability.DamagePerTick=original.damage*(1+Bonus(UpgradeEffect.Damage,id)+Power(u=>u.DamagePerRank));
             ability.TickSeconds=original.tick/(1+Bonus(UpgradeEffect.TickRate,id));
             ability.Range=original.range*(1+Bonus(UpgradeEffect.Range,id));
-            ability.CooldownSeconds=original.cooldown/(1+Bonus(UpgradeEffect.Cooldown,id));
-            ability.Radius=original.radius*(1+Bonus(UpgradeEffect.Radius,id));
+            ability.CooldownSeconds=original.cooldown/(1+Bonus(UpgradeEffect.Cooldown,id)+Power(u=>u.CooldownPerRank));
+            ability.Radius=original.radius*(1+Bonus(UpgradeEffect.Radius,id)+Power(u=>u.RadiusPerRank));
+            ability.Healing=survival.healing*(1+Power(u=>u.HealingPerRank));
+            ability.ShieldCapacity=survival.shield*(1+Power(u=>u.ShieldPerRank));
+            ability.ShieldDuration=survival.duration*(1+Power(u=>u.DurationPerRank));
+            ability.HealthThreshold=Math.Min(0.8f,survival.threshold+Power(u=>u.ThresholdPerRank));
         }
         World.Targeting.AcquisitionRange=World.Combat.Range;
         World.PlayerActor.Health.SetMaximum(_health+Bonus(UpgradeEffect.Health),heal);

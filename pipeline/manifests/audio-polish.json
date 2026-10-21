@@ -1,0 +1,137 @@
+{
+  "evidence": "Client-derived: existing recovered April event/container graphs and exact original PCM; layer gains and bounded selection authored.",
+  "events": [
+    {
+      "event": "Play_ability_sithinquisitor_shock_buildup",
+      "eventId": "4218212909",
+      "layers": [
+        {
+          "media": [
+            50181172,
+            38107453
+          ],
+          "gainDb": -8
+        },
+        {
+          "media": [
+            13800022,
+            67837780,
+            70458762,
+            23364535
+          ],
+          "gainDb": -8
+        }
+      ],
+      "originalGraph": "manifests/abilities-audio.json graphs/4218212909"
+    },
+    {
+      "event": "Play_ability_sithinquisitor_shock_cast",
+      "eventId": "494826667",
+      "layers": [
+        {
+          "media": [
+            35854337,
+            41158987
+          ],
+          "gainDb": -5
+        }
+      ],
+      "originalGraph": "manifests/abilities-audio.json graphs/494826667"
+    },
+    {
+      "event": "Play_ability_sithinquisitor_shock_explode",
+      "eventId": "643435821",
+      "layers": [
+        {
+          "media": [
+            294434565,
+            133966111,
+            186175857
+          ],
+          "gainDb": -3
+        },
+        {
+          "media": [
+            18124,
+            17414480,
+            72225944
+          ],
+          "gainDb": -9
+        }
+      ],
+      "originalGraph": "manifests/abilities-audio.json graphs/643435821"
+    },
+    {
+      "event": "Play_ability_sithinquisitor_forcestorm_cast_caster",
+      "eventId": "1810829058",
+      "layers": [
+        {
+          "media": [
+            43766601,
+            60467976,
+            676198
+          ],
+          "gainDb": -5
+        },
+        {
+          "media": [
+            61761001,
+            129620424,
+            21323851
+          ],
+          "gainDb": -9
+        }
+      ],
+      "originalGraph": "manifests/abilities-audio.json graphs/1810829058"
+    },
+    {
+      "event": "Play_ability_sithinquisitor_forcestorm_channelloop",
+      "eventId": "3961591709",
+      "layers": [
+        {
+          "media": [
+            31429439
+          ],
+          "gainDb": 1
+        },
+        {
+          "media": [
+            7737937,
+            48136250,
+            142805332,
+            34158220,
+            68384798,
+            44696493,
+            15050748,
+            13840107
+          ],
+          "gainDb": 2
+        }
+      ],
+      "originalGraph": "manifests/abilities-audio.json graphs/3961591709"
+    },
+    {
+      "event": "Play_ability_sithinquisitor_forcestorm_aoe_bolt",
+      "eventId": "2849835463",
+      "layers": [
+        {
+          "media": [
+            403988737,
+            227842474,
+            332179516,
+            186569051
+          ],
+          "gainDb": -3
+        }
+      ],
+      "originalGraph": "manifests/abilities-audio.json graphs/2849835463"
+    }
+  ],
+  "pickup": "manifests/xp-chime.json",
+  "fixes": [
+    "One random variant per parallel native layer, rather than one random variant across all layers.",
+    "Normal visual completion retains finite impact tails; explicit abort/death/restart still clears audio.",
+    "Idle local voice slots are preferred; sustained loops cannot be overwritten by impact slot reuse.",
+    "Major ability layers may reclaim quiet one-shot voices at the global cap; loops are preserved."
+  ]
+}

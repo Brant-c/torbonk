@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Frontend/Scripts/SelectionPage.cs" id="1"]
+
+[node name="Faction" type="Control"]
+layout_mode = 0
+script = ExtResource("1")
+StepId = "Faction"

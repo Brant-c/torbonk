@@ -1,0 +1,17 @@
+{
+  "output": "godot\\Assets\\Presentation\\Audio\\xp_soft_chime.wav",
+  "sha256": "8afa3d6b11c8c0893f2eb69887366ee6229bdb7a0dfeb6ca1ac11f8e7c2c9fde",
+  "sampleRate": 44100,
+  "frames": 12348,
+  "seconds": 0.28,
+  "peak": 0.1895751953125,
+  "rmsDb": -25.840060292359368,
+  "source": "Authored procedural sine synthesis; no external media or samples",
+  "recipe": "scripts/make_xp_chime.py",
+  "frequenciesHz": [
+    659.255,
+    987.767,
+    1318.51
+  ],
+  "attribution": "New project audio; not recovered SWTOR media. No third-party sample attribution required."
+}

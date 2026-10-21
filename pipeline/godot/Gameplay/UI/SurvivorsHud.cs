@@ -39,9 +39,13 @@ public partial class SurvivorsHud : CanvasLayer
         restart.Pressed+=World.ResetCombatWorld;
         _deathFrame=ChromePanel();_root.AddChild(_deathFrame);
         _deathFrame.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.CenterTop);
-        _deathFrame.OffsetLeft=-220;_deathFrame.OffsetRight=220;_deathFrame.OffsetTop=100;_deathFrame.OffsetBottom=146;
+        _deathFrame.OffsetLeft=-220;_deathFrame.OffsetRight=220;_deathFrame.OffsetTop=100;_deathFrame.OffsetBottom=198;
+        var deathActions = new VBoxContainer(); _deathFrame.AddChild(deathActions);
         _deathText=SwtorSkin.Text("DEFEATED  ·  PRESS R TO BEGIN AGAIN",18,true);_deathText.HorizontalAlignment=HorizontalAlignment.Center;
-        _deathFrame.AddChild(_deathText);_deathFrame.Visible=false;
+        deathActions.AddChild(_deathText);
+        var returnMenu = new SwtorButton { Text = "RETURN TO MAIN MENU", CustomMinimumSize = new Vector2(240,36) };
+        deathActions.AddChild(returnMenu); returnMenu.Pressed += World.ReturnToMainMenu;
+        _deathFrame.Visible=false;
 
         BuildSelection();
         World.Progression!.Changed+=RefreshChoices;

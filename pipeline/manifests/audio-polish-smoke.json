@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": [
+    "Soft XP chime initializes and remains rate limited",
+    "Shock starts through the actual ability",
+    "Shock plays both original buildup/impact layers and cast",
+    "Shock damage amount is unchanged",
+    "Shock impact survives the short casting recovery",
+    "Shock one-shots expire naturally",
+    "Storm starts through the actual ability",
+    "Storm keeps its sustained bed and electrical layer",
+    "Repeated storm impacts never replace either channel loop",
+    "Storm finishes channel with normal gameplay ticks and no stale loops",
+    "Storm retains finite thunder tails after visual completion",
+    "Death clears pickup, completed tails and all channel audio",
+    "Restart leaves no stale audio"
+  ],
+  "failure": null
+}

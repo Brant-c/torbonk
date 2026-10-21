@@ -1,0 +1,136 @@
+{
+  "clips": {
+    "DeathField": "cb_buff_consumption_exit",
+    "Barrier": "cb_buff_unleash",
+    "DarkHeal": "cb_buff_consumption_enter",
+    "DarkHealLoop": "cb_buff_consumption_loop",
+    "DarkHealEnd": "fp_1h_elect_instant_right_4"
+  },
+  "files": [
+    {
+      "source": "/resources/gfx/icons/deathfield.dds",
+      "output": "godot\\Assets\\UI\\icons\\deathfield.png",
+      "sha256": "0ce3650f93ddbff940345f90377f7adf3342536d529531a101e24938b0da9a16"
+    },
+    {
+      "source": "/resources/gfx/icons/electricshield.dds",
+      "output": "godot\\Assets\\UI\\icons\\electricshield.png",
+      "sha256": "4deb6820ab6cb4b591615a97558d4dea875564130baaf1ff968e82712f0ddd20"
+    },
+    {
+      "source": "/resources/gfx/icons/darkgift.dds",
+      "output": "godot\\Assets\\UI\\icons\\darkgift.png",
+      "sha256": "b057ff2a849ec5632aac090a015f1a425e72a822d323bcb8b72b04374d144c88"
+    },
+    {
+      "source": "/resources/art/fx/geometry/sith_inquisitor/texture/fx_si_backlash_partialshieldcentered_01_d.dds",
+      "output": "godot\\Assets\\B8\\fx_si_backlash_partialshieldcentered_01_d.png",
+      "sha256": "488ab42beeb764b11915ef12424523863662b77c70d8b09b37ec4e11590e6a23"
+    },
+    {
+      "source": "/resources/art/defaultassets/flat_n.dds",
+      "output": "godot\\Assets\\B8\\flat_n.png",
+      "sha256": "5f059ecaff3cbf4215d5fa1c5ddc8705da5d92c62851691364d7b732325cad0e"
+    },
+    {
+      "source": "/resources/art/defaultassets/black.dds",
+      "output": "godot\\Assets\\B8\\black.png",
+      "sha256": "52dfe43025076f8a3b6d08d341916b9e38c0ecf7f4e6c75f0097e9ead901da27"
+    },
+    {
+      "source": "/resources/art/fx/geometry/sith_inquisitor/texture/si_death_field_d.dds",
+      "output": "godot\\Assets\\B8\\si_death_field_d.png",
+      "sha256": "cec1150780f07a8e7a775939c1e3ce6096659bdfb634e9a543768d87c11aeea1"
+    },
+    {
+      "source": "/resources/art/fx/geometry/sith_inquisitor/texture/si_death_field_n.dds",
+      "output": "godot\\Assets\\B8\\si_death_field_n.png",
+      "sha256": "e1f2dd738f94797fa57243a278e43accc323dd48775124c88e5ab86f215b9538"
+    },
+    {
+      "source": "/resources/art/fx/texture/debris/bw_crater_cracks_01.dds",
+      "output": "godot\\Assets\\B8\\bw_crater_cracks_01.png",
+      "sha256": "80142648e657d4567ab915316d5d9e868aea61d7c9a99f5277556c6f9eb39304"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/bw_flare_gray.dds",
+      "output": "godot\\Assets\\B8\\bw_flare_gray.png",
+      "sha256": "3a05aa3f7e8f429f7d45eb192177c6b6ac127f48978e5a2af53bea26f6848039"
+    },
+    {
+      "source": "/resources/art/fx/texture/smoke/dark_smoke_03.dds",
+      "output": "godot\\Assets\\B8\\dark_smoke_03.png",
+      "sha256": "d1cf190b7d1d7eb102682d26eccee80dd6912fefa29b7bc89560bb966c5bdb40"
+    },
+    {
+      "source": "/resources/art/fx/texture/liquid/caustic_lines_tiled.dds",
+      "output": "godot\\Assets\\B8\\caustic_lines_tiled.png",
+      "sha256": "8f86533fd2b5241fed162fb6fa3c947db862b46f220b79015b2adc6fb2d45a3f"
+    },
+    {
+      "source": "/resources/art/fx/texture/smoke/ltng_purple_tendril_whisp.dds",
+      "output": "godot\\Assets\\B8\\ltng_purple_tendril_whisp.png",
+      "sha256": "73e5da1c63746bdb85aec1651a0e9dda4fcf293b00868ae779a9fb54ac9bfce8"
+    },
+    {
+      "source": "/resources/art/fx/texture/electricity/512_singlearcb_bw.dds",
+      "output": "godot\\Assets\\B8\\512_singlearcb_bw.png",
+      "sha256": "d41e9b19167db4c921e28f05668973a71a0b7993492f21dd21c8aaf447ebf370"
+    },
+    {
+      "source": "/resources/art/fx/texture/electricity/electric_rings_bw_02.dds",
+      "output": "godot\\Assets\\B8\\electric_rings_bw_02.png",
+      "sha256": "2349303fb1928162ed8329d8d373bc9acc9a58e2a7332be414614c4e76e2aae9"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/2x2_electrical_blast_alpha.dds",
+      "output": "godot\\Assets\\B8\\2x2_electrical_blast_alpha.png",
+      "sha256": "cf26ee030ad79c102ae7307d1dd204c6d481b30525b8ba9cd4cfbef729d7b57d"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/streak_blue_horizontal.dds",
+      "output": "godot\\Assets\\B8\\streak_blue_horizontal.png",
+      "sha256": "b2ef9df37efc4b21e26a79a75d77678a8432db113ab1a723e8ffbfb3993e5286"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/jk_proj_wave_force_ring.dds",
+      "output": "godot\\Assets\\B8\\jk_proj_wave_force_ring.png",
+      "sha256": "536494abcf6b26920fdc6bcf33ed84e80771eef9361cea135b9b2b89232cd12e"
+    },
+    {
+      "source": "/resources/art/fx/texture/smoke/2x2_smoke_whisps_02.dds",
+      "output": "godot\\Assets\\B8\\2x2_smoke_whisps_02.png",
+      "sha256": "324dcb1a7809f6778230ecbda2181e7423a3dcdc17500aecb34757adf828d83b"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/bw_starflare.dds",
+      "output": "godot\\Assets\\B8\\bw_starflare.png",
+      "sha256": "763265d9e83e5644154a5ad6935bb1369d5729b3c5cb3f149175dbf85df49f11"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/dark_streak_purp_horizontal_alpha.dds",
+      "output": "godot\\Assets\\B8\\dark_streak_purp_horizontal_alpha.png",
+      "sha256": "8a4ec1faae6ea4a30f2c80ca35f2c79701e783c8b82b7e4abd4a55de5341526f"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/sphere_displaced_01.dds",
+      "output": "godot\\Assets\\B8\\sphere_displaced_01.png",
+      "sha256": "ea14390362b6cbfc9d0cd8b1f6d28ab4f61598d1f62e04507812dbad4d45d752"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/2x2_shield_orbs.dds",
+      "output": "godot\\Assets\\B8\\2x2_shield_orbs.png",
+      "sha256": "6902b7f5447060faa2f98dd76c9e2409c5497989e44c171205292efcd6109dc9"
+    },
+    {
+      "source": "/resources/art/fx/texture/electricity/2x2_lightning_core.dds",
+      "output": "godot\\Assets\\B8\\2x2_lightning_core.png",
+      "sha256": "834d560584507cab3be62a1ff760b530a11312fd8b52ab304e4f3fbbdf2f6a79"
+    },
+    {
+      "source": "/resources/art/fx/texture/smoke/smoke_thin.dds",
+      "output": "godot\\Assets\\B8\\smoke_thin.png",
+      "sha256": "a3ecb4cbcd2bca5aeb9d60b1df6d0a63803b49dee16249b1fa38227777a3f112"
+    }
+  ]
+}

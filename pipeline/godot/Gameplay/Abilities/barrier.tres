@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "barrier"
+Title = "Static Barrier"
+Icon = "electricshield"
+StartsUnlocked = false
+ChannelSeconds = 0
+TickSeconds = 1
+Effect = 1
+Damage = 0
+ShieldCapacity = 30
+ShieldDuration = 12
+CooldownSeconds = 18
+Range = 0.8
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+WindupSeconds = 0
+RecoverySeconds = 0.45
+GestureSeconds = 0.45
+StartClip = "B8/Barrier"
+SourceFx = "si_backlash_caster_shield"
+CastAudioEvent = "Play_ability_sithinquisitor_backlash_chargeup"

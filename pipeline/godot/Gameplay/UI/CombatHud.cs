@@ -11,6 +11,7 @@ public partial class CombatHud : Control
     public const float DesignWidth=800;
     public const float DesignHeight=148;
     private SwtorBar _health=null!, _targetHealth=null!, _readiness=null!, _xp=null!;
+    private SwtorBar _shield=null!;
     private readonly List<(AbilityIcon slot,AutomaticAbility ability)> _abilitySlots=new();
     private readonly List<AbilityIcon> _slotNodes=new();
     public int UnlockedAbilityCount => _abilitySlots.Count;
@@ -45,6 +46,8 @@ public partial class CombatHud : Control
         _health=Bar("bwaui_bars_21",new Vector2(136,44),new Vector2(196,11),7);
         _health.TooltipText="Player health. Mark of Power increases maximum health.";
         _readiness=Bar("bwaui_bars_60",new Vector2(136,57),new Vector2(196,7),5);
+        _shield=Bar("bwaui_bars_60",new Vector2(136,65),new Vector2(196,8),5,9);
+        _shield.Visible=false;_shield.Modulate=new Color(0.75f,0.72f,1);
         _targetHealth=Bar("bwaui_bars_21",new Vector2(470,44),new Vector2(196,11),7);
         var name=LabelAt("SURVIVOR",14,new Vector2(136,23),new Vector2(196,18));
         name.AddThemeColorOverride("font_color",SwtorSkin.Blue);
@@ -95,6 +98,9 @@ public partial class CombatHud : Control
         RefreshAbilities();
         var p=World.Progression!;var health=World.PlayerActor.Health;var combat=World.Combat;
         _health.UpdateValue(health.Current,health.Maximum,$"{health.Current:0} / {health.Maximum:0}");
+        _shield.Visible=health.Shielded;
+        _shield.UpdateValue(health.ShieldRemaining,health.ShieldCapacity,$"SHIELD  {health.ShieldRemaining:0} / {health.ShieldCapacity:0}");
+        _shield.TooltipText=$"Static Barrier: {health.ShieldRemaining:0.#} absorption remaining · {health.ShieldSeconds:0.0}s\nAbsorbs incoming damage before health. Does not stack.";
         double ready=1-World.Abilities.GlobalCooldownRemaining/System.Math.Max(0.001,World.Abilities.GlobalCooldownDuration);
         _readiness.UpdateValue(World.PlayerActor.Alive?ready:0,1,"");
         _readiness.TooltipText=$"{World.Abilities.Active?.Definition.Title??"Ready"}\nGlobal cooldown {World.Abilities.GlobalCooldownRemaining:0.0}s. No Force cost.";
@@ -115,9 +121,19 @@ public partial class CombatHud : Control
             string tooltip=$"{ability.Definition.Title} · automatic · {ability.State}\n{ability.DamagePerTick:0.#} {ability.Definition.DamageType} damage {cadence}\nRange {ability.Range:0.00}{area}\nCooldown {ability.CooldownSeconds:0.00}s\n"+(ranks>0?$"{rarity} · {ranks} trained ranks":"Unlocked · no stat upgrades")+
                 $"\n{(ability.Definition.UsesGlobalCooldown?"Waits for shared GCD":"Ignores shared GCD")} · {(ability.Definition.TriggersGlobalCooldown?"triggers GCD":"no GCD trigger")}."+
                 "\nIndividual cooldown seconds. Shared vertical wipe: GCD. Clear slot: ready.";
+            if(ability.Definition.Id=="deathfield")tooltip+=$"\nHeal {ability.Healing:0.#} HP per distinct enemy damaged, capped at {ability.Definition.HealingCap:0.#} per activation. Last: {ability.LastDistinctHits} hits, +{ability.LastHealing:0.#} HP.";
+            if(ability.Definition.Effect!=AbilityEffect.Damage)
+            {
+                slot.UpdateGlobalCooldown(0,1);
+                string effect=ability.Definition.Effect==AbilityEffect.Shield
+                    ? $"Absorbs {ability.ShieldCapacity:0.#} damage for up to {ability.ShieldDuration:0.#}s.\nActivates unshielded with a visible enemy within {ability.Range:0.00}.\nRemaining {health.ShieldRemaining:0.#} shield · {health.ShieldSeconds:0.0}s. Does not stack."
+                    : $"Heals {ability.Healing:0.#} missing HP below {ability.HealthThreshold:P0} of maximum health ({health.Maximum:0.#}).\nLast healing +{ability.LastHealing:0.#} HP. Never revives.";
+                tooltip=$"{ability.Definition.Title} · automatic · {ability.State}\n{effect}\nCooldown {ability.CooldownSeconds:0.0}s · ignores offensive GCD\nWorks while moving. "+(ranks>0?$"{rarity} · {ranks} trained ranks":"Unlocked · no stat upgrades");
+            }
             if(slot.TooltipText!=tooltip)slot.TooltipText=tooltip;
         }
-        var target=World.Abilities.Active?.CastTarget??World.Targeting.Current;
+        var activeTarget=World.Abilities.Active?.CastTarget;
+        var target=activeTarget?.Team==CombatTeam.Hostile?activeTarget:World.Targeting.Current;
         bool valid=GodotObject.IsInstanceValid(target)&&target!.Alive;
         _targetPortrait.FaceVisible=valid;
         _targetHealth.UpdateValue(valid?target!.Health.Current:0,valid?target!.Health.Maximum:1,valid?$"{target!.Health.Current:0} / {target.Health.Maximum:0}":"");

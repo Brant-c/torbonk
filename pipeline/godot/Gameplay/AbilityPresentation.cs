@@ -9,4 +9,6 @@ public interface IAbilityPresentation
     void Impact(Vector3 center);
     void End(bool interrupted);
     void Release();
+    // Normal completion may retain one-shot audio tails. Abort/death still use Release.
+    void Complete() => Release();
 }

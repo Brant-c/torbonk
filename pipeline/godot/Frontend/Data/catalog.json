@@ -1,0 +1,281 @@
+{
+  "Factions": [
+    {
+      "Id": "republic",
+      "Name": "Galactic Republic",
+      "Description": "Stand with the Republic. Defend a civilization built on freedom, diplomacy, and the ideals of the Jedi Order.",
+      "Emblem": "res://Frontend/Assets/Slices/bwaui_character_create_window_93.png"
+    },
+    {
+      "Id": "empire",
+      "Name": "Sith Empire",
+      "Description": "Serve the Empire. Pursue power and order alongside the Sith, Imperial Intelligence, and the galaxy\u2019s most formidable hunters.",
+      "Emblem": "res://Frontend/Assets/Slices/bwaui_character_create_window_81.png"
+    }
+  ],
+  "Classes": [
+    {
+      "Id": "sith_warrior",
+      "FactionId": "empire",
+      "Name": "Sith Warrior",
+      "Icon": "res://Frontend/Assets/Icons/sithwarrior.png",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.game_rules.classes.sith_warrior.png",
+      "Description": "A relentless champion of the dark side. The Warrior dominates the front line through strength and lightsaber mastery.",
+      "AdvancedClasses": [
+        {
+          "Id": "juggernaut",
+          "Name": "Juggernaut",
+          "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.juggernaut.png",
+          "Description": "A single lightsaber and heavy armor turn the Warrior into an unyielding force.",
+          "GameplayImplemented": false
+        },
+        {
+          "Id": "marauder",
+          "Name": "Marauder",
+          "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.marauder.png",
+          "Description": "Twin lightsabers and aggressive assaults overwhelm opponents.",
+          "GameplayImplemented": false
+        }
+      ]
+    },
+    {
+      "Id": "sith_inquisitor",
+      "FactionId": "empire",
+      "Name": "Sith Inquisitor",
+      "Icon": "res://Frontend/Assets/Icons/sithsorcerer.png",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.game_rules.classes.sith_inquisitor.png",
+      "Description": "Ambition and forbidden knowledge fuel the Inquisitor. Manipulate the Force, channel lightning, and pursue the mysteries of the Sith.",
+      "AdvancedClasses": [
+        {
+          "Id": "sorcerer",
+          "Name": "Sorcerer",
+          "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.sith_sorcerer.png",
+          "Description": "Command Force lightning from range. The existing Survivors combat kit is available for future integration.",
+          "GameplayImplemented": true,
+          "PreviewScene": "res://Frontend/Assets/Character/sorcerer.glb",
+          "IdleAnimation": "Idle",
+          "FacingDegrees": 0
+        },
+        {
+          "Id": "assassin",
+          "Name": "Assassin",
+          "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.sith_assassin.png",
+          "Description": "A double-bladed lightsaber, stealth, and dark-side techniques define the Assassin.",
+          "GameplayImplemented": false
+        }
+      ]
+    },
+    {
+      "Id": "imperial_agent",
+      "FactionId": "empire",
+      "Name": "Imperial Agent",
+      "Icon": "res://Frontend/Assets/Recovered/imperialagent.png",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.game_rules.classes.agent.png",
+      "Description": "The Empire\u2019s unseen operative. Precision marksmanship, advanced technology, and deception serve Imperial Intelligence.",
+      "AdvancedClasses": [
+        {
+          "Id": "sniper",
+          "Name": "Sniper",
+          "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.sniper.png",
+          "Description": "Strike from cover with a sniper rifle and carefully placed long-range shots.",
+          "GameplayImplemented": false
+        },
+        {
+          "Id": "operative",
+          "Name": "Operative",
+          "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.operative.png",
+          "Description": "Use concealment, a vibroknife, and field medicine at close quarters.",
+          "GameplayImplemented": false
+        }
+      ]
+    },
+    {
+      "Id": "bounty_hunter",
+      "FactionId": "empire",
+      "Name": "Bounty Hunter",
+      "Icon": "res://Frontend/Assets/Icons/bountyhunter.png",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.game_rules.classes.bounty_hunter.png",
+      "Description": "A resourceful professional who tracks dangerous targets. Armor, blasters, and specialized gadgets bring every contract within reach.",
+      "AdvancedClasses": [
+        {
+          "Id": "mercenary",
+          "Name": "Mercenary",
+          "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.mercenary.png",
+          "Description": "Twin blasters, missiles, and support technology provide ranged firepower.",
+          "GameplayImplemented": false
+        },
+        {
+          "Id": "powertech",
+          "Name": "Powertech",
+          "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.powertech.png",
+          "Description": "Heavy armor, a flamethrower, and close-range tools keep the pressure on.",
+          "GameplayImplemented": false
+        }
+      ]
+    },
+    {
+      "Id": "jedi_knight",
+      "FactionId": "republic",
+      "Name": "Jedi Knight",
+      "Icon": "res://Frontend/Assets/Icons/jediknight.png",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.game_rules.classes.jedi_knight.png",
+      "Description": "A defender of the Republic and a master of lightsaber combat. Courage and disciplined use of the Force guide the Knight.",
+      "AdvancedClasses": [
+        {
+          "Id": "guardian",
+          "Name": "Guardian",
+          "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.guardian.png",
+          "Description": "A single lightsaber and protective techniques defend allies on the front line.",
+          "GameplayImplemented": false
+        },
+        {
+          "Id": "sentinel",
+          "Name": "Sentinel",
+          "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.sentinel.png",
+          "Description": "Two lightsabers deliver a swift, sustained offensive.",
+          "GameplayImplemented": false
+        }
+      ]
+    },
+    {
+      "Id": "jedi_consular",
+      "FactionId": "republic",
+      "Name": "Jedi Consular",
+      "Icon": "res://Frontend/Assets/Icons/jediconsular.png",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.game_rules.classes.jedi_consular.png",
+      "Description": "A scholar and diplomat guided by the Force. The Consular protects the Republic through wisdom, insight, and powerful Force techniques.",
+      "AdvancedClasses": [
+        {
+          "Id": "sage",
+          "Name": "Sage",
+          "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.jedi_sage.png",
+          "Description": "Channel the Force at range to defend, heal, and project telekinetic power.",
+          "GameplayImplemented": false
+        },
+        {
+          "Id": "shadow",
+          "Name": "Shadow",
+          "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.jedi_shadow.png",
+          "Description": "Combine stealth, a double-bladed lightsaber, and precise Force attacks.",
+          "GameplayImplemented": false
+        }
+      ]
+    },
+    {
+      "Id": "smuggler",
+      "FactionId": "republic",
+      "Name": "Smuggler",
+      "Icon": "res://Frontend/Assets/Icons/smuggler.png",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.game_rules.classes.smuggler.png",
+      "Description": "Quick thinking and a faster blaster keep the Smuggler alive. Luck, cover, and dirty tricks can turn any confrontation.",
+      "AdvancedClasses": [
+        {
+          "Id": "gunslinger",
+          "Name": "Gunslinger",
+          "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.gunslinger.png",
+          "Description": "Dual blasters and cover deliver precise ranged attacks.",
+          "GameplayImplemented": false
+        },
+        {
+          "Id": "scoundrel",
+          "Name": "Scoundrel",
+          "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.scoundrel.png",
+          "Description": "A scattergun, stealth, and improvised medicine reward close-range ingenuity.",
+          "GameplayImplemented": false
+        }
+      ]
+    },
+    {
+      "Id": "trooper",
+      "FactionId": "republic",
+      "Name": "Trooper",
+      "Icon": "res://Frontend/Assets/Icons/trooper.png",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.game_rules.classes.trooper.png",
+      "Description": "An elite Republic soldier. Military training, heavy weapons, and advanced armor face the Empire head-on.",
+      "AdvancedClasses": [
+        {
+          "Id": "commando",
+          "Name": "Commando",
+          "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.commando.png",
+          "Description": "An assault cannon and battlefield support bring heavy ranged power.",
+          "GameplayImplemented": false
+        },
+        {
+          "Id": "vanguard",
+          "Name": "Vanguard",
+          "Artwork": "res://Frontend/Assets/Recovered/cdx.advanced_classes.vanguard.png",
+          "Description": "A blaster rifle and defensive technology lead the assault at close range.",
+          "GameplayImplemented": false
+        }
+      ]
+    }
+  ],
+  "Maps": [
+    {
+      "Id": "korriban",
+      "Name": "Korriban",
+      "Region": "Sith Worlds",
+      "Description": "Ancient tombs and red sands beneath the Sith Academy. The existing Survivors arena is available for future integration.",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.planets.korriban.png",
+      "Surface": "res://Frontend/Assets/Recovered/planets_korriban_d.png",
+      "X": 0.73,
+      "Y": 0.24,
+      "GameplayImplemented": true
+    },
+    {
+      "Id": "tython",
+      "Name": "Tython",
+      "Region": "Deep Core",
+      "Description": "Forested birthplace of the Jedi Order. Environment and gameplay are planned.",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.planets.tython.png",
+      "Surface": "res://Frontend/Assets/Recovered/planets_tython_d.png",
+      "X": 0.35,
+      "Y": 0.56,
+      "GameplayImplemented": false
+    },
+    {
+      "Id": "dromund_kaas",
+      "Name": "Dromund Kaas",
+      "Region": "Sith Worlds",
+      "Description": "Storm-wreathed capital of the Sith Empire. Environment and gameplay are planned.",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.planets.dromund_kaas.png",
+      "Surface": "res://Frontend/Assets/Recovered/planets_dromund_kass_d.png",
+      "X": 0.77,
+      "Y": 0.39,
+      "GameplayImplemented": false
+    },
+    {
+      "Id": "coruscant",
+      "Name": "Coruscant",
+      "Region": "Core Worlds",
+      "Description": "The vast city-world at the heart of the Republic. Environment and gameplay are planned.",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.planets.coruscant.png",
+      "Surface": "res://Frontend/Assets/Recovered/planets_coruscant_d.png",
+      "X": 0.45,
+      "Y": 0.4,
+      "GameplayImplemented": false
+    },
+    {
+      "Id": "hutta",
+      "Name": "Hutta",
+      "Region": "Hutt Space",
+      "Description": "Industrial swamps and Hutt domains. Environment and gameplay are planned.",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.planets.hutta.png",
+      "Surface": "res://Frontend/Assets/Recovered/planets_hutta_d.png",
+      "X": 0.76,
+      "Y": 0.68,
+      "GameplayImplemented": false
+    },
+    {
+      "Id": "ord_mantell",
+      "Name": "Ord Mantell",
+      "Region": "Mid Rim",
+      "Description": "A contested world of smugglers and soldiers. Environment and gameplay are planned.",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.planets.ordmantell.png",
+      "Surface": "res://Frontend/Assets/Recovered/planets_ord_mantell_d.png",
+      "X": 0.28,
+      "Y": 0.27,
+      "GameplayImplemented": false
+    }
+  ]
+}

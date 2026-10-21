@@ -1,0 +1,788 @@
+{
+  "bankSha256": "5f2ffe5d7d70698c66c97a34c602acc3b0d932c2886cb7849a1e23aededde7ac",
+  "xmlSha256": "b1b53ecff17b717d1c5de0b6fecd5f20a316bc6a26bd1c27f6de8bb110320319",
+  "events": [
+    {
+      "name": "Play_gui_galaxymap_ambient_planetscan",
+      "id": "592609345",
+      "media": [
+        234804785
+      ],
+      "edges": [
+        {
+          "from": "592609345",
+          "field": "ulActionID",
+          "to": "50175729"
+        },
+        {
+          "from": "50175729",
+          "field": "ulTargetID",
+          "to": "410169855"
+        },
+        {
+          "from": "410169855",
+          "field": "ulChildID",
+          "to": "465112937"
+        }
+      ]
+    },
+    {
+      "name": "Play_gui_galaxymap_ambient_zoomedin",
+      "id": "2480678867",
+      "media": [
+        207869252
+      ],
+      "edges": [
+        {
+          "from": "2480678867",
+          "field": "ulActionID",
+          "to": "577974719"
+        },
+        {
+          "from": "577974719",
+          "field": "ulTargetID",
+          "to": "822466510"
+        },
+        {
+          "from": "822466510",
+          "field": "ulChildID",
+          "to": "575508835"
+        }
+      ]
+    },
+    {
+      "name": "Play_gui_galaxymap_ambient_zoomedout",
+      "id": "2407767022",
+      "media": [
+        386093654
+      ],
+      "edges": [
+        {
+          "from": "2407767022",
+          "field": "ulActionID",
+          "to": "661306777"
+        },
+        {
+          "from": "661306777",
+          "field": "ulTargetID",
+          "to": "117194029"
+        },
+        {
+          "from": "117194029",
+          "field": "ulChildID",
+          "to": "22343201"
+        }
+      ]
+    },
+    {
+      "name": "Play_gui_galaxymap_mapclose",
+      "id": "1496151229",
+      "media": [
+        76149100
+      ],
+      "edges": [
+        {
+          "from": "1496151229",
+          "field": "ulActionID",
+          "to": "780591999"
+        },
+        {
+          "from": "780591999",
+          "field": "ulTargetID",
+          "to": "157274303"
+        },
+        {
+          "from": "157274303",
+          "field": "ulChildID",
+          "to": "133453680"
+        }
+      ]
+    },
+    {
+      "name": "Play_gui_galaxymap_mapitem_activate",
+      "id": "808600422",
+      "media": [
+        334641326,
+        493738210
+      ],
+      "edges": [
+        {
+          "from": "808600422",
+          "field": "ulActionID",
+          "to": "308022930"
+        },
+        {
+          "from": "308022930",
+          "field": "ulTargetID",
+          "to": "815649335"
+        },
+        {
+          "from": "815649335",
+          "field": "ulChildID",
+          "to": "62574875"
+        },
+        {
+          "from": "815649335",
+          "field": "ulChildID",
+          "to": "940826870"
+        }
+      ]
+    },
+    {
+      "name": "Play_gui_galaxymap_mapitem_deactivate",
+      "id": "1522129735",
+      "media": [
+        181017569,
+        800730079
+      ],
+      "edges": [
+        {
+          "from": "1522129735",
+          "field": "ulActionID",
+          "to": "201011544"
+        },
+        {
+          "from": "201011544",
+          "field": "ulTargetID",
+          "to": "595712467"
+        },
+        {
+          "from": "595712467",
+          "field": "ulChildID",
+          "to": "229621131"
+        },
+        {
+          "from": "595712467",
+          "field": "ulChildID",
+          "to": "363083354"
+        }
+      ]
+    },
+    {
+      "name": "Play_gui_galaxymap_mapitem_release",
+      "id": "2241527092",
+      "media": [
+        181017569,
+        800730079
+      ],
+      "edges": [
+        {
+          "from": "2241527092",
+          "field": "ulActionID",
+          "to": "148284377"
+        },
+        {
+          "from": "148284377",
+          "field": "ulTargetID",
+          "to": "595712467"
+        },
+        {
+          "from": "595712467",
+          "field": "ulChildID",
+          "to": "229621131"
+        },
+        {
+          "from": "595712467",
+          "field": "ulChildID",
+          "to": "363083354"
+        },
+        {
+          "from": "2241527092",
+          "field": "ulActionID",
+          "to": "70064651"
+        },
+        {
+          "from": "70064651",
+          "field": "ulTargetID",
+          "to": "595712467"
+        }
+      ]
+    },
+    {
+      "name": "Play_gui_galaxymap_mouseover",
+      "id": "2228795194",
+      "media": [
+        326559589,
+        467566778,
+        839820431
+      ],
+      "edges": [
+        {
+          "from": "2228795194",
+          "field": "ulActionID",
+          "to": "878532430"
+        },
+        {
+          "from": "878532430",
+          "field": "ulTargetID",
+          "to": "321429287"
+        },
+        {
+          "from": "321429287",
+          "field": "ulChildID",
+          "to": "3978837"
+        },
+        {
+          "from": "321429287",
+          "field": "ulChildID",
+          "to": "428096160"
+        },
+        {
+          "from": "321429287",
+          "field": "ulChildID",
+          "to": "1057911499"
+        }
+      ]
+    },
+    {
+      "name": "Play_gui_galaxymap_planetzoomin",
+      "id": "667261193",
+      "media": [
+        469673840,
+        708302242
+      ],
+      "edges": [
+        {
+          "from": "667261193",
+          "field": "ulActionID",
+          "to": "286362716"
+        },
+        {
+          "from": "286362716",
+          "field": "ulTargetID",
+          "to": "240751397"
+        },
+        {
+          "from": "240751397",
+          "field": "ulChildID",
+          "to": "1038225328"
+        },
+        {
+          "from": "240751397",
+          "field": "ulChildID",
+          "to": "1053006014"
+        },
+        {
+          "from": "667261193",
+          "field": "ulActionID",
+          "to": "1001787915"
+        },
+        {
+          "from": "1001787915",
+          "field": "ulTargetID",
+          "to": "240751397"
+        }
+      ]
+    },
+    {
+      "name": "Play_gui_galaxymap_planetzoomout",
+      "id": "2852877224",
+      "media": [
+        744865536,
+        934225555
+      ],
+      "edges": [
+        {
+          "from": "2852877224",
+          "field": "ulActionID",
+          "to": "94859763"
+        },
+        {
+          "from": "94859763",
+          "field": "ulTargetID",
+          "to": "945469191"
+        },
+        {
+          "from": "945469191",
+          "field": "ulChildID",
+          "to": "109515807"
+        },
+        {
+          "from": "945469191",
+          "field": "ulChildID",
+          "to": "996026393"
+        }
+      ]
+    },
+    {
+      "name": "Play_gui_galaxymap_rolloveractive",
+      "id": "3490604794",
+      "media": [
+        204784609,
+        899058481
+      ],
+      "edges": [
+        {
+          "from": "3490604794",
+          "field": "ulActionID",
+          "to": "148145750"
+        },
+        {
+          "from": "148145750",
+          "field": "ulTargetID",
+          "to": "534458876"
+        },
+        {
+          "from": "534458876",
+          "field": "ulChildID",
+          "to": "320337371"
+        },
+        {
+          "from": "534458876",
+          "field": "ulChildID",
+          "to": "519169031"
+        }
+      ]
+    },
+    {
+      "name": "Play_gui_galaxymap_spacewhoosh_big",
+      "id": "1029989278",
+      "media": [
+        307007610,
+        754090699
+      ],
+      "edges": [
+        {
+          "from": "1029989278",
+          "field": "ulActionID",
+          "to": "1013673167"
+        },
+        {
+          "from": "1013673167",
+          "field": "ulTargetID",
+          "to": "1070858094"
+        },
+        {
+          "from": "1070858094",
+          "field": "ulChildID",
+          "to": "505345675"
+        },
+        {
+          "from": "1070858094",
+          "field": "ulChildID",
+          "to": "704463764"
+        },
+        {
+          "from": "1029989278",
+          "field": "ulActionID",
+          "to": "89266733"
+        },
+        {
+          "from": "89266733",
+          "field": "ulTargetID",
+          "to": "1070858094"
+        }
+      ]
+    },
+    {
+      "name": "Play_gui_galaxymap_spacewhoosh_small",
+      "id": "3168971105",
+      "media": [
+        89261976,
+        532770671
+      ],
+      "edges": [
+        {
+          "from": "3168971105",
+          "field": "ulActionID",
+          "to": "399116676"
+        },
+        {
+          "from": "399116676",
+          "field": "ulTargetID",
+          "to": "489433629"
+        },
+        {
+          "from": "489433629",
+          "field": "ulChildID",
+          "to": "674398510"
+        },
+        {
+          "from": "489433629",
+          "field": "ulChildID",
+          "to": "980642263"
+        }
+      ]
+    },
+    {
+      "name": "Play_gui_galaxymap_zoominwhoosh",
+      "id": "1596333521",
+      "media": [
+        116331223,
+        1007769190
+      ],
+      "edges": [
+        {
+          "from": "1596333521",
+          "field": "ulActionID",
+          "to": "310868687"
+        },
+        {
+          "from": "310868687",
+          "field": "ulTargetID",
+          "to": "41888942"
+        },
+        {
+          "from": "41888942",
+          "field": "ulChildID",
+          "to": "236580877"
+        },
+        {
+          "from": "41888942",
+          "field": "ulChildID",
+          "to": "936496008"
+        }
+      ]
+    },
+    {
+      "name": "play_gui_interface_buttonclick",
+      "id": "3642280550",
+      "media": [
+        308879189,
+        911798576
+      ],
+      "edges": [
+        {
+          "from": "3642280550",
+          "field": "ulActionID",
+          "to": "895593635"
+        },
+        {
+          "from": "895593635",
+          "field": "ulTargetID",
+          "to": "40135844"
+        },
+        {
+          "from": "40135844",
+          "field": "ulChildID",
+          "to": "938393057"
+        },
+        {
+          "from": "3642280550",
+          "field": "ulActionID",
+          "to": "644825600"
+        },
+        {
+          "from": "644825600",
+          "field": "ulTargetID",
+          "to": "289847355"
+        },
+        {
+          "from": "289847355",
+          "field": "ulChildID",
+          "to": "724216568"
+        }
+      ]
+    },
+    {
+      "name": "play_gui_interface_buttonclick_small",
+      "id": "3958832482",
+      "media": [
+        23994545,
+        78377351,
+        82354518,
+        140822877,
+        292275183,
+        502628097,
+        770827460,
+        911798576
+      ],
+      "edges": [
+        {
+          "from": "3958832482",
+          "field": "ulActionID",
+          "to": "105210326"
+        },
+        {
+          "from": "105210326",
+          "field": "ulTargetID",
+          "to": "431204379"
+        },
+        {
+          "from": "431204379",
+          "field": "ulChildID",
+          "to": "30371002"
+        },
+        {
+          "from": "431204379",
+          "field": "ulChildID",
+          "to": "355954343"
+        },
+        {
+          "from": "431204379",
+          "field": "ulChildID",
+          "to": "412615334"
+        },
+        {
+          "from": "431204379",
+          "field": "ulChildID",
+          "to": "548707008"
+        },
+        {
+          "from": "431204379",
+          "field": "ulChildID",
+          "to": "634648008"
+        },
+        {
+          "from": "431204379",
+          "field": "ulChildID",
+          "to": "940197921"
+        },
+        {
+          "from": "431204379",
+          "field": "ulChildID",
+          "to": "1022103965"
+        },
+        {
+          "from": "3958832482",
+          "field": "ulActionID",
+          "to": "343733585"
+        },
+        {
+          "from": "343733585",
+          "field": "ulTargetID",
+          "to": "289847355"
+        },
+        {
+          "from": "289847355",
+          "field": "ulChildID",
+          "to": "724216568"
+        }
+      ]
+    },
+    {
+      "name": "play_gui_interface_buttonrelease",
+      "id": "2624603617",
+      "media": [
+        133771716
+      ],
+      "edges": [
+        {
+          "from": "2624603617",
+          "field": "ulActionID",
+          "to": "420513000"
+        },
+        {
+          "from": "420513000",
+          "field": "ulTargetID",
+          "to": "263584947"
+        },
+        {
+          "from": "263584947",
+          "field": "ulChildID",
+          "to": "293150162"
+        }
+      ]
+    },
+    {
+      "name": "play_gui_interface_characterselect_charhighlight",
+      "id": "2019772858",
+      "media": [
+        72625624,
+        594707703
+      ],
+      "edges": [
+        {
+          "from": "2019772858",
+          "field": "ulActionID",
+          "to": "515392623"
+        },
+        {
+          "from": "515392623",
+          "field": "ulTargetID",
+          "to": "907669638"
+        },
+        {
+          "from": "907669638",
+          "field": "ulChildID",
+          "to": "183641976"
+        },
+        {
+          "from": "907669638",
+          "field": "ulChildID",
+          "to": "847521020"
+        }
+      ]
+    },
+    {
+      "name": "play_gui_interface_characterselect_deleteconfirm",
+      "id": "146607433",
+      "media": [
+        89261976,
+        311088845,
+        532770671
+      ],
+      "edges": [
+        {
+          "from": "146607433",
+          "field": "ulActionID",
+          "to": "360604532"
+        },
+        {
+          "from": "360604532",
+          "field": "ulTargetID",
+          "to": "558703976"
+        },
+        {
+          "from": "558703976",
+          "field": "ulChildID",
+          "to": "920180654"
+        },
+        {
+          "from": "146607433",
+          "field": "ulActionID",
+          "to": "803466884"
+        },
+        {
+          "from": "803466884",
+          "field": "ulTargetID",
+          "to": "670882679"
+        },
+        {
+          "from": "670882679",
+          "field": "ulChildID",
+          "to": "438636729"
+        },
+        {
+          "from": "670882679",
+          "field": "ulChildID",
+          "to": "731927336"
+        },
+        {
+          "from": "146607433",
+          "field": "ulActionID",
+          "to": "21887722"
+        },
+        {
+          "from": "21887722",
+          "field": "ulTargetID",
+          "to": "558703976"
+        }
+      ]
+    },
+    {
+      "name": "play_gui_interface_characterselect_playbutton",
+      "id": "2224936396",
+      "media": [
+        649149993
+      ],
+      "edges": [
+        {
+          "from": "2224936396",
+          "field": "ulActionID",
+          "to": "232794961"
+        },
+        {
+          "from": "232794961",
+          "field": "ulTargetID",
+          "to": "801700902"
+        },
+        {
+          "from": "801700902",
+          "field": "ulChildID",
+          "to": "535112222"
+        }
+      ]
+    },
+    {
+      "name": "play_gui_interface_characterselect_progress",
+      "id": "1589611243",
+      "media": [
+        19102525,
+        460456562,
+        491214291,
+        865625307
+      ],
+      "edges": [
+        {
+          "from": "1589611243",
+          "field": "ulActionID",
+          "to": "1063525180"
+        },
+        {
+          "from": "1063525180",
+          "field": "ulTargetID",
+          "to": "348001686"
+        },
+        {
+          "from": "348001686",
+          "field": "ulChildID",
+          "to": "365221513"
+        },
+        {
+          "from": "365221513",
+          "field": "ulChildID",
+          "to": "42503733"
+        },
+        {
+          "from": "365221513",
+          "field": "ulChildID",
+          "to": "960043466"
+        },
+        {
+          "from": "348001686",
+          "field": "ulChildID",
+          "to": "883154982"
+        },
+        {
+          "from": "883154982",
+          "field": "ulChildID",
+          "to": "35654717"
+        },
+        {
+          "from": "883154982",
+          "field": "ulChildID",
+          "to": "191514674"
+        }
+      ]
+    },
+    {
+      "name": "play_gui_interface_characterwindowopen",
+      "id": "481537427",
+      "media": [
+        1060113422
+      ],
+      "edges": [
+        {
+          "from": "481537427",
+          "field": "ulActionID",
+          "to": "828476959"
+        },
+        {
+          "from": "828476959",
+          "field": "ulTargetID",
+          "to": "45738875"
+        },
+        {
+          "from": "45738875",
+          "field": "ulChildID",
+          "to": "260795461"
+        }
+      ]
+    }
+  ],
+  "candidateNames": [
+    "Play_gui_galaxymap_ambient_planetscan",
+    "Play_gui_galaxymap_ambient_zoomedin",
+    "Play_gui_galaxymap_ambient_zoomedout",
+    "Play_gui_galaxymap_mapclose",
+    "Play_gui_galaxymap_mapitem_activate",
+    "Play_gui_galaxymap_mapitem_deactivate",
+    "Play_gui_galaxymap_mapitem_release",
+    "Play_gui_galaxymap_mouseover",
+    "Play_gui_galaxymap_planetzoomin",
+    "Play_gui_galaxymap_planetzoomout",
+    "Play_gui_galaxymap_rolloveractive",
+    "Play_gui_galaxymap_spacewhoosh_big",
+    "Play_gui_galaxymap_spacewhoosh_small",
+    "Play_gui_galaxymap_zoominwhoosh",
+    "play_gui_interface_buttonclick",
+    "play_gui_interface_buttonclick_small",
+    "play_gui_interface_buttonrelease",
+    "play_gui_interface_characterselect_charhighlight",
+    "play_gui_interface_characterselect_deleteconfirm",
+    "play_gui_interface_characterselect_playbutton",
+    "play_gui_interface_characterselect_progress",
+    "play_gui_interface_characterwindowopen"
+  ]
+}

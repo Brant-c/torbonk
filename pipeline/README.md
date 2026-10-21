@@ -1,6 +1,14 @@
 # SWTOR Survivors: Tasks 1–3 conversion proof
 
-Current gameplay is **B7 boss, leveling, XP pickup and audio presentation**.
+The full game now starts at the **C2 main menu and character selection**.
+Use `Open-Survivors.ps1`; see [C2-README.md](C2-README.md) for selection,
+launch instructions, integration boundaries and manual review.
+`Open-Gameplay.ps1` still opens gameplay directly.
+
+Current gameplay is **B8 Sorcerer Death Field, Static Barrier and Dark Heal**.
+See [B8-README.md](B8-README.md) for launch, tuning and focused validation, and
+[B8-PROVENANCE.md](B8-PROVENANCE.md) for original resources and approximations.
+The retained B7 boss, leveling, XP pickup and audio presentation remains documented below.
 Launch, source provenance, tuning and manual review instructions are in
 [B7-README.md](B7-README.md), with source/licensing notes in
 [B7-PROVENANCE.md](B7-PROVENANCE.md). B6's roster and equipment are retained.

@@ -12,12 +12,20 @@ public partial class StormAreaIndicator : MeshInstance3D
     public Vector3 GroundCenter { get; private set; }
     public float EffectiveRadius { get; private set; }
     public int ProjectedVertexCount { get; private set; }
+    // Other ground effects reuse the same terrain-only projection and hole/cliff guards.
+    public ShaderMaterial? ProjectionMaterial { get; set; }
+    public float ProjectionRidgeFraction { get; set; } = 1;
     private float _ridgeFraction;
     private const int Cells = 32;
     private const float GroundLift = 0.002f;
 
     public override void _Ready()
     {
+        if(ProjectionMaterial!=null)
+        {
+            _ridgeFraction=ProjectionRidgeFraction;MaterialOverride=ProjectionMaterial;
+            CastShadow=ShadowCastingSetting.Off;Visible=false;return;
+        }
         using var config = JsonDocument.Parse(FileAccess.GetFileAsString("res://Assets/Abilities/storm-reticle.json"));
         var root = config.RootElement;
         _ridgeFraction = root.GetProperty("ringRidgeFraction").GetSingle();

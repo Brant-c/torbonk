@@ -1,0 +1,16 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+Audio polish: Soft XP chime initializes and remains rate limited
+Audio polish: Shock starts through the actual ability
+Audio polish: Shock plays both original buildup/impact layers and cast
+Audio polish: Shock damage amount is unchanged
+Audio polish: Shock impact survives the short casting recovery
+Audio polish: Shock one-shots expire naturally
+Audio polish: Storm starts through the actual ability
+Audio polish: Storm keeps its sustained bed and electrical layer
+Audio polish: Repeated storm impacts never replace either channel loop
+Audio polish: Storm finishes channel with normal gameplay ticks and no stale loops
+Audio polish: Storm retains finite thunder tails after visual completion
+Audio polish: Death clears pickup, completed tails and all channel audio
+Audio polish: Restart leaves no stale audio

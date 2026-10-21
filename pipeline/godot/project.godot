@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="SWTOR Survivors - Static Asset Inspection"
-run/main_scene="res://Inspection.tscn"
+run/main_scene="res://Frontend/Scenes/MainMenu.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [display]

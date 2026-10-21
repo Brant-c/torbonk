@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/UpgradeDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "darkheal_power"
+Title = "Dark Restoration"
+Icon = "darkgift"
+Rarity = 0
+Effect = 8
+AbilityId = "darkheal"
+MaximumRank = 5
+HealingPerRank = 0.2
+CooldownPerRank = 0.1
+ThresholdPerRank = 0.03

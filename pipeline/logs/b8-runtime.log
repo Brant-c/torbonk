@@ -1,0 +1,54 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+B8: three new abilities start locked and retain the single twelve-slot bar
+B8: original clips and required hand/body sockets are available
+B8: Death Field remains gated before unlock
+B8: Death Field unlocks through a real level choice
+B8: Static Barrier remains gated before unlock
+B8: Static Barrier unlocks through a real level choice
+B8: Dark Heal remains gated before unlock
+B8: Dark Heal unlocks through a real level choice
+B8: unlocked abilities populate the existing action bar
+B8: the real cluster is visible and targetable
+B8: Death Field starts on its independent cooldown
+B8: Death Field hits six enemies for 35 and caps actual-hit healing at 15
+B8: each actual damage, shield absorption and healing retains its own flytext
+B8: Death Field reuses terrain projection without a standing textured box
+B8: barrier initializes for the visual review
+B8: barrier follows the chest and its opaque-black artwork uses additive blending
+B8: Death Field can start again after a fixture reset
+B8: two distinct hits heal six HP without counting VFX or previous hits
+B8: a selected cluster may move during windup
+B8: no successful hits means no healing
+WARNING: Death Field: original presentation unavailable; see B5 provenance.
+   at: bool SwtorSurvivors.AutomaticAbility.TryBegin() (res://Gameplay/AutomaticAbility.cs:122)
+   C# backtrace (most recent call first):
+       [0] void Godot.GD.PushWarning(string) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/GD.cs:396)
+       [1] bool SwtorSurvivors.AutomaticAbility.TryBegin() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\AutomaticAbility.cs:122)
+       [2] void SwtorSurvivors.B8Smoke+<Run>d__5.MoveNext() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\B8Smoke.cs:87)
+       [3] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [4] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [5] void Godot.SignalAwaiter.SignalCallback(nint, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_bool*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/SignalAwaiter.cs:65)
+B8: gameplay starts even without presentation
+B8: presentation failure cannot block damage or healing
+B8: barrier applies 30 shield immediately with an 18 second cooldown
+B8: shield absorbs before HP and does not stack
+B8: depletion passes only excess damage to HP
+B8: barrier reapplies after reset
+B8: shield expiry removes capacity and its persistent effect
+B8: barrier does not activate without a threat
+B8: Dark Heal never activates at full HP
+B8: exactly fifty percent does not trigger Dark Heal
+B8: Dark Heal restores 25 missing HP below half of configured max
+B8: Dark Heal cannot repeatedly heal during its cooldown
+B8: brief self-heal can activate while movement is held
+B8: casting preserves player movement
+B8: self defenses activate during offensive cooldown and animations
+B8: deathfield improvement is eligible
+B8: barrier improvement is eligible
+B8: darkheal improvement is eligible
+B8: rarity-scaled upgrades improve all three new ability profiles
+B8: death clears abilities, shields, gestures, VFX and audio
+B8: restart restores baseline HP, tuning, locks and cooldowns
+B8: the brief rendered Godot session completed

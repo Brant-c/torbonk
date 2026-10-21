@@ -9,6 +9,10 @@ namespace SwtorSurvivors;
 /// <summary>Bounded presentation voices and six independently tunable buses. Never gates combat events.</summary>
 public partial class AudioPresentation : Node
 {
+    internal record AbilityLayer(int[] Media, float Gain);
+    internal record AbilityEvent(AbilityLayer[] Layers, bool Priority);
+    private readonly Dictionary<string, AbilityEvent> _abilityEvents = new();
+    internal AbilityEvent? AbilityMix(string name) => _abilityEvents.GetValueOrDefault(name);
     public const string Group = "b7_audio";
     public static AudioPresentation? Find(Node node) => node.GetTree().GetFirstNodeInGroup(Group) as AudioPresentation;
     [Export] public string TuningPath { get; set; } = "res://Gameplay/presentation-audio.json";
@@ -61,6 +65,13 @@ public partial class AudioPresentation : Node
                 c.GetProperty("gainDb").GetSingle(), c.GetProperty("cooldown").GetDouble(), c.GetProperty("duration").GetDouble(),
                 c.GetProperty("pitch").GetSingle(), c.GetProperty("priority").GetBoolean());
         }
+        if (root.TryGetProperty("abilityEvents", out var events))
+            foreach (var item in events.EnumerateObject())
+            {
+                var layers = item.Value.GetProperty("layers").EnumerateArray().Select(l => new AbilityLayer(
+                    l.GetProperty("media").EnumerateArray().Select(m => m.GetInt32()).ToArray(), l.GetProperty("gainDb").GetSingle())).ToArray();
+                _abilityEvents[item.Name] = new(layers, item.Value.TryGetProperty("priority", out var p) && p.GetBoolean());
+            }
     }
 
     public bool PlayCue(string name)
@@ -97,10 +108,20 @@ public partial class AudioPresentation : Node
     }
     // Audio-only rejection; callers must always continue VFX, damage and flytext.
     public bool PermitCombat(string name)
+        => PermitAbilityCombat(name, false);
+    internal bool PermitAbilityCombat(string name, bool priority)
     {
-        if (_combatVoices.Count(v => GodotObject.IsInstanceValid(v) && v.Playing) >= _maximumCombatVoices) return false;
         string key = "combat/" + name;
         if (_last.TryGetValue(key, out double last) && _clock - last < _combatRepeatSeconds) return false;
+        if (_combatVoices.Count(v => GodotObject.IsInstanceValid(v) && v.Playing) >= _maximumCombatVoices)
+        {
+            if (!priority) return false;
+            // Make room for a channel bed or major impact, keeping existing loops intact.
+            var expendable = _combatVoices.Where(v => GodotObject.IsInstanceValid(v) && v.Playing &&
+                v.Stream is AudioStreamWav wav && wav.LoopMode == AudioStreamWav.LoopModeEnum.Disabled).OrderBy(v => v.VolumeDb).FirstOrDefault();
+            if (expendable == null) return false;
+            expendable.Stop();
+        }
         _last[key] = _clock; return true;
     }
     public void RegisterCombatVoice(AudioStreamPlayer3D voice) => _combatVoices.Add(voice);

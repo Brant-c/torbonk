@@ -19,7 +19,7 @@ unique lookup hash and decoded bytes. Archives were not modified or rehashed.
 | Reward ring | `loot_common.fxspec` `_fxProjectionTexture` → `/resources/art/fx/texture/symbol/tri_ring_blurred.dds` |
 | Level-up audio | `abilities/all/all_level_up_red.fxspec` references `Play_gui_state_levelup_core`, Imperial probes in/out and probeswoosh events |
 | Startup bank | `/resources/bnk2/swtor_startup.bnk`, TOR hash `0xD634B5F5260713CD`, BKHD bank ID `3980808364`, Wwise version 62 |
-| Pickup audio | Candidate name `Play_gui_inventory_pickup_default`, FNV-1 ID `1944075995`, verified as a typed startup HIRC Event → Action → container → Sound → media `163129423` |
+| Recovered inventory/UI audio | Candidate name `Play_gui_inventory_pickup_default`, FNV-1 ID `1944075995`, verified as a typed startup HIRC Event → Action → container → Sound → media `163129423`; retained for UI, superseded for XP collection |
 | Eruption audio | `creatures/generic_impacts/cr_generic_aoe_ground_pound.fxspec` references `Play_ability_creature_generic_spawn_rockfountain` and `Play_ability_creature_generic_spawnlarge_groundland`; typed `abilities_creatures_data.bnk` event graphs resolve selected media `24757886` and `113287997` in their exact HIRC/DIDX media bank locations |
 
 Paths abbreviated in the table under `items/`, `abilities/` and `creatures/` are
@@ -37,7 +37,7 @@ Startup event/media mappings retained for reproducibility:
 | Probeswoosh | 3053292103 | 96462397 |
 
 The core, probes and pickup PCM are original recovered media. Only seven PCM
-files are staged for B7 (about 3.7 MB including the presentation artwork). The
+files were originally staged for B7 (about 3.7 MB including the presentation artwork). The
 probeswoosh is retained as recovered evidence but is not currently assigned to
 a runtime cue. No looping level-up sound is staged or started.
 
@@ -100,3 +100,42 @@ holders (SWTOR / BioWare / Electronic Arts / Lucasfilm as applicable). No open o
 royalty-free license is claimed for those assets, and extraction does not grant
 redistribution rights. There is therefore no new external creator credit,
 source URL, attribution requirement or open-audio license to track for B7.
+
+## Listening-review follow-up: XP, Shock and Force Storm
+
+The XP inventory click has been replaced with `xp_soft_chime.wav`, a new authored
+0.28-second tone made entirely from sine oscillators, with a 12 ms rounded
+attack and tapered release. `scripts/make_xp_chime.py` is the reproducible recipe;
+`manifests/xp-chime.json` records output hash, frequency components, sample rate
+and level measurements. This is authored project audio, not original SWTOR
+media. It contains no external samples or third-party attribution dependency.
+
+Shock and Storm still use the same original recovered PCM. Their native parallel
+action/container groups now guide runtime layer selection rather than choosing
+one component from a flattened graph. `manifests/audio-polish.json` joins the
+configured groups to the existing `abilities-audio.json` event graphs; every
+configured media ID was verified against its recovered event graph and local
+PCM file. Individual gains remain authored and centrally tunable. Storm's
+second looping layer uses a bounded variant, rather than reproducing Wwise's
+complete random sequence/history. No new archive extraction was needed.
+
+Finite audio tails now survive normal visual completion; abort/death/restart
+still clear them. The focused rendered check passed all 13 checks in
+`manifests/audio-polish-smoke.json`. Sound preference and final relative volume
+remain subject to listening review.
+
+### Supplied XP sound replaces the authored chime
+
+The current XP cue uses the user's `C:/Users/brant/Downloads/17892505.wem`.
+Both supplied WEM and OGG files are preserved unchanged under
+`source-assets/user-supplied/xp-pickup-17892505/`. The WEM was decoded with the
+existing vgmstream tool to a 44.1 kHz stereo PCM16 WAV (0.623 seconds), then
+reduced by 12 dB without normalization, pitch change, trimming or looping.
+`xp_17892505_quiet.wav` is the current pickup asset, with neutral cue gain and
+the existing Reward bus gain/retrigger limit. Original Downloads files were
+not modified. The authored chime remains unused.
+
+`manifests/xp-pickup-user-source.json` records source/output hashes and conversion
+settings; `scripts/stage_user_xp_audio.py` reproduces the conversion. The
+supplied filename alone does not establish archive origin, creator or license;
+this file is not asserted to have been recovered from the April corpus.

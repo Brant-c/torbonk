@@ -3,11 +3,18 @@ namespace SwtorSurvivors;
 public enum AbilityTargetRule { NearestHostile, HostileCluster }
 public enum AbilityArea { SingleTarget, GroundSphere }
 public enum DamageType { Energy, Kinetic, Internal }
+public enum AbilityEffect { Damage, Shield, Heal }
 /// <summary>Survivors balance; April source facts are separately recorded in manifests.</summary>
 [GlobalClass]
 public partial class AbilityDefinition : Resource
 {
     [Export] public string Id { get; set; } = "lightning";
+    [Export] public AbilityEffect Effect { get; set; }
+    [Export] public float Healing { get; set; }
+    [Export] public float HealingCap { get; set; } = 15;
+    [Export] public float HealthThreshold { get; set; } = 0.5f;
+    [Export] public float ShieldCapacity { get; set; } = 30;
+    [Export] public float ShieldDuration { get; set; } = 12;
     [Export] public string Title { get; set; } = "Force Lightning";
     [Export] public string Icon { get; set; } = "sithsorcerer";
     [Export] public bool StartsUnlocked { get; set; } = true;

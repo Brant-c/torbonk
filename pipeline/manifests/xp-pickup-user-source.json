@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "suppliedPath": "C:\\Users\\brant\\Downloads\\17892505.wem",
+      "preservedPath": "source-assets\\user-supplied\\xp-pickup-17892505\\17892505.wem",
+      "sha256": "20d97aee28eba4201c861bddde5a633d2cac0bc106e300454048e0cdd228fb82"
+    },
+    {
+      "suppliedPath": "C:\\Users\\brant\\Downloads\\17892505.ogg",
+      "preservedPath": "source-assets\\user-supplied\\xp-pickup-17892505\\17892505.ogg",
+      "sha256": "ff1481b07142916fd6ebeb1c6f7bf8ee5196d5326f2ec936e8c9fefa841ff91b"
+    }
+  ],
+  "selectedSource": "17892505.wem",
+  "selection": "WEM is the supplied Wwise source; supplied OGG is preserved as an alternate, not mixed with it.",
+  "output": "godot\\Assets\\Presentation\\Audio\\xp_17892505_quiet.wav",
+  "sha256": "5aab24bb54d1ede191736c3cd7fb4fd46b968384ed63d6977287a1addd131833",
+  "processingGainDb": -12,
+  "sampleRate": 44100,
+  "channels": 2,
+  "frames": 27471,
+  "seconds": 0.6229251700680272,
+  "peak": 0.17816162109375,
+  "rmsDb": -29.68578641707914,
+  "conversion": "vgmstream WEM to PCM16, then constant -12 dB amplitude; no normalization, resampling, pitch change, trimming or looping.",
+  "provenance": "User-supplied files; archive origin, creator and license were not established from the filename. Not asserted to be recovered April media.",
+  "recipe": "scripts/stage_user_xp_audio.py"
+}

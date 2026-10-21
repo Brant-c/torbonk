@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "darkheal"
+Title = "Dark Heal"
+Icon = "darkgift"
+StartsUnlocked = false
+ChannelSeconds = 0
+TickSeconds = 1
+Effect = 2
+Damage = 0
+Healing = 25
+HealthThreshold = 0.5
+CooldownSeconds = 25
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+WindupSeconds = 0
+RecoverySeconds = 0.65
+GestureSeconds = 0.65
+StartClip = "B8/DarkHeal"
+SourceFx = "si_darkgift_target_01"
+ImpactAudioEvent = "Play_ability_sithinquisitor_darkgift_cast"

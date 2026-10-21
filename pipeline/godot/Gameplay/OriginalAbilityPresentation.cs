@@ -23,7 +23,9 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
     private float _radius;
     private bool _active, _impact, _ending;
     private double _age, _redraw;
-    private int _soundSlot;
+    public int PlayingAudioVoices => _sounds.Count(s => s.Playing);
+    public int LoopingAudioVoices => _sounds.Count(s => s.Playing && s.Stream is AudioStreamWav wav && wav.LoopMode != AudioStreamWav.LoopModeEnum.Disabled);
+    public int AudioVoicesStarted { get; private set; }
     private ShaderMaterial _material=null!;
     private JsonElement _beam;
 
@@ -94,16 +96,21 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
     {
         ClearAreaIndicator();
         _ending=true;_age=0;ClearBolts();
-        foreach(var sound in _sounds) if(sound.Stream is AudioStreamWav w && w.LoopMode!=AudioStreamWav.LoopModeEnum.Disabled) sound.Stop();
+        StopLoops();
     }
-    public void Release()
+    private void ClearVisuals()
     {
         ClearAreaIndicator();
         _active=false;ClearBolts();
         foreach(var (node,_) in _flashes) node.Free();_flashes.Clear();
-        foreach(var sound in _sounds) sound.Stop();
         SetProcess(false);
     }
+    private void StopLoops()
+    {
+        foreach(var sound in _sounds) if(sound.Stream is AudioStreamWav w && w.LoopMode!=AudioStreamWav.LoopModeEnum.Disabled) sound.Stop();
+    }
+    public void Complete() { StopLoops(); ClearVisuals(); }
+    public void Release() { ClearVisuals(); foreach(var sound in _sounds) sound.Stop(); }
     public override void _Process(double delta)
     {
         if(!_active)return;
@@ -121,7 +128,7 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
         }
         if(_ending)
         {
-            foreach(var sound in _sounds) sound.VolumeDb=-12-(float)_age*60;
+            // Impacts finish independently of the short casting recovery. End already stopped channel loops.
             return;
         }
         if(_redraw>0)return;
@@ -182,16 +189,36 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
     private void PlayEvent(string name,bool loop,Vector3 point)
     {
         if(string.IsNullOrEmpty(name))return;
-        if (AudioPresentation.Find(this) is { } mixer && !mixer.PermitCombat(name)) return;
+        var mixer = AudioPresentation.Find(this);
+        var mix = mixer?.AbilityMix(name);
+        if (mix != null)
+        {
+            for (int i=0; i<mix.Layers.Length; i++)
+            {
+                var layer = mix.Layers[i];
+                if (layer.Media.Length == 0 || !mixer!.PermitAbilityCombat(name + "/" + i, mix.Priority)) continue;
+                PlayMedia(layer.Media[_random.RandiRange(0, layer.Media.Length-1)], loop, point, layer.Gain);
+            }
+            return;
+        }
+        if (mixer != null && !mixer.PermitCombat(name)) return;
         var root=_audio.RootElement;
         if(!root.GetProperty("events").TryGetProperty(name,out var id) ||
             !root.GetProperty("graphs").TryGetProperty(id.GetString()!,out var graph))return;
         var media=graph.GetProperty("media").EnumerateArray().ToArray();if(media.Length==0)return;
         // One bounded variation per event. Complete Wwise layered graph is retained as evidence.
         int mid=media[_random.RandiRange(0,media.Length-1)].GetInt32();
+        PlayMedia(mid, loop, point, -12);
+    }
+    private void PlayMedia(int mid, bool loop, Vector3 point, float gain)
+    {
+        // Prefer an idle slot. An impact must never overwrite this ability's sustained loop.
+        var sound = _sounds.FirstOrDefault(s => !s.Playing) ?? _sounds.FirstOrDefault(s =>
+            s.Stream is AudioStreamWav w && w.LoopMode == AudioStreamWav.LoopModeEnum.Disabled);
+        if (sound == null) return;
         var stream=(AudioStreamWav)GD.Load<AudioStreamWav>($"res://Assets/Abilities/Audio/{mid}.wav").Duplicate();
         if(loop) {stream.LoopMode=AudioStreamWav.LoopModeEnum.Forward;stream.LoopBegin=0;stream.LoopEnd=(int)(stream.GetLength()*stream.MixRate);}
-        var sound=_sounds[_soundSlot++%_sounds.Count];sound.Stop();sound.Stream=stream;sound.VolumeDb=-12;sound.GlobalPosition=point;sound.Play();
+        sound.Stop();sound.Stream=stream;sound.VolumeDb=gain;sound.GlobalPosition=point;sound.Play(); AudioVoicesStarted++;
     }
     public override void _ExitTree() {Release();_fx?.Dispose();_audio?.Dispose();}
 }

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": [
+    "Default entry loads main menu with keyboard focus",
+    "All 16 advanced classes and six maps resolve to exactly one supported combination",
+    "Altered appearance and unknown schema are blocked",
+    "Forged playable flag cannot cross launch boundary",
+    "Sorcerer selection loads its isolated 3D preview",
+    "Unsupported map remains previewable with Play disabled",
+    "Unsupported class remains previewable with Play disabled and no Sorcerer model",
+    "Supported Ready screen enables Play",
+    "Play opens exactly one configured Korriban/Sorcerer world in the same process",
+    "Menu preview and menu audio are released on Play",
+    "Normal B7 world runs with original HUD, abilities and current spawn tuning",
+    "Existing level-up presentation still pauses the run",
+    "R restarts the same run without reopening selection",
+    "A live boss encounter is present for cleanup",
+    "Return action clears a paused upgrade presentation",
+    "Return frees world, boss, effects, HUD and audio nodes",
+    "Menu restores input, focus and last valid selection",
+    "Next run starts fresh without duplicate worlds or audio services",
+    "Death retains restart and exposes Return to Main Menu",
+    "Game-over Return button restores a clean main menu"
+  ],
+  "failure": null
+}

@@ -1,0 +1,23 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+C2: Default entry loads main menu with keyboard focus
+C2: All 16 advanced classes and six maps resolve to exactly one supported combination
+C2: Altered appearance and unknown schema are blocked
+C2: Forged playable flag cannot cross launch boundary
+C2: Sorcerer selection loads its isolated 3D preview
+C2: Unsupported map remains previewable with Play disabled
+C2: Unsupported class remains previewable with Play disabled and no Sorcerer model
+C2: Supported Ready screen enables Play
+C2: Play opens exactly one configured Korriban/Sorcerer world in the same process
+C2: Menu preview and menu audio are released on Play
+C2: Normal B7 world runs with original HUD, abilities and current spawn tuning
+C2: Existing level-up presentation still pauses the run
+C2: R restarts the same run without reopening selection
+C2: A live boss encounter is present for cleanup
+C2: Return action clears a paused upgrade presentation
+C2: Return frees world, boss, effects, HUD and audio nodes
+C2: Menu restores input, focus and last valid selection
+C2: Next run starts fresh without duplicate worlds or audio services
+C2: Death retains restart and exposes Return to Main Menu
+C2: Game-over Return button restores a clean main menu

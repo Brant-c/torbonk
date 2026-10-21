@@ -184,7 +184,12 @@ public partial class CharacterPresentation : Node3D
     }
     public void LoadAbilityAnimations()
     {
-        var imported = GD.Load<PackedScene>("res://Assets/Abilities/casts.glb").Instantiate<Node3D>();
+        LoadAbilityLibrary("res://Assets/Abilities/casts.glb", "B5");
+        LoadAbilityLibrary("res://Assets/B8/casts.glb", "B8");
+    }
+    private void LoadAbilityLibrary(string path, string key)
+    {
+        var imported = GD.Load<PackedScene>(path).Instantiate<Node3D>();
         var source = imported.FindChildren("*", "AnimationPlayer", true, false).OfType<AnimationPlayer>().Single();
         var library = new AnimationLibrary();
         foreach (var name in source.GetAnimationList())
@@ -200,7 +205,7 @@ public partial class CharacterPresentation : Node3D
             if (name == "StormLoop") animation.LoopMode = Animation.LoopModeEnum.Linear;
             library.AddAnimation(name, animation);
         }
-        Animator.AddAnimationLibrary("B5", library); imported.Free(); AddGestureClips();
+        Animator.AddAnimationLibrary(key, library); imported.Free(); AddGestureClips();
     }
     public void PlayReaction(string clip)
     {

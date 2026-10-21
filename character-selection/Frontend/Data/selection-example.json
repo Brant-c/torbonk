@@ -1,0 +1,21 @@
+{
+  "SchemaVersion": 1,
+  "FactionId": "empire",
+  "BaseClassId": "sith_inquisitor",
+  "AdvancedClassId": "sorcerer",
+  "Appearance": {
+    "PresetId": "sorcerer_april2012_bmn",
+    "SpeciesId": "human",
+    "BodyPresentationId": "male",
+    "BodyTypeId": "bmn",
+    "HeadId": "head_human_bmn_caucasian_a01",
+    "HairId": "hair_human_bmn_non_a01",
+    "SkinToneId": "source_material_a01c01",
+    "ComplexionId": "source_default",
+    "EquipmentAppearanceId": "ss_a04_c01_s01",
+    "IsSupportedPreset": true
+  },
+  "MapId": "korriban",
+  "Playable": true,
+  "PlayableStatus": "content_available_integration_pending"
+}

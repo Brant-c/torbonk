@@ -1,0 +1,126 @@
+{
+  "map": {
+    "event": {
+      "name": "Play_gui_galaxymap_mapitem_activate",
+      "id": "808600422",
+      "media": [
+        334641326,
+        493738210
+      ],
+      "edges": [
+        {
+          "from": "808600422",
+          "field": "ulActionID",
+          "to": "308022930"
+        },
+        {
+          "from": "308022930",
+          "field": "ulTargetID",
+          "to": "815649335"
+        },
+        {
+          "from": "815649335",
+          "field": "ulChildID",
+          "to": "62574875"
+        },
+        {
+          "from": "815649335",
+          "field": "ulChildID",
+          "to": "940826870"
+        }
+      ]
+    },
+    "mediaId": "334641326",
+    "bankDecodedOffset": 1172064,
+    "bytes": 5887,
+    "wemSha256": "a8b6a48074427ca91555dab1ba065b3cf9f6d89fa9a334efd00c8dbbd312be94",
+    "output": "Frontend/Assets/Audio/map.wav",
+    "sha256": "e5164dc36331af5cf4541f3bb42f4dbd53b7be50b3b0ea03233ddd915dfcab22",
+    "seconds": 0.4573469387755102,
+    "binding": "Name embedded in original character-create GFX; Wwise FNV1 match to typed event; parsed HIRC references reach selected embedded media. Runtime role is C1 adaptation."
+  },
+  "select": {
+    "event": {
+      "name": "play_gui_interface_buttonclick",
+      "id": "3642280550",
+      "media": [
+        308879189,
+        911798576
+      ],
+      "edges": [
+        {
+          "from": "3642280550",
+          "field": "ulActionID",
+          "to": "895593635"
+        },
+        {
+          "from": "895593635",
+          "field": "ulTargetID",
+          "to": "40135844"
+        },
+        {
+          "from": "40135844",
+          "field": "ulChildID",
+          "to": "938393057"
+        },
+        {
+          "from": "3642280550",
+          "field": "ulActionID",
+          "to": "644825600"
+        },
+        {
+          "from": "644825600",
+          "field": "ulTargetID",
+          "to": "289847355"
+        },
+        {
+          "from": "289847355",
+          "field": "ulChildID",
+          "to": "724216568"
+        }
+      ]
+    },
+    "mediaId": "308879189",
+    "bankDecodedOffset": 588096,
+    "bytes": 3275,
+    "wemSha256": "aa73d062e86c286aa50120567afb1a7c25b426d3695b03e54729a69ef46042ee",
+    "output": "Frontend/Assets/Audio/select.wav",
+    "sha256": "936519a75ee8b720b12ad1f9eb123bf3e2e4bcdfbcf8c46268a3d8b0c0bdaa19",
+    "seconds": 0.35374149659863946,
+    "binding": "Name embedded in original character-create GFX; Wwise FNV1 match to typed event; parsed HIRC references reach selected embedded media. Runtime role is C1 adaptation."
+  },
+  "back": {
+    "event": {
+      "name": "Play_gui_galaxymap_mapclose",
+      "id": "1496151229",
+      "media": [
+        76149100
+      ],
+      "edges": [
+        {
+          "from": "1496151229",
+          "field": "ulActionID",
+          "to": "780591999"
+        },
+        {
+          "from": "780591999",
+          "field": "ulTargetID",
+          "to": "157274303"
+        },
+        {
+          "from": "157274303",
+          "field": "ulChildID",
+          "to": "133453680"
+        }
+      ]
+    },
+    "mediaId": "76149100",
+    "bankDecodedOffset": 2912,
+    "bytes": 7257,
+    "wemSha256": "4182143fd84477b72f0d7478a5d395b12c8494be1338cb2fd08ec5f77db0fd04",
+    "output": "Frontend/Assets/Audio/back.wav",
+    "sha256": "eb861b902197ab8fc1093dfb314f0450afc8f31f5e0bcb162acc170fa93ac745",
+    "seconds": 0.5374829931972789,
+    "binding": "Name embedded in original character-create GFX; Wwise FNV1 match to typed event; parsed HIRC references reach selected embedded media. Runtime role is C1 adaptation."
+  }
+}

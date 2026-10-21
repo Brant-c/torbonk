@@ -1,0 +1,230 @@
+[
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\UI\\Eurostile.ttf",
+    "output": "Frontend/Assets/UI/Eurostile.ttf",
+    "sha256": "5c27083d4c5c08e34e67375087fbced01fa496ab0a8af326890b4a6d36e99b31",
+    "evidence": "Original swtor_fonts.gfx DefineFont3 outlines; existing B4 ui-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\UI\\EurostileBold.ttf",
+    "output": "Frontend/Assets/UI/EurostileBold.ttf",
+    "sha256": "70bf7db96b4cb878aff4ebd6e9d3910f734832b058882979c361351bcf0e43be",
+    "evidence": "Original swtor_fonts.gfx DefineFont3 outlines; existing B4 ui-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\UI\\slices\\bwaui_standard_window_1.png",
+    "output": "Frontend/Assets/UI/bwaui_standard_window_1.png",
+    "sha256": "e69f3965820cf54d6f49f273ea9dd84b2748d6bc0c6b0294d13cf6a0bd236bf4",
+    "evidence": "Original GFX tag 1008 crop; existing B4 ui-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\UI\\slices\\bwaui_standard_window_24.png",
+    "output": "Frontend/Assets/UI/bwaui_standard_window_24.png",
+    "sha256": "ae2cd2971b7c0883d8e7c9cae19d5fcabc99a1b7e650cc2721424dbf1fad9518",
+    "evidence": "Original GFX tag 1008 crop; existing B4 ui-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\UI\\slices\\bwaui_standard_window_9.png",
+    "output": "Frontend/Assets/UI/bwaui_standard_window_9.png",
+    "sha256": "16f21357f733d7d0659f172ba870b7f7f98aa65aa2859e6d00439bebd8c510f6",
+    "evidence": "Original GFX tag 1008 crop; existing B4 ui-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\UI\\slices\\bwaui_standard_window_18.png",
+    "output": "Frontend/Assets/UI/bwaui_standard_window_18.png",
+    "sha256": "1fdce6923578e34ce4c80a05ad2e6099149494998437140c0978f23f80aeabc8",
+    "evidence": "Original GFX tag 1008 crop; existing B4 ui-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\UI\\slices\\bwaui_tooltip_1.png",
+    "output": "Frontend/Assets/UI/bwaui_tooltip_1.png",
+    "sha256": "a1ddff2bbb9da61f655e45c4507f5711f9cfbecca7ad87df30337c39a9b1f177",
+    "evidence": "Original GFX tag 1008 crop; existing B4 ui-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer.glb",
+    "output": "Frontend/Assets/Character/sorcerer.glb",
+    "sha256": "c338202a83450f47d9976c113bb4e14a6071be6e102358e9eae1cac5b3b829ed",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_boot_tall_light_ss_a04c01_u_basecolor.png",
+    "output": "Frontend/Assets/Character/sorcerer_boot_tall_light_ss_a04c01_u_basecolor.png",
+    "sha256": "e0664339e67d91dbb70f207007cbcd2e3d17c9b674b6e25ca3b957df64c2058c",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_boot_tall_light_ss_a04c01_u_normal.png",
+    "output": "Frontend/Assets/Character/sorcerer_boot_tall_light_ss_a04c01_u_normal.png",
+    "sha256": "049589599cb0f25c02ef8f8a7b6723f5d524cc0c62d296c2b8e6094a229b3f22",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_boot_tall_light_ss_a04c01_u_roughness.png",
+    "output": "Frontend/Assets/Character/sorcerer_boot_tall_light_ss_a04c01_u_roughness.png",
+    "sha256": "2c29bdef71d23fd2bc86479aa21a1321d6b34ac394a9966c0cee0e9e01f43717",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_chest_robe01_light_ss_a04c01_m_basecolor.png",
+    "output": "Frontend/Assets/Character/sorcerer_chest_robe01_light_ss_a04c01_m_basecolor.png",
+    "sha256": "dea6d67e8954ae4386d15f4c30198b31a6bae6542f6b88802da0f2593a22fc3d",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_chest_robe01_light_ss_a04c01_m_normal.png",
+    "output": "Frontend/Assets/Character/sorcerer_chest_robe01_light_ss_a04c01_m_normal.png",
+    "sha256": "a055897546db50912e62841a264589c8fc9f6a1d112179f176a760f792c9a260",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_chest_robe01_light_ss_a04c01_m_roughness.png",
+    "output": "Frontend/Assets/Character/sorcerer_chest_robe01_light_ss_a04c01_m_roughness.png",
+    "sha256": "3e22adc3876a602a39b3b5ab7189cc07bf40abf82424de8fef7a3b05d56a533d",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_eye_human_non_a01_c01_basecolor.png",
+    "output": "Frontend/Assets/Character/sorcerer_eye_human_non_a01_c01_basecolor.png",
+    "sha256": "bcc12f077085943e3403e11c9045d2ec81aa3df433e52c89c97d9348871ca89c",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_eye_human_non_a01_c01_normal.png",
+    "output": "Frontend/Assets/Character/sorcerer_eye_human_non_a01_c01_normal.png",
+    "sha256": "715a6417b4d3f0e15e1b2d3a31040ad53e505c95dd59286b7756fbef8a71b3f9",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_eye_human_non_a01_c01_roughness.png",
+    "output": "Frontend/Assets/Character/sorcerer_eye_human_non_a01_c01_roughness.png",
+    "sha256": "e9f5b750a11e76db652932bc0a818a37d49d0cdc4de52ad42967bd51e42966ed",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_hair_human_non_a01_v01_m_basecolor.png",
+    "output": "Frontend/Assets/Character/sorcerer_hair_human_non_a01_v01_m_basecolor.png",
+    "sha256": "cfca228184d5b0679179bb3b1bb57798f81cb74c2167f3de63805ec108c8c3e6",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_hair_human_non_a01_v01_m_normal.png",
+    "output": "Frontend/Assets/Character/sorcerer_hair_human_non_a01_v01_m_normal.png",
+    "sha256": "e695b506aec91ea4861041c54820b1d1dded9ecdf57e1712674c18bbeca24bc6",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_hair_human_non_a01_v01_m_roughness.png",
+    "output": "Frontend/Assets/Character/sorcerer_hair_human_non_a01_v01_m_roughness.png",
+    "sha256": "3e39aef771b0274501076f5863327dffcf80e2f2eda367dcd066f98138f1d065",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_hand_gauntlet_light_ss_a04c01_u_basecolor.png",
+    "output": "Frontend/Assets/Character/sorcerer_hand_gauntlet_light_ss_a04c01_u_basecolor.png",
+    "sha256": "8ad90a1f2167b93341a6f1cf95d20fb7e2637cf19692918389830ca94988044d",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_hand_gauntlet_light_ss_a04c01_u_normal.png",
+    "output": "Frontend/Assets/Character/sorcerer_hand_gauntlet_light_ss_a04c01_u_normal.png",
+    "sha256": "172341e9f6b545f491191b4c99713dc169cc6159d879d249b22f63f02f9b881c",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_hand_gauntlet_light_ss_a04c01_u_roughness.png",
+    "output": "Frontend/Assets/Character/sorcerer_hand_gauntlet_light_ss_a04c01_u_roughness.png",
+    "sha256": "80b113f9c7d0d956c7ea14051462730d26b6d431c4859c0c68285bf17a598b3a",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_head_human_caucasian_a01c01_m_basecolor.png",
+    "output": "Frontend/Assets/Character/sorcerer_head_human_caucasian_a01c01_m_basecolor.png",
+    "sha256": "2fa833ee2c1403d7369490107a49383d285a65c510365ba8353ce23b7462cca7",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_head_human_caucasian_a01c01_m_normal.png",
+    "output": "Frontend/Assets/Character/sorcerer_head_human_caucasian_a01c01_m_normal.png",
+    "sha256": "c2a80c6815cf7c1a7e9c917556b22581d17aef780d115aa22ed6b5356aa97bcc",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_head_human_caucasian_a01c01_m_roughness.png",
+    "output": "Frontend/Assets/Character/sorcerer_head_human_caucasian_a01c01_m_roughness.png",
+    "sha256": "abfe0478d110b92a21b4e6e6176e984f545802677a38cabdfb2618cfa93d1326",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_leg_skirt_light_ss_a04c01_u_v01_basecolor.png",
+    "output": "Frontend/Assets/Character/sorcerer_leg_skirt_light_ss_a04c01_u_v01_basecolor.png",
+    "sha256": "e1ea6d650b8c8c53605864c3ed9cd9d6ebc319dfa71b7551ae9ff88a4106530f",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_leg_skirt_light_ss_a04c01_u_v01_normal.png",
+    "output": "Frontend/Assets/Character/sorcerer_leg_skirt_light_ss_a04c01_u_v01_normal.png",
+    "sha256": "4903219b545c647fb2f45465de8f1b5b8bdce31219cf6fc5f2e3097d46819c94",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_leg_skirt_light_ss_a04c01_u_v01_roughness.png",
+    "output": "Frontend/Assets/Character/sorcerer_leg_skirt_light_ss_a04c01_u_v01_roughness.png",
+    "sha256": "97538d7589dc69b5a41669266c706938a8aeb6731f4552f68b5583966c5585be",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_waist_belt_light_ss_a04c01_u_basecolor.png",
+    "output": "Frontend/Assets/Character/sorcerer_waist_belt_light_ss_a04c01_u_basecolor.png",
+    "sha256": "eef4749317a9032faf6e08e81a4a4c592d3f1e12230e41605bcbc5446a6c572c",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_waist_belt_light_ss_a04c01_u_normal.png",
+    "output": "Frontend/Assets/Character/sorcerer_waist_belt_light_ss_a04c01_u_normal.png",
+    "sha256": "31f44ff832d50367f698a7d8c0395c4975215b3c9e97841586a1b8ae5ec38eca",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Assets\\sorcerer_waist_belt_light_ss_a04c01_u_roughness.png",
+    "output": "Frontend/Assets/Character/sorcerer_waist_belt_light_ss_a04c01_u_roughness.png",
+    "sha256": "a5892138c94545c4e1b6f6588380ba5f26590429491408cc5016a48d591e2120",
+    "evidence": "Existing April modular Sorcerer conversion; character-source.json + character-recipe.json + character-conversion.json"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\manifests\\ui-source.json",
+    "output": "manifests/prior/ui-source.json",
+    "sha256": "3587bea46a3fd4e37413ae4da8af7d4f3a11ebc43124e759d6d2351f9e97968f",
+    "evidence": "Frozen existing conversion evidence; referenced output paths are historical"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\manifests\\ui-conversion.json",
+    "output": "manifests/prior/ui-conversion.json",
+    "sha256": "e94c490de75d19d9f88c385064df870549ca0177c8696eedd06362ab48088699",
+    "evidence": "Frozen existing conversion evidence; referenced output paths are historical"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\manifests\\character-source.json",
+    "output": "manifests/prior/character-source.json",
+    "sha256": "17f9499dba9421bd39bc630aadd38bfbb01fd2158c2e433d4531bf2245e20e54",
+    "evidence": "Frozen existing conversion evidence; referenced output paths are historical"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\manifests\\character-conversion.json",
+    "output": "manifests/prior/character-conversion.json",
+    "sha256": "b48040e99835d56b4b54ddbdbb03b480b462f34884c4d44ffc6d880c6164a78f",
+    "evidence": "Frozen existing conversion evidence; referenced output paths are historical"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\manifests\\character-artifacts.json",
+    "output": "manifests/prior/character-artifacts.json",
+    "sha256": "5d7e535f78648e38686bc55554fcbc6f7062f6bbc76b449fa5e2fd4cedfddf46",
+    "evidence": "Frozen existing conversion evidence; referenced output paths are historical"
+  },
+  {
+    "source": "D:\\SWTORClassic\\torbonk\\pipeline\\character-recipe.json",
+    "output": "manifests/prior/character-recipe.json",
+    "sha256": "b2d62525991e9f66de235a3a9d0c454277d3c4ee17253ca40977380eb0660952",
+    "evidence": "Exact prior model assembly prescription"
+  }
+]

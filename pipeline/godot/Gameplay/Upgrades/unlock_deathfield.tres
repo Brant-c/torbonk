@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/UpgradeDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "unlock_deathfield"
+Title = "Death Field"
+Icon = "deathfield"
+Effect = 7
+AbilityId = "deathfield"
+MaximumRank = 1
+AmountPerRank = 0
