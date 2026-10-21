@@ -104,6 +104,81 @@ public partial class KitSmoke : Node
                 P.Apply(dart,_fixtures[0]);P.Apply(dart,_fixtures[0]);float before=_fixtures[0].Health.Current;P.Advance(1.05);
                 Check("Lethal Dose deepens a refreshed poison by 10%",Near(before-_fixtures[0].Health.Current,9.9f) && P.Count==1);
             }
+            else if(id=="assassin")
+            {
+                var lacerate=w.Combat;var terror=w.Abilities.Find("creepingterror")!;var shroud=w.Abilities.Find("forceshroud")!;var discharge=w.Abilities.Find("discharge")!;
+                Reset();Cast(terror);
+                Check("Creeping Terror afflicts its target",P.Count==1 && P.Has(terror,_fixtures[0]));
+                Reset();var d=Cast(discharge);
+                Check("Discharge hits and afflicts everything around you",d.All(x=>x>0) && P.Count==3);
+                Reset();Check("Force Shroud fires when enemies are close",shroud.TryBegin());for(int i=0;i<12;i++)shroud.Advance(.05);
+                Check("Force Shroud raises a shield",w.PlayerActor.Health.Shielded);
+                w.PlayerActor.Health.ClearShield();
+                Reset();Check("Contagion is eligible",w.Progression.Grant("assassin_contagion"));
+                P.Apply(terror,_fixtures[0]);P.Advance(3.05);
+                Check("Contagion spreads the affliction on the third tick",P.Has(terror,_fixtures[1]));
+                Reset();Check("Static Blades is eligible",w.Progression.Grant("assassin_static_blades"));
+                P.Apply(terror,_fixtures[0]);P.Advance(4);Cast(lacerate,false);P.Advance(4);
+                Check("Static Blades: Lacerate refreshes the affliction beyond its normal 6 s",P.Has(terror,_fixtures[0]));
+            }
+            else if(id=="juggernaut")
+            {
+                var smash=w.Combat;var slash=w.Abilities.Find("viciousslash")!;var crush=w.Abilities.Find("crushingblow")!;var roar=w.Abilities.Find("intimidatingroar")!;
+                Reset();var c1=Cast(crush);Check("Crushing Blow is a single heavy hit",Near(c1[0],60) && c1[1]==0);
+                Reset();var r=Cast(roar);Check("Intimidating Roar is a utility burst on all nearby enemies",r.All(x=>Near(x,4)) && roar.Definition.Category==AbilityCategory.Utility);
+                Reset();Check("Rage is eligible",w.Progression.Grant("juggernaut_rage"));
+                for(int i=0;i<5;i++){slash.ResetCombat();Cast(slash,false);}
+                Check("Rage builds five stacks for +25% damage",b.RageStacks==5 && Near(b.DamageMultiplier(slash,_fixtures[0]),1.25f));
+                b._PhysicsProcess(8.1);Check("Rage fades after 8 s",b.RageStacks==0 && Near(b.DamageMultiplier(slash,_fixtures[0]),1));
+                Reset();Check("Shockwave is eligible",w.Progression.Grant("juggernaut_shockwave"));
+                smash.ResetCombat();Cast(smash);Check("Shockwave leaves Smash damage unchanged",Near(_fixtures[0].Health.Maximum-_fixtures[0].Health.Current,42,.05f));
+            }
+            else if(id=="powertech")
+            {
+                var sweep=w.Combat;var burst=w.Abilities.Find("flameburst")!;var missile=w.Abilities.Find("incendiarymissile")!;var ion=w.Abilities.Find("ionshield")!;
+                Reset();Cast(burst);Check("Flame Burst burns its target",P.Count==1 && P.Has(burst,_fixtures[0]));
+                Reset();Cast(missile);Check("Incendiary Missile ignites the cluster",P.Count==3);
+                float h0=_fixtures[0].Health.Current,h1=_fixtures[1].Health.Current;P.Advance(1.05);
+                Check("splash burns at 70% strength",Near(h0-_fixtures[0].Health.Current,3) && Near(h1-_fixtures[1].Health.Current,2.1f));
+                Reset();Check("Ion Shield fires when enemies are close",ion.TryBegin());for(int i=0;i<12;i++)ion.Advance(.05);
+                Check("Ion Shield raises a 30-point shield",w.PlayerActor.Health.Shielded);w.PlayerActor.Health.ClearShield();
+                Reset();Check("Wildfire is eligible",w.Progression.Grant("powertech_last_gasp"));
+                P.Apply(burst,_fixtures[0]);_fixtures[0].Health.ApplyDamage(1000000,DamageType.Energy);b.PassOn(_fixtures[0]);
+                Check("Wildfire passes the burn to the nearest enemy",P.Has(burst,_fixtures[1]) && !P.Has(burst,_fixtures[2]));
+                Reset();Check("Searing Sweep is eligible",w.Progression.Grant("powertech_static_blades"));
+                P.Apply(burst,_fixtures[0]);P.Advance(3);Cast(sweep,false);P.Advance(3);
+                Check("Searing Sweep refreshes burns beyond their normal 5 s",P.Has(burst,_fixtures[0]));
+            }
+            else if(id=="sniper")
+            {
+                var shot=w.Combat;var ambush=w.Abilities.Find("ambush")!;var series=w.Abilities.Find("seriesofshots")!;var probe=w.Abilities.Find("shieldprobe")!;
+                Reset();var a1=Cast(ambush);Check("Ambush is one big hit",Near(a1[0],80) && a1[1]==0);
+                Reset();var s1=Cast(series);Check("Series of Shots lands three shots",Near(s1[0],42,.1f));
+                Reset();Check("Shield Probe fires when enemies approach",probe.TryBegin());for(int i=0;i<12;i++)probe.Advance(.05);
+                Check("Shield Probe raises a shield",w.PlayerActor.Health.Shielded);w.PlayerActor.Health.ClearShield();
+                Reset();Check("Target Lock is eligible",w.Progression.Grant("sniper_target_lock"));
+                var seen=new List<float>();for(int i=0;i<6;i++){shot.ResetCombat();seen.Add(Cast(shot)[0]);}
+                Check("Target Lock adds 10% per consecutive hit, capped at four",Near(seen[0],32,.05f) && Near(seen[1],35.2f,.05f) && Near(seen[4],44.8f,.05f) && Near(seen[5],44.8f,.05f));
+                Reset();Check("Followthrough is eligible",w.Progression.Grant("sniper_followthrough"));
+                Cast(shot);Check("Sniper Shot is on cooldown",shot.CooldownRemaining>0);
+                _fixtures[0].Health.ApplyDamage(_fixtures[0].Health.Current-1,DamageType.Energy);ambush.ResetCombat();Cast(ambush,false);
+                Check("Followthrough resets Sniper Shot on an Ambush kill",!_fixtures[0].Alive && shot.CooldownRemaining==0);
+            }
+            else if(id=="mercenary")
+            {
+                var tracer=w.Combat;var heat=w.Abilities.Find("heatseeker")!;var unload=w.Abilities.Find("unload")!;var armor=w.Abilities.Find("reactivearmor")!;
+                Reset();var h=Cast(heat);Check("Heatseeker Missiles hit the cluster",Near(h[0],45) && h[1]>0 && h[2]>0);
+                Reset();var u=Cast(unload);Check("Unload lands four shots",Near(u[0],44,.1f) && u[1]==0);
+                Reset();Check("Reactive Armor fires when enemies are close",armor.TryBegin());for(int i=0;i<12;i++)armor.Advance(.05);
+                Check("Reactive Armor raises a shield",w.PlayerActor.Health.Shielded);w.PlayerActor.Health.ClearShield();
+                Reset();Check("Tracer Lock is eligible",w.Progression.Grant("mercenary_tracer_lock"));
+                Cast(tracer);Check("Tracer marks the targets it hits",b.Marked(_fixtures[0]));
+                unload.ResetCombat();var marked=Cast(unload,false);Check("marked targets take +25% from other abilities",Near(marked[0],55,.1f));
+                Reset();Check("Chain Reaction is eligible",w.Progression.Grant("mercenary_chain_reaction"));
+                tracer.ResetCombat();Cast(tracer);_fixtures[0].Health.ApplyDamage(1000000,DamageType.Energy);
+                float n1=_fixtures[1].Health.Current,n2=_fixtures[2].Health.Current;b.PassOn(_fixtures[0]);
+                Check("a marked enemy explodes when it dies",Near(n1-_fixtures[1].Health.Current,20) && Near(n2-_fixtures[2].Health.Current,20));
+            }
             }
             // Starter presentation regressions (D3 corrections): additive FX, lethal tails, flame pulses.
             Reset();

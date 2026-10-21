@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "seriesofshots"
+StartsUnlocked = false
+Title = "Series of Shots"
+Icon = "snipe"
+Damage = 14
+CooldownSeconds = 5
+Range = 1.5
+Radius = 0
+Area = 0
+TickSeconds = 0.4
+Description = "Three rapid shots at one target."
+StartClip = "D3/Sniper"
+LoopClip = "D3/Sniper"
+EndClip = ""
+ChannelSeconds = 1.2
+WindupSeconds = 0.0
+PresentationKind = "rifle"
+MuzzleBone = "RightWeapon"
+ImpactTailsOnTargetDeath = true
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+CastAudio = "res://Assets/D3/Audio/28023533.wav"
+RecoverySeconds = 0.3
+GestureSeconds = 1.5

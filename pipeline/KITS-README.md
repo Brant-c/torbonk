@@ -31,8 +31,8 @@ Branch `claude/advanced-class-kits`. Baseline: D3 (eight Imperial classes, one s
 | Marauder | Bleeding frenzy | Rupture (bleed) | Annihilate: heavy single hit, +50% vs bleeding | Force Scream: splash that bleeds secondaries at half strength | Berserk: +25% damage 6 s, 20 s cd | **Last Gasp** (bleed passes on death), **Blood Rhythm** (every 4th bleed tick refunds 0.5 s of Rupture cd) |
 | Operative | Poison stacker | Corrosive Dart | Corrosive Grenade: splash that poisons everything it touches | Weakening Blast: small hit, target takes +20% damage 5 s | Adrenal Stim: +20% speed 5 s | **Contagion** (poison jumps every 3rd tick), **Lethal Dose** (each refresh +10% poison, max 3) |
 | Assassin | Force + poison | Lacerate (radial) | Creeping Terror: single DoT, slows | Discharge: radial burst, short DoT on all | Force Shroud: shield 20/6 s | **Contagion**, **Static Blades** (Lacerate refreshes DoTs on hit enemies) |
-| Juggernaut | Rage tank | Smash (radial) | Vicious Slash: fast single hit | Ravage-style Crushing Blow: heavy single hit | Intimidating Roar: radial slow + stagger | **Rage** (hits build 5 stacks, +5% damage each), **Shockwave** (Smash slows 2 s) |
-| Powertech | Burn + armor | Flame Sweep (radial) | Flame Burst: single hit + burn | Incendiary Missile: splash + burn | Ion Shield: shield 30/8 s, flames when broken | **Wildfire** (burn passes on death), **Searing Sweep** (Sweep ticks refresh burns) |
+| Juggernaut | Rage tank | Smash (radial) | Vicious Slash: fast single hit | Crushing Blow: heavy single hit (60) | Intimidating Roar: radial slow + stagger | **Rage** (hits build 5 stacks, +5% damage each), **Shockwave** (Smash slows 2 s) |
+| Powertech | Burn + armor | Flame Sweep (radial) | Flame Burst: single hit + burn | Incendiary Missile: splash + burn | Ion Shield: shield 30/8 s | **Wildfire** (burn passes on death), **Searing Sweep** (Sweep ticks refresh burns) |
 | Sniper | Precision | Sniper Shot | Ambush: 80 dmg, 8 s cd | Series of Shots: 3-tick channel | Shield Probe: shield 20/6 s | **Target Lock** (+10% per consecutive hit on same target, max 4), **Followthrough** (kill with Ambush resets Sniper Shot) |
 | Mercenary | Arsenal / marked | Tracer Missile | Heatseeker Missiles: heavy splash | Unload: 4-tick channel | Reactive Armor: shield 20/6 s | **Tracer Lock** (Tracer-marked enemies take +25% from other abilities 6 s), **Chain Reaction** (marked enemy death explodes) |
 
@@ -54,6 +54,17 @@ clip, icon family and PCM.
   * Validation: `Run-Kits-Smoke.ps1` (per-class receipts `manifests/kit-smoke-<class>.json`: marauder 31, operative 33, powertech 7, sniper 4 checks), plus the existing
     D3 (107) and D2 smokes still pass. Flame Sweep is now four pulses over the spin; D3Smoke was adjusted for that intentional change.
   * Not verified: how the new effects *look* and *sound* in the rendered game. Wrist/muzzle alignment, flame spin and saber audio levels need a manual pass.
-* **K2** — Assassin + Juggernaut + Powertech.
-* **K3** — Sniper + Mercenary.
-* **K4** — balance pass against PR #1 direction, README/receipt updates.
+* **K2 (done)** — Assassin (Creeping Terror, Discharge, Force Shroud, Contagion, Static Blades), Juggernaut (Vicious Slash, Crushing Blow, Intimidating Roar, Rage, Shockwave),
+  Powertech (Flame Burst, Incendiary Missile, Ion Shield, Wildfire, Searing Sweep).
+* **K3 (done)** — Sniper (Ambush, Series of Shots, Shield Probe, Target Lock, Followthrough), Mercenary (Heatseeker Missiles, Unload, Reactive Armor, Tracer Lock, Chain Reaction).
+  Smoke receipts now cover all seven kit classes: juggernaut 34, assassin 27, powertech 34, sniper 38, mercenary 31, marauder 31, operative 33. D3 (107) and D2 still pass.
+* **K4 (next)** — manual review by the user, then a balance pass and replacement of placeholder clips/icons once the research MCP is available.
+
+## Notes for review
+
+* Throughput is bounded by the shared 1.5 s global cooldown, so a full kit is roughly 1.5–2× a starter-only run, not a multiple of its ability count. No heals were added; shields are small
+  and short; relic rules from PR #1 are untouched. Numbers are first-pass Survivors tuning.
+* Placeholders: every new ability reuses its class's recovered clip, and several share icons (`electricshield` for all shields, `spinningstrike` for Annihilate and Crushing Blow, `snipe` for
+  Ambush/Series of Shots). Sorcerer-owned icons (`darkgift`, `chargedgauntlets`, `markofpower`) are reused where no class-specific icon is recovered yet.
+* Slow effects (Creeping Terror, Roar, Shockwave) only act on `EnemyAgent`s, so the smoke checks the DoT/damage halves of those abilities, not the slow.
+* Static Blades and Searing Sweep share one mechanic (direct hits refresh the player's DoTs); Contagion/Wildfire and Last Gasp share the spread framework.

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "reactivearmor"
+StartsUnlocked = false
+Title = "Reactive Armor"
+Icon = "electricshield"
+Category = 1
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+Effect = 1
+Damage = 1
+ShieldCapacity = 25
+ShieldDuration = 6
+CooldownSeconds = 20
+Range = 0.8
+Area = 0
+WindupSeconds = 0.0
+ChannelSeconds = 0.0
+RecoverySeconds = 0.4
+GestureSeconds = 0.5
+StartClip = "D3/Missile"
+LoopClip = "D3/Missile"
+EndClip = ""
+CastAudio = ""
+PresentationKind = "impact"
+Description = "A 25-point shield for 6 seconds. Fires when enemies are close."

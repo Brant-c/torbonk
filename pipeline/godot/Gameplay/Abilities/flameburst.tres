@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "flameburst"
+StartsUnlocked = false
+Title = "Flame Burst"
+Icon = "flamingsweep"
+Damage = 10
+CooldownSeconds = 6
+Range = 0.6
+Radius = 0
+Area = 0
+PeriodicDamage = 4
+PeriodicDuration = 5
+PeriodicInterval = 1
+DamageType = 0
+Description = "Short-range fire that burns the target for 5 seconds."
+StartClip = "D3/Missile"
+LoopClip = "D3/Missile"
+EndClip = ""
+ChannelSeconds = 0.0
+WindupSeconds = 0.0
+PresentationKind = "bracer"
+MuzzleBone = "LeftWrist"
+ImpactTailsOnTargetDeath = true
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+CastAudio = "res://Assets/D3/Audio/106642098.wav"
+ImpactAudio = "res://Assets/D3/Audio/19710093.wav"
+RecoverySeconds = 1.4
+GestureSeconds = 1.4

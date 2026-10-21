@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/UpgradeDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "powertech_last_gasp"
+Title = "Wildfire"
+Icon = "flamingsweep"
+AbilityId = "flameburst"
+Rarity = 1
+Effect = 9
+Mechanic = "last_gasp"
+MechanicalDescription = "Passive: a burning enemy that dies passes its burns to the nearest enemy within 0.30."
+MaximumRank = 1
+RequiresUpgrade = ""
+D2Choice = true

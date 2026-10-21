@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "shieldprobe"
+StartsUnlocked = false
+Title = "Shield Probe"
+Icon = "electricshield"
+Category = 1
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+Effect = 1
+Damage = 1
+ShieldCapacity = 20
+ShieldDuration = 6
+CooldownSeconds = 20
+Range = 1.0
+Area = 0
+WindupSeconds = 0.0
+ChannelSeconds = 0.0
+RecoverySeconds = 0.4
+GestureSeconds = 0.5
+StartClip = "D3/Sniper"
+LoopClip = "D3/Sniper"
+EndClip = ""
+CastAudio = ""
+PresentationKind = "impact"
+Description = "A 20-point shield for 6 seconds. Fires when enemies approach."

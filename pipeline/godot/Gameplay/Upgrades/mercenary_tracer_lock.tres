@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/UpgradeDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "mercenary_tracer_lock"
+Title = "Tracer Lock"
+Icon = "unexplodedmortarshell"
+AbilityId = "tracer"
+Rarity = 1
+Effect = 9
+Mechanic = "tracer_lock"
+MechanicalDescription = "Passive: Tracer Missile marks enemies it hits for 6 seconds; marked enemies take +25% from all your other abilities."
+MaximumRank = 1
+RequiresUpgrade = ""
+D2Choice = true

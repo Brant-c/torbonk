@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "forceshroud"
+StartsUnlocked = false
+Title = "Force Shroud"
+Icon = "electricshield"
+Category = 1
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+Effect = 1
+Damage = 1
+ShieldCapacity = 20
+ShieldDuration = 6
+CooldownSeconds = 18
+Range = 0.5
+Area = 0
+WindupSeconds = 0.0
+ChannelSeconds = 0.0
+RecoverySeconds = 0.4
+GestureSeconds = 0.5
+StartClip = "D3/Lacerate"
+LoopClip = "D3/Lacerate"
+EndClip = ""
+CastAudio = ""
+PresentationKind = "impact"
+EffectTint = Color(0.62, 0.2, 0.95, 1)
+Description = "A 20-point shield for 6 seconds. Fires when enemies are close."

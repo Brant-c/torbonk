@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "ambush"
+StartsUnlocked = false
+Title = "Ambush"
+Icon = "snipe"
+Damage = 80
+CooldownSeconds = 8
+Range = 1.8
+Radius = 0
+Area = 0
+Description = "Heavy opening shot at extreme range."
+StartClip = "D3/Sniper"
+LoopClip = "D3/Sniper"
+EndClip = ""
+ChannelSeconds = 0.0
+WindupSeconds = 0.0
+PresentationKind = "rifle"
+MuzzleBone = "RightWeapon"
+ImpactTailsOnTargetDeath = true
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+CastAudio = "res://Assets/D3/Audio/28023533.wav"
+RecoverySeconds = 1.066667
+GestureSeconds = 1.066667

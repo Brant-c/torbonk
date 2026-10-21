@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/UpgradeDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "assassin_static_blades"
+Title = "Static Blades"
+Icon = "spinningstrike"
+AbilityId = "creepingterror"
+Rarity = 1
+Effect = 9
+Mechanic = "static_blades"
+MechanicalDescription = "Passive: Lacerate and other direct hits refresh every DoT you have on the enemies they strike."
+MaximumRank = 1
+RequiresUpgrade = ""
+D2Choice = true

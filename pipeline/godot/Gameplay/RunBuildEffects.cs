@@ -10,6 +10,11 @@ public partial class RunBuildEffects : Node
     public GameWorld World {get;set;}=null!;
     private double _haste,_conduitLock,_buff;
     private float _damageBuff,_speedBuff;
+    // Class mechanics: Rage stacks, Target Lock chain, Tracer marks.
+    private int _rage,_lockStacks;private double _rageTime;private ulong _lockTarget;
+    private readonly Dictionary<ulong,double> _marks=new();
+    public int RageStacks=>_rage;
+    public bool Marked(Combatant target)=>_marks.GetValueOrDefault(target.GetInstanceId())>0;
     private bool _guardianShield;
     public void EquipmentRemoved(RunArtifactDefinition item)
     {
@@ -25,6 +30,9 @@ public partial class RunBuildEffects : Node
         float bonus=Item("sacrifice");
         if(World.PlayerActor.Health.Current<World.PlayerActor.Health.Maximum*0.35f)bonus+=0.35f*Talent("bloodlust");
         if(_buff>0)bonus+=_damageBuff;
+        if(_rage>0 && Talent("rage")>0)bonus+=0.05f*_rage;
+        if(_lockStacks>0 && target.GetInstanceId()==_lockTarget && Talent("target_lock")>0)bonus+=0.1f*_lockStacks;
+        if(ability.Definition.Id!="tracer" && Talent("tracer_lock")>0 && Marked(target))bonus+=0.25f;
         return (1+bonus)*(target.Health.VulnerabilitySeconds>0?1.2f:1);
     }
     public float HealingAmount(float amount) => amount*(World.PlayerActor.Health.Current<World.PlayerActor.Health.Maximum*0.3f?1+Item("restoration"):1);
@@ -41,6 +49,13 @@ public partial class RunBuildEffects : Node
     public void AbilityHit(AutomaticAbility ability,Combatant target)
     {
         if(Talent("static_blades")>0 && ability.Definition.PeriodicDuration<=0 && World.Periodic.Has(target))World.Periodic.RefreshAll(target);
+        if(ability.Definition.Effect!=AbilityEffect.Damage)return;
+        if(Talent("rage")>0){_rage=Math.Min(5,_rage+1);_rageTime=8;}
+        if(Talent("shockwave")>0 && ability.Definition.Id=="smash" && target is EnemyAgent shocked)shocked.Slow(0.5f,2);
+        if(Talent("target_lock")>0)
+        { _lockStacks=target.GetInstanceId()==_lockTarget?Math.Min(4,_lockStacks+1):1;_lockTarget=target.GetInstanceId(); }
+        if(Talent("followthrough")>0 && ability.Definition.Id=="ambush" && !target.Alive)World.Abilities.Find("snipershot")?.ReduceCooldown(99);
+        if(ability.Definition.Id=="tracer" && Talent("tracer_lock")>0 && target.Alive)_marks[target.GetInstanceId()]=6;
     }
     /// <summary>DoT mechanics: Contagion jumps every third tick; Blood Rhythm shortens Rupture's cooldown.</summary>
     private void PeriodicTicked(AutomaticAbility source,Combatant target,int tick)
@@ -51,6 +66,11 @@ public partial class RunBuildEffects : Node
     /// <summary>Last Gasp / Wildfire: an afflicted enemy passes its DoTs on when it dies.</summary>
     public void PassOn(Combatant dead)
     {
+        if(Talent("chain_reaction")>0 && Marked(dead))
+        {
+            _marks.Remove(dead.GetInstanceId());
+            foreach(var near in World.Targeting.InArea(dead.GlobalPosition,0.2f,0.2f,true).Where(c=>c!=dead).ToArray())near.Health.ApplyDamage(20,DamageType.Energy);
+        }
         if(Talent("last_gasp")>0)
             foreach(var source in World.Periodic.On(dead))Spread(source,dead);
     }
@@ -100,10 +120,12 @@ public partial class RunBuildEffects : Node
     public override void _PhysicsProcess(double delta)
     {
         _conduitLock=Math.Max(0,_conduitLock-delta);
+        if(_rageTime>0){_rageTime-=delta;if(_rageTime<=0)_rage=0;}
+        foreach(var key in _marks.Keys.ToArray()){_marks[key]-=delta;if(_marks[key]<=0)_marks.Remove(key);}
         if(_buff>0) { _buff=Math.Max(0,_buff-delta);if(_buff==0)World.Progression?.Recalculate(); }
         if(_haste>0) { _haste=Math.Max(0,_haste-delta);if(_haste==0)World.Progression?.Recalculate(); }
     }
-    public void Reset() { _haste=_conduitLock=_buff=0;_lightningHits=0;_guardianShield=false; }
+    public void Reset() { _haste=_conduitLock=_buff=0;_rage=_lockStacks=0;_rageTime=0;_lockTarget=0;_marks.Clear();_lightningHits=0;_guardianShield=false; }
     public override void _ExitTree()
     {
         if(GodotObject.IsInstanceValid(World.PlayerActor))World.PlayerActor.Health.ShieldEnded-=ShieldEnded;

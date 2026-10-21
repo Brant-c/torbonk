@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "viciousslash"
+StartsUnlocked = false
+Title = "Vicious Slash"
+Icon = "rupture"
+Damage = 20
+CooldownSeconds = 2.5
+Range = 0.34
+Radius = 0
+Area = 0
+Description = "Fast single-target saber slash. Builds Rage."
+StartClip = "D3/Smash"
+LoopClip = "D3/Smash"
+EndClip = ""
+CastAudio = "res://Assets/D3/Audio/142158238.wav"
+ImpactAudio = "res://Assets/D3/Audio/157531335.wav"
+RecoverySeconds = 1.6
+GestureSeconds = 1.6
+ChannelSeconds = 0.0
+WindupSeconds = 0.0
+PresentationKind = "saber"
+WeaponAudio = "res://Assets/D3/Audio/173808209.wav"
+ImpactTailsOnTargetDeath = true
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0

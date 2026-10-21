@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "heatseeker"
+StartsUnlocked = false
+Title = "Heatseeker Missiles"
+Icon = "unexplodedmortarshell"
+Damage = 45
+CooldownSeconds = 9
+Range = 1.3
+Radius = 0.22
+Area = 4
+TargetRule = 1
+SplashMultiplier = 0.5
+Description = "Heavy missile salvo at the thickest cluster."
+StartClip = "D3/Missile"
+LoopClip = "D3/Missile"
+EndClip = ""
+ChannelSeconds = 0.0
+WindupSeconds = 0.0
+PresentationKind = "impact"
+ImpactTailsOnTargetDeath = true
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+CastAudio = "res://Assets/D3/Audio/106642098.wav"
+ImpactAudio = "res://Assets/D3/Audio/19710093.wav"
+ImpactTexture = "res://Assets/D3/fx_2x2_roundflames_01_desat.png"
+RecoverySeconds = 2.0
+GestureSeconds = 2.0

@@ -25,7 +25,17 @@
       "cooldown",
       "health",
       "speed",
-      "d3_smash"
+      "d3_smash",
+      "unlock_viciousslash",
+      "unlock_crushingblow",
+      "unlock_intimidatingroar",
+      "juggernaut_rage",
+      "juggernaut_shockwave"
+    ],
+    "Kit": [
+      "viciousslash",
+      "crushingblow",
+      "intimidatingroar"
     ]
   },
   {
@@ -69,7 +79,17 @@
       "cooldown",
       "health",
       "speed",
-      "d3_lacerate"
+      "d3_lacerate",
+      "unlock_creepingterror",
+      "unlock_discharge",
+      "unlock_forceshroud",
+      "assassin_contagion",
+      "assassin_static_blades"
+    ],
+    "Kit": [
+      "creepingterror",
+      "discharge",
+      "forceshroud"
     ]
   },
   {
@@ -113,7 +133,17 @@
       "cooldown",
       "health",
       "speed",
-      "d3_snipershot"
+      "d3_snipershot",
+      "unlock_ambush",
+      "unlock_seriesofshots",
+      "unlock_shieldprobe",
+      "sniper_target_lock",
+      "sniper_followthrough"
+    ],
+    "Kit": [
+      "ambush",
+      "seriesofshots",
+      "shieldprobe"
     ]
   },
   {
@@ -130,7 +160,17 @@
       "cooldown",
       "health",
       "speed",
-      "d3_tracer"
+      "d3_tracer",
+      "unlock_heatseeker",
+      "unlock_unload",
+      "unlock_reactivearmor",
+      "mercenary_tracer_lock",
+      "mercenary_chain_reaction"
+    ],
+    "Kit": [
+      "heatseeker",
+      "unload",
+      "reactivearmor"
     ]
   },
   {
@@ -147,7 +187,17 @@
       "cooldown",
       "health",
       "speed",
-      "d3_flamesweep"
+      "d3_flamesweep",
+      "unlock_flameburst",
+      "unlock_incendiarymissile",
+      "unlock_ionshield",
+      "powertech_last_gasp",
+      "powertech_static_blades"
+    ],
+    "Kit": [
+      "flameburst",
+      "incendiarymissile",
+      "ionshield"
     ]
   }
 ]

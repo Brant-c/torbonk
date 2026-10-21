@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "incendiarymissile"
+StartsUnlocked = false
+Title = "Incendiary Missile"
+Icon = "unexplodedmortarshell"
+Damage = 22
+CooldownSeconds = 10
+Range = 1.1
+Radius = 0.2
+Area = 4
+TargetRule = 1
+SplashMultiplier = 0.5
+PeriodicDamage = 3
+PeriodicDuration = 4
+PeriodicInterval = 1
+SecondaryPeriodicScale = 0.7
+DamageType = 0
+ImpactTexture = "res://Assets/D3/fx_2x2_roundflames_01_desat.png"
+Description = "Missile at the thickest cluster; splash targets burn too, at 70% strength."
+StartClip = "D3/Missile"
+LoopClip = "D3/Missile"
+EndClip = ""
+ChannelSeconds = 0.0
+WindupSeconds = 0.0
+PresentationKind = "impact"
+MuzzleBone = "LeftWrist"
+ImpactTailsOnTargetDeath = true
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+CastAudio = "res://Assets/D3/Audio/106642098.wav"
+ImpactAudio = "res://Assets/D3/Audio/19710093.wav"
+RecoverySeconds = 1.4
+GestureSeconds = 1.4
