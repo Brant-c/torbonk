@@ -32,7 +32,7 @@ public partial class UpgradeDefinition : Resource
     [Export] public RarityTuning? RarityRules { get; set; }
     public float EffectiveAmount => AmountPerRank*(RarityRules?.Multiplier(Rarity)??1);
     public string Scope => AbilityId switch { "shock"=>"Shock","storm"=>"Force Storm","lightning"=>"Force Lightning",
-        "deathfield"=>"Death Field","barrier"=>"Static Barrier","darkheal"=>"Dark Heal","chain"=>"Chain Lightning","overload"=>"Overload",_=>ClassProfile.All.FirstOrDefault(p=>p.StartingAbility==AbilityId) is {} p?Godot.GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{p.StartingAbility}.tres").Title:"All abilities" };
+        "deathfield"=>"Death Field","barrier"=>"Static Barrier","darkheal"=>"Dark Heal","chain"=>"Chain Lightning","overload"=>"Overload",_=>AbilityId!="" && Godot.ResourceLoader.Exists($"res://Gameplay/Abilities/{AbilityId}.tres")?Godot.GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{AbilityId}.tres").Title:"All abilities" };
     // Unbounded by default so three distinct meaningful choices remain available indefinitely.
     [Export] public int MaximumRank { get; set; }
     public string Description => Effect switch

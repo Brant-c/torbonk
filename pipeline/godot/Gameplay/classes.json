@@ -42,7 +42,17 @@
       "cooldown",
       "health",
       "speed",
-      "d3_rupture"
+      "d3_rupture",
+      "unlock_annihilate",
+      "unlock_forcescream",
+      "unlock_berserk",
+      "marauder_last_gasp",
+      "marauder_blood_rhythm"
+    ],
+    "Kit": [
+      "annihilate",
+      "forcescream",
+      "berserk"
     ]
   },
   {
@@ -76,7 +86,17 @@
       "cooldown",
       "health",
       "speed",
-      "d3_dart"
+      "d3_dart",
+      "unlock_corrosivegrenade",
+      "unlock_weakeningblast",
+      "unlock_adrenalstim",
+      "operative_contagion",
+      "operative_lethal_dose"
+    ],
+    "Kit": [
+      "corrosivegrenade",
+      "weakeningblast",
+      "adrenalstim"
     ]
   },
   {

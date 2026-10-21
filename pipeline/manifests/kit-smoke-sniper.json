@@ -1,0 +1,11 @@
+{
+  "class": "sniper",
+  "passed": true,
+  "checks": [
+    "sniper corridor has line of sight",
+    "snipershot lethal hit retains its presentation",
+    "snipershot effects survive a killing blow",
+    "no kit presentation raised a duplicate hit"
+  ],
+  "failure": null
+}

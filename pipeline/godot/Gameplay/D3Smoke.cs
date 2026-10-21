@@ -60,10 +60,12 @@ public partial class D3Smoke : Node
                 var a=new AutomaticAbility {Caster=w.PlayerActor,Targeting=w.Targeting,Presentation=visual,Periodic=w.Periodic};a.Configure(d);w.AddChild(a);
                 foreach(var f in fixtures)f.Health.Restore();received.Clear();flytext.Clear();
                 Check(p.Id+" automatic ability starts",a.TryBegin());
-                a.Advance(p.Presentation=="sorcerer"?1.6:.02);
+                int pulses=d.ChannelSeconds>0?(int)Math.Ceiling(d.ChannelSeconds/d.TickSeconds):1;
+                if(p.Presentation!="sorcerer" && d.ChannelSeconds>0){for(double t=0;t<d.WindupSeconds+d.ChannelSeconds+.1;t+=.05)a.Advance(.05);}
+                else a.Advance(p.Presentation=="sorcerer"?1.6:.02);
                 if(p.Presentation=="sorcerer")a.Advance(.6);
                 int expected=d.Area is AbilityArea.CasterRadial or AbilityArea.TargetSplash?3:1;
-                Check(p.Id+" damages appropriate distinct targets",fixtures.Count(e=>e.Health.Current<10000)==expected && fixtures.All(e=>e.Health.DamageEvents<= (p.Presentation=="sorcerer"?3:1)));
+                Check(p.Id+" damages appropriate distinct targets",fixtures.Count(e=>e.Health.Current<10000)==expected && fixtures.All(e=>e.Health.DamageEvents<= (p.Presentation=="sorcerer"?3:pulses)));
                 if(d.Area==AbilityArea.TargetSplash)
                 {Check("Tracer primary once and secondary splash amounts",Math.Abs(fixtures[0].Health.Current-(10000-d.Damage))<.01 && Math.Abs(fixtures[1].Health.Current-(10000-d.Damage*d.SplashMultiplier))<.01);}
                 if(d.PeriodicDuration>0)
@@ -77,7 +79,7 @@ public partial class D3Smoke : Node
                 }
                 int count=received.Count;await Frames(2);Check(p.Id+" presentation cannot duplicate damage",received.Count==count);
                 Check(p.Id+" every applied hit and periodic tick creates flytext",flytext.Count==received.Count);
-                Check(p.Id+" class upgrade pool excludes Sorcerer unlocks",p.TalentPool.Length==0 || p.TalentPool.All(id=>{var u=GD.Load<UpgradeDefinition>($"res://Gameplay/Upgrades/{id}.tres");return u.Effect!=UpgradeEffect.UnlockAbility && (u.AbilityId=="" || u.AbilityId==p.StartingAbility);}));
+                Check(p.Id+" class upgrade pool excludes Sorcerer unlocks",p.TalentPool.Length==0 || p.TalentPool.All(id=>{var u=GD.Load<UpgradeDefinition>($"res://Gameplay/Upgrades/{id}.tres");return (u.Effect!=UpgradeEffect.UnlockAbility || p.Kit.Contains(u.AbilityId)) && (u.AbilityId=="" || u.AbilityId==p.StartingAbility || p.Kit.Contains(u.AbilityId));}));
                 actor.PlayReaction("Death");Check(p.Id+" death retains full-body priority",actor.OverrideActive);
                 a.Abort();w.Periodic.Clear();a.Free();if(visual is Node node)node.Free();actor.Free();
             }

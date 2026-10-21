@@ -110,6 +110,7 @@ public partial class AutomaticAbility : Node
         if(!Unlocked || !CombatEnabled || !Caster.Alive || State!=LightningState.Idle || CooldownRemaining>0) return false;
         if(Definition.Effect==AbilityEffect.Heal && (Caster.Health.Current>=Caster.Health.Maximum || Caster.Health.Current>=Caster.Health.Maximum*HealthThreshold)) return false;
         if(Definition.Effect==AbilityEffect.Shield && (Caster.Health.Shielded || Targeting.Acquire(Range,AbilityTargetRule.NearestHostile,0)==null)) return false;
+        if(Definition.Effect==AbilityEffect.Buff && (Build?.Buffed==true || Targeting.Acquire(Range,AbilityTargetRule.NearestHostile,0)==null)) return false;
         if(Definition.Area==AbilityArea.CasterRadial && Targeting.InArea(Caster.GlobalPosition,Radius,Radius).Count()<Math.Max(1,Definition.NearbyTriggerCount)) return false;
         var target=Definition.Area==AbilityArea.CasterRadial || Definition.Effect!=AbilityEffect.Damage?Caster:Targeting.Acquire(Range,Definition.TargetRule,Radius);
         if(target==null) return false;
@@ -145,6 +146,7 @@ public partial class AutomaticAbility : Node
         if(Definition.Effect!=AbilityEffect.Damage)
         {
             if(Definition.Effect==AbilityEffect.Shield) Caster.Health.ApplyShield(ShieldCapacity,ShieldDuration);
+            else if(Definition.Effect==AbilityEffect.Buff) Build?.ApplyBuff(Definition);
             else LastHealing=Caster.Health.ApplyHealing(Build?.HealingAmount(Healing)??Healing);
             if(_presented) Present(()=>Presentation.Impact(Caster.AimPosition));
             return true;
@@ -162,9 +164,13 @@ public partial class AutomaticAbility : Node
         {
             if(State!=LightningState.Channeling || !Caster.Alive || !CombatEnabled) return false;
             if(!GodotObject.IsInstanceValid(target) || !target.Alive) continue;
-            float applied=DealHit(target,DamagePerTick*(Definition.Area==AbilityArea.TargetSplash && target!=CastTarget?Definition.SplashMultiplier:1));
-            if(target.Alive && Definition.PeriodicDuration>0)Periodic?.Apply(this,target);
-            if(Definition.Area==AbilityArea.CasterRadial && target is EnemyAgent enemy && enemy.Alive) enemy.DisplaceFrom(Caster.GlobalPosition,Definition.KnockbackDistance);
+            bool secondary=Definition.Area==AbilityArea.TargetSplash && target!=CastTarget;
+            float applied=DealHit(target,DamagePerTick*(secondary?Definition.SplashMultiplier:1));
+            if(target.Alive && Definition.PeriodicDuration>0)Periodic?.Apply(this,target,secondary?Definition.SecondaryPeriodicScale:1);
+            if(target.Alive && Definition.VulnerabilitySeconds>0 && !secondary)target.Health.VulnerabilitySeconds=Math.Max(target.Health.VulnerabilitySeconds,Definition.VulnerabilitySeconds);
+            if(target.Alive && Definition.SlowSeconds>0 && target is EnemyAgent slowed)slowed.Slow(Definition.SlowFactor,Definition.SlowSeconds);
+            Build?.AbilityHit(this,target);
+            if(Definition.Area==AbilityArea.CasterRadial && target is EnemyAgent enemy && enemy.Alive) enemy.DisplaceFrom(Caster.GlobalPosition,Definition.KnockbackDistance,Definition.StaggerSeconds);
             if(applied<=0) continue;
             _damaged.Add(target.GetInstanceId());
             if(_presented && Presentation is SurvivalAbilityPresentation original) Present(()=>original.TargetImpact(target));
@@ -182,7 +188,7 @@ public partial class AutomaticAbility : Node
         { Finish(!(Definition.ImpactTailsOnTargetDeath && ChannelSeconds<=0),"Target died / invalidated");return false; }
         return true;
     }
-    private float DealHit(Combatant target,float amount) => target.Health.ApplyDamage(amount*(Build?.DamageMultiplier(this,target)??1),Definition.DamageType);
+    private float DealHit(Combatant target,float amount) => target.Health.ApplyDamage(amount*(Build?.DamageMultiplier(this,target)??1)*(Definition.AfflictedBonus>0 && Periodic?.Has(target)==true?1+Definition.AfflictedBonus:1),Definition.DamageType);
     public void ApplyPeriodicHit(Combatant target,float amount)
     {
         if(!Caster.Alive || !target.Alive || !Caster.IsHostileTo(target))return;

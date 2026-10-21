@@ -1,0 +1,14 @@
+{
+  "class": "powertech",
+  "passed": true,
+  "checks": [
+    "powertech corridor has line of sight",
+    "flamesweep starts",
+    "Flame Sweep pulses four times along the spin",
+    "Flame Sweep restarts",
+    "Flame emitter runs during the spin with additive original textures",
+    "Flame emission stops with the spin",
+    "no kit presentation raised a duplicate hit"
+  ],
+  "failure": null
+}

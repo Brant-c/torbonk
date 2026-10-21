@@ -23,6 +23,7 @@ public sealed class ClassProfile
     public float Health {get;set;}=100;
     public float Movement {get;set;}=1;
     public string[] AbilityCategories {get;set;}=["offensive","utility"];
+    public string[] Kit {get;set;}=[];
     public string[] TalentPool {get;set;}=[];
     public string[] ArtifactEffects {get;set;}=["guardian","sacrifice","heal","shield","recovery"];
     public bool Ready => ResourceLoader.Exists(CharacterScene) && ResourceLoader.Exists(AnimationScene)

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/UpgradeDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "marauder_last_gasp"
+Title = "Last Gasp"
+Icon = "rupture"
+AbilityId = "rupture"
+Rarity = 1
+Effect = 9
+Mechanic = "last_gasp"
+MechanicalDescription = "Passive: a bleeding enemy that dies passes its bleeds to the nearest enemy within 0.30."
+MaximumRank = 1
+D2Choice = true

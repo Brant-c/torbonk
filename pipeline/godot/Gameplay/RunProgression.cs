@@ -67,7 +67,10 @@ public partial class RunProgression : Node3D
             foreach(string id in World.RunConfiguration.Profile.TalentPool)
             {
                 var u=(UpgradeDefinition)GD.Load<UpgradeDefinition>($"res://Gameplay/Upgrades/{id}.tres").Duplicate();
-                if(u.Effect is UpgradeEffect.Damage or UpgradeEffect.Range or UpgradeEffect.Cooldown)u.AbilityId=World.Combat.Definition.Id;
+                if(u.Effect is UpgradeEffect.Range or UpgradeEffect.Cooldown)u.AbilityId=World.Combat.Definition.Id;
+                // Class kits share one damage track so unlocked abilities stay relevant.
+                if(u.Effect==UpgradeEffect.Damage && World.RunConfiguration.Profile.Kit.Length>0)u.AbilityId="";
+                else if(u.Effect==UpgradeEffect.Damage)u.AbilityId=World.Combat.Definition.Id;
                 if(u.Effect==UpgradeEffect.Damage)u.Title="Combat Training";
                 if(u.Effect is UpgradeEffect.Damage or UpgradeEffect.Range or UpgradeEffect.Cooldown or UpgradeEffect.Radius)u.Icon=World.Combat.Definition.Icon;
                 Upgrades.Add(u);
@@ -157,6 +160,14 @@ public partial class RunProgression : Node3D
         LevelReached?.Invoke(Level);
     }
 
+    /// <summary>Applies a rank directly (smoke tests and debug); same eligibility and effects as a level-up choice.</summary>
+    public bool Grant(string id)
+    {
+        var upgrade=Upgrades.FirstOrDefault(u=>u.Id==id);
+        if(upgrade==null || !IsEligible(upgrade))return false;
+        if(upgrade.Effect==UpgradeEffect.UnlockAbility && !World.Abilities.Unlock(upgrade.AbilityId))return false;
+        _ranks[upgrade.Id]=Rank(upgrade)+1;ApplyStats();Changed?.Invoke();return true;
+    }
     public int Rank(UpgradeDefinition upgrade) => _ranks.GetValueOrDefault(upgrade.Id);
 
     public bool IsEligible(UpgradeDefinition upgrade)

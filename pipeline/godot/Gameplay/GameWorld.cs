@@ -165,6 +165,8 @@ public partial class GameWorld : Node3D
         {var smoke=new D3Smoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--d1-smoke"))
         { var smoke=new SwtorSurvivors.Equipment.D1EquipmentSmoke();AddChild(smoke);smoke.Run(this); }
+        if(OS.GetCmdlineUserArgs().Contains("--kit-smoke"))
+        {var smoke=new KitSmoke();AddChild(smoke);smoke.Run(this);}
     }
 
     private void SyncCameraControls() => Rig.SetControlsEnabled(Initialized && !_leavingForMenu && !GetTree().Paused
@@ -252,6 +254,14 @@ public partial class GameWorld : Node3D
         Abilities.Abilities.Add(Combat);
         if (survival && RunConfiguration.Profile.Presentation=="sorcerer" && !OS.GetCmdlineUserArgs().Any(x=>x is "--survival-smoke" or "--progression-smoke"))
         {
+        // Class kits: locked until a level-up unlocks them; same lifecycle, presentation adapter and slot rules as the starter.
+        foreach(string id in profile.Presentation=="sorcerer"?System.Array.Empty<string>():profile.Kit)
+        {
+            var definition=GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{id}.tres");
+            var kitVisual=new D3AbilityPresentation {Name=id+"Presentation",Actor=Player.Presentation,Definition=definition};AddChild(kitVisual);
+            var kit=new AutomaticAbility {Name=id,Caster=PlayerActor,Targeting=Targeting,Presentation=kitVisual,Periodic=Periodic};
+            kit.Configure(definition);AddChild(kit);Abilities.Abilities.Add(kit);
+        }
             Player.Presentation.LoadAbilityAnimations();
             foreach(string id in new[]{"shock","storm","deathfield","barrier","darkheal","chain","overload"})
             {

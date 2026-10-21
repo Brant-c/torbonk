@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "annihilate"
+StartsUnlocked = false
+Title = "Annihilate"
+Icon = "spinningstrike"
+Damage = 26
+CooldownSeconds = 4
+Range = 0.32
+Radius = 0
+Area = 0
+RecoverySeconds = 1.6
+GestureSeconds = 1.6
+AfflictedBonus = 0.5
+DamageType = 0
+Description = "Heavy saber blow. +50% damage against enemies that are bleeding."
+StartClip = "D3/Rupture"
+LoopClip = "D3/Rupture"
+EndClip = ""
+ChannelSeconds = 0.0
+WindupSeconds = 0.0
+PresentationKind = "saber"
+WeaponAudio = "res://Assets/D3/Audio/173808209.wav"
+OffhandAudio = "res://Assets/D3/Audio/173808209.wav"
+ImpactTailsOnTargetDeath = true
+CastAudio = "res://Assets/D3/Audio/103210703.wav"
+ImpactAudio = "res://Assets/D3/Audio/157531335.wav"
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0

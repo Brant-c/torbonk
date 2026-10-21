@@ -4,7 +4,7 @@ public enum AbilityTargetRule { NearestHostile, HostileCluster }
 public enum AbilityArea { SingleTarget, GroundSphere, Chain, CasterRadial, TargetSplash }
 public enum AbilityCategory { Offensive, Utility }
 public enum DamageType { Energy, Kinetic, Internal }
-public enum AbilityEffect { Damage, Shield, Heal }
+public enum AbilityEffect { Damage, Shield, Heal, Buff }
 /// <summary>Survivors balance; April source facts are separately recorded in manifests.</summary>
 [GlobalClass]
 public partial class AbilityDefinition : Resource
@@ -13,6 +13,15 @@ public partial class AbilityDefinition : Resource
     [Export] public float PeriodicDuration {get;set;}
     [Export] public float PeriodicInterval {get;set;}=1;
     [Export] public float SplashMultiplier {get;set;}=.4f;
+    // Class-kit hooks. All default to inert so retained abilities behave identically.
+    [Export] public float AfflictedBonus {get;set;}          // Extra damage fraction against targets carrying one of the caster's DoTs.
+    [Export] public float VulnerabilitySeconds {get;set;}    // Marks the primary hit target to take extra damage (Health.VulnerabilitySeconds).
+    [Export] public float SecondaryPeriodicScale {get;set;}=1; // DoT strength on splash targets other than the primary.
+    [Export] public float SlowFactor {get;set;}=1;           // <1 slows hit enemies for SlowSeconds.
+    [Export] public float SlowSeconds {get;set;}
+    [Export] public float BuffSeconds {get;set;}             // AbilityEffect.Buff duration.
+    [Export] public float DamageBuff {get;set;}              // Fractional outgoing damage bonus while buffed.
+    [Export] public float SpeedBuff {get;set;}               // Fractional movement bonus while buffed.
     [Export] public string Description {get;set;}="";
     [Export] public string ImpactTexture {get;set;}="";
     [Export] public string CastAudio {get;set;}="";
@@ -31,6 +40,7 @@ public partial class AbilityDefinition : Resource
     [Export] public float BounceFalloff { get; set; } = 0.82f;
     [Export] public int NearbyTriggerCount { get; set; } = 3;
     [Export] public float KnockbackDistance { get; set; } = 0.3f;
+    [Export] public float StaggerSeconds { get; set; } = 0.45f; // Knocked-back enemies are slowed and cannot swing for this long.
     [Export] public AbilityEffect Effect { get; set; }
     [Export] public float Healing { get; set; }
     [Export] public float HealingCap { get; set; } = 15;
