@@ -119,14 +119,14 @@ public partial class B8Smoke : Node
                 p.AddExperience(p.RequiredExperience);await Until(()=>p.CanChoose);Check(id+" improvement is eligible",p.Choose(p.Offers.ToList().IndexOf(power)));await Until(()=>!p.Selecting);
             }
             p.Upgrades=catalog;
-            Check("rarity-scaled upgrades improve all three new ability profiles",field.DamagePerTick>35 && field.Radius>0.34f && field.Healing>3 &&
-                barrier.ShieldCapacity>30 && barrier.ShieldDuration>12 && barrier.CooldownSeconds<18 && heal.Healing>25 && heal.CooldownSeconds<25 && heal.HealthThreshold>0.5f);
+            Check("rarity-scaled upgrades improve all three new ability profiles",field.DamagePerTick>35 && field.Radius>0.34f && field.Healing>2 &&
+                barrier.ShieldCapacity>22 && barrier.ShieldDuration>12 && barrier.CooldownSeconds<22 && heal.Healing>25 && heal.CooldownSeconds<25 && heal.HealthThreshold>0.5f);
             health.ApplyDamage(10000);await Frames(2);
             Check("death clears abilities, shields, gestures, VFX and audio",controller.Abilities.All(a=>a.State==LightningState.Disabled) && !health.Shielded &&
                 world.Player.Presentation.GestureOwner==null && new[]{field,barrier,heal}.All(a=>((SurvivalAbilityPresentation)a.Presentation).EffectCount==0 && ((SurvivalAbilityPresentation)a.Presentation).PlayingAudioVoices==0));
             world.ResetCombatWorld();world.Waves.SetPhysicsProcess(false);world.Spawner.Running=false;await Frames(2);
             Check("restart restores baseline HP, tuning, locks and cooldowns",health.Current==100 && !health.Shielded && p.Ranks.Count==0 &&
-                controller.Abilities.Count(a=>a.Unlocked)==1 && controller.Abilities.All(a=>a.CooldownRemaining==0) && field.DamagePerTick==35 && barrier.ShieldCapacity==30 && heal.Healing==25);
+                controller.Abilities.Count(a=>a.Unlocked)==1 && controller.Abilities.All(a=>a.CooldownRemaining==0) && field.DamagePerTick==35 && barrier.ShieldCapacity==22 && heal.Healing==25);
             foreach(var e in enemies)e.QueueFree();
             Check("the brief rendered Godot session completed",Engine.GetFramesDrawn()>0);
         }

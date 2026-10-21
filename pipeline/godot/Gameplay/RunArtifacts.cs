@@ -24,6 +24,7 @@ public sealed class RunArtifactDefinition
 public partial class RunArtifacts : Node
 {
     [Export] public int SlotLimit {get;set;}=3;
+    [Export] public float EliteRewardChance {get;set;}=0.35f; // Bosses always pay; elites only sometimes.
     [Export] public string CatalogPath {get;set;}="res://Gameplay/RunItems/artifacts.json";
     public GameWorld World {get;set;}=null!;
     public List<RunArtifactDefinition> Catalog {get;private set;}=new();
@@ -52,6 +53,7 @@ public partial class RunArtifacts : Node
     public void Defeated(EnemyAgent enemy)
     {
         if(enemy.Health.IsAlive || enemy.RewardTier<=0 || !World.PlayerActor.Alive || !_paid.Add(enemy.GetInstanceId()))return;
+        if(enemy.RewardTier==1 && _random.Randf()>=EliteRewardChance)return;
         _pending.Enqueue(enemy.RewardTier);
     }
     public bool Eligible(RunArtifactDefinition item,int tier) => (World.RunConfiguration.Profile.ArtifactEffects.Length==0 || World.RunConfiguration.Profile.ArtifactEffects.Contains(item.Effect)) && item.MinimumTier<=tier &&
@@ -62,6 +64,8 @@ public partial class RunArtifacts : Node
         if(Selecting || _pending.Count==0 || World.Progression?.Selecting==true)return;
         EncounterTier=_pending.Dequeue();SelectedIndex=-1;
         var pool=Catalog.Where(a=>!a.PowerItem && Eligible(a,EncounterTier)).ToList();
+        // Elites only drop when a real relic is available; filler power items alone are not worth a pause.
+        if(pool.Count==0 && EncounterTier<2)return;
         // Equipment is unique, powers provide useful choices when the build exhausts eligible items.
         if(pool.Count<3)pool.AddRange(Catalog.Where(a=>a.PowerItem && Eligible(a,EncounterTier)));
         while(_offers.Count<3 && pool.Count>0)

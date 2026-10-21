@@ -23,7 +23,7 @@ public partial class EnemyAgent : Combatant
     public double SlowRemaining { get; private set; }
     private float _slowFactor=1;
     public void Slow(float factor,float seconds) { _slowFactor=Math.Min(_slowFactor,Math.Clamp(factor,0.1f,1));SlowRemaining=Math.Max(SlowRemaining,seconds); }
-    public float DisplaceFrom(Vector3 origin,float distance)
+    public float DisplaceFrom(Vector3 origin,float distance,float stagger=0.45f)
     {
         if(!Alive || Navigation==null)return 0;
         float length=Math.Max(0,distance)*(1-Math.Clamp(KnockbackResistance,0,1));
@@ -38,7 +38,9 @@ public partial class EnemyAgent : Combatant
             Body.GlobalPosition=feet;
         }
         Body.Velocity=Vector3.Zero;_steerIn=0;
-        _attackIn=Math.Max(_attackIn,0.45); // Resistant enemies still take damage and delay their next melee swing.
+        _attackIn=Math.Max(_attackIn,stagger); // Resistant enemies still take damage and delay their next melee swing.
+        float slowed=stagger>0.45f?stagger*(1-Math.Clamp(KnockbackResistance,0,1)):0;
+        if(slowed>0)Slow(0.4f,slowed);
         return start.DistanceTo(Body.GlobalPosition);
     }
     public EnemyPresentation? Visual { get; private set; }

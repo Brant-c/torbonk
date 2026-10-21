@@ -164,7 +164,7 @@ public partial class AutomaticAbility : Node
             if(!GodotObject.IsInstanceValid(target) || !target.Alive) continue;
             float applied=DealHit(target,DamagePerTick*(Definition.Area==AbilityArea.TargetSplash && target!=CastTarget?Definition.SplashMultiplier:1));
             if(target.Alive && Definition.PeriodicDuration>0)Periodic?.Apply(this,target);
-            if(Definition.Area==AbilityArea.CasterRadial && target is EnemyAgent enemy && enemy.Alive) enemy.DisplaceFrom(Caster.GlobalPosition,Definition.KnockbackDistance);
+            if(Definition.Area==AbilityArea.CasterRadial && target is EnemyAgent enemy && enemy.Alive) enemy.DisplaceFrom(Caster.GlobalPosition,Definition.KnockbackDistance,Definition.StaggerSeconds);
             if(applied<=0) continue;
             _damaged.Add(target.GetInstanceId());
             if(_presented && Presentation is SurvivalAbilityPresentation original) Present(()=>original.TargetImpact(target));

@@ -49,9 +49,9 @@ public partial class D2Smoke : Node
             for(int i=0;i<4;i++)fixtures[i].GlobalPosition=w.PlayerActor.GlobalPosition+Vector3.Right*(.15f+i*.13f);
             Check("spread-target fixture has a clear original-world corridor",fixtures.Take(4).All(e=>w.Targeting.HasLineOfSight(e)));
             Check("Chain starts with a visible hostile",chain.TryBegin());chain.Advance(.31);await Frames(2);
-            Check("Chain casts on its own cooldown without a Force Lightning cast or passive",chain.Casts==1 && chain.CooldownRemaining>7 && w.Combat.Casts==0 && w.Combat.CooldownRemaining==0 && w.Build.Talent("fork")==0);
+            Check("Chain casts on its own cooldown without a Force Lightning cast or passive",chain.Casts==1 && chain.CooldownRemaining>chain.CooldownSeconds-1 && w.Combat.Casts==0 && w.Combat.CooldownRemaining==0 && w.Build.Talent("fork")==0);
             GD.Print($"D2 Chain evidence: {chain.LastEvent}, {chain.DamageEvents} events, HP {string.Join(',',fixtures.Select(e=>e.Health.Current))}, range {chain.Range}, bounces {chain.Definition.BounceCount}");
-            Check("Chain hits four distinct living targets across initial cast range with falloff",chain.LastDistinctHits==4 && chain.DamageEvents==4 && fixtures.Take(4).Select((e,i)=>Math.Abs(e.Health.Current-(1000-42*MathF.Pow(.82f,i)))<.01f).All(x=>x));
+            Check("Chain hits four distinct living targets across initial cast range with falloff",chain.LastDistinctHits==4 && chain.DamageEvents==4 && fixtures.Take(4).Select((e,i)=>Math.Abs(e.Health.Current-(1000-chain.Definition.Damage*MathF.Pow(chain.Definition.BounceFalloff,i)))<.01f).All(x=>x));
             Check("every Chain damage event has independent flytext; dead/disabled enemies excluded",received.Count(e=>e.Change.Kind==CombatEventKind.Damage)==4 && fly.Count==4 && fixtures[5].Health.Current==1000);
             Check("four visual arcs have no additional damage authority",((D2AbilityPresentation)chain.Presentation).ArcsShown==4 && fixtures[3].GlobalPosition.DistanceTo(w.PlayerActor.GlobalPosition)>chain.Range);
             await Frames(8);Check("visual updates cannot duplicate damage",chain.DamageEvents==4);
@@ -75,7 +75,7 @@ public partial class D2Smoke : Node
             }
             mobs[2].KnockbackResistance=1;var positions=mobs.Select(e=>e.Body.GlobalPosition).ToArray();
             Check("Overload triggers on configured close swarm off GCD",overload.TryBegin() && !overload.Definition.UsesGlobalCooldown && chain.Definition.UsesGlobalCooldown);overload.Advance(.16);
-            Check("Overload deals one modest hit per enemy including immune target",mobs.All(e=>Math.Abs(e.Health.Current-986)<.01f) && overload.LastDistinctHits==3);
+            Check("Overload deals one modest hit per enemy including immune target",mobs.All(e=>Math.Abs(e.Health.Current-(1000-overload.DamagePerTick))<.01f) && overload.LastDistinctHits==3);
             Check("controlled knockback follows safe terrain; boss immunity prevents displacement",mobs.Take(2).Select((e,i)=>e.Body.GlobalPosition.DistanceTo(positions[i])>.02f && e.Navigation.CanWalk(positions[i],e.Body.GlobalPosition) && w.Arena.Supported(e.Body.GlobalPosition,e.CollisionRadius)).All(x=>x) && mobs[2].Body.GlobalPosition==positions[2]);
             // Exact original pillar/hole coordinates from the retained B1 terrain receipt; no world edits.
             var wallStart=new Vector3(33.600002f,-16.996994f,13.199996f);var wallDirection=new Vector3(.92387956f,0,-.38268343f);
