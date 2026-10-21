@@ -18,7 +18,7 @@ For alternate-outfit visual review:
 .\pipeline\Open-Survivors.ps1 -WardrobeDev
 ```
 
-The explicit `--wardrobe-dev` argument exposes **DEV · Unlock SS A04** only inside Collections. It unlocks the five existing alternate cosmetic pieces (chest, hands, legs, feet, waist). These remain unlocked on later normal launches. There is no normal-player unlock source yet. Starter pieces and the existing red lightsaber are unlocked initially. Head has no converted content and stays disabled. Weapon has only the existing red-saber appearance; no training-saber substitution is claimed.
+The explicit `--wardrobe-dev` argument exposes **DEV · Unlock SS A04** only inside Collections. It unlocks the five existing alternate cosmetic pieces (chest, hands, legs, feet, waist). These remain unlocked on later normal launches. Normal play now unlocks the same pieces through run milestones; see `UNLOCKS-README.md`. Starter pieces and the existing red lightsaber are unlocked initially. Head has no converted content and stays disabled. Weapon has only the existing red-saber appearance; no training-saber substitution is claimed.
 
 New Run retains the existing faction → class → advanced class → appearance summary → map → Ready flow. Collections adds no mandatory step. The appearance summary and Ready previews now use the saved wardrobe. All sixteen advanced-class IDs and eight base-class IDs are selectable in Collections, but only Sorcerer has a working model/equipment profile. Others show their own recovered artwork and an unavailable message.
 

@@ -114,9 +114,11 @@ public partial class CollectionsScreen : Control
             string icon=Collection.Catalog.Items.FirstOrDefault(i=>i.Appearance==a.Id)?.Icon ?? "";
             b.Icon=icon!="" ? FrontendSkin.Texture(icon) : SwtorSkin.Slice("bwaui_buttons_381");
             b.ExpandIcon=true;b.AddThemeConstantOverride("icon_max_width",42);
+            string hint=Collection.UnlockHint(a.Id);
             b.TooltipText=name+" · "+SlotName(_slot)+"\n"+state+"\nCosmetic appearance only. No gameplay statistics."
-                +(!compatible ? "\nNo compatible converted resource for this profile." : !unlocked ? "\nNot yet unlocked." : "\nSelect to equip and save immediately.");
+                +(!compatible ? "\nNo compatible converted resource for this profile." : !unlocked ? "\n"+(hint!="" ? "Unlock: "+hint : "Not yet unlocked.") : "\nSelect to equip and save immediately.");
             _choices.AddChild(b);
+            if(compatible && !unlocked && hint!="") _choices.AddChild(FrontendSkin.Label("Unlock: "+hint,15,true));
         }
     }
     private void Equip(string? id,bool all)

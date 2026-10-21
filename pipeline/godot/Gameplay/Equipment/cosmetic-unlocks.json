@@ -1,0 +1,14 @@
+{
+  "Milestones": [
+    { "Id": "korriban.wave2", "DisplayName": "Reach wave 2 on Korriban", "Kind": "Wave", "Value": 2,
+      "BaseClasses": ["sith_inquisitor"], "Appearances": ["ss_a04.feet"] },
+    { "Id": "korriban.wave3", "DisplayName": "Reach wave 3 on Korriban", "Kind": "Wave", "Value": 3,
+      "BaseClasses": ["sith_inquisitor"], "Appearances": ["ss_a04.hands"] },
+    { "Id": "korriban.wave4", "DisplayName": "Reach wave 4 on Korriban", "Kind": "Wave", "Value": 4,
+      "BaseClasses": ["sith_inquisitor"], "Appearances": ["ss_a04.waist"] },
+    { "Id": "korriban.wave5", "DisplayName": "Reach wave 5 on Korriban", "Kind": "Wave", "Value": 5,
+      "BaseClasses": ["sith_inquisitor"], "Appearances": ["ss_a04.legs"] },
+    { "Id": "korriban.boss", "DisplayName": "Defeat the Korriban boss", "Kind": "Boss", "Value": 0,
+      "BaseClasses": ["sith_inquisitor"], "Appearances": ["ss_a04.chest"] }
+  ]
+}

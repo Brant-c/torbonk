@@ -29,5 +29,7 @@ public partial class MainMenu : FrontendFlow
             GetTree().Root.CallDeferred(Node.MethodName.AddChild, new B101Smoke { Name = "B101Smoke" });
         if (OS.GetCmdlineUserArgs().Any(a=>a is "--d11-smoke-save" or "--d11-smoke-load") && !GetTree().Root.HasNode("D11Smoke"))
             GetTree().Root.CallDeferred(Node.MethodName.AddChild,new D11Smoke {Name="D11Smoke"});
+        if (OS.GetCmdlineUserArgs().Contains("--unlock-smoke") && !GetTree().Root.HasNode("UnlockSmoke"))
+            GetTree().Root.CallDeferred(Node.MethodName.AddChild,new UnlockSmoke {Name="UnlockSmoke"});
     }
 }

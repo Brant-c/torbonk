@@ -38,6 +38,7 @@ public partial class GameWorld : Node3D
     public StationaryEnemy Enemy { get; private set; } = null!;
     public EnemySpawner? Spawner { get; private set; }
     public WaveDirector? Waves { get; private set; }
+    public SwtorSurvivors.Equipment.CosmeticUnlockTracker? CosmeticUnlocks { get; private set; }
     public RunProgression? Progression { get; private set; }
     public RunArtifacts? Artifacts {get;private set;}
     public RunBuildEffects Build {get;private set;}=null!;
@@ -111,6 +112,7 @@ public partial class GameWorld : Node3D
                 Hud = new UI.SurvivorsHud { Name = "SwtorHud", World = this }; AddChild(Hud);
                 Rewards = new UI.RewardPresentation { Name = "RewardPresentation", World = this }; AddChild(Rewards);
                 AddChild(new UI.ArtifactRewardsHud {Name="RunArtifactInterface",World=this});
+                if(Waves!=null) {CosmeticUnlocks=new SwtorSurvivors.Equipment.CosmeticUnlockTracker {Name="CosmeticUnlocks",World=this};AddChild(CosmeticUnlocks);}
                 if(OS.GetCmdlineUserArgs().Contains("--d2-smoke")) {var smoke=new D2Smoke();AddChild(smoke);smoke.Run(this);}
                 _legacyOverlay.Visible = false;
                 if (OS.GetCmdlineUserArgs().Contains("--b6-smoke"))

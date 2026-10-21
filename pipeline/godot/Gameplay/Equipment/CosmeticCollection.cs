@@ -16,12 +16,15 @@ public sealed class CosmeticSave
 {
     public int SchemaVersion { get; set; } = 1;
     public HashSet<string> Unlocked { get; set; } = new();
+    // Additive field: version-1 saves written before gameplay unlocks simply load with no milestones.
+    public HashSet<string> Milestones { get; set; } = new();
     public Dictionary<string,CosmeticProfile> Profiles { get; set; } = new();
 }
 public sealed class CosmeticCollection
 {
     public const string SavePath = "user://cosmetic-collections.json";
     public EquipmentCatalog Catalog { get; } = EquipmentCatalog.Load();
+    public CosmeticUnlockCatalog Unlocks { get; } = CosmeticUnlockCatalog.Load();
     public CosmeticSave State { get; private set; } = new();
     public string Notice { get; private set; } = "";
     public static string Key(string baseClass,string advanced) => baseClass+"/"+advanced;
@@ -47,7 +50,9 @@ public sealed class CosmeticCollection
             }
         }
         catch(Exception) { Notice="Collection save could not be read; using defaults."; }
-        State.Unlocked ??= new(); State.Profiles ??= new();
+        State.Unlocked ??= new(); State.Profiles ??= new(); State.Milestones ??= new();
+        // Completed milestones re-grant their pieces, so rewards added to an existing milestone reach older saves.
+        foreach(var m in Unlocks.Milestones.Where(m=>State.Milestones.Contains(m.Id))) State.Unlocked.UnionWith(m.Appearances);
         State.Unlocked.RemoveWhere(id=>!Catalog.Appearances.Any(a=>a.Id==id && ResourceLoader.Exists(a.Scene)));
         var starter=Catalog.Presets.Single(p=>p.Id=="inquisitor_level1");
         foreach(var id in starter.Items.Values.Select(id=>Catalog.Items.Single(i=>i.Id==id).Appearance)) State.Unlocked.Add(id);
@@ -85,6 +90,18 @@ public sealed class CosmeticCollection
         foreach(var entry in Profile(baseClass,advanced).Equipped)
             loadout.TrySetCosmetic(entry.Key,entry.Value,out _); // Staging failures leave that slot at its starter fallback.
     }
+    /// <summary>Records every not-yet-completed milestone that is met, unlocks its pieces and saves. Rolls back on a failed write.</summary>
+    public CosmeticMilestone[] Award(Func<CosmeticMilestone,bool> met,out string error)
+    {
+        error="";
+        var earned=Unlocks.Milestones.Where(m=>!State.Milestones.Contains(m.Id) && met(m)).ToArray();
+        if(earned.Length==0)return earned;
+        var unlocked=new HashSet<string>(State.Unlocked);var milestones=new HashSet<string>(State.Milestones);
+        foreach(var m in earned) {State.Milestones.Add(m.Id);State.Unlocked.UnionWith(m.Appearances);}
+        if(Save(out error))return earned;
+        State.Unlocked=unlocked;State.Milestones=milestones;return [];
+    }
+    public string UnlockHint(string appearance) => Unlocks.Source(appearance)?.DisplayName ?? "";
     public bool DeveloperUnlock(out string error)
     {
         if(!OS.GetCmdlineUserArgs().Contains("--wardrobe-dev")) {error="Developer option required.";return false;}
