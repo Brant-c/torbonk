@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "glbSha256": "09503643b43ae7123a42d0b050cbc79d883a030a9d5a0a6c4c7423daac4bd58f",
+  "bytes": 1503732,
+  "selfContained": true,
+  "primitives": [
+    {
+      "vertices": 822,
+      "triangles": 576,
+      "min": [
+        -0.38218268752098083,
+        -3.4340285282041805e-08,
+        -0.45485109090805054
+      ],
+      "max": [
+        0.3821823298931122,
+        1.6096081733703613,
+        0.45485085248947144
+      ],
+      "normalMaxLengthError": 1.111095708772325e-07
+    }
+  ],
+  "embeddedImages": [
+    {
+      "name": "door_emission",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "04f02da0ca6a0eb308f6b967cf62011b6c31d134c215587ca8f887093654ebac"
+    },
+    {
+      "name": "door_specular_level",
+      "dimensions": [
+        512,
+        512
+      ],
+      "sha256": "a15536eb0a5f67911b8b4aac0c5d9c83b8f20f4e96af12d6eb86b1ce691b9f6e"
+    },
+    {
+      "name": "door_normal",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "824ae671e0bfc1efd78a7454d71f147b0cb95f2a49be4174ac9b7b40b5967b54"
+    },
+    {
+      "name": "door_basecolor",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "b6e76d879d61127c6785a38e1fa4a32b54c0df998fd66d5fcd88f813ce48721d"
+    },
+    {
+      "name": "door_roughness",
+      "dimensions": [
+        512,
+        512
+      ],
+      "sha256": "7139e1e23eb2fbd4bc6c4e04a7aa0d0fe85cbae25d065c9aff0faad9def247bb"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_specular"
+  ],
+  "material": {
+    "emissiveFactor": [
+      1,
+      1,
+      1
+    ],
+    "emissiveTexture": {
+      "index": 0
+    },
+    "extensions": {
+      "KHR_materials_specular": {
+        "specularTexture": {
+          "index": 1
+        }
+      }
+    },
+    "name": "kor_acad_higharch_glTF_approximation",
+    "normalTexture": {
+      "index": 2
+    },
+    "pbrMetallicRoughness": {
+      "baseColorTexture": {
+        "index": 3
+      },
+      "metallicFactor": 0,
+      "metallicRoughnessTexture": {
+        "index": 4
+      }
+    }
+  },
+  "scope": "Structural/accessor/finite-value checks; not the full Khronos conformance validator"
+}

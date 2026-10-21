@@ -1,0 +1,30 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+B7: Boss display initializes hidden before an encounter
+B7: Broodling safely spawns for the focused presentation check
+B7: Enemy XP becomes a luminous 3D world mote
+B7: Collection starts its trail and awards XP exactly once
+B7: Collected mote cleans up after its short effect
+B7: Level banner precedes choices and pauses combat
+B7: Three unchanged upgrade choices follow the banner
+B7: Selection applies once and shows a brief confirmation
+B7: Overflow XP serializes a second banner without an overlapping modal
+B7: Queued upgrades resume combat and preserve XP remainder
+B7: Restart cancels pending banners and choices
+B7: Broodling safely spawns for the focused presentation check
+B7: Scheduled boss introduces with health UI and retains existing enemies
+B7: Repeated activation cannot duplicate the boss
+B7: Dedicated boss bar follows real health with smooth depletion
+B7: Boss UI stays within the smaller viewport
+B7: Boss UI scales within the 1080p viewport
+B7: Burrow Eruption retains radius, damage and windup
+B7: Warning does not strike early
+B7: Impact resolves exactly once after the warning
+B7: Boss defeat ends attack and hides its bar
+B7: Boss reward uses the existing single 80 XP drop path
+B7: Defeated encounter cannot spawn another boss
+B7: Pickup audio is rate limited and priority cues retain a voice
+B7: All rarity confirmation cues initialize
+B7: Player death fails encounter and clears paused reward presentation and audio
+B7: Restart clears all encounter state and pickups

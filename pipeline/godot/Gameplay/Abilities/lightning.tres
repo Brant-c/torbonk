@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "lightning"
+Title = "Force Lightning"
+Icon = "sithsorcerer"
+Damage = 12
+CooldownSeconds = 1.8
+Range = 0.85
+WindupSeconds = 0.4
+ChannelSeconds = 0.9
+TickSeconds = 0.3
+RecoverySeconds = 0.16
+GestureSeconds = 1.46
+StartClip = "LightningStart"
+LoopClip = "LightningLoop"
+EndClip = "LightningEnd"

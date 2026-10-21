@@ -1,0 +1,31 @@
+{
+  "clips": [
+    {
+      "name": "Shock",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\fp_1h_elect_instant_right_1.jba",
+      "seconds": 1.0666667222976685,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "StormStart",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\fp_lightning_storm_start.jba",
+      "seconds": 0.8666666746139526,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "StormLoop",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\fp_lightning_storm_loop.jba",
+      "seconds": 2.933333396911621,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "StormEnd",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\fp_lightning_storm_end.jba",
+      "seconds": 0.4000000059604645,
+      "sourceFps": 15.0
+    }
+  ],
+  "output": "godot\\Assets\\Abilities\\casts.glb",
+  "sha256": "7d2d25c845ac519cf1577e71f32cc8445bd7c8973277dd31c7e8284a4c3e5961",
+  "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
+}

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="RarityTuning" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/RarityTuning.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Premium = 1.0
+Prototype = 1.25
+Artifact = 1.5

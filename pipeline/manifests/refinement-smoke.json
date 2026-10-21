@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checks": [
+    "cast libraries synchronized with AnimationTree",
+    "LightningLoop gesture admitted",
+    "LightningLoop keeps original animated running legs",
+    "LightningLoop retains a distinct upper-body pose and hand sockets",
+    "B5/Shock gesture admitted",
+    "B5/Shock keeps original animated running legs",
+    "B5/Shock retains a distinct upper-body pose and hand sockets",
+    "B5/StormLoop gesture admitted",
+    "B5/StormLoop keeps original animated running legs",
+    "B5/StormLoop retains a distinct upper-body pose and hand sockets",
+    "death overrides and releases the gesture",
+    "presentation resets after death",
+    "short float-authored bursts keep their final tick",
+    "Lightning-only start and one twelve-slot bar",
+    "fixture targets valid",
+    "all three independent damage paths",
+    "GCD regulates activations while active effects overlap",
+    "Storm damages during GCD after releasing its gesture",
+    "individual cooldowns do not reset each other",
+    "persistent area hits several targets",
+    "Storm can activate independently",
+    "placed Storm survives caster leaving range",
+    "upgrade selection still pauses",
+    "death stops every effect and gesture",
+    "restart clears timers, ranks and unlocks",
+    "rendered runtime alive"
+  ],
+  "failure": null,
+  "renderedFrames": 845
+}

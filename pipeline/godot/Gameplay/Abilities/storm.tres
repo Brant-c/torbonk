@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "storm"
+StartsUnlocked = false
+Title = "Force Storm"
+Icon = "forcestorm"
+Damage = 5
+CooldownSeconds = 8
+Range = 1.1
+Radius = 0.32
+TargetRule = 1
+Area = 1
+WindupSeconds = 0.3
+ChannelSeconds = 4
+TickSeconds = 0.8
+RecoverySeconds = 0.16
+PersistentArea = true
+GestureSeconds = 0.8
+StartClip = "B5/StormStart"
+LoopClip = "B5/StormLoop"
+EndClip = "B5/StormEnd"
+SourceFx = "si_forcestorm_lightningstrike"
+CastAudioEvent = "Play_ability_sithinquisitor_forcestorm_cast_caster"
+ImpactAudioEvent = "Play_ability_sithinquisitor_forcestorm_aoe_bolt"
+LoopAudioEvent = "Play_ability_sithinquisitor_forcestorm_channelloop"

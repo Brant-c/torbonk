@@ -1,0 +1,839 @@
+{
+  "releaseUrl": "https://github.com/SWTOR-Slicers/ZG-SWTOR-Tools/releases/tag/2.0.14",
+  "releaseTag": "2.0.14",
+  "releasePublished": "2026-09-16T20:10:25Z",
+  "packages": [
+    {
+      "name": "io_scene_gr2.zip",
+      "url": "https://github.com/SWTOR-Slicers/ZG-SWTOR-Tools/releases/download/2.0.14/io_scene_gr2.zip",
+      "bytes": 87903,
+      "sha256": "06e2188affe114dd78f58ab11ba47b948ce5caf9d3c7a402aecf0c834e85b488"
+    },
+    {
+      "name": "zg_swtor_tools.zip",
+      "url": "https://github.com/SWTOR-Slicers/ZG-SWTOR-Tools/releases/download/2.0.14/zg_swtor_tools.zip",
+      "bytes": 17486684,
+      "sha256": "2d268f1e288d82348a2d5ee086c0c1c479d366202faceacd6ab1df720d08635e"
+    }
+  ],
+  "executables": [
+    {
+      "path": "C:\\Program Files\\Blender Foundation\\Blender 5.2\\blender.exe",
+      "version": "5.2.1 LTS 9e2066aef7ef",
+      "bytes": 113014232,
+      "sha256": "284f4041f98e113f3dc10654a7193ffaaa9bfdfec8b87fa116620a48b5f6d4cb"
+    },
+    {
+      "path": "D:\\SWTORClassic\\torbonk\\pipeline\\tools\\godot\\Godot.exe",
+      "version": "4.7.2.stable.mono.official.ed1daf0bf",
+      "bytes": 181449736,
+      "sha256": "45336315eb6f1a52a8923bc4f2ce8079a03dc4939dcb7d531047890f1f7cdfab"
+    },
+    {
+      "path": "D:\\SWTORClassic\\torbonk\\pipeline\\tools\\godot\\Godot_console.exe",
+      "version": "4.7.2 console launcher",
+      "bytes": 198152,
+      "sha256": "2445d009a5e0474fc7064b9767100e9d2c09521890ac5625476bfb81cf03f2d4"
+    },
+    {
+      "path": "C:\\Program Files\\Blender Foundation\\Blender 5.2\\5.2\\python\\bin\\python.exe",
+      "version": "3.13.13 (main, May  8 2026, 12:37:03) [MSC v.1944 64 bit (AMD64)]",
+      "bytes": 106456,
+      "sha256": "81fcec8921ae2c1da4f914f4bc80c1d1ce945320409dcb01c25c063036a3ddbe"
+    },
+    {
+      "path": "C:\\Program Files\\dotnet\\dotnet.exe",
+      "version": "SDK 10.0.401; engine loads runtime 10.0.12",
+      "bytes": 167208,
+      "sha256": "21a46f1e5235cf4e844b9de5429f0e198b9c97a41f0503a66442f1d639ca3ee6"
+    }
+  ],
+  "toolFiles": [
+    {
+      "path": "tools\\addons\\io_scene_gr2\\__init__.py",
+      "bytes": 7362,
+      "sha256": "6e442d472406f159d51e14283c21f15b63d8b58995b4e80db2159ba161370454"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\addon_prefs.py",
+      "bytes": 9931,
+      "sha256": "be97244272c8f8959df09345817fad8f6b1b3c5a938caa117e73fb3187d386c7"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\LICENSE",
+      "bytes": 35821,
+      "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\ops\\add_swtor_shaders_menu.py",
+      "bytes": 2913,
+      "sha256": "6d79cb79e3841d75848c1044a5ffb59b6b501030f12b09693e696e08e496ae38"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\ops\\export_gr2.py",
+      "bytes": 22472,
+      "sha256": "fb51bd721ecd4c5094231776eae09ca025273c21e9874703ee2ea338b53feb38"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\ops\\export_gr2_32.py",
+      "bytes": 20540,
+      "sha256": "790bd14b2449a898757ad01882559d807fdf5273f306860266f15993147ad7fa"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\ops\\import_cha.py",
+      "bytes": 47870,
+      "sha256": "e913d425e1cf9c6bc193597a0273741cfa01372ab4d46cff69a55048d3770e6f"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\ops\\import_clo.py",
+      "bytes": 7759,
+      "sha256": "2a76e86e481762ea83d8345bf39764f289aa043e28d351131015514b58649174"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\ops\\import_gr2.py",
+      "bytes": 34554,
+      "sha256": "2421731f134cca29084f87236b7875efd1095d8133d6a9026095c776e6fecc11"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\ops\\import_jba.py",
+      "bytes": 16644,
+      "sha256": "aec7dae3312d0466b05d550027a1fd3dce6dd43a416dcf65451b8633bc259532"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\types\\clo.py",
+      "bytes": 612,
+      "sha256": "c27c1c0167a78f51b8a7702cae5bb1ed347228fcdd40a6089cb2dd528b45695b"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\types\\gr2.py",
+      "bytes": 17006,
+      "sha256": "5068ab10d9d16e3573cadef54934a54d689eb0f65af79ccf0a83b22040dbc5cd"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\types\\jba.py",
+      "bytes": 1707,
+      "sha256": "2c1e060d1cd0a03d407cfb24e2a0e352af7f06ece174b86db84d1f4fc7be12e9"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\types\\node.py",
+      "bytes": 28003,
+      "sha256": "f0f8411808feb0be4de8232873dc118582bf37e135016a27476e7981b81c934b"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\types\\node_group.py",
+      "bytes": 139893,
+      "sha256": "ef544b25ba0642b72a6980b441341b503b15f4142e6b8d3278c6d322f19b887a"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\types\\node_tree.py",
+      "bytes": 81817,
+      "sha256": "364596b1eac8a2401c6d8b7c89612bcd5eccf6e7cb0712d94e3e3b405dcda66a"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\types\\shared.py",
+      "bytes": 2141,
+      "sha256": "b12a46023323a70e0b98ab563ba049a54730eb7ad96ae195705c8adab59307b2"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\utils\\binary.py",
+      "bytes": 17494,
+      "sha256": "deb8b553dc99ea55e7b424b92d0cc8e0c53b753ed96c894bfd44b1e8156f1f99"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\utils\\number.py",
+      "bytes": 263,
+      "sha256": "979833365426935ccdce1d4e4d9ae689f6eb6eee58b2f9842407fab48ef75604"
+    },
+    {
+      "path": "tools\\addons\\io_scene_gr2\\utils\\string.py",
+      "bytes": 1081,
+      "sha256": "203d4414ffb80ce4d8eab9891d744cb1c44d66cddf39abad767a25d270d8cb10"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\__init__.py",
+      "bytes": 3369,
+      "sha256": "0edb43a75711571c132a75023ac9022b5004e3995dfdf42cb2da72e9af62e411"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\addon_open_prefs.py",
+      "bytes": 2733,
+      "sha256": "fb9d8629c2d9057380e59b46988c55d9199f2302c2c5876024c534bbf808c025"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\addon_preferences.py",
+      "bytes": 5142,
+      "sha256": "b67e73d276eb3bedb2e74aabc8b2fad4ff7daea678eb0ec3ff43822d55b76762"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\addon_property_group.py",
+      "bytes": 983,
+      "sha256": "7eeab6f361937f7b42b6efc50f08397f032d1da9eb2e6d3afe58321e3ed47c23"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\addon_sync_with_gr2_addon_props.py",
+      "bytes": 984,
+      "sha256": "108cfed7a881a61555a0652250cb51f885152ceb858f4bc9449d210220361436"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\addon_ui.py",
+      "bytes": 46447,
+      "sha256": "c51ceb3e320708228b40be40327b9d818110075fe1431c28a81a169491181b4e"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\anim_clear_bone_translations.py",
+      "bytes": 2156,
+      "sha256": "a0e65960fd64355a8d49902b7776135ebd1d187ef19439929192813db9236627"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\area_assembler copy.py",
+      "bytes": 80147,
+      "sha256": "7325abebcd1ef48abd8059cba9b28e005d4055fa28735187e1c56b3b7d78d6e5"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\area_assembler.py",
+      "bytes": 85973,
+      "sha256": "a16ce3c2906da01401111f4b05542736b14d48ebfb731e436e275d9c93638003"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\area_assembler_rework.py",
+      "bytes": 83788,
+      "sha256": "dde5b8325f99b38a158625799bd14ee0f6ad5a4db59bf20a76874349e33f0ae9"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\area_collections_exclude_include.py",
+      "bytes": 6797,
+      "sha256": "2b5507a38ba102b98d6e0308098c570bfc948e65d7233779d3ceaf74039a2460"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\area_collections_group_by_name.py",
+      "bytes": 13177,
+      "sha256": "f32f62e53702f4138d148c852ce0c8583469df80048fc80d0b0f55e361a08dc5"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\area_reset_group_transforms.py",
+      "bytes": 3150,
+      "sha256": "797cedbb313a747c78764c3fcf456af5b445818eeff0f03f081aa2d3b7e18406"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\bake_convert_to_legacy_materials.py",
+      "bytes": 15693,
+      "sha256": "c2edb4245dd9de918e397607c7276cc73d96aa8ef840062273ed7a01382fec9d"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\bake_save_images.py",
+      "bytes": 3642,
+      "sha256": "6aebef5cfed398fbcfc4c2cf56017fc433b578b1995accbf7155e0a690e121b3"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\bake_twilek_corrections.py",
+      "bytes": 3098,
+      "sha256": "f25b612df3760c449b164443a0a76fef4ebc3b25bbf15ce2de86366f2f2f7e0e"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\char_character_assembler.py",
+      "bytes": 69784,
+      "sha256": "15f6d09400377a9f49f781a9a5840dab31bd1372282f6a17b9e6f0e857475d66"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\char_character_prefixer.py",
+      "bytes": 6988,
+      "sha256": "d1304aa4bb69e71dcd6fb959b73ae43e06bb9f0f6106cbcaad2f9c8a5cffdfee"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\char_merge_phys_vertex_groups.py",
+      "bytes": 9448,
+      "sha256": "f041fef551726dd541ca30427c21474600ede5117341a0bee91e24e32f7d033e"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\LICENSE",
+      "bytes": 35823,
+      "sha256": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\mat_add_custom_external_swtor_shaders.py",
+      "bytes": 6179,
+      "sha256": "a6dcb208d2caaf8850262b9c214529528fe9bb6e1a75efb4a52cc64217c69049"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\mat_customize_swtor_shaders.py",
+      "bytes": 14504,
+      "sha256": "f46f196349506a2fc9873324f8c354ef2e961b5c8a93ea176b9a658db640c148"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\mat_deduplicate_images.py",
+      "bytes": 11184,
+      "sha256": "b815ee5774814159ddbe253570faf613105d57aaa2df383e0c98e540571f6d45"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\mat_deduplicate_materials.py",
+      "bytes": 2117,
+      "sha256": "4bb0e7c612eebf6d4c8c3251846c0ddee581d995149342535d41c6766bd36571"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\mat_deduplicate_nodegroups.py",
+      "bytes": 2637,
+      "sha256": "7f8df629441f6d1373e6d6d99b3e2992a2d344616c5f5b8dc54f5bbcd894261f"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\mat_process_named_materials copy.py",
+      "bytes": 44179,
+      "sha256": "6fd91e5d5919817cfa3c92167f8d2e09e162f47a390fbc83464043238bde3ffc"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\mat_process_named_materials.py",
+      "bytes": 32554,
+      "sha256": "21d54b724e123ce0044cb4f48d855bc018bee32856f5650c8123018c549a0a1d"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\mat_set_backface_culling.py",
+      "bytes": 2710,
+      "sha256": "f1d34d07000aa5c67ddc541300d366a47173186f20081af00824da6cd07e4077"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\mat_set_custom_shaders_values.py",
+      "bytes": 16980,
+      "sha256": "0e35a139ce4e8aceaa52c7ab5fe0be03495b0ad97e1c1b412ed1bb1c098a06e6"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\mat_set_dds.py",
+      "bytes": 1262,
+      "sha256": "db1b5a0fcad73d0df5045088741b45249d4831714af79c20b58e528a72969819"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\mat_shaders_io_copier.py",
+      "bytes": 2433,
+      "sha256": "e4285fe73dfbc262cd367aee44c2a7f6547ea735488a4e60aae3b86bd48e3ba3"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\mat_shaders_io_linker.py",
+      "bytes": 1816,
+      "sha256": "a27e667b0d761f67f56874908db98fb897c7fc4088f0303ea71ff7af2aaaba8a"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\mat_skinsettings_ng_in_3d_viewer.py",
+      "bytes": 8073,
+      "sha256": "137c2bcd0c548cbaa7bca1b2f910972960aceb804f1968fbf3bccbe1d60849f9"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\mat_skinsettings_ng_in_shader_editor.py",
+      "bytes": 10700,
+      "sha256": "1e890de3d41a3aad806877572c368da3156b5bc4b990c695c0deb157309bd2e2"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\obj_apply_transforms.py",
+      "bytes": 4498,
+      "sha256": "b7d3419d89500db75d7906f228e35d6953f2297d68b530ee08e49ac6a9ef0ba9"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\obj_clear_splitnormals_layer.py",
+      "bytes": 4893,
+      "sha256": "64abcf40a839d7f9c612f361ab4a94fcc3bc88c4f6910aad74b4508c9efd390b"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\obj_quickscale.py",
+      "bytes": 2825,
+      "sha256": "0e3cdc017ba2365401181250847b8fc99f79a9d259ccc57146c3961a5b342b3a"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\obj_remove_doubles OLD.py",
+      "bytes": 4302,
+      "sha256": "5cff81caec47b1166884c95ba4878bab16eac7b4771a54de4ea2518ba8ff6fae"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\obj_remove_doubles.py",
+      "bytes": 6537,
+      "sha256": "056e05fd61eed80235dac1152e4f2ffc8d220a670f4fe8a0c25a890b70470588"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\obj_remove_doubles_edit_mode.py",
+      "bytes": 5321,
+      "sha256": "6816aeeeb134b3d4424afe2c1742b2528a0e47c33c254130f5bbf26b996a10c4"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\obj_set_modifiers copy.py",
+      "bytes": 11620,
+      "sha256": "4679891b127e7ab85065ae1118b3e71bf13b02d4bb3c0ef7ddee96b75cfe329c"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\obj_set_modifiers.py",
+      "bytes": 15255,
+      "sha256": "0022052e48c08e2835822ec90186af03e18c82142a692861824b6f85b27c8224"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\obj_set_swtor_obj_custom_props.py",
+      "bytes": 5962,
+      "sha256": "6b0e17c6677ade27bdfdedfeadf8e46e624dd66e30ccac4df53582183381a128"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\rsrc\\black.dds",
+      "bytes": 384,
+      "sha256": "f6fc96233461b12b33ffd2e0c79c96216fbee0af5c31597d1cc1fa940a16057d"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\rsrc\\Custom SWTOR Shaders.blend",
+      "bytes": 338359,
+      "sha256": "cc570766a13a9f876a30d07866530fb06177313a62fb25e86c333f2f721ea6c3"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\rsrc\\dyn.zip",
+      "bytes": 19658604,
+      "sha256": "ae87900493866e706ef006a1a6e939546073350306fb5099545fe502b16a2da4"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\rsrc\\Legacy SWTOR Shaders and Materials.blend",
+      "bytes": 179739,
+      "sha256": "a86a0ab006f97b845b9d617b7e544b71ffd6afcdf7414519489210bdbca27e0f"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\rsrc\\spn_table.txt",
+      "bytes": 2920957,
+      "sha256": "a9d18d2159750d83986d4fc0ed93fe480451c424221139eb543c134db7c2a3bb"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\sculpt_mask_out_selected_vertices.py",
+      "bytes": 2884,
+      "sha256": "3d75509a810a12916bdf65fe1b66cbf198511ace82a38ccd0811da83f754b048"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\shd_additional_swtor_shaders_blen36.py",
+      "bytes": 475530,
+      "sha256": "7facd80e72f5da1eb183cb6b0476918305559d97741834239d0553cac4b85897"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\shd_additional_swtor_shaders_blen40.py",
+      "bytes": 510497,
+      "sha256": "1e90f3ae7da76775c057fee33d68e3e6c18804a8cfdcdd112d28d6680d0a3a57"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\shd_additional_swtor_shaders_blen43.py",
+      "bytes": 582795,
+      "sha256": "fa8cd3c8513e388d8f57c9969338757d01f65fb1b19c47b64abe1eb8ce284209"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\shd_additional_swtor_shaders_blen52.py",
+      "bytes": 582795,
+      "sha256": "0b64f7b87333caf7ff3e1ac53c20dde6d771d0e76ebd86b66f1ebeb8c29141c5"
+    },
+    {
+      "path": "tools\\addons\\zg_swtor_tools\\utils\\addon_checks.py",
+      "bytes": 6878,
+      "sha256": "aa88e6fdb2b8a3f6ad367a2e052f282245c00137b1f013f44a5e36ff620560c3"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Debug\\GodotPlugins.dll",
+      "bytes": 12288,
+      "sha256": "1d94e9624cb0f1c2e196f296d131fce2934ec850e0ca3d78e0fa3ebd71a70e90"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Debug\\GodotPlugins.pdb",
+      "bytes": 13556,
+      "sha256": "6dd4931ca75b300b1553e1c90a069faa628f80e31724fccb96e6c0533b64c6c5"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Debug\\GodotPlugins.runtimeconfig.json",
+      "bytes": 291,
+      "sha256": "f7ecefae96040c2437e1c98914954b211546391ed2bf6dfb8fa8836600ec1491"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Debug\\GodotSharp.dll",
+      "bytes": 6362112,
+      "sha256": "af104a6fdca648c2092b542ce49a773ee4c3a1388d065968bb42a80ace49e84e"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Debug\\GodotSharp.pdb",
+      "bytes": 6054920,
+      "sha256": "0beb4199035af53a6261062a6757415690bee3443409c26b8abf55c711cbcbca"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Debug\\GodotSharp.xml",
+      "bytes": 16393853,
+      "sha256": "21ce00e88b5370c594c74d00d842f8bf809389b95ecdfabb55faf59ee56b9e0c"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Debug\\GodotSharpEditor.dll",
+      "bytes": 325120,
+      "sha256": "967b0de3b31a0962befcae96a44e692caa33e9a18660405ef56019532b9055c3"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Debug\\GodotSharpEditor.pdb",
+      "bytes": 359716,
+      "sha256": "389dc1a22bd8467ca4471d11c1ff84fc4278642399369eedeeb38a5b0f14f762"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Debug\\GodotSharpEditor.xml",
+      "bytes": 785453,
+      "sha256": "fc911c63f2cbefe26109a022b31daf9415b594596c8afcfd4c239a415a5eeaf0"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Release\\GodotPlugins.dll",
+      "bytes": 11776,
+      "sha256": "ab5b94d35ac88c98a62e0b680c7af0b98f85741da93235031abc6c90184201c9"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Release\\GodotPlugins.pdb",
+      "bytes": 12924,
+      "sha256": "f97cc53178be1ea7c457edf7f4ea67b9fcc1cf3858ef3dc984a503ba1653180d"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Release\\GodotPlugins.runtimeconfig.json",
+      "bytes": 362,
+      "sha256": "163a87196bb2c5607973cbf99e6215bf4b2623dadedeb86e65bc465ce309b988"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Release\\GodotSharp.dll",
+      "bytes": 5928960,
+      "sha256": "2afe2686aacfefac36da6601b59aeb05e560f06e4970cd5036100acd2ca4249d"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Release\\GodotSharp.pdb",
+      "bytes": 5473204,
+      "sha256": "6f1dc88b5df10f269d956ec5b0aeb5bd091aaf0a74a3def9a17b513a3ddd1b6d"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Release\\GodotSharp.xml",
+      "bytes": 16393853,
+      "sha256": "21ce00e88b5370c594c74d00d842f8bf809389b95ecdfabb55faf59ee56b9e0c"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Release\\GodotSharpEditor.dll",
+      "bytes": 303104,
+      "sha256": "195c81c1ccb7c05559fc79b4acbb9025154a74ad99ecb9bb3747b5fbfc2ed1d1"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Release\\GodotSharpEditor.pdb",
+      "bytes": 328688,
+      "sha256": "74bb0a9587695c692c5c944f5acfba07153c4dd3660fe2a42b1c493241ce2a20"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Api\\Release\\GodotSharpEditor.xml",
+      "bytes": 785453,
+      "sha256": "fc911c63f2cbefe26109a022b31daf9415b594596c8afcfd4c239a415a5eeaf0"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\cs\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 431776,
+      "sha256": "b770a8c39ded76ee883149128c0b343a23c4930e8c0599a61ea4a189d468a52c"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\cs\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 47880,
+      "sha256": "4dd085aa3824c42e69d24b45ddbca9cf7f9fcad7dc3ee956be79922fa60a4e51"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\de\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 462600,
+      "sha256": "0f3bae26e249638ca2c9204cbbbbce2b1ccfeaf784f6bd77b7121d148f671f29"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\de\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49944,
+      "sha256": "49d491534fbde2485ed66bd14a28b6dfa1a961782dde0e536df9e8e0f0c5cbdf"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\envdte.dll",
+      "bytes": 28192,
+      "sha256": "7cae2269c6dc59edb16a1fd16672f184a4690c6d720c1faae9616fe0c8d5cb46"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\es\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 452360,
+      "sha256": "aeba908aa1132fa3a6297a24f52683db4fa6bd7e7f0b4eac2eb89f22c53492b1"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\es\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49416,
+      "sha256": "0de25f386025993a0a0315a94f0347067d977975cae6dca2bd045ec0033a6ae0"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\fr\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 464144,
+      "sha256": "3c6348490e9ac51209c8105c30181c3f7985cb68e9cb917e6f391c068f4583dc"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\fr\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49928,
+      "sha256": "21a58fa053094b95ab9a9ac3ae8215633c4ec278b062e3c1b06ae69f45f95223"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.BuildLogger.dll",
+      "bytes": 9216,
+      "sha256": "6e795ad754946522b35210186acdfb6b5cd89d05694fdefbc906aa16f5eae7c8"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.BuildLogger.pdb",
+      "bytes": 11972,
+      "sha256": "cd62c7458abcec3d552e81c2758168f2622b08e5d319a2888841beb2f171dcf7"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.Core.dll",
+      "bytes": 7680,
+      "sha256": "1f19d5adf53034caef7fc1efb8fa405809122cad81b02acc975707ef69e1689d"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.Core.pdb",
+      "bytes": 11972,
+      "sha256": "0afd1a291bec2a9e9609ab3331478ccbdf6d755e6b3b3c2074e1707b711f3597"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.deps.json",
+      "bytes": 57342,
+      "sha256": "49cc27f5b5e5d03f8b781c5cc4abb0d088a4747685034b89ced53253c2ad74ca"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.dll",
+      "bytes": 174080,
+      "sha256": "d9a463c71f98d67abf38569cbbdd13437bb236a798eaa8e31990ff98d7ca3322"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.IdeMessaging.dll",
+      "bytes": 44544,
+      "sha256": "bf4a6ad6d8dd8c2de4ba859ef57be4834a2a08f18a5838bbc747e43d155c8e9b"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.IdeMessaging.pdb",
+      "bytes": 18476,
+      "sha256": "6bc8bcfdbd7726ae2d439bb745f8f8a7c593251dc090f2f2ce776df8f3124ded"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.OpenVisualStudio",
+      "bytes": 87592,
+      "sha256": "42c4e5a047b9315c35718b262096947134026b35ce77fdc7bc7702652dfaaebc"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.OpenVisualStudio.deps.json",
+      "bytes": 1723,
+      "sha256": "d99115cfb02bacfb09b3996c5ea3d717f1d4e34e0060305eb6f56bc74a60a907"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.OpenVisualStudio.dll",
+      "bytes": 11264,
+      "sha256": "e52b5ecba8991a34ec93b4917a226e119b103bf986139db1a05aa7975cfe429d"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.OpenVisualStudio.pdb",
+      "bytes": 12412,
+      "sha256": "848441cc8be2c628506f21006432823f1a7002619a789555a44bb2617f30c795"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.OpenVisualStudio.runtimeconfig.json",
+      "bytes": 362,
+      "sha256": "163a87196bb2c5607973cbf99e6215bf4b2623dadedeb86e65bc465ce309b988"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.pdb",
+      "bytes": 105664,
+      "sha256": "791c07f51d02a4dfde873ab5061046c10d8b9c58397c499f161fc42b2180af13"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.ProjectEditor.dll",
+      "bytes": 22528,
+      "sha256": "50f82a28abd54629711f0e708ccbcdb869a37072ebd494cca2aae2c9b73c40ee"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.ProjectEditor.pdb",
+      "bytes": 18964,
+      "sha256": "3d27ec92e8c8c9b90bed62cc9b04ebc35d42e9103b73cf90a563e59c872a0003"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.runtimeconfig.json",
+      "bytes": 362,
+      "sha256": "4b4546da4fd9175f86782c08db3492baf602ca67a2a6afe53e20a0d47222ab4f"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.Shared.dll",
+      "bytes": 4096,
+      "sha256": "a51db1bf69e79af0c6a52187c58fb1d2c9510460a5393c0c66a49bc010fe65dc"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\GodotTools.Shared.pdb",
+      "bytes": 11064,
+      "sha256": "285deef9478daceb35e1ea388166ec4ef6a573c3c929dd05225ce8f429725e3f"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\it\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 457992,
+      "sha256": "90e447f763e50bfed0936e10f6c1f079446e982a9079e26095e91aca479421fa"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\it\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49936,
+      "sha256": "c7d7366236036bb7d44a4950d58915b9dff48235ecf17b38f7d9564743fd4ede"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\ja\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 506144,
+      "sha256": "168a4471831f7db588eb1e610740c5e8d8a76b0f82566a98fcb42ef8bb755ad1"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\ja\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 53512,
+      "sha256": "819bc27aecd1d40a954ed59505ced8798b37dc6471ca4186508876c70396b3c7"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\JetBrains.Lifetimes.dll",
+      "bytes": 272896,
+      "sha256": "93ab87c36b4a6dacd45b48a2effb982724ecb8b868db0995c438d90da6d93219"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\JetBrains.RdFramework.dll",
+      "bytes": 203264,
+      "sha256": "05b454e30510940eddd4d75689052fc79e6618a4d52025e08979fa5f5f56d3f4"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\JetBrains.Rider.PathLocator.dll",
+      "bytes": 20480,
+      "sha256": "ea69b571eb3ec3c831377bcdf6c002679007654be903591f13c036bc8c35ae9d"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\ko\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 463648,
+      "sha256": "a8eaaf9ea2979975be5d223f5fbfc582d426c2c23990e02acdc76bbc0d1d3ffb"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\ko\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49944,
+      "sha256": "b4b9fb05e0cea71f79f1101408ea2b55e75f53d32d34260c34c609d22a96218b"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\Microsoft.Build.Locator.dll",
+      "bytes": 27512,
+      "sha256": "ec3d31e3bde953231228853e7a31df2fcd2cafb30380b0148c3e7e38aeb607ca"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\Microsoft.CodeAnalysis.CSharp.dll",
+      "bytes": 6523664,
+      "sha256": "c46e884a3f2910fd6098b104131cae600c1716ae14b27ffe2d22c54c7f71ff11"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\Microsoft.CodeAnalysis.dll",
+      "bytes": 2985224,
+      "sha256": "8d919bcf3e2f0e74dc1e79c713f06934201cd2338ad23b9a430e53944ebc0408"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\Microsoft.VisualStudio.Interop.dll",
+      "bytes": 2422200,
+      "sha256": "9775451527b8f71836a6a86182fb889098254a5fff55e64a02da3029af49632c"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\Microsoft.VisualStudio.SolutionPersistence.dll",
+      "bytes": 172072,
+      "sha256": "a1150f4a162d9c9992b6e99b2949e2de092017182264218b7b5666ceebbc16d4"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\Newtonsoft.Json.dll",
+      "bytes": 695336,
+      "sha256": "72cf291d4bab0edd08a9b07c6173e1e7ad1abb7ab727fd7044bf6305d7515661"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\NuGet.Frameworks.dll",
+      "bytes": 123944,
+      "sha256": "42972564d5632852fddf484c6badb1f91cd5167b4f540b23e30663aa84f795f0"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\nupkgs\\Godot.NET.Sdk.4.7.2.nupkg",
+      "bytes": 6888,
+      "sha256": "75aad61e35072f903a800032caf361e7010e44bfa290be3e44dcde3453707118"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\nupkgs\\Godot.SourceGenerators.4.7.2.nupkg",
+      "bytes": 45682,
+      "sha256": "ce2beb0b75bfb81b94982bdaf7234fc681edd4cf024606c6baf6e40625e0ca4e"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\nupkgs\\GodotSharp.4.7.2.nupkg",
+      "bytes": 3222070,
+      "sha256": "3d1ed30c7cd261e86fa4d3217baf65f9d4f6b48be9c702933e8e4ef180147e71"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\nupkgs\\GodotSharp.4.7.2.snupkg",
+      "bytes": 4163682,
+      "sha256": "19a6f2596a2afc670a61f71e84ccd17932c74260ac60909cb3e30e3d12fb5f83"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\nupkgs\\GodotSharpEditor.4.7.2.nupkg",
+      "bytes": 177772,
+      "sha256": "16b6ca688ef589617e658b825d189fb70909bba8d2a81acb4f1c7942a744afee"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\nupkgs\\GodotSharpEditor.4.7.2.snupkg",
+      "bytes": 261786,
+      "sha256": "c0e8f1e52b16873a1f95f1a51b800972f12e9238ad3e96837de99be5c4724455"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\pl\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 464160,
+      "sha256": "f368012ee07c6edd49df17a11dc52524516877a2afa444600c76297cd23b8a35"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\pl\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49928,
+      "sha256": "d12771a7017bd996edd50de8b34dd9de02474eeb3b9bf1b62d04a14178b4c059"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\pt-BR\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 444680,
+      "sha256": "96f67f5e846bddfde6e958d450bae72943816b0800a5ee1844b4c69b9593a343"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\pt-BR\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 48928,
+      "sha256": "ade69198534b8c6149ad2160cbc0d66ce8c9e7f65cdf4525abd4b3084f2dd935"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\ru\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 609032,
+      "sha256": "25093104d71c3c980bc0baf6c01c072f42f5d7d918e275d2601d41ba21c3c612"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\ru\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 60192,
+      "sha256": "f624329c45687998a2f7000182be4dab3c33f07fcbdf482505a0472fed01dee4"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\tr\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 440584,
+      "sha256": "76c1f8a8bd7d748170cf0e9b93039fb2bc2ee074ba19eedc10f9a9bc026ec197"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\tr\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 48408,
+      "sha256": "660fa2661a524dd05402991750509edb72c5cce4ddec9cdc56126c1e1c50bcdc"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\zh-Hans\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 391944,
+      "sha256": "eb9fd086af40d5d6ec24123c25a6a5e9f69b45e9db4f1a85269b62774c87f4b4"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\zh-Hans\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 44824,
+      "sha256": "966487734ddbd371ccfadd6521a8a7e36ba74a5ad777c749df90ea26118212bb"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\zh-Hant\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 391448,
+      "sha256": "1f4bcaed17f6b189a0a68813a8cf5f3d8d31b6269fd10bcc824b9dd45c2b9a8d"
+    },
+    {
+      "path": "tools\\godot\\GodotSharp\\Tools\\zh-Hant\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 44808,
+      "sha256": "537fd03e590ca4502980dfe08d5163a4a115d7b33040cd495a795818dbde315f"
+    }
+  ],
+  "addons": {
+    "io_scene_gr2": "4.2.1",
+    "zg_swtor_tools": "2.0.14"
+  },
+  "gltfExporter": "5.2.40 bundled with Blender",
+  "readerReference": [
+    {
+      "path": "D:\\SWTORClassic\\extracTOR\\extracTOR\\TorArchive\\Archive.cs",
+      "sha256": "189c0dd3d5a284e713fec7e13f6b31c7630ad8e02f7aa7ca8a00e230b5644d74"
+    },
+    {
+      "path": "D:\\SWTORClassic\\extracTOR\\extracTOR\\Helper\\HashLittle2.cs",
+      "sha256": "a4737a3cfdf90ef5876459e333381617dbcbc1d1bc233c25563da8869e866717"
+    }
+  ],
+  "scope": "Packages unmodified; context and temp workarounds live only in pipeline scripts."
+}

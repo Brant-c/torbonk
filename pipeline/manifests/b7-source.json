@@ -1,0 +1,352 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 55,
+  "maximumDecodedBytes": 67108864,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x083F7BC40B94CB0B",
+      "entryOffset": 67889274,
+      "headerSize": 36,
+      "dataOffset": 67889310,
+      "compressedSize": 1008,
+      "length": 1008,
+      "compressionMethod": 0,
+      "crc32Index": "cb8c61fd",
+      "path": "/resources/gfx/gfx_production/bwaui_levelup_popup_window.gfx",
+      "sha256": "042b9db0af3de5cc9456a56ab6204bd5f69dd850509217d36e8f001930ba24f2",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_levelup_popup_window.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xD371B4BDF55A125F",
+      "entryOffset": 63674762,
+      "headerSize": 36,
+      "dataOffset": 63674798,
+      "compressedSize": 356468,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "03ec5f3f",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_20.dds",
+      "sha256": "7a98bd3bd5ef6868b9ab6977cf242c751f9e27bd474af6587a27950e019904cf",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_20.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xBF209ACFD37A366F",
+      "entryOffset": 61379971,
+      "headerSize": 36,
+      "dataOffset": 61380007,
+      "compressedSize": 345410,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "f9bbcdf1",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+      "sha256": "da01ec22737a906ccfb11b75173de42478f41618c62f9598f89335e77573bd7a",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_14.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x498FEB7CE335DE9B",
+      "entryOffset": 68369780,
+      "headerSize": 36,
+      "dataOffset": 68369816,
+      "compressedSize": 1103,
+      "length": 1103,
+      "compressionMethod": 0,
+      "crc32Index": "cf566c1b",
+      "path": "/resources/gfx/gfx_production/bwaui_messageitem.gfx",
+      "sha256": "99cf35c9660ef639ffa1075f5601ee2a13021005ba849e66d96a26eb2aa56627",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_messageitem.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x175EC192DB328C9F",
+      "entryOffset": 69414807,
+      "headerSize": 36,
+      "dataOffset": 69414843,
+      "compressedSize": 666,
+      "length": 666,
+      "compressionMethod": 0,
+      "crc32Index": "78796ba8",
+      "path": "/resources/gfx/gfx_production/bwaui_system_message.gfx",
+      "sha256": "9f58597746000111d5518a7bfd0ce722672e4097dffa0f88d85243ec6fdb0e05",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_system_message.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xE0B70A914E4B6C16",
+      "entryOffset": 14663436,
+      "headerSize": 36,
+      "dataOffset": 14663472,
+      "compressedSize": 7864,
+      "length": 251100,
+      "compressionMethod": 1,
+      "crc32Index": "b9cca021",
+      "path": "/resources/art/fx/fxspec/abilities/all/all_level_up_red.fxspec",
+      "sha256": "5f5ac0aa999cd29f83d5c16fb2254d28acef59e7a432a6fa247a05c8f94256bc",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\all\\all_level_up_red.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x68C8D04380C1FFB8",
+      "entryOffset": 139136857,
+      "headerSize": 36,
+      "dataOffset": 139136893,
+      "compressedSize": 3353,
+      "length": 35918,
+      "compressionMethod": 1,
+      "crc32Index": "be3cf1ee",
+      "path": "/resources/art/fx/fxspec/items/loot_common.fxspec",
+      "sha256": "f5a7eeea11fd4a4bc00cf8ba486ceec5a3b98aa78fd94919bd6afd4bbc645674",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\items\\loot_common.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audiodata_1.tor",
+      "archiveHash": "0x1038BF63774A242E",
+      "entryOffset": 36895,
+      "headerSize": 36,
+      "dataOffset": 36931,
+      "compressedSize": 23091,
+      "length": 72592,
+      "compressionMethod": 1,
+      "crc32Index": "929acd04",
+      "path": "/resources/bnk2/abilities_general_data.bnk",
+      "sha256": "26b1a9e7aa61aaf86377487d9150adcef34a475b42f5984ef06c2d47d5a44971",
+      "output": "source-assets\\april2012\\resources\\bnk2\\abilities_general_data.bnk",
+      "archiveSha256": "932a885608e1a1b1f4a9f5c55a02bc8e426558371ae5a58faf88642ebe5f4491",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audiodata_1.tor",
+      "archiveHash": "0x474DDFDF740AE5B2",
+      "entryOffset": 512,
+      "headerSize": 36,
+      "dataOffset": 548,
+      "compressedSize": 36347,
+      "length": 116801,
+      "compressionMethod": 1,
+      "crc32Index": "f9cb60dc",
+      "path": "/resources/bnk2/abilities_creatures_data.bnk",
+      "sha256": "58bc35eb4f7f290c69536f31ca385a36f47849b9169b1fffa95ee7dc26fb64eb",
+      "output": "source-assets\\april2012\\resources\\bnk2\\abilities_creatures_data.bnk",
+      "archiveSha256": "932a885608e1a1b1f4a9f5c55a02bc8e426558371ae5a58faf88642ebe5f4491",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xC6A476B53A80DB15",
+      "entryOffset": 139140246,
+      "headerSize": 36,
+      "dataOffset": 139140282,
+      "compressedSize": 534,
+      "length": 1077,
+      "compressionMethod": 1,
+      "crc32Index": "0dce66dd",
+      "path": "/resources/art/fx/particles/loot_core_glow.prt",
+      "sha256": "6d9cc44b5a22ea93c2144fe3003c9127ded5bae2371c28379e11aa1645d0337a",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\loot_core_glow.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x188CEB6F78AF741C",
+      "entryOffset": 139143615,
+      "headerSize": 36,
+      "dataOffset": 139143651,
+      "compressedSize": 796,
+      "length": 1643,
+      "compressionMethod": 1,
+      "crc32Index": "ff18eb1d",
+      "path": "/resources/art/fx/particles/loot_core_glow_p.prt",
+      "sha256": "fbcfad7cce06ccfe5e60264ab120a4c50a71ca000ef39ad983faafde1249c012",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\loot_core_glow_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x8BEB8AEDDB985AED",
+      "entryOffset": 14326183,
+      "headerSize": 36,
+      "dataOffset": 14326219,
+      "compressedSize": 538,
+      "length": 1062,
+      "compressionMethod": 1,
+      "crc32Index": "abbd4a59",
+      "path": "/resources/art/fx/particles/all_holo_empire_level_up.prt",
+      "sha256": "ca7a23359e043732824b332c1edcbef15e02112cad8011c7ad3f7ddf82c9010b",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\all_holo_empire_level_up.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xCACB0D6351A8BBC0",
+      "entryOffset": 23715490,
+      "headerSize": 36,
+      "dataOffset": 23715526,
+      "compressedSize": 30405,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "a8b99307",
+      "path": "/resources/art/fx/texture/glow/bw_flare_gray.dds",
+      "sha256": "f375d79f322cbdcb2cdcc8fcf61153f4a903dbbff4639e4bf7ef9bc8e9132558",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\glow\\bw_flare_gray.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x75801A2A6253C16D",
+      "entryOffset": 159598370,
+      "headerSize": 36,
+      "dataOffset": 159598406,
+      "compressedSize": 26202,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "0830f87e",
+      "path": "/resources/art/fx/texture/symbol/tri_ring_blurred.dds",
+      "sha256": "0f8e0fd7b8cab85d2736a33c5d1fe78ffe63e777fe35ad97c43c2bddaf2c0182",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\symbol\\tri_ring_blurred.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x68252BB5AE123885",
+      "entryOffset": 34611666,
+      "headerSize": 36,
+      "dataOffset": 34611702,
+      "compressedSize": 3431,
+      "length": 55418,
+      "compressionMethod": 1,
+      "crc32Index": "658350f6",
+      "path": "/resources/art/fx/fxspec/creatures/generic_impacts/cr_generic_aoe_ground_pound.fxspec",
+      "sha256": "f150d12c77a23a48b4515929a8ed8a24f81a0a4e9a1a8ca2fcb8bee3c46c04ac",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\creatures\\generic_impacts\\cr_generic_aoe_ground_pound.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audiodata_1.tor",
+      "archiveHash": "0xD634B5F5260713CD",
+      "entryOffset": 3096817,
+      "headerSize": 36,
+      "dataOffset": 3096853,
+      "compressedSize": 4598367,
+      "length": 4598367,
+      "compressionMethod": 0,
+      "crc32Index": "73f50f4a",
+      "path": "/resources/bnk2/swtor_startup.bnk",
+      "sha256": "5f2ffe5d7d70698c66c97a34c602acc3b0d932c2886cb7849a1e23aededde7ac",
+      "output": "source-assets\\april2012\\resources\\bnk2\\swtor_startup.bnk",
+      "archiveSha256": "932a885608e1a1b1f4a9f5c55a02bc8e426558371ae5a58faf88642ebe5f4491",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "B7",
+      "to": "/resources/gfx/gfx_production/bwaui_levelup_popup_window.gfx",
+      "relation": "notification movie"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_levelup_popup_window.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_20.dds",
+      "relation": "GFX external image"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_levelup_popup_window.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+      "relation": "GFX external image"
+    },
+    {
+      "from": "B7",
+      "to": "/resources/gfx/gfx_production/bwaui_messageitem.gfx",
+      "relation": "notification movie"
+    },
+    {
+      "from": "B7",
+      "to": "/resources/gfx/gfx_production/bwaui_system_message.gfx",
+      "relation": "notification movie"
+    },
+    {
+      "from": "B7",
+      "to": "/resources/art/fx/fxspec/abilities/all/all_level_up_red.fxspec",
+      "relation": "level/pickup candidate"
+    },
+    {
+      "from": "B7",
+      "to": "/resources/art/fx/fxspec/items/loot_common.fxspec",
+      "relation": "level/pickup candidate"
+    },
+    {
+      "from": "B7",
+      "to": "/resources/bnk2/abilities_general_data.bnk",
+      "relation": "selected bank graph"
+    },
+    {
+      "from": "B7",
+      "to": "/resources/bnk2/abilities_creatures_data.bnk",
+      "relation": "selected bank graph"
+    },
+    {
+      "from": "B7",
+      "to": "/resources/art/fx/particles/loot_core_glow.prt",
+      "relation": "selected loot/level particle"
+    },
+    {
+      "from": "B7",
+      "to": "/resources/art/fx/particles/loot_core_glow_p.prt",
+      "relation": "selected loot/level particle"
+    },
+    {
+      "from": "B7",
+      "to": "/resources/art/fx/particles/all_holo_empire_level_up.prt",
+      "relation": "selected loot/level particle"
+    },
+    {
+      "from": "loot_common.fxspec / loot_core_glow_p.prt",
+      "to": "/resources/art/fx/texture/glow/bw_flare_gray.dds",
+      "relation": "original loot texture binding"
+    },
+    {
+      "from": "loot_common.fxspec / loot_core_glow_p.prt",
+      "to": "/resources/art/fx/texture/symbol/tri_ring_blurred.dds",
+      "relation": "original loot texture binding"
+    },
+    {
+      "from": "B7 Burrow Eruption",
+      "to": "/resources/art/fx/fxspec/creatures/generic_impacts/cr_generic_aoe_ground_pound.fxspec",
+      "relation": "source impact candidate"
+    },
+    {
+      "from": "Burrow Eruption",
+      "to": "/resources/bnk2/abilities_creatures_data.bnk",
+      "relation": "original generic ground impact events"
+    },
+    {
+      "from": "all_level_up_red.fxspec",
+      "to": "/resources/bnk2/swtor_startup.bnk",
+      "relation": "typed HIRC level-up event and exact unique April path"
+    }
+  ],
+  "unresolved": [],
+  "selection": "B7 bounded presentation research"
+}

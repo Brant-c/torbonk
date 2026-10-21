@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/StationaryEnemy.cs" id="1"]
+[ext_resource type="Script" path="res://Gameplay/Health.cs" id="2"]
+[ext_resource type="Script" path="res://Gameplay/CharacterPresentation.cs" id="3"]
+[ext_resource type="PackedScene" path="res://Assets/sorcerer.glb" id="4"]
+
+[node name="StationaryEnemy" type="Node3D"]
+script = ExtResource("1")
+TargetId = "TrainingSorcerer"
+Team = 2
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("2")
+Maximum = 80.0
+
+[node name="Presentation" type="Node3D" parent="."]
+rotation = Vector3(0, 3.1415927, 0)
+script = ExtResource("3")
+
+[node name="OriginalSorcerer" parent="Presentation" instance=ExtResource("4")]
+
+[node name="Nameplate" type="Label3D" parent="."]
+position = Vector3(0, 0.24, 0)
+pixel_size = 0.0005
+billboard = 1
+text = "HOSTILE"
+font_size = 28
+modulate = Color(1, 0.36, 0.25, 1)
+outline_size = 6

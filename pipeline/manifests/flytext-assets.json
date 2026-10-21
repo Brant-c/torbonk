@@ -1,0 +1,198 @@
+{
+  "movieLookups": [
+    {
+      "path": "/resources/gfx/gfx_marca/ui_flytext.swf",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_qa_test/ui_flytext.gfx",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_qa_test/ui_flytext.swf",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_release/ui_flytext.swf",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_release_aalkhatib/ui_flytext.gfx",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_release_aalkhatib/ui_flytext.swf",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_release_dev2/ui_flytext.gfx",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_release_dev2/ui_flytext.swf",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_release_dev3/ui_flytext.swf",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_release_dev4/ui_flytext.swf",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_release_dev5/ui_flytext.gfx",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_release_dev5/ui_flytext.swf",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_release_devx/ui_flytext.gfx",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_release_devx/ui_flytext.swf",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_release_jkerwin/ui_flytext.gfx",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_release_jkerwin/ui_flytext.swf",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_release_lross/ui_flytext.gfx",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_release_lross/ui_flytext.swf",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    },
+    {
+      "path": "/resources/gfx/gfx_production/ui_flytext.gfx",
+      "matches": [],
+      "evidence": "historical filename candidate; exact April entry-table lookup only"
+    }
+  ],
+  "fontBundles": [
+    {
+      "path": "/resources/gfx/drawtext_fonts.swf",
+      "fonts": [
+        {
+          "tag": 75,
+          "id": 1,
+          "name": "FrizQuaReg",
+          "flags": 132
+        },
+        {
+          "tag": 75,
+          "id": 4,
+          "name": "Eurostile Next LT Pro",
+          "flags": 141
+        },
+        {
+          "tag": 75,
+          "id": 6,
+          "name": "Slate Mobile",
+          "flags": 132
+        },
+        {
+          "tag": 75,
+          "id": 8,
+          "name": "Slate Mobile",
+          "flags": 133
+        }
+      ]
+    },
+    {
+      "path": "/resources/gfx/fonts/swtor_fonts.gfx",
+      "fonts": [
+        {
+          "tag": 75,
+          "id": 1,
+          "name": "R6D8 Mod",
+          "flags": 140
+        },
+        {
+          "tag": 75,
+          "id": 3,
+          "name": "Eurostile",
+          "flags": 132
+        },
+        {
+          "tag": 75,
+          "id": 5,
+          "name": "Eurostile",
+          "flags": 133
+        },
+        {
+          "tag": 75,
+          "id": 7,
+          "name": "Eurostile Bold",
+          "flags": 132
+        },
+        {
+          "tag": 75,
+          "id": 9,
+          "name": "Aurek-Besh",
+          "flags": 132
+        },
+        {
+          "tag": 75,
+          "id": 11,
+          "name": "Franklin Gothic Medium Cond",
+          "flags": 140
+        },
+        {
+          "tag": 75,
+          "id": 13,
+          "name": "Franklin Gothic Demi",
+          "flags": 140
+        }
+      ]
+    }
+  ],
+  "config": [
+    {
+      "path": "/resources/guixml/defaults.xml",
+      "fontOrFlytextLines": []
+    },
+    {
+      "path": "/resources/guixml/stylesetgui.xml",
+      "fontOrFlytextLines": []
+    }
+  ],
+  "fontConversion": {
+    "source": "/resources/gfx/drawtext_fonts.swf",
+    "fontId": 4,
+    "output": "godot\\Assets\\UI\\Flytext\\EurostileNextLTPro.ttf",
+    "embeddedName": "Eurostile Next LT Pro",
+    "glyphCount": 346,
+    "unitsPerEm": 1024,
+    "conversion": "DefineFont3 outlines/advances divided by 20, Y inverted; no kerning conversion",
+    "roleEvidence": "Original draw-text font candidate; exact flytext face binding unresolved",
+    "sha256": "2b58e5c004af4a5c0f274e52115ad0c4ed90a0ce758442552a661c5963b42e23"
+  }
+}

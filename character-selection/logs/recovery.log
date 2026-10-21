@@ -1,0 +1,303 @@
+{
+  "resources": 104,
+  "missing": [
+    {
+      "path": "/resources/gfx/gfx_production/bwaui_character_create_faction_select.gfx",
+      "matches": 0
+    },
+    {
+      "path": "/resources/gfx/gfx_production/bwaui_character_create_customize.gfx",
+      "matches": 0
+    },
+    {
+      "path": "/resources/gfx/gfx_production/bwaui_character_create_breadcrumbbar.gfx",
+      "matches": 0
+    },
+    {
+      "path": "/resources/gfx/gfx_production/bwaui_advancedclass_selection_window.gfx",
+      "matches": 0
+    },
+    {
+      "path": "/resources/gfx/gfx_production/bwaui_galaxymap.gfx",
+      "matches": 0
+    },
+    {
+      "path": "/resources/gfx/gfx_production/bwaui_galaxymap_shared.gfx",
+      "matches": 0
+    },
+    {
+      "path": "/resources/art/fx/geometry/galaxy_map/texture/gal_map_galaxy_arm_d.dds",
+      "matches": 0
+    },
+    {
+      "path": "/resources/art/fx/geometry/galaxy_map/texture/gal_map_galaxy_core_d.dds",
+      "matches": 0
+    },
+    {
+      "path": "/resources/guixml/charactercreate.xml",
+      "matches": 0
+    },
+    {
+      "path": "/resources/guixml/galaxymap.xml",
+      "matches": 0
+    },
+    {
+      "path": "/resources/gfx/gfx_production/ui_character_create_classpanel.gfx",
+      "matches": 0
+    },
+    {
+      "path": "/resources/gfx/gfx_production/ui_galaxymap.gfx",
+      "matches": 0
+    },
+    {
+      "path": "/resources/gfx/gfx_production/ui_galaxymap_shared.gfx",
+      "matches": 0
+    },
+    {
+      "path": "/resources/gfx/icons/larger/imperialagent.dds",
+      "matches": 0
+    }
+  ],
+  "movies": {
+    "bwaui_character_create": {
+      "images": {
+        "10": "/resources/gfx/gfx_production/bwa_uitexture_20.dds"
+      },
+      "slices": 1,
+      "exports": [
+        {
+          "id": 2,
+          "name": "SharedLibrary"
+        },
+        {
+          "id": 6,
+          "name": "BlackOutMC"
+        },
+        {
+          "id": 8,
+          "name": "blackBoxOut"
+        },
+        {
+          "id": 9,
+          "name": "__Packages.as.Loader.BaseLoader"
+        },
+        {
+          "id": 10,
+          "name": "__Packages.as.UI.UIComponentFactory"
+        },
+        {
+          "id": 11,
+          "name": "__Packages.as.UI.UIComponentFactoryQueueItem"
+        },
+        {
+          "id": 12,
+          "name": "__Packages.as.UI.ILoadable"
+        },
+        {
+          "id": 13,
+          "name": "__Packages.as.UI.Base"
+        }
+      ]
+    },
+    "bwaui_character_create_window": {
+      "images": {
+        "2": "/resources/gfx/gfx_production/bwa_uitexture_6.dds",
+        "3": "/resources/gfx/gfx_production/bwa_uitexture_7.dds",
+        "5": "/resources/gfx/gfx_production/bwa_uitexture_19.dds",
+        "6": "/resources/gfx/gfx_production/bwa_uitexture_12.dds",
+        "7": "/resources/gfx/gfx_production/bwa_uitexture_10.dds",
+        "8": "/resources/gfx/gfx_production/bwa_uitexture_2.dds",
+        "13": "/resources/gfx/gfx_production/bwa_uitexture_5.dds",
+        "17": "/resources/gfx/gfx_production/bwa_uitexture_4.dds",
+        "18": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+        "19": "/resources/gfx/gfx_production/bwa_uitexture_15.dds",
+        "20": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+        "16": "/resources/gfx/gfx_production/bwa_uitexture_3.dds"
+      },
+      "slices": 24,
+      "exports": [
+        {
+          "id": 3,
+          "name": "sharedObj"
+        },
+        {
+          "id": 15,
+          "name": "LegacyUnlock"
+        },
+        {
+          "id": 19,
+          "name": "LegacyLocked"
+        }
+      ]
+    },
+    "bwaui_character_create_panels": {
+      "images": {
+        "12": "/resources/gfx/gfx_production/bwa_uitexture_8.dds",
+        "13": "/resources/gfx/gfx_production/bwa_uitexture_5.dds"
+      },
+      "slices": 2,
+      "exports": []
+    },
+    "bwaui_character_select": {
+      "images": {
+        "10": "/resources/gfx/gfx_production/bwa_uitexture_20.dds"
+      },
+      "slices": 1,
+      "exports": [
+        {
+          "id": 1,
+          "name": "timer"
+        },
+        {
+          "id": 6,
+          "name": "sharedObject"
+        },
+        {
+          "id": 10,
+          "name": "BlackOutMC"
+        },
+        {
+          "id": 12,
+          "name": "blackBoxOut"
+        },
+        {
+          "id": 13,
+          "name": "__Packages.as.Loader.BaseLoader"
+        },
+        {
+          "id": 14,
+          "name": "__Packages.as.UI.UIComponentFactory"
+        },
+        {
+          "id": 15,
+          "name": "__Packages.as.UI.UIComponentFactoryQueueItem"
+        },
+        {
+          "id": 16,
+          "name": "__Packages.as.UI.ILoadable"
+        }
+      ]
+    },
+    "ui_galaxymap_infowindow": {
+      "images": {
+        "0": "/resources/gfx/gfx_production/bwa_uitexture_9.dds",
+        "3": "/resources/gfx/gfx_production/bwa_uitexture_7.dds",
+        "9": "/resources/gfx/gfx_production/bwa_uitexture_21.dds",
+        "11": "/resources/gfx/gfx_production/bwa_uitexture_11.dds",
+        "13": "/resources/gfx/gfx_production/bwa_uitexture_5.dds",
+        "14": "/resources/gfx/gfx_production/bwa_uitexture_18.dds",
+        "17": "/resources/gfx/gfx_production/bwa_uitexture_4.dds",
+        "18": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+        "20": "/resources/gfx/gfx_production/bwa_uitexture_1.dds"
+      },
+      "slices": 18,
+      "exports": [
+        {
+          "id": 6,
+          "name": "_party_indicator"
+        }
+      ]
+    },
+    "ui_hud_galaxymap": {
+      "images": {
+        "10": "/resources/gfx/gfx_production/bwa_uitexture_20.dds"
+      },
+      "slices": 1,
+      "exports": [
+        {
+          "id": 2,
+          "name": "SharedLibrary"
+        },
+        {
+          "id": 6,
+          "name": "BlackOutMC"
+        },
+        {
+          "id": 8,
+          "name": "blackBoxOut"
+        },
+        {
+          "id": 9,
+          "name": "__Packages.as.Loader.BaseLoader"
+        },
+        {
+          "id": 10,
+          "name": "__Packages.as.UI.UIComponentFactory"
+        },
+        {
+          "id": 11,
+          "name": "__Packages.as.UI.UIComponentFactoryQueueItem"
+        },
+        {
+          "id": 12,
+          "name": "__Packages.as.UI.ILoadable"
+        },
+        {
+          "id": 13,
+          "name": "__Packages.as.UI.Base"
+        }
+      ]
+    },
+    "ui_galaxymap_panel": {
+      "images": {
+        "0": "/resources/gfx/gfx_production/bwa_uitexture_9.dds",
+        "9": "/resources/gfx/gfx_production/bwa_uitexture_21.dds"
+      },
+      "slices": 2,
+      "exports": [
+        {
+          "id": 2,
+          "name": "ScrollingText"
+        },
+        {
+          "id": 12,
+          "name": "ResizableGalaxyPanel"
+        },
+        {
+          "id": 15,
+          "name": "Noise"
+        }
+      ]
+    },
+    "ui_galaxymap_planet_info": {
+      "images": {
+        "0": "/resources/gfx/gfx_production/bwa_uitexture_9.dds",
+        "3": "/resources/gfx/gfx_production/bwa_uitexture_7.dds",
+        "9": "/resources/gfx/gfx_production/bwa_uitexture_21.dds",
+        "11": "/resources/gfx/gfx_production/bwa_uitexture_11.dds",
+        "13": "/resources/gfx/gfx_production/bwa_uitexture_5.dds",
+        "14": "/resources/gfx/gfx_production/bwa_uitexture_18.dds",
+        "16": "/resources/gfx/gfx_production/bwa_uitexture_3.dds",
+        "17": "/resources/gfx/gfx_production/bwa_uitexture_4.dds",
+        "20": "/resources/gfx/gfx_production/bwa_uitexture_1.dds"
+      },
+      "slices": 18,
+      "exports": [
+        {
+          "id": 6,
+          "name": "_party_indicator"
+        }
+      ]
+    },
+    "ui_galaxymap_scanlines": {
+      "images": {},
+      "slices": 0,
+      "exports": []
+    },
+    "ui_galaxymap_centerbutton": {
+      "images": {},
+      "slices": 0,
+      "exports": []
+    },
+    "ui_galaxymap_leftbutton": {
+      "images": {},
+      "slices": 0,
+      "exports": []
+    },
+    "ui_galaxymap_closebttn": {
+      "images": {},
+      "slices": 0,
+      "exports": []
+    }
+  }
+}

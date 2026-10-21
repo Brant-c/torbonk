@@ -1,0 +1,383 @@
+head <Asset>
+    <ID>1000247</ID>
+    <ArtName>head_human_bma_caucasian_a01</ArtName>
+    <DesignerName>head human bma caucasian a01</DesignerName>
+    <BaseFile>/art/dynamic/head/model/head_human_bma_caucasian_a01.gr2</BaseFile>
+    <Attachments />
+    <Materials>
+      <Material id="1005440" name="DO NOT USE" filename="/art/shaders/materials/head_human_[bt]_caucasian_a01_c01.mat">
+        <ColorSchemes />
+        <MaterialOverrides>
+          <MaterialOverride index="1" filename="/art/shaders/materials/eye_human_non_a01_c01.mat" />
+        </MaterialOverrides>
+      </Material>
+      <Material id="1143209" name="DO NOT USE" filename="/art/shaders/materials/head_human_[bt]_caucasian_a01_c02.mat">
+        <ColorSchemes />
+        <MaterialOverrides>
+          <MaterialOverride index="1" filename="/art/shaders/materials/eye_human_non_a01_c01.mat" />
+        </MaterialOverrides>
+      </Material>
+      <Material id="1143210" name="DO NOT USE" filename="/art/shaders/materials/head_human_[bt]_caucasian_a01_c03.mat">
+        <ColorSchemes />
+        <MaterialOverrides>
+          <MaterialOverride index="1" filename="/art/shaders/materials/eye_human_non_a01_c01.mat" />
+        </MaterialOverrides>
+      </Material>
+      <Material id="1143211" name="DO NOT USE" filename="/art/shaders/materials/head_human_[bt]_caucasian_a01_c04.mat">
+        <ColorSchemes />
+        <MaterialOverrides>
+          <MaterialOverride index="1" filename="/art/shaders/materials/eye_human_non_a01_c01.mat" />
+        </MaterialOverrides>
+      </Material>
+      <Material id="1583105" name="caucasian a01c01 m" filename="/art/shaders/materials/head_human_caucasian_a01c01_m.mat">
+        <ColorSchemes />
+        <MaterialOverrides>
+          <MaterialOverride index="-1" filename="/art/shaders/materials/eye_human_non_a01_c01.mat" />
+        </MaterialOverrides>
+      </Material>
+      <Material id="1585665" name="non npc01 m" filename="/art/shaders/materials/head_human_non_npc01_m.mat">
+        <ColorSchemes />
+        <MaterialOverrides>
+          <MaterialOverride index="-1" filename="/art/shaders/materials/eye_human_non_a01_c01.mat" />
+        </MaterialOverrides>
+      </Material>
+      <Material id="1585840" name="head human non npc_old_m" filename="/art/shaders/materials/head_human_non_npc07_m.mat">
+        <ColorSchemes />
+        <MaterialOverrides>
+          <MaterialOverride index="-1" filename="/art/shaders/materials/eye_human_non_a01_c01.mat" />
+        </MaterialOverrides>
+      </Material>
+    </Materials>
+    <Bodytypes>
+      <Bodytype>bma</Bodytype>
+    </Bodytypes>
+    <SkinMaterialIndex>-1</SkinMaterialIndex>
+    <SkinHueIndex>0</SkinHueIndex>
+    <Filters />
+    <Identities>
+      <Identity name="Race" value="caucasian" />
+    </Identities>
+    <Tags />
+    <CustomData>
+      <SkinMaterials>
+        <SkinMaterial slot="boot" filename="/art/shaders/materials/boot_naked_caucasian_young_a01c01_[bt].mat" />
+        <SkinMaterial slot="chest" filename="/art/shaders/materials/chest_naked_caucasian_young_a01c01_[bt].mat" />
+        <SkinMaterial slot="hand" filename="/art/shaders/materials/hand_naked_caucasian_young_a01c01_[bt].mat" />
+        <SkinMaterial slot="leg" filename="/art/shaders/materials/leg_naked_caucasian_young_a01c01_[bt].mat" />
+      </SkinMaterials>
+    </CustomData>
+  </Asset>
+  
+hair <Asset>
+    <ID>1001105</ID>
+    <ArtName>hair_human_african_a01_m</ArtName>
+    <DesignerName>hair human african a01 m</DesignerName>
+    <BaseFile>/art/dynamic/hair/model/hair_human_[bt]_african_a01.gr2</BaseFile>
+    <Attachments />
+    <Materials>
+      <Material id="1027776" name="a01 v01 m" filename="/art/shaders/materials/hair_human_african_a01_v01_m.mat">
+        <ColorSchemes />
+        <MaterialOverrides />
+      </Material>
+    </Materials>
+    <Bodytypes>
+      <Bodytype>bma</Bodytype>
+      <Bodytype>bmf</Bodytype>
+      <Bodytype>bmn</Bodytype>
+      <Bodytype>bms</Bodytype>
+    </Bodytypes>
+    <SkinMaterialIndex>-1</SkinMaterialIndex>
+    <SkinHueIndex>-1</SkinHueIndex>
+    <Filters>
+      <Filter name="Race" value="african" />
+    </Filters>
+    <Identities />
+    <Tags>
+      <Tag name="Race" value="african" />
+    </Tags>
+    <CustomData />
+  </Asset>
+  
+hair <Asset>
+    <ID>1165311</ID>
+    <ArtName>hair_human_bfa_child_a01</ArtName>
+    <DesignerName>hair human bfa child a01</DesignerName>
+    <BaseFile>/art/dynamic/hair/model/hair_human_bfa_child_a01_base.gr2</BaseFile>
+    <Attachments>
+      <Attachment id="1012120" name="ponytail" filename="/art/dynamic/hair/model/hair_human_bfa_child_a01_ponytail.gr2" />
+      <Attachment id="1012122" name="sidelock" filename="/art/dynamic/hair/model/hair_human_bfa_child_a01_sidelock.gr2" />
+    </Attachments>
+    <Materials>
+      <Material id="1165284" name="child a01 v01" filename="/art/shaders/materials/hair_human_bfa_child_a01_v01.mat">
+        <ColorSchemes />
+        <MaterialOverrides />
+      </Material>
+    </Materials>
+    <Bodytypes>
+      <Bodytype>bfa</Bodytype>
+    </Bodytypes>
+    <SkinMaterialIndex>-1</SkinMaterialIndex>
+    <SkinHueIndex>-1</SkinHueIndex>
+    <Filters />
+    <Identities />
+    <Tags>
+      <Tag name="Race" value="child" />
+    </Tags>
+    <CustomData />
+  </Asset>
+  
+hair <Asset>
+    <ID>1012132</ID>
+    <ArtName>hair_human_bma_child_a01</ArtName>
+    <DesignerName>hair human bma child a01</DesignerName>
+    <BaseFile>/art/dynamic/hair/model/hair_human_bma_child_a01_base.gr2</BaseFile>
+    <Attachments>
+      <Attachment id="1012130" name="lock" filename="/art/dynamic/hair/model/hair_human_bma_child_a01_lock.gr2" />
+      <Attachment id="1012131" name="sides" filename="/art/dynamic/hair/model/hair_human_bma_child_a01_sides.gr2" />
+    </Attachments>
+    <Materials>
+      <Material id="1165283" name="child a01 v01" filename="/art/shaders/materials/hair_human_bma_child_a01_v01.mat">
+        <ColorSchemes />
+        <MaterialOverrides />
+      </Material>
+    </Materials>
+    <Bodytypes>
+      <Bodytype>bma</Bodytype>
+    </Bodytypes>
+    <SkinMaterialIndex>-1</SkinMaterialIndex>
+    <SkinHueIndex>-1</SkinHueIndex>
+    <Filters>
+      <Filter name="Race" value="child" />
+    </Filters>
+    <Identities />
+    <Tags>
+      <Tag name="Race" value="child" />
+    </Tags>
+    <CustomData />
+  </Asset>
+  
+skincolor <Asset>
+    <ID>1162493</ID>
+    <ArtName>skincolor_chiss_african_h01_p</ArtName>
+    <DesignerName>skincolor chiss african h01 p</DesignerName>
+    <BaseFile>/art/dynamic/skincolor/skincolor_chiss_african_h01_p.xml</BaseFile>
+    <Attachments />
+    <Materials />
+    <Bodytypes>
+      <Bodytype>bfa</Bodytype>
+      <Bodytype>bfb</Bodytype>
+      <Bodytype>bfn</Bodytype>
+      <Bodytype>bfs</Bodytype>
+      <Bodytype>bma</Bodytype>
+      <Bodytype>bmf</Bodytype>
+      <Bodytype>bmn</Bodytype>
+      <Bodytype>bms</Bodytype>
+    </Bodytypes>
+    <SkinMaterialIndex>-1</SkinMaterialIndex>
+    <SkinHueIndex>-1</SkinHueIndex>
+    <Filters>
+      <Filter name="Race" value="chiss" />
+      <Filter name="Race" value="chiss_african" />
+      <Filter name="Race" value="chiss_asian" />
+    </Filters>
+    <Identities />
+    <Tags>
+      <Tag name="Race" value="chiss" />
+      <Tag name="Race" value="chiss_african" />
+      <Tag name="Race" value="chiss_asian" />
+    </Tags>
+    <CustomData>
+      <Data RepresentativeColor="0.1441669,0.22065,0.3514601" Precedence="001" ColorSortOrder="001" />
+    </CustomData>
+  </Asset>
+  
+eyecolor <Asset>
+    <ID>1001086</ID>
+    <ArtName>eyecolor_human_non_h01_s</ArtName>
+    <DesignerName>human light blue</DesignerName>
+    <BaseFile>/art/dynamic/eyecolor/eyecolor_human_non_h01_s.xml</BaseFile>
+    <Attachments />
+    <Materials />
+    <Bodytypes>
+      <Bodytype>bfa</Bodytype>
+      <Bodytype>bfb</Bodytype>
+      <Bodytype>bfn</Bodytype>
+      <Bodytype>bfs</Bodytype>
+      <Bodytype>bma</Bodytype>
+      <Bodytype>bmf</Bodytype>
+      <Bodytype>bmn</Bodytype>
+      <Bodytype>bms</Bodytype>
+    </Bodytypes>
+    <SkinMaterialIndex>-1</SkinMaterialIndex>
+    <SkinHueIndex>-1</SkinHueIndex>
+    <Filters>
+      <Filter name="Race" value="african" />
+      <Filter name="Race" value="asian" />
+      <Filter name="Race" value="caucasian" />
+      <Filter name="Race" value="twilek" />
+      <Filter name="Race" value="twilek_african" />
+      <Filter name="Race" value="twilek_asian" />
+    </Filters>
+    <Identities />
+    <Tags>
+      <Tag name="Race" value="african" />
+      <Tag name="Race" value="asian" />
+      <Tag name="Race" value="caucasian" />
+      <Tag name="Race" value="twilek" />
+      <Tag name="Race" value="twilek_african" />
+      <Tag name="Race" value="twilek_asian" />
+    </Tags>
+    <CustomData>
+      <Data RepresentativeColor="0.2713363,0.3860952,0.3816011" Precedence="001" ColorSortOrder="001" />
+    </CustomData>
+  </Asset>
+  
+haircolor <Asset>
+    <ID>1003528</ID>
+    <ArtName>haircolor_chiss_non_h01_p</ArtName>
+    <DesignerName>haircolor chiss non h01 p</DesignerName>
+    <BaseFile>/art/dynamic/haircolor/haircolor_chiss_non_h01_p.xml</BaseFile>
+    <Attachments />
+    <Materials />
+    <Bodytypes>
+      <Bodytype>bfa</Bodytype>
+      <Bodytype>bfb</Bodytype>
+      <Bodytype>bfn</Bodytype>
+      <Bodytype>bfs</Bodytype>
+      <Bodytype>bma</Bodytype>
+      <Bodytype>bmf</Bodytype>
+      <Bodytype>bmn</Bodytype>
+      <Bodytype>bms</Bodytype>
+    </Bodytypes>
+    <SkinMaterialIndex>-1</SkinMaterialIndex>
+    <SkinHueIndex>-1</SkinHueIndex>
+    <Filters>
+      <Filter name="Race" value="chiss" />
+    </Filters>
+    <Identities />
+    <Tags>
+      <Tag name="Race" value="chiss" />
+      <Tag name="Race" value="chiss_african" />
+      <Tag name="Race" value="chiss_asian" />
+    </Tags>
+    <CustomData>
+      <Data RepresentativeColor="0.178736128433877,0.468667285435607,0.573543541451696" Precedence="003" ColorSortOrder="9" />
+    </CustomData>
+  </Asset>
+  
+complexion <Asset>
+    <ID>1439175</ID>
+    <ArtName>comp_czerka_non_c01_f</ArtName>
+    <DesignerName>comp czerka non c01 f</DesignerName>
+    <BaseFile>/art/dynamic/player_character/face_customization/complexion/comp_czerka_non_c01_f.dds</BaseFile>
+    <Attachments />
+    <Materials />
+    <Bodytypes>
+      <Bodytype>bfa</Bodytype>
+      <Bodytype>bfb</Bodytype>
+      <Bodytype>bfn</Bodytype>
+      <Bodytype>bfs</Bodytype>
+    </Bodytypes>
+    <SkinMaterialIndex>-1</SkinMaterialIndex>
+    <SkinHueIndex>-1</SkinHueIndex>
+    <Filters />
+    <Identities />
+    <Tags>
+      <Tag name="Race" value="czerka" />
+    </Tags>
+    <CustomData />
+  </Asset>
+  
+facepaint <Asset>
+    <ID>1365259</ID>
+    <ArtName>facepaint_human_caucasian_npc02_f</ArtName>
+    <DesignerName>USE FOR OLD FEMALE NPC ONLY</DesignerName>
+    <BaseFile>/art/dynamic/player_character/face_customization/facepaint/facepaint_human_caucasian_npc02_f.dds</BaseFile>
+    <Attachments />
+    <Materials />
+    <Bodytypes>
+      <Bodytype>bfb</Bodytype>
+      <Bodytype>bfn</Bodytype>
+      <Bodytype>bfs</Bodytype>
+      <Bodytype>bfa</Bodytype>
+    </Bodytypes>
+    <SkinMaterialIndex>-1</SkinMaterialIndex>
+    <SkinHueIndex>-1</SkinHueIndex>
+    <Filters>
+      <Filter name="Race" value="caucasian" />
+    </Filters>
+    <Identities />
+    <Tags>
+      <Tag name="Race" value="caucasian" />
+    </Tags>
+    <CustomData />
+  </Asset>
+  
+colorscheme <Asset>
+    <ID>1002041</ID>
+    <ArtName>colorscheme_bh_a01_c01_s01</ArtName>
+    <DesignerName>colorscheme bh a01 c01 s01</DesignerName>
+    <BaseFile />
+    <Attachments />
+    <Materials />
+    <Bodytypes>
+      <Bodytype>bfa</Bodytype>
+      <Bodytype>bfb</Bodytype>
+      <Bodytype>bfn</Bodytype>
+      <Bodytype>bfs</Bodytype>
+      <Bodytype>bma</Bodytype>
+      <Bodytype>bmf</Bodytype>
+      <Bodytype>bmn</Bodytype>
+      <Bodytype>bms</Bodytype>
+    </Bodytypes>
+    <SkinMaterialIndex>-1</SkinMaterialIndex>
+    <SkinHueIndex>-1</SkinHueIndex>
+    <Filters />
+    <Identities />
+    <Tags />
+    <CustomData>
+      <ColorScheme>
+        <Name>colorscheme_bh_a01_c01_s01</Name>
+        <Guid>1002041</Guid>
+        <slot name="boot" primary="1000651" secondary="1000627" />
+        <slot name="bracer" primary="1000651" secondary="1000627" />
+        <slot name="chest" primary="1000651" secondary="1000627" />
+        <slot name="face" primary="1000651" secondary="1000627" />
+        <slot name="hand" primary="1000651" secondary="1000627" />
+        <slot name="leg" primary="1000651" secondary="1000627" />
+        <slot name="waist" primary="1000651" secondary="1000627" />
+      </ColorScheme>
+    </CustomData>
+  </Asset>
+  
+garmenthue <Asset>
+    <ID>1000627</ID>
+    <ArtName>garmenthue_bh_h01_p</ArtName>
+    <DesignerName>garmenthue bh h01 p</DesignerName>
+    <BaseFile>/art/dynamic/garmenthue/garmenthue_bh_h01_p.xml</BaseFile>
+    <Attachments />
+    <Materials />
+    <Bodytypes>
+      <Bodytype>bfa</Bodytype>
+      <Bodytype>bfb</Bodytype>
+      <Bodytype>bfn</Bodytype>
+      <Bodytype>bfs</Bodytype>
+      <Bodytype>bma</Bodytype>
+      <Bodytype>bmf</Bodytype>
+      <Bodytype>bmn</Bodytype>
+      <Bodytype>bms</Bodytype>
+    </Bodytypes>
+    <SkinMaterialIndex>-1</SkinMaterialIndex>
+    <SkinHueIndex>-1</SkinHueIndex>
+    <Filters>
+      <Filter name="Class" value="bh" />
+    </Filters>
+    <Identities />
+    <Tags>
+      <Tag name="Class" value="bh" />
+    </Tags>
+    <CustomData>
+      <Data RepresentativeColor="0.157941186288421,0.274467224281517,0.167687310422224" Precedence="000" ColorSortOrder="001" />
+    </CustomData>
+  </Asset>
+  

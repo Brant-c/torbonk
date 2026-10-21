@@ -1,0 +1,128 @@
+{
+  "assets": [
+    {
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+      "movie": "bwaui_levelup_popup_window.gfx",
+      "subimage": 1,
+      "crop": [
+        615,
+        790,
+        1012,
+        895
+      ],
+      "output": "godot\\Assets\\Presentation\\levelup_1.png",
+      "sha256": "6cc096fdead222129712f91dd0b9e05a7fe4aee7a8b7613d1a7ca6bae86fd5e8"
+    },
+    {
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+      "movie": "bwaui_levelup_popup_window.gfx",
+      "subimage": 4,
+      "crop": [
+        310,
+        904,
+        752,
+        1008
+      ],
+      "output": "godot\\Assets\\Presentation\\levelup_4.png",
+      "sha256": "9f93954f753c6c318bdad5e646930f429f7d8ebfb67d4c7a45dd4a1f1893cda8"
+    },
+    {
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_20.dds",
+      "movie": "bwaui_levelup_popup_window.gfx",
+      "subimage": 7,
+      "crop": [
+        982,
+        962,
+        1022,
+        1009
+      ],
+      "output": "godot\\Assets\\Presentation\\levelup_7.png",
+      "sha256": "e2b5aceb97959a7100e1029328b939ba0476de7416bd5404305e32d9f2d3e915"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/bw_flare_gray.dds",
+      "sourceSha256": "f375d79f322cbdcb2cdcc8fcf61153f4a903dbbff4639e4bf7ef9bc8e9132558",
+      "binding": "loot_common.fxspec -> loot_core_glow.prt -> loot_core_glow_p.prt -> TextureName",
+      "output": "godot\\Assets\\Presentation\\loot_glow.png",
+      "sha256": "3a05aa3f7e8f429f7d45eb192177c6b6ac127f48978e5a2af53bea26f6848039",
+      "conversion": "Pillow DDS -> RGBA PNG at native size; no resample or pixel tint"
+    },
+    {
+      "source": "/resources/art/fx/texture/symbol/tri_ring_blurred.dds",
+      "sourceSha256": "0f8e0fd7b8cab85d2736a33c5d1fe78ffe63e777fe35ad97c43c2bddaf2c0182",
+      "binding": "loot_common.fxspec -> _fxProjectionTexture",
+      "output": "godot\\Assets\\Presentation\\loot_ring.png",
+      "sha256": "51690017aea2ca32517eb1584240f59b9b5ad4e12e0322fb99b45222610cb5eb",
+      "conversion": "Pillow DDS -> RGBA PNG at native size; no resample or pixel tint"
+    }
+  ],
+  "movie": {
+    "found": true,
+    "fps": 24.0,
+    "frames": 1,
+    "images": [
+      {
+        "id": 10,
+        "path": "/resources/gfx/gfx_production/bwa_uitexture_20.dds"
+      },
+      {
+        "id": 18,
+        "path": "/resources/gfx/gfx_production/bwa_uitexture_14.dds"
+      }
+    ],
+    "subimages": [
+      [
+        1,
+        18,
+        615,
+        790,
+        1012,
+        895
+      ],
+      [
+        4,
+        18,
+        310,
+        904,
+        752,
+        1008
+      ],
+      [
+        7,
+        10,
+        982,
+        962,
+        1022,
+        1009
+      ]
+    ],
+    "sprites": [
+      {
+        "id": 3,
+        "frames": 1
+      },
+      {
+        "id": 6,
+        "frames": 1
+      },
+      {
+        "id": 9,
+        "frames": 1
+      },
+      {
+        "id": 10,
+        "frames": 1
+      },
+      {
+        "id": 12,
+        "frames": 1
+      }
+    ],
+    "strings": [
+      "bwaui_levelup_popup_window",
+      "xmc_levelTextbox",
+      "LevelUpPopupWindow"
+    ]
+  },
+  "limits": "Original level popup is static; Godot fade/hold/layout authored."
+}

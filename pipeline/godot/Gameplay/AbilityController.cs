@@ -1,0 +1,44 @@
+using Godot;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+namespace SwtorSurvivors;
+/// <summary>Fair GCD admission; each ability advances independently of gestures and other effects.</summary>
+public partial class AbilityController : Node
+{
+    [Export] public float GlobalCooldownSeconds { get; set; } = 1.5f;
+    public List<AutomaticAbility> Abilities { get; } = new();
+    public TargetingService Targeting { get; set; } = null!;
+    public double GlobalCooldownRemaining { get; private set; }
+    public double GlobalCooldownDuration { get; private set; } = 1.5;
+    // Off-GCD exceptions still do not all activate on the same frame.
+    [Export] public float MinimumActivationSpacing { get; set; } = 0.18f;
+    public AutomaticAbility? Active => Abilities.FirstOrDefault(a=>a.Casting);
+    public AutomaticAbility? Find(string id) => Abilities.FirstOrDefault(a=>a.Definition.Id==id);
+    public void ResetUnlocks() { foreach(var ability in Abilities) ability.SetUnlocked(ability.Definition.StartsUnlocked); }
+    private int _next;
+    private double _activationSpacing;
+    public override void _PhysicsProcess(double delta)
+    {
+        GlobalCooldownRemaining=Math.Max(0,GlobalCooldownRemaining-delta);
+        _activationSpacing=Math.Max(0,_activationSpacing-delta);
+        foreach(var ability in Abilities) ability.Advance(delta);
+        Targeting.Update(delta,false);
+        if(_activationSpacing>0) return;
+        for(int offset=0;offset<Abilities.Count;offset++)
+        {
+            int index=(_next+offset)%Abilities.Count;
+            var ability=Abilities[index];
+            if(ability.Definition.UsesGlobalCooldown && GlobalCooldownRemaining>0) continue;
+            if(!ability.TryBegin()) continue;
+            _next=(index+1)%Abilities.Count;
+            _activationSpacing=Math.Max(0,MinimumActivationSpacing);
+            // Never reset a running GCD for an exception which may trigger another GCD.
+            if(ability.Definition.TriggersGlobalCooldown && GlobalCooldownRemaining<=0)
+                GlobalCooldownRemaining=GlobalCooldownDuration=float.IsFinite(GlobalCooldownSeconds)?Math.Max(0,GlobalCooldownSeconds):1.5;
+            break;
+        }
+    }
+    public void Abort() { foreach(var ability in Abilities) ability.Abort();Targeting.Clear();GlobalCooldownRemaining=0;_activationSpacing=0; }
+    public void ResetCombat() { Abort();foreach(var ability in Abilities) ability.ResetCombat();_next=0; }
+}

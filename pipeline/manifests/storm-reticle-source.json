@@ -1,0 +1,53 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 2,
+  "maximumDecodedBytes": 1048576,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x3E1F337E4606A393",
+      "entryOffset": 14888459,
+      "headerSize": 36,
+      "dataOffset": 14888495,
+      "compressedSize": 2147,
+      "length": 22416,
+      "compressionMethod": 1,
+      "crc32Index": "eacda897",
+      "path": "/resources/art/fx/fxspec/abilities/all/all_ui_targeting_reticle_green.fxspec",
+      "sha256": "4925ceb31006003abbc6f13036945065dbb953cfdcaac90191d4eee0361e2804",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\all\\all_ui_targeting_reticle_green.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x110501EF90E6BD26",
+      "entryOffset": 14704888,
+      "headerSize": 36,
+      "dataOffset": 14704924,
+      "compressedSize": 7550,
+      "length": 32896,
+      "compressionMethod": 1,
+      "crc32Index": "87149868",
+      "path": "/resources/art/fx/texture/symbol/all_proj_selection_targeting.dds",
+      "sha256": "9bab1fdbf6256d60eb823add87232c3518fcbf1f8fd63632c979686d7e1fa28c",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\symbol\\all_proj_selection_targeting.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "Force Storm player area indicator",
+      "to": "/resources/art/fx/fxspec/abilities/all/all_ui_targeting_reticle_green.fxspec",
+      "relation": "Original green targeting FXSpec"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/all/all_ui_targeting_reticle_green.fxspec",
+      "to": "/resources/art/fx/texture/symbol/all_proj_selection_targeting.dds",
+      "relation": "_fxProjectionTexture"
+    }
+  ],
+  "unresolved": [],
+  "selection": "Original green player targeting projector for Force Storm"
+}

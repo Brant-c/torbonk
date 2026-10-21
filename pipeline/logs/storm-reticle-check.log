@@ -1,0 +1,59 @@
+D:\SWTORClassic\torbonk\pipeline\godot\SwtorAssetInspection.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+  SwtorAssetInspection -> D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\bin\Debug\SwtorAssetInspection.dll
+
+Build succeeded.
+
+D:\SWTORClassic\torbonk\pipeline\godot\SwtorAssetInspection.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.54
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | Started Registering global classes... (4 steps)[39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  20% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  40% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  60% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Loading editor (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Loading editor layout...[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Loading docks...[39m[0m
+[  33% ] [90m[1mloading_editor_layout[22m | Reopening scenes...[39m[0m
+[  50% ] [90m[1mloading_editor_layout[22m | Loading central editor layout...[39m[0m
+[  66% ] [90m[1mloading_editor_layout[22m | Loading plugin window layout...[39m[0m
+[  83% ] [90m[1mloading_editor_layout[22m | Editor layout ready.[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+Storm reticle smoke: Original April green projector color is used
+Storm reticle smoke: Target location is real Korriban terrain
+Storm reticle smoke: Actual Force Storm starts
+Storm reticle smoke: Ground reticle appears at the exact damage center
+Storm reticle smoke: Existing Storm damage path remains active
+Storm reticle smoke: Green circle actually renders through the gameplay camera
+Storm reticle smoke: Existing area upgrade can be selected
+Storm reticle smoke: Rarity-scaled upgrade grows the live damage radius and rendered circle
+Storm reticle smoke: A smaller live gameplay radius shrinks the existing indicator
+Storm reticle smoke: Circle persists after the caster gesture and damage still ticks
+Storm reticle smoke: Natural end immediately removes the area indicator
+Storm reticle smoke: Cancellation fixture begins
+Storm reticle smoke: Cancellation frees the indicator
+Storm reticle smoke: Death fixture begins
+Storm reticle smoke: Player death clears the indicator
+Storm reticle smoke: Restart fixture begins
+Storm reticle smoke: Run reset frees the circle and restores the original radius
+STORM_RETICLE_SMOKE_PASSED
+Storm reticle smoke passed. Stop here for manual visual review.

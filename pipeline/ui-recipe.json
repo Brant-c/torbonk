@@ -1,0 +1,34 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 80,
+  "maximumDecodedBytes": 33554432,
+  "movies": ["bwaui_bars", "bwaui_portraitbar", "bwaui_quickslots", "bwaui_experiencebarswindow", "bwaui_standard_window", "bwaui_buttons", "bwaui_tooltip", "bwaui_skilltree", "bwaui_abilities_window"],
+  "icons": ["sithsorcerer", "lightningdrain", "forkedlightning", "chainlightning", "recklessness", "sprint", "markofpower", "forcespeed", "chargedgauntlets"],
+  "fonts": {"3": "Eurostile.ttf", "7": "EurostileBold.ttf"},
+  "manualSlices": {
+    "hud_portrait_ring": {"atlas": "bwa_uitexture_14", "crop": [181, 413, 325, 538]},
+    "hud_health_frame": {"atlas": "bwa_uitexture_14", "crop": [394, 538, 900, 665]},
+    "hud_level_ring": {"atlas": "bwa_uitexture_14", "crop": [940, 211, 1006, 277]},
+    "hud_action_frame": {"atlas": "bwa_uitexture_14", "crop": [0, 664, 504, 792]},
+    "hud_empty_portrait": {"atlas": "bwa_uitexture_14", "crop": [650, 281, 782, 413]}
+  },
+  "roles": {
+    "healthFill": "bwaui_bars_21",
+    "experienceFill": "bwaui_bars_45",
+    "portraitRing": "hud_portrait_ring",
+    "unitStrip": "hud_health_frame",
+    "quickbarFrame": "hud_action_frame",
+    "emptyPortrait": "hud_empty_portrait",
+    "barFrame": "bwaui_bars_157",
+    "panel": "bwaui_standard_window_1",
+    "buttonNormal": "bwaui_standard_window_24",
+    "buttonHover": "bwaui_standard_window_9",
+    "buttonFocusAndPressed": "bwaui_standard_window_18",
+    "upgradeNormal": "bwaui_skilltree_30",
+    "upgradeHover": "bwaui_skilltree_32",
+    "tooltip": "bwaui_tooltip_1",
+    "abilityFrame": "bwaui_buttons_381",
+    "pickupMarker": "bwaui_buttons_298"
+  },
+  "roleEvidence": "Application roles selected by visual inspection of source subimages; not claims that native SWTOR used these exact state mappings. Source GFX export names and IDs are recorded separately."
+}

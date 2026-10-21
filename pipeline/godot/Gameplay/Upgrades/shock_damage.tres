@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/UpgradeDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "shock_damage"
+Title = "Surging Shock"
+Icon = "shock"
+Rarity = 1
+Effect = 0
+AmountPerRank = 0.25
+AbilityId = "shock"

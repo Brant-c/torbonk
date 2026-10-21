@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checks": [
+    "Boss display initializes hidden before an encounter",
+    "Broodling safely spawns for the focused presentation check",
+    "Enemy XP becomes a luminous 3D world mote",
+    "Collection starts its trail and awards XP exactly once",
+    "Collected mote cleans up after its short effect",
+    "Level banner precedes choices and pauses combat",
+    "Three unchanged upgrade choices follow the banner",
+    "Selection applies once and shows a brief confirmation",
+    "Overflow XP serializes a second banner without an overlapping modal",
+    "Queued upgrades resume combat and preserve XP remainder",
+    "Restart cancels pending banners and choices",
+    "Broodling safely spawns for the focused presentation check",
+    "Scheduled boss introduces with health UI and retains existing enemies",
+    "Repeated activation cannot duplicate the boss",
+    "Dedicated boss bar follows real health with smooth depletion",
+    "Boss UI stays within the smaller viewport",
+    "Boss UI scales within the 1080p viewport",
+    "Burrow Eruption retains radius, damage and windup",
+    "Warning does not strike early",
+    "Impact resolves exactly once after the warning",
+    "Boss defeat ends attack and hides its bar",
+    "Boss reward uses the existing single 80 XP drop path",
+    "Defeated encounter cannot spawn another boss",
+    "Pickup audio is rate limited and priority cues retain a voice",
+    "All rarity confirmation cues initialize",
+    "Player death fails encounter and clears paused reward presentation and audio",
+    "Restart clears all encounter state and pickups"
+  ],
+  "failure": null
+}

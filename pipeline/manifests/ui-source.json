@@ -1,0 +1,1313 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 80,
+  "maximumDecodedBytes": 33554432,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x48CE442C3CACE99D",
+      "entryOffset": 66273432,
+      "headerSize": 36,
+      "dataOffset": 66273468,
+      "compressedSize": 4998,
+      "length": 4998,
+      "compressionMethod": 0,
+      "crc32Index": "e6c7b7b5",
+      "path": "/resources/gfx/gfx_production/bwaui_bars.gfx",
+      "sha256": "643a4f3b3c43213a3e81f44d0f5d07e39f6f4b0cc6a98b4186c7055987c76dee",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_bars.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xF475CD323048D0BF",
+      "entryOffset": 68844629,
+      "headerSize": 36,
+      "dataOffset": 68844665,
+      "compressedSize": 12817,
+      "length": 12817,
+      "compressionMethod": 0,
+      "crc32Index": "e6fa0d9d",
+      "path": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "sha256": "6861b263ddd6a91b2ed3b2146084ee2db40733ae527982d080cecbfb4260b876",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_portraitbar.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x60D06854CC38D308",
+      "entryOffset": 68864794,
+      "headerSize": 36,
+      "dataOffset": 68864830,
+      "compressedSize": 1056,
+      "length": 1056,
+      "compressionMethod": 0,
+      "crc32Index": "0e0e3721",
+      "path": "/resources/gfx/gfx_production/bwaui_quickslots.gfx",
+      "sha256": "bdf9ae4519164b43efff8573a52861a2a420e912f328f9c504f27ae9bbb6f7b2",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_quickslots.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x11B43B6F47150AC6",
+      "entryOffset": 67807574,
+      "headerSize": 36,
+      "dataOffset": 67807610,
+      "compressedSize": 1309,
+      "length": 1309,
+      "compressionMethod": 0,
+      "crc32Index": "437cd2aa",
+      "path": "/resources/gfx/gfx_production/bwaui_experiencebarswindow.gfx",
+      "sha256": "1e7604a095e7d7938e4e3c18ae755d695da79fb11f85981217ad4e137dec7978",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_experiencebarswindow.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xE334F1F6C8BD9040",
+      "entryOffset": 69413016,
+      "headerSize": 36,
+      "dataOffset": 69413052,
+      "compressedSize": 1755,
+      "length": 1755,
+      "compressionMethod": 0,
+      "crc32Index": "89214f88",
+      "path": "/resources/gfx/gfx_production/bwaui_standard_window.gfx",
+      "sha256": "e89be322f984e3d666968c667ae0365ee49538abe3dad665776672ab700550d3",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_standard_window.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x4D5F30A9120F167C",
+      "entryOffset": 66279172,
+      "headerSize": 36,
+      "dataOffset": 66279208,
+      "compressedSize": 10619,
+      "length": 10619,
+      "compressionMethod": 0,
+      "crc32Index": "a607bf3e",
+      "path": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "sha256": "4cbb669efed3be23b7fbb9703c855f412b4b2c112989c2f740926573e79d4e46",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_buttons.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x3CFA13F16E3E3091",
+      "entryOffset": 69429167,
+      "headerSize": 36,
+      "dataOffset": 69429203,
+      "compressedSize": 309,
+      "length": 309,
+      "compressionMethod": 0,
+      "crc32Index": "5c1b2496",
+      "path": "/resources/gfx/gfx_production/bwaui_tooltip.gfx",
+      "sha256": "c74096ab160065673bd2d7f550be89c2b8edd3f35f751a1683a9e2ab382a1c17",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_tooltip.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xA50A1A1BDCBD319C",
+      "entryOffset": 69391161,
+      "headerSize": 36,
+      "dataOffset": 69391197,
+      "compressedSize": 2824,
+      "length": 2824,
+      "compressionMethod": 0,
+      "crc32Index": "2f786326",
+      "path": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "sha256": "7ca0c73acc9504d3a22ee54e95f6e67a38d7818c2a3b02b35ad07a278aae77ba",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_skilltree.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xCC7EC8C13A56D49C",
+      "entryOffset": 66249802,
+      "headerSize": 36,
+      "dataOffset": 66249838,
+      "compressedSize": 1722,
+      "length": 1722,
+      "compressionMethod": 0,
+      "crc32Index": "b31920fd",
+      "path": "/resources/gfx/gfx_production/bwaui_abilities_window.gfx",
+      "sha256": "5f7d5547dbece8b4f05427b222b97e7181c97ceee2e7c1bfeabd59706b7b0f8d",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_abilities_window.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x994442C9A98C7211",
+      "entryOffset": 59442392,
+      "headerSize": 36,
+      "dataOffset": 59442428,
+      "compressedSize": 185581,
+      "length": 331224,
+      "compressionMethod": 1,
+      "crc32Index": "ab082e54",
+      "path": "/resources/gfx/fonts/swtor_fonts.gfx",
+      "sha256": "82e7323febc37b75ad4832377869323cd647402f1a1cb7875c94d5dd5d2177fe",
+      "output": "source-assets\\april2012\\resources\\gfx\\fonts\\swtor_fonts.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x1931926E50C97A56",
+      "entryOffset": 59331427,
+      "headerSize": 36,
+      "dataOffset": 59331463,
+      "compressedSize": 110717,
+      "length": 128303,
+      "compressionMethod": 1,
+      "crc32Index": "14c4bb9c",
+      "path": "/resources/gfx/fonts/fonts_en-us.swf",
+      "sha256": "80bf8fd875a3e4bc8c69634af5d4c6a93810842d0d7af709391bfd1e343e66fc",
+      "output": "source-assets\\april2012\\resources\\gfx\\fonts\\fonts_en-us.swf",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xC0D4F0799FE81861",
+      "entryOffset": 148489708,
+      "headerSize": 36,
+      "dataOffset": 148489744,
+      "compressedSize": 1529,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "21669adb",
+      "path": "/resources/gfx/icons/sithsorcerer.dds",
+      "sha256": "e57b01ae868f46511870a30017dd65b017feb1759c762b4557daf3bc247a8bef",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\sithsorcerer.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x6EC56C90B01519AA",
+      "entryOffset": 146248553,
+      "headerSize": 36,
+      "dataOffset": 146248589,
+      "compressedSize": 1482,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "541d9873",
+      "path": "/resources/gfx/icons/lightningdrain.dds",
+      "sha256": "4de2b766a151dbbad734d689a42c0a47ba72c56993ee7a6340ed85cd217c0d99",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\lightningdrain.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x1B2D8D7E763D5F0F",
+      "entryOffset": 75057780,
+      "headerSize": 36,
+      "dataOffset": 75057816,
+      "compressedSize": 1466,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "482a260d",
+      "path": "/resources/gfx/icons/forkedlightning.dds",
+      "sha256": "52e279c7b5f1a271d1322b1d0288f5143e2fb69e5b02746ae211f7bf33f68e75",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\forkedlightning.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x6BD0B8FD4C0E3D78",
+      "entryOffset": 72930343,
+      "headerSize": 36,
+      "dataOffset": 72930379,
+      "compressedSize": 1524,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "527f6c50",
+      "path": "/resources/gfx/icons/chainlightning.dds",
+      "sha256": "8a59c09d67984afa7e02cb66c88ea4ab4dfd9533b36bcf8ebb98051e06b9c880",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\chainlightning.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xA10B1F8BCB34B07A",
+      "entryOffset": 147036121,
+      "headerSize": 36,
+      "dataOffset": 147036157,
+      "compressedSize": 1430,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "3749c17d",
+      "path": "/resources/gfx/icons/recklessness.dds",
+      "sha256": "cd7bcbe473eeecb70dabde55b685882c5dc4cb28159fafead7c50706471157ca",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\recklessness.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x0F787D117BDBD9D3",
+      "entryOffset": 148706428,
+      "headerSize": 36,
+      "dataOffset": 148706464,
+      "compressedSize": 1473,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "b4da10b0",
+      "path": "/resources/gfx/icons/sprint.dds",
+      "sha256": "4f8bbb2ee070b58b3281b0fc9c05d15500d1d80e4fc7264ebd7209d7334452df",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\sprint.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x625FC0968B8B7CD6",
+      "entryOffset": 146503425,
+      "headerSize": 36,
+      "dataOffset": 146503461,
+      "compressedSize": 1548,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "b5e7e16c",
+      "path": "/resources/gfx/icons/markofpower.dds",
+      "sha256": "cead8c4ff4d440462a70c6347cfd257c8b0f32a18c505f9b521dada1bf15b222",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\markofpower.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x0D96CBADFE6B68B4",
+      "entryOffset": 75038339,
+      "headerSize": 36,
+      "dataOffset": 75038375,
+      "compressedSize": 1504,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "e1dc30d3",
+      "path": "/resources/gfx/icons/forcespeed.dds",
+      "sha256": "919279f5cd4a098f2ca559322a49a8b0ea9de7d537c15abd51b8d08a232c2759",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\forcespeed.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xA63365CCE2836174",
+      "entryOffset": 60935319,
+      "headerSize": 36,
+      "dataOffset": 60935355,
+      "compressedSize": 444616,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "1ec260b5",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_13.dds",
+      "sha256": "b3c7baacf25a364c03b3021f86f9aa023eb1bf346f35b49edac75dfd6c67968d",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_13.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xFADD5B58BC1C240C",
+      "entryOffset": 65265633,
+      "headerSize": 36,
+      "dataOffset": 65265669,
+      "compressedSize": 253511,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "dead634c",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_6.dds",
+      "sha256": "4cbc2ac9b289ec47bc9969495e4dffa0026fd8822a021c030f32e19203e2018b",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_6.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x69508DE17DB06280",
+      "entryOffset": 62937990,
+      "headerSize": 36,
+      "dataOffset": 62938026,
+      "compressedSize": 298332,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "f1cdae51",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_19.dds",
+      "sha256": "b49f681b0c0cd99cfe34fcbc3c7ace2b8f14478d5bd03caa949a53139d73e3ec",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_19.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xA562147180BAD315",
+      "entryOffset": 59979995,
+      "headerSize": 36,
+      "dataOffset": 59980031,
+      "compressedSize": 325576,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "9e5510db",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_10.dds",
+      "sha256": "414f96eda66e53398cb71dbe599564fce13030abafa8c60049540b06266adb62",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_10.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x6EEE269E4A92AA56",
+      "entryOffset": 63236358,
+      "headerSize": 36,
+      "dataOffset": 63236394,
+      "compressedSize": 438368,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "26c74ca4",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_2.dds",
+      "sha256": "5c3fe4514dc2158cdb5730499693142bcfe88afc41bf5d376fa45c26ceee7259",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_2.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xD371B4BDF55A125F",
+      "entryOffset": 63674762,
+      "headerSize": 36,
+      "dataOffset": 63674798,
+      "compressedSize": 356468,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "03ec5f3f",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_20.dds",
+      "sha256": "7a98bd3bd5ef6868b9ab6977cf242c751f9e27bd474af6587a27950e019904cf",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_20.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x4DE5FC3397FE6EF0",
+      "entryOffset": 60305607,
+      "headerSize": 36,
+      "dataOffset": 60305643,
+      "compressedSize": 289956,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "bb905d29",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_11.dds",
+      "sha256": "9829472727d78754977dd5cee48e5f863c2a90fe9516cd6d8f83242b97d52c64",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_11.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x7A93AC26949C24E6",
+      "entryOffset": 62662877,
+      "headerSize": 36,
+      "dataOffset": 62662913,
+      "compressedSize": 275077,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "d05be4e7",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_18.dds",
+      "sha256": "7e08cdb57c29daf0bbc7ded941065125f70d25bf9f83c9deeb86dedd63d6e339",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_18.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x40A1AF942B6D6572",
+      "entryOffset": 64341738,
+      "headerSize": 36,
+      "dataOffset": 64341774,
+      "compressedSize": 177671,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "594d0f98",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_3.dds",
+      "sha256": "fcd11ce9e874bc89afaf44a7d9812a1104dd05fd826b2099b2cab560507a2012",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_3.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x461EEC5836FB7442",
+      "entryOffset": 64519445,
+      "headerSize": 36,
+      "dataOffset": 64519481,
+      "compressedSize": 437700,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "3b366c0f",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_4.dds",
+      "sha256": "5d17d0c5b5fa84ba47f7f0cb7d94f9fdda9bfd520955b886bf157086b8c8b781",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_4.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xBF209ACFD37A366F",
+      "entryOffset": 61379971,
+      "headerSize": 36,
+      "dataOffset": 61380007,
+      "compressedSize": 345410,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "f9bbcdf1",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+      "sha256": "da01ec22737a906ccfb11b75173de42478f41618c62f9598f89335e77573bd7a",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_14.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xBB0D52D9208BCADC",
+      "entryOffset": 61725417,
+      "headerSize": 36,
+      "dataOffset": 61725453,
+      "compressedSize": 292054,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "cdfa34f1",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_15.dds",
+      "sha256": "42c2df9a14c0a63d42667262d7c76caea9892353019254ee081ccbba294872cd",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_15.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x69FD115536766000",
+      "entryOffset": 59628009,
+      "headerSize": 36,
+      "dataOffset": 59628045,
+      "compressedSize": 351950,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "950a501b",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "sha256": "4745d374c74671e60115e846b55ef32849cbe83b57499c7392dfcf932cdef72d",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_1.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xF37138EBDD31D11B",
+      "entryOffset": 65519180,
+      "headerSize": 36,
+      "dataOffset": 65519216,
+      "compressedSize": 252319,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "ba189ea3",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_7.dds",
+      "sha256": "c1e33312e09dfd485cc6ed6eda2dac610fd4e0b46db19edb55d41cd47e90f128",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_7.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xCF6366D79F33FC1A",
+      "entryOffset": 66024536,
+      "headerSize": 36,
+      "dataOffset": 66024572,
+      "compressedSize": 225230,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "8114a965",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_9.dds",
+      "sha256": "5a28a997faebf3ff5521e7a797015b06c6a633fbab5e8e43b61ea75e7a4638d0",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_9.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x65F02F93BC754275",
+      "entryOffset": 62017507,
+      "headerSize": 36,
+      "dataOffset": 62017543,
+      "compressedSize": 377614,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "9a42b975",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_16.dds",
+      "sha256": "557a2fd1f45408b5584c504bb1966619324556556304c66de7fed5513e63f98b",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_16.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xA26A3A32BE3C8009",
+      "entryOffset": 64957181,
+      "headerSize": 36,
+      "dataOffset": 64957217,
+      "compressedSize": 308416,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "003f8691",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_5.dds",
+      "sha256": "bf89f2019454c49ba891e4b8d513459edc43ae6dfa02bb6500b9cbdad9fb4c23",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_5.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x2161DBDED331373E",
+      "entryOffset": 62395157,
+      "headerSize": 36,
+      "dataOffset": 62395193,
+      "compressedSize": 267684,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "c4e9dc27",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_17.dds",
+      "sha256": "c06dd439cd29c289ec144d488838f91d3762f6eba046e1a1f89050aed7a1ae32",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_17.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x0A2F83A8CDCED424",
+      "entryOffset": 65771535,
+      "headerSize": 36,
+      "dataOffset": 65771571,
+      "compressedSize": 252965,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "73c5c25b",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_8.dds",
+      "sha256": "4d38dbe38207826210b4958e0c8bc15c6ee2df65f2cf70849f9315fb78035f29",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_8.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xA2F8C42F7FED13EF",
+      "entryOffset": 60595599,
+      "headerSize": 36,
+      "dataOffset": 60595635,
+      "compressedSize": 339684,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "9d7130f3",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_12.dds",
+      "sha256": "b4561def971cabf95005f2a40ccde4d4b0c06db84b89d2f2862e38418790f016",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_12.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xD49C0DDF219B11BE",
+      "entryOffset": 64031266,
+      "headerSize": 36,
+      "dataOffset": 64031302,
+      "compressedSize": 310436,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "f7946467",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_21.dds",
+      "sha256": "83be3de033c6c85a83770ba96d7fcd1f4e3be402a395faca84aee59d881417ee",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_21.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xCB3B7788D2F632FF",
+      "entryOffset": 74275856,
+      "headerSize": 36,
+      "dataOffset": 74275892,
+      "compressedSize": 1478,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "a70c805f",
+      "path": "/resources/gfx/icons/chargedgauntlets.dds",
+      "sha256": "aba320a6f28096f66e32b91977a08baf4de0098c0e5c1000a94b75aa2b8640aa",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\chargedgauntlets.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x602AE7CCDC3B86A3",
+      "entryOffset": 69395556,
+      "headerSize": 36,
+      "dataOffset": 69395592,
+      "compressedSize": 3776,
+      "length": 3776,
+      "compressionMethod": 0,
+      "crc32Index": "1cb52a8f",
+      "path": "/resources/gfx/gfx_production/bwaui_slot.gfx",
+      "sha256": "af0afed49d6c399f4d4c6cb98d16836cfd9d934d8e7663d11059cc70fb143890",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_slot.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "B4 UI discovery",
+      "to": "/resources/gfx/gfx_production/bwaui_bars.gfx",
+      "relation": "selected UI definition"
+    },
+    {
+      "from": "B4 UI discovery",
+      "to": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "relation": "selected UI definition"
+    },
+    {
+      "from": "B4 UI discovery",
+      "to": "/resources/gfx/gfx_production/bwaui_quickslots.gfx",
+      "relation": "selected UI definition"
+    },
+    {
+      "from": "B4 UI discovery",
+      "to": "/resources/gfx/gfx_production/bwaui_experiencebarswindow.gfx",
+      "relation": "selected UI definition"
+    },
+    {
+      "from": "B4 UI discovery",
+      "to": "/resources/gfx/gfx_production/bwaui_standard_window.gfx",
+      "relation": "selected UI definition"
+    },
+    {
+      "from": "B4 UI discovery",
+      "to": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "relation": "selected UI definition"
+    },
+    {
+      "from": "B4 UI discovery",
+      "to": "/resources/gfx/gfx_production/bwaui_tooltip.gfx",
+      "relation": "selected UI definition"
+    },
+    {
+      "from": "B4 UI discovery",
+      "to": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "relation": "selected UI definition"
+    },
+    {
+      "from": "B4 UI discovery",
+      "to": "/resources/gfx/gfx_production/bwaui_abilities_window.gfx",
+      "relation": "selected UI definition"
+    },
+    {
+      "from": "B4 UI discovery",
+      "to": "/resources/gfx/fonts/swtor_fonts.gfx",
+      "relation": "selected UI definition"
+    },
+    {
+      "from": "B4 UI discovery",
+      "to": "/resources/gfx/fonts/fonts_en-us.swf",
+      "relation": "selected UI definition"
+    },
+    {
+      "from": "B4 icon selection",
+      "to": "/resources/gfx/icons/sithsorcerer.dds",
+      "relation": "candidate original icon"
+    },
+    {
+      "from": "B4 icon selection",
+      "to": "/resources/gfx/icons/lightningdrain.dds",
+      "relation": "candidate original icon"
+    },
+    {
+      "from": "B4 icon selection",
+      "to": "/resources/gfx/icons/forkedlightning.dds",
+      "relation": "candidate original icon"
+    },
+    {
+      "from": "B4 icon selection",
+      "to": "/resources/gfx/icons/chainlightning.dds",
+      "relation": "candidate original icon"
+    },
+    {
+      "from": "B4 icon selection",
+      "to": "/resources/gfx/icons/recklessness.dds",
+      "relation": "candidate original icon"
+    },
+    {
+      "from": "B4 icon selection",
+      "to": "/resources/gfx/icons/sprint.dds",
+      "relation": "candidate original icon"
+    },
+    {
+      "from": "B4 icon selection",
+      "to": "/resources/gfx/icons/markofpower.dds",
+      "relation": "candidate original icon"
+    },
+    {
+      "from": "B4 icon selection",
+      "to": "/resources/gfx/icons/forcespeed.dds",
+      "relation": "candidate original icon"
+    },
+    {
+      "from": "B4 UI recipe",
+      "to": "/resources/gfx/gfx_production/bwaui_bars.gfx",
+      "relation": "selected Scaleform definition"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_bars.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_13.dds",
+      "relation": "GFX tag 1009 external image id 1"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_bars.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_6.dds",
+      "relation": "GFX tag 1009 external image id 2"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_bars.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_19.dds",
+      "relation": "GFX tag 1009 external image id 5"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_bars.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_10.dds",
+      "relation": "GFX tag 1009 external image id 7"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_bars.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_2.dds",
+      "relation": "GFX tag 1009 external image id 8"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_bars.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_20.dds",
+      "relation": "GFX tag 1009 external image id 10"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_bars.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_11.dds",
+      "relation": "GFX tag 1009 external image id 11"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_bars.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_18.dds",
+      "relation": "GFX tag 1009 external image id 14"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_bars.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_3.dds",
+      "relation": "GFX tag 1009 external image id 16"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_bars.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_4.dds",
+      "relation": "GFX tag 1009 external image id 17"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_bars.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+      "relation": "GFX tag 1009 external image id 18"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_bars.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_15.dds",
+      "relation": "GFX tag 1009 external image id 19"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_bars.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "relation": "GFX tag 1009 external image id 20"
+    },
+    {
+      "from": "B4 UI recipe",
+      "to": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "relation": "selected Scaleform definition"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_7.dds",
+      "relation": "GFX tag 1009 external image id 1"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_13.dds",
+      "relation": "GFX tag 1009 external image id 2"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_9.dds",
+      "relation": "GFX tag 1009 external image id 3"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+      "relation": "GFX tag 1009 external image id 4"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_18.dds",
+      "relation": "GFX tag 1009 external image id 5"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "relation": "GFX tag 1009 external image id 7"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_15.dds",
+      "relation": "GFX tag 1009 external image id 6"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_16.dds",
+      "relation": "GFX tag 1009 external image id 9"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_11.dds",
+      "relation": "GFX tag 1009 external image id 10"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_5.dds",
+      "relation": "GFX tag 1009 external image id 12"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_17.dds",
+      "relation": "GFX tag 1009 external image id 13"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_4.dds",
+      "relation": "GFX tag 1009 external image id 14"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_8.dds",
+      "relation": "GFX tag 1009 external image id 16"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_6.dds",
+      "relation": "GFX tag 1009 external image id 17"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_3.dds",
+      "relation": "GFX tag 1009 external image id 15"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_12.dds",
+      "relation": "GFX tag 1009 external image id 11"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_2.dds",
+      "relation": "GFX tag 1009 external image id 18"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_portraitbar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_10.dds",
+      "relation": "GFX tag 1009 external image id 0"
+    },
+    {
+      "from": "B4 UI recipe",
+      "to": "/resources/gfx/gfx_production/bwaui_quickslots.gfx",
+      "relation": "selected Scaleform definition"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_quickslots.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_9.dds",
+      "relation": "GFX tag 1009 external image id 0"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_quickslots.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_21.dds",
+      "relation": "GFX tag 1009 external image id 9"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_quickslots.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_11.dds",
+      "relation": "GFX tag 1009 external image id 11"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_quickslots.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_17.dds",
+      "relation": "GFX tag 1009 external image id 15"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_quickslots.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_4.dds",
+      "relation": "GFX tag 1009 external image id 17"
+    },
+    {
+      "from": "B4 UI recipe",
+      "to": "/resources/gfx/gfx_production/bwaui_experiencebarswindow.gfx",
+      "relation": "selected Scaleform definition"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_experiencebarswindow.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "relation": "GFX tag 1009 external image id 20"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_experiencebarswindow.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_19.dds",
+      "relation": "GFX tag 1009 external image id 5"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_experiencebarswindow.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_20.dds",
+      "relation": "GFX tag 1009 external image id 10"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_experiencebarswindow.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_11.dds",
+      "relation": "GFX tag 1009 external image id 11"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_experiencebarswindow.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_5.dds",
+      "relation": "GFX tag 1009 external image id 13"
+    },
+    {
+      "from": "B4 UI recipe",
+      "to": "/resources/gfx/gfx_production/bwaui_standard_window.gfx",
+      "relation": "selected Scaleform definition"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_standard_window.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_9.dds",
+      "relation": "GFX tag 1009 external image id 0"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_standard_window.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_13.dds",
+      "relation": "GFX tag 1009 external image id 1"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_standard_window.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_12.dds",
+      "relation": "GFX tag 1009 external image id 6"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_standard_window.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_11.dds",
+      "relation": "GFX tag 1009 external image id 11"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_standard_window.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_8.dds",
+      "relation": "GFX tag 1009 external image id 12"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_standard_window.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_3.dds",
+      "relation": "GFX tag 1009 external image id 16"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_standard_window.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "relation": "GFX tag 1009 external image id 20"
+    },
+    {
+      "from": "B4 UI recipe",
+      "to": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "relation": "selected Scaleform definition"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_6.dds",
+      "relation": "GFX tag 1009 external image id 2"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_16.dds",
+      "relation": "GFX tag 1009 external image id 4"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_19.dds",
+      "relation": "GFX tag 1009 external image id 5"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_10.dds",
+      "relation": "GFX tag 1009 external image id 7"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_2.dds",
+      "relation": "GFX tag 1009 external image id 8"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_20.dds",
+      "relation": "GFX tag 1009 external image id 10"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_7.dds",
+      "relation": "GFX tag 1009 external image id 3"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_8.dds",
+      "relation": "GFX tag 1009 external image id 12"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_5.dds",
+      "relation": "GFX tag 1009 external image id 13"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_18.dds",
+      "relation": "GFX tag 1009 external image id 14"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_13.dds",
+      "relation": "GFX tag 1009 external image id 1"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_3.dds",
+      "relation": "GFX tag 1009 external image id 16"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+      "relation": "GFX tag 1009 external image id 18"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_15.dds",
+      "relation": "GFX tag 1009 external image id 19"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_4.dds",
+      "relation": "GFX tag 1009 external image id 17"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_12.dds",
+      "relation": "GFX tag 1009 external image id 6"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_21.dds",
+      "relation": "GFX tag 1009 external image id 9"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "relation": "GFX tag 1009 external image id 20"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_9.dds",
+      "relation": "GFX tag 1009 external image id 0"
+    },
+    {
+      "from": "B4 UI recipe",
+      "to": "/resources/gfx/gfx_production/bwaui_tooltip.gfx",
+      "relation": "selected Scaleform definition"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_tooltip.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_10.dds",
+      "relation": "GFX tag 1009 external image id 7"
+    },
+    {
+      "from": "B4 UI recipe",
+      "to": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "relation": "selected Scaleform definition"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_13.dds",
+      "relation": "GFX tag 1009 external image id 1"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_12.dds",
+      "relation": "GFX tag 1009 external image id 6"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_20.dds",
+      "relation": "GFX tag 1009 external image id 10"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+      "relation": "GFX tag 1009 external image id 18"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_15.dds",
+      "relation": "GFX tag 1009 external image id 19"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "relation": "GFX tag 1009 external image id 20"
+    },
+    {
+      "from": "B4 UI recipe",
+      "to": "/resources/gfx/gfx_production/bwaui_abilities_window.gfx",
+      "relation": "selected Scaleform definition"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_abilities_window.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_3.dds",
+      "relation": "GFX tag 1009 external image id 16"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_abilities_window.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_4.dds",
+      "relation": "GFX tag 1009 external image id 17"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_abilities_window.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "relation": "GFX tag 1009 external image id 20"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_abilities_window.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_2.dds",
+      "relation": "GFX tag 1009 external image id 8"
+    },
+    {
+      "from": "B4 icon recipe",
+      "to": "/resources/gfx/icons/sithsorcerer.dds",
+      "relation": "Force Lightning GOM ablIconSpec=sithsorcerer"
+    },
+    {
+      "from": "B4 icon recipe",
+      "to": "/resources/gfx/icons/lightningdrain.dds",
+      "relation": "verified April icon; survivor upgrade thematic reuse"
+    },
+    {
+      "from": "B4 icon recipe",
+      "to": "/resources/gfx/icons/forkedlightning.dds",
+      "relation": "verified April icon; survivor upgrade thematic reuse"
+    },
+    {
+      "from": "B4 icon recipe",
+      "to": "/resources/gfx/icons/chainlightning.dds",
+      "relation": "verified April icon; survivor upgrade thematic reuse"
+    },
+    {
+      "from": "B4 icon recipe",
+      "to": "/resources/gfx/icons/recklessness.dds",
+      "relation": "verified April icon; survivor upgrade thematic reuse"
+    },
+    {
+      "from": "B4 icon recipe",
+      "to": "/resources/gfx/icons/sprint.dds",
+      "relation": "verified April icon; survivor upgrade thematic reuse"
+    },
+    {
+      "from": "B4 icon recipe",
+      "to": "/resources/gfx/icons/markofpower.dds",
+      "relation": "verified April icon; survivor upgrade thematic reuse"
+    },
+    {
+      "from": "B4 icon recipe",
+      "to": "/resources/gfx/icons/forcespeed.dds",
+      "relation": "verified April icon; survivor upgrade thematic reuse"
+    },
+    {
+      "from": "B4 typography",
+      "to": "/resources/gfx/fonts/swtor_fonts.gfx",
+      "relation": "embedded original outlines"
+    },
+    {
+      "from": "B4 icon recipe",
+      "to": "/resources/gfx/icons/chargedgauntlets.dds",
+      "relation": "verified April icon; survivor upgrade thematic reuse"
+    },
+    {
+      "from": "B4 icon recipe",
+      "to": "/resources/gfx/icons/sithsorcerer.dds",
+      "relation": "April GOM ablIconSpec mapping; see ui-gom-evidence.json"
+    },
+    {
+      "from": "B4 icon recipe",
+      "to": "/resources/gfx/icons/markofpower.dds",
+      "relation": "April GOM ablIconSpec mapping; see ui-gom-evidence.json"
+    },
+    {
+      "from": "B4 icon recipe",
+      "to": "/resources/gfx/icons/forcespeed.dds",
+      "relation": "April GOM ablIconSpec mapping; see ui-gom-evidence.json"
+    },
+    {
+      "from": "B4 icon recipe",
+      "to": "/resources/gfx/icons/chargedgauntlets.dds",
+      "relation": "April GOM ablIconSpec mapping; see ui-gom-evidence.json"
+    },
+    {
+      "from": "ui-recipe.json manualSlices/hud_portrait_ring",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+      "relation": "visually identified atlas rectangle; not a verified GFX symbol mapping"
+    },
+    {
+      "from": "ui-recipe.json manualSlices/hud_health_frame",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+      "relation": "visually identified atlas rectangle; not a verified GFX symbol mapping"
+    },
+    {
+      "from": "ui-recipe.json manualSlices/hud_level_ring",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+      "relation": "visually identified atlas rectangle; not a verified GFX symbol mapping"
+    },
+    {
+      "from": "ui-recipe.json manualSlices/hud_action_frame",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+      "relation": "visually identified atlas rectangle; not a verified GFX symbol mapping"
+    },
+    {
+      "from": "ui-recipe.json manualSlices/hud_empty_portrait",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+      "relation": "visually identified atlas rectangle; not a verified GFX symbol mapping"
+    },
+    {
+      "from": "bwaui_quickslots.gfx ImportAssets2",
+      "to": "/resources/gfx/gfx_production/bwaui_slot.gfx",
+      "relation": "Player quickbar slot dependency; no companion command module"
+    }
+  ],
+  "unresolved": [],
+  "selection": "B4 UI"
+}

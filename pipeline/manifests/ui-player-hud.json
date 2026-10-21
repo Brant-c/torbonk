@@ -1,0 +1,81 @@
+{
+  "profile": "operator-labelled April2012",
+  "resources": [
+    {
+      "name": "player_slot",
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "regionXYWH": [
+        660,
+        126,
+        56,
+        56
+      ],
+      "output": "godot\\Assets\\UI\\hud\\player_slot.tres",
+      "evidence": "bwaui_slot.gfx subimage 1; defaultFrame in sprite 9, imported by ConversionSlotQuickslot (156)"
+    },
+    {
+      "name": "unit_frame",
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_15.dds",
+      "regionXYWH": [
+        308,
+        414,
+        342,
+        108
+      ],
+      "output": "godot\\Assets\\UI\\hud\\unit_frame.tres",
+      "evidence": "Visual selection: joined portrait, level socket and two unit strips; GFX symbol binding unresolved"
+    },
+    {
+      "name": "rarity_premium",
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "regionXYWH": [
+        329,
+        184,
+        54,
+        54
+      ],
+      "output": "godot\\Assets\\UI\\hud\\rarity_premium.tres",
+      "evidence": "bwaui_slot.gfx subimage 63; original green outline, used cosmetically"
+    },
+    {
+      "name": "rarity_prototype",
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "regionXYWH": [
+        0,
+        242,
+        54,
+        54
+      ],
+      "output": "godot\\Assets\\UI\\hud\\rarity_prototype.tres",
+      "evidence": "bwaui_slot.gfx subimage 72; original blue outline, used cosmetically"
+    },
+    {
+      "name": "rarity_artifact",
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "regionXYWH": [
+        161,
+        184,
+        54,
+        54
+      ],
+      "output": "godot\\Assets\\UI\\hud\\rarity_artifact.tres",
+      "evidence": "bwaui_slot.gfx subimage 49; original purple outline, used cosmetically"
+    },
+    {
+      "name": "cooldown_wipe",
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_10.dds",
+      "regionXYWH": [
+        929,
+        308,
+        50,
+        100
+      ],
+      "output": "godot/Assets/UI/hud/cooldown_wipe.tres",
+      "evidence": "Client-derived: bwaui_slot.gfx subimage 117 -> shape 118 -> sprite 119 -> sprite 140 mc_cooldown; sprite 155 instantiates 140 as both mc_cooldownStates and mc_gcdCooldownStates. Shape 115 mask is 50x50; source image is 50x100. Godot translates the image top to bottom using the gameplay cooldown fraction; native ActionScript timer mapping is not executed."
+    }
+  ],
+  "sourceIdentities": "ui-source.json; ui-conversion.json (existing native PNG atlases)",
+  "quickbar": "12 default player slots; bwaui_quickslots_1/3 end controls and _6 page control; no companion module",
+  "adaptation": "Godot layout, horizontally repeated slots and thin connecting rules; not a reconstruction of the Scaleform timeline",
+  "conversion": "AtlasTexture regions only; no modified source pixels, archive hashes or converter changes"
+}

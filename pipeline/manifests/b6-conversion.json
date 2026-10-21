@@ -1,0 +1,205 @@
+{
+  "broodling": {
+    "output": "godot\\Assets\\Enemies\\broodling.glb",
+    "sha256": "e4a7ed8eb8aa47e6f39dfff38ed4d99c6a9ccb2a4bb1ee5ef6a9d6eb473eca5c",
+    "bones": 101,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/creature/slug/cb_ready_1.jba",
+        "seconds": 1.5,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/creature/slug/mv_run_forward.jba",
+        "seconds": 0.6666666865348816,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/creature/slug/cb_attack_1.jba",
+        "seconds": 1.0333333015441895,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/creature/slug/dg_damage_1.jba",
+        "seconds": 0.8333333134651184,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/creature/slug/dg_death_1.jba",
+        "seconds": 1.3333333730697632,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 1,
+    "sockets": [
+      "attach_portrait_left",
+      "vfx_hand_right",
+      "vfx_hand_left"
+    ]
+  },
+  "shyrack": {
+    "output": "godot\\Assets\\Enemies\\shyrack.glb",
+    "sha256": "561eb10e2e64432013133d356606663dfa5393a22efd0ec529f485b00a392657",
+    "bones": 81,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/creature/dragonbat/cb_ready_1.jba",
+        "seconds": 0.8333333134651184,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/creature/dragonbat/mv_run_forward.jba",
+        "seconds": 0.7666666507720947,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/creature/dragonbat/cb_attack_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/creature/dragonbat/dg_damage_1.jba",
+        "seconds": 0.8666666746139526,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/creature/dragonbat/dg_death_1.jba",
+        "seconds": 5.599999904632568,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 1,
+    "sockets": [
+      "attach_portrait_left",
+      "RightHand",
+      "vfx_hand_right",
+      "LeftHand",
+      "vfx_hand_left"
+    ]
+  },
+  "broodmatron": {
+    "output": "godot\\Assets\\Enemies\\broodmatron.glb",
+    "sha256": "9239fb1d3b9e0d78522c7de02069d5f08ad77924805811d416ccd06967041b7f",
+    "bones": 101,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/creature/slug/cb_ready_1.jba",
+        "seconds": 1.5,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/creature/slug/mv_run_forward.jba",
+        "seconds": 0.6666666865348816,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/creature/slug/cb_attack_1.jba",
+        "seconds": 1.0333333015441895,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/creature/slug/dg_damage_1.jba",
+        "seconds": 0.8333333134651184,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/creature/slug/dg_death_1.jba",
+        "seconds": 1.3333333730697632,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 1,
+    "sockets": [
+      "attach_portrait_left",
+      "vfx_hand_right",
+      "vfx_hand_left"
+    ]
+  },
+  "looter": {
+    "output": "godot\\Assets\\Enemies\\looter.glb",
+    "sha256": "73c5e0b82c6d3a0c67fe70f6c8a3dde6d95776454e6a9069384f655488a05033",
+    "bones": 211,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bmnnew/cb_knight_saber_idle_1.jba",
+        "seconds": 1.399999976158142,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bmnnew/mv_saber_run_forward_01.jba",
+        "seconds": 0.6000000238418579,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bmnnew/cb_saber_attack_right_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bmnnew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bmnnew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 9,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "RightWeapon",
+      "vfx_hand_right",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "electroblade": {
+    "output": "godot\\Assets\\Enemies\\electroblade.glb",
+    "sha256": "3101d8b9924fff9df3d444d01688a5cf8b767c0b55abe89df74aac2ad84e286b",
+    "bounds": [
+      [
+        -0.005326252430677414,
+        -0.02753135748207569,
+        -0.005337517708539963
+      ]
+    ]
+  },
+  "saber": {
+    "output": "godot\\Assets\\Enemies\\saber.glb",
+    "sha256": "ba3a04affd79cfafaa05bcaa43f7f8715e888dbc2d0e5232d7e199c999ee19e8",
+    "bounds": [
+      [
+        -0.0030056058894842863,
+        -0.019265133887529373,
+        -0.006142886821180582
+      ]
+    ]
+  }
+}

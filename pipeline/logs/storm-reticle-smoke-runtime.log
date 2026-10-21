@@ -1,0 +1,21 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+Storm reticle smoke: Original April green projector color is used
+Storm reticle smoke: Target location is real Korriban terrain
+Storm reticle smoke: Actual Force Storm starts
+Storm reticle smoke: Ground reticle appears at the exact damage center
+Storm reticle smoke: Existing Storm damage path remains active
+Storm reticle smoke: Green circle actually renders through the gameplay camera
+Storm reticle smoke: Existing area upgrade can be selected
+Storm reticle smoke: Rarity-scaled upgrade grows the live damage radius and rendered circle
+Storm reticle smoke: A smaller live gameplay radius shrinks the existing indicator
+Storm reticle smoke: Circle persists after the caster gesture and damage still ticks
+Storm reticle smoke: Natural end immediately removes the area indicator
+Storm reticle smoke: Cancellation fixture begins
+Storm reticle smoke: Cancellation frees the indicator
+Storm reticle smoke: Death fixture begins
+Storm reticle smoke: Player death clears the indicator
+Storm reticle smoke: Restart fixture begins
+Storm reticle smoke: Run reset frees the circle and restores the original radius
+STORM_RETICLE_SMOKE_PASSED

@@ -1,0 +1,41 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+ERROR: Can't create shader cache folder, no shader caching will happen: user://
+   at: RasterizerGLES3 (drivers/gles3/rasterizer_gles3.cpp:345)
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+B2 PASS: six unique ticks at step 0.03333333333333333
+B2 PASS: six unique ticks at step 0.016666666666666666
+B2 PASS: six unique ticks at step 0.008333333333333333
+B2 PASS: six unique ticks at step 0.37
+B2 PASS: six unique ticks at step 3.5
+B2 PASS: invalid damage ignored
+B2 PASS: health clamp and single death
+B2 PASS: stable equal-distance identity tie
+B2 PASS: friendly and neutral filtering
+B2 PASS: dead target excluded
+B2 PASS: out-of-range excluded
+B2 PASS: range entry recognized
+B2 PASS: prop layer blocks line of sight
+B2 PASS: terrain layer blocks line of sight
+B2 PASS: line of sight restored
+B2 PASS: B1 movement remains grounded
+B2 PASS: B1 crop boundary preserved
+B2 PASS: original start animation
+B2 PASS: original loop animation
+B2 PASS: rendered original VFX and audio active
+B2 PASS: movement during cast retains physics authority
+B2 PASS: one tick and original hit
+B2 PASS: hit returns to idle
+B2 PASS: full channel damage total
+B2 PASS: original cast end
+B2 PASS: cooldown clean and locomotion released
+B2 PASS: periodic scans only
+B2 PASS: death animation and no overkill ticks
+B2 PASS: death cleanup and no damage afterwards
+B2 PASS: range exit cancels immediately
+B2 PASS: cancel returns to locomotion
+B2 PASS: removed target cancels
+B2 PASS: caster death aborts without orphan effects
+B2 PASS: reset restores movement and health
+B2 PASS: actual renderer produced frames
+COMBAT_SMOKE_PASSED

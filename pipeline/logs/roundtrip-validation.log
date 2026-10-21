@@ -1,0 +1,49 @@
+register_class(...):
+Warning: 'import_mesh.gr2_presets' does not contain '_MT_' with prefix and suffix
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\all_sith_interior_hall_door_large.gr2
+OBJS: ['all_sith_interior_hall_door_large']
+TIME: 0.016 s.
+
+
+PROCESSING OF NAMED SWTOR MATERIALS
+
+-------------------------------------------
+100.00 %    Object: all_sith_interior_hall_door_large
+          Material: kor_acad_higharch
+
+
+Done!
+17:55:28 | INFO: Data are loaded, start creating Blender stuff
+17:55:28 | INFO: Blender create Mesh node all_sith_interior_hall_door_large
+17:55:28 | INFO: glTF import finished in 0.01s
+{
+  "passed": true,
+  "maxPositionError": 0.0,
+  "maxNormalComponentError": 0.0004414021968841553,
+  "maxUvError": 0.0,
+  "maxNormalAngleDegrees": 0.027396321732304007,
+  "tolerances": {
+    "position": 1e-06,
+    "normalAngleDegrees": 0.1,
+    "uv": 1e-06
+  },
+  "trianglesBefore": 576,
+  "trianglesAfter": 576,
+  "sourceOpposedFaceNormals": 2,
+  "roundtripOpposedFaceNormals": 2,
+  "compared": [
+    "world positions",
+    "corner normals",
+    "UV0",
+    "triangle winding"
+  ],
+  "unverified": [
+    "Original physical units",
+    "Original client shader parity",
+    "Source collision"
+  ]
+}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

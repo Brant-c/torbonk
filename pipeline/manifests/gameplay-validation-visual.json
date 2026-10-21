@@ -1,0 +1,676 @@
+{
+  "passed": true,
+  "failures": [],
+  "checks": [
+    {
+      "name": "grounded spawn",
+      "passed": true,
+      "details": [
+        36,
+        -17.13695,
+        12.6
+      ]
+    },
+    {
+      "name": "original scale",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "original skeleton",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "seven original clips",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "idle at rest",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "capture 01-idle",
+      "passed": true,
+      "details": {
+        "player": [
+          36,
+          -17.13695,
+          12.6
+        ],
+        "focus": [
+          36,
+          -17.036741,
+          12.6
+        ],
+        "camera": [
+          36,
+          -16.0193,
+          13.5161085
+        ],
+        "hiddenMeshes": 0,
+        "clearFraction": 1
+      }
+    },
+    {
+      "name": "physical W moves camera forward",
+      "passed": true,
+      "details": [
+        0.000118255615,
+        0.010374069,
+        -0.24168205
+      ]
+    },
+    {
+      "name": "run after movement",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "capture 02-running",
+      "passed": true,
+      "details": {
+        "player": [
+          36.00012,
+          -17.126575,
+          12.358318
+        ],
+        "focus": [
+          36.00003,
+          -17.036306,
+          12.401967
+        ],
+        "camera": [
+          36.00003,
+          -16.018866,
+          13.318075
+        ],
+        "hiddenMeshes": 0,
+        "clearFraction": 1
+      }
+    },
+    {
+      "name": "character faces actual movement",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "root motion does not move model wrapper",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "smooth follow stays near moving character",
+      "passed": true,
+      "details": 0.044720426
+    },
+    {
+      "name": "decelerates to idle",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "camera input (-1, 0)",
+      "passed": true,
+      "details": [
+        -0.093055725,
+        -0.006216049,
+        -0.054237366
+      ]
+    },
+    {
+      "name": "camera input (1, 0)",
+      "passed": true,
+      "details": [
+        0.18593979,
+        0.011711121,
+        -0.0014343262
+      ]
+    },
+    {
+      "name": "camera input (0, -1)",
+      "passed": true,
+      "details": [
+        0.024520874,
+        0.011606216,
+        -0.2371769
+      ]
+    },
+    {
+      "name": "camera input (0, 1)",
+      "passed": true,
+      "details": [
+        -0.0010223389,
+        0.034049988,
+        0.18344307
+      ]
+    },
+    {
+      "name": "camera-relative rotated yaw",
+      "passed": true,
+      "details": [
+        -0.09773636,
+        -0.006052017,
+        -0.03168106
+      ]
+    },
+    {
+      "name": "grounded at physics rate 30",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "grounded at physics rate 60",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "grounded at physics rate 120",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "physics rate movement agreement",
+      "passed": true,
+      "details": [
+        {
+          "tickRate": 30,
+          "distance": 0.52388966,
+          "grounded": true
+        },
+        {
+          "tickRate": 60,
+          "distance": 0.5192056,
+          "grounded": true
+        },
+        {
+          "tickRate": 120,
+          "distance": 0.51624376,
+          "grounded": true
+        }
+      ]
+    },
+    {
+      "name": "render rate movement agreement",
+      "passed": true,
+      "details": [
+        {
+          "renderFpsCap": 30,
+          "distance": 0.5192056,
+          "measuredRenderFps": 30.04296143485184
+        },
+        {
+          "renderFpsCap": 60,
+          "distance": 0.5192056,
+          "measuredRenderFps": 60.01962641783863
+        },
+        {
+          "renderFpsCap": 144,
+          "distance": 0.5192056,
+          "measuredRenderFps": 144.0391786565946
+        }
+      ]
+    },
+    {
+      "name": "grounded traversal (0, -1)",
+      "passed": true,
+      "details": [
+        36.002613,
+        -16.921833,
+        11.491468
+      ]
+    },
+    {
+      "name": "grounded traversal (-1, 0)",
+      "passed": true,
+      "details": [
+        34.88385,
+        -16.944843,
+        11.4117775
+      ]
+    },
+    {
+      "name": "grounded traversal (0, 1)",
+      "passed": true,
+      "details": [
+        34.772717,
+        -16.991322,
+        12.444704
+      ]
+    },
+    {
+      "name": "grounded traversal (1, 0)",
+      "passed": true,
+      "details": [
+        35.17238,
+        -17.00195,
+        12.309426
+      ]
+    },
+    {
+      "name": "no recovery during ordinary traversal",
+      "passed": true,
+      "details": 0
+    },
+    {
+      "name": "capture 03-traversal",
+      "passed": true,
+      "details": {
+        "player": [
+          35.17238,
+          -17.00195,
+          12.309426
+        ],
+        "focus": [
+          35.17235,
+          -16.901937,
+          12.309433
+        ],
+        "camera": [
+          35.17235,
+          -15.884495,
+          13.22554
+        ],
+        "hiddenMeshes": 1,
+        "clearFraction": 1
+      }
+    },
+    {
+      "name": "outside rectangle rejected",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "crop boundary rejected",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "missing ground rejected",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "actual source hole rejected",
+      "passed": true,
+      "details": [
+        20.533333,
+        1.8183689,
+        17.333334
+      ]
+    },
+    {
+      "name": "architectural collision candidate found",
+      "passed": true,
+      "details": {
+        "source": "/resources/art/static/area/kor_korriban/arch/kor_vod_ruins_pillar_base.gr2",
+        "point": [
+          33.600002,
+          -16.996994,
+          13.199996
+        ],
+        "direction": [
+          0.92387956,
+          0,
+          -0.38268343
+        ],
+        "distance": 0.1623896
+      }
+    },
+    {
+      "name": "original architecture blocks controller",
+      "passed": true,
+      "details": {
+        "source": "/resources/art/static/area/kor_korriban/arch/kor_vod_ruins_pillar_base.gr2",
+        "wallContacts": 51,
+        "moved": 0.12985441,
+        "rayDistance": 0.1623896,
+        "end": [
+          33.71196,
+          -16.998125,
+          13.1309595
+        ],
+        "rejected": 0,
+        "lastRejection": "steep terrain",
+        "traces": [
+          {
+            "step": 0,
+            "position": [
+              33.600773,
+              -16.995695,
+              13.199677
+            ],
+            "velocity": [
+              0.04619398,
+              0,
+              -0.019134171
+            ],
+            "collisions": []
+          },
+          {
+            "step": 1,
+            "position": [
+              33.602314,
+              -16.995691,
+              13.199039
+            ],
+            "velocity": [
+              0.09238796,
+              0,
+              -0.038268343
+            ],
+            "collisions": []
+          },
+          {
+            "step": 2,
+            "position": [
+              33.60462,
+              -16.996391,
+              13.198083
+            ],
+            "velocity": [
+              0.13858195,
+              0,
+              -0.057402518
+            ],
+            "collisions": []
+          },
+          {
+            "step": 3,
+            "position": [
+              33.607754,
+              -16.996252,
+              13.196888
+            ],
+            "velocity": [
+              0.18477592,
+              0,
+              -0.076536685
+            ],
+            "collisions": []
+          },
+          {
+            "step": 4,
+            "position": [
+              33.611584,
+              -16.99669,
+              13.195302
+            ],
+            "velocity": [
+              0.2309699,
+              0,
+              -0.09567086
+            ],
+            "collisions": []
+          },
+          {
+            "step": 5,
+            "position": [
+              33.616203,
+              -16.996796,
+              13.193389
+            ],
+            "velocity": [
+              0.2771639,
+              0,
+              -0.11480503
+            ],
+            "collisions": []
+          },
+          {
+            "step": 6,
+            "position": [
+              33.62159,
+              -16.99692,
+              13.191157
+            ],
+            "velocity": [
+              0.32335788,
+              0,
+              -0.1339392
+            ],
+            "collisions": []
+          },
+          {
+            "step": 7,
+            "position": [
+              33.627747,
+              -16.99706,
+              13.188606
+            ],
+            "velocity": [
+              0.36955187,
+              0,
+              -0.15307339
+            ],
+            "collisions": []
+          },
+          {
+            "step": 8,
+            "position": [
+              33.634674,
+              -16.99722,
+              13.185737
+            ],
+            "velocity": [
+              0.41574585,
+              0,
+              -0.17220756
+            ],
+            "collisions": []
+          },
+          {
+            "step": 9,
+            "position": [
+              33.642372,
+              -16.997395,
+              13.1825485
+            ],
+            "velocity": [
+              0.46193984,
+              0,
+              -0.19134173
+            ],
+            "collisions": []
+          },
+          {
+            "step": 10,
+            "position": [
+              33.65084,
+              -16.997587,
+              13.179041
+            ],
+            "velocity": [
+              0.5081338,
+              0,
+              -0.2104759
+            ],
+            "collisions": []
+          },
+          {
+            "step": 11,
+            "position": [
+              33.660076,
+              -16.997799,
+              13.175215
+            ],
+            "velocity": [
+              0.5543278,
+              0,
+              -0.22961007
+            ],
+            "collisions": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "blocked character returns idle",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "camera detects architecture",
+      "passed": true,
+      "details": {
+        "fraction": 0.017089844
+      }
+    },
+    {
+      "name": "compressed camera stays before geometry",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "wall camera preserves subject distance",
+      "passed": true,
+      "details": {
+        "angle": 48,
+        "distance": 1.3691026,
+        "hiddenMeshes": 2
+      }
+    },
+    {
+      "name": "render mesh sightline clear",
+      "passed": true,
+      "details": {
+        "blocker": "",
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "distance": 3.4028235E+38
+      }
+    },
+    {
+      "name": "capture 06-architecture",
+      "passed": true,
+      "details": {
+        "player": [
+          33.71196,
+          -16.998125,
+          13.1309595
+        ],
+        "focus": [
+          33.71196,
+          -16.898125,
+          13.1309595
+        ],
+        "camera": [
+          33.71196,
+          -15.880683,
+          14.047068
+        ],
+        "hiddenMeshes": 2,
+        "clearFraction": 1
+      }
+    },
+    {
+      "name": "occluding prop visibility restored",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "traversable crop edge found",
+      "passed": true,
+      "details": [
+        20.35,
+        -15.332172,
+        6.7
+      ]
+    },
+    {
+      "name": "controller stops at crop edge",
+      "passed": true,
+      "details": {
+        "start": [
+          20.35,
+          -15.332172,
+          6.7
+        ],
+        "end": [
+          20.290152,
+          -15.353659,
+          6.698067
+        ],
+        "blocks": 88
+      }
+    },
+    {
+      "name": "camera sightline clear",
+      "passed": true,
+      "details": {
+        "fraction": 1
+      }
+    },
+    {
+      "name": "fall recovery",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reset returns to grounded spawn",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "capture 04-collision-debug",
+      "passed": true,
+      "details": {
+        "player": [
+          36,
+          -17.1363,
+          12.6
+        ],
+        "focus": [
+          36,
+          -17.036295,
+          12.6
+        ],
+        "camera": [
+          36,
+          -16.018854,
+          13.5161085
+        ],
+        "hiddenMeshes": 0,
+        "clearFraction": 1
+      }
+    },
+    {
+      "name": "capture 05-reset",
+      "passed": true,
+      "details": {
+        "player": [
+          36,
+          -17.1363,
+          12.6
+        ],
+        "focus": [
+          36,
+          -17.036299,
+          12.6
+        ],
+        "camera": [
+          36,
+          -16.018858,
+          13.5161085
+        ],
+        "hiddenMeshes": 0,
+        "clearFraction": 1
+      }
+    }
+  ],
+  "captures": true,
+  "engine": "4.7.2-stable (official)",
+  "renderer": "gl_compatibility",
+  "physicsEngine": "Jolt Physics",
+  "spawn": [
+    36,
+    -17.135595,
+    12.6
+  ],
+  "recoveries": 1
+}

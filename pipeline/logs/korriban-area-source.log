@@ -1,0 +1,86 @@
+area 337017 !
+
+! Area Specification for kor_rebuild_test
+
+!
+
+Version=\world\livecontent\systemgenerated\
+
+[ROOMS]
+
+  _everywhere_
+
+  Default
+
+  baseroom
+
+  main
+
+  tomb_03_room_01
+
+  tomb_03_room_outside
+
+  tomb_02_room_02
+
+  tomb_03_room_02
+
+  tomb_03_room_03
+
+  tomb_02_room_01
+
+  tomb_04_room_01
+
+  sith_academy_entrance
+
+  sith_academy_main_floor_one
+
+  sith_academy_main_floor_one_tombs
+
+  sith_acad_floor1_rm02
+
+  sith_acad_floor1_rm02_cnrhall
+
+  sith_acad_floor1_rm02_hall
+
+  sith_acad_floor1_rm05
+
+  sith
+baseroom 5935819 !
+
+! Room Specification
+
+!
+
+Version=4
+
+[INSTANCES]
+
+  4611686022895030517=4611686022895031608
+
+    .ParentInstance=0
+
+    .AutoGroundSnapHeight=0.
+
+    .AutoGroundSnap=false
+
+    .movable=false
+
+    .Viewability=WORLD_AND_MAP
+
+    .InheritParentVisibility=false
+
+    .Position=(-11.7938995361,-1.61829996109,-2.87470006943)
+
+    .IgnoreForCameraCollision=false
+
+    .Rotation=(-0.,-28.5074996948,0.)
+
+    .IgnoreForNPCCollision=false
+
+    .Scale=(1.,1.,1.)
+
+    .PortalTag=false
+
+    .Hidden=false
+
+ 

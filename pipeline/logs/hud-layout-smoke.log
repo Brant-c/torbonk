@@ -1,0 +1,14 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+ERROR: Can't create shader cache folder, no shader caching will happen: user://
+   at: RasterizerGLES3 (drivers/gles3/rasterizer_gles3.cpp:345)
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+B4 smoke: world and original-art HUD initialize
+B4 smoke: reference quickbar has two rows of twelve slots
+B4 smoke: enemy defeat creates XP pickup without instant XP
+B4 smoke: collecting levels and presents three distinct choices
+B4 smoke: selection pauses time, waves, movement and damage
+B4 smoke: offered upgrade applies a rank and resumes
+B4 smoke: selected configurable effect changes the gameplay stat
+B4 smoke: XP requirement increases and overflow queues another choice
+B4 smoke: restart from selection clears XP, ranks, pickups, pause and restores base stats

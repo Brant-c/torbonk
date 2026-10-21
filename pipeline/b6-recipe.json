@@ -1,0 +1,233 @@
+{
+  "broodling": {
+    "skeleton": "/resources/art/dynamic/spec/klorslug_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "creature",
+        "modelId": "1006619",
+        "materialId": "1006620",
+        "models": [
+          "/resources/art/dynamic/creature/model/klorslug_klorslug_a02.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/klorslug_klorslug_a02_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/creature/texture/klorslug_klorslug_a02_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/creature/texture/klorslug_klorslug_a02_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/creature/texture/klorslug_klorslug_a02_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/defaultassets/black.dds",
+            "DirectionMap": "/resources/art/defaultassets/flat_n.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/creature/slug/cb_ready_1.jba",
+      "Run": "/resources/anim/creature/slug/mv_run_forward.jba",
+      "Attack": "/resources/anim/creature/slug/cb_attack_1.jba",
+      "Hit": "/resources/anim/creature/slug/dg_damage_1.jba",
+      "Death": "/resources/anim/creature/slug/dg_death_1.jba"
+    }
+  },
+  "shyrack": {
+    "skeleton": "/resources/art/dynamic/spec/dragonbat_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "creature",
+        "modelId": "1003627",
+        "materialId": "1003628",
+        "models": [
+          "/resources/art/dynamic/creature/model/dragonbat_shyrack_a01.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/dragonbat_shyrack_a01_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/creature/dragonbat/texture/___psd/dragonbat_shyrack_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/creature/dragonbat/texture/___psd/dragonbat_shyrack_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/creature/dragonbat/texture/___psd/dragonbat_shyrack_a01_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/creature/dragonbat/texture/___psd/dragonbat_shyrack_a01_v01_m.dds",
+            "DirectionMap": "/resources/art/defaultassets/flat_n.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/creature/dragonbat/cb_ready_1.jba",
+      "Run": "/resources/anim/creature/dragonbat/mv_run_forward.jba",
+      "Attack": "/resources/anim/creature/dragonbat/cb_attack_1.jba",
+      "Hit": "/resources/anim/creature/dragonbat/dg_damage_1.jba",
+      "Death": "/resources/anim/creature/dragonbat/dg_death_1.jba"
+    }
+  },
+  "broodmatron": {
+    "skeleton": "/resources/art/dynamic/spec/klorslug_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "creature",
+        "modelId": "1000128",
+        "materialId": "1001446",
+        "models": [
+          "/resources/art/dynamic/creature/model/klorslug_klorslug_a01.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/klorslug_klorslug_a01_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/creature/texture/klorslug_klorslug_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/creature/texture/klorslug_klorslug_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/creature/texture/klorslug_klorslug_a01_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/creature/klorslug/texture/___psd/klorslug_klorslug_a01_v01_m.dds",
+            "DirectionMap": "/resources/art/defaultassets/flat_n.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/creature/slug/cb_ready_1.jba",
+      "Run": "/resources/anim/creature/slug/mv_run_forward.jba",
+      "Attack": "/resources/anim/creature/slug/cb_attack_1.jba",
+      "Hit": "/resources/anim/creature/slug/dg_damage_1.jba",
+      "Death": "/resources/anim/creature/slug/dg_death_1.jba"
+    }
+  },
+  "looter": {
+    "skeleton": "/resources/art/dynamic/spec/bmnnew_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "boot",
+        "modelId": "1000540",
+        "materialId": "1001143",
+        "models": [
+          "/resources/art/dynamic/boot/model/boot_tall_bmn_archetype.gr2",
+          "/resources/art/dynamic/boot/model/boot_tall_bmn_med_ge_a20_straps.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/boot_tall_med_ge_a20refugee01_u.mat",
+          "derived": "Garment",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/boot_tall_med_ge_a20refugee01_u_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/boot_tall_med_ge_a20refugee01_u_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/boot_tall_med_ge_a20refugee01_u_s.dds",
+            "PaletteMap": "/resources/art/defaultassets/black.dds",
+            "PaletteMaskMap": "/resources/art/defaultassets/black.dds",
+            "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+          }
+        },
+        "overrides": []
+      },
+      {
+        "slot": "chest",
+        "modelId": "1000543",
+        "materialId": "1001305",
+        "models": [
+          "/resources/art/dynamic/chest/model/chest_tight_bmn_archetype.gr2",
+          "/resources/art/dynamic/chest/model/chest_tight_bmn_med_ge_a20_hoodup.gr2",
+          "/resources/art/dynamic/chest/model/chest_tight_bmn_med_ge_a20_hooddown.gr2",
+          "/resources/art/dynamic/chest/model/chest_tight_bmn_med_ge_a20_shld.gr2",
+          "/resources/art/dynamic/chest/model/chest_tight_bmn_med_ge_a20_tunic.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/chest_tight_med_ge_a20refugee01_m.mat",
+          "derived": "Garment",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/chest_tight_med_ge_a20refugee01_u_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/chest_tight_med_ge_a20refugee01_m_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/chest_tight_med_ge_a20refugee01_u_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/chest_tight_med_ge_a20refugee01_u_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/chest_tight_med_ge_a20refugee01_u_m.dds",
+            "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+          }
+        },
+        "overrides": []
+      },
+      {
+        "slot": "hand",
+        "modelId": "1000374",
+        "materialId": "1150780",
+        "models": [
+          "/resources/art/dynamic/hand/model/hand_naked_bmn_archetype.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/hand_naked_caucasian_young_a01c01_bmn.mat",
+          "derived": "SkinB",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/all_naked_body/texture/___psd/hand_naked_caucasian_young_a01c01_bmn_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/all_naked_body/texture/___psd/hand_naked_caucasian_young_a01c01_bmn_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/all_naked_body/texture/___psd/hand_naked_non_young_a01c01_u_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/outfit/all_naked_body/texture/___psd/hand_naked_caucasian_young_a01c01_bmn_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/all_naked_body/texture/___psd/hand_naked_non_young_a01c01_u_m.dds",
+            "ComplexionMap": "/resources/art/defaultassets/white.dds",
+            "FacepaintMap": "/resources/art/defaultassets/default_facepaint.dds",
+            "AgeMap": "/resources/art/defaultassets/default_age.dds"
+          }
+        },
+        "overrides": []
+      },
+      {
+        "slot": "leg",
+        "modelId": "1000544",
+        "materialId": "1001727",
+        "models": [
+          "/resources/art/dynamic/leg/model/leg_pant_bmn_archetype.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/leg_pant_med_ge_a20refugee01_v01_m.mat",
+          "derived": "Garment",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/leg_pant_med_ge_a20refugee01_v01_u_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/leg_pant_med_ge_a20refugee01_v01_m_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/leg_pant_med_ge_a20refugee01_v01_u_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/leg_pant_med_ge_a20refugee01_v01_u_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/leg_pant_med_ge_a20refugee01_v01_u_m.dds",
+            "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/humanoid/bmnnew/cb_knight_saber_idle_1.jba",
+      "Run": "/resources/anim/humanoid/bmnnew/mv_saber_run_forward_01.jba",
+      "Attack": "/resources/anim/humanoid/bmnnew/cb_saber_attack_right_1.jba",
+      "Hit": "/resources/anim/humanoid/bmnnew/dg_unarmed_crit_damage_right_1.jba",
+      "Death": "/resources/anim/humanoid/bmnnew/dg_death_1.jba"
+    }
+  },
+  "weapons": {
+    "electroblade": {
+      "model": "/resources/art/dynamic/weapon/model/electroblade_low03_a01_v01.gr2",
+      "materials": [
+        {
+          "path": "/resources/art/shaders/materials/electroblade_low03_a01_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/weapon/electroblade/texture/___psd/electroblade_low03_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/weapon/electroblade/texture/___psd/electroblade_low03_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/weapon/electroblade/texture/___psd/electroblade_low03_a01_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/defaultassets/black.dds",
+            "DirectionMap": "/resources/art/lookupTables/table_hair_01.dds"
+          }
+        }
+      ]
+    },
+    "saber": {
+      "model": "/resources/art/dynamic/weapon/model/saber_sithlow03_a01_v01.gr2",
+      "materials": [
+        {
+          "path": "/resources/art/shaders/materials/saber_sithlow03_a01_v01.mat",
+          "derived": "Uber",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_sithlow03_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_sithlow03_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_sithlow03_a01_v01_s.dds"
+          }
+        }
+      ]
+    }
+  }
+}

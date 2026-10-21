@@ -1,0 +1,103 @@
+{
+  "blender": "5.2.1 LTS",
+  "buildHash": "9e2066aef7ef",
+  "axisPolicy": "GR2 importer +90 degrees X, applied to mesh; glTF exporter Y-up; scale 1 source unit",
+  "physicalMetresCalibrated": false,
+  "importSettings": {
+    "gr2_scale_object": false,
+    "gr2_scale_factor": 1.0,
+    "gr2_apply_axis_conversion": true,
+    "gr2_import_collision": false
+  },
+  "geometry": {
+    "vertices": 813,
+    "triangles": 576,
+    "uvLayers": [
+      "UVMap"
+    ],
+    "minBlender": [
+      -0.38218268752098083,
+      -0.45485085248947144,
+      -3.4340285282041805e-08
+    ],
+    "maxBlender": [
+      0.3821823298931122,
+      0.45485109090805054,
+      1.6096081733703613
+    ],
+    "dimensionsBlender": [
+      0.764365017414093,
+      0.909701943397522,
+      1.6096081733703613
+    ],
+    "meshMin": [
+      -0.38218268752098083,
+      -0.45485085248947144,
+      -3.4340285282041805e-08
+    ],
+    "meshMax": [
+      0.3821823298931122,
+      0.45485109090805054,
+      1.6096081733703613
+    ],
+    "nonFiniteVertices": 0,
+    "degenerateTriangles": 0,
+    "hasCustomNormals": true
+  },
+  "materialRecipe": {
+    "family": "Uber, opaque, one-sided",
+    "baseColor": "DDS diffuse RGB ^ 2.1 linear, encoded sRGB PNG (matches GR2 Uber gamma node)",
+    "normal": "OpenGL tangent vector normalize(2A-1,1-2G,sqrt(max(0,1-(2A-1)^2-(1-2G)^2))); encode to [0,1] RGB",
+    "roughness": "(2/(3+63*glossAlpha))^0.25; Phong-to-GGX approximation",
+    "specular": "gloss RGB luminance mapped to Principled IOR Level; colored specular retained as source PNG",
+    "emission": "diffuse^2.1 * rotation.B; excludes view-dependent Uber specular contribution",
+    "limitations": [
+      "SWTOR view-dependent shader and reflection parameters are not equivalent to glTF PBR.",
+      "No original-client visual reference; parity needs human comparison."
+    ]
+  },
+  "textureValidation": {
+    "sourceSizes": {
+      "_d": [
+        1024,
+        1024
+      ],
+      "_n": [
+        1024,
+        1024
+      ],
+      "_s": [
+        512,
+        512
+      ]
+    },
+    "normalZClampedPixels": 1579,
+    "normalLengthMaxError": 1.1920928955078125e-07,
+    "roughnessRange": [
+      0.5023245811462402,
+      0.9036020040512085
+    ],
+    "emissionMaskRange": [
+      0.0,
+      1.0
+    ]
+  },
+  "exportSettings": {
+    "export_format": "GLB",
+    "use_selection": true,
+    "export_yup": true,
+    "export_normals": true,
+    "export_tangents": true,
+    "export_texcoords": true,
+    "export_materials": "EXPORT",
+    "export_animations": false,
+    "export_extras": true,
+    "export_image_format": "AUTO",
+    "export_apply": false
+  },
+  "exporterVersion": [
+    5,
+    2,
+    40
+  ]
+}

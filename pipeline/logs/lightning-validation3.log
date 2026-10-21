@@ -1,0 +1,9 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+ERROR: LIGHTNING CHECK FAILED: configurable point mode
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://LightningInspection.gd:89)
+       [1] validate_lightning (res://LightningInspection.gd:161)
+       [2] settle (res://LightningInspection.gd:94)
+LIGHTNING_VALIDATION_FAILED checks=36

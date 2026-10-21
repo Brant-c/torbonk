@@ -1,0 +1,669 @@
+{
+  "artifacts": [
+    {
+      "path": "generated\\sorcerer.glb",
+      "bytes": 8536044,
+      "sha256": "c338202a83450f47d9976c113bb4e14a6071be6e102358e9eae1cac5b3b829ed"
+    },
+    {
+      "path": "work\\sorcerer-reference.blend",
+      "bytes": 2270209,
+      "sha256": "9512a0f86df70e53cbfea73beb36d24a4de4377d08e7fc2c2bd5ebd7ae00fa51"
+    },
+    {
+      "path": "work\\sorcerer-portable.blend",
+      "bytes": 2281821,
+      "sha256": "bbb7e763e8408e4c317df25e6987e2897e42ffbb8e26ce0fc134344a0995838c"
+    },
+    {
+      "path": "character-recipe.json",
+      "bytes": 55353,
+      "sha256": "b2d62525991e9f66de235a3a9d0c454277d3c4ee17253ca40977380eb0660952"
+    },
+    {
+      "path": "CHARACTER-README.md",
+      "bytes": 9098,
+      "sha256": "f8ba35020fb51be397030db53c183ed0a3f154a0ea75124ee5ae2e852233339f"
+    },
+    {
+      "path": "CHARACTER-RESULTS.md",
+      "bytes": 8741,
+      "sha256": "d669cbed4a487d12183c0cfe06db28cf21ef75efc1699747938440f6239e863d"
+    },
+    {
+      "path": "Run-Character-Pipeline.ps1",
+      "bytes": 3787,
+      "sha256": "dab08a63e03d94edbbf61fca93142afdb01f08c597971dfca01373d576d53437"
+    },
+    {
+      "path": "Open-CharacterInspection.ps1",
+      "bytes": 498,
+      "sha256": "8924abc846a990b9dd8aec213d3a11d5741bef98a6709e832feca75c70dc9761"
+    },
+    {
+      "path": "Assert-Toolchain.ps1",
+      "bytes": 885,
+      "sha256": "16104925899bedbf63ad61c625db0cbc8cb3a7c7d249716343c3cc3aedbf781f"
+    },
+    {
+      "path": "godot\\CharacterInspection.gd",
+      "bytes": 11286,
+      "sha256": "caa4bdd51e43cc1fbfa33594af631d6d65ecccb5fe3ae6fa7fc38698a26aaaec"
+    },
+    {
+      "path": "godot\\CharacterInspection.tscn",
+      "bytes": 324,
+      "sha256": "8c69a5ad895cfd486e5fcb1e8cdb839630b18f0223a91958029a6d34da6a7bd6"
+    },
+    {
+      "path": "godot\\Assets\\sorcerer.glb.import",
+      "bytes": 1246,
+      "sha256": "9e5603c1a834dc0e63557e39d06700b76b3bd1d42c44bd852a11e1b22c0f26f3"
+    },
+    {
+      "path": "generated\\character\\blender-portable.png",
+      "bytes": 850981,
+      "sha256": "dbda09c679a7d3499676451b09fcebbd42dd4192dccdce9612f4ecf9cdd3a0be"
+    },
+    {
+      "path": "generated\\character\\blender-reference.png",
+      "bytes": 843397,
+      "sha256": "bd5f1185ef92a4e080caec9e2146205ba09d61858b1ee5dbf314fc5a3b6db470"
+    },
+    {
+      "path": "generated\\character\\boot_tall_light_ss_a04c01_u_basecolor.png",
+      "bytes": 119169,
+      "sha256": "e0664339e67d91dbb70f207007cbcd2e3d17c9b674b6e25ca3b957df64c2058c"
+    },
+    {
+      "path": "generated\\character\\boot_tall_light_ss_a04c01_u_normal.png",
+      "bytes": 124128,
+      "sha256": "049589599cb0f25c02ef8f8a7b6723f5d524cc0c62d296c2b8e6094a229b3f22"
+    },
+    {
+      "path": "generated\\character\\boot_tall_light_ss_a04c01_u_roughness.png",
+      "bytes": 15485,
+      "sha256": "9f07f27102d34221536a8cf245d11b60c7d5aeef45b1dba428a9b91c22789e01"
+    },
+    {
+      "path": "generated\\character\\chest_robe01_light_ss_a04c01_m_basecolor.png",
+      "bytes": 1303700,
+      "sha256": "dea6d67e8954ae4386d15f4c30198b31a6bae6542f6b88802da0f2593a22fc3d"
+    },
+    {
+      "path": "generated\\character\\chest_robe01_light_ss_a04c01_m_normal.png",
+      "bytes": 1170401,
+      "sha256": "a055897546db50912e62841a264589c8fc9f6a1d112179f176a760f792c9a260"
+    },
+    {
+      "path": "generated\\character\\chest_robe01_light_ss_a04c01_m_roughness.png",
+      "bytes": 166032,
+      "sha256": "7b42186f9b0beb8ff9a0088713c631c4021d6d6225c82c124dcf6bacb7529bf5"
+    },
+    {
+      "path": "generated\\character\\eye_human_non_a01_c01_basecolor.png",
+      "bytes": 72067,
+      "sha256": "bcc12f077085943e3403e11c9045d2ec81aa3df433e52c89c97d9348871ca89c"
+    },
+    {
+      "path": "generated\\character\\eye_human_non_a01_c01_normal.png",
+      "bytes": 11666,
+      "sha256": "715a6417b4d3f0e15e1b2d3a31040ad53e505c95dd59286b7756fbef8a71b3f9"
+    },
+    {
+      "path": "generated\\character\\eye_human_non_a01_c01_roughness.png",
+      "bytes": 710,
+      "sha256": "e5c61889657455cb4c3f381aecc16d00922a04e0f323b594882e47865d638665"
+    },
+    {
+      "path": "generated\\character\\facial-raw.png",
+      "bytes": 1046188,
+      "sha256": "7682a930cb2eede04aadb102eb1bbf6d2a77cf09be2226b881cd88407d265897"
+    },
+    {
+      "path": "generated\\character\\godot-BindPose.png",
+      "bytes": 229147,
+      "sha256": "b66a83588291dae5c4e70f7081db9ed6b19923b2e3f81cca78ee45a509a60939"
+    },
+    {
+      "path": "generated\\character\\godot-BonesSide.png",
+      "bytes": 158881,
+      "sha256": "3cc4ce80bafffd75e37ed07dff19bacd473241a7c8bb0818070d05424040c319"
+    },
+    {
+      "path": "generated\\character\\godot-Death.png",
+      "bytes": 175148,
+      "sha256": "59067d94156f926ab680f739feeec51da8243a203331a69614accf0fee284d12"
+    },
+    {
+      "path": "generated\\character\\godot-Hit.png",
+      "bytes": 203511,
+      "sha256": "9401f1df98ea0541bec51301b702a83c23d21295672f4d7abac3526bbaa90112"
+    },
+    {
+      "path": "generated\\character\\godot-Idle.png",
+      "bytes": 213632,
+      "sha256": "0d61788e76edafe86fe80ab002701c009afb03c0bc57458e0830db8d4dde64e0"
+    },
+    {
+      "path": "generated\\character\\godot-LightningEnd.png",
+      "bytes": 238695,
+      "sha256": "15146ba55c3ccd4cedfb33b194be7efaef150fd41eedce38235e63aa252fd5db"
+    },
+    {
+      "path": "generated\\character\\godot-LightningLoop.png",
+      "bytes": 237251,
+      "sha256": "7ee355620e85b26c7f970ce76bdf3f39febc0a1eef59a551e832ae684005edf6"
+    },
+    {
+      "path": "generated\\character\\godot-LightningStart.png",
+      "bytes": 233134,
+      "sha256": "3fdcdcf3b44565fdc68d0950ad24c761fca9d691cd704c59f49542aec7e254ed"
+    },
+    {
+      "path": "generated\\character\\godot-Run.png",
+      "bytes": 192612,
+      "sha256": "6bed02e32d5ed6fbf9648206d897da60cb94e17128dd4070e64bd3f619d6d5e4"
+    },
+    {
+      "path": "generated\\character\\hair_human_non_a01_v01_m_basecolor.png",
+      "bytes": 460245,
+      "sha256": "cfca228184d5b0679179bb3b1bb57798f81cb74c2167f3de63805ec108c8c3e6"
+    },
+    {
+      "path": "generated\\character\\hair_human_non_a01_v01_m_normal.png",
+      "bytes": 458526,
+      "sha256": "e695b506aec91ea4861041c54820b1d1dded9ecdf57e1712674c18bbeca24bc6"
+    },
+    {
+      "path": "generated\\character\\hair_human_non_a01_v01_m_roughness.png",
+      "bytes": 66003,
+      "sha256": "d9b374f9fa3d200c7011ebfcd3be81a73f23ad5ba8b1510c0913775f8446e195"
+    },
+    {
+      "path": "generated\\character\\hand_gauntlet_light_ss_a04c01_u_basecolor.png",
+      "bytes": 115025,
+      "sha256": "8ad90a1f2167b93341a6f1cf95d20fb7e2637cf19692918389830ca94988044d"
+    },
+    {
+      "path": "generated\\character\\hand_gauntlet_light_ss_a04c01_u_normal.png",
+      "bytes": 114378,
+      "sha256": "172341e9f6b545f491191b4c99713dc169cc6159d879d249b22f63f02f9b881c"
+    },
+    {
+      "path": "generated\\character\\hand_gauntlet_light_ss_a04c01_u_roughness.png",
+      "bytes": 15993,
+      "sha256": "a2dc21e1cf46165e41bfae7957ebf7ab60e0687096e38bd694e99393ceea25e2"
+    },
+    {
+      "path": "generated\\character\\head_human_caucasian_a01c01_m_basecolor.png",
+      "bytes": 242456,
+      "sha256": "2fa833ee2c1403d7369490107a49383d285a65c510365ba8353ce23b7462cca7"
+    },
+    {
+      "path": "generated\\character\\head_human_caucasian_a01c01_m_normal.png",
+      "bytes": 222369,
+      "sha256": "c2a80c6815cf7c1a7e9c917556b22581d17aef780d115aa22ed6b5356aa97bcc"
+    },
+    {
+      "path": "generated\\character\\head_human_caucasian_a01c01_m_roughness.png",
+      "bytes": 32224,
+      "sha256": "cee6565ec047df17c8ade234961fdae270a6501b42435801936ff4315843033a"
+    },
+    {
+      "path": "generated\\character\\inspection-contact-sheet.png",
+      "bytes": 313726,
+      "sha256": "6014a70eb9cf85affabd0c54576528b1b77504aaa1bddeab195f3707e3ae5695"
+    },
+    {
+      "path": "generated\\character\\leg_skirt_light_ss_a04c01_u_v01_basecolor.png",
+      "bytes": 404483,
+      "sha256": "e1ea6d650b8c8c53605864c3ed9cd9d6ebc319dfa71b7551ae9ff88a4106530f"
+    },
+    {
+      "path": "generated\\character\\leg_skirt_light_ss_a04c01_u_v01_normal.png",
+      "bytes": 325959,
+      "sha256": "4903219b545c647fb2f45465de8f1b5b8bdce31219cf6fc5f2e3097d46819c94"
+    },
+    {
+      "path": "generated\\character\\leg_skirt_light_ss_a04c01_u_v01_roughness.png",
+      "bytes": 48503,
+      "sha256": "eacf836619a6a3c3f9f71f07274c1180114218268864f45cf6f352c9dc0ba099"
+    },
+    {
+      "path": "generated\\character\\play-Death-00.png",
+      "bytes": 197906,
+      "sha256": "65bf25c8d79f980c3ee8cbf14ab4d20a6cdf357a8936d9292c13904344558351"
+    },
+    {
+      "path": "generated\\character\\play-Death-01.png",
+      "bytes": 177079,
+      "sha256": "21dcbc60be7d76b78dcb8d05520e11f891dcd5a509bf7a281b878c7e40b093a5"
+    },
+    {
+      "path": "generated\\character\\play-Death-02.png",
+      "bytes": 160672,
+      "sha256": "a8cabc1f3e0fdae9dd5229d4535b7ed4382f882561013c6ac53f742550af1aeb"
+    },
+    {
+      "path": "generated\\character\\play-Death-03.png",
+      "bytes": 153736,
+      "sha256": "bf2be9cbd15753b8389957a7ea7b6950e8a527433c1be5277763ade49e51c6b2"
+    },
+    {
+      "path": "generated\\character\\play-Death-04.png",
+      "bytes": 160983,
+      "sha256": "f23df8a00b07445c615b2222b9270fe1f86fe7dfa1c4c18dd4579b2c2aa869d4"
+    },
+    {
+      "path": "generated\\character\\play-Death-05.png",
+      "bytes": 168349,
+      "sha256": "b352cf3aa4433184213d2001d1a40d65057fa6fd85edf7e5c0398851975dc500"
+    },
+    {
+      "path": "generated\\character\\play-Death-06.png",
+      "bytes": 166771,
+      "sha256": "da18bfdb8e245fae3bba3895884f7907c9fa7b35029f5af8c04c957fe5aea9d2"
+    },
+    {
+      "path": "generated\\character\\play-Death-07.png",
+      "bytes": 174255,
+      "sha256": "98657686a26aaab4682a0037d9ee4e9babeeae099cff4a0c4c757294fb66c97b"
+    },
+    {
+      "path": "generated\\character\\play-Death-08.png",
+      "bytes": 174925,
+      "sha256": "212ed0622f767afce741c6327b374f78addebe19513187370fcc9bb953630bd3"
+    },
+    {
+      "path": "generated\\character\\play-Death-09.png",
+      "bytes": 179971,
+      "sha256": "76c319fb36bd3084ab637387d00450b287eccb40094393d21cb050438ace0560"
+    },
+    {
+      "path": "generated\\character\\play-Death-10.png",
+      "bytes": 173512,
+      "sha256": "655a2679148aff89605c91df2a58c637b4cfc451aaa267a5ab12938c8a50ded0"
+    },
+    {
+      "path": "generated\\character\\play-Death-11.png",
+      "bytes": 174705,
+      "sha256": "511b90c9ecac8fc1e37beedceb1fec519372b2127ececf7b32eb792619d407dc"
+    },
+    {
+      "path": "generated\\character\\play-Death-12.png",
+      "bytes": 174705,
+      "sha256": "511b90c9ecac8fc1e37beedceb1fec519372b2127ececf7b32eb792619d407dc"
+    },
+    {
+      "path": "generated\\character\\play-Death-13.png",
+      "bytes": 174705,
+      "sha256": "511b90c9ecac8fc1e37beedceb1fec519372b2127ececf7b32eb792619d407dc"
+    },
+    {
+      "path": "generated\\character\\play-Hit-00.png",
+      "bytes": 208630,
+      "sha256": "5aaa306690d7ce7a6501f14cdc210b236f6489fc07951723e92ca500bef60479"
+    },
+    {
+      "path": "generated\\character\\play-Hit-01.png",
+      "bytes": 226482,
+      "sha256": "5af634e17425ee69a6c0df2adb5bd4f0a24d183f8841caae6a7619808c98be8c"
+    },
+    {
+      "path": "generated\\character\\play-Hit-02.png",
+      "bytes": 233422,
+      "sha256": "4b53bff588f5a0ff31b1cbd780c25a0ae72abd35f73855335ade04363c99cbf4"
+    },
+    {
+      "path": "generated\\character\\play-Hit-03.png",
+      "bytes": 203773,
+      "sha256": "31abb4697124109cf0679cdaef697f474d8fb401fbbef62958eb69af61a709f5"
+    },
+    {
+      "path": "generated\\character\\play-Hit-04.png",
+      "bytes": 218950,
+      "sha256": "bdc4855caba567dcf5858808e428fcaa056edff027905e63884d369373e7ea36"
+    },
+    {
+      "path": "generated\\character\\play-Hit-05.png",
+      "bytes": 219671,
+      "sha256": "54ea98db135df5eb5fab82a1eff4095c007d41fed3091a8d4070c6e8a862c90a"
+    },
+    {
+      "path": "generated\\character\\play-Hit-06.png",
+      "bytes": 215569,
+      "sha256": "392c71cec782f878e5b62b30d3d38d2f1261079ff27153d7db5a049b3e30cd10"
+    },
+    {
+      "path": "generated\\character\\play-Hit-07.png",
+      "bytes": 213270,
+      "sha256": "bab7c9838df1e7c9305287a79a92edd80f213d3716704ed7590f4bd32ea11aa8"
+    },
+    {
+      "path": "generated\\character\\play-Hit-08.png",
+      "bytes": 213270,
+      "sha256": "bab7c9838df1e7c9305287a79a92edd80f213d3716704ed7590f4bd32ea11aa8"
+    },
+    {
+      "path": "generated\\character\\play-Hit-09.png",
+      "bytes": 213270,
+      "sha256": "bab7c9838df1e7c9305287a79a92edd80f213d3716704ed7590f4bd32ea11aa8"
+    },
+    {
+      "path": "generated\\character\\play-Hit-10.png",
+      "bytes": 213270,
+      "sha256": "bab7c9838df1e7c9305287a79a92edd80f213d3716704ed7590f4bd32ea11aa8"
+    },
+    {
+      "path": "generated\\character\\play-Idle-00.png",
+      "bytes": 212159,
+      "sha256": "b3520055432cc58f526a6147df17fcbf927f0fffcb6981af25a3cba2467db204"
+    },
+    {
+      "path": "generated\\character\\play-Idle-01.png",
+      "bytes": 211574,
+      "sha256": "af5cfe89c4a96570d19ab5da09f6f2e5baf4b06e363e3ffd3453d3762490eacc"
+    },
+    {
+      "path": "generated\\character\\play-Idle-02.png",
+      "bytes": 212701,
+      "sha256": "8f96febce4411539910fc2406d864fff79150a6e3287c665704825aaf3ae5a77"
+    },
+    {
+      "path": "generated\\character\\play-Idle-03.png",
+      "bytes": 213662,
+      "sha256": "86f3fcd6838dda8915a2b2d10edbf856781721d441af03abbd5e4a30cdce3e5e"
+    },
+    {
+      "path": "generated\\character\\play-Idle-04.png",
+      "bytes": 212920,
+      "sha256": "2cc32454a37e38954c166f78cb36823496906a03cb970dc9434d539a261a6f10"
+    },
+    {
+      "path": "generated\\character\\play-Idle-05.png",
+      "bytes": 212576,
+      "sha256": "f41d1148d64c9fcae88fc57193a2e9ea2502fb046610f58571a3e468617e24bf"
+    },
+    {
+      "path": "generated\\character\\play-Idle-06.png",
+      "bytes": 213057,
+      "sha256": "05c504a8c61e0b3a7eaf30a7a2b98f0b588ae03b4a1fc956f89d33baae8190a1"
+    },
+    {
+      "path": "generated\\character\\play-Idle-07.png",
+      "bytes": 213083,
+      "sha256": "54a823ff9e5c05297a3cb7d110d1a3e00527fda6b56b976819bdef6fd1790ed3"
+    },
+    {
+      "path": "generated\\character\\play-Idle-08.png",
+      "bytes": 212652,
+      "sha256": "79904370d2db62a45e4b1812330bfcad8624a31720a1712ffa3544bb589a2e3c"
+    },
+    {
+      "path": "generated\\character\\play-Idle-09.png",
+      "bytes": 211849,
+      "sha256": "fd7d627c809198c81cebfa62f691d4d937acbb7b9dc0113158ff7cbf2f9974e3"
+    },
+    {
+      "path": "generated\\character\\play-Idle-10.png",
+      "bytes": 212428,
+      "sha256": "cee254c52b9e21636798347d3ae62c641fddb8328d4eb3870eb1480c16051237"
+    },
+    {
+      "path": "generated\\character\\play-LightningEnd-00.png",
+      "bytes": 240001,
+      "sha256": "2f3621760d035264f6d0040a1f0ff78807e709d24d322fa63b8759e56a3b0cf2"
+    },
+    {
+      "path": "generated\\character\\play-LightningEnd-01.png",
+      "bytes": 214374,
+      "sha256": "ea2a680d6f94e44c83b06e746dce81e1875ba279de312ba81497d06c22613759"
+    },
+    {
+      "path": "generated\\character\\play-LightningEnd-02.png",
+      "bytes": 214649,
+      "sha256": "b1616e5f21cc4b8fe2bc97118ec54e6135c3caa634e5e65e993f240203e0afe6"
+    },
+    {
+      "path": "generated\\character\\play-LightningEnd-03.png",
+      "bytes": 214649,
+      "sha256": "b1616e5f21cc4b8fe2bc97118ec54e6135c3caa634e5e65e993f240203e0afe6"
+    },
+    {
+      "path": "generated\\character\\play-LightningEnd-04.png",
+      "bytes": 214649,
+      "sha256": "b1616e5f21cc4b8fe2bc97118ec54e6135c3caa634e5e65e993f240203e0afe6"
+    },
+    {
+      "path": "generated\\character\\play-LightningLoop-00.png",
+      "bytes": 235832,
+      "sha256": "c8a43ea3bf39ac34432c860527a5a4f5729fb826a6ce235451b857648097b2e7"
+    },
+    {
+      "path": "generated\\character\\play-LightningLoop-01.png",
+      "bytes": 236513,
+      "sha256": "f7e5ca9339dfb539c15a5681db8082a22c97508f100823f85c641d726c6c39db"
+    },
+    {
+      "path": "generated\\character\\play-LightningLoop-02.png",
+      "bytes": 238019,
+      "sha256": "3bbb05c84ae41d8d90715a91fcf234d989714ea4af9f48df31f02d22d3a4b2e8"
+    },
+    {
+      "path": "generated\\character\\play-LightningLoop-03.png",
+      "bytes": 236533,
+      "sha256": "29f6f79a1f7addc36de7e8cad9d7cf7c671df12e30223ad6f6ae6deb238942e1"
+    },
+    {
+      "path": "generated\\character\\play-LightningLoop-04.png",
+      "bytes": 235120,
+      "sha256": "85a1c837dd9492bf40d1bb7b92f467f27356642ae54dc86c5d83a3e91ccea2b2"
+    },
+    {
+      "path": "generated\\character\\play-LightningLoop-05.png",
+      "bytes": 235837,
+      "sha256": "67e457c4991a299c4876d2e88a3821de1590f3488295eac28e3d4b68712dab35"
+    },
+    {
+      "path": "generated\\character\\play-LightningLoop-06.png",
+      "bytes": 236536,
+      "sha256": "3f571afed72d96cb4d2ec12e6572bb4f5d1b294e1dbf7d69759401ce6d298518"
+    },
+    {
+      "path": "generated\\character\\play-LightningLoop-07.png",
+      "bytes": 237864,
+      "sha256": "941eb98e9adc7cb8944a69ed08862be81a5c01f5b568994ea4c61a95f1a94c7c"
+    },
+    {
+      "path": "generated\\character\\play-LightningStart-00.png",
+      "bytes": 230050,
+      "sha256": "0de147ef72ce1f00c440e477cef4d56884358f5a5d87816abea5c82534f19ac1"
+    },
+    {
+      "path": "generated\\character\\play-LightningStart-01.png",
+      "bytes": 231344,
+      "sha256": "43aa5d3415945480dc23d8f75b58e3769f62b0c7a1cc9179766ce5d0274597a7"
+    },
+    {
+      "path": "generated\\character\\play-LightningStart-02.png",
+      "bytes": 234267,
+      "sha256": "fa8c7e03744824b975ad5b285fea653bf0a406d4a5a32db72b389afb94795311"
+    },
+    {
+      "path": "generated\\character\\play-LightningStart-03.png",
+      "bytes": 235185,
+      "sha256": "2b0d2ef291fe39b81955ea431c995cd08c46bbb91aa6bc26e913546234d16aa9"
+    },
+    {
+      "path": "generated\\character\\play-LightningStart-04.png",
+      "bytes": 235296,
+      "sha256": "ca7d5932609cc44fccccaf6c3d9be4b81c6d0cd161597b3d39621d96db8307af"
+    },
+    {
+      "path": "generated\\character\\play-LightningStart-05.png",
+      "bytes": 235228,
+      "sha256": "11ee28173dde49ee8f06386a61fad1def15723b79b791069d7700da6c59f78db"
+    },
+    {
+      "path": "generated\\character\\play-LightningStart-06.png",
+      "bytes": 235228,
+      "sha256": "11ee28173dde49ee8f06386a61fad1def15723b79b791069d7700da6c59f78db"
+    },
+    {
+      "path": "generated\\character\\play-LightningStart-07.png",
+      "bytes": 235228,
+      "sha256": "11ee28173dde49ee8f06386a61fad1def15723b79b791069d7700da6c59f78db"
+    },
+    {
+      "path": "generated\\character\\play-Run-00.png",
+      "bytes": 205632,
+      "sha256": "537bc5c19df830aaee82c2b25457bccad23568b6aae4b9a4039048b6848837bf"
+    },
+    {
+      "path": "generated\\character\\play-Run-01.png",
+      "bytes": 175108,
+      "sha256": "8b6174634c81cdb4ccb5fd2cbdfb34ca03dcf47ab4dae1fa42dd3509373e23fd"
+    },
+    {
+      "path": "generated\\character\\play-Run-02.png",
+      "bytes": 187258,
+      "sha256": "5b994ebbbe909358ef9ecf42793ea4a6cb2b70ed6444d0efe082539a2d1bb7e3"
+    },
+    {
+      "path": "generated\\character\\play-Run-03.png",
+      "bytes": 205522,
+      "sha256": "6096196e4a6b152061a4c254a79dcd4d7043fc486c71754d922bd9ee71328ef5"
+    },
+    {
+      "path": "generated\\character\\play-Run-04.png",
+      "bytes": 173998,
+      "sha256": "89cfc3e98ca190f6feab64460a8e1e5138a76db1508e107bf13b94821536a424"
+    },
+    {
+      "path": "generated\\character\\play-Run-05.png",
+      "bytes": 187082,
+      "sha256": "fcda113796b188bf4b3834a5d68e34c4b5fd55b86cef1cfb6fa289d0989521a2"
+    },
+    {
+      "path": "generated\\character\\play-Run-06.png",
+      "bytes": 205645,
+      "sha256": "0df629fcfa94af2be4090544b52616bf90bf1e1ce3f1de9beb4909ca4a69199f"
+    },
+    {
+      "path": "generated\\character\\play-Run-07.png",
+      "bytes": 173959,
+      "sha256": "74229ccaa838065c01633f0bc9551e4cad566e80f926f5228532b12a79cf870e"
+    },
+    {
+      "path": "generated\\character\\playback-Death.gif",
+      "bytes": 552795,
+      "sha256": "6dcea05507ec031d085a2efc66ec5dd7b3da0894c058218a1cecc42554ade2aa"
+    },
+    {
+      "path": "generated\\character\\playback-LightningLoop.gif",
+      "bytes": 464205,
+      "sha256": "13e15f8c1db74cf4bc215630d419ccd41685af3077d0a1b5a1f4f595b799f369"
+    },
+    {
+      "path": "generated\\character\\playback-review.png",
+      "bytes": 249536,
+      "sha256": "5181f065b988265b4018ffe23a0d78c238f82751d17e924ed129f4bf91b1f704"
+    },
+    {
+      "path": "generated\\character\\playback-Run.gif",
+      "bytes": 292779,
+      "sha256": "b2119dce8e3aecb85f5b62519693b869ba974238f5727443af0d39dcf247d36d"
+    },
+    {
+      "path": "generated\\character\\waist_belt_light_ss_a04c01_u_basecolor.png",
+      "bytes": 122212,
+      "sha256": "eef4749317a9032faf6e08e81a4a4c592d3f1e12230e41605bcbc5446a6c572c"
+    },
+    {
+      "path": "generated\\character\\waist_belt_light_ss_a04c01_u_normal.png",
+      "bytes": 112957,
+      "sha256": "31f44ff832d50367f698a7d8c0395c4975215b3c9e97841586a1b8ae5ec38eca"
+    },
+    {
+      "path": "generated\\character\\waist_belt_light_ss_a04c01_u_roughness.png",
+      "bytes": 13823,
+      "sha256": "3d9861e29ea12c82febabd939498eb42186b3a96949792a6f6d4d02c474e6e31"
+    },
+    {
+      "path": "scripts\\character_export.py",
+      "bytes": 3481,
+      "sha256": "344eb2091dc11aafada925dd60af3db615013059a6327cc2e18fb8c4d391e569"
+    },
+    {
+      "path": "scripts\\character_materials.py",
+      "bytes": 10377,
+      "sha256": "9b0dc41aed33178cc986942d003fae7817baef6b540d9f4db73f2a5afc20133a"
+    },
+    {
+      "path": "scripts\\character_source.py",
+      "bytes": 5400,
+      "sha256": "74100753d31e8fc99d935f2bda7d26f2beed5957b106acb088ec8418bdfa40d9"
+    },
+    {
+      "path": "scripts\\convert_character.py",
+      "bytes": 8635,
+      "sha256": "fb6c6e97fe393615c9928d957b80ad79fb41be6847d0551c1e041118b9224b17"
+    },
+    {
+      "path": "scripts\\make_character_previews.py",
+      "bytes": 1694,
+      "sha256": "816f7a33f9e5b8acfc28117d1a8cab8b868279b33b5a638820b0c8c59c2c9f27"
+    },
+    {
+      "path": "scripts\\open_character_reference.py",
+      "bytes": 570,
+      "sha256": "b8fc863e9c12c1a93aeecf60382a036976811c6643485ab3f1ba65578758edeb"
+    },
+    {
+      "path": "scripts\\probe_character_facial.py",
+      "bytes": 2128,
+      "sha256": "d0d431650403c1df01968006de7a11f1ee74a4ab00e7c9b560d18d12462be696"
+    },
+    {
+      "path": "scripts\\record_character_artifacts.py",
+      "bytes": 1665,
+      "sha256": "f3dac42f428a6f027a5b9c9f316ba2ce23c1b779c641e12e728e691bfd1fc7d1"
+    },
+    {
+      "path": "scripts\\render_character_blender.py",
+      "bytes": 927,
+      "sha256": "162417f46dcd0e0d0aa4ebd92f165c1f237a1b030d2b126e4a52a381ee1b4bff"
+    },
+    {
+      "path": "scripts\\select_character.py",
+      "bytes": 6582,
+      "sha256": "c3748fa04d9722fa1b284ca655d71bf84c283ada39f97b865fb2a462b8cf7ba2"
+    },
+    {
+      "path": "scripts\\stage_character.py",
+      "bytes": 1420,
+      "sha256": "171360abb3ec7c206fa656dd22a80cb7cf42f118bd0ce5a63d53c5c20f93cda6"
+    },
+    {
+      "path": "scripts\\validate_character_glb.py",
+      "bytes": 4058,
+      "sha256": "de7764cc8bc3f095cf865e2f87ff1ec74e8beb58162a58b9b19e3405d7aa722d"
+    },
+    {
+      "path": "scripts\\validate_character_roundtrip.py",
+      "bytes": 5723,
+      "sha256": "16f33c710e9c61be6ccb808b888f9865841340cf96d9b617c2403c704b48c194"
+    }
+  ],
+  "investigationExactMatches": [
+    "/resources/art/dynamic/spec/bmnnew_skeleton.gr2",
+    "/resources/anim/humanoid/bmnnew/fp_2h_elect_drain_start.jba",
+    "/resources/anim/humanoid/bmnnew/fp_2h_elect_drain_loop.jba",
+    "/resources/anim/humanoid/bmnnew/cb_unarmed_idle_right_1.jba",
+    "/resources/anim/humanoid/bmnnew/mv_cb_unarmed_run_forward.jba",
+    "/resources/anim/humanoid/bmnnew/dg_unarmed_crit_damage_right_1.jba",
+    "/resources/anim/humanoid/bmnnew/dg_death_1.jba"
+  ],
+  "totalRecordedBytes": 38973202
+}

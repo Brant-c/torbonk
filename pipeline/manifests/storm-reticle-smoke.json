@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": [
+    "Original April green projector color is used",
+    "Target location is real Korriban terrain",
+    "Actual Force Storm starts",
+    "Ground reticle appears at the exact damage center",
+    "Existing Storm damage path remains active",
+    "Green circle actually renders through the gameplay camera",
+    "Existing area upgrade can be selected",
+    "Rarity-scaled upgrade grows the live damage radius and rendered circle",
+    "A smaller live gameplay radius shrinks the existing indicator",
+    "Circle persists after the caster gesture and damage still ticks",
+    "Natural end immediately removes the area indicator",
+    "Cancellation fixture begins",
+    "Cancellation frees the indicator",
+    "Death fixture begins",
+    "Player death clears the indicator",
+    "Restart fixture begins",
+    "Run reset frees the circle and restores the original radius"
+  ],
+  "failure": null,
+  "baseRadius": 0.32,
+  "grownRadius": 0.41599998,
+  "baseWidth": 0.84020233,
+  "grownWidth": 1.0922699,
+  "basePixels": 1835,
+  "grownPixels": 3035,
+  "renderedFrames": 21,
+  "scope": "One brief rendered Korriban feature smoke; one review capture; no historical suites, benchmarks or archive hashing."
+}

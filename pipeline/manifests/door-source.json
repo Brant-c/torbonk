@@ -1,0 +1,112 @@
+{
+  "profile": "April2012",
+  "model": "/resources/art/static/area/all_all/arch/all_sith_interior_hall_door_large.gr2",
+  "materialNames": [
+    "kor_acad_higharch"
+  ],
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_area_all_arch_b_1.tor",
+      "archiveHash": "0xF2E8A6152575480C",
+      "entryOffset": 337914888,
+      "headerSize": 36,
+      "dataOffset": 337914924,
+      "compressedSize": 12049,
+      "length": 29504,
+      "compressionMethod": 1,
+      "crc32Index": "235ed0cc",
+      "path": "/resources/art/static/area/all_all/arch/all_sith_interior_hall_door_large.gr2",
+      "sha256": "d4708978fdf34720f310795db695776f156e4515917ff08fc2fa7d871374db17",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\arch\\all_sith_interior_hall_door_large.gr2",
+      "lookupEvidence": "exact canonical path \u2192 lookup3 archive hash; unique April entry"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_korriban_1.tor",
+      "archiveHash": "0x77BBA2BCC36FC00F",
+      "entryOffset": 9573505,
+      "headerSize": 36,
+      "dataOffset": 9573541,
+      "compressedSize": 472,
+      "length": 1880,
+      "compressionMethod": 1,
+      "crc32Index": "c37a6f12",
+      "path": "/resources/art/shaders/materials/kor_acad_higharch.mat",
+      "sha256": "46dd67d9d5e183045d9a747a7730306081d5e5f974973879511a94d0c78296f1",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\kor_acad_higharch.mat",
+      "lookupEvidence": "exact canonical path \u2192 lookup3 archive hash; unique April entry"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_korriban_1.tor",
+      "archiveHash": "0xA997E01DBA023225",
+      "entryOffset": 9608075,
+      "headerSize": 36,
+      "dataOffset": 9608111,
+      "compressedSize": 820150,
+      "length": 1398256,
+      "compressionMethod": 1,
+      "crc32Index": "433c4def",
+      "path": "/resources/art/static/area/kor_korriban/arch/texture/kor_acad_higharch_d.dds",
+      "sha256": "7eb442d0f4fe29223052cbf71ce28f795459fd51315d065d4e6b24e3ad2c0ddc",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\kor_korriban\\arch\\texture\\kor_acad_higharch_d.dds",
+      "lookupEvidence": "exact canonical path \u2192 lookup3 archive hash; unique April entry"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_korriban_1.tor",
+      "archiveHash": "0x7C72CDD10F85FEC6",
+      "entryOffset": 10428261,
+      "headerSize": 36,
+      "dataOffset": 10428297,
+      "compressedSize": 323814,
+      "length": 1398256,
+      "compressionMethod": 1,
+      "crc32Index": "f1116bcd",
+      "path": "/resources/art/static/area/kor_korriban/arch/texture/kor_acad_higharch_n.dds",
+      "sha256": "780dfa2cf89567d075bb2ef99223586a181171389ed57aff8c690bb947ac98a1",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\kor_korriban\\arch\\texture\\kor_acad_higharch_n.dds",
+      "lookupEvidence": "exact canonical path \u2192 lookup3 archive hash; unique April entry"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_korriban_1.tor",
+      "archiveHash": "0xF3E57E5E5AD1893C",
+      "entryOffset": 10752111,
+      "headerSize": 36,
+      "dataOffset": 10752147,
+      "compressedSize": 215037,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "7272fc03",
+      "path": "/resources/art/static/area/kor_korriban/arch/texture/kor_acad_higharch_s.dds",
+      "sha256": "ddf96f31b19e7ca85301548006567a8cf6d57893a43fa45f95788996dae5175c",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\kor_korriban\\arch\\texture\\kor_acad_higharch_s.dds",
+      "lookupEvidence": "exact canonical path \u2192 lookup3 archive hash; unique April entry"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "investigation evidence",
+      "to": "/resources/art/static/area/all_all/arch/all_sith_interior_hall_door_large.gr2",
+      "relation": "verified static prop"
+    },
+    {
+      "from": "/resources/art/static/area/all_all/arch/all_sith_interior_hall_door_large.gr2",
+      "to": "/resources/art/shaders/materials/kor_acad_higharch.mat",
+      "relation": "GR2 material table"
+    },
+    {
+      "from": "/resources/art/shaders/materials/kor_acad_higharch.mat",
+      "to": "/resources/art/static/area/kor_korriban/arch/texture/kor_acad_higharch_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/kor_acad_higharch.mat",
+      "to": "/resources/art/static/area/kor_korriban/arch/texture/kor_acad_higharch_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/kor_acad_higharch.mat",
+      "to": "/resources/art/static/area/kor_korriban/arch/texture/kor_acad_higharch_s.dds",
+      "relation": "GlossMap"
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,99 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 4,
+  "maximumDecodedBytes": 2097152,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xEC874439DE9F49C2",
+      "entryOffset": 59183007,
+      "headerSize": 36,
+      "dataOffset": 59183043,
+      "compressedSize": 146848,
+      "length": 157934,
+      "compressionMethod": 1,
+      "crc32Index": "46a272a5",
+      "path": "/resources/gfx/drawtext_fonts.swf",
+      "sha256": "481024b3ac47ff70e2345bd9cead332636d4bfd89e5fff6850a89b12aa8ebb45",
+      "output": "source-assets\\april2012\\resources\\gfx\\drawtext_fonts.swf",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x994442C9A98C7211",
+      "entryOffset": 59442392,
+      "headerSize": 36,
+      "dataOffset": 59442428,
+      "compressedSize": 185581,
+      "length": 331224,
+      "compressionMethod": 1,
+      "crc32Index": "ab082e54",
+      "path": "/resources/gfx/fonts/swtor_fonts.gfx",
+      "sha256": "82e7323febc37b75ad4832377869323cd647402f1a1cb7875c94d5dd5d2177fe",
+      "output": "source-assets\\april2012\\resources\\gfx\\fonts\\swtor_fonts.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gamedata_1.tor",
+      "archiveHash": "0x0A3BD537648B4FCF",
+      "entryOffset": 7297938,
+      "headerSize": 36,
+      "dataOffset": 7297974,
+      "compressedSize": 634,
+      "length": 2595,
+      "compressionMethod": 1,
+      "crc32Index": "5e467531",
+      "path": "/resources/guixml/defaults.xml",
+      "sha256": "435733931f22970d8a11c1d08805df78ed0e2991b4a3258a1a7c1a2c9a8a9b63",
+      "output": "source-assets\\april2012\\resources\\guixml\\defaults.xml",
+      "archiveSha256": "6c66e6dd3ba17b274fccaa5f354929ba3b0837a9b2f74503c229240bf8a1cf82",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gamedata_1.tor",
+      "archiveHash": "0xECA8BA0291E64BEA",
+      "entryOffset": 7310217,
+      "headerSize": 36,
+      "dataOffset": 7310253,
+      "compressedSize": 964,
+      "length": 5138,
+      "compressionMethod": 1,
+      "crc32Index": "531c4c27",
+      "path": "/resources/guixml/stylesetgui.xml",
+      "sha256": "79bb4e8e10865c3c5c14a004d47563feeb89f42e17779c3c8dcc12a64511d542",
+      "output": "source-assets\\april2012\\resources\\guixml\\stylesetgui.xml",
+      "archiveSha256": "6c66e6dd3ba17b274fccaa5f354929ba3b0837a9b2f74503c229240bf8a1cf82",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "flytext research",
+      "to": "/resources/gfx/drawtext_fonts.swf",
+      "relation": "original embedded font candidates; role must be verified separately"
+    },
+    {
+      "from": "flytext research",
+      "to": "/resources/gfx/fonts/swtor_fonts.gfx",
+      "relation": "original embedded font candidates; role must be verified separately"
+    },
+    {
+      "from": "flytext research",
+      "to": "/resources/guixml/defaults.xml",
+      "relation": "GUI definitions inspected for font-role binding"
+    },
+    {
+      "from": "flytext research",
+      "to": "/resources/guixml/stylesetgui.xml",
+      "relation": "GUI definitions inspected for font-role binding"
+    }
+  ],
+  "unresolved": [
+    "Exact native flytext font-face binding has not been recovered.",
+    "Nineteen historical/production ui_flytext movie candidate lookups have no April entry match.",
+    "Original outline/shadow filter and native renderer easing remain unresolved."
+  ],
+  "selection": "Bounded April flytext font/config research"
+}

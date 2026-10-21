@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3]
+[ext_resource type="Script" path="res://Gameplay/EnemyAgent.cs" id="1"]
+[ext_resource type="Script" path="res://Gameplay/Health.cs" id="2"]
+[ext_resource type="Script" path="res://Gameplay/EnemyPresentation.cs" id="3"]
+[ext_resource type="PackedScene" path="res://Assets/Enemies/shyrack.glb" id="4"]
+
+[sub_resource type="CapsuleShape3D" id="Capsule"]
+radius = 0.034
+height = 0.16
+margin = 0.0005
+[node name="Shyrack" type="CharacterBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.08, 0)
+shape = SubResource("Capsule")
+[node name="Actor" type="Node3D" parent="."]
+script = ExtResource("1")
+Team = 2
+DisplayName = "Shyrack Forager"
+ExperienceReward = 4
+CollisionRadius = 0.034
+CollisionHeight = 0.16
+MoveSpeed = 0.28
+AttackDamage = 3
+AttackInterval = 1.35
+MeleeRange = 0.12
+AimHeight = 0.15
+[node name="Health" type="Node" parent="Actor"]
+script = ExtResource("2")
+Maximum = 30.0
+[node name="Visual" type="Node3D" parent="Actor"]
+script = ExtResource("3")
+[node name="Original" parent="Actor/Visual" instance=ExtResource("4")]
+scale = Vector3(1.15, 1.15, 1.15)
+[node name="Nameplate" type="Label3D" parent="Actor"]
+position = Vector3(0, 0.3, 0)
+pixel_size = 0.00032
+billboard = 1
+text = "Shyrack Forager"
+font_size = 22
+outline_size = 6
+modulate = Color(1, 0.42, 0.23, 1)

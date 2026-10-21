@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": [
+    "Lightning starts unlocked in one twelve-slot bar; original clips remain available",
+    "nearby cluster is targetable",
+    "locked abilities cannot cast or offer their specific upgrades",
+    "shock unlock appears as a paused level-up choice",
+    "shock selection unlocks the ability once",
+    "shock appears on the existing bar",
+    "storm unlock appears as a paused level-up choice",
+    "storm selection unlocks the ability once",
+    "storm appears on the existing bar",
+    "ability-specific upgrades become eligible after unlock",
+    "Lightning, Shock and Storm deal damage through Health",
+    "Storm hits several hostiles at its fixed center",
+    "Shock has an independent cooldown while Storm is active",
+    "level pauses combat and shows three offers",
+    "Artifact radius modifier updates gameplay and upgrade state",
+    "death stops every ability",
+    "restart relocks new abilities and clears ranks, cooldowns and radius",
+    "rendered runtime is alive"
+  ],
+  "failure": null,
+  "renderedFrames": 1556,
+  "scope": "One brief B5 rendered smoke; no historical regressions, archive rehash or benchmarks."
+}

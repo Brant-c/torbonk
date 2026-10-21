@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\SWTORClassic\torbonk\pipeline\scripts\b6_blade_convert.py", line 7, in <module>
+    image=bpy.data.images.load(str(path));image.filepath_raw=str(ROOT/f'godot/Assets/Enemies/{stem}.png');image.file_format='PNG';image.save()
+                                                                                                                                  ~~~~~~~~~~^^
+RuntimeError: Error: Image 'dynamic_saber_tip_core_white.dds' does not have any image data
+
+
+Error: script failed, file: 'pipeline/scripts/b6_blade_convert.py', exiting.
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

@@ -1,0 +1,2142 @@
+{
+  "date": "2026-10-20",
+  "purpose": "Normalized selected area and GOM evidence; all transforms remain authored/local.",
+  "areas": [
+    {
+      "resource": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_areadat_1.tor",
+        "archiveHash": "0x089BCC9B923D72B7",
+        "entryOffset": 111047794,
+        "compressionMethod": 1,
+        "length": 337017,
+        "sha256": "ce05e870ec10ecc70845684e2f5f77a27f79aa5c9fd983206310c94f89e77a63",
+        "prefixHex": "21-0D-0A-21-20-41-72-65-61-20-53-70-65-63-69-66-69-63-61-74-69-6F-6E-20-66-6F-72-20-6B-6F-72-5F-72-65-62-75-69-6C-64-5F",
+        "hashCoverage": "whole decoded resource",
+        "path": "/resources/world/areas/4611686022825732973/area.dat",
+        "profile": "April2012",
+        "parser": "SwtorResearch/0.2.0"
+      },
+      "kind": "area",
+      "areaId": "4611686022825732973",
+      "room": null,
+      "sections": {
+        "rooms": 219,
+        "assets": 1393,
+        "paths": 1297,
+        "schemes": 19,
+        "terraintextures": 22,
+        "dydtextures": 7,
+        "dydchannelparams": 13,
+        "settings": 12
+      },
+      "section": "rooms",
+      "totalMatches": 219,
+      "start": 0,
+      "records": [
+        {
+          "line": 6,
+          "text": "_everywhere_"
+        },
+        {
+          "line": 7,
+          "text": "Default"
+        },
+        {
+          "line": 8,
+          "text": "baseroom"
+        },
+        {
+          "line": 9,
+          "text": "main"
+        },
+        {
+          "line": 10,
+          "text": "tomb_03_room_01"
+        },
+        {
+          "line": 11,
+          "text": "tomb_03_room_outside"
+        },
+        {
+          "line": 12,
+          "text": "tomb_02_room_02"
+        },
+        {
+          "line": 13,
+          "text": "tomb_03_room_02"
+        },
+        {
+          "line": 14,
+          "text": "tomb_03_room_03"
+        },
+        {
+          "line": 15,
+          "text": "tomb_02_room_01"
+        },
+        {
+          "line": 16,
+          "text": "tomb_04_room_01"
+        },
+        {
+          "line": 17,
+          "text": "sith_academy_entrance"
+        },
+        {
+          "line": 18,
+          "text": "sith_academy_main_floor_one"
+        },
+        {
+          "line": 19,
+          "text": "sith_academy_main_floor_one_tombs"
+        },
+        {
+          "line": 20,
+          "text": "sith_acad_floor1_rm02"
+        },
+        {
+          "line": 21,
+          "text": "sith_acad_floor1_rm02_cnrhall"
+        },
+        {
+          "line": 22,
+          "text": "sith_acad_floor1_rm02_hall"
+        },
+        {
+          "line": 23,
+          "text": "sith_acad_floor1_rm05"
+        },
+        {
+          "line": 24,
+          "text": "sith_acad_floor1_rm05_hall"
+        },
+        {
+          "line": 25,
+          "text": "sith_acad_floor1_hall1"
+        },
+        {
+          "line": 26,
+          "text": "sith_acad_floor1_rm08"
+        },
+        {
+          "line": 27,
+          "text": "sith_acad_floor1_rm08_thall"
+        },
+        {
+          "line": 28,
+          "text": "sith_acad_floor1_rm08_cnrhall"
+        },
+        {
+          "line": 29,
+          "text": "sith_acad_floor1_rm10"
+        },
+        {
+          "line": 30,
+          "text": "sith_acad_floor1_rm10_hall"
+        },
+        {
+          "line": 31,
+          "text": "sith_acad_floor2_elevator"
+        },
+        {
+          "line": 32,
+          "text": "sith_acad_floor1_rm15"
+        },
+        {
+          "line": 33,
+          "text": "sith_acad_floor1_rm15_hall"
+        },
+        {
+          "line": 34,
+          "text": "sith_acad_floor1_rm12"
+        },
+        {
+          "line": 35,
+          "text": "sith_acad_floor1_rm11"
+        }
+      ],
+      "nextStart": 30,
+      "coordinateEvidence": "Raw authored Position/Rotation/Scale and parent chain. No world transform or gameplay spawn behavior inferred.",
+      "bindingEvidence": "Asset IDs join only the same area's ASSETS table. Paths/properties do not prove runtime IDs, Hydra dispatch or encounter execution.",
+      "profile": "April2012",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "resource": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_areadat_1.tor",
+        "archiveHash": "0x089BCC9B923D72B7",
+        "entryOffset": 111047794,
+        "compressionMethod": 1,
+        "length": 337017,
+        "sha256": "ce05e870ec10ecc70845684e2f5f77a27f79aa5c9fd983206310c94f89e77a63",
+        "prefixHex": "21-0D-0A-21-20-41-72-65-61-20-53-70-65-63-69-66-69-63-61-74-69-6F-6E-20-66-6F-72-20-6B-6F-72-5F-72-65-62-75-69-6C-64-5F",
+        "hashCoverage": "whole decoded resource",
+        "path": "/resources/world/areas/4611686022825732973/area.dat",
+        "profile": "April2012",
+        "parser": "SwtorResearch/0.2.0"
+      },
+      "kind": "area",
+      "areaId": "4611686022825732973",
+      "room": null,
+      "sections": {
+        "rooms": 219,
+        "assets": 1393,
+        "paths": 1297,
+        "schemes": 19,
+        "terraintextures": 22,
+        "dydtextures": 7,
+        "dydchannelparams": 13,
+        "settings": 12
+      },
+      "section": "terraintextures",
+      "totalMatches": 22,
+      "start": 0,
+      "records": [
+        {
+          "line": 2938,
+          "text": "0:/art/static/area/kor_korriban/terrain_map/ter_kor_rockyground_d.dds::0:2"
+        },
+        {
+          "line": 2939,
+          "text": "1:/art/static/area/kor_korriban/terrain_map/ter_kor_dirt_d.dds::0:2"
+        },
+        {
+          "line": 2940,
+          "text": "3:/art/static/area/kor_korriban/terrain_map/ter_kor_rock_purple_d.dds::0:2"
+        },
+        {
+          "line": 2941,
+          "text": "5:"
+        },
+        {
+          "line": 2942,
+          "text": "6:"
+        },
+        {
+          "line": 2943,
+          "text": "7:"
+        },
+        {
+          "line": 2944,
+          "text": "8:"
+        },
+        {
+          "line": 2945,
+          "text": "9:"
+        },
+        {
+          "line": 2946,
+          "text": "10:"
+        },
+        {
+          "line": 2947,
+          "text": "11:"
+        },
+        {
+          "line": 2948,
+          "text": "12:"
+        },
+        {
+          "line": 2949,
+          "text": "13:"
+        },
+        {
+          "line": 2950,
+          "text": "14:"
+        },
+        {
+          "line": 2951,
+          "text": "15:"
+        },
+        {
+          "line": 2952,
+          "text": "16:"
+        },
+        {
+          "line": 2953,
+          "text": "17:"
+        },
+        {
+          "line": 2954,
+          "text": "18:bwa:ter_kor_sand_trodden:0"
+        },
+        {
+          "line": 2955,
+          "text": "19:bwa:ter_kor_sand_trodden2:0"
+        },
+        {
+          "line": 2956,
+          "text": "20:bwa:ter_kor_rough:0"
+        },
+        {
+          "line": 2957,
+          "text": "21:"
+        },
+        {
+          "line": 2958,
+          "text": "2:bwa:ter_kor_vod_ruins_floor:0"
+        },
+        {
+          "line": 2959,
+          "text": "4:bwa:ter_kor_metal01:0"
+        }
+      ],
+      "nextStart": null,
+      "coordinateEvidence": "Raw authored Position/Rotation/Scale and parent chain. No world transform or gameplay spawn behavior inferred.",
+      "bindingEvidence": "Asset IDs join only the same area's ASSETS table. Paths/properties do not prove runtime IDs, Hydra dispatch or encounter execution.",
+      "profile": "April2012",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "resource": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_areadat_1.tor",
+        "archiveHash": "0x089BCC9B923D72B7",
+        "entryOffset": 111047794,
+        "compressionMethod": 1,
+        "length": 337017,
+        "sha256": "ce05e870ec10ecc70845684e2f5f77a27f79aa5c9fd983206310c94f89e77a63",
+        "prefixHex": "21-0D-0A-21-20-41-72-65-61-20-53-70-65-63-69-66-69-63-61-74-69-6F-6E-20-66-6F-72-20-6B-6F-72-5F-72-65-62-75-69-6C-64-5F",
+        "hashCoverage": "whole decoded resource",
+        "path": "/resources/world/areas/4611686022825732973/area.dat",
+        "profile": "April2012",
+        "parser": "SwtorResearch/0.2.0"
+      },
+      "kind": "area",
+      "areaId": "4611686022825732973",
+      "room": null,
+      "sections": {
+        "rooms": 219,
+        "assets": 1393,
+        "paths": 1297,
+        "schemes": 19,
+        "terraintextures": 22,
+        "dydtextures": 7,
+        "dydchannelparams": 13,
+        "settings": 12
+      },
+      "section": "assets",
+      "totalMatches": 1,
+      "start": 0,
+      "records": [
+        {
+          "assetId": "4611686022825732977",
+          "path": "\\engine\\heightmap.hms",
+          "line": 226
+        }
+      ],
+      "nextStart": null,
+      "coordinateEvidence": "Raw authored Position/Rotation/Scale and parent chain. No world transform or gameplay spawn behavior inferred.",
+      "bindingEvidence": "Asset IDs join only the same area's ASSETS table. Paths/properties do not prove runtime IDs, Hydra dispatch or encounter execution.",
+      "profile": "April2012",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "resource": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_areadat_1.tor",
+        "archiveHash": "0x488A0E1CF84A0B81",
+        "entryOffset": 112558935,
+        "compressionMethod": 1,
+        "length": 75001,
+        "sha256": "d77367f04d7b9269de9eeebdfdd04a52213b3a4f82f074f725caa4ffdcc7c855",
+        "prefixHex": "21-0D-0A-21-20-52-6F-6F-6D-20-53-70-65-63-69-66-69-63-61-74-69-6F-6E-0D-0A-21-0D-0A-56-65-72-73-69-6F-6E-3D-34-0D-0A-5B",
+        "hashCoverage": "whole decoded resource",
+        "path": "/resources/world/areas/4611686022825732973/sith_academy_entrance.dat",
+        "profile": "April2012",
+        "parser": "SwtorResearch/0.2.0"
+      },
+      "kind": "room",
+      "areaId": "4611686022825732973",
+      "room": "sith_academy_entrance",
+      "sections": {
+        "instances": 2524,
+        "visible": 9,
+        "settings": 7
+      },
+      "section": "instances",
+      "totalMatches": 65,
+      "start": 0,
+      "records": [
+        {
+          "anchor": "4611686022895032867",
+          "assetId": "4611686022895033188",
+          "line": 6,
+          "properties": {
+            "ParentInstance": {
+              "value": "0",
+              "line": 7
+            },
+            "AutoGroundSnapHeight": {
+              "value": "0.",
+              "line": 8
+            },
+            "AutoGroundSnap": {
+              "value": "false",
+              "line": 9
+            },
+            "movable": {
+              "value": "false",
+              "line": 10
+            },
+            "Viewability": {
+              "value": "WORLD_AND_MAP",
+              "line": 11
+            },
+            "InheritParentVisibility": {
+              "value": "false",
+              "line": 12
+            },
+            "Position": {
+              "value": "(-29.4535007477,1.79999995232,-9.98999997973e-002)",
+              "line": 13
+            },
+            "IgnoreForCameraCollision": {
+              "value": "false",
+              "line": 14
+            },
+            "Rotation": {
+              "value": "(0.,180.,0.)",
+              "line": 15
+            },
+            "IgnoreForNPCCollision": {
+              "value": "false",
+              "line": 16
+            },
+            "Scale": {
+              "value": "(1.,1.,1.)",
+              "line": 17
+            },
+            "PortalTag": {
+              "value": "true",
+              "line": 18
+            },
+            "Hidden": {
+              "value": "false",
+              "line": 19
+            },
+            "Tag": {
+              "value": "",
+              "line": 20
+            },
+            "Selectable": {
+              "value": "true",
+              "line": 21
+            },
+            "IgnoreForPlayerCollision": {
+              "value": "false",
+              "line": 22
+            },
+            "GlowAmount": {
+              "value": "",
+              "line": 23
+            },
+            "Reflections": {
+              "value": "NORMAL",
+              "line": 24
+            },
+            "IsUtilityObject": {
+              "value": "false",
+              "line": 25
+            },
+            "DirectionalShadowCastingStyle": {
+              "value": "ALWAYS",
+              "line": 26
+            },
+            "PhysicsShape": {
+              "value": "SPHERE",
+              "line": 27
+            },
+            "LODFactor": {
+              "value": "1.",
+              "line": 28
+            },
+            "PhysicsCollisionGroup": {
+              "value": "0",
+              "line": 29
+            },
+            "PhysicsAngularDamping": {
+              "value": "5.00000007451e-002",
+              "line": 30
+            },
+            "OmniShadowCastingStyle": {
+              "value": "ALWAYS",
+              "line": 31
+            },
+            "PhysicsMaxAngularVelocity": {
+              "value": "-1.",
+              "line": 32
+            },
+            "MouseTargetable": {
+              "value": "false",
+              "line": 33
+            },
+            "DiffuseColor": {
+              "value": "",
+              "line": 34
+            },
+            "AmbientColor": {
+              "value": "",
+              "line": 35
+            },
+            "Collidable": {
+              "value": "true",
+              "line": 36
+            },
+            "OverrideMaterialClass": {
+              "value": "NONE",
+              "line": 37
+            },
+            "Pathability": {
+              "value": "DEFAULT",
+              "line": 38
+            },
+            "PhysicsWakeUpCounter": {
+              "value": "0.40000000596",
+              "line": 39
+            },
+            "IsLargeObject": {
+              "value": "false",
+              "line": 40
+            },
+            "PhysicsType": {
+              "value": "STATIC",
+              "line": 41
+            },
+            "PhysicsLinearDamping": {
+              "value": "0.",
+              "line": 42
+            },
+            "PhysicsLinearVelocity": {
+              "value": "(0.,0.,0.)",
+              "line": 43
+            },
+            "PhysicsInstance": {
+              "value": "0",
+              "line": 44
+            },
+            "PhysicsAngularVelocity": {
+              "value": "(0.,0.,0.)",
+              "line": 45
+            },
+            "PhysicsDensity": {
+              "value": "0.",
+              "line": 46
+            },
+            "MouseTransparent": {
+              "value": "false",
+              "line": 47
+            },
+            "PortalTarget": {
+              "value": "",
+              "line": 48
+            }
+          },
+          "asset": {
+            "assetId": "4611686022895033188",
+            "path": "\\art\\static\\area\\all_all\\arch\\all_sith_interior_hall_door_large.gr2",
+            "line": 331
+          },
+          "assetResolved": true,
+          "parents": [],
+          "parentChainComplete": true,
+          "parentChainIssue": null
+        },
+        {
+          "anchor": "4611686022895032868",
+          "assetId": "4611686022895032865",
+          "line": 49,
+          "properties": {
+            "ParentInstance": {
+              "value": "0",
+              "line": 50
+            },
+            "AutoGroundSnapHeight": {
+              "value": "0.",
+              "line": 51
+            },
+            "AutoGroundSnap": {
+              "value": "false",
+              "line": 52
+            },
+            "movable": {
+              "value": "false",
+              "line": 53
+            },
+            "Viewability": {
+              "value": "WORLD_AND_MAP",
+              "line": 54
+            },
+            "InheritParentVisibility": {
+              "value": "false",
+              "line": 55
+            },
+            "Position": {
+              "value": "(-27.5300006866,1.79999995232,-0.10000000149)",
+              "line": 56
+            },
+            "IgnoreForCameraCollision": {
+              "value": "false",
+              "line": 57
+            },
+            "Rotation": {
+              "value": "(0.,90.,0.)",
+              "line": 58
+            },
+            "IgnoreForNPCCollision": {
+              "value": "false",
+              "line": 59
+            },
+            "Scale": {
+              "value": "(1.,1.,1.)",
+              "line": 60
+            },
+            "PortalTag": {
+              "value": "true",
+              "line": 61
+            },
+            "Hidden": {
+              "value": "false",
+              "line": 62
+            },
+            "Tag": {
+              "value": "",
+              "line": 63
+            },
+            "Selectable": {
+              "value": "true",
+              "line": 64
+            },
+            "IgnoreForPlayerCollision": {
+              "value": "false",
+              "line": 65
+            },
+            "GlowAmount": {
+              "value": "",
+              "line": 66
+            },
+            "Reflections": {
+              "value": "NORMAL",
+              "line": 67
+            },
+            "IsUtilityObject": {
+              "value": "false",
+              "line": 68
+            },
+            "DirectionalShadowCastingStyle": {
+              "value": "ALWAYS",
+              "line": 69
+            },
+            "PhysicsShape": {
+              "value": "SPHERE",
+              "line": 70
+            },
+            "LODFactor": {
+              "value": "2.",
+              "line": 71
+            },
+            "PhysicsCollisionGroup": {
+              "value": "0",
+              "line": 72
+            },
+            "PhysicsAngularDamping": {
+              "value": "5.00000007451e-002",
+              "line": 73
+            },
+            "OmniShadowCastingStyle": {
+              "value": "ALWAYS",
+              "line": 74
+            },
+            "PhysicsMaxAngularVelocity": {
+              "value": "-1.",
+              "line": 75
+            },
+            "MouseTargetable": {
+              "value": "false",
+              "line": 76
+            },
+            "DiffuseColor": {
+              "value": "",
+              "line": 77
+            },
+            "AmbientColor": {
+              "value": "",
+              "line": 78
+            },
+            "Collidable": {
+              "value": "true",
+              "line": 79
+            },
+            "OverrideMaterialClass": {
+              "value": "NONE",
+              "line": 80
+            },
+            "Pathability": {
+              "value": "DEFAULT",
+              "line": 81
+            },
+            "PhysicsWakeUpCounter": {
+              "value": "0.40000000596",
+              "line": 82
+            },
+            "IsLargeObject": {
+              "value": "false",
+              "line": 83
+            },
+            "PhysicsType": {
+              "value": "STATIC",
+              "line": 84
+            },
+            "PhysicsLinearDamping": {
+              "value": "0.",
+              "line": 85
+            },
+            "PhysicsLinearVelocity": {
+              "value": "(0.,0.,0.)",
+              "line": 86
+            },
+            "PhysicsInstance": {
+              "value": "0",
+              "line": 87
+            },
+            "PhysicsAngularVelocity": {
+              "value": "(0.,0.,0.)",
+              "line": 88
+            },
+            "PhysicsDensity": {
+              "value": "0.",
+              "line": 89
+            },
+            "MouseTransparent": {
+              "value": "false",
+              "line": 90
+            },
+            "PortalTarget": {
+              "value": "",
+              "line": 91
+            }
+          },
+          "asset": {
+            "assetId": "4611686022895032865",
+            "path": "\\art\\static\\area\\all_all\\arch\\all_sith_interior_room_elevator_entrance.gr2",
+            "line": 329
+          },
+          "assetResolved": true,
+          "parents": [],
+          "parentChainComplete": true,
+          "parentChainIssue": null
+        },
+        {
+          "anchor": "4611686022895032869",
+          "assetId": "4611686022895033603",
+          "line": 92,
+          "properties": {
+            "ParentInstance": {
+              "value": "0",
+              "line": 93
+            },
+            "AutoGroundSnapHeight": {
+              "value": "0.",
+              "line": 94
+            },
+            "AutoGroundSnap": {
+              "value": "false",
+              "line": 95
+            },
+            "movable": {
+              "value": "false",
+              "line": 96
+            },
+            "Viewability": {
+              "value": "WORLD_AND_MAP",
+              "line": 97
+            },
+            "InheritParentVisibility": {
+              "value": "false",
+              "line": 98
+            },
+            "Position": {
+              "value": "(-27.8075008392,3.53489995003,-0.103600002825)",
+              "line": 99
+            },
+            "IgnoreForCameraCollision": {
+              "value": "false",
+              "line": 100
+            },
+            "Rotation": {
+              "value": "(0.,-90.,0.)",
+              "line": 101
+            },
+            "IgnoreForNPCCollision": {
+              "value": "false",
+              "line": 102
+            },
+            "Scale": {
+              "value": "(3.50279998779,3.32229995728,3.32209992409)",
+              "line": 103
+            },
+            "PortalTag": {
+              "value": "false",
+              "line": 104
+            },
+            "Hidden": {
+              "value": "false",
+              "line": 105
+            },
+            "Tag": {
+              "value": "",
+              "line": 106
+            },
+            "Selectable": {
+              "value": "true",
+              "line": 107
+            },
+            "IgnoreForPlayerCollision": {
+              "value": "false",
+              "line": 108
+            },
+            "GlowAmount": {
+              "value": "",
+              "line": 109
+            },
+            "Reflections": {
+              "value": "NORMAL",
+              "line": 110
+            },
+            "IsUtilityObject": {
+              "value": "false",
+              "line": 111
+            },
+            "DirectionalShadowCastingStyle": {
+              "value": "ALWAYS",
+              "line": 112
+            },
+            "PhysicsShape": {
+              "value": "SPHERE",
+              "line": 113
+            },
+            "LODFactor": {
+              "value": "1.",
+              "line": 114
+            },
+            "PhysicsCollisionGroup": {
+              "value": "0",
+              "line": 115
+            },
+            "PhysicsAngularDamping": {
+              "value": "5.00000007451e-002",
+              "line": 116
+            },
+            "OmniShadowCastingStyle": {
+              "value": "ALWAYS",
+              "line": 117
+            },
+            "PhysicsMaxAngularVelocity": {
+              "value": "-1.",
+              "line": 118
+            },
+            "MouseTargetable": {
+              "value": "false",
+              "line": 119
+            },
+            "DiffuseColor": {
+              "value": "",
+              "line": 120
+            },
+            "AmbientColor": {
+              "value": "",
+              "line": 121
+            },
+            "Collidable": {
+              "value": "true",
+              "line": 122
+            },
+            "OverrideMaterialClass": {
+              "value": "NONE",
+              "line": 123
+            },
+            "Pathability": {
+              "value": "DEFAULT",
+              "line": 124
+            },
+            "PhysicsWakeUpCounter": {
+              "value": "0.40000000596",
+              "line": 125
+            },
+            "IsLargeObject": {
+              "value": "false",
+              "line": 126
+            },
+            "PhysicsType": {
+              "value": "STATIC",
+              "line": 127
+            },
+            "PhysicsLinearDamping": {
+              "value": "0.",
+              "line": 128
+            },
+            "PhysicsLinearVelocity": {
+              "value": "(0.,0.,0.)",
+              "line": 129
+            },
+            "PhysicsInstance": {
+              "value": "0",
+              "line": 130
+            },
+            "PhysicsAngularVelocity": {
+              "value": "(0.,0.,0.)",
+              "line": 131
+            },
+            "PhysicsDensity": {
+              "value": "0.",
+              "line": 132
+            },
+            "MouseTransparent": {
+              "value": "false",
+              "line": 133
+            },
+            "PortalTarget": {
+              "value": "",
+              "line": 134
+            }
+          },
+          "asset": {
+            "assetId": "4611686022895033603",
+            "path": "\\art\\static\\area\\all_all\\arch\\all_sith_banner_interiorhanging_small.gr2",
+            "line": 398
+          },
+          "assetResolved": true,
+          "parents": [],
+          "parentChainComplete": true,
+          "parentChainIssue": null
+        }
+      ],
+      "nextStart": 3,
+      "coordinateEvidence": "Raw authored Position/Rotation/Scale and parent chain. No world transform or gameplay spawn behavior inferred.",
+      "bindingEvidence": "Asset IDs join only the same area's ASSETS table. Paths/properties do not prove runtime IDs, Hydra dispatch or encounter execution.",
+      "areaResource": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_areadat_1.tor",
+        "archiveHash": "0x089BCC9B923D72B7",
+        "entryOffset": 111047794,
+        "compressionMethod": 1,
+        "length": 337017,
+        "sha256": "ce05e870ec10ecc70845684e2f5f77a27f79aa5c9fd983206310c94f89e77a63",
+        "prefixHex": "21-0D-0A-21-20-41-72-65-61-20-53-70-65-63-69-66-69-63-61-74-69-6F-6E-20-66-6F-72-20-6B-6F-72-5F-72-65-62-75-69-6C-64-5F",
+        "hashCoverage": "whole decoded resource",
+        "path": "/resources/world/areas/4611686022825732973/area.dat",
+        "profile": "April2012",
+        "parser": "SwtorResearch/0.2.0"
+      },
+      "profile": "April2012",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "resource": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_areadat_1.tor",
+        "archiveHash": "0x374C05648D905187",
+        "entryOffset": 111106933,
+        "compressionMethod": 1,
+        "length": 5935819,
+        "sha256": "467379eaf14e5f1902dcb3c9fc4b0f826e333c643360eae13fe620c20a313f82",
+        "prefixHex": "21-0D-0A-21-20-52-6F-6F-6D-20-53-70-65-63-69-66-69-63-61-74-69-6F-6E-0D-0A-21-0D-0A-56-65-72-73-69-6F-6E-3D-34-0D-0A-5B",
+        "hashCoverage": "whole decoded resource",
+        "path": "/resources/world/areas/4611686022825732973/baseroom.dat",
+        "profile": "April2012",
+        "parser": "SwtorResearch/0.2.0"
+      },
+      "kind": "room",
+      "areaId": "4611686022825732973",
+      "room": "baseroom",
+      "sections": {
+        "instances": 161375,
+        "visible": 19,
+        "settings": 7
+      },
+      "section": "instances",
+      "totalMatches": 51,
+      "start": 0,
+      "records": [
+        {
+          "anchor": "4611686022895030543",
+          "assetId": "4611686022825732977",
+          "line": 49,
+          "properties": {
+            "ParentInstance": {
+              "value": "0",
+              "line": 50
+            },
+            "AutoGroundSnapHeight": {
+              "value": "0.",
+              "line": 51
+            },
+            "AutoGroundSnap": {
+              "value": "false",
+              "line": 52
+            },
+            "movable": {
+              "value": "false",
+              "line": 53
+            },
+            "Viewability": {
+              "value": "WORLD_AND_MAP",
+              "line": 54
+            },
+            "InheritParentVisibility": {
+              "value": "false",
+              "line": 55
+            },
+            "Position": {
+              "value": "(-3.20000004768,-2.3601000309,-3.20000004768)",
+              "line": 56
+            },
+            "IgnoreForCameraCollision": {
+              "value": "false",
+              "line": 57
+            },
+            "Rotation": {
+              "value": "(0.,0.,0.)",
+              "line": 58
+            },
+            "IgnoreForNPCCollision": {
+              "value": "false",
+              "line": 59
+            },
+            "Scale": {
+              "value": "(1.,1.,1.)",
+              "line": 60
+            },
+            "PortalTag": {
+              "value": "false",
+              "line": 61
+            },
+            "Hidden": {
+              "value": "false",
+              "line": 62
+            },
+            "Tag": {
+              "value": "",
+              "line": 63
+            },
+            "Selectable": {
+              "value": "true",
+              "line": 64
+            },
+            "IgnoreForPlayerCollision": {
+              "value": "false",
+              "line": 65
+            },
+            "BillboardData": {
+              "value": "",
+              "line": 66
+            },
+            "DYDWeightData": {
+              "value": "",
+              "line": 67
+            },
+            "VertexColorData": {
+              "value": "",
+              "line": 68
+            },
+            "PhysicsShape": {
+              "value": "SPHERE",
+              "line": 69
+            },
+            "resolution": {
+              "value": "STANDARD",
+              "line": 70
+            },
+            "PhysicsCollisionGroup": {
+              "value": "6815811",
+              "line": 71
+            },
+            "PhysicsAngularDamping": {
+              "value": "8.92151957135e-016",
+              "line": 72
+            },
+            "PhysicsMaxAngularVelocity": {
+              "value": "8.92151957135e-016",
+              "line": 73
+            },
+            "Width": {
+              "value": "33.",
+              "line": 74
+            },
+            "Depth": {
+              "value": "33.",
+              "line": 75
+            },
+            "VertexData": {
+              "value": "789CED3D09781445D62FA1065614D184332AE82AEA2EFAEB2F3762A651914B40141175E5100F500E1141C4457011411421A08288427405BC10C8E2812C24A0C8A1C2CA7D842B1C8A913B0412C8ECEBAEAE99EEEAAEAEEA9E09B8DF47CD4C5E57D5BBEABD57D5D5D5DD95A42B0040FF254502A692329148A14E3D2C1239B56B6824D22F1C89FC82F962FC9DB2621EC6DF09FC35448471352391EC8A91C88E7291C82184276A9AC84387D5FF244D7BE3788AD6E1996A5A7E76656DF4ECAADABECBAA6AB50654D10A0754D39A35AFA2659EA8AE5D31BB8A7672DA25DA435BAB6843C29769ABD755D1CAF7A8A13D9C59057F35B47EB750387246656D78760D6DCCB5958D7C8BBB2A19F0F7F72A6953A7D5D02646289C5739D5802DFFAFA20157159E6F40E85BC18033979E6FD059E1A62E35B4FC1B68FEB28634DF7D6805233F2D8DF2B9F8FB0B0D18AA4BF994DC46F3F53FB950AB4E3AA60FDD54415BFF5DEFF40669176883EBBF9A9EB3E23CADC3DD23D33F6C5B4DCBBAE03C6C7F652DA36279ADF5B2542DBCF44FDA036B52B4DF76BD15FEAC678A3676F7F8704EA3542D32774278E08E4ADACA8B26860B5A55D6468D181F7EACB012B67D64B8EF8B95B4DFFA8F08EF7F33455BB36D58B8F1F8546DEEBB43C3591754D6B29EBF35FC7AD96ADAC186CDC2B506A469D9A085AF594C61FF0D69DACF901E9EBF394DFB20A949F8B75D695A95276E090F2D4ED33AE4350B276D4BD38A57B60D272FA8AEBDF968A7705A76556DCBC9B6E1393B2B6BCD3642F8CFBD2A694F2C38963E7E65AAD662516EFAA863A9DAA43E73D3F5765C357168FAFCCD29DA535D46A677C8BBD868EFB15E29DAF9F35E4ECF221F90492483BC4EC693A96426F9103F99E433F20DF9816C25BBC81EFCE4919D6433594D72C86CC4F808313EC0CF74F2319945A69109642C19837FDF279F62FD1CF239994F96927548BB9F1C2487C901B28F6C273F937F635D16E2CC40EE59F8998B1CA620DD3894FE0E526523D552B218A5FC4436A1CC7C72949CC4DFEFA8C146AC998F34B3C827E44BB2847C87FA4D236F23F504321175598CBAEE24B96403F90FEAB9916C23BFA1DC7C947E08FFE691F56439CAFF02F5CB26AB10E77B94FD0ED2BE49DE459EAB11FB384ADA875CD6473F1B307F801C2127F0EF4ED4290735C8C176AC236BD00AEFA0D613D0625F21E62192142A133A822DDE68A1D7753842D24217864EA206FF212BC832F22372CD43EAB7C8ABE435A45E802D3D4ACA86CA870A6CD49B51F308292145E4C6D04521DD023BC816949B8B25D351F270F20A798F2C448A43A45CA86CE8204A635A1F466D524257225DD950C7D04DC8F9A0F1D98B5C8EA2D55E25C3F09789B2D7A16D8A50CA2EA462728B484AE8EA509D506A28297479A866E830F23B829F7CE45080F61A4E8660AC6462BB7FC2961CC2CF86A8D6B904425543B543F54295917E0B294479478CCF41FC15A0D4E7C973D8EE69E8ED9FB045D433B1369F2017A1C41A485D39B4013D5280F4FAE7B041FD32E94FFAA1FC49E8878DE4576C4F2E5A84516F47BC7228B50AFECE0BE5A16C467D107F056404E94D1E257D3052A761FCE49A31CD6CB603252485CE475F5508950B25878A90E28041AD4B2E202391B61B7902B94CC4A8FF1123632F5A2DD6EE43E43429835EAC803F4A7D186977623CE9B2BB90CEF8EB428622F50C8CDC3C8C8C3CF43CA33F8458A74879F45845F459A121B1C0885F9DBAB3F9E98AF1968591BFD3E851B951EA8DD8F693A442A85AA83AEACFA88F1AB431EA2E68F759A8F976E49A8F7F59CB37635494902AA15AA1BFA2BF8F1B5667968B5177262F60D42EC318DC87BAE75AA8F7629C5E8EF1D232D4C483BA2BB63B07E34D6FF9A628B5DECB4F92548CB7C6E875465DE0A07E1CC7892CB212E5EA511893BEC588F5F3D066152CD405B67677267DD17B9968F59F51F7DF51E2BAA8E576A17775AAF2366A5D7A8CFA1ED20BFBDA748C9935282F17B9584708EAFD421B750179907432681F226DC9C36410998C63D6321C65D658E23516F556B97AB4F5C258BB8FDC8992BB62BCBF82A3ED421CB336B8D0AE27178728EDA1A8BF87600FEB8DDEEE867FF5789B87EDDD6968BACE419D62526F45BB50EA6118E1CF93C7484F3210ADF62E8E115BD0C3DB39FACDE8B9ADE44A07F5F378261882727BA30EA30C9F6D36227DAB658CD0A9776104D7449BEFC1DAF5D893699C0FC01E3E1025F726DD51837A783EC942BBE623F566F35380FD548747C905A1BF275786B949003D92AAA0650F23753FB4F54368B9C6E47AD2337924F9B1CC56B2D542CD3ED794C1911D3AC17D10869BA006D484F6D01DEDF5107AEC46722B699EFC207EAE481E953C3CC9F9199754B7CC4C980DD3A11B687037F2790CEE217791764423B5C8E506ED1DC9A9C9E7254FB6500D4E1A84945949FF4C7A2769246C8625F0298CC4CFABF8F9536A729994A44A9108CE0BF51FB840E32896B1D73B91ED352EF5AE72228E6ABBDCA0505CE54DE9690C7B09A7BF9A6EAAF650D723B825549A2EE3E6370E783E627A48481CA8CB0DC6D14DFFD28C035E6EF0960B51031942D59E32BC44FBDB7F7CD0A31CFCA55CE78EE1463C0820DC82E65A7CE943A66A2F2DFD76F39214A345A0A7C8AF7EFB539076D0E3306427809F0F7B355816074F919D838E13F1C6BFD36FC1E253E6FFE0FE75D88D8BDCB8FD60CBABEA132F74E1EFB3DFF9C33F53FD522C270E5E123FF305A53516FC11FC2F82C1FD92983888BB010983F47C204238DB7A8BFCC1C7816A5CC4DF2F134FA1E69F989F828E072AE382D5CF5E711014FAA5715A951D06EB77AAF001F8D053AE4BCBE6421B2BE4FB95D38F3225FCD9C77F1CB8C939937DDB0F748D241F71C017F2E52C5F1BD64AE4D9E55AEAFB8E1310F207416C90C8FEE686EC6D5D67FE8F069D85DE71C1177681695CB96F0DBE6FE881E026D7CBAFB2FA3368572554BEB001C0B2B3ABB7BDC46F6F96F1F3C0F46527BFF64FB43FF9FA1FE1265B095FDF0E60B60E7B02BC15449E0826DAFFD3B04727523F5ECFA0FEE7F904D5A3B4F8892A9F8551069C0FD0CC0DA5174CB015D78315AE7CE2D523F1E384C8BF67260E3CE4DA30E28DE344F9811DB5A3C380036585EE7A17FC4D707520BD65FA9CADB810D9451E07BD8C8E3202067BCA7391EB8A11B43D0AF294E2600575B7023F7AC4CE2F89D257A67FA2FC2F93278E03BEE0DD87259255F9BA6A92A8F14116075F404B5BB58CAE3734E9E847422B98E74B7F919E7C5E64D7A0F1A0CAD7892295A81807EEF03DE8A6D40E96D9663C0AEBA4B81B3EF3D6922B61B9B57825ADA7CE00996E88C500C45AE8BCEEE635F4B6932A0C1A077EF9AAEBE9AF7D7EE380C1DE30DEB57638FCDD179F26B0C4B3FE6D78CCBD153EFD91017D0C5813760838B853BE094F049297A878508803D775A2D9FA9595B7C4B8C603513F8D970F3BFF5F0B1B5CEB97E92B010A8CEE0398E95639191E752563D71722B64FC3189BDCBD00D5DD101317077EED1A3D1AFB1485C6FA918C4ECACD27AC0B2B3DEBF9F500113ECBC9E2B813C00C2F843B00BE76AB14C5810CFE0695C00B41EE7F9AF1DBFFD951778001D708380B64DE3FDD52F639DCE58AC5D3FE04FF2F69899D4ED57E2D71A6E7075FD64A11F55D7A535DAA3E05B84787C3819EA8FAE8A78600ED50F51B838360A4A325FAE13018EAC94FEE65986C46F203FC1D26016C331762F36151BB5662CF54E266C247B147E949F5AEE26EB84409AF1BCE3CD5B5F0EC77BE48787BB3FC77D038107F0FFF1987B560B3123F9E4F6580FD3ABC17E0C930ADE83A554521496DEC3CEB4D7523AC5292C6C33CB8D4B5D69F96A51F0FF2FEE7AEA788CF6BD05FA29177BB797E327D7070BBBA852BC644E8E129C9BB25626CF71A0D160590E2C39F8A886B6B4BF89887B2FB1132BB8B109CF4DE3A5F0EDB559AA58011C564F3439F3DCDDE0219361B3FD8F5DD78BC62F4A9A8671C247A40086727869D6C3C50F7175FE4D75BDE18FF00186216B0EB476602137E5DE35AD0E79B538CDC47D0D1977C596B443051FD3C51D0217736D4BDC4A55E667FBE5E340F6730DD78325EAE60F596EFBA563FCC158BE85DEEBF2DD22C30783FF0F6AFA8BCD4FDBF00E0B644F011C449D078E04B723002ACA54F571DE82DE1C9377CE9E9D7C2898A0351FD19F33F832CF0CFD278122F8C1EBC66CE27078FF0C5E0D67F73FC9C12B2F162CE0AFDF929D1717486FD74B6E13F1F54438F57CE1D5F0BF8468F9A0E35FD3F07DAC62A82FA5F06CFC5813B7CF939F7EA15F5DCF1FDC2CE99EED5CE92A95DAD05F1C68108EF9CFFBD616A7EE9F095A1C5D6F7E6B6B156A9FADFEFF870A6E360628F60E44B9A94AE5E671ACAD0168166C039609E15247E0BAA890CC92FD756E6B2F75B3D297CE7110AD9E279A2CD39F3BE0433FC83C5010FFB028CF3AAF7CB52155986C05F0FFB85EC48B55D327EEF750BA8C8FF481CC8EDE9ED6F5179D038F8FA8EA07A46B8BC5D23D5F6F0FCD8A1DF383EDB50157D11D013048341E381B7F362805BEC74DEFD727E333579323F89A088AF282FE6EFDD8EB3ED77BF71C0CE0361A013460655FDEF2C0FA6A86A9C89FDC3F773774E7EE3CB82A714573C1C3D40827096E380F553E6771E4516071E79C57EE82F0EFCD28BF082CB736F875F38AF559C0C121C07ECC86F1CC8205F28C7F7E71755BFFA95A3DE2E3579B276F8BDFE60D9B673FCD1F1F41E9ABA56C41F0711AE3C98FF82F66F11BE6AFF97D18BF888F8CAE4DC3793C2BBE9E3F8B0F11A6FE6BBD51ED782F71F72AF4E741C88F0834692DF38083A0E244A0E08DBEFCFAEE278F5CEF3F09BDB3D847BD7048A0355BAA0F120B34BBCE3815F3BA9DAC1AFDD82DA2BDEB896F95FA49FCCFFAAF4A51D27A5C55F24077CB657DD8EF1F9DD7FFB131B077EF1187C00E0EF7FA187B6E7E592F057E2A335673A0E783805A05A6B842D00AE1F4D8BFA64B8A31ACF85B7C7DFAC04E811C03271F567BE3E80029E722C8782E7E5A0FE7203DC0B1F1B30F6463B25A477CE5AC22B703DC275F05757F1EAF6CB0E731AB28311F44D706836DF9B03D3DBF6BC97A55C40F73AF433E0D886FAFB457F811B8CF76F3ED35FEDF4D036D17180E907A8A33E1EC41B172CF339381EDCE3EDF785FE267336D0A726F4A727BBDB08D81D5476078D17F73D80B1F14F7380AF8C02F608ED400C1D4C4D7B1B9DD41107DA22B36069230A3B7EA4D6C080711085757EA0F015F309B59C740FF43E70A5F122E63C6898A2C32FA0418A3F7151F8148C3520DB2AC4573C04852CF30DC0ED5E786173BD6311B7FEDD17CC85516803733DC5659B11A4012CB255DD09593AE8D9CC1E079F9B7119B5E36CF3CDB9DB16308E614FD866AE5D01B6FF5427CF17EC9CF0F14914CEE8E489D6F07B0AD90A0583AC5C2A6E9C61CC58097BC5C0F6DC5A69C503CBBC00F0A20EC7EAF168810C4514070CCE71BF7D6E81D98238780FE82BF90C8F3D8F31EA59B3803D42C69E108C0E086CA4104076E2E215614BCEEC566A37FA6696701F6EF64811BBD529B1EBF32FD9A172FFE76B5CE340815F5C71F0388011F62EFDDDE8EE5D806E083715A0AB0E71CCAC63C5D34DDECE3CA2909D1F188CBD09DBCEF04F5380853ACC01FAA8F0ACF6B476E4200A5B0DA074D09BBEA90FB70D09FB6A6107F8C4804B803EDBC21E359B629ECF5E7A9EC2E1E61BFF2C1E78766CFCE9FF1A85D3EFF794DEFA5F7628D596BDA2C04A1AC3770664F191503F8BCA195CA5BF1207E2FECEFCCFE2A10DD0D380DE79E7BA2A20DDAFB5CEDB4624355D48B3E9ECC50136FE0F32DF3C6DB4D4AC606B35377FEBD5E2E82BA22FD0112E1A606CC399D7E93C30FA68229B773EF28E27DB2864FBB88BF6B9F409D98A75F845B3BF7F639EA103F953542E837C093B1F2CE2EE87BF01F0A40EEB42F40578365E9BD711BE0D702FBDEE70EC1BC9FCD6B6BF393163F7C4333B53287961F43978D980EC54C5DE3766038D080E30AF37DBCFF2D70E76BD1D300E58FCA7DB5EA091FBCDDF38E0370ED84198BB1F6EF1FFC7F752C8FA43D086BFF0A23B1A3F4E46FB3F1BB8593C64F4B1E135043A2363AF80317E0C5D16076F9A3BA8CC31673A82F70F853021E383BADFE2A397C78314954DE407BE42A164987640B6BEC3FA3DAB66F3208DBB9E70C0AC3B0DC0AE07D87CB01F5EFABB51B1D3C9870F78C37FB5B6D37D64BE51A83AE16F90D140052DBE3850C58B370EB0AF1BC37533E34D244F9205B751C826C6B77FE34DC0CEABCCEE3C9A2C0EEA00BDA067FB8F979629BE30777C63E39594E029FB7C9F6D9DF195BE54E257FED98A0396317C78BBB13E644CA78718AFE4EA8B3D920DB16217CAFD68778C2DFC98088DE9F4376A2EA959CD79328B0706133A7FF6800B9B52C8E693C67E356E888E952E5AD102E805E82878D6975CD7F501D5387022FB88000F3AF67AEAB34037C865FB1BB17DEFD875667F7D2B09D01705E9AA20C6445F7DDD0FE3E71FA63D458F3E2AD905127FDDCCC6310665F86C1E3BAE2F572159A0EC64EE08C5B62010F1EF6B2EC419F1EE370EF81AD57E2F8611D7AAB7816E803758DFE21562EFED8F34FE151AC0AB00CFE8F0657D9E6EC163FB9FC9A49E05C8AEFF25EB003C6497458D1AB0D3005BE87EEC6D2B661DA0E72FB603D45DE63E50ECFA984156CE762067748C4F43683856C5AFEE7E93B5471C1FEEFCA601DD809CED5BC5FC8FD758C6B21C8B039667F58F00285E8E9F71C8D68725EBC40CDEF32985AF3E63AF663B44C6E2815E68CCA58B2A0E76ECF684E83605A38BADA8D281E825A0EB5D143AC701BBDFE4ED91C5033D322E0EEBC69EA7C539A0A106DBB78C8D07AF01DD5888C131FA968516F884BE956500BD546198BBAE95C1FA006C99C39CA78687D0F3027B23995F9DFEDB07144EE845217BE38E57874D5BE29DBE8C05F7EBD4D6605F9874F7BFDFF180876BE032808AFA3CA083E1FFD9E6F2F008A01B7DDF0A60BCC1CFE68B4F03DDA092F99B8F83D781DEB67DD2587A0A64104F285AE792C12F8D4713F4E05ECCB165BD99BF5BB5BC7E29A8EF02D9F44095C24FA93A5BB62FF667F4F6BABE7BA251C0FC8AE75063BADC0AE86A6D17735D99F57711EC6A2C45C7E8D8FF57516E2E0765EFFD9596D54B1FB611ACCBBB43A79FD5E2822FE2CB65B2D95303938C4B84985F65A42D816EC83911E876701F015DE563F735D9EC48C687F5FF445B5F340A9F79D8D678D9594F2A17D6326EAAE34450BA45E6F81A16BC77C143D6FF671A970EB1CAAF80AEAE8C027A752D5AAF0A4BEE73270A76A5C396A5C4F3DF6495027C0AE8C4E26600736196BD432EA050EABFF1EA95A8386090AD47B1F30DABFC0EE806A8EC3AA33D7B5CF00CC701DBC7B73534351F6F608F21887A27DB518BDF592B16E97419F17DA0AF30CC007A5DB2109A7A6A3219E856D2B178A00F3EB0FF74702E0EE26FD5FF721CF4D0CFAD51CCA448FCA9A424014CBCD89F2E39551C8070DBF2F9F855E05F72FCD0AF815B211051627C2569FDE22CEBB18AB6310125A7A30A880891A75384BA9492D3A7A2C794CA49EE2A42913FA6E2A222AE04C9D1237BD6E79C2A3E19E5CF7DD5F9BB2614517CE2188A887E8FFD9E8731A647DAE953FA5FCF6090DA9022141EC9B78A707E3D9878F35FFEFE48FAC5E3D210116DA08A080FE652E954107E0388504CC89CC6A493ED2F9B971DD9BF63EFC66FE3141115C4F1CFDFB6AAB8B0A0A4B8E874F14914143F7F6CC89EB58BF66FFDE1F0AFDB0A0EEE2B2A3C7A7CCFF6D3270B51449C8330F502F2C7C8DFF9D3FC82FCDD66C5A953C7F2720B766F2B3A7AA8A4E84444ECD3A82B3D6A45D28B0F1D38BE6B6B41DEB69307F471D89B8FAF7645D3E9138585FB769EF86577D1C1DFB0A72744C4B1037BF05B78F4F7D3A7D015BFE3F1915F728FEDDF597CF450E4F4E978B48D2671A7589CBF63759CCC0BF2F77A8A88B7EB51116884837B36C52962F1F43744E52802BFF494511A22287FA9AD544488A42456842821FFBCB5CB4B5B04BABBE8C45145115C0751999C5011BE8236CA33CA5F65B0F225223A27F1D61FA3B4B8A8F0972D4B9D22F66E58EC6D28CA397FF7D6EDABBECDFD31877E8F1EF815A74985C70EE3319244CBE9D7CAEDC8AE95857B571DDEB972DFA6EF30BB6FE392E3BF6E70EACC71C8C97C8D2B717E29FF0DAB5678CC9AA888C3FB773BF9AB88A05F11FFB2604919C66DA82621BE249635FE8EB9C756C81E45CC88A2D7CEE0E81CCC3220ED96184B3764689ED93D8630650AC4D0D9E1D3830DA63A5B6BB14879070377C15656310E596E181CF9144139A36FEED0CBA67A1624BB6A1345A8D6ACAA8BBE0C21CBAEA41301868CBE34A6A4D517026F65D851EB77EA5DCE562F902640B869745F01A25D1D3DDD78A384772CD5E95CD75166B343FDFAD6DC6827877EB28654BCBF632C6367609296EF4D04F2A9115CC333568048F698CAB26668843373DAADAA53BA3922CB8A60AD70B43FC3355C6D22249E4EB21C57BB97AF8D4457C36AAE59E3C9076E5EFDB837C2F577B814DA96E2006AB823001B41EA655CE58E10ED19EDABF308C2546EE015DE08F5173489651A4D1123DA5252634791EED02BCBB3DCB583CB28B212249791C69E9EEE2241A8D2EFA958A6D154DD66DCF0D3312366C86BBE6A07DEE9429946AA69AD1C854BB525F5ED5E4AF1AC4FCE785AC2214E6F89D3BBA91284054F969668F5D44686208DC673E95C3A9782A4DE3284493284B764083FC810AE942148070869B20EB06DEB0BD18C54AF3B5FB245FF133B39D7764C62B678736CB3F21251D5F9FADEE40D9F1D9364707199005C689C46B7FCCD5B8247BA6EAC04A16C33098224CDB8418270D59F2508F5322508E7922C5D76BF04A1C1733216E58535B564A40DDB4A10AE932194766A60ECC4234E3D065FEACDE0726B467A69CBE56BB7B194BA113FA9BF861976E59566FC6DA23F21D9C34364489FE995F5B814EB30C8835A4FD564F35C85A45FCD09566C626B03C2251D9A5287398AACD811472DD8AF7A474566B9A158D3B7E65DFBFB06BB54D69D73672C936C5D0771139FC123409B240E43A68D3D0D894C8D1E7B9336CAF6C7D992743F3123A8A60CCE0B4E7A2BC2DDC21ABB169E08DE1C2211D758504E566A9E7D843F08A2A09D836429E05C32D29609DEF51297D71ADB0420A9201E1600D5374626CB70BC52A667604AA3F696C991DC78C4AF8FEC91230D31A6A45E4BAE7A12AADA3EB25A2641D24CE9C283BC779FDF5C862113F1B6028E47DDE231712AE02B25FF17C25F119F",
+              "line": 76
+            },
+            "TexWeightData": {
+              "value": "",
+              "line": 77
+            },
+            "locked": {
+              "value": "false",
+              "line": 78
+            },
+            "PhysicsWakeUpCounter": {
+              "value": "4.04860987936e+031",
+              "line": 79
+            },
+            "PhysicsType": {
+              "value": "STATIC",
+              "line": 80
+            },
+            "inverted": {
+              "value": "false",
+              "line": 81
+            },
+            "PhysicsLinearDamping": {
+              "value": "5.84341459623e-043",
+              "line": 82
+            },
+            "tesselation": {
+              "value": "SHORTEST",
+              "line": 83
+            },
+            "PhysicsLinearVelocity": {
+              "value": "(0.,0.,0.)",
+              "line": 84
+            },
+            "PhysicsInstance": {
+              "value": "2815183566471282",
+              "line": 85
+            },
+            "PhysicsAngularVelocity": {
+              "value": "(0.,3.84369464087e+028,0.)",
+              "line": 86
+            },
+            "PhysicsDensity": {
+              "value": "9.27538931585e-039",
+              "line": 87
+            }
+          },
+          "asset": {
+            "assetId": "4611686022825732977",
+            "path": "\\engine\\heightmap.hms",
+            "line": 226
+          },
+          "assetResolved": true,
+          "parents": [],
+          "parentChainComplete": true,
+          "parentChainIssue": null
+        },
+        {
+          "anchor": "4611686022895030544",
+          "assetId": "4611686022825732977",
+          "line": 88,
+          "properties": {
+            "ParentInstance": {
+              "value": "0",
+              "line": 89
+            },
+            "AutoGroundSnapHeight": {
+              "value": "0.",
+              "line": 90
+            },
+            "AutoGroundSnap": {
+              "value": "false",
+              "line": 91
+            },
+            "movable": {
+              "value": "false",
+              "line": 92
+            },
+            "Viewability": {
+              "value": "WORLD_AND_MAP",
+              "line": 93
+            },
+            "InheritParentVisibility": {
+              "value": "false",
+              "line": 94
+            },
+            "Position": {
+              "value": "(-15.8000001907,-1.94509994984,-3.20000004768)",
+              "line": 95
+            },
+            "IgnoreForCameraCollision": {
+              "value": "false",
+              "line": 96
+            },
+            "Rotation": {
+              "value": "(0.,0.,0.)",
+              "line": 97
+            },
+            "IgnoreForNPCCollision": {
+              "value": "false",
+              "line": 98
+            },
+            "Scale": {
+              "value": "(1.,1.,1.)",
+              "line": 99
+            },
+            "PortalTag": {
+              "value": "false",
+              "line": 100
+            },
+            "Hidden": {
+              "value": "false",
+              "line": 101
+            },
+            "Tag": {
+              "value": "",
+              "line": 102
+            },
+            "Selectable": {
+              "value": "true",
+              "line": 103
+            },
+            "IgnoreForPlayerCollision": {
+              "value": "false",
+              "line": 104
+            },
+            "BillboardData": {
+              "value": "",
+              "line": 105
+            },
+            "DYDWeightData": {
+              "value": "",
+              "line": 106
+            },
+            "VertexColorData": {
+              "value": "",
+              "line": 107
+            },
+            "PhysicsShape": {
+              "value": "SPHERE",
+              "line": 108
+            },
+            "resolution": {
+              "value": "STANDARD",
+              "line": 109
+            },
+            "PhysicsCollisionGroup": {
+              "value": "0",
+              "line": 110
+            },
+            "PhysicsAngularDamping": {
+              "value": "0.",
+              "line": 111
+            },
+            "PhysicsMaxAngularVelocity": {
+              "value": "0.",
+              "line": 112
+            },
+            "Width": {
+              "value": "33.",
+              "line": 113
+            },
+            "Depth": {
+              "value": "33.",
+              "line": 114
+            },
+            "VertexData": {
+              "value": "789CED3D076014C5DADFDE8C74910E4AB56105315868C92D3E2580404090F6049422458488052B469F125E548A028208084A9122416A20900026B40001A5B7443A884004A4E77D5BE672B7B765766F2FC0FF3BBB77DFDECCD7E62BB36D764FB81300A40F2454AD2A16B978C1DB747C357160CC796FE6BCCAE2C453B9DEE4D1D5C4F88E97BD7F14AA2276DE73DEBBA6731531626C8E77E4D04AE2E77D4F791FCCAA286EE874C23B664745D15BE4883762E1EDE2D1CBD9DE16E3CB895F0EDAED6DDAA1B4B8EC962DDE726F941057954FF7E6742B2EF64B5BEE1DFEE86D62036181B7D49492E2A2B233BDB59696162BBF3FC99BB0A58C38ACC0186FD39A65C592EF0EF5D6B95046AC76F6136FAD6665C42A270678BB4694161BC476F6468D2B29F61D11E9DDF1D16D62A55645BC575EB8553C18333B2AA75B31518C6D11353DBDA8787AD6A5C831CD8A8A8985C645C2882262DCBC3E91713B0B8BE2B45E9111030B8B997B16440E2957586CD96E7764D43B85C4ACC24723BBB6A922D65A5A503C5DAE920850481CDDA382D838DB23FED4BB9C58AEB2203EDDBBBC587BE055EFD13EE5C50FBC17BDDF4E2E2FDBAD4F7205F1CCD94BDEB84515C4CA1DAF787FFFAEBC9854E5AAB7E517E5C5513D2E78332695157B0EF9CBDB6B4459F1CCB43FBD3573CB8AC563D67B47C69715DBD7A5DE22DB4B8B718BC0FB436C49B158C2A928C93E00595187338B8B2FBEB529AA42F5DBC4AC8AC951D5B69416875F9D121571B89C38243521EAF04B85C5125DDA47756D53441C3EAD7CD498DC42221C5818F96AE18BDE6A5F3D1029E906DE460D648845869F0DAD2FC1B8DF57CBF559315F445EA3C7E906BA902EA1CBE8725C96D2C574069D89CB1C3A8D7E4313E8203A80BE4E636953DA883E42ABD12CC296BDE4083D4CF7D195489742937159823051A6FE9E4EA1E391FA3FF44DFA0AED4B9FA28FD3BBE935728014A0D24228D0D3F418DD8DD257D21548998CB429742E9D8594E3E8683A827E40DFA2FD6917DA9636A00FD0D2F40C9196B3B89C2627C99F28791FDD4137227D126ABB0C759F893A4FA45FD10FE96BF465FA126D479BD1FAF44E5A8C5E200A75362EFBC96E7252A6CEA21928FB673A15F5FD860E47CA717418ED493BD2181A4DBDB436D216A17F9323640FD94636934C5C36910CF2BB4CBD07F59D4EC7D22FB19F9D90A2137D07A5B6A68D693D5A9356A77720ED797218A56D26EB491A4921CBC9325CF6C9D4EBB1A7C3E9ABB409E24B4B53FC44D386F449EC6B495A885E456D0F901D28712D594192C85CF21399858B44BB01ADFC357D5BA6F15F44945B8916444B1D9429D793D56415594AE690EFC97832169755E8DF6968DB8FB0974D34D44FA2874AD0CBD85749E65AA45E4B7E419DA79251E4BF249E0C2613E8103A106DDB17FBEA4F198DFEAD851EBA8A96CA40991B70D944369274924A66928FC8EBA42F2EEFD1AEB4157D9E76408FB6F4A36E482368799A4B8EC9FA6E426BFD8A9F8D68B12964287995B4218D4923D243A66981DFCFA15F3BD048FCF50CAD43EF436B5D46B9BF91354893297B69236ABE944C2203496B529B5420454967F44B4B8C8618D4A02DFAB715C6540DB455617A96EC44FCD5489181F2D7E0563AF67A19194EBA933AA40439ED39EAE98D51D80E6537431E2D9087973E484BD12B184B92D4345C7E411FA59064F45312598CCB20F234A94AFEF06CF0A479A468EC86529BA3BF1AA2C6D569718CA99DB2A596215D32594012C96CF4ED8F641A5A7B2AFAAA0611C856CF74CF38CF08CCA10118CBCF217524BD0BBDFB17D92EC793E49D05643A99807EFD9A8C462F8DC46534F9905CF3ECF44CF30CF2BCE9198F313608FDD50175AF472BD35398B5E9489B8E7D5E4C269221E81DFF65186A9EE199E4E9EB69ED69E6998C513618A57742EADAE8DD2CB4ED0AD45ACAA254D29BC4062C5F7B8678867B067A7A7B1EF5DC8BCB643A06E3E54DB45D345AFA0C46641AF637037D7588FCE429884B514F61FCCE158EE2922BDCEEB9C773B7A78287782E09D784097414CA7E8DB6A7FFC2E838857E4D220BB1DFFB257F095B844CFCECC0CF3E611B7E6F437850E6F31BD6EE1146D1CF71FC78196D5E1BB3FF1066C15C5C56C9B99822240AB38439F8BD5858829F79B83D4B9889DF0B11CE40188FB47D3152EBA1DE17C95694FB135227A3B7D3C862E10761B2305198207C8BCB18E12B2141F85818287417FAE1A7ABD04B781DE5B6A551F47E94FC077A291173602EF6FB37B45C22D28E1486224DBCF01FE17DE175C47F417856A82594130A080585E28234DE35C35CAC8A63E401B4F65CA49E83D696B2EA6794F689F09EF086102BF415BA096D85C6427DE16EE102CC8771F02324C2F348DB983E4A2B6074EEC3FE2E44E989A8F57A8C9991C2DB48D55DE822FC5B688732A38447844AC24EB80F1A4267E8023D200669A5D82E49CFA195A5DC4F41AB6FC0189FE6692FB4115A225563E169A47C4CA82E54408DEF81EAF0303C849F27A0B93CF2DD4B8BA2B77E95732205B33013E9FB09F7630F2370A9253C8CDB958462C24688867BE02E280FA5F053059AE0FEE5091C6F0BA1CD36C823DE32ECF51AB45F4F5202F1CBA0BC3B84F24269E12AAC8658680015A134DC0AC5A03894016914A98DF17D0B3D81FE5A8BD64AC5DE4B59D993E4C279B80654A00211CEC12E98081DA1069483DBA0282EC5A02444CB6350054491F263278EF51932F57CF232C98163701ACEC15984DB200986401BEC6F19A42C8C4B51A806D2E8F710DAEC0AF943CE8C6CE4B159A68E277F430E529F846CC884A53001DE869628BB2C52DE0205A104DC0B854A93524299DCDC5C7801BE07A5E4F2C01410C11F0E43A3E8A2BFF0DEFD9C7CB515813FB9B4E29102637A9A60B82526BFA1D64C5614C67CEC89F6422AF8C3BCE6E9EDAC540EA868017303EAAD3AE29EE102AB9E84356EB2CF6FFF5B992B5C71806774FB8C5899E6B51143DE8EBA1C07D7DB8FE11A079CC7917BAA055444C3E2807AB7023F442DAFB7FFC21D077661D078300EBADB552557FFB73DBFAB9B1F0D326C0F290EF2CF2F81754EF9F4ED03F00097BCD034766D34C8DBB410A0890B0D8AA13EC16D8128375A1C68F4E6C69F0DF09C137A973477310E1CC15DF7EAB7B5FAC9408E557C5D27FF6BEDA8ADCF80DA0135DAF60E533515590055CDE4B8ECFFA038D80A0FCAB01C9EA94A65054499B2FB0ECFF9CDDAD926E738C03D2EDC60E380115C7DEB43BA2DF3E1595D7C6DC52A0C86CA26FCB9F3DC6E1C5809FA5D56CB9AA1455C44AEE443AFB1459FFE668903BB664AF586D68F50C7054C7CF3BC6770787F7D8161F6835D821BCDFF0CFE060FD9E2D3F7ABC00AB7F4301C0F7CD77F0C04BE3338B0A268C76F245002E0949938B7F3A6C12AFD8659ADEDC9BB5E71C0602348B2C56F1C3B8B53EBF6DE159A7CE33898F0921DFA69D03EA0B6E6667332BBF6B33B2EFC5ED9193F5E396EF95FABCF0EB8CF16FF4FDEF30952EAD406769C99FC2F3E3D8CF59FDC49810B9A9AD127428C391F8386E76728705267732DADF50CECBF959F9CC60183A54EF2E1F172DC04B542D2A7E39420C101F6685B075E93E042802676F8E66D31FFF71CA3C0FEC3FDDB6BC2663E7E363BC6EBB7EFBA400086D3FC743A2E2C6C628FCE48FE6B30D4111F2D7C03E0333B249100F2917992B44BC2F20544AB2732135F54E0B7DD14C88E545BA8F77D9AFFACC0149147D8EB9F3BEB106F1CDCB517023042CD4FBB7110AAFF8D20BBAEC0CF37E4105261A7C9BAF5CFCD567FC60E53A03A1E74F98E4F3F4EE9DE540B3E067EB28A1FBBF6E78D0B6D85D3E3336DFB4B30814BBB0152EA3AE9904DE8D3AFF58BCD64D8A8BD72BCD8B47B2B19BE32928B19AFD4550D2CF8841807AE8F079A3A5EB9EC77A4321C3B184FC2EB6F43B92D618E0C67C0F3329CD946A95777136EC501DB7F58F98D570E6F1C58C59995FF190C6B52BAC8AA3EC02F76884E495700A4D21F860734B0C30531C55E3F2C10B4D5B3A0B52E6207981A50BBE33E7D39BC7969773C60DBE1F2371EEEDC150A8B47003225C8F61BF6E38DD3419A38580E0DF9F873B267905D8730C2B03B2EF05A82D75EBF023C6CD6BE469AC964D2FE35402F5B8A59C0CDD2A95B084C06C33BE618DA0987EC420124C6F8E319F1AF9766CEDE886E0EEE90F45ADE504F8BAE771CD8407515B604653FBD08A07128CC6C53184F3854A172E2B0A052CD80C6880DE66C03AF4204C3E1D05FB745BB9BB2F23F6FBF6F54FFB371C32DA64EF3819BB067C376017406D8AF7EC9C7B4BE723863A91F83038798F3BB51FCCEAEDBC448232B965700E413AF6C802A6E0AB3F22F6FBBEF77A797940380B6BD1418D9EA355D066AA266DC51B4B899826EF5C3ADF1205CFECF52A68B846DB0E0F5AB5318246FD0470A7C334181AD5F69A84BF82CCC57F04126783B5E6964FB07B7E3D96ADCB1DB4FB7E2C0EDFC0D17348A2743FDD80451E6D8B6BD455392D678CA271575BE52BED9C5A53870AA727EFB377FA306CB4E80EA12DC58469970A45E4FCEBBDFA0A2D6857419F6920E6D40BA7121DFB7807A90664B5E3EE783DD3830C653C00688D0ED8F55FFF2DDAF6E337CFF29653FB118A265381994FBD48FC33A3D0A233657808449413EBB5B1158DA5153315B9965ECABFD067A988A19020365380694A7EB3E857765D813C6982AC7D24D5BCFE4BF61EFF6631ED4F64B05EF7DA28F3EB800D4ADE740D08D321ED8D5D77FD31F8157FF7CEBF7B3F35DE56718878D8CFAC3C7783C948ED1A7BF31C601433C034243FF1AA4192F347C4ED808D6CE7024A86EBA33FD8C203B9CE0254985DBABEB35862B7E79E355075F17D1AE76460DDCF4BCF11DA6743A51C65C2FA7F66633AA96C033018D46D79142F5BFDD71C0300E2CFCE7B6FDED92F98EE245E99600C8773B9C3CB8EDEB8FE646D2A13B34ED9C7ED0AB0AAC48ABA74FE7AEFF8DF4B1C233F2AF95FFC33D3E70F4D31C4753D96EBA02B579EFDBD4E0B37995BC7EB9059ACF362050379ECC97F70C58A1D8F59B517BA87CDC82F7550248E6C1B5D023A84AFDF570FAAD06F8E6F100D07481B6CA5F85AD50E20E4B9D4380464DB6F9B83C1E68EB474A771E4C28D9E53ABBFA06B559FA5FC3612A74F0AF2EB61EE4F7DA340790E7ADB6C08FB44B928E6E87997036F187BAF1F83A3BFDB3EB776DBD63BE9C71C00B8DF2C80A5A61359BC727D72A9F0D1183EF43CB1359BD0072C358A82DCFB8D5F265BFE743D9274C358C51EEC7199D9F3ACD7B06ADE9CDED6C15079679E9182110B68769A6582DE798B3E18E03769D9055B3F92886F3116065247E45C10AF9475FF84A178DD75F66AA5A742524FF5BE59DD338B074BBBAF1017C2CC3D550878B93D3F0E2B7838120362124A885CD40579E6F60D5ECBAA9A15DA1FD34475D318E472EFF5BE6BD4B71C0ED2F9BE9D005BEB34565150786940DF1CCD18C71D0052FFD38908E1C86F1E8E97C7CB095F746FEB1FC6D91574EC709A3FCB6CA7FBBE3829F9DE5EDA7F0B38C439E25C3A0FDC4136B15F8C3BF15C8762CEC86A4426A64E74D15A00267571CF93F54BB5AE693362EACF859E8E3345E79E3E031FCACE7D0C77E1CB016F6FC536C4BAF5FC300A80AFD7418853A2ED8F5BF65BF6D8E034EE3C008EF43883315AC9DBF6F775C60DBBC71E93C0ED489EDD075BCFC0D11F21931775EB213E430C781D37180370EECE66F27986C4BAFCFA4275B8DD50B8213F1F322879EB6E38041C31B634D16DA91E76B6707CC618A034BF936C7035EB3F1C6836D7B718E0733F1D3C6444F43FEBC71E02360C7890C2A33D4EDE7A73BFEB76B472BFF588D035AC5EC9A2F5C901731547A06A360847CE3612ED42F2D41365F46FBFE9F50E3C0AEFF431E1FB8F35D5F51FB7960AE4FA8FEE7F6B3A61F9670409FBB6DE967D0BF3878B12A0F0BA7F96FD7FFBCF6340C60EEF83197CBED67759397DE711CB0E79D47D68C9461A1C82512780C22C6F2C8B38A83BCEB0E6CBFE26C1C08351E6CDB8B5FA1003F71FB072C0CB000A0A90E7FB7F4F5FDF6BD0F6398E944A950E380C1A2D060B11EA253BF876A0EABFCB2CA7B23BB72B821B06E132877FC35FCA4D749D630D12764F8D43275A3BFC175647DF885FCE8B57DFF33180D357427DABADD3DA784BCF161576ED9F94FE8D64B2F9F98A147E2B6410C154EAFAB6AA2AB8615B42B2E09EEAFE226BFFC8A835021DB0B7E6070B61C343EE497FF830C15F7A102D9F5214BCA589EFB09C1E3855193B23F0AD5CF6EC58B753F026BECCA634749FF7DCB5C8F70416D357BBFA71762D51712689E630A86A3FAF8556CC7CFFD1CE25742D108FDA6C0FB56F99D068EE3C6A0C528AFEDC661D814D4C0C6F2AB1670AF0075031AC781E1FF71B01B0A4A4523F99D7CD6710F95EF56377B8F0E6CEB3E4E06CEE2A029044E7F7B10B6CA700228AFFB5A26DF690BDD8CDC66B6998773F45F03926FFED7C260BF29F713BCE0BB9FB05A9D29112D1FE08BCA3CE9C84E203FC965AD56A3243E7D12759F7BD1C2B378A6E1A09B3EC8E2453B5F226468DF5FFA0EC827BF6B21471C284DCDA1A1FC62844F4179322F5599A316FFB682345FF95B01A8375679AF103C034B54FA877EE3D0630E282FCA9907CDB894773F916C42F6620EA771E0DCEFF2E60C50DF6F17A638980E20BFF7A48E3465CABFE90368283FE8B01C94071EACB8E7CD67E2B2D45050DE0F6CB713BBE0DE80DFFD60840C7B80FC5A78BF7074C71195E0800C8DDEAB19B6F14053F500C0361ECAC1A0BC20CB800DB405F8D1BF92BD7FF71D99D40F9F4D2F317AF0D60AB2FBD616988501CE3B616F3F9D94AD8A7030A07E80FAFA52D7E484691CD081AE8E07134039C0EA0C3029008FCD3B600760ECFF37D9FFC0AAF38E7D786C075C4BBA3216208F4D64D2D57F2A28F3E6C31D076EC3AB001EBD7A6D675D8B83E0B870350EF058BEB704D938E16BAA06FBDDEE91BAC1FE7244571FA3BC329AAFCF9B8FEC7F0A9C2A7F06A0B819CA4169A809458045BF2E498F8E85C0513DCD0BAA673F3E00655E087BDF977B3DB1748D7E357BDF2F2F77F5007352747953BCB66A9477016522B0D17EB612280702CFC9FFAC27BDF6052CDE14A9C055000D6CE96D008D9E53E73D2E601BCC9F56C8E9A05C4068A34C6571A1072EC3119AE98E6C4BFBA257F6DE4FF67E808D8FEA73E5BF5EEA108ACAF3C7165855B2431366D6E45FC1CB2FC5E83CF1A6850FA8F9C2AEDC8EEEAD40AB7F100A797C5341A9B90D6C70613F5FF8DE1C8F8D632671A1DB36A5A3159DB27513C481F2577F5DD481DC088BCD77640F82854F1F8B37D2A867969CDCC6BECC87A7FDFF0A2D42503CA815EABFF119FAFF268803FD0B91DCD91A9A7CDEFDAAF43A8176A1E869018D2EC219F95F7BDF8AD73CC2CE8D5BF7AD5D9234EA5D5C8F661F56D673396773FD0AD6F8B7FAAFB981056B8EECDF7768DB0AFF5561EE5B7509350AE4AD590783451CDA9EE663FEC7FE4C9F08EC88D217C43975EC646E503973F2F4B103478E1F387AE2F071853F6E5FB9744183762CFB90C2FCDAB56BBE4A2441CEB8E1339746FF607126E5E37EEFE33A67F22CFFCAB405A94A17FC6DE2BF6D570A16FF2E60C93991EDE3AF145F779CF10F2EFE5D0853F94704BF8803DB37E11A3E414A2F1429B8FA37ED5FB75459B337AE0893F49BA8AC5EB4E8D4F1E3B881DF6B162F0E85159A54BF7EFB76DF7696DFB65DB68AD77471CE9E3E1D20EE5AEEA50B178D189E39929D95B1DC9FF9FEF5C9CA0636291BD7E4E24F75F5CA15FF9F972F5F36D7595DD727234F4D8D82133CC2BB5EAE5EFE3B7426EB12C7AF9BF3ADB4FA36E45569D558C936733F86FECEDDFDCBFC835BD243D23B50C4DE3549B8FA8BD893BE68EF6ADE803FFFD75FE62214FEB886A4AB7139B2E757458A73161C9ED2CDAF9D1BD29C0BE5137168EF7694822B86D3E58BE7FF3EFBE7C9435B93470EDCB72115577FCCE0F19CBF20FF5D1BD3F1080A392BEBDE8C94EC2DE95999AB5C142175878950F4DFBF71C57EBF7D8DF9D0A114F4F5A645534C1090F9AA899F2AFC0F6E5DA731D4A17DFB7844F8E7B5AFFECF638714E553C7C59D3B7D146B82BDA02946E6C22EF838EF5AA3FA1D7DBD3B738D22E2E8AED57FE79C50446868CFE5E4F08840FE981A9ACA1D19924391FFEAA9438FED5977EAF8495D113BD6738D301BE64D0AAEDC91F18BB4AE5F89DB87B7AFBC7AF9A2464401302A89812749A0FD9998871017A741C8D5203829050A7A203E806BAC3CAB924DF5BFB5630308449030627DEDFAC5B435D7ACD1F7D0B45E911F4489CBB343102755AE8C81E6C9CDD562C808A3E3F278E82A933BAC99AE1AE69A8754F459C7FB6C6F2C3ADEB045BF242458B533041D2F265870E0606E8E81CD093E4160D26FC6C7088131485010E2F5CDA4AB4D82154602D3524518A1839047666192A0129B67773F2E0207A5719074B3A943584B6E401FC321C022518D9B7DA3A93A7404720ABCA425A3984A0AE3787143971141091184911F6AB85514377E6F8165456FD2EE769CE4E4E8D57A3828FFBF46ACB6B86187F0D8F23A7A285F44071FB369DB2DF4C8B5CA272B093C08E6ED2EA4BC0B0816ED3A855AB4138B768762C350788E2FAEB7A6D63A86F520E9FF78B13C06B9A90E41C256F2D90AD5F2571CCCB646518AD5E955BDD965CD110A57F4FF15B6B1C56AEFC7C5C29AC7F51A1BEBE857C7AB1F28D2C290D4E00CDFB0B069BD4629306FDE3C73841BA3F8B4948B8E0D3408FA560A44F255CED3D9D44730C09917C0598F877E690AF76819A9E54E6E1E21955013203F12E87A1FC0FC53FE293761F91F41B406B3",
+              "line": 115
+            },
+            "TexWeightData": {
+              "value": "",
+              "line": 116
+            },
+            "locked": {
+              "value": "false",
+              "line": 117
+            },
+            "PhysicsWakeUpCounter": {
+              "value": "0.",
+              "line": 118
+            },
+            "PhysicsType": {
+              "value": "STATIC",
+              "line": 119
+            },
+            "inverted": {
+              "value": "false",
+              "line": 120
+            },
+            "PhysicsLinearDamping": {
+              "value": "0.",
+              "line": 121
+            },
+            "tesselation": {
+              "value": "SHORTEST",
+              "line": 122
+            },
+            "PhysicsLinearVelocity": {
+              "value": "(0.,0.,0.)",
+              "line": 123
+            },
+            "PhysicsInstance": {
+              "value": "0",
+              "line": 124
+            },
+            "PhysicsAngularVelocity": {
+              "value": "(0.,0.,0.)",
+              "line": 125
+            },
+            "PhysicsDensity": {
+              "value": "0.",
+              "line": 126
+            }
+          },
+          "asset": {
+            "assetId": "4611686022825732977",
+            "path": "\\engine\\heightmap.hms",
+            "line": 226
+          },
+          "assetResolved": true,
+          "parents": [],
+          "parentChainComplete": true,
+          "parentChainIssue": null
+        }
+      ],
+      "nextStart": 2,
+      "coordinateEvidence": "Raw authored Position/Rotation/Scale and parent chain. No world transform or gameplay spawn behavior inferred.",
+      "bindingEvidence": "Asset IDs join only the same area's ASSETS table. Paths/properties do not prove runtime IDs, Hydra dispatch or encounter execution.",
+      "areaResource": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_areadat_1.tor",
+        "archiveHash": "0x089BCC9B923D72B7",
+        "entryOffset": 111047794,
+        "compressionMethod": 1,
+        "length": 337017,
+        "sha256": "ce05e870ec10ecc70845684e2f5f77a27f79aa5c9fd983206310c94f89e77a63",
+        "prefixHex": "21-0D-0A-21-20-41-72-65-61-20-53-70-65-63-69-66-69-63-61-74-69-6F-6E-20-66-6F-72-20-6B-6F-72-5F-72-65-62-75-69-6C-64-5F",
+        "hashCoverage": "whole decoded resource",
+        "path": "/resources/world/areas/4611686022825732973/area.dat",
+        "profile": "April2012",
+        "parser": "SwtorResearch/0.2.0"
+      },
+      "profile": "April2012",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    }
+  ],
+  "appearance": {
+    "identity": {
+      "id": "0xE000FDF2BD432F56",
+      "decimalId": "16141180283495067478",
+      "kind": "GomObject",
+      "name": "pcs.sith_inquisitor.male.human",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/478.bkt",
+        "uncompressedOffset": 299924,
+        "blockLength": 4956,
+        "resourceSha256": "4a746249197b1fe8616fc93d8463400a25578c45791ebc83ebd1408507456e27"
+      }
+    },
+    "path": "/appPcsCustomizationSlots/1025",
+    "type": "GomObjectData",
+    "childCount": 8,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/appPcsCustomizationSlots/1025/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x4000000316C18125",
+            "decimalId": "4611686031694070053",
+            "kind": "DomClass",
+            "name": "appAppearanceSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 423944,
+              "blockLength": 120,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/appPcsCustomizationSlots/1025/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000008"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/appPcsCustomizationSlots/1025/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 5
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appPcsCustomizationSlots/1025/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 14,
+          "label": "appSlotHead",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appPcsCustomizationSlots/1025/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000247",
+          "bits": "0x00000000000F4337"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appPcsCustomizationSlots/1025/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1583105",
+          "bits": "0x0000000000182801"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/appPcsCustomizationSlots/1025/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": false,
+        "childCount": 0,
+        "value": []
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appPcsCustomizationSlots/1025/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  "schedules": [
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/0",
+      "type": "GomObjectData",
+      "childCount": 5,
+      "children": [
+        {
+          "key": "Script_Type",
+          "path": "/effAppearanceSchedule/0/Script_Type",
+          "type": "DomClass",
+          "expandable": false,
+          "childCount": 0,
+          "value": {
+            "type": "definitionReference",
+            "definition": {
+              "id": "0x40000000858FC65F",
+              "decimalId": "4611686020668180063",
+              "kind": "DomClass",
+              "name": "effAppearanceSubSchedule",
+              "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+              "source": {
+                "path": "/resources/systemgenerated/client.gom",
+                "uncompressedOffset": 404048,
+                "blockLength": 80,
+                "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+              }
+            }
+          }
+        },
+        {
+          "key": "Script_TypeId",
+          "path": "/effAppearanceSchedule/0/Script_TypeId",
+          "type": "UInt64",
+          "expandable": false,
+          "childCount": 0,
+          "value": "0x0000000000000003"
+        },
+        {
+          "key": "Script_NumFields",
+          "path": "/effAppearanceSchedule/0/Script_NumFields",
+          "type": "Int32",
+          "expandable": false,
+          "childCount": 0,
+          "value": 2
+        },
+        {
+          "key": "effAppearanceActions",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions",
+          "type": "List`1",
+          "expandable": true,
+          "childCount": 3,
+          "value": null
+        },
+        {
+          "key": "effAppearanceConditions",
+          "path": "/effAppearanceSchedule/0/effAppearanceConditions",
+          "type": "List`1",
+          "expandable": false,
+          "childCount": 0,
+          "value": []
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/1",
+      "type": "GomObjectData",
+      "childCount": 6,
+      "children": [
+        {
+          "key": "Script_Type",
+          "path": "/effAppearanceSchedule/1/Script_Type",
+          "type": "DomClass",
+          "expandable": false,
+          "childCount": 0,
+          "value": {
+            "type": "definitionReference",
+            "definition": {
+              "id": "0x40000000858FC65F",
+              "decimalId": "4611686020668180063",
+              "kind": "DomClass",
+              "name": "effAppearanceSubSchedule",
+              "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+              "source": {
+                "path": "/resources/systemgenerated/client.gom",
+                "uncompressedOffset": 404048,
+                "blockLength": 80,
+                "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+              }
+            }
+          }
+        },
+        {
+          "key": "Script_TypeId",
+          "path": "/effAppearanceSchedule/1/Script_TypeId",
+          "type": "UInt64",
+          "expandable": false,
+          "childCount": 0,
+          "value": "0x0000000000000003"
+        },
+        {
+          "key": "Script_NumFields",
+          "path": "/effAppearanceSchedule/1/Script_NumFields",
+          "type": "Int32",
+          "expandable": false,
+          "childCount": 0,
+          "value": 3
+        },
+        {
+          "key": "effAppearanceSubScheduleHasTrigger",
+          "path": "/effAppearanceSchedule/1/effAppearanceSubScheduleHasTrigger",
+          "type": "Boolean",
+          "expandable": false,
+          "childCount": 0,
+          "value": true
+        },
+        {
+          "key": "effAppearanceActions",
+          "path": "/effAppearanceSchedule/1/effAppearanceActions",
+          "type": "List`1",
+          "expandable": true,
+          "childCount": 1,
+          "value": null
+        },
+        {
+          "key": "effAppearanceConditions",
+          "path": "/effAppearanceSchedule/1/effAppearanceConditions",
+          "type": "List`1",
+          "expandable": false,
+          "childCount": 0,
+          "value": []
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/2",
+      "type": "GomObjectData",
+      "childCount": 6,
+      "children": [
+        {
+          "key": "Script_Type",
+          "path": "/effAppearanceSchedule/2/Script_Type",
+          "type": "DomClass",
+          "expandable": false,
+          "childCount": 0,
+          "value": {
+            "type": "definitionReference",
+            "definition": {
+              "id": "0x40000000858FC65F",
+              "decimalId": "4611686020668180063",
+              "kind": "DomClass",
+              "name": "effAppearanceSubSchedule",
+              "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+              "source": {
+                "path": "/resources/systemgenerated/client.gom",
+                "uncompressedOffset": 404048,
+                "blockLength": 80,
+                "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+              }
+            }
+          }
+        },
+        {
+          "key": "Script_TypeId",
+          "path": "/effAppearanceSchedule/2/Script_TypeId",
+          "type": "UInt64",
+          "expandable": false,
+          "childCount": 0,
+          "value": "0x0000000000000003"
+        },
+        {
+          "key": "Script_NumFields",
+          "path": "/effAppearanceSchedule/2/Script_NumFields",
+          "type": "Int32",
+          "expandable": false,
+          "childCount": 0,
+          "value": 3
+        },
+        {
+          "key": "effAppearanceSubScheduleHasTrigger",
+          "path": "/effAppearanceSchedule/2/effAppearanceSubScheduleHasTrigger",
+          "type": "Boolean",
+          "expandable": false,
+          "childCount": 0,
+          "value": true
+        },
+        {
+          "key": "effAppearanceActions",
+          "path": "/effAppearanceSchedule/2/effAppearanceActions",
+          "type": "List`1",
+          "expandable": true,
+          "childCount": 1,
+          "value": null
+        },
+        {
+          "key": "effAppearanceConditions",
+          "path": "/effAppearanceSchedule/2/effAppearanceConditions",
+          "type": "List`1",
+          "expandable": false,
+          "childCount": 0,
+          "value": []
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/3",
+      "type": "GomObjectData",
+      "childCount": 6,
+      "children": [
+        {
+          "key": "Script_Type",
+          "path": "/effAppearanceSchedule/3/Script_Type",
+          "type": "DomClass",
+          "expandable": false,
+          "childCount": 0,
+          "value": {
+            "type": "definitionReference",
+            "definition": {
+              "id": "0x40000000858FC65F",
+              "decimalId": "4611686020668180063",
+              "kind": "DomClass",
+              "name": "effAppearanceSubSchedule",
+              "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+              "source": {
+                "path": "/resources/systemgenerated/client.gom",
+                "uncompressedOffset": 404048,
+                "blockLength": 80,
+                "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+              }
+            }
+          }
+        },
+        {
+          "key": "Script_TypeId",
+          "path": "/effAppearanceSchedule/3/Script_TypeId",
+          "type": "UInt64",
+          "expandable": false,
+          "childCount": 0,
+          "value": "0x0000000000000003"
+        },
+        {
+          "key": "Script_NumFields",
+          "path": "/effAppearanceSchedule/3/Script_NumFields",
+          "type": "Int32",
+          "expandable": false,
+          "childCount": 0,
+          "value": 3
+        },
+        {
+          "key": "effAppearanceSubScheduleHasTrigger",
+          "path": "/effAppearanceSchedule/3/effAppearanceSubScheduleHasTrigger",
+          "type": "Boolean",
+          "expandable": false,
+          "childCount": 0,
+          "value": true
+        },
+        {
+          "key": "effAppearanceActions",
+          "path": "/effAppearanceSchedule/3/effAppearanceActions",
+          "type": "List`1",
+          "expandable": true,
+          "childCount": 1,
+          "value": null
+        },
+        {
+          "key": "effAppearanceConditions",
+          "path": "/effAppearanceSchedule/3/effAppearanceConditions",
+          "type": "List`1",
+          "expandable": false,
+          "childCount": 0,
+          "value": []
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    }
+  ],
+  "parameters": [
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/0/effAppearanceActions/1/effAppStringParams",
+      "type": "Dictionary`2",
+      "childCount": 2,
+      "children": [
+        {
+          "key": "enum:0x40000006EFA6AEC8:11",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions/1/effAppStringParams/enum:0x40000006EFA6AEC8:11",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": "fp_2h_elect_drain_start"
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:12",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions/1/effAppStringParams/enum:0x40000006EFA6AEC8:12",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/0/effAppearanceActions/2/effAppStringParams",
+      "type": "Dictionary`2",
+      "childCount": 6,
+      "children": [
+        {
+          "key": "enum:0x40000006EFA6AEC8:5",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions/2/effAppStringParams/enum:0x40000006EFA6AEC8:5",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:21",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions/2/effAppStringParams/enum:0x40000006EFA6AEC8:21",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": "abilities/sith_inquisitor/si_lightningdrain_bodyarcs"
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:22",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions/2/effAppStringParams/enum:0x40000006EFA6AEC8:22",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:23",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions/2/effAppStringParams/enum:0x40000006EFA6AEC8:23",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:24",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions/2/effAppStringParams/enum:0x40000006EFA6AEC8:24",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:25",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions/2/effAppStringParams/enum:0x40000006EFA6AEC8:25",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/1/effAppearanceActions/0/effAppStringParams",
+      "type": "Dictionary`2",
+      "childCount": 6,
+      "children": [
+        {
+          "key": "enum:0x40000006EFA6AEC8:5",
+          "path": "/effAppearanceSchedule/1/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:5",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:21",
+          "path": "/effAppearanceSchedule/1/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:21",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": "abilities/sith_inquisitor/si_force_lightning_caster"
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:22",
+          "path": "/effAppearanceSchedule/1/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:22",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:23",
+          "path": "/effAppearanceSchedule/1/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:23",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:24",
+          "path": "/effAppearanceSchedule/1/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:24",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:25",
+          "path": "/effAppearanceSchedule/1/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:25",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/2/effAppearanceActions/0/effAppStringParams",
+      "type": "Dictionary`2",
+      "childCount": 2,
+      "children": [
+        {
+          "key": "enum:0x40000006EFA6AEC8:11",
+          "path": "/effAppearanceSchedule/2/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:11",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": "fp_2h_elect_drain_loop"
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:12",
+          "path": "/effAppearanceSchedule/2/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:12",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/3/effAppearanceActions/0/effAppStringParams",
+      "type": "Dictionary`2",
+      "childCount": 6,
+      "children": [
+        {
+          "key": "enum:0x40000006EFA6AEC8:5",
+          "path": "/effAppearanceSchedule/3/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:5",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:21",
+          "path": "/effAppearanceSchedule/3/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:21",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": "250"
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:22",
+          "path": "/effAppearanceSchedule/3/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:22",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:23",
+          "path": "/effAppearanceSchedule/3/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:23",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:24",
+          "path": "/effAppearanceSchedule/3/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:24",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:25",
+          "path": "/effAppearanceSchedule/3/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:25",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    }
+  ]
+}

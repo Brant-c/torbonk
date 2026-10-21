@@ -1,0 +1,39 @@
+SELECTION 2 patches 109 placements 31 models 30 materials
+FAMILIES ['Uber']
+/resources/art/static/area/all_all/arch/all_med_facility_imperial_generator.gr2
+/resources/art/static/area/all_all/arch/all_tent_merchant_small.gr2
+/resources/art/static/area/all_all/arch/all_tent_merchant_small_awning01.gr2
+/resources/art/static/area/all_all/arch/all_tent_merchant_small_awning02.gr2
+/resources/art/static/area/all_all/item/bones/all_item_bone_human_whole_01.gr2
+/resources/art/static/area/all_all/item/construction/all_item_construction_dumpster_droid.gr2
+/resources/art/static/area/all_all/item/tech/all_item_tech_resurrection_point.gr2
+/resources/art/static/area/all_all/item/tech/all_item_tech_small_generator.gr2
+/resources/art/static/area/kor_korriban/arch/kor_vod_greatstatue.gr2
+/resources/art/static/area/kor_korriban/arch/kor_vod_greatstatue02.gr2
+/resources/art/static/area/kor_korriban/arch/kor_vod_ruins_floor.gr2
+/resources/art/static/area/kor_korriban/arch/kor_vod_ruins_pillar04_top.gr2
+/resources/art/static/area/kor_korriban/arch/kor_vod_ruins_pillar_base.gr2
+/resources/art/static/area/kor_korriban/arch/kor_vod_ruins_roof.gr2
+/resources/art/static/area/kor_korriban/arch/kor_vod_ruins_statuewall.gr2
+/resources/art/static/area/kor_korriban/arch/kor_vod_ruins_wall.gr2
+/resources/art/static/area/kor_korriban/arch/kor_vod_ruins_walldoor.gr2
+/resources/art/static/area/kor_korriban/env/kor_env_cactus.gr2
+/resources/art/static/area/kor_korriban/env/kor_vod_rock_01.gr2
+/resources/art/static/area/kor_korriban/env/kor_vod_rock_02.gr2
+/resources/art/static/area/kor_korriban/env/kor_wilds_cliff_40m_small.gr2
+/resources/art/static/area/kor_korriban/env/kor_wilds_cliff_40m_small_90.gr2
+/resources/art/static/area/kor_korriban/env/kor_wilds_cliff_40m_small_v1.gr2
+/resources/art/static/area/kor_korriban/env/kor_wilds_cliff_40m_small_v2.gr2
+/resources/art/static/area/kor_korriban/item/kor_tomb_item_statue_02.gr2
+/resources/art/static/area/kor_korriban/item/kor_tomb_item_urn.gr2
+/resources/art/static/area/kor_korriban/item/kor_vodl_item_shipping_crate.gr2
+/resources/art/static/area/kor_korriban/item/kor_vodl_item_shipping_pallet.gr2
+/resources/art/static/item/container/item_con_plasteel_crate_02.gr2
+/resources/art/static/item/container/item_con_plasteel_crate_03.gr2
+/resources/art/static/vehicle/neutral/speeder/veh_neu_speeder_02.gr2
+LAYER 1 {'source': '/art/static/area/kor_korriban/terrain_map/ter_kor_dirt_d.dds::0:2', 'texture': '/resources/art/static/area/kor_korriban/terrain_map/ter_kor_dirt_d.dds'}
+LAYER 3 {'source': '/art/static/area/kor_korriban/terrain_map/ter_kor_rock_purple_d.dds::0:2', 'texture': '/resources/art/static/area/kor_korriban/terrain_map/ter_kor_rock_purple_d.dds'}
+LAYER 18 {'source': 'bwa:ter_kor_sand_trodden:0', 'material': {'path': '/resources/art/shaders/materials/ter_kor_sand_trodden.mat', 'derived': 'Uber', 'alpha': 'None', 'twoSided': 'False', 'textures': {'DiffuseMap': '/resources/art/static/area/kor_korriban/terrain_map/ter_kor_sand_trodden_d.dds', 'RotationMap1': '/resources/art/static/area/kor_korriban/terrain_map/ter_kor_sand_trodden_n.dds', 'GlossMap': '/resources/art/static/area/kor_korriban/terrain_map/ter_kor_sand_trodden_s.dds'}, 'values': {'UsesReflection': 'False', 'UsesEmissive': 'False', 'UvScaling': '2,2', 'ReflectionIntensity': '1', 'ReflectionBlurIntensity': '1', 'ReflectionSpecInfluence': '1', 'ReflectionContrast': '0'}}}
+LAYER 19 {'source': 'bwa:ter_kor_sand_trodden2:0', 'material': {'path': '/resources/art/shaders/materials/ter_kor_sand_trodden2.mat', 'derived': 'Uber', 'alpha': 'None', 'twoSided': 'False', 'textures': {'DiffuseMap': '/resources/art/static/area/kor_korriban/terrain_map/ter_kor_sand_trodden2_d.dds', 'RotationMap1': '/resources/art/static/area/kor_korriban/terrain_map/ter_kor_sand_trodden_n.dds', 'GlossMap': '/resources/art/static/area/kor_korriban/terrain_map/ter_kor_sand_trodden2_s.dds'}, 'values': {'UsesReflection': 'False', 'UsesEmissive': 'False', 'UvScaling': '2,2', 'ReflectionIntensity': '1', 'ReflectionBlurIntensity': '1', 'ReflectionSpecInfluence': '1', 'ReflectionContrast': '0'}}}
+LAYER 20 {'source': 'bwa:ter_kor_rough:0', 'material': {'path': '/resources/art/shaders/materials/ter_kor_rough.mat', 'derived': 'Uber', 'alpha': 'None', 'twoSided': 'False', 'textures': {'DiffuseMap': '/resources/art/static/area/kor_korriban/terrain_map/ter_kor_rough_d.dds', 'RotationMap1': '/resources/art/static/area/kor_korriban/terrain_map/ter_kor_rough_n.dds', 'GlossMap': '/resources/art/static/area/kor_korriban/terrain_map/ter_kor_rough_s.dds', 'EmissiveMap': '/resources/art/defaultassets/black.dds'}, 'values': {'UsesReflection': 'False', 'UsesEmissive': 'False', 'UVScaling': '3.5,3.5', 'ReflectionIntensity': '1', 'ReflectionBlurIntensity': '1', 'ReflectionSpecInfluence': '1', 'ReflectionContrast': '0'}}}
+LAYER 2 {'source': 'bwa:ter_kor_vod_ruins_floor:0', 'material': {'path': '/resources/art/shaders/materials/ter_kor_vod_ruins_floor.mat', 'derived': 'Uber', 'alpha': 'None', 'twoSided': 'False', 'textures': {'DiffuseMap': '/resources/art/static/area/kor_korriban/arch/texture/kor_vod_ruins_floor_d.dds', 'RotationMap1': '/resources/art/static/area/kor_korriban/arch/texture/kor_vod_ruins_floor_n.dds', 'GlossMap': '/resources/art/static/area/kor_korriban/arch/texture/kor_vod_ruins_floor_s.dds', 'EmissiveMap': '/resources/art/defaultassets/black.dds'}, 'values': {'UsesReflection': 'False', 'UsesEmissive': 'False', 'UVScaling': '1,1', 'ReflectionIntensity': '1', 'ReflectionBlurIntensity': '1', 'ReflectionSpecInfluence': '1', 'ReflectionContrast': '0'}}}

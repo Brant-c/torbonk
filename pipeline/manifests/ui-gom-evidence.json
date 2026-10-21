@@ -1,0 +1,85 @@
+{
+  "label": "Client-derived icon mappings. Historical field labels retain MCP provenance. Survivor upgrade effects are authored.",
+  "captures": [
+    {
+      "query": {
+        "name": "abl.sith_inquisitor.force_lightning",
+        "view": "tree",
+        "path": "/ablIconSpec"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"identity\": {\"id\": \"0xE0009EB5CD7850CC\", \"decimalId\": \"16141075568169341132\", \"kind\": \"GomObject\", \"name\": \"abl.sith_inquisitor.force_lightning\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/132.bkt\", \"uncompressedOffset\": 189684, \"blockLength\": 783, \"resourceSha256\": \"8003c38e27a8014b96e9a5b1d3fcb66f0579c4c7e3f06dbf653c13d950f04758\"}}, \"path\": \"/ablIconSpec\", \"type\": \"String\", \"childCount\": 0, \"children\": [], \"value\": \"sithsorcerer\", \"start\": 0, \"nextStart\": null, \"coverage\": \"Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "query": {
+        "name": "abl.sith_inquisitor.mark_of_power",
+        "view": "tree",
+        "path": "/ablIconSpec"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"identity\": {\"id\": \"0xE000F15C9B50EC24\", \"decimalId\": \"16141166444540914724\", \"kind\": \"GomObject\", \"name\": \"abl.sith_inquisitor.mark_of_power\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/224.bkt\", \"uncompressedOffset\": 257372, \"blockLength\": 960, \"resourceSha256\": \"004c3f944dffdfca458b8c31c5f6a8e9cdd0a24219cdd18d8ec46f376de4fd16\"}}, \"path\": \"/ablIconSpec\", \"type\": \"String\", \"childCount\": 0, \"children\": [], \"value\": \"markofpower\", \"start\": 0, \"nextStart\": null, \"coverage\": \"Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "query": {
+        "name": "abl.sith_inquisitor.force_speed",
+        "view": "tree",
+        "path": "/ablIconSpec"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"identity\": {\"id\": \"0xE00099E4362E8945\", \"decimalId\": \"16141070269936470341\", \"kind\": \"GomObject\", \"name\": \"abl.sith_inquisitor.force_speed\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/341.bkt\", \"uncompressedOffset\": 191972, \"blockLength\": 478, \"resourceSha256\": \"d32f2ef0b37a2ffac2cf0074222392a437895927c1563498e30c2cb61a4b97a9\"}}, \"path\": \"/ablIconSpec\", \"type\": \"String\", \"childCount\": 0, \"children\": [], \"value\": \"forceSpeed\", \"start\": 0, \"nextStart\": null, \"coverage\": \"Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "query": {
+        "name": "abl.sith_inquisitor.recklessness",
+        "view": "tree",
+        "path": "/ablIconSpec"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"identity\": {\"id\": \"0xE0000E3BF17E6FE1\", \"decimalId\": \"16140916715113312225\", \"kind\": \"GomObject\", \"name\": \"abl.sith_inquisitor.recklessness\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/225.bkt\", \"uncompressedOffset\": 13932, \"blockLength\": 557, \"resourceSha256\": \"d1d81ecfc43aacf34a7e43e20939af0ec0beb1336d2c6d233d6d9abf6e1e6ddd\"}}, \"path\": \"/ablIconSpec\", \"type\": \"String\", \"childCount\": 0, \"children\": [], \"value\": \"chargedgauntlets\", \"start\": 0, \"nextStart\": null, \"coverage\": \"Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "query": {
+        "name": "abl.sith_inquisitor.chain_lightning",
+        "view": "tree",
+        "path": "/ablIconSpec"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "ArgumentException: Definition absent or wrong kind"
+          }
+        ],
+        "isError": true
+      }
+    }
+  ]
+}

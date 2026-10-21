@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "world and original-art HUD initialize",
+    "compact reference quickbar has twelve slots",
+    "enemy defeat creates XP pickup without instant XP",
+    "collecting levels and presents three distinct choices",
+    "selection pauses time, waves, movement and damage",
+    "offered upgrade applies a rank and resumes",
+    "selected configurable effect changes the gameplay stat",
+    "XP requirement increases and overflow queues another choice",
+    "restart from selection clears XP, ranks, pickups, pause and restores base stats"
+  ],
+  "failure": null
+}

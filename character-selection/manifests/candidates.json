@@ -1,0 +1,3437 @@
+[
+  {
+    "path": "/resources/art/environmentmaps/character_selection/interiorscheme.dds",
+    "archiveHash": "0x46EFBFAC7A3B2872",
+    "length": 1048784
+  },
+  {
+    "path": "/resources/art/environmentmaps/character_selection/interiorscheme.tex",
+    "archiveHash": "0xEBDA3DEA6DA295FD",
+    "length": 506
+  },
+  {
+    "path": "/resources/art/environmentmaps/character_selection/interiorscheme.tiny.dds",
+    "archiveHash": "0xB5116F6DC27F1CAB",
+    "length": 1232
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/character_select/char_sel_bh_steam.fxspec",
+    "archiveHash": "0xEF4AEA7E973A10E8",
+    "length": 8118
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/character_select/char_sel_imp_bg_destroyer.fxspec",
+    "archiveHash": "0xD3C1CF565E7CA9E3",
+    "length": 24388
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/character_select/char_sel_imp_engine_glow_suv.fxspec",
+    "archiveHash": "0xB514A6C2111631F5",
+    "length": 7478
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/character_select/char_sel_imp_starfighter_launch.fxspec",
+    "archiveHash": "0x5D316AF5BE1BE1FB",
+    "length": 115804
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/character_select/char_sel_imperial_banking_ship.fxspec",
+    "archiveHash": "0xF91A340915742F8B",
+    "length": 57016
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/character_select/char_sel_neu_banking_ship_02.fxspec",
+    "archiveHash": "0xCF5384BBDF5B669C",
+    "length": 70438
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/character_select/char_sel_pipe_steam_small.fxspec",
+    "archiveHash": "0x0DCEC4AC30116DA9",
+    "length": 14948
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/character_select/char_sel_rep_ambient_engine.fxspec",
+    "archiveHash": "0x99040463F973AF60",
+    "length": 51752
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/character_select/char_sel_rep_bg_destroyer_n_capitalship.fxspec",
+    "archiveHash": "0xDB219AFB347F66BA",
+    "length": 40300
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/character_select/char_sel_rep_fighter_open_anim.fxspec",
+    "archiveHash": "0x49D25E9C68BA5FE9",
+    "length": 170994
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/character_select/char_sel_rep_fighter_particle_launch.fxspec",
+    "archiveHash": "0x61BEA7C0F67C1BBF",
+    "length": 8180
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/character_select/char_sel_smuggler_chess_game.fxspec",
+    "archiveHash": "0xF053DFC8B2BEE4A9",
+    "length": 19686
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/character_select/char_sel_trooper_open_anim.fxspec",
+    "archiveHash": "0xD6AC8DA50575BC04",
+    "length": 39836
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/character_select/fac_sel_neu_360_banking_ship.fxspec",
+    "archiveHash": "0x0C23E8DBF8837BF7",
+    "length": 35470
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/character_select/fac_sel_neu_banking_ship.fxspec",
+    "archiveHash": "0xA371A0B7EA10F5B8",
+    "length": 56960
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/character_select/fac_sel_neu_large_ship.fxspec",
+    "archiveHash": "0xA6B1141904E08EA9",
+    "length": 8318
+  },
+  {
+    "path": "/resources/art/fx/fxspec/environments/tython/char_select_faction_screen.fxspec",
+    "archiveHash": "0x13866A646D3F2258",
+    "length": 44152
+  },
+  {
+    "path": "/resources/art/fx/geometry/tython/char_select_planet.gr2",
+    "archiveHash": "0xAAE48E4E853A63FB",
+    "length": 293096
+  },
+  {
+    "path": "/resources/art/fx/geometry/tython/char_select_planet01.gr2",
+    "archiveHash": "0x89115CD385D74BDE",
+    "length": 299800
+  },
+  {
+    "path": "/resources/art/fx/geometry/tython/char_select_planet02.gr2",
+    "archiveHash": "0x1C484E029BC09C01",
+    "length": 299800
+  },
+  {
+    "path": "/resources/art/fx/geometry/tython/texture/char_select_tython_high_res_clouds_01_d.dds",
+    "archiveHash": "0x061C46D732A4A86E",
+    "length": 699216
+  },
+  {
+    "path": "/resources/art/fx/geometry/tython/texture/char_select_tython_high_res_clouds_01_d.tex",
+    "archiveHash": "0x339ADF06159156D5",
+    "length": 387
+  },
+  {
+    "path": "/resources/art/fx/geometry/tython/texture/char_select_tython_high_res_clouds_01_d.tiny.dds",
+    "archiveHash": "0x77445D55A9A79A71",
+    "length": 2896
+  },
+  {
+    "path": "/resources/art/fx/geometry/tython/texture/char_select_tython_high_res_clouds_02_d.dds",
+    "archiveHash": "0x73909D501F75FA11",
+    "length": 699216
+  },
+  {
+    "path": "/resources/art/fx/geometry/tython/texture/char_select_tython_high_res_clouds_02_d.tex",
+    "archiveHash": "0xC8DABC445A832F62",
+    "length": 387
+  },
+  {
+    "path": "/resources/art/fx/geometry/tython/texture/char_select_tython_high_res_clouds_02_d.tiny.dds",
+    "archiveHash": "0x61FE96E545A807DA",
+    "length": 2896
+  },
+  {
+    "path": "/resources/art/fx/geometry/tython/texture/char_select_tython_high_res_d.dds",
+    "archiveHash": "0x06E26DAA9C80AC41",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/fx/geometry/tython/texture/char_select_tython_high_res_d.tex",
+    "archiveHash": "0x112691959CB27075",
+    "length": 378
+  },
+  {
+    "path": "/resources/art/fx/geometry/tython/texture/char_select_tython_high_res_d.tiny.dds",
+    "archiveHash": "0x4F4C00ACAFF52DAA",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/fx/particles/char_select_atmosphere_glow.prt",
+    "archiveHash": "0x45177CBD420E85CD",
+    "length": 1100
+  },
+  {
+    "path": "/resources/art/fx/particles/char_select_atmosphere_glow_p.prt",
+    "archiveHash": "0xD7A3D12DCF0E70A3",
+    "length": 1710
+  },
+  {
+    "path": "/resources/art/fx/particles/char_select_milky_way.prt",
+    "archiveHash": "0x83C0C463018285C0",
+    "length": 1084
+  },
+  {
+    "path": "/resources/art/fx/particles/char_select_milky_way_p.prt",
+    "archiveHash": "0x61B8A659AB528B7F",
+    "length": 1543
+  },
+  {
+    "path": "/resources/art/fx/particles/char_select_moon_01.prt",
+    "archiveHash": "0x1A98295663A95DBE",
+    "length": 1079
+  },
+  {
+    "path": "/resources/art/fx/particles/char_select_moon_01_p.prt",
+    "archiveHash": "0x88A3E2A107FEABE7",
+    "length": 1550
+  },
+  {
+    "path": "/resources/art/fx/particles/char_select_planet_glow.prt",
+    "archiveHash": "0x0C068EACC4AC0A5F",
+    "length": 1098
+  },
+  {
+    "path": "/resources/art/fx/particles/char_select_planet_glow_p.prt",
+    "archiveHash": "0xDEACA4FC32EAB4E4",
+    "length": 1689
+  },
+  {
+    "path": "/resources/art/fx/particles/char_select_planet_rotator_01.prt",
+    "archiveHash": "0x39754960CCB11D9D",
+    "length": 382
+  },
+  {
+    "path": "/resources/art/fx/particles/char_select_planet_rotator_02.prt",
+    "archiveHash": "0xB1F3BADCD58717B9",
+    "length": 387
+  },
+  {
+    "path": "/resources/art/fx/particles/char_select_planet_rotator_03.prt",
+    "archiveHash": "0xD2B417B8C7DC1D7F",
+    "length": 388
+  },
+  {
+    "path": "/resources/art/fx/texture/sky/char_select_stars.dds",
+    "archiveHash": "0xA1506F540562D141",
+    "length": 1398256
+  },
+  {
+    "path": "/resources/art/fx/texture/sky/char_select_stars.tex",
+    "archiveHash": "0xC08E552FBD2BFA75",
+    "length": 387
+  },
+  {
+    "path": "/resources/art/fx/texture/sky/char_select_stars.tiny.dds",
+    "archiveHash": "0x88F5D57461686D74",
+    "length": 22000
+  },
+  {
+    "path": "/resources/art/fx/texture/sky/char_select_tython_moon_alpha.dds",
+    "archiveHash": "0xD00FBC4B7E455CCD",
+    "length": 349680
+  },
+  {
+    "path": "/resources/art/fx/texture/sky/char_select_tython_moon_alpha.tex",
+    "archiveHash": "0x0E104904A7EBBC18",
+    "length": 387
+  },
+  {
+    "path": "/resources/art/fx/texture/sky/char_select_tython_moon_alpha.tiny.dds",
+    "archiveHash": "0xB8AF51DF244BCCC6",
+    "length": 5616
+  },
+  {
+    "path": "/resources/art/planets/alderaan.gr2",
+    "archiveHash": "0x6964EE7DF0519AFC",
+    "length": 80785
+  },
+  {
+    "path": "/resources/art/planets/balmorra.gr2",
+    "archiveHash": "0x564E6F5AB27C9FB6",
+    "length": 80785
+  },
+  {
+    "path": "/resources/art/planets/belsavis.gr2",
+    "archiveHash": "0xC118BCE109F5CBF8",
+    "length": 40791
+  },
+  {
+    "path": "/resources/art/planets/corellia.gr2",
+    "archiveHash": "0xEB521BE126DED913",
+    "length": 80785
+  },
+  {
+    "path": "/resources/art/planets/coruscant.gr2",
+    "archiveHash": "0xE2062A2406EF12C3",
+    "length": 40792
+  },
+  {
+    "path": "/resources/art/planets/dromund_kass.gr2",
+    "archiveHash": "0xFE55B5F8F9D10C01",
+    "length": 160348
+  },
+  {
+    "path": "/resources/art/planets/hoth.gr2",
+    "archiveHash": "0x11119ED54157D9F7",
+    "length": 80781
+  },
+  {
+    "path": "/resources/art/planets/hutta.gr2",
+    "archiveHash": "0x39590D1EA8189905",
+    "length": 80782
+  },
+  {
+    "path": "/resources/art/planets/ilum.gr2",
+    "archiveHash": "0x758AF7D56F0A807B",
+    "length": 80639
+  },
+  {
+    "path": "/resources/art/planets/korriban.gr2",
+    "archiveHash": "0xC0E42A9249D9DDC2",
+    "length": 80785
+  },
+  {
+    "path": "/resources/art/planets/nar_shadda.gr2",
+    "archiveHash": "0x30EE54C46EE90F11",
+    "length": 40951
+  },
+  {
+    "path": "/resources/art/planets/ord_mantell.gr2",
+    "archiveHash": "0x7AA98BBA3600FC91",
+    "length": 80804
+  },
+  {
+    "path": "/resources/art/planets/planets_atmosphere_hoth.gr2",
+    "archiveHash": "0x2AE7A9E7151D2805",
+    "length": 552
+  },
+  {
+    "path": "/resources/art/planets/planets_atmosphere_tatooine.gr2",
+    "archiveHash": "0x8326CCEC61A9E0DA",
+    "length": 552
+  },
+  {
+    "path": "/resources/art/planets/quesh.gr2",
+    "archiveHash": "0xFDD12D675CE8C7E5",
+    "length": 80782
+  },
+  {
+    "path": "/resources/art/planets/taris.gr2",
+    "archiveHash": "0x8D6DC5445BB46231",
+    "length": 80534
+  },
+  {
+    "path": "/resources/art/planets/tatooine.gr2",
+    "archiveHash": "0xFB849579067BF292",
+    "length": 40791
+  },
+  {
+    "path": "/resources/art/planets/texture/clouds_dromund_d.dds",
+    "archiveHash": "0x74CBCD8FAE71F460",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/clouds_dromund_d.tex",
+    "archiveHash": "0xFE066F4589F68844",
+    "length": 506
+  },
+  {
+    "path": "/resources/art/planets/texture/clouds_dromund_d.tiny.dds",
+    "archiveHash": "0xB7684C96149EEB43",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/clouds_dromund_n.dds",
+    "archiveHash": "0xB8EE5390A4C24219",
+    "length": 699216
+  },
+  {
+    "path": "/resources/art/planets/texture/clouds_dromund_n.tex",
+    "archiveHash": "0x6EDD6C61CEFF1B6E",
+    "length": 506
+  },
+  {
+    "path": "/resources/art/planets/texture/clouds_dromund_n.tiny.dds",
+    "archiveHash": "0x55A66FD91DEB2505",
+    "length": 11088
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_alderaan_d.dds",
+    "archiveHash": "0x1E040235B0969210",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_alderaan_d.tex",
+    "archiveHash": "0x778A61E794704DB4",
+    "length": 506
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_alderaan_d.tiny.dds",
+    "archiveHash": "0x29E2B7F2E5A36B3A",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_atmosphere_dromund_kass_d.dds",
+    "archiveHash": "0x8E97B94A198D01F5",
+    "length": 174904
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_atmosphere_dromund_kass_d.tex",
+    "archiveHash": "0x2B9C7C38E348CD71",
+    "length": 518
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_atmosphere_dromund_kass_d.tiny.dds",
+    "archiveHash": "0xF116E02720FC2603",
+    "length": 2872
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_atmosphere_dromund_kass_n.dds",
+    "archiveHash": "0xF45C60913EF7FF21",
+    "length": 349680
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_atmosphere_dromund_kass_n.tex",
+    "archiveHash": "0xBDE0B50E8C9ECE3A",
+    "length": 518
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_atmosphere_dromund_kass_n.tiny.dds",
+    "archiveHash": "0xBE38E752361A0311",
+    "length": 5616
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_atmosphere_tatooine_d.dds",
+    "archiveHash": "0xAF72DD3E836379D7",
+    "length": 174904
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_atmosphere_tatooine_d.tex",
+    "archiveHash": "0xF17F5E3379602264",
+    "length": 518
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_atmosphere_tatooine_d.tiny.dds",
+    "archiveHash": "0x92E66C24D4387FD6",
+    "length": 2872
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_atmosphere_tatooine_n.dds",
+    "archiveHash": "0x67D3AE181D0F792C",
+    "length": 349680
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_atmosphere_tatooine_n.tex",
+    "archiveHash": "0x61FCEB9A74210352",
+    "length": 518
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_atmosphere_tatooine_n.tiny.dds",
+    "archiveHash": "0xED069B1A11886CB6",
+    "length": 5616
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_balmorra_d.dds",
+    "archiveHash": "0x47F22C9432DA6E12",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_balmorra_d.tex",
+    "archiveHash": "0xB203313864FA6FB8",
+    "length": 507
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_balmorra_d.tiny.dds",
+    "archiveHash": "0xF516BDE2E1AE5F37",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_balmorra_s.dds",
+    "archiveHash": "0x790B3D0AC7315634",
+    "length": 174928
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_balmorra_s.tex",
+    "archiveHash": "0x1072944EB5A7310E",
+    "length": 506
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_balmorra_s.tiny.dds",
+    "archiveHash": "0xB5E8FDEA8BACE3C3",
+    "length": 2896
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_belsavis_d.dds",
+    "archiveHash": "0x0C11BFEE629D7FE9",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_belsavis_d.tex",
+    "archiveHash": "0x5A5A868B346CF458",
+    "length": 507
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_belsavis_d.tiny.dds",
+    "archiveHash": "0x47D8AC068BB55C71",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_belsavis_s.dds",
+    "archiveHash": "0x5ADC10CE561A808B",
+    "length": 174928
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_belsavis_s.tex",
+    "archiveHash": "0x09F5BC5C2E6E6082",
+    "length": 515
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_belsavis_s.tiny.dds",
+    "archiveHash": "0x8D8444DC58C9BACD",
+    "length": 2896
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_corellia_d.dds",
+    "archiveHash": "0x96640AA825545001",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_corellia_d.tex",
+    "archiveHash": "0x11AFFF495697B4BF",
+    "length": 506
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_corellia_d.tiny.dds",
+    "archiveHash": "0x9AF9D35D16040CC1",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_coruscant_02_n.dds",
+    "archiveHash": "0x2950E48AD355E04F",
+    "length": 699216
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_coruscant_02_n.tex",
+    "archiveHash": "0x2DB8AB55058E466A",
+    "length": 387
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_coruscant_02_n.tiny.dds",
+    "archiveHash": "0xC1BCE496AFEA0388",
+    "length": 11088
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_coruscant_d.dds",
+    "archiveHash": "0xBEDE741E45B34ECA",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_coruscant_d.tex",
+    "archiveHash": "0x1C0EE9AC4DA84CDE",
+    "length": 507
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_coruscant_d.tiny.dds",
+    "archiveHash": "0x7F1C67FB50FDC213",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_coruscant_s.dds",
+    "archiveHash": "0x466AF51C921E359D",
+    "length": 174928
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_coruscant_s.tex",
+    "archiveHash": "0x676FD85112DFDCC0",
+    "length": 515
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_coruscant_s.tiny.dds",
+    "archiveHash": "0x08E16EBFF4B44E10",
+    "length": 2896
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_dromund_kass_d.dds",
+    "archiveHash": "0x0A456F7B971DB907",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_dromund_kass_d.tex",
+    "archiveHash": "0x04B935A672698774",
+    "length": 507
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_dromund_kass_d.tiny.dds",
+    "archiveHash": "0x6709F06AC54C668B",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_dromund_kass_s.dds",
+    "archiveHash": "0xF1A86B60358EC191",
+    "length": 174928
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_dromund_kass_s.tex",
+    "archiveHash": "0xC31AAD4C591BE90F",
+    "length": 515
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_dromund_kass_s.tiny.dds",
+    "archiveHash": "0xD3724883FC93D8BE",
+    "length": 2896
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_hoth_02_n.dds",
+    "archiveHash": "0x9FD96CDC82386BC3",
+    "length": 699216
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_hoth_02_n.tex",
+    "archiveHash": "0xD7EFBA6BA9BDA65D",
+    "length": 387
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_hoth_02_n.tiny.dds",
+    "archiveHash": "0x4EAFF3D7D002FC7D",
+    "length": 11088
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_hoth_d.dds",
+    "archiveHash": "0x3DD456C83EAA1C8D",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_hoth_d.tex",
+    "archiveHash": "0xEABAB45A152AFF7A",
+    "length": 507
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_hoth_d.tiny.dds",
+    "archiveHash": "0x34FB83274E9068E4",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_hoth_s.dds",
+    "archiveHash": "0x990ECA62B6CC3074",
+    "length": 174928
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_hoth_s.tex",
+    "archiveHash": "0x314CAEB891CF6F12",
+    "length": 515
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_hoth_s.tiny.dds",
+    "archiveHash": "0x5D6B4847C09D1BAD",
+    "length": 2896
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_hutta_d.dds",
+    "archiveHash": "0x9B6FB6D3338F0C4F",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_hutta_d.tex",
+    "archiveHash": "0xA019206FEA0DF182",
+    "length": 507
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_hutta_d.tiny.dds",
+    "archiveHash": "0x1167A8D630D55778",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_hutta_s.dds",
+    "archiveHash": "0x304EF40189F86404",
+    "length": 174928
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_hutta_s.tex",
+    "archiveHash": "0xBDD5908BBB737F46",
+    "length": 515
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_hutta_s.tiny.dds",
+    "archiveHash": "0x171D21954D663499",
+    "length": 2896
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_ilum_02_n.dds",
+    "archiveHash": "0x4908519D838A7D33",
+    "length": 699216
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_ilum_02_n.tex",
+    "archiveHash": "0xC544A14D89F9C753",
+    "length": 387
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_ilum_02_n.tiny.dds",
+    "archiveHash": "0xDAC1C374075A62A1",
+    "length": 11088
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_ilum_d.dds",
+    "archiveHash": "0x2F4333D84E080117",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_ilum_d.tex",
+    "archiveHash": "0x1A49CCF149992289",
+    "length": 507
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_ilum_d.tiny.dds",
+    "archiveHash": "0x1E5655BDAA2D9BA1",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_ilum_s.dds",
+    "archiveHash": "0xF7F36D29C96EDF73",
+    "length": 174928
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_ilum_s.tex",
+    "archiveHash": "0x49A326B33194CE63",
+    "length": 515
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_ilum_s.tiny.dds",
+    "archiveHash": "0xB126F0326E4C3A62",
+    "length": 2896
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_korriban_d.dds",
+    "archiveHash": "0x597E704368F48C44",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_korriban_d.tex",
+    "archiveHash": "0x73746BCB248F62D6",
+    "length": 507
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_korriban_d.tiny.dds",
+    "archiveHash": "0x43EF3D286DD9A188",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_korriban_s.dds",
+    "archiveHash": "0xA646192616137E47",
+    "length": 174928
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_korriban_s.tex",
+    "archiveHash": "0x1DD0B3873BBA1A0A",
+    "length": 515
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_korriban_s.tiny.dds",
+    "archiveHash": "0xEE12381FFDAC5E81",
+    "length": 2896
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_nar_shadda_d.dds",
+    "archiveHash": "0x0E9485822D883026",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_nar_shadda_d.tex",
+    "archiveHash": "0xD5E05FAFB8AEB8E7",
+    "length": 507
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_nar_shadda_d.tiny.dds",
+    "archiveHash": "0x5F325D38AFF21EE9",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_nar_shadda_s.dds",
+    "archiveHash": "0xC3B65F6AFBA4ED50",
+    "length": 174928
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_nar_shadda_s.tex",
+    "archiveHash": "0x4FEC05BF5AC96722",
+    "length": 515
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_nar_shadda_s.tiny.dds",
+    "archiveHash": "0xBA1C7B9658B57CC0",
+    "length": 2896
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_nar_shaddaa_01_n.dds",
+    "archiveHash": "0xB46E272905C59225",
+    "length": 699216
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_nar_shaddaa_01_n.tex",
+    "archiveHash": "0x6C1029017B997470",
+    "length": 387
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_nar_shaddaa_01_n.tiny.dds",
+    "archiveHash": "0x99B73A7AE17F8F29",
+    "length": 11088
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_ord_mantell_d.dds",
+    "archiveHash": "0x4CB254B21334B8AA",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_ord_mantell_d.tex",
+    "archiveHash": "0x5CBB6EBA081C2260",
+    "length": 507
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_ord_mantell_d.tiny.dds",
+    "archiveHash": "0xBF579F48BE8C851A",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_ord_mantell_s.dds",
+    "archiveHash": "0x4E339553A3136AA4",
+    "length": 174928
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_ord_mantell_s.tex",
+    "archiveHash": "0xE88119382E785C95",
+    "length": 515
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_ord_mantell_s.tiny.dds",
+    "archiveHash": "0x4D19D49D5EFC4D6E",
+    "length": 2896
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_quesh_d.dds",
+    "archiveHash": "0xB7F96C625D9D536C",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_quesh_d.tex",
+    "archiveHash": "0xBDF89BD79AEC72E1",
+    "length": 507
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_quesh_d.tiny.dds",
+    "archiveHash": "0xE438D294BF1A1135",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_quesh_s.dds",
+    "archiveHash": "0x5F67DA9B41807A5B",
+    "length": 174928
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_quesh_s.tex",
+    "archiveHash": "0x26268EEAF6580711",
+    "length": 515
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_quesh_s.tiny.dds",
+    "archiveHash": "0x4188F15C871A1A6F",
+    "length": 2896
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_taris_02_n.dds",
+    "archiveHash": "0xD489AE2FB7AE8001",
+    "length": 699216
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_taris_02_n.tex",
+    "archiveHash": "0x83D2ABE4971A0025",
+    "length": 387
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_taris_02_n.tiny.dds",
+    "archiveHash": "0x82666675EC658215",
+    "length": 11088
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_taris_d.dds",
+    "archiveHash": "0xD21754E8A6CF195B",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_taris_d.tex",
+    "archiveHash": "0xF700FED20F4B34BE",
+    "length": 507
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_taris_d.tiny.dds",
+    "archiveHash": "0x461CF0EF21DB6C05",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_taris_s.dds",
+    "archiveHash": "0x9C5D2863AB89FC37",
+    "length": 174928
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_taris_s.tex",
+    "archiveHash": "0x740CFCA55DC2DB2A",
+    "length": 515
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_taris_s.tiny.dds",
+    "archiveHash": "0x301E6AF5C71751CB",
+    "length": 2896
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_tatooine_d.dds",
+    "archiveHash": "0x702F491E33C7F7AB",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_tatooine_d.tex",
+    "archiveHash": "0xE80F7A72BA85077A",
+    "length": 507
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_tatooine_d.tiny.dds",
+    "archiveHash": "0xFE858CE508251D96",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_tatooine_n.dds",
+    "archiveHash": "0xE856671B81F5D4D9",
+    "length": 699216
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_tatooine_n.tex",
+    "archiveHash": "0xD31BB9757DF5CDC7",
+    "length": 387
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_tatooine_n.tiny.dds",
+    "archiveHash": "0x5A839CEF8EC55BA2",
+    "length": 11088
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_tython_d.dds",
+    "archiveHash": "0x7EDAB17162776555",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_tython_d.tex",
+    "archiveHash": "0x1495DFBBD787B745",
+    "length": 507
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_tython_d.tiny.dds",
+    "archiveHash": "0xDD69701C6278C046",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_tython_s.dds",
+    "archiveHash": "0xCE5C7AF40074901B",
+    "length": 174928
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_tython_s.tex",
+    "archiveHash": "0xC606DFD56F876DBE",
+    "length": 515
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_tython_s.tiny.dds",
+    "archiveHash": "0xEC339B6FAE3B67C8",
+    "length": 2896
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_uphrades_d.dds",
+    "archiveHash": "0x9E009A871BC3FBFD",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_uphrades_d.tex",
+    "archiveHash": "0xC4FC8DF2320C68CB",
+    "length": 378
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_uphrades_d.tiny.dds",
+    "archiveHash": "0xC4C1351B370FAAC7",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_voss_d.dds",
+    "archiveHash": "0x7BC378A9B68F8354",
+    "length": 349672
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_voss_d.tex",
+    "archiveHash": "0x09DAAC0670E76FE3",
+    "length": 507
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_voss_d.tiny.dds",
+    "archiveHash": "0xD3ACA7ECCFE8312E",
+    "length": 5608
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_voss_s.dds",
+    "archiveHash": "0x955FD1084EC860F9",
+    "length": 174928
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_voss_s.tex",
+    "archiveHash": "0xE98B276D7210948F",
+    "length": 515
+  },
+  {
+    "path": "/resources/art/planets/texture/planets_voss_s.tiny.dds",
+    "archiveHash": "0x30D8BC3AB2461651",
+    "length": 2896
+  },
+  {
+    "path": "/resources/art/planets/tython.gr2",
+    "archiveHash": "0x70A3391ECE215AB6",
+    "length": 80783
+  },
+  {
+    "path": "/resources/art/planets/uphrades.gr2",
+    "archiveHash": "0x00448620D6402CA8",
+    "length": 86339
+  },
+  {
+    "path": "/resources/art/planets/voss.gr2",
+    "archiveHash": "0x3639F55DC87147AE",
+    "length": 80781
+  },
+  {
+    "path": "/resources/art/shaders/materials/char_select_bounty_hunter_blinking_lights_suv.mat",
+    "archiveHash": "0x96AC9E6DEBEBE24F",
+    "length": 3125
+  },
+  {
+    "path": "/resources/art/shaders/materials/char_select_jedi_int_suv_01.mat",
+    "archiveHash": "0x476344208A150957",
+    "length": 3129
+  },
+  {
+    "path": "/resources/art/shaders/materials/char_select_tython_clouds_01.mat",
+    "archiveHash": "0x30165666554982AA",
+    "length": 725
+  },
+  {
+    "path": "/resources/art/shaders/materials/char_select_tython_clouds_02.mat",
+    "archiveHash": "0xDB86FCF85A0CA69F",
+    "length": 725
+  },
+  {
+    "path": "/resources/art/shaders/materials/char_select_tython_ground.mat",
+    "archiveHash": "0x6C07B482D8C8B175",
+    "length": 1953
+  },
+  {
+    "path": "/resources/art/static/area/character_select/char_select_agent_int.gr2",
+    "archiveHash": "0xA44CA18BC39FB10A",
+    "length": 263403
+  },
+  {
+    "path": "/resources/art/static/area/character_select/char_select_bountyhunter_int.gr2",
+    "archiveHash": "0xD93E41370F85A694",
+    "length": 857003
+  },
+  {
+    "path": "/resources/art/static/area/character_select/char_select_consular_int.gr2",
+    "archiveHash": "0x1FA8A946F1B848BE",
+    "length": 213580
+  },
+  {
+    "path": "/resources/art/static/area/character_select/char_select_jedi_int.gr2",
+    "archiveHash": "0xA93B4CCFFAAEBF76",
+    "length": 837254
+  },
+  {
+    "path": "/resources/art/static/area/character_select/char_select_sith_inquisitor_int.gr2",
+    "archiveHash": "0x3D0EEB0F7F0394B1",
+    "length": 245784
+  },
+  {
+    "path": "/resources/art/static/area/character_select/char_select_sith_warrior_int.gr2",
+    "archiveHash": "0xFCA979C868542433",
+    "length": 253878
+  },
+  {
+    "path": "/resources/art/static/area/character_select/char_select_smuggler_int.gr2",
+    "archiveHash": "0xD923C6EAFDB137F4",
+    "length": 435998
+  },
+  {
+    "path": "/resources/art/static/area/character_select/char_select_trooper_int.gr2",
+    "archiveHash": "0x6684B354C947C728",
+    "length": 482849
+  },
+  {
+    "path": "/resources/art/static/area/spc_space/arch/spc_arch_rep_trans_hangar_char_select.gr2",
+    "archiveHash": "0x36A5853B775DF45D",
+    "length": 372165
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.advanced_classes.jedi_sage.dds",
+    "archiveHash": "0xEE584BC56A7F59CA",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.advanced_classes.jedi_shadow.dds",
+    "archiveHash": "0xEAD5996D262AC8E1",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.advanced_classes.sith_assassin.dds",
+    "archiveHash": "0x357105E1C62DB398",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.advanced_classes.sith_sorcerer.dds",
+    "archiveHash": "0xF3A95815A962F8CB",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.datacron.global.assembly_chamber_sith.dds",
+    "archiveHash": "0x0660708A405ADE7F",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.game_rules.classes.agent.dds",
+    "archiveHash": "0xA8057270FF3CCC91",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.game_rules.classes.bounty_hunter.dds",
+    "archiveHash": "0xA915AF760AB17987",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.game_rules.classes.jedi_consular.dds",
+    "archiveHash": "0xEA2EFFA18E25E0DF",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.game_rules.classes.jedi_knight.dds",
+    "archiveHash": "0x52C9FB0181C443B0",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.game_rules.classes.sith_inquisitor.dds",
+    "archiveHash": "0x0A7D7D689B7E193A",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.game_rules.classes.sith_warrior.dds",
+    "archiveHash": "0x0E32160C0E50FAA7",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.game_rules.classes.smuggler.dds",
+    "archiveHash": "0x0FF162B308F588B5",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.game_rules.classes.trooper.dds",
+    "archiveHash": "0xBFE9DF8678478A65",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.game_rules.tutorials.energy_agent.dds",
+    "archiveHash": "0x780111EB18C694D4",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.game_rules.tutorials.energy_cells_trooper.dds",
+    "archiveHash": "0xA362352556D7F6A1",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.game_rules.tutorials.energy_smuggler.dds",
+    "archiveHash": "0x15128D3223BA2FA5",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.game_rules.tutorials.heat_bounty_hunter.dds",
+    "archiveHash": "0x1E9DA39D393CEB68",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.location.coruscant.jedi_temple_ruins.dds",
+    "archiveHash": "0xFAC0C1E2C0FBAEFA",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.location.dromund_kaas.the_sith_consulate.dds",
+    "archiveHash": "0x12DC5339995CDD41",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.location.korriban.sith_academy.dds",
+    "archiveHash": "0xF7CF1F8136271F79",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.location.open_worlds.republic_capital_ship.dds",
+    "archiveHash": "0xD43654432E5B4E6C",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.location.open_worlds.republic_destroyer.dds",
+    "archiveHash": "0x6CBA029ED7312AE0",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.location.open_worlds.republic_destroyer_2.dds",
+    "archiveHash": "0x5B38EA5974DAAFF4",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.location.smuggler.lightspring.dds",
+    "archiveHash": "0x711AC8A31B748289",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.location.tython.jedi_temple.dds",
+    "archiveHash": "0xCA154894AF50E5FA",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.locations.corellia.green_jedi_enclave.dds",
+    "archiveHash": "0x32A05DAEA253D474",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.locations.corellia.museum_republica.dds",
+    "archiveHash": "0x060F88C55DB7A897",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.locations.corellia.republic_foundation_museum.dds",
+    "archiveHash": "0x7727C6DD4C70F21F",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.locations.illum.the_jedi_temple.dds",
+    "archiveHash": "0xF769422D5D4CE6A0",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.locations.nar_shaddaa.republic_industrial_sector.dds",
+    "archiveHash": "0x37FC201FAE3E3512",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.locations.quesh.republic_operational_headquarters.dds",
+    "archiveHash": "0x160270B3C6664716",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.locations.smuggler.lightspring.dds",
+    "archiveHash": "0x62E49A621A4B9F52",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.locations.taris_imp.republic_resettlement_zone.dds",
+    "archiveHash": "0xB66E39A382819008",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.locations.trooper.the_bastion.dds",
+    "archiveHash": "0x227CEBCB9F3BC7D1",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.agent.balmorran_terror_cell.dds",
+    "archiveHash": "0x6579F8EB7CF5B564",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.agent.black_codex_operation_shining_man.dds",
+    "archiveHash": "0x50EE03DE2965A222",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.agent.black_codex_origins_star_cabal.dds",
+    "archiveHash": "0x544AEAD9532F74EA",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.agent.black_codex_the_star_cabals_endgame.dds",
+    "archiveHash": "0xC749E3088243C569",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.agent.legend_of_the_shining_man.dds",
+    "archiveHash": "0xABD2FF3C90F1854B",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.agent.operation_ghostbreaker.dds",
+    "archiveHash": "0x84A92A11F0C22D09",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.agent.operation_glass_echo.dds",
+    "archiveHash": "0x3F2720CE13885AFD",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.agent.operation_silverplate.dds",
+    "archiveHash": "0xB8B80A64B747D033",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.bounty_hunter.colicoid_queen.dds",
+    "archiveHash": "0xF1F0A23DD6A93DBE",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.bounty_hunter.geroya_be_haran.dds",
+    "archiveHash": "0xC8A453DE6B372DC2",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.bounty_hunter.the_great_hunt.dds",
+    "archiveHash": "0xE2B319CF8A11E089",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.bounty_hunter.the_scorekeeper.dds",
+    "archiveHash": "0x37D9F3736B4097EB",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.consular.jedi_cultural_immersion.dds",
+    "archiveHash": "0x6893A3EBD5FCF9E2",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.consular.jedi_diplomacy.dds",
+    "archiveHash": "0xCA2CA0B835134A77",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.coruscant.republic_government.dds",
+    "archiveHash": "0x4EE1533718C8486D",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.dromund_kaas.sith_spawn.dds",
+    "archiveHash": "0x7518138814017039",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.illum.the_republics_alien_allies.dds",
+    "archiveHash": "0x399B7F438E709703",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.korriban.admission_to_the_sith_academy.dds",
+    "archiveHash": "0x980A65416B644F0F",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.korriban.sith_titles.dds",
+    "archiveHash": "0xF1B81986F439699B",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.korriban.sith_weapons.dds",
+    "archiveHash": "0xB0A99927A127D55B",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.korriban.slavery_in_the_empire.dds",
+    "archiveHash": "0xF0D067BB8AF17583",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.nar_shaddaa.republic_research_division.dds",
+    "archiveHash": "0xA28E9F32485C2FAA",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.open_world.act_2.republic_privateers.dds",
+    "archiveHash": "0xD1931DB802725931",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.smuggler.law_and_order_on_voss.dds",
+    "archiveHash": "0xD916DB6840D7DB50",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.smuggler.smuggling_101.dds",
+    "archiveHash": "0x14D5BE1DFB3AC187",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.smuggler.the_head_of_darth_bandon.dds",
+    "archiveHash": "0x175BB3A5879F6BBF",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.taris_rep.jedi_civil_war.dds",
+    "archiveHash": "0x4067E3D51A0C7982",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.taris_rep.republic_reconstruction.dds",
+    "archiveHash": "0x7B9C46D09C109EF7",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.trooper.operation_stoneduster.dds",
+    "archiveHash": "0x5CBF5A713B26BD19",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.trooper.the_lucky_lancer.dds",
+    "archiveHash": "0xB04E28D2A2E9DE34",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.trooper.the_umbra_encrypter.dds",
+    "archiveHash": "0x7E067964A4C7237C",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.tython.jedi_holocron.dds",
+    "archiveHash": "0x095AEE49400CB14F",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.tython.jedi_weapons.dds",
+    "archiveHash": "0xFF22EA92485DB6B1",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.lore.tython.rebuilding_the_jedi_order.dds",
+    "archiveHash": "0x84D208BDB5C6BB45",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.organizations.agent.chiss_expansionary_defense_force.dds",
+    "archiveHash": "0x74F8C1E46DA46BD7",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.organizations.agent.the_ghost_cell.dds",
+    "archiveHash": "0x2813CBDBF37E27F4",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.organizations.bounty_hunter.corellian_corporate_council.dds",
+    "archiveHash": "0xA0DA916996FB32BC",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.organizations.bounty_hunter.house_girard.dds",
+    "archiveHash": "0x42275430FF72AD80",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.organizations.corellia.the_green_jedi.dds",
+    "archiveHash": "0x187A178424695AB5",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.organizations.global.jedi_council.dds",
+    "archiveHash": "0xDD576D4EF4089606",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.organizations.knight.the_outer_rim_jedi_forces.dds",
+    "archiveHash": "0x28E47344A6996A6E",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.organizations.open_world.act_3.the_emperors_fallen_jedi.dds",
+    "archiveHash": "0x383CAE18F33F0885",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.organizations.ord_mantell.republic_military_ranks.dds",
+    "archiveHash": "0x9102FC0020AA5128",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.organizations.revan_arv.the_republic_navy.dds",
+    "archiveHash": "0x659D1BE838391D9A",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.organizations.smuggler.house_baliss.dds",
+    "archiveHash": "0xA1C4EE597397499F",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.organizations.smuggler.the_scourge.dds",
+    "archiveHash": "0x850CD8FF11984F78",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.organizations.trooper.dagger_wing.dds",
+    "archiveHash": "0xA1BEE454B5581618",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.organizations.trooper.havok_squad.dds",
+    "archiveHash": "0x268CFC41CBC4420D",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.organizations.trooper.republic_special_forces.dds",
+    "archiveHash": "0xBC6C299CE68F7F7D",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.agent.chemish_or.dds",
+    "archiveHash": "0x26BD5B2115E7BE8E",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.agent.darth_jadus.dds",
+    "archiveHash": "0x1D7B6E84EAFF65D9",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.agent.doctor_eckard_lokin.dds",
+    "archiveHash": "0x33135A9FE8DF7C45",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.agent.ensign_raina_temple.dds",
+    "archiveHash": "0x153344BBEDA09C1F",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.agent.kaliyo_djannis.dds",
+    "archiveHash": "0x467E3500F3077906",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.agent.keeper.dds",
+    "archiveHash": "0x5DF6D7EF7362BE31",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.agent.red_blade.dds",
+    "archiveHash": "0x4E11607D7AB92D9F",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.agent.scorpio.dds",
+    "archiveHash": "0xFEF19AF60EB48BC5",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.agent.station_chief.dds",
+    "archiveHash": "0xD8BCAA20B9D09157",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.agent.vector_hyllus.dds",
+    "archiveHash": "0x67D128345E8AEF01",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.agent.watcher_x.dds",
+    "archiveHash": "0x57C426B1124A640B",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.admiral_ivernus.dds",
+    "archiveHash": "0x1EAC186ECBB326A9",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.ambassador_yoran.dds",
+    "archiveHash": "0x370CD3590BCFF5B8",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.blizz.dds",
+    "archiveHash": "0xD9E5F26D6EC1C0E7",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.braden.dds",
+    "archiveHash": "0x514E79EDC4C57A2D",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.chairman_harlon_fane.dds",
+    "archiveHash": "0x6D34B6BC3BC0E041",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.commissioner_jonah_carter.dds",
+    "archiveHash": "0xECCD0F5E6E73A3E4",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.dokath_ra.dds",
+    "archiveHash": "0x62C8EB5313D55F35",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.durasteel_duke.dds",
+    "archiveHash": "0xDB0AE1A6F8AE23D7",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.gault_rennow.dds",
+    "archiveHash": "0x00DCD30602525673",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.geleren.dds",
+    "archiveHash": "0x05A67BBA49B7CEB8",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.general_thelonia_redrish.dds",
+    "archiveHash": "0xF3CEAED11CC8312D",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.jedi_master_jun_seros.dds",
+    "archiveHash": "0x202411DC03B14E76",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.jicoln_cadera.dds",
+    "archiveHash": "0x568DE8007284FE0F",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.lady_of_pain.dds",
+    "archiveHash": "0x609A59A50441EB98",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.lieutenant_major_pirell.dds",
+    "archiveHash": "0x8E64C0AE381773CE",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.lieutenant_major_pirrell.dds",
+    "archiveHash": "0xF5C4DD2F0E607EB6",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.mako.dds",
+    "archiveHash": "0xDC737DB414E85E97",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.reneget_vause.dds",
+    "archiveHash": "0x1917E7BC088FCEA0",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.skadge.dds",
+    "archiveHash": "0x339BDB02CCB46943",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.tarro_blood.dds",
+    "archiveHash": "0x40ECCE33E082C4EB",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.the_eidolon.dds",
+    "archiveHash": "0x34D34B4DD3A02E57",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.torian_cadera.dds",
+    "archiveHash": "0xF9C5559910879B90",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.tyresius_lokai.dds",
+    "archiveHash": "0x386D2357E8363538",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.bounty_hunter.zale_barrows.dds",
+    "archiveHash": "0x75A655CE964FFA71",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.revan_arc.the_jedi_entity.dds",
+    "archiveHash": "0xC9B8BFC524DC9C8B",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.akaavi_spar.dds",
+    "archiveHash": "0x94E9EC2D82CD6613",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.beryl_thorne.dds",
+    "archiveHash": "0x11E97CB90048C46A",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.bowdaar.dds",
+    "archiveHash": "0x2A41DADFD8AAF6C0",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.corso_riggs.dds",
+    "archiveHash": "0x7B99DF46C0EA783E",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.councilor_caicos.dds",
+    "archiveHash": "0x1B25DEC4056BABB3",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.darmas_pollaran.dds",
+    "archiveHash": "0x202BD40DD3A8237E",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.diago_hixan.dds",
+    "archiveHash": "0xDDD1FDDA9FAAE610",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.drooga_the_hutt.dds",
+    "archiveHash": "0xD3C1563A3A99592B",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.ivory.dds",
+    "archiveHash": "0xBAC553AAEAECAB08",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.jela_reneke.dds",
+    "archiveHash": "0xD89DB7B6C98DF4D2",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.lokir_ka.dds",
+    "archiveHash": "0x5BE61B343665DAE3",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.lunguss_guss_tuno.dds",
+    "archiveHash": "0x2E174DB73763E8D6",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.numen_brock.dds",
+    "archiveHash": "0x565913EAC91BC77E",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.rogun_the_butcher.dds",
+    "archiveHash": "0x9B1A76769BCC50DD",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.shai_tenna.dds",
+    "archiveHash": "0x33245ECC1BBD8CA5",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.skavak.dds",
+    "archiveHash": "0x7B76AF296E5C33F0",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.smuggler.the_real_darmas_polleran.dds",
+    "archiveHash": "0x7200A7A429BFAEC7",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.trooper.aric_jorgan.dds",
+    "archiveHash": "0x3872B17835DA449F",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.trooper.brel_orus.dds",
+    "archiveHash": "0xD7DDD09F9236BE32",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.trooper.captain_cormac.dds",
+    "archiveHash": "0x58E3D459CA1105CD",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.trooper.elara_dorne.dds",
+    "archiveHash": "0x21737B9DFCA844ED",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.trooper.general_garza.dds",
+    "archiveHash": "0x4B0A705669B098FD",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.trooper.harron_tavus.dds",
+    "archiveHash": "0x70FA6F041C81543C",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.trooper.jonas_balkar.dds",
+    "archiveHash": "0x475D4135AD5C2E79",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.trooper.locke.dds",
+    "archiveHash": "0x1920E8B82B81FADD",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.trooper.lord_ondorru.dds",
+    "archiveHash": "0x16AB34AE42B317A8",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.trooper.lord_torius.dds",
+    "archiveHash": "0xA497B97EE044C009",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.trooper.m1_4x.dds",
+    "archiveHash": "0xA45A8FACFE358B37",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.trooper.markus_thul.dds",
+    "archiveHash": "0xC0CA42F678127495",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.trooper.mayor_klerren.dds",
+    "archiveHash": "0x1C747D56F8876DC1",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.trooper.senator_evran.dds",
+    "archiveHash": "0xA93170390F4CA40B",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.trooper.sergeant_yuun.dds",
+    "archiveHash": "0x03FC7046A8CE6321",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.persons.trooper.tanno_vik.dds",
+    "archiveHash": "0xFD7D70F89A82BDAE",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.ships.agent_ship.dds",
+    "archiveHash": "0x2C67F54BA3C2B2F6",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.ships.bounty_hunter_ship.dds",
+    "archiveHash": "0x9416A15C36D1B49B",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.ships.jedi_ship.dds",
+    "archiveHash": "0x2262914D2D1175B3",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.ships.sith_ship.dds",
+    "archiveHash": "0x2E9FEF77F9911CF0",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.ships.smuggler_ship.dds",
+    "archiveHash": "0xF996D59E7EF929E4",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.ships.trooper_ship.dds",
+    "archiveHash": "0x952CED8DEC9863A8",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.species.sith_pure_blood.dds",
+    "archiveHash": "0xA23885B90AA993F3",
+    "length": 84128
+  },
+  {
+    "path": "/resources/gfx/codex/cdx.tutorial.galaxy_map.dds",
+    "archiveHash": "0xBA76412B8D534D4E",
+    "length": 106368
+  },
+  {
+    "path": "/resources/gfx/gfx_production/bwaui_character_create.gfx",
+    "archiveHash": "0x7CFAF9B6AF8E5D09",
+    "length": 467897
+  },
+  {
+    "path": "/resources/gfx/gfx_production/bwaui_character_create_panels.gfx",
+    "archiveHash": "0x36EDDA5563D556E6",
+    "length": 1228
+  },
+  {
+    "path": "/resources/gfx/gfx_production/bwaui_character_create_window.gfx",
+    "archiveHash": "0xCE7C8110D5C7E34E",
+    "length": 3260
+  },
+  {
+    "path": "/resources/gfx/gfx_production/bwaui_character_select.gfx",
+    "archiveHash": "0x38E235212DAE5042",
+    "length": 464623
+  },
+  {
+    "path": "/resources/gfx/gfx_production/bwaui_character_select_buttonbar.gfx",
+    "archiveHash": "0x0652DACB6A9D3017",
+    "length": 1149
+  },
+  {
+    "path": "/resources/gfx/gfx_production/bwaui_character_select_hotspot.gfx",
+    "archiveHash": "0xC3198CAA3F59A89A",
+    "length": 678
+  },
+  {
+    "path": "/resources/gfx/gfx_production/bwaui_character_select_namebar.gfx",
+    "archiveHash": "0x106AE54C5091BBCA",
+    "length": 281
+  },
+  {
+    "path": "/resources/gfx/gfx_production/bwaui_character_select_selectionbar.gfx",
+    "archiveHash": "0x918A1B0B561FA79D",
+    "length": 1298
+  },
+  {
+    "path": "/resources/gfx/gfx_production/ui_galaxymap_centerbutton.gfx",
+    "archiveHash": "0xAB9F82CB9097CFCC",
+    "length": 665
+  },
+  {
+    "path": "/resources/gfx/gfx_production/ui_galaxymap_closebttn.gfx",
+    "archiveHash": "0xB2556EF4E832D193",
+    "length": 648
+  },
+  {
+    "path": "/resources/gfx/gfx_production/ui_galaxymap_infowindow.gfx",
+    "archiveHash": "0x9AA245F7CFA353BE",
+    "length": 2424
+  },
+  {
+    "path": "/resources/gfx/gfx_production/ui_galaxymap_leftbutton.gfx",
+    "archiveHash": "0xBE2DB88498B818FB",
+    "length": 631
+  },
+  {
+    "path": "/resources/gfx/gfx_production/ui_galaxymap_panel.gfx",
+    "archiveHash": "0x7565FC4CA75852DA",
+    "length": 1127
+  },
+  {
+    "path": "/resources/gfx/gfx_production/ui_galaxymap_planet_info.gfx",
+    "archiveHash": "0xE87240360B0FDD9E",
+    "length": 2576
+  },
+  {
+    "path": "/resources/gfx/gfx_production/ui_galaxymap_scanlines.gfx",
+    "archiveHash": "0xA3EB186C9E30F3B6",
+    "length": 824
+  },
+  {
+    "path": "/resources/gfx/gfx_production/ui_hud_galaxymap.gfx",
+    "archiveHash": "0xBB3144FC125CAC4E",
+    "length": 461297
+  },
+  {
+    "path": "/resources/gfx/icons/bountyhunter.dds",
+    "archiveHash": "0xF51FECB61D002040",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/cabonizedbounty.dds",
+    "archiveHash": "0xF17274855B0F73D6",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/bountyhunter_abilities.dds",
+    "archiveHash": "0xB3EF4B69D69093FF",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/bountyhunter_advancedclass_0.dds",
+    "archiveHash": "0x8DF4D39DC7D0CFC9",
+    "length": 14512
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/bountyhunter_advancedclass_1.dds",
+    "archiveHash": "0x823C5D5A8C35B218",
+    "length": 14512
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/bountyhunter_combatrole.dds",
+    "archiveHash": "0x6DB503F388C9FC54",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/bountyhunter_equipment.dds",
+    "archiveHash": "0x4139DA07A945893B",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/bountyhunter_story.dds",
+    "archiveHash": "0x3A0786248D13C056",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/jediknight_abilities.dds",
+    "archiveHash": "0xD17CC3B6CCAD5FB4",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/jediknight_advancedclass_0.dds",
+    "archiveHash": "0x3214FD5623FFD8AC",
+    "length": 14512
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/jediknight_advancedclass_1.dds",
+    "archiveHash": "0xE5B929C4DC0C6B10",
+    "length": 14512
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/jediknight_combatrole.dds",
+    "archiveHash": "0x9A635E2CF5E59502",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/jediknight_equipment.dds",
+    "archiveHash": "0xC92A51D2D3103FC7",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/jediknight_story.dds",
+    "archiveHash": "0x4570A748A3A4C8A3",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/jediwizard_abilities.dds",
+    "archiveHash": "0x8C6BFC04D7C91A77",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/jediwizard_advancedclass_0.dds",
+    "archiveHash": "0x06CF5EC580FE20B5",
+    "length": 14512
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/jediwizard_advancedclass_1.dds",
+    "archiveHash": "0x0B27503AFAD7D892",
+    "length": 14512
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/jediwizard_combatrole.dds",
+    "archiveHash": "0x2680EBCBA53699E7",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/jediwizard_equipment.dds",
+    "archiveHash": "0x9F65DE90DBE4BE6B",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/jediwizard_story.dds",
+    "archiveHash": "0x04704B6DC974604E",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/sithsorcerer_abilities.dds",
+    "archiveHash": "0x089AA897DBBB9626",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/sithsorcerer_advancedclass_0.dds",
+    "archiveHash": "0xCEAD64E45D2133F9",
+    "length": 14512
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/sithsorcerer_advancedclass_1.dds",
+    "archiveHash": "0xA45B913F19C12246",
+    "length": 14512
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/sithsorcerer_combatrole.dds",
+    "archiveHash": "0xF921808EEC957193",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/sithsorcerer_equipment.dds",
+    "archiveHash": "0x71D1DBD2556F2B3B",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/sithsorcerer_story.dds",
+    "archiveHash": "0xBCBA9C26932DFD57",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/sithwarrior_abilities.dds",
+    "archiveHash": "0xE822EDC0FB544E52",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/sithwarrior_advancedclass_0.dds",
+    "archiveHash": "0x6A14F8F73042BD48",
+    "length": 14512
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/sithwarrior_advancedclass_1.dds",
+    "archiveHash": "0x512E5496F9D99C5C",
+    "length": 14512
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/sithwarrior_combatrole.dds",
+    "archiveHash": "0xBFC8A1FC12BC13A3",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/sithwarrior_equipment.dds",
+    "archiveHash": "0x0FC049142C125985",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/sithwarrior_story.dds",
+    "archiveHash": "0x16E05F2288A0A1FE",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/smuggler_abilities.dds",
+    "archiveHash": "0xEC9E89EB5BDA64F8",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/smuggler_advancedclass_0.dds",
+    "archiveHash": "0xA65E92398DEE427D",
+    "length": 14512
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/smuggler_advancedclass_1.dds",
+    "archiveHash": "0x3D14219EBF9B0189",
+    "length": 14512
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/smuggler_combatrole.dds",
+    "archiveHash": "0x4DFCC6E80364632F",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/smuggler_equipment.dds",
+    "archiveHash": "0xE88AFCDF89F87312",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/smuggler_story.dds",
+    "archiveHash": "0xE86EF91823688973",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/trooper_abilities.dds",
+    "archiveHash": "0x63C14A1BEA6E0C20",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/trooper_advancedclass_0.dds",
+    "archiveHash": "0x6EC02D7858127396",
+    "length": 14512
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/trooper_advancedclass_1.dds",
+    "archiveHash": "0x559FF2EEA78A3238",
+    "length": 14512
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/trooper_combatrole.dds",
+    "archiveHash": "0x4FEA9B2F1BE498D7",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/trooper_equipment.dds",
+    "archiveHash": "0x4C84E48C0ADDD582",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/characterdetails/trooper_story.dds",
+    "archiveHash": "0x776B97135C4349DB",
+    "length": 70976
+  },
+  {
+    "path": "/resources/gfx/icons/childoftheempire.dds",
+    "archiveHash": "0x8A961B1C3725DB8A",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/craftingdroidrepublic.dds",
+    "archiveHash": "0xC6D9E45065C8CF3E",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber.jedihigh01.a01_v01.dds",
+    "archiveHash": "0xC9682308399523EE",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber.jedihigh02.a01_v01.dds",
+    "archiveHash": "0x5E2138924B9C9B72",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber.jedilow01.a01_v01.dds",
+    "archiveHash": "0x424326B5BCEE854D",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber.jedilow02.a01_v01.dds",
+    "archiveHash": "0x33038A259960A4F1",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber.sithhigh01.a01_v01.dds",
+    "archiveHash": "0xB2F5952D4C1BC399",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber.sithhigh02.a01_v01.dds",
+    "archiveHash": "0xFFF9E7F20AB83FF1",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber.sithhigh03.a01_v01.dds",
+    "archiveHash": "0x9BF874937C014106",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber.sithlhigh01.a01_v01.dds",
+    "archiveHash": "0x7AF0C75720BDF2A6",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber.sithlow01.a01_v01.dds",
+    "archiveHash": "0xEFB95577848FADBE",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber.sithlow02.a01_v01.dds",
+    "archiveHash": "0xD85ED8CCE3EE7FB3",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber.sithlow03.a01_v01.dds",
+    "archiveHash": "0xFFDC9514FF89AE80",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber_jedihigh01_a01_v01.dds",
+    "archiveHash": "0x40EE29AED573F511",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber_jedihigh02_a01_v01.dds",
+    "archiveHash": "0xB76582AA4F9F2871",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber_jedilow01_a01_v01.dds",
+    "archiveHash": "0x1BD8C446DF8AEDE2",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber_jedilow02_a01_v01.dds",
+    "archiveHash": "0xA2FAE5C0E028AF02",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber_sithhigh01_a01_v01.dds",
+    "archiveHash": "0x888451287A8D5866",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber_sithhigh02_a01_v01.dds",
+    "archiveHash": "0x9C377BDC015A5AEE",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber_sithhigh03_a01_v01.dds",
+    "archiveHash": "0x26718DE56F4493FE",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber_sithlhigh01_a01_v01.dds",
+    "archiveHash": "0xC9D7F0CA6E092914",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber_sithlow01_a01_v01.dds",
+    "archiveHash": "0x16D5CF63FC373120",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber_sithlow02_a01_v01.dds",
+    "archiveHash": "0x741E1C75478C36D7",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/dualsaber_sithlow03_a01_v01.dds",
+    "archiveHash": "0xDD92102CFFF1D459",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/empire.dds",
+    "archiveHash": "0xAF2C994E39D6239D",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/genericunlockabilityrepublic.dds",
+    "archiveHash": "0x2CD69D9C8AFC315F",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/imperialagent.dds",
+    "archiveHash": "0x0DE9DDCA65BD2051",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.ce.republic.dancer.03.chest.dds",
+    "archiveHash": "0x6D6B538978D9121B",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.ce.republic.dancer.03.feet.dds",
+    "archiveHash": "0x9D4187D1B9EAE466",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.ce.republic.dancer.03.hands.dds",
+    "archiveHash": "0x3D6E2AE68D865D74",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.ce.republic.dancer.03.head.dds",
+    "archiveHash": "0xC93A4AE73FE8D124",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.ce.republic.dancer.03.legs.dds",
+    "archiveHash": "0xD7C618C1CF578E93",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.ce.republic.dancer.03.waist.dds",
+    "archiveHash": "0x82AA05667B989390",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.ce.republic.dancer.03.wrists.dds",
+    "archiveHash": "0xE458F662E8C87687",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.ce.republic.dancer.03.chest.dds",
+    "archiveHash": "0x4E6223E74E36E33C",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.ce.republic.dancer.03.feet.dds",
+    "archiveHash": "0x5C5CA5D865F9CA2A",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.ce.republic.dancer.03.hands.dds",
+    "archiveHash": "0x8E368A2540CA44CF",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.ce.republic.dancer.03.head.dds",
+    "archiveHash": "0xD1615E97E5106ED3",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.ce.republic.dancer.03.legs.dds",
+    "archiveHash": "0xC0FB5ACFC42A2D7C",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.ce.republic.dancer.03.waist.dds",
+    "archiveHash": "0x623BEF66916824B0",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.ce.republic.dancer.03.wrists.dds",
+    "archiveHash": "0x5AE929ADC89BF78E",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.keyfob.imperial.imperial_trooper.01.chest.dds",
+    "archiveHash": "0xD7462AA368E0BA30",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.keyfob.imperial.imperial_trooper.01.feet.dds",
+    "archiveHash": "0x2441B5AE53E4B86F",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.keyfob.imperial.imperial_trooper.01.hands.dds",
+    "archiveHash": "0xCA11924300B3B3FD",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.keyfob.imperial.imperial_trooper.01.head.dds",
+    "archiveHash": "0x8A5199314BCB6441",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.keyfob.imperial.imperial_trooper.01.legs.dds",
+    "archiveHash": "0xFA860B7144AC2B23",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.keyfob.imperial.imperial_trooper.01.waist.dds",
+    "archiveHash": "0x866B3D66F4790615",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.keyfob.imperial.imperial_trooper.01.wrists.dds",
+    "archiveHash": "0xC0AC926BF1EDC95B",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.keyfob.republic.republic_officer.01.chest.dds",
+    "archiveHash": "0xA18611632474501E",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.keyfob.republic.republic_officer.01.feet.dds",
+    "archiveHash": "0xCA99B3C7B65AE7D2",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.keyfob.republic.republic_officer.01.hands.dds",
+    "archiveHash": "0xA01D1EEF71311E3F",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.keyfob.republic.republic_officer.01.head.dds",
+    "archiveHash": "0x6BB2EDCDCA8D391F",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.keyfob.republic.republic_officer.01.legs.dds",
+    "archiveHash": "0xBE56ADE360FE8615",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.keyfob.republic.republic_officer.01.waist.dds",
+    "archiveHash": "0x8BEF08920A3CDAEF",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.class.custom.keyfob.republic.republic_officer.01.wrists.dds",
+    "archiveHash": "0x9DA297EEC053CFEA",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.ce.republic.dancer.03.chest.dds",
+    "archiveHash": "0xE17EDE2800643A62",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.ce.republic.dancer.03.feet.dds",
+    "archiveHash": "0x564E0E30B0C2A44E",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.ce.republic.dancer.03.hands.dds",
+    "archiveHash": "0xC1E26BE13420295A",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.ce.republic.dancer.03.head.dds",
+    "archiveHash": "0x88E15D3611F0D616",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.ce.republic.dancer.03.legs.dds",
+    "archiveHash": "0x0FDB332F3E141519",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.ce.republic.dancer.03.waist.dds",
+    "archiveHash": "0xF0594371A899C0DF",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.ce.republic.dancer.03.wrists.dds",
+    "archiveHash": "0x0AD6E61CB4707DD0",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.keyfob.imperial.imperial_trooper.01.chest.dds",
+    "archiveHash": "0x06FC879EC6B7C257",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.keyfob.imperial.imperial_trooper.01.feet.dds",
+    "archiveHash": "0x3C4706B90F5E8EFA",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.keyfob.imperial.imperial_trooper.01.hands.dds",
+    "archiveHash": "0x8BC35CA106F7006B",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.keyfob.imperial.imperial_trooper.01.head.dds",
+    "archiveHash": "0x98B164C6A66B1004",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.keyfob.imperial.imperial_trooper.01.legs.dds",
+    "archiveHash": "0xD3ECEE5308004324",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.keyfob.imperial.imperial_trooper.01.waist.dds",
+    "archiveHash": "0x1752EBE81A1011E8",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.keyfob.imperial.imperial_trooper.01.wrists.dds",
+    "archiveHash": "0x8229A6ECADB9252A",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.keyfob.republic.republic_officer.01.chest.dds",
+    "archiveHash": "0x14D2EE2BCC050FD9",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.keyfob.republic.republic_officer.01.feet.dds",
+    "archiveHash": "0x096C48BDA7EB8038",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.keyfob.republic.republic_officer.01.hands.dds",
+    "archiveHash": "0xFF3F5AA984866665",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.keyfob.republic.republic_officer.01.head.dds",
+    "archiveHash": "0x583017D4CAEB3153",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.keyfob.republic.republic_officer.01.legs.dds",
+    "archiveHash": "0x12B504FE72F986A2",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.keyfob.republic.republic_officer.01.waist.dds",
+    "archiveHash": "0x7F3D69DFD4AB47C8",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.keyfob.republic.republic_officer.01.wrists.dds",
+    "archiveHash": "0x76B2301720703261",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.pilot_outfit.empire.chest.dds",
+    "archiveHash": "0x625C65D1D425DFF5",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.pilot_outfit.empire.feet.dds",
+    "archiveHash": "0x50B7635432885397",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.pilot_outfit.empire.hands.dds",
+    "archiveHash": "0x5F6131DBF7DE9473",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.pilot_outfit.empire.head.dds",
+    "archiveHash": "0x23804819D3C04DB6",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.pilot_outfit.empire.legs.dds",
+    "archiveHash": "0x503E0B7C4E172C30",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.pilot_outfit.empire.waist.dds",
+    "archiveHash": "0xFD5C3D13C864752C",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.pilot_outfit.empire.wrists.dds",
+    "archiveHash": "0x920CB5A50CC9FC8D",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.pilot_outfit.republic.chest.dds",
+    "archiveHash": "0xB9ED35CE2693EF73",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.pilot_outfit.republic.feet.dds",
+    "archiveHash": "0xE9D69AF4431834B5",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.pilot_outfit.republic.hands.dds",
+    "archiveHash": "0xCB2D510328A0BB3D",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.pilot_outfit.republic.head.dds",
+    "archiveHash": "0x5C00E734A3DB1F76",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.pilot_outfit.republic.legs.dds",
+    "archiveHash": "0x93E5AA89ACB431D9",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.pilot_outfit.republic.waist.dds",
+    "archiveHash": "0xB7988896C9D8B731",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.pilot_outfit.republic.wrists.dds",
+    "archiveHash": "0xAE16248CE9508A34",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.rakghoul_event.republic.chest.dds",
+    "archiveHash": "0x9E854FEC3807AC1C",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.rakghoul_event.republic.feet.dds",
+    "archiveHash": "0x58AA2D696842DC73",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.rakghoul_event.republic.hands.dds",
+    "archiveHash": "0x532F53643CFA4AEA",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.rakghoul_event.republic.head.dds",
+    "archiveHash": "0x99B0CC2E31D64690",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.rakghoul_event.republic.legs.dds",
+    "archiveHash": "0x398722027373C229",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.rakghoul_event.republic.waist.dds",
+    "archiveHash": "0x1FD5DE3823D92037",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.custom.social.rakghoul_event.republic.wrists.dds",
+    "archiveHash": "0x7BB8D0A61AF6288A",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.keyfob.imperial.imperial_trooper.01.chest.dds",
+    "archiveHash": "0xB6C7C56500C15729",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.keyfob.imperial.imperial_trooper.01.feet.dds",
+    "archiveHash": "0x45BFC63B2A7BAF54",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.keyfob.imperial.imperial_trooper.01.hands.dds",
+    "archiveHash": "0x3134B610978E303F",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.keyfob.imperial.imperial_trooper.01.head.dds",
+    "archiveHash": "0xE9671893FC4A12B1",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.keyfob.imperial.imperial_trooper.01.legs.dds",
+    "archiveHash": "0xEF586D2AC3912366",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.keyfob.imperial.imperial_trooper.01.waist.dds",
+    "archiveHash": "0x9170E5D85B4227FB",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.keyfob.imperial.imperial_trooper.01.wrists.dds",
+    "archiveHash": "0x093E18B8EAF4094A",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.keyfob.republic.republic_officer.01.chest.dds",
+    "archiveHash": "0x23E5047A885F6ACA",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.keyfob.republic.republic_officer.01.feet.dds",
+    "archiveHash": "0xF9A4A3A9633E64D5",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.keyfob.republic.republic_officer.01.hands.dds",
+    "archiveHash": "0x221B55C7A98BD9EA",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.keyfob.republic.republic_officer.01.head.dds",
+    "archiveHash": "0x89F60856DE599472",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.keyfob.republic.republic_officer.01.legs.dds",
+    "archiveHash": "0x3C05CE36A1D3C008",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.keyfob.republic.republic_officer.01.waist.dds",
+    "archiveHash": "0xCB81206EA7E0B0F7",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/ipp.keyfob.republic.republic_officer.01.wrists.dds",
+    "archiveHash": "0x35BC2EFE00374509",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/jcjedischolar.dds",
+    "archiveHash": "0x776A66385164DA72",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/jedi_equipment.dds",
+    "archiveHash": "0x5A944FA68682D619",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/jediconsular.dds",
+    "archiveHash": "0x789A9F09E76BF27C",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/jediholocommunicator.dds",
+    "archiveHash": "0xF0360D1B59562B2C",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/jediholocron.dds",
+    "archiveHash": "0x3596A729D3B667CB",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/jediholocron2.dds",
+    "archiveHash": "0x9DC2661481F10144",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/jediholocron3.dds",
+    "archiveHash": "0x695CE8AD5E9FA5AB",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/jediknight.dds",
+    "archiveHash": "0x628005D21C6C21A5",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/jedilightsaberhilt.dds",
+    "archiveHash": "0x583FFADAB8F394B0",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/jedistonetablet.dds",
+    "archiveHash": "0x2A47A7441543F85B",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/larger/bountyhunter.dds",
+    "archiveHash": "0xD6D96AA412C0919B",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/bountyhunter_desat.dds",
+    "archiveHash": "0x0455FAB5A511FA5D",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/jcjedischolar.dds",
+    "archiveHash": "0xAFD4A8EDD63A4132",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/jcjedischolar_desat.dds",
+    "archiveHash": "0xE3F12A4B5B8B07D6",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/jediconsular.dds",
+    "archiveHash": "0xFBA4EBC577BDE594",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/jediconsular_desat.dds",
+    "archiveHash": "0xFBA05D5DF387C634",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/jediknight.dds",
+    "archiveHash": "0x1F1BAF166F96D912",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/jediknight_desat.dds",
+    "archiveHash": "0x05623078B864CFB9",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/sithsorcerer.dds",
+    "archiveHash": "0x3DAE62541931A77D",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/sithsorcerer_desat.dds",
+    "archiveHash": "0xB48DCE94A63CBF08",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/sithwarrior.dds",
+    "archiveHash": "0xCFB48CEC04FBFFD4",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/sithwarrior_desat.dds",
+    "archiveHash": "0xE5E58012662B60CF",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/smuggler.dds",
+    "archiveHash": "0x177F4702F4950E08",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/smuggler_desat.dds",
+    "archiveHash": "0xAE9AB3431BF4534D",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/swchildoftheempire.dds",
+    "archiveHash": "0x4E463A50F032EDCB",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/swchildoftheempire_desat.dds",
+    "archiveHash": "0x05CC933FB68878B4",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/swsithpureblood.dds",
+    "archiveHash": "0xB9476B917F172F10",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/swsithpureblood_desat.dds",
+    "archiveHash": "0xA630C57BE85DCC8B",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/trepublicelite.dds",
+    "archiveHash": "0x9912541B08B35A35",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/trepublicelite_desat.dds",
+    "archiveHash": "0xC858C736DB169966",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/trooper.dds",
+    "archiveHash": "0xB1181EA23659B689",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/larger/trooper_desat.dds",
+    "archiveHash": "0xA750C3A903CDF92A",
+    "length": 10128
+  },
+  {
+    "path": "/resources/gfx/icons/mount.speederbike.bountyhunter.01.dds",
+    "archiveHash": "0xBF72FD9F5E7330C9",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/republic.dds",
+    "archiveHash": "0x3378F6770A05A71D",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/republic_cannister.dds",
+    "archiveHash": "0x8E07B7BF85814B1F",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/republicbanner.dds",
+    "archiveHash": "0xC22215EDB22DBBB3",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/republiccodecylinder.dds",
+    "archiveHash": "0xE2CC4E5FBEB7871F",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/republiccomlink.dds",
+    "archiveHash": "0xF84A0F13A465D59A",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/republiccommendation.dds",
+    "archiveHash": "0xE2EA17D9111CFA29",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/republiccommendation2.dds",
+    "archiveHash": "0x5EA2DC908359C753",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/republiccommendation3.dds",
+    "archiveHash": "0x7F8E92C3F70632BB",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/republiccommendation4.dds",
+    "archiveHash": "0xD79604A938E63AF3",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/republiccrate.dds",
+    "archiveHash": "0xEDFF53E552472AC6",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/republicdatapad.dds",
+    "archiveHash": "0x8E2A8C6F47E86EE1",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/republicdogtags.dds",
+    "archiveHash": "0x83A76C45F5E22A46",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/republicfilebox.dds",
+    "archiveHash": "0x047A8D6B9C84CDAA",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/republiclockbox.dds",
+    "archiveHash": "0xC3A2B442B6445E52",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/saber.jedihigh01.a01_v01.dds",
+    "archiveHash": "0xD708035580A34D2F",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.jedihigh02.a01_v01.dds",
+    "archiveHash": "0xF5C71C7C2A37C4F8",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.jedihigh03.a01_v01.dds",
+    "archiveHash": "0xC91D49159DA6649E",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.jedihigh04.a01_v01.dds",
+    "archiveHash": "0x14708FABA1434DD6",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.jedihigh05.a01_v01.dds",
+    "archiveHash": "0x4FE053008BB5911C",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.jedihigh05_v01.dds",
+    "archiveHash": "0x243F3BE853835855",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.jedihigh06.a01_v01.dds",
+    "archiveHash": "0x8996547FC7C89267",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.jedilow01.a01_v01.dds",
+    "archiveHash": "0x8A0BF927EAFA6B7D",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.jedilow02.a01_v01.dds",
+    "archiveHash": "0xE403F773DB5E0C9F",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.jedilow03.a01_v01.dds",
+    "archiveHash": "0x37C35E78F3206C72",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.sithhigh01.a01_v01.dds",
+    "archiveHash": "0xB60A5D39EAFED472",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.sithhigh02.a01_v01.dds",
+    "archiveHash": "0xA7846360346EE1B3",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.sithhigh03.a01_v01.dds",
+    "archiveHash": "0xF955274FAFC0A9DA",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.sithhigh04.a01_v01.dds",
+    "archiveHash": "0xFCF4D5A41369A43F",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.sithhigh05.a01_v01.dds",
+    "archiveHash": "0x56CB7816DE9345F6",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.sithhigh06.a01_v01.dds",
+    "archiveHash": "0x84974302FED47C5B",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.sithlow01.a01_v01.dds",
+    "archiveHash": "0x2C2F323315ED07F4",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.sithlow02.a01_v01.dds",
+    "archiveHash": "0xA419C622FC2645C5",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber.sithlow03.a01_v01.dds",
+    "archiveHash": "0xCFF89998814B382A",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_jedihigh01_a01_v01.dds",
+    "archiveHash": "0xED58C8BDE1FA7385",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_jedihigh02_a01_v01.dds",
+    "archiveHash": "0xE48D6D0851FC328A",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_jedihigh03_a01_v01.dds",
+    "archiveHash": "0xF4FBC9A7753AD1D5",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_jedihigh04_a01_v01.dds",
+    "archiveHash": "0xFD3CED449D32F617",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_jedihigh05_a01_v01.dds",
+    "archiveHash": "0xB5738F1B41434FD8",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_jedihigh05_v01.dds",
+    "archiveHash": "0x32D615543C9B8619",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_jedihigh06_a01_v01.dds",
+    "archiveHash": "0x9791ECE05E2F6F36",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_jedilow01_a01_v01.dds",
+    "archiveHash": "0x7483A43D38DEBB55",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_jedilow02_a01_v01.dds",
+    "archiveHash": "0x02E4DD3EFEA085B5",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_jedilow03_a01_v01.dds",
+    "archiveHash": "0xCB5099E860755E22",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_sithhigh01_a01_v01.dds",
+    "archiveHash": "0x329DBDE6525C70BE",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_sithhigh02_a01_v01.dds",
+    "archiveHash": "0xDF26597BD92276BC",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_sithhigh03_a01_v01.dds",
+    "archiveHash": "0xA08D293A5CC53CBA",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_sithhigh04_a01_v01.dds",
+    "archiveHash": "0x448A82BB50FE41A3",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_sithhigh05_a01_v01.dds",
+    "archiveHash": "0xFC381F2482C5C5ED",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_sithhigh06_a01_v01.dds",
+    "archiveHash": "0x8A38C8100B0E6DF7",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_sithlow01_a01_v01.dds",
+    "archiveHash": "0x8E53B8E317A99EEB",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_sithlow02_a01_v01.dds",
+    "archiveHash": "0x3EF6D568A569EB81",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saber_sithlow03_a01_v01.dds",
+    "archiveHash": "0x2601E0E8417B16BD",
+    "length": 1480
+  },
+  {
+    "path": "/resources/gfx/icons/saberthrowsith.dds",
+    "archiveHash": "0xFC515066855178F4",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/sithholocommunicator.dds",
+    "archiveHash": "0xEA2A5A31CF860C14",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/sithholocron.dds",
+    "archiveHash": "0x3B7C2203360C7806",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/sithholocron2.dds",
+    "archiveHash": "0x74F9B70627128B6B",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/sithholocron3.dds",
+    "archiveHash": "0x6FA606FD646E0801",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/sithlightsaberhilt.dds",
+    "archiveHash": "0x6A55F2A1433FE8D8",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/sithmask.dds",
+    "archiveHash": "0x4B4B7114A146443B",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/sithmaskmod.dds",
+    "archiveHash": "0xD2BFE421D6A7D59C",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/sithshard.dds",
+    "archiveHash": "0xC2F6EFF6D2CBB629",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/sithsorcerer.dds",
+    "archiveHash": "0xC0D4F0799FE81861",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/sithstonetablet.dds",
+    "archiveHash": "0xAC00F3BE706596C6",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/sithwarblade.dds",
+    "archiveHash": "0x4527EA217F133D50",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/sithwarrior.dds",
+    "archiveHash": "0xB43C9E8E5AC4A2DE",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/smuggler'sluck.dds",
+    "archiveHash": "0xFAE442D10D322703",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/smuggler.dds",
+    "archiveHash": "0x380B57AF081EF9DF",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/smuggler_luck.dds",
+    "archiveHash": "0xC7334CEEFF4DD4DE",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/smugglerrecuperate.dds",
+    "archiveHash": "0x0D90B04ED5F4D509",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/swchildoftheempire.dds",
+    "archiveHash": "0x26CD66CC17AC072D",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/swsithpureblood.dds",
+    "archiveHash": "0xCA3D5F09B17FED80",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/trepublicelite.dds",
+    "archiveHash": "0xB8B971006A971239",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/icons/trooper.dds",
+    "archiveHash": "0xB4D8468C2A0A71C8",
+    "length": 2832
+  },
+  {
+    "path": "/resources/gfx/loadingscreen/background_tile.dds",
+    "archiveHash": "0x17B6AEBFECE82116",
+    "length": 364016
+  },
+  {
+    "path": "/resources/gfx/loadingscreen/bounty_hunter_loader.tex",
+    "archiveHash": "0x0CFD7F3D0D409DD5",
+    "length": 518
+  },
+  {
+    "path": "/resources/gfx/loadingscreen/jedi_knight_loader.tex",
+    "archiveHash": "0xD2D330887F354FD5",
+    "length": 518
+  },
+  {
+    "path": "/resources/gfx/loadingscreen/jedi_wizard_loader.tex",
+    "archiveHash": "0x93EAB046384FB1C8",
+    "length": 518
+  },
+  {
+    "path": "/resources/gfx/loadingscreen/republic_overlay.dds",
+    "archiveHash": "0xEB6E4EAB58F966AA",
+    "length": 1107328
+  },
+  {
+    "path": "/resources/gfx/loadingscreen/sith_sorcerer_loader.tex",
+    "archiveHash": "0x1A6C1D353A07D4F7",
+    "length": 518
+  },
+  {
+    "path": "/resources/gfx/loadingscreen/sith_warrior_loader.tex",
+    "archiveHash": "0xD27E4695B806379C",
+    "length": 521
+  },
+  {
+    "path": "/resources/gfx/loadingscreen/smuggler_loader.tex",
+    "archiveHash": "0xF67DECF036EAEE51",
+    "length": 518
+  },
+  {
+    "path": "/resources/gfx/loadingscreen/trooper_loader.tex",
+    "archiveHash": "0x641647D4D3553E47",
+    "length": 518
+  },
+  {
+    "path": "/resources/gfx/placeables/galaxy_map/noise_1.swf",
+    "archiveHash": "0x2C6BDD989513FB24",
+    "length": 7886
+  },
+  {
+    "path": "/resources/gfx/placeables/galaxy_map/noise_2.swf",
+    "archiveHash": "0x4F50D1082F791397",
+    "length": 1169
+  },
+  {
+    "path": "/resources/gfx/placeables/galaxy_map/noise_3.swf",
+    "archiveHash": "0xCA7524190DD5C9A9",
+    "length": 1158
+  },
+  {
+    "path": "/resources/gfx/portrait/_portrait_background.dds",
+    "archiveHash": "0x50C749224C251C12",
+    "length": 11376
+  },
+  {
+    "path": "/resources/gfx/portrait/_portrait_background.tex",
+    "archiveHash": "0xAC8139A07B799A96",
+    "length": 531
+  },
+  {
+    "path": "/resources/gfx/portraits/sith.dds",
+    "archiveHash": "0x8B0CA2DAB3401B92",
+    "length": 32336
+  },
+  {
+    "path": "/resources/gfx/space_combat/sc_agent_schematic_blue.dds",
+    "archiveHash": "0xE423059E5019AEAF",
+    "length": 43856
+  },
+  {
+    "path": "/resources/gfx/space_combat/sc_agent_schematic_red.dds",
+    "archiveHash": "0x641861AD10AED95A",
+    "length": 43856
+  },
+  {
+    "path": "/resources/gfx/space_combat/sc_bountyhunter_schematic_blue.dds",
+    "archiveHash": "0x99C91BDCCD09C9C6",
+    "length": 43856
+  },
+  {
+    "path": "/resources/gfx/space_combat/sc_bountyhunter_schematic_red.dds",
+    "archiveHash": "0xC0690341987372CB",
+    "length": 43856
+  },
+  {
+    "path": "/resources/gfx/space_combat/sc_jedi_schematic_blue.dds",
+    "archiveHash": "0x86BF91CF82BE1ADD",
+    "length": 43856
+  },
+  {
+    "path": "/resources/gfx/space_combat/sc_jedi_schematic_red.dds",
+    "archiveHash": "0xAB219530480F88FC",
+    "length": 43856
+  },
+  {
+    "path": "/resources/gfx/space_combat/sc_sith_schematic_blue.dds",
+    "archiveHash": "0x2F53247FD42FB0D6",
+    "length": 43856
+  },
+  {
+    "path": "/resources/gfx/space_combat/sc_sith_schematic_red.dds",
+    "archiveHash": "0xF3EC86DEF3DDF9B9",
+    "length": 43856
+  },
+  {
+    "path": "/resources/gfx/space_combat/sc_smuggler_schematic_blue.dds",
+    "archiveHash": "0xA12E735C9580A738",
+    "length": 43856
+  },
+  {
+    "path": "/resources/gfx/space_combat/sc_smuggler_schematic_red.dds",
+    "archiveHash": "0x1EAF39479A02A4CC",
+    "length": 43856
+  },
+  {
+    "path": "/resources/gfx/space_combat/sc_trooper_schematic_blue.dds",
+    "archiveHash": "0xE9B75747AE944BBC",
+    "length": 43856
+  },
+  {
+    "path": "/resources/gfx/space_combat/sc_trooper_schematic_red.dds",
+    "archiveHash": "0x6547DF25820C496A",
+    "length": 43856
+  },
+  {
+    "path": "/resources/gfx/symbols/empire_indicator.dds",
+    "archiveHash": "0xC03C29936CE7E715",
+    "length": 608
+  },
+  {
+    "path": "/resources/gfx/symbols/republic_indicator.dds",
+    "archiveHash": "0x22D0C5BDCC85DF34",
+    "length": 608
+  },
+  {
+    "path": "/resources/gfx/textures/ship_customization-agent.dds",
+    "archiveHash": "0xC6F36FF63BBB48FC",
+    "length": 349600
+  },
+  {
+    "path": "/resources/gfx/textures/ship_customization-bountyhunter.dds",
+    "archiveHash": "0xB1CCC1846F01EE62",
+    "length": 349600
+  },
+  {
+    "path": "/resources/gfx/textures/ship_customization-jedi.dds",
+    "archiveHash": "0x1377BBE8321C6456",
+    "length": 349600
+  },
+  {
+    "path": "/resources/gfx/textures/ship_customization-sith.dds",
+    "archiveHash": "0x4F90D05FFE292A64",
+    "length": 349600
+  },
+  {
+    "path": "/resources/gfx/textures/ship_customization-smuggler.dds",
+    "archiveHash": "0xC3B0A8AF8D2DAE40",
+    "length": 349600
+  },
+  {
+    "path": "/resources/gfx/textures/ship_customization-trooper.dds",
+    "archiveHash": "0x3E9AD368B0A5E2EB",
+    "length": 349600
+  }
+]

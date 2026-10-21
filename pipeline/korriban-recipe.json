@@ -1,0 +1,21 @@
+{
+  "milestone": "A4",
+  "profile": "April2012 (operator labelled)",
+  "areaId": "4611686022825732973",
+  "room": "baseroom",
+  "location": "Valley of the Dark Lords, paired statue approach",
+  "terrainInstanceIds": ["4611686022895042660", "4611686022895042664"],
+  "terrainBoundsXZ": [20.2, 45.4, 6.2, 18.8],
+  "propRootOriginBoundsXYZ": [20.1, 48.0, -24.0, -5.0, 6.1, 20.0],
+  "maximumUniqueModels": 55,
+  "maximumPlacements": 250,
+  "maximumFiles": 300,
+  "maximumDecodedBytes": 167772160,
+  "scale": 1.0,
+  "physicalMetresCalibrated": false,
+  "basis": "Raw source Y-up; local T * Ry * Rx * Rz * S, then complete ancestry",
+  "heightPolicy": "Original border float32; exact uint16 / 512 interior height",
+  "texturePolicy": "Original dense/sparse paint, April dense copy and vertex color; portable 1024-square maps",
+  "terrainUvPolicy": "Reconstructed continuous world XZ, material UVScaling or direct layer scale 2; native phase/orientation unverified",
+  "collisionPolicy": "Debug-only derived static triangle shapes; original physics not reconstructed"
+}

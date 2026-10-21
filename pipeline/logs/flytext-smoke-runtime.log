@@ -1,0 +1,17 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+Flytext smoke: Eight recipients are targetable
+Flytext smoke: Actual Force Storm cast starts
+Flytext smoke: Storm tick produces eight separate target entries
+Flytext smoke: Next Storm tick preserves eight more overlapping entries
+Flytext smoke: All sixteen entries reach the existing camera canvas
+Flytext smoke: Applied fractional critical damage and capped healing retain metadata
+Flytext smoke: Zero damage, invalid damage and full-health healing produce no numbers
+Flytext smoke: Lethal overkill displays remaining health actually removed
+Flytext smoke: Dead recipients cannot produce damage or healing
+Flytext smoke: Flytext survives recipient despawn using value snapshots
+Flytext smoke: Transient entries expire
+Flytext smoke: Player incoming damage uses the same event stream
+Flytext smoke: Run restart clears transient entries and preserves the single action bar
+FLYTEXT_SMOKE_PASSED

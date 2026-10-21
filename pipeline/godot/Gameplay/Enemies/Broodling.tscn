@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3]
+[ext_resource type="Script" path="res://Gameplay/EnemyAgent.cs" id="1"]
+[ext_resource type="Script" path="res://Gameplay/Health.cs" id="2"]
+[ext_resource type="Script" path="res://Gameplay/EnemyPresentation.cs" id="3"]
+[ext_resource type="PackedScene" path="res://Assets/Enemies/broodling.glb" id="4"]
+
+[sub_resource type="CapsuleShape3D" id="Capsule"]
+radius = 0.025
+height = 0.055
+margin = 0.0005
+[node name="Broodling" type="CharacterBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.0275, 0)
+shape = SubResource("Capsule")
+[node name="Actor" type="Node3D" parent="."]
+script = ExtResource("1")
+Team = 2
+DisplayName = "K’lor’slug Broodling"
+ExperienceReward = 2
+CollisionRadius = 0.025
+CollisionHeight = 0.055
+MoveSpeed = 0.2
+AttackDamage = 2
+AttackInterval = 1.5
+MeleeRange = 0.105
+AimHeight = 0.035
+[node name="Health" type="Node" parent="Actor"]
+script = ExtResource("2")
+Maximum = 16.0
+[node name="Visual" type="Node3D" parent="Actor"]
+script = ExtResource("3")
+[node name="Original" parent="Actor/Visual" instance=ExtResource("4")]
+scale = Vector3(0.6, 0.6, 0.6)
+[node name="Nameplate" type="Label3D" parent="Actor"]
+position = Vector3(0, 0.185, 0)
+pixel_size = 0.00032
+billboard = 1
+text = "K’lor’slug Broodling"
+font_size = 22
+outline_size = 6
+modulate = Color(1, 0.42, 0.23, 1)

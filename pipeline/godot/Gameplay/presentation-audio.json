@@ -1,0 +1,135 @@
+{
+  "maximumPresentationVoices": 12,
+  "maximumCombatVoices": 16,
+  "identicalCombatMinimumSeconds": 0.075,
+  "combatDuckDb": -9,
+  "musicDuckDb": -5,
+  "worldDuckDb": -4,
+  "categories": {
+    "Music": {
+      "gainDb": -12,
+      "voices": 2
+    },
+    "World": {
+      "gainDb": -10,
+      "voices": 4
+    },
+    "Combat": {
+      "gainDb": -6,
+      "voices": 16
+    },
+    "UI": {
+      "gainDb": -2,
+      "voices": 3
+    },
+    "Reward": {
+      "gainDb": -3,
+      "voices": 4
+    },
+    "Boss": {
+      "gainDb": -3,
+      "voices": 3
+    }
+  },
+  "cues": {
+    "hover": {
+      "category": "UI",
+      "path": "res://Assets/Presentation/Audio/163129423.wav",
+      "gainDb": 2,
+      "cooldown": 0.08,
+      "duration": 0.075,
+      "pitch": 1.35,
+      "priority": false
+    },
+    "click": {
+      "category": "UI",
+      "path": "res://Assets/Presentation/Audio/163129423.wav",
+      "gainDb": 8,
+      "cooldown": 0.06,
+      "duration": 0.16,
+      "pitch": 1.1,
+      "priority": false
+    },
+    "pickup": {
+      "category": "Reward",
+      "path": "res://Assets/Presentation/Audio/163129423.wav",
+      "gainDb": 8,
+      "cooldown": 0.085,
+      "duration": 0,
+      "pitch": 1.18,
+      "priority": false
+    },
+    "level": {
+      "category": "Reward",
+      "path": "res://Assets/Presentation/Audio/787228180.wav",
+      "gainDb": -3,
+      "cooldown": 0.1,
+      "duration": 2.1,
+      "pitch": 1,
+      "priority": true
+    },
+    "upgrade_premium": {
+      "category": "Reward",
+      "path": "res://Assets/Presentation/Audio/163129423.wav",
+      "gainDb": 12,
+      "cooldown": 0.1,
+      "duration": 0,
+      "pitch": 1,
+      "priority": false
+    },
+    "upgrade_prototype": {
+      "category": "Reward",
+      "path": "res://Assets/Presentation/Audio/130814347.wav",
+      "gainDb": -4,
+      "cooldown": 0.1,
+      "duration": 0.7,
+      "pitch": 1.12,
+      "priority": false
+    },
+    "upgrade_artifact": {
+      "category": "Reward",
+      "path": "res://Assets/Presentation/Audio/576226339.wav",
+      "gainDb": 3,
+      "cooldown": 0.1,
+      "duration": 0.85,
+      "pitch": 1,
+      "priority": true
+    },
+    "boss_start": {
+      "category": "Boss",
+      "path": "res://Assets/Presentation/Audio/130814347.wav",
+      "gainDb": -3,
+      "cooldown": 0.1,
+      "duration": 1.15,
+      "pitch": 0.8,
+      "priority": true
+    },
+    "boss_victory": {
+      "category": "Boss",
+      "path": "res://Assets/Presentation/Audio/576226339.wav",
+      "gainDb": -2,
+      "cooldown": 0.1,
+      "duration": 2.1,
+      "pitch": 1,
+      "priority": true
+    },
+    "burrow_warning": {
+      "category": "Boss",
+      "path": "res://Assets/Presentation/Audio/24757886.wav",
+      "gainDb": 9,
+      "cooldown": 0.4,
+      "duration": 1.35,
+      "pitch": 1,
+      "priority": true
+    },
+    "burrow_impact": {
+      "category": "Boss",
+      "path": "res://Assets/Presentation/Audio/113287997.wav",
+      "gainDb": -5,
+      "cooldown": 0.4,
+      "duration": 0.95,
+      "pitch": 1,
+      "priority": false
+    }
+  }
+}

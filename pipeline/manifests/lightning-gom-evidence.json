@@ -1,0 +1,1061 @@
+{
+  "label": "Client-derived; historical field/enum labels have separate provenance",
+  "captures": [
+    {
+      "identity": {
+        "id": "0xE0009EB5CD7850CC",
+        "decimalId": "16141075568169341132",
+        "kind": "GomObject",
+        "name": "abl.sith_inquisitor.force_lightning",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/132.bkt",
+          "uncompressedOffset": 189684,
+          "blockLength": 783,
+          "resourceSha256": "8003c38e27a8014b96e9a5b1d3fcb66f0579c4c7e3f06dbf653c13d950f04758"
+        }
+      },
+      "path": "",
+      "type": "GomObjectData",
+      "childCount": 22,
+      "children": [
+        {
+          "key": "Script_Type",
+          "path": "/Script_Type",
+          "type": "DomClass",
+          "expandable": false,
+          "childCount": 0,
+          "value": {
+            "type": "definitionReference",
+            "definition": {
+              "id": "0x400000000283F4D2",
+              "decimalId": "4611686018469590226",
+              "kind": "DomClass",
+              "name": "ablAbility",
+              "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+              "source": {
+                "path": "/resources/systemgenerated/client.gom",
+                "uncompressedOffset": 390240,
+                "blockLength": 304,
+                "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+              }
+            }
+          }
+        },
+        {
+          "key": "Script_TypeId",
+          "path": "/Script_TypeId",
+          "type": "UInt64",
+          "expandable": false,
+          "childCount": 0,
+          "value": "0x0000000000000029"
+        },
+        {
+          "key": "Script_NumFields",
+          "path": "/Script_NumFields",
+          "type": "Int32",
+          "expandable": false,
+          "childCount": 0,
+          "value": 19
+        },
+        {
+          "key": "ablIconSpec",
+          "path": "/ablIconSpec",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": "sithsorcerer"
+        },
+        {
+          "key": "ablGlobalCooldownTime",
+          "path": "/ablGlobalCooldownTime",
+          "type": "Single",
+          "expandable": false,
+          "childCount": 0,
+          "value": -1
+        },
+        {
+          "key": "ablCooldownTime",
+          "path": "/ablCooldownTime",
+          "type": "Single",
+          "expandable": false,
+          "childCount": 0,
+          "value": 6
+        },
+        {
+          "key": "ablChannelingTime",
+          "path": "/ablChannelingTime",
+          "type": "Single",
+          "expandable": false,
+          "childCount": 0,
+          "value": 3
+        },
+        {
+          "key": "ablForceCost",
+          "path": "/ablForceCost",
+          "type": "Single",
+          "expandable": false,
+          "childCount": 0,
+          "value": 30
+        },
+        {
+          "key": "ablMaxRange",
+          "path": "/ablMaxRange",
+          "type": "Single",
+          "expandable": false,
+          "childCount": 0,
+          "value": 1
+        },
+        {
+          "key": "ablTargetArc",
+          "path": "/ablTargetArc",
+          "type": "Single",
+          "expandable": false,
+          "childCount": 0,
+          "value": 180
+        },
+        {
+          "key": "ablTargetRule",
+          "path": "/ablTargetRule",
+          "type": "ScriptEnum",
+          "expandable": false,
+          "childCount": 0,
+          "value": {
+            "type": "enum",
+            "value": 2,
+            "label": "tgtRuleAttackable",
+            "enum": {
+              "id": "0x80000000007A71C9",
+              "decimalId": "9223372036862800329",
+              "kind": "DomEnum",
+              "name": "tgtTargettingRule",
+              "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+              "source": {
+                "path": "/resources/systemgenerated/client.gom",
+                "uncompressedOffset": 131872,
+                "blockLength": 388,
+                "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+              }
+            }
+          }
+        },
+        {
+          "key": "ablIsValid",
+          "path": "/ablIsValid",
+          "type": "Boolean",
+          "expandable": false,
+          "childCount": 0,
+          "value": true
+        },
+        {
+          "key": "ablAppearanceSpec",
+          "path": "/ablAppearanceSpec",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": "epp.sith_inquisitor.force_lightning.channel_loop"
+        },
+        {
+          "key": "ablIsLineOfSightChecked",
+          "path": "/ablIsLineOfSightChecked",
+          "type": "Boolean",
+          "expandable": false,
+          "childCount": 0,
+          "value": true
+        },
+        {
+          "key": "field_4000000197D6D791",
+          "path": "/field_4000000197D6D791",
+          "type": "Boolean",
+          "expandable": false,
+          "childCount": 0,
+          "value": true
+        },
+        {
+          "key": "conEntitySpec",
+          "path": "/conEntitySpec",
+          "type": "UInt64",
+          "expandable": false,
+          "childCount": 0,
+          "value": "0xE0009EB5CD7850CC"
+        },
+        {
+          "key": "ablCooldownTimerSpecs",
+          "path": "/ablCooldownTimerSpecs",
+          "type": "List`1",
+          "expandable": true,
+          "childCount": 1,
+          "value": null
+        },
+        {
+          "key": "ablEffectIDs",
+          "path": "/ablEffectIDs",
+          "type": "List`1",
+          "expandable": true,
+          "childCount": 6,
+          "value": null
+        },
+        {
+          "key": "ablDescriptionTokens",
+          "path": "/ablDescriptionTokens",
+          "type": "List`1",
+          "expandable": true,
+          "childCount": 1,
+          "value": null
+        },
+        {
+          "key": "ablUsesSpellPushback",
+          "path": "/ablUsesSpellPushback",
+          "type": "Boolean",
+          "expandable": false,
+          "childCount": 0,
+          "value": true
+        },
+        {
+          "key": "ablEffectZero",
+          "path": "/ablEffectZero",
+          "type": "GomObject",
+          "expandable": false,
+          "childCount": 0,
+          "value": {
+            "type": "definitionReference",
+            "definition": {
+              "id": "0xE000D290FCD21675",
+              "decimalId": "16141132584654607989",
+              "kind": "GomObject",
+              "name": "abl.sith_inquisitor.force_lightning/4/0",
+              "nameEvidence": "April bucket/prototype",
+              "source": {
+                "path": "/resources/systemgenerated/buckets/489.bkt",
+                "uncompressedOffset": 251436,
+                "blockLength": 309,
+                "resourceSha256": "268c339f72632da24f3cd6ffaa5b0749ffabf321cc1b8b7007809b194eeccc34"
+              }
+            }
+          }
+        },
+        {
+          "key": "locTextRetrieverMap",
+          "path": "/locTextRetrieverMap",
+          "type": "Dictionary`2",
+          "expandable": true,
+          "childCount": 18,
+          "value": null
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "",
+      "type": "GomObjectData",
+      "childCount": 8,
+      "children": [
+        {
+          "key": "Script_Type",
+          "path": "/Script_Type",
+          "type": "DomClass",
+          "expandable": false,
+          "childCount": 0,
+          "value": {
+            "type": "definitionReference",
+            "definition": {
+              "id": "0x400000006225009C",
+              "decimalId": "4611686020073980060",
+              "kind": "DomClass",
+              "name": "effAppearance",
+              "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+              "source": {
+                "path": "/resources/systemgenerated/client.gom",
+                "uncompressedOffset": 402760,
+                "blockLength": 384,
+                "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+              }
+            }
+          }
+        },
+        {
+          "key": "Script_TypeId",
+          "path": "/Script_TypeId",
+          "type": "UInt64",
+          "expandable": false,
+          "childCount": 0,
+          "value": "0x000000000000000C"
+        },
+        {
+          "key": "Script_NumFields",
+          "path": "/Script_NumFields",
+          "type": "Int32",
+          "expandable": false,
+          "childCount": 0,
+          "value": 5
+        },
+        {
+          "key": "effAppearanceName",
+          "path": "/effAppearanceName",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": "epp.sith_inquisitor.force_lightning.channel_loop"
+        },
+        {
+          "key": "effAppearanceSubAppearanceMax",
+          "path": "/effAppearanceSubAppearanceMax",
+          "type": "Int64",
+          "expandable": false,
+          "childCount": 0,
+          "value": {
+            "signed64": "4",
+            "bits": "0x0000000000000004"
+          }
+        },
+        {
+          "key": "effAppearanceTriggersOnAnimationNote",
+          "path": "/effAppearanceTriggersOnAnimationNote",
+          "type": "Dictionary`2",
+          "expandable": true,
+          "childCount": 3,
+          "value": null
+        },
+        {
+          "key": "effAppearanceTriggersGuaranteed",
+          "path": "/effAppearanceTriggersGuaranteed",
+          "type": "List`1",
+          "expandable": true,
+          "childCount": 2,
+          "value": null
+        },
+        {
+          "key": "effAppearanceSchedule",
+          "path": "/effAppearanceSchedule",
+          "type": "List`1",
+          "expandable": true,
+          "childCount": 4,
+          "value": null
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/0",
+      "type": "GomObjectData",
+      "childCount": 5,
+      "children": [
+        {
+          "key": "Script_Type",
+          "path": "/effAppearanceSchedule/0/Script_Type",
+          "type": "DomClass",
+          "expandable": false,
+          "childCount": 0,
+          "value": {
+            "type": "definitionReference",
+            "definition": {
+              "id": "0x40000000858FC65F",
+              "decimalId": "4611686020668180063",
+              "kind": "DomClass",
+              "name": "effAppearanceSubSchedule",
+              "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+              "source": {
+                "path": "/resources/systemgenerated/client.gom",
+                "uncompressedOffset": 404048,
+                "blockLength": 80,
+                "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+              }
+            }
+          }
+        },
+        {
+          "key": "Script_TypeId",
+          "path": "/effAppearanceSchedule/0/Script_TypeId",
+          "type": "UInt64",
+          "expandable": false,
+          "childCount": 0,
+          "value": "0x0000000000000003"
+        },
+        {
+          "key": "Script_NumFields",
+          "path": "/effAppearanceSchedule/0/Script_NumFields",
+          "type": "Int32",
+          "expandable": false,
+          "childCount": 0,
+          "value": 2
+        },
+        {
+          "key": "effAppearanceActions",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions",
+          "type": "List`1",
+          "expandable": true,
+          "childCount": 3,
+          "value": null
+        },
+        {
+          "key": "effAppearanceConditions",
+          "path": "/effAppearanceSchedule/0/effAppearanceConditions",
+          "type": "List`1",
+          "expandable": false,
+          "childCount": 0,
+          "value": []
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/1",
+      "type": "GomObjectData",
+      "childCount": 6,
+      "children": [
+        {
+          "key": "Script_Type",
+          "path": "/effAppearanceSchedule/1/Script_Type",
+          "type": "DomClass",
+          "expandable": false,
+          "childCount": 0,
+          "value": {
+            "type": "definitionReference",
+            "definition": {
+              "id": "0x40000000858FC65F",
+              "decimalId": "4611686020668180063",
+              "kind": "DomClass",
+              "name": "effAppearanceSubSchedule",
+              "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+              "source": {
+                "path": "/resources/systemgenerated/client.gom",
+                "uncompressedOffset": 404048,
+                "blockLength": 80,
+                "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+              }
+            }
+          }
+        },
+        {
+          "key": "Script_TypeId",
+          "path": "/effAppearanceSchedule/1/Script_TypeId",
+          "type": "UInt64",
+          "expandable": false,
+          "childCount": 0,
+          "value": "0x0000000000000003"
+        },
+        {
+          "key": "Script_NumFields",
+          "path": "/effAppearanceSchedule/1/Script_NumFields",
+          "type": "Int32",
+          "expandable": false,
+          "childCount": 0,
+          "value": 3
+        },
+        {
+          "key": "effAppearanceSubScheduleHasTrigger",
+          "path": "/effAppearanceSchedule/1/effAppearanceSubScheduleHasTrigger",
+          "type": "Boolean",
+          "expandable": false,
+          "childCount": 0,
+          "value": true
+        },
+        {
+          "key": "effAppearanceActions",
+          "path": "/effAppearanceSchedule/1/effAppearanceActions",
+          "type": "List`1",
+          "expandable": true,
+          "childCount": 1,
+          "value": null
+        },
+        {
+          "key": "effAppearanceConditions",
+          "path": "/effAppearanceSchedule/1/effAppearanceConditions",
+          "type": "List`1",
+          "expandable": false,
+          "childCount": 0,
+          "value": []
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/2",
+      "type": "GomObjectData",
+      "childCount": 6,
+      "children": [
+        {
+          "key": "Script_Type",
+          "path": "/effAppearanceSchedule/2/Script_Type",
+          "type": "DomClass",
+          "expandable": false,
+          "childCount": 0,
+          "value": {
+            "type": "definitionReference",
+            "definition": {
+              "id": "0x40000000858FC65F",
+              "decimalId": "4611686020668180063",
+              "kind": "DomClass",
+              "name": "effAppearanceSubSchedule",
+              "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+              "source": {
+                "path": "/resources/systemgenerated/client.gom",
+                "uncompressedOffset": 404048,
+                "blockLength": 80,
+                "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+              }
+            }
+          }
+        },
+        {
+          "key": "Script_TypeId",
+          "path": "/effAppearanceSchedule/2/Script_TypeId",
+          "type": "UInt64",
+          "expandable": false,
+          "childCount": 0,
+          "value": "0x0000000000000003"
+        },
+        {
+          "key": "Script_NumFields",
+          "path": "/effAppearanceSchedule/2/Script_NumFields",
+          "type": "Int32",
+          "expandable": false,
+          "childCount": 0,
+          "value": 3
+        },
+        {
+          "key": "effAppearanceSubScheduleHasTrigger",
+          "path": "/effAppearanceSchedule/2/effAppearanceSubScheduleHasTrigger",
+          "type": "Boolean",
+          "expandable": false,
+          "childCount": 0,
+          "value": true
+        },
+        {
+          "key": "effAppearanceActions",
+          "path": "/effAppearanceSchedule/2/effAppearanceActions",
+          "type": "List`1",
+          "expandable": true,
+          "childCount": 1,
+          "value": null
+        },
+        {
+          "key": "effAppearanceConditions",
+          "path": "/effAppearanceSchedule/2/effAppearanceConditions",
+          "type": "List`1",
+          "expandable": false,
+          "childCount": 0,
+          "value": []
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/3",
+      "type": "GomObjectData",
+      "childCount": 6,
+      "children": [
+        {
+          "key": "Script_Type",
+          "path": "/effAppearanceSchedule/3/Script_Type",
+          "type": "DomClass",
+          "expandable": false,
+          "childCount": 0,
+          "value": {
+            "type": "definitionReference",
+            "definition": {
+              "id": "0x40000000858FC65F",
+              "decimalId": "4611686020668180063",
+              "kind": "DomClass",
+              "name": "effAppearanceSubSchedule",
+              "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+              "source": {
+                "path": "/resources/systemgenerated/client.gom",
+                "uncompressedOffset": 404048,
+                "blockLength": 80,
+                "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+              }
+            }
+          }
+        },
+        {
+          "key": "Script_TypeId",
+          "path": "/effAppearanceSchedule/3/Script_TypeId",
+          "type": "UInt64",
+          "expandable": false,
+          "childCount": 0,
+          "value": "0x0000000000000003"
+        },
+        {
+          "key": "Script_NumFields",
+          "path": "/effAppearanceSchedule/3/Script_NumFields",
+          "type": "Int32",
+          "expandable": false,
+          "childCount": 0,
+          "value": 3
+        },
+        {
+          "key": "effAppearanceSubScheduleHasTrigger",
+          "path": "/effAppearanceSchedule/3/effAppearanceSubScheduleHasTrigger",
+          "type": "Boolean",
+          "expandable": false,
+          "childCount": 0,
+          "value": true
+        },
+        {
+          "key": "effAppearanceActions",
+          "path": "/effAppearanceSchedule/3/effAppearanceActions",
+          "type": "List`1",
+          "expandable": true,
+          "childCount": 1,
+          "value": null
+        },
+        {
+          "key": "effAppearanceConditions",
+          "path": "/effAppearanceSchedule/3/effAppearanceConditions",
+          "type": "List`1",
+          "expandable": false,
+          "childCount": 0,
+          "value": []
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/0/effAppearanceActions/1/effAppStringParams",
+      "type": "Dictionary`2",
+      "childCount": 2,
+      "children": [
+        {
+          "key": "enum:0x40000006EFA6AEC8:11",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions/1/effAppStringParams/enum:0x40000006EFA6AEC8:11",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": "fp_2h_elect_drain_start"
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:12",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions/1/effAppStringParams/enum:0x40000006EFA6AEC8:12",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/0/effAppearanceActions/2/effAppStringParams",
+      "type": "Dictionary`2",
+      "childCount": 6,
+      "children": [
+        {
+          "key": "enum:0x40000006EFA6AEC8:5",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions/2/effAppStringParams/enum:0x40000006EFA6AEC8:5",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:21",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions/2/effAppStringParams/enum:0x40000006EFA6AEC8:21",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": "abilities/sith_inquisitor/si_lightningdrain_bodyarcs"
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:22",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions/2/effAppStringParams/enum:0x40000006EFA6AEC8:22",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:23",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions/2/effAppStringParams/enum:0x40000006EFA6AEC8:23",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:24",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions/2/effAppStringParams/enum:0x40000006EFA6AEC8:24",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:25",
+          "path": "/effAppearanceSchedule/0/effAppearanceActions/2/effAppStringParams/enum:0x40000006EFA6AEC8:25",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/1/effAppearanceActions/0/effAppStringParams",
+      "type": "Dictionary`2",
+      "childCount": 6,
+      "children": [
+        {
+          "key": "enum:0x40000006EFA6AEC8:5",
+          "path": "/effAppearanceSchedule/1/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:5",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:21",
+          "path": "/effAppearanceSchedule/1/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:21",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": "abilities/sith_inquisitor/si_force_lightning_caster"
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:22",
+          "path": "/effAppearanceSchedule/1/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:22",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:23",
+          "path": "/effAppearanceSchedule/1/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:23",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:24",
+          "path": "/effAppearanceSchedule/1/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:24",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:25",
+          "path": "/effAppearanceSchedule/1/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:25",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/2/effAppearanceActions/0/effAppStringParams",
+      "type": "Dictionary`2",
+      "childCount": 2,
+      "children": [
+        {
+          "key": "enum:0x40000006EFA6AEC8:11",
+          "path": "/effAppearanceSchedule/2/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:11",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": "fp_2h_elect_drain_loop"
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:12",
+          "path": "/effAppearanceSchedule/2/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:12",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    },
+    {
+      "identity": {
+        "id": "0xE0004B907DF52D6B",
+        "decimalId": "16140984148456451435",
+        "kind": "GomObject",
+        "name": "epp.sith_inquisitor.force_lightning.channel_loop",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/435.bkt",
+          "uncompressedOffset": 95524,
+          "blockLength": 571,
+          "resourceSha256": "ff29d72ec84ce4c4e99b960334ffc0ddb1e17369d4ae5b783b614c15cbf32256"
+        }
+      },
+      "path": "/effAppearanceSchedule/3/effAppearanceActions/0/effAppStringParams",
+      "type": "Dictionary`2",
+      "childCount": 6,
+      "children": [
+        {
+          "key": "enum:0x40000006EFA6AEC8:5",
+          "path": "/effAppearanceSchedule/3/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:5",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:21",
+          "path": "/effAppearanceSchedule/3/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:21",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": "250"
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:22",
+          "path": "/effAppearanceSchedule/3/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:22",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:23",
+          "path": "/effAppearanceSchedule/3/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:23",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:24",
+          "path": "/effAppearanceSchedule/3/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:24",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        },
+        {
+          "key": "enum:0x40000006EFA6AEC8:25",
+          "path": "/effAppearanceSchedule/3/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:25",
+          "type": "String",
+          "expandable": false,
+          "childCount": 0,
+          "value": ""
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "D:\\SWTORClassic\\torbonk\\docs\\investigation\\asset-evidence-2026-10-20.json",
+      "bytes": 150009,
+      "sha256": "fafef99871ba2d86a902ac44a0001f6dd433cf500e872709e1921856a77bf4ee"
+    },
+    {
+      "path": "D:\\SWTORClassic\\torbonk\\docs\\investigation\\dependency-traces-2026-10-20.json",
+      "bytes": 94768,
+      "sha256": "b18d8b69da99645f9d9ac83762b5e117c25f2d80aa48576b8e9f3565090b52e6"
+    }
+  ]
+}

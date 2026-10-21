@@ -1,0 +1,99 @@
+{
+  "blender": "5.2.1 LTS",
+  "buildHash": "9e2066aef7ef",
+  "addons": {
+    "io_scene_gr2": {
+      "version": [
+        4,
+        2,
+        1
+      ],
+      "registered": true
+    },
+    "zg_swtor_tools": {
+      "version": [
+        2,
+        0,
+        14
+      ],
+      "registered": true
+    }
+  },
+  "importResult": [
+    "FINISHED"
+  ],
+  "materialsBefore": [
+    "kor_acad_higharch",
+    "Material"
+  ],
+  "materialResult": [
+    "FINISHED"
+  ],
+  "objects": [
+    {
+      "name": "all_sith_interior_hall_door_large",
+      "type": "MESH",
+      "dimensions": [
+        0.764365017414093,
+        0.909701943397522,
+        1.6096081733703613
+      ],
+      "vertices": 813,
+      "polygons": 576
+    }
+  ],
+  "materials": [
+    {
+      "name": "kor_acad_higharch",
+      "nodes": [
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "SWTOR",
+          "type": "ShaderNodeHeroEngine"
+        }
+      ]
+    },
+    {
+      "name": "Material",
+      "nodes": [
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "kor_acad_higharch_d.dds",
+      "size": [
+        1024,
+        1024
+      ],
+      "path": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\april2012\\resources\\art\\static\\area\\kor_korriban\\arch\\texture\\kor_acad_higharch_d.dds"
+    },
+    {
+      "name": "kor_acad_higharch_n.dds",
+      "size": [
+        1024,
+        1024
+      ],
+      "path": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\april2012\\resources\\art\\static\\area\\kor_korriban\\arch\\texture\\kor_acad_higharch_n.dds"
+    },
+    {
+      "name": "kor_acad_higharch_s.dds",
+      "size": [
+        512,
+        512
+      ],
+      "path": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\april2012\\resources\\art\\static\\area\\kor_korriban\\arch\\texture\\kor_acad_higharch_s.dds"
+    }
+  ]
+}

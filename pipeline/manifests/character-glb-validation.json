@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "glbSha256": "c338202a83450f47d9976c113bb4e14a6071be6e102358e9eae1cac5b3b829ed",
+  "bytes": 8536044,
+  "bones": 211,
+  "meshes": 15,
+  "triangles": 15343,
+  "vertices": 14250,
+  "maxWeightSumError": 9.685754776000977e-08,
+  "animations": [
+    {
+      "name": "Death",
+      "duration": 2.3333332538604736,
+      "channels": 633
+    },
+    {
+      "name": "Hit",
+      "duration": 1.600000023841858,
+      "channels": 633
+    },
+    {
+      "name": "Idle",
+      "duration": 1.6666666269302368,
+      "channels": 633
+    },
+    {
+      "name": "LightningEnd",
+      "duration": 0.46666666865348816,
+      "channels": 633
+    },
+    {
+      "name": "LightningLoop",
+      "duration": 1.0666667222976685,
+      "channels": 633
+    },
+    {
+      "name": "LightningStart",
+      "duration": 1.0666667222976685,
+      "channels": 633
+    },
+    {
+      "name": "Run",
+      "duration": 0.6000000238418579,
+      "channels": 633
+    }
+  ],
+  "materials": 8,
+  "embeddedImages": 24,
+  "scope": "Project structural check; independent Blender roundtrip and Godot pose/render checks supplement it."
+}

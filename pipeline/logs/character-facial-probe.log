@@ -1,0 +1,92 @@
+00:01.828  blend            | Read blend: "D:\SWTORClassic\torbonk\pipeline\work\sorcerer-reference.blend"
+00:04.734  render           | Saved: 'D:\SWTORClassic\torbonk\pipeline\generated\character\facial-raw.png'
+register_class(...):
+Warning: 'import_mesh.gr2_presets' does not contain '_MT_' with prefix and suffix
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_unarmed_idle_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0063 sec |   0.0063 sec) Done, building ...
+Progress: 100.00%
+  (  0.0633 sec |   0.0632 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_unarmed_idle_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\mv_cb_unarmed_run_forward.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0050 sec |   0.0050 sec) Done, building ...
+Progress: 100.00%
+  (  0.0469 sec |   0.0469 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\mv_cb_unarmed_run_forward.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\fp_2h_elect_drain_start.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0048 sec |   0.0047 sec) Done, building ...
+Progress: 100.00%
+  (  0.0429 sec |   0.0428 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\fp_2h_elect_drain_start.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\fp_2h_elect_drain_loop.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0058 sec |   0.0058 sec) Done, building ...
+Progress: 100.00%
+  (  0.0435 sec |   0.0435 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\fp_2h_elect_drain_loop.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\dg_unarmed_crit_damage_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0109 sec |   0.0109 sec) Done, building ...
+Progress: 100.00%
+  (  0.0934 sec |   0.0934 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\dg_unarmed_crit_damage_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0117 sec |   0.0117 sec) Done, building ...
+Progress: 100.00%
+  (  0.1338 sec |   0.1338 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\fp_2h_elect_drain_end.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0046 sec |   0.0046 sec) Done, building ...
+Progress: 100.00%
+  (  0.0312 sec |   0.0311 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\fp_2h_elect_drain_end.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+[{"clip": "Idle", "maxFacialPositionChange": 0.0029462573533203494, "headDimensions": [0.01938228216022253, 0.023923002183437347, 0.03309272229671478]}, {"clip": "Run", "maxFacialPositionChange": 0.002946361602759314, "headDimensions": [0.01962630869820714, 0.0220494344830513, 0.03414623439311981]}, {"clip": "LightningStart", "maxFacialPositionChange": 0.0029463942377259476, "headDimensions": [0.02038190048187971, 0.02334770653396845, 0.03174477815628052]}, {"clip": "LightningLoop", "maxFacialPositionChange": 0.0029463651043443216, "headDimensions": [0.020187473855912685, 0.024198133498430252, 0.032116904854774475]}, {"clip": "Hit", "maxFacialPositionChange": 0.0029463317387586744, "headDimensions": [0.019382224418222904, 0.023923144210129976, 0.03309260308742523]}, {"clip": "Death", "maxFacialPositionChange": 0.0029463480479789807, "headDimensions": [0.01940297055989504, 0.021818185225129128, 0.03394162654876709]}, {"clip": "LightningEnd", "maxFacialPositionChange": 0.002946395675923916, "headDimensions": [0.020187598653137684, 0.02419814094901085, 0.032116904854774475]}]
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

@@ -1,0 +1,36 @@
+D:\SWTORClassic\torbonk\pipeline\tools\addons\io_scene_gr2\ops\import_gr2.py:148: SyntaxWarning: invalid escape sequence '\w'
+  description="Temporarily overrides this Add-on's settings\with those of older versions for compatibility with older tools",
+D:\SWTORClassic\torbonk\pipeline\tools\addons\zg_swtor_tools\char_character_assembler.py:211: SyntaxWarning: invalid escape sequence '\('
+  print ("'black.dds' file missing in 'resources\\art\\defaultassets'. Placing a copy of the file \(included in this Addon\) there.")
+Traceback (most recent call last):
+  File "D:\SWTORClassic\torbonk\pipeline\tools\addons\io_scene_gr2\types\node.py", line 177, in update_derived
+    update_alpha_mode(self, context)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\SWTORClassic\torbonk\pipeline\tools\addons\io_scene_gr2\types\node.py", line 201, in update_alpha_mode
+    if context and context.space_data.type in {'NODE_EDITOR', 'PROPERTIES'}:
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'type'
+File "D:\SWTORClassic\torbonk\pipeline\tools\addons\io_scene_gr2\types\node.py", line 79, in update_derived
+00:03.625  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Dots Stroke'
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+00:03.625  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Material'
+00:03.625  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\brant\.thumbnails\large\blender_29240_da67ab3e7969c9086fd66bf329abd9aa.png.png"
+register_class(...):
+Warning: 'import_mesh.gr2_presets' does not contain '_MT_' with prefix and suffix
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\all_sith_interior_hall_door_large.gr2
+OBJS: ['all_sith_interior_hall_door_large']
+TIME: 0.030 s.
+
+
+PROCESSING OF NAMED SWTOR MATERIALS
+
+-------------------------------------------
+100.00 %    Object: all_sith_interior_hall_door_large
+          Material: kor_acad_higharch
+
+
+Done!
+Info: Saved as "door-reference.blend"
+
+Blender quit

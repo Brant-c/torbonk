@@ -1,0 +1,15 @@
+{
+  "ste2": {
+    "repository": "https://github.com/UltimaKaosXIII/STE2",
+    "commit": "5fe5751b59af6bfb7b653289dfa8e1a81f1e1f57",
+    "source": "tools/ste2-reference/Heightmap.cs",
+    "sha256": "afbdfd1bd8a8dbb0987687dc4d5ca7f82f4a1effb7dbd0f8b42a8d06976326d2",
+    "unmodifiedSource": true
+  },
+  "reader": {
+    "url": "https://swtor.jedipedia.net/static/js/reader/min.js?v=aff3808ecb",
+    "retrieved": "2026-10-20",
+    "sha256": "50e7aec6ee58fad074a271335950bf810f3cabb8b330a5502903081fcc93aabb",
+    "usage": "Read-only format reference: dense/sparse splat layout, fixed-point height, legacy dense copy, color and DYD data. Not executed or redistributed as a runtime dependency."
+  }
+}

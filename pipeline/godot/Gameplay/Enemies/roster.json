@@ -1,0 +1,22 @@
+{
+  "enemies": [
+    {
+      "scene": "res://Gameplay/Enemies/Broodling.tscn",
+      "unlockWave": 1,
+      "weight": 8,
+      "weightPerWave": -0.25
+    },
+    {
+      "scene": "res://Gameplay/Enemies/Shyrack.tscn",
+      "unlockWave": 2,
+      "weight": 3,
+      "weightPerWave": 0.4
+    },
+    {
+      "scene": "res://Gameplay/Enemies/CryptLooter.tscn",
+      "unlockWave": 3,
+      "weight": 2,
+      "weightPerWave": 0.65
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "identity": {
+    "id": "0xE000F1320E87C180",
+    "decimalId": "16141166261790294400",
+    "kind": "GomObject",
+    "name": "itm.npc.electroblade.low03.a01_v01",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/400.bkt",
+      "uncompressedOffset": 275748,
+      "blockLength": 416,
+      "resourceSha256": "5fdd6067e716537500ad5ace93f4f964aa82c954279f6395b934e3526952303c"
+    }
+  },
+  "path": "",
+  "type": "GomObjectData",
+  "childCount": 19,
+  "children": [
+    {
+      "key": "Script_Type",
+      "path": "/Script_Type",
+      "type": "DomClass",
+      "expandable": false,
+      "childCount": 0,
+      "value": {
+        "type": "definitionReference",
+        "definition": {
+          "id": "0x40000000011ACD0E",
+          "decimalId": "4611686018445921550",
+          "kind": "DomClass",
+          "name": "itmItem",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 386832,
+            "blockLength": 352,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      }
+    },
+    {
+      "key": "Script_TypeId",
+      "path": "/Script_TypeId",
+      "type": "UInt64",
+      "expandable": false,
+      "childCount": 0,
+      "value": "0x000000000000006B"
+    },
+    {
+      "key": "Script_NumFields",
+      "path": "/Script_NumFields",
+      "type": "Int32",
+      "expandable": false,
+      "childCount": 0,
+      "value": 16
+    },
+    {
+      "key": "itmStackCount",
+      "path": "/itmStackCount",
+      "type": "Int64",
+      "expandable": false,
+      "childCount": 0,
+      "value": {
+        "signed64": "1",
+        "bits": "0x0000000000000001"
+      }
+    },
+    {
+      "key": "itmSoundType",
+      "path": "/itmSoundType",
+      "type": "String",
+      "expandable": false,
+      "childCount": 0,
+      "value": "weapon.melee.electroblade01"
+    },
+    {
+      "key": "itmIcon",
+      "path": "/itmIcon",
+      "type": "String",
+      "expandable": false,
+      "childCount": 0,
+      "value": "electroblade.low03.a01_v01"
+    },
+    {
+      "key": "itmSlotTypes",
+      "path": "/itmSlotTypes",
+      "type": "List`1",
+      "expandable": true,
+      "childCount": 7,
+      "value": null
+    },
+    {
+      "key": "itmBaseLevel",
+      "path": "/itmBaseLevel",
+      "type": "Int64",
+      "expandable": false,
+      "childCount": 0,
+      "value": {
+        "signed64": "1",
+        "bits": "0x0000000000000001"
+      }
+    },
+    {
+      "key": "cbtWeaponAppearanceSpec",
+      "path": "/cbtWeaponAppearanceSpec",
+      "type": "String",
+      "expandable": false,
+      "childCount": 0,
+      "value": "electroblade.low03.a01_v01"
+    },
+    {
+      "key": "itmEnhancementCategory",
+      "path": "/itmEnhancementCategory",
+      "type": "ScriptEnum",
+      "expandable": false,
+      "childCount": 0,
+      "value": {
+        "type": "enum",
+        "value": 2,
+        "label": "itmEnhancementCategoryLightSaber",
+        "enum": {
+          "id": "0x40000007DACC2A2E",
+          "decimalId": "4611686052162972206",
+          "kind": "DomEnum",
+          "name": "itmEnhancementCategory",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 74784,
+            "blockLength": 222,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      }
+    },
+    {
+      "key": "itmEnhancementSubCategory",
+      "path": "/itmEnhancementSubCategory",
+      "type": "ScriptEnum",
+      "expandable": false,
+      "childCount": 0,
+      "value": {
+        "type": "enum",
+        "value": 4,
+        "label": "itmEnhancementSubCategoryVibroSword",
+        "enum": {
+          "id": "0x4000000886E13071",
+          "decimalId": "4611686055050031217",
+          "kind": "DomEnum",
+          "name": "itmEnhancementSubCategory",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 77576,
+            "blockLength": 1016,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      }
+    },
+    {
+      "key": "conEntitySpec",
+      "path": "/conEntitySpec",
+      "type": "UInt64",
+      "expandable": false,
+      "childCount": 0,
+      "value": "0xE000F1320E87C180"
+    },
+    {
+      "key": "itmNameEncoded",
+      "path": "/itmNameEncoded",
+      "type": "String",
+      "expandable": false,
+      "childCount": 0,
+      "value": "str.itm#895732609449984"
+    },
+    {
+      "key": "locTextRetrieverMap",
+      "path": "/locTextRetrieverMap",
+      "type": "Dictionary`2",
+      "expandable": true,
+      "childCount": 2,
+      "value": null
+    },
+    {
+      "key": "itmEnhancementSlots",
+      "path": "/itmEnhancementSlots",
+      "type": "List`1",
+      "expandable": true,
+      "childCount": 5,
+      "value": null
+    },
+    {
+      "key": "itmTypeBitSet",
+      "path": "/itmTypeBitSet",
+      "type": "Int64",
+      "expandable": false,
+      "childCount": 0,
+      "value": {
+        "signed64": "34050",
+        "bits": "0x0000000000008502"
+      }
+    },
+    {
+      "key": "cbtWeaponSpec",
+      "path": "/cbtWeaponSpec",
+      "type": "UInt64",
+      "expandable": false,
+      "childCount": 0,
+      "value": "0xE0004400E0822C97"
+    },
+    {
+      "key": "itmEnhancementDefaults",
+      "path": "/itmEnhancementDefaults",
+      "type": "List`1",
+      "expandable": true,
+      "childCount": 5,
+      "value": null
+    },
+    {
+      "key": "itmGenderRequired",
+      "path": "/itmGenderRequired",
+      "type": "ScriptEnum",
+      "expandable": false,
+      "childCount": 0,
+      "value": {
+        "type": "enum",
+        "value": 3,
+        "label": "chrGenderNone",
+        "enum": {
+          "id": "0x4000000F577CB466",
+          "decimalId": "4611686084319687782",
+          "kind": "DomEnum",
+          "name": "chrGenderEnum",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 106840,
+            "blockLength": 80,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      }
+    }
+  ],
+  "value": null,
+  "start": 0,
+  "nextStart": null,
+  "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+  "profile": "April2012",
+  "parser": "SwtorResearch/0.2.0",
+  "accessVersion": "0.2.0",
+  "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+  "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+}

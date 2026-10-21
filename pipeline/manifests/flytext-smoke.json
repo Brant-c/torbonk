@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": [
+    "Eight recipients are targetable",
+    "Actual Force Storm cast starts",
+    "Storm tick produces eight separate target entries",
+    "Next Storm tick preserves eight more overlapping entries",
+    "All sixteen entries reach the existing camera canvas",
+    "Applied fractional critical damage and capped healing retain metadata",
+    "Zero damage, invalid damage and full-health healing produce no numbers",
+    "Lethal overkill displays remaining health actually removed",
+    "Dead recipients cannot produce damage or healing",
+    "Flytext survives recipient despawn using value snapshots",
+    "Transient entries expire",
+    "Player incoming damage uses the same event stream",
+    "Run restart clears transient entries and preserves the single action bar"
+  ],
+  "failure": null,
+  "renderedFrames": 327,
+  "scope": "One brief rendered flytext smoke; actual Storm, eight targets, two ticks; no screenshots, benchmarks or historical suites."
+}

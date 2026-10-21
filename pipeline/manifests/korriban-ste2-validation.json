@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "unmodifiedHeightmapSource": true,
+  "patches": [
+    {
+      "id": "4611686022895042660",
+      "vertices": 4096,
+      "ste2Triangles": 7925,
+      "maxXZError": 1.907348643470641e-07,
+      "maxHeightError": 0.00036120580000087443,
+      "reason": "STE2 multiplies interior uint16 by rounded 0.0019531548; A4 preserves exact fixed-point /512. Border float32s agree.",
+      "topology": "Same STE2 fixed diagonal and source hole mask. Selected source tessellation fields are empty; native default is unverified."
+    },
+    {
+      "id": "4611686022895042664",
+      "vertices": 4096,
+      "ste2Triangles": 7938,
+      "maxXZError": 1.907348643470641e-07,
+      "maxHeightError": 0.00015138400000047625,
+      "reason": "STE2 multiplies interior uint16 by rounded 0.0019531548; A4 preserves exact fixed-point /512. Border float32s agree.",
+      "topology": "Same STE2 fixed diagonal and source hole mask. Selected source tessellation fields are empty; native default is unverified."
+    }
+  ],
+  "scope": "Original upstream heightmap reader/writer invoked only on two selected decompressed blobs. No planet scan."
+}

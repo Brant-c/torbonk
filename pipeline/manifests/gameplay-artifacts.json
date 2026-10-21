@@ -1,0 +1,109 @@
+{
+  "authoredFiles": [
+    {
+      "path": "GAMEPLAY-README.md",
+      "bytes": 7452,
+      "sha256": "840bd7d58388ade4b10e8a562af16283f08f7b2dc87ad331a5b6bc10d1df1d2e"
+    },
+    {
+      "path": "GAMEPLAY-RESULTS.md",
+      "bytes": 7697,
+      "sha256": "d2ffba56a273ab2b27a8f6b53b3f60cabd2ab076d0e3e43bece34595aa5cbfae"
+    },
+    {
+      "path": "godot\\Gameplay\\ArenaBounds.cs",
+      "bytes": 2826,
+      "sha256": "cab8896a4e24237ba5fc801979cc354f2d239307207139bdd8d191fe41fdab32"
+    },
+    {
+      "path": "godot\\Gameplay\\CameraRig.cs",
+      "bytes": 7119,
+      "sha256": "d35102701243d2fd5edc5df69b1fd62f6e160382cf5be3948af6136e6434272c"
+    },
+    {
+      "path": "godot\\Gameplay\\CharacterPresentation.cs",
+      "bytes": 2343,
+      "sha256": "911239a7a434e1be3112a5db4a114b88e0e8d5ca4f9e64cde0039759cb43470d"
+    },
+    {
+      "path": "godot\\Gameplay\\GameplayValidation.cs",
+      "bytes": 19519,
+      "sha256": "c52de32b30d8225bb3aa33e4214a1dd80f1fdbb5b8a1ee1195ac22658313892b"
+    },
+    {
+      "path": "godot\\Gameplay\\GameWorld.cs",
+      "bytes": 7312,
+      "sha256": "90ebbf3da079e81f9d7d78218524f154d3a601932ab964782a43caad5ac48a6a"
+    },
+    {
+      "path": "godot\\Gameplay\\GameWorld.tscn",
+      "bytes": 1501,
+      "sha256": "72568482599742558b7e21013e0b3af88971236172ff1d5bdd814a62b96a2d39"
+    },
+    {
+      "path": "godot\\Gameplay\\PlayerController.cs",
+      "bytes": 3771,
+      "sha256": "9864e09c6ce9eac88d42984c039e1ab1c2ccf2970e08c569f4a434ff04a23268"
+    },
+    {
+      "path": "godot\\project.godot",
+      "bytes": 762,
+      "sha256": "d106eda792dd043026dcc972957bb3d89ee9eda40b3e976b1e178d99d0dbc4e8"
+    },
+    {
+      "path": "Open-Gameplay.ps1",
+      "bytes": 642,
+      "sha256": "a848910e08a851a67a4a21a3b131c5e90f63ad927f04e277e3dbcc0677cefa6b"
+    },
+    {
+      "path": "Run-Gameplay-Validation.ps1",
+      "bytes": 6142,
+      "sha256": "155e451fc663658d2c95dd5277e7badf8a3a23a0f77b57e467a619ce15128900"
+    },
+    {
+      "path": "scripts\\record_gameplay.py",
+      "bytes": 3189,
+      "sha256": "25626461afbd74517022d9d2faca91f85e6545c598c65df7181a5e83eb2d032c"
+    }
+  ],
+  "captures": [
+    {
+      "path": "generated\\gameplay\\01-idle.png",
+      "bytes": 806991,
+      "sha256": "50d140a1363b332250c293b33bd6ad1b9311f24b010b2f2280bd58db2b481899"
+    },
+    {
+      "path": "generated\\gameplay\\02-running.png",
+      "bytes": 845224,
+      "sha256": "25d1b8e71994d2b7fc1a353bf3ef0de690933f44fa7cd35b81ff995edfeb2939"
+    },
+    {
+      "path": "generated\\gameplay\\03-traversal.png",
+      "bytes": 887696,
+      "sha256": "2f494c2bad600c5b94e9828e173184e0f646d1e8ce80ee41a4dd56f204224c09"
+    },
+    {
+      "path": "generated\\gameplay\\04-collision-debug.png",
+      "bytes": 953108,
+      "sha256": "7f9ad75afea69ab30be9f61d0e3e774749f1591e8fc568eb6a6f0e440f7ab910"
+    },
+    {
+      "path": "generated\\gameplay\\05-reset.png",
+      "bytes": 808066,
+      "sha256": "aee6ec2fc1c280fbf20bdec6987db83d266e7097dafd0bf41ab64a04798b5a1c"
+    },
+    {
+      "path": "generated\\gameplay\\06-architecture.png",
+      "bytes": 746014,
+      "sha256": "2f1eeb4838a525e89f904b5658c753e1d1d70f220c4c5e47bb281fd4e46d2bec"
+    }
+  ],
+  "environment": {
+    "path": "godot/Assets/Korriban/KorribanEnvironment.tscn",
+    "sha256": "85b8397e05e3772c5ed8322c82c33dcb9a9f8484df43a5ec2fdc00d414eeead6"
+  },
+  "sorcerer": {
+    "path": "godot/Assets/sorcerer.glb",
+    "sha256": "c338202a83450f47d9976c113bb4e14a6071be6e102358e9eae1cac5b3b829ed"
+  }
+}

@@ -1,0 +1,39 @@
+D:\SWTORClassic\torbonk\pipeline\scripts\convert_door.py:84: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world=bpy.data.worlds.new('Neutral Studio'); scene.world=world; world.use_nodes=True
+00:02.516  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Dots Stroke'
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+00:02.516  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Material'
+00:02.532  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\brant\.thumbnails\large\blender_35960_da67ab3e7969c9086fd66bf329abd9aa.png.png"
+00:04.313  render           | Saved: 'D:\SWTORClassic\torbonk\pipeline\generated\blender-reference.png'
+D:\SWTORClassic\torbonk\pipeline\scripts\convert_door.py:102: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  portable=bpy.data.materials.new('kor_acad_higharch_glTF_approximation'); portable.use_nodes=True
+register_class(...):
+Warning: 'import_mesh.gr2_presets' does not contain '_MT_' with prefix and suffix
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\all_sith_interior_hall_door_large.gr2
+OBJS: ['all_sith_interior_hall_door_large']
+TIME: 0.020 s.
+
+
+PROCESSING OF NAMED SWTOR MATERIALS
+
+-------------------------------------------
+100.00 %    Object: all_sith_interior_hall_door_large
+          Material: kor_acad_higharch
+
+
+Done!
+Info: Saved as "door-reference.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+17:55:24 | INFO: Starting glTF 2.0 export
+17:55:24 | INFO: Extracting primitive: all_sith_interior_hall_door_large
+17:55:24 | INFO: Primitives created: 1
+17:55:24 | INFO: Finished glTF 2.0 export in 0.09077239036560059 s
+00:04.610  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\brant\.thumbnails\large\blender_35960_84a62c12dac8afab009e7a8695966cc4.png.png"
+00:06.407  render           | Saved: 'D:\SWTORClassic\torbonk\pipeline\generated\blender-portable.png'
+
+Info: Saved as "door-portable.blend"
+CONVERSION_COMPLETE
+
+Blender quit

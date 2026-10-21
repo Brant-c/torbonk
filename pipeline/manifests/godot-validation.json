@@ -1,0 +1,39 @@
+{
+  "engine": "4.7.2-stable (official)",
+  "dotnet": "10.0.12",
+  "passed": true,
+  "meshInstances": 1,
+  "vertices": 822,
+  "triangles": 576,
+  "badNormals": 0,
+  "invalidValues": 0,
+  "aabbPosition": [
+    -0.3821827,
+    -3.4340285E-08,
+    -0.4548511
+  ],
+  "dimensions": [
+    0.764365,
+    1.6096082,
+    0.90970194
+  ],
+  "expectedDimensions": [
+    0.764365,
+    1.6096082,
+    0.90970194
+  ],
+  "maximumDimensionError": 0,
+  "units": "uncalibrated source units, scale 1:1",
+  "materials": [
+    {
+      "name": "kor_acad_higharch_glTF_approximation",
+      "albedo": true,
+      "normal": true,
+      "roughness": true,
+      "emission": true,
+      "cullMode": "Back"
+    }
+  ],
+  "orientation": "\u002BY up; glTF standard forward; source placement rotation intentionally not applied",
+  "physics": "Optional collision omitted; source collision not accepted as tested"
+}

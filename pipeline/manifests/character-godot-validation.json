@@ -1,0 +1,222 @@
+{
+	"bones": 211,
+	"clips": [
+		{
+			"duration": 1.66666662693024,
+			"name": "Idle",
+			"samples": 5,
+			"sourceDuration": 1.66666662693024,
+			"tracks": 633,
+			"worst": {
+				"bone": "newtonparticle14_skirt",
+				"position": 0.000000879540380083199,
+				"rotation": 0.0009765625,
+				"rotationBone": "newtonparticle17_skirt",
+				"time": 1.66666662693024
+			}
+		},
+		{
+			"duration": 0.600000023841858,
+			"name": "Run",
+			"samples": 5,
+			"sourceDuration": 0.600000023841858,
+			"tracks": 633,
+			"worst": {
+				"bone": "LeftThumbFinger2",
+				"position": 0.0000151333806570619,
+				"rotation": 0.00154408102389425,
+				"rotationBone": "LeftMiddleFinger2",
+				"time": 0.600000023841858
+			}
+		},
+		{
+			"duration": 1.06666672229767,
+			"name": "LightningStart",
+			"samples": 5,
+			"sourceDuration": 1.06666672229767,
+			"tracks": 633,
+			"worst": {
+				"bone": "LeftThumbFinger2",
+				"position": 0.000000487429701934161,
+				"rotation": 0.0009765625,
+				"rotationBone": "newtonparticle14_skirt",
+				"time": 0.800000041723251
+			}
+		},
+		{
+			"duration": 1.06666672229767,
+			"name": "LightningLoop",
+			"samples": 5,
+			"sourceDuration": 1.06666672229767,
+			"tracks": 633,
+			"worst": {
+				"bone": "attach_portrait_left",
+				"position": 0.000000727147664747463,
+				"rotation": 0.0009765625,
+				"rotationBone": "fc_tongue",
+				"time": 1.06666672229767
+			}
+		},
+		{
+			"duration": 1.60000002384186,
+			"name": "Hit",
+			"samples": 5,
+			"sourceDuration": 1.60000002384186,
+			"tracks": 633,
+			"worst": {
+				"bone": "LeftWeapon",
+				"position": 0.0000468914913653862,
+				"rotation": 0.0009765625,
+				"rotationBone": "Bone21",
+				"time": 0.800000011920929
+			}
+		},
+		{
+			"duration": 2.33333325386047,
+			"name": "Death",
+			"samples": 5,
+			"sourceDuration": 2.33333325386047,
+			"tracks": 633,
+			"worst": {
+				"bone": "attach_portrait_left",
+				"position": 0.000000144664113577164,
+				"rotation": 0.0009765625,
+				"rotationBone": "fc_lid_right_top",
+				"time": 0.583333313465118
+			}
+		},
+		{
+			"duration": 0.466666668653488,
+			"name": "LightningEnd",
+			"samples": 5,
+			"sourceDuration": 0.466666668653488,
+			"tracks": 633,
+			"worst": {
+				"bone": "fc_brow_right_2",
+				"position": 0.000000195828150140187,
+				"rotation": 0.0009765625,
+				"rotationBone": "LeftMiddleFinger1",
+				"time": 0.233333334326744
+			}
+		}
+	],
+	"engine": "4.7.2-stable (official)",
+	"materials": [
+		{
+			"albedo": true,
+			"material": "boot_tall_light_ss_a04c01_u_portable",
+			"mesh": "boot_tall_bmn_archetype",
+			"normal": true,
+			"roughness": true
+		},
+		{
+			"albedo": true,
+			"material": "boot_tall_light_ss_a04c01_u_portable",
+			"mesh": "boot_tall_bmn_light_ss_a04_shin",
+			"normal": true,
+			"roughness": true
+		},
+		{
+			"albedo": true,
+			"material": "chest_robe01_light_ss_a04c01_m_portable",
+			"mesh": "chest_robe04_bmn_archetype",
+			"normal": true,
+			"roughness": true
+		},
+		{
+			"albedo": true,
+			"material": "chest_robe01_light_ss_a04c01_m_portable",
+			"mesh": "chest_robe04_bmn_light_ss_a04_back",
+			"normal": true,
+			"roughness": true
+		},
+		{
+			"albedo": true,
+			"material": "chest_robe01_light_ss_a04c01_m_portable",
+			"mesh": "chest_robe04_bmn_light_ss_a04_chest",
+			"normal": true,
+			"roughness": true
+		},
+		{
+			"albedo": true,
+			"material": "chest_robe01_light_ss_a04c01_m_portable",
+			"mesh": "chest_robe04_bmn_light_ss_a04_shld",
+			"normal": true,
+			"roughness": true
+		},
+		{
+			"albedo": true,
+			"material": "hair_human_non_a01_v01_m_portable",
+			"mesh": "hair_human_bmn_non_a01",
+			"normal": true,
+			"roughness": true
+		},
+		{
+			"albedo": true,
+			"material": "hand_gauntlet_light_ss_a04c01_u_portable",
+			"mesh": "hand_gauntlet_bmn_archetype",
+			"normal": true,
+			"roughness": true
+		},
+		{
+			"albedo": true,
+			"material": "hand_gauntlet_light_ss_a04c01_u_portable",
+			"mesh": "hand_gauntlet_bmn_light_ss_a04_forearm",
+			"normal": true,
+			"roughness": true
+		},
+		{
+			"albedo": true,
+			"material": "head_human_caucasian_a01c01_m_portable",
+			"mesh": "head_human_bmn_caucasian_a01",
+			"normal": true,
+			"roughness": true
+		},
+		{
+			"albedo": true,
+			"material": "eye_human_non_a01_c01_portable",
+			"mesh": "head_human_bmn_caucasian_a01",
+			"normal": true,
+			"roughness": true
+		},
+		{
+			"albedo": true,
+			"material": "leg_skirt_light_ss_a04c01_u_v01_portable",
+			"mesh": "leg_skirt_bmn_archetype",
+			"normal": true,
+			"roughness": true
+		},
+		{
+			"albedo": true,
+			"material": "waist_belt_light_ss_a04c01_u_portable",
+			"mesh": "waist_belt_bmn_archetype",
+			"normal": true,
+			"roughness": true
+		},
+		{
+			"albedo": true,
+			"material": "waist_belt_light_ss_a04c01_u_portable",
+			"mesh": "waist_belt_bmn_light_ss_a04_back",
+			"normal": true,
+			"roughness": true
+		},
+		{
+			"albedo": true,
+			"material": "waist_belt_light_ss_a04c01_u_portable",
+			"mesh": "waist_belt_bmn_light_ss_a04_front",
+			"normal": true,
+			"roughness": true
+		},
+		{
+			"albedo": true,
+			"material": "waist_belt_light_ss_a04c01_u_portable",
+			"mesh": "waist_belt_bmn_light_ss_a04_sling",
+			"normal": true,
+			"roughness": true
+		}
+	],
+	"maxBonePositionError": 0.0000468914913653862,
+	"maxBoneRotationRadians": 0.00154408102389425,
+	"meshes": 15,
+	"passed": true
+}

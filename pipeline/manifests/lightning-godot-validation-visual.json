@@ -1,0 +1,544 @@
+{
+	"audioBackend": "WASAPI",
+	"captures": true,
+	"checks": [
+		{
+			"check": "source finger and VFX bones",
+			"evidence": {
+				"casterBones": 211,
+				"targetBones": 211
+			},
+			"passed": true
+		},
+		{
+			"check": "target emitter bone vfx_elbow_right",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "target emitter bone vfx_elbow_left",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "target emitter bone vfx_shoulder_right",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "target emitter bone vfx_shoulder_left",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "target emitter bone vfx_knee_right",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "target emitter bone vfx_knee_left",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "target emitter bone vfx_hip_left",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "target emitter bone vfx_hip_right",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "target arc bone vfx_foot_left",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "target arc bone vfx_foot_right",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "target arc bone vfx_hand_left",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "target arc bone vfx_hand_right",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "cast-start pending cue",
+			"evidence": {
+				"active": false,
+				"audioPlaying": 0,
+				"beams": 0,
+				"emitters": 0,
+				"lights": 0,
+				"phase": "start",
+				"sparks": 0
+			},
+			"passed": true
+		},
+		{
+			"check": "capture 01-cast-start",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "four fingers and four target arcs",
+			"evidence": {
+				"active": true,
+				"audioPlaying": 6,
+				"beams": 8,
+				"emitters": 8,
+				"lights": 3,
+				"phase": "start",
+				"sparks": 8
+			},
+			"passed": true
+		},
+		{
+			"check": "animated start attachment positions",
+			"evidence": {
+				"maxEndError": 0.0,
+				"maxStartError": 0.0
+			},
+			"passed": true
+		},
+		{
+			"check": "capture 02-caster-active",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "start transitions to original loop",
+			"evidence": {
+				"active": true,
+				"audioPlaying": 6,
+				"beams": 8,
+				"emitters": 8,
+				"lights": 3,
+				"phase": "channel",
+				"sparks": 14
+			},
+			"passed": true
+		},
+		{
+			"check": "movable target followed",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "moving target and loop hand attachment positions",
+			"evidence": {
+				"maxEndError": 0.0,
+				"maxStartError": 0.0
+			},
+			"passed": true
+		},
+		{
+			"check": "loop alignment sample 0",
+			"evidence": {
+				"maxEndError": 0.0,
+				"maxStartError": 0.0
+			},
+			"passed": true
+		},
+		{
+			"check": "loop alignment sample 1",
+			"evidence": {
+				"maxEndError": 0.0,
+				"maxStartError": 0.0
+			},
+			"passed": true
+		},
+		{
+			"check": "loop alignment sample 2",
+			"evidence": {
+				"maxEndError": 0.0,
+				"maxStartError": 0.0
+			},
+			"passed": true
+		},
+		{
+			"check": "loop alignment sample 3",
+			"evidence": {
+				"maxEndError": 0.0,
+				"maxStartError": 0.0
+			},
+			"passed": true
+		},
+		{
+			"check": "hand endpoint actually animates",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "original loop audio active",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "capture 03-channel-moving-target",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "continuous target motion sample 0",
+			"evidence": {
+				"maxEndError": 0.0,
+				"maxStartError": 0.0
+			},
+			"passed": true
+		},
+		{
+			"check": "continuous target motion sample 1",
+			"evidence": {
+				"maxEndError": 0.0,
+				"maxStartError": 0.0
+			},
+			"passed": true
+		},
+		{
+			"check": "continuous target motion sample 2",
+			"evidence": {
+				"maxEndError": 0.0,
+				"maxStartError": 0.0
+			},
+			"passed": true
+		},
+		{
+			"check": "continuous target motion sample 3",
+			"evidence": {
+				"maxEndError": 0.0,
+				"maxStartError": 0.0
+			},
+			"passed": true
+		},
+		{
+			"check": "end animation, beams and emitters stopped",
+			"evidence": {
+				"active": false,
+				"audioPlaying": 5,
+				"beams": 0,
+				"emitters": 0,
+				"lights": 1,
+				"phase": "end",
+				"sparks": 0
+			},
+			"passed": true
+		},
+		{
+			"check": "Wwise stop fade underway",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "capture 04-cast-end",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "normal stop cleaned all resources",
+			"evidence": {
+				"active": false,
+				"audioPlaying": 0,
+				"beams": 0,
+				"emitters": 0,
+				"lights": 0,
+				"phase": "idle",
+				"sparks": 0
+			},
+			"passed": true
+		},
+		{
+			"check": "capture 05-clean",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "original audio mixed by Godot",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "audio capture saved",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "interrupt during wind-up",
+			"evidence": {
+				"active": false,
+				"audioPlaying": 0,
+				"beams": 0,
+				"emitters": 0,
+				"lights": 0,
+				"phase": "idle",
+				"sparks": 0
+			},
+			"passed": true
+		},
+		{
+			"check": "interrupt during active cast",
+			"evidence": {
+				"active": false,
+				"audioPlaying": 0,
+				"beams": 0,
+				"emitters": 0,
+				"lights": 0,
+				"phase": "idle",
+				"sparks": 0
+			},
+			"passed": true
+		},
+		{
+			"check": "hit interruption",
+			"evidence": {
+				"active": false,
+				"audioPlaying": 0,
+				"beams": 0,
+				"emitters": 0,
+				"lights": 0,
+				"phase": "idle",
+				"sparks": 0
+			},
+			"passed": true
+		},
+		{
+			"check": "death interruption",
+			"evidence": {
+				"active": false,
+				"audioPlaying": 0,
+				"beams": 0,
+				"emitters": 0,
+				"lights": 0,
+				"phase": "idle",
+				"sparks": 0
+			},
+			"passed": true
+		},
+		{
+			"check": "restart during end has one bounded effect",
+			"evidence": {
+				"active": true,
+				"audioPlaying": 6,
+				"beams": 8,
+				"emitters": 8,
+				"lights": 3,
+				"phase": "start",
+				"sparks": 9
+			},
+			"passed": true
+		},
+		{
+			"check": "20 repeated starts and cancellations",
+			"evidence": {
+				"active": false,
+				"audioPlaying": 0,
+				"beams": 0,
+				"emitters": 0,
+				"lights": 0,
+				"phase": "idle",
+				"sparks": 0
+			},
+			"passed": true
+		},
+		{
+			"check": "no orphan nodes outside bookkeeping",
+			"evidence": {
+				"children": 12,
+				"expectedIdleAudioPool": 12
+			},
+			"passed": true
+		},
+		{
+			"check": "configurable point mode",
+			"evidence": {
+				"active": true,
+				"audioPlaying": 3,
+				"beams": 4,
+				"emitters": 0,
+				"lights": 1,
+				"phase": "start",
+				"sparks": 0
+			},
+			"passed": true
+		},
+		{
+			"check": "point target alignment",
+			"evidence": {
+				"maxEndError": 0.0,
+				"maxStartError": 0.0
+			},
+			"passed": true
+		},
+		{
+			"check": "removed target cancels presentation",
+			"evidence": {
+				"active": false,
+				"audioPlaying": 0,
+				"beams": 0,
+				"emitters": 0,
+				"lights": 0,
+				"phase": "idle",
+				"sparks": 0
+			},
+			"passed": true
+		},
+		{
+			"check": "timed demonstration channel stops",
+			"evidence": {
+				"active": false,
+				"audioPlaying": 0,
+				"beams": 0,
+				"emitters": 0,
+				"lights": 0,
+				"phase": "idle",
+				"sparks": 0
+			},
+			"passed": true
+		},
+		{
+			"check": "component deletion frees every owned visual and voice",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 676198",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 925098",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 2005362",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 3124562",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 6921508",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 8262027",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 9282082",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 10503425",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 17811174",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 26605792",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 30550027",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 32918848",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 33815473",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 37764586",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 43710584",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 43766601",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 47992697",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 51508336",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 57320707",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 58948851",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 60467976",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 92890106",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 135833827",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "lossless Godot PCM 191183975",
+			"evidence": null,
+			"passed": true
+		},
+		{
+			"check": "original bed full-sample loop boundaries",
+			"evidence": {
+				"begin": 0,
+				"end": 240096,
+				"rate": 44100
+			},
+			"passed": true
+		}
+	],
+	"engine": "4.7.2-stable (official)",
+	"fidelity": "Source-derived reconstruction; no running SWTOR client comparison",
+	"passed": true
+}

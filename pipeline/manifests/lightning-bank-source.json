@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audiodata_1.tor",
+    "archiveHash": "0x30583E2CDA806B52",
+    "entryOffset": 60022,
+    "headerSize": 36,
+    "dataOffset": 60058,
+    "compressedSize": 62316,
+    "length": 215558,
+    "compressionMethod": 1,
+    "crc32Index": "9d2a78cc",
+    "sha256": "a0fc90e145da0b7d7b0abc537d5f8853761c59921f54d79e696e4cb12720d1bc",
+    "output": "source-assets\\april2012\\audio-by-hash\\30583e2cda806b52.bnk",
+    "candidatePaths": [
+      "/resources/bnk2/abilities_imperialmelee_data.bnk"
+    ],
+    "archiveSha256": "932a885608e1a1b1f4a9f5c55a02bc8e426558371ae5a58faf88642ebe5f4491"
+  },
+  "bankId": 1839505760,
+  "version": 62,
+  "events": [
+    {
+      "event": "Stop_ability_sithinquisitor_forcelightning_casterloop",
+      "id": 243915777,
+      "offset": 193748,
+      "hex": "040c00000001dc890e010000000dd80009"
+    },
+    {
+      "event": "Play_ability_sithinquisitor_shock_aftershock",
+      "id": 846159110,
+      "offset": 197075,
+      "hex": "040c000000065d6f3201000000555da724"
+    },
+    {
+      "event": "Play_ability_sithinquisitor_forcelightning_casterloop",
+      "id": 1354101915,
+      "offset": 199831,
+      "hex": "040c0000009bf4b55001000000e7219521"
+    },
+    {
+      "event": "Stop_ability_sithinquisitor_shock_aftershock",
+      "id": 2003520004,
+      "offset": 203421,
+      "hex": "040c000000044a6b7701000000fbcd0512"
+    },
+    {
+      "event": "Play_ability_sithinquisitor_forcelightning_cast",
+      "id": 2909241004,
+      "offset": 208121,
+      "hex": "040c000000ac7e67ad010000000a1ac72a"
+    }
+  ]
+}

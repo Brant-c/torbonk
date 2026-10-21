@@ -1,0 +1,40 @@
+D:\SWTORClassic\torbonk\pipeline\godot\SwtorAssetInspection.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+  SwtorAssetInspection -> D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\bin\Debug\SwtorAssetInspection.dll
+
+Build succeeded.
+
+D:\SWTORClassic\torbonk\pipeline\godot\SwtorAssetInspection.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.40
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+B5.1 smoke: cast libraries synchronized with AnimationTree
+B5.1 smoke: LightningLoop gesture admitted
+B5.1 smoke: LightningLoop keeps original animated running legs
+B5.1 smoke: LightningLoop retains a distinct upper-body pose and hand sockets
+B5.1 smoke: B5/Shock gesture admitted
+B5.1 smoke: B5/Shock keeps original animated running legs
+B5.1 smoke: B5/Shock retains a distinct upper-body pose and hand sockets
+B5.1 smoke: B5/StormLoop gesture admitted
+B5.1 smoke: B5/StormLoop keeps original animated running legs
+B5.1 smoke: B5/StormLoop retains a distinct upper-body pose and hand sockets
+B5.1 smoke: death overrides and releases the gesture
+B5.1 smoke: presentation resets after death
+B5.1 smoke: short float-authored bursts keep their final tick
+B5.1 smoke: Lightning-only start and one twelve-slot bar
+B5.1 smoke: fixture targets valid
+B5.1 smoke: all three independent damage paths
+B5.1 smoke: GCD regulates activations while active effects overlap
+B5.1 smoke: Storm damages during GCD after releasing its gesture
+B5.1 smoke: individual cooldowns do not reset each other
+B5.1 smoke: persistent area hits several targets
+B5.1 smoke: Storm can activate independently
+B5.1 smoke: placed Storm survives caster leaving range
+B5.1 smoke: upgrade selection still pauses
+B5.1 smoke: death stops every effect and gesture
+B5.1 smoke: restart clears timers, ranks and unlocks
+B5.1 smoke: rendered runtime alive
+REFINEMENT_SMOKE_PASSED

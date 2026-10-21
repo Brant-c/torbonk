@@ -1,0 +1,50 @@
+D:\SWTORClassic\torbonk\pipeline\godot\SwtorAssetInspection.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\StormAreaIndicator.cs(24,26): warning CS8600: Converting null literal or possible null value to non-nullable type. [D:\SWTORClassic\torbonk\pipeline\godot\SwtorAssetInspection.csproj]
+  SwtorAssetInspection -> D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\bin\Debug\SwtorAssetInspection.dll
+
+Build succeeded.
+
+D:\SWTORClassic\torbonk\pipeline\godot\SwtorAssetInspection.csproj : warning NU1900: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\StormAreaIndicator.cs(24,26): warning CS8600: Converting null literal or possible null value to non-nullable type. [D:\SWTORClassic\torbonk\pipeline\godot\SwtorAssetInspection.csproj]
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:22.30
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+B6: Player saber uses original RightWeapon and initializes red blade
+B6: Saber follows animated weapon socket
+B6: Broodling safely spawns
+B6: Broodling loads its own complete animation adapter
+B6: Broodling moves on Korriban terrain
+B6: Broodling receives normal damage events
+B6: Broodling publishes damage to SWTOR flytext
+B6: Broodling dies through Health, defeat counter and original death clip
+B6: Shyrack safely spawns
+B6: Shyrack loads its own complete animation adapter
+B6: Shyrack moves on Korriban terrain
+B6: Shyrack receives normal damage events
+B6: Shyrack publishes damage to SWTOR flytext
+B6: Shyrack dies through Health, defeat counter and original death clip
+B6: CryptLooter safely spawns
+B6: CryptLooter loads its own complete animation adapter
+B6: CryptLooter moves on Korriban terrain
+B6: CryptLooter receives normal damage events
+B6: CryptLooter publishes damage to SWTOR flytext
+B6: Looter electroblade uses original animated socket
+B6: CryptLooter dies through Health, defeat counter and original death clip
+B6: Broodmatron safely spawns
+B6: Broodmatron loads its own complete animation adapter
+B6: Broodmatron moves on Korriban terrain
+B6: Broodmatron receives normal damage events
+B6: Broodmatron publishes damage to SWTOR flytext
+B6: Boss enters telegraph and resolves one strike
+B6: Boss exits recovery to pursuit
+B6: Broodmatron dies through Health, defeat counter and original death clip
+B6: Boss encounter ends on death
+B6: Restart resets boss and wave state
+B6: Density starts at 16 with configurable 75 cap
+B6: WaveDirector spawns the boss at its configured milestone
+B6: Player death exits the boss encounter
+B6 smoke passed. Ready for manual gameplay/visual review.

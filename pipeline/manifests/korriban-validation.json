@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "milestone": "A4",
+  "checks": [
+    {
+      "path": "manifests/korriban-ste2-validation.json",
+      "sha256": "a092ec111dd033c224e4a1baaf8db4a0d5b19e566205299a31f199b0468aba5d",
+      "passed": true
+    },
+    {
+      "path": "manifests/korriban-model-roundtrip.json",
+      "sha256": "96e4c1dd68f07d14bebe5b9c4404bb9e9b4890758998fe43663806c057631354",
+      "passed": true
+    },
+    {
+      "path": "manifests/korriban-terrain-conversion.json",
+      "sha256": "bd801f115b3dd6e4b473cb4fb45f76016db707a8d30351c64b6a9c5fcf58449d",
+      "passed": true
+    },
+    {
+      "path": "manifests/korriban-godot-build.json",
+      "sha256": "c8e5e0d1b88f46fcef74ef695c2f0164814874324b436600d1c88acdf7a2e61d",
+      "passed": true
+    },
+    {
+      "path": "manifests/korriban-godot-validation.json",
+      "sha256": "0b138ff778767c81d61929889b16aee7d34d0eaae760459cf0d73fd0236b8f8f",
+      "passed": true
+    },
+    {
+      "path": "manifests/korriban-godot-validation-visual.json",
+      "sha256": "ca7dca8a9f3dbfd433e33c967da4af28e1e31b78d6134a05094a367bb8ac8f74",
+      "passed": true
+    },
+    {
+      "path": "manifests/korriban-source-integrity.json",
+      "sha256": "7f36f192eea8ffd57b93841587afb4d502c5405a41b09dc74f25511c585173e4",
+      "passed": true
+    },
+    {
+      "path": "manifests/korriban-repeat-validation.json",
+      "sha256": "b1b35240bf06420d6e86530f445243d3f93addd2365d20b5dd227b8fa5c82132",
+      "passed": true
+    },
+    {
+      "path": "manifests/glb-validation.json",
+      "sha256": "b7c18ae4c3877685a0b46d84510e3ef46413afa03bc94d7e3dcc6cd45c6120e0",
+      "passed": true
+    },
+    {
+      "path": "manifests/roundtrip-validation.json",
+      "sha256": "b46e58f84c6d73a4114564dce8cf0608c1ef2e5ec9d93a619756edb94155c2e7",
+      "passed": true
+    },
+    {
+      "path": "manifests/godot-validation.json",
+      "sha256": "ede605f485ef13fde58f46dcca1cf87a9dafc6bb1af9dc2a8867d550fed46c2a",
+      "passed": true
+    },
+    {
+      "path": "manifests/character-glb-validation.json",
+      "sha256": "65ced5bb1ed0b3b2a56b9f64094bf1bc4fabbfbf1fa8128c62263c4457c471c3",
+      "passed": true
+    },
+    {
+      "path": "manifests/character-roundtrip-validation.json",
+      "sha256": "9e2fc427ccab9fd3ba1bc573012c30fc5677061418d9ed37a1a92692c9d6381a",
+      "passed": true
+    },
+    {
+      "path": "manifests/character-godot-validation.json",
+      "sha256": "592c190c78b8de33f08d13cdc812f724312ccff600ef0acd6e8dd7c994367c52",
+      "passed": true
+    },
+    {
+      "path": "manifests/character-repeat-validation.json",
+      "sha256": "389cd7f5b129f539687f0012fbdaa67e6bbcb0eae38349734ce1e8bfb495059e",
+      "passed": true
+    },
+    {
+      "path": "manifests/lightning-godot-validation.json",
+      "sha256": "962e128faf8eb2e58b3476d3440e59389ea9cfefd68e7286e11165394e49b3f9",
+      "passed": true
+    },
+    {
+      "path": "manifests/lightning-godot-validation-visual.json",
+      "sha256": "8f11f04186a3b8cad7436973ff3d420d174fb11a6f9073d9f8e681099acf3af8",
+      "passed": true
+    },
+    {
+      "path": "manifests/lightning-runtime-audio-validation.json",
+      "sha256": "10a2f19b8f208f96b5cd2029d8adcc50ecdaebd94f6ea170512bb205e99a06e6",
+      "passed": true
+    },
+    {
+      "path": "manifests/lightning-repeat-validation.json",
+      "sha256": "216af3a6199bf2ecb055c46437125b67c99dd8f237da54e6157ade43dac06cfb",
+      "passed": true
+    },
+    {
+      "path": "manifests/source-integrity.json",
+      "sha256": "fde3419e7f5419db346c3ee31de5baa0554a3ac4a9f6046e7a7cd0b2fe8460a4",
+      "passed": true
+    }
+  ],
+  "fullA1A3RegressionsCompletedDuringA4": true,
+  "finalA4Run": "korriban-run.json",
+  "sourceArchivesChecked": 91,
+  "sourceArchivesChanged": 0,
+  "gameplayImplemented": false,
+  "remainingFidelityLimits": [
+    "native terrain UV and shader parity",
+    "native default terrain tessellation",
+    "DYD/environment FX execution",
+    "native sky/lighting",
+    "physical-unit calibration"
+  ]
+}
