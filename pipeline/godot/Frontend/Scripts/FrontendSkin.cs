@@ -46,6 +46,7 @@ public static class FrontendSkin
     public static Label Heading(string text, int size = 22)
     {
         var label=Label(text,size); label.AddThemeColorOverride("font_color",SwtorSkin.Blue);
+        label.AddThemeFontOverride("font",GD.Load<FontFile>("res://Assets/UI/EurostileBold.ttf"));
         label.VerticalAlignment=VerticalAlignment.Center; return label;
     }
     public static TextureRect Art(string path, Vector2 size) => new()
