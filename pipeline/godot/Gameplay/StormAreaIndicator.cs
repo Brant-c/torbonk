@@ -29,7 +29,7 @@ public partial class StormAreaIndicator : MeshInstance3D
         using var config = JsonDocument.Parse(FileAccess.GetFileAsString("res://Assets/Abilities/storm-reticle.json"));
         var root = config.RootElement;
         _ridgeFraction = root.GetProperty("ringRidgeFraction").GetSingle();
-        string texture = System.IO.Path.GetFileNameWithoutExtension(root.GetProperty("texture").GetString());
+        string texture = System.IO.Path.GetFileNameWithoutExtension(root.GetProperty("texture").GetString()!);
         // Use the actual green projector's color, rather than inventing a friendly tint.
         var rgba = root.GetProperty("projector").GetProperty("_fxProjectionColor").GetString()!.TrimStart('#').Split(',');
         float Component(int i) => float.Parse(rgba[i], CultureInfo.InvariantCulture);
