@@ -1,0 +1,898 @@
+{
+  "models": [
+    {
+      "path": "/resources/art/fx/geometry/ord/fx_ord_aagun_base_01.gr2",
+      "output": "res://Assets/Maps/balmorra/fx_ord_aagun_base_01.glb",
+      "sourceSha256": "3990007f8dcd4ddee62d5ec3b81bc239a39f7d1aec083594c9ce81cd455d3032",
+      "sha256": "9a7ac0cf77676ae278516f3eb4c97bcae4e5a9eec5ca0c48cc546bc974477a76",
+      "vertices": 1834,
+      "triangles": 1048,
+      "boundsMin": [
+        -1.7654569149017334,
+        -0.01194045040756464,
+        -1.775558352470398
+      ],
+      "boundsMax": [
+        1.7654582262039185,
+        0.7631127238273621,
+        1.7755587100982666
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/all_arch_tech_aagun.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/fx/geometry/ord/fx_ord_aagun_base_01_collision.gr2",
+      "output": "res://Assets/Maps/balmorra/fx_ord_aagun_base_01_collision.glb",
+      "sourceSha256": "2bab4ac7c385e1895295ce3e79b8bd73d56f7f10f797ff618192c06b832108b0",
+      "sha256": "51c67a1ce6eccda5c80a75711a0f844aa46f4407b53b4db01fbe0b95f18d1525",
+      "vertices": 0,
+      "triangles": 0,
+      "boundsMin": [
+        1000000000.0,
+        1000000000.0,
+        1000000000.0
+      ],
+      "boundsMax": [
+        -1000000000.0,
+        -1000000000.0,
+        -1000000000.0
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/util_collision_hidden.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/all_all/arch/imperial/all_arch_imp_city_block_bldg_roof_04.gr2",
+      "output": "res://Assets/Maps/balmorra/all_arch_imp_city_block_bldg_roof_04.glb",
+      "sourceSha256": "e9bbd66636edd72a03980322de627b189ee1bd7805c7a1a073ca9bb4183e4004",
+      "sha256": "31f94e14fcc762a817d10a928fbec79540bae0cdbaab30f144a65f6d3bd30fd6",
+      "vertices": 4162,
+      "triangles": 2040,
+      "boundsMin": [
+        -5.370488166809082,
+        -0.4199999272823334,
+        -3.284618377685547
+      ],
+      "boundsMax": [
+        5.3962178230285645,
+        1.7311062812805176,
+        3.284618377685547
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/all_arch_imp_buildings_metal_light.mat",
+        "/resources/art/shaders/materials/all_arch_imp_buildings_trims.mat",
+        "/resources/art/shaders/materials/all_arch_building_props_large.mat",
+        "/resources/art/shaders/materials/all_arch_imp_buildings_metal_dark.mat",
+        "/resources/art/shaders/materials/all_arch_imp_buildings_tech.mat",
+        "/resources/art/shaders/materials/all_arch_imp_buildings_detail_decals.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/bal_balmorra/env/bal_env_cliff_02.gr2",
+      "output": "res://Assets/Maps/balmorra/bal_env_cliff_02.glb",
+      "sourceSha256": "b455ce6d1f056c45715899cb05d285643c35c9e2e6b1c93cfaf7ab73e0c5f765",
+      "sha256": "2967ccc42204a81a7d8ebb126d222a102d964694c3d056afeca4af1d6de01c71",
+      "vertices": 837,
+      "triangles": 1041,
+      "boundsMin": [
+        -5.86326789855957,
+        -0.9472557306289673,
+        -13.452914237976074
+      ],
+      "boundsMax": [
+        5.588291168212891,
+        15.84711742401123,
+        8.583203315734863
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/bal_spire_new_test.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/bal_balmorra/env/bal_env_mountain_boulder_med.gr2",
+      "output": "res://Assets/Maps/balmorra/bal_env_mountain_boulder_med.glb",
+      "sourceSha256": "796b8fce22cfbf01b4e953a572d70e92b6af73f60fbe84908adc9e63a71fa998",
+      "sha256": "bc8742d5429ea28017a0faad3785646571ebf5bcf4a837485a183b0357cf9790",
+      "vertices": 311,
+      "triangles": 476,
+      "boundsMin": [
+        -2.0391151905059814,
+        -0.7526620030403137,
+        -1.6885539293289185
+      ],
+      "boundsMax": [
+        2.0391151905059814,
+        4.051827430725098,
+        1.7098594903945923
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/bal_env_mountain_boulder_med.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/bal_balmorra/env/bal_env_spire_01.gr2",
+      "output": "res://Assets/Maps/balmorra/bal_env_spire_01.glb",
+      "sourceSha256": "1ebb032415e69a683dfb55f4f715a06bbb10faf1bb86265e7dd1d96ff5979d36",
+      "sha256": "6d2a1b9fd6298f6624d770cb5a078e5e1dec51e5f9350eeb7920b46455537be2",
+      "vertices": 1622,
+      "triangles": 2031,
+      "boundsMin": [
+        -8.24755573272705,
+        -0.18891805410385132,
+        -8.13656234741211
+      ],
+      "boundsMax": [
+        8.995820045471191,
+        24.267507553100586,
+        8.962396621704102
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/bal_spire_new_test.mat"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "path": "/resources/art/shaders/materials/all_arch_building_props_large.mat",
+      "sourceSha256": "4b14ab107b7cca4cf443aeaaf2cf1c9e99767caf82ae2cf357a8de96748c530a",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_building_props_large_d.dds",
+        "RotationMap1": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_building_props_large_n.dds",
+        "GlossMap": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_building_props_large_s.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/all_arch_imp_buildings_detail_decals.mat",
+      "sourceSha256": "5e4267ef59959a2013253a6916b4cca274b4525b05078069ffe734466c7d6b35",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_imp_buildings_detail_decals_d.dds",
+        "RotationMap1": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_imp_buildings_detail_decals_n.dds",
+        "GlossMap": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_imp_buildings_detail_decals_s.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/all_arch_imp_buildings_metal_dark.mat",
+      "sourceSha256": "d55359831cc74b15bcbcd97ddd0741f3a4c7a6dd3122414ac373d2a930649212",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_imp_buildings_metal_dark_d.dds",
+        "RotationMap1": "/resources/art/defaultassets/flat_n.dds",
+        "GlossMap": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_imp_buildings_metal_dark_s.dds",
+        "EmissiveMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/all_arch_imp_buildings_metal_light.mat",
+      "sourceSha256": "2f1dd2584503834825c9bf4ec5247ce362e07e2b1e535450fdb4533c3d9a7603",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_imp_buildings_metal_light_d.dds",
+        "RotationMap1": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_imp_buildings_metal_light_n.dds",
+        "GlossMap": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_imp_buildings_metal_light_s.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/all_arch_imp_buildings_tech.mat",
+      "sourceSha256": "c4f2fa552670d6b4b243ba0a9445a2c90475d18a47fd2530f7d11494600a920a",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_imp_buildings_tech_d.dds",
+        "RotationMap1": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_imp_buildings_tech_n.dds",
+        "GlossMap": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_imp_buildings_tech_s.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/all_arch_imp_buildings_trims.mat",
+      "sourceSha256": "00491e57746b357d11cb681cd6d4d58e304e6dccf531922f2d4f4c9b402fd5e0",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_imp_buildings_trims_d.dds",
+        "RotationMap1": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_imp_buildings_trims_n.dds",
+        "GlossMap": "/resources/art/static/area/all_all/arch/imperial/texture/all_arch_imp_buildings_trims_s.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/all_arch_tech_aagun.mat",
+      "sourceSha256": "dfd72b5bce569a9ff71c98451c340496bc325974b54795b0facf4af3feb4b60e",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/all_all/arch/tech/texture/all_arch_tech_aagun_d.dds",
+        "RotationMap1": "/resources/art/static/area/all_all/arch/tech/texture/all_arch_tech_aagun_n.dds",
+        "GlossMap": "/resources/art/static/area/all_all/arch/tech/texture/all_arch_tech_aagun_s.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/bal_env_mountain_boulder_med.mat",
+      "sourceSha256": "4e3dbc6dd9f061ce919f76dc38959c6607d60cc445928baf22b7cab40fb0c28a",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/bal_balmorra/env/texture/bal_env_mountain_boulder_med_d.dds",
+        "RotationMap1": "/resources/art/static/area/bal_balmorra/env/texture/bal_env_mountain_boulder_med_n.dds",
+        "GlossMap": "/resources/art/static/area/bal_balmorra/env/texture/bal_env_mountain_boulder_med_s.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/bal_spire_new_test.mat",
+      "sourceSha256": "6884188d0329edb4e9e4e5ac0a23d56e78e4b93cf1594aee07b19e5e1bbbecd5",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/bal_balmorra/env/texture/bal_env_rockset_01_d.dds",
+        "RotationMap1": "/resources/art/static/area/bal_balmorra/env/texture/bal_env_rockset_01_n.dds",
+        "GlossMap": "/resources/art/static/area/bal_balmorra/env/texture/bal_env_rockset_01_s.dds",
+        "EmissiveMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/ter_bal_cliff_01.mat",
+      "sourceSha256": "973083ddfacdf725d9fb1dc98d41c085b16b0a4fc356d9a46e96d25bf0dcfe44",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/bal_balmorra/terrain_map/ter_bal_cliff_01_d.dds",
+        "RotationMap1": "/resources/art/defaultassets/flat_n.dds",
+        "GlossMap": "/resources/art/static/area/bal_balmorra/terrain_map/ter_bal_cliff_01_s.dds",
+        "EmissiveMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/ter_bal_grass_02.mat",
+      "sourceSha256": "b5e2702ce89f546d4b1f4c58c974d7a970b90732879dcb698159fe261352bf31",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/bal_balmorra/terrain_map/ter_bal_grass_02_d.dds",
+        "RotationMap1": "/resources/art/static/area/bal_balmorra/terrain_map/ter_bal_grass_02_n.dds",
+        "GlossMap": "/resources/art/static/area/bal_balmorra/terrain_map/ter_bal_grass_02_s.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/ter_bal_rock_01.mat",
+      "sourceSha256": "9ec138c4285ef7e6507ab8e962e1ef32d9ebb0ee4ef2fa43f3ba6e90f34c2878",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/bal_balmorra/terrain_map/ter_bal_rock_01_d.dds",
+        "RotationMap1": "/resources/art/static/area/bal_balmorra/terrain_map/ter_bal_rock_01_n.dds",
+        "GlossMap": "/resources/art/static/area/bal_balmorra/terrain_map/ter_bal_rock_01_s.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/ter_bal_soil_01.mat",
+      "sourceSha256": "a729f8310db5c41471ac4e58a80c693c4e1b28f7df1f9da01b7c7cd342548025",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/bal_balmorra/terrain_map/ter_bal_soil_01_d.dds",
+        "RotationMap1": "/resources/art/static/area/bal_balmorra/terrain_map/ter_bal_soil_01_n.dds",
+        "GlossMap": "/resources/art/static/area/bal_balmorra/terrain_map/ter_bal_soil_01_s.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/util_collision_hidden.mat",
+      "sourceSha256": "571403a3b6e29fa5dd1aa8fa6e48f40ceda3a9b1e5b0b3ba1164962950d7f6ac",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/util/texture/util_collision_hidden_d.dds",
+        "RotationMap1": "/resources/art/util/texture/util_collision_hidden_01_n.dds",
+        "GlossMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    }
+  ],
+  "placements": [
+    {
+      "id": "4611686026800594171",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.3385944366455078,
+          -0.021001167595386505,
+          0.3494020104408264,
+          -36.18949890136719
+        ],
+        [
+          -0.030326692387461662,
+          0.48605477809906006,
+          -0.00017381571524310857,
+          19.48699951171875
+        ],
+        [
+          -0.3487163484096527,
+          -0.02187897451221943,
+          -0.3392450511455536,
+          38.24020004272461
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686026800666178",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.2521609365940094,
+          -0.14910884201526642,
+          -0.6390166282653809,
+          -38.32780075073242
+        ],
+        [
+          -0.07368884235620499,
+          0.7890315651893616,
+          -0.1106421947479248,
+          16.214099884033203
+        ],
+        [
+          0.6600400805473328,
+          0.03112446889281273,
+          -0.2564815878868103,
+          41.904701232910156
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686027120860340",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.021754806861281395,
+          0.06500869244337082,
+          0.6141861081123352,
+          -29.632699966430664
+        ],
+        [
+          -0.02952028438448906,
+          0.6137551665306091,
+          -0.06600870192050934,
+          14.773599624633789
+        ],
+        [
+          -0.6169110536575317,
+          -0.0316617414355278,
+          -0.018500082194805145,
+          35.701499938964844
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686027120861386",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.021402787417173386,
+          0.06395677477121353,
+          0.6042478084564209,
+          -25.803499221801758
+        ],
+        [
+          -0.02904261089861393,
+          0.6038238406181335,
+          -0.06494060158729553,
+          14.54259967803955
+        ],
+        [
+          -0.6069286465644836,
+          -0.03114941529929638,
+          -0.018200727179646492,
+          36.652000427246094
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686027255454118",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.5749032497406006,
+          -0.06392515450716019,
+          0.47148627042770386,
+          -29.626100540161133
+        ],
+        [
+          -0.05426020547747612,
+          0.7129272222518921,
+          0.038714852184057236,
+          10.604900360107422
+        ],
+        [
+          -0.45600852370262146,
+          -0.004238508176058531,
+          -0.599023163318634,
+          60.31209945678711
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686027255455106",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -1.0921847820281982,
+          -0.13535954058170319,
+          0.21319304406642914,
+          1.700700044631958
+        ],
+        [
+          -0.1180337592959404,
+          1.1102534532546997,
+          0.10023181140422821,
+          11.531000137329102
+        ],
+        [
+          -0.22325211763381958,
+          0.07520756125450134,
+          -1.0959668159484863,
+          56.921199798583984
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686027255459280",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.12925752997398376,
+          0.0034169363789260387,
+          0.7261845469474792,
+          -22.521499633789062
+        ],
+        [
+          -0.21575987339019775,
+          0.6574597358703613,
+          0.03789902478456497,
+          9.82800006866455
+        ],
+        [
+          -0.6650272011756897,
+          -0.21264056861400604,
+          0.12884846329689026,
+          58.067501068115234
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686027255468884",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -6.556707887739321e-08,
+          0.0,
+          -1.5,
+          -17.579200744628906
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.6117000579834
+        ],
+        [
+          1.5,
+          0.0,
+          -6.556707887739321e-08,
+          54.85749816894531
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686027261975725",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.08974633365869522,
+          -0.09046950936317444,
+          0.726184606552124,
+          -14.294400215148926
+        ],
+        [
+          0.2447291612625122,
+          0.6463951468467712,
+          0.05935101583600044,
+          9.884499549865723
+        ],
+        [
+          -0.6614939570426941,
+          0.22686894237995148,
+          0.12048081308603287,
+          55.17409896850586
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686027267969288",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.6228678226470947,
+          0.025196149945259094,
+          0.1429670751094818,
+          -1.479200005531311
+        ],
+        [
+          -0.026344604790210724,
+          0.6177718639373779,
+          -0.0013663375284522772,
+          10.140999794006348
+        ],
+        [
+          -0.13699831068515778,
+          -0.004241537768393755,
+          0.6502677798271179,
+          65.13909912109375
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686027276270667",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.3134845197200775,
+          0.013649732805788517,
+          0.579785168170929,
+          -8.656100273132324
+        ],
+        [
+          0.019891755655407906,
+          0.6174304485321045,
+          -0.028557205572724342,
+          10.627400398254395
+        ],
+        [
+          -0.5556605458259583,
+          0.029803726822137833,
+          0.3260725140571594,
+          57.983699798583984
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686027298895204",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.9368488192558289,
+          -1.4280588800374971e-07,
+          -0.3497345447540283,
+          -22.473100662231445
+        ],
+        [
+          0.15595893561840057,
+          0.895065426826477,
+          0.4177735149860382,
+          18.200599670410156
+        ],
+        [
+          0.3130352199077606,
+          -0.44593486189842224,
+          0.8385410308837891,
+          54.50740051269531
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686027298903936",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.7647977471351624,
+          -0.1043182834982872,
+          0.6357688903808594,
+          -30.637100219726562
+        ],
+        [
+          0.10528414696455002,
+          0.9533026218414307,
+          0.283071368932724,
+          18.18790054321289
+        ],
+        [
+          -0.6356096267700195,
+          0.28342875838279724,
+          -0.7181006073951721,
+          56.87300109863281
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686027298907690",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.9675029516220093,
+          0.02182721719145775,
+          0.2519157826900482,
+          -27.24679946899414
+        ],
+        [
+          -0.0313250906765461,
+          0.9782466292381287,
+          -0.20506663620471954,
+          17.46380043029785
+        ],
+        [
+          -0.25091177225112915,
+          -0.20629386603832245,
+          -0.9457727670669556,
+          53.70330047607422
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686027327691015",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.5989885330200195,
+          -0.012042470276355743,
+          0.7402317523956299,
+          0.7208999991416931
+        ],
+        [
+          0.01685001701116562,
+          0.9517056345939636,
+          0.029117709025740623,
+          17.524499893188477
+        ],
+        [
+          -0.7401379346847534,
+          0.03141246363520622,
+          -0.5984015464782715,
+          65.043701171875
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686033979870026",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.16364319622516632,
+          -0.04596361145377159,
+          -0.64164137840271,
+          -16.969100952148438
+        ],
+        [
+          -0.6072469353675842,
+          0.12099350988864899,
+          0.1584533005952835,
+          9.066200256347656
+        ],
+        [
+          0.10908229649066925,
+          0.6046013832092285,
+          -0.08048935979604721,
+          50.85219955444336
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686069539931221",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.42866653203964233,
+          -0.02037065476179123,
+          -0.2302151918411255,
+          -39.417198181152344
+        ],
+        [
+          0.02884341962635517,
+          0.4860273003578186,
+          0.010700923390686512,
+          19.38249969482422
+        ],
+        [
+          0.22930777072906494,
+          -0.02305404655635357,
+          0.4290168583393097,
+          38.23789978027344
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686247271000398",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -1.0,
+          0.0,
+          8.742277657347586e-08,
+          -17.65329933166504
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.310400009155273
+        ],
+        [
+          -8.742277657347586e-08,
+          0.0,
+          -1.0,
+          59.8125
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686247271000399",
+      "parent": "4611686247271000398",
+      "worldMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -17.65329933166504
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.310400009155273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          59.8125
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686247271000400",
+      "parent": "4611686247271000398",
+      "worldMatrix": [
+        [
+          -1.0,
+          0.0,
+          8.742277657347586e-08,
+          -17.65329933166504
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.310400009155273
+        ],
+        [
+          -8.742277657347586e-08,
+          0.0,
+          -1.0,
+          59.8125
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "blender": "5.2.1 LTS",
+  "units": "source units 1:1"
+}

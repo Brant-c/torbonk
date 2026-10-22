@@ -1,0 +1,371 @@
+{
+  "patches": [
+    {
+      "id": "4611686022249483826",
+      "room": "area_dark_temple_a",
+      "width": 64,
+      "depth": 61,
+      "position": [
+        -127.400001526,
+        5.2486000061,
+        63.2000007629
+      ],
+      "version": 1,
+      "vertices": 3904,
+      "triangles": 7560,
+      "sourceHeightEnd": 8310,
+      "embeddedSha256": "ca7402a0a738e1c7e94d40b3937aefef03cae907ac6f3c76aa66c84e10d28297",
+      "decodedSha256": "5f7d0671411a7ef59c75085ec51b9008af49d0c782bc4ff054f5fcf62c59020a",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        127,
+        121
+      ],
+      "layers": [
+        "27",
+        "18",
+        "19",
+        "23",
+        "25",
+        "1",
+        "30"
+      ],
+      "blendSumRange": [
+        0.9924985766410828,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 1,
+          "painted": 164
+        },
+        {
+          "id": 2,
+          "painted": 27
+        },
+        {
+          "id": 4,
+          "painted": 1
+        },
+        {
+          "id": 5,
+          "painted": 557
+        },
+        {
+          "id": 6,
+          "painted": 1
+        },
+        {
+          "id": 32,
+          "painted": 2
+        },
+        {
+          "id": 33,
+          "painted": 1
+        },
+        {
+          "id": 34,
+          "painted": 2
+        },
+        {
+          "id": 35,
+          "painted": 2
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/dromund/4611686022249483826_albedo.png",
+        "normal": "res://Assets/Maps/dromund/4611686022249483826_normal.png",
+        "roughness": "res://Assets/Maps/dromund/4611686022249483826_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686022249484153",
+      "room": "area_dark_temple_a",
+      "width": 64,
+      "depth": 61,
+      "position": [
+        -140.0,
+        5.28539991379,
+        63.2000007629
+      ],
+      "version": 9,
+      "vertices": 3904,
+      "triangles": 7560,
+      "sourceHeightEnd": 8322,
+      "embeddedSha256": "26e829d05132b4044e56c5466d501e68e9cea53cd31492332f70e380d60d4e03",
+      "decodedSha256": "912b2b9b26282b75e60a35e95f807f7855ae2e0cea0b21779d8da89139c8ffac",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        127,
+        121
+      ],
+      "layers": [
+        "1",
+        "18",
+        "19",
+        "25",
+        "27"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 1,
+          "painted": 341
+        },
+        {
+          "id": 2,
+          "painted": 38
+        },
+        {
+          "id": 4,
+          "painted": 26
+        },
+        {
+          "id": 5,
+          "painted": 640
+        },
+        {
+          "id": 6,
+          "painted": 151
+        },
+        {
+          "id": 7,
+          "painted": 58
+        },
+        {
+          "id": 32,
+          "painted": 27
+        },
+        {
+          "id": 33,
+          "painted": 24
+        },
+        {
+          "id": 34,
+          "painted": 2
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/dromund/4611686022249484153_albedo.png",
+        "normal": "res://Assets/Maps/dromund/4611686022249484153_normal.png",
+        "roughness": "res://Assets/Maps/dromund/4611686022249484153_roughness.png"
+      },
+      "embeddedPosition": [
+        -140.0,
+        5.285399913787842,
+        63.20000076293945
+      ]
+    },
+    {
+      "id": "4611686022249488860",
+      "room": "area_dark_temple_a",
+      "width": 64,
+      "depth": 64,
+      "position": [
+        -127.400001526,
+        4.95209980011,
+        75.5999984741
+      ],
+      "version": 1,
+      "vertices": 4096,
+      "triangles": 7938,
+      "sourceHeightEnd": 8706,
+      "embeddedSha256": "3927e2fa6be2971fcdfbdb70e763747f3862698a47c2eb7b4e2689aa4e3540e0",
+      "decodedSha256": "87bdf8f31cf12485de97a5e1b92f0c9ef2268af38a6b241cbb73574c0cdd3f17",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        127,
+        127
+      ],
+      "layers": [
+        "27",
+        "18",
+        "19",
+        "23",
+        "25",
+        "1",
+        "30",
+        "33"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.490098476409912
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 1,
+          "painted": 118
+        },
+        {
+          "id": 2,
+          "painted": 167
+        },
+        {
+          "id": 3,
+          "painted": 2
+        },
+        {
+          "id": 5,
+          "painted": 617
+        },
+        {
+          "id": 6,
+          "painted": 57
+        },
+        {
+          "id": 32,
+          "painted": 1
+        },
+        {
+          "id": 33,
+          "painted": 1
+        },
+        {
+          "id": 34,
+          "painted": 2
+        },
+        {
+          "id": 35,
+          "painted": 1
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/dromund/4611686022249488860_albedo.png",
+        "normal": "res://Assets/Maps/dromund/4611686022249488860_normal.png",
+        "roughness": "res://Assets/Maps/dromund/4611686022249488860_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686022249489515",
+      "room": "area_dark_temple_a",
+      "width": 64,
+      "depth": 127,
+      "position": [
+        -140.0,
+        4.91849994659,
+        81.8000030518
+      ],
+      "version": 9,
+      "vertices": 8128,
+      "triangles": 15876,
+      "sourceHeightEnd": 17034,
+      "embeddedSha256": "8a74822e0b424b6b3a45100ecb304dc9f7549ae8becc8b4853c5a1d50c1fc312",
+      "decodedSha256": "193957230dd9e1132bd3ed8b12624268f8f68b59f532973b7e5a38d3499b6406",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        127,
+        253
+      ],
+      "layers": [
+        "1",
+        "2",
+        "3",
+        "18",
+        "19",
+        "23",
+        "25",
+        "27",
+        "30"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.4697233438491821
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 33
+        },
+        {
+          "id": 1,
+          "painted": 435
+        },
+        {
+          "id": 2,
+          "painted": 118
+        },
+        {
+          "id": 3,
+          "painted": 9
+        },
+        {
+          "id": 5,
+          "painted": 1664
+        },
+        {
+          "id": 6,
+          "painted": 579
+        },
+        {
+          "id": 7,
+          "painted": 3
+        },
+        {
+          "id": 11,
+          "painted": 2
+        },
+        {
+          "id": 14,
+          "painted": 9
+        },
+        {
+          "id": 15,
+          "painted": 124
+        },
+        {
+          "id": 32,
+          "painted": 7
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/dromund/4611686022249489515_albedo.png",
+        "normal": "res://Assets/Maps/dromund/4611686022249489515_normal.png",
+        "roughness": "res://Assets/Maps/dromund/4611686022249489515_roughness.png"
+      },
+      "embeddedPosition": [
+        -140.0,
+        4.918499946594238,
+        81.80000305175781
+      ]
+    }
+  ],
+  "adjacency": [
+    {
+      "note": "authored patches staged unmodified; seams not repaired",
+      "patchCount": 4
+    }
+  ],
+  "lighting": "authored warm directional/ambient; no native parity",
+  "limitations": [
+    "World-space UV phase/scale reconstruction is not native-client verified.",
+    "SWTOR material lighting translated to portable PBR; original vertex color used as multiplicative tint.",
+    "DYD density data retained; procedural native billboard/mesh scattering is not reproduced.",
+    "Static collision is derived from converted visible triangles, not original physics shapes."
+  ],
+  "passed": true
+}

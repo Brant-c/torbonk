@@ -235,6 +235,39 @@
       "X": 0.8,
       "Y": 0.28,
       "GameplayImplemented": true
+    },
+    {
+      "Id": "hutta",
+      "Name": "Hutta",
+      "Region": "Hutt Space",
+      "Description": "Smog, swamp and sprawling factories. Fight through the industrial district of Nal Hutta.",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.planets.hutta.png",
+      "Surface": "res://Frontend/Assets/Recovered/planets_hutta_d.png",
+      "X": 0.55,
+      "Y": 0.62,
+      "GameplayImplemented": true
+    },
+    {
+      "Id": "dromund",
+      "Name": "Dromund Kaas",
+      "Region": "Sith Worlds",
+      "Description": "The Sith capital world, wild with jungle. Hold the ancient ruins on the approach to the Dark Temple.",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.planets.dromund_kaas.png",
+      "Surface": "res://Frontend/Assets/Recovered/planets_dromund_kass_d.png",
+      "X": 0.7,
+      "Y": 0.4,
+      "GameplayImplemented": true
+    },
+    {
+      "Id": "balmorra",
+      "Name": "Balmorra",
+      "Region": "Outer Rim",
+      "Description": "A war-torn industrial world. Survive the fighting in the Sobrik district.",
+      "Artwork": "res://Frontend/Assets/Recovered/cdx.planets.balmorra.png",
+      "Surface": "res://Frontend/Assets/Recovered/planets_balmorra_d.png",
+      "X": 0.35,
+      "Y": 0.5,
+      "GameplayImplemented": true
     }
   ]
 }

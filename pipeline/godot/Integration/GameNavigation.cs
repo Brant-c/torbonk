@@ -37,6 +37,7 @@ public static class GameNavigation
             {
                 var profile=ClassProfile.Find(arg[17..])??throw new System.InvalidOperationException("Unknown development class: "+arg);
                 var selected=new SelectionConfiguration {FactionId=profile.Faction,BaseClassId=profile.BaseClass,AdvancedClassId=profile.Id,Appearance=AppearanceConfiguration.ForClass(profile.Id)};
+                foreach(string mapArg in OS.GetCmdlineUserArgs())if(mapArg.StartsWith("--map="))selected.MapId=mapArg[6..];
                 if(!SelectionGameplayAdapter.TryResolve(selected,out var configured,out string reason))throw new System.InvalidOperationException(reason);
                 return configured;
             }

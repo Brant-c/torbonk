@@ -56,18 +56,53 @@ public partial class GameWorld : Node3D
     private MeshInstance3D? _debug;
     private bool _leavingForMenu;
 
+    /// <summary>The environment instance is "KorribanEnvironment" in the original composition and "MapEnvironment" in map sections.</summary>
+    private Node3D EnvironmentNode() => GetNodeOrNull<Node3D>("MapEnvironment") ?? GetNode<Node3D>("KorribanEnvironment");
+
+    /// <summary>Authored seed first (Korriban's original spawn); other maps pick the most open supported ground.</summary>
+    private bool FindSpawn(Vector3 seed, out Vector3 floor)
+    {
+        bool original = GetNodeOrNull<Node3D>("MapEnvironment") == null;
+        if (original && Arena.GroundAt(seed, out floor, out _, 40, 60) && Arena.Supported(floor, Player.CapsuleRadius)) return true;
+        // Other maps: choose the most open supported ground (most reachable ring samples around it), nearest to the seed on ties.
+        float best = -1, bestDistance = float.MaxValue; floor = default; bool found = false;
+        float radius = Player.CapsuleRadius * 3;
+        // Same standing/walking tests the enemy spawner uses, so props and canopy count against openness.
+        var navigation = new ArenaNavigation { Arena = Arena, Radius = 0.05f, Height = 0.2f };
+        AddChild(navigation);
+        for (float x = Arena.Minimum.X + 0.3f; x < Arena.Maximum.X - 0.3f; x += 0.5f)
+            for (float z = Arena.Minimum.Y + 0.3f; z < Arena.Maximum.Y - 0.3f; z += 0.5f)
+            {
+                var probe = new Vector3(x, seed.Y, z);
+                if (!Arena.GroundAt(probe, out var ground, out _, 40, 60) || !Arena.Supported(ground, radius)) continue;
+                if (!navigation.TryStandingPoint(ground, out var feetHere)) continue;
+                int open = 0;
+                for (int i = 0; i < 16; i++)
+                {
+                    float angle = i * Mathf.Tau / 16;
+                    var ring = ground + new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * 0.8f;
+                    if (navigation.TryStandingPoint(ring, out var ringFeet) && navigation.CanWalk(feetHere, ringFeet)) open++;
+                }
+                float distance = new Vector2(x - seed.X, z - seed.Z).Length();
+                if (open > best || (open == best && distance < bestDistance)) { best = open; bestDistance = distance; floor = ground; found = true; }
+            }
+        navigation.QueueFree();
+        GD.Print($"Map spawn: open ring samples {best}/16 at {floor} (found={found})");
+        return found;
+    }
+
     public override async void _Ready()
     {
         RunConfiguration = Integration.GameNavigation.TakeRunConfiguration();
         SlotRules??=GD.Load<RunSlotRules>("res://Gameplay/run-slots.tres");
         // The adapter selects an existing composition, never substitutes assets for an unsupported key.
         if (SceneFilePath != RunConfiguration.WorldScene
-            || GetNode<Node3D>("KorribanEnvironment").SceneFilePath != RunConfiguration.EnvironmentScene
+            || EnvironmentNode().SceneFilePath != RunConfiguration.EnvironmentScene
             || GetNode<Node3D>("Player/Presentation/OriginalSorcerer").SceneFilePath != RunConfiguration.CharacterScene)
         { GD.PushError("Selected gameplay composition does not match its registered resources."); GetTree().Quit(1); return; }
         Player = GetNode<PlayerController>("Player"); Player.SetPhysicsProcess(false);
         Rig = GetNode<CameraRig>("CameraRig"); Arena = GetNode<ArenaBounds>("ArenaBounds");
-        EnvironmentRoot = GetNode<Node3D>("KorribanEnvironment");
+        EnvironmentRoot = EnvironmentNode();
         Player.Arena = Arena; Player.Rig = Rig; Rig.Target = Player;
         foreach (var body in EnvironmentRoot.FindChildren("*", "StaticBody3D", true, false).OfType<StaticBody3D>())
         {
@@ -89,8 +124,8 @@ public partial class GameWorld : Node3D
         await ToSignal(GetTree(), SceneTree.SignalName.PhysicsFrame);
         await ToSignal(GetTree(), SceneTree.SignalName.ProcessFrame);
         // Authored spawn on the existing second patch, never a source NPC-placement claim.
-        var seed = new Vector3(36, 0, 12.6f);
-        if (!Arena.GroundAt(seed, out var floor, out _, 40, 60) || !Arena.Supported(floor, Player.CapsuleRadius))
+        var seed = new Vector3(Arena.SpawnSeed.X, 0, Arena.SpawnSeed.Y);
+        if (!FindSpawn(seed, out var floor))
         { GD.PushError("B1 spawn has no safe source terrain"); GetTree().Quit(1); return; }
         Player.SpawnPosition = floor + Vector3.Up * 0.002f;
         Player.ResetPlayer(); Player.SetPhysicsProcess(true); Initialized = true;
