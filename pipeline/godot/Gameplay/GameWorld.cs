@@ -64,30 +64,34 @@ public partial class GameWorld : Node3D
     {
         bool original = GetNodeOrNull<Node3D>("MapEnvironment") == null;
         if (original && Arena.GroundAt(seed, out floor, out _, 40, 60) && Arena.Supported(floor, Player.CapsuleRadius)) return true;
-        // Other maps: choose the most open supported ground (most reachable ring samples around it), nearest to the seed on ties.
-        float best = -1, bestDistance = float.MaxValue; floor = default; bool found = false;
-        float radius = Player.CapsuleRadius * 3;
-        // Same standing/walking tests the enemy spawner uses, so props and canopy count against openness.
+        // Other maps: walk outward from the seed and take the first ground that is open all around, using the same
+        // standing/walking tests as the enemy spawner so props and canopy count. Bounded so start-up stays quick.
+        float radius = Player.CapsuleRadius * 3, bestScore = -1; floor = default; bool found = false; int tried = 0;
         var navigation = new ArenaNavigation { Arena = Arena, Radius = 0.05f, Height = 0.2f };
         AddChild(navigation);
-        for (float x = Arena.Minimum.X + 0.3f; x < Arena.Maximum.X - 0.3f; x += 0.5f)
-            for (float z = Arena.Minimum.Y + 0.3f; z < Arena.Maximum.Y - 0.3f; z += 0.5f)
+        float reach = Mathf.Max(Arena.Maximum.X - Arena.Minimum.X, Arena.Maximum.Y - Arena.Minimum.Y);
+        for (float ringRadius = 0; ringRadius <= reach && tried < 150; ringRadius += 0.6f)
+        {
+            int samples = ringRadius == 0 ? 1 : Mathf.Max(6, (int)(ringRadius * 5));
+            for (int k = 0; k < samples && tried < 150; k++)
             {
-                var probe = new Vector3(x, seed.Y, z);
+                float turn = k * Mathf.Tau / samples;
+                var probe = seed + new Vector3(Mathf.Cos(turn), 0, Mathf.Sin(turn)) * ringRadius;
                 if (!Arena.GroundAt(probe, out var ground, out _, 40, 60) || !Arena.Supported(ground, radius)) continue;
                 if (!navigation.TryStandingPoint(ground, out var feetHere)) continue;
-                int open = 0;
-                for (int i = 0; i < 16; i++)
+                tried++; int open = 0;
+                for (int i = 0; i < 8; i++)
                 {
-                    float angle = i * Mathf.Tau / 16;
+                    float angle = i * Mathf.Tau / 8;
                     var ring = ground + new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * 0.8f;
                     if (navigation.TryStandingPoint(ring, out var ringFeet) && navigation.CanWalk(feetHere, ringFeet)) open++;
                 }
-                float distance = new Vector2(x - seed.X, z - seed.Z).Length();
-                if (open > best || (open == best && distance < bestDistance)) { best = open; bestDistance = distance; floor = ground; found = true; }
+                if (open > bestScore) { bestScore = open; floor = ground; found = true; }
+                if (open >= 7) { ringRadius = float.MaxValue; break; }
             }
+        }
         navigation.QueueFree();
-        GD.Print($"Map spawn: open ring samples {best}/16 at {floor} (found={found})");
+        GD.Print($"Map spawn: open ring samples {bestScore}/8 at {floor} after {tried} candidates (found={found})");
         return found;
     }
 
