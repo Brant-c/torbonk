@@ -169,8 +169,8 @@ public partial class KitSmoke : Node
                 var tracer=w.Combat;var heat=w.Abilities.Find("heatseeker")!;var unload=w.Abilities.Find("unload")!;var armor=w.Abilities.Find("reactivearmor")!;
                 Reset();var h=Cast(heat);Check("Heatseeker Missiles hit the cluster",Near(h[0],45) && h[1]>0 && h[2]>0);
                 Reset();var u=Cast(unload);Check("Unload lands four shots",Near(u[0],44,.1f) && u[1]==0);
-                Reset();Check("Reactive Armor fires when enemies are close",armor.TryBegin());for(int i=0;i<12;i++)armor.Advance(.05);
-                Check("Reactive Armor raises a shield",w.PlayerActor.Health.Shielded);w.PlayerActor.Health.ClearShield();
+                Reset();Check("Explosive Fuel fires when enemies are close",armor.TryBegin());for(int i=0;i<12;i++)armor.Advance(.05);
+                Check("Explosive Fuel grants +20% damage for 8 s",b.Buffed && Near(b.DamageMultiplier(tracer,_fixtures[0]),1.2f));b._PhysicsProcess(8.1);Check("Explosive Fuel expires",!b.Buffed);
                 Reset();Check("Tracer Lock is eligible",w.Progression.Grant("mercenary_tracer_lock"));
                 Cast(tracer);Check("Tracer marks the targets it hits",b.Marked(_fixtures[0]));
                 unload.ResetCombat();var marked=Cast(unload,false);Check("marked targets take +25% from other abilities",Near(marked[0],55,.1f));

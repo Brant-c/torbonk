@@ -127,18 +127,6 @@
       "sourceFps": 15.0
     },
     {
-      "name": "RifleGrenade",
-      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_grenade_1.jba",
-      "seconds": 1.3333333730697632,
-      "sourceFps": 15.0
-    },
-    {
-      "name": "RifleBurst",
-      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_burst.jba",
-      "seconds": 1.600000023841858,
-      "sourceFps": 15.0
-    },
-    {
       "name": "FocusBuff",
       "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_bfg_buff_focus_1.jba",
       "seconds": 1.600000023841858,
@@ -215,9 +203,39 @@
       "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2pistol_unload_end.jba",
       "seconds": 0.4000000059604645,
       "sourceFps": 15.0
+    },
+    {
+      "name": "ElectInstant",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\fp_1h_elect_instant_right_2.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "RifleFire3",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_fire_3.jba",
+      "seconds": 1.0666667222976685,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "PistolBracerStart",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_pistol_bracer_fire_start.jba",
+      "seconds": 0.6000000238418579,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "PistolBracerEnd",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_pistol_bracer_fire_end.jba",
+      "seconds": 0.800000011920929,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "UnarmedGrenade",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_unarmed_grenade_1.jba",
+      "seconds": 1.3333333730697632,
+      "sourceFps": 15.0
     }
   ],
   "output": "godot\\Assets\\D3\\casts.glb",
-  "sha256": "b4735073ca77280d0022b6bf0be7f1ccf03405592555fc5d34b304efe4131878",
+  "sha256": "79f95204e46900b6f7d1de6a395501bc55547104fd335e38e0d6e45d1617c9c4",
   "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
 }

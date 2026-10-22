@@ -73,6 +73,8 @@ clip, icon family and PCM.
 
 * 18 original JBA clips converted into `Assets/D3/casts.glb` (`manifests/d3-conversion.json`); kit abilities use them (Unload uses its real start/loop/end set).
 * 21 original icons (52x52) in `Assets/UI/icons`; 15 original sound events decoded and imported by Godot (real `.import`, not stubs).
-* Still stand-ins: Creeping Terror has no recovered clip (reuses Discharge's); Reactive Armor is icon-only (Energy Shield clip/sound); Ion Shield uses the Bounty Hunter Energy Shield assets;
-  Berserk, Weakening Blast and Incendiary Missile have no sound of their own; roughly a dozen clips are matched by filename, not animation-graph proof.
+* No stand-ins remain (asset thread follow-up). Creeping Terror uses `fp_1h_elect_instant_right_2` (graph state Casting|Elec|Instant; the 1H name selects it); Berserk, Weakening Blast and Incendiary Missile use sounds found in their FX specs;
+  Flame Burst/Incendiary Missile use the Powertech pistol bracer clips; Weakening Blast uses rifle fire; the other clips were verified against the animation graph.
+* Ion Shield is now **Energy Shield** (real Imperial BH ability, own icon/clip/sound). Reactive Armor (no appearance in the data) became **Explosive Fuel**, a real BH self-buff (+20% damage for 8 s), which fits Mercenary's missile identity.
+* Unresolved fidelity limits: which of two Creeping Terror graph nodes the ActionType selects is not decoded; shot sounds for Weakening Blast use the generic ranged weapon events already in D3 audio.
 * FX trees and textures are staged but not yet rendered; presentation still uses the shared additive adapter.

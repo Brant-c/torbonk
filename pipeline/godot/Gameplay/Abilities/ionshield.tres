@@ -6,7 +6,7 @@
 script = ExtResource("1")
 Id = "ionshield"
 StartsUnlocked = false
-Title = "Ion Shield"
+Title = "Energy Shield"
 Icon = "energyshield"
 Category = 1
 UsesGlobalCooldown = false
@@ -25,6 +25,6 @@ GestureSeconds = 0.9
 StartClip = "D3/EnergyShield"
 LoopClip = "D3/EnergyShield"
 EndClip = ""
-CastAudio = "res://Assets/D3/Audio/169144164.wav"
+CastAudio = "res://Assets/D3/Audio/386022114.wav"
 PresentationKind = "impact"
 Description = "A 30-point shield for 8 seconds. Fires when enemies are close."
