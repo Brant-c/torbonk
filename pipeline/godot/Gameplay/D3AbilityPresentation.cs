@@ -99,8 +99,12 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
         material.SetShaderParameter("hexagons",GD.Load<Texture2D>("res://Assets/D3/hexagon_blurred_tiled.png"));
         material.SetShaderParameter("scanlines",GD.Load<Texture2D>("res://Assets/D3/scanlines_blurred_wrap.png"));
         material.SetShaderParameter("tint",Definition.EffectTint);
-        _bubble=new MeshInstance3D {Name="EnergyShieldBubble",Mesh=new SphereMesh {Radius=.115f,Height=.23f,RadialSegments=32,Rings=16},MaterialOverride=material,
-            CastShadow=GeometryInstance3D.ShadowCastingSetting.Off};
+        // Original sphere_hexagon_shield.gr2 from the bh_energy_shield_02 FXSpec, scaled to wrap the character.
+        var scene=GD.Load<PackedScene>("res://Assets/D3/sphere_hexagon_shield.glb").Instantiate<Node3D>();
+        var source=scene.FindChildren("*","MeshInstance3D",true,false).OfType<MeshInstance3D>().First();
+        var mesh=source.Mesh;float radius=mesh.GetAabb().Size.X/2;scene.Free();
+        _bubble=new MeshInstance3D {Name="EnergyShieldBubble",Mesh=mesh,MaterialOverride=material,CastShadow=GeometryInstance3D.ShadowCastingSetting.Off,
+            Scale=Vector3.One*(.115f/Math.Max(.0001f,radius))};
         AddChild(_bubble);_shieldHealth=target.Health;_bubbleSeen=false;_bubbleAge=0;
         _bubble.GlobalPosition=Actor.GlobalPosition+Vector3.Up*.09f;
     }
