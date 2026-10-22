@@ -1,8 +1,24 @@
 [remap]
+
 importer="wav"
 type="AudioStreamWAV"
+uid="uid://dmfs6ucep0mjq"
+path="res://.godot/imported/137923394.wav-e5432ae98eb5d0e153812c6075568e6b.sample"
+
+[deps]
+
+source_file="res://Assets/D3/Audio/137923394.wav"
+dest_files=["res://.godot/imported/137923394.wav-e5432ae98eb5d0e153812c6075568e6b.sample"]
 
 [params]
-compress/mode=0
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

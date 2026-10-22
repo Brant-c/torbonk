@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "swtor-research": {
+      "command": "python",
+      "args": [
+        "D:/SWTORClassic/swtoremu/Tools/Research/research_mcp.py",
+        "--assets",
+        "D:/SWTORClassic/swtoremu/Assets2012April"
+      ]
+    }
+  }
+}

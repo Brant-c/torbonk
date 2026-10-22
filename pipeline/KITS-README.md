@@ -68,3 +68,11 @@ clip, icon family and PCM.
   Ambush/Series of Shots). Sorcerer-owned icons (`darkgift`, `chargedgauntlets`, `markofpower`) are reused where no class-specific icon is recovered yet.
 * Slow effects (Creeping Terror, Roar, Shockwave) only act on `EnemyAgent`s, so the smoke checks the DoT/damage halves of those abilities, not the slow.
 * Static Blades and Searing Sweep share one mechanic (direct hits refresh the player's DoTs); Contagion/Wildfire and Last Gasp share the spread framework.
+
+## K4 — real SWTOR assets wired (from `kit-asset-staging/manifest.md`)
+
+* 18 original JBA clips converted into `Assets/D3/casts.glb` (`manifests/d3-conversion.json`); kit abilities use them (Unload uses its real start/loop/end set).
+* 21 original icons (52x52) in `Assets/UI/icons`; 15 original sound events decoded and imported by Godot (real `.import`, not stubs).
+* Still stand-ins: Creeping Terror has no recovered clip (reuses Discharge's); Reactive Armor is icon-only (Energy Shield clip/sound); Ion Shield uses the Bounty Hunter Energy Shield assets;
+  Berserk, Weakening Blast and Incendiary Missile have no sound of their own; roughly a dozen clips are matched by filename, not animation-graph proof.
+* FX trees and textures are staged but not yet rendered; presentation still uses the shared additive adapter.

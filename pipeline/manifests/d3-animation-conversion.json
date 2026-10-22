@@ -107,9 +107,117 @@
       "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_sniper_idle_1.jba",
       "seconds": 4.266666889190674,
       "sourceFps": 15.0
+    },
+    {
+      "name": "Annihilate",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2saber_sp2_attack_right_15.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Frenzy",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_buff_frenzy.jba",
+      "seconds": 0.9333333373069763,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Unleash",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_buff_unleash.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "RifleGrenade",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_grenade_1.jba",
+      "seconds": 1.3333333730697632,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "RifleBurst",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_burst.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "FocusBuff",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_bfg_buff_focus_1.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Discharge",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_pole_sp2_attack_right_9.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Shroud",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_buff_consumption_exit.jba",
+      "seconds": 1.0,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "ViciousSlash",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_saber_sp1_attack_right_1.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "CrushingBlow",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_saber_sp2_attack_right_9.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "BracerStart",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2pistol_bracer_fire_start.jba",
+      "seconds": 0.6000000238418579,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "BracerEnd",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2pistol_bracer_fire_end.jba",
+      "seconds": 0.800000011920929,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "EnergyShield",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_buff_energy_shield.jba",
+      "seconds": 1.0666667222976685,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "SniperSeries",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_sniper_fire_series_01.jba",
+      "seconds": 3.0,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "RifleCharge",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_charge_loop.jba",
+      "seconds": 1.0666667222976685,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "UnloadStart",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2pistol_unload_start.jba",
+      "seconds": 0.5333333611488342,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "UnloadLoop",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2pistol_unload_loop.jba",
+      "seconds": 2.5999999046325684,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "UnloadEnd",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2pistol_unload_end.jba",
+      "seconds": 0.4000000059604645,
+      "sourceFps": 15.0
     }
   ],
   "output": "godot\\Assets\\D3\\casts.glb",
-  "sha256": "59d58690772432cad0be9edc2dbbb2b8ec1459366e3c9e25098c9945873092e6",
+  "sha256": "b4735073ca77280d0022b6bf0be7f1ccf03405592555fc5d34b304efe4131878",
   "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
 }
