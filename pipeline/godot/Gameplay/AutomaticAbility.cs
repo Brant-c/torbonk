@@ -123,11 +123,13 @@ public partial class AutomaticAbility : Node
             !float.IsFinite(HealthThreshold) || HealthThreshold<=0 || HealthThreshold>1 ||
             !float.IsFinite(ShieldCapacity) || ShieldCapacity<=0 || !float.IsFinite(ShieldDuration) || ShieldDuration<=0)
         { CombatEnabled=false;LastEvent="Invalid ability tuning";Abort();return false; }
+        // A full-body ability only fires with its animation, and cannot come off cooldown before that animation has finished.
+        if(Definition.FullBodyGesture && Definition.GestureSeconds>0 && Presentation!=null && !Presentation.Actor.CanBeginGesture(Definition.StartClip,Definition.GesturePriority)) return false;
         CastTarget=target;GroundCenter=target.GlobalPosition;
         _damaged.Clear();LastHealing=0;
         if(ChannelSeconds>0) _clock.Reset(ChannelSeconds,TickSeconds);
         State=LightningState.Starting;_phaseRemaining=Definition.WindupSeconds;
-        CooldownRemaining=CooldownDuration=CooldownSeconds;
+        CooldownRemaining=CooldownDuration=Math.Max(CooldownSeconds,Definition.FullBodyGesture?Definition.GestureSeconds:0);
         _gestureRemaining=Definition.GestureSeconds;
         if(_gestureRemaining>0) Present(()=>Presentation.Actor.TryBeginGesture(this,Definition.StartClip,Definition.GesturePriority,Definition.FullBodyGesture));
         // Presentation failures are reported and cannot suppress damage.

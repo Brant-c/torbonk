@@ -247,6 +247,9 @@ public partial class CharacterPresentation : Node3D
             if(crossfade)playback.Travel(ClipState(clip));else playback.Start(ClipState(clip));
         return true;
     }
+    /// <summary>True when TryBeginGesture would start now; lets full-body abilities refuse to cast without their animation.</summary>
+    public bool CanBeginGesture(string clip, int priority=0) => !OverrideActive && Animator.HasAnimation(clip) &&
+        !(GestureOwner!=null && priority<=_gesturePriority);
     public void SetGestureClip(object owner, string clip)
     {
         if (GestureOwner != owner || string.IsNullOrEmpty(clip) || !Animator.HasAnimation(clip) || _gestureClip==clip) return;
@@ -308,8 +311,43 @@ public partial class CharacterPresentation : Node3D
             if (name is "StormLoop" or "Airborne" or "Falling") animation.LoopMode = Animation.LoopModeEnum.Linear;
             library.AddAnimation(name, animation);
         }
+        // Smash is the original ground-smash leap: enter (launch) then exit (descent and slam). The 8 s clip and hover loop between them are not used.
+        if (library.HasAnimation("SmashEnter") && library.HasAnimation("SmashExit"))
+            library.AddAnimation("SmashLeap", JoinAnimations(library.GetAnimation("SmashEnter"), library.GetAnimation("SmashExit"), "Root", LeapHeightScale));
         Animator.AddAnimationLibrary(key, library); imported.Free();
         if (gestureClips) AddGestureClips();
+    }
+    /// <summary>The recovered leap rises ~24 m (original centimetre units) and the world here is a tenth scale; compress only the Root's offset from its starting pose.</summary>
+    public const float LeapHeightScale = 0.18f;
+    private static Animation JoinAnimations(Animation first, Animation second, string scaledBone, float scale)
+    {
+        var joined = new Animation { Length = first.Length + second.Length, LoopMode = Animation.LoopModeEnum.None };
+        var tracks = new Dictionary<(Animation.TrackType, string), int>();
+        Vector3? rootOrigin = null;
+        void Copy(Animation source, float offset, bool scaleRoot)
+        {
+            for (int t = 0; t < source.GetTrackCount(); t++)
+            {
+                var type = source.TrackGetType(t); string path = source.TrackGetPath(t);
+                if (type is not (Animation.TrackType.Position3D or Animation.TrackType.Rotation3D or Animation.TrackType.Scale3D)) continue;
+                if (!tracks.TryGetValue((type, path), out int target))
+                { target = joined.AddTrack(type); joined.TrackSetPath(target, new NodePath(path)); tracks[(type, path)] = target; }
+                bool root = type == Animation.TrackType.Position3D && path.EndsWith(":" + scaledBone);
+                for (int k = 0; k < source.TrackGetKeyCount(t); k++)
+                {
+                    double time = source.TrackGetKeyTime(t, k) + offset; var value = source.TrackGetKeyValue(t, k);
+                    if (root) { rootOrigin ??= (Vector3)source.TrackGetKeyValue(t, 0); var origin = rootOrigin.Value; value = origin + ((Vector3)value - origin) * scale; }
+                    switch (type)
+                    {
+                        case Animation.TrackType.Position3D: joined.PositionTrackInsertKey(target, time, (Vector3)value); break;
+                        case Animation.TrackType.Rotation3D: joined.RotationTrackInsertKey(target, time, (Quaternion)value); break;
+                        default: joined.ScaleTrackInsertKey(target, time, (Vector3)value); break;
+                    }
+                }
+            }
+        }
+        Copy(first, 0, true); Copy(second, (float)first.Length, true);
+        return joined;
     }
     public void PlayReaction(string clip)
     {

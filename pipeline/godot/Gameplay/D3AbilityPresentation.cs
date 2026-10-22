@@ -17,7 +17,10 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
     private readonly RandomNumberGenerator _random=new();
     private float _radius;
     private double _flame,_flameSpawn;
-    private const int MaxEffects=48;
+    private const int MaxEffects=90;
+    private MeshInstance3D? _bubble;private Health? _shieldHealth;private bool _bubbleSeen;private double _bubbleAge;
+    private double _gas,_gasSpawn;private Vector3 _gasAt;private float _gasRadius;
+    public bool ShieldVisible=>_bubble!=null && GodotObject.IsInstanceValid(_bubble);
     public int EffectCount=>_effects.Count;
     public bool AdditiveBound{get;private set;}
     public bool Emitting=>_flame>0;
@@ -34,9 +37,14 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
     public bool Begin(Combatant target,Vector3 center,float radius)
     {
         _radius=radius;Play(Definition.CastAudio,Actor.GlobalPosition,0);
-        if(Definition.WeaponAudio!="")Play(Definition.WeaponAudio,Actor.GlobalPosition,1);
-        if(Definition.OffhandAudio!="")_delayed.Add((.3,()=>Play(Definition.OffhandAudio,Actor.GlobalPosition,2)));
-        if(Definition.Effect!=AbilityEffect.Damage)Pulse(Actor.GlobalPosition+Vector3.Up*.06f);
+        // The swing sounds when the blade lands, not when a long leap or wind-up begins.
+        double swing=Math.Max(0,Definition.WindupSeconds-.15);
+        if(Definition.WeaponAudio!="")
+        { if(swing<=.01)Play(Definition.WeaponAudio,Actor.GlobalPosition,1);else _delayed.Add((swing,()=>Play(Definition.WeaponAudio,Actor.GlobalPosition,1))); }
+        if(Definition.OffhandAudio!="")_delayed.Add((swing+.3,()=>Play(Definition.OffhandAudio,Actor.GlobalPosition,2)));
+        if(Definition.Effect==AbilityEffect.Shield)ShowShield(target);
+        else if(Definition.Effect!=AbilityEffect.Damage)Pulse(Actor.GlobalPosition+Vector3.Up*.06f);
+        if(Definition.PresentationKind=="gas" && Definition.Effect==AbilityEffect.Damage)Projectile(MuzzleWorld(),target.AimPosition,Math.Max(.2,Definition.WindupSeconds));
         return Actor.Animator.HasAnimation(Definition.StartClip);
     }
     public void Channel(){ if(Definition.PresentationKind=="flame"){_flame=Math.Max(.1,Definition.ChannelSeconds);_flameSpawn=0;} }
@@ -49,6 +57,7 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
         switch(Definition.PresentationKind)
         {
             case "slam": Ring(at,Definition.ImpactTexture,_radius*2.2f);break;
+            case "gas": GasCloud(at,Math.Max(.12f,_radius));break;
             case "flame": break; // Flames come from the emitter, never a central billboard.
             case "saber": break; // The real blades are the effect; audio only.
             case "rifle": MuzzleFlash();Bolt(MuzzleWorld(),center,.012f,.14);break;
@@ -68,6 +77,54 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
         _additive??=new ShaderMaterial {Shader=GD.Load<Shader>("res://Gameplay/D3Particle.gdshader")};
         m=(ShaderMaterial)_additive.Duplicate();m.SetShaderParameter("source_texture",GD.Load<Texture2D>(texture));m.SetShaderParameter("billboard",billboard);
         AdditiveBound=true;return _materials[key]=m;
+    }
+    private static ShaderMaterial? _alpha;
+    private ShaderMaterial AlphaMaterial(string texture,bool billboard=true)
+    {
+        string key=texture+(billboard?"|ab":"|af");
+        if(_materials.TryGetValue(key,out var m))return m;
+        _alpha??=new ShaderMaterial {Shader=GD.Load<Shader>("res://Gameplay/D3ParticleAlpha.gdshader")};
+        m=(ShaderMaterial)_alpha.Duplicate();m.SetShaderParameter("source_texture",GD.Load<Texture2D>(texture));m.SetShaderParameter("billboard",billboard);
+        return _materials[key]=m;
+    }
+    private Sprite3D AlphaSprite(string texture,float size,int frames=1,bool billboard=true)
+    {
+        var tex=GD.Load<Texture2D>(texture);
+        return new Sprite3D {Texture=tex,Hframes=frames,Vframes=frames,PixelSize=size/(tex.GetWidth()/frames),Shaded=false,MaterialOverride=AlphaMaterial(texture,billboard)};
+    }
+    private void ShowShield(Combatant target)
+    {
+        if(_bubble!=null && GodotObject.IsInstanceValid(_bubble))_bubble.QueueFree();
+        var material=new ShaderMaterial {Shader=GD.Load<Shader>("res://Gameplay/D3Shield.gdshader")};
+        material.SetShaderParameter("hexagons",GD.Load<Texture2D>("res://Assets/D3/hexagon_blurred_tiled.png"));
+        material.SetShaderParameter("scanlines",GD.Load<Texture2D>("res://Assets/D3/scanlines_blurred_wrap.png"));
+        material.SetShaderParameter("tint",Definition.EffectTint);
+        _bubble=new MeshInstance3D {Name="EnergyShieldBubble",Mesh=new SphereMesh {Radius=.115f,Height=.23f,RadialSegments=32,Rings=16},MaterialOverride=material,
+            CastShadow=GeometryInstance3D.ShadowCastingSetting.Off};
+        AddChild(_bubble);_shieldHealth=target.Health;_bubbleSeen=false;_bubbleAge=0;
+        _bubble.GlobalPosition=Actor.GlobalPosition+Vector3.Up*.09f;
+    }
+    private void GasCloud(Vector3 at,float radius)
+    {
+        // Original expl_poison_gas parameters: ground projection tint (.323,.792,.008) for 8 s plus tinted smoke atlases.
+        _gas=5;_gasSpawn=0;_gasAt=at;_gasRadius=radius;
+        var ground=AlphaSprite("res://Assets/D3/splash_01.png",radius*2.6f,1,false);ground.RotationDegrees=new Vector3(-90,0,0);
+        ground.Modulate=new Color(.323f,.792f,.008f,.9f);
+        Add(ground,8,fx=>{float f=(float)(fx.Age/fx.Life);((Sprite3D)fx.Node).Modulate=new Color(.323f,.792f,.008f,.9f*Math.Min(1f,(float)fx.Age*4)*(f>.75f?(1-f)*4:1));});
+        ground.GlobalPosition=at+Vector3.Down*.095f;
+        for(int i=0;i<16;i++)SmokePuff(1.4f);
+    }
+    private void SmokePuff(float spread=1f)
+    {
+        string tex=_random.Randf()<.5f?"res://Assets/D3/2x2_smoke_screen_clouds.png":"res://Assets/D3/2x2_fx_wispy_smoke.png";
+        var s=AlphaSprite(tex,_gasRadius*_random.RandfRange(1.0f,1.6f),2);s.Frame=_random.RandiRange(0,3);
+        var tint=new Color(.16f,.713f,.007f,.7f);s.Modulate=tint;
+        var start=_gasAt+new Vector3(_random.RandfRange(-1,1),_random.RandfRange(-.9f,-.6f),_random.RandfRange(-1,1))*_gasRadius*.7f*spread;
+        var drift=new Vector3(_random.RandfRange(-.02f,.02f),_random.RandfRange(.03f,.08f),_random.RandfRange(-.02f,.02f));
+        double life=_random.RandfRange(2.4f,4f);
+        Add(s,life,fx=>{float f=(float)(fx.Age/fx.Life);fx.Node.GlobalPosition=start+drift*(float)fx.Age;
+            ((Sprite3D)fx.Node).Scale=Vector3.One*(.8f+f*.7f);((Sprite3D)fx.Node).Modulate=new Color(tint,tint.A*Math.Min(1f,(float)fx.Age*5)*(1-f));});
+        s.GlobalPosition=start;
     }
     private Fx Add(Node3D node,double life,Action<Fx>? update=null)
     {
@@ -120,13 +177,13 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
         Add(mesh,life,fx=>((StandardMaterial3D)((MeshInstance3D)fx.Node).MaterialOverride).AlbedoColor=new Color(Definition.EffectTint,1-(float)(fx.Age/fx.Life)));
         mesh.GlobalPosition=(from+to)/2;mesh.LookAt(to,Vector3.Up);
     }
-    private void Projectile(Vector3 from,Vector3 to)
+    private void Projectile(Vector3 from,Vector3 to,double life=.16)
     {
         const string tex="res://Assets/D3/glow_basic_alpha.png";
         var s=Sprite(tex,.045f);s.Modulate=Definition.EffectTint;
-        Add(s,.16,fx=>fx.Node.GlobalPosition=from.Lerp(to,Math.Min(1f,(float)(fx.Age/fx.Life))));
+        Add(s,life,fx=>fx.Node.GlobalPosition=from.Lerp(to,Math.Min(1f,(float)(fx.Age/fx.Life))));
         s.GlobalPosition=from;
-        _delayed.Add((.16,()=>Burst(to,tex,.1f)));
+        if(Definition.PresentationKind!="gas")_delayed.Add((life,()=>Burst(to,tex,.1f)));
     }
     private void EmitFlame()
     {
@@ -147,6 +204,21 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
     public override void _Process(double delta)
     {
         for(int i=_delayed.Count-1;i>=0;i--){var d=_delayed[i];d.at-=delta;if(d.at<=0){_delayed.RemoveAt(i);d.run();}else _delayed[i]=d;}
+        if(_gas>0)
+        {
+            _gas-=delta;_gasSpawn-=delta;
+            while(_gasSpawn<=0){_gasSpawn+=.22;SmokePuff();}
+        }
+        if(_bubble!=null)
+        {
+            if(!GodotObject.IsInstanceValid(_bubble)){_bubble=null;}
+            else
+            {
+                _bubbleAge+=delta;_bubble.GlobalPosition=Actor.GlobalPosition+Vector3.Up*.09f;
+                if(_shieldHealth!=null && GodotObject.IsInstanceValid(_shieldHealth) && _shieldHealth.Shielded)_bubbleSeen=true;
+                if((_bubbleSeen && !(_shieldHealth?.Shielded??false)) || (!_bubbleSeen && _bubbleAge>1)){_bubble.QueueFree();_bubble=null;}
+            }
+        }
         if(_flame>0)
         {
             _flame-=delta;_flameSpawn-=delta;
@@ -163,7 +235,8 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
     public void Complete(){ _flame=0; }
     public void Release()
     {
-        _flame=0;_delayed.Clear();
+        _flame=0;_gas=0;_delayed.Clear();
+        if(_bubble!=null && GodotObject.IsInstanceValid(_bubble))_bubble.QueueFree();_bubble=null;
         foreach(var e in _effects)if(GodotObject.IsInstanceValid(e.Node))e.Node.QueueFree();
         _effects.Clear();foreach(var v in _voices)if(GodotObject.IsInstanceValid(v))v.Stop();
     }

@@ -61,7 +61,7 @@ public partial class D3Smoke : Node
                 foreach(var f in fixtures)f.Health.Restore();received.Clear();flytext.Clear();
                 Check(p.Id+" automatic ability starts",a.TryBegin());
                 int pulses=d.ChannelSeconds>0?(int)Math.Ceiling(d.ChannelSeconds/d.TickSeconds):1;
-                if(p.Presentation!="sorcerer" && d.ChannelSeconds>0){for(double t=0;t<d.WindupSeconds+d.ChannelSeconds+.1;t+=.05)a.Advance(.05);}
+                if(p.Presentation!="sorcerer" && (d.ChannelSeconds>0 || d.WindupSeconds>0)){for(double t=0;t<d.WindupSeconds+d.ChannelSeconds+.1;t+=.05)a.Advance(.05);}
                 else a.Advance(p.Presentation=="sorcerer"?1.6:.02);
                 if(p.Presentation=="sorcerer")a.Advance(.6);
                 int expected=d.Area is AbilityArea.CasterRadial or AbilityArea.TargetSplash?3:1;

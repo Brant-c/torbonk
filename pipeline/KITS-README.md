@@ -78,3 +78,12 @@ clip, icon family and PCM.
 * Ion Shield is now **Energy Shield** (real Imperial BH ability, own icon/clip/sound). Reactive Armor (no appearance in the data) became **Explosive Fuel**, a real BH self-buff (+20% damage for 8 s), which fits Mercenary's missile identity.
 * Unresolved fidelity limits: which of two Creeping Terror graph nodes the ActionType selects is not decoded; shot sounds for Weakening Blast use the generic ranged weapon events already in D3 audio.
 * FX trees and textures are staged but not yet rendered; presentation still uses the shared additive adapter.
+
+## K6 — play-test fixes
+
+* **Smash:** now the original ground-smash leap, `cb_saber_ground_smash_enter_01` + `_exit_01` (launch, then descent and slam) joined at load into `D3/SmashLeap` (2.4 s); the slam damage lands at 1.7 s. The recovered clip rises ~24 m (centimetre units), so only the Root's offset from its start pose is scaled by 0.18 (`CharacterPresentation.LeapHeightScale`); every other bone is untouched. Icon is the real Juggernaut `shatter` (the April `smash` icon is the blue one).
+* **Flame Sweep:** cooldown 4.0 s; full-body abilities now refuse to cast unless their animation can start, and their cooldown can never be shorter than the animation.
+* **Rupture:** the borrowed Impale grip sound is gone; its real sounds are the two saber swings plus the impale impact.
+* **Corrosive Grenade:** real `expl_poison_gas` parameters: green ground projection (8 s) and smoke atlases, plus `Play_ability_spy_corrosivegrenade_explode`; the grenade flies from the wrist during a 0.45 s windup and damage lands on detonation.
+* **Energy Shield / Force Shroud:** a hexagon shell built from the original `bh_energy_shield_02` textures (hexagon tile, scanlines) while the shield holds. The original `sphere_hexagon_shield.gr2` mesh is not converted; a sphere stands in for it geometrically.
+* **Saber hum:** original loop was at −32 dB; now −20 dB and checked by the smoke (playing, looping) for Juggernaut, Marauder and Assassin.

@@ -54,11 +54,13 @@ public partial class EquipmentAttachment : Node3D
             var reverse=new EquipmentAttachment {RotationDegrees=new Vector3(0,180,0)};
             equipment.AddChild(reverse);reverse.AddBlade(profile.BladeStart,profile.BladeLength);
         }
-        if(profile.RedBlade && profile.HumAudio!="" && AudioPresentation.Find(skeleton)!=null)
+        // Saber hum is optional polish; an unimported or missing sound must never block equipping.
+        if(profile.RedBlade && profile.HumAudio!="" && AudioPresentation.Find(skeleton)!=null
+            && ResourceLoader.Load<AudioStreamWav>(profile.HumAudio) is {} source)
         {
-            var stream=(AudioStreamWav)GD.Load<AudioStreamWav>(profile.HumAudio).Duplicate();
+            var stream=(AudioStreamWav)source.Duplicate();
             stream.LoopMode=AudioStreamWav.LoopModeEnum.Forward;stream.LoopBegin=0;stream.LoopEnd=(int)(stream.GetLength()*stream.MixRate);
-            var hum=new AudioStreamPlayer3D {Name="OriginalSaberHum",Stream=stream,Bus="B7Combat",VolumeDb=-32,AttenuationModel=AudioStreamPlayer3D.AttenuationModelEnum.Disabled};
+            var hum=new AudioStreamPlayer3D {Name="OriginalSaberHum",Stream=stream,Bus="B7Combat",VolumeDb=-20,AttenuationModel=AudioStreamPlayer3D.AttenuationModelEnum.Disabled};
             equipment.AddChild(hum);hum.Play();
         }
         return equipment;

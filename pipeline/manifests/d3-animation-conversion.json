@@ -233,9 +233,21 @@
       "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_unarmed_grenade_1.jba",
       "seconds": 1.3333333730697632,
       "sourceFps": 15.0
+    },
+    {
+      "name": "SmashEnter",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_saber_ground_smash_enter_01.jba",
+      "seconds": 1.0,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "SmashExit",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_saber_ground_smash_exit_01.jba",
+      "seconds": 1.399999976158142,
+      "sourceFps": 15.0
     }
   ],
   "output": "godot\\Assets\\D3\\casts.glb",
-  "sha256": "79f95204e46900b6f7d1de6a395501bc55547104fd335e38e0d6e45d1617c9c4",
+  "sha256": "60fc329da02c8a698b87202b47333fa6c951e8905570e23f174abb0e24670da1",
   "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
 }

@@ -88,7 +88,8 @@ public partial class KitSmoke : Node
             {
                 var dart=w.Abilities.Find("dart")!;var grenade=w.Abilities.Find("corrosivegrenade")!;var weak=w.Abilities.Find("weakeningblast")!;var stim=w.Abilities.Find("adrenalstim")!;
                 Reset();var g=Cast(grenade);
-                Check("Corrosive Grenade poisons every enemy it touches",P.Count==3 && g.All(x=>Near(x,5)));
+                Check("Corrosive Grenade poisons every enemy it touches",P.Count==3 && g.All(x=>Near(x,5)));for(int i=0;i<4;i++)await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);
+                Check("grenade releases the green gas cloud",((D3AbilityPresentation)grenade.Presentation).EffectCount>=10);
                 Reset();Cast(weak);
                 Check("Weakening Blast marks the target for 5 s",Near((float)_fixtures[0].Health.VulnerabilitySeconds,5,.4f));
                 Reset();float baseline=Cast(dart)[0];
@@ -112,7 +113,7 @@ public partial class KitSmoke : Node
                 Reset();var d=Cast(discharge);
                 Check("Discharge hits and afflicts everything around you",d.All(x=>x>0) && P.Count==3);
                 Reset();Check("Force Shroud fires when enemies are close",shroud.TryBegin());for(int i=0;i<12;i++)shroud.Advance(.05);
-                Check("Force Shroud raises a shield",w.PlayerActor.Health.Shielded);
+                Check("Force Shroud raises a shield",w.PlayerActor.Health.Shielded);for(int i=0;i<3;i++)await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);Check("Force Shroud shows the shield effect",((D3AbilityPresentation)shroud.Presentation).ShieldVisible);
                 w.PlayerActor.Health.ClearShield();
                 Reset();Check("Contagion is eligible",w.Progression.Grant("assassin_contagion"));
                 P.Apply(terror,_fixtures[0]);P.Advance(3.05);
@@ -124,6 +125,9 @@ public partial class KitSmoke : Node
             else if(id=="juggernaut")
             {
                 var smash=w.Combat;var slash=w.Abilities.Find("viciousslash")!;var crush=w.Abilities.Find("crushingblow")!;var roar=w.Abilities.Find("intimidatingroar")!;
+                var leap=w.Player.Presentation.Animator.GetAnimation("D3/SmashLeap");
+                Check("Smash plays the full original leap: launch and descent, about 2.4 s",Near((float)leap.Length,2.4f,.05f) && smash.CooldownSeconds>=(float)leap.Length);
+                Check("Smash slam lands after the leap's launch phase",smash.Definition.WindupSeconds>1.0f && smash.Definition.WindupSeconds<(float)leap.Length);
                 Reset();var c1=Cast(crush);Check("Crushing Blow is a single heavy hit",Near(c1[0],60) && c1[1]==0);
                 Reset();var r=Cast(roar);Check("Intimidating Roar is a utility burst on all nearby enemies",r.All(x=>Near(x,4)) && roar.Definition.Category==AbilityCategory.Utility);
                 Reset();Check("Rage is eligible",w.Progression.Grant("juggernaut_rage"));
@@ -141,7 +145,10 @@ public partial class KitSmoke : Node
                 float h0=_fixtures[0].Health.Current,h1=_fixtures[1].Health.Current;P.Advance(1.05);
                 Check("splash burns at 70% strength",Near(h0-_fixtures[0].Health.Current,3) && Near(h1-_fixtures[1].Health.Current,2.1f));
                 Reset();Check("Ion Shield fires when enemies are close",ion.TryBegin());for(int i=0;i<12;i++)ion.Advance(.05);
-                Check("Ion Shield raises a 30-point shield",w.PlayerActor.Health.Shielded);w.PlayerActor.Health.ClearShield();
+                Check("Energy Shield raises a 30-point shield",w.PlayerActor.Health.Shielded);for(int i=0;i<3;i++)await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);
+                Check("Energy Shield shows the hexagon shield effect while it holds",((D3AbilityPresentation)ion.Presentation).ShieldVisible);
+                w.PlayerActor.Health.ClearShield();for(int i=0;i<3;i++)await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);
+                Check("shield effect ends with the shield",!((D3AbilityPresentation)ion.Presentation).ShieldVisible);
                 Reset();Check("Wildfire is eligible",w.Progression.Grant("powertech_last_gasp"));
                 P.Apply(burst,_fixtures[0]);_fixtures[0].Health.ApplyDamage(1000000,DamageType.Energy);b.PassOn(_fixtures[0]);
                 Check("Wildfire passes the burn to the nearest enemy",P.Has(burst,_fixtures[1]) && !P.Has(burst,_fixtures[2]));
@@ -180,6 +187,11 @@ public partial class KitSmoke : Node
                 Check("a marked enemy explodes when it dies",Near(n1-_fixtures[1].Health.Current,20) && Near(n2-_fixtures[2].Health.Current,20));
             }
             }
+            if(id is "juggernaut" or "marauder" or "assassin")
+            {
+                var hums=w.Player.FindChildren("OriginalSaberHum","AudioStreamPlayer3D",true,false).OfType<AudioStreamPlayer3D>().ToArray();
+                Check(id+" saber hum is imported, looping and audible",hums.Length>=1 && hums.All(h=>h.Playing && h.VolumeDb>=-24 && h.Stream is AudioStreamWav {LoopMode:AudioStreamWav.LoopModeEnum.Forward}));
+            }
             // Starter presentation regressions (D3 corrections): additive FX, lethal tails, flame pulses.
             Reset();
             var starter=w.Combat;var visual=(D3AbilityPresentation)starter.Presentation;
@@ -194,6 +206,7 @@ public partial class KitSmoke : Node
             {
                 Reset();var lost=Cast(starter);
                 Check("Flame Sweep pulses four times along the spin",lost.All(x=>Near(x,17,.05f)));
+                Check("Flame Sweep cannot recast before its animation ends",starter.CooldownDuration>=starter.Definition.GestureSeconds && starter.CooldownDuration>=4);
                 Reset();Check("Flame Sweep restarts",starter.TryBegin());for(int i=0;i<8;i++)starter.Advance(.05);
                 for(int i=0;i<4;i++)await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);
                 Check("Flame emitter runs during the spin with additive original textures",visual.Emitting && visual.AdditiveBound && visual.EffectCount>0);
