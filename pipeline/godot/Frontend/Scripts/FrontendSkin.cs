@@ -29,8 +29,8 @@ public static class FrontendSkin
         t.SetStylebox("pressed","Button",ButtonArtwork(hovered:true,selected:true));
         t.SetStylebox("hover_pressed","Button",ButtonArtwork(hovered:true,selected:true));
         t.SetStylebox("disabled","Button",ButtonArtwork());
-        t.SetStylebox("focus","Button",new StyleBoxEmpty());
-        t.SetStylebox("panel", "PanelContainer", Box(Assets + "UI/bwaui_standard_window_1.png", 16));
+        t.SetStylebox("focus","Button",ButtonArtwork(hovered:true));
+        t.SetStylebox("panel", "PanelContainer", SwtorSkin.MenuFrame());
         t.SetStylebox("panel", "TooltipPanel", Box(Assets + "UI/bwaui_tooltip_1.png", 12));
         t.SetConstant("separation", "VBoxContainer", 12);
         t.SetConstant("separation", "HBoxContainer", 12);
@@ -46,6 +46,7 @@ public static class FrontendSkin
     public static Label Heading(string text, int size = 22)
     {
         var label=Label(text,size); label.AddThemeColorOverride("font_color",SwtorSkin.Blue);
+        label.AddThemeFontOverride("font",GD.Load<FontFile>("res://Assets/UI/EurostileBold.ttf"));
         label.VerticalAlignment=VerticalAlignment.Center; return label;
     }
     public static TextureRect Art(string path, Vector2 size) => new()
@@ -67,11 +68,7 @@ public static class FrontendSkin
     };
     public static StyleBoxTexture ButtonArtwork(bool hovered = false, bool selected = false, int verticalPadding = 6)
     {
-        string image=hovered ? (selected ? "18" : "24") : "9";
-        var box=Box(Assets+"UI/bwaui_standard_window_"+image+".png",12);
-        box.ContentMarginLeft=22; box.ContentMarginRight=22;
-        box.ContentMarginTop=verticalPadding; box.ContentMarginBottom=verticalPadding;
-        return box;
+        return SwtorSkin.ButtonArtwork(hovered,selected,verticalPadding);
     }
     public static Button Button(string text, Action action, bool selected = false)
     {
@@ -91,14 +88,10 @@ public static class FrontendSkin
     public static Control TitledPanel(string title, Control content, Vector2 position, Vector2 size)
     {
         var root=new Control { Position=position, Size=size };
-        var box=Box(Assets+"UI/bwaui_standard_window_1.png");
-        box.TextureMarginLeft=128; box.TextureMarginRight=184;
-        box.TextureMarginTop=72; box.TextureMarginBottom=64;
-        box.ContentMarginLeft=30; box.ContentMarginRight=30;
-        box.ContentMarginTop=78; box.ContentMarginBottom=48;
+        var box=SwtorSkin.MenuFrame(58);
         var panel=new PanelContainer { Size=size }; panel.AddThemeStyleboxOverride("panel",box);
         root.AddChild(panel); panel.AddChild(content);
-        var heading=Heading(title,20); heading.Position=new Vector2(30,22);
+        var heading=Heading(title,20); heading.Position=new Vector2(26,24);
         heading.Size=new Vector2(size.X-82,28); root.AddChild(heading);
         return root;
     }
@@ -106,22 +99,7 @@ public static class FrontendSkin
     {
         var p = new PanelContainer { Position = position, Size = size };
         if (galaxy) p.AddThemeStyleboxOverride("panel", Box(Assets + "Slices/ui_galaxymap_panel_3.png", 8));
-        else if (creation)
-        {
-            var box=Box(Assets+"Slices/bwaui_character_create_panels_9.png",28);
-            box.TextureMarginLeft=178; box.TextureMarginRight=182;
-            box.TextureMarginTop=52; box.TextureMarginBottom=52;
-            box.ContentMarginLeft=32; box.ContentMarginRight=32;
-            box.ContentMarginTop=68; box.ContentMarginBottom=44;
-            p.AddThemeStyleboxOverride("panel",box);
-        }
-        else if (insetTitle)
-        {
-            var box=Box(Assets+"UI/bwaui_standard_window_1.png",16);
-            box.ContentMarginLeft=28; box.ContentMarginRight=28;
-            box.ContentMarginTop=52; box.ContentMarginBottom=28;
-            p.AddThemeStyleboxOverride("panel",box);
-        }
+        else p.AddThemeStyleboxOverride("panel",SwtorSkin.MenuFrame(creation || insetTitle ? 36 : 24));
         p.AddChild(content); return p;
     }
 }

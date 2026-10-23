@@ -1,0 +1,356 @@
+{
+  "milestone": "D4",
+  "date": "2026-10-23",
+  "status": "Implemented; stop for manual gameplay, balance and visual/audio review",
+  "verification": {
+    "csharpBuild": "passed",
+    "renderedSmoke": "passed",
+    "checks": 84,
+    "runtimeErrors": 0,
+    "terrainConformingWarnings": "final rendered smoke passed after correction; no second screenshot captured",
+    "focusedRoutes": [
+      "valley",
+      "precinct",
+      "wilds",
+      "forbidden"
+    ],
+    "preservedFiles": [
+      {
+        "path": "pipeline\\maps\\balmorra.json",
+        "before": "cb83b446f5cce8b055aceb865ae5d8a90f13e032babea4ad8c394afe9182a12c",
+        "after": "cb83b446f5cce8b055aceb865ae5d8a90f13e032babea4ad8c394afe9182a12c",
+        "unchanged": true
+      },
+      {
+        "path": "pipeline\\maps\\dromund.json",
+        "before": "ffe6ac2ad0494c9da6878260f8fa3eb0015e97edb5e43b0b1baf2d38ddbe5f29",
+        "after": "ffe6ac2ad0494c9da6878260f8fa3eb0015e97edb5e43b0b1baf2d38ddbe5f29",
+        "unchanged": true
+      },
+      {
+        "path": "pipeline\\maps\\hutta.json",
+        "before": "7fb974032b2f815dae97803c6821666cc62c21f65a76a17ea5aa8762f4d63390",
+        "after": "7fb974032b2f815dae97803c6821666cc62c21f65a76a17ea5aa8762f4d63390",
+        "unchanged": true
+      },
+      {
+        "path": "pipeline\\godot\\Gameplay\\GameWorld_Balmorra.tscn",
+        "before": "3537ff04b8b237aa1acc2d899bfab3abc7ff21a6a730e8dd7360e047ccb57edf",
+        "after": "3537ff04b8b237aa1acc2d899bfab3abc7ff21a6a730e8dd7360e047ccb57edf",
+        "unchanged": true
+      },
+      {
+        "path": "pipeline\\godot\\Gameplay\\GameWorld_Dromund.tscn",
+        "before": "2230fe92e883a16b86fcddc71b1a51d3345bd503c0c69033e6381f3d355b1924",
+        "after": "2230fe92e883a16b86fcddc71b1a51d3345bd503c0c69033e6381f3d355b1924",
+        "unchanged": true
+      },
+      {
+        "path": "pipeline\\godot\\Gameplay\\GameWorld_Hutta.tscn",
+        "before": "d5540d6cb3feeca6cb0fb62bd000515b9be28f773225ca80875719e7a0bee957",
+        "after": "d5540d6cb3feeca6cb0fb62bd000515b9be28f773225ca80875719e7a0bee957",
+        "unchanged": true
+      },
+      {
+        "path": "pipeline\\godot\\Gameplay\\classes.json",
+        "before": "aedf54d55eb4ca55c10d79fdd836c4e985f1840b200c9ddadf38bc54d7cab867",
+        "after": "aedf54d55eb4ca55c10d79fdd836c4e985f1840b200c9ddadf38bc54d7cab867",
+        "unchanged": true
+      },
+      {
+        "path": "pipeline\\godot\\Gameplay\\Enemies\\roster.json",
+        "before": "b6107e5b3a9def5ba60766bda61e75f7fa7b52c9befbe996791082c958af259b",
+        "after": "b6107e5b3a9def5ba60766bda61e75f7fa7b52c9befbe996791082c958af259b",
+        "unchanged": true
+      },
+      {
+        "path": "pipeline\\godot\\Gameplay\\RunItems\\artifacts.json",
+        "before": "aa0e5d0dc26c86b4694bc6156cc2bddd26b6eae52835afe79497ab751027e1f9",
+        "after": "aa0e5d0dc26c86b4694bc6156cc2bddd26b6eae52835afe79497ab751027e1f9",
+        "unchanged": true
+      },
+      {
+        "path": "pipeline\\godot\\Assets\\Maps\\hutta\\environment.json",
+        "before": "5c73e8ab79b84924b48905862f85d28bb4b40fd8b011988e1220da65fb6ad08c",
+        "after": "5c73e8ab79b84924b48905862f85d28bb4b40fd8b011988e1220da65fb6ad08c",
+        "unchanged": true
+      },
+      {
+        "path": "pipeline\\godot\\Assets\\Maps\\hutta\\MapEnvironment.tscn",
+        "before": "9f858136f301447e816b48bf721ae9359b44e17d01750febe657de10a562025e",
+        "after": "9f858136f301447e816b48bf721ae9359b44e17d01750febe657de10a562025e",
+        "unchanged": true
+      },
+      {
+        "path": "pipeline\\godot\\Assets\\Maps\\dromund\\environment.json",
+        "before": "5c824045a27e27cd218cc6c1dd79f694b3dfb32cc178f815c69302fda37be523",
+        "after": "5c824045a27e27cd218cc6c1dd79f694b3dfb32cc178f815c69302fda37be523",
+        "unchanged": true
+      },
+      {
+        "path": "pipeline\\godot\\Assets\\Maps\\dromund\\MapEnvironment.tscn",
+        "before": "a58689a324bc9eaef586f16fd5b7f4fe6e709516a76f1fadba1f1a3b51d19ff2",
+        "after": "a58689a324bc9eaef586f16fd5b7f4fe6e709516a76f1fadba1f1a3b51d19ff2",
+        "unchanged": true
+      },
+      {
+        "path": "pipeline\\godot\\Assets\\Maps\\balmorra\\environment.json",
+        "before": "dd40aa357d797c9bc0ea41c36de339f501b48dc9b2156cc294dc6e1ea0d9cc02",
+        "after": "dd40aa357d797c9bc0ea41c36de339f501b48dc9b2156cc294dc6e1ea0d9cc02",
+        "unchanged": true
+      },
+      {
+        "path": "pipeline\\godot\\Assets\\Maps\\balmorra\\MapEnvironment.tscn",
+        "before": "b9ec2e3e744c30f11b9bebeabd25cce339583f409881d1ca7545069ec77add94",
+        "after": "b9ec2e3e744c30f11b9bebeabd25cce339583f409881d1ca7545069ec77add94",
+        "unchanged": true
+      }
+    ],
+    "archiveMetadata": [
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_creature_a_1.tor",
+        "length": 188461553,
+        "mtimeNs": "1789597458585504900",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_creature_b_1.tor",
+        "length": 189074753,
+        "mtimeNs": "1789597469222247200",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+        "length": 337713211,
+        "mtimeNs": "1789597750549727900",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_misc_1.tor",
+        "length": 5646192,
+        "mtimeNs": "1789166330106259300",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_balmorra_1.tor",
+        "length": 106286440,
+        "mtimeNs": "1789597851530457500",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_dromund_kaas_1.tor",
+        "length": 109507165,
+        "mtimeNs": "1789598037287500700",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_hoth_1.tor",
+        "length": 352974496,
+        "mtimeNs": "1789598120933962000",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_korriban_1.tor",
+        "length": 102350285,
+        "mtimeNs": "1789598194381181300",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_misc_1.tor",
+        "length": 299416733,
+        "mtimeNs": "1789598267814618600",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_voss_1.tor",
+        "length": 214193907,
+        "mtimeNs": "1789598572332094100",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_areadat_1.tor",
+        "length": 452102897,
+        "mtimeNs": "1789597769916691800",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_area_all_arch_a_1.tor",
+        "length": 190628925,
+        "mtimeNs": "1789598642798934500",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_area_all_arch_b_1.tor",
+        "length": 355094780,
+        "mtimeNs": "1789598670473189900",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_area_all_item_1.tor",
+        "length": 371591248,
+        "mtimeNs": "1789598686926019000",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_creature_a_1.tor",
+        "length": 386667817,
+        "mtimeNs": "1789166058042101200",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_creature_b_1.tor",
+        "length": 179053048,
+        "mtimeNs": "1789598698380060200",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+        "length": 173175920,
+        "mtimeNs": "1789599061178286300",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_vehicle_1.tor",
+        "length": 167925528,
+        "mtimeNs": "1789599143227624900",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+        "length": 91793048,
+        "mtimeNs": "1789599209469601000",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_zed_1.tor",
+        "length": 79988436,
+        "mtimeNs": "1789166253720490800",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audiodata_1.tor",
+        "length": 8692293,
+        "mtimeNs": "1789599211458100300",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_voc_1.tor",
+        "length": 180906614,
+        "mtimeNs": "1789599417107856700",
+        "unchanged": true
+      }
+    ],
+    "testsNotRun": [
+      "whole-archive hashing",
+      "historical regression suites",
+      "lengthy gameplay simulations",
+      "benchmarks"
+    ]
+  },
+  "environment": {
+    "terrainPatches": 6,
+    "addedPatches": 4,
+    "footprintXZ": [
+      20.2,
+      58,
+      6.2,
+      31.4
+    ],
+    "areaMultiplier": 3,
+    "originalPropInstancesRetained": 107,
+    "newSourcePropInstances": 311,
+    "sourcePropInstancesTotal": 418,
+    "convertedEnvironmentModels": 77,
+    "newEnvironmentModels": 46,
+    "sourcePlacementRecords": 424,
+    "authoredBurialProps": 7,
+    "caches": [
+      {
+        "id": "valley",
+        "position": "(35.4, -16.99985, 13.5)"
+      },
+      {
+        "id": "precinct",
+        "position": "(40, -16.729298, 18.5)"
+      },
+      {
+        "id": "wilds",
+        "position": "(48, -16.0424, 23.5)"
+      },
+      {
+        "id": "forbidden",
+        "position": "(50.68, -15.7535, 24.5)"
+      }
+    ],
+    "sourceTopology": "Contiguous authored Valley sectors; adapted open-air regions, not the named MMO interiors"
+  },
+  "roster": {
+    "ordinaryEnemies": 6,
+    "newRigFamilies": [
+      "dog",
+      "bmnnew (assassin.dyc)",
+      "terentatek"
+    ],
+    "additionalQueenAppearance": true,
+    "majorBosses": [
+      "Broodmatron",
+      "Ancient Droid Protector",
+      "Ancient Beast"
+    ],
+    "elites": [
+      "Brood Mother",
+      "Shyrack Screecher",
+      "Terentatek Mauler"
+    ]
+  },
+  "rewards": {
+    "milestones": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "scheduledEliteRewards": "guaranteed three choices",
+    "majorRewards": "three choices with an eligible defining relic guaranteed",
+    "newRelics": [
+      "Pilgrim\u2019s Seal",
+      "Predator\u2019s Relic",
+      "Tomb Executioner\u2019s Sigil"
+    ],
+    "persistentRunRewards": false
+  },
+  "sources": {
+    "primaryReceipt": "manifests/d4-source.json",
+    "selectedResources": 381,
+    "decodedBytes": 83491305,
+    "selectedAmbience": {
+      "valley": {
+        "event": "play_amb_korriban_valley_of_the_sith_ext",
+        "chosenMediaId": 5536795,
+        "seconds": 10.904739229024944,
+        "adaptation": "One original long bed from this event; native random/layer mix is not reproduced"
+      },
+      "tomb": {
+        "event": "Play_amb_korriban_tomb_naga_main",
+        "chosenMediaId": 1898149,
+        "seconds": 10.134965986394558,
+        "adaptation": "One original long bed from this event; native random/layer mix is not reproduced"
+      }
+    },
+    "evidence": [
+      "d4-definitions.json",
+      "d4-additional-definitions.json",
+      "d4-ambience-definition.json",
+      "d4-environment-fx.json"
+    ]
+  },
+  "knownLimits": [
+    "Full named tomb interiors and Academy exterior are not implemented.",
+    "Bosses spawn safely near the player; optional burial courts are scenery backdrops, not mandatory arenas.",
+    "Native lighting, animation graph/impact timing, Wwise layers/randomization and particle simulation are approximated.",
+    "Routes validate four specific exploration paths, not exhaustive navigation or high-density performance.",
+    "All eight existing class profiles resolve, but full runs for every class and balance acceptance require manual play."
+  ]
+}

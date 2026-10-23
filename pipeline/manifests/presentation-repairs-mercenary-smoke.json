@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": [
+    "tracer clip exists",
+    "tracer starts with gesture",
+    "tracer launches before damage",
+    "tracer still deals damage",
+    "tracer abort releases gesture",
+    "tracer abort clears effects and channel sound",
+    "heatseeker clip exists",
+    "heatseeker starts with gesture",
+    "heatseeker launches before damage",
+    "heatseeker still deals damage",
+    "heatseeker abort releases gesture",
+    "heatseeker abort clears effects and channel sound",
+    "unload clip exists",
+    "unload starts with gesture",
+    "unload still deals damage",
+    "Unload presents every paired shot",
+    "unload abort releases gesture",
+    "unload abort clears effects and channel sound",
+    "unload lethal fixture starts",
+    "unload killing hit retains visual tail",
+    "occupied gesture defers activation",
+    "deferred activation starts when free"
+  ],
+  "failure": null
+}

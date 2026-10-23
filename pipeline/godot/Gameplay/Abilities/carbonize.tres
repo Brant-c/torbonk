@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+StartsUnlocked = false
+Damage = 1
+Range = 0.36
+Radius = 0.32
+WindupSeconds = 0.25
+ChannelSeconds = 0.0
+RecoverySeconds = 1.75
+GestureSeconds = 2.0
+StartClip = "D3/Flame"
+LoopClip = "D3/Flame"
+EndClip = ""
+KnockbackDistance = 0.0
+NearbyTriggerCount = 1
+Id = "carbonize"
+Title = "Carbonize"
+Icon = "carbonize"
+Description = "Stun nearby enemies for 3 seconds; elites resist, bosses are immune."
+Category = 1
+Area = 3
+CooldownSeconds = 16
+CastAudio = "res://Assets/Powertech/Audio/69725158.wav"
+FullBodyGesture = true
+MuzzleBone = "LeftWrist"
+ImpactAudio = "res://Assets/Powertech/Audio/511102101.wav"
+GesturePriority = 1
+RequireGesture = true

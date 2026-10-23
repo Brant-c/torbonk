@@ -15,16 +15,18 @@ public static class GameNavigation
     {
         if (menu.GetTree().CurrentScene != menu)
         { reason = "A scene transition is already in progress."; return false; }
-        // Revalidate at the launch boundary even if the Ready button was enabled earlier.
+        // Revalidate at the launch boundary even if Set Course was enabled earlier.
         if (!SelectionGameplayAdapter.TryResolve(selection, out var run, out reason)) return false;
         SwtorCursor.Instance.RestoreVisible();
+        if (menu.GetTree().Root.GetNodeOrNull<WorldLoadingScreen>("WorldLoadingScreen") != null)
+        { reason = "A scene transition is already in progress."; return false; }
         _pendingRun = run;
-        var error = menu.GetTree().ChangeSceneToFile(run.WorldScene);
-        if (error != Error.Ok)
-        { _pendingRun = null; reason = "Unable to open gameplay: " + error; return false; }
+        menu.GetTree().Root.AddChild(new WorldLoadingScreen { Name="WorldLoadingScreen",Run=run });
         _lastSelection = selection.Snapshot();
         return true;
     }
+
+    internal static void CancelPendingRun() => _pendingRun = null;
 
     internal static GameplayConfiguration TakeRunConfiguration()
     {
@@ -37,6 +39,7 @@ public static class GameNavigation
             {
                 var profile=ClassProfile.Find(arg[17..])??throw new System.InvalidOperationException("Unknown development class: "+arg);
                 var selected=new SelectionConfiguration {FactionId=profile.Faction,BaseClassId=profile.BaseClass,AdvancedClassId=profile.Id,Appearance=AppearanceConfiguration.ForClass(profile.Id)};
+                foreach(string mapArg in OS.GetCmdlineUserArgs())if(mapArg.StartsWith("--map="))selected.MapId=mapArg[6..];
                 if(!SelectionGameplayAdapter.TryResolve(selected,out var configured,out string reason))throw new System.InvalidOperationException(reason);
                 return configured;
             }

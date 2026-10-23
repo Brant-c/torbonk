@@ -59,6 +59,16 @@ public sealed class EquipmentLoadout
             if(visual==null || visual.Slot!=entry.Key) { error="Invalid cosmetic for "+entry.Key;return false; }
             if(!EquipmentCatalog.Compatible(visual.Compatibility,Context,out error))return false;
         }
+        // Dual wield classes mirror the chosen main-hand cosmetic to the matching left socket.
+        if(Context.Class.AdvancedClassId is "marauder" or "mercenary")
+        {
+            if(next.Cosmetics.TryGetValue("main_hand",out var main))
+            {
+                string pair=main=="red_saber" ? "d3.saber.off_hand" : main.EndsWith(".main_hand") ? main[..^10]+".off_hand" : "";
+                if(pair!="" && Catalog.Appearances.Any(a=>a.Id==pair))next.Cosmetics["off_hand"]=pair;
+            }
+            else next.Cosmetics.Remove("off_hand");
+        }
         string? visualError=ApplyAppearance?.Invoke(next.Copy());
         if(visualError!=null) { error=visualError;return false; }
         _current=next; Changed?.Invoke(Current);return true;

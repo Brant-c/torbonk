@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+StartsUnlocked = false
+Damage = 1
+Range = 0.36
+Radius = 0.32
+WindupSeconds = 0.0
+ChannelSeconds = 0.0
+RecoverySeconds = 0.4
+GestureSeconds = 0.8
+StartClip = "D3/PistolBracerStart"
+LoopClip = "D3/PistolBracerStart"
+EndClip = "D3/PistolBracerEnd"
+KnockbackDistance = 0.0
+NearbyTriggerCount = 1
+Id = "oilslick"
+Title = "Oil Slick"
+Icon = "oilslick"
+Description = "Ground slick for 8 seconds: enemies inside move 45% slower and deal 25% less damage."
+Category = 1
+Area = 3
+CooldownSeconds = 18
+CastAudio = "res://Assets/Powertech/Audio/207314742.wav"
+RequireGesture = true

@@ -1,0 +1,1832 @@
+[
+  {
+    "identity": {
+      "id": "0xE000D440E4375377",
+      "decimalId": "16141134439667684215",
+      "kind": "GomObject",
+      "name": "npp.location.hutta.mob.humanoid.faathra.faathra_heavy_low.faathra_heavy_low_african_strong",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/215.bkt",
+        "uncompressedOffset": 223420,
+        "blockLength": 557,
+        "resourceSha256": "4f76bb52e0095980c18295ed1982fef82228b35e7a632160a9ec1b36c1ee60ff"
+      }
+    },
+    "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:2/0",
+    "type": "GomObjectData",
+    "childCount": 10,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:2/0/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x4000000316C18125",
+            "decimalId": "4611686031694070053",
+            "kind": "DomClass",
+            "name": "appAppearanceSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 423944,
+              "blockLength": 120,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:2/0/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000008"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:2/0/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 7
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:2/0/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 2,
+          "label": "appSlotBoot",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:2/0/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002351",
+          "bits": "0x00000000000F4B6F"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:2/0/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1005096",
+          "bits": "0x00000000000F5628"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:2/0/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": false,
+        "childCount": 0,
+        "value": []
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:2/0/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002154",
+          "bits": "0x00000000000F4AAA"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:2/0/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002145",
+          "bits": "0x00000000000F4AA1"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:2/0/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000D440E4375377",
+      "decimalId": "16141134439667684215",
+      "kind": "GomObject",
+      "name": "npp.location.hutta.mob.humanoid.faathra.faathra_heavy_low.faathra_heavy_low_african_strong",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/215.bkt",
+        "uncompressedOffset": 223420,
+        "blockLength": 557,
+        "resourceSha256": "4f76bb52e0095980c18295ed1982fef82228b35e7a632160a9ec1b36c1ee60ff"
+      }
+    },
+    "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:3/0",
+    "type": "GomObjectData",
+    "childCount": 10,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:3/0/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x4000000316C18125",
+            "decimalId": "4611686031694070053",
+            "kind": "DomClass",
+            "name": "appAppearanceSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 423944,
+              "blockLength": 120,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:3/0/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000008"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:3/0/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 7
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:3/0/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 3,
+          "label": "appSlotBracer",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:3/0/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002602",
+          "bits": "0x00000000000F4C6A"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:3/0/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1005102",
+          "bits": "0x00000000000F562E"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:3/0/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": false,
+        "childCount": 0,
+        "value": []
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:3/0/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002154",
+          "bits": "0x00000000000F4AAA"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:3/0/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002145",
+          "bits": "0x00000000000F4AA1"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:3/0/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000D440E4375377",
+      "decimalId": "16141134439667684215",
+      "kind": "GomObject",
+      "name": "npp.location.hutta.mob.humanoid.faathra.faathra_heavy_low.faathra_heavy_low_african_strong",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/215.bkt",
+        "uncompressedOffset": 223420,
+        "blockLength": 557,
+        "resourceSha256": "4f76bb52e0095980c18295ed1982fef82228b35e7a632160a9ec1b36c1ee60ff"
+      }
+    },
+    "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:4/0",
+    "type": "GomObjectData",
+    "childCount": 10,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:4/0/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x4000000316C18125",
+            "decimalId": "4611686031694070053",
+            "kind": "DomClass",
+            "name": "appAppearanceSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 423944,
+              "blockLength": 120,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:4/0/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000008"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:4/0/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 7
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:4/0/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 4,
+          "label": "appSlotChest",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:4/0/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002349",
+          "bits": "0x00000000000F4B6D"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:4/0/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1005097",
+          "bits": "0x00000000000F5629"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:4/0/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": false,
+        "childCount": 0,
+        "value": []
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:4/0/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002154",
+          "bits": "0x00000000000F4AAA"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:4/0/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002145",
+          "bits": "0x00000000000F4AA1"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:4/0/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000D440E4375377",
+      "decimalId": "16141134439667684215",
+      "kind": "GomObject",
+      "name": "npp.location.hutta.mob.humanoid.faathra.faathra_heavy_low.faathra_heavy_low_african_strong",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/215.bkt",
+        "uncompressedOffset": 223420,
+        "blockLength": 557,
+        "resourceSha256": "4f76bb52e0095980c18295ed1982fef82228b35e7a632160a9ec1b36c1ee60ff"
+      }
+    },
+    "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:5/0",
+    "type": "GomObjectData",
+    "childCount": 7,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:5/0/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x4000000316C18125",
+            "decimalId": "4611686031694070053",
+            "kind": "DomClass",
+            "name": "appAppearanceSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 423944,
+              "blockLength": 120,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:5/0/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000008"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:5/0/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 4
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:5/0/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 5,
+          "label": "appSlotComplexion",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:5/0/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1415002",
+          "bits": "0x000000000015975A"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:5/0/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": false,
+        "childCount": 0,
+        "value": []
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:5/0/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000D440E4375377",
+      "decimalId": "16141134439667684215",
+      "kind": "GomObject",
+      "name": "npp.location.hutta.mob.humanoid.faathra.faathra_heavy_low.faathra_heavy_low_african_strong",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/215.bkt",
+        "uncompressedOffset": 223420,
+        "blockLength": 557,
+        "resourceSha256": "4f76bb52e0095980c18295ed1982fef82228b35e7a632160a9ec1b36c1ee60ff"
+      }
+    },
+    "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:7/0",
+    "type": "GomObjectData",
+    "childCount": 7,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:7/0/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x4000000316C18125",
+            "decimalId": "4611686031694070053",
+            "kind": "DomClass",
+            "name": "appAppearanceSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 423944,
+              "blockLength": 120,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:7/0/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000008"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:7/0/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 4
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:7/0/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 7,
+          "label": "appSlotEyeColor",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:7/0/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1001087",
+          "bits": "0x00000000000F467F"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:7/0/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": false,
+        "childCount": 0,
+        "value": []
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:7/0/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000D440E4375377",
+      "decimalId": "16141134439667684215",
+      "kind": "GomObject",
+      "name": "npp.location.hutta.mob.humanoid.faathra.faathra_heavy_low.faathra_heavy_low_african_strong",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/215.bkt",
+        "uncompressedOffset": 223420,
+        "blockLength": 557,
+        "resourceSha256": "4f76bb52e0095980c18295ed1982fef82228b35e7a632160a9ec1b36c1ee60ff"
+      }
+    },
+    "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:11/0",
+    "type": "GomObjectData",
+    "childCount": 8,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:11/0/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x4000000316C18125",
+            "decimalId": "4611686031694070053",
+            "kind": "DomClass",
+            "name": "appAppearanceSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 423944,
+              "blockLength": 120,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:11/0/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000008"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:11/0/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 5
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:11/0/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 11,
+          "label": "appSlotHair",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:11/0/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000620",
+          "bits": "0x00000000000F44AC"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:11/0/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1027364",
+          "bits": "0x00000000000FAD24"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:11/0/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": false,
+        "childCount": 0,
+        "value": []
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:11/0/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000D440E4375377",
+      "decimalId": "16141134439667684215",
+      "kind": "GomObject",
+      "name": "npp.location.hutta.mob.humanoid.faathra.faathra_heavy_low.faathra_heavy_low_african_strong",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/215.bkt",
+        "uncompressedOffset": 223420,
+        "blockLength": 557,
+        "resourceSha256": "4f76bb52e0095980c18295ed1982fef82228b35e7a632160a9ec1b36c1ee60ff"
+      }
+    },
+    "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:12/0",
+    "type": "GomObjectData",
+    "childCount": 7,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:12/0/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x4000000316C18125",
+            "decimalId": "4611686031694070053",
+            "kind": "DomClass",
+            "name": "appAppearanceSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 423944,
+              "blockLength": 120,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:12/0/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000008"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:12/0/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 4
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:12/0/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 12,
+          "label": "appSlotHairColor",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:12/0/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000998",
+          "bits": "0x00000000000F4626"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:12/0/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": false,
+        "childCount": 0,
+        "value": []
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:12/0/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000D440E4375377",
+      "decimalId": "16141134439667684215",
+      "kind": "GomObject",
+      "name": "npp.location.hutta.mob.humanoid.faathra.faathra_heavy_low.faathra_heavy_low_african_strong",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/215.bkt",
+        "uncompressedOffset": 223420,
+        "blockLength": 557,
+        "resourceSha256": "4f76bb52e0095980c18295ed1982fef82228b35e7a632160a9ec1b36c1ee60ff"
+      }
+    },
+    "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:13/0",
+    "type": "GomObjectData",
+    "childCount": 10,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:13/0/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x4000000316C18125",
+            "decimalId": "4611686031694070053",
+            "kind": "DomClass",
+            "name": "appAppearanceSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 423944,
+              "blockLength": 120,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:13/0/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000008"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:13/0/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 7
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:13/0/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 13,
+          "label": "appSlotHand",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:13/0/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002356",
+          "bits": "0x00000000000F4B74"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:13/0/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1005095",
+          "bits": "0x00000000000F5627"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:13/0/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": false,
+        "childCount": 0,
+        "value": []
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:13/0/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002154",
+          "bits": "0x00000000000F4AAA"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:13/0/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002145",
+          "bits": "0x00000000000F4AA1"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:13/0/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000D440E4375377",
+      "decimalId": "16141134439667684215",
+      "kind": "GomObject",
+      "name": "npp.location.hutta.mob.humanoid.faathra.faathra_heavy_low.faathra_heavy_low_african_strong",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/215.bkt",
+        "uncompressedOffset": 223420,
+        "blockLength": 557,
+        "resourceSha256": "4f76bb52e0095980c18295ed1982fef82228b35e7a632160a9ec1b36c1ee60ff"
+      }
+    },
+    "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:14/0",
+    "type": "GomObjectData",
+    "childCount": 8,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:14/0/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x4000000316C18125",
+            "decimalId": "4611686031694070053",
+            "kind": "DomClass",
+            "name": "appAppearanceSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 423944,
+              "blockLength": 120,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:14/0/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000008"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:14/0/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 5
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:14/0/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 14,
+          "label": "appSlotHead",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:14/0/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000260",
+          "bits": "0x00000000000F4344"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:14/0/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1583904",
+          "bits": "0x0000000000182B20"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:14/0/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": false,
+        "childCount": 0,
+        "value": []
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:14/0/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000D440E4375377",
+      "decimalId": "16141134439667684215",
+      "kind": "GomObject",
+      "name": "npp.location.hutta.mob.humanoid.faathra.faathra_heavy_low.faathra_heavy_low_african_strong",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/215.bkt",
+        "uncompressedOffset": 223420,
+        "blockLength": 557,
+        "resourceSha256": "4f76bb52e0095980c18295ed1982fef82228b35e7a632160a9ec1b36c1ee60ff"
+      }
+    },
+    "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:15/0",
+    "type": "GomObjectData",
+    "childCount": 10,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:15/0/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x4000000316C18125",
+            "decimalId": "4611686031694070053",
+            "kind": "DomClass",
+            "name": "appAppearanceSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 423944,
+              "blockLength": 120,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:15/0/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000008"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:15/0/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 7
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:15/0/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 15,
+          "label": "appSlotLeg",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:15/0/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002606",
+          "bits": "0x00000000000F4C6E"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:15/0/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1005100",
+          "bits": "0x00000000000F562C"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:15/0/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": false,
+        "childCount": 0,
+        "value": []
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:15/0/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002154",
+          "bits": "0x00000000000F4AAA"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:15/0/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002145",
+          "bits": "0x00000000000F4AA1"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:15/0/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000D440E4375377",
+      "decimalId": "16141134439667684215",
+      "kind": "GomObject",
+      "name": "npp.location.hutta.mob.humanoid.faathra.faathra_heavy_low.faathra_heavy_low_african_strong",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/215.bkt",
+        "uncompressedOffset": 223420,
+        "blockLength": 557,
+        "resourceSha256": "4f76bb52e0095980c18295ed1982fef82228b35e7a632160a9ec1b36c1ee60ff"
+      }
+    },
+    "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:16/0",
+    "type": "GomObjectData",
+    "childCount": 7,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:16/0/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x4000000316C18125",
+            "decimalId": "4611686031694070053",
+            "kind": "DomClass",
+            "name": "appAppearanceSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 423944,
+              "blockLength": 120,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:16/0/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000008"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:16/0/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 4
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:16/0/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 16,
+          "label": "appSlotSkinColor",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:16/0/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000962",
+          "bits": "0x00000000000F4602"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:16/0/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": false,
+        "childCount": 0,
+        "value": []
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:16/0/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000D440E4375377",
+      "decimalId": "16141134439667684215",
+      "kind": "GomObject",
+      "name": "npp.location.hutta.mob.humanoid.faathra.faathra_heavy_low.faathra_heavy_low_african_strong",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/215.bkt",
+        "uncompressedOffset": 223420,
+        "blockLength": 557,
+        "resourceSha256": "4f76bb52e0095980c18295ed1982fef82228b35e7a632160a9ec1b36c1ee60ff"
+      }
+    },
+    "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:17/0",
+    "type": "GomObjectData",
+    "childCount": 10,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:17/0/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x4000000316C18125",
+            "decimalId": "4611686031694070053",
+            "kind": "DomClass",
+            "name": "appAppearanceSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 423944,
+              "blockLength": 120,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:17/0/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000008"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:17/0/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 7
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:17/0/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 17,
+          "label": "appSlotWaist",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:17/0/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002348",
+          "bits": "0x00000000000F4B6C"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:17/0/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1005098",
+          "bits": "0x00000000000F562A"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:17/0/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:17/0/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002154",
+          "bits": "0x00000000000F4AAA"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:17/0/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002145",
+          "bits": "0x00000000000F4AA1"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:17/0/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE00046FB68EE42A3",
+      "decimalId": "16140979110107038371",
+      "kind": "GomObject",
+      "name": "npp.droid.assassin_droid.rogue_a01",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/371.bkt",
+        "uncompressedOffset": 105116,
+        "blockLength": 286,
+        "resourceSha256": "6fbae3924e3d147c42ac2545fc2239292ea084b35311871de38d5b50597b2426"
+      }
+    },
+    "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:6/0",
+    "type": "GomObjectData",
+    "childCount": 8,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:6/0/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x4000000316C18125",
+            "decimalId": "4611686031694070053",
+            "kind": "DomClass",
+            "name": "appAppearanceSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 423944,
+              "blockLength": 120,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:6/0/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000008"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:6/0/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 5
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:6/0/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 6,
+          "label": "appSlotCreature",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:6/0/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000103",
+          "bits": "0x00000000000F42A7"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:6/0/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1001474",
+          "bits": "0x00000000000F4802"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:6/0/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": false,
+        "childCount": 0,
+        "value": []
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/nppAppearanceSlotMap_ForPrototype/enum:0x4000000316C18124:6/0/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  }
+]

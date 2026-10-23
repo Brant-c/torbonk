@@ -1,7 +1,7 @@
 using Godot;
 namespace SwtorSurvivors;
-public enum AbilityTargetRule { NearestHostile, HostileCluster }
-public enum AbilityArea { SingleTarget, GroundSphere, Chain, CasterRadial, TargetSplash }
+public enum AbilityTargetRule { NearestHostile, HostileCluster, HighestHealth }
+public enum AbilityArea { SingleTarget, GroundSphere, Chain, CasterRadial, TargetSplash, FrontalCone }
 public enum AbilityCategory { Offensive, Utility }
 public enum DamageType { Energy, Kinetic, Internal }
 public enum AbilityEffect { Damage, Shield, Heal, Buff }
@@ -25,6 +25,9 @@ public partial class AbilityDefinition : Resource
     [Export] public string Description {get;set;}="";
     [Export] public string ImpactTexture {get;set;}="";
     [Export] public string CastAudio {get;set;}="";
+    [Export] public string ShotAudio {get;set;}="";
+    [Export] public string ChannelAudio {get;set;}="";
+    [Export] public bool RequireGesture {get;set;}
     [Export] public string ImpactAudio {get;set;}="";
     [Export] public bool FullBodyGesture {get;set;}
     [Export] public bool ImpactTailsOnTargetDeath {get;set;}

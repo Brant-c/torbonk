@@ -60,7 +60,7 @@ public partial class ArtifactRewardsHud : CanvasLayer
         if(!items.Selecting)return;
         _title.Text=items.Replacing?"REPLACE ONE ARTIFACT":"CHOOSE ONE RUN REWARD";
         _detail.Text=items.Replacing?$"Selected: {items.Selected!.Name} — {items.Selected.Description}\nChoose the item to remove. Its effect ends immediately.":
-            $"{(items.EncounterTier>=2?"MAJOR BOSS":"ELITE")}  ·  Take one of three  ·  {items.Equipped.Count}/{items.SlotLimit} equipped\nTemporary run items. Premium / Prototype / Artifact indicates rarity.";
+            $"{(items.ExplorationReward?"TOMB CACHE":items.EncounterTier>=2?"MAJOR BOSS":"ELITE")}  ·  Take one of three  ·  {items.Equipped.Count}/{items.SlotLimit} equipped\nTemporary run items. Premium / Prototype / Artifact indicates rarity.";
         var entries=items.Replacing?items.Equipped:items.Offers;
         for(int i=0;i<entries.Count;i++)
         {

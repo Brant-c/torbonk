@@ -26,6 +26,9 @@ public partial class AutomaticAbility : Node
     public PeriodicEffects? Periodic {get;set;}
     public int LastDistinctHits => _damaged.Count;
     public float LastHealing { get; private set; }
+    private readonly HashSet<Combatant> _sweepHits=new();
+    private bool _spreadSeed;
+    private Vector3 _coneForward;
     private readonly HashSet<ulong> _damaged = new();
     public bool CombatEnabled { get; set; } = true;
     public bool Unlocked { get; private set; } = true;
@@ -76,11 +79,12 @@ public partial class AutomaticAbility : Node
         if(_gestureRemaining<=0) Present(()=>Presentation.Actor.ReleaseGesture(this));
         if(State!=LightningState.Ending)
         {
-            bool valid=Definition.Area==AbilityArea.CasterRadial || Definition.Effect!=AbilityEffect.Damage || (Definition.Area==AbilityArea.GroundSphere
+            if(Definition.Area==AbilityArea.FrontalCone)Presentation.Actor.FacingTarget=Caster.GlobalPosition+_coneForward;
+            bool valid=Definition.Area is AbilityArea.CasterRadial or AbilityArea.FrontalCone || Definition.Effect!=AbilityEffect.Damage || (Definition.Area==AbilityArea.GroundSphere
                 ? Definition.PersistentArea && State==LightningState.Channeling || Caster.GlobalPosition.DistanceSquaredTo(GroundCenter)<=Range*Range
                 : Targeting.IsValidTarget(CastTarget,Range));
             if(!valid) { Finish(true,"Target lost");return; }
-            if(Presentation.Actor.GestureOwner==this && Definition.Area!=AbilityArea.CasterRadial)
+            if(Presentation.Actor.GestureOwner==this && Definition.Area is not (AbilityArea.CasterRadial or AbilityArea.FrontalCone))
                 Presentation.Actor.FacingTarget=Definition.Area==AbilityArea.GroundSphere?GroundCenter:CastTarget!.GlobalPosition;
         }
         if(State==LightningState.Starting)
@@ -124,9 +128,13 @@ public partial class AutomaticAbility : Node
             !float.IsFinite(ShieldCapacity) || ShieldCapacity<=0 || !float.IsFinite(ShieldDuration) || ShieldDuration<=0)
         { CombatEnabled=false;LastEvent="Invalid ability tuning";Abort();return false; }
         // A full-body ability only fires with its animation, and cannot come off cooldown before that animation has finished.
+        if(Definition.Id=="carbonize" && Presentation.Actor.GestureOwner!=null)return false;
         if(Definition.FullBodyGesture && Definition.GestureSeconds>0 && Presentation!=null && !Presentation.Actor.CanBeginGesture(Definition.StartClip,Definition.GesturePriority)) return false;
-        CastTarget=target;GroundCenter=target.GlobalPosition;
-        _damaged.Clear();LastHealing=0;
+        // Defer activation until its gesture can start. Missing clips keep the failure-reporting path.
+        if(Definition.RequireGesture && Presentation.Actor.Animator.HasAnimation(Definition.StartClip) && !Presentation.Actor.TryBeginGesture(this,Definition.StartClip,Definition.GesturePriority,Definition.FullBodyGesture))return false;
+        CastTarget=target;GroundCenter=target.GlobalPosition;_coneForward=target.GlobalPosition-Caster.GlobalPosition;
+        if(Definition.Area==AbilityArea.FrontalCone)Presentation.Actor.FacingTarget=GroundCenter;
+        _damaged.Clear();_sweepHits.Clear();_spreadSeed=false;LastHealing=0;
         if(ChannelSeconds>0) _clock.Reset(ChannelSeconds,TickSeconds);
         State=LightningState.Starting;_phaseRemaining=Definition.WindupSeconds;
         CooldownRemaining=CooldownDuration=Math.Max(CooldownSeconds,Definition.FullBodyGesture?Definition.GestureSeconds:0);
@@ -160,8 +168,15 @@ public partial class AutomaticAbility : Node
             ? Targeting.InArea(Caster.GlobalPosition,Radius,Radius).ToArray()
             : Definition.Area==AbilityArea.GroundSphere
             ? Targeting.InArea(GroundCenter,Radius,Range,Definition.PersistentArea).ToArray()
+            : Definition.Area==AbilityArea.FrontalCone ? Targeting.InArea(Caster.GlobalPosition,Radius,Radius).Where(t=>InCone(t)).ToArray()
             : Targeting.IsValidTarget(CastTarget,Range)?new[]{CastTarget!}:Array.Empty<Combatant>();
         if(_presented) Present(()=>Presentation.Impact(Definition.Area==AbilityArea.GroundSphere?GroundCenter:CastTarget?.AimPosition??GroundCenter));
+        if(Definition.Id=="flamesweep")
+        {
+            var burn=Build?.World.Abilities.Find("incendiarymissile");
+            if(burn!=null && targets.Any(t=>Periodic?.Has(burn,t)==true))_spreadSeed=true;
+            foreach(var t in targets)_sweepHits.Add(t);
+        }
         foreach(var target in targets)
         {
             if(State!=LightningState.Channeling || !Caster.Alive || !CombatEnabled) return false;
@@ -187,8 +202,14 @@ public partial class AutomaticAbility : Node
         }
         if(State!=LightningState.Channeling) return false;
         if(Definition.Area==AbilityArea.SingleTarget && !Targeting.IsValidTarget(CastTarget,Range))
-        { Finish(!(Definition.ImpactTailsOnTargetDeath && ChannelSeconds<=0),"Target died / invalidated");return false; }
+        { Finish(!Definition.ImpactTailsOnTargetDeath,"Target died / invalidated");return false; }
         return true;
+    }
+    private bool InCone(Combatant target)
+    {
+        var forward=_coneForward;forward.Y=0;
+        var direction=target.GlobalPosition-Caster.GlobalPosition;direction.Y=0;
+        return direction.LengthSquared()<.00001f || forward.Normalized().Dot(direction.Normalized())>=.7071f;
     }
     private float DealHit(Combatant target,float amount) => target.Health.ApplyDamage(amount*(Build?.DamageMultiplier(this,target)??1)*(Definition.AfflictedBonus>0 && Periodic?.Has(target)==true?1+Definition.AfflictedBonus:1),Definition.DamageType);
     public void ApplyPeriodicHit(Combatant target,float amount)
@@ -222,6 +243,11 @@ public partial class AutomaticAbility : Node
     }
     private void Finish(bool interrupted,string reason)
     {
+        if(!interrupted && Definition.Id=="flamesweep" && _spreadSeed && Build?.Talent("combustible_spread")>0)
+        {
+            var burn=Build.World.Abilities.Find("incendiarymissile");
+            if(burn!=null && burn.Unlocked)foreach(var t in _sweepHits.Where(t=>GodotObject.IsInstanceValid(t) && t.Alive).OrderBy(t=>t.GetInstanceId()).Take(Build.SpreadLimit))Periodic?.Apply(burn,t,Build.SpreadEffectiveness);
+        }
         if(_presented) Present(()=>Presentation.End(interrupted));
         Present(()=>Presentation.Actor.SetGestureClip(this,Definition.EndClip));
         State=LightningState.Ending;_phaseRemaining=Definition.RecoverySeconds;LastEvent=reason;
@@ -240,6 +266,6 @@ public partial class AutomaticAbility : Node
         Abort();Unlocked=unlocked;State=unlocked?LightningState.Idle:LightningState.Disabled;
         LastEvent=unlocked?"Ability unlocked":"Unlock through a level-up choice";
     }
-    public void ResetCombat() { Abort();DamageEvents=0;Casts=0;_damaged.Clear();LastHealing=0;State=Unlocked?LightningState.Idle:LightningState.Disabled;LastEvent="Combat reset"; }
+    public void ResetCombat() { Abort();DamageEvents=0;Casts=0;_damaged.Clear();_sweepHits.Clear();_spreadSeed=false;LastHealing=0;State=Unlocked?LightningState.Idle:LightningState.Disabled;LastEvent="Combat reset"; }
     public override void _ExitTree() { if(Presentation!=null && GodotObject.IsInstanceValid(Presentation.Actor)) Abort(); }
 }

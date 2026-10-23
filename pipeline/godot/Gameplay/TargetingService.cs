@@ -63,7 +63,8 @@ public partial class TargetingService : Node
     {
         var candidates=GetTree().GetNodesInGroup(Combatant.GroupName).OfType<Combatant>()
             .Where(c=>IsValidTarget(c,range)).ToArray();
-        return candidates.OrderByDescending(c=>rule==AbilityTargetRule.HostileCluster
+        return candidates.OrderByDescending(c=>rule==AbilityTargetRule.HighestHealth?c.Health.Current:0)
+            .ThenByDescending(c=>rule==AbilityTargetRule.HostileCluster
                 ? candidates.Count(other=>other.GlobalPosition.DistanceSquaredTo(c.GlobalPosition)<=radius*radius):0)
             .ThenBy(c=>OwnerActor.GlobalPosition.DistanceSquaredTo(c.GlobalPosition))
             .ThenBy(c=>c.SelectionKey,StringComparer.Ordinal).ThenBy(c=>c.GetPath().ToString(),StringComparer.Ordinal).FirstOrDefault();

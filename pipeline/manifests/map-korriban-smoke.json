@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    "spawn is supported, bounded and outside player collision",
+    "enemy pursues over existing terrain",
+    "melee damages existing player health",
+    "wave increases cap, cadence and new-enemy scaling",
+    "enemy death stops AI and counts defeat",
+    "corpse removed after delay",
+    "player death stops combat and all enemies",
+    "no attacks after player death",
+    "restart restores health, wave and counters",
+    "automatic Lightning resumes against spawned enemies"
+  ],
+  "failure": null
+}

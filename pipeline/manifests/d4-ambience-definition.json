@@ -1,0 +1,82 @@
+{
+  "identity": {
+    "id": "0xE000F65814430FED",
+    "decimalId": "16141171922653351917",
+    "kind": "GomObject",
+    "name": "sndAmbienceRegionsTablePrototype",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/417.bkt",
+      "uncompressedOffset": 267660,
+      "blockLength": 17782,
+      "resourceSha256": "8d3b3a80a7d8476263a67ca23b24043f6b3fd14c6274c66a237bbc53b2a2f56f"
+    }
+  },
+  "selected": [
+    {
+      "key": "443604930786255526",
+      "path": "/sndAmbienceRegionsMap/443604930786255526",
+      "type": "String",
+      "expandable": false,
+      "childCount": 0,
+      "value": "play_amb_korriban_valley_of_the_sith_ext"
+    },
+    {
+      "key": "926537220746209042",
+      "path": "/sndAmbienceRegionsMap/926537220746209042",
+      "type": "String",
+      "expandable": false,
+      "childCount": 0,
+      "value": "Play_amb_korriban_tomb_tulak_machinevualt"
+    },
+    {
+      "key": "1540368481460818643",
+      "path": "/sndAmbienceRegionsMap/1540368481460818643",
+      "type": "String",
+      "expandable": false,
+      "childCount": 0,
+      "value": "play_amb_korriban_room_small"
+    },
+    {
+      "key": "1713165030753144271",
+      "path": "/sndAmbienceRegionsMap/1713165030753144271",
+      "type": "String",
+      "expandable": false,
+      "childCount": 0,
+      "value": "Play_amb_korriban_tomb_ajunta_raiders"
+    },
+    {
+      "key": "2074160078180043874",
+      "path": "/sndAmbienceRegionsMap/2074160078180043874",
+      "type": "String",
+      "expandable": false,
+      "childCount": 0,
+      "value": "Play_amb_korriban_tomb_naga_main"
+    },
+    {
+      "key": "6708565073686119577",
+      "path": "/sndAmbienceRegionsMap/6708565073686119577",
+      "type": "String",
+      "value": "Play_amb_korriban_tomb_marka"
+    },
+    {
+      "key": "-6315213482291571568",
+      "path": "/sndAmbienceRegionsMap/-6315213482291571568",
+      "type": "String",
+      "value": "Play_amb_korriban_tomb_tulak_main"
+    },
+    {
+      "key": "-1291483218438675488",
+      "path": "/sndAmbienceRegionsMap/-1291483218438675488",
+      "type": "String",
+      "value": "Play_amb_korriban_ext_tukata"
+    },
+    {
+      "key": "-8610257625789441248",
+      "path": "/sndAmbienceRegionsMap/-8610257625789441248",
+      "type": "String",
+      "value": "play_amb_korriban_sith_academy_int"
+    }
+  ],
+  "scope": "Full 834-entry ambience map read in bounded pages; only selected Korriban entries retained. Table keys are not equated with GOM object IDs."
+}

@@ -19,6 +19,7 @@ public partial class EnemySpawner : Node3D
     public float HealthMultiplier { get; set; } = 1;
     public float DamageMultiplier { get; set; } = 1;
     public bool Running { get; set; } = true;
+    public bool ReuseAnimations {get;set;}
     public int Defeated { get; private set; }
     public int Spawned { get; private set; }
     public event Action<Vector3>? EnemyDefeated;
@@ -33,14 +34,16 @@ public partial class EnemySpawner : Node3D
     private readonly Dictionary<string, ArenaNavigation> _navigationProfiles = new();
     private readonly Dictionary<Vector2I, List<EnemyAgent>> _cells = new();
     private const float CellSize = 0.16f;
+    private readonly List<List<EnemyAgent>> _cellLists=new();
 
     public override void _Ready() => _random.Randomize();
 
-    public bool TrySpawn(PackedScene? scene = null, bool ignoreLimit = false, bool elite = false)
+    public bool TrySpawn(PackedScene? scene = null, bool ignoreLimit = false, bool elite = false, Vector3? anchor = null)
     {
         if (!Running || !Player.Alive || (!ignoreLimit && ActiveCount >= ActiveLimit)) return false;
         var body = (scene ?? EnemyScene).Instantiate<CharacterBody3D>();
         var enemy = body.GetNode<EnemyAgent>("Actor");
+        if(enemy.GetNodeOrNull<EnemyPresentation>("Visual") is {} visual)visual.ReuseLoopLibrary=ReuseAnimations;
         if(elite) { enemy.RewardTier=1;enemy.KnockbackResistance=0.65f;enemy.DisplayName="Elite "+enemy.DisplayName;enemy.GetNode<Health>("Health").Maximum*=2;enemy.ExperienceReward*=2; }
         string key = $"{enemy.CollisionRadius}/{enemy.CollisionHeight}";
         if (!_navigationProfiles.TryGetValue(key, out var navigation))
@@ -52,16 +55,17 @@ public partial class EnemySpawner : Node3D
         {
             float angle = _random.RandfRange(0, Mathf.Tau);
             float radius = _random.RandfRange(Math.Max(0.15f, MinimumSpawnDistance), Math.Max(MinimumSpawnDistance, MaximumSpawnDistance));
-            var sample = Player.GlobalPosition + new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * radius;
+            if(anchor.HasValue)radius=_random.RandfRange(.2f,.5f);
+            var sample = (anchor??Player.GlobalPosition) + new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * radius;
             if (!navigation.TryStandingPoint(sample, out var feet)) continue;
             // Conservative connectivity: spawn only on terrain reachable by a safe straight corridor.
             // Local steering can then handle props approached as the player moves.
-            if (!navigation.CanWalk(Player.GlobalPosition, feet)) continue;
+            if (!navigation.CanWalk(anchor??Player.GlobalPosition, feet)) continue;
             if (_enemies.Any(e => GodotObject.IsInstanceValid(e) && e.Alive && e.GlobalPosition.DistanceTo(feet) < e.CollisionRadius + enemy.CollisionRadius + 0.01f)) continue;
             enemy.Navigation = navigation; enemy.Target = Player; enemy.Crowd = this;
             enemy.TargetId = $"Enemy{++Spawned:0000}"; enemy.SteeringSide = Spawned % 2 == 0 ? 1 : -1;
             var health = enemy.GetNode<Health>("Health");
-            health.Maximum *= HealthMultiplier; enemy.AttackDamage *= DamageMultiplier;
+            if(enemy.ScaleWithWaves) {health.Maximum *= HealthMultiplier; enemy.AttackDamage *= DamageMultiplier;}
             body.Position = ToLocal(feet); AddChild(body);
             _enemies.Add(enemy);
             enemy.Health.Died += () =>
@@ -83,11 +87,16 @@ public partial class EnemySpawner : Node3D
     public override void _PhysicsProcess(double delta)
     {
         _cells.Clear();
+        int used=0;
         foreach (var enemy in _enemies)
         {
             if (!GodotObject.IsInstanceValid(enemy) || !enemy.Alive) continue;
             var cell = Cell(enemy.GlobalPosition);
-            if (!_cells.TryGetValue(cell, out var list)) _cells[cell] = list = new();
+            if (!_cells.TryGetValue(cell, out var list))
+            {
+                if(used==_cellLists.Count)_cellLists.Add(new());
+                list=_cellLists[used++];list.Clear();_cells[cell]=list;
+            }
             list.Add(enemy);
         }
         foreach (var enemy in _corpses.Keys.ToArray())

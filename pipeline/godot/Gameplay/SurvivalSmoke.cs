@@ -45,7 +45,7 @@ public partial class SurvivalSmoke : Node
             await Until(() => enemy.GlobalPosition.DistanceTo(start) > 0.02f);
             Check("enemy pursues over existing terrain", enemy.State == EnemyState.Chase && enemy.Health.IsAlive);
             await Until(() => world.PlayerActor.Health.Current < 100);
-            Check("melee damages existing player health", enemy.Attacks > 0 && world.PlayerActor.Health.DamageEvents > 0);
+            Check("melee damages existing player health", spawner.Enemies.Any(e => e.Attacks > 0) && world.PlayerActor.Health.DamageEvents > 0);
             await Until(() => waves.Wave >= 2);
             Check("wave increases cap, cadence and new-enemy scaling", spawner.ActiveLimit > waves.InitialActiveLimit &&
                 waves.SpawnInterval < waves.InitialSpawnInterval && spawner.HealthMultiplier > 1 && spawner.DamageMultiplier > 1 &&

@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3]
+[ext_resource type="Script" path="res://Gameplay/EnemyAgent.cs" id="1"]
+[ext_resource type="Script" path="res://Gameplay/Health.cs" id="2"]
+[ext_resource type="Script" path="res://Gameplay/EnemyPresentation.cs" id="3"]
+[ext_resource type="PackedScene" path="res://Assets/Korriban/D4/Enemies/tukata.glb" id="4"]
+[ext_resource type="FontFile" path="res://Assets/UI/EurostileBold.ttf" id="6"]
+[ext_resource type="Script" path="res://Gameplay/TombAttack.cs" id="5"]
+
+[sub_resource type="CapsuleShape3D" id="Capsule"]
+radius = 0.035
+height = 0.15
+margin = 0.0005
+[node name="SpittingTukata" type="CharacterBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+position = Vector3(0,0.075,0)
+shape = SubResource("Capsule")
+[node name="Actor" type="Node3D" parent="."]
+script = ExtResource("1")
+Team = 2
+DisplayName = "Spitting Tuk'ata"
+ExperienceReward = 7
+CollisionRadius = 0.035
+CollisionHeight = 0.15
+MoveSpeed = 0.3
+AttackDamage = 3
+AttackInterval = 1.65
+MeleeRange = 0.125
+AimHeight = 0.09
+RewardTier = 0
+GuaranteedReward = false
+KnockbackResistance = 0.15
+ScaleWithWaves = true
+[node name="Health" type="Node" parent="Actor"]
+script = ExtResource("2")
+Maximum = 48.0
+[node name="Visual" type="Node3D" parent="Actor"]
+script = ExtResource("3")
+[node name="Original" parent="Actor/Visual" instance=ExtResource("4")]
+scale = Vector3(0.9,0.9,0.9)
+[node name="Nameplate" type="Label3D" parent="Actor"]
+position = Vector3(0,0.22499999999999998,0)
+pixel_size = 0.00030
+billboard = 1
+font = ExtResource("6")
+font_size = 20
+outline_size = 6
+modulate = Color(1,0.42,0.23,1)
+[node name="TombAttack" type="Node" parent="Actor"]
+script = ExtResource("5")
+Pattern = "spit"
+Damage = 7
+Windup = 1.15
+Cooldown = 5.5
+WarningCue = "d4_tukata"

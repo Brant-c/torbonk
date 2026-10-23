@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "fresh run has zero totals and finite rates",
+    "damage counts actual HP loss, excluding absorption, overkill and dead hits",
+    "healing counts restored HP and excludes incoming damage and overheal",
+    "rates use elapsed run seconds",
+    "pause freezes run clock and rates",
+    "death preserves totals and freezes rates",
+    "restart clears totals and rates"
+  ],
+  "failure": null
+}

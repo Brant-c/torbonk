@@ -37,6 +37,20 @@ public partial class AudioPresentation : Node
     private float _duck, _combatDuckDb, _musicDuckDb, _worldDuckDb;
     private double _combatRepeatSeconds;
     private int _voiceLimit;
+    private AudioStreamPlayer? _worldAmbience;
+    private string _ambiencePath="";
+    public void SetWorldAmbience(string path,float gain)
+    {
+        if(!ResourceLoader.Exists(path))return;
+        if(_worldAmbience==null) {_worldAmbience=new AudioStreamPlayer {Bus="B7World"};AddChild(_worldAmbience);}
+        if(_ambiencePath!=path)
+        {
+            _ambiencePath=path;var stream=(AudioStreamWav)GD.Load<AudioStreamWav>(path).Duplicate();
+            stream.LoopMode=AudioStreamWav.LoopModeEnum.Forward;stream.LoopBegin=0;stream.LoopEnd=(int)(stream.GetLength()*stream.MixRate);
+            _worldAmbience.Stream=stream;
+        }
+        _worldAmbience.VolumeDb=gain;if(!_worldAmbience.Playing)_worldAmbience.Play();
+    }
 
     public override void _Ready()
     {
@@ -150,6 +164,7 @@ public partial class AudioPresentation : Node
     }
     public void Clear()
     {
+        _worldAmbience?.Stop();
         foreach (var v in _voices) v.Player.Stop();
         foreach (var v in _combatVoices) if (GodotObject.IsInstanceValid(v)) v.Stop();
         _last.Clear(); _duckFor = 0; _duck = 0;

@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3]
 
 [ext_resource type="Script" path="res://Gameplay/GameWorld.cs" id="1"]
-[ext_resource type="PackedScene" path="res://Assets/Korriban/KorribanEnvironment.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://Assets/Korriban/D4/KorribanTrials.tscn" id="2"]
 [ext_resource type="Script" path="res://Gameplay/ArenaBounds.cs" id="3"]
 [ext_resource type="Script" path="res://Gameplay/PlayerController.cs" id="4"]
 [ext_resource type="Script" path="res://Gameplay/CharacterPresentation.cs" id="5"]
@@ -15,11 +15,13 @@ margin = 0.0005
 
 [node name="GameWorld" type="Node3D"]
 script = ExtResource("1")
+PlanetRunPath = "res://Gameplay/Planets/Korriban/run.json"
 
 [node name="KorribanEnvironment" parent="." instance=ExtResource("2")]
 
 [node name="ArenaBounds" type="Node3D" parent="."]
 script = ExtResource("3")
+Maximum = Vector2(58.0,31.4)
 
 [node name="Player" type="CharacterBody3D" parent="."]
 position = Vector3(36, -17.13, 12.6)

@@ -33,5 +33,6 @@ WeaponAudio = ""
 ImpactTailsOnTargetDeath = true
 NearbyTriggerCount = 1
 KnockbackDistance = 0.0
-ImpactTexture = "res://Assets/D3/glow_basic_alpha.png"
+ImpactTexture = "res://Assets/PresentationRepairs/2x2_electrical_blast_alpha.png"
 EffectTint = Color(0.62, 0.2, 0.95, 1)
+RequireGesture = true

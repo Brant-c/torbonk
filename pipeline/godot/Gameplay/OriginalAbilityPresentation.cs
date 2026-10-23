@@ -23,6 +23,8 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
     private float _radius;
     private bool _active, _impact, _ending;
     private double _age, _redraw;
+    private double _shockTail;
+    public int BoltCount => _bolts.Count;
     public int PlayingAudioVoices => _sounds.Count(s => s.Playing);
     public int LoopingAudioVoices => _sounds.Count(s => s.Playing && s.Stream is AudioStreamWav wav && wav.LoopMode != AudioStreamWav.LoopModeEnum.Disabled);
     public int AudioVoicesStarted { get; private set; }
@@ -78,7 +80,7 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
         Release();_target=target;_center=center;_radius=radius;
         if(!Actor.Animator.HasAnimation(Definition.StartClip))
         { GD.PushError("Missing original clip "+Definition.StartClip);return false; }
-        _active=true;_age=0;_redraw=0;_ending=false;_impact=false;SetProcess(true);
+        _active=true;_age=0;_redraw=0;_shockTail=0;_ending=false;_impact=false;SetProcess(true);
         if(Definition.Id=="storm")
         {
             StormLightning!.Begin();
@@ -96,13 +98,16 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
     public void Impact(Vector3 center)
     {
         _impact=true;
+        if(Definition.Id=="shock") { _shockTail=.24;_redraw=0; }
         PlayEvent(Definition.ImpactAudioEvent,false,Definition.Area==AbilityArea.GroundSphere?_center:Aim());
         if(Definition.Area==AbilityArea.SingleTarget) Flash(Aim(),"electric_orb",0.065f,0.24);
     }
     public void End(bool interrupted)
     {
         ClearAreaIndicator();
-        _ending=true;_age=0;ClearBolts();
+        _ending=true;_age=0;
+        if(interrupted && !_impact) _shockTail=0;
+        if(_shockTail<=0)ClearBolts();
         StormLightning?.Clear();
         StopLoops();
     }
@@ -118,8 +123,8 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
     {
         foreach(var sound in _sounds) if(sound.Stream is AudioStreamWav w && w.LoopMode!=AudioStreamWav.LoopModeEnum.Disabled) sound.Stop();
     }
-    public void Complete() { StopLoops(); ClearVisuals(); }
-    public void Release() { ClearVisuals(); foreach(var sound in _sounds) sound.Stop(); }
+    public void Complete() { StopLoops(); if(_shockTail<=0)ClearVisuals(); }
+    public void Release() { _shockTail=0;ClearVisuals(); foreach(var sound in _sounds) sound.Stop(); }
     public override void _Process(double delta)
     {
         if(!_active)return;
@@ -134,6 +139,17 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
             var (node,remaining)=_flashes[i];remaining-=delta;
             if(remaining<=0) {node.Free();_flashes.RemoveAt(i);}
             else {node.Transparency=Mathf.Clamp(1-(float)(remaining/0.3),0,1);_flashes[i]=(node,remaining);}
+        }
+        if(Definition.Id=="shock" && _shockTail>0)
+        {
+            _shockTail-=delta;
+            if(_shockTail<=0) { ClearBolts(); if(_ending && _flashes.Count==0)ClearVisuals(); }
+            else if(_redraw<=0)
+            {
+                _redraw=.04;ClearBolts();
+                DrawBolt(Socket("vfx_hand_left"),Aim(),_beam);
+                DrawBolt(Socket("vfx_elbow_left"),Socket("vfx_hand_left"),_beam);
+            }
         }
         if(_ending)
         {

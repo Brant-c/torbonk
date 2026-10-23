@@ -9,6 +9,8 @@ public partial class ArenaBounds : Node3D
 {
     [Export] public Vector2 Minimum { get; set; } = new(20.2f, 6.2f);
     [Export] public Vector2 Maximum { get; set; } = new(45.4f, 18.8f);
+    /// <summary>Preferred start (XZ). Korriban keeps its authored point; other maps fall back to the nearest supported ground.</summary>
+    [Export] public Vector2 SpawnSeed { get; set; } = new(36f, 12.6f);
     [Export] public float EdgeMargin { get; set; } = 0.06f;
     [Export] public float MaximumSlopeDegrees { get; set; } = 48;
     [Export] public float MaximumDrop { get; set; } = 0.065f;

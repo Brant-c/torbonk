@@ -8,6 +8,7 @@ public enum EnemyState { Idle, Chase, Attack, Dead }
 /// <summary>Combat rules on a movable body; optional presentation has no authority over movement/damage.</summary>
 public partial class EnemyAgent : Combatant
 {
+    [Export] public float PreferredRange {get;set;}
     [Export] public float DetectionRange { get; set; } = 2.5f;
     [Export] public float MoveSpeed { get; set; } = 0.22f;
     [Export] public float MeleeRange { get; set; } = 0.10f;
@@ -20,10 +21,29 @@ public partial class EnemyAgent : Combatant
     [Export] public float CollisionHeight { get; set; } = 0.185f;
     [Export] public int RewardTier { get; set; } // 0 ordinary, 1 elite, 2 major boss
     [Export] public float KnockbackResistance { get; set; }
+    [Export] public bool GuaranteedReward { get; set; }
+    [Export] public bool ScaleWithWaves { get; set; } = true;
+    public double StunRemaining {get;private set;}
+    public double OilRemaining {get;set;}
+    public float DealAttack(float amount,DamageType type=DamageType.Energy)
+    {
+        var build=(Target.GetParent()?.GetParent() as GameWorld)?.Build;
+        build?.Attacked(this,Target.Health.Shielded);
+        return Target.Health.ApplyDamage(amount*(OilRemaining>0?.75f:1)*(build?.IncomingMultiplier??1),type);
+    }
+    public bool Stun(float seconds)
+    {
+        if(!Alive || RewardTier>=2)return false;
+        Visual?.CarbonizePose();
+        StunRemaining=Math.Max(StunRemaining,seconds*(RewardTier==1?.35:1));
+        if(Visual!=null)Visual.ProcessMode=ProcessModeEnum.Disabled;if(Presentation!=null)Presentation.ProcessMode=ProcessModeEnum.Disabled;
+        PowertechCarbonite.Attach(this);
+        return true;
+    }
     public double SlowRemaining { get; private set; }
     private float _slowFactor=1;
     public void Slow(float factor,float seconds) { _slowFactor=Math.Min(_slowFactor,Math.Clamp(factor,0.1f,1));SlowRemaining=Math.Max(SlowRemaining,seconds); }
-    public float DisplaceFrom(Vector3 origin,float distance)
+    public float DisplaceFrom(Vector3 origin,float distance,float stagger=0.45f)
     {
         if(!Alive || Navigation==null)return 0;
         float length=Math.Max(0,distance)*(1-Math.Clamp(KnockbackResistance,0,1));
@@ -38,7 +58,9 @@ public partial class EnemyAgent : Combatant
             Body.GlobalPosition=feet;
         }
         Body.Velocity=Vector3.Zero;_steerIn=0;
-        _attackIn=Math.Max(_attackIn,0.45); // Resistant enemies still take damage and delay their next melee swing.
+        _attackIn=Math.Max(_attackIn,stagger); // Resistant enemies still take damage and delay their next melee swing.
+        float slowed=stagger>0.45f?stagger*(1-Math.Clamp(KnockbackResistance,0,1)):0;
+        if(slowed>0)Slow(0.4f,slowed);
         return start.DistanceTo(Body.GlobalPosition);
     }
     public EnemyPresentation? Visual { get; private set; }
@@ -53,6 +75,7 @@ public partial class EnemyAgent : Combatant
     private double _attackIn;
     private double _steerIn;
     private Vector3 _direction;
+    private bool _engaged;
     private Label3D? _nameplate;
 
     public override void _Ready()
@@ -66,7 +89,8 @@ public partial class EnemyAgent : Combatant
         Presentation = GetNodeOrNull<CharacterPresentation>("Presentation");
         Visual = GetNodeOrNull<EnemyPresentation>("Visual");
         _nameplate = GetNodeOrNull<Label3D>("Nameplate");
-        Health.Damaged += _ => { if (Health.IsAlive) { Presentation?.PlayReaction("Hit"); Visual?.Reaction(false); } UpdateNameplate(); };
+        if(_nameplate!=null && Crowd?.ReuseAnimations==true)_nameplate.Font=GD.Load<FontFile>("res://Assets/UI/EurostileBold.ttf");
+        Health.Damaged += _ => { _engaged=true; if (Health.IsAlive) { Presentation?.PlayReaction("Hit"); Visual?.Reaction(false); } UpdateNameplate(); };
         Health.Died += Die;
         UpdateNameplate();
     }
@@ -74,15 +98,25 @@ public partial class EnemyAgent : Combatant
     public override void _PhysicsProcess(double delta)
     {
         if (!Alive || !Running) return;
+        OilRemaining=Math.Max(0,OilRemaining-delta);
+        if(StunRemaining>0){Visual?.CarbonizePose();
+        StunRemaining=Math.Max(0,StunRemaining-delta);Body.Velocity=Vector3.Zero;
+            if(StunRemaining==0){if(Visual!=null)Visual.ProcessMode=ProcessModeEnum.Inherit;if(Presentation!=null)Presentation.ProcessMode=ProcessModeEnum.Inherit;_attackIn=Math.Max(_attackIn,.35);}
+            return;
+        }
         SlowRemaining=Math.Max(0,SlowRemaining-delta);if(SlowRemaining<=0)_slowFactor=1;
         if (!GodotObject.IsInstanceValid(Target) || !Target.Alive) { Stop(); return; }
+        if (GetNodeOrNull<TombAttack>("TombAttack") is { } trial && trial.Tick(delta))
+        { Body.Velocity=Vector3.Zero;Visual?.Present(Vector3.Zero,Target.GlobalPosition,delta);return; }
         if (GetNodeOrNull<BossEncounter>("BossEncounter") is { } boss && boss.Tick(delta))
         { Body.Velocity = Vector3.Zero; Visual?.Present(Vector3.Zero, Target.GlobalPosition, delta); return; }
         float distance = GlobalPosition.DistanceTo(Target.GlobalPosition);
+        // Detection starts pursuit; distance alone never ends an existing fight.
+        _engaged |= distance <= DetectionRange;
         _attackIn = Math.Max(0, _attackIn - delta);
         bool inRange = distance <= MeleeRange;
         bool canHit = inRange && Navigation.HasLineOfSight(AimPosition, Target.AimPosition);
-        var next = distance > DetectionRange ? EnemyState.Idle : canHit ? EnemyState.Attack : EnemyState.Chase;
+        var next = !_engaged ? EnemyState.Idle : canHit ? EnemyState.Attack : EnemyState.Chase;
         if (next != State)
         {
             // Every approach has a readable windup, including the very first swing.
@@ -94,14 +128,14 @@ public partial class EnemyAgent : Combatant
         {
             _attackIn = Math.Max(0.1f, AttackInterval);
             // Only physics time and current range/LOS determine damage. Hit animation is cosmetic.
-            if (Alive && Target.Alive && Target.Health.ApplyDamage(AttackDamage) > 0) Attacks++;
+            if (Alive && Target.Alive && DealAttack(AttackDamage) > 0) Attacks++;
             Visual?.Attack();
             // The player's synchronous death callback may have stopped this actor.
             if (!Running) return;
         }
         var before = Body.GlobalPosition;
         var horizontal = Vector3.Zero;
-        if (State == EnemyState.Chase)
+        if (State == EnemyState.Chase && (PreferredRange<=0 || distance>PreferredRange || !Navigation.HasLineOfSight(AimPosition,Target.AimPosition)))
         {
             _steerIn -= delta;
             if (_steerIn <= 0)
@@ -128,11 +162,13 @@ public partial class EnemyAgent : Combatant
 
     private void UpdateNameplate()
     {
-        if (_nameplate != null) _nameplate.Text = Health.IsAlive ? $"{DisplayName} · {Health.Current:0}/{Health.Maximum:0}" : "DEFEATED";
+        string classification=Crowd?.ReuseAnimations==true?(RewardTier>=2?"CHAMPION · ":RewardTier==1?"ELITE · ":""):"";
+        if (_nameplate != null) _nameplate.Text = Health.IsAlive ? $"{classification}{DisplayName} · {Health.Current:0}/{Health.Maximum:0}" : "DEFEATED";
     }
 
     private void Die()
     {
+        if(Visual!=null)Visual.ProcessMode=ProcessModeEnum.Inherit;if(Presentation!=null)Presentation.ProcessMode=ProcessModeEnum.Inherit;StunRemaining=0;
         State = EnemyState.Dead; CombatEnabled = false; Stop();
         // Retain Death pose while freeing the crowd collision immediately.
         Body.CollisionLayer = 0; Body.CollisionMask = 0;
@@ -145,6 +181,7 @@ public partial class EnemyAgent : Combatant
         Running = false; Body.Velocity = Vector3.Zero;
         if (State != EnemyState.Dead) { State = EnemyState.Idle; Presentation?.Present(Vector3.Zero, 0.1); }
         GetNodeOrNull<BossEncounter>("BossEncounter")?.End();
+        GetNodeOrNull<TombAttack>("TombAttack")?.End();
         if (Visual != null && Target != null) Visual.Present(Vector3.Zero, Target.GlobalPosition, 0.1);
         SetPhysicsProcess(false);
     }

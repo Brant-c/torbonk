@@ -1,0 +1,421 @@
+{
+  "patches": [
+    {
+      "id": "4611686022895042660",
+      "room": "baseroom",
+      "width": 64,
+      "depth": 64,
+      "position": [
+        26.6000003815,
+        -19.6301994324,
+        12.6000003815
+      ],
+      "version": 9,
+      "vertices": 4096,
+      "triangles": 7925,
+      "sourceHeightEnd": 9230,
+      "embeddedSha256": "d1a58a37fbd98396cc6a3ddc9fd64de24aba16b5e19604ef75328de382db56cd",
+      "decodedSha256": "88cff883afe86573b5a81a629fed6b6bb9d499ee812d59acbef5d6410445eccc",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        127,
+        127
+      ],
+      "layers": [
+        "1",
+        "3",
+        "18",
+        "19",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": true,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 147
+        },
+        {
+          "id": 1,
+          "painted": 56
+        },
+        {
+          "id": 2,
+          "painted": 7
+        },
+        {
+          "id": 3,
+          "painted": 31
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/korriban-d4/4611686022895042660_albedo.png",
+        "normal": "res://Assets/Maps/korriban-d4/4611686022895042660_normal.png",
+        "roughness": "res://Assets/Maps/korriban-d4/4611686022895042660_roughness.png"
+      },
+      "embeddedPosition": [
+        26.600000381469727,
+        -19.630199432373047,
+        12.600000381469727
+      ]
+    },
+    {
+      "id": "4611686022895042664",
+      "room": "baseroom",
+      "width": 64,
+      "depth": 64,
+      "position": [
+        39.2000007629,
+        -17.7078990936,
+        12.6000003815
+      ],
+      "version": 1,
+      "vertices": 4096,
+      "triangles": 7938,
+      "sourceHeightEnd": 8706,
+      "embeddedSha256": "972a0c9a5f33794aeb81db28cc074491923858565cb03ce8553a23017385e467",
+      "decodedSha256": "f3d0e6395c9ed6a54e970076a0f6fbc148c00b6a5f4ed8a5bac04dd5ba7be1c6",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        127,
+        127
+      ],
+      "layers": [
+        "19",
+        "2",
+        "3",
+        "18",
+        "1",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 455
+        },
+        {
+          "id": 1,
+          "painted": 180
+        },
+        {
+          "id": 2,
+          "painted": 90
+        },
+        {
+          "id": 3,
+          "painted": 123
+        },
+        {
+          "id": 32,
+          "painted": 72
+        },
+        {
+          "id": 33,
+          "painted": 23
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/korriban-d4/4611686022895042664_albedo.png",
+        "normal": "res://Assets/Maps/korriban-d4/4611686022895042664_normal.png",
+        "roughness": "res://Assets/Maps/korriban-d4/4611686022895042664_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686022895042668",
+      "room": "baseroom",
+      "width": 64,
+      "depth": 64,
+      "position": [
+        51.7999992371,
+        -17.7290000916,
+        12.6000003815
+      ],
+      "version": 9,
+      "vertices": 4096,
+      "triangles": 7938,
+      "sourceHeightEnd": 8718,
+      "embeddedSha256": "09ee3808b89f9966ed0effbcfba2315ccf5af5e34becf1fe553d16495d2776a0",
+      "decodedSha256": "3e62787e436fb236ed41462ee7d23778e3cb414cdd7553543fa784c4796592ea",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        127,
+        127
+      ],
+      "layers": [
+        "1",
+        "3",
+        "18",
+        "19",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 503
+        },
+        {
+          "id": 1,
+          "painted": 198
+        },
+        {
+          "id": 2,
+          "painted": 207
+        },
+        {
+          "id": 3,
+          "painted": 118
+        },
+        {
+          "id": 32,
+          "painted": 168
+        },
+        {
+          "id": 33,
+          "painted": 126
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/korriban-d4/4611686022895042668_albedo.png",
+        "normal": "res://Assets/Maps/korriban-d4/4611686022895042668_normal.png",
+        "roughness": "res://Assets/Maps/korriban-d4/4611686022895042668_roughness.png"
+      },
+      "embeddedPosition": [
+        51.79999923706055,
+        -17.729000091552734,
+        12.600000381469727
+      ]
+    },
+    {
+      "id": "4611686022895042675",
+      "room": "baseroom",
+      "width": 64,
+      "depth": 64,
+      "position": [
+        39.2000007629,
+        -17.676399231,
+        25.2000007629
+      ],
+      "version": 1,
+      "vertices": 4096,
+      "triangles": 7938,
+      "sourceHeightEnd": 8706,
+      "embeddedSha256": "ef72c1b59f8be426b2532bbc3200e718c1d521001748f3d87edfebf9c52a85b8",
+      "decodedSha256": "b3c844e50d05d030d65e29733a6b3c321eb45ae8b3e711c9fc766d9c5498e395",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        127,
+        127
+      ],
+      "layers": [
+        "19",
+        "3",
+        "18",
+        "1",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 289
+        },
+        {
+          "id": 1,
+          "painted": 79
+        },
+        {
+          "id": 2,
+          "painted": 66
+        },
+        {
+          "id": 3,
+          "painted": 71
+        },
+        {
+          "id": 32,
+          "painted": 67
+        },
+        {
+          "id": 33,
+          "painted": 38
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/korriban-d4/4611686022895042675_albedo.png",
+        "normal": "res://Assets/Maps/korriban-d4/4611686022895042675_normal.png",
+        "roughness": "res://Assets/Maps/korriban-d4/4611686022895042675_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686022895042676",
+      "room": "baseroom",
+      "width": 64,
+      "depth": 64,
+      "position": [
+        51.7999992371,
+        -17.2064990997,
+        25.2000007629
+      ],
+      "version": 9,
+      "vertices": 4096,
+      "triangles": 7938,
+      "sourceHeightEnd": 8718,
+      "embeddedSha256": "14fe086618f75d0e682b0ba6ee04aa24044e0ea9cfd9f36e36fb5ce098e8e9a8",
+      "decodedSha256": "20651fde68a1e3ab6c54b2ec8f5fde67ea830d0e476bbb0c97df60d3fdcad7e5",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        127,
+        127
+      ],
+      "layers": [
+        "1",
+        "3",
+        "18",
+        "19",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 266
+        },
+        {
+          "id": 1,
+          "painted": 158
+        },
+        {
+          "id": 2,
+          "painted": 76
+        },
+        {
+          "id": 3,
+          "painted": 79
+        },
+        {
+          "id": 32,
+          "painted": 114
+        },
+        {
+          "id": 33,
+          "painted": 30
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/korriban-d4/4611686022895042676_albedo.png",
+        "normal": "res://Assets/Maps/korriban-d4/4611686022895042676_normal.png",
+        "roughness": "res://Assets/Maps/korriban-d4/4611686022895042676_roughness.png"
+      },
+      "embeddedPosition": [
+        51.79999923706055,
+        -17.206499099731445,
+        25.200000762939453
+      ]
+    },
+    {
+      "id": "4611686051466075186",
+      "room": "baseroom",
+      "width": 64,
+      "depth": 64,
+      "position": [
+        26.6000003815,
+        -17.7581005096,
+        25.2000007629
+      ],
+      "version": 9,
+      "vertices": 4096,
+      "triangles": 5773,
+      "sourceHeightEnd": 9230,
+      "embeddedSha256": "414c632815bef3b99494878ab6ecda772aa200376864621ac432347445d2e083",
+      "decodedSha256": "739709f8b7bf80e71c085d5546fe6a2a4dc51d0186c77fbfed570a88006d45d3",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        127,
+        127
+      ],
+      "layers": [
+        "1",
+        "3",
+        "18",
+        "19"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": true,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/korriban-d4/4611686051466075186_albedo.png",
+        "normal": "res://Assets/Maps/korriban-d4/4611686051466075186_normal.png",
+        "roughness": "res://Assets/Maps/korriban-d4/4611686051466075186_roughness.png"
+      },
+      "embeddedPosition": [
+        26.600000381469727,
+        -17.758100509643555,
+        25.200000762939453
+      ]
+    }
+  ],
+  "adjacency": [
+    {
+      "note": "authored patches staged unmodified; seams not repaired",
+      "patchCount": 6
+    }
+  ],
+  "lighting": "authored warm directional/ambient; no native parity",
+  "limitations": [
+    "World-space UV phase/scale reconstruction is not native-client verified.",
+    "SWTOR material lighting translated to portable PBR; original vertex color used as multiplicative tint.",
+    "DYD density data retained; procedural native billboard/mesh scattering is not reproduced.",
+    "Static collision is derived from converted visible triangles, not original physics shapes."
+  ],
+  "passed": true
+}

@@ -1,0 +1,226 @@
+{
+  "profile": "April2012",
+  "bodyType": "bmn",
+  "skeleton": "/resources/art/dynamic/spec/bmnnew_skeleton.gr2",
+  "outfit": "April bh heroic tier 1 appearance family; full spawn inventory unverified",
+  "coordinatePolicy": "scale 1; GR2 +90 X applied; glTF Y up; JBA original root rotation retained",
+  "colorScheme": {
+    "id": "1001095",
+    "xml": "<Asset>\n    <ID>1001095</ID>\n    <ArtName>colorscheme_bh_a05_c01_s02</ArtName>\n    <DesignerName>colorscheme bh a05 c01 s02</DesignerName>\n    <BaseFile />\n    <Attachments />\n    <Materials />\n    <Bodytypes>\n      <Bodytype>bfa</Bodytype>\n      <Bodytype>bfb</Bodytype>\n      <Bodytype>bfn</Bodytype>\n      <Bodytype>bfs</Bodytype>\n      <Bodytype>bma</Bodytype>\n      <Bodytype>bmf</Bodytype>\n      <Bodytype>bmn</Bodytype>\n      <Bodytype>bms</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>-1</SkinHueIndex>\n    <Filters />\n    <Identities />\n    <Tags />\n    <CustomData>\n      <ColorScheme>\n        <Name>colorscheme_bh_a05_c01_s02</Name>\n        <Guid>1001095</Guid>\n        <slot name=\"boot\" primary=\"1000632\" secondary=\"1000649\" />\n        <slot name=\"bracer\" primary=\"1000648\" secondary=\"1000644\" />\n        <slot name=\"chest\" primary=\"1000648\" secondary=\"1000644\" />\n        <slot name=\"face\" primary=\"1000648\" secondary=\"1000632\" />\n        <slot name=\"hand\" primary=\"1000648\" secondary=\"1000630\" />\n        <slot name=\"leg\" primary=\"1000648\" secondary=\"1000644\" />\n        <slot name=\"waist\" primary=\"1000648\" secondary=\"1000644\" />\n      </ColorScheme>\n    </CustomData>\n  </Asset>\n  ",
+    "hues": {
+      "1000648": {
+        "id": "1000648",
+        "xml": "<Palette>\r\n  <Brightness>0.0338</Brightness>\r\n  <Contrast>0.6666</Contrast>\r\n  <Hue>0.4831</Hue>\r\n  <Metallicspecular>0.611765,1,0.784314,1</Metallicspecular>\r\n  <Name>garmenthue_bh_h14_p</Name>\r\n  <Precedence>013</Precedence>\r\n  <Saturation>0.4976</Saturation>\r\n  <Specular>1,0.909804,0.666667,1</Specular>\r\n</Palette>"
+      },
+      "1000644": {
+        "id": "1000644",
+        "xml": "<Palette>\r\n  <Brightness>0.6522</Brightness>\r\n  <Contrast>1.116</Contrast>\r\n  <Hue>0.0676</Hue>\r\n  <Metallicspecular>0.894118,1,0.611765,1</Metallicspecular>\r\n  <Name>garmenthue_bh_h10_p</Name>\r\n  <Precedence>009</Precedence>\r\n  <Saturation>0.6377</Saturation>\r\n  <Specular>0.666667,0.690196,1,1</Specular>\r\n</Palette>"
+      },
+      "1000630": {
+        "id": "1000630",
+        "xml": "<Palette>\r\n  <Brightness>0.0627999</Brightness>\r\n  <Contrast>0.6666</Contrast>\r\n  <Hue>0.0531</Hue>\r\n  <Metallicspecular>0.611765,0.921569,1,1</Metallicspecular>\r\n  <Name>garmenthue_bh_h02_p</Name>\r\n  <Precedence>001</Precedence>\r\n  <Representativecolor>0.424366526341409,0.39153202084407,0.306664335384666</Representativecolor>\r\n  <Saturation>0.7246</Saturation>\r\n  <Specular>0.996078,0.937255,1,1</Specular>\r\n</Palette>"
+      },
+      "1000632": {
+        "id": "1000632",
+        "xml": "<Palette>\r\n  <Brightness>-0.00480002</Brightness>\r\n  <Contrast>0.4203</Contrast>\r\n  <Hue>0.1594</Hue>\r\n  <Metallicspecular>1,0.878431,0.611765,1</Metallicspecular>\r\n  <Name>garmenthue_bh_h04_p</Name>\r\n  <Precedence>003</Precedence>\r\n  <Representativecolor>0.271676705854229,0.294626951153257,0.230669729082971</Representativecolor>\r\n  <Saturation>0.7826</Saturation>\r\n  <Specular>0.929412,0.835294,1,1</Specular>\r\n</Palette>"
+      },
+      "1000649": {
+        "id": "1000649",
+        "xml": "<Palette>\r\n  <Brightness>-0.0338</Brightness>\r\n  <Contrast>0.6666</Contrast>\r\n  <Hue>0.4831</Hue>\r\n  <Metallicspecular>0.611765,1,0.784314,1</Metallicspecular>\r\n  <Name>garmenthue_bh_h15_p</Name>\r\n  <Precedence>014</Precedence>\r\n  <Saturation>0.5628</Saturation>\r\n  <Specular>1,0.933333,0.756863,1</Specular>\r\n</Palette>"
+      }
+    }
+  },
+  "parts": [
+    {
+      "slot": "helmet",
+      "modelId": "1000496",
+      "materialId": "1002091",
+      "artName": "face_bhhelmet01_med_bh_a01",
+      "skinMaterialIndex": -1,
+      "material": {
+        "path": "/resources/art/shaders/materials/face_bhhelmet01_med_bh_a01c01_u.mat",
+        "derived": "Garment",
+        "textures": {
+          "DiffuseMap": "/resources/art/dynamic/player_character/outfit/bhhelmet/texture/___psd/face_bhhelmet01_med_bh_a01c01_u_d.dds",
+          "RotationMap1": "/resources/art/dynamic/player_character/outfit/bhhelmet/texture/___psd/face_bhhelmet01_med_bh_a01c01_u_n.dds",
+          "GlossMap": "/resources/art/dynamic/player_character/outfit/bhhelmet/texture/___psd/face_bhhelmet01_med_bh_a01c01_u_s.dds",
+          "PaletteMap": "/resources/art/dynamic/player_character/outfit/bhhelmet/texture/___psd/face_bhhelmet01_med_bh_a01c01_u_h.dds",
+          "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/bhhelmet/texture/___psd/face_bhhelmet01_med_bh_a01c01_u_m.dds"
+        },
+        "values": {
+          "palette1": "0,0.5,0,1",
+          "palette2": "0,0.5,0,1",
+          "palette1Specular": "1,0.8,0.968628",
+          "palette2Specular": "1,0.909804,0.666667",
+          "palette1MetallicSpecular": "0.87451,1,0.611765",
+          "palette2MetallicSpecular": "0.611765,0.921569,1",
+          "RimWidth": "0",
+          "RimStrength": "0",
+          "UsesReflection": "False",
+          "UsesEmissive": "False",
+          "UvScaling": "1,1",
+          "ReflectionIntensity": "1",
+          "ReflectionBlurIntensity": "1",
+          "ReflectionSpecInfluence": "1",
+          "ReflectionContrast": "0"
+        }
+      },
+      "paletteIds": [
+        "1000648",
+        "1000632"
+      ],
+      "models": [
+        {
+          "path": "/resources/art/dynamic/face/model/face_bhhelmet01_bmn_archetype.gr2",
+          "id": "1000496"
+        }
+      ],
+      "overrides": [],
+      "sourceAppearance": {
+        "id": "0xE000AEF4E38F22BD",
+        "decimalId": "16141093431308919485",
+        "kind": "GomObject",
+        "name": "ipp.class.bh.heroic.rdps1.t1x1.head",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/485.bkt",
+          "uncompressedOffset": 200172,
+          "blockLength": 210,
+          "resourceSha256": "36cff8c382d5d9f1fc525a43c9ec699111e4b7cfed860b3b224e55144830fb0c"
+        }
+      },
+      "iconSource": "/resources/gfx/icons/ipp.class.bh.heroic.rdps1.t1x1.head.dds"
+    }
+  ],
+  "customization": {
+    "skincolor": {
+      "id": "1437794",
+      "path": "/resources/art/dynamic/skincolor/skincolor_human_caucasian_h01_p.xml",
+      "resolution": "compiled April GOM palette; registry XML absent",
+      "gomIdentity": {
+        "id": "0xE000DAD3E774DC2B",
+        "decimalId": "16141141668152007723",
+        "kind": "GomObject",
+        "name": "dynamic.skincolor.skincolor_human_caucasian_h01_p",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/223.bkt",
+          "uncompressedOffset": 248580,
+          "blockLength": 170,
+          "resourceSha256": "9e3beb2a8fbd78ecde5ed3dcf51cdd5f4e897a7070310837d9ff797dd17f5cac"
+        }
+      },
+      "values": {
+        "appPaletteSaturation": 0.5,
+        "appPaletteContrast": 1,
+        "appPaletteSpecular": [
+          0.827451,
+          0.890196,
+          1,
+          1
+        ],
+        "appPaletteMetallicSpecular": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "eyecolor": {
+      "id": "1001086",
+      "path": "/resources/art/dynamic/eyecolor/eyecolor_human_non_h01_s.xml",
+      "resolution": "compiled April GOM palette; registry XML absent",
+      "gomIdentity": {
+        "id": "0xE0000CFAF1059DEE",
+        "decimalId": "16140915336420892142",
+        "kind": "GomObject",
+        "name": "dynamic.eyecolor.eyecolor_human_non_h01_s",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/142.bkt",
+          "uncompressedOffset": 19372,
+          "blockLength": 166,
+          "resourceSha256": "1dd04ba3043ef3a83340ceacb4711f043036f263affede7de414a4e15fa6333f"
+        }
+      },
+      "values": {
+        "appPaletteSaturation": 0.7056,
+        "appPaletteContrast": 1.1118,
+        "appPaletteBrightness": -0.005000055,
+        "appPaletteHue": 0.426399976,
+        "appPaletteSpecular": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "appPaletteMetallicSpecular": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "haircolor": {
+      "id": "1000998",
+      "path": "/resources/art/dynamic/haircolor/haircolor_human_non_h01_p.xml",
+      "resolution": "compiled April GOM palette; registry XML absent",
+      "gomIdentity": {
+        "id": "0xE0004FED46118EBB",
+        "decimalId": "16140988944997256891",
+        "kind": "GomObject",
+        "name": "dynamic.haircolor.haircolor_human_non_h01_p",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/391.bkt",
+          "uncompressedOffset": 108164,
+          "blockLength": 184,
+          "resourceSha256": "cf610f8888530f0d78c46a7803676e0a77e591519a55b2841f9bc1b123ad28f9"
+        }
+      },
+      "values": {
+        "appPaletteSaturation": 0.401,
+        "appPaletteContrast": 0.7311,
+        "appPaletteBrightness": -0.0456,
+        "appPaletteHue": 0.0203,
+        "appPaletteSpecular": [
+          0.929412,
+          0.894118,
+          0.698039,
+          1
+        ],
+        "appPaletteMetallicSpecular": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "complexion": {
+      "id": "1001008",
+      "path": "/resources/art/dynamic/player_character/face_customization/complexion/comp_human_non_c01_m.dds"
+    }
+  },
+  "animations": [
+    {
+      "name": "Idle",
+      "sourceName": "cb_unarmed_idle_right_1",
+      "path": "/resources/anim/humanoid/bmnnew/cb_unarmed_idle_right_1.jba",
+      "loop": true
+    }
+  ],
+  "excluded": {
+    "head:1000247": "bma, incompatible; use bmn 1000257",
+    "fullNakedBody": "body replacement uses equipped modular meshes; no hidden duplicate naked torso",
+    "weapon": "unarmed inspection clips; no weapon selected",
+    "faceHairAndFacePaint": "clean shaven, no optional tattoo/scar/paint slot",
+    "clothSimulation": "original weighted cloth only; no runtime CLO simulation"
+  },
+  "clothBoneSources": [
+    "/resources/art/dynamic/chest/model/chest_robe04_bmn_archetype.clo",
+    "/resources/art/dynamic/leg/model/leg_skirt_bmn_archetype.clo"
+  ]
+}

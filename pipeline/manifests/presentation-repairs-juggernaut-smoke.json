@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": [
+    "smash clip exists",
+    "smash starts with gesture",
+    "smash still deals damage",
+    "smash abort releases gesture",
+    "smash abort clears effects and channel sound",
+    "viciousslash clip exists",
+    "viciousslash starts with gesture",
+    "viciousslash still deals damage",
+    "viciousslash abort releases gesture",
+    "viciousslash abort clears effects and channel sound",
+    "crushingblow clip exists",
+    "crushingblow starts with gesture",
+    "crushingblow still deals damage",
+    "crushingblow abort releases gesture",
+    "crushingblow abort clears effects and channel sound",
+    "intimidatingroar clip exists",
+    "intimidatingroar starts with gesture",
+    "intimidatingroar still deals damage",
+    "intimidatingroar abort releases gesture",
+    "intimidatingroar abort clears effects and channel sound",
+    "occupied gesture defers activation",
+    "deferred activation starts when free"
+  ],
+  "failure": null
+}

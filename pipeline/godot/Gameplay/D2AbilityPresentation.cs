@@ -57,7 +57,7 @@ public partial class D2AbilityPresentation : Node3D,IAbilityPresentation
             var texture=GD.Load<Texture2D>("res://Assets/D2/2x2_elec_blast_ring_alpha.png");
             var wave=new MeshInstance3D {Name="OriginalOverloadWave",Mesh=new PlaneMesh {Size=Vector2.One*_radius*2}};
             var mat=new StandardMaterial3D {ShadingMode=BaseMaterial3D.ShadingModeEnum.Unshaded,
-                Transparency=BaseMaterial3D.TransparencyEnum.Alpha,BlendMode=BaseMaterial3D.BlendModeEnum.Add,
+                Transparency=BaseMaterial3D.TransparencyEnum.Alpha,DisableFog=true,BlendMode=BaseMaterial3D.BlendModeEnum.Add,
                 CullMode=BaseMaterial3D.CullModeEnum.Disabled,AlbedoTexture=texture,AlbedoColor=new Color(.65f,.4f,1),Uv1Scale=new Vector3(.5f,.5f,1)};
             wave.MaterialOverride=mat;AddChild(wave);wave.GlobalPosition=Actor.GlobalPosition+Vector3.Up*.015f;
             _effects.Add((wave,.55,.55));
@@ -88,7 +88,7 @@ public partial class D2AbilityPresentation : Node3D,IAbilityPresentation
             Hframes=atlas?2:1,Vframes=atlas?2:1,PixelSize=size/(texture.GetWidth()/(atlas?2:1)),
             MaterialOverride=new StandardMaterial3D {ShadingMode=BaseMaterial3D.ShadingModeEnum.Unshaded,
                 BillboardMode=BaseMaterial3D.BillboardModeEnum.Enabled,Transparency=BaseMaterial3D.TransparencyEnum.Alpha,
-                BlendMode=BaseMaterial3D.BlendModeEnum.Add,AlbedoTexture=texture,AlbedoColor=new Color(.65f,.4f,1)}};
+                DisableFog=true,BlendMode=BaseMaterial3D.BlendModeEnum.Add,AlbedoTexture=texture,AlbedoColor=new Color(.65f,.4f,1)}};
         AddChild(sprite);sprite.GlobalPosition=position;_effects.Add((sprite,life,life));
     }
     private void Play(string name,Vector3 point)

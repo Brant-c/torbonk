@@ -1,0 +1,200 @@
+00:03.375  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Dots Stroke'
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+00:03.375  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Material'
+00:03.390  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\brant\.thumbnails\large\blender_24736_4d6f9f4ea0eb9faea8337ecfe73a422e.png.png"
+wardrobe-materials:28: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+wardrobe-materials:74: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+00:04.297  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\brant\.thumbnails\large\blender_24736_4c810797db4163a2a327cce1e5dedc6a.png.png"
+wardrobe-materials:137: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+00:06.484  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\brant\.thumbnails\large\blender_24736_45ede97acf97be2092b73bd74be9fac1.png.png"
+register_class(...):
+Warning: 'import_mesh.gr2_presets' does not contain '_MT_' with prefix and suffix
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\bmnnew_skeleton.gr2
+OBJS: ['bmnnew_skeleton']
+TIME: 0.004 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\head\model\head_human_bmn_caucasian_a01.gr2
+OBJS: ['head_human_bmn_caucasian_a01']
+TIME: 0.073 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hair\model\hair_human_bmn_non_a01.gr2
+OBJS: ['hair_human_bmn_non_a01']
+TIME: 0.050 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_tight_bmn_archetype.gr2
+OBJS: ['chest_tight_bmn_archetype']
+TIME: 0.026 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_tight_bmn_light_ss_a05_straps.gr2
+OBJS: ['chest_tight_bmn_light_ss_a05_straps']
+TIME: 0.008 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_glove_bmn_archetype.gr2
+OBJS: ['hand_glove_bmn_archetype']
+TIME: 0.034 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\leg\model\leg_skirt_bmn_archetype.gr2
+OBJS: ['leg_skirt_bmn_archetype']
+TIME: 0.030 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_tall_bmn_archetype.gr2
+OBJS: ['boot_tall_bmn_archetype']
+TIME: 0.012 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_tall_bmn_light_ss_a05_shin.gr2
+OBJS: ['boot_tall_bmn_light_ss_a05_shin']
+TIME: 0.007 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bmn_archetype.gr2
+OBJS: ['waist_belt_bmn_archetype']
+TIME: 0.006 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bmn_light_ss_a05_front.gr2
+OBJS: ['waist_belt_bmn_light_ss_a05_front']
+TIME: 0.007 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bmn_light_ss_a05_sling.gr2
+OBJS: ['waist_belt_bmn_light_ss_a05_sling']
+TIME: 0.018 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_unarmed_idle_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0062 sec |   0.0062 sec) Done, building ...
+Progress: 100.00%
+  (  0.0603 sec |   0.0602 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_unarmed_idle_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\mv_cb_unarmed_run_forward.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0051 sec |   0.0050 sec) Done, building ...
+Progress: 100.00%
+  (  0.0433 sec |   0.0432 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\mv_cb_unarmed_run_forward.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\fp_2h_elect_drain_start.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0045 sec |   0.0045 sec) Done, building ...
+Progress: 100.00%
+  (  0.0384 sec |   0.0384 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\fp_2h_elect_drain_start.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\fp_2h_elect_drain_loop.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0047 sec |   0.0047 sec) Done, building ...
+Progress: 100.00%
+  (  0.0394 sec |   0.0394 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\fp_2h_elect_drain_loop.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\dg_unarmed_crit_damage_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0064 sec |   0.0064 sec) Done, building ...
+Progress: 100.00%
+  (  0.0603 sec |   0.0603 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\dg_unarmed_crit_damage_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0088 sec |   0.0088 sec) Done, building ...
+Progress: 100.00%
+  (  0.0947 sec |   0.0947 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\fp_2h_elect_drain_end.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0030 sec |   0.0030 sec) Done, building ...
+Progress: 100.00%
+  (  0.0200 sec |   0.0199 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\fp_2h_elect_drain_end.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Info: Saved as "wardrobe-inq-sorcerer-probe.blend"
+CHARACTER PROBE COMPLETE
+Info: Saved as "wardrobe-inq-sorcerer-reference.blend"
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Saved as "wardrobe-inq-sorcerer-portable.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+23:47:04 | INFO: Starting glTF 2.0 export
+23:47:04 | INFO: Extracting primitive: boot_tall_bmn_archetype
+23:47:04 | INFO: Primitives created: 1
+23:47:04 | INFO: Extracting primitive: boot_tall_bmn_light_ss_a05_shin
+23:47:04 | INFO: Primitives created: 1
+23:47:04 | INFO: Extracting primitive: chest_tight_bmn_archetype
+23:47:04 | INFO: Primitives created: 1
+23:47:04 | INFO: Extracting primitive: chest_tight_bmn_light_ss_a05_straps
+23:47:04 | INFO: Primitives created: 1
+23:47:04 | INFO: Extracting primitive: hair_human_bmn_non_a01
+23:47:04 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+23:47:04 | INFO: Primitives created: 1
+23:47:04 | INFO: Extracting primitive: hand_glove_bmn_archetype
+23:47:04 | INFO: Primitives created: 1
+23:47:04 | INFO: Extracting primitive: head_human_bmn_caucasian_a01
+23:47:04 | INFO: Primitives created: 2
+23:47:04 | INFO: Extracting primitive: leg_skirt_bmn_archetype
+23:47:04 | INFO: Primitives created: 1
+23:47:04 | INFO: Extracting primitive: waist_belt_bmn_archetype
+23:47:04 | INFO: Primitives created: 1
+23:47:04 | INFO: Extracting primitive: waist_belt_bmn_light_ss_a05_front
+23:47:04 | INFO: Primitives created: 1
+23:47:04 | INFO: Extracting primitive: waist_belt_bmn_light_ss_a05_sling
+23:47:04 | INFO: Primitives created: 1
+23:47:09 | INFO: Finished glTF 2.0 export in 4.8774425983428955 s
+00:12.062  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\brant\.thumbnails\large\blender_24736_45ede97acf97be2092b73bd74be9fac1.png.png"
+
+Info: Saved as "wardrobe-inq-sorcerer-portable.blend"
+CHARACTER CONVERSION COMPLETE eb4050437702cde937ede6890c20768d4001802dc5fd9ac444aab2568182b8bb
+
+Blender quit

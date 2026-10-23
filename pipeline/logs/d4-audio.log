@@ -1,0 +1,15 @@
+wwiser v20260808 (python 3.12.14)
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\location_korriban_data.bnk
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\init.bnk
+parser: done
+names: loading names
+names: couldn't find D:\SWTORClassic\torbonk\pipeline\tools\wwnames.db3 name file
+names: done
+generator: start
+generator: processing nodes
+generator: elapsed 0.197762s
+generator: WARNING! missing 82 memory audio (load more banks?)
+generator: done (created 2)
+(done)
+{"events": {"Play_amb_korriban_tomb_naga_main": "4180000628", "play_amb_korriban_valley_of_the_sith_ext": "3049950536"}, "missing": [], "media": 4}
+D4_AUDIO_SELECTED {'valley': {'event': 'play_amb_korriban_valley_of_the_sith_ext', 'chosenMediaId': 5536795, 'seconds': 10.904739229024944, 'adaptation': 'One original long bed from this event; native random/layer mix is not reproduced'}, 'tomb': {'event': 'Play_amb_korriban_tomb_naga_main', 'chosenMediaId': 1898149, 'seconds': 10.134965986394558, 'adaptation': 'One original long bed from this event; native random/layer mix is not reproduced'}} vocals 3

@@ -1,0 +1,21 @@
+{
+  "movie": "/resources/gfx/gfx_production/bwaui_menubar.gfx",
+  "subimages": [
+    [
+      1,
+      14,
+      654,
+      378,
+      731,
+      465
+    ]
+  ],
+  "selection": "Visual role selection from recovered menubar GFX; see run menu control",
+  "roles": {
+    "toolbarFrame": "bwaui_standard_window_9",
+    "return": "bwaui_buttons_66",
+    "restart": "bwaui_buttons_69",
+    "collections": "bwaui_buttons_135"
+  },
+  "evidence": "Existing ui-conversion.json records exact atlas crops and hashes. GFX smallButtonReturn (68) -> shape 67 -> subimage 66; smallButtonReset (71) -> shape 70 -> subimage 69; smallButtonInventory (140) -> sprite 139 -> shape 136 -> subimage 135. The menu uses native Godot controls; original menubar movie is research evidence only."
+}

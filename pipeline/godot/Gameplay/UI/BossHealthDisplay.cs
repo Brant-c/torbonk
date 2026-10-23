@@ -46,6 +46,9 @@ public partial class BossHealthDisplay : Control
         Modulate = new Color(1, 1, 1, Mathf.Clamp((float)_reveal / 0.25f, 0, 1));
         _health.UpdateValue(_shown, 1, $"{boss.Health.Current:0.##} / {boss.Health.Maximum:0.##}   ·   {value * 100:0.0}%");
         _loss.UpdateValue(_delayed, 1, ""); _name.Text = Encounter.Definition.Title.ToUpperInvariant();
-        _attack.Text = boss.GetNodeOrNull<BossEncounter>("BossEncounter")?.Phase == BossPhase.Telegraph ? "BURROW ERUPTION  ·  MOVE OUT OF THE AMBER RING" : "CHAMPION";
+        var trial=boss.GetNodeOrNull<TombAttack>("TombAttack");
+        _attack.Text = trial?.Phase==BossPhase.Telegraph?trial.Instruction:
+            boss.GetNodeOrNull<BossEncounter>("BossEncounter")?.Phase == BossPhase.Telegraph ? "BURROW ERUPTION  ·  MOVE OUT OF THE AMBER RING" :
+            trial?.SecondPhase==true?"ANCIENT FURY  ·  PHASE II":boss.RewardTier>=2?"CHAMPION":"ELITE";
     }
 }

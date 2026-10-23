@@ -1,0 +1,218 @@
+{
+  "weapons": {
+    "saber1": {
+      "model": "/resources/art/dynamic/weapon/model/saber_high01_a01_v01.gr2",
+      "materials": [
+        {
+          "path": "/resources/art/shaders/materials/saber_high01_a01_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high01_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high01_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high01_a01_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/defaultassets/black.dds",
+            "DirectionMap": "/resources/art/defaultassets/flat_n.dds"
+          },
+          "values": {
+            "RimWidth": "0",
+            "RimStrength": "0",
+            "FlushTone": "0,0,0",
+            "FleshBrightness": "0",
+            "UsesReflection": "True",
+            "UsesEmissive": "True",
+            "UvScaling": "1,1",
+            "ReflectionIntensity": "1.5",
+            "ReflectionBlurIntensity": "1",
+            "ReflectionSpecInfluence": "1",
+            "ReflectionContrast": "0"
+          }
+        }
+      ]
+    },
+    "saber2": {
+      "model": "/resources/art/dynamic/weapon/model/saber_high02_a01_v01.gr2",
+      "materials": [
+        {
+          "path": "/resources/art/shaders/materials/saber_high02_a01_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high02_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high02_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high02_a01_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/defaultassets/black.dds",
+            "DirectionMap": "/resources/art/lookupTables/table_hair_01.dds"
+          },
+          "values": {
+            "RimWidth": "1.5",
+            "RimStrength": "0.5",
+            "FlushTone": "0,0,0",
+            "FleshBrightness": "0",
+            "UsesReflection": "True",
+            "UsesEmissive": "True",
+            "UvScaling": "1,1",
+            "ReflectionIntensity": "2",
+            "ReflectionBlurIntensity": "1",
+            "ReflectionSpecInfluence": "1",
+            "ReflectionContrast": "0"
+          }
+        }
+      ]
+    },
+    "staff1": {
+      "model": "/resources/art/dynamic/weapon/model/dualsaber_high01_a01_v01.gr2",
+      "materials": [
+        {
+          "path": "/resources/art/shaders/materials/dualsaber_high01_a01_v01.mat",
+          "derived": "Uber",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high01_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high01_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high01_a01_v01_s.dds"
+          },
+          "values": {
+            "UsesReflection": "False",
+            "UsesEmissive": "True",
+            "UvScaling": "1,1",
+            "ReflectionIntensity": "1",
+            "ReflectionBlurIntensity": "1",
+            "ReflectionSpecInfluence": "0",
+            "ReflectionContrast": "0"
+          }
+        }
+      ]
+    },
+    "staff2": {
+      "model": "/resources/art/dynamic/weapon/model/dualsaber_high02_a01_v01.gr2",
+      "materials": [
+        {
+          "path": "/resources/art/shaders/materials/dualsaber_high02_a01_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high02_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high02_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high02_a01_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/defaultassets/black.dds",
+            "DirectionMap": "/resources/art/lookupTables/table_hair_01.dds"
+          },
+          "values": {
+            "RimWidth": "1.5",
+            "RimStrength": "0.5",
+            "FlushTone": "1,0.25098,0.25098",
+            "FleshBrightness": "0.1",
+            "UsesReflection": "True",
+            "UsesEmissive": "True",
+            "UvScaling": "1,1",
+            "ReflectionIntensity": "1",
+            "ReflectionBlurIntensity": "1",
+            "ReflectionSpecInfluence": "0",
+            "ReflectionContrast": "0"
+          }
+        }
+      ]
+    },
+    "pistol1": {
+      "model": "/resources/art/dynamic/weapon/model/blaster_high01_a01_v01.gr2",
+      "materials": [
+        {
+          "path": "/resources/art/shaders/materials/blaster_high01_a01_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high01_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high01_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high01_a01_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/defaultassets/black.dds",
+            "DirectionMap": "/resources/art/lookupTables/table_hair_01.dds"
+          },
+          "values": {
+            "RimWidth": "1.5",
+            "RimStrength": "0.5",
+            "FlushTone": "1,0.247059,0.247059",
+            "FleshBrightness": "0.1",
+            "UsesReflection": "True",
+            "UsesEmissive": "True",
+            "UvScaling": "1,1",
+            "ReflectionIntensity": "1",
+            "ReflectionBlurIntensity": "1",
+            "ReflectionSpecInfluence": "0",
+            "ReflectionContrast": "0"
+          }
+        }
+      ]
+    },
+    "pistol2": {
+      "model": "/resources/art/dynamic/weapon/model/blaster_high02_a01_v01.gr2",
+      "materials": [
+        {
+          "path": "/resources/art/shaders/materials/blaster_high02_a01_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high02_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high02_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high02_a01_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/defaultassets/black.dds",
+            "DirectionMap": "/resources/art/lookupTables/table_hair_01.dds"
+          },
+          "values": {
+            "RimWidth": "1.5",
+            "RimStrength": "0.5",
+            "FlushTone": "1,0.247059,0.247059",
+            "FleshBrightness": "0.1",
+            "UsesReflection": "True",
+            "UsesEmissive": "True",
+            "UvScaling": "1,1",
+            "ReflectionIntensity": "1",
+            "ReflectionBlurIntensity": "1",
+            "ReflectionSpecInfluence": "0",
+            "ReflectionContrast": "0"
+          }
+        }
+      ]
+    },
+    "rifle1": {
+      "model": "/resources/art/dynamic/weapon/model/rifle_high01_a01_v01.gr2",
+      "materials": [
+        {
+          "path": "/resources/art/shaders/materials/rifle_high01_a01_v01.mat",
+          "derived": "Uber",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/weapon/rifle/texture/___psd/rifle_high01_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/weapon/rifle/texture/___psd/rifle_high01_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/weapon/rifle/texture/___psd/rifle_high01_a01_v01_s.dds"
+          },
+          "values": {
+            "UsesReflection": "True",
+            "UsesEmissive": "True",
+            "UvScaling": "1,1",
+            "ReflectionIntensity": "1",
+            "ReflectionBlurIntensity": "1",
+            "ReflectionSpecInfluence": "1",
+            "ReflectionContrast": "0"
+          }
+        }
+      ]
+    },
+    "rifle2": {
+      "model": "/resources/art/dynamic/weapon/model/rifle_high02_a01_v01.gr2",
+      "materials": [
+        {
+          "path": "/resources/art/shaders/materials/rifle_high02_a01_v01.mat",
+          "derived": "Uber",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/weapon/rifle/texture/rifle_high02_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/weapon/rifle/texture/rifle_high02_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/weapon/rifle/texture/rifle_high02_a01_v01_s.dds"
+          },
+          "values": {
+            "UsesReflection": "True",
+            "UsesEmissive": "False",
+            "UvScaling": "1,1",
+            "ReflectionIntensity": "1",
+            "ReflectionBlurIntensity": "1",
+            "ReflectionSpecInfluence": "1",
+            "ReflectionContrast": "0"
+          }
+        }
+      ]
+    }
+  }
+}

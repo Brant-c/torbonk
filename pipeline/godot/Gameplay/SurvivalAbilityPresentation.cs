@@ -130,7 +130,7 @@ public partial class SurvivalAbilityPresentation : Node3D, IAbilityPresentation
             sprite.MaterialOverride=new StandardMaterial3D {
                 ShadingMode=BaseMaterial3D.ShadingModeEnum.Unshaded,AlbedoTexture=tex,
                 VertexColorUseAsAlbedo=true,Transparency=BaseMaterial3D.TransparencyEnum.Alpha,
-                BlendMode=BaseMaterial3D.BlendModeEnum.Add,BillboardMode=BaseMaterial3D.BillboardModeEnum.Enabled,
+                DisableFog=true,BlendMode=BaseMaterial3D.BlendModeEnum.Add,BillboardMode=BaseMaterial3D.BillboardModeEnum.Enabled,
                 BillboardKeepScale=true,DepthDrawMode=BaseMaterial3D.DepthDrawModeEnum.Disabled,
                 CullMode=BaseMaterial3D.CullModeEnum.Disabled };
         return sprite;
@@ -145,7 +145,7 @@ public partial class SurvivalAbilityPresentation : Node3D, IAbilityPresentation
         var node=GD.Load<PackedScene>($"res://Assets/B8/{model}.glb").Instantiate<Node3D>();AddChild(node);
         var mat=new StandardMaterial3D {ShadingMode=BaseMaterial3D.ShadingModeEnum.Unshaded,
             AlbedoTexture=GD.Load<Texture2D>($"res://Assets/B8/{texture}.png"),AlbedoColor=color,
-            Transparency=BaseMaterial3D.TransparencyEnum.Alpha,BlendMode=BaseMaterial3D.BlendModeEnum.Add,
+            Transparency=BaseMaterial3D.TransparencyEnum.Alpha,DisableFog=true,BlendMode=BaseMaterial3D.BlendModeEnum.Add,
             DepthDrawMode=BaseMaterial3D.DepthDrawModeEnum.Disabled,CullMode=BaseMaterial3D.CullModeEnum.Disabled};
         foreach(var mesh in node.FindChildren("*","MeshInstance3D",true,false).OfType<MeshInstance3D>())
         {mesh.MaterialOverride=mat;mesh.CastShadow=GeometryInstance3D.ShadowCastingSetting.Off;}

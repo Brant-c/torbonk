@@ -1,0 +1,454 @@
+{
+  "Milestones": [
+    {
+      "Id": "korriban.wave2",
+      "DisplayName": "Reach wave 2 on Korriban",
+      "Kind": "Wave",
+      "Value": 2,
+      "BaseClasses": [
+        "sith_inquisitor"
+      ],
+      "Appearances": [
+        "ss_a04.feet"
+      ]
+    },
+    {
+      "Id": "korriban.wave3",
+      "DisplayName": "Reach wave 3 on Korriban",
+      "Kind": "Wave",
+      "Value": 3,
+      "BaseClasses": [
+        "sith_inquisitor"
+      ],
+      "Appearances": [
+        "ss_a04.hands"
+      ]
+    },
+    {
+      "Id": "korriban.wave4",
+      "DisplayName": "Reach wave 4 on Korriban",
+      "Kind": "Wave",
+      "Value": 4,
+      "BaseClasses": [
+        "sith_inquisitor"
+      ],
+      "Appearances": [
+        "ss_a04.waist"
+      ]
+    },
+    {
+      "Id": "korriban.wave5",
+      "DisplayName": "Reach wave 5 on Korriban",
+      "Kind": "Wave",
+      "Value": 5,
+      "BaseClasses": [
+        "sith_inquisitor"
+      ],
+      "Appearances": [
+        "ss_a04.legs"
+      ]
+    },
+    {
+      "Id": "korriban.boss",
+      "DisplayName": "Defeat the Korriban boss",
+      "Kind": "Boss",
+      "Value": 0,
+      "BaseClasses": [
+        "sith_inquisitor"
+      ],
+      "Appearances": [
+        "ss_a04.chest"
+      ]
+    },
+    {
+      "Id": "empire.heroic.war.feet",
+      "DisplayName": "Reach wave 6 as Warrior",
+      "Kind": "Wave",
+      "Value": 6,
+      "BaseClasses": [
+        "sith_warrior"
+      ],
+      "Appearances": [
+        "wardrobe.war.feet"
+      ]
+    },
+    {
+      "Id": "empire.heroic.war.hands",
+      "DisplayName": "Reach wave 7 as Warrior",
+      "Kind": "Wave",
+      "Value": 7,
+      "BaseClasses": [
+        "sith_warrior"
+      ],
+      "Appearances": [
+        "wardrobe.war.hands"
+      ]
+    },
+    {
+      "Id": "empire.heroic.war.waist",
+      "DisplayName": "Reach wave 8 as Warrior",
+      "Kind": "Wave",
+      "Value": 8,
+      "BaseClasses": [
+        "sith_warrior"
+      ],
+      "Appearances": [
+        "wardrobe.war.waist"
+      ]
+    },
+    {
+      "Id": "empire.heroic.war.legs",
+      "DisplayName": "Reach wave 9 as Warrior",
+      "Kind": "Wave",
+      "Value": 9,
+      "BaseClasses": [
+        "sith_warrior"
+      ],
+      "Appearances": [
+        "wardrobe.war.legs"
+      ]
+    },
+    {
+      "Id": "empire.heroic.war.chest",
+      "DisplayName": "Reach wave 10 as Warrior",
+      "Kind": "Wave",
+      "Value": 10,
+      "BaseClasses": [
+        "sith_warrior"
+      ],
+      "Appearances": [
+        "wardrobe.war.chest"
+      ]
+    },
+    {
+      "Id": "empire.heroic.inq.feet",
+      "DisplayName": "Reach wave 6 as Inquisitor",
+      "Kind": "Wave",
+      "Value": 6,
+      "BaseClasses": [
+        "sith_inquisitor"
+      ],
+      "Appearances": [
+        "wardrobe.inq.feet"
+      ]
+    },
+    {
+      "Id": "empire.heroic.inq.hands",
+      "DisplayName": "Reach wave 7 as Inquisitor",
+      "Kind": "Wave",
+      "Value": 7,
+      "BaseClasses": [
+        "sith_inquisitor"
+      ],
+      "Appearances": [
+        "wardrobe.inq.hands"
+      ]
+    },
+    {
+      "Id": "empire.heroic.inq.waist",
+      "DisplayName": "Reach wave 8 as Inquisitor",
+      "Kind": "Wave",
+      "Value": 8,
+      "BaseClasses": [
+        "sith_inquisitor"
+      ],
+      "Appearances": [
+        "wardrobe.inq.waist"
+      ]
+    },
+    {
+      "Id": "empire.heroic.inq.legs",
+      "DisplayName": "Reach wave 9 as Inquisitor",
+      "Kind": "Wave",
+      "Value": 9,
+      "BaseClasses": [
+        "sith_inquisitor"
+      ],
+      "Appearances": [
+        "wardrobe.inq.legs"
+      ]
+    },
+    {
+      "Id": "empire.heroic.inq.chest",
+      "DisplayName": "Reach wave 10 as Inquisitor",
+      "Kind": "Wave",
+      "Value": 10,
+      "BaseClasses": [
+        "sith_inquisitor"
+      ],
+      "Appearances": [
+        "wardrobe.inq.chest"
+      ]
+    },
+    {
+      "Id": "empire.heroic.spy.feet",
+      "DisplayName": "Reach wave 6 as Agent",
+      "Kind": "Wave",
+      "Value": 6,
+      "BaseClasses": [
+        "imperial_agent"
+      ],
+      "Appearances": [
+        "wardrobe.spy.feet"
+      ]
+    },
+    {
+      "Id": "empire.heroic.spy.hands",
+      "DisplayName": "Reach wave 7 as Agent",
+      "Kind": "Wave",
+      "Value": 7,
+      "BaseClasses": [
+        "imperial_agent"
+      ],
+      "Appearances": [
+        "wardrobe.spy.hands"
+      ]
+    },
+    {
+      "Id": "empire.heroic.spy.waist",
+      "DisplayName": "Reach wave 8 as Agent",
+      "Kind": "Wave",
+      "Value": 8,
+      "BaseClasses": [
+        "imperial_agent"
+      ],
+      "Appearances": [
+        "wardrobe.spy.waist"
+      ]
+    },
+    {
+      "Id": "empire.heroic.spy.legs",
+      "DisplayName": "Reach wave 9 as Agent",
+      "Kind": "Wave",
+      "Value": 9,
+      "BaseClasses": [
+        "imperial_agent"
+      ],
+      "Appearances": [
+        "wardrobe.spy.legs"
+      ]
+    },
+    {
+      "Id": "empire.heroic.spy.chest",
+      "DisplayName": "Reach wave 10 as Agent",
+      "Kind": "Wave",
+      "Value": 10,
+      "BaseClasses": [
+        "imperial_agent"
+      ],
+      "Appearances": [
+        "wardrobe.spy.chest"
+      ]
+    },
+    {
+      "Id": "empire.heroic.bh.feet",
+      "DisplayName": "Reach wave 6 as Bounty Hunter",
+      "Kind": "Wave",
+      "Value": 6,
+      "BaseClasses": [
+        "bounty_hunter"
+      ],
+      "Appearances": [
+        "wardrobe.bh.feet"
+      ]
+    },
+    {
+      "Id": "empire.heroic.bh.hands",
+      "DisplayName": "Reach wave 7 as Bounty Hunter",
+      "Kind": "Wave",
+      "Value": 7,
+      "BaseClasses": [
+        "bounty_hunter"
+      ],
+      "Appearances": [
+        "wardrobe.bh.hands"
+      ]
+    },
+    {
+      "Id": "empire.heroic.bh.waist",
+      "DisplayName": "Reach wave 8 as Bounty Hunter",
+      "Kind": "Wave",
+      "Value": 8,
+      "BaseClasses": [
+        "bounty_hunter"
+      ],
+      "Appearances": [
+        "wardrobe.bh.waist"
+      ]
+    },
+    {
+      "Id": "empire.heroic.bh.legs",
+      "DisplayName": "Reach wave 9 as Bounty Hunter",
+      "Kind": "Wave",
+      "Value": 9,
+      "BaseClasses": [
+        "bounty_hunter"
+      ],
+      "Appearances": [
+        "wardrobe.bh.legs"
+      ]
+    },
+    {
+      "Id": "empire.heroic.bh.chest",
+      "DisplayName": "Reach wave 10 as Bounty Hunter",
+      "Kind": "Wave",
+      "Value": 10,
+      "BaseClasses": [
+        "bounty_hunter"
+      ],
+      "Appearances": [
+        "wardrobe.bh.chest"
+      ]
+    },
+    {
+      "Id": "collectible.war.head",
+      "DisplayName": "Reach wave 11 as Sith Warrior",
+      "Kind": "Wave",
+      "Value": 11,
+      "BaseClasses": [
+        "sith_warrior"
+      ],
+      "Appearances": [
+        "collectible.war.head"
+      ]
+    },
+    {
+      "Id": "collectible.inq.head",
+      "DisplayName": "Reach wave 11 as Sith Inquisitor",
+      "Kind": "Wave",
+      "Value": 11,
+      "BaseClasses": [
+        "sith_inquisitor"
+      ],
+      "Appearances": [
+        "collectible.inq.head"
+      ]
+    },
+    {
+      "Id": "collectible.spy.head",
+      "DisplayName": "Reach wave 11 as Imperial Agent",
+      "Kind": "Wave",
+      "Value": 11,
+      "BaseClasses": [
+        "imperial_agent"
+      ],
+      "Appearances": [
+        "collectible.spy.head"
+      ]
+    },
+    {
+      "Id": "collectible.bh.head",
+      "DisplayName": "Reach wave 11 as Bounty Hunter",
+      "Kind": "Wave",
+      "Value": 11,
+      "BaseClasses": [
+        "bounty_hunter"
+      ],
+      "Appearances": [
+        "collectible.bh.head"
+      ]
+    },
+    {
+      "Id": "collectible.saber1",
+      "DisplayName": "Reach wave 12 as Sith",
+      "Kind": "Wave",
+      "Value": 12,
+      "BaseClasses": [
+        "sith_warrior",
+        "sith_inquisitor"
+      ],
+      "Appearances": [
+        "collectible.saber1.main_hand",
+        "collectible.saber1.off_hand"
+      ]
+    },
+    {
+      "Id": "collectible.saber2",
+      "DisplayName": "Reach wave 13 as Sith",
+      "Kind": "Wave",
+      "Value": 13,
+      "BaseClasses": [
+        "sith_warrior",
+        "sith_inquisitor"
+      ],
+      "Appearances": [
+        "collectible.saber2.main_hand",
+        "collectible.saber2.off_hand"
+      ]
+    },
+    {
+      "Id": "collectible.staff1",
+      "DisplayName": "Reach wave 12 as Sith Inquisitor",
+      "Kind": "Wave",
+      "Value": 12,
+      "BaseClasses": [
+        "sith_inquisitor"
+      ],
+      "Appearances": [
+        "collectible.staff1.main_hand"
+      ]
+    },
+    {
+      "Id": "collectible.staff2",
+      "DisplayName": "Reach wave 13 as Sith Inquisitor",
+      "Kind": "Wave",
+      "Value": 13,
+      "BaseClasses": [
+        "sith_inquisitor"
+      ],
+      "Appearances": [
+        "collectible.staff2.main_hand"
+      ]
+    },
+    {
+      "Id": "collectible.pistol1",
+      "DisplayName": "Reach wave 12 as Bounty Hunter",
+      "Kind": "Wave",
+      "Value": 12,
+      "BaseClasses": [
+        "bounty_hunter"
+      ],
+      "Appearances": [
+        "collectible.pistol1.main_hand",
+        "collectible.pistol1.off_hand"
+      ]
+    },
+    {
+      "Id": "collectible.pistol2",
+      "DisplayName": "Reach wave 13 as Bounty Hunter",
+      "Kind": "Wave",
+      "Value": 13,
+      "BaseClasses": [
+        "bounty_hunter"
+      ],
+      "Appearances": [
+        "collectible.pistol2.main_hand",
+        "collectible.pistol2.off_hand"
+      ]
+    },
+    {
+      "Id": "collectible.rifle1",
+      "DisplayName": "Reach wave 12 as Imperial Agent",
+      "Kind": "Wave",
+      "Value": 12,
+      "BaseClasses": [
+        "imperial_agent"
+      ],
+      "Appearances": [
+        "collectible.rifle1.main_hand"
+      ]
+    },
+    {
+      "Id": "collectible.rifle2",
+      "DisplayName": "Reach wave 13 as Imperial Agent",
+      "Kind": "Wave",
+      "Value": 13,
+      "BaseClasses": [
+        "imperial_agent"
+      ],
+      "Appearances": [
+        "collectible.rifle2.main_hand"
+      ]
+    }
+  ]
+}

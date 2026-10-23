@@ -1,0 +1,131 @@
+{
+  "label": "Client-derived",
+  "appearance": "epp.bounty_hunter.carbonize.carbonize_cast",
+  "animation": {
+    "identity": {
+      "id": "0xE000CB1F7EC3DD61",
+      "decimalId": "16141124400627047777",
+      "kind": "GomObject",
+      "name": "epp.bounty_hunter.carbonize.carbonize_cast",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/277.bkt",
+        "uncompressedOffset": 223980,
+        "blockLength": 515,
+        "resourceSha256": "d1a13420e4156cc370dfe4cc23e60f83240f663cd3341b91ec9b1f8a363a36ab"
+      }
+    },
+    "path": "/effAppearanceSchedule/0/effAppearanceActions/0/effAppStringParams",
+    "type": "Dictionary`2",
+    "childCount": 2,
+    "children": [
+      {
+        "key": "enum:0x40000006EFA6AEC8:11",
+        "path": "/effAppearanceSchedule/0/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:11",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "cb_bounty_flame_sweep"
+      },
+      {
+        "key": "enum:0x40000006EFA6AEC8:12",
+        "path": "/effAppearanceSchedule/0/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:12",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": ""
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  "casterFx": {
+    "identity": {
+      "id": "0xE000CB1F7EC3DD61",
+      "decimalId": "16141124400627047777",
+      "kind": "GomObject",
+      "name": "epp.bounty_hunter.carbonize.carbonize_cast",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/277.bkt",
+        "uncompressedOffset": 223980,
+        "blockLength": 515,
+        "resourceSha256": "d1a13420e4156cc370dfe4cc23e60f83240f663cd3341b91ec9b1f8a363a36ab"
+      }
+    },
+    "path": "/effAppearanceSchedule/0/effAppearanceActions/3/effAppStringParams",
+    "type": "Dictionary`2",
+    "childCount": 6,
+    "children": [
+      {
+        "key": "enum:0x40000006EFA6AEC8:5",
+        "path": "/effAppearanceSchedule/0/effAppearanceActions/3/effAppStringParams/enum:0x40000006EFA6AEC8:5",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": ""
+      },
+      {
+        "key": "enum:0x40000006EFA6AEC8:21",
+        "path": "/effAppearanceSchedule/0/effAppearanceActions/3/effAppStringParams/enum:0x40000006EFA6AEC8:21",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "abilities/bounty_hunter/bh_carbonize_cast"
+      },
+      {
+        "key": "enum:0x40000006EFA6AEC8:22",
+        "path": "/effAppearanceSchedule/0/effAppearanceActions/3/effAppStringParams/enum:0x40000006EFA6AEC8:22",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": ""
+      },
+      {
+        "key": "enum:0x40000006EFA6AEC8:23",
+        "path": "/effAppearanceSchedule/0/effAppearanceActions/3/effAppStringParams/enum:0x40000006EFA6AEC8:23",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": ""
+      },
+      {
+        "key": "enum:0x40000006EFA6AEC8:24",
+        "path": "/effAppearanceSchedule/0/effAppearanceActions/3/effAppStringParams/enum:0x40000006EFA6AEC8:24",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": ""
+      },
+      {
+        "key": "enum:0x40000006EFA6AEC8:25",
+        "path": "/effAppearanceSchedule/0/effAppearanceActions/3/effAppStringParams/enum:0x40000006EFA6AEC8:25",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": ""
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  "chargeup": {
+    "actionPath": "/effAppearanceSchedule/0/effAppearanceActions/4/effAppStringListParams/enum:0x40000006EFA6AEC8:31/1",
+    "event": "Play_ability_bountyhunter_carbonize_chargeup"
+  },
+  "adaptation": "Existing D3/Flame clip is original cb_bounty_flame_sweep. Alpha-blended original carbonite_spray_02 particles; no opaque projector billboards. Audio media bindings in powertech-audio.json."
+}

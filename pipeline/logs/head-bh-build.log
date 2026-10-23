@@ -1,0 +1,50 @@
+00:02.218  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Dots Stroke'
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+00:02.218  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Material'
+00:02.218  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\brant\.thumbnails\large\blender_31492_837c0dbbb35998badb711b78e388a1f1.png.png"
+wardrobe-materials:28: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+wardrobe-materials:74: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+00:02.390  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\brant\.thumbnails\large\blender_31492_13434eb3ab0b314d200d4006969078b1.png.png"
+wardrobe-materials:137: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+00:02.625  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\brant\.thumbnails\large\blender_31492_5fe56908cea45e3c6d89dd855bf85a28.png.png"
+register_class(...):
+Warning: 'import_mesh.gr2_presets' does not contain '_MT_' with prefix and suffix
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\bmnnew_skeleton.gr2
+OBJS: ['bmnnew_skeleton']
+TIME: 0.004 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\face\model\face_bhhelmet01_bmn_archetype.gr2
+OBJS: ['face_bhhelmet01_bmn_archetype']
+TIME: 0.016 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_unarmed_idle_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0063 sec |   0.0063 sec) Done, building ...
+Progress: 100.00%
+  (  0.0578 sec |   0.0578 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_unarmed_idle_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Info: Saved as "wardrobe-head-bh-sorcerer-probe.blend"
+CHARACTER PROBE COMPLETE
+Info: Saved as "wardrobe-head-bh-sorcerer-reference.blend"
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Saved as "wardrobe-head-bh-sorcerer-portable.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+14:15:42 | INFO: Starting glTF 2.0 export
+14:15:42 | INFO: Extracting primitive: face_bhhelmet01_bmn_archetype
+14:15:42 | INFO: Primitives created: 1
+14:15:43 | INFO: Finished glTF 2.0 export in 0.7255189418792725 s
+00:03.609  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\brant\.thumbnails\large\blender_31492_5fe56908cea45e3c6d89dd855bf85a28.png.png"
+
+Info: Saved as "wardrobe-head-bh-sorcerer-portable.blend"
+CHARACTER CONVERSION COMPLETE 9ef876366a1a499f862c3956e149bbde5090f02eddef7b10788c0e3e9179d410
+
+Blender quit

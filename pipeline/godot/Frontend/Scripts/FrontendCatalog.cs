@@ -33,7 +33,7 @@ public sealed class AdvancedClassDefinition
     public bool GameplayImplemented { get=>_implemented && ClassProfile.Find(Id)?.Ready==true; set=>_implemented=value; }
     public string PreviewScene { get; set; } = "";
     public string IdleAnimation { get; set; } = "Idle";
-    public float FacingDegrees { get; set; } = 180;
+    public float FacingDegrees { get; set; } = 0;
 }
 public sealed class MapDefinition
 {

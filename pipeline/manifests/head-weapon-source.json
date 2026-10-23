@@ -1,0 +1,1965 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 250,
+  "maximumDecodedBytes": 188743680,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x58C216D26EAF2B8A",
+      "entryOffset": 590744592,
+      "headerSize": 36,
+      "dataOffset": 590744628,
+      "compressedSize": 51006,
+      "length": 2257348,
+      "compressionMethod": 1,
+      "crc32Index": "bd887b60",
+      "path": "/resources/art/dynamic/head/index.xml",
+      "sha256": "954aaf5470c0bf7dd55e2e910d64d6538d6b58d4f20bfd21619f22f789e396b5",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\head\\index.xml",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0xE9462958A169AF1F",
+      "entryOffset": 590702812,
+      "headerSize": 36,
+      "dataOffset": 590702848,
+      "compressedSize": 21329,
+      "length": 350289,
+      "compressionMethod": 1,
+      "crc32Index": "135e0214",
+      "path": "/resources/art/dynamic/face/index.xml",
+      "sha256": "0090f81aaf2f4e22b704bc05174c361b4cd116132b3a0642017adbd55f922cb3",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\face\\index.xml",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x294F7B06AAD46EAB",
+      "entryOffset": 265592355,
+      "headerSize": 36,
+      "dataOffset": 265592391,
+      "compressedSize": 691,
+      "length": 4507,
+      "compressionMethod": 1,
+      "crc32Index": "15b6de8a",
+      "path": "/resources/art/shaders/materials/face_swhelmet02_light_sw_a03c03_u.mat",
+      "sha256": "b163143a7580032ac074f50c52beec6e599a3413b065152ad58e67538a59592b",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\face_swhelmet02_light_sw_a03c03_u.mat",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x46304940096AE29D",
+      "entryOffset": 265845509,
+      "headerSize": 36,
+      "dataOffset": 265845545,
+      "compressedSize": 264413,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "974d8f6a",
+      "path": "/resources/art/dynamic/player_character/outfit/swhelmets/texture/___psd/face_swhelmet02_light_sw_a03c03_u_d.dds",
+      "sha256": "217d5809c4428b4a5cfd8249c182551587fc59ad22466e9a1afc08e6cffc531c",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\swhelmets\\texture\\___psd\\face_swhelmet02_light_sw_a03c03_u_d.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0xD4F3D7FCDDA6C660",
+      "entryOffset": 265612716,
+      "headerSize": 36,
+      "dataOffset": 265612752,
+      "compressedSize": 232757,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "55e17dc4",
+      "path": "/resources/art/dynamic/player_character/outfit/swhelmets/texture/___psd/face_swhelmet02_light_sw_a03c01_u_02_n.dds",
+      "sha256": "81a62b9e2db2f841611072c833cc0e9447971b4fd3f9de18daa0ed3896d1e19a",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\swhelmets\\texture\\___psd\\face_swhelmet02_light_sw_a03c01_u_02_n.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0xF0ADCE1BD890D806",
+      "entryOffset": 266437538,
+      "headerSize": 36,
+      "dataOffset": 266437574,
+      "compressedSize": 66711,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "86fdeff5",
+      "path": "/resources/art/dynamic/player_character/outfit/swhelmets/texture/___psd/face_swhelmet02_light_sw_a03c03_u_s.dds",
+      "sha256": "22be50275dd30b5ea2fa7da806974995114c6a1897471aba4ddc6a0b8333449a",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\swhelmets\\texture\\___psd\\face_swhelmet02_light_sw_a03c03_u_s.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x1F80527111D7ABCD",
+      "entryOffset": 266109958,
+      "headerSize": 36,
+      "dataOffset": 266109994,
+      "compressedSize": 294325,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "b0c4432e",
+      "path": "/resources/art/dynamic/player_character/outfit/swhelmets/texture/___psd/face_swhelmet02_light_sw_a03c03_u_h.dds",
+      "sha256": "2c512c20f7a875fcfb3cd959924cbebc3e889e2c537bf2595a690defacb4e9a0",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\swhelmets\\texture\\___psd\\face_swhelmet02_light_sw_a03c03_u_h.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0xADD65F3D5BF339E6",
+      "entryOffset": 266404319,
+      "headerSize": 36,
+      "dataOffset": 266404355,
+      "compressedSize": 33183,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "292e3171",
+      "path": "/resources/art/dynamic/player_character/outfit/swhelmets/texture/___psd/face_swhelmet02_light_sw_a03c03_u_m.dds",
+      "sha256": "359d0c929cf4a1417d4d7f54505af8adae851fb03305bf6369f76b715fd5dc5c",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\swhelmets\\texture\\___psd\\face_swhelmet02_light_sw_a03c03_u_m.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_misc_1.tor",
+      "archiveHash": "0x927EC4C4BF51BF0E",
+      "entryOffset": 47364813,
+      "headerSize": 36,
+      "dataOffset": 47364849,
+      "compressedSize": 56,
+      "length": 384,
+      "compressionMethod": 1,
+      "crc32Index": "084a80b4",
+      "path": "/resources/art/defaultassets/black.dds",
+      "sha256": "f6fc96233461b12b33ffd2e0c79c96216fbee0af5c31597d1cc1fa940a16057d",
+      "output": "source-assets\\april2012\\resources\\art\\defaultassets\\black.dds",
+      "archiveSha256": "9ac8eae93e1ed26e964a9b1146f653b73276ea7294f2311329c1699dbca7b7d6",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x232A1C3C4F24A59C",
+      "entryOffset": 262682423,
+      "headerSize": 36,
+      "dataOffset": 262682459,
+      "compressedSize": 6139,
+      "length": 10840,
+      "compressionMethod": 1,
+      "crc32Index": "ab2b62ed",
+      "path": "/resources/art/dynamic/face/model/face_swhelmet02_bmn_archetype.gr2",
+      "sha256": "cdc8e2713cad1b059093c3335603c6bb1a7036ef814dd7d375b5b4d11206badb",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\face\\model\\face_swhelmet02_bmn_archetype.gr2",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x6BC08AEDDC159124",
+      "entryOffset": 142091493,
+      "headerSize": 36,
+      "dataOffset": 142091529,
+      "compressedSize": 1480,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "99ca952e",
+      "path": "/resources/gfx/icons/ipp.class.war.heroic.mdps2.t1x2.head.dds",
+      "sha256": "1210f116791ee21fb958fd76ff7d7bb6fbbb4d535bb635a6b07695ec2c207857",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\ipp.class.war.heroic.mdps2.t1x2.head.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_global_1.tor",
+      "archiveHash": "0xCDEB44EEAF063605",
+      "entryOffset": 31890914,
+      "headerSize": 36,
+      "dataOffset": 31890950,
+      "compressedSize": 311088,
+      "length": 311088,
+      "compressionMethod": 0,
+      "crc32Index": "81123c3d",
+      "path": "/resources/systemgenerated/buckets/100.bkt",
+      "sha256": "6975d083b4eef9a63148193f382350a71fb70eff95b13a087317c9bf118e8c28",
+      "output": "source-assets\\april2012\\resources\\systemgenerated\\buckets\\100.bkt",
+      "archiveSha256": "ef2857bbf2527021c925c4c5bbe461d85b97ae58a238ede9be5ef9baa74300f2",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x1E7A7155C9053258",
+      "entryOffset": 236908223,
+      "headerSize": 36,
+      "dataOffset": 236908259,
+      "compressedSize": 646,
+      "length": 3533,
+      "compressionMethod": 1,
+      "crc32Index": "15bad3f1",
+      "path": "/resources/art/shaders/materials/face_sscirclet01_ss_h01c01_u.mat",
+      "sha256": "235feb3bf13c18d97d23ba11fba577d93edda6b5410ccef8770430cb6103e3de",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\face_sscirclet01_ss_h01c01_u.mat",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x0ED8186F65E39C90",
+      "entryOffset": 236926895,
+      "headerSize": 36,
+      "dataOffset": 236926931,
+      "compressedSize": 236377,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "a5620a44",
+      "path": "/resources/art/dynamic/player_character/outfit/sshelmets/texture/___psd/face_sscirclet01_ss_h01c01_u_d.dds",
+      "sha256": "51face6ca9e65acb3afcd8bccc3327b3b38cf2cd3060cd9156442e5020f3fd9f",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\sshelmets\\texture\\___psd\\face_sscirclet01_ss_h01c01_u_d.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x85D0FAF28A3D0DCF",
+      "entryOffset": 237410010,
+      "headerSize": 36,
+      "dataOffset": 237410046,
+      "compressedSize": 199303,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "6441ab9e",
+      "path": "/resources/art/dynamic/player_character/outfit/sshelmets/texture/___psd/face_sscirclet01_ss_h01c01_u_n.dds",
+      "sha256": "44fc01ee2576da8645c24e2f95296b70e6ae6231c54da00a5917ff0feab3910b",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\sshelmets\\texture\\___psd\\face_sscirclet01_ss_h01c01_u_n.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x187A7164670702E7",
+      "entryOffset": 237609349,
+      "headerSize": 36,
+      "dataOffset": 237609385,
+      "compressedSize": 59928,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "0341352a",
+      "path": "/resources/art/dynamic/player_character/outfit/sshelmets/texture/___psd/face_sscirclet01_ss_h01c01_u_s.dds",
+      "sha256": "ba7a71bccbcdb86053c951b422c9dcb3578d66912faa98ab9dc91d57ddcd336a",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\sshelmets\\texture\\___psd\\face_sscirclet01_ss_h01c01_u_s.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x92BC0C8B6C36ECB8",
+      "entryOffset": 237163308,
+      "headerSize": 36,
+      "dataOffset": 237163344,
+      "compressedSize": 226366,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "e82e2188",
+      "path": "/resources/art/dynamic/player_character/outfit/sshelmets/texture/___psd/face_sscirclet01_ss_h01c01_u_h.dds",
+      "sha256": "dbb1b03453a347ceb4620fd224f0164cb7044507df5151e159e98b8220c712df",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\sshelmets\\texture\\___psd\\face_sscirclet01_ss_h01c01_u_h.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0xF7268767259B06A2",
+      "entryOffset": 237389710,
+      "headerSize": 36,
+      "dataOffset": 237389746,
+      "compressedSize": 20264,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "03f280f9",
+      "path": "/resources/art/dynamic/player_character/outfit/sshelmets/texture/___psd/face_sscirclet01_ss_h01c01_u_m.dds",
+      "sha256": "9ab5899cc7ebae063bc8df88a45fbbe0a66fd9ff1a4d6fdaafdc579b60ef875d",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\sshelmets\\texture\\___psd\\face_sscirclet01_ss_h01c01_u_m.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0xE5188F59611EDF1A",
+      "entryOffset": 236849918,
+      "headerSize": 36,
+      "dataOffset": 236849954,
+      "compressedSize": 9429,
+      "length": 21928,
+      "compressionMethod": 1,
+      "crc32Index": "0a47cd62",
+      "path": "/resources/art/dynamic/face/model/face_sscirclet01_bmn_archetype.gr2",
+      "sha256": "f0b516dbe65e9b0adf862498937fc132da8d73c796e286f30c621b85f30f9f8a",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\face\\model\\face_sscirclet01_bmn_archetype.gr2",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x8B4F01481F59DCBB",
+      "entryOffset": 90854872,
+      "headerSize": 36,
+      "dataOffset": 90854908,
+      "compressedSize": 1500,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "4c1dc9c7",
+      "path": "/resources/gfx/icons/ipp.class.inq.heroic.cdps1.t1x2.head.dds",
+      "sha256": "13789b49c6215b6bc66b8d733d3775b5810eb6915344db0d367fd3736ce53142",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\ipp.class.inq.heroic.cdps1.t1x2.head.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_global_1.tor",
+      "archiveHash": "0x860296C9DAB30E02",
+      "entryOffset": 134322158,
+      "headerSize": 36,
+      "dataOffset": 134322194,
+      "compressedSize": 277008,
+      "length": 277008,
+      "compressionMethod": 0,
+      "crc32Index": "82d7f677",
+      "path": "/resources/systemgenerated/buckets/439.bkt",
+      "sha256": "de382fb131185403dd50acc1b14c02b1a70b884daa12392ecb875497802d41ba",
+      "output": "source-assets\\april2012\\resources\\systemgenerated\\buckets\\439.bkt",
+      "archiveSha256": "ef2857bbf2527021c925c4c5bbe461d85b97ae58a238ede9be5ef9baa74300f2",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x215CEF9A144D21DF",
+      "entryOffset": 234058452,
+      "headerSize": 36,
+      "dataOffset": 234058488,
+      "compressedSize": 687,
+      "length": 4483,
+      "compressionMethod": 1,
+      "crc32Index": "2fc6d783",
+      "path": "/resources/art/shaders/materials/face_spmask03_med_sp_a04c03_u.mat",
+      "sha256": "347d77762f302a010c7882912bdbe6f7bfe06c29038a38b7e64b6332ce8fb282",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\face_spmask03_med_sp_a04c03_u.mat",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x85864B007591EC56",
+      "entryOffset": 234074332,
+      "headerSize": 36,
+      "dataOffset": 234074368,
+      "compressedSize": 174811,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "7cdb5494",
+      "path": "/resources/art/dynamic/player_character/outfit/sphelmets/texture/___psd/face_spmask03_med_sp_a04c03_u_d.dds",
+      "sha256": "d3665e7a55e04a7b8ad916709007df359662bf10e31fc0b4827f110c012b85af",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\sphelmets\\texture\\___psd\\face_spmask03_med_sp_a04c03_u_d.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x669771FD6E4A4CB4",
+      "entryOffset": 234461902,
+      "headerSize": 36,
+      "dataOffset": 234461938,
+      "compressedSize": 156960,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "791ba1da",
+      "path": "/resources/art/dynamic/player_character/outfit/sphelmets/texture/___psd/face_spmask03_med_sp_a04c03_u_n.dds",
+      "sha256": "b2f55b52e0c0461a85cf9183dad7d3e6accd98f35fae9f04a1093eb1f2f3895b",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\sphelmets\\texture\\___psd\\face_spmask03_med_sp_a04c03_u_n.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0xEBD789F4137D6A13",
+      "entryOffset": 234618898,
+      "headerSize": 36,
+      "dataOffset": 234618934,
+      "compressedSize": 51496,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "a476990b",
+      "path": "/resources/art/dynamic/player_character/outfit/sphelmets/texture/___psd/face_spmask03_med_sp_a04c03_u_s.dds",
+      "sha256": "82cbfbba5e5d09c5bf765673405ee76c3bd237918e7bf32c616ffc1977f1bfe4",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\sphelmets\\texture\\___psd\\face_spmask03_med_sp_a04c03_u_s.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x8D698C6C5026CD99",
+      "entryOffset": 234249179,
+      "headerSize": 36,
+      "dataOffset": 234249215,
+      "compressedSize": 206599,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "e9a4399b",
+      "path": "/resources/art/dynamic/player_character/outfit/sphelmets/texture/___psd/face_spmask03_med_sp_a04c03_u_h.dds",
+      "sha256": "e836b9f6522bb82893a1284a54912bc8c4d4430bb69383b64f7246e4efc72064",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\sphelmets\\texture\\___psd\\face_spmask03_med_sp_a04c03_u_h.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0xD48192596A2BC477",
+      "entryOffset": 234455814,
+      "headerSize": 36,
+      "dataOffset": 234455850,
+      "compressedSize": 6052,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "56df0ad4",
+      "path": "/resources/art/dynamic/player_character/outfit/sphelmets/texture/___psd/face_spmask03_med_sp_a04c03_u_m.dds",
+      "sha256": "12e36d929528c2fc62c0c258e21148d9fa432c373bef6f97944dc2c91d46a4b6",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\sphelmets\\texture\\___psd\\face_spmask03_med_sp_a04c03_u_m.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x1DE4B018457CF945",
+      "entryOffset": 233996092,
+      "headerSize": 36,
+      "dataOffset": 233996128,
+      "compressedSize": 8596,
+      "length": 16168,
+      "compressionMethod": 1,
+      "crc32Index": "44f4fa48",
+      "path": "/resources/art/dynamic/face/model/face_spmask03_bmn_archetype.gr2",
+      "sha256": "753aa2f62f0964cda0e21cfcf07b56954383c42257547dc06b41e94c3df835dc",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\face\\model\\face_spmask03_bmn_archetype.gr2",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xB3695F1326235B9C",
+      "entryOffset": 124597414,
+      "headerSize": 36,
+      "dataOffset": 124597450,
+      "compressedSize": 1493,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "5c48e537",
+      "path": "/resources/gfx/icons/ipp.class.spy.heroic.tdps1.t1x2.head.dds",
+      "sha256": "6adc7b30052c03ef52da90689fbcc8f2a883382accd98925657646fa31f2f90f",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\ipp.class.spy.heroic.tdps1.t1x2.head.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_global_1.tor",
+      "archiveHash": "0xC932C816BE4D15B6",
+      "entryOffset": 130125846,
+      "headerSize": 36,
+      "dataOffset": 130125882,
+      "compressedSize": 299328,
+      "length": 299328,
+      "compressionMethod": 0,
+      "crc32Index": "bf091e77",
+      "path": "/resources/systemgenerated/buckets/425.bkt",
+      "sha256": "d31e98bec0ffd04ecfc741dd99f8b301a496aa0fa86bf0b689b1f4cf25673793",
+      "output": "source-assets\\april2012\\resources\\systemgenerated\\buckets\\425.bkt",
+      "archiveSha256": "ef2857bbf2527021c925c4c5bbe461d85b97ae58a238ede9be5ef9baa74300f2",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x05D7EFDAFCAA5DB9",
+      "entryOffset": 68281271,
+      "headerSize": 36,
+      "dataOffset": 68281307,
+      "compressedSize": 633,
+      "length": 3529,
+      "compressionMethod": 1,
+      "crc32Index": "ddb3e30e",
+      "path": "/resources/art/shaders/materials/face_bhhelmet01_med_bh_a01c01_u.mat",
+      "sha256": "afd800165d7cb9640652b8bfae59834d4d0bfe04943f5a9debafa58a5b119c64",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\face_bhhelmet01_med_bh_a01c01_u.mat",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x1CD3B9B3E3F1785E",
+      "entryOffset": 68297015,
+      "headerSize": 36,
+      "dataOffset": 68297051,
+      "compressedSize": 94428,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "d5fa03f6",
+      "path": "/resources/art/dynamic/player_character/outfit/bhhelmet/texture/___psd/face_bhhelmet01_med_bh_a01c01_u_d.dds",
+      "sha256": "0e7241384cee9eb8b4bf9964564d0baf19f4c16c14ec9eb31488ca3ef23866b5",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\bhhelmet\\texture\\___psd\\face_bhhelmet01_med_bh_a01c01_u_d.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x1BCF8EC6A4ABA43F",
+      "entryOffset": 68675350,
+      "headerSize": 36,
+      "dataOffset": 68675386,
+      "compressedSize": 198744,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "8c25202b",
+      "path": "/resources/art/dynamic/player_character/outfit/bhhelmet/texture/___psd/face_bhhelmet01_med_bh_a01c01_u_n.dds",
+      "sha256": "76a313276fe86f5350594f03fac82bf979ab4e16cb83ccd75df663ed456189a1",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\bhhelmet\\texture\\___psd\\face_bhhelmet01_med_bh_a01c01_u_n.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x6B11361599D4F1B7",
+      "entryOffset": 68874130,
+      "headerSize": 36,
+      "dataOffset": 68874166,
+      "compressedSize": 47301,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "69bcb1c4",
+      "path": "/resources/art/dynamic/player_character/outfit/bhhelmet/texture/___psd/face_bhhelmet01_med_bh_a01c01_u_s.dds",
+      "sha256": "a2c8f07aeab2f616d77ce731c8e679890df1e2676a3e5e44220e1a91dfb67271",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\bhhelmet\\texture\\___psd\\face_bhhelmet01_med_bh_a01c01_u_s.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0xEDA69B5339348B12",
+      "entryOffset": 68391479,
+      "headerSize": 36,
+      "dataOffset": 68391515,
+      "compressedSize": 275828,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "d575bc29",
+      "path": "/resources/art/dynamic/player_character/outfit/bhhelmet/texture/___psd/face_bhhelmet01_med_bh_a01c01_u_h.dds",
+      "sha256": "c2d64d11b2818c4c0629c1c852c09b1f5f0366492e818ab6b6cbd80386a82f09",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\bhhelmet\\texture\\___psd\\face_bhhelmet01_med_bh_a01c01_u_h.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x2DCBEA5962614454",
+      "entryOffset": 68667343,
+      "headerSize": 36,
+      "dataOffset": 68667379,
+      "compressedSize": 7971,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "a9352ea7",
+      "path": "/resources/art/dynamic/player_character/outfit/bhhelmet/texture/___psd/face_bhhelmet01_med_bh_a01c01_u_m.dds",
+      "sha256": "191558354343e998a110ee801d20350a3e8ba6280fe25e16410ced865fde2eb9",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\player_character\\outfit\\bhhelmet\\texture\\___psd\\face_bhhelmet01_med_bh_a01c01_u_m.dds",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_dynamic_head_1.tor",
+      "archiveHash": "0x66738DEF680A03C8",
+      "entryOffset": 68230976,
+      "headerSize": 36,
+      "dataOffset": 68231012,
+      "compressedSize": 10799,
+      "length": 16216,
+      "compressionMethod": 1,
+      "crc32Index": "f73fbc46",
+      "path": "/resources/art/dynamic/face/model/face_bhhelmet01_bmn_archetype.gr2",
+      "sha256": "e14bfee520559d2f9f24d48e72509bcaa06d82d310d6b005262db54c4f9c8b39",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\face\\model\\face_bhhelmet01_bmn_archetype.gr2",
+      "archiveSha256": "d179bc08e30a3865d1385bb877dfdb4aaf3030917f38b341c9f73fc6468ec72c",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xE8F02C1CC72AC008",
+      "entryOffset": 80675816,
+      "headerSize": 36,
+      "dataOffset": 80675852,
+      "compressedSize": 1508,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "99a1d28a",
+      "path": "/resources/gfx/icons/ipp.class.bh.heroic.rdps1.t1x1.head.dds",
+      "sha256": "f89641a5062399280a751cdecf932e7ff2eca7f48fe55584f4e6ef413c2d55a1",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\ipp.class.bh.heroic.rdps1.t1x1.head.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_global_1.tor",
+      "archiveHash": "0xA2CC45EDE53FFD6E",
+      "entryOffset": 148169702,
+      "headerSize": 36,
+      "dataOffset": 148169738,
+      "compressedSize": 287680,
+      "length": 287680,
+      "compressionMethod": 0,
+      "crc32Index": "1a55b67c",
+      "path": "/resources/systemgenerated/buckets/485.bkt",
+      "sha256": "36cff8c382d5d9f1fc525a43c9ec699111e4b7cfed860b3b224e55144830fb0c",
+      "output": "source-assets\\april2012\\resources\\systemgenerated\\buckets\\485.bkt",
+      "archiveSha256": "ef2857bbf2527021c925c4c5bbe461d85b97ae58a238ede9be5ef9baa74300f2",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x9DCC876EF6964DBD",
+      "entryOffset": 78178829,
+      "headerSize": 36,
+      "dataOffset": 78178865,
+      "compressedSize": 10367,
+      "length": 17896,
+      "compressionMethod": 1,
+      "crc32Index": "cbd282bb",
+      "path": "/resources/art/dynamic/weapon/model/saber_high01_a01_v01.gr2",
+      "sha256": "3c27edac6ad6b3d6f33fa3783ecc6298edcb370444b911939bd36866661a00e6",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\model\\saber_high01_a01_v01.gr2",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0xFCCFD26C0D3DDB7B",
+      "entryOffset": 78189232,
+      "headerSize": 36,
+      "dataOffset": 78189268,
+      "compressedSize": 558,
+      "length": 2691,
+      "compressionMethod": 1,
+      "crc32Index": "2919d59c",
+      "path": "/resources/art/shaders/materials/saber_high01_a01_v01.mat",
+      "sha256": "ee8350bd71a40dfe9c5d28ca51d0306247e7e02b737c3e0aaa81cc2419ba3e26",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\saber_high01_a01_v01.mat",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x6F2430609D5AF4AF",
+      "entryOffset": 78193937,
+      "headerSize": 36,
+      "dataOffset": 78193973,
+      "compressedSize": 79269,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "4ed4ac49",
+      "path": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high01_a01_v01_d.dds",
+      "sha256": "7a74ce4d70a53475d3d1d8c9d66c7224d33e95fcd583fcdb1de62f314dcc177d",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\saber\\texture\\___psd\\saber_high01_a01_v01_d.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x7819CF23935A09B3",
+      "entryOffset": 78273242,
+      "headerSize": 36,
+      "dataOffset": 78273278,
+      "compressedSize": 44480,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "5baf6c36",
+      "path": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high01_a01_v01_n.dds",
+      "sha256": "cc6252ea2301069b776406fc92c25ce6e08383ffe076df29512a2d51cc377790",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\saber\\texture\\___psd\\saber_high01_a01_v01_n.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0xF67FCF8A77AA4955",
+      "entryOffset": 78317758,
+      "headerSize": 36,
+      "dataOffset": 78317794,
+      "compressedSize": 20210,
+      "length": 22000,
+      "compressionMethod": 1,
+      "crc32Index": "0eef02e4",
+      "path": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high01_a01_v01_s.dds",
+      "sha256": "c1f3d36be611e89208382cded9c8508b32d47ee0295aab034f3faa52e3facdc6",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\saber\\texture\\___psd\\saber_high01_a01_v01_s.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_misc_1.tor",
+      "archiveHash": "0xAD3C628D63B8BF86",
+      "entryOffset": 54325561,
+      "headerSize": 36,
+      "dataOffset": 54325597,
+      "compressedSize": 69,
+      "length": 496,
+      "compressionMethod": 1,
+      "crc32Index": "b3d7dd4c",
+      "path": "/resources/art/defaultassets/flat_n.dds",
+      "sha256": "d3db93092ebf95a5554b43888e679f505124b82bd37ca0808c43c44a33e239ef",
+      "output": "source-assets\\april2012\\resources\\art\\defaultassets\\flat_n.dds",
+      "archiveSha256": "9ac8eae93e1ed26e964a9b1146f653b73276ea7294f2311329c1699dbca7b7d6",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x1A3DF6E6EE57D764",
+      "entryOffset": 78338004,
+      "headerSize": 36,
+      "dataOffset": 78338040,
+      "compressedSize": 10079,
+      "length": 18408,
+      "compressionMethod": 1,
+      "crc32Index": "18804283",
+      "path": "/resources/art/dynamic/weapon/model/saber_high02_a01_v01.gr2",
+      "sha256": "6069289edfe0c87fda36be187fe0520e528445dc51fd0cb1d44a551d683c0388",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\model\\saber_high02_a01_v01.gr2",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x1A2704EF10994FFC",
+      "entryOffset": 78348119,
+      "headerSize": 36,
+      "dataOffset": 78348155,
+      "compressedSize": 576,
+      "length": 2697,
+      "compressionMethod": 1,
+      "crc32Index": "44eebec1",
+      "path": "/resources/art/shaders/materials/saber_high02_a01_v01.mat",
+      "sha256": "b279500677b748aff78fc5b6870bf6a841aeacaa783bceb4270bef6d6b13d875",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\saber_high02_a01_v01.mat",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0xDAEDD6E31BD610C0",
+      "entryOffset": 78352503,
+      "headerSize": 36,
+      "dataOffset": 78352539,
+      "compressedSize": 69916,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "762c9f81",
+      "path": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high02_a01_v01_d.dds",
+      "sha256": "cceb182bbe2644fbbc7795114ade9e7de745bec66d155f889844f7b5493cfb8d",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\saber\\texture\\___psd\\saber_high02_a01_v01_d.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0xDEB2B2E5B8E1FEBB",
+      "entryOffset": 78422455,
+      "headerSize": 36,
+      "dataOffset": 78422491,
+      "compressedSize": 45912,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "ccf458e8",
+      "path": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high02_a01_v01_n.dds",
+      "sha256": "c4da4d4b800a58998f9ff347b2532524879d65ce4e8f44b5bfadcb9e705a102f",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\saber\\texture\\___psd\\saber_high02_a01_v01_n.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x5A6188A0C3BB1565",
+      "entryOffset": 78468403,
+      "headerSize": 36,
+      "dataOffset": 78468439,
+      "compressedSize": 17925,
+      "length": 22000,
+      "compressionMethod": 1,
+      "crc32Index": "98b359bc",
+      "path": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high02_a01_v01_s.dds",
+      "sha256": "ba56699756eec936d626e25f2f1f3acf1c0d663fe9d41d1fcec518059277de51",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\saber\\texture\\___psd\\saber_high02_a01_v01_s.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xFE4C438F850A3A68",
+      "entryOffset": 60510565,
+      "headerSize": 36,
+      "dataOffset": 60510601,
+      "compressedSize": 17001,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "c397d776",
+      "path": "/resources/art/lookuptables/table_hair_01.dds",
+      "sha256": "a9cd23d6d7de246d05018ad80d4d5fa41587df64348c09dbc9639345e8b8e6d1",
+      "output": "source-assets\\april2012\\resources\\art\\lookuptables\\table_hair_01.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x0CC34D87443F0DF3",
+      "entryOffset": 38624113,
+      "headerSize": 36,
+      "dataOffset": 38624149,
+      "compressedSize": 10526,
+      "length": 22056,
+      "compressionMethod": 1,
+      "crc32Index": "de26488f",
+      "path": "/resources/art/dynamic/weapon/model/dualsaber_high01_a01_v01.gr2",
+      "sha256": "9376e5b11bdc9e47e893424203050c29c085c2ee0ba4b96b27dba0eb7e86a7db",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\model\\dualsaber_high01_a01_v01.gr2",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0xC8D8D36B053BCB35",
+      "entryOffset": 38634675,
+      "headerSize": 36,
+      "dataOffset": 38634711,
+      "compressedSize": 469,
+      "length": 1902,
+      "compressionMethod": 1,
+      "crc32Index": "4889d8d7",
+      "path": "/resources/art/shaders/materials/dualsaber_high01_a01_v01.mat",
+      "sha256": "0283781ebb68c1f73ed63ae92e595cd2d33faa9281be9a1b0b2e8fbcf83b4738",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\dualsaber_high01_a01_v01.mat",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x6E74825C261550F4",
+      "entryOffset": 38662096,
+      "headerSize": 36,
+      "dataOffset": 38662132,
+      "compressedSize": 367551,
+      "length": 699192,
+      "compressionMethod": 1,
+      "crc32Index": "f538c4ed",
+      "path": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high01_a01_v01_d.dds",
+      "sha256": "37518fd5b18aa42e4a35dd6993430cdb2fedb22eadd005f6dc98b1dc538213f4",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\dualsaber\\texture\\___psd\\dualsaber_high01_a01_v01_d.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x7EDB29AD9FAAEEF7",
+      "entryOffset": 39029683,
+      "headerSize": 36,
+      "dataOffset": 39029719,
+      "compressedSize": 572650,
+      "length": 1398256,
+      "compressionMethod": 1,
+      "crc32Index": "be9dbb81",
+      "path": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high01_a01_v01_n.dds",
+      "sha256": "69f3d70e7783958afe607309ea8081560b5aaf30484a243a0eadb234f4765011",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\dualsaber\\texture\\___psd\\dualsaber_high01_a01_v01_n.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x485C83DE17B49D71",
+      "entryOffset": 39602369,
+      "headerSize": 36,
+      "dataOffset": 39602405,
+      "compressedSize": 112832,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "7e3553b3",
+      "path": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high01_a01_v01_s.dds",
+      "sha256": "e0a24e128f1367277329e2980d10f995c7c49c70f207eab14eedf52f4f10624f",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\dualsaber\\texture\\___psd\\dualsaber_high01_a01_v01_s.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x51FDA641EAF7DE7E",
+      "entryOffset": 39715237,
+      "headerSize": 36,
+      "dataOffset": 39715273,
+      "compressedSize": 17257,
+      "length": 34328,
+      "compressionMethod": 1,
+      "crc32Index": "ef411ec6",
+      "path": "/resources/art/dynamic/weapon/model/dualsaber_high02_a01_v01.gr2",
+      "sha256": "64feacc7546b668f26b49092e958dceeff86d4c566da41dff9e3571261f13808",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\model\\dualsaber_high02_a01_v01.gr2",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0xA423601112FAECF1",
+      "entryOffset": 39732530,
+      "headerSize": 36,
+      "dataOffset": 39732566,
+      "compressedSize": 583,
+      "length": 2734,
+      "compressionMethod": 1,
+      "crc32Index": "42db8aba",
+      "path": "/resources/art/shaders/materials/dualsaber_high02_a01_v01.mat",
+      "sha256": "becbe18b43ca68365c549bd87fcf77ca2524df330f08a2d016b2d36f19550396",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\dualsaber_high02_a01_v01.mat",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x1687B74019710AD9",
+      "entryOffset": 39736766,
+      "headerSize": 36,
+      "dataOffset": 39736802,
+      "compressedSize": 78227,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "0eb1f899",
+      "path": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high02_a01_v01_d.dds",
+      "sha256": "a5c611d5899f553e14cb7fb8e78ef85174e2da60954a51d548d8fa2b70d76420",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\dualsaber\\texture\\___psd\\dualsaber_high02_a01_v01_d.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0xDA12AFDBCE939AE2",
+      "entryOffset": 39815029,
+      "headerSize": 36,
+      "dataOffset": 39815065,
+      "compressedSize": 40506,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "70485433",
+      "path": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high02_a01_v01_n.dds",
+      "sha256": "70e5e4d4ddaa1e337e619e831fe72e899487827e32a46699e2b61cd8997bc7e6",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\dualsaber\\texture\\___psd\\dualsaber_high02_a01_v01_n.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0xED3428699AC6B711",
+      "entryOffset": 39855571,
+      "headerSize": 36,
+      "dataOffset": 39855607,
+      "compressedSize": 22000,
+      "length": 22000,
+      "compressionMethod": 0,
+      "crc32Index": "2f0b5578",
+      "path": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high02_a01_v01_s.dds",
+      "sha256": "1a8a5ccd37dde40c6432ecd8148df234296b713b95b0e0d453a08a9aa23e3555",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\dualsaber\\texture\\___psd\\dualsaber_high02_a01_v01_s.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x8C13C5D52B8F60AE",
+      "entryOffset": 18388713,
+      "headerSize": 36,
+      "dataOffset": 18388749,
+      "compressedSize": 7183,
+      "length": 15848,
+      "compressionMethod": 1,
+      "crc32Index": "ed1990e3",
+      "path": "/resources/art/dynamic/weapon/model/blaster_high01_a01_v01.gr2",
+      "sha256": "2264702b7bfeb5c9ae289b3c356b0bb38f97bf2c56f1061a88f017527d24a026",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\model\\blaster_high01_a01_v01.gr2",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0xFAC97188AD757292",
+      "entryOffset": 18395932,
+      "headerSize": 36,
+      "dataOffset": 18395968,
+      "compressedSize": 579,
+      "length": 2726,
+      "compressionMethod": 1,
+      "crc32Index": "12192a2f",
+      "path": "/resources/art/shaders/materials/blaster_high01_a01_v01.mat",
+      "sha256": "6baff262564ff36aa34506e345e376796835bbffd0951fa1f7b5953df1e6529b",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\blaster_high01_a01_v01.mat",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0xE065BB9EDA752E95",
+      "entryOffset": 18400554,
+      "headerSize": 36,
+      "dataOffset": 18400590,
+      "compressedSize": 69729,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "05f85135",
+      "path": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high01_a01_v01_d.dds",
+      "sha256": "cc0310db93e9bd1873e00009fa8abc58457e80d01d21457e87b3bb8eb77bd25f",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\blaster\\texture\\___psd\\blaster_high01_a01_v01_d.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x17FC7F646465AC45",
+      "entryOffset": 18470319,
+      "headerSize": 36,
+      "dataOffset": 18470355,
+      "compressedSize": 56879,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "19d1d348",
+      "path": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high01_a01_v01_n.dds",
+      "sha256": "a84efa3e65da5e3786864d99617490bd27a27546041aa93111047b1d454965d5",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\blaster\\texture\\___psd\\blaster_high01_a01_v01_n.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0xF0F1B07285557E29",
+      "entryOffset": 18527234,
+      "headerSize": 36,
+      "dataOffset": 18527270,
+      "compressedSize": 22000,
+      "length": 22000,
+      "compressionMethod": 0,
+      "crc32Index": "9e1acbe5",
+      "path": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high01_a01_v01_s.dds",
+      "sha256": "9048b73d18e103271bf62a210d853d9c52df6dd5df725e382a93f34ae549eded",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\blaster\\texture\\___psd\\blaster_high01_a01_v01_s.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x3ECDD7239ECCE2DC",
+      "entryOffset": 19123505,
+      "headerSize": 36,
+      "dataOffset": 19123541,
+      "compressedSize": 9266,
+      "length": 18680,
+      "compressionMethod": 1,
+      "crc32Index": "bec38827",
+      "path": "/resources/art/dynamic/weapon/model/blaster_high02_a01_v01.gr2",
+      "sha256": "005f1703e0d221173e0b465d04fe728f96f19b506b4293e1e04c63296df06447",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\model\\blaster_high02_a01_v01.gr2",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0xC3DA3C44A625E153",
+      "entryOffset": 19132807,
+      "headerSize": 36,
+      "dataOffset": 19132843,
+      "compressedSize": 580,
+      "length": 2726,
+      "compressionMethod": 1,
+      "crc32Index": "8daf7ab3",
+      "path": "/resources/art/shaders/materials/blaster_high02_a01_v01.mat",
+      "sha256": "26b1c08e33dc0efdec47dfa417ceb19841db2ffb796b7114a6027a9e468d957d",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\blaster_high02_a01_v01.mat",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x76E3F4D4B69A62F7",
+      "entryOffset": 19137424,
+      "headerSize": 36,
+      "dataOffset": 19137460,
+      "compressedSize": 71268,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "cbb732dd",
+      "path": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high02_a01_v01_d.dds",
+      "sha256": "0ca3bbc59eed2c6c576f2c3160540ef2fbff7840d622d60a6e42308e649ac3e7",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\blaster\\texture\\___psd\\blaster_high02_a01_v01_d.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x0902C2329A5C4C9D",
+      "entryOffset": 19208728,
+      "headerSize": 36,
+      "dataOffset": 19208764,
+      "compressedSize": 49436,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "81203ab6",
+      "path": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high02_a01_v01_n.dds",
+      "sha256": "bb3b89d8a327c1b4d184dfaf9ceae6381f673a93e005897f981673e05bd2a543",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\blaster\\texture\\___psd\\blaster_high02_a01_v01_n.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x75096105447FC9F3",
+      "entryOffset": 19258200,
+      "headerSize": 36,
+      "dataOffset": 19258236,
+      "compressedSize": 19325,
+      "length": 22000,
+      "compressionMethod": 1,
+      "crc32Index": "2b6cdfd1",
+      "path": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high02_a01_v01_s.dds",
+      "sha256": "5934d8310e13c15aac70a63cda56d7587622281831a3da1a0991c93d8a937bb6",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\blaster\\texture\\___psd\\blaster_high02_a01_v01_s.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x67B280C94447B2D3",
+      "entryOffset": 49834124,
+      "headerSize": 36,
+      "dataOffset": 49834160,
+      "compressedSize": 8245,
+      "length": 17896,
+      "compressionMethod": 1,
+      "crc32Index": "0c0e6bc5",
+      "path": "/resources/art/dynamic/weapon/model/rifle_high01_a01_v01.gr2",
+      "sha256": "174c5e4cf18d8ab13a2c8c3501b8cdadaab1aa6c16ef3db77dc30557f24d7117",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\model\\rifle_high01_a01_v01.gr2",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x529F98DF7A3572CC",
+      "entryOffset": 49842405,
+      "headerSize": 36,
+      "dataOffset": 49842441,
+      "compressedSize": 459,
+      "length": 1879,
+      "compressionMethod": 1,
+      "crc32Index": "f29f2958",
+      "path": "/resources/art/shaders/materials/rifle_high01_a01_v01.mat",
+      "sha256": "b447ab22e63167958679a2246c1e308b3bb4571dea701ad224436faa72e59d3c",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\rifle_high01_a01_v01.mat",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x638ED79F82B60DFA",
+      "entryOffset": 49846981,
+      "headerSize": 36,
+      "dataOffset": 49847017,
+      "compressedSize": 75980,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "ace160a9",
+      "path": "/resources/art/dynamic/weapon/rifle/texture/___psd/rifle_high01_a01_v01_d.dds",
+      "sha256": "59138a6b55d473f71144e1465fd208d3b7b396c22af451e674d0750754859028",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\rifle\\texture\\___psd\\rifle_high01_a01_v01_d.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0xBA3FEBAAE50474A3",
+      "entryOffset": 49922997,
+      "headerSize": 36,
+      "dataOffset": 49923033,
+      "compressedSize": 48297,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "157a6874",
+      "path": "/resources/art/dynamic/weapon/rifle/texture/___psd/rifle_high01_a01_v01_n.dds",
+      "sha256": "3e66e1a3ba1055b32f4d8d292d786b73c7103651e7fcdbc2a29ddf19df624dfd",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\rifle\\texture\\___psd\\rifle_high01_a01_v01_n.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x34E60D7A21ED1717",
+      "entryOffset": 49971330,
+      "headerSize": 36,
+      "dataOffset": 49971366,
+      "compressedSize": 19867,
+      "length": 22000,
+      "compressionMethod": 1,
+      "crc32Index": "d9c7b7b5",
+      "path": "/resources/art/dynamic/weapon/rifle/texture/___psd/rifle_high01_a01_v01_s.dds",
+      "sha256": "678f356b3044acab9e650545ff44bb5c0e60ae21fe3ed0b50316b4e244f4c199",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\rifle\\texture\\___psd\\rifle_high01_a01_v01_s.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0xAAB5938F87D09F7D",
+      "entryOffset": 52083641,
+      "headerSize": 36,
+      "dataOffset": 52083677,
+      "compressedSize": 8645,
+      "length": 15480,
+      "compressionMethod": 1,
+      "crc32Index": "bb233d39",
+      "path": "/resources/art/dynamic/weapon/model/rifle_high02_a01_v01.gr2",
+      "sha256": "7858f50b288d156d385b2e47a37156ee305f6fb1cc9101a843492397ac76acf0",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\model\\rifle_high02_a01_v01.gr2",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x71D009C0A101B02D",
+      "entryOffset": 52092322,
+      "headerSize": 36,
+      "dataOffset": 52092358,
+      "compressedSize": 466,
+      "length": 1862,
+      "compressionMethod": 1,
+      "crc32Index": "f697065a",
+      "path": "/resources/art/shaders/materials/rifle_high02_a01_v01.mat",
+      "sha256": "df7326808e8aa3efeb37d029b0aeef02d26826bc62884e1b67eb4053374807c4",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\rifle_high02_a01_v01.mat",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x55CF167722DEA850",
+      "entryOffset": 52096793,
+      "headerSize": 36,
+      "dataOffset": 52096829,
+      "compressedSize": 71172,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "c0b6a66c",
+      "path": "/resources/art/dynamic/weapon/rifle/texture/rifle_high02_a01_v01_d.dds",
+      "sha256": "d04dbc01ad5181cff5666f0c2bef1c1db4f39a3ec1f9811af90be5ee5f76c0ee",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\rifle\\texture\\rifle_high02_a01_v01_d.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x8E198C72CB801663",
+      "entryOffset": 52168001,
+      "headerSize": 36,
+      "dataOffset": 52168037,
+      "compressedSize": 43108,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "a8cfc7a9",
+      "path": "/resources/art/dynamic/weapon/rifle/texture/rifle_high02_a01_v01_n.dds",
+      "sha256": "577e922763977f440b2c0457a73b011b237a90a4ded2e1b3427af3b36958d0da",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\rifle\\texture\\rifle_high02_a01_v01_n.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_weapon_1.tor",
+      "archiveHash": "0x1136CB1DDA53DC19",
+      "entryOffset": 52211145,
+      "headerSize": 36,
+      "dataOffset": 52211181,
+      "compressedSize": 20128,
+      "length": 22000,
+      "compressionMethod": 1,
+      "crc32Index": "1334cb6b",
+      "path": "/resources/art/dynamic/weapon/rifle/texture/rifle_high02_a01_v01_s.dds",
+      "sha256": "e956045eca2645909444048ddbef32b76e1fc3f60e5424b315b8437192f40ad4",
+      "output": "source-assets\\april2012\\resources\\art\\dynamic\\weapon\\rifle\\texture\\rifle_high02_a01_v01_s.dds",
+      "archiveSha256": "f0fb16007d3260dc9d6ea1922baf58afc7ae6195a996d0103f81d138783a7c0f",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xABF0793290A85599",
+      "entryOffset": 148246312,
+      "headerSize": 36,
+      "dataOffset": 148246348,
+      "compressedSize": 1253,
+      "length": 1480,
+      "compressionMethod": 1,
+      "crc32Index": "06640b22",
+      "path": "/resources/gfx/icons/saber_high01_a01_v01.dds",
+      "sha256": "19391f01972aec48e6d2e2ebf9cfa3dc36f18a272d38ab339aa7dbc1e0cf2cec",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\saber_high01_a01_v01.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x93A7D86B63CB766A",
+      "entryOffset": 148247601,
+      "headerSize": 36,
+      "dataOffset": 148247637,
+      "compressedSize": 1262,
+      "length": 1480,
+      "compressionMethod": 1,
+      "crc32Index": "26e30b72",
+      "path": "/resources/gfx/icons/saber_high02_a01_v01.dds",
+      "sha256": "bf096960630a76a18f66bca80f97bc4a409b7aaef4dab2a0415adcc5cc80703a",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\saber_high02_a01_v01.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xA4C5841291D91001",
+      "entryOffset": 74684779,
+      "headerSize": 36,
+      "dataOffset": 74684815,
+      "compressedSize": 1230,
+      "length": 1480,
+      "compressionMethod": 1,
+      "crc32Index": "7c0cca89",
+      "path": "/resources/gfx/icons/dualsaber_high01_a01_v01.dds",
+      "sha256": "4ef643cd12241721da8c7006048ccc5fc4ffcaad8b662da9e6ba49ebbcef8f28",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\dualsaber_high01_a01_v01.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x4A43B1E82DDC2ABF",
+      "entryOffset": 74686045,
+      "headerSize": 36,
+      "dataOffset": 74686081,
+      "compressedSize": 1260,
+      "length": 1480,
+      "compressionMethod": 1,
+      "crc32Index": "696e821d",
+      "path": "/resources/gfx/icons/dualsaber_high02_a01_v01.dds",
+      "sha256": "c2b8866fd78e4fe5312424f188b858725597f1bd44e29eabb296358d5f71a0c3",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\dualsaber_high02_a01_v01.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x59C80323A9DDEE04",
+      "entryOffset": 72249505,
+      "headerSize": 36,
+      "dataOffset": 72249541,
+      "compressedSize": 1256,
+      "length": 1480,
+      "compressionMethod": 1,
+      "crc32Index": "b9b0a2b6",
+      "path": "/resources/gfx/icons/blaster_high01_a01_v01.dds",
+      "sha256": "f03e9a6a75453d55f5b820ed38f297f53fbd91959e3e442894975ab82181d9b8",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\blaster_high01_a01_v01.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x2B5FE540E3FF39FD",
+      "entryOffset": 72264865,
+      "headerSize": 36,
+      "dataOffset": 72264901,
+      "compressedSize": 1257,
+      "length": 1480,
+      "compressionMethod": 1,
+      "crc32Index": "3672fb2c",
+      "path": "/resources/gfx/icons/blaster_high02_a01_v01.dds",
+      "sha256": "ecd9f65da7bf9f28eb927eb24ba6b772d650b1f686fd58ae95790018d53f7058",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\blaster_high02_a01_v01.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xB450955933DD4B80",
+      "entryOffset": 147670378,
+      "headerSize": 36,
+      "dataOffset": 147670414,
+      "compressedSize": 1217,
+      "length": 1480,
+      "compressionMethod": 1,
+      "crc32Index": "dc8da7e8",
+      "path": "/resources/gfx/icons/rifle_high01_a01_v01.dds",
+      "sha256": "06376974b613749bc740142e5aaf70c7d38826d02a6dd9aec07bf645624bebb8",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\rifle_high01_a01_v01.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x19D7A69A871C075A",
+      "entryOffset": 147685609,
+      "headerSize": 36,
+      "dataOffset": 147685645,
+      "compressedSize": 1243,
+      "length": 1480,
+      "compressionMethod": 1,
+      "crc32Index": "93d0d607",
+      "path": "/resources/gfx/icons/rifle_high02_a01_v01.dds",
+      "sha256": "07926304f42e9b58f66607577cbbaeb77e40d03402a0f3663e5043cf073b8610",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\rifle_high02_a01_v01.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "character selection",
+      "to": "/resources/art/dynamic/head/index.xml",
+      "relation": "appearance registry"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/dynamic/face/index.xml",
+      "relation": "appearance registry"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/shaders/materials/face_swhelmet02_light_sw_a03c03_u.mat",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_swhelmet02_light_sw_a03c03_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/swhelmets/texture/___psd/face_swhelmet02_light_sw_a03c03_u_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_swhelmet02_light_sw_a03c03_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/swhelmets/texture/___psd/face_swhelmet02_light_sw_a03c01_u_02_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_swhelmet02_light_sw_a03c03_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/swhelmets/texture/___psd/face_swhelmet02_light_sw_a03c03_u_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_swhelmet02_light_sw_a03c03_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/swhelmets/texture/___psd/face_swhelmet02_light_sw_a03c03_u_h.dds",
+      "relation": "PaletteMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_swhelmet02_light_sw_a03c03_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/swhelmets/texture/___psd/face_swhelmet02_light_sw_a03c03_u_m.dds",
+      "relation": "PaletteMaskMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_swhelmet02_light_sw_a03c03_u.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "GuildInsigniaMap"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/dynamic/face/model/face_swhelmet02_bmn_archetype.gr2",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/gfx/icons/ipp.class.war.heroic.mdps2.t1x2.head.dds",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/systemgenerated/buckets/100.bkt",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/shaders/materials/face_sscirclet01_ss_h01c01_u.mat",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_sscirclet01_ss_h01c01_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/sshelmets/texture/___psd/face_sscirclet01_ss_h01c01_u_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_sscirclet01_ss_h01c01_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/sshelmets/texture/___psd/face_sscirclet01_ss_h01c01_u_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_sscirclet01_ss_h01c01_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/sshelmets/texture/___psd/face_sscirclet01_ss_h01c01_u_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_sscirclet01_ss_h01c01_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/sshelmets/texture/___psd/face_sscirclet01_ss_h01c01_u_h.dds",
+      "relation": "PaletteMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_sscirclet01_ss_h01c01_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/sshelmets/texture/___psd/face_sscirclet01_ss_h01c01_u_m.dds",
+      "relation": "PaletteMaskMap"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/dynamic/face/model/face_sscirclet01_bmn_archetype.gr2",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/gfx/icons/ipp.class.inq.heroic.cdps1.t1x2.head.dds",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/systemgenerated/buckets/439.bkt",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/shaders/materials/face_spmask03_med_sp_a04c03_u.mat",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_spmask03_med_sp_a04c03_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/sphelmets/texture/___psd/face_spmask03_med_sp_a04c03_u_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_spmask03_med_sp_a04c03_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/sphelmets/texture/___psd/face_spmask03_med_sp_a04c03_u_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_spmask03_med_sp_a04c03_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/sphelmets/texture/___psd/face_spmask03_med_sp_a04c03_u_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_spmask03_med_sp_a04c03_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/sphelmets/texture/___psd/face_spmask03_med_sp_a04c03_u_h.dds",
+      "relation": "PaletteMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_spmask03_med_sp_a04c03_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/sphelmets/texture/___psd/face_spmask03_med_sp_a04c03_u_m.dds",
+      "relation": "PaletteMaskMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_spmask03_med_sp_a04c03_u.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "GuildInsigniaMap"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/dynamic/face/model/face_spmask03_bmn_archetype.gr2",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/gfx/icons/ipp.class.spy.heroic.tdps1.t1x2.head.dds",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/systemgenerated/buckets/425.bkt",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/shaders/materials/face_bhhelmet01_med_bh_a01c01_u.mat",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_bhhelmet01_med_bh_a01c01_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/bhhelmet/texture/___psd/face_bhhelmet01_med_bh_a01c01_u_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_bhhelmet01_med_bh_a01c01_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/bhhelmet/texture/___psd/face_bhhelmet01_med_bh_a01c01_u_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_bhhelmet01_med_bh_a01c01_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/bhhelmet/texture/___psd/face_bhhelmet01_med_bh_a01c01_u_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_bhhelmet01_med_bh_a01c01_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/bhhelmet/texture/___psd/face_bhhelmet01_med_bh_a01c01_u_h.dds",
+      "relation": "PaletteMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/face_bhhelmet01_med_bh_a01c01_u.mat",
+      "to": "/resources/art/dynamic/player_character/outfit/bhhelmet/texture/___psd/face_bhhelmet01_med_bh_a01c01_u_m.dds",
+      "relation": "PaletteMaskMap"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/dynamic/face/model/face_bhhelmet01_bmn_archetype.gr2",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/gfx/icons/ipp.class.bh.heroic.rdps1.t1x1.head.dds",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/systemgenerated/buckets/485.bkt",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/dynamic/weapon/model/saber_high01_a01_v01.gr2",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/shaders/materials/saber_high01_a01_v01.mat",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/saber_high01_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high01_a01_v01_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/saber_high01_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high01_a01_v01_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/saber_high01_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high01_a01_v01_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/saber_high01_a01_v01.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "PaletteMaskMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/saber_high01_a01_v01.mat",
+      "to": "/resources/art/defaultassets/flat_n.dds",
+      "relation": "DirectionMap"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/dynamic/weapon/model/saber_high02_a01_v01.gr2",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/shaders/materials/saber_high02_a01_v01.mat",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/saber_high02_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high02_a01_v01_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/saber_high02_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high02_a01_v01_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/saber_high02_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/saber/texture/___psd/saber_high02_a01_v01_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/saber_high02_a01_v01.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "PaletteMaskMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/saber_high02_a01_v01.mat",
+      "to": "/resources/art/lookuptables/table_hair_01.dds",
+      "relation": "DirectionMap"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/dynamic/weapon/model/dualsaber_high01_a01_v01.gr2",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/shaders/materials/dualsaber_high01_a01_v01.mat",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/dualsaber_high01_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high01_a01_v01_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/dualsaber_high01_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high01_a01_v01_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/dualsaber_high01_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high01_a01_v01_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/dynamic/weapon/model/dualsaber_high02_a01_v01.gr2",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/shaders/materials/dualsaber_high02_a01_v01.mat",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/dualsaber_high02_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high02_a01_v01_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/dualsaber_high02_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high02_a01_v01_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/dualsaber_high02_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/dualsaber/texture/___psd/dualsaber_high02_a01_v01_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/dualsaber_high02_a01_v01.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "PaletteMaskMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/dualsaber_high02_a01_v01.mat",
+      "to": "/resources/art/lookuptables/table_hair_01.dds",
+      "relation": "DirectionMap"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/dynamic/weapon/model/blaster_high01_a01_v01.gr2",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/shaders/materials/blaster_high01_a01_v01.mat",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/blaster_high01_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high01_a01_v01_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/blaster_high01_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high01_a01_v01_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/blaster_high01_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high01_a01_v01_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/blaster_high01_a01_v01.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "PaletteMaskMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/blaster_high01_a01_v01.mat",
+      "to": "/resources/art/lookuptables/table_hair_01.dds",
+      "relation": "DirectionMap"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/dynamic/weapon/model/blaster_high02_a01_v01.gr2",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/shaders/materials/blaster_high02_a01_v01.mat",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/blaster_high02_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high02_a01_v01_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/blaster_high02_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high02_a01_v01_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/blaster_high02_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/blaster/texture/___psd/blaster_high02_a01_v01_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/blaster_high02_a01_v01.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "PaletteMaskMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/blaster_high02_a01_v01.mat",
+      "to": "/resources/art/lookuptables/table_hair_01.dds",
+      "relation": "DirectionMap"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/dynamic/weapon/model/rifle_high01_a01_v01.gr2",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/shaders/materials/rifle_high01_a01_v01.mat",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/rifle_high01_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/rifle/texture/___psd/rifle_high01_a01_v01_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/rifle_high01_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/rifle/texture/___psd/rifle_high01_a01_v01_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/rifle_high01_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/rifle/texture/___psd/rifle_high01_a01_v01_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/dynamic/weapon/model/rifle_high02_a01_v01.gr2",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/shaders/materials/rifle_high02_a01_v01.mat",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/rifle_high02_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/rifle/texture/rifle_high02_a01_v01_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/rifle_high02_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/rifle/texture/rifle_high02_a01_v01_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/rifle_high02_a01_v01.mat",
+      "to": "/resources/art/dynamic/weapon/rifle/texture/rifle_high02_a01_v01_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "collectible.war.head",
+      "to": "/resources/gfx/icons/ipp.class.war.heroic.mdps2.t1x2.head.dds",
+      "relation": "matching April inventory icon"
+    },
+    {
+      "from": "collectible.inq.head",
+      "to": "/resources/gfx/icons/ipp.class.inq.heroic.cdps1.t1x2.head.dds",
+      "relation": "matching April inventory icon"
+    },
+    {
+      "from": "collectible.spy.head",
+      "to": "/resources/gfx/icons/ipp.class.spy.heroic.tdps1.t1x2.head.dds",
+      "relation": "matching April inventory icon"
+    },
+    {
+      "from": "collectible.bh.head",
+      "to": "/resources/gfx/icons/ipp.class.bh.heroic.rdps1.t1x1.head.dds",
+      "relation": "matching April inventory icon"
+    },
+    {
+      "from": "collectible.saber1.main_hand",
+      "to": "/resources/gfx/icons/saber_high01_a01_v01.dds",
+      "relation": "matching April inventory icon"
+    },
+    {
+      "from": "collectible.saber1.off_hand",
+      "to": "/resources/gfx/icons/saber_high01_a01_v01.dds",
+      "relation": "matching April inventory icon"
+    },
+    {
+      "from": "collectible.saber2.main_hand",
+      "to": "/resources/gfx/icons/saber_high02_a01_v01.dds",
+      "relation": "matching April inventory icon"
+    },
+    {
+      "from": "collectible.saber2.off_hand",
+      "to": "/resources/gfx/icons/saber_high02_a01_v01.dds",
+      "relation": "matching April inventory icon"
+    },
+    {
+      "from": "collectible.staff1.main_hand",
+      "to": "/resources/gfx/icons/dualsaber_high01_a01_v01.dds",
+      "relation": "matching April inventory icon"
+    },
+    {
+      "from": "collectible.staff2.main_hand",
+      "to": "/resources/gfx/icons/dualsaber_high02_a01_v01.dds",
+      "relation": "matching April inventory icon"
+    },
+    {
+      "from": "collectible.pistol1.main_hand",
+      "to": "/resources/gfx/icons/blaster_high01_a01_v01.dds",
+      "relation": "matching April inventory icon"
+    },
+    {
+      "from": "collectible.pistol1.off_hand",
+      "to": "/resources/gfx/icons/blaster_high01_a01_v01.dds",
+      "relation": "matching April inventory icon"
+    },
+    {
+      "from": "collectible.pistol2.main_hand",
+      "to": "/resources/gfx/icons/blaster_high02_a01_v01.dds",
+      "relation": "matching April inventory icon"
+    },
+    {
+      "from": "collectible.pistol2.off_hand",
+      "to": "/resources/gfx/icons/blaster_high02_a01_v01.dds",
+      "relation": "matching April inventory icon"
+    },
+    {
+      "from": "collectible.rifle1.main_hand",
+      "to": "/resources/gfx/icons/rifle_high01_a01_v01.dds",
+      "relation": "matching April inventory icon"
+    },
+    {
+      "from": "collectible.rifle2.main_hand",
+      "to": "/resources/gfx/icons/rifle_high02_a01_v01.dds",
+      "relation": "matching April inventory icon"
+    }
+  ],
+  "unresolved": [],
+  "selection": "human male body type 2; bmnnew skeleton"
+}

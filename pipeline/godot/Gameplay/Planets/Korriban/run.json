@@ -1,0 +1,245 @@
+{
+  "CoreLevel": 30,
+  "FirstLevelExperience": 16,
+  "ExperienceGrowth": 1.105,
+  "ArtifactCatalog": "res://Gameplay/Planets/Korriban/artifacts.json",
+  "AudioTuning": "res://Gameplay/Planets/Korriban/audio.json",
+  "Stages": [
+    {
+      "Level": 1,
+      "Region": "Valley of the Dark Lords",
+      "Description": "The old tomb roads stir. Survive the Valley.",
+      "Focus": [
+        36,
+        -17.1,
+        12.6
+      ],
+      "AmbientGain": -24,
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Enemies/Broodling.tscn",
+          "Weight": 8
+        },
+        {
+          "Scene": "res://Gameplay/Enemies/Shyrack.tscn",
+          "Weight": 1
+        }
+      ]
+    },
+    {
+      "Level": 6,
+      "Region": "Tomb Precinct",
+      "Description": "Burial stones and hungry broods. The Broodmatron approaches.",
+      "Focus": [
+        39,
+        -17,
+        17
+      ],
+      "AmbientGain": -22,
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Enemies/Broodling.tscn",
+          "Weight": 5
+        },
+        {
+          "Scene": "res://Gameplay/Enemies/Shyrack.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Enemies/CryptLooter.tscn",
+          "Weight": 2
+        }
+      ]
+    },
+    {
+      "Level": 11,
+      "Region": "Tomb Precinct",
+      "Description": "Ancient sentries awaken among the tomb ruins.",
+      "Focus": [
+        41,
+        -17,
+        20
+      ],
+      "AmbientGain": -21,
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Enemies/CryptLooter.tscn",
+          "Weight": 4
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/AncientDroid.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Enemies/Shyrack.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Enemies/Broodling.tscn",
+          "Weight": 2
+        }
+      ]
+    },
+    {
+      "Level": 16,
+      "Region": "Lower Wilds",
+      "Description": "Tuk\u2019ata hunt the broken cliffs. Keep clear of their spit.",
+      "Focus": [
+        48,
+        -17,
+        23
+      ],
+      "AmbientGain": -19,
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/SpittingTukata.tscn",
+          "Weight": 5
+        },
+        {
+          "Scene": "res://Gameplay/Enemies/Shyrack.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/Terentatek.tscn",
+          "Weight": 1
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/AncientDroid.tscn",
+          "Weight": 2
+        }
+      ]
+    },
+    {
+      "Level": 21,
+      "Region": "Lower Wilds",
+      "Description": "Maulers gather while ancient security patrols the ruins.",
+      "Focus": [
+        51,
+        -17,
+        25
+      ],
+      "AmbientGain": -18,
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/SpittingTukata.tscn",
+          "Weight": 4
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/Terentatek.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/AncientDroid.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Enemies/CryptLooter.tscn",
+          "Weight": 2
+        }
+      ]
+    },
+    {
+      "Level": 26,
+      "Region": "Forbidden Tombs",
+      "Description": "The final trial wakes. Ancient Fury follows the first wounds.",
+      "Focus": [
+        51,
+        -15.8,
+        24.5
+      ],
+      "AmbientGain": -17,
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/Terentatek.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/AncientDroid.tscn",
+          "Weight": 4
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/SpittingTukata.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Enemies/Shyrack.tscn",
+          "Weight": 2
+        }
+      ]
+    }
+  ],
+  "Milestones": [
+    {
+      "Level": 5,
+      "Encounter": "res://Gameplay/Planets/Korriban/BroodMotherEncounter.tres"
+    },
+    {
+      "Level": 10,
+      "Encounter": "res://Gameplay/Planets/Korriban/BroodmatronEncounter.tres"
+    },
+    {
+      "Level": 15,
+      "Encounter": "res://Gameplay/Planets/Korriban/ScreecherEncounter.tres"
+    },
+    {
+      "Level": 20,
+      "Encounter": "res://Gameplay/Planets/Korriban/ProtectorBossEncounter.tres"
+    },
+    {
+      "Level": 25,
+      "Encounter": "res://Gameplay/Planets/Korriban/MaulerEliteEncounter.tres"
+    },
+    {
+      "Level": 30,
+      "Encounter": "res://Gameplay/Planets/Korriban/AncientBeastEncounter.tres"
+    }
+  ],
+  "Caches": [
+    {
+      "Id": "valley",
+      "Title": "Valley Burial Cache",
+      "Position": [
+        35.4,
+        -17.1,
+        13.5
+      ],
+      "Level": 1,
+      "Reward": "xp"
+    },
+    {
+      "Id": "precinct",
+      "Title": "Guarded Sith Relic",
+      "Position": [
+        40,
+        -17,
+        18.5
+      ],
+      "Level": 8,
+      "Reward": "artifact",
+      "Guard": "res://Gameplay/Planets/Korriban/AncientDroid.tscn"
+    },
+    {
+      "Id": "wilds",
+      "Title": "Wilds Restorative Cache",
+      "Position": [
+        48,
+        -17,
+        23.5
+      ],
+      "Level": 15,
+      "Reward": "heal"
+    },
+    {
+      "Id": "forbidden",
+      "Title": "Forbidden Tomb Cache",
+      "Position": [
+        51,
+        -15.8,
+        24.5
+      ],
+      "Level": 23,
+      "Reward": "artifact",
+      "Guard": "res://Gameplay/Planets/Korriban/Terentatek.tscn"
+    }
+  ]
+}

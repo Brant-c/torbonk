@@ -308,7 +308,7 @@ public partial class CharacterPresentation : Node3D
                 if (Skeleton.FindBone(bone) < 0) { animation.RemoveTrack(i); continue; }
                 animation.TrackSetPath(i, new NodePath(Animator.GetNode(Animator.RootNode).GetPathTo(Skeleton) + ":" + bone));
             }
-            if (name is "StormLoop" or "Airborne" or "Falling") animation.LoopMode = Animation.LoopModeEnum.Linear;
+            if (name is "StormLoop" or "Airborne" or "Falling" || key=="PT" && name=="ThrowLoop") animation.LoopMode = Animation.LoopModeEnum.Linear;
             library.AddAnimation(name, animation);
         }
         // Smash is the original ground-smash leap: enter (launch) then exit (descent and slam). The 8 s clip and hover loop between them are not used.

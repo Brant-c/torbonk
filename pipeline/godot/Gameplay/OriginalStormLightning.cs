@@ -188,7 +188,7 @@ public partial class OriginalStormLightning : Node3D
             Shaded=false,Billboard=flat?BaseMaterial3D.BillboardModeEnum.Disabled:BaseMaterial3D.BillboardModeEnum.Enabled,
             CastShadow=GeometryInstance3D.ShadowCastingSetting.Off};
         sprite.MaterialOverride=new StandardMaterial3D {ShadingMode=BaseMaterial3D.ShadingModeEnum.Unshaded,
-            AlbedoTexture=tex,VertexColorUseAsAlbedo=true,Transparency=BaseMaterial3D.TransparencyEnum.Alpha,BlendMode=BaseMaterial3D.BlendModeEnum.Add,
+            AlbedoTexture=tex,VertexColorUseAsAlbedo=true,Transparency=BaseMaterial3D.TransparencyEnum.Alpha,DisableFog=true,BlendMode=BaseMaterial3D.BlendModeEnum.Add,
             BillboardMode=sprite.Billboard,BillboardKeepScale=true,CullMode=BaseMaterial3D.CullModeEnum.Disabled,DepthDrawMode=BaseMaterial3D.DepthDrawModeEnum.Disabled};
         if(flat)sprite.RotationDegrees=new Vector3(-90,0,0);AddChild(sprite);sprite.GlobalPosition=point;_sprites.Add(sprite);
     }

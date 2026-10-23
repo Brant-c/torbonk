@@ -1,0 +1,1234 @@
+{
+  "patches": [
+    {
+      "id": "4611686019817460633",
+      "room": "terrain_large_factory_area",
+      "width": 64,
+      "depth": 64,
+      "position": [
+        29.0,
+        0.538500010967,
+        -11.8000001907
+      ],
+      "version": 1,
+      "vertices": 4096,
+      "triangles": 7938,
+      "sourceHeightEnd": 8706,
+      "embeddedSha256": "bf505bb5b396f93101bdd04298864b51924294688ba2dba57e9bd7e09abd376d",
+      "decodedSha256": "9021cc44afe25b5bad523f3c1b7fc73bfa3453b020a45daae5befaaffa4f971f",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        127,
+        127
+      ],
+      "layers": [
+        "6"
+      ],
+      "blendSumRange": [
+        1.0,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/hutta/4611686019817460633_albedo.png",
+        "normal": "res://Assets/Maps/hutta/4611686019817460633_normal.png",
+        "roughness": "res://Assets/Maps/hutta/4611686019817460633_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686019817460634",
+      "room": "terrain_large_factory_area",
+      "width": 64,
+      "depth": 64,
+      "position": [
+        29.0,
+        0.344799995422,
+        0.800000011921
+      ],
+      "version": 1,
+      "vertices": 4096,
+      "triangles": 7938,
+      "sourceHeightEnd": 8706,
+      "embeddedSha256": "670a8958d0ff5529bbf0623f0e71b3783f95cab99fbb717bb3818dddadc35686",
+      "decodedSha256": "a478538e51bbb07700354d3c3b04e88e7b73ad76a7a2317cbb45e1c7d3edb4c3",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        127,
+        127
+      ],
+      "layers": [
+        "1",
+        "4",
+        "6",
+        "11",
+        "14",
+        "19",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 162
+        },
+        {
+          "id": 1,
+          "painted": 298
+        },
+        {
+          "id": 2,
+          "painted": 90
+        },
+        {
+          "id": 4,
+          "painted": 98
+        },
+        {
+          "id": 5,
+          "painted": 83
+        },
+        {
+          "id": 6,
+          "painted": 34
+        },
+        {
+          "id": 33,
+          "painted": 23
+        },
+        {
+          "id": 35,
+          "painted": 263
+        },
+        {
+          "id": 37,
+          "painted": 52
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/hutta/4611686019817460634_albedo.png",
+        "normal": "res://Assets/Maps/hutta/4611686019817460634_normal.png",
+        "roughness": "res://Assets/Maps/hutta/4611686019817460634_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686019817460635",
+      "room": "terrain_large_factory_area",
+      "width": 64,
+      "depth": 64,
+      "position": [
+        29.0,
+        0.426699995995,
+        13.3999996185
+      ],
+      "version": 1,
+      "vertices": 4096,
+      "triangles": 6246,
+      "sourceHeightEnd": 9218,
+      "embeddedSha256": "3e378e8d878f0062afa3625e75c9c914b3a458949e0d741d2f5f3948263f5dd4",
+      "decodedSha256": "d43371740d3e98724492afbd38063ffbb0b4570dbfb253a5d593cb2c8be70b6b",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        127,
+        127
+      ],
+      "layers": [
+        "14",
+        "1",
+        "4",
+        "6",
+        "11",
+        "19",
+        "20"
+      ],
+      "blendSumRange": [
+        0.0,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {
+        "0": 36
+      },
+      "legacyDenseCopy": false,
+      "holes": true,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 181
+        },
+        {
+          "id": 1,
+          "painted": 526
+        },
+        {
+          "id": 2,
+          "painted": 156
+        },
+        {
+          "id": 4,
+          "painted": 167
+        },
+        {
+          "id": 5,
+          "painted": 44
+        },
+        {
+          "id": 6,
+          "painted": 28
+        },
+        {
+          "id": 33,
+          "painted": 92
+        },
+        {
+          "id": 34,
+          "painted": 67
+        },
+        {
+          "id": 35,
+          "painted": 197
+        },
+        {
+          "id": 36,
+          "painted": 72
+        },
+        {
+          "id": 37,
+          "painted": 86
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/hutta/4611686019817460635_albedo.png",
+        "normal": "res://Assets/Maps/hutta/4611686019817460635_normal.png",
+        "roughness": "res://Assets/Maps/hutta/4611686019817460635_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686019817460636",
+      "room": "terrain_large_factory_area",
+      "width": 64,
+      "depth": 64,
+      "position": [
+        29.0,
+        1.06449997425,
+        26.0
+      ],
+      "version": 1,
+      "vertices": 4096,
+      "triangles": 7938,
+      "sourceHeightEnd": 8706,
+      "embeddedSha256": "69afd785673b04bfe084f33bfa94d3f9459b4b652a27de30b19056fac0d04110",
+      "decodedSha256": "67a7802f2f055311401f8ebb7772c1e4beab192043794f19b454e53bec49da36",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        127,
+        127
+      ],
+      "layers": [
+        "11",
+        "1",
+        "4",
+        "6",
+        "14",
+        "19",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9963197112083435,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {
+        "0": 4
+      },
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 293
+        },
+        {
+          "id": 1,
+          "painted": 580
+        },
+        {
+          "id": 2,
+          "painted": 415
+        },
+        {
+          "id": 4,
+          "painted": 156
+        },
+        {
+          "id": 5,
+          "painted": 7
+        },
+        {
+          "id": 6,
+          "painted": 5
+        },
+        {
+          "id": 7,
+          "painted": 6
+        },
+        {
+          "id": 33,
+          "painted": 162
+        },
+        {
+          "id": 34,
+          "painted": 32
+        },
+        {
+          "id": 35,
+          "painted": 699
+        },
+        {
+          "id": 36,
+          "painted": 82
+        },
+        {
+          "id": 37,
+          "painted": 22
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/hutta/4611686019817460636_albedo.png",
+        "normal": "res://Assets/Maps/hutta/4611686019817460636_normal.png",
+        "roughness": "res://Assets/Maps/hutta/4611686019817460636_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686019817460651",
+      "room": "terrain_large_factory_area",
+      "width": 64,
+      "depth": 64,
+      "position": [
+        41.5999984741,
+        -0.293300002813,
+        13.3999996185
+      ],
+      "version": 1,
+      "vertices": 4096,
+      "triangles": 6922,
+      "sourceHeightEnd": 9218,
+      "embeddedSha256": "17daf5770c2fa81a95518377fb7d46ff7e93734a7690d51b87d7d8e639505466",
+      "decodedSha256": "94e7b27ed38c61b137ba097fe7faf70bfc0523f3f7e4bd776411fe4928ac3a03",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        127,
+        127
+      ],
+      "layers": [
+        "6",
+        "1",
+        "4",
+        "11",
+        "14",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9926393628120422,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {
+        "0": 28
+      },
+      "legacyDenseCopy": false,
+      "holes": true,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 81
+        },
+        {
+          "id": 1,
+          "painted": 50
+        },
+        {
+          "id": 4,
+          "painted": 37
+        },
+        {
+          "id": 5,
+          "painted": 42
+        },
+        {
+          "id": 6,
+          "painted": 10
+        },
+        {
+          "id": 7,
+          "painted": 12
+        },
+        {
+          "id": 34,
+          "painted": 11
+        },
+        {
+          "id": 35,
+          "painted": 49
+        },
+        {
+          "id": 37,
+          "painted": 147
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/hutta/4611686019817460651_albedo.png",
+        "normal": "res://Assets/Maps/hutta/4611686019817460651_normal.png",
+        "roughness": "res://Assets/Maps/hutta/4611686019817460651_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686019817460652",
+      "room": "terrain_large_factory_area",
+      "width": 33,
+      "depth": 18,
+      "position": [
+        38.4000015259,
+        1.05820000172,
+        21.3999996185
+      ],
+      "version": 9,
+      "vertices": 594,
+      "triangles": 1088,
+      "sourceHeightEnd": 1406,
+      "embeddedSha256": "7e6b7ce2207680d35db60e9ea3f25e884094f1e990eb3ffea29899a82393e396",
+      "decodedSha256": "4af47cc0bd61c34b018e8e8ec899457708fe7854cdb58f5d1f67c45d7d3cdeea",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        65,
+        35
+      ],
+      "layers": [
+        "1",
+        "4",
+        "6",
+        "11",
+        "14",
+        "19",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 105
+        },
+        {
+          "id": 1,
+          "painted": 308
+        },
+        {
+          "id": 2,
+          "painted": 93
+        },
+        {
+          "id": 4,
+          "painted": 112
+        },
+        {
+          "id": 5,
+          "painted": 12
+        },
+        {
+          "id": 6,
+          "painted": 13
+        },
+        {
+          "id": 33,
+          "painted": 30
+        },
+        {
+          "id": 35,
+          "painted": 84
+        },
+        {
+          "id": 36,
+          "painted": 1
+        },
+        {
+          "id": 37,
+          "painted": 1
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/hutta/4611686019817460652_albedo.png",
+        "normal": "res://Assets/Maps/hutta/4611686019817460652_normal.png",
+        "roughness": "res://Assets/Maps/hutta/4611686019817460652_roughness.png"
+      },
+      "embeddedPosition": [
+        38.400001525878906,
+        1.0582000017166138,
+        21.399999618530273
+      ]
+    },
+    {
+      "id": "4611686027088948350",
+      "room": "terrain_large_factory_area",
+      "width": 32,
+      "depth": 32,
+      "position": [
+        38.4000015259,
+        -0.499399989843,
+        4.0
+      ],
+      "version": 1,
+      "vertices": 1024,
+      "triangles": 1922,
+      "sourceHeightEnd": 2306,
+      "embeddedSha256": "2007c81f044d74b8f9a2c23097b5bd19550101d76c3e6414a8fbac6cf98d2b6c",
+      "decodedSha256": "1e58eb9bcbd3358e0a79fc5c80313ce74c65b76f6659726a139e9e8923930e1e",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        63,
+        63
+      ],
+      "layers": [
+        "6",
+        "1",
+        "4",
+        "11",
+        "14",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9921568036079407,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {
+        "0": 274
+      },
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 102
+        },
+        {
+          "id": 1,
+          "painted": 159
+        },
+        {
+          "id": 4,
+          "painted": 42
+        },
+        {
+          "id": 5,
+          "painted": 32
+        },
+        {
+          "id": 6,
+          "painted": 38
+        },
+        {
+          "id": 33,
+          "painted": 10
+        },
+        {
+          "id": 35,
+          "painted": 7
+        },
+        {
+          "id": 36,
+          "painted": 1
+        },
+        {
+          "id": 37,
+          "painted": 9
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/hutta/4611686027088948350_albedo.png",
+        "normal": "res://Assets/Maps/hutta/4611686027088948350_normal.png",
+        "roughness": "res://Assets/Maps/hutta/4611686027088948350_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686027088955486",
+      "room": "terrain_large_factory_area",
+      "width": 32,
+      "depth": 33,
+      "position": [
+        44.7999992371,
+        0.991599977016,
+        22.7999992371
+      ],
+      "version": 1,
+      "vertices": 1056,
+      "triangles": 1984,
+      "sourceHeightEnd": 2374,
+      "embeddedSha256": "7888869571947e71b5d6c37c4ac884f4d49d67347d37845eae2228ef22058422",
+      "decodedSha256": "fb772f156e47e165e0d641af6a3dd1b14aa5225b9541c961763d1184ee6fd6c3",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        63,
+        65
+      ],
+      "layers": [
+        "6",
+        "1",
+        "4",
+        "11",
+        "14",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9882352352142334,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {
+        "0": 916
+      },
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 165
+        },
+        {
+          "id": 1,
+          "painted": 319
+        },
+        {
+          "id": 4,
+          "painted": 68
+        },
+        {
+          "id": 5,
+          "painted": 68
+        },
+        {
+          "id": 6,
+          "painted": 10
+        },
+        {
+          "id": 33,
+          "painted": 31
+        },
+        {
+          "id": 35,
+          "painted": 16
+        },
+        {
+          "id": 36,
+          "painted": 7
+        },
+        {
+          "id": 37,
+          "painted": 12
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/hutta/4611686027088955486_albedo.png",
+        "normal": "res://Assets/Maps/hutta/4611686027088955486_normal.png",
+        "roughness": "res://Assets/Maps/hutta/4611686027088955486_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686027088955638",
+      "room": "terrain_large_factory_area",
+      "width": 17,
+      "depth": 31,
+      "position": [
+        36.7999992371,
+        1.14800000191,
+        29.2000007629
+      ],
+      "version": 9,
+      "vertices": 527,
+      "triangles": 960,
+      "sourceHeightEnd": 1260,
+      "embeddedSha256": "e3dfb0a0b94cb59d3e9b870bfe5a0b31e9480734aab79ebb710181ffdf5d2299",
+      "decodedSha256": "825c4496f2d607a305c76cf48d214069caab89623137bc16206c132bff9c0677",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        33,
+        61
+      ],
+      "layers": [
+        "1",
+        "4",
+        "6",
+        "11",
+        "19",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9999998807907104,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 40
+        },
+        {
+          "id": 1,
+          "painted": 105
+        },
+        {
+          "id": 4,
+          "painted": 42
+        },
+        {
+          "id": 6,
+          "painted": 1
+        },
+        {
+          "id": 33,
+          "painted": 83
+        },
+        {
+          "id": 35,
+          "painted": 36
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/hutta/4611686027088955638_albedo.png",
+        "normal": "res://Assets/Maps/hutta/4611686027088955638_normal.png",
+        "roughness": "res://Assets/Maps/hutta/4611686027088955638_roughness.png"
+      },
+      "embeddedPosition": [
+        36.79999923706055,
+        1.1480000019073486,
+        29.200000762939453
+      ]
+    },
+    {
+      "id": "4611686027088955926",
+      "room": "terrain_large_factory_area",
+      "width": 17,
+      "depth": 32,
+      "position": [
+        43.2000007629,
+        1.08889997005,
+        29.2000007629
+      ],
+      "version": 1,
+      "vertices": 544,
+      "triangles": 992,
+      "sourceHeightEnd": 1286,
+      "embeddedSha256": "2104e7dce8f2feb6ccfb92c62839d39e37132e1c68f5d81a968101a6ed01b9a0",
+      "decodedSha256": "2839838bc77eba381161739414d92313bce352162079f5fdfea9e48099a28262",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        33,
+        63
+      ],
+      "layers": [
+        "1",
+        "4",
+        "6",
+        "11",
+        "14",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9961811900138855,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {
+        "0": 2
+      },
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 53
+        },
+        {
+          "id": 1,
+          "painted": 111
+        },
+        {
+          "id": 4,
+          "painted": 47
+        },
+        {
+          "id": 5,
+          "painted": 1
+        },
+        {
+          "id": 35,
+          "painted": 21
+        },
+        {
+          "id": 36,
+          "painted": 6
+        },
+        {
+          "id": 37,
+          "painted": 20
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/hutta/4611686027088955926_albedo.png",
+        "normal": "res://Assets/Maps/hutta/4611686027088955926_normal.png",
+        "roughness": "res://Assets/Maps/hutta/4611686027088955926_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686027088957877",
+      "room": "terrain_large_factory_area",
+      "width": 33,
+      "depth": 17,
+      "position": [
+        38.4000015259,
+        1.14409995079,
+        24.6000003815
+      ],
+      "version": 9,
+      "vertices": 561,
+      "triangles": 1024,
+      "sourceHeightEnd": 1336,
+      "embeddedSha256": "6da5fa5c515a3b10c030d5c72f327ac58edae876025ecf4c9837703515dcce4a",
+      "decodedSha256": "c6e5ea20cb9ecaa398b238c0269a27e4146e0e00b2a55f38e4cf736443cfab7c",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        65,
+        33
+      ],
+      "layers": [
+        "1",
+        "4",
+        "6",
+        "11",
+        "14",
+        "19",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9885377883911133,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 40
+        },
+        {
+          "id": 1,
+          "painted": 114
+        },
+        {
+          "id": 4,
+          "painted": 39
+        },
+        {
+          "id": 33,
+          "painted": 54
+        },
+        {
+          "id": 35,
+          "painted": 87
+        },
+        {
+          "id": 36,
+          "painted": 5
+        },
+        {
+          "id": 37,
+          "painted": 11
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/hutta/4611686027088957877_albedo.png",
+        "normal": "res://Assets/Maps/hutta/4611686027088957877_normal.png",
+        "roughness": "res://Assets/Maps/hutta/4611686027088957877_roughness.png"
+      },
+      "embeddedPosition": [
+        38.400001525878906,
+        1.1440999507904053,
+        24.600000381469727
+      ]
+    },
+    {
+      "id": "4611686027088959134",
+      "room": "terrain_large_factory_area",
+      "width": 17,
+      "depth": 31,
+      "position": [
+        40.0,
+        1.14110004902,
+        29.2000007629
+      ],
+      "version": 1,
+      "vertices": 527,
+      "triangles": 960,
+      "sourceHeightEnd": 1248,
+      "embeddedSha256": "5f95aeb6c1d575b71b5d33aff52a0710a306044360a79ecf461316b8cc7cae82",
+      "decodedSha256": "199fdde53ff6dc419a8e66ff0afb2a69e6f4639bec87458675b17df2d9edfe62",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        33,
+        61
+      ],
+      "layers": [
+        "11",
+        "1",
+        "4",
+        "6",
+        "14",
+        "19",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9921568036079407,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {
+        "0": 88
+      },
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 31
+        },
+        {
+          "id": 1,
+          "painted": 92
+        },
+        {
+          "id": 4,
+          "painted": 17
+        },
+        {
+          "id": 6,
+          "painted": 3
+        },
+        {
+          "id": 33,
+          "painted": 58
+        },
+        {
+          "id": 35,
+          "painted": 48
+        },
+        {
+          "id": 36,
+          "painted": 3
+        },
+        {
+          "id": 37,
+          "painted": 2
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/hutta/4611686027088959134_albedo.png",
+        "normal": "res://Assets/Maps/hutta/4611686027088959134_normal.png",
+        "roughness": "res://Assets/Maps/hutta/4611686027088959134_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686027088960280",
+      "room": "terrain_large_factory_area",
+      "width": 16,
+      "depth": 32,
+      "position": [
+        46.4000015259,
+        1.13680005074,
+        29.2000007629
+      ],
+      "version": 1,
+      "vertices": 512,
+      "triangles": 930,
+      "sourceHeightEnd": 1218,
+      "embeddedSha256": "00ad6eda65e96e06bd4b2c6449adea7bdb804fdcbae243f7c2464e1422950124",
+      "decodedSha256": "d446a452c2af29c7f8d1221b64de44fa4123ff93531fc1517a15d20e573a4e83",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        31,
+        63
+      ],
+      "layers": [
+        "20",
+        "1",
+        "4",
+        "6",
+        "11",
+        "14"
+      ],
+      "blendSumRange": [
+        0.9921573996543884,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {
+        "0": 72
+      },
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 144
+        },
+        {
+          "id": 1,
+          "painted": 343
+        },
+        {
+          "id": 4,
+          "painted": 64
+        },
+        {
+          "id": 5,
+          "painted": 14
+        },
+        {
+          "id": 6,
+          "painted": 7
+        },
+        {
+          "id": 33,
+          "painted": 4
+        },
+        {
+          "id": 35,
+          "painted": 17
+        },
+        {
+          "id": 36,
+          "painted": 11
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/hutta/4611686027088960280_albedo.png",
+        "normal": "res://Assets/Maps/hutta/4611686027088960280_normal.png",
+        "roughness": "res://Assets/Maps/hutta/4611686027088960280_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686042231872421",
+      "room": "terrain_large_factory_area",
+      "width": 24,
+      "depth": 64,
+      "position": [
+        20.3999996185,
+        0.315299987793,
+        13.3999996185
+      ],
+      "version": 1,
+      "vertices": 1536,
+      "triangles": 2898,
+      "sourceHeightEnd": 3426,
+      "embeddedSha256": "d82d625aed1b00e83d09174bd4c0e0f45d54dc5e57aa5a1744a1975d9cb04126",
+      "decodedSha256": "e749a57ec252100ec337c2a18e3db845ec00a9064af1a77b159ac543b95646a8",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        47,
+        127
+      ],
+      "layers": [
+        "11",
+        "3",
+        "4",
+        "6",
+        "1",
+        "14",
+        "19",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 57
+        },
+        {
+          "id": 1,
+          "painted": 113
+        },
+        {
+          "id": 2,
+          "painted": 94
+        },
+        {
+          "id": 33,
+          "painted": 84
+        },
+        {
+          "id": 34,
+          "painted": 18
+        },
+        {
+          "id": 35,
+          "painted": 217
+        },
+        {
+          "id": 36,
+          "painted": 43
+        },
+        {
+          "id": 37,
+          "painted": 7
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/hutta/4611686042231872421_albedo.png",
+        "normal": "res://Assets/Maps/hutta/4611686042231872421_normal.png",
+        "roughness": "res://Assets/Maps/hutta/4611686042231872421_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686042231872423",
+      "room": "terrain_large_factory_area",
+      "width": 24,
+      "depth": 64,
+      "position": [
+        20.3999996185,
+        0.353500008583,
+        0.800000011921
+      ],
+      "version": 1,
+      "vertices": 1536,
+      "triangles": 2898,
+      "sourceHeightEnd": 3426,
+      "embeddedSha256": "ccd95206104b0f6a355f118f52c1d2a2895fc94eef76c6ca03f14d9acb599441",
+      "decodedSha256": "86d71ebf96c9c69102ca3faadffc1cade4115471b7939a292bb0d4bf8642dcf2",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        47,
+        127
+      ],
+      "layers": [
+        "19",
+        "3",
+        "6",
+        "11",
+        "14",
+        "1",
+        "20"
+      ],
+      "blendSumRange": [
+        0.9999998807907104,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [
+        {
+          "id": 0,
+          "painted": 45
+        },
+        {
+          "id": 1,
+          "painted": 67
+        },
+        {
+          "id": 4,
+          "painted": 30
+        },
+        {
+          "id": 5,
+          "painted": 25
+        },
+        {
+          "id": 6,
+          "painted": 13
+        },
+        {
+          "id": 35,
+          "painted": 118
+        },
+        {
+          "id": 37,
+          "painted": 5
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/hutta/4611686042231872423_albedo.png",
+        "normal": "res://Assets/Maps/hutta/4611686042231872423_normal.png",
+        "roughness": "res://Assets/Maps/hutta/4611686042231872423_roughness.png"
+      },
+      "embeddedPosition": null
+    }
+  ],
+  "adjacency": [
+    {
+      "note": "authored patches staged unmodified; seams not repaired",
+      "patchCount": 15
+    }
+  ],
+  "lighting": "authored warm directional/ambient; no native parity",
+  "limitations": [
+    "World-space UV phase/scale reconstruction is not native-client verified.",
+    "SWTOR material lighting translated to portable PBR; original vertex color used as multiplicative tint.",
+    "DYD density data retained; procedural native billboard/mesh scattering is not reproduced.",
+    "Static collision is derived from converted visible triangles, not original physics shapes."
+  ],
+  "passed": true
+}

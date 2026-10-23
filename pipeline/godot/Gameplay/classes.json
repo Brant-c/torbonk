@@ -163,14 +163,12 @@
       "d3_tracer",
       "unlock_heatseeker",
       "unlock_unload",
-      "unlock_reactivearmor",
       "mercenary_tracer_lock",
       "mercenary_chain_reaction"
     ],
     "Kit": [
       "heatseeker",
-      "unload",
-      "reactivearmor"
+      "unload"
     ]
   },
   {
@@ -183,21 +181,28 @@
     "Run": "PistolRun",
     "TalentPool": [
       "damage",
-      "d3_area_flamesweep",
-      "cooldown",
       "health",
       "speed",
-      "d3_flamesweep",
-      "unlock_flameburst",
+      "cooldown",
       "unlock_incendiarymissile",
       "unlock_ionshield",
-      "powertech_last_gasp",
-      "powertech_static_blades"
+      "unlock_reactivearmor",
+      "unlock_carbonize",
+      "unlock_flamethrower",
+      "unlock_oilslick",
+      "powertech_combustible_spread",
+      "powertech_engulfing_flames",
+      "powertech_pyro_shield",
+      "powertech_reinforced_shielding"
     ],
     "Kit": [
-      "flameburst",
       "incendiarymissile",
-      "ionshield"
-    ]
+      "ionshield",
+      "reactivearmor",
+      "carbonize",
+      "flamethrower",
+      "oilslick"
+    ],
+    "UtilitySlots": 3
   }
 ]

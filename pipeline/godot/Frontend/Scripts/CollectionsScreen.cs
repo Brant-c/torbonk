@@ -11,6 +11,8 @@ namespace SwtorSurvivors.Frontend;
 public partial class CollectionsScreen : Control
 {
     public Action? Closed { get; set; }
+    public string CloseLabel { get; set; } = "Main Menu";
+    public void SelectClass(string baseClass,string advanced) { _base=baseClass;_advanced=advanced; }
     public CosmeticCollection Collection { get; private set; } = new();
     public CharacterPreview Preview { get; private set; } = null!;
     private readonly FrontendCatalog _catalog=FrontendCatalog.Load();
@@ -26,7 +28,7 @@ public partial class CollectionsScreen : Control
         _body=new Control {Size=Size};AddChild(_body);
         var category=FrontendSkin.Button("Appearances",()=>{},true);
         category.Position=new Vector2(0,-58);category.Size=new Vector2(260,48);_body.AddChild(category);
-        var close=FrontendSkin.Button("Main Menu",()=>Closed?.Invoke());
+        var close=FrontendSkin.Button(CloseLabel,()=>Closed?.Invoke());
         close.Position=new Vector2(1228,-58);close.Size=new Vector2(220,48);_body.AddChild(close);
         var classes=Column();
         foreach(var cl in _catalog.Classes)
@@ -92,32 +94,57 @@ public partial class CollectionsScreen : Control
         foreach(var b in grid.GetChildren().OfType<Button>())
         {
             bool selected=b.Name=="Slot_"+_slot;
-            foreach(string state in new[]{"normal","hover","pressed","disabled"})
-                b.AddThemeStyleboxOverride(state,FrontendSkin.ButtonArtwork(hovered:selected,selected:selected));
+            foreach(string state in new[]{"normal","hover","pressed","hover_pressed","disabled","focus"})
+                b.AddThemeStyleboxOverride(state,FrontendSkin.ButtonArtwork(hovered:selected || state is "hover" or "pressed" or "hover_pressed" or "focus",selected:selected));
         }
     }
     public static string SlotName(string slot) => slot=="main_hand" ? "Weapon" : char.ToUpperInvariant(slot[0])+slot[1..];
+    private const int CellSize=72;
+    private Label _detail=null!;
+    // Inventory cell: recovered square item frame plus icon; the name and unlock text live in the detail line and tooltip.
+    private Button AppearanceCell(AppearanceDefinition a,string name,string state,bool compatible,bool unlocked,bool selected,string hint)
+    {
+        var b=new SwtorButton {Name="Appearance_"+a.Id,CustomMinimumSize=new Vector2(CellSize,CellSize),Disabled=!compatible || !unlocked,
+            FocusMode=Control.FocusModeEnum.All};
+        var frame=SwtorSkin.Box("bwaui_buttons_381",14,14,14,14);
+        foreach(string st in new[]{"normal","hover","pressed","hover_pressed","disabled"})
+        {
+            var box=(StyleBoxTexture)frame.Duplicate();
+            box.ModulateColor=selected ? SwtorSkin.Gold : st=="hover" ? Colors.White : new Color(0.85f,0.9f,1f);
+            b.AddThemeStyleboxOverride(st,box);
+        }
+        b.AddThemeStyleboxOverride("focus",new StyleBoxEmpty());
+        string icon=Collection.Catalog.Items.FirstOrDefault(i=>i.Appearance==a.Id)?.Icon ?? "";
+        // Never substitute another piece's icon.
+        if(icon!="" && !ResourceLoader.Exists(icon)) icon="";
+        b.Icon=icon!="" ? FrontendSkin.Texture(icon) : null;b.ExpandIcon=true;b.IconAlignment=HorizontalAlignment.Center;
+        b.AddThemeConstantOverride("icon_max_width",CellSize-22);
+        foreach(string c in new[]{"icon_normal_color","icon_hover_color","icon_pressed_color","icon_disabled_color","icon_focus_color"})
+            b.AddThemeColorOverride(c,unlocked && compatible ? Colors.White : new Color(0.35f,0.4f,0.45f,0.8f));
+        string line=name+" · "+state+(compatible && !unlocked && hint!="" ? "\nUnlock: "+hint : "");
+        b.TooltipText=name+" · "+SlotName(_slot)+"\n"+state+"\nCosmetic appearance only. No gameplay statistics."
+            +(!compatible ? "\nNo compatible converted resource for this profile." : !unlocked ? "\n"+(hint!="" ? "Unlock: "+hint : "Not yet unlocked.") : "\nSelect to equip and save immediately.");
+        b.MouseEntered+=()=>_detail.Text=line;b.FocusEntered+=()=>_detail.Text=line;
+        b.Pressed+=()=>Equip(a.Id,false);
+        return b;
+    }
     private void RefreshChoices()
     {
         foreach(var child in _choices.GetChildren()) {_choices.RemoveChild(child);child.QueueFree();}
         _choices.AddChild(FrontendSkin.Heading(SlotName(_slot),21));
         var assembly=Preview.Assembly!;
         string equipped=assembly.Loadout.Current.Cosmetics.GetValueOrDefault(_slot) ?? Collection.DefaultAppearance(_slot,_advanced);
-        foreach(var a in Collection.Catalog.Appearances.Where(a=>a.Slot==_slot))
+        var grid=new GridContainer {Columns=6};grid.AddThemeConstantOverride("h_separation",6);grid.AddThemeConstantOverride("v_separation",6);
+        _detail=FrontendSkin.Label("Hover a piece for details",16,true);_detail.CustomMinimumSize=new Vector2(0,44);
+        foreach(var a in Collection.Catalog.Appearances.Where(a=>a.Slot==_slot
+            && Collection.State.Unlocked.Contains(a.Id) && Collection.Compatible(a,assembly.Loadout.Context)))
         {
             bool compatible=Collection.Compatible(a,assembly.Loadout.Context),unlocked=Collection.State.Unlocked.Contains(a.Id),selected=equipped==a.Id;
             string state=!compatible ? "Incompatible" : selected ? "Equipped" : unlocked ? "Unlocked" : "Locked";
             string name=Collection.Catalog.Items.FirstOrDefault(i=>i.Appearance==a.Id)?.DisplayName??a.Id;
-            var b=FrontendSkin.Button(name+" · "+state,()=>Equip(a.Id,false),selected);
-            b.Name="Appearance_"+a.Id;b.Disabled=!compatible || !unlocked;b.CustomMinimumSize=new Vector2(0,64);
-            // Only use an item icon when D1 actually recovered one for that appearance.
-            string icon=Collection.Catalog.Items.FirstOrDefault(i=>i.Appearance==a.Id)?.Icon ?? "";
-            b.Icon=icon!="" ? FrontendSkin.Texture(icon) : SwtorSkin.Slice("bwaui_buttons_381");
-            b.ExpandIcon=true;b.AddThemeConstantOverride("icon_max_width",42);
-            b.TooltipText=name+" · "+SlotName(_slot)+"\n"+state+"\nCosmetic appearance only. No gameplay statistics."
-                +(!compatible ? "\nNo compatible converted resource for this profile." : !unlocked ? "\nNot yet unlocked." : "\nSelect to equip and save immediately.");
-            _choices.AddChild(b);
+            grid.AddChild(AppearanceCell(a,name,state,compatible,unlocked,selected,Collection.UnlockHint(a.Id)));
         }
+        _choices.AddChild(grid);_choices.AddChild(_detail);
     }
     private void Equip(string? id,bool all)
     {
@@ -125,7 +152,7 @@ public partial class CollectionsScreen : Control
         var next=before.Copy();if(all) next.Cosmetics.Clear();else if(id==null)next.Cosmetics.Remove(_slot);else next.Cosmetics[_slot]=id;
         if(id!=null && !Collection.State.Unlocked.Contains(id))return;
         if(!assembly.Loadout.TryApply(next,out string error)) {_status.Text=error;return;}
-        var profile=Collection.Profile(_base,_advanced);var old=profile.Equipped;profile.Equipped=new(next.Cosmetics);
+        var profile=Collection.Profile(_base,_advanced);var old=profile.Equipped;profile.Equipped=new(assembly.Loadout.Current.Cosmetics);
         if(!Collection.Save(out error)) {profile.Equipped=old;assembly.Loadout.TryApply(before,out _);}
         _status.Text=error=="" ? "Saved · Appearance only · No combat bonuses" : error;RefreshChoices();
     }

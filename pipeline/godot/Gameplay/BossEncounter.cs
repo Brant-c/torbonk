@@ -20,6 +20,7 @@ public partial class BossEncounter : Node
     private MeshInstance3D _ring = null!;
     private ShaderMaterial _telegraphMaterial = null!;
     private double _impactRemaining;
+    private GroundTelegraphSurface? _groundSurface;
     public override void _Ready()
     {
         _actor = GetParent<EnemyAgent>();
@@ -51,6 +52,11 @@ public partial class BossEncounter : Node
             if (_remaining > 0 || _actor.GlobalPosition.DistanceTo(_actor.Target.GlobalPosition) > 0.65f) return false;
             LockedCenter = _actor.Target.GlobalPosition;
             _ring.GlobalPosition = LockedCenter + Vector3.Up * 0.004f; _ring.Visible = true;
+            if(_actor.Crowd?.ReuseAnimations==true)
+            {
+                _groundSurface??=new GroundTelegraphSurface();_ring.Mesh=_groundSurface.Mesh;
+                _ring.Scale=Vector3.One*Radius*2;_groundSurface.Project(_ring,_actor.Navigation.Arena);
+            }
             _telegraphMaterial.SetShaderParameter("impact", 0f); _telegraphMaterial.SetShaderParameter("progress", 0f);
             AudioPresentation.Find(this)?.PlayCue("burrow_warning");
             Phase = BossPhase.Telegraph; _remaining = WindupSeconds; Telegraphs++;
@@ -64,7 +70,7 @@ public partial class BossEncounter : Node
             Strikes++; _actor.Visual?.Attack();
             if (_actor.Target.Alive && _actor.Target.GlobalPosition.DistanceTo(LockedCenter) <= Radius &&
                 _actor.Navigation.HasLineOfSight(_actor.AimPosition, _actor.Target.AimPosition))
-                _actor.Target.Health.ApplyDamage(Damage, DamageType.Kinetic);
+                _actor.DealAttack(Damage, DamageType.Kinetic);
             if (Phase == BossPhase.Ended) return true;
             Phase = BossPhase.Recovery; _remaining = 1.0;
         }

@@ -1,0 +1,9 @@
+# Shared character-list menu treatment
+
+The active game at `pipeline/godot` uses the approved concept with option A angular outer frame and rounded rows for its menu chrome. Main-menu and class-choice stacks now have fitted outer frames. Settings, Collections, pause, defeat and power-choice controls share rounded cyan rows; hover, keyboard focus and selected/pressed use the same cyan active artwork. Existing class and item icons retain their meanings. Action buttons reuse recovered April play (132), collection (135), settings (90), back/exit (66), restart (69) and audio (57) slices from bwaui_buttons.
+
+`godot/Assets/UI/menu/*.svg` are new scalable artwork authored to match the approved concept, not original extracted SWTOR textures. Original DDS/GFX/PNG assets are unchanged. The AI concept image is a design reference only and is not shipped as a texture. Shared style and icon selection live in SwtorSkin; FrontendSkin delegates row styling to it. The standalone historical character-selection project is unchanged; the integrated playable frontend is updated.
+
+Validation: C# build passes (existing nullable warnings; NuGet vulnerability service unavailable). `--menu-style-smoke` renders main, hover, settings, all five setup pages, Collections, pause, in-run wardrobe and power choice to `manifests/menu-*.png`. It checks button minimum widths, shared hover/pressed texture identity, pause/resume state and choosing an offered power. Run under isolated APPDATA to avoid touching the user's cosmetic save. Runtime output: `logs/menu-style-runtime.log`.
+
+Follow-up: outer frames now use option A straight sides and clipped corners with opposing top-left/bottom-right steps. Menu music playback, volume state/event and Settings slider have been removed. Interface action sounds are retained. Preserved source audio is unchanged.

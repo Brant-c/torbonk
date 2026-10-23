@@ -12,11 +12,33 @@ public static class SwtorSkin
     public static readonly Color TextColor = new("d5e6ef");
     public static StyleBoxTexture ButtonArtwork(bool hovered=false, bool selected=false, int verticalPadding=6)
     {
-        // Shared C1 rest/hover mapping. Gold belongs to the recovered selected artwork, not text.
-        var box=Box("bwaui_standard_window_"+(selected ? "18" : hovered ? "24" : "9"),selected?48:32,12,24,12);
-        box.ContentMarginLeft=22; box.ContentMarginRight=22;
-        box.ContentMarginTop=verticalPadding; box.ContentMarginBottom=verticalPadding;
+        var box=new StyleBoxTexture {
+            Texture=GD.Load<Texture2D>("res://Assets/UI/menu/"+((hovered || selected)?"row_active":"row")+".svg"),
+            TextureMarginLeft=18,TextureMarginRight=18,TextureMarginTop=18,TextureMarginBottom=18,
+            ContentMarginLeft=16,ContentMarginRight=16,
+            ContentMarginTop=verticalPadding,ContentMarginBottom=verticalPadding };
         return box;
+    }
+    public static StyleBoxTexture MenuFrame(int top=24) => new() {
+        Texture=GD.Load<Texture2D>("res://Assets/UI/menu/frame.svg"),
+        TextureMarginLeft=24,TextureMarginRight=36,TextureMarginTop=32,TextureMarginBottom=24,
+        ContentMarginLeft=22,ContentMarginRight=28,ContentMarginTop=top,ContentMarginBottom=22 };
+    public static PanelContainer Frame(Control content)
+    {
+        var panel=new PanelContainer();panel.AddThemeStyleboxOverride("panel",MenuFrame());
+        panel.AddChild(content);return panel;
+    }
+    public static string? ActionIcon(string text)
+    {
+        text=text.ToLowerInvariant();
+        if(text.Contains("restart") || text.Contains("reset"))return "bwaui_buttons_69";
+        if(text.Contains("settings"))return "bwaui_buttons_90";
+        if(text.Contains("sound") || text.Contains("music"))return "bwaui_buttons_57";
+        if(text.Contains("collection") || text.Contains("appearance"))return "bwaui_buttons_135";
+        if(text.Contains("main menu"))return "bwaui_buttons_236";
+        if(text.Contains("exit") || text.Contains("close") || text.Contains("back"))return "bwaui_buttons_66";
+        if(text.Contains("run") || text.Contains("play") || text.Contains("continue"))return "bwaui_buttons_132";
+        return null;
     }
     public static Texture2D Slice(string name)
     {
@@ -54,8 +76,10 @@ public static class SwtorSkin
         theme.SetStylebox("pressed","Button",ButtonArtwork(selected:true));
         theme.SetStylebox("hover_pressed","Button",ButtonArtwork(selected:true));
         theme.SetStylebox("disabled","Button",ButtonArtwork());
-        var focus=ButtonArtwork(hovered:true); focus.DrawCenter=false;
+        var focus=ButtonArtwork(hovered:true);
         theme.SetStylebox("focus","Button",focus);
+        theme.SetStylebox("panel","PanelContainer",MenuFrame());
+        theme.SetStylebox("panel","AcceptDialog",MenuFrame());
         theme.SetStylebox("panel","TooltipPanel",Box("bwaui_tooltip_1",8,12,8,12));
         theme.SetConstant("outline_size","Label",0);
         theme.SetConstant("shadow_offset_x","Label",1);

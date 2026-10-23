@@ -1,0 +1,7 @@
+# Faction insignia selection
+
+The integrated faction page now uses option 1: original Republic/Empire insignias as large clickable groups, short allegiance descriptions, and four original class icons per faction. It replaces the boxed panels and conventional faction buttons. The full insignia/text/icon area is a real button; decorative children ignore pointer input. Mouse hover, keyboard focus and remembered selection subtly enlarge/brighten the insignia and emphasize its selection cue. Left/right keyboard navigation, Tab, Enter/Space and existing back/menu navigation remain available. Screen-reader names retain the full faction name and original description.
+
+Original artwork: `bwaui_character_create_window_93` (Republic), `_81` (Empire), `_104` (heading), the existing catalog class icon textures, original starfield and recovered Eurostile. No new image assets or generated artwork. Layout, sizing and hover transitions are authored adaptations. Faction choice still calls the existing SelectionSession.SelectFaction and opens the existing class page.
+
+Validation: build passes with existing nullable/NuGet metadata warnings. `--faction-selection-smoke` uses actual pointer/key events to select Empire with Right/Enter and Republic by clicking the class-icon region, checks each group has four correctly sized icons, verifies Escape/Back and Main Menu, and confirms bounds at 1280x720. Captures: `manifests/faction-insignias.png`, `faction-insignias-720p.png`. Log: `logs/faction-selection-smoke.log`. Test uses isolated APPDATA.

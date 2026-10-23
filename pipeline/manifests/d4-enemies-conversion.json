@@ -1,0 +1,185 @@
+{
+  "tukata": {
+    "output": "godot\\Assets\\Korriban\\D4\\Enemies\\tukata.glb",
+    "sha256": "807a4c05d196cb6b05c65545b5a1d178d59ea56d5d035c8728e45908e485333c",
+    "bones": 57,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/creature/dog/cb_ready_1.jba",
+        "seconds": 1.1666666269302368,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/creature/dog/mv_run_forward.jba",
+        "seconds": 0.6000000238418579,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/creature/dog/cb_attack_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/creature/dog/dg_damage_1.jba",
+        "seconds": 0.8333333134651184,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/creature/dog/dg_death_1.jba",
+        "seconds": 2.1666667461395264,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 1,
+    "sockets": [
+      "attach_portrait_left",
+      "vfx_hand_right",
+      "RightHandDigit2",
+      "RightHandDigit1",
+      "LeftHandDigit1",
+      "LeftHandDigit2",
+      "vfx_hand_left"
+    ]
+  },
+  "protector": {
+    "output": "godot\\Assets\\Korriban\\D4\\Enemies\\protector.glb",
+    "sha256": "6db0e410b401aab4602a364c28063f36efce13a06d6958ad16d7a4f924e8e001",
+    "bones": 134,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bmnnew/cb_2pistol_2h_idle_1.jba",
+        "seconds": 2.933333396911621,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bmnnew/mv_2pistol_run_forward.jba",
+        "seconds": 0.5666666626930237,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bmnnew/cb_2pistol_2h_fire_big_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bmnnew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bmnnew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 1,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "RightWeapon",
+      "vfx_hand_right",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "beast": {
+    "output": "godot\\Assets\\Korriban\\D4\\Enemies\\beast.glb",
+    "sha256": "f9a1d49f9e9b226348d9b552a45dc84c8d91fd8843b72355fccf095d79492614",
+    "bones": 93,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/creature/terentatek/cb_ready_1.jba",
+        "seconds": 2.6666667461395264,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/creature/terentatek/mv_run_forward.jba",
+        "seconds": 0.8666666746139526,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/creature/terentatek/cb_attack_1.jba",
+        "seconds": 0.5666666626930237,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/creature/terentatek/dg_damage_1.jba",
+        "seconds": 0.8333333134651184,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/creature/terentatek/dg_death_1.jba",
+        "seconds": 2.133333444595337,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 1,
+    "sockets": [
+      "attach_portrait_left",
+      "vfx_hand_right",
+      "vfx_hand_left"
+    ]
+  },
+  "broodmother": {
+    "output": "godot\\Assets\\Korriban\\D4\\Enemies\\broodmother.glb",
+    "sha256": "62337b705474b395dbe5b65140fba7fcff4ae9bc7f7029020957fc0af5c3ebeb",
+    "bones": 101,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/creature/slug/cb_ready_1.jba",
+        "seconds": 1.5,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/creature/slug/mv_run_forward.jba",
+        "seconds": 0.6666666865348816,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/creature/slug/cb_attack_1.jba",
+        "seconds": 1.0333333015441895,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/creature/slug/dg_damage_1.jba",
+        "seconds": 0.8333333134651184,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/creature/slug/dg_death_1.jba",
+        "seconds": 1.3333333730697632,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 1,
+    "sockets": [
+      "attach_portrait_left",
+      "vfx_hand_right",
+      "vfx_hand_left"
+    ]
+  }
+}

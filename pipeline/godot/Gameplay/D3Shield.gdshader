@@ -1,5 +1,5 @@
 shader_type spatial;
-render_mode unshaded, blend_add, depth_draw_never, cull_disabled, shadows_disabled;
+render_mode unshaded, fog_disabled, blend_add, depth_draw_never, cull_disabled, shadows_disabled;
 // Original bh_energy_shield_02 inputs: tiled hexagon symbol, scrolling scanlines and a circular gradient, shaded as a rim-lit shell.
 uniform sampler2D hexagons : source_color, repeat_enable, filter_linear;
 uniform sampler2D scanlines : source_color, repeat_enable, filter_linear;

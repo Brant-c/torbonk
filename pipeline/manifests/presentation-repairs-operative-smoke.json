@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "checks": [
+    "dart clip exists",
+    "dart starts with gesture",
+    "dart still deals damage",
+    "dart abort releases gesture",
+    "dart abort clears effects and channel sound",
+    "corrosivegrenade clip exists",
+    "corrosivegrenade starts with gesture",
+    "corrosivegrenade still deals damage",
+    "corrosivegrenade abort releases gesture",
+    "corrosivegrenade abort clears effects and channel sound",
+    "weakeningblast clip exists",
+    "weakeningblast starts with gesture",
+    "weakeningblast still deals damage",
+    "weakeningblast abort releases gesture",
+    "weakeningblast abort clears effects and channel sound",
+    "adrenalstim clip exists",
+    "adrenalstim starts with gesture",
+    "adrenalstim abort releases gesture",
+    "adrenalstim abort clears effects and channel sound",
+    "occupied gesture defers activation",
+    "deferred activation starts when free"
+  ],
+  "failure": null
+}

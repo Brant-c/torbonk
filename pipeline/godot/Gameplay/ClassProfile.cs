@@ -20,6 +20,7 @@ public sealed class ClassProfile
     public string Run {get;set;}="";
     public string StartingAbility {get;set;}="";
     public string Presentation {get;set;}="d3";
+    public int UtilitySlots {get;set;} = -1;
     public float Health {get;set;}=100;
     public float Movement {get;set;}=1;
     public string[] AbilityCategories {get;set;}=["offensive","utility"];

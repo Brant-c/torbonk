@@ -1,5 +1,5 @@
 shader_type spatial;
-render_mode unshaded, blend_add, cull_disabled, depth_draw_never, shadows_disabled;
+render_mode unshaded, fog_disabled, blend_add, cull_disabled, depth_draw_never, shadows_disabled;
 uniform float progress : hint_range(0.0, 1.0) = 0.0;
 uniform float impact : hint_range(0.0, 1.0) = 0.0;
 void fragment() {

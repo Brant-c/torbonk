@@ -5,6 +5,9 @@ namespace SwtorSurvivors;
 
 public partial class GameWorld : Node3D
 {
+    [Export] public string PlanetRunPath {get;set;} = "";
+    public PlanetRunDefinition? PlanetRun {get;private set;}
+    public PlanetJourney? Journey {get;private set;}
     [Export] public RunSlotRules? SlotRules {get;set;}
     [ExportGroup("B2 Gameplay Tuning (source units)")]
     [Export] public float AcquisitionRange { get; set; } = 0.85f;
@@ -31,6 +34,7 @@ public partial class GameWorld : Node3D
     public Node3D EnvironmentRoot { get; private set; } = null!;
     public Label Status { get; private set; } = null!;
     public bool Initialized { get; private set; }
+    public bool ReadyForPlay { get; private set; }
     public Combatant PlayerActor { get; private set; } = null!;
     public AutomaticLightning Combat { get; private set; } = null!;
     public AbilityController Abilities { get; private set; } = null!;
@@ -38,6 +42,7 @@ public partial class GameWorld : Node3D
     public StationaryEnemy Enemy { get; private set; } = null!;
     public EnemySpawner? Spawner { get; private set; }
     public WaveDirector? Waves { get; private set; }
+    public SwtorSurvivors.Equipment.CosmeticUnlockTracker? CosmeticUnlocks { get; private set; }
     public RunProgression? Progression { get; private set; }
     public RunArtifacts? Artifacts {get;private set;}
     public RunBuildEffects Build {get;private set;}=null!;
@@ -56,18 +61,58 @@ public partial class GameWorld : Node3D
     private MeshInstance3D? _debug;
     private bool _leavingForMenu;
 
+    /// <summary>The environment instance is "KorribanEnvironment" in the original composition and "MapEnvironment" in map sections.</summary>
+    private Node3D EnvironmentNode() => GetNodeOrNull<Node3D>("MapEnvironment") ?? GetNode<Node3D>("KorribanEnvironment");
+
+    /// <summary>Authored seed first (Korriban's original spawn); other maps pick the most open supported ground.</summary>
+    private bool FindSpawn(Vector3 seed, out Vector3 floor)
+    {
+        bool original = GetNodeOrNull<Node3D>("MapEnvironment") == null;
+        if (original && Arena.GroundAt(seed, out floor, out _, 40, 60) && Arena.Supported(floor, Player.CapsuleRadius)) return true;
+        // Other maps: walk outward from the seed and take the first ground that is open all around, using the same
+        // standing/walking tests as the enemy spawner so props and canopy count. Bounded so start-up stays quick.
+        float radius = Player.CapsuleRadius * 3, bestScore = -1; floor = default; bool found = false; int tried = 0;
+        var navigation = new ArenaNavigation { Arena = Arena, Radius = 0.05f, Height = 0.2f };
+        AddChild(navigation);
+        float reach = Mathf.Max(Arena.Maximum.X - Arena.Minimum.X, Arena.Maximum.Y - Arena.Minimum.Y);
+        for (float ringRadius = 0; ringRadius <= reach && tried < 150; ringRadius += 0.6f)
+        {
+            int samples = ringRadius == 0 ? 1 : Mathf.Max(6, (int)(ringRadius * 5));
+            for (int k = 0; k < samples && tried < 150; k++)
+            {
+                float turn = k * Mathf.Tau / samples;
+                var probe = seed + new Vector3(Mathf.Cos(turn), 0, Mathf.Sin(turn)) * ringRadius;
+                if (!Arena.GroundAt(probe, out var ground, out _, 40, 60) || !Arena.Supported(ground, radius)) continue;
+                if (!navigation.TryStandingPoint(ground, out var feetHere)) continue;
+                tried++; int open = 0;
+                for (int i = 0; i < 8; i++)
+                {
+                    float angle = i * Mathf.Tau / 8;
+                    var ring = ground + new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * 0.8f;
+                    if (navigation.TryStandingPoint(ring, out var ringFeet) && navigation.CanWalk(feetHere, ringFeet)) open++;
+                }
+                if (open > bestScore) { bestScore = open; floor = ground; found = true; }
+                if (open >= 7) { ringRadius = float.MaxValue; break; }
+            }
+        }
+        navigation.QueueFree();
+        GD.Print($"Map spawn: open ring samples {bestScore}/8 at {floor} after {tried} candidates (found={found})");
+        return found;
+    }
+
     public override async void _Ready()
     {
         RunConfiguration = Integration.GameNavigation.TakeRunConfiguration();
+        if(PlanetRunPath!="")PlanetRun=PlanetRunDefinition.Load(PlanetRunPath);
         SlotRules??=GD.Load<RunSlotRules>("res://Gameplay/run-slots.tres");
         // The adapter selects an existing composition, never substitutes assets for an unsupported key.
         if (SceneFilePath != RunConfiguration.WorldScene
-            || GetNode<Node3D>("KorribanEnvironment").SceneFilePath != RunConfiguration.EnvironmentScene
+            || EnvironmentNode().SceneFilePath != RunConfiguration.EnvironmentScene
             || GetNode<Node3D>("Player/Presentation/OriginalSorcerer").SceneFilePath != RunConfiguration.CharacterScene)
         { GD.PushError("Selected gameplay composition does not match its registered resources."); GetTree().Quit(1); return; }
         Player = GetNode<PlayerController>("Player"); Player.SetPhysicsProcess(false);
         Rig = GetNode<CameraRig>("CameraRig"); Arena = GetNode<ArenaBounds>("ArenaBounds");
-        EnvironmentRoot = GetNode<Node3D>("KorribanEnvironment");
+        EnvironmentRoot = EnvironmentNode();
         Player.Arena = Arena; Player.Rig = Rig; Rig.Target = Player;
         foreach (var body in EnvironmentRoot.FindChildren("*", "StaticBody3D", true, false).OfType<StaticBody3D>())
         {
@@ -89,8 +134,8 @@ public partial class GameWorld : Node3D
         await ToSignal(GetTree(), SceneTree.SignalName.PhysicsFrame);
         await ToSignal(GetTree(), SceneTree.SignalName.ProcessFrame);
         // Authored spawn on the existing second patch, never a source NPC-placement claim.
-        var seed = new Vector3(36, 0, 12.6f);
-        if (!Arena.GroundAt(seed, out var floor, out _, 40, 60) || !Arena.Supported(floor, Player.CapsuleRadius))
+        var seed = new Vector3(Arena.SpawnSeed.X, 0, Arena.SpawnSeed.Y);
+        if (!FindSpawn(seed, out var floor))
         { GD.PushError("B1 spawn has no safe source terrain"); GetTree().Quit(1); return; }
         Player.SpawnPosition = floor + Vector3.Up * 0.002f;
         Player.ResetPlayer(); Player.SetPhysicsProcess(true); Initialized = true;
@@ -103,16 +148,24 @@ public partial class GameWorld : Node3D
             if (!b2Validation && !OS.GetCmdlineUserArgs().Contains("--survival-smoke"))
             {
                 Build=new RunBuildEffects {Name="RunBuildEffects",World=this};AddChild(Build);
-                Artifacts=new RunArtifacts {Name="RunArtifacts",World=this,SlotLimit=System.Math.Clamp(SlotRules.ArtifactSlots,1,6)};AddChild(Artifacts);
+                Artifacts=new RunArtifacts {Name="RunArtifacts",World=this,SlotLimit=System.Math.Clamp(SlotRules.ArtifactSlots,1,6),
+                    CatalogPath=PlanetRun?.ArtifactCatalog??"res://Gameplay/RunItems/artifacts.json"};AddChild(Artifacts);
                 foreach(var ability in Abilities.Abilities)ability.Build=Build;
-                Progression = new RunProgression { Name = "RunProgression", World = this };
+                Progression = new RunProgression { Name = "RunProgression", World = this,
+                    FirstLevelExperience=PlanetRun?.FirstLevelExperience??12,ExperienceGrowth=PlanetRun?.ExperienceGrowth??1.3f,
+                    MaximumLevel=PlanetRun?.CoreLevel??0 };
                 AddChild(Progression);
                 Progression.Changed += SyncCameraControls;
-                Hud = new UI.SurvivorsHud { Name = "SwtorHud", World = this }; AddChild(Hud);
+                Hud = new UI.SurvivorsHud { Name = "SwtorHud", World = this, ArenaName = Integration.MapRegistry.Find(RunConfiguration.MapId)?.Name ?? RunConfiguration.MapId }; AddChild(Hud);
                 Rewards = new UI.RewardPresentation { Name = "RewardPresentation", World = this }; AddChild(Rewards);
                 AddChild(new UI.ArtifactRewardsHud {Name="RunArtifactInterface",World=this});
+                if(RunConfiguration.MapId=="hutta") {AddChild(new HuttaAtmosphere());if(OS.GetCmdlineUserArgs().Contains("--d5-smoke")){var smoke=new D5Smoke();AddChild(smoke);smoke.Run(this);}}
+                if(PlanetRun!=null) {Journey=new PlanetJourney {Name="PlanetJourney",World=this};AddChild(Journey);}
+                if(Waves!=null) {CosmeticUnlocks=new SwtorSurvivors.Equipment.CosmeticUnlockTracker {Name="CosmeticUnlocks",World=this};AddChild(CosmeticUnlocks);}
                 if(OS.GetCmdlineUserArgs().Contains("--d2-smoke")) {var smoke=new D2Smoke();AddChild(smoke);smoke.Run(this);}
                 _legacyOverlay.Visible = false;
+                if (OS.GetCmdlineUserArgs().Contains("--combat-meter-smoke"))
+                { var smoke = new CombatMeterSmoke(); AddChild(smoke); smoke.Run(this); }
                 if (OS.GetCmdlineUserArgs().Contains("--b6-smoke"))
                 { var smoke = new B6Smoke(); AddChild(smoke); smoke.Run(this); }
                 if (OS.GetCmdlineUserArgs().Contains("--b7-smoke"))
@@ -163,10 +216,15 @@ public partial class GameWorld : Node3D
         SyncCameraControls();
         if(OS.GetCmdlineUserArgs().Contains("--d3-smoke"))
         {var smoke=new D3Smoke();AddChild(smoke);smoke.Run(this);}
-        if(OS.GetCmdlineUserArgs().Contains("--d1-smoke"))
-        { var smoke=new SwtorSurvivors.Equipment.D1EquipmentSmoke();AddChild(smoke);smoke.Run(this); }
+        if(OS.GetCmdlineUserArgs().Contains("--powertech-smoke")){var smoke=new PowertechSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--presentation-repair-smoke")){var smoke=new PresentationRepairSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--kit-smoke"))
         {var smoke=new KitSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--d4-smoke"))
+        {var smoke=new D4Smoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--d1-smoke"))
+        { var smoke=new SwtorSurvivors.Equipment.D1EquipmentSmoke();AddChild(smoke);smoke.Run(this); }
+        ReadyForPlay = true;
     }
 
     private void SyncCameraControls() => Rig.SetControlsEnabled(Initialized && !_leavingForMenu && !GetTree().Paused
@@ -220,7 +278,7 @@ public partial class GameWorld : Node3D
         AddChild(flytextLayer);
         Flytext = new FlytextService { Name = "Flytext", Events = Events, Camera = Rig.Camera };
         flytextLayer.AddChild(Flytext);
-        Audio = new AudioPresentation { Name = "AudioPresentation" }; AddChild(Audio);
+        Audio = new AudioPresentation { Name = "AudioPresentation",TuningPath=PlanetRun?.AudioTuning??"res://Gameplay/presentation-audio.json" }; AddChild(Audio);
         PlayerActor = new Combatant { Name = "PlayerCombatant", TargetId = "Player", Team = CombatTeam.Player,
             Presentation = Player.Presentation };
         PlayerActor.AddChild(new Health { Name = "Health", Maximum = 100 }); Player.AddChild(PlayerActor);
@@ -247,13 +305,12 @@ public partial class GameWorld : Node3D
             var presentation=new D3AbilityPresentation {Actor=Player.Presentation,Definition=Combat.Definition};AddChild(presentation);Combat.Presentation=presentation;
             AcquisitionRange=Combat.Range;Targeting.AcquisitionRange=Combat.Range;
         }
+        if(profile.Id=="powertech")Player.Presentation.LoadAbilityLibrary("res://Assets/Powertech/casts.glb","PT");
         Periodic=new PeriodicEffects {Name="PeriodicEffects"};AddChild(Periodic);Combat.Periodic=Periodic;
         AddChild(Combat);
         Abilities=new AbilityController { Name="AutomaticAbilities",Targeting=Targeting,
-            OffensiveLimit=SlotRules!.OffensiveSlots,UtilityLimit=SlotRules.UtilitySlots };
+            OffensiveLimit=SlotRules!.OffensiveSlots,UtilityLimit=profile.UtilitySlots>=0?profile.UtilitySlots:SlotRules.UtilitySlots };
         Abilities.Abilities.Add(Combat);
-        if (survival && RunConfiguration.Profile.Presentation=="sorcerer" && !OS.GetCmdlineUserArgs().Any(x=>x is "--survival-smoke" or "--progression-smoke"))
-        {
         // Class kits: locked until a level-up unlocks them; same lifecycle, presentation adapter and slot rules as the starter.
         foreach(string id in profile.Presentation=="sorcerer"?System.Array.Empty<string>():profile.Kit)
         {
@@ -262,6 +319,8 @@ public partial class GameWorld : Node3D
             var kit=new AutomaticAbility {Name=id,Caster=PlayerActor,Targeting=Targeting,Presentation=kitVisual,Periodic=Periodic};
             kit.Configure(definition);AddChild(kit);Abilities.Abilities.Add(kit);
         }
+        if (survival && RunConfiguration.Profile.Presentation=="sorcerer" && !OS.GetCmdlineUserArgs().Any(x=>x is "--survival-smoke" or "--progression-smoke"))
+        {
             Player.Presentation.LoadAbilityAnimations();
             foreach(string id in new[]{"shock","storm","deathfield","barrier","darkheal","chain","overload"})
             {
@@ -302,8 +361,10 @@ public partial class GameWorld : Node3D
             Spawner = new EnemySpawner { Name = "EnemySpawner", Navigation = navigation, Player = PlayerActor,
                 EnemyScene = EnemyScene ?? GD.Load<PackedScene>("res://Gameplay/Enemies/Broodling.tscn"),
                 MinimumSpawnDistance = MinimumSpawnDistance, MaximumSpawnDistance = MaximumSpawnDistance,
-                CorpseSeconds = CorpseSeconds }; AddChild(Spawner);
+                CorpseSeconds = CorpseSeconds,ReuseAnimations=PlanetRun!=null }; AddChild(Spawner);
             Waves = new WaveDirector { Name = "WaveDirector", Spawner = Spawner, WaveSeconds = WaveSeconds,
+                PlanetRun=PlanetRun,PlayerLevel=()=>Progression?.Level??1,
+                CanStartMilestone=()=>Progression!=null && !Progression.Selecting && Artifacts?.Pending!=true,
                 InitialSpawnInterval = InitialSpawnInterval, SpawnIntervalMultiplier = SpawnIntervalMultiplier,
                 MinimumSpawnInterval = MinimumSpawnInterval, InitialActiveLimit = InitialActiveLimit,
                 AdditionalActivePerWave = AdditionalActivePerWave, BossWave = BossWave,
@@ -345,6 +406,8 @@ public partial class GameWorld : Node3D
         }
         Player.ResetPlayer(); Player.SetPhysicsProcess(true);
         Waves?.ResetWaves();
+        Journey?.ResetJourney();
+        Hud?.Meter.ResetRun();
         SyncCameraControls();
     }
 
@@ -394,7 +457,7 @@ public partial class GameWorld : Node3D
         if (@event is not InputEventKey { Pressed: true, Echo: false } key || !Initialized) return;
         if (key.PhysicalKeycode == Key.R) ResetCombatWorld();
         if (key.PhysicalKeycode == Key.F3) ToggleDebug();
-        if (key.PhysicalKeycode == Key.Escape) GetTree().Quit();
+        if (key.PhysicalKeycode == Key.Escape) Hud?.Menu.OpenPause();
     }
 
     public void ToggleDebug()

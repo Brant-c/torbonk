@@ -28,3 +28,5 @@ EndClip = ""
 CastAudio = "res://Assets/D3/Audio/386022114.wav"
 PresentationKind = "impact"
 Description = "A 30-point shield for 8 seconds. Fires when enemies are close."
+EffectTint = Color(0.15, 0.65, 1, 1)
+RequireGesture = true

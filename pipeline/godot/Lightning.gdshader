@@ -1,5 +1,5 @@
 shader_type spatial;
-render_mode unshaded, blend_add, depth_draw_never, cull_disabled, shadows_disabled;
+render_mode unshaded, fog_disabled, blend_add, depth_draw_never, cull_disabled, shadows_disabled;
 uniform sampler2D source_texture : source_color, repeat_enable, filter_linear;
 uniform bool particle = false;
 uniform float hue_purple_key = .4;

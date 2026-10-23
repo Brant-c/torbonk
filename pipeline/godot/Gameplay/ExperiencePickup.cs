@@ -2,7 +2,7 @@ using Godot;
 
 namespace SwtorSurvivors;
 
-/// <summary>World mote using the recovered loot_core_glow texture; XP stays in RunProgression.</summary>
+/// <summary>World pickup using the recovered blue star/up symbol; XP stays in RunProgression.</summary>
 public partial class ExperiencePickup : Node3D
 {
     public RunProgression Progression { get; set; } = null!;
@@ -15,25 +15,7 @@ public partial class ExperiencePickup : Node3D
     public override void _Ready()
     {
         _visual = new Node3D(); AddChild(_visual);
-        // A 3D octahedron gives the glow a silhouette from every camera angle.
-        var mesh = new ImmediateMesh(); mesh.SurfaceBegin(Mesh.PrimitiveType.Triangles);
-        var equator = new[] { Vector3.Right, Vector3.Forward, Vector3.Left, Vector3.Back };
-        for (int i = 0; i < 4; i++)
-        {
-            mesh.SurfaceAddVertex(Vector3.Up * 0.014f); mesh.SurfaceAddVertex(equator[i] * 0.008f); mesh.SurfaceAddVertex(equator[(i+1)%4] * 0.008f);
-            mesh.SurfaceAddVertex(Vector3.Down * 0.014f); mesh.SurfaceAddVertex(equator[(i+1)%4] * 0.008f); mesh.SurfaceAddVertex(equator[i] * 0.008f);
-        }
-        mesh.SurfaceEnd();
-        var color = new Color(0.28f, 1, 0.88f);
-        _visual.AddChild(new MeshInstance3D { Mesh = mesh, CastShadow = GeometryInstance3D.ShadowCastingSetting.Off,
-            MaterialOverride = new StandardMaterial3D { ShadingMode = BaseMaterial3D.ShadingModeEnum.Unshaded,
-                CullMode = BaseMaterial3D.CullModeEnum.Disabled, AlbedoColor = color, EmissionEnabled = true, Emission = color, EmissionEnergyMultiplier = 2 } });
-        _visual.AddChild(new MeshInstance3D { Mesh = new QuadMesh { Size = Vector2.One * 0.065f },
-            CastShadow = GeometryInstance3D.ShadowCastingSetting.Off,
-            MaterialOverride = new StandardMaterial3D { ShadingMode = BaseMaterial3D.ShadingModeEnum.Unshaded,
-                Transparency = BaseMaterial3D.TransparencyEnum.Alpha, BlendMode = BaseMaterial3D.BlendModeEnum.Add,
-                BillboardMode = BaseMaterial3D.BillboardModeEnum.Enabled, AlbedoColor = new Color(0.2f, 0.8f, 0.7f, 0.65f),
-                AlbedoTexture = GD.Load<Texture2D>("res://Assets/Presentation/loot_glow.png"), NoDepthTest = false } });
+        _visual.AddChild(DropSymbol.Icon(DropSymbolKind.Experience,0.055f));
         _age = GetInstanceId() % 100 * 0.17; VisualInitialized = true;
     }
     public override void _Process(double delta)
@@ -48,7 +30,6 @@ public partial class ExperiencePickup : Node3D
             return;
         }
         _visual.Position = Vector3.Up * (Mathf.Sin((float)_age * 2.8f) * 0.006f);
-        _visual.Rotation = new Vector3(0, (float)_age * 1.1f, 0);
         _visual.Scale = Vector3.One * (0.92f + Mathf.Sin((float)_age * 3) * 0.08f);
     }
     public void BeginCollection(Vector3 target)

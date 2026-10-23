@@ -1,0 +1,72 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+FACTION: main menu has four equal-sized entries
+FACTION: main menu uses a centered two by two grid
+FACTION: original menu icons use a modest display size
+FACTION: main menu hover expands the entire entry
+FACTION: main menu hover clears on pointer exit
+FACTION: third main entry opens display and sound settings
+FACTION: two faction choices each show four original class icons
+FACTION: class icons keep their intended size
+FACTION: faction screen starts with neither allegiance selected
+FACTION: hover emphasizes Republic only
+FACTION: hover expands the whole visual group with a fixed pointer target
+FACTION: hover transfers to Empire
+FACTION: expansion transfers without leaving the previous faction enlarged
+FACTION: pointer exit clears hover without a sticky selection
+FACTION: Empire allegiance text is red without hover
+FACTION: pointer exit restores the original layout size
+FACTION: bottom navigation has no enclosing button frames
+FACTION: Main Menu icon differs from Back
+FACTION: keyboard focus has a visible cue without selection
+FACTION: Right arrow moves focus to Empire
+FACTION: Enter selects Empire and opens class selection
+FACTION: Empire has four illustrated class cards with red accents
+FACTION: class artwork stays inside its card
+FACTION: class cards replace the Continue button
+FACTION: class navigation uses the clean unframed style
+FACTION: Back and Main Menu share standard non-red text: font_color
+FACTION: Back and Main Menu share standard non-red text: font_hover_color
+FACTION: Back and Main Menu share standard non-red text: font_focus_color
+FACTION: Back and Main Menu share standard non-red text: font_pressed_color
+FACTION: class hover expands all artwork within a fixed target
+FACTION: class hover expansion clears
+FACTION: keyboard class selection opens two advanced class cards
+FACTION: Empire advanced cards use red accents and correctly sized original artwork
+FACTION: Empire advanced choice text matches the preceding screen's red
+FACTION: advanced cards replace Continue and the model preview
+FACTION: advanced card hover expands the group
+FACTION: advanced card hover resets
+FACTION: keyboard advanced choice opens galaxy selection directly
+FACTION: destination browser shows four properly sized planet buttons
+FACTION: Set Course replaces destination Continue
+FACTION: browsing Korriban updates preview and configuration in place
+FACTION: destination uses original landscape artwork
+FACTION: browsing Hutta updates preview and configuration in place
+FACTION: destination uses original landscape artwork
+FACTION: browsing Dromund Kaas updates preview and configuration in place
+FACTION: destination uses original landscape artwork
+FACTION: browsing Balmorra updates preview and configuration in place
+FACTION: destination uses original landscape artwork
+FACTION: destination hover expansion resets
+FACTION: Right arrow moves to Set Course
+FACTION: Set Course calls launch directly without a Ready page
+FACTION: launch failures keep destination selection available for retry
+FACTION: launch failure preserves the selected destination
+FACTION: Back restores advanced choices without stale selection
+FACTION: Back restores the class cards without a stale selected card
+FACTION: Back resets both faction selections
+FACTION: clicking the class-icon region selects Republic
+FACTION: Republic class cards retain blue accents
+FACTION: clicking class artwork selects its class and advances
+FACTION: Republic advanced cards use blue accents
+FACTION: clicking advanced artwork selects and opens the galaxy
+FACTION: Escape returns with neither faction selected
+FACTION: choices fit a 1280 by 720 viewport
+FACTION: Main Menu navigation works
+FACTION: playable selection enables Set Course
+FACTION: Set Course enters the configured game directly
+FACTION SELECTION PASSED
+WARNING: 420 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)

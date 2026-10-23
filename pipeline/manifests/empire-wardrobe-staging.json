@@ -1,0 +1,251 @@
+{
+  "evidence": "Client-derived",
+  "newPieces": 20,
+  "icons": [
+    {
+      "id": "wardrobe.war.chest",
+      "source": "/resources/gfx/icons/ipp.class.war.heroic.mdps2.t1x2.chest.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.war.chest.png",
+      "sha256": "f3bd75a447593cfea7cb4556a624d1b0d8183742a4a88e40e8fe4ec649c38359"
+    },
+    {
+      "id": "wardrobe.war.hands",
+      "source": "/resources/gfx/icons/ipp.class.war.heroic.mdps2.t1x2.hands.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.war.hands.png",
+      "sha256": "579c4498df40f63e71aa30ca7f391bc3856020d7904104766ef478c44d3ef943"
+    },
+    {
+      "id": "wardrobe.war.legs",
+      "source": "/resources/gfx/icons/ipp.class.war.heroic.mdps2.t1x2.legs.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.war.legs.png",
+      "sha256": "141648de68643dd002f52488cff676e388d8f3b52855fd6bc67a8317080de4f5"
+    },
+    {
+      "id": "wardrobe.war.feet",
+      "source": "/resources/gfx/icons/ipp.class.war.heroic.mdps2.t1x2.feet.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.war.feet.png",
+      "sha256": "8aa5d2f21164f1ab433a71ed9fae52624e2802741fcaf0c50411ee51e512cd1a"
+    },
+    {
+      "id": "wardrobe.war.waist",
+      "source": "/resources/gfx/icons/ipp.class.war.heroic.mdps2.t1x2.waist.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.war.waist.png",
+      "sha256": "2bdd06efa1907b68db8b641bf5707c8e878b3534d6b17011a2de900e41a5ce2b"
+    },
+    {
+      "id": "wardrobe.inq.chest",
+      "source": "/resources/gfx/icons/ipp.class.inq.heroic.cdps1.t1x2.chest.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.inq.chest.png",
+      "sha256": "818c34705306a61102e7722fc35c5131b1e6fb38a55ed0a093257438af8d4a81"
+    },
+    {
+      "id": "wardrobe.inq.hands",
+      "source": "/resources/gfx/icons/ipp.class.inq.heroic.cdps1.t1x2.hands.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.inq.hands.png",
+      "sha256": "d7e232850df68d9635a04c97bccd595e6608443ad7dbb99d11e243ae2a6eeb19"
+    },
+    {
+      "id": "wardrobe.inq.legs",
+      "source": "/resources/gfx/icons/ipp.class.inq.heroic.cdps1.t1x2.legs.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.inq.legs.png",
+      "sha256": "30fbf547d6e48cafd58b7ab3555c2b37d405068541e2936fc718315024b14be9"
+    },
+    {
+      "id": "wardrobe.inq.feet",
+      "source": "/resources/gfx/icons/ipp.class.inq.heroic.cdps1.t1x2.feet.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.inq.feet.png",
+      "sha256": "1413da2fafc0b19af1322ac63ff4f3e12b65e9e614bb308f659d429d05257ded"
+    },
+    {
+      "id": "wardrobe.inq.waist",
+      "source": "/resources/gfx/icons/ipp.class.inq.heroic.cdps1.t1x2.waist.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.inq.waist.png",
+      "sha256": "e1024fb7b9414aaefbe44dcbbc5bc4a817e55374db960be14fc32cac7b17f44d"
+    },
+    {
+      "id": "wardrobe.spy.chest",
+      "source": "/resources/gfx/icons/ipp.class.spy.heroic.tdps1.t1x2.chest.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.spy.chest.png",
+      "sha256": "7186412b31760e41106c330f8b5f1af48198e608ef5a56f9e6729fe20143ef56"
+    },
+    {
+      "id": "wardrobe.spy.hands",
+      "source": "/resources/gfx/icons/ipp.class.spy.heroic.tdps1.t1x2.hands.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.spy.hands.png",
+      "sha256": "f3299fca1b4da903c298151299a30913b987bb56127043746bfcfdc6e2efb31e"
+    },
+    {
+      "id": "wardrobe.spy.legs",
+      "source": "/resources/gfx/icons/ipp.class.spy.heroic.tdps1.t1x2.legs.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.spy.legs.png",
+      "sha256": "a1e6431a7c7103fbd767f1b0f7cb0456bb5ce379cbd6622783f506e83883f51b"
+    },
+    {
+      "id": "wardrobe.spy.feet",
+      "source": "/resources/gfx/icons/ipp.class.spy.heroic.tdps1.t1x2.feet.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.spy.feet.png",
+      "sha256": "1983462d93a404ab3aabbab5ff6ab50c5a426a94d59044214e550df7653566de"
+    },
+    {
+      "id": "wardrobe.spy.waist",
+      "source": "/resources/gfx/icons/ipp.class.spy.heroic.tdps1.t1x2.waist.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.spy.waist.png",
+      "sha256": "68053cc32901c5e43ec46880e1ccc8b709a5763ca05305c8c32e3196e346932d"
+    },
+    {
+      "id": "wardrobe.bh.chest",
+      "source": "/resources/gfx/icons/ipp.class.bh.heroic.rdps1.t1x1.chest.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.bh.chest.png",
+      "sha256": "63d9e5d23777a4202c2849e0ba02aeb5bb3e80f6b1776da5da2fd8888ae4946d"
+    },
+    {
+      "id": "wardrobe.bh.hands",
+      "source": "/resources/gfx/icons/ipp.class.bh.heroic.rdps1.t1x1.hands.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.bh.hands.png",
+      "sha256": "e05cc2dc737e26c9e162c319772f24a0ae902318a1d96969f166d003f1841a4f"
+    },
+    {
+      "id": "wardrobe.bh.legs",
+      "source": "/resources/gfx/icons/ipp.class.bh.heroic.rdps1.t1x1.legs.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.bh.legs.png",
+      "sha256": "f7c9c4d78e89f1daad0e4690438a34dd41194232f21ec47c9d76e4a67c32c5c2"
+    },
+    {
+      "id": "wardrobe.bh.feet",
+      "source": "/resources/gfx/icons/ipp.class.bh.heroic.rdps1.t1x1.feet.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.bh.feet.png",
+      "sha256": "6ec89ccc84e7bd6b2bac57f89f3a15c72fd4fa96816686154462b085a1b8c3ec"
+    },
+    {
+      "id": "wardrobe.bh.waist",
+      "source": "/resources/gfx/icons/ipp.class.bh.heroic.rdps1.t1x1.waist.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\wardrobe.bh.waist.png",
+      "sha256": "0706f15779bda8c9b37290162dc873cdac1a8c87df892112512b1f999a58d022"
+    },
+    {
+      "id": "d3.war.chest",
+      "source": "/resources/gfx/icons/ipp.class.war.starting.mdps1.t1x1.chest.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\d3.war.chest.png",
+      "sha256": "563ff583119e88c5e395e75fc3e926e7426cec2b0aafa5967b1cf549a3a3059b"
+    },
+    {
+      "id": "d3.war.hands",
+      "source": "/resources/gfx/icons/ipp.class.war.starting.mdps1.t1x1.hands.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\d3.war.hands.png",
+      "sha256": "408ecef774f075faae4a34d57d4d4195a40eee20c764b44195716a74e5fd9d36"
+    },
+    {
+      "id": "d3.war.legs",
+      "source": "/resources/gfx/icons/ipp.class.war.starting.mdps1.t1x1.legs.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\d3.war.legs.png",
+      "sha256": "53f1e854b006495e4f08e5cc92475bbe7276a0de0ca6ba599b6854a1c439f3e0"
+    },
+    {
+      "id": "d3.war.feet",
+      "source": "/resources/gfx/icons/ipp.class.war.starting.mdps1.t1x1.feet.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\d3.war.feet.png",
+      "sha256": "e41f6f403e907088639d873072225e7a09d88bc4adcc7098070486eeacabea24"
+    },
+    {
+      "id": "d3.war.waist",
+      "source": "/resources/gfx/icons/ipp.class.war.starting.mdps1.t1x1.waist.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\d3.war.waist.png",
+      "sha256": "b8c07e1637ad8f2d0037919c372ce1186a1bac3ed31cb9e85dcf50b775874c12"
+    },
+    {
+      "id": "d3.spy.chest",
+      "source": "/resources/gfx/icons/ipp.class.spy.starting.tdps1.t1x1.chest.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\d3.spy.chest.png",
+      "sha256": "8841e6c650d1dafb8da66c5b982c8fd48d8508f54b961ec738747964d3a32265"
+    },
+    {
+      "id": "d3.spy.hands",
+      "source": "/resources/gfx/icons/ipp.class.spy.starting.tdps1.t1x1.hands.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\d3.spy.hands.png",
+      "sha256": "501e901f51dd295300bdda65b4ca0406ce37a50951a5a3c0fc50e3914cfa19b8"
+    },
+    {
+      "id": "d3.spy.legs",
+      "source": "/resources/gfx/icons/ipp.class.spy.starting.tdps1.t1x1.legs.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\d3.spy.legs.png",
+      "sha256": "dcb76006e86c5af5ca5c9a3e067d843000ddeb5d87fb8aa287c19b46ba497908"
+    },
+    {
+      "id": "d3.spy.feet",
+      "source": "/resources/gfx/icons/ipp.class.spy.starting.tdps1.t1x1.feet.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\d3.spy.feet.png",
+      "sha256": "e84463941a0ec0814656cffec8c512daa31627e5fe556b79afc87ec999234718"
+    },
+    {
+      "id": "d3.spy.waist",
+      "source": "/resources/gfx/icons/ipp.class.spy.starting.tdps1.t1x1.waist.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\d3.spy.waist.png",
+      "sha256": "330ac5eca5728e71299f9e9187eb9e0112c06a8836f304efbe71deb81a37a6b0"
+    },
+    {
+      "id": "d3.bh.chest",
+      "source": "/resources/gfx/icons/ipp.class.bh.starting.rdps1.t1x1.chest.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\d3.bh.chest.png",
+      "sha256": "276b4be7a416cae6fb8a1df8817cc8749c378d7290c476804a6cc3387dc6f630"
+    },
+    {
+      "id": "d3.bh.hands",
+      "source": "/resources/gfx/icons/ipp.class.bh.starting.rdps1.t1x1.hands.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\d3.bh.hands.png",
+      "sha256": "e5d2447f8c4d2c3e21405b3c9fa8f59c17c5743b979c7f0330e03eef146298e3"
+    },
+    {
+      "id": "d3.bh.legs",
+      "source": "/resources/gfx/icons/ipp.class.bh.starting.rdps1.t1x1.legs.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\d3.bh.legs.png",
+      "sha256": "ccccb45d535a281cc4ffeafbbb044a88184443c3b7aefa18dbfbc5e8fe778160"
+    },
+    {
+      "id": "d3.bh.feet",
+      "source": "/resources/gfx/icons/ipp.class.bh.starting.rdps1.t1x1.feet.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\d3.bh.feet.png",
+      "sha256": "6208cdebcb6741441b21c12c9b0654d18399696e2ff32dd026d1bcfa242f505d"
+    },
+    {
+      "id": "d3.bh.waist",
+      "source": "/resources/gfx/icons/ipp.class.bh.starting.rdps1.t1x1.waist.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\d3.bh.waist.png",
+      "sha256": "f3bdc4e1e32994a875f3a42e7eb073fcfab4d3e1113302827de7eea66ccc3003"
+    },
+    {
+      "id": "ss_a04.chest",
+      "source": "/resources/gfx/icons/ipp.class.inq.a04.c01.s01.chest_v01.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\ss_a04.chest.png",
+      "sha256": "b6862961f41caa766277927f5d8bb35e3578854d6a15575a88abefe4ad15e792"
+    },
+    {
+      "id": "ss_a04.hands",
+      "source": "/resources/gfx/icons/ipp.class.inq.a04.c01.s01.hands_v01.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\ss_a04.hands.png",
+      "sha256": "0e2dba1094204a18937c7624a1a1f553546af755ec5586e9c26787820e706c9a"
+    },
+    {
+      "id": "ss_a04.legs",
+      "source": "/resources/gfx/icons/ipp.class.inq.a04.c01.s01.legs_v01.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\ss_a04.legs.png",
+      "sha256": "31fd01931ca015e734aa467c7653f8b0a72f8adb707779f23f9f0e4d9df0c493"
+    },
+    {
+      "id": "ss_a04.feet",
+      "source": "/resources/gfx/icons/ipp.class.inq.a04.c01.s01.feet_v01.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\ss_a04.feet.png",
+      "sha256": "3465a47d55f67fc81c49e84d3df9d98cf2e908af5219a38b217cb1ac7b8f2eaa"
+    },
+    {
+      "id": "ss_a04.waist",
+      "source": "/resources/gfx/icons/ipp.class.inq.a04.c01.s01.waist_v01.dds",
+      "output": "godot\\Assets\\Equipment\\Empire\\ss_a04.waist.png",
+      "sha256": "75cb0e550f5e517ba25a6b081d450aec558307e6ada976deb77035ac156ece8e"
+    }
+  ],
+  "limitations": [
+    "Human male body type 2, existing rig only",
+    "Portable material bake omits emissive glow; original maps retained"
+  ],
+  "sourceManifest": "empire-wardrobe-source.json"
+}

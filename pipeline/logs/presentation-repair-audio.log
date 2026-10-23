@@ -1,0 +1,29 @@
+wwiser v20260808 (python 3.12.14)
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\abilities_imperialmelee_data.bnk
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\abilities_imperialmelee_media.bnk
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\init.bnk
+parser: done
+names: loading names
+names: couldn't find D:\SWTORClassic\torbonk\pipeline\tools\wwnames.db3 name file
+names: done
+generator: start
+generator: processing nodes
+generator: elapsed 0.153395s
+generator: done (created 2)
+(done)
+wwiser v20260808 (python 3.12.14)
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\abilities_imperialranged_data.bnk
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\abilities_imperialranged_media.bnk
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\init.bnk
+parser: done
+names: loading names
+names: couldn't find D:\SWTORClassic\torbonk\pipeline\tools\wwnames.db3 name file
+names: done
+generator: start
+generator: processing nodes
+generator: elapsed 0.147599s
+generator: done (created 15)
+(done)
+{"events": {"Play_ability_sithinquisitor_creepingterror_cast": "3878307754", "Play_ability_sithinquisitor_creepingterror_targetloop": "3676600194", "Stop_ability_sithinquisitor_creepingterror_targetloop": "2872209740"}, "missing": ["Play_ability_spy_surgicalprobe_flyaway", "Play_ability_bountyhunter_heatseekermissles_firetrail", "Play_damage_vibroblade_hit", "Play_ability_bountyhunter_flamethrower_start", "Stop_ability_general_probe1_chatterloop", "Play_ability_general_probe1_hoverloop", "Play_ability_sithwarrior_forcescream_cast", "Stop_ability_bountyhunter_heatseekermissles_screamtrail", "Play_ability_general_probe1_chatterloop", "Stop_ability_bountyhunter_explosivefuel_burnloop", "Play_ability_bountyhunter_explosivefuel_burnloop_gas", "Play_ability_spy_seriesofshots_fire", "Play_ability_bountyhunter_railshot_lasersmoke", "Play_ability_spy_surgicalprobe_flyin", "Stop_ability_bountyhunter_heatseekermissles_firetrail", "Stop_ability_spy_surgicalprobe_beamloop", "Play_ability_bountyhunter_flamethrower_loop", "Play_ability_bountyhunter_explosivefuel_burnloop", "Play_ability_bountyhunter_heatseekermissles_screamtrail", "Play_ability_spy_unload_fire", "Play_ability_spy_surgicalprobe_beamloop", "Play_ability_spy_ambush_targetindicator", "Stop_ability_general_probe1_hoverloop", "Play_ability_bountyhunter_flamethrower_end", "Play_ability_bountyhunter_explosivefuel_activate", "Play_ability_bountyhunter_explosivefuel_bracerclick", "Play_ability_bountyhunter_explosivefuel_beeps", "Play_ability_spy_shieldprobe_deflect"], "media": 2}
+{"events": {"Play_ability_bountyhunter_explosivefuel_activate": "2951148304", "Play_ability_bountyhunter_explosivefuel_beeps": "4067638318", "Play_ability_bountyhunter_explosivefuel_bracerclick": "2007824378", "Play_ability_bountyhunter_explosivefuel_burnloop": "3404617762", "Play_ability_bountyhunter_explosivefuel_burnloop_gas": "3558403900", "Play_ability_bountyhunter_heatseekermissles_firetrail": "546843497", "Play_ability_bountyhunter_heatseekermissles_screamtrail": "2108765428", "Play_ability_bountyhunter_railshot_lasersmoke": "2528967878", "Play_ability_general_probe1_chatterloop": "3497160343", "Play_ability_general_probe1_hoverloop": "1472854414", "Play_ability_spy_ambush_targetindicator": "2833512369", "Play_ability_spy_shieldprobe_deflect": "4060001293", "Play_ability_spy_surgicalprobe_beamloop": "3626910378", "Play_ability_spy_surgicalprobe_flyaway": "789564298", "Play_ability_spy_surgicalprobe_flyin": "1086386801", "Stop_ability_bountyhunter_explosivefuel_burnloop": "1461713828", "Stop_ability_bountyhunter_heatseekermissles_firetrail": "2413030007", "Stop_ability_bountyhunter_heatseekermissles_screamtrail": "2350960582", "Stop_ability_general_probe1_chatterloop": "1725981805", "Stop_ability_general_probe1_hoverloop": "1220622344", "Stop_ability_spy_surgicalprobe_beamloop": "3068790364"}, "missing": ["Play_damage_vibroblade_hit", "Play_ability_bountyhunter_flamethrower_start", "Play_ability_sithwarrior_forcescream_cast", "Stop_ability_sithinquisitor_creepingterror_targetloop", "Play_ability_spy_seriesofshots_fire", "Play_ability_bountyhunter_flamethrower_loop", "Play_ability_sithinquisitor_creepingterror_targetloop", "Play_ability_spy_unload_fire", "Play_ability_sithinquisitor_creepingterror_cast", "Play_ability_bountyhunter_flamethrower_end"], "media": 40}
+{'Play_ability_sithinquisitor_creepingterror_cast': [333870345], 'Play_ability_sithinquisitor_creepingterror_targetloop': [254333643], 'Play_ability_bountyhunter_explosivefuel_activate': [135994990], 'Play_ability_bountyhunter_explosivefuel_beeps': [137571476], 'Play_ability_bountyhunter_explosivefuel_bracerclick': [169144164], 'Play_ability_bountyhunter_explosivefuel_burnloop': [562857809], 'Play_ability_bountyhunter_explosivefuel_burnloop_gas': [71183477], 'Play_ability_bountyhunter_heatseekermissles_firetrail': [47563771], 'Play_ability_bountyhunter_heatseekermissles_screamtrail': [41485128, 67868371, 211822264, 496692351, 133605080, 134767179, 108719292, 67821728, 7305763], 'Play_ability_bountyhunter_railshot_lasersmoke': [103213878], 'Play_ability_general_probe1_chatterloop': [10457486, 10685823, 242036957, 252351238, 82702447, 125802192, 236060772, 427516435, 219743017, 193342797, 34076564], 'Play_ability_general_probe1_hoverloop': [460682371], 'Play_ability_spy_ambush_targetindicator': [12809334, 94288275], 'Play_ability_spy_shieldprobe_deflect': [50181172, 38107453, 13800022, 67837780, 70458762, 23364535], 'Play_ability_spy_surgicalprobe_beamloop': [127942928, 187786666], 'Play_ability_spy_surgicalprobe_flyaway': [213741522], 'Play_ability_spy_surgicalprobe_flyin': [124571908]}

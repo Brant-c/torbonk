@@ -1,0 +1,314 @@
+{
+  "patches": [
+    {
+      "id": "4611686022461650719",
+      "room": "sobrik",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -32.0,
+        20.3691005707,
+        44.7999992371
+      ],
+      "version": 9,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8984,
+      "embeddedSha256": "58c2ce5dc16aac4157d90d58785347b2129520c298c927c3d1d9728d6ab76712",
+      "decodedSha256": "50102fdf97f6e49dcd65d1ffd09956f08413859ef3a6edb35551881af7738206",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "15",
+        "23",
+        "26",
+        "30"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/balmorra/4611686022461650719_albedo.png",
+        "normal": "res://Assets/Maps/balmorra/4611686022461650719_normal.png",
+        "roughness": "res://Assets/Maps/balmorra/4611686022461650719_roughness.png"
+      },
+      "embeddedPosition": [
+        -32.0,
+        20.36910057067871,
+        44.79999923706055
+      ]
+    },
+    {
+      "id": "4611686022461650720",
+      "room": "sobrik",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -32.0,
+        5.56650018692,
+        57.5999984741
+      ],
+      "version": 9,
+      "vertices": 4225,
+      "triangles": 7915,
+      "sourceHeightEnd": 9513,
+      "embeddedSha256": "7d4d42dbb14737290ee84f9119305d8d32b7a15dd791756400a88f3f9d4f79e8",
+      "decodedSha256": "ba2abfa60d08b60f837babc0164e15058a660bcd3b0f69c5f5b86a4041366e51",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "15",
+        "23",
+        "26",
+        "30"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": true,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/balmorra/4611686022461650720_albedo.png",
+        "normal": "res://Assets/Maps/balmorra/4611686022461650720_normal.png",
+        "roughness": "res://Assets/Maps/balmorra/4611686022461650720_roughness.png"
+      },
+      "embeddedPosition": [
+        -32.0,
+        5.566500186920166,
+        57.599998474121094
+      ]
+    },
+    {
+      "id": "4611686022461650742",
+      "room": "sobrik",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -19.2000007629,
+        19.2900009155,
+        44.7999992371
+      ],
+      "version": 9,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8984,
+      "embeddedSha256": "0a6680927e0f3cac6a83562ee2a0c255919e214daefdb690ba85715801a8f2e4",
+      "decodedSha256": "acb4b0ed8d628fcf7105f7c6452f7ac94605fec7d56498c187136515f5bcf30b",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "15",
+        "23",
+        "26",
+        "30"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/balmorra/4611686022461650742_albedo.png",
+        "normal": "res://Assets/Maps/balmorra/4611686022461650742_normal.png",
+        "roughness": "res://Assets/Maps/balmorra/4611686022461650742_roughness.png"
+      },
+      "embeddedPosition": [
+        -19.200000762939453,
+        19.290000915527344,
+        44.79999923706055
+      ]
+    },
+    {
+      "id": "4611686022461650743",
+      "room": "sobrik",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -19.2000007629,
+        5.56920003891,
+        57.5999984741
+      ],
+      "version": 9,
+      "vertices": 4225,
+      "triangles": 5476,
+      "sourceHeightEnd": 9513,
+      "embeddedSha256": "b5ac0a9134cb9a7202f35ecf6564e26862513fbbd185f1dffb1a55c7b4de7e77",
+      "decodedSha256": "fa92fa58b37e5949261adcb5fd3d82c54c0cafaba8f5a8f40b7b5c43bffc2015",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "15",
+        "23",
+        "26",
+        "30"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": true,
+      "dyd": [
+        {
+          "id": 32,
+          "painted": 5
+        },
+        {
+          "id": 34,
+          "painted": 20
+        }
+      ],
+      "maps": {
+        "albedo": "res://Assets/Maps/balmorra/4611686022461650743_albedo.png",
+        "normal": "res://Assets/Maps/balmorra/4611686022461650743_normal.png",
+        "roughness": "res://Assets/Maps/balmorra/4611686022461650743_roughness.png"
+      },
+      "embeddedPosition": [
+        -19.200000762939453,
+        5.569200038909912,
+        57.599998474121094
+      ]
+    },
+    {
+      "id": "4611686022461650765",
+      "room": "sobrik",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -6.40000009537,
+        18.6385993958,
+        44.7999992371
+      ],
+      "version": 9,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8984,
+      "embeddedSha256": "8d449ffb55545118e57caa9e14d0c205a5b5438b54b2892624bb718e91b47c5f",
+      "decodedSha256": "f94da19c2c73e899cabbab02bed8ea5dbf9df3552f624341d665352fb3929f4b",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "15",
+        "23",
+        "26"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/balmorra/4611686022461650765_albedo.png",
+        "normal": "res://Assets/Maps/balmorra/4611686022461650765_normal.png",
+        "roughness": "res://Assets/Maps/balmorra/4611686022461650765_roughness.png"
+      },
+      "embeddedPosition": [
+        -6.400000095367432,
+        18.638599395751953,
+        44.79999923706055
+      ]
+    },
+    {
+      "id": "4611686022461650766",
+      "room": "sobrik",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -6.40000009537,
+        5.56969976425,
+        57.5999984741
+      ],
+      "version": 9,
+      "vertices": 4225,
+      "triangles": 6880,
+      "sourceHeightEnd": 9513,
+      "embeddedSha256": "2b19f50964d9b834ac2742efad1c4ada8ee3228c7804682405b0d46713e43800",
+      "decodedSha256": "f046dbcd4010241dc67b2cf079a4da3979f524154892e349602b1fafeffa2bab",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "15",
+        "23",
+        "26",
+        "30"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": true,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/balmorra/4611686022461650766_albedo.png",
+        "normal": "res://Assets/Maps/balmorra/4611686022461650766_normal.png",
+        "roughness": "res://Assets/Maps/balmorra/4611686022461650766_roughness.png"
+      },
+      "embeddedPosition": [
+        -6.400000095367432,
+        5.569699764251709,
+        57.599998474121094
+      ]
+    }
+  ],
+  "adjacency": [
+    {
+      "note": "authored patches staged unmodified; seams not repaired",
+      "patchCount": 6
+    }
+  ],
+  "lighting": "authored warm directional/ambient; no native parity",
+  "limitations": [
+    "World-space UV phase/scale reconstruction is not native-client verified.",
+    "SWTOR material lighting translated to portable PBR; original vertex color used as multiplicative tint.",
+    "DYD density data retained; procedural native billboard/mesh scattering is not reproduced.",
+    "Static collision is derived from converted visible triangles, not original physics shapes."
+  ],
+  "passed": true
+}

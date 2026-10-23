@@ -1,0 +1,635 @@
+{
+  "guard": {
+    "skeleton": "/resources/art/dynamic/spec/bmsnew_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "boot",
+        "modelId": "1002351",
+        "materialId": "1005096",
+        "models": [
+          "/resources/art/dynamic/boot/model/boot_tall_bms_archetype.gr2",
+          "/resources/art/dynamic/boot/model/boot_tall_bms_heavy_ge_a18_shin.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/boot_tall_heavy_ge_a18mercenary02_u.mat",
+          "derived": "Garment",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/boot_tall_heavy_ge_a18mercenary02_u_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/boot_tall_heavy_ge_a18mercenary01_u_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/boot_tall_heavy_ge_a18mercenary02_u_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/boot_tall_heavy_ge_a18mercenary02_u_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/boot_tall_heavy_ge_a18mercenary02_u_m.dds"
+          }
+        },
+        "overrides": []
+      },
+      {
+        "slot": "chest",
+        "modelId": "1002349",
+        "materialId": "1005097",
+        "models": [
+          "/resources/art/dynamic/chest/model/chest_baggy_bms_archetype.gr2",
+          "/resources/art/dynamic/chest/model/chest_baggy_bms_heavy_ge_a18_shld.gr2",
+          "/resources/art/dynamic/chest/model/chest_baggy_bms_heavy_ge_a18_chest.gr2",
+          "/resources/art/dynamic/chest/model/chest_baggy_bms_heavy_ge_a18_back.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/chest_baggy_heavy_ge_a18mercenary02_m.mat",
+          "derived": "Garment",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/chest_baggy_heavy_ge_a18mercenary02_u_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/chest_baggy_heavy_ge_a18mercenary02_m_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/chest_baggy_heavy_ge_a18mercenary02_u_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/chest_baggy_heavy_ge_a18mercenary02_u_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/chest_baggy_heavy_ge_a18mercenary02_u_m.dds",
+            "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+          }
+        },
+        "overrides": []
+      },
+      {
+        "slot": "leg",
+        "modelId": "1002606",
+        "materialId": "1005100",
+        "models": [
+          "/resources/art/dynamic/leg/model/leg_pant_bms_archetype.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/leg_pant_heavy_ge_a18mercenary02_m_v02.mat",
+          "derived": "Garment",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/leg_pant_heavy_ge_a18mercenary02_u_v02_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/leg_pant_heavy_ge_a18mercenary01_m_v02_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/leg_pant_heavy_ge_a18mercenary02_u_v02_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/leg_pant_heavy_ge_a18mercenary02_u_v02_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/leg_pant_heavy_ge_a18mercenary02_u_v02_m.dds"
+          }
+        },
+        "overrides": []
+      },
+      {
+        "slot": "hand",
+        "modelId": "1002356",
+        "materialId": "1005095",
+        "models": [
+          "/resources/art/dynamic/hand/model/hand_gauntlet_bms_archetype.gr2",
+          "/resources/art/dynamic/hand/model/hand_gauntlet_bms_heavy_ge_a18_forearm.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/hand_gauntlet_heavy_ge_a18mercenary02_u.mat",
+          "derived": "Garment",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/hand_gauntlet_heavy_ge_a18mercenary02_u_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/hand_gauntlet_heavy_ge_a18mercenary02_u_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/hand_gauntlet_heavy_ge_a18mercenary02_u_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/hand_gauntlet_heavy_ge_a18mercenary02_u_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/hand_gauntlet_heavy_ge_a18mercenary02_u_m.dds",
+            "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+          }
+        },
+        "overrides": []
+      },
+      {
+        "slot": "head",
+        "modelId": "1000260",
+        "materialId": "1583904",
+        "models": [
+          "/resources/art/dynamic/head/model/head_human_bms_african_a01.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/head_human_african_a01c01_m.mat",
+          "derived": "SkinB",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_african_a01c01_m_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_african_a01c01_m_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_african_a01c01_m_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_african_a01c01_m_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_non_a01c01_u_m.dds",
+            "ComplexionMap": "/resources/art/defaultassets/white.dds",
+            "FacepaintMap": "/resources/art/defaultassets/default_facepaint.dds",
+            "AgeMap": "/resources/art/defaultassets/default_age.dds",
+            "OffsetMap": "/resources/art/defaultassets/flat_n.dds"
+          }
+        },
+        "overrides": [
+          {
+            "index": -1,
+            "material": {
+              "path": "/resources/art/shaders/materials/eye_human_non_a01_c01.mat",
+              "derived": "Eye",
+              "textures": {
+                "DiffuseMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_d.dds",
+                "RotationMap1": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_n.dds",
+                "GlossMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_s.dds",
+                "PaletteMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_h.dds",
+                "PaletteMaskMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_m.dds"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "slot": "hair",
+        "modelId": "1000620",
+        "materialId": "1027364",
+        "models": [
+          "/resources/art/dynamic/hair/model/hair_human_bms_non_a01.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/hair_human_non_a01_v01_m.mat",
+          "derived": "HairC",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/hair/texture/___psd/hair_human_non_a01_v01_m_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/hair/texture/___psd/hair_human_non_a01_v01_m_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/hair/texture/___psd/hair_human_non_a01_v01_m_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/hair/texture/___psd/hair_human_non_a01_v01_m_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/hair/texture/___psd/hair_human_non_a15_v01_m_m.dds",
+            "DirectionMap": "/resources/art/lookuptables/table_hair_02.dds"
+          }
+        },
+        "overrides": []
+      },
+      {
+        "slot": "waist",
+        "modelId": "1002348",
+        "materialId": "1005098",
+        "models": [
+          "/resources/art/dynamic/waist/model/waist_belt_bms_archetype.gr2",
+          "/resources/art/dynamic/waist/model/waist_belt_bms_heavy_ge_a18_front.gr2",
+          "/resources/art/dynamic/waist/model/waist_belt_bms_heavy_ge_a18_back.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/waist_belt_heavy_ge_a18mercenary02_u.mat",
+          "derived": "Garment",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/waist_belt_heavy_ge_a18mercenary02_u_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/waist_belt_heavy_ge_a18mercenary02_u_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/waist_belt_heavy_ge_a18mercenary02_u_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/waist_belt_heavy_ge_a18mercenary02_u_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_baggy_heavy_a18/texture/___psd/waist_belt_heavy_ge_a18mercenary02_u_m.dds",
+            "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/humanoid/bmsnew/cb_pistol_idle_1.jba",
+      "Run": "/resources/anim/humanoid/bmsnew/mv_cb_pistol_run_forward.jba",
+      "Attack": "/resources/anim/humanoid/bmsnew/cb_pistol_fire_1.jba",
+      "Hit": "/resources/anim/humanoid/bmsnew/dg_unarmed_crit_damage_right_1.jba",
+      "Death": "/resources/anim/humanoid/bmsnew/dg_death_1.jba"
+    }
+  },
+  "droid": {
+    "skeleton": "/resources/art/dynamic/spec/bmnnew_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "creature",
+        "modelId": "1000103",
+        "materialId": "1001474",
+        "models": [
+          "/resources/art/dynamic/creature/model/assassin_rogue_a01.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/assassin_rogue_a01_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/droid/assassin_droid/texture/___psd/assassin_rogue_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/droid/assassin_droid/texture/___psd/assassin_rogue_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/droid/assassin_droid/texture/___psd/assassin_rogue_a01_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/defaultassets/black.dds",
+            "DirectionMap": "/resources/art/defaultassets/flat_n.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/humanoid/bmnnew/cb_pistol_idle_1.jba",
+      "Run": "/resources/anim/humanoid/bmnnew/mv_cb_pistol_run_forward.jba",
+      "Attack": "/resources/anim/humanoid/bmnnew/cb_pistol_fire_1.jba",
+      "Hit": "/resources/anim/humanoid/bmnnew/dg_unarmed_crit_damage_right_1.jba",
+      "Death": "/resources/anim/humanoid/bmnnew/dg_death_1.jba"
+    }
+  },
+  "gangster": {
+    "skeleton": "/resources/art/dynamic/spec/bmnnew_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "boot",
+        "modelId": "1000540",
+        "materialId": "1001143",
+        "models": [
+          "/resources/art/dynamic/boot/model/boot_tall_bmn_archetype.gr2",
+          "/resources/art/dynamic/boot/model/boot_tall_bmn_med_ge_a20_straps.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/boot_tall_med_ge_a20refugee01_u.mat",
+          "derived": "Garment",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/boot_tall_med_ge_a20refugee01_u_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/boot_tall_med_ge_a20refugee01_u_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/boot_tall_med_ge_a20refugee01_u_s.dds",
+            "PaletteMap": "/resources/art/defaultassets/black.dds",
+            "PaletteMaskMap": "/resources/art/defaultassets/black.dds",
+            "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+          }
+        },
+        "overrides": []
+      },
+      {
+        "slot": "chest",
+        "modelId": "1000543",
+        "materialId": "1001305",
+        "models": [
+          "/resources/art/dynamic/chest/model/chest_tight_bmn_archetype.gr2",
+          "/resources/art/dynamic/chest/model/chest_tight_bmn_med_ge_a20_hoodup.gr2",
+          "/resources/art/dynamic/chest/model/chest_tight_bmn_med_ge_a20_hooddown.gr2",
+          "/resources/art/dynamic/chest/model/chest_tight_bmn_med_ge_a20_shld.gr2",
+          "/resources/art/dynamic/chest/model/chest_tight_bmn_med_ge_a20_tunic.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/chest_tight_med_ge_a20refugee01_m.mat",
+          "derived": "Garment",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/chest_tight_med_ge_a20refugee01_u_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/chest_tight_med_ge_a20refugee01_m_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/chest_tight_med_ge_a20refugee01_u_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/chest_tight_med_ge_a20refugee01_u_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/chest_tight_med_ge_a20refugee01_u_m.dds",
+            "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+          }
+        },
+        "overrides": []
+      },
+      {
+        "slot": "leg",
+        "modelId": "1000544",
+        "materialId": "1001727",
+        "models": [
+          "/resources/art/dynamic/leg/model/leg_pant_bmn_archetype.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/leg_pant_med_ge_a20refugee01_v01_m.mat",
+          "derived": "Garment",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/leg_pant_med_ge_a20refugee01_v01_u_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/leg_pant_med_ge_a20refugee01_v01_m_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/leg_pant_med_ge_a20refugee01_v01_u_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/leg_pant_med_ge_a20refugee01_v01_u_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/leg_pant_med_ge_a20refugee01_v01_u_m.dds",
+            "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+          }
+        },
+        "overrides": []
+      },
+      {
+        "slot": "hand",
+        "modelId": "1142620",
+        "materialId": "1150778",
+        "models": [
+          "/resources/art/dynamic/hand/model/hand_naked_bmn_archetype.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/hand_naked_african_young_a01c01_bmn.mat",
+          "derived": "SkinB",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/all_naked_body/texture/___psd/hand_naked_caucasian_young_a01c01_bmn_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/all_naked_body/texture/___psd/hand_naked_caucasian_young_a01c01_bmn_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/all_naked_body/texture/___psd/hand_naked_non_young_a01c01_u_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/outfit/all_naked_body/texture/___psd/hand_naked_caucasian_young_a01c01_bmn_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/all_naked_body/texture/___psd/hand_naked_non_young_a01c01_u_m.dds",
+            "ComplexionMap": "/resources/art/defaultassets/white.dds",
+            "FacepaintMap": "/resources/art/defaultassets/default_facepaint.dds",
+            "AgeMap": "/resources/art/defaultassets/default_age.dds"
+          }
+        },
+        "overrides": []
+      },
+      {
+        "slot": "head",
+        "modelId": "1000255",
+        "materialId": "1583904",
+        "models": [
+          "/resources/art/dynamic/head/model/head_human_bmn_african_a01.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/head_human_african_a01c01_m.mat",
+          "derived": "SkinB",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_african_a01c01_m_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_african_a01c01_m_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_african_a01c01_m_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_african_a01c01_m_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_non_a01c01_u_m.dds",
+            "ComplexionMap": "/resources/art/defaultassets/white.dds",
+            "FacepaintMap": "/resources/art/defaultassets/default_facepaint.dds",
+            "AgeMap": "/resources/art/defaultassets/default_age.dds",
+            "OffsetMap": "/resources/art/defaultassets/flat_n.dds"
+          }
+        },
+        "overrides": [
+          {
+            "index": -1,
+            "material": {
+              "path": "/resources/art/shaders/materials/eye_human_non_a01_c01.mat",
+              "derived": "Eye",
+              "textures": {
+                "DiffuseMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_d.dds",
+                "RotationMap1": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_n.dds",
+                "GlossMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_s.dds",
+                "PaletteMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_h.dds",
+                "PaletteMaskMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_m.dds"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "slot": "waist",
+        "modelId": "1000541",
+        "materialId": "1001807",
+        "models": [
+          "/resources/art/dynamic/waist/model/waist_belt_bmn_archetype.gr2",
+          "/resources/art/dynamic/waist/model/waist_belt_bmn_med_ge_a20_back.gr2",
+          "/resources/art/dynamic/waist/model/waist_belt_bmn_med_ge_a20_front.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/waist_belt_med_ge_a20refugee01_u.mat",
+          "derived": "Garment",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/waist_belt_med_ge_a20refugee01_u_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/waist_belt_med_ge_a20refugee01_u_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/waist_belt_med_ge_a20refugee01_u_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/waist_belt_med_ge_a20refugee01_u_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/waist_belt_med_ge_a20refugee01_u_m.dds",
+            "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/humanoid/bmnnew/cb_pistol_idle_1.jba",
+      "Run": "/resources/anim/humanoid/bmnnew/mv_cb_pistol_run_forward.jba",
+      "Attack": "/resources/anim/humanoid/bmnnew/cb_pistol_fire_1.jba",
+      "Hit": "/resources/anim/humanoid/bmnnew/dg_unarmed_crit_damage_right_1.jba",
+      "Death": "/resources/anim/humanoid/bmnnew/dg_death_1.jba"
+    }
+  },
+  "bogsnarler": {
+    "skeleton": "/resources/art/dynamic/spec/dog_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "creature",
+        "modelId": "1005718",
+        "materialId": "1005719",
+        "models": [
+          "/resources/art/dynamic/creature/model/dog_swampsnarler_a01.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/dog_swampsnarler_a01_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/creature/texture/dog_swampsnarler_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/creature/texture/dog_swampsnarler_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/creature/texture/dog_swampsnarler_a01_v01_s.dds",
+            "EmissiveMap": "/resources/art/defaultassets/black.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/creature/dog/texture/___psd/dog_swampsnarler_a01_v01_m.dds",
+            "DirectionMap": "/resources/art/defaultassets/flat_n.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/creature/dog/cb_ready_1.jba",
+      "Run": "/resources/anim/creature/dog/mv_run_forward.jba",
+      "Attack": "/resources/anim/creature/dog/cb_attack_1.jba",
+      "Hit": "/resources/anim/creature/dog/dg_damage_1.jba",
+      "Death": "/resources/anim/creature/dog/dg_death_1.jba"
+    }
+  },
+  "chemilizard": {
+    "skeleton": "/resources/art/dynamic/spec/lizard_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "creature",
+        "modelId": "1000131",
+        "materialId": "1001449",
+        "models": [
+          "/resources/art/dynamic/creature/model/lizard_chemilizard_a01.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/lizard_chemilizard_a01_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/creature/texture/lizard_chemilizard_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/creature/texture/lizard_chemilizard_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/creature/lizard/texture/___psd/lizard_chemilizard_a01_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/creature/lizard/texture/___psd/lizard_chemilizard_a01_v01_m.dds",
+            "DirectionMap": "/resources/art/defaultassets/flat_n.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/creature/veractyl/cb_ready_1.jba",
+      "Run": "/resources/anim/creature/veractyl/mv_run_forward.jba",
+      "Attack": "/resources/anim/creature/veractyl/cb_attack_1.jba",
+      "Hit": "/resources/anim/creature/veractyl/dg_damage_1.jba",
+      "Death": "/resources/anim/creature/veractyl/dg_death_1.jba"
+    }
+  },
+  "brawler": {
+    "skeleton": "/resources/art/dynamic/spec/bmnnew_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "boot",
+        "modelId": "1000540",
+        "materialId": "1001143",
+        "models": [
+          "/resources/art/dynamic/boot/model/boot_tall_bmn_archetype.gr2",
+          "/resources/art/dynamic/boot/model/boot_tall_bmn_med_ge_a20_straps.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/boot_tall_med_ge_a20refugee01_u.mat",
+          "derived": "Garment",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/boot_tall_med_ge_a20refugee01_u_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/boot_tall_med_ge_a20refugee01_u_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/boot_tall_med_ge_a20refugee01_u_s.dds",
+            "PaletteMap": "/resources/art/defaultassets/black.dds",
+            "PaletteMaskMap": "/resources/art/defaultassets/black.dds",
+            "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+          }
+        },
+        "overrides": []
+      },
+      {
+        "slot": "chest",
+        "modelId": "1000543",
+        "materialId": "1001305",
+        "models": [
+          "/resources/art/dynamic/chest/model/chest_tight_bmn_archetype.gr2",
+          "/resources/art/dynamic/chest/model/chest_tight_bmn_med_ge_a20_hoodup.gr2",
+          "/resources/art/dynamic/chest/model/chest_tight_bmn_med_ge_a20_hooddown.gr2",
+          "/resources/art/dynamic/chest/model/chest_tight_bmn_med_ge_a20_shld.gr2",
+          "/resources/art/dynamic/chest/model/chest_tight_bmn_med_ge_a20_tunic.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/chest_tight_med_ge_a20refugee01_m.mat",
+          "derived": "Garment",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/chest_tight_med_ge_a20refugee01_u_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/chest_tight_med_ge_a20refugee01_m_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/chest_tight_med_ge_a20refugee01_u_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/chest_tight_med_ge_a20refugee01_u_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/chest_tight_med_ge_a20refugee01_u_m.dds",
+            "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+          }
+        },
+        "overrides": []
+      },
+      {
+        "slot": "leg",
+        "modelId": "1000544",
+        "materialId": "1001727",
+        "models": [
+          "/resources/art/dynamic/leg/model/leg_pant_bmn_archetype.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/leg_pant_med_ge_a20refugee01_v01_m.mat",
+          "derived": "Garment",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/leg_pant_med_ge_a20refugee01_v01_u_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/leg_pant_med_ge_a20refugee01_v01_m_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/leg_pant_med_ge_a20refugee01_v01_u_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/leg_pant_med_ge_a20refugee01_v01_u_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/leg_pant_med_ge_a20refugee01_v01_u_m.dds",
+            "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+          }
+        },
+        "overrides": []
+      },
+      {
+        "slot": "hand",
+        "modelId": "1142620",
+        "materialId": "1150778",
+        "models": [
+          "/resources/art/dynamic/hand/model/hand_naked_bmn_archetype.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/hand_naked_african_young_a01c01_bmn.mat",
+          "derived": "SkinB",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/all_naked_body/texture/___psd/hand_naked_caucasian_young_a01c01_bmn_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/all_naked_body/texture/___psd/hand_naked_caucasian_young_a01c01_bmn_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/all_naked_body/texture/___psd/hand_naked_non_young_a01c01_u_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/outfit/all_naked_body/texture/___psd/hand_naked_caucasian_young_a01c01_bmn_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/all_naked_body/texture/___psd/hand_naked_non_young_a01c01_u_m.dds",
+            "ComplexionMap": "/resources/art/defaultassets/white.dds",
+            "FacepaintMap": "/resources/art/defaultassets/default_facepaint.dds",
+            "AgeMap": "/resources/art/defaultassets/default_age.dds"
+          }
+        },
+        "overrides": []
+      },
+      {
+        "slot": "head",
+        "modelId": "1000255",
+        "materialId": "1583904",
+        "models": [
+          "/resources/art/dynamic/head/model/head_human_bmn_african_a01.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/head_human_african_a01c01_m.mat",
+          "derived": "SkinB",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_african_a01c01_m_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_african_a01c01_m_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_african_a01c01_m_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_african_a01c01_m_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/head/texture/___psd/head_human_non_a01c01_u_m.dds",
+            "ComplexionMap": "/resources/art/defaultassets/white.dds",
+            "FacepaintMap": "/resources/art/defaultassets/default_facepaint.dds",
+            "AgeMap": "/resources/art/defaultassets/default_age.dds",
+            "OffsetMap": "/resources/art/defaultassets/flat_n.dds"
+          }
+        },
+        "overrides": [
+          {
+            "index": -1,
+            "material": {
+              "path": "/resources/art/shaders/materials/eye_human_non_a01_c01.mat",
+              "derived": "Eye",
+              "textures": {
+                "DiffuseMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_d.dds",
+                "RotationMap1": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_n.dds",
+                "GlossMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_s.dds",
+                "PaletteMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_h.dds",
+                "PaletteMaskMap": "/resources/art/dynamic/player_character/face_customization/eye/eye_human_non_a01_c01_m.dds"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "slot": "waist",
+        "modelId": "1000541",
+        "materialId": "1001807",
+        "models": [
+          "/resources/art/dynamic/waist/model/waist_belt_bmn_archetype.gr2",
+          "/resources/art/dynamic/waist/model/waist_belt_bmn_med_ge_a20_back.gr2",
+          "/resources/art/dynamic/waist/model/waist_belt_bmn_med_ge_a20_front.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/waist_belt_med_ge_a20refugee01_u.mat",
+          "derived": "Garment",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/waist_belt_med_ge_a20refugee01_u_d.dds",
+            "RotationMap1": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/waist_belt_med_ge_a20refugee01_u_n.dds",
+            "GlossMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/waist_belt_med_ge_a20refugee01_u_s.dds",
+            "PaletteMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/waist_belt_med_ge_a20refugee01_u_h.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/ge_tight_med_a20/texture/___psd/waist_belt_med_ge_a20refugee01_u_m.dds",
+            "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/humanoid/bmnnew/cb_unarmed_idle_right_1.jba",
+      "Run": "/resources/anim/humanoid/bmnnew/mv_run_forward.jba",
+      "Attack": "/resources/anim/humanoid/bmnnew/cb_unarmed_attack_right_1.jba",
+      "Hit": "/resources/anim/humanoid/bmnnew/dg_unarmed_crit_damage_right_1.jba",
+      "Death": "/resources/anim/humanoid/bmnnew/dg_death_1.jba"
+    }
+  },
+  "weapons": {
+    "sky": {
+      "model": "/resources/art/static/area/hut_hutta/sky/hut_skyscene01.gr2",
+      "materials": [
+        {
+          "path": "/resources/art/shaders/materials/hut_skyscene_mountains_tiles.mat",
+          "derived": "Skydome",
+          "textures": {
+            "DiffuseMap": "/resources/art/static/area/hut_hutta/sky/texture/hut_skyscene_mountains_tiles_d.dds"
+          }
+        },
+        {
+          "path": "/resources/art/shaders/materials/hut_skyscene_mountains.mat",
+          "derived": "Uber",
+          "textures": {
+            "DiffuseMap": "/resources/art/static/area/hut_hutta/sky/texture/hut_skyscene_mountains_d.dds",
+            "RotationMap1": "/resources/art/static/area/hut_hutta/sky/texture/hut_skyscene_mountains_n.dds",
+            "GlossMap": "/resources/art/defaultassets/black.dds",
+            "EmissiveMap": "/resources/art/defaultassets/black.dds"
+          }
+        }
+      ]
+    }
+  }
+}

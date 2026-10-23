@@ -1,0 +1,14 @@
+﻿python.exe : Traceback (most recent call last):
+At D:\SWTORClassic\torbonk\pipeline\Run-Map-Pipeline.ps1:14 char:5
++     & $Program @Arguments *> $log
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\SWTORClassic\torbonk\pipeline\scripts\map_terrain.py", line 126, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\SWTORClassic\torbonk\pipeline\scripts\map_terrain.py", line 56, in main
+    assert total.min()>.98 and total.max()<1.02,('invalid blend sums',id,float(total.min()),float(total.max()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('invalid blend sums', '4611686022249488860', 0.9999999403953552, 1.490098476409912)

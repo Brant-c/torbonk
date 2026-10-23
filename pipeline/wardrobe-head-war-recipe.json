@@ -1,0 +1,221 @@
+{
+  "profile": "April2012",
+  "bodyType": "bmn",
+  "skeleton": "/resources/art/dynamic/spec/bmnnew_skeleton.gr2",
+  "outfit": "April war heroic tier 1 appearance family; full spawn inventory unverified",
+  "coordinatePolicy": "scale 1; GR2 +90 X applied; glTF Y up; JBA original root rotation retained",
+  "colorScheme": {
+    "id": "1411557",
+    "xml": "<Asset>\n    <ID>1411557</ID>\n    <ArtName>colorscheme_sw_a05_c03_s08</ArtName>\n    <DesignerName>colorscheme sw a05 c03 s08</DesignerName>\n    <BaseFile />\n    <Attachments />\n    <Materials />\n    <Bodytypes>\n      <Bodytype>bfa</Bodytype>\n      <Bodytype>bfb</Bodytype>\n      <Bodytype>bfn</Bodytype>\n      <Bodytype>bfs</Bodytype>\n      <Bodytype>bma</Bodytype>\n      <Bodytype>bmf</Bodytype>\n      <Bodytype>bmn</Bodytype>\n      <Bodytype>bms</Bodytype>\n    </Bodytypes>\n    <SkinMaterialIndex>-1</SkinMaterialIndex>\n    <SkinHueIndex>-1</SkinHueIndex>\n    <Filters />\n    <Identities />\n    <Tags />\n    <CustomData>\n      <ColorScheme>\n        <Name>colorscheme_sw_a05_c03_s08</Name>\n        <Guid>1411557</Guid>\n        <slot name=\"boot\" primary=\"1002951\" secondary=\"1000789\" />\n        <slot name=\"bracer\" primary=\"1000789\" secondary=\"1000789\" />\n        <slot name=\"chest\" primary=\"1000789\" secondary=\"1000789\" />\n        <slot name=\"face\" primary=\"1002951\" secondary=\"1000789\" />\n        <slot name=\"hand\" primary=\"1002951\" secondary=\"1000789\" />\n        <slot name=\"leg\" primary=\"1000789\" secondary=\"1000789\" />\n        <slot name=\"waist\" primary=\"1002951\" secondary=\"1000789\" />\n      </ColorScheme>\n    </CustomData>\n  </Asset>\n  ",
+    "hues": {
+      "1000789": {
+        "id": "1000789",
+        "xml": "<Palette>\r\n  <Brightness>0.0433999</Brightness>\r\n  <Contrast>1.0725</Contrast>\r\n  <Hue>0.4541</Hue>\r\n  <Metallicspecular>0.807843,0.94902,1,1</Metallicspecular>\r\n  <Name>garmenthue_sw_h10_p</Name>\r\n  <Precedence>008</Precedence>\r\n  <Representativecolor>0.269740821705842,0.432893634099809,0.456636363733767</Representativecolor>\r\n  <Saturation>0.599</Saturation>\r\n  <Specular>0.792157,0.666667,0.666667,1</Specular>\r\n</Palette>"
+      },
+      "1002951": {
+        "id": "1002951",
+        "xml": "\ufeff<Palette>\r\n  <Brightness>-0.045599997043609619</Brightness>\r\n  <Contrast>0.95640003681182861</Contrast>\r\n  <Hue>0.55329996347427368</Hue>\r\n  <Metallicspecular>0.800000071525574, 0.811764776706696, 0.99215692281723, 1</Metallicspecular>\r\n  <Name>garmenthue_sw_h15_p</Name>\r\n  <Precedence>016</Precedence>\r\n  <ColorSortOrder>1</ColorSortOrder>\r\n  <Representativecolor>0.266213843892828, 0.289441543757224, 0.349838555703713</Representativecolor>\r\n  <Saturation>0.76139998435974121</Saturation>\r\n  <Specular>0.913725554943085, 1, 0.839215755462646, 1</Specular>\r\n</Palette>"
+      }
+    }
+  },
+  "parts": [
+    {
+      "slot": "helmet",
+      "modelId": "1142848",
+      "materialId": "1174625",
+      "artName": "face_swhelmet02_light_sw_a03",
+      "skinMaterialIndex": -1,
+      "material": {
+        "path": "/resources/art/shaders/materials/face_swhelmet02_light_sw_a03c03_u.mat",
+        "derived": "Garment",
+        "textures": {
+          "DiffuseMap": "/resources/art/dynamic/player_character/outfit/swhelmets/texture/___psd/face_swhelmet02_light_sw_a03c03_u_d.dds",
+          "RotationMap1": "/resources/art/dynamic/player_character/outfit/swhelmets/texture/___psd/face_swhelmet02_light_sw_a03c01_u_02_n.dds",
+          "GlossMap": "/resources/art/dynamic/player_character/outfit/swhelmets/texture/___psd/face_swhelmet02_light_sw_a03c03_u_s.dds",
+          "PaletteMap": "/resources/art/dynamic/player_character/outfit/swhelmets/texture/___psd/face_swhelmet02_light_sw_a03c03_u_h.dds",
+          "PaletteMaskMap": "/resources/art/dynamic/player_character/outfit/swhelmets/texture/___psd/face_swhelmet02_light_sw_a03c03_u_m.dds",
+          "GuildInsigniaMap": "/resources/art/defaultassets/black.dds"
+        },
+        "values": {
+          "palette1": "0,0.5,0,1",
+          "palette2": "0,0.5,0,1",
+          "palette1Specular": "0,0.486275,0",
+          "palette2Specular": "0,0.486275,0",
+          "palette1MetallicSpecular": "0,0.486275,0",
+          "palette2MetallicSpecular": "0,0.486275,0",
+          "RimWidth": "1.55",
+          "RimStrength": "0.5",
+          "UsesReflection": "True",
+          "UsesEmissive": "False",
+          "UvScaling": "1,1",
+          "ReflectionIntensity": "1",
+          "ReflectionBlurIntensity": "1",
+          "ReflectionSpecInfluence": "1",
+          "ReflectionContrast": "0",
+          "UsesGuildInsignia": "False",
+          "GuildInsigniaPosition": "0,0",
+          "GuildInsigniaScale": "1,1",
+          "GuildInsigniaRotation": "0",
+          "GuildInsigniaColor1": "0,0,0,1",
+          "GuildInsigniaColor2": "0,0,0,1"
+        }
+      },
+      "paletteIds": [
+        "1002951",
+        "1000789"
+      ],
+      "models": [
+        {
+          "path": "/resources/art/dynamic/face/model/face_swhelmet02_bmn_archetype.gr2",
+          "id": "1142848"
+        }
+      ],
+      "overrides": [],
+      "sourceAppearance": {
+        "id": "0xE0004E3A55B8A8F8",
+        "decimalId": "16140987076949092600",
+        "kind": "GomObject",
+        "name": "ipp.class.war.heroic.mdps2.t1x2.head",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/100.bkt",
+          "uncompressedOffset": 100636,
+          "blockLength": 192,
+          "resourceSha256": "6975d083b4eef9a63148193f382350a71fb70eff95b13a087317c9bf118e8c28"
+        }
+      },
+      "iconSource": "/resources/gfx/icons/ipp.class.war.heroic.mdps2.t1x2.head.dds"
+    }
+  ],
+  "customization": {
+    "skincolor": {
+      "id": "1437794",
+      "path": "/resources/art/dynamic/skincolor/skincolor_human_caucasian_h01_p.xml",
+      "resolution": "compiled April GOM palette; registry XML absent",
+      "gomIdentity": {
+        "id": "0xE000DAD3E774DC2B",
+        "decimalId": "16141141668152007723",
+        "kind": "GomObject",
+        "name": "dynamic.skincolor.skincolor_human_caucasian_h01_p",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/223.bkt",
+          "uncompressedOffset": 248580,
+          "blockLength": 170,
+          "resourceSha256": "9e3beb2a8fbd78ecde5ed3dcf51cdd5f4e897a7070310837d9ff797dd17f5cac"
+        }
+      },
+      "values": {
+        "appPaletteSaturation": 0.5,
+        "appPaletteContrast": 1,
+        "appPaletteSpecular": [
+          0.827451,
+          0.890196,
+          1,
+          1
+        ],
+        "appPaletteMetallicSpecular": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "eyecolor": {
+      "id": "1001086",
+      "path": "/resources/art/dynamic/eyecolor/eyecolor_human_non_h01_s.xml",
+      "resolution": "compiled April GOM palette; registry XML absent",
+      "gomIdentity": {
+        "id": "0xE0000CFAF1059DEE",
+        "decimalId": "16140915336420892142",
+        "kind": "GomObject",
+        "name": "dynamic.eyecolor.eyecolor_human_non_h01_s",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/142.bkt",
+          "uncompressedOffset": 19372,
+          "blockLength": 166,
+          "resourceSha256": "1dd04ba3043ef3a83340ceacb4711f043036f263affede7de414a4e15fa6333f"
+        }
+      },
+      "values": {
+        "appPaletteSaturation": 0.7056,
+        "appPaletteContrast": 1.1118,
+        "appPaletteBrightness": -0.005000055,
+        "appPaletteHue": 0.426399976,
+        "appPaletteSpecular": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "appPaletteMetallicSpecular": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "haircolor": {
+      "id": "1000998",
+      "path": "/resources/art/dynamic/haircolor/haircolor_human_non_h01_p.xml",
+      "resolution": "compiled April GOM palette; registry XML absent",
+      "gomIdentity": {
+        "id": "0xE0004FED46118EBB",
+        "decimalId": "16140988944997256891",
+        "kind": "GomObject",
+        "name": "dynamic.haircolor.haircolor_human_non_h01_p",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/391.bkt",
+          "uncompressedOffset": 108164,
+          "blockLength": 184,
+          "resourceSha256": "cf610f8888530f0d78c46a7803676e0a77e591519a55b2841f9bc1b123ad28f9"
+        }
+      },
+      "values": {
+        "appPaletteSaturation": 0.401,
+        "appPaletteContrast": 0.7311,
+        "appPaletteBrightness": -0.0456,
+        "appPaletteHue": 0.0203,
+        "appPaletteSpecular": [
+          0.929412,
+          0.894118,
+          0.698039,
+          1
+        ],
+        "appPaletteMetallicSpecular": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "complexion": {
+      "id": "1001008",
+      "path": "/resources/art/dynamic/player_character/face_customization/complexion/comp_human_non_c01_m.dds"
+    }
+  },
+  "animations": [
+    {
+      "name": "Idle",
+      "sourceName": "cb_unarmed_idle_right_1",
+      "path": "/resources/anim/humanoid/bmnnew/cb_unarmed_idle_right_1.jba",
+      "loop": true
+    }
+  ],
+  "excluded": {
+    "head:1000247": "bma, incompatible; use bmn 1000257",
+    "fullNakedBody": "body replacement uses equipped modular meshes; no hidden duplicate naked torso",
+    "weapon": "unarmed inspection clips; no weapon selected",
+    "faceHairAndFacePaint": "clean shaven, no optional tattoo/scar/paint slot",
+    "clothSimulation": "original weighted cloth only; no runtime CLO simulation"
+  },
+  "clothBoneSources": [
+    "/resources/art/dynamic/chest/model/chest_robe04_bmn_archetype.clo",
+    "/resources/art/dynamic/leg/model/leg_skirt_bmn_archetype.clo"
+  ]
+}

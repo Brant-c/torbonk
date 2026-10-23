@@ -10,7 +10,7 @@ public partial class PeriodicEffects : Node
     private sealed class Effect
     {
         public AutomaticAbility Source=null!;public Combatant Target=null!;
-        public double Remaining,Next,Interval;public float Damage;public int Ticks,Dose;
+        public double Remaining,Next,Interval;public float Damage;public int Ticks,Dose;public Node3D? Visual;
     }
     private readonly Dictionary<(ulong,string,ulong),Effect> _effects=new();
     public int Count=>_effects.Count;
@@ -23,6 +23,8 @@ public partial class PeriodicEffects : Node
     /// <summary>Re-applies every owned DoT on the target at full duration (Static Blades / Searing Sweep).</summary>
     public void RefreshAll(Combatant target)
     { foreach(var e in _effects.Values.Where(e=>e.Target==target)){e.Remaining=e.Source.Definition.PeriodicDuration;} }
+    public void Extend(AutomaticAbility source,Combatant target,float seconds,float cap)
+    {if(_effects.TryGetValue((source.Caster.GetInstanceId(),source.Definition.Id,target.GetInstanceId()),out var e))e.Remaining=Math.Min(cap,e.Remaining+seconds);}
     public void Apply(AutomaticAbility source,Combatant target,float scale=1)
     {
         var d=source.Definition;
@@ -30,16 +32,20 @@ public partial class PeriodicEffects : Node
         var key=(source.Caster.GetInstanceId(),d.Id,target.GetInstanceId());
         // Lethal Dose: a refresh deepens the poison (+10% per stack, 3 stacks) instead of only restarting it.
         int dose=_effects.TryGetValue(key,out var old)&&(source.Build?.Talent("lethal_dose")??0)>0?Math.Min(3,old.Dose+1):0;
-        _effects[key]=new Effect {
+        if(old?.Visual!=null && GodotObject.IsInstanceValid(old.Visual))old.Visual.QueueFree();
+        var effect=new Effect {
             Source=source,Target=target,Remaining=d.PeriodicDuration,Next=d.PeriodicInterval,Interval=d.PeriodicInterval,Dose=dose,
             Damage=d.PeriodicDamage*scale*(1+.1f*dose)*(source.DamagePerTick/Math.Max(.001f,d.Damage)) };
+        _effects[key]=effect;
+        if(d.Id=="creepingterror")effect.Visual=PresentationStatusVisual.AttachTerror(target,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
+        if(d.Id=="incendiarymissile")effect.Visual=PowertechStatusVisual.Attach(target,"4x4_flame_lick_02_bw",16,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
     }
     public void Advance(double delta)
     {
         foreach(var pair in new List<KeyValuePair<(ulong,string,ulong),Effect>>(_effects))
         {
             var e=pair.Value;
-            if(!GodotObject.IsInstanceValid(e.Target) || !e.Target.Alive || !GodotObject.IsInstanceValid(e.Source.Caster) || !e.Source.Caster.Alive)
+            if(!GodotObject.IsInstanceValid(e.Target) || !e.Target.Alive || !GodotObject.IsInstanceValid(e.Source.Caster) || !e.Source.Caster.Alive || !e.Source.Unlocked)
             { _effects.Remove(pair.Key);continue; }
             double active=Math.Min(delta,e.Remaining);e.Next-=active;e.Remaining-=delta;
             while(e.Next<=.000001 && e.Target.Alive)
@@ -48,5 +54,5 @@ public partial class PeriodicEffects : Node
         }
     }
     public override void _PhysicsProcess(double delta)=>Advance(delta);
-    public void Clear(){_effects.Clear();Ticks=0;}
+    public void Clear(){foreach(var e in _effects.Values)if(e.Visual!=null && GodotObject.IsInstanceValid(e.Visual))e.Visual.QueueFree();_effects.Clear();Ticks=0;}
 }

@@ -1,0 +1,3537 @@
+[
+  {
+    "identity": {
+      "id": "0xE0006C60683040C4",
+      "decimalId": "16141020225816510660",
+      "kind": "GomObject",
+      "name": "ipp.class.war.heroic.mdps2.t1x2.chest",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/160.bkt",
+        "uncompressedOffset": 119172,
+        "blockLength": 203,
+        "resourceSha256": "9461bb8c51f590f06d95af9b7d54cd7e135e61b2fd7b993d7445a67ce6f0ccf1"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 12,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 9
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.war.heroic.mdps2.t1x2.chest"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 4,
+          "label": "appSlotChest",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000074",
+          "bits": "0x00000000000F428A"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1001325",
+          "bits": "0x00000000000F476D"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000789",
+          "bits": "0x00000000000F4555"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000789",
+          "bits": "0x00000000000F4555"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1411557",
+          "bits": "0x00000000001589E5"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000083E57939A3E",
+      "decimalId": "16140910128346143294",
+      "kind": "GomObject",
+      "name": "ipp.class.war.heroic.mdps2.t1x2.hands",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/294.bkt",
+        "uncompressedOffset": 7420,
+        "blockLength": 203,
+        "resourceSha256": "2672b8394b3f2b4390f34a288b1711d7eb5aa00b87d29c4b081e008d67436826"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 12,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 9
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.war.heroic.mdps2.t1x2.hands"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 13,
+          "label": "appSlotHand",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000187",
+          "bits": "0x00000000000F42FB"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1001606",
+          "bits": "0x00000000000F4886"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002951",
+          "bits": "0x00000000000F4DC7"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000789",
+          "bits": "0x00000000000F4555"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1411557",
+          "bits": "0x00000000001589E5"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000B716B01DF664",
+      "decimalId": "16141102372567774820",
+      "kind": "GomObject",
+      "name": "ipp.class.war.heroic.mdps2.t1x2.legs",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/320.bkt",
+        "uncompressedOffset": 208612,
+        "blockLength": 189,
+        "resourceSha256": "d4dcb0290c3e593b7c314fb647ba0c8ef9d381dc6f306bede81d0873ae57cbe2"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 11,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 8
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.war.heroic.mdps2.t1x2.legs"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 15,
+          "label": "appSlotLeg",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000297",
+          "bits": "0x00000000000F4369"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1001767",
+          "bits": "0x00000000000F4927"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000789",
+          "bits": "0x00000000000F4555"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000789",
+          "bits": "0x00000000000F4555"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1411557",
+          "bits": "0x00000000001589E5"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE0007E4B2970DFD7",
+      "decimalId": "16141039925778767831",
+      "kind": "GomObject",
+      "name": "ipp.class.war.heroic.mdps2.t1x2.feet",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/331.bkt",
+        "uncompressedOffset": 136772,
+        "blockLength": 199,
+        "resourceSha256": "d69593a62f58603d5296a2eb6f527a18c00a449558f1ce95b01d2f4a0b372ab0"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 12,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 9
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.war.heroic.mdps2.t1x2.feet"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 2,
+          "label": "appSlotBoot",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000014",
+          "bits": "0x00000000000F424E"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1001163",
+          "bits": "0x00000000000F46CB"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002951",
+          "bits": "0x00000000000F4DC7"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000789",
+          "bits": "0x00000000000F4555"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1411557",
+          "bits": "0x00000000001589E5"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE0000023D0D5D87F",
+      "decimalId": "16140901218323388543",
+      "kind": "GomObject",
+      "name": "ipp.class.war.heroic.mdps2.t1x2.waist",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/43.bkt",
+        "uncompressedOffset": 36,
+        "blockLength": 204,
+        "resourceSha256": "eab1f23825e681c9b36cae897132e707edf08aa2c49b765423d29c890664aba6"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 12,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 9
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.war.heroic.mdps2.t1x2.waist"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 17,
+          "label": "appSlotWaist",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000323",
+          "bits": "0x00000000000F4383"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1001827",
+          "bits": "0x00000000000F4963"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002951",
+          "bits": "0x00000000000F4DC7"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000789",
+          "bits": "0x00000000000F4555"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1411557",
+          "bits": "0x00000000001589E5"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE0001CFF467BABB7",
+      "decimalId": "16140932947220605879",
+      "kind": "GomObject",
+      "name": "ipp.class.inq.heroic.cdps1.t1x2.chest",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/379.bkt",
+        "uncompressedOffset": 33180,
+        "blockLength": 199,
+        "resourceSha256": "803f59d6dfc161772690db88442be365a41066e92ade203736361b82b24b35be"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 12,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 9
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.inq.heroic.cdps1.t1x2.chest"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 4,
+          "label": "appSlotChest",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003387",
+          "bits": "0x00000000000F4F7B"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003399",
+          "bits": "0x00000000000F4F87"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002849",
+          "bits": "0x00000000000F4D61"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000775",
+          "bits": "0x00000000000F4547"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002911",
+          "bits": "0x00000000000F4D9F"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000711E94E97225",
+      "decimalId": "16141025440657142309",
+      "kind": "GomObject",
+      "name": "ipp.class.inq.heroic.cdps1.t1x2.hands",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/309.bkt",
+        "uncompressedOffset": 148956,
+        "blockLength": 191,
+        "resourceSha256": "cb8fa6fd323cf8e054791404ac1b16bd10aeec611e292799deb4de0b69ec24ec"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 11,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 8
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.inq.heroic.cdps1.t1x2.hands"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 13,
+          "label": "appSlotHand",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003385",
+          "bits": "0x00000000000F4F79"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003401",
+          "bits": "0x00000000000F4F89"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002849",
+          "bits": "0x00000000000F4D61"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000775",
+          "bits": "0x00000000000F4547"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002911",
+          "bits": "0x00000000000F4D9F"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000D89851761C62",
+      "decimalId": "16141139213209181282",
+      "kind": "GomObject",
+      "name": "ipp.class.inq.heroic.cdps1.t1x2.legs",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/282.bkt",
+        "uncompressedOffset": 258932,
+        "blockLength": 187,
+        "resourceSha256": "d3a5ea8b3ed65ac7c4a31ed7006486e0b6edb1586102bcbac07da02a12465674"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 11,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 8
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.inq.heroic.cdps1.t1x2.legs"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 15,
+          "label": "appSlotLeg",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003382",
+          "bits": "0x00000000000F4F76"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003381",
+          "bits": "0x00000000000F4F75"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002849",
+          "bits": "0x00000000000F4D61"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000775",
+          "bits": "0x00000000000F4547"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002911",
+          "bits": "0x00000000000F4D9F"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE0004563FF6469D6",
+      "decimalId": "16140977360284707286",
+      "kind": "GomObject",
+      "name": "ipp.class.inq.heroic.cdps1.t1x2.feet",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/286.bkt",
+        "uncompressedOffset": 81252,
+        "blockLength": 195,
+        "resourceSha256": "b3d2b9432dc9fc22fe3be6770e7f4c2a2a9e2955d702db59df7fe13832622e63"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 12,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 9
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.inq.heroic.cdps1.t1x2.feet"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 2,
+          "label": "appSlotBoot",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003383",
+          "bits": "0x00000000000F4F77"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003397",
+          "bits": "0x00000000000F4F85"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002849",
+          "bits": "0x00000000000F4D61"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000775",
+          "bits": "0x00000000000F4547"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002911",
+          "bits": "0x00000000000F4D9F"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000AE8B3B6EA9BD",
+      "decimalId": "16141092977516652989",
+      "kind": "GomObject",
+      "name": "ipp.class.inq.heroic.cdps1.t1x2.waist",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/489.bkt",
+        "uncompressedOffset": 218612,
+        "blockLength": 202,
+        "resourceSha256": "268c339f72632da24f3cd6ffaa5b0749ffabf321cc1b8b7007809b194eeccc34"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 12,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 9
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.inq.heroic.cdps1.t1x2.waist"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 17,
+          "label": "appSlotWaist",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003391",
+          "bits": "0x00000000000F4F7F"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003403",
+          "bits": "0x00000000000F4F8B"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002849",
+          "bits": "0x00000000000F4D61"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000775",
+          "bits": "0x00000000000F4547"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002911",
+          "bits": "0x00000000000F4D9F"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE0001D95CC80D450",
+      "decimalId": "16140933593714185296",
+      "kind": "GomObject",
+      "name": "ipp.class.spy.heroic.tdps1.t1x2.chest",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/296.bkt",
+        "uncompressedOffset": 44916,
+        "blockLength": 209,
+        "resourceSha256": "97cfbfc6bb2da69d59ad10c6b2b9858b8985dcf80d7ed228ed38e5a74c59df11"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 12,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 9
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.spy.heroic.tdps1.t1x2.chest"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 4,
+          "label": "appSlotChest",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000509",
+          "bits": "0x00000000000F443D"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003831",
+          "bits": "0x00000000000F5137"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 3,
+        "value": null
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002304",
+          "bits": "0x00000000000F4B40"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002305",
+          "bits": "0x00000000000F4B41"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003312",
+          "bits": "0x00000000000F4F30"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000AF76E6C4DECB",
+      "decimalId": "16141093989708521163",
+      "kind": "GomObject",
+      "name": "ipp.class.spy.heroic.tdps1.t1x2.hands",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/163.bkt",
+        "uncompressedOffset": 193956,
+        "blockLength": 202,
+        "resourceSha256": "518b9a3f710c08ad4557f7988f7d4c626ecbb6b6894744eb50fbe1a9533c00f2"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 12,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 9
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.spy.heroic.tdps1.t1x2.hands"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 13,
+          "label": "appSlotHand",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000508",
+          "bits": "0x00000000000F443C"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003826",
+          "bits": "0x00000000000F5132"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002231",
+          "bits": "0x00000000000F4AF7"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002214",
+          "bits": "0x00000000000F4AE6"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003312",
+          "bits": "0x00000000000F4F30"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE00050A7AD6ECB16",
+      "decimalId": "16140989745595337494",
+      "kind": "GomObject",
+      "name": "ipp.class.spy.heroic.tdps1.t1x2.legs",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/494.bkt",
+        "uncompressedOffset": 92460,
+        "blockLength": 189,
+        "resourceSha256": "3480abe278d2813a21ac5a0ebe1c498b53eba56f09d604e6baf77ec47829e086"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 11,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 8
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.spy.heroic.tdps1.t1x2.legs"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 15,
+          "label": "appSlotLeg",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000511",
+          "bits": "0x00000000000F443F"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003829",
+          "bits": "0x00000000000F5135"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002304",
+          "bits": "0x00000000000F4B40"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002305",
+          "bits": "0x00000000000F4B41"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003312",
+          "bits": "0x00000000000F4F30"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE0004B75A81BF853",
+      "decimalId": "16140984033199519827",
+      "kind": "GomObject",
+      "name": "ipp.class.spy.heroic.tdps1.t1x2.feet",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/327.bkt",
+        "uncompressedOffset": 70668,
+        "blockLength": 197,
+        "resourceSha256": "70b56508c2188d57a1624c56c05c422106ae24021fbc0fd147514c6a6b49161d"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 12,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 9
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.spy.heroic.tdps1.t1x2.feet"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 2,
+          "label": "appSlotBoot",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000506",
+          "bits": "0x00000000000F443A"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003830",
+          "bits": "0x00000000000F5136"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002231",
+          "bits": "0x00000000000F4AF7"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002214",
+          "bits": "0x00000000000F4AE6"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003312",
+          "bits": "0x00000000000F4F30"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE0004409D7E9EFA4",
+      "decimalId": "16140975873563684772",
+      "kind": "GomObject",
+      "name": "ipp.class.spy.heroic.tdps1.t1x2.waist",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/272.bkt",
+        "uncompressedOffset": 87364,
+        "blockLength": 205,
+        "resourceSha256": "fc57fc54f71ab36bef288b0dbfef2685277da523d2f653a7474fc7258ff973ce"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 12,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 9
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.spy.heroic.tdps1.t1x2.waist"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 17,
+          "label": "appSlotWaist",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000507",
+          "bits": "0x00000000000F443B"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003827",
+          "bits": "0x00000000000F5133"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002214",
+          "bits": "0x00000000000F4AE6"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002231",
+          "bits": "0x00000000000F4AF7"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1003312",
+          "bits": "0x00000000000F4F30"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE00041364152E534",
+      "decimalId": "16140972765775848756",
+      "kind": "GomObject",
+      "name": "ipp.class.bh.heroic.rdps1.t1x1.chest",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/256.bkt",
+        "uncompressedOffset": 70476,
+        "blockLength": 200,
+        "resourceSha256": "df32eab13c541ae883cec7fd037bfbb6de2455d31dd3a4f1b805313af350f422"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 12,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 9
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.bh.heroic.rdps1.t1x1.chest"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 4,
+          "label": "appSlotChest",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000494",
+          "bits": "0x00000000000F442E"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002096",
+          "bits": "0x00000000000F4A70"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000648",
+          "bits": "0x00000000000F44C8"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000644",
+          "bits": "0x00000000000F44C4"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1001095",
+          "bits": "0x00000000000F4687"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.",
+    "attachments": {
+      "identity": {
+        "id": "0xE00041364152E534",
+        "decimalId": "16140972765775848756",
+        "kind": "GomObject",
+        "name": "ipp.class.bh.heroic.rdps1.t1x1.chest",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/256.bkt",
+          "uncompressedOffset": 70476,
+          "blockLength": 200,
+          "resourceSha256": "df32eab13c541ae883cec7fd037bfbb6de2455d31dd3a4f1b805313af350f422"
+        }
+      },
+      "path": "/appAppearanceSlotAttachments",
+      "type": "List`1",
+      "childCount": 2,
+      "children": [
+        {
+          "key": "0",
+          "path": "/appAppearanceSlotAttachments/0",
+          "type": "Int64",
+          "expandable": false,
+          "childCount": 0,
+          "value": {
+            "signed64": "1001343",
+            "bits": "0x00000000000F477F"
+          }
+        },
+        {
+          "key": "1",
+          "path": "/appAppearanceSlotAttachments/1",
+          "type": "Int64",
+          "expandable": false,
+          "childCount": 0,
+          "value": {
+            "signed64": "1001341",
+            "bits": "0x00000000000F477D"
+          }
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    }
+  },
+  {
+    "identity": {
+      "id": "0xE0002DFB15434128",
+      "decimalId": "16140951620912628008",
+      "kind": "GomObject",
+      "name": "ipp.class.bh.heroic.rdps1.t1x1.hands",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/8.bkt",
+        "uncompressedOffset": 45828,
+        "blockLength": 187,
+        "resourceSha256": "98c8683bba68282fa84b1dd893f24e0bc6f8f6ebc4f1904f659d4e2ed8f0bbb2"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 11,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 8
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.bh.heroic.rdps1.t1x1.hands"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 13,
+          "label": "appSlotHand",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000493",
+          "bits": "0x00000000000F442D"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002079",
+          "bits": "0x00000000000F4A5F"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000648",
+          "bits": "0x00000000000F44C8"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000630",
+          "bits": "0x00000000000F44B6"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1001095",
+          "bits": "0x00000000000F4687"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE0004218892B777E",
+      "decimalId": "16140973737643833214",
+      "kind": "GomObject",
+      "name": "ipp.class.bh.heroic.rdps1.t1x1.legs",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/214.bkt",
+        "uncompressedOffset": 59892,
+        "blockLength": 186,
+        "resourceSha256": "c7ac6938522d167b94e90505a599337e2f3bb987a2139fd565bf26a0e8986f8e"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 11,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 8
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.bh.heroic.rdps1.t1x1.legs"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 15,
+          "label": "appSlotLeg",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000498",
+          "bits": "0x00000000000F4432"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002084",
+          "bits": "0x00000000000F4A64"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000648",
+          "bits": "0x00000000000F44C8"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000644",
+          "bits": "0x00000000000F44C4"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1001095",
+          "bits": "0x00000000000F4687"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000EF6C0D01990D",
+      "decimalId": "16141164311849572621",
+      "kind": "GomObject",
+      "name": "ipp.class.bh.heroic.rdps1.t1x1.feet",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/121.bkt",
+        "uncompressedOffset": 277932,
+        "blockLength": 196,
+        "resourceSha256": "eb30c9b2e82c0b39f1a9b0fbd434dca7637e13b31ff92e51f3edde58b0baea32"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 12,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 9
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.bh.heroic.rdps1.t1x1.feet"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 2,
+          "label": "appSlotBoot",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000495",
+          "bits": "0x00000000000F442F"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002081",
+          "bits": "0x00000000000F4A61"
+        }
+      },
+      {
+        "key": "appAppearanceSlotAttachments",
+        "path": "/appAppearanceSlotAttachments",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000632",
+          "bits": "0x00000000000F44B8"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000649",
+          "bits": "0x00000000000F44C9"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1001095",
+          "bits": "0x00000000000F4687"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.",
+    "attachments": {
+      "identity": {
+        "id": "0xE000EF6C0D01990D",
+        "decimalId": "16141164311849572621",
+        "kind": "GomObject",
+        "name": "ipp.class.bh.heroic.rdps1.t1x1.feet",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/121.bkt",
+          "uncompressedOffset": 277932,
+          "blockLength": 196,
+          "resourceSha256": "eb30c9b2e82c0b39f1a9b0fbd434dca7637e13b31ff92e51f3edde58b0baea32"
+        }
+      },
+      "path": "/appAppearanceSlotAttachments",
+      "type": "List`1",
+      "childCount": 1,
+      "children": [
+        {
+          "key": "0",
+          "path": "/appAppearanceSlotAttachments/0",
+          "type": "Int64",
+          "expandable": false,
+          "childCount": 0,
+          "value": {
+            "signed64": "1001173",
+            "bits": "0x00000000000F46D5"
+          }
+        }
+      ],
+      "value": null,
+      "start": 0,
+      "nextStart": null,
+      "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+      "profile": "April2012",
+      "parser": "SwtorResearch/0.2.0",
+      "accessVersion": "0.2.0",
+      "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+      "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+    }
+  },
+  {
+    "identity": {
+      "id": "0xE0009CEB01AE8E5F",
+      "decimalId": "16141073597655322207",
+      "kind": "GomObject",
+      "name": "ipp.class.bh.heroic.rdps1.t1x1.waist",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/207.bkt",
+        "uncompressedOffset": 183652,
+        "blockLength": 187,
+        "resourceSha256": "5e03c9f337165b4eb01ef28f74a224361769fe5d91ebf121a2f834579e687fd1"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 11,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x40000000E21E1450",
+            "decimalId": "4611686022221010000",
+            "kind": "DomClass",
+            "name": "appItemAppearance",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 405224,
+              "blockLength": 88,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x000000000000000F"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 8
+      },
+      {
+        "key": "utlTemplateId",
+        "path": "/utlTemplateId",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "ipp.class.bh.heroic.rdps1.t1x1.waist"
+      },
+      {
+        "key": "appAppearanceSlotType",
+        "path": "/appAppearanceSlotType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 17,
+          "label": "appSlotWaist",
+          "enum": {
+            "id": "0x4000000316C18124",
+            "decimalId": "4611686031694070052",
+            "kind": "DomEnum",
+            "name": "appValidSlot",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 23760,
+              "blockLength": 362,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "appAppearanceSlotModelID",
+        "path": "/appAppearanceSlotModelID",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000492",
+          "bits": "0x00000000000F442C"
+        }
+      },
+      {
+        "key": "appAppearanceSlotMaterialIndex",
+        "path": "/appAppearanceSlotMaterialIndex",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1002089",
+          "bits": "0x00000000000F4A69"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHuePrimary",
+        "path": "/appAppearanceSlotHuePrimary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000648",
+          "bits": "0x00000000000F44C8"
+        }
+      },
+      {
+        "key": "appAppearanceSlotHueSecondary",
+        "path": "/appAppearanceSlotHueSecondary",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1000644",
+          "bits": "0x00000000000F44C4"
+        }
+      },
+      {
+        "key": "ippColorScheme",
+        "path": "/ippColorScheme",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "1001095",
+          "bits": "0x00000000000F4687"
+        }
+      },
+      {
+        "key": "appAppearanceSlotRandomWeight",
+        "path": "/appAppearanceSlotRandomWeight",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "3",
+          "bits": "0x0000000000000003"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  }
+]

@@ -303,7 +303,7 @@
       },
       "Source": null,
       "Appearance": "ss_a04.chest",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/ss_a04.chest.png",
       "StatModifiers": {},
       "CosmeticOnly": true,
       "BlocksSlots": []
@@ -324,7 +324,7 @@
       },
       "Source": null,
       "Appearance": "ss_a04.hands",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/ss_a04.hands.png",
       "StatModifiers": {},
       "CosmeticOnly": true,
       "BlocksSlots": []
@@ -345,7 +345,7 @@
       },
       "Source": null,
       "Appearance": "ss_a04.legs",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/ss_a04.legs.png",
       "StatModifiers": {},
       "CosmeticOnly": true,
       "BlocksSlots": []
@@ -366,7 +366,7 @@
       },
       "Source": null,
       "Appearance": "ss_a04.feet",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/ss_a04.feet.png",
       "StatModifiers": {},
       "CosmeticOnly": true,
       "BlocksSlots": []
@@ -387,7 +387,7 @@
       },
       "Source": null,
       "Appearance": "ss_a04.waist",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/ss_a04.waist.png",
       "StatModifiers": {},
       "CosmeticOnly": true,
       "BlocksSlots": []
@@ -429,7 +429,7 @@
       },
       "Source": null,
       "Appearance": "d3.war.chest",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/d3.war.chest.png",
       "StatModifiers": {},
       "CosmeticOnly": false,
       "BlocksSlots": []
@@ -450,7 +450,7 @@
       },
       "Source": null,
       "Appearance": "d3.war.hands",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/d3.war.hands.png",
       "StatModifiers": {},
       "CosmeticOnly": false,
       "BlocksSlots": []
@@ -471,7 +471,7 @@
       },
       "Source": null,
       "Appearance": "d3.war.legs",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/d3.war.legs.png",
       "StatModifiers": {},
       "CosmeticOnly": false,
       "BlocksSlots": []
@@ -492,7 +492,7 @@
       },
       "Source": null,
       "Appearance": "d3.war.feet",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/d3.war.feet.png",
       "StatModifiers": {},
       "CosmeticOnly": false,
       "BlocksSlots": []
@@ -513,7 +513,7 @@
       },
       "Source": null,
       "Appearance": "d3.war.waist",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/d3.war.waist.png",
       "StatModifiers": {},
       "CosmeticOnly": false,
       "BlocksSlots": []
@@ -534,7 +534,7 @@
       },
       "Source": null,
       "Appearance": "d3.spy.chest",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/d3.spy.chest.png",
       "StatModifiers": {},
       "CosmeticOnly": false,
       "BlocksSlots": []
@@ -555,7 +555,7 @@
       },
       "Source": null,
       "Appearance": "d3.spy.hands",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/d3.spy.hands.png",
       "StatModifiers": {},
       "CosmeticOnly": false,
       "BlocksSlots": []
@@ -576,7 +576,7 @@
       },
       "Source": null,
       "Appearance": "d3.spy.legs",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/d3.spy.legs.png",
       "StatModifiers": {},
       "CosmeticOnly": false,
       "BlocksSlots": []
@@ -597,7 +597,7 @@
       },
       "Source": null,
       "Appearance": "d3.spy.feet",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/d3.spy.feet.png",
       "StatModifiers": {},
       "CosmeticOnly": false,
       "BlocksSlots": []
@@ -618,7 +618,7 @@
       },
       "Source": null,
       "Appearance": "d3.spy.waist",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/d3.spy.waist.png",
       "StatModifiers": {},
       "CosmeticOnly": false,
       "BlocksSlots": []
@@ -639,7 +639,7 @@
       },
       "Source": null,
       "Appearance": "d3.bh.chest",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/d3.bh.chest.png",
       "StatModifiers": {},
       "CosmeticOnly": false,
       "BlocksSlots": []
@@ -660,7 +660,7 @@
       },
       "Source": null,
       "Appearance": "d3.bh.hands",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/d3.bh.hands.png",
       "StatModifiers": {},
       "CosmeticOnly": false,
       "BlocksSlots": []
@@ -681,7 +681,7 @@
       },
       "Source": null,
       "Appearance": "d3.bh.legs",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/d3.bh.legs.png",
       "StatModifiers": {},
       "CosmeticOnly": false,
       "BlocksSlots": []
@@ -702,7 +702,7 @@
       },
       "Source": null,
       "Appearance": "d3.bh.feet",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/d3.bh.feet.png",
       "StatModifiers": {},
       "CosmeticOnly": false,
       "BlocksSlots": []
@@ -723,7 +723,7 @@
       },
       "Source": null,
       "Appearance": "d3.bh.waist",
-      "Icon": "",
+      "Icon": "res://Assets/Equipment/Empire/d3.bh.waist.png",
       "StatModifiers": {},
       "CosmeticOnly": false,
       "BlocksSlots": []
@@ -880,6 +880,1042 @@
       "StatModifiers": {},
       "CosmeticOnly": false,
       "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.war.chest",
+      "DisplayName": "Warrior Heroic Chest",
+      "Slot": "chest",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE0006C60683040C4",
+        "Name": "ipp.class.war.heroic.mdps2.t1x2.chest",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.war.chest",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.war.chest.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.war.hands",
+      "DisplayName": "Warrior Heroic Hands",
+      "Slot": "hands",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE000083E57939A3E",
+        "Name": "ipp.class.war.heroic.mdps2.t1x2.hands",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.war.hands",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.war.hands.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.war.legs",
+      "DisplayName": "Warrior Heroic Legs",
+      "Slot": "legs",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE000B716B01DF664",
+        "Name": "ipp.class.war.heroic.mdps2.t1x2.legs",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.war.legs",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.war.legs.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.war.feet",
+      "DisplayName": "Warrior Heroic Feet",
+      "Slot": "feet",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE0007E4B2970DFD7",
+        "Name": "ipp.class.war.heroic.mdps2.t1x2.feet",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.war.feet",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.war.feet.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.war.waist",
+      "DisplayName": "Warrior Heroic Waist",
+      "Slot": "waist",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE0000023D0D5D87F",
+        "Name": "ipp.class.war.heroic.mdps2.t1x2.waist",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.war.waist",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.war.waist.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.inq.chest",
+      "DisplayName": "Inquisitor Heroic Chest",
+      "Slot": "chest",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE0001CFF467BABB7",
+        "Name": "ipp.class.inq.heroic.cdps1.t1x2.chest",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.inq.chest",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.inq.chest.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.inq.hands",
+      "DisplayName": "Inquisitor Heroic Hands",
+      "Slot": "hands",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE000711E94E97225",
+        "Name": "ipp.class.inq.heroic.cdps1.t1x2.hands",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.inq.hands",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.inq.hands.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.inq.legs",
+      "DisplayName": "Inquisitor Heroic Legs",
+      "Slot": "legs",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE000D89851761C62",
+        "Name": "ipp.class.inq.heroic.cdps1.t1x2.legs",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.inq.legs",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.inq.legs.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.inq.feet",
+      "DisplayName": "Inquisitor Heroic Feet",
+      "Slot": "feet",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE0004563FF6469D6",
+        "Name": "ipp.class.inq.heroic.cdps1.t1x2.feet",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.inq.feet",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.inq.feet.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.inq.waist",
+      "DisplayName": "Inquisitor Heroic Waist",
+      "Slot": "waist",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE000AE8B3B6EA9BD",
+        "Name": "ipp.class.inq.heroic.cdps1.t1x2.waist",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.inq.waist",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.inq.waist.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.spy.chest",
+      "DisplayName": "Agent Heroic Chest",
+      "Slot": "chest",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE0001D95CC80D450",
+        "Name": "ipp.class.spy.heroic.tdps1.t1x2.chest",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.spy.chest",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.spy.chest.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.spy.hands",
+      "DisplayName": "Agent Heroic Hands",
+      "Slot": "hands",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE000AF76E6C4DECB",
+        "Name": "ipp.class.spy.heroic.tdps1.t1x2.hands",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.spy.hands",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.spy.hands.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.spy.legs",
+      "DisplayName": "Agent Heroic Legs",
+      "Slot": "legs",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE00050A7AD6ECB16",
+        "Name": "ipp.class.spy.heroic.tdps1.t1x2.legs",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.spy.legs",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.spy.legs.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.spy.feet",
+      "DisplayName": "Agent Heroic Feet",
+      "Slot": "feet",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE0004B75A81BF853",
+        "Name": "ipp.class.spy.heroic.tdps1.t1x2.feet",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.spy.feet",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.spy.feet.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.spy.waist",
+      "DisplayName": "Agent Heroic Waist",
+      "Slot": "waist",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE0004409D7E9EFA4",
+        "Name": "ipp.class.spy.heroic.tdps1.t1x2.waist",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.spy.waist",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.spy.waist.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.bh.chest",
+      "DisplayName": "Bounty Hunter Heroic Chest",
+      "Slot": "chest",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE00041364152E534",
+        "Name": "ipp.class.bh.heroic.rdps1.t1x1.chest",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.bh.chest",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.bh.chest.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.bh.hands",
+      "DisplayName": "Bounty Hunter Heroic Hands",
+      "Slot": "hands",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE0002DFB15434128",
+        "Name": "ipp.class.bh.heroic.rdps1.t1x1.hands",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.bh.hands",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.bh.hands.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.bh.legs",
+      "DisplayName": "Bounty Hunter Heroic Legs",
+      "Slot": "legs",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE0004218892B777E",
+        "Name": "ipp.class.bh.heroic.rdps1.t1x1.legs",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.bh.legs",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.bh.legs.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.bh.feet",
+      "DisplayName": "Bounty Hunter Heroic Feet",
+      "Slot": "feet",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE000EF6C0D01990D",
+        "Name": "ipp.class.bh.heroic.rdps1.t1x1.feet",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.bh.feet",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.bh.feet.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "wardrobe.bh.waist",
+      "DisplayName": "Bounty Hunter Heroic Waist",
+      "Slot": "waist",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE0009CEB01AE8E5F",
+        "Name": "ipp.class.bh.heroic.rdps1.t1x1.waist",
+        "Evidence": "Client-derived April appearance -> registry model/material/palettes and exact icon; local collectible rule"
+      },
+      "Appearance": "wardrobe.bh.waist",
+      "Icon": "res://Assets/Equipment/Empire/wardrobe.bh.waist.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "collectible.war.head",
+      "DisplayName": "Warrior Helmet",
+      "Slot": "head",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE0004E3A55B8A8F8",
+        "Name": "ipp.class.war.heroic.mdps2.t1x2.head",
+        "Evidence": "Client-derived April definition and face registry; local unlock"
+      },
+      "Appearance": "collectible.war.head",
+      "Icon": "res://Assets/Equipment/Arsenal/collectible.war.head.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "collectible.inq.head",
+      "DisplayName": "Inquisitor Circlet",
+      "Slot": "head",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE0004574ABDB8EDF",
+        "Name": "ipp.class.inq.heroic.cdps1.t1x2.head",
+        "Evidence": "Client-derived April definition and face registry; local unlock"
+      },
+      "Appearance": "collectible.inq.head",
+      "Icon": "res://Assets/Equipment/Arsenal/collectible.inq.head.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "collectible.spy.head",
+      "DisplayName": "Agent Mask",
+      "Slot": "head",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE0004BC8DEFF1E31",
+        "Name": "ipp.class.spy.heroic.tdps1.t1x2.head",
+        "Evidence": "Client-derived April definition and face registry; local unlock"
+      },
+      "Appearance": "collectible.spy.head",
+      "Icon": "res://Assets/Equipment/Arsenal/collectible.spy.head.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "collectible.bh.head",
+      "DisplayName": "Hunter Helmet",
+      "Slot": "head",
+      "Category": "light_armor",
+      "Rarity": "cheap",
+      "Compatibility": {
+        "RigProfiles": [],
+        "BodyTypes": [],
+        "Species": [],
+        "BaseClasses": [],
+        "AdvancedClasses": [],
+        "AnimationProfiles": []
+      },
+      "Source": {
+        "GomId": "0xE000AEF4E38F22BD",
+        "Name": "ipp.class.bh.heroic.rdps1.t1x1.head",
+        "Evidence": "Client-derived April definition and face registry; local unlock"
+      },
+      "Appearance": "collectible.bh.head",
+      "Icon": "res://Assets/Equipment/Arsenal/collectible.bh.head.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "collectible.saber1.main_hand",
+      "DisplayName": "Lightsaber High 01",
+      "Slot": "main_hand",
+      "Category": "lightsaber",
+      "Rarity": "development",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "sorcerer",
+          "juggernaut",
+          "marauder"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Source": {
+        "GomId": "",
+        "Name": "/resources/art/dynamic/weapon/model/saber_high01_a01_v01.gr2",
+        "Evidence": "Client-derived unique April TOR model/material/icon bytes; local collectible"
+      },
+      "Appearance": "collectible.saber1.main_hand",
+      "Icon": "res://Assets/Equipment/Arsenal/collectible.saber1.main_hand.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "collectible.saber1.off_hand",
+      "DisplayName": "Lightsaber High 01",
+      "Slot": "off_hand",
+      "Category": "lightsaber",
+      "Rarity": "development",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "marauder"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Source": {
+        "GomId": "",
+        "Name": "/resources/art/dynamic/weapon/model/saber_high01_a01_v01.gr2",
+        "Evidence": "Client-derived unique April TOR model/material/icon bytes; local collectible"
+      },
+      "Appearance": "collectible.saber1.off_hand",
+      "Icon": "res://Assets/Equipment/Arsenal/collectible.saber1.off_hand.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "collectible.saber2.main_hand",
+      "DisplayName": "Lightsaber High 02",
+      "Slot": "main_hand",
+      "Category": "lightsaber",
+      "Rarity": "development",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "sorcerer",
+          "juggernaut",
+          "marauder"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Source": {
+        "GomId": "",
+        "Name": "/resources/art/dynamic/weapon/model/saber_high02_a01_v01.gr2",
+        "Evidence": "Client-derived unique April TOR model/material/icon bytes; local collectible"
+      },
+      "Appearance": "collectible.saber2.main_hand",
+      "Icon": "res://Assets/Equipment/Arsenal/collectible.saber2.main_hand.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "collectible.saber2.off_hand",
+      "DisplayName": "Lightsaber High 02",
+      "Slot": "off_hand",
+      "Category": "lightsaber",
+      "Rarity": "development",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "marauder"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Source": {
+        "GomId": "",
+        "Name": "/resources/art/dynamic/weapon/model/saber_high02_a01_v01.gr2",
+        "Evidence": "Client-derived unique April TOR model/material/icon bytes; local collectible"
+      },
+      "Appearance": "collectible.saber2.off_hand",
+      "Icon": "res://Assets/Equipment/Arsenal/collectible.saber2.off_hand.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "collectible.staff1.main_hand",
+      "DisplayName": "Double Saber High 01",
+      "Slot": "main_hand",
+      "Category": "double_lightsaber",
+      "Rarity": "development",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "assassin"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Source": {
+        "GomId": "",
+        "Name": "/resources/art/dynamic/weapon/model/dualsaber_high01_a01_v01.gr2",
+        "Evidence": "Client-derived unique April TOR model/material/icon bytes; local collectible"
+      },
+      "Appearance": "collectible.staff1.main_hand",
+      "Icon": "res://Assets/Equipment/Arsenal/collectible.staff1.main_hand.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": [
+        "off_hand"
+      ]
+    },
+    {
+      "Id": "collectible.staff2.main_hand",
+      "DisplayName": "Double Saber High 02",
+      "Slot": "main_hand",
+      "Category": "double_lightsaber",
+      "Rarity": "development",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "assassin"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Source": {
+        "GomId": "",
+        "Name": "/resources/art/dynamic/weapon/model/dualsaber_high02_a01_v01.gr2",
+        "Evidence": "Client-derived unique April TOR model/material/icon bytes; local collectible"
+      },
+      "Appearance": "collectible.staff2.main_hand",
+      "Icon": "res://Assets/Equipment/Arsenal/collectible.staff2.main_hand.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": [
+        "off_hand"
+      ]
+    },
+    {
+      "Id": "collectible.pistol1.main_hand",
+      "DisplayName": "Blaster Pistol High 01",
+      "Slot": "main_hand",
+      "Category": "pistol",
+      "Rarity": "development",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "mercenary",
+          "powertech"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Source": {
+        "GomId": "",
+        "Name": "/resources/art/dynamic/weapon/model/blaster_high01_a01_v01.gr2",
+        "Evidence": "Client-derived unique April TOR model/material/icon bytes; local collectible"
+      },
+      "Appearance": "collectible.pistol1.main_hand",
+      "Icon": "res://Assets/Equipment/Arsenal/collectible.pistol1.main_hand.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "collectible.pistol1.off_hand",
+      "DisplayName": "Blaster Pistol High 01",
+      "Slot": "off_hand",
+      "Category": "pistol",
+      "Rarity": "development",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "mercenary"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Source": {
+        "GomId": "",
+        "Name": "/resources/art/dynamic/weapon/model/blaster_high01_a01_v01.gr2",
+        "Evidence": "Client-derived unique April TOR model/material/icon bytes; local collectible"
+      },
+      "Appearance": "collectible.pistol1.off_hand",
+      "Icon": "res://Assets/Equipment/Arsenal/collectible.pistol1.off_hand.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "collectible.pistol2.main_hand",
+      "DisplayName": "Blaster Pistol High 02",
+      "Slot": "main_hand",
+      "Category": "pistol",
+      "Rarity": "development",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "mercenary",
+          "powertech"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Source": {
+        "GomId": "",
+        "Name": "/resources/art/dynamic/weapon/model/blaster_high02_a01_v01.gr2",
+        "Evidence": "Client-derived unique April TOR model/material/icon bytes; local collectible"
+      },
+      "Appearance": "collectible.pistol2.main_hand",
+      "Icon": "res://Assets/Equipment/Arsenal/collectible.pistol2.main_hand.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "collectible.pistol2.off_hand",
+      "DisplayName": "Blaster Pistol High 02",
+      "Slot": "off_hand",
+      "Category": "pistol",
+      "Rarity": "development",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "mercenary"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Source": {
+        "GomId": "",
+        "Name": "/resources/art/dynamic/weapon/model/blaster_high02_a01_v01.gr2",
+        "Evidence": "Client-derived unique April TOR model/material/icon bytes; local collectible"
+      },
+      "Appearance": "collectible.pistol2.off_hand",
+      "Icon": "res://Assets/Equipment/Arsenal/collectible.pistol2.off_hand.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": []
+    },
+    {
+      "Id": "collectible.rifle1.main_hand",
+      "DisplayName": "Blaster Rifle High 01",
+      "Slot": "main_hand",
+      "Category": "rifle",
+      "Rarity": "development",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "operative",
+          "sniper"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Source": {
+        "GomId": "",
+        "Name": "/resources/art/dynamic/weapon/model/rifle_high01_a01_v01.gr2",
+        "Evidence": "Client-derived unique April TOR model/material/icon bytes; local collectible"
+      },
+      "Appearance": "collectible.rifle1.main_hand",
+      "Icon": "res://Assets/Equipment/Arsenal/collectible.rifle1.main_hand.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": [
+        "off_hand"
+      ]
+    },
+    {
+      "Id": "collectible.rifle2.main_hand",
+      "DisplayName": "Blaster Rifle High 02",
+      "Slot": "main_hand",
+      "Category": "rifle",
+      "Rarity": "development",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "operative",
+          "sniper"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Source": {
+        "GomId": "",
+        "Name": "/resources/art/dynamic/weapon/model/rifle_high02_a01_v01.gr2",
+        "Evidence": "Client-derived unique April TOR model/material/icon bytes; local collectible"
+      },
+      "Appearance": "collectible.rifle2.main_hand",
+      "Icon": "res://Assets/Equipment/Arsenal/collectible.rifle2.main_hand.png",
+      "StatModifiers": {},
+      "CosmeticOnly": true,
+      "BlocksSlots": [
+        "off_hand"
+      ]
     }
   ],
   "Appearances": [
@@ -897,6 +1933,7 @@
           "human"
         ],
         "BaseClasses": [
+          "sith_warrior",
           "sith_inquisitor"
         ],
         "AdvancedClasses": [],
@@ -930,6 +1967,7 @@
           "human"
         ],
         "BaseClasses": [
+          "sith_warrior",
           "sith_inquisitor"
         ],
         "AdvancedClasses": [],
@@ -962,6 +2000,7 @@
           "human"
         ],
         "BaseClasses": [
+          "sith_warrior",
           "sith_inquisitor"
         ],
         "AdvancedClasses": [],
@@ -994,6 +2033,7 @@
           "human"
         ],
         "BaseClasses": [
+          "sith_warrior",
           "sith_inquisitor"
         ],
         "AdvancedClasses": [],
@@ -1026,6 +2066,7 @@
           "human"
         ],
         "BaseClasses": [
+          "sith_warrior",
           "sith_inquisitor"
         ],
         "AdvancedClasses": [],
@@ -1058,6 +2099,7 @@
           "human"
         ],
         "BaseClasses": [
+          "sith_warrior",
           "sith_inquisitor"
         ],
         "AdvancedClasses": [],
@@ -1093,6 +2135,7 @@
           "human"
         ],
         "BaseClasses": [
+          "sith_warrior",
           "sith_inquisitor"
         ],
         "AdvancedClasses": [],
@@ -1126,6 +2169,7 @@
           "human"
         ],
         "BaseClasses": [
+          "sith_warrior",
           "sith_inquisitor"
         ],
         "AdvancedClasses": [],
@@ -1158,6 +2202,7 @@
           "human"
         ],
         "BaseClasses": [
+          "sith_warrior",
           "sith_inquisitor"
         ],
         "AdvancedClasses": [],
@@ -1191,6 +2236,7 @@
           "human"
         ],
         "BaseClasses": [
+          "sith_warrior",
           "sith_inquisitor"
         ],
         "AdvancedClasses": [],
@@ -1227,7 +2273,9 @@
         ],
         "BaseClasses": [],
         "AdvancedClasses": [
-          "sorcerer"
+          "sorcerer",
+          "juggernaut",
+          "marauder"
         ],
         "AnimationProfiles": [
           "april_bmnnew_force"
@@ -1278,7 +2326,8 @@
           "human"
         ],
         "BaseClasses": [
-          "sith_warrior"
+          "sith_warrior",
+          "sith_inquisitor"
         ],
         "AdvancedClasses": [],
         "AnimationProfiles": [
@@ -1310,7 +2359,8 @@
           "human"
         ],
         "BaseClasses": [
-          "sith_warrior"
+          "sith_warrior",
+          "sith_inquisitor"
         ],
         "AdvancedClasses": [],
         "AnimationProfiles": [
@@ -1342,7 +2392,8 @@
           "human"
         ],
         "BaseClasses": [
-          "sith_warrior"
+          "sith_warrior",
+          "sith_inquisitor"
         ],
         "AdvancedClasses": [],
         "AnimationProfiles": [
@@ -1374,7 +2425,8 @@
           "human"
         ],
         "BaseClasses": [
-          "sith_warrior"
+          "sith_warrior",
+          "sith_inquisitor"
         ],
         "AdvancedClasses": [],
         "AnimationProfiles": [
@@ -1406,7 +2458,8 @@
           "human"
         ],
         "BaseClasses": [
-          "sith_warrior"
+          "sith_warrior",
+          "sith_inquisitor"
         ],
         "AdvancedClasses": [],
         "AnimationProfiles": [
@@ -1438,7 +2491,8 @@
           "human"
         ],
         "BaseClasses": [
-          "imperial_agent"
+          "imperial_agent",
+          "bounty_hunter"
         ],
         "AdvancedClasses": [],
         "AnimationProfiles": [
@@ -1470,7 +2524,8 @@
           "human"
         ],
         "BaseClasses": [
-          "imperial_agent"
+          "imperial_agent",
+          "bounty_hunter"
         ],
         "AdvancedClasses": [],
         "AnimationProfiles": [
@@ -1502,7 +2557,8 @@
           "human"
         ],
         "BaseClasses": [
-          "imperial_agent"
+          "imperial_agent",
+          "bounty_hunter"
         ],
         "AdvancedClasses": [],
         "AnimationProfiles": [
@@ -1534,7 +2590,8 @@
           "human"
         ],
         "BaseClasses": [
-          "imperial_agent"
+          "imperial_agent",
+          "bounty_hunter"
         ],
         "AdvancedClasses": [],
         "AnimationProfiles": [
@@ -1566,7 +2623,8 @@
           "human"
         ],
         "BaseClasses": [
-          "imperial_agent"
+          "imperial_agent",
+          "bounty_hunter"
         ],
         "AdvancedClasses": [],
         "AnimationProfiles": [
@@ -1598,6 +2656,7 @@
           "human"
         ],
         "BaseClasses": [
+          "imperial_agent",
           "bounty_hunter"
         ],
         "AdvancedClasses": [],
@@ -1631,6 +2690,7 @@
           "human"
         ],
         "BaseClasses": [
+          "imperial_agent",
           "bounty_hunter"
         ],
         "AdvancedClasses": [],
@@ -1663,6 +2723,7 @@
           "human"
         ],
         "BaseClasses": [
+          "imperial_agent",
           "bounty_hunter"
         ],
         "AdvancedClasses": [],
@@ -1695,6 +2756,7 @@
           "human"
         ],
         "BaseClasses": [
+          "imperial_agent",
           "bounty_hunter"
         ],
         "AdvancedClasses": [],
@@ -1727,6 +2789,7 @@
           "human"
         ],
         "BaseClasses": [
+          "imperial_agent",
           "bounty_hunter"
         ],
         "AdvancedClasses": [],
@@ -1760,6 +2823,7 @@
         ],
         "BaseClasses": [],
         "AdvancedClasses": [
+          "sorcerer",
           "juggernaut",
           "marauder"
         ],
@@ -1814,7 +2878,6 @@
         ],
         "BaseClasses": [],
         "AdvancedClasses": [
-          "juggernaut",
           "marauder"
         ],
         "AnimationProfiles": [
@@ -1917,7 +2980,8 @@
         ],
         "BaseClasses": [],
         "AdvancedClasses": [
-          "operative"
+          "operative",
+          "sniper"
         ],
         "AnimationProfiles": [
           "april_bmnnew_force"
@@ -1964,6 +3028,7 @@
         ],
         "BaseClasses": [],
         "AdvancedClasses": [
+          "operative",
           "sniper"
         ],
         "AnimationProfiles": [
@@ -2059,8 +3124,7 @@
         ],
         "BaseClasses": [],
         "AdvancedClasses": [
-          "mercenary",
-          "powertech"
+          "mercenary"
         ],
         "AnimationProfiles": [
           "april_bmnnew_force"
@@ -2075,6 +3139,1394 @@
       "HidesBaseGroups": [],
       "Attachment": {
         "Bone": "LeftWeapon",
+        "CorrectionResource": "res://Assets/Enemies/weapon-socket.json",
+        "Position": [
+          0,
+          0,
+          0
+        ],
+        "RotationDegrees": [
+          0,
+          0,
+          0
+        ],
+        "Scale": 1,
+        "RedBlade": false,
+        "DoubleBlade": false
+      },
+      "Locomotion": null
+    },
+    {
+      "Id": "wardrobe.war.chest",
+      "Slot": "chest",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "sith_warrior",
+          "sith_inquisitor"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/war.glb",
+      "MeshNames": [
+        "chest_baggy_bmn_archetype",
+        "chest_baggy_bmn_heavy_sw_a05_collar",
+        "chest_baggy_bmn_heavy_sw_a05_chest"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "chest"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.war.hands",
+      "Slot": "hands",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "sith_warrior",
+          "sith_inquisitor"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/war.glb",
+      "MeshNames": [
+        "hand_gauntlet_bmn_archetype",
+        "hand_gauntlet_bmn_heavy_sw_a05_back"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "hands"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.war.legs",
+      "Slot": "legs",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "sith_warrior",
+          "sith_inquisitor"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/war.glb",
+      "MeshNames": [
+        "leg_pant_bmn_archetype"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "legs"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.war.feet",
+      "Slot": "feet",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "sith_warrior",
+          "sith_inquisitor"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/war.glb",
+      "MeshNames": [
+        "boot_tall_bmn_archetype",
+        "boot_tall_bmn_heavy_sw_a05_shin"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "feet"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.war.waist",
+      "Slot": "waist",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "sith_warrior",
+          "sith_inquisitor"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/war.glb",
+      "MeshNames": [
+        "waist_belt_bmn_archetype",
+        "waist_belt_bmn_heavy_sw_a05_front",
+        "waist_belt_bmn_heavy_sw_a05_back"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "waist"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.inq.chest",
+      "Slot": "chest",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "sith_warrior",
+          "sith_inquisitor"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/inq.glb",
+      "MeshNames": [
+        "chest_tight_bmn_archetype",
+        "chest_tight_bmn_light_ss_a05_straps"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "chest"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.inq.hands",
+      "Slot": "hands",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "sith_warrior",
+          "sith_inquisitor"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/inq.glb",
+      "MeshNames": [
+        "hand_glove_bmn_archetype"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "hands"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.inq.legs",
+      "Slot": "legs",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "sith_warrior",
+          "sith_inquisitor"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/inq.glb",
+      "MeshNames": [
+        "leg_skirt_bmn_archetype"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "legs"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.inq.feet",
+      "Slot": "feet",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "sith_warrior",
+          "sith_inquisitor"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/inq.glb",
+      "MeshNames": [
+        "boot_tall_bmn_archetype",
+        "boot_tall_bmn_light_ss_a05_shin"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "feet"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.inq.waist",
+      "Slot": "waist",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "sith_warrior",
+          "sith_inquisitor"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/inq.glb",
+      "MeshNames": [
+        "waist_belt_bmn_archetype",
+        "waist_belt_bmn_light_ss_a05_front",
+        "waist_belt_bmn_light_ss_a05_sling"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "waist"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.spy.chest",
+      "Slot": "chest",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "imperial_agent",
+          "bounty_hunter"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/spy.glb",
+      "MeshNames": [
+        "chest_baggy_bmn_archetype",
+        "chest_baggy_bmn_med_ge_a17_shld",
+        "chest_baggy_bmn_med_ge_a17_back",
+        "chest_baggy_bmn_med_ge_a17_chest"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "chest"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.spy.hands",
+      "Slot": "hands",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "imperial_agent",
+          "bounty_hunter"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/spy.glb",
+      "MeshNames": [
+        "hand_glove_bmn_archetype",
+        "hand_glove_bmn_med_ge_a17_elbow"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "hands"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.spy.legs",
+      "Slot": "legs",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "imperial_agent",
+          "bounty_hunter"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/spy.glb",
+      "MeshNames": [
+        "leg_pant_bmn_archetype"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "legs"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.spy.feet",
+      "Slot": "feet",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "imperial_agent",
+          "bounty_hunter"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/spy.glb",
+      "MeshNames": [
+        "boot_tall_bmn_archetype",
+        "boot_tall_bmn_med_ge_a17_knee"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "feet"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.spy.waist",
+      "Slot": "waist",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "imperial_agent",
+          "bounty_hunter"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/spy.glb",
+      "MeshNames": [
+        "waist_belt_bmn_archetype",
+        "waist_belt_bmn_med_ge_a17_front",
+        "waist_belt_bmn_med_ge_a17_back"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "waist"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.bh.chest",
+      "Slot": "chest",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "imperial_agent",
+          "bounty_hunter"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/bh.glb",
+      "MeshNames": [
+        "chest_baggy_bmn_archetype",
+        "chest_baggy_bmn_med_bh_a01_chest",
+        "chest_baggy_bmn_med_bh_a01_back"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "chest"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.bh.hands",
+      "Slot": "hands",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "imperial_agent",
+          "bounty_hunter"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/bh.glb",
+      "MeshNames": [
+        "hand_gauntlet_bmn_archetype"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "hands"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.bh.legs",
+      "Slot": "legs",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "imperial_agent",
+          "bounty_hunter"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/bh.glb",
+      "MeshNames": [
+        "leg_pant_bmn_archetype"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "legs"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.bh.feet",
+      "Slot": "feet",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "imperial_agent",
+          "bounty_hunter"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/bh.glb",
+      "MeshNames": [
+        "boot_tall_bmn_archetype",
+        "boot_tall_bmn_med_bh_a01_shin"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "feet"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "wardrobe.bh.waist",
+      "Slot": "waist",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "imperial_agent",
+          "bounty_hunter"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Empire/bh.glb",
+      "MeshNames": [
+        "waist_belt_bmn_archetype"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "waist"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "collectible.war.head",
+      "Slot": "head",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "sith_warrior",
+          "sith_inquisitor"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Arsenal/head-war.glb",
+      "MeshNames": [
+        "face_swhelmet02_bmn_archetype"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "hair"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "collectible.inq.head",
+      "Slot": "head",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "sith_warrior",
+          "sith_inquisitor"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Arsenal/head-inq.glb",
+      "MeshNames": [
+        "face_sscirclet01_bmn_archetype"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [],
+      "Attachment": null
+    },
+    {
+      "Id": "collectible.spy.head",
+      "Slot": "head",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "imperial_agent",
+          "bounty_hunter"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Arsenal/head-spy.glb",
+      "MeshNames": [
+        "face_spmask03_bmn_archetype"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [],
+      "Attachment": null
+    },
+    {
+      "Id": "collectible.bh.head",
+      "Slot": "head",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [
+          "imperial_agent",
+          "bounty_hunter"
+        ],
+        "AdvancedClasses": [],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Arsenal/head-bh.glb",
+      "MeshNames": [
+        "face_bhhelmet01_bmn_archetype"
+      ],
+      "RequiredBones": [],
+      "CoversSlots": [],
+      "HidesBaseGroups": [
+        "hair"
+      ],
+      "Attachment": null
+    },
+    {
+      "Id": "collectible.saber1.main_hand",
+      "Slot": "main_hand",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "sorcerer",
+          "juggernaut",
+          "marauder"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Arsenal/saber1.glb",
+      "MeshNames": [],
+      "RequiredBones": [
+        "RightWeapon"
+      ],
+      "CoversSlots": [],
+      "HidesBaseGroups": [],
+      "Attachment": {
+        "Bone": "RightWeapon",
+        "CorrectionResource": "res://Assets/Enemies/weapon-socket.json",
+        "Position": [
+          0,
+          0,
+          0
+        ],
+        "RotationDegrees": [
+          0,
+          0,
+          0
+        ],
+        "Scale": 1,
+        "RedBlade": true,
+        "DoubleBlade": false,
+        "HumAudio": "res://Assets/D3/Audio/152690487.wav"
+      },
+      "Locomotion": null
+    },
+    {
+      "Id": "collectible.saber1.off_hand",
+      "Slot": "off_hand",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "marauder"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Arsenal/saber1.glb",
+      "MeshNames": [],
+      "RequiredBones": [
+        "LeftWeapon"
+      ],
+      "CoversSlots": [],
+      "HidesBaseGroups": [],
+      "Attachment": {
+        "Bone": "LeftWeapon",
+        "CorrectionResource": "res://Assets/Enemies/weapon-socket.json",
+        "Position": [
+          0,
+          0,
+          0
+        ],
+        "RotationDegrees": [
+          0,
+          0,
+          0
+        ],
+        "Scale": 1,
+        "RedBlade": true,
+        "DoubleBlade": false,
+        "HumAudio": "res://Assets/D3/Audio/152690487.wav"
+      },
+      "Locomotion": null
+    },
+    {
+      "Id": "collectible.saber2.main_hand",
+      "Slot": "main_hand",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "sorcerer",
+          "juggernaut",
+          "marauder"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Arsenal/saber2.glb",
+      "MeshNames": [],
+      "RequiredBones": [
+        "RightWeapon"
+      ],
+      "CoversSlots": [],
+      "HidesBaseGroups": [],
+      "Attachment": {
+        "Bone": "RightWeapon",
+        "CorrectionResource": "res://Assets/Enemies/weapon-socket.json",
+        "Position": [
+          0,
+          0,
+          0
+        ],
+        "RotationDegrees": [
+          0,
+          0,
+          0
+        ],
+        "Scale": 1,
+        "RedBlade": true,
+        "DoubleBlade": false,
+        "HumAudio": "res://Assets/D3/Audio/152690487.wav"
+      },
+      "Locomotion": null
+    },
+    {
+      "Id": "collectible.saber2.off_hand",
+      "Slot": "off_hand",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "marauder"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Arsenal/saber2.glb",
+      "MeshNames": [],
+      "RequiredBones": [
+        "LeftWeapon"
+      ],
+      "CoversSlots": [],
+      "HidesBaseGroups": [],
+      "Attachment": {
+        "Bone": "LeftWeapon",
+        "CorrectionResource": "res://Assets/Enemies/weapon-socket.json",
+        "Position": [
+          0,
+          0,
+          0
+        ],
+        "RotationDegrees": [
+          0,
+          0,
+          0
+        ],
+        "Scale": 1,
+        "RedBlade": true,
+        "DoubleBlade": false,
+        "HumAudio": "res://Assets/D3/Audio/152690487.wav"
+      },
+      "Locomotion": null
+    },
+    {
+      "Id": "collectible.staff1.main_hand",
+      "Slot": "main_hand",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "assassin"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Arsenal/staff1.glb",
+      "MeshNames": [],
+      "RequiredBones": [
+        "RightWeapon"
+      ],
+      "CoversSlots": [],
+      "HidesBaseGroups": [],
+      "Attachment": {
+        "Bone": "RightWeapon",
+        "CorrectionResource": "res://Assets/Enemies/weapon-socket.json",
+        "Position": [
+          0,
+          0,
+          0
+        ],
+        "RotationDegrees": [
+          0,
+          0,
+          0
+        ],
+        "Scale": 1,
+        "RedBlade": true,
+        "DoubleBlade": true,
+        "BladeStart": 0.0296,
+        "HumAudio": "res://Assets/D3/Audio/152690487.wav"
+      },
+      "Locomotion": null
+    },
+    {
+      "Id": "collectible.staff2.main_hand",
+      "Slot": "main_hand",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "assassin"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Arsenal/staff2.glb",
+      "MeshNames": [],
+      "RequiredBones": [
+        "RightWeapon"
+      ],
+      "CoversSlots": [],
+      "HidesBaseGroups": [],
+      "Attachment": {
+        "Bone": "RightWeapon",
+        "CorrectionResource": "res://Assets/Enemies/weapon-socket.json",
+        "Position": [
+          0,
+          0,
+          0
+        ],
+        "RotationDegrees": [
+          0,
+          0,
+          0
+        ],
+        "Scale": 1,
+        "RedBlade": true,
+        "DoubleBlade": true,
+        "BladeStart": 0.0296,
+        "HumAudio": "res://Assets/D3/Audio/152690487.wav"
+      },
+      "Locomotion": null
+    },
+    {
+      "Id": "collectible.pistol1.main_hand",
+      "Slot": "main_hand",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "mercenary",
+          "powertech"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Arsenal/pistol1.glb",
+      "MeshNames": [],
+      "RequiredBones": [
+        "RightWeapon"
+      ],
+      "CoversSlots": [],
+      "HidesBaseGroups": [],
+      "Attachment": {
+        "Bone": "RightWeapon",
+        "CorrectionResource": "res://Assets/Enemies/weapon-socket.json",
+        "Position": [
+          0,
+          0,
+          0
+        ],
+        "RotationDegrees": [
+          0,
+          0,
+          0
+        ],
+        "Scale": 1,
+        "RedBlade": false,
+        "DoubleBlade": false
+      },
+      "Locomotion": null
+    },
+    {
+      "Id": "collectible.pistol1.off_hand",
+      "Slot": "off_hand",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "mercenary"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Arsenal/pistol1.glb",
+      "MeshNames": [],
+      "RequiredBones": [
+        "LeftWeapon"
+      ],
+      "CoversSlots": [],
+      "HidesBaseGroups": [],
+      "Attachment": {
+        "Bone": "LeftWeapon",
+        "CorrectionResource": "res://Assets/Enemies/weapon-socket.json",
+        "Position": [
+          0,
+          0,
+          0
+        ],
+        "RotationDegrees": [
+          0,
+          0,
+          0
+        ],
+        "Scale": 1,
+        "RedBlade": false,
+        "DoubleBlade": false
+      },
+      "Locomotion": null
+    },
+    {
+      "Id": "collectible.pistol2.main_hand",
+      "Slot": "main_hand",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "mercenary",
+          "powertech"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Arsenal/pistol2.glb",
+      "MeshNames": [],
+      "RequiredBones": [
+        "RightWeapon"
+      ],
+      "CoversSlots": [],
+      "HidesBaseGroups": [],
+      "Attachment": {
+        "Bone": "RightWeapon",
+        "CorrectionResource": "res://Assets/Enemies/weapon-socket.json",
+        "Position": [
+          0,
+          0,
+          0
+        ],
+        "RotationDegrees": [
+          0,
+          0,
+          0
+        ],
+        "Scale": 1,
+        "RedBlade": false,
+        "DoubleBlade": false
+      },
+      "Locomotion": null
+    },
+    {
+      "Id": "collectible.pistol2.off_hand",
+      "Slot": "off_hand",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "mercenary"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Arsenal/pistol2.glb",
+      "MeshNames": [],
+      "RequiredBones": [
+        "LeftWeapon"
+      ],
+      "CoversSlots": [],
+      "HidesBaseGroups": [],
+      "Attachment": {
+        "Bone": "LeftWeapon",
+        "CorrectionResource": "res://Assets/Enemies/weapon-socket.json",
+        "Position": [
+          0,
+          0,
+          0
+        ],
+        "RotationDegrees": [
+          0,
+          0,
+          0
+        ],
+        "Scale": 1,
+        "RedBlade": false,
+        "DoubleBlade": false
+      },
+      "Locomotion": null
+    },
+    {
+      "Id": "collectible.rifle1.main_hand",
+      "Slot": "main_hand",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "operative",
+          "sniper"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Arsenal/rifle1.glb",
+      "MeshNames": [],
+      "RequiredBones": [
+        "RightWeapon"
+      ],
+      "CoversSlots": [],
+      "HidesBaseGroups": [],
+      "Attachment": {
+        "Bone": "RightWeapon",
+        "CorrectionResource": "res://Assets/Enemies/weapon-socket.json",
+        "Position": [
+          0,
+          0,
+          0
+        ],
+        "RotationDegrees": [
+          0,
+          0,
+          0
+        ],
+        "Scale": 1,
+        "RedBlade": false,
+        "DoubleBlade": false
+      },
+      "Locomotion": null
+    },
+    {
+      "Id": "collectible.rifle2.main_hand",
+      "Slot": "main_hand",
+      "Compatibility": {
+        "RigProfiles": [
+          "april_bmnnew_cloth"
+        ],
+        "BodyTypes": [
+          "bmn"
+        ],
+        "Species": [
+          "human"
+        ],
+        "BaseClasses": [],
+        "AdvancedClasses": [
+          "operative",
+          "sniper"
+        ],
+        "AnimationProfiles": [
+          "april_bmnnew_force"
+        ]
+      },
+      "Scene": "res://Assets/Equipment/Arsenal/rifle2.glb",
+      "MeshNames": [],
+      "RequiredBones": [
+        "RightWeapon"
+      ],
+      "CoversSlots": [],
+      "HidesBaseGroups": [],
+      "Attachment": {
+        "Bone": "RightWeapon",
         "CorrectionResource": "res://Assets/Enemies/weapon-socket.json",
         "Position": [
           0,
@@ -2260,6 +4712,9 @@
           "waist_belt_bmn_light_ss_a04_back",
           "waist_belt_bmn_light_ss_a04_front",
           "waist_belt_bmn_light_ss_a04_sling"
+        ],
+        "hair": [
+          "hair_human_bmn_non_a01"
         ]
       },
       "AttachmentBones": {

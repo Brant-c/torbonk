@@ -1,5 +1,5 @@
 shader_type spatial;
-render_mode unshaded, blend_add, depth_draw_never, cull_disabled, shadows_disabled;
+render_mode unshaded, fog_disabled, blend_add, depth_draw_never, cull_disabled, shadows_disabled;
 uniform sampler2D source_texture : source_color, repeat_disable, filter_linear;
 uniform bool billboard = true;
 // Sprite3D ignores its own Billboard flag under a custom shader, so face the camera here.

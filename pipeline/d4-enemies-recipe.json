@@ -1,0 +1,132 @@
+{
+  "tukata": {
+    "skeleton": "/resources/art/dynamic/spec/dog_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "creature",
+        "modelId": "1000123",
+        "materialId": "1001442",
+        "models": [
+          "/resources/art/dynamic/creature/model/dog_tukata_a01.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/dog_tukata_a01_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/creature/dog/texture/___psd/dog_tukata_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/creature/dog/texture/___psd/dog_tukata_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/creature/dog/texture/___psd/dog_tukata_a01_v01_s.dds",
+            "EmissiveMap": "/resources/art/defaultassets/black.dds",
+            "PaletteMaskMap": "/resources/art/defaultassets/black.dds",
+            "DirectionMap": "/resources/art/lookuptables/table_wookienormal_01.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/creature/dog/cb_ready_1.jba",
+      "Run": "/resources/anim/creature/dog/mv_run_forward.jba",
+      "Attack": "/resources/anim/creature/dog/cb_attack_1.jba",
+      "Hit": "/resources/anim/creature/dog/dg_damage_1.jba",
+      "Death": "/resources/anim/creature/dog/dg_death_1.jba"
+    }
+  },
+  "protector": {
+    "skeleton": "/resources/art/dynamic/spec/bmnnew_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "creature",
+        "modelId": "1002841",
+        "materialId": "1002844",
+        "models": [
+          "/resources/art/dynamic/creature/model/assassin_ancientguardian_a01.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/assassin_ancientguardian_a01_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/creature/texture/assassin_ancientguardian_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/creature/texture/assassin_ancientguardian_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/creature/texture/assassin_ancientguardian_a01_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/defaultassets/black.dds",
+            "DirectionMap": "/resources/art/defaultassets/flat_n.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/humanoid/bmnnew/cb_2pistol_2h_idle_1.jba",
+      "Run": "/resources/anim/humanoid/bmnnew/mv_2pistol_run_forward.jba",
+      "Attack": "/resources/anim/humanoid/bmnnew/cb_2pistol_2h_fire_big_1.jba",
+      "Hit": "/resources/anim/humanoid/bmnnew/dg_unarmed_crit_damage_right_1.jba",
+      "Death": "/resources/anim/humanoid/bmnnew/dg_death_1.jba"
+    }
+  },
+  "beast": {
+    "skeleton": "/resources/art/dynamic/spec/terentatek_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "creature",
+        "modelId": "1000158",
+        "materialId": "1001462",
+        "models": [
+          "/resources/art/dynamic/creature/model/terentatek_terentatek_a01.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/terentatek_terentatek_a01_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/creature/texture/terentatek_terentatek_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/creature/texture/terentatek_terentatek_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/creature/terentatek/texture/___psd/terentatek_terentatek_a01_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/creature/terentatek/texture/___psd/terentatek_terentatek_a01_v01_m.dds",
+            "DirectionMap": "/resources/art/defaultassets/flat_n.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/creature/terentatek/cb_ready_1.jba",
+      "Run": "/resources/anim/creature/terentatek/mv_run_forward.jba",
+      "Attack": "/resources/anim/creature/terentatek/cb_attack_1.jba",
+      "Hit": "/resources/anim/creature/terentatek/dg_damage_1.jba",
+      "Death": "/resources/anim/creature/terentatek/dg_death_1.jba"
+    }
+  },
+  "broodmother": {
+    "skeleton": "/resources/art/dynamic/spec/klorslug_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "creature",
+        "modelId": "1006617",
+        "materialId": "1006618",
+        "models": [
+          "/resources/art/dynamic/creature/model/klorslug_klorslug_a03.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/klorslug_klorslug_a03_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/creature/texture/klorslug_klorslug_a03_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/creature/texture/klorslug_klorslug_a03_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/creature/texture/klorslug_klorslug_a03_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/creature/klorslug/texture/___psd/klorslug_klorslug_a03_v01_m.dds",
+            "DirectionMap": "/resources/art/defaultassets/flat_n.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/creature/slug/cb_ready_1.jba",
+      "Run": "/resources/anim/creature/slug/mv_run_forward.jba",
+      "Attack": "/resources/anim/creature/slug/cb_attack_1.jba",
+      "Hit": "/resources/anim/creature/slug/dg_damage_1.jba",
+      "Death": "/resources/anim/creature/slug/dg_death_1.jba"
+    }
+  },
+  "weapons": {}
+}

@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3]
+[ext_resource type="Script" path="res://Gameplay/EnemyAgent.cs" id="1"]
+[ext_resource type="Script" path="res://Gameplay/Health.cs" id="2"]
+[ext_resource type="Script" path="res://Gameplay/EnemyPresentation.cs" id="3"]
+[ext_resource type="PackedScene" path="res://Assets/Enemies/broodmatron.glb" id="4"]
+[ext_resource type="Script" path="res://Gameplay/BossEncounter.cs" id="5"]
+
+[sub_resource type="CapsuleShape3D" id="Capsule"]
+radius = 0.065
+height = 0.14
+margin = 0.0005
+[node name="Broodmatron" type="CharacterBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.07, 0)
+shape = SubResource("Capsule")
+[node name="Actor" type="Node3D" parent="."]
+script = ExtResource("1")
+Team = 2
+DisplayName = "K’lor’slug Broodmatron"
+RewardTier = 2
+KnockbackResistance = 1.0
+ExperienceReward = 90
+GuaranteedReward = true
+ScaleWithWaves = false
+CollisionRadius = 0.065
+CollisionHeight = 0.14
+MoveSpeed = 0.14
+AttackDamage = 8
+AttackInterval = 1.8
+MeleeRange = 0.23
+AimHeight = 0.065
+[node name="Health" type="Node" parent="Actor"]
+script = ExtResource("2")
+Maximum = 650.0
+[node name="Visual" type="Node3D" parent="Actor"]
+script = ExtResource("3")
+[node name="Original" parent="Actor/Visual" instance=ExtResource("4")]
+scale = Vector3(1.1, 1.1, 1.1)
+[node name="Nameplate" type="Label3D" parent="Actor"]
+position = Vector3(0, 0.215, 0)
+pixel_size = 0.00032
+billboard = 1
+text = "K’lor’slug Broodmatron"
+font_size = 22
+outline_size = 6
+modulate = Color(1, 0.42, 0.23, 1)
+[node name="BossEncounter" type="Node" parent="Actor"]
+script = ExtResource("5")

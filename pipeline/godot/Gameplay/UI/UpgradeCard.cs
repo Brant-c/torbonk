@@ -43,11 +43,11 @@ public partial class UpgradeCard : SwtorButton
         bool unlock=definition.Effect==UpgradeEffect.UnlockAbility;
         TooltipText=definition.Title+" · "+definition.Rarity+"\n"+definition.Description+
             (unlock?"":definition.Effect==UpgradeEffect.Mechanic?"\nFixed mechanical effect; rarity identifies its tier.":$"\nBonuses last for this run. Rarity strength ×{definition.RarityRules?.Multiplier(definition.Rarity)??1:0.##}.");
-        AddThemeStyleboxOverride("normal",SwtorSkin.Box("bwaui_skilltree_30",24,24,24,24));
-        AddThemeStyleboxOverride("hover",SwtorSkin.Box("bwaui_skilltree_32",24,24,24,24));
-        AddThemeStyleboxOverride("pressed",SwtorSkin.Box("bwaui_skilltree_32",24,24,24,24));
-        AddThemeStyleboxOverride("disabled",SwtorSkin.Box("bwaui_skilltree_30",24,24,24,24));
-        var focus=SwtorSkin.Box("bwaui_skilltree_32",24,24,24,24); focus.DrawCenter=false;
+        AddThemeStyleboxOverride("normal",SwtorSkin.ButtonArtwork());
+        AddThemeStyleboxOverride("hover",SwtorSkin.ButtonArtwork(hovered:true));
+        AddThemeStyleboxOverride("pressed",SwtorSkin.ButtonArtwork(hovered:true));
+        AddThemeStyleboxOverride("disabled",SwtorSkin.ButtonArtwork());
+        var focus=SwtorSkin.ButtonArtwork(hovered:true); focus.DrawCenter=false;
         AddThemeStyleboxOverride("focus",focus);
         var content=new VBoxContainer { MouseFilter=MouseFilterEnum.Ignore };
         content.AddThemeConstantOverride("separation",8);

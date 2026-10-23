@@ -8,6 +8,8 @@ namespace SwtorSurvivors.UI;
 public partial class SurvivorsHud : CanvasLayer
 {
     public GameWorld World { get; set; }=null!;
+    public RunMenu Menu {get;private set;}=null!;
+    public CombatMeter Meter {get;private set;}=null!;
     [Export] public string ArenaName { get; set; }="Korriban";
     private Control _root=null!;
     private CombatHud _combatHud=null!;
@@ -32,11 +34,8 @@ public partial class SurvivorsHud : CanvasLayer
         // The player-reference arrangement: one quickbar, with unit frames above its ends.
         _combatHud=new CombatHud {World=World};_root.AddChild(_combatHud);
         BuildStatus();
-        var restart=new SwtorButton {Text="RESTART [R]",TooltipText="Start a new run and reset all progression.",CustomMinimumSize=new Vector2(104,28)};
-        restart.AddThemeFontSizeOverride("font_size",12);_root.AddChild(restart);
-        restart.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.TopRight);
-        restart.OffsetLeft=-120;restart.OffsetRight=-16;restart.OffsetTop=16;restart.OffsetBottom=44;
-        restart.Pressed+=World.ResetCombatWorld;
+        Meter=new CombatMeter {World=World};_root.AddChild(Meter);
+        Menu=new RunMenu {Name="RunMenu",World=World};AddChild(Menu);
         _deathFrame=ChromePanel();_root.AddChild(_deathFrame);
         _deathFrame.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.CenterTop);
         _deathFrame.OffsetLeft=-220;_deathFrame.OffsetRight=220;_deathFrame.OffsetTop=100;_deathFrame.OffsetBottom=198;
@@ -55,7 +54,7 @@ public partial class SurvivorsHud : CanvasLayer
 
     private static PanelContainer ChromePanel()
     {
-        var panel=new PanelContainer();var box=SwtorSkin.Box("bwaui_tooltip_1",8,12,8,12);
+        var panel=new PanelContainer();var box=SwtorSkin.MenuFrame();
         box.ContentMarginLeft=14;box.ContentMarginRight=14;box.ContentMarginTop=4;box.ContentMarginBottom=4;
         panel.AddThemeStyleboxOverride("panel",box);return panel;
     }
@@ -98,6 +97,8 @@ public partial class SurvivorsHud : CanvasLayer
         float bossLeft=(_root.Size.X-600*bossScale)/2;
         float statusTop=16+_statusRoot.Size.X*statusScale+8>bossLeft ? 170*bossScale+12 : 16;
         _statusRoot.Position=new Vector2(16,statusTop);
+        Meter.Scale=Vector2.One*statusScale;
+        Meter.Position=new Vector2(16,statusTop+(_statusRoot.Size.Y+8)*statusScale);
         float choiceScale = Mathf.Min(1, Mathf.Min((_root.Size.X-24)/(_selectionLayout.Size.X+24), (_root.Size.Y-32)/(_selectionLayout.Size.Y+40)));
         _selectionLayout.Scale = Vector2.One * Mathf.Max(0.3f, choiceScale);
         _selectionLayout.Position = (_root.Size - _selectionLayout.Size * _selectionLayout.Scale) / 2;
@@ -112,7 +113,7 @@ public partial class SurvivorsHud : CanvasLayer
         _selectionLayout=new Control {Size=new Vector2(812,460), MouseFilter=Control.MouseFilterEnum.Ignore};_modal.AddChild(_selectionLayout);
         var frame=new SwtorPanel {CustomMinimumSize=_selectionLayout.Size};_selectionLayout.AddChild(frame);
         frame.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.FullRect);
-        var selectionBox=SwtorSkin.Box("bwaui_standard_window_1",128,72,184,64);
+        var selectionBox=SwtorSkin.MenuFrame();
         selectionBox.ContentMarginLeft=24;selectionBox.ContentMarginRight=24;
         selectionBox.ContentMarginTop=24;selectionBox.ContentMarginBottom=64;
         frame.AddThemeStyleboxOverride("panel",selectionBox);
@@ -166,9 +167,9 @@ public partial class SurvivorsHud : CanvasLayer
     public override void _Input(InputEvent @event)
     {
         if (@event is not InputEventKey {Pressed:true,Echo:false} key) return;
+        if(Menu.IsOpen || key.PhysicalKeycode==Key.Escape)return;
         bool handled=true;
         if (key.PhysicalKeycode==Key.R) World.ResetCombatWorld();
-        else if (key.PhysicalKeycode==Key.Escape) GetTree().Quit();
         else if (World.Progression!.CanChoose && key.PhysicalKeycode is >= Key.Key1 and <= Key.Key3)
             World.Progression.Choose((int)key.PhysicalKeycode-(int)Key.Key1);
         else handled=false;

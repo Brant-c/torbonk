@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "checks": [
+    "rupture clip exists",
+    "rupture starts with gesture",
+    "rupture still deals damage",
+    "rupture abort releases gesture",
+    "rupture abort clears effects and channel sound",
+    "annihilate clip exists",
+    "annihilate starts with gesture",
+    "annihilate still deals damage",
+    "annihilate abort releases gesture",
+    "annihilate abort clears effects and channel sound",
+    "forcescream clip exists",
+    "forcescream starts with gesture",
+    "forcescream still deals damage",
+    "forcescream abort releases gesture",
+    "forcescream abort clears effects and channel sound",
+    "berserk clip exists",
+    "berserk starts with gesture",
+    "berserk abort releases gesture",
+    "berserk abort clears effects and channel sound",
+    "occupied gesture defers activation",
+    "deferred activation starts when free"
+  ],
+  "failure": null
+}

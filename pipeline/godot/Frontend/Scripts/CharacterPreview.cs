@@ -109,7 +109,7 @@ public partial class CharacterPreview : Control
         finally { source.Free(); }
     }
     public void ResetView() { _rotation.RotationDegrees = new Vector3(0,_facing,0); _camera.Fov = 34; }
-    public override GodotObject _MakeCustomTooltip(string text) => new SwtorSurvivors.UI.SwtorTooltip(text);
+    public override GodotObject _MakeCustomTooltip(string text) => string.IsNullOrWhiteSpace(text) ? null! : new SwtorSurvivors.UI.SwtorTooltip(text);
     private void OnInput(InputEvent e)
     {
         if (!_render.Visible) return;

@@ -1,0 +1,303 @@
+{
+  "guard": {
+    "output": "godot\\Assets\\Maps\\hutta\\Enemies\\guard.glb",
+    "sha256": "52726c80f3dbac63a66231d0cf3adfa3a2c7afa4ac953fa0f5ad0e06010a4031",
+    "bones": 134,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bmsnew/cb_pistol_idle_1.jba",
+        "seconds": 2.933333396911621,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bmsnew/mv_cb_pistol_run_forward.jba",
+        "seconds": 0.7666666507720947,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bmsnew/cb_pistol_fire_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bmsnew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bmsnew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 14,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "RightWeapon",
+      "vfx_hand_right",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "droid": {
+    "output": "godot\\Assets\\Maps\\hutta\\Enemies\\droid.glb",
+    "sha256": "6557665f8e610670d998d41e3017c48cb2d6b7e2662990b0f3443fe852183f1a",
+    "bones": 134,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bmnnew/cb_pistol_idle_1.jba",
+        "seconds": 2.933333396911621,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bmnnew/mv_cb_pistol_run_forward.jba",
+        "seconds": 0.7666666507720947,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bmnnew/cb_pistol_fire_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bmnnew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bmnnew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 1,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "RightWeapon",
+      "vfx_hand_right",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "gangster": {
+    "output": "godot\\Assets\\Maps\\hutta\\Enemies\\gangster.glb",
+    "sha256": "e69e4ffbf53ff5fec1aecb65c9068022b32c282bad25a587079682b5c4640334",
+    "bones": 134,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bmnnew/cb_pistol_idle_1.jba",
+        "seconds": 2.933333396911621,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bmnnew/mv_cb_pistol_run_forward.jba",
+        "seconds": 0.7666666507720947,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bmnnew/cb_pistol_fire_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bmnnew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bmnnew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 13,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "RightWeapon",
+      "vfx_hand_right",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "bogsnarler": {
+    "output": "godot\\Assets\\Maps\\hutta\\Enemies\\bogsnarler.glb",
+    "sha256": "2835b45a297b778d758787b5d417e388e7e13261174c42c7bbf50b33ab22af3a",
+    "bones": 57,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/creature/dog/cb_ready_1.jba",
+        "seconds": 1.1666666269302368,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/creature/dog/mv_run_forward.jba",
+        "seconds": 0.6000000238418579,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/creature/dog/cb_attack_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/creature/dog/dg_damage_1.jba",
+        "seconds": 0.8333333134651184,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/creature/dog/dg_death_1.jba",
+        "seconds": 2.1666667461395264,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 1,
+    "sockets": [
+      "attach_portrait_left",
+      "vfx_hand_right",
+      "RightHandDigit2",
+      "RightHandDigit1",
+      "LeftHandDigit1",
+      "LeftHandDigit2",
+      "vfx_hand_left"
+    ]
+  },
+  "chemilizard": {
+    "output": "godot\\Assets\\Maps\\hutta\\Enemies\\chemilizard.glb",
+    "sha256": "9d7591b2d5b7447bf2ef4206bbe98b47732711cdd6ce442643d3c5f652854c04",
+    "bones": 107,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/creature/veractyl/cb_ready_1.jba",
+        "seconds": 1.4666666984558105,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/creature/veractyl/mv_run_forward.jba",
+        "seconds": 0.5333333611488342,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/creature/veractyl/cb_attack_1.jba",
+        "seconds": 1.2999999523162842,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/creature/veractyl/dg_damage_1.jba",
+        "seconds": 0.9333333373069763,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/creature/veractyl/dg_death_1.jba",
+        "seconds": 1.399999976158142,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 1,
+    "sockets": [
+      "attach_portrait_left",
+      "vfx_hand_right",
+      "vfx_hand_left"
+    ]
+  },
+  "brawler": {
+    "output": "godot\\Assets\\Maps\\hutta\\Enemies\\brawler.glb",
+    "sha256": "886ce8a2afd62c68e3ba64c11e17c7f470bc660f4e898dbfdde1b73a4a07d874",
+    "bones": 134,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bmnnew/cb_unarmed_idle_right_1.jba",
+        "seconds": 1.6666666269302368,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bmnnew/mv_run_forward.jba",
+        "seconds": 0.6666666865348816,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bmnnew/cb_unarmed_attack_right_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bmnnew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bmnnew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 13,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "RightWeapon",
+      "vfx_hand_right",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "sky": {
+    "output": "godot\\Assets\\Maps\\hutta\\Enemies\\sky.glb",
+    "sha256": "8217628abecdc31da37ab815c335c0bc93fec1bd2cc8c640c071799f9b9262e3",
+    "bounds": [
+      [
+        -37.469852447509766,
+        -37.469852447509766,
+        -37.469852447509766
+      ]
+    ]
+  }
+}

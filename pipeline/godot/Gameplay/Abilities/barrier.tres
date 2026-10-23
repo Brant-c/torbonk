@@ -12,9 +12,9 @@ ChannelSeconds = 0
 TickSeconds = 1
 Effect = 1
 Damage = 0
-ShieldCapacity = 30
+ShieldCapacity = 22
 ShieldDuration = 12
-CooldownSeconds = 18
+CooldownSeconds = 22
 Range = 0.8
 UsesGlobalCooldown = false
 TriggersGlobalCooldown = false
@@ -26,3 +26,4 @@ SourceFx = "si_backlash_caster_shield"
 CastAudioEvent = "Play_ability_sithinquisitor_backlash_chargeup"
 
 Category = 1
+RequireGesture = true

@@ -1,0 +1,265 @@
+{
+  "CoreLevel": 30,
+  "FirstLevelExperience": 16,
+  "ExperienceGrowth": 1.105,
+  "ArtifactCatalog": "res://Gameplay/RunItems/artifacts.json",
+  "Stages": [
+    {
+      "Level": 1,
+      "Region": "Factory Outskirts",
+      "Description": "Armed patrols converge. Watch the firing lanes and keep moving.",
+      "Focus": [
+        32.9,
+        0,
+        7
+      ],
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Rusher.tscn",
+          "Weight": 4
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Gunner.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Enforcer.tscn",
+          "Weight": 1
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/BogSnarler.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Chemilizard.tscn",
+          "Weight": 1.5
+        }
+      ]
+    },
+    {
+      "Level": 6,
+      "Region": "Industrial Rust Yards",
+      "Description": "Armed patrols converge. Watch the firing lanes and keep moving.",
+      "Focus": [
+        32.9,
+        0,
+        7
+      ],
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Rusher.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Gunner.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Enforcer.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Trapper.tscn",
+          "Weight": 1
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Droid.tscn",
+          "Weight": 1
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/BogSnarler.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Chemilizard.tscn",
+          "Weight": 1.5
+        }
+      ]
+    },
+    {
+      "Level": 11,
+      "Region": "Chemical Processing District",
+      "Description": "Armed patrols converge. Watch the firing lanes and keep moving.",
+      "Focus": [
+        32.9,
+        0,
+        7
+      ],
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Rusher.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Gunner.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Enforcer.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Trapper.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Droid.tscn",
+          "Weight": 1
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/BogSnarler.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Chemilizard.tscn",
+          "Weight": 1.5
+        }
+      ]
+    },
+    {
+      "Level": 21,
+      "Region": "Fa\u2019athra Factory Territory",
+      "Description": "Armed patrols converge. Watch the firing lanes and keep moving.",
+      "Focus": [
+        32.9,
+        0,
+        7
+      ],
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Rusher.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Gunner.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Enforcer.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Trapper.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Droid.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/BogSnarler.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Hutta/Chemilizard.tscn",
+          "Weight": 1.5
+        }
+      ]
+    }
+  ],
+  "Milestones": [
+    {
+      "Level": 3,
+      "Encounter": "res://Gameplay/Planets/Hutta/Encounter3.tres"
+    },
+    {
+      "Level": 5,
+      "Encounter": "res://Gameplay/Planets/Hutta/Encounter5.tres"
+    },
+    {
+      "Level": 8,
+      "Encounter": "res://Gameplay/Planets/Hutta/Encounter8.tres"
+    },
+    {
+      "Level": 10,
+      "Encounter": "res://Gameplay/Planets/Hutta/Encounter10.tres"
+    },
+    {
+      "Level": 13,
+      "Encounter": "res://Gameplay/Planets/Hutta/Encounter13.tres"
+    },
+    {
+      "Level": 15,
+      "Encounter": "res://Gameplay/Planets/Hutta/Encounter15.tres"
+    },
+    {
+      "Level": 18,
+      "Encounter": "res://Gameplay/Planets/Hutta/Encounter18.tres"
+    },
+    {
+      "Level": 20,
+      "Encounter": "res://Gameplay/Planets/Hutta/Encounter20.tres"
+    },
+    {
+      "Level": 23,
+      "Encounter": "res://Gameplay/Planets/Hutta/Encounter23.tres"
+    },
+    {
+      "Level": 25,
+      "Encounter": "res://Gameplay/Planets/Hutta/Encounter25.tres"
+    },
+    {
+      "Level": 28,
+      "Encounter": "res://Gameplay/Planets/Hutta/Encounter28.tres"
+    },
+    {
+      "Level": 30,
+      "Encounter": "res://Gameplay/Planets/Hutta/Encounter30.tres"
+    }
+  ],
+  "Caches": [
+    {
+      "Id": "contraband0",
+      "Title": "Abandoned Contraband",
+      "Position": [
+        32.9,
+        0,
+        7
+      ],
+      "Level": 1,
+      "Reward": "xp",
+      "Model": "res://Assets/Maps/hutta/item_con_plasteel_crate_01.glb",
+      "Guard": ""
+    },
+    {
+      "Id": "contraband1",
+      "Title": "Gang Supply Stockpile",
+      "Position": [
+        29,
+        0,
+        13
+      ],
+      "Level": 8,
+      "Reward": "artifact",
+      "Model": "res://Assets/Maps/hutta/item_con_plasteel_crate_01.glb",
+      "Guard": "res://Gameplay/Planets/Hutta/Enforcer.tscn"
+    },
+    {
+      "Id": "contraband2",
+      "Title": "Factory Medical Supplies",
+      "Position": [
+        29,
+        0,
+        22
+      ],
+      "Level": 15,
+      "Reward": "heal",
+      "Model": "res://Assets/Maps/hutta/item_con_plasteel_crate_01.glb",
+      "Guard": "res://Gameplay/Planets/Hutta/Enforcer.tscn"
+    },
+    {
+      "Id": "contraband3",
+      "Title": "Guarded Equipment Cache",
+      "Position": [
+        38,
+        0,
+        24
+      ],
+      "Level": 23,
+      "Reward": "artifact",
+      "Model": "res://Assets/Maps/hutta/item_con_plasteel_crate_01.glb",
+      "Guard": "res://Gameplay/Planets/Hutta/Enforcer.tscn"
+    }
+  ],
+  "AudioTuning": "res://Gameplay/Planets/Hutta/audio.json"
+}

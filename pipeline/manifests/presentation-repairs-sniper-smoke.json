@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": [
+    "snipershot clip exists",
+    "snipershot starts with gesture",
+    "snipershot still deals damage",
+    "snipershot abort releases gesture",
+    "snipershot abort clears effects and channel sound",
+    "ambush clip exists",
+    "ambush starts with gesture",
+    "Ambush charges with target reticle",
+    "ambush still deals damage",
+    "ambush abort releases gesture",
+    "ambush abort clears effects and channel sound",
+    "seriesofshots clip exists",
+    "seriesofshots starts with gesture",
+    "seriesofshots still deals damage",
+    "Series presents repeated shots",
+    "seriesofshots abort releases gesture",
+    "seriesofshots abort clears effects and channel sound",
+    "shieldprobe clip exists",
+    "shieldprobe starts with gesture",
+    "shieldprobe distinct shield persists through recovery",
+    "shieldprobe expires with shield",
+    "shieldprobe abort releases gesture",
+    "shieldprobe abort clears effects and channel sound",
+    "occupied gesture defers activation",
+    "deferred activation starts when free"
+  ],
+  "failure": null
+}

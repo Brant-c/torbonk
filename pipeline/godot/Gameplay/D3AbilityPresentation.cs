@@ -16,19 +16,23 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
     private readonly Dictionary<string,ShaderMaterial> _materials=new();
     private readonly RandomNumberGenerator _random=new();
     private float _radius;
+    private Vector3 _forward;
     private double _flame,_flameSpawn;
+    private double _carbon,_carbonSpawn;
+    public bool CarbonizeEmitting=>_carbon>0;
+    public bool CarbonizeAudioPlaying=>Definition.Id=="carbonize" && _voices.Any(v=>v.Playing);
     private const int MaxEffects=90;
-    private MeshInstance3D? _bubble;private Health? _shieldHealth;private bool _bubbleSeen;private double _bubbleAge;
+    private Node3D? _bubble;private Health? _shieldHealth;private bool _bubbleSeen;private double _bubbleAge;
     private double _gas,_gasSpawn;private Vector3 _gasAt;private float _gasRadius;
     public bool ShieldVisible=>_bubble!=null && GodotObject.IsInstanceValid(_bubble);
     public int EffectCount=>_effects.Count;
     public bool AdditiveBound{get;private set;}
     public bool Emitting=>_flame>0;
-    // Voices: 0 cast, 1 main-hand, 2 off-hand, 3 impact, 4 spare. Allocated once; never per attack.
+    // Voices 0..4 are fixed events; 5..12 preserve overlapping shot tails. Allocated once.
     public override void _Ready()
     {
         _random.Seed=(ulong)(Definition?.Id.GetHashCode()??1);
-        for(int i=0;i<5;i++)
+        for(int i=0;i<13;i++)
         {
             var voice=new AudioStreamPlayer3D {Bus="B7Combat",VolumeDb=-18,AttenuationModel=AudioStreamPlayer3D.AttenuationModelEnum.Disabled};
             AddChild(voice);AudioPresentation.Find(this)?.RegisterCombatVoice(voice);_voices.Add(voice);
@@ -36,6 +40,7 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
     }
     public bool Begin(Combatant target,Vector3 center,float radius)
     {
+        _forward=(target.GlobalPosition-Actor.GlobalPosition).Normalized();
         _radius=radius;Play(Definition.CastAudio,Actor.GlobalPosition,0);
         // The swing sounds when the blade lands, not when a long leap or wind-up begins.
         double swing=Math.Max(0,Definition.WindupSeconds-.15);
@@ -45,15 +50,20 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
         if(Definition.Effect==AbilityEffect.Shield)ShowShield(target);
         else if(Definition.Effect!=AbilityEffect.Damage)Pulse(Actor.GlobalPosition+Vector3.Up*.06f);
         if(Definition.PresentationKind=="gas" && Definition.Effect==AbilityEffect.Damage)Projectile(MuzzleWorld(),target.AimPosition,Math.Max(.2,Definition.WindupSeconds));
+        BeginRepair(target);
         return Actor.Animator.HasAnimation(Definition.StartClip);
     }
-    public void Channel(){ if(Definition.PresentationKind=="flame"){_flame=Math.Max(.1,Definition.ChannelSeconds);_flameSpawn=0;} }
+    public void Channel(){ ChannelRepair();if(Definition.Id=="carbonize"){_carbon=1.2;_carbonSpawn=0;} if(Definition.Id=="flamethrower"){_flame=Definition.ChannelSeconds;_flameSpawn=0;} if(Definition.PresentationKind=="flame"){_flame=Math.Max(.1,Definition.ChannelSeconds);_flameSpawn=0;} }
     public void Impact(Vector3 center)
     {
         if(Definition.Effect!=AbilityEffect.Damage)return;
         bool radial=Definition.Area==AbilityArea.CasterRadial;
         var at=radial?Actor.GlobalPosition+Vector3.Up*.06f:center;
+        if(ImpactRepair(at))return;
         Play(Definition.ImpactAudio,at,3);
+        if(Definition.Id=="flameburst"){Burst(center,"res://Assets/Powertech/4x4_flame_lick_02_bw.png",.16f);return;}
+        if(Definition.Id=="flamethrower")return;
+        if(Definition.Id=="rocketpunch"){Burst(center,"res://Assets/Powertech/bw_fx_2x2_sparknglow_01.png",.18f);return;}
         switch(Definition.PresentationKind)
         {
             case "slam": Ring(at,Definition.ImpactTexture,_radius*2.2f);break;
@@ -94,7 +104,10 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
     }
     private void ShowShield(Combatant target)
     {
+        DetachProbe();
         if(_bubble!=null && GodotObject.IsInstanceValid(_bubble))_bubble.QueueFree();
+        _shieldHealth=target.Health;_bubbleSeen=false;_bubbleAge=0;
+        if(ShowDistinctShield())return;
         var material=new ShaderMaterial {Shader=GD.Load<Shader>("res://Gameplay/D3Shield.gdshader")};
         material.SetShaderParameter("hexagons",GD.Load<Texture2D>("res://Assets/D3/hexagon_blurred_tiled.png"));
         material.SetShaderParameter("scanlines",GD.Load<Texture2D>("res://Assets/D3/scanlines_blurred_wrap.png"));
@@ -143,7 +156,7 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
     }
     private void Burst(Vector3 at,string texture,float size)
     {
-        int frames=texture.Contains("2x2")||texture.Contains("flames")?2:1;
+        int frames=texture.Contains("4x4")?4:texture.Contains("2x2")||texture.Contains("flames")?2:1;
         var s=Sprite(texture,size,frames);s.Modulate=Definition.EffectTint;
         Add(s,.5,fx=>{
             var sp=(Sprite3D)fx.Node;float f=(float)(fx.Age/fx.Life);sp.Modulate=new Color(Definition.EffectTint,1-f);
@@ -177,7 +190,7 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
     {
         float length=from.DistanceTo(to);if(length<.001f)return;
         var mesh=new MeshInstance3D {Mesh=new BoxMesh {Size=new Vector3(width,width,length)},CastShadow=GeometryInstance3D.ShadowCastingSetting.Off,
-            MaterialOverride=new StandardMaterial3D {ShadingMode=BaseMaterial3D.ShadingModeEnum.Unshaded,BlendMode=BaseMaterial3D.BlendModeEnum.Add,Transparency=BaseMaterial3D.TransparencyEnum.Alpha,AlbedoColor=Definition.EffectTint}};
+            MaterialOverride=new StandardMaterial3D {ShadingMode=BaseMaterial3D.ShadingModeEnum.Unshaded,DisableFog=true,BlendMode=BaseMaterial3D.BlendModeEnum.Add,Transparency=BaseMaterial3D.TransparencyEnum.Alpha,AlbedoColor=Definition.EffectTint}};
         Add(mesh,life,fx=>((StandardMaterial3D)((MeshInstance3D)fx.Node).MaterialOverride).AlbedoColor=new Color(Definition.EffectTint,1-(float)(fx.Age/fx.Life)));
         mesh.GlobalPosition=(from+to)/2;mesh.LookAt(to,Vector3.Up);
     }
@@ -188,6 +201,23 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
         Add(s,life,fx=>fx.Node.GlobalPosition=from.Lerp(to,Math.Min(1f,(float)(fx.Age/fx.Life))));
         s.GlobalPosition=from;
         if(Definition.PresentationKind!="gas")_delayed.Add((life,()=>Burst(to,tex,.1f)));
+    }
+    private void EmitCarbonizeSpray()
+    {
+        // Original bh_carbonize_cast spray texture, using its real alpha channel.
+        // Do not display projector/color textures as opaque particle cards.
+        var s=AlphaSprite("res://Assets/Powertech/carbonite_spray_02.png",.065f);
+        var origin=MuzzleWorld();var direction=origin-Actor.GlobalPosition;direction.Y=0;
+        if(direction.LengthSquared()<.0001f)direction=-Actor.GlobalBasis.Z;
+        direction=direction.Normalized();var velocity=direction*.65f+Vector3.Up*.025f;
+        Add(s,.4,fx=>{float f=(float)(fx.Age/fx.Life);fx.Node.GlobalPosition=origin+velocity*(float)fx.Age;s.Scale=new Vector3(1+f,1.4f+f,1);s.Modulate=new Color(.74f,.8f,.84f,.65f*Math.Min(1,f*6)*(1-f));});
+        s.GlobalPosition=origin;
+    }
+    private void EmitConeFlame()
+    {
+        var s=Sprite("res://Assets/Powertech/4x4_flame_lick_02_bw.png",.09f,4);
+        var origin=MuzzleWorld();var direction=(_forward+new Vector3(_random.RandfRange(-.2f,.2f),.08f,_random.RandfRange(-.2f,.2f))).Normalized();
+        Add(s,.45,fx=>{float f=(float)(fx.Age/fx.Life);fx.Node.GlobalPosition=origin+direction*f*.45f;s.Frame=Math.Min(15,(int)(f*16));s.Modulate=new Color(1,1,1,1-f);});s.GlobalPosition=origin;
     }
     private void EmitFlame()
     {
@@ -203,10 +233,12 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
     {
         if(path=="" || !ResourceLoader.Exists(path) || _voices.Count==0)return;
         var voice=_voices[Math.Clamp(slot,0,_voices.Count-1)];
+        voice.VolumeDb=Definition.Id=="carbonize"?-9:-18;
         voice.Stop();voice.Stream=GD.Load<AudioStream>(path);voice.GlobalPosition=point;voice.Play();
     }
     public override void _Process(double delta)
     {
+        AdvanceRepair(delta);
         for(int i=_delayed.Count-1;i>=0;i--){var d=_delayed[i];d.at-=delta;if(d.at<=0){_delayed.RemoveAt(i);d.run();}else _delayed[i]=d;}
         if(_gas>0)
         {
@@ -218,15 +250,16 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
             if(!GodotObject.IsInstanceValid(_bubble)){_bubble=null;}
             else
             {
-                _bubbleAge+=delta;_bubble.GlobalPosition=Actor.GlobalPosition+Vector3.Up*.09f;
+                _bubbleAge+=delta;_bubble.GlobalPosition=ShieldPosition();
                 if(_shieldHealth!=null && GodotObject.IsInstanceValid(_shieldHealth) && _shieldHealth.Shielded)_bubbleSeen=true;
                 if((_bubbleSeen && !(_shieldHealth?.Shielded??false)) || (!_bubbleSeen && _bubbleAge>1)){_bubble.QueueFree();_bubble=null;}
             }
         }
+        if(_carbon>0){_carbon-=delta;_carbonSpawn-=delta;while(_carbonSpawn<=0){_carbonSpawn+=.035;EmitCarbonizeSpray();}}
         if(_flame>0)
         {
             _flame-=delta;_flameSpawn-=delta;
-            while(_flameSpawn<=0){_flameSpawn+=.045;EmitFlame();}
+            while(_flameSpawn<=0){_flameSpawn+=.045;if(Definition.Id=="flamethrower")EmitConeFlame();else EmitFlame();}
         }
         for(int i=_effects.Count-1;i>=0;i--)
         {
@@ -235,11 +268,12 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
             fx.Update?.Invoke(fx);
         }
     }
-    public void End(bool interrupted){ _flame=0;if(interrupted)Release(); }
-    public void Complete(){ _flame=0; }
+    public void End(bool interrupted){ _flame=0;EndRepair();if(interrupted)Release(); }
+    public void Complete(){ _flame=0;_carbon=0; }
     public void Release()
     {
-        _flame=0;_gas=0;_delayed.Clear();
+        _flame=0;_carbon=0;_gas=0;_delayed.Clear();
+        ReleaseRepair();
         if(_bubble!=null && GodotObject.IsInstanceValid(_bubble))_bubble.QueueFree();_bubble=null;
         foreach(var e in _effects)if(GodotObject.IsInstanceValid(e.Node))e.Node.QueueFree();
         _effects.Clear();foreach(var v in _voices)if(GodotObject.IsInstanceValid(v))v.Stop();

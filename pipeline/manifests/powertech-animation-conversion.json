@@ -1,0 +1,37 @@
+{
+  "clips": [
+    {
+      "name": "RocketPunch",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rocket_uppercut.jba",
+      "seconds": 1.0,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "ThrowStart",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_bounty_double_flame_start.jba",
+      "seconds": 0.5333333611488342,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "ThrowLoop",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_bounty_double_flame_loop.jba",
+      "seconds": 1.4666666984558105,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "ThrowEnd",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_bounty_double_flame_end.jba",
+      "seconds": 0.4000000059604645,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Carbonized",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\dg_incap_carbonize_loop.jba",
+      "seconds": 0.13333334028720856,
+      "sourceFps": 15.0
+    }
+  ],
+  "output": "godot\\Assets\\Powertech\\casts.glb",
+  "sha256": "d65abae70ff166d3b3392150c89c0b02fa2cb778b0ead67c392b82a0fcfe6243",
+  "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
+}

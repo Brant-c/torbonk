@@ -1,0 +1,79 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 180,
+  "maximumDecodedBytes": 104857600,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x444FF8ABAA63ADC7",
+      "entryOffset": 68367478,
+      "headerSize": 36,
+      "dataOffset": 68367514,
+      "compressedSize": 1178,
+      "length": 1178,
+      "compressionMethod": 0,
+      "crc32Index": "839b3330",
+      "path": "/resources/gfx/gfx_production/bwaui_menubar.gfx",
+      "sha256": "dc4e0fb32c57c24c66200f9dac31475e122a21a99ce4ae1e1f62a243834478d2",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_menubar.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x1366334E022AF076",
+      "entryOffset": 68370919,
+      "headerSize": 36,
+      "dataOffset": 68370955,
+      "compressedSize": 2081,
+      "length": 2081,
+      "compressionMethod": 0,
+      "crc32Index": "da49a75e",
+      "path": "/resources/gfx/gfx_production/bwaui_minimap.gfx",
+      "sha256": "ebd6ca0e61744d11bd34154ec183af8615c2de473841e80366f1d600e5412501",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_minimap.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x7A93AC26949C24E6",
+      "entryOffset": 62662877,
+      "headerSize": 36,
+      "dataOffset": 62662913,
+      "compressedSize": 275077,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "d05be4e7",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_18.dds",
+      "sha256": "7e08cdb57c29daf0bbc7ded941065125f70d25bf9f83c9deeb86dedd63d6e339",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_18.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "run menu",
+      "to": "/resources/gfx/gfx_production/bwaui_menubar.gfx",
+      "relation": "candidate menu artwork"
+    },
+    {
+      "from": "run menu",
+      "to": "/resources/gfx/gfx_production/bwaui_minimap.gfx",
+      "relation": "candidate menu artwork"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/gfx/gfx_production/bwaui_menubar.gfx",
+      "relation": "selected dependency"
+    },
+    {
+      "from": "/resources/gfx/gfx_production/bwaui_menubar.gfx",
+      "to": "/resources/gfx/gfx_production/bwa_uitexture_18.dds",
+      "relation": "menu atlas"
+    }
+  ],
+  "unresolved": [],
+  "selection": "human male body type 2; bmnnew skeleton"
+}

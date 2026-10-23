@@ -1,0 +1,710 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+Unlocks: Legacy save loads without notice
+Unlocks: Legacy save keeps unlocked and equipped chest
+Unlocks: Legacy save starts with no milestones
+Unlocks: Every SS A04 piece has a gameplay unlock
+Unlocks: Milestones reference known appearances
+Unlocks: Alternate pieces start locked
+Unlocks: Feet hint names its milestone
+Unlocks: Republic classes earn nothing
+Unlocks: Locked appearances are absent from the menu
+Unlocks: Wave 3 earns waves 2 and 3
+Unlocks: Earned pieces unlock, later pieces stay locked
+Unlocks: Milestones award once
+Unlocks: Milestones and unlocks persist
+Unlocks: Completed milestones re-grant missing pieces
+Unlocks: Enabled: New Run
+Unlocks: Transition completed
+Unlocks: Enabled: Sith Empire
+Unlocks: Transition completed
+Unlocks: Enabled: Sith Inquisitor
+Unlocks: Enabled: Continue
+Unlocks: Transition completed
+Unlocks: Enabled: Sorcerer
+Unlocks: Enabled: Continue
+Unlocks: Transition completed
+Unlocks: Enabled: Korriban
+Unlocks: Enabled: Continue
+Unlocks: Transition completed
+Unlocks: Enabled: Play
+Unlocks: Transition completed
+Unlocks: Run hosts the unlock tracker
+Unlocks: Wave 5 and boss defeat earn the remaining pieces
+Unlocks: Unlock toast names the pieces
+Unlocks: All five alternate pieces unlocked on disk
+Unlocks: Unlocking leaves the live outfit and combat untouched
+Unlocks: Restart re-awards nothing
+Unlocks: Twenty new pieces start locked
+Unlocks: sith_inquisitor earns only its own five pieces
+Unlocks: sith_inquisitor unlocks persist without granting other families
+Unlocks: Earned piece shared with sith_warrior: wardrobe.inq.chest
+Unlocks: Earned piece shared with sith_inquisitor: wardrobe.inq.chest
+Unlocks: Earned piece shared with sith_warrior: wardrobe.inq.hands
+Unlocks: Earned piece shared with sith_inquisitor: wardrobe.inq.hands
+Unlocks: Earned piece shared with sith_warrior: wardrobe.inq.legs
+Unlocks: Earned piece shared with sith_inquisitor: wardrobe.inq.legs
+Unlocks: Earned piece shared with sith_warrior: wardrobe.inq.feet
+Unlocks: Earned piece shared with sith_inquisitor: wardrobe.inq.feet
+Unlocks: Earned piece shared with sith_warrior: wardrobe.inq.waist
+Unlocks: Earned piece shared with sith_inquisitor: wardrobe.inq.waist
+Unlocks: sith_warrior earns only its own five pieces
+Unlocks: sith_warrior unlocks persist without granting other families
+Unlocks: Earned piece shared with sith_warrior: wardrobe.war.chest
+Unlocks: Earned piece shared with sith_inquisitor: wardrobe.war.chest
+Unlocks: Earned piece shared with sith_warrior: wardrobe.war.hands
+Unlocks: Earned piece shared with sith_inquisitor: wardrobe.war.hands
+Unlocks: Earned piece shared with sith_warrior: wardrobe.war.legs
+Unlocks: Earned piece shared with sith_inquisitor: wardrobe.war.legs
+Unlocks: Earned piece shared with sith_warrior: wardrobe.war.feet
+Unlocks: Earned piece shared with sith_inquisitor: wardrobe.war.feet
+Unlocks: Earned piece shared with sith_warrior: wardrobe.war.waist
+Unlocks: Earned piece shared with sith_inquisitor: wardrobe.war.waist
+Unlocks: imperial_agent earns only its own five pieces
+Unlocks: imperial_agent unlocks persist without granting other families
+Unlocks: Earned piece shared with imperial_agent: wardrobe.spy.chest
+Unlocks: Earned piece shared with bounty_hunter: wardrobe.spy.chest
+Unlocks: Earned piece shared with imperial_agent: wardrobe.spy.hands
+Unlocks: Earned piece shared with bounty_hunter: wardrobe.spy.hands
+Unlocks: Earned piece shared with imperial_agent: wardrobe.spy.legs
+Unlocks: Earned piece shared with bounty_hunter: wardrobe.spy.legs
+Unlocks: Earned piece shared with imperial_agent: wardrobe.spy.feet
+Unlocks: Earned piece shared with bounty_hunter: wardrobe.spy.feet
+Unlocks: Earned piece shared with imperial_agent: wardrobe.spy.waist
+Unlocks: Earned piece shared with bounty_hunter: wardrobe.spy.waist
+Unlocks: bounty_hunter earns only its own five pieces
+Unlocks: bounty_hunter unlocks persist without granting other families
+Unlocks: Earned piece shared with imperial_agent: wardrobe.bh.chest
+Unlocks: Earned piece shared with bounty_hunter: wardrobe.bh.chest
+Unlocks: Earned piece shared with imperial_agent: wardrobe.bh.hands
+Unlocks: Earned piece shared with bounty_hunter: wardrobe.bh.hands
+Unlocks: Earned piece shared with imperial_agent: wardrobe.bh.legs
+Unlocks: Earned piece shared with bounty_hunter: wardrobe.bh.legs
+Unlocks: Earned piece shared with imperial_agent: wardrobe.bh.feet
+Unlocks: Earned piece shared with bounty_hunter: wardrobe.bh.feet
+Unlocks: Earned piece shared with imperial_agent: wardrobe.bh.waist
+Unlocks: Earned piece shared with bounty_hunter: wardrobe.bh.waist
+Unlocks: Collectible wave rewards: sith_warrior
+Unlocks: Collectible rewards persist: sith_warrior
+Unlocks: Collectible wave rewards: sith_inquisitor
+Unlocks: Collectible rewards persist: sith_inquisitor
+Unlocks: Collectible wave rewards: imperial_agent
+Unlocks: Collectible rewards persist: imperial_agent
+Unlocks: Collectible wave rewards: bounty_hunter
+Unlocks: Collectible rewards persist: bounty_hunter
+Unlocks: juggernaut pairing and mesh: wardrobe.war.chest
+Unlocks: Exact icon loads: wardrobe.war.chest
+Unlocks: juggernaut pairing and mesh: wardrobe.war.hands
+Unlocks: Exact icon loads: wardrobe.war.hands
+Unlocks: juggernaut pairing and mesh: wardrobe.war.legs
+Unlocks: Exact icon loads: wardrobe.war.legs
+Unlocks: juggernaut pairing and mesh: wardrobe.war.feet
+Unlocks: Exact icon loads: wardrobe.war.feet
+Unlocks: juggernaut pairing and mesh: wardrobe.war.waist
+Unlocks: Exact icon loads: wardrobe.war.waist
+Unlocks: juggernaut pairing and mesh: wardrobe.inq.chest
+Unlocks: Exact icon loads: wardrobe.inq.chest
+Unlocks: juggernaut pairing and mesh: wardrobe.inq.hands
+Unlocks: Exact icon loads: wardrobe.inq.hands
+Unlocks: juggernaut pairing and mesh: wardrobe.inq.legs
+Unlocks: Exact icon loads: wardrobe.inq.legs
+Unlocks: juggernaut pairing and mesh: wardrobe.inq.feet
+Unlocks: Exact icon loads: wardrobe.inq.feet
+Unlocks: juggernaut pairing and mesh: wardrobe.inq.waist
+Unlocks: Exact icon loads: wardrobe.inq.waist
+Unlocks: juggernaut pairing and mesh: wardrobe.spy.chest
+Unlocks: Exact icon loads: wardrobe.spy.chest
+Unlocks: juggernaut pairing and mesh: wardrobe.spy.hands
+Unlocks: Exact icon loads: wardrobe.spy.hands
+Unlocks: juggernaut pairing and mesh: wardrobe.spy.legs
+Unlocks: Exact icon loads: wardrobe.spy.legs
+Unlocks: juggernaut pairing and mesh: wardrobe.spy.feet
+Unlocks: Exact icon loads: wardrobe.spy.feet
+Unlocks: juggernaut pairing and mesh: wardrobe.spy.waist
+Unlocks: Exact icon loads: wardrobe.spy.waist
+Unlocks: juggernaut pairing and mesh: wardrobe.bh.chest
+Unlocks: Exact icon loads: wardrobe.bh.chest
+Unlocks: juggernaut pairing and mesh: wardrobe.bh.hands
+Unlocks: Exact icon loads: wardrobe.bh.hands
+Unlocks: juggernaut pairing and mesh: wardrobe.bh.legs
+Unlocks: Exact icon loads: wardrobe.bh.legs
+Unlocks: juggernaut pairing and mesh: wardrobe.bh.feet
+Unlocks: Exact icon loads: wardrobe.bh.feet
+Unlocks: juggernaut pairing and mesh: wardrobe.bh.waist
+Unlocks: Exact icon loads: wardrobe.bh.waist
+Unlocks: juggernaut collectible compatibility and mesh: collectible.war.head
+Unlocks: Restore after collectible
+Unlocks: juggernaut collectible compatibility and mesh: collectible.inq.head
+Unlocks: Restore after collectible
+Unlocks: juggernaut collectible compatibility and mesh: collectible.spy.head
+Unlocks: Restore after collectible
+Unlocks: juggernaut collectible compatibility and mesh: collectible.bh.head
+Unlocks: Restore after collectible
+Unlocks: juggernaut collectible compatibility and mesh: collectible.saber1.main_hand
+Unlocks: Restore after collectible
+Unlocks: juggernaut collectible compatibility and mesh: collectible.saber1.off_hand
+Unlocks: Restore after collectible
+Unlocks: juggernaut collectible compatibility and mesh: collectible.saber2.main_hand
+Unlocks: Restore after collectible
+Unlocks: juggernaut collectible compatibility and mesh: collectible.saber2.off_hand
+Unlocks: Restore after collectible
+Unlocks: juggernaut collectible compatibility and mesh: collectible.staff1.main_hand
+Unlocks: Restore after collectible
+Unlocks: juggernaut collectible compatibility and mesh: collectible.staff2.main_hand
+Unlocks: Restore after collectible
+Unlocks: juggernaut collectible compatibility and mesh: collectible.pistol1.main_hand
+Unlocks: Restore after collectible
+Unlocks: juggernaut collectible compatibility and mesh: collectible.pistol1.off_hand
+Unlocks: Restore after collectible
+Unlocks: juggernaut collectible compatibility and mesh: collectible.pistol2.main_hand
+Unlocks: Restore after collectible
+Unlocks: juggernaut collectible compatibility and mesh: collectible.pistol2.off_hand
+Unlocks: Restore after collectible
+Unlocks: juggernaut collectible compatibility and mesh: collectible.rifle1.main_hand
+Unlocks: Restore after collectible
+Unlocks: juggernaut collectible compatibility and mesh: collectible.rifle2.main_hand
+Unlocks: Restore after collectible
+Unlocks: Capture outfit: collectible.war.head
+Unlocks: Capture outfit: collectible.saber2.main_hand
+Unlocks: marauder pairing and mesh: wardrobe.war.chest
+Unlocks: Exact icon loads: wardrobe.war.chest
+Unlocks: marauder pairing and mesh: wardrobe.war.hands
+Unlocks: Exact icon loads: wardrobe.war.hands
+Unlocks: marauder pairing and mesh: wardrobe.war.legs
+Unlocks: Exact icon loads: wardrobe.war.legs
+Unlocks: marauder pairing and mesh: wardrobe.war.feet
+Unlocks: Exact icon loads: wardrobe.war.feet
+Unlocks: marauder pairing and mesh: wardrobe.war.waist
+Unlocks: Exact icon loads: wardrobe.war.waist
+Unlocks: marauder pairing and mesh: wardrobe.inq.chest
+Unlocks: Exact icon loads: wardrobe.inq.chest
+Unlocks: marauder pairing and mesh: wardrobe.inq.hands
+Unlocks: Exact icon loads: wardrobe.inq.hands
+Unlocks: marauder pairing and mesh: wardrobe.inq.legs
+Unlocks: Exact icon loads: wardrobe.inq.legs
+Unlocks: marauder pairing and mesh: wardrobe.inq.feet
+Unlocks: Exact icon loads: wardrobe.inq.feet
+Unlocks: marauder pairing and mesh: wardrobe.inq.waist
+Unlocks: Exact icon loads: wardrobe.inq.waist
+Unlocks: marauder pairing and mesh: wardrobe.spy.chest
+Unlocks: Exact icon loads: wardrobe.spy.chest
+Unlocks: marauder pairing and mesh: wardrobe.spy.hands
+Unlocks: Exact icon loads: wardrobe.spy.hands
+Unlocks: marauder pairing and mesh: wardrobe.spy.legs
+Unlocks: Exact icon loads: wardrobe.spy.legs
+Unlocks: marauder pairing and mesh: wardrobe.spy.feet
+Unlocks: Exact icon loads: wardrobe.spy.feet
+Unlocks: marauder pairing and mesh: wardrobe.spy.waist
+Unlocks: Exact icon loads: wardrobe.spy.waist
+Unlocks: marauder pairing and mesh: wardrobe.bh.chest
+Unlocks: Exact icon loads: wardrobe.bh.chest
+Unlocks: marauder pairing and mesh: wardrobe.bh.hands
+Unlocks: Exact icon loads: wardrobe.bh.hands
+Unlocks: marauder pairing and mesh: wardrobe.bh.legs
+Unlocks: Exact icon loads: wardrobe.bh.legs
+Unlocks: marauder pairing and mesh: wardrobe.bh.feet
+Unlocks: Exact icon loads: wardrobe.bh.feet
+Unlocks: marauder pairing and mesh: wardrobe.bh.waist
+Unlocks: Exact icon loads: wardrobe.bh.waist
+Unlocks: marauder collectible compatibility and mesh: collectible.war.head
+Unlocks: Restore after collectible
+Unlocks: marauder collectible compatibility and mesh: collectible.inq.head
+Unlocks: Restore after collectible
+Unlocks: marauder collectible compatibility and mesh: collectible.spy.head
+Unlocks: Restore after collectible
+Unlocks: marauder collectible compatibility and mesh: collectible.bh.head
+Unlocks: Restore after collectible
+Unlocks: marauder collectible compatibility and mesh: collectible.saber1.main_hand
+Unlocks: Dual cosmetic mirrors left socket: collectible.saber1.main_hand
+Unlocks: Restore after collectible
+Unlocks: marauder collectible compatibility and mesh: collectible.saber1.off_hand
+Unlocks: Restore after collectible
+Unlocks: marauder collectible compatibility and mesh: collectible.saber2.main_hand
+Unlocks: Dual cosmetic mirrors left socket: collectible.saber2.main_hand
+Unlocks: Restore after collectible
+Unlocks: marauder collectible compatibility and mesh: collectible.saber2.off_hand
+Unlocks: Restore after collectible
+Unlocks: marauder collectible compatibility and mesh: collectible.staff1.main_hand
+Unlocks: Restore after collectible
+Unlocks: marauder collectible compatibility and mesh: collectible.staff2.main_hand
+Unlocks: Restore after collectible
+Unlocks: marauder collectible compatibility and mesh: collectible.pistol1.main_hand
+Unlocks: Restore after collectible
+Unlocks: marauder collectible compatibility and mesh: collectible.pistol1.off_hand
+Unlocks: Restore after collectible
+Unlocks: marauder collectible compatibility and mesh: collectible.pistol2.main_hand
+Unlocks: Restore after collectible
+Unlocks: marauder collectible compatibility and mesh: collectible.pistol2.off_hand
+Unlocks: Restore after collectible
+Unlocks: marauder collectible compatibility and mesh: collectible.rifle1.main_hand
+Unlocks: Restore after collectible
+Unlocks: marauder collectible compatibility and mesh: collectible.rifle2.main_hand
+Unlocks: Restore after collectible
+Unlocks: Capture outfit: collectible.war.head
+Unlocks: Capture outfit: collectible.saber2.main_hand
+Unlocks: sorcerer pairing and mesh: wardrobe.war.chest
+Unlocks: Exact icon loads: wardrobe.war.chest
+Unlocks: sorcerer pairing and mesh: wardrobe.war.hands
+Unlocks: Exact icon loads: wardrobe.war.hands
+Unlocks: sorcerer pairing and mesh: wardrobe.war.legs
+Unlocks: Exact icon loads: wardrobe.war.legs
+Unlocks: sorcerer pairing and mesh: wardrobe.war.feet
+Unlocks: Exact icon loads: wardrobe.war.feet
+Unlocks: sorcerer pairing and mesh: wardrobe.war.waist
+Unlocks: Exact icon loads: wardrobe.war.waist
+Unlocks: sorcerer pairing and mesh: wardrobe.inq.chest
+Unlocks: Exact icon loads: wardrobe.inq.chest
+Unlocks: sorcerer pairing and mesh: wardrobe.inq.hands
+Unlocks: Exact icon loads: wardrobe.inq.hands
+Unlocks: sorcerer pairing and mesh: wardrobe.inq.legs
+Unlocks: Exact icon loads: wardrobe.inq.legs
+Unlocks: sorcerer pairing and mesh: wardrobe.inq.feet
+Unlocks: Exact icon loads: wardrobe.inq.feet
+Unlocks: sorcerer pairing and mesh: wardrobe.inq.waist
+Unlocks: Exact icon loads: wardrobe.inq.waist
+Unlocks: sorcerer pairing and mesh: wardrobe.spy.chest
+Unlocks: Exact icon loads: wardrobe.spy.chest
+Unlocks: sorcerer pairing and mesh: wardrobe.spy.hands
+Unlocks: Exact icon loads: wardrobe.spy.hands
+Unlocks: sorcerer pairing and mesh: wardrobe.spy.legs
+Unlocks: Exact icon loads: wardrobe.spy.legs
+Unlocks: sorcerer pairing and mesh: wardrobe.spy.feet
+Unlocks: Exact icon loads: wardrobe.spy.feet
+Unlocks: sorcerer pairing and mesh: wardrobe.spy.waist
+Unlocks: Exact icon loads: wardrobe.spy.waist
+Unlocks: sorcerer pairing and mesh: wardrobe.bh.chest
+Unlocks: Exact icon loads: wardrobe.bh.chest
+Unlocks: sorcerer pairing and mesh: wardrobe.bh.hands
+Unlocks: Exact icon loads: wardrobe.bh.hands
+Unlocks: sorcerer pairing and mesh: wardrobe.bh.legs
+Unlocks: Exact icon loads: wardrobe.bh.legs
+Unlocks: sorcerer pairing and mesh: wardrobe.bh.feet
+Unlocks: Exact icon loads: wardrobe.bh.feet
+Unlocks: sorcerer pairing and mesh: wardrobe.bh.waist
+Unlocks: Exact icon loads: wardrobe.bh.waist
+Unlocks: sorcerer collectible compatibility and mesh: collectible.war.head
+Unlocks: Restore after collectible
+Unlocks: sorcerer collectible compatibility and mesh: collectible.inq.head
+Unlocks: Restore after collectible
+Unlocks: sorcerer collectible compatibility and mesh: collectible.spy.head
+Unlocks: Restore after collectible
+Unlocks: sorcerer collectible compatibility and mesh: collectible.bh.head
+Unlocks: Restore after collectible
+Unlocks: sorcerer collectible compatibility and mesh: collectible.saber1.main_hand
+Unlocks: Restore after collectible
+Unlocks: sorcerer collectible compatibility and mesh: collectible.saber1.off_hand
+Unlocks: Restore after collectible
+Unlocks: sorcerer collectible compatibility and mesh: collectible.saber2.main_hand
+Unlocks: Restore after collectible
+Unlocks: sorcerer collectible compatibility and mesh: collectible.saber2.off_hand
+Unlocks: Restore after collectible
+Unlocks: sorcerer collectible compatibility and mesh: collectible.staff1.main_hand
+Unlocks: Restore after collectible
+Unlocks: sorcerer collectible compatibility and mesh: collectible.staff2.main_hand
+Unlocks: Restore after collectible
+Unlocks: sorcerer collectible compatibility and mesh: collectible.pistol1.main_hand
+Unlocks: Restore after collectible
+Unlocks: sorcerer collectible compatibility and mesh: collectible.pistol1.off_hand
+Unlocks: Restore after collectible
+Unlocks: sorcerer collectible compatibility and mesh: collectible.pistol2.main_hand
+Unlocks: Restore after collectible
+Unlocks: sorcerer collectible compatibility and mesh: collectible.pistol2.off_hand
+Unlocks: Restore after collectible
+Unlocks: sorcerer collectible compatibility and mesh: collectible.rifle1.main_hand
+Unlocks: Restore after collectible
+Unlocks: sorcerer collectible compatibility and mesh: collectible.rifle2.main_hand
+Unlocks: Restore after collectible
+Unlocks: Capture outfit: collectible.inq.head
+Unlocks: Capture outfit: collectible.saber2.main_hand
+Unlocks: assassin pairing and mesh: wardrobe.war.chest
+Unlocks: Exact icon loads: wardrobe.war.chest
+Unlocks: assassin pairing and mesh: wardrobe.war.hands
+Unlocks: Exact icon loads: wardrobe.war.hands
+Unlocks: assassin pairing and mesh: wardrobe.war.legs
+Unlocks: Exact icon loads: wardrobe.war.legs
+Unlocks: assassin pairing and mesh: wardrobe.war.feet
+Unlocks: Exact icon loads: wardrobe.war.feet
+Unlocks: assassin pairing and mesh: wardrobe.war.waist
+Unlocks: Exact icon loads: wardrobe.war.waist
+Unlocks: assassin pairing and mesh: wardrobe.inq.chest
+Unlocks: Exact icon loads: wardrobe.inq.chest
+Unlocks: assassin pairing and mesh: wardrobe.inq.hands
+Unlocks: Exact icon loads: wardrobe.inq.hands
+Unlocks: assassin pairing and mesh: wardrobe.inq.legs
+Unlocks: Exact icon loads: wardrobe.inq.legs
+Unlocks: assassin pairing and mesh: wardrobe.inq.feet
+Unlocks: Exact icon loads: wardrobe.inq.feet
+Unlocks: assassin pairing and mesh: wardrobe.inq.waist
+Unlocks: Exact icon loads: wardrobe.inq.waist
+Unlocks: assassin pairing and mesh: wardrobe.spy.chest
+Unlocks: Exact icon loads: wardrobe.spy.chest
+Unlocks: assassin pairing and mesh: wardrobe.spy.hands
+Unlocks: Exact icon loads: wardrobe.spy.hands
+Unlocks: assassin pairing and mesh: wardrobe.spy.legs
+Unlocks: Exact icon loads: wardrobe.spy.legs
+Unlocks: assassin pairing and mesh: wardrobe.spy.feet
+Unlocks: Exact icon loads: wardrobe.spy.feet
+Unlocks: assassin pairing and mesh: wardrobe.spy.waist
+Unlocks: Exact icon loads: wardrobe.spy.waist
+Unlocks: assassin pairing and mesh: wardrobe.bh.chest
+Unlocks: Exact icon loads: wardrobe.bh.chest
+Unlocks: assassin pairing and mesh: wardrobe.bh.hands
+Unlocks: Exact icon loads: wardrobe.bh.hands
+Unlocks: assassin pairing and mesh: wardrobe.bh.legs
+Unlocks: Exact icon loads: wardrobe.bh.legs
+Unlocks: assassin pairing and mesh: wardrobe.bh.feet
+Unlocks: Exact icon loads: wardrobe.bh.feet
+Unlocks: assassin pairing and mesh: wardrobe.bh.waist
+Unlocks: Exact icon loads: wardrobe.bh.waist
+Unlocks: assassin collectible compatibility and mesh: collectible.war.head
+Unlocks: Restore after collectible
+Unlocks: assassin collectible compatibility and mesh: collectible.inq.head
+Unlocks: Restore after collectible
+Unlocks: assassin collectible compatibility and mesh: collectible.spy.head
+Unlocks: Restore after collectible
+Unlocks: assassin collectible compatibility and mesh: collectible.bh.head
+Unlocks: Restore after collectible
+Unlocks: assassin collectible compatibility and mesh: collectible.saber1.main_hand
+Unlocks: Restore after collectible
+Unlocks: assassin collectible compatibility and mesh: collectible.saber1.off_hand
+Unlocks: Restore after collectible
+Unlocks: assassin collectible compatibility and mesh: collectible.saber2.main_hand
+Unlocks: Restore after collectible
+Unlocks: assassin collectible compatibility and mesh: collectible.saber2.off_hand
+Unlocks: Restore after collectible
+Unlocks: assassin collectible compatibility and mesh: collectible.staff1.main_hand
+Unlocks: Restore after collectible
+Unlocks: assassin collectible compatibility and mesh: collectible.staff2.main_hand
+Unlocks: Restore after collectible
+Unlocks: assassin collectible compatibility and mesh: collectible.pistol1.main_hand
+Unlocks: Restore after collectible
+Unlocks: assassin collectible compatibility and mesh: collectible.pistol1.off_hand
+Unlocks: Restore after collectible
+Unlocks: assassin collectible compatibility and mesh: collectible.pistol2.main_hand
+Unlocks: Restore after collectible
+Unlocks: assassin collectible compatibility and mesh: collectible.pistol2.off_hand
+Unlocks: Restore after collectible
+Unlocks: assassin collectible compatibility and mesh: collectible.rifle1.main_hand
+Unlocks: Restore after collectible
+Unlocks: assassin collectible compatibility and mesh: collectible.rifle2.main_hand
+Unlocks: Restore after collectible
+Unlocks: Capture outfit: collectible.inq.head
+Unlocks: Capture outfit: collectible.staff2.main_hand
+Unlocks: sniper pairing and mesh: wardrobe.war.chest
+Unlocks: Exact icon loads: wardrobe.war.chest
+Unlocks: sniper pairing and mesh: wardrobe.war.hands
+Unlocks: Exact icon loads: wardrobe.war.hands
+Unlocks: sniper pairing and mesh: wardrobe.war.legs
+Unlocks: Exact icon loads: wardrobe.war.legs
+Unlocks: sniper pairing and mesh: wardrobe.war.feet
+Unlocks: Exact icon loads: wardrobe.war.feet
+Unlocks: sniper pairing and mesh: wardrobe.war.waist
+Unlocks: Exact icon loads: wardrobe.war.waist
+Unlocks: sniper pairing and mesh: wardrobe.inq.chest
+Unlocks: Exact icon loads: wardrobe.inq.chest
+Unlocks: sniper pairing and mesh: wardrobe.inq.hands
+Unlocks: Exact icon loads: wardrobe.inq.hands
+Unlocks: sniper pairing and mesh: wardrobe.inq.legs
+Unlocks: Exact icon loads: wardrobe.inq.legs
+Unlocks: sniper pairing and mesh: wardrobe.inq.feet
+Unlocks: Exact icon loads: wardrobe.inq.feet
+Unlocks: sniper pairing and mesh: wardrobe.inq.waist
+Unlocks: Exact icon loads: wardrobe.inq.waist
+Unlocks: sniper pairing and mesh: wardrobe.spy.chest
+Unlocks: Exact icon loads: wardrobe.spy.chest
+Unlocks: sniper pairing and mesh: wardrobe.spy.hands
+Unlocks: Exact icon loads: wardrobe.spy.hands
+Unlocks: sniper pairing and mesh: wardrobe.spy.legs
+Unlocks: Exact icon loads: wardrobe.spy.legs
+Unlocks: sniper pairing and mesh: wardrobe.spy.feet
+Unlocks: Exact icon loads: wardrobe.spy.feet
+Unlocks: sniper pairing and mesh: wardrobe.spy.waist
+Unlocks: Exact icon loads: wardrobe.spy.waist
+Unlocks: sniper pairing and mesh: wardrobe.bh.chest
+Unlocks: Exact icon loads: wardrobe.bh.chest
+Unlocks: sniper pairing and mesh: wardrobe.bh.hands
+Unlocks: Exact icon loads: wardrobe.bh.hands
+Unlocks: sniper pairing and mesh: wardrobe.bh.legs
+Unlocks: Exact icon loads: wardrobe.bh.legs
+Unlocks: sniper pairing and mesh: wardrobe.bh.feet
+Unlocks: Exact icon loads: wardrobe.bh.feet
+Unlocks: sniper pairing and mesh: wardrobe.bh.waist
+Unlocks: Exact icon loads: wardrobe.bh.waist
+Unlocks: sniper collectible compatibility and mesh: collectible.war.head
+Unlocks: Restore after collectible
+Unlocks: sniper collectible compatibility and mesh: collectible.inq.head
+Unlocks: Restore after collectible
+Unlocks: sniper collectible compatibility and mesh: collectible.spy.head
+Unlocks: Restore after collectible
+Unlocks: sniper collectible compatibility and mesh: collectible.bh.head
+Unlocks: Restore after collectible
+Unlocks: sniper collectible compatibility and mesh: collectible.saber1.main_hand
+Unlocks: Restore after collectible
+Unlocks: sniper collectible compatibility and mesh: collectible.saber1.off_hand
+Unlocks: Restore after collectible
+Unlocks: sniper collectible compatibility and mesh: collectible.saber2.main_hand
+Unlocks: Restore after collectible
+Unlocks: sniper collectible compatibility and mesh: collectible.saber2.off_hand
+Unlocks: Restore after collectible
+Unlocks: sniper collectible compatibility and mesh: collectible.staff1.main_hand
+Unlocks: Restore after collectible
+Unlocks: sniper collectible compatibility and mesh: collectible.staff2.main_hand
+Unlocks: Restore after collectible
+Unlocks: sniper collectible compatibility and mesh: collectible.pistol1.main_hand
+Unlocks: Restore after collectible
+Unlocks: sniper collectible compatibility and mesh: collectible.pistol1.off_hand
+Unlocks: Restore after collectible
+Unlocks: sniper collectible compatibility and mesh: collectible.pistol2.main_hand
+Unlocks: Restore after collectible
+Unlocks: sniper collectible compatibility and mesh: collectible.pistol2.off_hand
+Unlocks: Restore after collectible
+Unlocks: sniper collectible compatibility and mesh: collectible.rifle1.main_hand
+Unlocks: Restore after collectible
+Unlocks: sniper collectible compatibility and mesh: collectible.rifle2.main_hand
+Unlocks: Restore after collectible
+Unlocks: Capture outfit: collectible.spy.head
+Unlocks: Capture outfit: collectible.rifle2.main_hand
+Unlocks: operative pairing and mesh: wardrobe.war.chest
+Unlocks: Exact icon loads: wardrobe.war.chest
+Unlocks: operative pairing and mesh: wardrobe.war.hands
+Unlocks: Exact icon loads: wardrobe.war.hands
+Unlocks: operative pairing and mesh: wardrobe.war.legs
+Unlocks: Exact icon loads: wardrobe.war.legs
+Unlocks: operative pairing and mesh: wardrobe.war.feet
+Unlocks: Exact icon loads: wardrobe.war.feet
+Unlocks: operative pairing and mesh: wardrobe.war.waist
+Unlocks: Exact icon loads: wardrobe.war.waist
+Unlocks: operative pairing and mesh: wardrobe.inq.chest
+Unlocks: Exact icon loads: wardrobe.inq.chest
+Unlocks: operative pairing and mesh: wardrobe.inq.hands
+Unlocks: Exact icon loads: wardrobe.inq.hands
+Unlocks: operative pairing and mesh: wardrobe.inq.legs
+Unlocks: Exact icon loads: wardrobe.inq.legs
+Unlocks: operative pairing and mesh: wardrobe.inq.feet
+Unlocks: Exact icon loads: wardrobe.inq.feet
+Unlocks: operative pairing and mesh: wardrobe.inq.waist
+Unlocks: Exact icon loads: wardrobe.inq.waist
+Unlocks: operative pairing and mesh: wardrobe.spy.chest
+Unlocks: Exact icon loads: wardrobe.spy.chest
+Unlocks: operative pairing and mesh: wardrobe.spy.hands
+Unlocks: Exact icon loads: wardrobe.spy.hands
+Unlocks: operative pairing and mesh: wardrobe.spy.legs
+Unlocks: Exact icon loads: wardrobe.spy.legs
+Unlocks: operative pairing and mesh: wardrobe.spy.feet
+Unlocks: Exact icon loads: wardrobe.spy.feet
+Unlocks: operative pairing and mesh: wardrobe.spy.waist
+Unlocks: Exact icon loads: wardrobe.spy.waist
+Unlocks: operative pairing and mesh: wardrobe.bh.chest
+Unlocks: Exact icon loads: wardrobe.bh.chest
+Unlocks: operative pairing and mesh: wardrobe.bh.hands
+Unlocks: Exact icon loads: wardrobe.bh.hands
+Unlocks: operative pairing and mesh: wardrobe.bh.legs
+Unlocks: Exact icon loads: wardrobe.bh.legs
+Unlocks: operative pairing and mesh: wardrobe.bh.feet
+Unlocks: Exact icon loads: wardrobe.bh.feet
+Unlocks: operative pairing and mesh: wardrobe.bh.waist
+Unlocks: Exact icon loads: wardrobe.bh.waist
+Unlocks: operative collectible compatibility and mesh: collectible.war.head
+Unlocks: Restore after collectible
+Unlocks: operative collectible compatibility and mesh: collectible.inq.head
+Unlocks: Restore after collectible
+Unlocks: operative collectible compatibility and mesh: collectible.spy.head
+Unlocks: Restore after collectible
+Unlocks: operative collectible compatibility and mesh: collectible.bh.head
+Unlocks: Restore after collectible
+Unlocks: operative collectible compatibility and mesh: collectible.saber1.main_hand
+Unlocks: Restore after collectible
+Unlocks: operative collectible compatibility and mesh: collectible.saber1.off_hand
+Unlocks: Restore after collectible
+Unlocks: operative collectible compatibility and mesh: collectible.saber2.main_hand
+Unlocks: Restore after collectible
+Unlocks: operative collectible compatibility and mesh: collectible.saber2.off_hand
+Unlocks: Restore after collectible
+Unlocks: operative collectible compatibility and mesh: collectible.staff1.main_hand
+Unlocks: Restore after collectible
+Unlocks: operative collectible compatibility and mesh: collectible.staff2.main_hand
+Unlocks: Restore after collectible
+Unlocks: operative collectible compatibility and mesh: collectible.pistol1.main_hand
+Unlocks: Restore after collectible
+Unlocks: operative collectible compatibility and mesh: collectible.pistol1.off_hand
+Unlocks: Restore after collectible
+Unlocks: operative collectible compatibility and mesh: collectible.pistol2.main_hand
+Unlocks: Restore after collectible
+Unlocks: operative collectible compatibility and mesh: collectible.pistol2.off_hand
+Unlocks: Restore after collectible
+Unlocks: operative collectible compatibility and mesh: collectible.rifle1.main_hand
+Unlocks: Restore after collectible
+Unlocks: operative collectible compatibility and mesh: collectible.rifle2.main_hand
+Unlocks: Restore after collectible
+Unlocks: Capture outfit: collectible.spy.head
+Unlocks: Capture outfit: collectible.rifle2.main_hand
+Unlocks: mercenary pairing and mesh: wardrobe.war.chest
+Unlocks: Exact icon loads: wardrobe.war.chest
+Unlocks: mercenary pairing and mesh: wardrobe.war.hands
+Unlocks: Exact icon loads: wardrobe.war.hands
+Unlocks: mercenary pairing and mesh: wardrobe.war.legs
+Unlocks: Exact icon loads: wardrobe.war.legs
+Unlocks: mercenary pairing and mesh: wardrobe.war.feet
+Unlocks: Exact icon loads: wardrobe.war.feet
+Unlocks: mercenary pairing and mesh: wardrobe.war.waist
+Unlocks: Exact icon loads: wardrobe.war.waist
+Unlocks: mercenary pairing and mesh: wardrobe.inq.chest
+Unlocks: Exact icon loads: wardrobe.inq.chest
+Unlocks: mercenary pairing and mesh: wardrobe.inq.hands
+Unlocks: Exact icon loads: wardrobe.inq.hands
+Unlocks: mercenary pairing and mesh: wardrobe.inq.legs
+Unlocks: Exact icon loads: wardrobe.inq.legs
+Unlocks: mercenary pairing and mesh: wardrobe.inq.feet
+Unlocks: Exact icon loads: wardrobe.inq.feet
+Unlocks: mercenary pairing and mesh: wardrobe.inq.waist
+Unlocks: Exact icon loads: wardrobe.inq.waist
+Unlocks: mercenary pairing and mesh: wardrobe.spy.chest
+Unlocks: Exact icon loads: wardrobe.spy.chest
+Unlocks: mercenary pairing and mesh: wardrobe.spy.hands
+Unlocks: Exact icon loads: wardrobe.spy.hands
+Unlocks: mercenary pairing and mesh: wardrobe.spy.legs
+Unlocks: Exact icon loads: wardrobe.spy.legs
+Unlocks: mercenary pairing and mesh: wardrobe.spy.feet
+Unlocks: Exact icon loads: wardrobe.spy.feet
+Unlocks: mercenary pairing and mesh: wardrobe.spy.waist
+Unlocks: Exact icon loads: wardrobe.spy.waist
+Unlocks: mercenary pairing and mesh: wardrobe.bh.chest
+Unlocks: Exact icon loads: wardrobe.bh.chest
+Unlocks: mercenary pairing and mesh: wardrobe.bh.hands
+Unlocks: Exact icon loads: wardrobe.bh.hands
+Unlocks: mercenary pairing and mesh: wardrobe.bh.legs
+Unlocks: Exact icon loads: wardrobe.bh.legs
+Unlocks: mercenary pairing and mesh: wardrobe.bh.feet
+Unlocks: Exact icon loads: wardrobe.bh.feet
+Unlocks: mercenary pairing and mesh: wardrobe.bh.waist
+Unlocks: Exact icon loads: wardrobe.bh.waist
+Unlocks: mercenary collectible compatibility and mesh: collectible.war.head
+Unlocks: Restore after collectible
+Unlocks: mercenary collectible compatibility and mesh: collectible.inq.head
+Unlocks: Restore after collectible
+Unlocks: mercenary collectible compatibility and mesh: collectible.spy.head
+Unlocks: Restore after collectible
+Unlocks: mercenary collectible compatibility and mesh: collectible.bh.head
+Unlocks: Restore after collectible
+Unlocks: mercenary collectible compatibility and mesh: collectible.saber1.main_hand
+Unlocks: Restore after collectible
+Unlocks: mercenary collectible compatibility and mesh: collectible.saber1.off_hand
+Unlocks: Restore after collectible
+Unlocks: mercenary collectible compatibility and mesh: collectible.saber2.main_hand
+Unlocks: Restore after collectible
+Unlocks: mercenary collectible compatibility and mesh: collectible.saber2.off_hand
+Unlocks: Restore after collectible
+Unlocks: mercenary collectible compatibility and mesh: collectible.staff1.main_hand
+Unlocks: Restore after collectible
+Unlocks: mercenary collectible compatibility and mesh: collectible.staff2.main_hand
+Unlocks: Restore after collectible
+Unlocks: mercenary collectible compatibility and mesh: collectible.pistol1.main_hand
+Unlocks: Dual cosmetic mirrors left socket: collectible.pistol1.main_hand
+Unlocks: Restore after collectible
+Unlocks: mercenary collectible compatibility and mesh: collectible.pistol1.off_hand
+Unlocks: Restore after collectible
+Unlocks: mercenary collectible compatibility and mesh: collectible.pistol2.main_hand
+Unlocks: Dual cosmetic mirrors left socket: collectible.pistol2.main_hand
+Unlocks: Restore after collectible
+Unlocks: mercenary collectible compatibility and mesh: collectible.pistol2.off_hand
+Unlocks: Restore after collectible
+Unlocks: mercenary collectible compatibility and mesh: collectible.rifle1.main_hand
+Unlocks: Restore after collectible
+Unlocks: mercenary collectible compatibility and mesh: collectible.rifle2.main_hand
+Unlocks: Restore after collectible
+Unlocks: Capture outfit: collectible.bh.head
+Unlocks: Capture outfit: collectible.pistol2.main_hand
+Unlocks: powertech pairing and mesh: wardrobe.war.chest
+Unlocks: Exact icon loads: wardrobe.war.chest
+Unlocks: powertech pairing and mesh: wardrobe.war.hands
+Unlocks: Exact icon loads: wardrobe.war.hands
+Unlocks: powertech pairing and mesh: wardrobe.war.legs
+Unlocks: Exact icon loads: wardrobe.war.legs
+Unlocks: powertech pairing and mesh: wardrobe.war.feet
+Unlocks: Exact icon loads: wardrobe.war.feet
+Unlocks: powertech pairing and mesh: wardrobe.war.waist
+Unlocks: Exact icon loads: wardrobe.war.waist
+Unlocks: powertech pairing and mesh: wardrobe.inq.chest
+Unlocks: Exact icon loads: wardrobe.inq.chest
+Unlocks: powertech pairing and mesh: wardrobe.inq.hands
+Unlocks: Exact icon loads: wardrobe.inq.hands
+Unlocks: powertech pairing and mesh: wardrobe.inq.legs
+Unlocks: Exact icon loads: wardrobe.inq.legs
+Unlocks: powertech pairing and mesh: wardrobe.inq.feet
+Unlocks: Exact icon loads: wardrobe.inq.feet
+Unlocks: powertech pairing and mesh: wardrobe.inq.waist
+Unlocks: Exact icon loads: wardrobe.inq.waist
+Unlocks: powertech pairing and mesh: wardrobe.spy.chest
+Unlocks: Exact icon loads: wardrobe.spy.chest
+Unlocks: powertech pairing and mesh: wardrobe.spy.hands
+Unlocks: Exact icon loads: wardrobe.spy.hands
+Unlocks: powertech pairing and mesh: wardrobe.spy.legs
+Unlocks: Exact icon loads: wardrobe.spy.legs
+Unlocks: powertech pairing and mesh: wardrobe.spy.feet
+Unlocks: Exact icon loads: wardrobe.spy.feet
+Unlocks: powertech pairing and mesh: wardrobe.spy.waist
+Unlocks: Exact icon loads: wardrobe.spy.waist
+Unlocks: powertech pairing and mesh: wardrobe.bh.chest
+Unlocks: Exact icon loads: wardrobe.bh.chest
+Unlocks: powertech pairing and mesh: wardrobe.bh.hands
+Unlocks: Exact icon loads: wardrobe.bh.hands
+Unlocks: powertech pairing and mesh: wardrobe.bh.legs
+Unlocks: Exact icon loads: wardrobe.bh.legs
+Unlocks: powertech pairing and mesh: wardrobe.bh.feet
+Unlocks: Exact icon loads: wardrobe.bh.feet
+Unlocks: powertech pairing and mesh: wardrobe.bh.waist
+Unlocks: Exact icon loads: wardrobe.bh.waist
+Unlocks: powertech collectible compatibility and mesh: collectible.war.head
+Unlocks: Restore after collectible
+Unlocks: powertech collectible compatibility and mesh: collectible.inq.head
+Unlocks: Restore after collectible
+Unlocks: powertech collectible compatibility and mesh: collectible.spy.head
+Unlocks: Restore after collectible
+Unlocks: powertech collectible compatibility and mesh: collectible.bh.head
+Unlocks: Restore after collectible
+Unlocks: powertech collectible compatibility and mesh: collectible.saber1.main_hand
+Unlocks: Restore after collectible
+Unlocks: powertech collectible compatibility and mesh: collectible.saber1.off_hand
+Unlocks: Restore after collectible
+Unlocks: powertech collectible compatibility and mesh: collectible.saber2.main_hand
+Unlocks: Restore after collectible
+Unlocks: powertech collectible compatibility and mesh: collectible.saber2.off_hand
+Unlocks: Restore after collectible
+Unlocks: powertech collectible compatibility and mesh: collectible.staff1.main_hand
+Unlocks: Restore after collectible
+Unlocks: powertech collectible compatibility and mesh: collectible.staff2.main_hand
+Unlocks: Restore after collectible
+Unlocks: powertech collectible compatibility and mesh: collectible.pistol1.main_hand
+Unlocks: Restore after collectible
+Unlocks: powertech collectible compatibility and mesh: collectible.pistol1.off_hand
+Unlocks: Restore after collectible
+Unlocks: powertech collectible compatibility and mesh: collectible.pistol2.main_hand
+Unlocks: Restore after collectible
+Unlocks: powertech collectible compatibility and mesh: collectible.pistol2.off_hand
+Unlocks: Restore after collectible
+Unlocks: powertech collectible compatibility and mesh: collectible.rifle1.main_hand
+Unlocks: Restore after collectible
+Unlocks: powertech collectible compatibility and mesh: collectible.rifle2.main_hand
+Unlocks: Restore after collectible
+Unlocks: Capture outfit: collectible.bh.head
+Unlocks: Capture outfit: collectible.pistol2.main_hand
+Unlocks: Unlocked menu pairing: wardrobe.war.chest
+Unlocks: Menu uses gear icon: wardrobe.war.chest
+Unlocks: Unlocked menu pairing: wardrobe.inq.chest
+Unlocks: Menu uses gear icon: wardrobe.inq.chest
+Unlocks: Unlocked menu pairing: wardrobe.spy.chest
+Unlocks: Unlocked menu pairing: wardrobe.bh.chest
+Unlocks: Compact toolbar has three actions
+Unlocks: Toolbar opens Collections and pauses combat
+Unlocks: Wardrobe freezes run time
+Unlocks: Enabled: Resume Run
+Unlocks: Closing Collections resumes the same world with the saved outfit
+Unlocks: Transition completed
+Unlocks: Enabled: Resume Run
+Unlocks: Collections preserves a pending upgrade pause
+Unlocks: Toolbar restarts and clears pending upgrades
+Unlocks: Escape opens pause menu instead of quitting
+Unlocks: Enabled: Resume Run
+Unlocks: Transition completed
+Unlocks: Toolbar returns to menu and releases the run

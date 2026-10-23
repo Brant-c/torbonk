@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": [
+    "lacerate clip exists",
+    "lacerate starts with gesture",
+    "lacerate still deals damage",
+    "lacerate abort releases gesture",
+    "lacerate abort clears effects and channel sound",
+    "creepingterror clip exists",
+    "creepingterror starts with gesture",
+    "creepingterror still deals damage",
+    "Creeping Terror has target duration effect",
+    "creepingterror abort releases gesture",
+    "creepingterror abort clears effects and channel sound",
+    "discharge clip exists",
+    "discharge starts with gesture",
+    "discharge still deals damage",
+    "discharge abort releases gesture",
+    "discharge abort clears effects and channel sound",
+    "forceshroud clip exists",
+    "forceshroud starts with gesture",
+    "forceshroud distinct shield persists through recovery",
+    "forceshroud expires with shield",
+    "forceshroud abort releases gesture",
+    "forceshroud abort clears effects and channel sound",
+    "occupied gesture defers activation",
+    "deferred activation starts when free"
+  ],
+  "failure": null
+}

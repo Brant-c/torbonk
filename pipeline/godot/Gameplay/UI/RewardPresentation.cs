@@ -79,7 +79,7 @@ public partial class RewardPresentation : CanvasLayer
             World.Audio.PlayCue("boss_start");
         else if (state == EncounterState.Defeated)
         {
-            _queue.Enqueue(("BOSS DEFEATED", encounter.Definition.Title, $"{encounter.Boss!.ExperienceReward} XP RELEASED  ·  COLLECT YOUR REWARD", "boss_victory"));
+            _queue.Enqueue((encounter.Boss!.RewardTier>=2?"BOSS DEFEATED":"ELITE DEFEATED", encounter.Definition.Title, $"{encounter.Boss.ExperienceReward} XP RELEASED  ·  COLLECT YOUR REWARD", "boss_victory"));
             Burst(encounter.Boss.GlobalPosition, SwtorSkin.Gold);
         }
         else if (state is EncounterState.Failed or EncounterState.Scheduled) Clear();
@@ -119,6 +119,7 @@ public partial class RewardPresentation : CanvasLayer
         if (BossDisplay != null) BossDisplay.Visible = false;
         foreach (var burst in _bursts) if (GodotObject.IsInstanceValid(burst)) burst.QueueFree(); _bursts.Clear();
     }
+    public void Announce(string title,string body,string detail="",string cue="") => _queue.Enqueue((title,body,detail,cue));
     public override void _ExitTree()
     {
         if (GodotObject.IsInstanceValid(World.Progression)) { World.Progression!.LevelReached -= OnLevel; World.Progression.UpgradeApplied -= OnUpgrade; }
@@ -136,7 +137,7 @@ public partial class RewardRing : Node3D
     {
         ProcessMode = ProcessModeEnum.Always;
         _material = new StandardMaterial3D { ShadingMode = BaseMaterial3D.ShadingModeEnum.Unshaded,
-            Transparency = BaseMaterial3D.TransparencyEnum.Alpha, BlendMode = BaseMaterial3D.BlendModeEnum.Add,
+            Transparency = BaseMaterial3D.TransparencyEnum.Alpha, DisableFog = true, BlendMode = BaseMaterial3D.BlendModeEnum.Add,
             AlbedoTexture = GD.Load<Texture2D>("res://Assets/Presentation/loot_ring.png"), AlbedoColor = Tint };
         AddChild(new MeshInstance3D { Mesh = new PlaneMesh { Size = Vector2.One * 0.1f }, MaterialOverride = _material,
             CastShadow = GeometryInstance3D.ShadowCastingSetting.Off });

@@ -1,0 +1,788 @@
+D:\SWTORClassic\torbonk\pipeline\scripts\map_models.py:38: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new(stem);mat.use_nodes=True;mat.use_backface_culling=info['twoSided']!='True'
+register_class(...):
+Warning: 'import_mesh.gr2_presets' does not contain '_MT_' with prefix and suffix
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\all_imperial_guard_post.gr2
+OBJS: ['all_imperial_guard_post']
+TIME: 0.015 s.
+
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+00:34:59 | INFO: Starting glTF 2.0 export
+00:34:59 | INFO: Extracting primitive: all_imperial_guard_post
+00:34:59 | INFO: Primitives created: 1
+00:34:59 | INFO: Finished glTF 2.0 export in 0.04763650894165039 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\all_med_facility_imperial.gr2
+OBJS: ['all_med_facility_imperial']
+TIME: 0.065 s.
+
+00:35:00 | INFO: Starting glTF 2.0 export
+00:35:00 | INFO: Extracting primitive: all_med_facility_imperial
+00:35:00 | INFO: Primitives created: 1
+00:35:00 | INFO: Finished glTF 2.0 export in 0.027987003326416016 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\all_med_facility_imperial_generator.gr2
+OBJS: ['all_med_facility_imperial_generator']
+TIME: 0.023 s.
+
+00:35:00 | INFO: Starting glTF 2.0 export
+00:35:00 | INFO: Extracting primitive: all_med_facility_imperial_generator
+00:35:00 | INFO: Primitives created: 1
+00:35:00 | INFO: Finished glTF 2.0 export in 0.025506973266601562 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\all_sith_banner_stand.gr2
+OBJS: ['all_sith_banner_stand']
+TIME: 0.018 s.
+
+00:35:00 | INFO: Starting glTF 2.0 export
+00:35:00 | INFO: Extracting primitive: all_sith_banner_stand
+00:35:00 | INFO: Primitives created: 1
+00:35:00 | INFO: Finished glTF 2.0 export in 0.013119935989379883 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\all_tent_merchant_small.gr2
+OBJS: ['all_tent_merchant_small']
+TIME: 0.022 s.
+
+00:35:00 | INFO: Starting glTF 2.0 export
+00:35:00 | INFO: Extracting primitive: all_tent_merchant_small
+00:35:00 | INFO: Primitives created: 1
+00:35:00 | INFO: Finished glTF 2.0 export in 0.015304327011108398 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\all_tent_merchant_small_awning01.gr2
+OBJS: ['all_tent_merchant_small_awning01']
+TIME: 0.007 s.
+
+00:35:00 | INFO: Starting glTF 2.0 export
+00:35:00 | INFO: Extracting primitive: all_tent_merchant_small_awning01
+00:35:00 | INFO: Primitives created: 1
+00:35:00 | INFO: Finished glTF 2.0 export in 0.01443791389465332 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\all_tent_merchant_small_awning02.gr2
+OBJS: ['all_tent_merchant_small_awning02']
+TIME: 0.006 s.
+
+00:35:00 | INFO: Starting glTF 2.0 export
+00:35:00 | INFO: Extracting primitive: all_tent_merchant_small_awning02
+00:35:00 | INFO: Primitives created: 1
+00:35:00 | INFO: Finished glTF 2.0 export in 0.014567375183105469 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\collision\all_arch_collision.gr2
+FAILED!!!
+
+00:35:00 | INFO: Starting glTF 2.0 export
+00:35:00 | INFO: Finished glTF 2.0 export in 0.0005071163177490234 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\all_animal_pen_imperial.gr2
+OBJS: ['all_animal_pen_imperial']
+TIME: 0.021 s.
+
+00:35:00 | INFO: Starting glTF 2.0 export
+00:35:00 | INFO: Extracting primitive: all_animal_pen_imperial
+00:35:00 | INFO: Primitives created: 1
+00:35:00 | INFO: Finished glTF 2.0 export in 0.016386985778808594 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\all_item_taxi_holo_sign.gr2
+OBJS: ['all_item_taxi_holo_sign']
+TIME: 0.011 s.
+
+00:35:00 | INFO: Starting glTF 2.0 export
+00:35:00 | INFO: Extracting primitive: all_item_taxi_holo_sign
+00:35:00 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+00:35:00 | INFO: Primitives created: 2
+00:35:00 | INFO: Finished glTF 2.0 export in 0.031504154205322266 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\bones\all_item_bone_human_pile_00.gr2
+OBJS: ['all_item_bone_human_pile_00']
+TIME: 0.019 s.
+
+00:35:00 | INFO: Starting glTF 2.0 export
+00:35:00 | INFO: Extracting primitive: all_item_bone_human_pile_00
+00:35:00 | INFO: Primitives created: 1
+00:35:00 | INFO: Finished glTF 2.0 export in 0.02136516571044922 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\bones\all_item_bone_human_skull_01.gr2
+OBJS: ['all_item_bone_human_skull_01']
+TIME: 0.006 s.
+
+00:35:00 | INFO: Starting glTF 2.0 export
+00:35:00 | INFO: Extracting primitive: all_item_bone_human_skull_01
+00:35:00 | INFO: Primitives created: 1
+00:35:00 | INFO: Finished glTF 2.0 export in 0.02089715003967285 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\bones\all_item_bone_human_whole_01.gr2
+OBJS: ['all_item_bone_human_whole_01']
+TIME: 0.031 s.
+
+00:35:00 | INFO: Starting glTF 2.0 export
+00:35:00 | INFO: Extracting primitive: all_item_bone_human_whole_01
+00:35:00 | INFO: Primitives created: 1
+00:35:00 | INFO: Finished glTF 2.0 export in 0.015284061431884766 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\bones\all_item_bone_human_whole_02.gr2
+OBJS: ['all_item_bone_human_whole_02']
+TIME: 0.028 s.
+
+00:35:00 | INFO: Starting glTF 2.0 export
+00:35:00 | INFO: Extracting primitive: all_item_bone_human_whole_02
+00:35:00 | INFO: Primitives created: 1
+00:35:00 | INFO: Finished glTF 2.0 export in 0.015394449234008789 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\construction\all_item_construction_dumpster_droid.gr2
+OBJS: ['all_item_construction_dumpster_droid']
+TIME: 0.021 s.
+
+00:35:00 | INFO: Starting glTF 2.0 export
+00:35:00 | INFO: Extracting primitive: all_item_construction_dumpster_droid
+00:35:00 | INFO: Primitives created: 1
+00:35:00 | INFO: Finished glTF 2.0 export in 0.019225358963012695 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\imperial\all_item_imp_scaffold.gr2
+OBJS: ['all_item_imp_scaffold']
+TIME: 0.006 s.
+
+00:35:01 | INFO: Starting glTF 2.0 export
+00:35:01 | INFO: Extracting primitive: all_item_imp_scaffold
+00:35:01 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+00:35:01 | INFO: Primitives created: 3
+00:35:01 | INFO: Finished glTF 2.0 export in 0.056368112564086914 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\imperial\all_item_imp_scaffold_elevator.gr2
+OBJS: ['all_item_imp_scaffold_elevator']
+TIME: 0.013 s.
+
+00:35:01 | INFO: Starting glTF 2.0 export
+00:35:01 | INFO: Extracting primitive: all_item_imp_scaffold_elevator
+00:35:01 | INFO: Primitives created: 1
+00:35:01 | INFO: Finished glTF 2.0 export in 0.03365445137023926 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\imperial\all_item_imp_scaffold_elevator_platform.gr2
+OBJS: ['all_item_imp_scaffold_elevator_platform']
+TIME: 0.005 s.
+
+00:35:01 | INFO: Starting glTF 2.0 export
+00:35:01 | INFO: Extracting primitive: all_item_imp_scaffold_elevator_platform
+00:35:01 | INFO: Primitives created: 1
+00:35:01 | INFO: Finished glTF 2.0 export in 0.024183988571166992 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\imperial\all_item_imp_scaffold_gap.gr2
+OBJS: ['all_item_imp_scaffold_gap']
+TIME: 0.002 s.
+
+00:35:01 | INFO: Starting glTF 2.0 export
+00:35:01 | INFO: Extracting primitive: all_item_imp_scaffold_gap
+00:35:01 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+00:35:01 | INFO: Primitives created: 3
+00:35:01 | INFO: Finished glTF 2.0 export in 0.061942100524902344 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\imperial\all_item_imp_scaffold_light.gr2
+OBJS: ['all_item_imp_scaffold_light']
+TIME: 0.010 s.
+
+00:35:01 | INFO: Starting glTF 2.0 export
+00:35:01 | INFO: Extracting primitive: all_item_imp_scaffold_light
+00:35:01 | INFO: Primitives created: 1
+00:35:01 | INFO: Finished glTF 2.0 export in 0.02034592628479004 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\imperial\all_item_imp_scaffold_platform_a.gr2
+OBJS: ['all_item_imp_scaffold_platform_a']
+TIME: 0.005 s.
+
+00:35:01 | INFO: Starting glTF 2.0 export
+00:35:01 | INFO: Extracting primitive: all_item_imp_scaffold_platform_a
+00:35:01 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+00:35:01 | INFO: Primitives created: 2
+00:35:01 | INFO: Finished glTF 2.0 export in 0.03249096870422363 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\imperial\all_item_imp_scaffold_platform_b.gr2
+OBJS: ['all_item_imp_scaffold_platform_b']
+TIME: 0.008 s.
+
+00:35:01 | INFO: Starting glTF 2.0 export
+00:35:01 | INFO: Extracting primitive: all_item_imp_scaffold_platform_b
+00:35:01 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+00:35:01 | INFO: Primitives created: 3
+00:35:01 | INFO: Finished glTF 2.0 export in 0.06330347061157227 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\imperial\all_item_imp_scaffold_platform_d.gr2
+OBJS: ['all_item_imp_scaffold_platform_d']
+TIME: 0.007 s.
+
+00:35:01 | INFO: Starting glTF 2.0 export
+00:35:01 | INFO: Extracting primitive: all_item_imp_scaffold_platform_d
+00:35:01 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+00:35:01 | INFO: Primitives created: 3
+00:35:01 | INFO: Finished glTF 2.0 export in 0.05560159683227539 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\imperial\all_item_imp_scaffold_platform_support.gr2
+OBJS: ['all_item_imp_scaffold_platform_support']
+TIME: 0.007 s.
+
+00:35:01 | INFO: Starting glTF 2.0 export
+00:35:01 | INFO: Extracting primitive: all_item_imp_scaffold_platform_support
+00:35:01 | INFO: Primitives created: 1
+00:35:01 | INFO: Finished glTF 2.0 export in 0.027100801467895508 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\imperial\all_item_imp_scaffold_post.gr2
+OBJS: ['all_item_imp_scaffold_post']
+TIME: 0.002 s.
+
+00:35:01 | INFO: Starting glTF 2.0 export
+00:35:01 | INFO: Extracting primitive: all_item_imp_scaffold_post
+00:35:01 | INFO: Primitives created: 1
+00:35:01 | INFO: Finished glTF 2.0 export in 0.0242307186126709 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\imperial\all_item_imp_scaffold_ramp_small.gr2
+OBJS: ['all_item_imp_scaffold_ramp_small']
+TIME: 0.043 s.
+
+00:35:01 | INFO: Starting glTF 2.0 export
+00:35:01 | INFO: Extracting primitive: all_item_imp_scaffold_ramp_small
+00:35:01 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+00:35:01 | INFO: Primitives created: 3
+00:35:01 | INFO: Finished glTF 2.0 export in 0.07504129409790039 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\imperial\all_item_imp_small_scaffold.gr2
+OBJS: ['all_item_imp_small_scaffold']
+TIME: 0.016 s.
+
+00:35:01 | INFO: Starting glTF 2.0 export
+00:35:01 | INFO: Extracting primitive: all_item_imp_small_scaffold
+00:35:02 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+00:35:02 | INFO: Primitives created: 2
+00:35:02 | INFO: Finished glTF 2.0 export in 0.032093048095703125 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\misc\all_item_misc_toolbox_small.gr2
+OBJS: ['all_item_misc_toolbox_small']
+TIME: 0.007 s.
+
+00:35:02 | INFO: Starting glTF 2.0 export
+00:35:02 | INFO: Extracting primitive: all_item_misc_toolbox_small
+00:35:02 | INFO: Primitives created: 1
+00:35:02 | INFO: Finished glTF 2.0 export in 0.015403985977172852 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\misc\all_item_misc_toolbox_small_lip.gr2
+OBJS: ['all_item_misc_toolbox_small_lip']
+TIME: 0.006 s.
+
+00:35:02 | INFO: Starting glTF 2.0 export
+00:35:02 | INFO: Extracting primitive: all_item_misc_toolbox_small_lip
+00:35:02 | INFO: Primitives created: 1
+00:35:02 | INFO: Finished glTF 2.0 export in 0.0215756893157959 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\tech\all_item_tech_datapad_01.gr2
+OBJS: ['all_item_tech_datapad_01']
+TIME: 0.013 s.
+
+00:35:02 | INFO: Starting glTF 2.0 export
+00:35:02 | INFO: Extracting primitive: all_item_tech_datapad_01
+00:35:02 | INFO: Primitives created: 1
+00:35:02 | INFO: Finished glTF 2.0 export in 0.023415803909301758 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\tech\all_item_tech_resurrection_point.gr2
+OBJS: ['all_item_tech_resurrection_point']
+TIME: 0.033 s.
+
+00:35:02 | INFO: Starting glTF 2.0 export
+00:35:02 | INFO: Extracting primitive: all_item_tech_resurrection_point
+00:35:02 | INFO: Primitives created: 1
+00:35:02 | INFO: Finished glTF 2.0 export in 0.023662567138671875 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\tech\all_item_tech_small_generator.gr2
+OBJS: ['all_item_tech_small_generator']
+TIME: 0.032 s.
+
+00:35:02 | INFO: Starting glTF 2.0 export
+00:35:02 | INFO: Extracting primitive: all_item_tech_small_generator
+00:35:02 | INFO: Primitives created: 1
+00:35:02 | INFO: Finished glTF 2.0 export in 0.02358102798461914 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\arch\kor_vod_greatstatue.gr2
+OBJS: ['kor_vod_greatstatue']
+TIME: 0.033 s.
+
+00:35:02 | INFO: Starting glTF 2.0 export
+00:35:02 | INFO: Extracting primitive: kor_vod_greatstatue
+00:35:02 | INFO: Primitives created: 1
+00:35:02 | INFO: Finished glTF 2.0 export in 0.03049182891845703 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\arch\kor_vod_greatstatue02.gr2
+OBJS: ['kor_vod_greatstatue02']
+TIME: 0.052 s.
+
+00:35:02 | INFO: Starting glTF 2.0 export
+00:35:02 | INFO: Extracting primitive: kor_vod_greatstatue02
+00:35:02 | INFO: Primitives created: 1
+00:35:02 | INFO: Finished glTF 2.0 export in 0.027554035186767578 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\arch\kor_vod_ruins_floor.gr2
+OBJS: ['kor_vod_ruins_floor']
+TIME: 0.007 s.
+
+00:35:02 | INFO: Starting glTF 2.0 export
+00:35:02 | INFO: Extracting primitive: kor_vod_ruins_floor
+00:35:02 | INFO: Primitives created: 1
+00:35:02 | INFO: Finished glTF 2.0 export in 0.0194244384765625 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\arch\kor_vod_ruins_pillar02.gr2
+OBJS: ['kor_vod_ruins_pillar02']
+TIME: 0.011 s.
+
+00:35:02 | INFO: Starting glTF 2.0 export
+00:35:02 | INFO: Extracting primitive: kor_vod_ruins_pillar02
+00:35:02 | INFO: Primitives created: 1
+00:35:02 | INFO: Finished glTF 2.0 export in 0.047507524490356445 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\arch\kor_vod_ruins_pillar02_top.gr2
+OBJS: ['kor_vod_ruins_pillar02_top']
+TIME: 0.004 s.
+
+00:35:02 | INFO: Starting glTF 2.0 export
+00:35:02 | INFO: Extracting primitive: kor_vod_ruins_pillar02_top
+00:35:02 | INFO: Primitives created: 1
+00:35:02 | INFO: Finished glTF 2.0 export in 0.021463871002197266 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\arch\kor_vod_ruins_pillar04_top.gr2
+OBJS: ['kor_vod_ruins_pillar04_top']
+TIME: 0.005 s.
+
+00:35:02 | INFO: Starting glTF 2.0 export
+00:35:02 | INFO: Extracting primitive: kor_vod_ruins_pillar04_top
+00:35:02 | INFO: Primitives created: 1
+00:35:02 | INFO: Finished glTF 2.0 export in 0.022808313369750977 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\arch\kor_vod_ruins_pillar_base.gr2
+OBJS: ['kor_vod_ruins_pillar_base']
+TIME: 0.011 s.
+
+00:35:02 | INFO: Starting glTF 2.0 export
+00:35:02 | INFO: Extracting primitive: kor_vod_ruins_pillar_base
+00:35:02 | INFO: Primitives created: 1
+00:35:02 | INFO: Finished glTF 2.0 export in 0.027136802673339844 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\arch\kor_vod_ruins_ramp.gr2
+OBJS: ['kor_vod_ruins_ramp']
+TIME: 0.015 s.
+
+00:35:03 | INFO: Starting glTF 2.0 export
+00:35:03 | INFO: Extracting primitive: kor_vod_ruins_ramp
+00:35:03 | INFO: Primitives created: 1
+00:35:03 | INFO: Finished glTF 2.0 export in 0.02026534080505371 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\arch\kor_vod_ruins_roof.gr2
+OBJS: ['kor_vod_ruins_roof']
+TIME: 0.036 s.
+
+00:35:03 | INFO: Starting glTF 2.0 export
+00:35:03 | INFO: Extracting primitive: kor_vod_ruins_roof
+00:35:03 | INFO: Primitives created: 1
+00:35:03 | INFO: Finished glTF 2.0 export in 0.015761137008666992 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\arch\kor_vod_ruins_statuewall.gr2
+OBJS: ['kor_vod_ruins_statuewall']
+TIME: 0.121 s.
+
+00:35:03 | INFO: Starting glTF 2.0 export
+00:35:03 | INFO: Extracting primitive: kor_vod_ruins_statuewall
+00:35:03 | INFO: Primitives created: 1
+00:35:03 | INFO: Finished glTF 2.0 export in 0.03080439567565918 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\arch\kor_vod_ruins_wall.gr2
+OBJS: ['kor_vod_ruins_wall']
+TIME: 0.016 s.
+
+00:35:03 | INFO: Starting glTF 2.0 export
+00:35:03 | INFO: Extracting primitive: kor_vod_ruins_wall
+00:35:03 | INFO: Primitives created: 1
+00:35:03 | INFO: Finished glTF 2.0 export in 0.02340984344482422 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\arch\kor_vod_ruins_walldoor.gr2
+OBJS: ['kor_vod_ruins_walldoor']
+TIME: 0.039 s.
+
+00:35:03 | INFO: Starting glTF 2.0 export
+00:35:03 | INFO: Extracting primitive: kor_vod_ruins_walldoor
+00:35:03 | INFO: Primitives created: 2
+00:35:03 | INFO: Finished glTF 2.0 export in 0.03475594520568848 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\env\kor_env_cactus.gr2
+OBJS: ['kor_env_cactus']
+TIME: 0.016 s.
+
+00:35:03 | INFO: Starting glTF 2.0 export
+00:35:03 | INFO: Extracting primitive: kor_env_cactus
+00:35:03 | INFO: Primitives created: 1
+00:35:03 | INFO: Finished glTF 2.0 export in 0.023775815963745117 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\env\kor_env_lair.gr2
+OBJS: ['kor_env_lair']
+TIME: 0.020 s.
+
+00:35:03 | INFO: Starting glTF 2.0 export
+00:35:03 | INFO: Extracting primitive: kor_env_lair
+00:35:03 | INFO: Primitives created: 1
+00:35:03 | INFO: Finished glTF 2.0 export in 0.02174854278564453 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\env\kor_vod_rock_01.gr2
+OBJS: ['all_item_camp_fire_pit_sacrificial']
+TIME: 0.006 s.
+
+00:35:03 | INFO: Starting glTF 2.0 export
+00:35:03 | INFO: Extracting primitive: all_item_camp_fire_pit_sacrificial
+00:35:03 | INFO: Primitives created: 1
+00:35:03 | INFO: Finished glTF 2.0 export in 0.01844000816345215 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\env\kor_vod_rock_02.gr2
+OBJS: ['all_item_camp_fire_pit_sacrificial']
+TIME: 0.008 s.
+
+00:35:03 | INFO: Starting glTF 2.0 export
+00:35:03 | INFO: Extracting primitive: all_item_camp_fire_pit_sacrificial.001
+00:35:03 | INFO: Primitives created: 1
+00:35:03 | INFO: Finished glTF 2.0 export in 0.01955890655517578 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\env\kor_vod_rock_04.gr2
+OBJS: ['all_item_camp_fire_pit_sacrificial']
+TIME: 0.005 s.
+
+00:35:03 | INFO: Starting glTF 2.0 export
+00:35:03 | INFO: Extracting primitive: all_item_camp_fire_pit_sacrificial.002
+00:35:04 | INFO: Primitives created: 1
+00:35:04 | INFO: Finished glTF 2.0 export in 0.01660919189453125 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\env\kor_wilds_cliff_40m_small.gr2
+OBJS: ['kor_wilds_cliff_40m_small']
+TIME: 0.032 s.
+
+00:35:04 | INFO: Starting glTF 2.0 export
+00:35:04 | INFO: Extracting primitive: kor_wilds_cliff_40m_small
+00:35:04 | INFO: Primitives created: 1
+00:35:04 | INFO: Finished glTF 2.0 export in 0.04071950912475586 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\env\kor_wilds_cliff_40m_small_90.gr2
+OBJS: ['kor_wilds_cliff_40m_small_90']
+TIME: 0.063 s.
+
+00:35:04 | INFO: Starting glTF 2.0 export
+00:35:04 | INFO: Extracting primitive: kor_wilds_cliff_40m_small_90
+00:35:04 | INFO: Primitives created: 1
+00:35:04 | INFO: Finished glTF 2.0 export in 0.04199528694152832 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\env\kor_wilds_cliff_40m_small_v1.gr2
+OBJS: ['kor_wilds_cliff_40m_small_v1']
+TIME: 0.029 s.
+
+00:35:04 | INFO: Starting glTF 2.0 export
+00:35:04 | INFO: Extracting primitive: kor_wilds_cliff_40m_small_v1
+00:35:04 | INFO: Primitives created: 1
+00:35:04 | INFO: Finished glTF 2.0 export in 0.04031968116760254 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\env\kor_wilds_cliff_40m_small_v2.gr2
+OBJS: ['kor_wilds_cliff_40m_small_v2']
+TIME: 0.029 s.
+
+00:35:04 | INFO: Starting glTF 2.0 export
+00:35:04 | INFO: Extracting primitive: kor_wilds_cliff_40m_small_v2
+00:35:04 | INFO: Primitives created: 1
+00:35:04 | INFO: Finished glTF 2.0 export in 0.04857969284057617 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_tomb_item_statue_01.gr2
+OBJS: ['kor_tomb_item_statue_01']
+TIME: 0.021 s.
+
+00:35:04 | INFO: Starting glTF 2.0 export
+00:35:04 | INFO: Extracting primitive: kor_tomb_item_statue_01
+00:35:04 | INFO: Primitives created: 1
+00:35:04 | INFO: Finished glTF 2.0 export in 0.013137340545654297 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_tomb_item_statue_01_broken.gr2
+OBJS: ['kor_tomb_item_statue_01_broken']
+TIME: 0.011 s.
+
+00:35:04 | INFO: Starting glTF 2.0 export
+00:35:04 | INFO: Extracting primitive: kor_tomb_item_statue_01_broken
+00:35:04 | INFO: Primitives created: 1
+00:35:04 | INFO: Finished glTF 2.0 export in 0.0119171142578125 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_tomb_item_statue_02.gr2
+OBJS: ['kor_tomb_item_statue_02']
+TIME: 0.018 s.
+
+00:35:04 | INFO: Starting glTF 2.0 export
+00:35:04 | INFO: Extracting primitive: kor_tomb_item_statue_02
+00:35:04 | INFO: Primitives created: 1
+00:35:04 | INFO: Finished glTF 2.0 export in 0.012805461883544922 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_tomb_item_statue_02_broken_head.gr2
+OBJS: ['kor_tomb_item_statue_02_broken_head']
+TIME: 0.011 s.
+
+00:35:04 | INFO: Starting glTF 2.0 export
+00:35:04 | INFO: Extracting primitive: kor_tomb_item_statue_02_broken_head
+00:35:04 | INFO: Primitives created: 1
+00:35:04 | INFO: Finished glTF 2.0 export in 0.011457443237304688 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_tomb_item_urn.gr2
+OBJS: ['kor_tomb_item_urn']
+TIME: 0.006 s.
+
+00:35:05 | INFO: Starting glTF 2.0 export
+00:35:05 | INFO: Extracting primitive: kor_tomb_item_urn
+00:35:05 | INFO: Primitives created: 1
+00:35:05 | INFO: Finished glTF 2.0 export in 0.011289834976196289 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_tomb_item_urn_broken.gr2
+OBJS: ['kor_tomb_item_urn_broken', 'cover']
+TIME: 0.013 s.
+
+00:35:05 | INFO: Starting glTF 2.0 export
+00:35:05 | INFO: Extracting primitive: cover
+00:35:05 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+00:35:05 | INFO: Primitives created: 1
+00:35:05 | INFO: Extracting primitive: kor_tomb_item_urn_broken
+00:35:05 | INFO: Primitives created: 1
+00:35:05 | INFO: Finished glTF 2.0 export in 0.02018880844116211 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_vodl_item_ancient_pottery_01.gr2
+OBJS: ['kor_vodl_item_ancient_pottery_01']
+TIME: 0.009 s.
+
+00:35:05 | INFO: Starting glTF 2.0 export
+00:35:05 | INFO: Extracting primitive: kor_vodl_item_ancient_pottery_01
+00:35:05 | INFO: Primitives created: 1
+00:35:05 | INFO: Finished glTF 2.0 export in 0.02123546600341797 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_vodl_item_ancient_pottery_02.gr2
+OBJS: ['kor_vodl_item_ancient_pottery_02']
+TIME: 0.014 s.
+
+00:35:05 | INFO: Starting glTF 2.0 export
+00:35:05 | INFO: Extracting primitive: kor_vodl_item_ancient_pottery_02
+00:35:05 | INFO: Primitives created: 1
+00:35:05 | INFO: Finished glTF 2.0 export in 0.019247770309448242 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_vodl_item_ancient_pottery_03.gr2
+OBJS: ['kor_vodl_item_ancient_pottery_03']
+TIME: 0.010 s.
+
+00:35:05 | INFO: Starting glTF 2.0 export
+00:35:05 | INFO: Extracting primitive: kor_vodl_item_ancient_pottery_03
+00:35:05 | INFO: Primitives created: 1
+00:35:05 | INFO: Finished glTF 2.0 export in 0.02310323715209961 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_vodl_item_ancient_pottery_pieces.gr2
+OBJS: ['kor_vodl_item_ancient_pottery_pieces']
+TIME: 0.006 s.
+
+00:35:05 | INFO: Starting glTF 2.0 export
+00:35:05 | INFO: Extracting primitive: kor_vodl_item_ancient_pottery_pieces
+00:35:05 | INFO: Primitives created: 1
+00:35:05 | INFO: Finished glTF 2.0 export in 0.020818471908569336 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_vodl_item_floodlight.gr2
+OBJS: ['kor_vodl_item_floodlight']
+TIME: 0.012 s.
+
+00:35:05 | INFO: Starting glTF 2.0 export
+00:35:05 | INFO: Extracting primitive: kor_vodl_item_floodlight
+00:35:05 | INFO: Primitives created: 1
+00:35:05 | INFO: Finished glTF 2.0 export in 0.01577162742614746 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_vodl_item_shipping_crate.gr2
+OBJS: ['kor_vodl_item_shipping_crate']
+TIME: 0.005 s.
+
+00:35:05 | INFO: Starting glTF 2.0 export
+00:35:05 | INFO: Extracting primitive: kor_vodl_item_shipping_crate
+00:35:05 | INFO: Primitives created: 1
+00:35:05 | INFO: Finished glTF 2.0 export in 0.019548416137695312 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_vodl_item_shipping_pallet.gr2
+OBJS: ['kor_vodl_item_shipping_pallet']
+TIME: 0.007 s.
+
+00:35:05 | INFO: Starting glTF 2.0 export
+00:35:05 | INFO: Extracting primitive: kor_vodl_item_shipping_pallet
+00:35:05 | INFO: Primitives created: 1
+00:35:05 | INFO: Finished glTF 2.0 export in 0.016691923141479492 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\item\container\item_con_plasteel_crate_01.gr2
+OBJS: ['item_con_plasteel_crate_01']
+TIME: 0.013 s.
+
+00:35:05 | INFO: Starting glTF 2.0 export
+00:35:05 | INFO: Extracting primitive: item_con_plasteel_crate_01
+00:35:05 | INFO: Primitives created: 1
+00:35:05 | INFO: Finished glTF 2.0 export in 0.018565893173217773 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\item\container\item_con_plasteel_crate_02.gr2
+OBJS: ['item_con_plasteel_crate_02']
+TIME: 0.011 s.
+
+00:35:05 | INFO: Starting glTF 2.0 export
+00:35:05 | INFO: Extracting primitive: item_con_plasteel_crate_02
+00:35:05 | INFO: Primitives created: 1
+00:35:05 | INFO: Finished glTF 2.0 export in 0.015257596969604492 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\item\container\item_con_plasteel_crate_03.gr2
+OBJS: ['item_con_plasteel_crate_03']
+TIME: 0.009 s.
+
+00:35:05 | INFO: Starting glTF 2.0 export
+00:35:05 | INFO: Extracting primitive: item_con_plasteel_crate_03
+00:35:05 | INFO: Primitives created: 1
+00:35:05 | INFO: Finished glTF 2.0 export in 0.018085718154907227 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\item\equipment\item_eqp_stimpack.gr2
+OBJS: ['item_eqp_stimpack']
+TIME: 0.006 s.
+
+00:35:05 | INFO: Starting glTF 2.0 export
+00:35:05 | INFO: Extracting primitive: item_eqp_stimpack
+00:35:05 | INFO: Primitives created: 1
+00:35:05 | INFO: Finished glTF 2.0 export in 0.010381937026977539 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\vehicle\neutral\speeder\veh_neu_speeder_02.gr2
+OBJS: ['veh_neu_speeder_02']
+TIME: 0.077 s.
+
+00:35:05 | INFO: Starting glTF 2.0 export
+00:35:05 | INFO: Extracting primitive: veh_neu_speeder_02
+00:35:05 | INFO: Primitives created: 1
+00:35:05 | INFO: Finished glTF 2.0 export in 0.02524256706237793 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\weapon\sword\wep_swd_practice_sword.gr2
+OBJS: ['wep_swd_practice_sword']
+TIME: 0.006 s.
+
+00:35:05 | INFO: Starting glTF 2.0 export
+00:35:05 | INFO: Extracting primitive: wep_swd_practice_sword
+00:35:05 | INFO: Primitives created: 1
+00:35:05 | INFO: Finished glTF 2.0 export in 0.020728111267089844 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_tomb_item_sarcophagus.gr2
+OBJS: ['kor_tomb_item_sarcophagus']
+TIME: 0.046 s.
+
+00:35:05 | INFO: Starting glTF 2.0 export
+00:35:05 | INFO: Extracting primitive: kor_tomb_item_sarcophagus
+00:35:06 | INFO: Primitives created: 1
+00:35:06 | INFO: Finished glTF 2.0 export in 0.01931309700012207 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_tomb_item_sarcophagus_ruin.gr2
+OBJS: ['kor_tomb_item_sarcophagus']
+TIME: 0.046 s.
+
+00:35:06 | INFO: Starting glTF 2.0 export
+00:35:06 | INFO: Extracting primitive: kor_tomb_item_sarcophagus.001
+00:35:06 | INFO: Primitives created: 1
+00:35:06 | INFO: Finished glTF 2.0 export in 0.01651477813720703 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_tomb_item_brazier_ancient.gr2
+OBJS: ['kor_tomb_item_brazier_ancient']
+TIME: 0.015 s.
+
+00:35:06 | INFO: Starting glTF 2.0 export
+00:35:06 | INFO: Extracting primitive: kor_tomb_item_brazier_ancient
+00:35:06 | INFO: Primitives created: 1
+00:35:06 | INFO: Finished glTF 2.0 export in 0.01814866065979004 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\kor_korriban\item\kor_tomb_item_statue_03.gr2
+OBJS: ['kor_tomb_item_statue_03']
+TIME: 0.019 s.
+
+00:35:06 | INFO: Starting glTF 2.0 export
+00:35:06 | INFO: Extracting primitive: kor_tomb_item_statue_03
+00:35:06 | INFO: Primitives created: 1
+00:35:06 | INFO: Finished glTF 2.0 export in 0.015341520309448242 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\item\container\item_con_crate_ancient_01.gr2
+OBJS: ['item_con_crate_ancient_01']
+TIME: 0.011 s.
+
+00:35:06 | INFO: Starting glTF 2.0 export
+00:35:06 | INFO: Extracting primitive: item_con_crate_ancient_01
+00:35:06 | INFO: Primitives created: 1
+00:35:06 | INFO: Finished glTF 2.0 export in 0.03232216835021973 s
+
+MAP_MODELS_CONVERTED 77
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

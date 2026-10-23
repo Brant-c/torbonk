@@ -1,5 +1,11 @@
 # SWTOR Survivors: Tasks 1–3 conversion proof
 
+**D4 expands Korriban into Trials of the Sith:** six contiguous original terrain sectors,
+additional original creature rigs, three major bosses, elites at levels 5/15/25,
+level 1–30 stages, guarded caches and run rewards. Other planets are preserved.
+See [D4-README.md](D4-README.md), [D4-INVENTORY.md](D4-INVENTORY.md), and
+[D4-PROVENANCE.md](D4-PROVENANCE.md). Stop after the focused D4 smoke for manual review.
+
 **D3 makes all eight Imperial advanced classes playable on Korriban.** See
 [D3-README.md](D3-README.md) for launch instructions, class starters, original
 asset provenance, presentation limits and the manual review checklist.

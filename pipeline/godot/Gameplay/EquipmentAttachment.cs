@@ -87,7 +87,7 @@ public partial class EquipmentAttachment : Node3D
         // Two crossed additive planes keep a soft visible red halo in the compatibility renderer.
         var haloMaterial = new StandardMaterial3D { ShadingMode = BaseMaterial3D.ShadingModeEnum.Unshaded,
             AlbedoTexture = GD.Load<Texture2D>("res://Assets/Enemies/saber-tip.png"), AlbedoColor = new Color(1, 0.01f, 0.002f),
-            BlendMode = BaseMaterial3D.BlendModeEnum.Add, Transparency = BaseMaterial3D.TransparencyEnum.Alpha,
+            DisableFog = true, BlendMode = BaseMaterial3D.BlendModeEnum.Add, Transparency = BaseMaterial3D.TransparencyEnum.Alpha,
             CullMode = BaseMaterial3D.CullModeEnum.Disabled, NoDepthTest = false };
         foreach (float angle in new[] { 0f, Mathf.Pi / 2 })
             AddChild(new MeshInstance3D { Name = "OriginalTextureHalo", Mesh = new QuadMesh { Size = new Vector2(0.018f, 0.135f) },

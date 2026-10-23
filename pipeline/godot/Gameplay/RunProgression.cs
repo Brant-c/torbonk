@@ -12,6 +12,7 @@ public partial class RunProgression : Node3D
 {
     [Export] public int FirstLevelExperience { get; set; } = 12;
     [Export] public float ExperienceGrowth { get; set; } = 1.3f;
+    [Export] public int MaximumLevel { get; set; }
     [Export] public int ExperiencePerEnemy { get; set; } = 4;
     [Export] public float PickupRadius { get; set; } = 0.14f;
     [Export] public float MagnetRadius { get; set; } = 0.45f;
@@ -135,6 +136,7 @@ public partial class RunProgression : Node3D
 
     private void TryLevel()
     {
+        if(MaximumLevel>0 && Level>=MaximumLevel)return;
         if(World.Artifacts?.Pending==true)return;
         if (Experience<RequiredExperience) return;
         var eligible=Upgrades.Where(IsEligible).ToList();

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BossEncounterDefinition" load_steps=3 format=3]
+[ext_resource type="Script" path="res://Gameplay/BossEncounterDefinition.cs" id="1"]
+[ext_resource type="PackedScene" path="res://Gameplay/Planets/Hutta/Encounter28.tscn" id="2"]
+[resource]
+script = ExtResource("1")
+Id = "hutta.encounter28"
+Title = "Final Gang Assault"
+Scene = ExtResource("2")
+IntroductionSeconds = 0.0
+RegularSpawnIntervalMultiplier = 1.8
+RegularCapFraction = 0.65

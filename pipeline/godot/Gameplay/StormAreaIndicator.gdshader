@@ -1,5 +1,5 @@
 shader_type spatial;
-render_mode unshaded, blend_add, depth_draw_never, cull_disabled, shadows_disabled;
+render_mode unshaded, fog_disabled, blend_add, depth_draw_never, cull_disabled, shadows_disabled;
 
 uniform sampler2D reticle_texture : source_color, filter_linear_mipmap, repeat_disable;
 uniform sampler2D imperial_texture : source_color, filter_linear_mipmap, repeat_disable;

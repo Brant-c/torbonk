@@ -21,15 +21,14 @@ public partial class FrontendFlow : Control
     private TextureRect _brand = null!;
     private Control _navigation = null!;
     private Button _back = null!, _menu = null!;
-    private Button? _next;
     private string? _chosenFaction;
+    private string? _chosenClass;
+    private string? _chosenAdvanced;
     private SelectionPage? _page;
-    private readonly string[] _steps = ["MainMenu", "Faction", "BaseClass", "AdvancedClass", "Galaxy", "Ready"];
+    private readonly string[] _steps = ["MainMenu", "Faction", "BaseClass", "AdvancedClass", "Galaxy"];
     private int _step;
     private AudioStreamPlayer _sound = null!;
     private bool _muted;
-    public float MenuMusicVolume { get; private set; } = .5f;
-    public event Action<float>? MenuMusicVolumeChanged;
     private Control? _settings;
     private bool _collectionsOpen;
     public override void _Ready()
@@ -99,33 +98,29 @@ public partial class FrontendFlow : Control
         if (_transitioning || _starting) return;
         select(); Sound(cue); ShowStep(_step);
     }
-    private void ContinueButton(int destination, string text = "Continue", Action? action = null)
-    {
-        _next=FrontendSkin.Button(text,()=> {
-            if (_transitioning || _starting) return;
-            if (action!=null) action(); else { Sound(); ShowStep(destination); }
-        });
-        _next.CustomMinimumSize=new Vector2(200,52);
-        if (text=="Play")
-        {
-            _next.Disabled=UnavailableReason!=null;
-            _next.TooltipText=UnavailableReason ?? "";
-        }
-        _next.Position=new Vector2(_navigation.Size.X-_next.CustomMinimumSize.X,0);
-        _next.Size=_next.CustomMinimumSize;
-        _navigation.AddChild(_next);
-    }
     private void ShowStep(int step)
     {
         _collectionsOpen=false;
-        _step = Mathf.Clamp(step,0,5);
-        if (_next!=null) { _navigation.RemoveChild(_next); _next.QueueFree(); }
-        _next=null;
+        if(step==1 && _step!=1)_chosenFaction=null;
+        if(step==2 && _step!=2)_chosenClass=null;
+        if(step==3 && _step!=3)_chosenAdvanced=null;
+        _step = Mathf.Clamp(step,0,4);
         foreach (var child in _canvas.GetChildren())
             if (child!=_brand && child!=_navigation) { _canvas.RemoveChild(child); child.QueueFree(); }
         _brand.Visible=_step>1;
+        _brand.Position=new Vector2(76,25);_brand.Size=_brand.CustomMinimumSize=new Vector2(240,76);
         _navigation.Visible=_step>0;
         _back.Disabled=_menu.Disabled=false;
+        foreach(var button in new[]{_back,_menu})
+        {
+            button.FocusNext=button.FocusPrevious=button.FocusNeighborTop=new NodePath("");
+            foreach(string state in new[]{"normal","hover","pressed","hover_pressed","disabled","focus"})
+                if(_step is 1 or 2 or 3 or 4)button.AddThemeStyleboxOverride(state,new StyleBoxEmpty());
+                else button.RemoveThemeStyleboxOverride(state);
+            foreach(string color in new[]{"font_hover_color","font_focus_color","font_pressed_color"})
+                if(_step is 1 or 2 or 3 or 4)button.AddThemeColorOverride(color,SwtorSurvivors.UI.SwtorSkin.Blue);
+                else button.RemoveThemeColorOverride(color);
+        }
         _page = _step == 0 ? new SelectionPage { StepId = "MainMenu" }
             : GD.Load<PackedScene>("res://Frontend/Scenes/"+_steps[_step]+".tscn").Instantiate<SelectionPage>();
         _page.Position = new Vector2(76,150); _page.Size = new Vector2(1448,610); _canvas.AddChild(_page);
@@ -133,13 +128,22 @@ public partial class FrontendFlow : Control
         if (_step == 1)
         {
             var allegiance=FrontendSkin.Art(FrontendSkin.Assets+"Slices/bwaui_character_create_window_104.png",new Vector2(710,42));
-            allegiance.Position=new Vector2(445,60); _canvas.AddChild(allegiance);
+            allegiance.Position=new Vector2(445,90); _canvas.AddChild(allegiance);
         }
         else
         {
-            string[] headings=["", "", "Select Class", "Advanced Class", "Galaxy Map", "Ready"];
+            string[] headings=["", "", "Select Class", "Advanced Class", "Choose Destination"];
             var title=FrontendSkin.Heading(headings[_step],28); title.Position=new Vector2(420,45);
             title.Size=new Vector2(780,52); title.HorizontalAlignment=HorizontalAlignment.Center; _canvas.AddChild(title);
+            if(_step is 2 or 3 or 4)
+            {
+                title.Position=new Vector2(500,48);title.Size=new Vector2(600,58);title.AddThemeFontSizeOverride("font_size",38);title.AddThemeColorOverride("font_color",new Color("dce9ef"));
+                var faction=_catalog.Factions.Single(f=>f.Id==_session.Configuration.FactionId);
+                var subtitle=FrontendSkin.Label((_step==4?"Select a world to explore":_step==3?_catalog.Class(_session.Configuration.BaseClassId).Name:faction.Name).ToUpperInvariant(),19);subtitle.Position=new Vector2(500,110);subtitle.Size=new Vector2(600,32);subtitle.HorizontalAlignment=HorizontalAlignment.Center;
+                subtitle.AddThemeColorOverride("font_color",_step!=4 && faction.Id=="empire"?new Color(1,.25f,.22f):new Color("81cbed"));_canvas.AddChild(subtitle);
+                if(_step==4){title.Position=new Vector2(450,48);title.Size=new Vector2(700,58);}
+                _brand.Position=new Vector2(76,28);_brand.Size=_brand.CustomMinimumSize=new Vector2(260,84);
+            }
         }
         switch (_step)
         {
@@ -147,28 +151,33 @@ public partial class FrontendFlow : Control
             case 2: Classes(); break;
             case 3: Advanced(); break;
             case 4: Galaxy(); break;
-            case 5: ReadyScreen(); break;
         }
         _page.Modulate = new Color(1,1,1,0);
         CreateTween().TweenProperty(_page,"modulate:a",1,.16);
         var selected=Buttons(_page).FirstOrDefault(b=>b.HasMeta("selected") && b.GetMeta("selected").AsBool());
-        (selected ?? (_next is { Disabled:false } ? _next : _back)).GrabFocus();
+        (selected ?? _back).GrabFocus();
     }
     private static VBoxContainer Column(int width) => new() { CustomMinimumSize = new Vector2(width,0) };
     private void Place(Control control,float x,float y,float w,float h)
     { control.Position=new Vector2(x,y); control.Size=new Vector2(w,h); _page!.AddChild(control); }
     private void MainMenu()
     {
-        var planet=FrontendSkin.Planet(FrontendSkin.Assets+"Recovered/char_select_tython_high_res_d.png",870);
-        Place(planet,630,-100,870,870);
         var logo=FrontendSkin.Art(FrontendSkin.Assets+"Slices/bwaui_character_create_window_101.png",new Vector2(540,175));
-        Place(logo,10,-75,540,175);
-        var menu=Column(420); menu.AddThemeConstantOverride("separation",18);
-        menu.AddChild(FrontendSkin.Button("New Run",()=> { _session=new SelectionSession(); _chosenFaction=null; Sound(); ShowStep(1); }));
-        menu.AddChild(FrontendSkin.Button("Collections",ShowCollections));
-        menu.AddChild(FrontendSkin.Button("Settings",ShowSettings));
-        menu.AddChild(FrontendSkin.Button("Exit",()=> GetTree().Quit()));
-        Place(menu,50,245,420,280); menu.GetChild<Control>(0).GrabFocus();
+        Place(logo,454,-85,540,175);
+        MainMenuChoice Entry(string title,string description,string icon,float x,float y,Action action)
+        {
+            var button=new MainMenuChoice {Text=title,Description=description,IconSlice=icon};
+            button.Pressed+=action;Place(button,x,y,580,140);return button;
+        }
+        var start=Entry("New Run","Choose your allegiance. Begin a new journey.","bwaui_buttons_132",114,200,()=> { _session=new SelectionSession(); _chosenFaction=null; Sound(); ShowStep(1); });
+        var collection=Entry("Collections","Explore your unlocked appearances.","bwaui_buttons_135",754,200,ShowCollections);
+        var settings=Entry("Settings","Adjust your display and interface sounds.","bwaui_buttons_90",114,400,ShowSettings);
+        var exit=Entry("Exit","Leave the game.","bwaui_buttons_225",754,400,()=>GetTree().Quit());
+        start.FocusNeighborRight=collection.GetPath();start.FocusNeighborBottom=settings.GetPath();
+        collection.FocusNeighborLeft=start.GetPath();collection.FocusNeighborBottom=exit.GetPath();
+        settings.FocusNeighborTop=start.GetPath();settings.FocusNeighborRight=exit.GetPath();
+        exit.FocusNeighborTop=collection.GetPath();exit.FocusNeighborLeft=settings.GetPath();
+        start.GrabFocus();
     }
     public void ShowCollections()
     {
@@ -194,20 +203,31 @@ public partial class FrontendFlow : Control
         mute=FrontendSkin.Button("Interface Sounds: "+(_muted?"Off":"On"),()=> {
             _muted=!_muted; mute.Text="Interface Sounds: "+(_muted?"Off":"On"); Sound();
         }); body.AddChild(mute);
-        var musicLabel=FrontendSkin.Label($"Menu Music: {MenuMusicVolume*100:0}%",20);
-        body.AddChild(musicLabel);
-        var musicVolume=new HSlider { Name="MenuMusicVolume",MinValue=0,MaxValue=100,Step=1,
-            Value=MenuMusicVolume*100,CustomMinimumSize=new Vector2(480,36),FocusMode=FocusModeEnum.All };
-        musicVolume.ValueChanged+=value=> {
-            MenuMusicVolume=(float)value/100;
-            musicLabel.Text=$"Menu Music: {value:0}%";
-            MenuMusicVolumeChanged?.Invoke(MenuMusicVolume);
-        };
-        body.AddChild(musicVolume);
+        body.AddChild(FrontendSkin.Label("Display Mode",20));
+        var mode=new OptionButton { CustomMinimumSize=new Vector2(480,48) };
+        mode.AddItem("Windowed"); mode.AddItem("Fullscreen");
+        mode.Select(DisplaySettings.Fullscreen ? 1 : 0); body.AddChild(mode);
+        body.AddChild(FrontendSkin.Label("Resolution",20));
+        var resolution=new OptionButton { CustomMinimumSize=new Vector2(480,48) };
+        var screen=DisplayServer.ScreenGetSize();
+        var sizes=new[] { new Vector2I(1000,800),new Vector2I(1280,720),new Vector2I(1366,768),
+            new Vector2I(1600,900),new Vector2I(1920,1080),new Vector2I(2560,1440),new Vector2I(3840,2160),
+            DisplaySettings.Resolution,screen }
+            .Where(s=>s.X>0 && s.Y>0 && s.X<=screen.X && s.Y<=screen.Y).Distinct().OrderBy(s=>s.X).ThenBy(s=>s.Y).ToArray();
+        foreach(var size in sizes) resolution.AddItem($"{size.X} × {size.Y}");
+        resolution.Select(Array.IndexOf(sizes,DisplaySettings.Resolution)); body.AddChild(resolution);
+        var status=FrontendSkin.Label("Fullscreen uses this rendering resolution.",17,true); body.AddChild(status);
+        void ApplyDisplay()
+        {
+            if(resolution.Selected<0) return;
+            var error=DisplaySettings.Set(GetTree().Root,mode.Selected==1,sizes[resolution.Selected]);
+            status.Text=error==Error.Ok ? "Display settings saved." : "Applied, but settings could not be saved.";
+        }
+        mode.ItemSelected+=_=>ApplyDisplay(); resolution.ItemSelected+=_=>ApplyDisplay();
         var close=FrontendSkin.Button("Close",CloseSettings); body.AddChild(close);
-        _settings.AddChild(FrontendSkin.TitledPanel("Settings",body,new Vector2(530,250),new Vector2(540,400)));
+        _settings.AddChild(FrontendSkin.TitledPanel("Settings",body,new Vector2(530,180),new Vector2(540,540)));
         // Keep tab traversal inside the modal.
-        Control[] controls=[mute,musicVolume,close];
+        Control[] controls=[mute,mode,resolution,close];
         for(int i=0;i<controls.Length;i++)
         {
             var previous=controls[(i+controls.Length-1)%controls.Length].GetPath();
@@ -219,79 +239,71 @@ public partial class FrontendFlow : Control
     }
     private void Factions()
     {
+        var choices=new List<FactionChoice>();
         for (int i=0;i<_catalog.Factions.Length;i++)
         {
-            var faction=_catalog.Factions[i]; bool selected=_chosenFaction==faction.Id;
-            var column=Column(472); column.AddThemeConstantOverride("separation",24);
-            column.AddChild(FrontendSkin.Art(faction.Emblem,new Vector2(472,172)));
-            var description=FrontendSkin.Label(faction.Description,20,true); description.CustomMinimumSize=new Vector2(0,126); column.AddChild(description);
-            column.AddChild(FrontendSkin.Button(faction.Name,()=>Choose(()=> { _chosenFaction=faction.Id; _session.SelectFaction(faction.Id,_catalog); },2),selected));
-            _page!.AddChild(FrontendSkin.Panel(column,new Vector2(i==0 ? 104:800,24),new Vector2(548,548),creation:true));
+            var faction=_catalog.Factions[i];
+            var choice=new FactionChoice {Name="Faction_"+faction.Id,Faction=faction,
+                Classes=_catalog.Classes.Where(c=>c.FactionId==faction.Id).ToArray(),
+                Selected=_chosenFaction==faction.Id};
+            choice.Pressed+=()=>Choose(()=> { _chosenFaction=faction.Id; _session.SelectFaction(faction.Id,_catalog); },2);
+            Place(choice,89+i*730,30,540,570);choices.Add(choice);
         }
-    }
-    private CharacterPreview Preview(string art,AdvancedClassDefinition? advanced,float x=365,float width=650)
-    {
-        var preview=GD.Load<PackedScene>("res://Frontend/Scenes/CharacterPreview.tscn").Instantiate<CharacterPreview>();
-        preview.Position=new Vector2(x,0); preview.Size=new Vector2(width,610); _page!.AddChild(preview);
-        preview.ShowClass(art,advanced); return preview;
+        choices[0].FocusNeighborRight=choices[1].GetPath();
+        choices[1].FocusNeighborLeft=choices[0].GetPath();
+        Control[] focusOrder=[_back,_menu,choices[0],choices[1]];
+        for(int i=0;i<focusOrder.Length;i++)
+        {
+            focusOrder[i].FocusNext=focusOrder[(i+1)%focusOrder.Length].GetPath();
+            focusOrder[i].FocusPrevious=focusOrder[(i+focusOrder.Length-1)%focusOrder.Length].GetPath();
+        }
+        _back.FocusNeighborTop=choices[0].GetPath();_menu.FocusNeighborTop=choices[1].GetPath();
     }
     private void Classes()
     {
-        var selected=_catalog.Class(_session.Configuration.BaseClassId);
-        var choices=Column(320);
+        var choices=new List<ClassChoice>();
         foreach (var cls in _catalog.Classes.Where(c=>c.FactionId==_session.Configuration.FactionId))
         {
-            var b=FrontendSkin.Button(cls.Name,()=>Browse(()=>_session.SelectClass(cls.Id,_catalog)),cls.Id==selected.Id);
-            b.Icon=FrontendSkin.Texture(cls.Icon); b.ExpandIcon=true; b.AddThemeConstantOverride("icon_max_width",54);
-            b.AddThemeColorOverride("icon_normal_color",cls.Id==selected.Id ? Colors.White : new Color(.65f,.7f,.75f));
-            b.AddThemeColorOverride("icon_hover_color",Colors.White);
-            b.CustomMinimumSize=new Vector2(320,90); choices.AddChild(b);
+            var b=new ClassChoice {Name="Class_"+cls.Id,Class=cls,Selected=_chosenClass==cls.Id};
+            b.Pressed+=()=>Choose(()=>{_chosenClass=cls.Id;_session.SelectClass(cls.Id,_catalog);},3);
+            Place(b,-10+choices.Count*375,50,343,540);choices.Add(b);
         }
-        Place(choices,0,20,320,550); Preview(selected.Artwork,null);
-        var details=new VBoxContainer(); details.AddChild(FrontendSkin.Label(selected.Description,20,true));
-        details.AddChild(FrontendSkin.Heading("Advanced Classes",19));
-        foreach (var a in selected.AdvancedClasses) details.AddChild(FrontendSkin.Label(a.Name,20,true));
-        if (!selected.AdvancedClasses.Any(a=>a.GameplayImplemented)) details.AddChild(FrontendSkin.Label("Preview Only",18));
-        _page!.AddChild(FrontendSkin.TitledPanel(selected.Name,details,new Vector2(1040,20),new Vector2(408,550)));
-        ContinueButton(3);
+        for(int i=0;i<choices.Count;i++)
+        {
+            if(i>0)choices[i].FocusNeighborLeft=choices[i-1].GetPath();
+            if(i+1<choices.Count)choices[i].FocusNeighborRight=choices[i+1].GetPath();
+            choices[i].FocusNeighborBottom=_back.GetPath();
+        }
+        Control[] order=[_back,_menu,..choices];
+        for(int i=0;i<order.Length;i++){order[i].FocusNext=order[(i+1)%order.Length].GetPath();order[i].FocusPrevious=order[(i+order.Length-1)%order.Length].GetPath();}
+        _back.FocusNeighborTop=choices[0].GetPath();_menu.FocusNeighborTop=choices[0].GetPath();
     }
     private void Advanced()
     {
-        var cls=_catalog.Class(_session.Configuration.BaseClassId); var selected=_catalog.Advanced(_session.Configuration.AdvancedClassId);
-        var choices=Column(320); choices.AddChild(FrontendSkin.Art(cls.Icon,new Vector2(90,90)));
+        var cls=_catalog.Class(_session.Configuration.BaseClassId);
+        var choices=new List<AdvancedClassChoice>();
         foreach (var a in cls.AdvancedClasses)
-            choices.AddChild(FrontendSkin.Button(a.Name,()=>Browse(()=>_session.SelectAdvanced(a.Id,_catalog)),a.Id==selected.Id));
-        Place(choices,0,20,320,500); Preview(selected.Artwork,selected);
-        var details=new VBoxContainer(); details.AddChild(FrontendSkin.Label(selected.Description,20,true));
-        if (!selected.GameplayImplemented) details.AddChild(FrontendSkin.Label("Preview Only",18));
-        _page!.AddChild(FrontendSkin.TitledPanel(selected.Name,details,new Vector2(1040,20),new Vector2(408,550)));
-        ContinueButton(4);
+        {
+            var b=new AdvancedClassChoice {Name="Advanced_"+a.Id,Advanced=a,FactionId=cls.FactionId,Selected=_chosenAdvanced==a.Id};
+            b.Pressed+=()=>Choose(()=>{_chosenAdvanced=a.Id;_session.SelectAdvanced(a.Id,_catalog);},4);
+            Place(b,154+choices.Count*610,45,530,550);choices.Add(b);
+        }
+        choices[0].FocusNeighborRight=choices[1].GetPath();choices[1].FocusNeighborLeft=choices[0].GetPath();
+        foreach(var choice in choices)choice.FocusNeighborBottom=_back.GetPath();
+        Control[] order=[_back,_menu,..choices];
+        for(int i=0;i<order.Length;i++){order[i].FocusNext=order[(i+1)%order.Length].GetPath();order[i].FocusPrevious=order[(i+order.Length-1)%order.Length].GetPath();}
+        _back.FocusNeighborTop=choices[0].GetPath();_menu.FocusNeighborTop=choices[0].GetPath();
     }
     private void Galaxy()
     {
         var map=_catalog.Map(_session.Configuration.MapId);
-        var chart=new GalaxyChart { Size=new Vector2(960,610) }; _page!.AddChild(chart);
-        chart.DestinationSelected += id=>Browse(()=>_session.SelectMap(id,_catalog),"map"); chart.Populate(_catalog,map.Id);
-        var col=new VBoxContainer(); col.AddChild(FrontendSkin.Heading(map.Region,18));
-        col.AddChild(FrontendSkin.Label(map.Description,20,true));
-        if (UnavailableReason!=null) col.AddChild(FrontendSkin.Label("Unavailable for this class",18,true));
-        _page.AddChild(FrontendSkin.TitledPanel(map.Name,col,new Vector2(990,0),new Vector2(458,610)));
-        ContinueButton(5);
-    }
-    private void ReadyScreen()
-    {
-        var c=_session.Configuration; var advanced=_catalog.Advanced(c.AdvancedClassId);
-        Preview(advanced.Artwork,advanced,0,660);
-        var col=new VBoxContainer(); col.AddThemeConstantOverride("separation",18);
-        col.AddChild(FrontendSkin.Heading(advanced.Name,24));
-        col.AddChild(FrontendSkin.Label(_catalog.Factions.Single(f=>f.Id==c.FactionId).Name,20));
-        if (advanced.Id=="sorcerer") col.AddChild(FrontendSkin.Label("Human · Male · Body Type 2",18));
-        col.AddChild(FrontendSkin.Heading(_catalog.Map(c.MapId).Name,22));
-        col.AddChild(FrontendSkin.Art(_catalog.Map(c.MapId).Artwork,new Vector2(580,160)));
-        if (UnavailableReason!=null) col.AddChild(FrontendSkin.Label("Preview Only — Play Unavailable",20,true));
-        _page!.AddChild(FrontendSkin.TitledPanel("Your Character",col,new Vector2(705,0),new Vector2(743,610)));
-        ContinueButton(5,"Play",StartRun);
-        EmitSignal(SignalName.ConfigurationReady,c.ToJson());
+        var chart=new GalaxyChart { Size=new Vector2(1448,650),AvailabilityReason=()=>UnavailableReason }; _page!.AddChild(chart);
+        chart.DestinationSelected+=id=>{_session.SelectMap(id,_catalog);Sound("map");};
+        chart.CourseRequested+=()=>{if(_transitioning || _starting)return;Sound();StartRun();};chart.Populate(_catalog,map.Id);
+        var destinations=chart.Destinations;
+        Control[] order=[_back,_menu,..destinations,chart.CourseButton];
+        for(int i=0;i<order.Length;i++){order[i].FocusNext=order[(i+1)%order.Length].GetPath();order[i].FocusPrevious=order[(i+order.Length-1)%order.Length].GetPath();}
+        destinations[^1].FocusNeighborBottom=_back.GetPath();_back.FocusNeighborTop=destinations[^1].GetPath();_menu.FocusNeighborTop=destinations[^1].GetPath();
     }
     private void StartRun()
     {
@@ -299,7 +311,9 @@ public partial class FrontendFlow : Control
         string? failure = UnavailableReason;
         if (failure == null)
         {
-            _starting = true; failure = PlayRequested!(CurrentConfiguration);
+            _starting = true;
+            EmitSignal(SignalName.ConfigurationReady,CurrentConfiguration.ToJson());
+            failure = PlayRequested!(CurrentConfiguration);
             if (failure == null) { _sound.Stop(); return; }
             _starting = false;
         }

@@ -7,10 +7,10 @@ Launch the integrated menu with `./Open-Survivors.ps1`, or go directly to Korrib
 ## Configuration
 
 - `godot/Gameplay/run-slots.tres`: four offensive slots, two utility slots, three artifact slots. `GameWorld.SlotRules` accepts another resource for future classes. Starting Force Lightning occupies an offensive slot. Unlocks are admission checked; ability replacement is outside D2. Owned upgrades remain eligible.
-- `godot/Gameplay/Abilities/chain.tres`: 42 initial damage, three additional distinct-target bounces, 0.55 bounce range, 82% damage retained per link, eight-second cooldown and shared GCD. Initial acquisition range is 1.1; later links may travel beyond it, with hostile/living/LOS validation from each previous link. Rendering never deals damage.
-- `godot/Gameplay/Abilities/overload.tres`: three visible hostiles within 0.32 trigger a 14-damage radial pulse and up to 0.30 displacement, on a sixteen-second independent cooldown. Full-body terrain/prop sweeps and supported standing points gate each 0.015 step. Elites resist 65%; Broodmatron is immune. Surviving targets still take damage and delay their next ordinary melee swing by at least 0.45 seconds. Boss special attacks retain their own encounter timing.
-- `WaveDirector.EliteEverySpawns` / `EliteFirstWave`: every twelfth spawn from wave two is an elite variation of an existing roster enemy. No new enemy art or encounter framework. `EnemyAgent.RewardTier`: zero ordinary, one elite, two major boss. `KnockbackResistance`: 0–1.
-- `godot/Gameplay/RunItems/artifacts.json`: seven unique equipment rewards plus three immediate power items. Descriptions, tiers, prerequisites, icon references and effect values are data. Major-only Codex and Conduit are excluded from elite rewards. Power items fill exhausted eligible pools so every encounter still offers three distinct useful choices. Existing equipment is excluded; specialized items require their ability.
+- `godot/Gameplay/Abilities/chain.tres`: 60 initial damage, four additional distinct-target bounces, 0.55 bounce range, 88% damage retained per link, six-second cooldown and shared GCD. Initial acquisition range is 1.1; later links may travel beyond it, with hostile/living/LOS validation from each previous link. Rendering never deals damage.
+- `godot/Gameplay/Abilities/overload.tres`: utility escape: three visible hostiles within 0.32 trigger an 8-damage radial pulse and up to 0.70 displacement, on a twelve-second independent cooldown. Full-body terrain/prop sweeps and supported standing points gate each 0.015 step. Elites resist 65%; Broodmatron is immune. Surviving targets still take damage and are staggered for `StaggerSeconds` (1.5): no ordinary melee swing, and 40% movement speed scaled by knockback resistance. Boss special attacks retain their own encounter timing.
+- `WaveDirector.EliteEverySpawns` / `EliteFirstWave`: every twentieth spawn from wave two is an elite variation of an existing roster enemy. No new enemy art or encounter framework. `EnemyAgent.RewardTier`: zero ordinary, one elite, two major boss. `KnockbackResistance`: 0–1.
+- `godot/Gameplay/RunItems/artifacts.json`: seven unique equipment rewards plus three immediate power items. Descriptions, tiers, prerequisites, icon references and effect values are data. Major-only Codex and Conduit are excluded from elite rewards. `RunArtifacts.EliteRewardChance` (35%) gates elite rewards; bosses always pay. Elites drop nothing when no relic is eligible; power items only pad offers that contain at least one relic, or boss offers. Existing equipment is excluded; specialized items require their ability.
 
 ## Build decisions
 
@@ -44,3 +44,6 @@ Completed 2026-10-21: C# build passed; focused Godot session passed all 48 check
 
 
 Follow-up: action-bar icons now appear only after their run unlock. Forked Current is explicitly labeled a passive for Force Lightning and uses its icon. Chain Lightning remains a separate automatic active ability. Build and all 50 focused runtime checks passed, including the separate Chain cooldown/cast without Force Lightning or the fork passive.
+
+
+Balance pass (2026-10-21, after Brant's play-test): Chain buffed, Shock 36 damage / 3 s with a 50% splash (radius 0.12), Overload reshaped as a utility knockback, Static Barrier 22 shield / 22 s, Death Field heal 2 per hit capped at 8, rarer elites and relic drops.
