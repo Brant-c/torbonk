@@ -88,7 +88,15 @@ public partial class PlayerController : CharacterBody3D
         var actualFootprint = new Vector3(GlobalPosition.X, footprint.Y, GlobalPosition.Z);
         if (!Arena.CanTraverse(footprint, actualFootprint, CapsuleRadius))
         {
-            GlobalPosition = before; Velocity = Vector3.Zero;
+            // Keep the part of the physics slide that is still safe terrain, so a prop edge next to a drop slides
+            // along it instead of freezing the player in place.
+            var slide = actualFootprint - footprint;
+            var alongX = new Vector3(slide.X, 0, 0); var alongZ = new Vector3(0, 0, slide.Z);
+            if (Arena.CanTraverse(footprint, footprint + alongX, CapsuleRadius))
+            { GlobalPosition = new Vector3(before.X + slide.X, before.Y, before.Z); Velocity = new Vector3(Velocity.X, 0, 0); }
+            else if (Arena.CanTraverse(footprint, footprint + alongZ, CapsuleRadius))
+            { GlobalPosition = new Vector3(before.X, before.Y, before.Z + slide.Z); Velocity = new Vector3(0, 0, Velocity.Z); }
+            else { GlobalPosition = before; Velocity = Vector3.Zero; }
         }
         else if (Arena.GroundAt(actualFootprint, out var ground, out _, Arena.ProbeRise, Arena.MaximumDrop))
             _groundFootprint = ground;

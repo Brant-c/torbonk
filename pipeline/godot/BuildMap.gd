@@ -118,7 +118,7 @@ func collision(mi: MeshInstance3D, owner_root: Node, attachment: Node3D = null, 
 	var shape = CollisionShape3D.new()
 	var extent: Vector3 = (mi.global_transform * mi.get_aabb()).size
 	var rounded := model_name.contains("rock") or model_name.contains("boulder") or model_name.contains("debris") or model_name.contains("log") or model_name.contains("gravestone") or model_name.contains("crate")
-	if rounded and model_name != "" and max(extent.x, max(extent.y, extent.z)) < 1.0:
+	if rounded and model_name != "" and (model_name.contains("boulder") or max(extent.x, max(extent.y, extent.z)) < 1.0):
 		# Small jagged rocks snag a capsule on concave triangle edges; a convex hull slides.
 		shape.shape = mi.mesh.create_convex_shape(true, true); convex_collision.append(model_name)
 	else:
