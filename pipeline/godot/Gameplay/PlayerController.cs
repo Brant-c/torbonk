@@ -57,7 +57,10 @@ public partial class PlayerController : CharacterBody3D
 
     public override void _PhysicsProcess(double delta)
     {
-        Step(delta, TestInput ?? Input.GetVector("b1_left", "b1_right", "b1_forward", "b1_back"));
+        var input = TestInput ?? Input.GetVector("b1_left", "b1_right", "b1_forward", "b1_back");
+        // Both mouse buttons held: run forward along the camera facing, like SWTOR/WoW.
+        if (TestInput == null && Rig != null && Rig.RunForward) input.Y = -1;
+        Step(delta, input);
     }
 
     public void Step(double delta, Vector2 input)

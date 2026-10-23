@@ -54,6 +54,9 @@ public partial class CameraRig : Node3D
     public float CurrentZoom { get; private set; }
     public bool ControlsEnabled { get; private set; }
     public bool Orbiting => _orbitButton != MouseButton.None;
+    /// <summary>Both mouse buttons held during an orbit: the character runs along the camera facing.</summary>
+    public bool RunForward { get; private set; }
+    private MouseButton _chordButton;
     private readonly SphereShape3D _probe = new();
     private readonly Dictionary<MeshInstance3D, bool> _hidden = new();
     private readonly Godot.Collections.Array<Rid> _excluded = new();
@@ -86,7 +89,7 @@ public partial class CameraRig : Node3D
     }
     public void CancelOrbit(bool warp = true)
     {
-        _leftPending = false; _leftTravel = Vector2.Zero; _orbitButton = MouseButton.None;
+        _leftPending = false; _leftTravel = Vector2.Zero; _orbitButton = _chordButton = MouseButton.None; RunForward = false;
         SwtorCursor.Instance.Release(this, warp);
     }
     private void OnFocusExited() => CancelOrbit(false);
@@ -96,9 +99,17 @@ public partial class CameraRig : Node3D
     // Releases and captured motion must be seen even if the pointer finishes over UI.
     public override void _Input(InputEvent e)
     {
+        if (CanOrbit && Orbiting && _chordButton == MouseButton.None
+            && e is InputEventMouseButton { Pressed: true } other
+            && other.ButtonIndex is MouseButton.Left or MouseButton.Right && other.ButtonIndex != _orbitButton)
+        { _chordButton = other.ButtonIndex; RunForward = true; GetViewport().SetInputAsHandled(); return; }
         if (e is InputEventMouseButton { Pressed: false } b)
         {
-            if (b.ButtonIndex == _orbitButton && Orbiting)
+            if (b.ButtonIndex == _chordButton && Orbiting)
+            { _chordButton = MouseButton.None; RunForward = false; GetViewport().SetInputAsHandled(); }
+            else if (b.ButtonIndex == _orbitButton && Orbiting && _chordButton != MouseButton.None)
+            { _orbitButton = _chordButton; _chordButton = MouseButton.None; RunForward = false; GetViewport().SetInputAsHandled(); }
+            else if (b.ButtonIndex == _orbitButton && Orbiting)
             { CancelOrbit(); GetViewport().SetInputAsHandled(); }
             else if (b.ButtonIndex == MouseButton.Left) _leftPending = false;
         }
