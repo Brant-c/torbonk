@@ -41,6 +41,7 @@ Receipts: `manifests/map-<id>-*.json` (source hashes, conversion, Godot build, s
   same standing/walking tests as the enemy spawner (dense props made the footprint centre unusable).
 - Dromund Kaas and Hutta are Imperial-only destinations; Balmorra is open to both factions.
   Today only Imperial classes are playable.
+- Collision (`BuildMap.gd`): gameplay walks on terrain only, so walkable decks (bridges, planks, walkways, ramps) and clutter lower than a step (0.055) carry no collision; small rocks, boulders, debris, logs, crates and gravestones use convex hulls so the capsule slides instead of snagging. Counts are in `map-<id>-godot-build.json`.
 - Imported textures and GLBs add roughly 600 MB to `Assets/Maps/`.
 
 ## Review checklist

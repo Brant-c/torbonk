@@ -6,6 +6,8 @@ func check(label: String, ok: bool):
 	if not ok: failures.append(label); push_error(label)
 func v(a) -> Vector3: return Vector3(a[0],a[1],a[2])
 var map_id: String
+var skipped_collision: Array = []
+var convex_collision: Array = []
 func _initialize():
 	for a in OS.get_cmdline_user_args():
 		if a.begins_with("--map="): map_id = a.substr(6)
@@ -74,7 +76,7 @@ func build():
 					triangle_count += arrays[Mesh.ARRAY_INDEX].size()/3 if arrays[Mesh.ARRAY_INDEX] != null else arrays[Mesh.ARRAY_VERTEX].size()/3
 					var m = mi.mesh.surface_get_material(s)
 					check("material "+p.id+"/"+str(s),m is StandardMaterial3D and m.albedo_texture != null)
-				collision(mi,root,node)
+				collision(mi,root,node,p.path.get_file().get_basename())
 			check("source triangle count "+p.id,model_info != null and triangle_count == int(model_info.triangles))
 	await process_frame
 	var max_transform_error = 0.0
@@ -91,7 +93,7 @@ func build():
 	var report = {"passed":failures.is_empty(),"failures":failures,"terrainPatches":data.terrain.size(),
 		"terrainTriangles":terrain_triangles,"sourcePlacements":nodes.size(),"propInstances":prop_instances,
 		"sharedModelResources":data.modelOutputs.size(),"propMeshInstances":mesh_count,
-		"maxWorldMatrixError":max_transform_error,"collision":"derived static triangle meshes; source physics not claimed"}
+		"maxWorldMatrixError":max_transform_error,"collision":"derived static triangle meshes; source physics not claimed","collisionSkippedMeshes":skipped_collision.size(),"collisionConvexMeshes":convex_collision.size()}
 	var file = FileAccess.open("res://../manifests/map-"+map_id+"-godot-build.json",FileAccess.WRITE); file.store_string(JSON.stringify(report,"\t")); file.close()
 	print("MAP_BUILD_PASSED" if failures.is_empty() else "MAP_BUILD_FAILED")
 	quit(0 if failures.is_empty() else 1)
@@ -100,9 +102,25 @@ func meshes(node: Node) -> Array:
 	if node is MeshInstance3D: result.append(node)
 	for child in node.get_children(): result.append_array(meshes(child))
 	return result
-func collision(mi: MeshInstance3D, owner_root: Node, attachment: Node3D = null):
+const STEP_HEIGHT := 0.055
+func collision(mi: MeshInstance3D, owner_root: Node, attachment: Node3D = null, model_name: String = ""):
 	if attachment == null: attachment = mi
+	if model_name != "":
+		# Gameplay walks on terrain only (ground probe is terrain-layer). Walkable decks and flat clutter would
+		# otherwise act as walls, so they carry no collision; supports, rails-free arches and solid rocks still do.
+		var size: Vector3 = (mi.global_transform * mi.get_aabb()).size
+		var walkable := model_name.contains("bridge") and not (model_name.contains("support") or model_name.contains("pillar"))
+		walkable = walkable or model_name.contains("plank") or model_name.contains("walkway") or model_name.contains("catwalk") or model_name.contains("ramp")
+		if walkable or size.y < STEP_HEIGHT:
+			skipped_collision.append(model_name); return
 	var body = StaticBody3D.new(); body.name = "DerivedCollision"; attachment.add_child(body); body.owner = owner_root
 	body.global_transform = mi.global_transform
-	var shape = CollisionShape3D.new(); shape.shape = mi.mesh.create_trimesh_shape()
+	var shape = CollisionShape3D.new()
+	var extent: Vector3 = (mi.global_transform * mi.get_aabb()).size
+	var rounded := model_name.contains("rock") or model_name.contains("boulder") or model_name.contains("debris") or model_name.contains("log") or model_name.contains("gravestone") or model_name.contains("crate")
+	if rounded and model_name != "" and max(extent.x, max(extent.y, extent.z)) < 1.0:
+		# Small jagged rocks snag a capsule on concave triangle edges; a convex hull slides.
+		shape.shape = mi.mesh.create_convex_shape(true, true); convex_collision.append(model_name)
+	else:
+		shape.shape = mi.mesh.create_trimesh_shape()
 	body.add_child(shape); shape.owner = owner_root
