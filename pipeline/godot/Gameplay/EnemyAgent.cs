@@ -23,13 +23,16 @@ public partial class EnemyAgent : Combatant
     [Export] public float KnockbackResistance { get; set; }
     [Export] public bool GuaranteedReward { get; set; }
     [Export] public bool ScaleWithWaves { get; set; } = true;
+    public int SpawnLevel { get; set; } = 1;
+    public int ReferenceLevel { get; set; } = 1;
+    public float LevelDamageMultiplier { get; set; } = 1;
     public double StunRemaining {get;private set;}
     public double OilRemaining {get;set;}
     public float DealAttack(float amount,DamageType type=DamageType.Energy)
     {
         var build=(Target.GetParent()?.GetParent() as GameWorld)?.Build;
         build?.Attacked(this,Target.Health.Shielded);
-        return Target.Health.ApplyDamage(amount*(OilRemaining>0?.75f:1)*(build?.IncomingMultiplier??1),type);
+        return Target.Health.ApplyDamage(amount*LevelDamageMultiplier*(OilRemaining>0?.75f:1)*(build?.IncomingMultiplier??1),type);
     }
     public bool Stun(float seconds)
     {

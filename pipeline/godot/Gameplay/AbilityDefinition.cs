@@ -9,9 +9,16 @@ public enum AbilityEffect { Damage, Shield, Heal, Buff }
 [GlobalClass]
 public partial class AbilityDefinition : Resource
 {
+    [Export] public bool IsBasicAttack {get;set;}
+    [Export] public string ExclusiveWith {get;set;}="";
+    [Export] public bool SpreadsPeriodicEffects {get;set;}
+    [Export] public float PeriodicHealing {get;set;}
     [Export] public float PeriodicDamage {get;set;}
     [Export] public float PeriodicDuration {get;set;}
     [Export] public float PeriodicInterval {get;set;}=1;
+    // A named, caster-owned periodic effect is required; unrelated/foreign DoTs never qualify.
+    [Export] public string CriticalAgainstPeriodic {get;set;}="";
+    [Export] public float CriticalMultiplier {get;set;}=1.5f;
     [Export] public float SplashMultiplier {get;set;}=.4f;
     // Class-kit hooks. All default to inert so retained abilities behave identically.
     [Export] public float AfflictedBonus {get;set;}          // Extra damage fraction against targets carrying one of the caster's DoTs.

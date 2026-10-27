@@ -5,6 +5,9 @@
 [resource]
 script = ExtResource("1")
 Id = "deathfield"
+ExclusiveWith = "storm"
+SpreadsPeriodicEffects = true
+Description = "Spread all of your DoTs from enemies hit to every surviving enemy within Death Field."
 Title = "Death Field"
 Icon = "deathfield"
 StartsUnlocked = false

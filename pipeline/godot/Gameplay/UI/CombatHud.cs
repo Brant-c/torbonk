@@ -113,7 +113,7 @@ public partial class CombatHud : Control
         foreach(var (slot,ability) in _abilitySlots)
         {
             var category=ability.Definition.Category;var controller=World.Abilities;
-            string slots=$"{category}: {controller.Equipped(category)}/{controller.Limit(category)} equipped. Passive talents use no ability slots.";
+            string slots=ability.Definition.IsBasicAttack?"Basic weapon attack · no ability slot. Fills gaps between class abilities.":$"{category}: {controller.Equipped(category)}/{controller.Limit(category)} equipped. Passive talents use no ability slots.";
             slot.UpdateCooldown(ability.CooldownRemaining,ability.CooldownDuration,
                 ability.Definition.UsesGlobalCooldown?World.Abilities.GlobalCooldownRemaining:0,
                 World.Abilities.GlobalCooldownDuration,ability.Casting);

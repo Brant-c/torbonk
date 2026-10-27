@@ -1,0 +1,634 @@
+{
+  "evidence": "Client-derived April2012; exact GFX subimage rectangles and original font outlines. Semantic header/connector placement is a Survivors adaptation verified visually.",
+  "resources": [
+    {
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_10.dds",
+      "output": "godot\\Assets\\UI\\slices\\bwaui_tooltip_1.png",
+      "sha256": "a1ddff2bbb9da61f655e45c4507f5711f9cfbecca7ad87df30337c39a9b1f177",
+      "dimensions": [
+        29,
+        43
+      ],
+      "definition": "/resources/gfx/gfx_production/bwaui_tooltip.gfx",
+      "subImageId": 1,
+      "imageId": 7,
+      "crop": [
+        926,
+        974,
+        955,
+        1017
+      ],
+      "conversion": "GFX tag 1008 pixel rectangle; native RGBA; no resample"
+    },
+    {
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "output": "godot\\Assets\\UI\\slices\\bwaui_skilltree_1.png",
+      "sha256": "f624c9908d53699ec58313a8b1c444e3a7581f875d14d901c3e313ea6351e5cf",
+      "dimensions": [
+        30,
+        36
+      ],
+      "definition": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "subImageId": 1,
+      "imageId": 20,
+      "crop": [
+        436,
+        630,
+        466,
+        666
+      ],
+      "conversion": "GFX tag 1008 pixel rectangle; native RGBA; no resample"
+    },
+    {
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "output": "godot\\Assets\\UI\\slices\\bwaui_skilltree_3.png",
+      "sha256": "26b507d1441b1f7dd4902497a7d410d1e0359c7a9688df9ac8984ad3d4b144d2",
+      "dimensions": [
+        30,
+        36
+      ],
+      "definition": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "subImageId": 3,
+      "imageId": 20,
+      "crop": [
+        500,
+        630,
+        530,
+        666
+      ],
+      "conversion": "GFX tag 1008 pixel rectangle; native RGBA; no resample"
+    },
+    {
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "output": "godot\\Assets\\UI\\slices\\bwaui_skilltree_5.png",
+      "sha256": "791e545a3778f22a32d47aa49d6e88766998d89a989dedc75dd7f34a01d2f7a5",
+      "dimensions": [
+        30,
+        36
+      ],
+      "definition": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "subImageId": 5,
+      "imageId": 20,
+      "crop": [
+        468,
+        630,
+        498,
+        666
+      ],
+      "conversion": "GFX tag 1008 pixel rectangle; native RGBA; no resample"
+    },
+    {
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_15.dds",
+      "output": "godot\\Assets\\UI\\slices\\bwaui_skilltree_9.png",
+      "sha256": "90a832689061e6d9e2a5847d9f99d5d27e1c86b0f175a4e5f7b1e4ac3dc8afc3",
+      "dimensions": [
+        62,
+        62
+      ],
+      "definition": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "subImageId": 9,
+      "imageId": 19,
+      "crop": [
+        938,
+        915,
+        1000,
+        977
+      ],
+      "conversion": "GFX tag 1008 pixel rectangle; native RGBA; no resample"
+    },
+    {
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "output": "godot\\Assets\\UI\\slices\\bwaui_skilltree_13.png",
+      "sha256": "2ba2dc7b9059cf292b797656f1ecac6da41afc86f323abfe972a5a2159c1cb75",
+      "dimensions": [
+        46,
+        27
+      ],
+      "definition": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "subImageId": 13,
+      "imageId": 20,
+      "crop": [
+        363,
+        743,
+        409,
+        770
+      ],
+      "conversion": "GFX tag 1008 pixel rectangle; native RGBA; no resample"
+    },
+    {
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "output": "godot\\Assets\\UI\\slices\\bwaui_skilltree_16.png",
+      "sha256": "1f3fe4071f2a5f11fa10d7a4d99ed31ad3f6d414ac363ab794211b810a6f43e4",
+      "dimensions": [
+        30,
+        27
+      ],
+      "definition": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "subImageId": 16,
+      "imageId": 20,
+      "crop": [
+        694,
+        743,
+        724,
+        770
+      ],
+      "conversion": "GFX tag 1008 pixel rectangle; native RGBA; no resample"
+    },
+    {
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_13.dds",
+      "output": "godot\\Assets\\UI\\slices\\bwaui_skilltree_26.png",
+      "sha256": "0a46d69425cf5d7a6512b1327a15f279d70a945c44657eb1f73cb56a6f71ac63",
+      "dimensions": [
+        9,
+        21
+      ],
+      "definition": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "subImageId": 26,
+      "imageId": 1,
+      "crop": [
+        1013,
+        49,
+        1022,
+        70
+      ],
+      "conversion": "GFX tag 1008 pixel rectangle; native RGBA; no resample"
+    },
+    {
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_12.dds",
+      "output": "godot\\Assets\\UI\\slices\\bwaui_skilltree_30.png",
+      "sha256": "1cb537b6c6a751ee5ef70a94d020c2adc8aa970b9c75055a8fb0f3edf14fcda6",
+      "dimensions": [
+        405,
+        632
+      ],
+      "definition": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "subImageId": 30,
+      "imageId": 6,
+      "crop": [
+        418,
+        0,
+        823,
+        632
+      ],
+      "conversion": "GFX tag 1008 pixel rectangle; native RGBA; no resample"
+    },
+    {
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_20.dds",
+      "output": "godot\\Assets\\UI\\slices\\bwaui_skilltree_32.png",
+      "sha256": "1539fe51a17736364d654083e0f2b0118bf1b4c8eace304c6eb6f07ff2bcfb99",
+      "dimensions": [
+        405,
+        632
+      ],
+      "definition": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "subImageId": 32,
+      "imageId": 10,
+      "crop": [
+        0,
+        0,
+        405,
+        632
+      ],
+      "conversion": "GFX tag 1008 pixel rectangle; native RGBA; no resample"
+    },
+    {
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_15.dds",
+      "output": "godot\\Assets\\UI\\slices\\bwaui_skilltree_35.png",
+      "sha256": "000886bfef55c59270670309a8ff10dea8961114cc9b703d5a500df4b5cbc257",
+      "dimensions": [
+        375,
+        76
+      ],
+      "definition": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "subImageId": 35,
+      "imageId": 19,
+      "crop": [
+        0,
+        621,
+        375,
+        697
+      ],
+      "conversion": "GFX tag 1008 pixel rectangle; native RGBA; no resample"
+    },
+    {
+      "source": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+      "output": "godot\\Assets\\UI\\slices\\bwaui_skilltree_42.png",
+      "sha256": "7d21231b7878ec1f1e870434ee21d3a7adedcaba7151d018e121794ee07e568e",
+      "dimensions": [
+        380,
+        112
+      ],
+      "definition": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "subImageId": 42,
+      "imageId": 18,
+      "crop": [
+        0,
+        790,
+        380,
+        902
+      ],
+      "conversion": "GFX tag 1008 pixel rectangle; native RGBA; no resample"
+    },
+    {
+      "source": "/resources/gfx/fonts/swtor_fonts.gfx",
+      "fontId": 3,
+      "output": "godot\\Assets\\UI\\Eurostile.ttf",
+      "sha256": "5c27083d4c5c08e34e67375087fbced01fa496ab0a8af326890b4a6d36e99b31",
+      "embeddedName": "Eurostile",
+      "glyphCount": 223,
+      "unitsPerEm": 1024,
+      "conversion": "DefineFont3 outlines/advances divided by 20, Y inverted; no kerning conversion"
+    },
+    {
+      "source": "/resources/gfx/fonts/swtor_fonts.gfx",
+      "fontId": 7,
+      "output": "godot\\Assets\\UI\\EurostileBold.ttf",
+      "sha256": "70bf7db96b4cb878aff4ebd6e9d3910f734832b058882979c361351bcf0e43be",
+      "embeddedName": "Eurostile Bold",
+      "glyphCount": 223,
+      "unitsPerEm": 1024,
+      "conversion": "DefineFont3 outlines/advances divided by 20, Y inverted; no kerning conversion"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xA50A1A1BDCBD319C",
+      "entryOffset": 69391161,
+      "headerSize": 36,
+      "dataOffset": 69391197,
+      "compressedSize": 2824,
+      "length": 2824,
+      "compressionMethod": 0,
+      "crc32Index": "2f786326",
+      "path": "/resources/gfx/gfx_production/bwaui_skilltree.gfx",
+      "sha256": "7ca0c73acc9504d3a22ee54e95f6e67a38d7818c2a3b02b35ad07a278aae77ba",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwaui_skilltree.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x994442C9A98C7211",
+      "entryOffset": 59442392,
+      "headerSize": 36,
+      "dataOffset": 59442428,
+      "compressedSize": 185581,
+      "length": 331224,
+      "compressionMethod": 1,
+      "crc32Index": "ab082e54",
+      "path": "/resources/gfx/fonts/swtor_fonts.gfx",
+      "sha256": "82e7323febc37b75ad4832377869323cd647402f1a1cb7875c94d5dd5d2177fe",
+      "output": "source-assets\\april2012\\resources\\gfx\\fonts\\swtor_fonts.gfx",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xA63365CCE2836174",
+      "entryOffset": 60935319,
+      "headerSize": 36,
+      "dataOffset": 60935355,
+      "compressedSize": 444616,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "1ec260b5",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_13.dds",
+      "sha256": "b3c7baacf25a364c03b3021f86f9aa023eb1bf346f35b49edac75dfd6c67968d",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_13.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xA562147180BAD315",
+      "entryOffset": 59979995,
+      "headerSize": 36,
+      "dataOffset": 59980031,
+      "compressedSize": 325576,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "9e5510db",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_10.dds",
+      "sha256": "414f96eda66e53398cb71dbe599564fce13030abafa8c60049540b06266adb62",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_10.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xD371B4BDF55A125F",
+      "entryOffset": 63674762,
+      "headerSize": 36,
+      "dataOffset": 63674798,
+      "compressedSize": 356468,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "03ec5f3f",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_20.dds",
+      "sha256": "7a98bd3bd5ef6868b9ab6977cf242c751f9e27bd474af6587a27950e019904cf",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_20.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xBF209ACFD37A366F",
+      "entryOffset": 61379971,
+      "headerSize": 36,
+      "dataOffset": 61380007,
+      "compressedSize": 345410,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "f9bbcdf1",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_14.dds",
+      "sha256": "da01ec22737a906ccfb11b75173de42478f41618c62f9598f89335e77573bd7a",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_14.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xBB0D52D9208BCADC",
+      "entryOffset": 61725417,
+      "headerSize": 36,
+      "dataOffset": 61725453,
+      "compressedSize": 292054,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "cdfa34f1",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_15.dds",
+      "sha256": "42c2df9a14c0a63d42667262d7c76caea9892353019254ee081ccbba294872cd",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_15.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x69FD115536766000",
+      "entryOffset": 59628009,
+      "headerSize": 36,
+      "dataOffset": 59628045,
+      "compressedSize": 351950,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "950a501b",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_1.dds",
+      "sha256": "4745d374c74671e60115e846b55ef32849cbe83b57499c7392dfcf932cdef72d",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_1.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xA2F8C42F7FED13EF",
+      "entryOffset": 60595599,
+      "headerSize": 36,
+      "dataOffset": 60595635,
+      "compressedSize": 339684,
+      "length": 1048704,
+      "compressionMethod": 1,
+      "crc32Index": "9d7130f3",
+      "path": "/resources/gfx/gfx_production/bwa_uitexture_12.dds",
+      "sha256": "b4561def971cabf95005f2a40ccde4d4b0c06db84b89d2f2862e38418790f016",
+      "output": "source-assets\\april2012\\resources\\gfx\\gfx_production\\bwa_uitexture_12.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "definitions": {
+    "exports": [
+      {
+        "id": 8,
+        "name": "connector"
+      },
+      {
+        "id": 20,
+        "name": "IconSlot"
+      }
+    ],
+    "imports": [
+      {
+        "linkageName": "bwaui_slot.swf",
+        "candidateGfxPath": "/resources/gfx/gfx_production/bwaui_slot.gfx",
+        "uniqueAprilEntry": true,
+        "archiveIdentities": [
+          {
+            "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+            "archiveHash": "0x602AE7CCDC3B86A3",
+            "entryOffset": 69395556,
+            "length": 3776
+          }
+        ],
+        "status": "linkage recorded only; no native runtime executed or import instantiated"
+      },
+      {
+        "linkageName": "bwaui_textbox.swf",
+        "candidateGfxPath": "/resources/gfx/gfx_production/bwaui_textbox.gfx",
+        "uniqueAprilEntry": true,
+        "archiveIdentities": [
+          {
+            "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+            "archiveHash": "0x10AAF13946B63694",
+            "entryOffset": 69428906,
+            "length": 225
+          }
+        ],
+        "status": "linkage recorded only; no native runtime executed or import instantiated"
+      },
+      {
+        "linkageName": "ui_textBox.swf",
+        "candidateGfxPath": "/resources/gfx/gfx_production/ui_textbox.gfx",
+        "uniqueAprilEntry": true,
+        "archiveIdentities": [
+          {
+            "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+            "archiveHash": "0x09B4889503DFD284",
+            "entryOffset": 71139584,
+            "length": 89
+          }
+        ],
+        "status": "linkage recorded only; no native runtime executed or import instantiated"
+      },
+      {
+        "linkageName": "bwaui_standard_window.swf",
+        "candidateGfxPath": "/resources/gfx/gfx_production/bwaui_standard_window.gfx",
+        "uniqueAprilEntry": true,
+        "archiveIdentities": [
+          {
+            "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+            "archiveHash": "0xE334F1F6C8BD9040",
+            "entryOffset": 69413016,
+            "length": 1755
+          }
+        ],
+        "status": "linkage recorded only; no native runtime executed or import instantiated"
+      },
+      {
+        "linkageName": "bwaui_standard_window.swf",
+        "candidateGfxPath": "/resources/gfx/gfx_production/bwaui_standard_window.gfx",
+        "uniqueAprilEntry": true,
+        "archiveIdentities": [
+          {
+            "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+            "archiveHash": "0xE334F1F6C8BD9040",
+            "entryOffset": 69413016,
+            "length": 1755
+          }
+        ],
+        "status": "linkage recorded only; no native runtime executed or import instantiated"
+      },
+      {
+        "linkageName": "bwaui_buttons.swf",
+        "candidateGfxPath": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+        "uniqueAprilEntry": true,
+        "archiveIdentities": [
+          {
+            "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+            "archiveHash": "0x4D5F30A9120F167C",
+            "entryOffset": 66279172,
+            "length": 10619
+          }
+        ],
+        "status": "linkage recorded only; no native runtime executed or import instantiated"
+      },
+      {
+        "linkageName": "bwaui_buttons.swf",
+        "candidateGfxPath": "/resources/gfx/gfx_production/bwaui_buttons.gfx",
+        "uniqueAprilEntry": true,
+        "archiveIdentities": [
+          {
+            "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+            "archiveHash": "0x4D5F30A9120F167C",
+            "entryOffset": 66279172,
+            "length": 10619
+          }
+        ],
+        "status": "linkage recorded only; no native runtime executed or import instantiated"
+      }
+    ],
+    "subimages": [
+      {
+        "id": 1,
+        "imageId": 20,
+        "crop": [
+          436,
+          630,
+          466,
+          666
+        ],
+        "file": "bwaui_skilltree_1.png"
+      },
+      {
+        "id": 3,
+        "imageId": 20,
+        "crop": [
+          500,
+          630,
+          530,
+          666
+        ],
+        "file": "bwaui_skilltree_3.png"
+      },
+      {
+        "id": 5,
+        "imageId": 20,
+        "crop": [
+          468,
+          630,
+          498,
+          666
+        ],
+        "file": "bwaui_skilltree_5.png"
+      },
+      {
+        "id": 9,
+        "imageId": 19,
+        "crop": [
+          938,
+          915,
+          1000,
+          977
+        ],
+        "file": "bwaui_skilltree_9.png"
+      },
+      {
+        "id": 13,
+        "imageId": 20,
+        "crop": [
+          363,
+          743,
+          409,
+          770
+        ],
+        "file": "bwaui_skilltree_13.png"
+      },
+      {
+        "id": 16,
+        "imageId": 20,
+        "crop": [
+          694,
+          743,
+          724,
+          770
+        ],
+        "file": "bwaui_skilltree_16.png"
+      },
+      {
+        "id": 26,
+        "imageId": 1,
+        "crop": [
+          1013,
+          49,
+          1022,
+          70
+        ],
+        "file": "bwaui_skilltree_26.png"
+      },
+      {
+        "id": 30,
+        "imageId": 6,
+        "crop": [
+          418,
+          0,
+          823,
+          632
+        ],
+        "file": "bwaui_skilltree_30.png"
+      },
+      {
+        "id": 32,
+        "imageId": 10,
+        "crop": [
+          0,
+          0,
+          405,
+          632
+        ],
+        "file": "bwaui_skilltree_32.png"
+      },
+      {
+        "id": 35,
+        "imageId": 19,
+        "crop": [
+          0,
+          621,
+          375,
+          697
+        ],
+        "file": "bwaui_skilltree_35.png"
+      },
+      {
+        "id": 42,
+        "imageId": 18,
+        "crop": [
+          0,
+          790,
+          380,
+          902
+        ],
+        "file": "bwaui_skilltree_42.png"
+      }
+    ]
+  }
+}

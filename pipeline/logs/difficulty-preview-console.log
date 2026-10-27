@@ -1,0 +1,20 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 617.14 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Ti
+
+DIFFICULTY: population curve reaches the shared 100 cap
+DIFFICULTY: population remains bounded above level cap
+DIFFICULTY: cadence reaches 0.15 seconds at level 30
+DIFFICULTY: health follows level curve
+DIFFICULTY: speed and attack cadence have gentle caps
+DIFFICULTY: existing injured enemy retains spawn stats
+DIFFICULTY: XP reward does not scale
+DIFFICULTY: special attack path scales outgoing damage exactly once
+DIFFICULTY: later species safely spawns
+DIFFICULTY: later species keeps authored baseline at reference level
+DIFFICULTY: ambient spawns leave encounter reservation
+DIFFICULTY: required encounters cannot exceed hard population cap
+DIFFICULTY: stage change starts one 20-second recovery
+DIFFICULTY: reward screens preserve recovery time
+DIFFICULTY: recovery freezes waves and ordinary reinforcements
+DIFFICULTY: overlapping stage unlock does not stack another break
+DIFFICULTY_PREVIEW_SAVED

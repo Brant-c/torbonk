@@ -31,6 +31,7 @@ public partial class FrontendFlow : Control
     private bool _muted;
     private Control? _settings;
     private bool _collectionsOpen;
+    private bool _talentsOpen;
     public override void _Ready()
     {
         Theme = FrontendSkin.MakeTheme(); _catalog = FrontendCatalog.Load();
@@ -101,6 +102,7 @@ public partial class FrontendFlow : Control
     private void ShowStep(int step)
     {
         _collectionsOpen=false;
+        _talentsOpen=false;
         if(step==1 && _step!=1)_chosenFaction=null;
         if(step==2 && _step!=2)_chosenClass=null;
         if(step==3 && _step!=3)_chosenAdvanced=null;
@@ -171,13 +173,28 @@ public partial class FrontendFlow : Control
         }
         var start=Entry("New Run","Choose your allegiance. Begin a new journey.","bwaui_buttons_132",114,200,()=> { _session=new SelectionSession(); _chosenFaction=null; Sound(); ShowStep(1); });
         var collection=Entry("Collections","Explore your unlocked appearances.","bwaui_buttons_135",754,200,ShowCollections);
-        var settings=Entry("Settings","Adjust your display and interface sounds.","bwaui_buttons_90",114,400,ShowSettings);
-        var exit=Entry("Exit","Leave the game.","bwaui_buttons_225",754,400,()=>GetTree().Quit());
+        var talents=Entry("Talents","Configure your combat style.","bwaui_buttons_135",114,365,ShowTalents);
+        var settings=Entry("Settings","Adjust your display and interface sounds.","bwaui_buttons_90",754,365,ShowSettings);
+        var exit=FrontendSkin.Button("Exit",()=>GetTree().Quit());Place(exit,624,540,200,52);
+        talents.FocusNeighborTop=start.GetPath();talents.FocusNeighborRight=settings.GetPath();
+        start.FocusNeighborBottom=talents.GetPath();
         start.FocusNeighborRight=collection.GetPath();start.FocusNeighborBottom=settings.GetPath();
         collection.FocusNeighborLeft=start.GetPath();collection.FocusNeighborBottom=exit.GetPath();
-        settings.FocusNeighborTop=start.GetPath();settings.FocusNeighborRight=exit.GetPath();
+        settings.FocusNeighborTop=collection.GetPath();settings.FocusNeighborLeft=talents.GetPath();
         exit.FocusNeighborTop=collection.GetPath();exit.FocusNeighborLeft=settings.GetPath();
+        start.FocusNeighborBottom=talents.GetPath();collection.FocusNeighborBottom=settings.GetPath();
+        talents.FocusNeighborBottom=exit.GetPath();settings.FocusNeighborBottom=exit.GetPath();
+        Control[] menuOrder=[start,collection,talents,settings,exit];
+        for(int i=0;i<menuOrder.Length;i++)
+        {menuOrder[i].FocusNext=menuOrder[(i+1)%menuOrder.Length].GetPath();menuOrder[i].FocusPrevious=menuOrder[(i+menuOrder.Length-1)%menuOrder.Length].GetPath();}
         start.GrabFocus();
+    }
+    public void ShowTalents()
+    {
+        ShowStep(0);Sound();_talentsOpen=true;
+        foreach(var child in _page!.GetChildren()){_page.RemoveChild(child);child.QueueFree();}
+        var screen=new TalentsScreen {Name="Talents",Size=new Vector2(1448,700),Closed=()=>ShowStep(0)};
+        _page.AddChild(screen);
     }
     public void ShowCollections()
     {
@@ -325,7 +342,7 @@ public partial class FrontendFlow : Control
     {
         if (e is InputEventKey { Pressed:true, Echo:false, Keycode:Key.Escape })
         {
-            if (_collectionsOpen) {Sound("back");ShowStep(0);}
+            if (_collectionsOpen || _talentsOpen) {Sound("back");ShowStep(0);}
             else if (_settings!=null) CloseSettings();
             else if (_step>0 && !_transitioning) { Sound("back"); ShowStep(_step-1); }
             GetViewport().SetInputAsHandled();

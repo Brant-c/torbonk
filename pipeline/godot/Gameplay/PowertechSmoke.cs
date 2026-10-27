@@ -19,7 +19,7 @@ public partial class PowertechSmoke : Node
             targets[4].GlobalPosition=w.PlayerActor.GlobalPosition+Vector3.Left*.7f;
             await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);
             var burst=w.Abilities.Find("flameburst");var sweep=w.Abilities.Find("flamesweep")!;var missile=w.Abilities.Find("incendiarymissile")!;
-            Check("Flame Sweep alone starts unlocked",sweep.Unlocked && burst==null && w.Abilities.Abilities.Count(a=>a.Unlocked)==1);
+            Check("Flame Sweep and basic weapon attack start unlocked",sweep.Unlocked && burst==null && w.Abilities.Abilities.Count(a=>a.Unlocked)==2 && w.Abilities.Equipped(AbilityCategory.Offensive)==1);
             Check("Mercenary excludes Explosive Fuel",!ClassProfile.Find("mercenary")!.Kit.Contains("reactivearmor") && !ClassProfile.Find("mercenary")!.TalentPool.Contains("unlock_reactivearmor"));
             Check("Spread requires both owned abilities",!w.Progression!.IsEligible(w.Progression.Upgrades.Single(u=>u.Mechanic=="combustible_spread")));
             w.Progression.Grant("unlock_incendiarymissile");

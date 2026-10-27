@@ -1,0 +1,733 @@
+{
+  "Version": 1,
+  "Budget": 12,
+  "Trees": [
+    {
+      "Id": "corruption",
+      "Name": "Corruption"
+    },
+    {
+      "Id": "lightning",
+      "Name": "Lightning"
+    },
+    {
+      "Id": "madness",
+      "Name": "Madness"
+    }
+  ],
+  "Talents": [
+    {
+      "Id": "corruption.dark_mending",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "corruption",
+      "Tier": 0,
+      "Column": 0,
+      "Icon": "res://Assets/UI/talents/darkinfusion.png",
+      "Name": "Dark Mending",
+      "Description": "Dark Heal recovers its cooldown 10% faster per rank.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Available": true,
+      "Prerequisites": [],
+      "Effects": [
+        {
+          "Kind": "cooldown",
+          "Ability": "darkheal",
+          "Amount": 0.1
+        }
+      ],
+      "Source": "0xE0002C6C1E8A74A0"
+    },
+    {
+      "Id": "corruption.empty_body",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "corruption",
+      "Tier": 0,
+      "Column": 1,
+      "Icon": "res://Assets/UI/talents/outerrimveteran.png",
+      "Name": "Empty Body",
+      "Description": "Dark Heal restores 10% more health per rank.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Available": true,
+      "Prerequisites": [],
+      "Effects": [
+        {
+          "Kind": "healing",
+          "Ability": "darkheal",
+          "Amount": 0.1
+        }
+      ],
+      "Source": "0xE00044C9831EB943"
+    },
+    {
+      "Id": "corruption.dark_resilience",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "corruption",
+      "Tier": 1,
+      "Column": 0,
+      "Icon": "res://Assets/UI/talents/rage.png",
+      "Name": "Dark Resilience",
+      "Description": "While below 35% health, take 6% less damage per rank.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 3,
+      "Available": true,
+      "Prerequisites": [],
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "low_defense",
+          "Amount": 0.06
+        }
+      ],
+      "Source": "0xE0000C198C74EAD5"
+    },
+    {
+      "Id": "corruption.efficacious_currents",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "corruption",
+      "Tier": 1,
+      "Column": 1,
+      "Icon": "res://Assets/UI/talents/electricshield.png",
+      "Name": "Efficacious Currents",
+      "Description": "Static Barrier absorbs 15% more damage per rank.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 3,
+      "Available": true,
+      "Prerequisites": [],
+      "Effects": [
+        {
+          "Kind": "shield",
+          "Ability": "barrier",
+          "Amount": 0.15
+        }
+      ],
+      "Source": "0xE00038BDE2304955"
+    },
+    {
+      "Id": "corruption.resurgence",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "corruption",
+      "Tier": 2,
+      "Column": 0,
+      "Icon": "res://Assets/UI/talents/smugglerrecuperate.png",
+      "Name": "Resurgence",
+      "Description": "Activating Static Barrier below half health restores 3 HP per rank. Once every 12 seconds.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 6,
+      "Available": true,
+      "Prerequisites": [
+        {
+          "Id": "corruption.dark_resilience",
+          "Rank": 2
+        }
+      ],
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "barrier_heal",
+          "Amount": 3
+        }
+      ],
+      "Source": "0xE0001927BD907BC0"
+    },
+    {
+      "Id": "corruption.force_bending",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "corruption",
+      "Tier": 2,
+      "Column": 1,
+      "Icon": "res://Assets/UI/talents/drain_life.png",
+      "Name": "Force Bending",
+      "Description": "Static Barrier activation reduces Dark Heal's remaining cooldown by 1 second per rank.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 6,
+      "Available": true,
+      "Prerequisites": [
+        {
+          "Id": "corruption.efficacious_currents",
+          "Rank": 2
+        }
+      ],
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "barrier_mending",
+          "Amount": 1
+        }
+      ],
+      "Source": "0xE0007628150E4918"
+    },
+    {
+      "Id": "corruption.reconstruct",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "corruption",
+      "Tier": 3,
+      "Column": 0,
+      "Icon": "res://Assets/UI/talents/recuperativenanotech.png",
+      "Name": "Reconstruct",
+      "Description": "When a shield breaks, restore 6 HP and retaliate for 8 damage nearby. Once every 20 seconds.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 9,
+      "Available": true,
+      "Prerequisites": [
+        {
+          "Id": "corruption.resurgence",
+          "Rank": 2
+        }
+      ],
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "shield_recovery",
+          "Amount": 1
+        }
+      ],
+      "Source": "0xE000D59577FE130D"
+    },
+    {
+      "Id": "corruption.force_surge",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "corruption",
+      "Tier": 3,
+      "Column": 1,
+      "Icon": "res://Assets/UI/talents/berserk.png",
+      "Name": "Force Surge",
+      "Description": "Taking damage below 25% health restores 12 HP and reduces Static Barrier's remaining cooldown by 4 seconds. Once every 30 seconds.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 9,
+      "Available": true,
+      "Prerequisites": [
+        {
+          "Id": "corruption.force_bending",
+          "Rank": 2
+        }
+      ],
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "emergency",
+          "Amount": 1
+        }
+      ],
+      "Source": "0xE000924E92F36D88"
+    },
+    {
+      "Id": "lightning.convection",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "lightning",
+      "Tier": 0,
+      "Column": 0,
+      "Icon": "res://Assets/UI/talents/lightningstrike.png",
+      "Name": "Convection",
+      "Description": "Shock and Thundering Blast deal 8% more damage per rank.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Available": true,
+      "Prerequisites": [],
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "shock",
+          "Amount": 0.08
+        },
+        {
+          "Kind": "damage",
+          "Ability": "thunderingblast",
+          "Amount": 0.08
+        }
+      ],
+      "Source": "0xE00006BA07D0EF65"
+    },
+    {
+      "Id": "lightning.lightning_spire",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "lightning",
+      "Tier": 0,
+      "Column": 1,
+      "Icon": "res://Assets/UI/talents/childoftheempire.png",
+      "Name": "Lightning Spire",
+      "Description": "Electrical abilities gain 8% range and Force Storm gains 8% radius per rank.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Available": true,
+      "Prerequisites": [],
+      "Effects": [
+        {
+          "Kind": "range",
+          "Ability": "lightning",
+          "Amount": 0.08
+        },
+        {
+          "Kind": "range",
+          "Ability": "shock",
+          "Amount": 0.08
+        },
+        {
+          "Kind": "range",
+          "Ability": "chain",
+          "Amount": 0.08
+        },
+        {
+          "Kind": "range",
+          "Ability": "storm",
+          "Amount": 0.08
+        },
+        {
+          "Kind": "range",
+          "Ability": "thunderingblast",
+          "Amount": 0.08
+        },
+        {
+          "Kind": "radius",
+          "Ability": "storm",
+          "Amount": 0.08
+        }
+      ],
+      "Source": "0xE000D1CEE89D6526"
+    },
+    {
+      "Id": "lightning.conduction",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "lightning",
+      "Tier": 1,
+      "Column": 0,
+      "Icon": "res://Assets/UI/talents/swchildoftheempire.png",
+      "Name": "Conduction",
+      "Description": "Every sixth electrical hit reduces Chain Lightning's remaining cooldown by 0.5 seconds per rank. At most once per second.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 3,
+      "Available": true,
+      "Prerequisites": [],
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "conduction",
+          "Amount": 0.5
+        }
+      ],
+      "Source": "0xE0006EC2487FCB24"
+    },
+    {
+      "Id": "lightning.forked_lightning",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "lightning",
+      "Tier": 1,
+      "Column": 1,
+      "Icon": "res://Assets/UI/talents/forkedlightning.png",
+      "Name": "Forked Lightning",
+      "Description": "Force Lightning forks to one nearby enemy for 45% damage. Enables Forked Lightning training during a run.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 3,
+      "Available": true,
+      "Prerequisites": [],
+      "Effects": [
+        {
+          "Kind": "mechanic",
+          "Key": "fork",
+          "Amount": 1
+        },
+        {
+          "Kind": "upgrade",
+          "Ability": "lightning",
+          "Amount": 0.15
+        }
+      ],
+      "Source": "0xE000160AF36E02DC"
+    },
+    {
+      "Id": "lightning.lightning_barrage",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "lightning",
+      "Tier": 2,
+      "Column": 0,
+      "Icon": "res://Assets/UI/talents/sithsorcerer.png",
+      "Name": "Lightning Barrage",
+      "Description": "An Affliction tick grants 10% faster Force Lightning ticks per rank for 4 seconds. Once every 10 seconds.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 6,
+      "Available": true,
+      "Prerequisites": [
+        {
+          "Id": "lightning.conduction",
+          "Rank": 2
+        }
+      ],
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "barrage",
+          "Amount": 0.1
+        }
+      ],
+      "Source": "0xE0008402A7993CA3"
+    },
+    {
+      "Id": "lightning.lightning_storm",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "lightning",
+      "Tier": 2,
+      "Column": 1,
+      "Icon": "res://Assets/UI/talents/spaceupgradeempburst.png",
+      "Name": "Lightning Storm",
+      "Description": "Every sixth Shock or Force Storm hit reduces Chain Lightning's remaining cooldown by 1 second per rank. Once every 8 seconds.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 6,
+      "Available": true,
+      "Prerequisites": [
+        {
+          "Id": "lightning.forked_lightning",
+          "Rank": 1
+        }
+      ],
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "lightning_storm",
+          "Amount": 1
+        }
+      ],
+      "Source": "0xE000DFEDFE90380F"
+    },
+    {
+      "Id": "lightning.chain_lightning",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "lightning",
+      "Tier": 3,
+      "Column": 0,
+      "Icon": "res://Assets/UI/talents/chainlightning.png",
+      "Name": "Chain Lightning",
+      "Description": "Chain Lightning jumps to one additional enemy. Enables Chain Lightning training during a run.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 9,
+      "Available": true,
+      "Prerequisites": [
+        {
+          "Id": "lightning.lightning_barrage",
+          "Rank": 2
+        }
+      ],
+      "Effects": [
+        {
+          "Kind": "bounces",
+          "Ability": "chain",
+          "Amount": 1
+        },
+        {
+          "Kind": "upgrade",
+          "Ability": "chain",
+          "Amount": 0.15
+        }
+      ],
+      "Source": "0xE00085452B731E55"
+    },
+    {
+      "Id": "lightning.thundering_blast",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "lightning",
+      "Tier": 3,
+      "Column": 1,
+      "Icon": "res://Assets/UI/talents/shadowtechnique.png",
+      "Name": "Thundering Blast",
+      "Description": "Thundering Blast deals 15% more damage against your Affliction. Enables Thundering Blast training during a run.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 9,
+      "Available": true,
+      "Prerequisites": [
+        {
+          "Id": "lightning.lightning_storm",
+          "Rank": 2
+        }
+      ],
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "afflicted_blast",
+          "Amount": 0.15
+        },
+        {
+          "Kind": "upgrade",
+          "Ability": "thunderingblast",
+          "Amount": 0.15
+        }
+      ],
+      "Source": "0xE000C26B65CE9541"
+    },
+    {
+      "Id": "madness.calcify",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "madness",
+      "Tier": 0,
+      "Column": 0,
+      "Icon": "res://Assets/UI/talents/shocked.png",
+      "Name": "Calcify",
+      "Description": "Force Lightning and Affliction deal 6% more damage per rank.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Available": true,
+      "Prerequisites": [],
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "lightning",
+          "Amount": 0.06
+        },
+        {
+          "Kind": "damage",
+          "Ability": "affliction",
+          "Amount": 0.06
+        }
+      ],
+      "Source": "0xE00046732128ED1A"
+    },
+    {
+      "Id": "madness.torment",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "madness",
+      "Tier": 0,
+      "Column": 1,
+      "Icon": "res://Assets/UI/talents/viciousslash.png",
+      "Name": "Torment",
+      "Description": "Shock extends your Affliction on its target by 0.5 seconds per rank, up to 4 seconds beyond its configured duration.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Available": true,
+      "Prerequisites": [],
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "shock_extend",
+          "Amount": 0.5
+        }
+      ],
+      "Source": "0xE00060DC144259F1"
+    },
+    {
+      "Id": "madness.force_horrors",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "madness",
+      "Tier": 1,
+      "Column": 0,
+      "Icon": "res://Assets/UI/talents/mindcrush.png",
+      "Name": "Force Horrors",
+      "Description": "Affliction and Creeping Terror last 1 second longer per rank.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 3,
+      "Available": true,
+      "Prerequisites": [],
+      "Effects": [
+        {
+          "Kind": "duration",
+          "Amount": 1
+        }
+      ],
+      "Source": "0xE000E93F689BBDE4"
+    },
+    {
+      "Id": "madness.parasitism",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "madness",
+      "Tier": 1,
+      "Column": 1,
+      "Icon": "res://Assets/UI/talents/animalinsectmouthpart.png",
+      "Name": "Parasitism",
+      "Description": "Your periodic damage restores 0.5 HP per rank while below half health, at most once every 2 seconds.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 3,
+      "Available": true,
+      "Prerequisites": [],
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "periodic_heal",
+          "Amount": 0.5
+        }
+      ],
+      "Source": "0xE00060BD0E1944C6"
+    },
+    {
+      "Id": "madness.wrath",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "madness",
+      "Tier": 2,
+      "Column": 0,
+      "Icon": "res://Assets/UI/talents/cloakofpain.png",
+      "Name": "Wrath",
+      "Description": "Every sixth Force Lightning hit reduces Affliction and Creeping Terror's remaining cooldowns by 0.5 seconds per rank. At most once per second.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 6,
+      "Available": true,
+      "Prerequisites": [
+        {
+          "Id": "madness.force_horrors",
+          "Rank": 2
+        }
+      ],
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "wrath",
+          "Amount": 0.5
+        }
+      ],
+      "Source": "0xE00016A1BC7AC0AC"
+    },
+    {
+      "Id": "madness.deathmark",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "madness",
+      "Tier": 2,
+      "Column": 1,
+      "Icon": "res://Assets/UI/talents/alienskull.png",
+      "Name": "Deathmark",
+      "Description": "Death Field marks affected enemies for 6 seconds. Your periodic damage against them increases by 10% per rank.",
+      "MaxRank": 2,
+      "Cost": 1,
+      "RequiredPoints": 6,
+      "Available": true,
+      "Prerequisites": [
+        {
+          "Id": "madness.parasitism",
+          "Rank": 2
+        }
+      ],
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "deathmark",
+          "Amount": 0.1
+        }
+      ],
+      "Source": "0xE000F4CA893CA40A"
+    },
+    {
+      "Id": "madness.lingering_nightmares",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "madness",
+      "Tier": 3,
+      "Column": 0,
+      "Icon": "res://Assets/UI/talents/dark_embrace.png",
+      "Name": "Lingering Nightmares",
+      "Description": "Affliction and Creeping Terror tick 15% faster. Enables Affliction training during a run.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 9,
+      "Available": true,
+      "Prerequisites": [
+        {
+          "Id": "madness.wrath",
+          "Rank": 2
+        }
+      ],
+      "Effects": [
+        {
+          "Kind": "periodic_rate",
+          "Amount": 0.15
+        },
+        {
+          "Kind": "upgrade",
+          "Ability": "affliction",
+          "Amount": 0.15
+        }
+      ],
+      "Source": "0xE000E9E095103D30"
+    },
+    {
+      "Id": "madness.creeping_death",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Tree": "madness",
+      "Tier": 3,
+      "Column": 1,
+      "Icon": "res://Assets/UI/talents/forcecrush.png",
+      "Name": "Creeping Death",
+      "Description": "When an afflicted enemy dies, each of your DoTs passes to one nearby uninfected enemy using the existing periodic-effect system. Death Field retains its full area spread.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 9,
+      "Available": true,
+      "Prerequisites": [
+        {
+          "Id": "madness.deathmark",
+          "Rank": 2
+        }
+      ],
+      "Effects": [
+        {
+          "Kind": "mechanic",
+          "Key": "last_gasp",
+          "Amount": 1
+        }
+      ],
+      "Source": "0xE000FF01EA05E285"
+    }
+  ]
+}

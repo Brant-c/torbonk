@@ -1,0 +1,132 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Could not open 'user://' directory: 'user://'.
+   at: _get_and_create_snapshot_storage_dir (modules/objectdb_profiler/editor/objectdb_profiler_panel.cpp:157)
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | Started Registering global classes... (3 steps)[39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  25% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  50% ] [90m[1mupdate_scripts_classes[22m | UpgradeDefinition[39m[0m
+[92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+[   0% ] [90m[1m_update_scan_actions[22m | Started Scanning actions... (30 steps)[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | 925098.wav[39m[0m
+[   3% ] [90m[1m_update_scan_actions[22m | 2005362.wav[39m[0m
+[   6% ] [90m[1m_update_scan_actions[22m | 3124562.wav[39m[0m
+[   9% ] [90m[1m_update_scan_actions[22m | 6921508.wav[39m[0m
+[  12% ] [90m[1m_update_scan_actions[22m | 9282082.wav[39m[0m
+[  16% ] [90m[1m_update_scan_actions[22m | 10503425.wav[39m[0m
+[  19% ] [90m[1m_update_scan_actions[22m | 10879047.wav[39m[0m
+[  22% ] [90m[1m_update_scan_actions[22m | 17811174.wav[39m[0m
+[  25% ] [90m[1m_update_scan_actions[22m | 26605792.wav[39m[0m
+[  29% ] [90m[1m_update_scan_actions[22m | 29107890.wav[39m[0m
+[  32% ] [90m[1m_update_scan_actions[22m | 30550027.wav[39m[0m
+[  35% ] [90m[1m_update_scan_actions[22m | 33815473.wav[39m[0m
+[  38% ] [90m[1m_update_scan_actions[22m | 37764586.wav[39m[0m
+[  41% ] [90m[1m_update_scan_actions[22m | 47992697.wav[39m[0m
+[  45% ] [90m[1m_update_scan_actions[22m | 58948851.wav[39m[0m
+[  48% ] [90m[1m_update_scan_actions[22m | 92890106.wav[39m[0m
+[  51% ] [90m[1m_update_scan_actions[22m | 137164443.wav[39m[0m
+[  54% ] [90m[1m_update_scan_actions[22m | 139212848.wav[39m[0m
+[  58% ] [90m[1m_update_scan_actions[22m | 158729200.wav[39m[0m
+[  61% ] [90m[1m_update_scan_actions[22m | 393341143.wav[39m[0m
+[  64% ] [90m[1m_update_scan_actions[22m | 456317592.wav[39m[0m
+[  67% ] [90m[1m_update_scan_actions[22m | 543190998.wav[39m[0m
+[  70% ] [90m[1m_update_scan_actions[22m | 797720669.wav[39m[0m
+[  74% ] [90m[1m_update_scan_actions[22m | caustics_tile_01.png[39m[0m
+[  77% ] [90m[1m_update_scan_actions[22m | force_energy_draw_in.png[39m[0m
+[  80% ] [90m[1m_update_scan_actions[22m | fx_thundering_blast_k.png[39m[0m
+[  83% ] [90m[1m_update_scan_actions[22m | si_thundering_blast_force_energy.glb[39m[0m
+[  87% ] [90m[1m_update_scan_actions[22m | white.png[39m[0m
+[  90% ] [90m[1m_update_scan_actions[22m | lifedrain.png[39m[0m
+[  93% ] [90m[1m_update_scan_actions[22m | shadowtechnique.png[39m[0m
+[92m[ DONE ][39m [1m_update_scan_actions[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started (Re)Importing Assets (28 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   3% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   6% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  10% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  13% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  17% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  20% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  24% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  27% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  31% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  34% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  37% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  41% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  44% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  48% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  51% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  55% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  58% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  62% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  65% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  68% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  72% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  75% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  79% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  82% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  86% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  89% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  93% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   0% ] [90m[1mreimport[22m | Executing pre-reimport operations...[39m[0m
+[   0% ] [90m[1mreimport[22m | 797720669.wav[39m[0m
+[   3% ] [90m[1mreimport[22m | 543190998.wav[39m[0m
+[   6% ] [90m[1mreimport[22m | 456317592.wav[39m[0m
+[  10% ] [90m[1mreimport[22m | 393341143.wav[39m[0m
+[  13% ] [90m[1mreimport[22m | 158729200.wav[39m[0m
+[  17% ] [90m[1mreimport[22m | 139212848.wav[39m[0m
+[  20% ] [90m[1mreimport[22m | 137164443.wav[39m[0m
+[  24% ] [90m[1mreimport[22m | 92890106.wav[39m[0m
+[  27% ] [90m[1mreimport[22m | 58948851.wav[39m[0m
+[  31% ] [90m[1mreimport[22m | 47992697.wav[39m[0m
+[  34% ] [90m[1mreimport[22m | 37764586.wav[39m[0m
+[  37% ] [90m[1mreimport[22m | 925098.wav[39m[0m
+[  41% ] [90m[1mreimport[22m | 2005362.wav[39m[0m
+[  44% ] [90m[1mreimport[22m | 3124562.wav[39m[0m
+[  48% ] [90m[1mreimport[22m | 6921508.wav[39m[0m
+[  51% ] [90m[1mreimport[22m | 9282082.wav[39m[0m
+[  55% ] [90m[1mreimport[22m | 10503425.wav[39m[0m
+[  58% ] [90m[1mreimport[22m | 10879047.wav[39m[0m
+[  62% ] [90m[1mreimport[22m | 17811174.wav[39m[0m
+[  65% ] [90m[1mreimport[22m | 26605792.wav[39m[0m
+[  68% ] [90m[1mreimport[22m | 29107890.wav[39m[0m
+[  72% ] [90m[1mreimport[22m | 30550027.wav[39m[0m
+[  75% ] [90m[1mreimport[22m | 33815473.wav[39m[0m
+[  79% ] [90m[1mreimport[22m | 797720669.wav[39m[0m
+[  82% ] [90m[1mreimport[22m | 543190998.wav[39m[0m
+[  86% ] [90m[1mreimport[22m | 456317592.wav[39m[0m
+[  89% ] [90m[1mreimport[22m | 393341143.wav[39m[0m
+[  93% ] [90m[1mreimport[22m | si_thundering_blast_force_energy.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  96% ] [90m[1mreimport[22m | Finalizing Asset Import...[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started (Re)Importing Assets (28 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Executing post-reimport operations...[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Loading editor (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Loading editor layout...[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Loading docks...[39m[0m
+[  33% ] [90m[1mloading_editor_layout[22m | Reopening scenes...[39m[0m
+[  50% ] [90m[1mloading_editor_layout[22m | Loading central editor layout...[39m[0m
+[  66% ] [90m[1mloading_editor_layout[22m | Loading plugin window layout...[39m[0m
+[  83% ] [90m[1mloading_editor_layout[22m | Editor layout ready.[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m

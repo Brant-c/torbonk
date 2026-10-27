@@ -1,0 +1,163 @@
+{
+  "evidence": "Client-derived April2012 via SWTOR research MCP; historical decoder field labels retained; not native execution proof",
+  "records": [
+    {
+      "identity": {
+        "id": "0xE0008402A7993CA3",
+        "decimalId": "16141046211432496291",
+        "kind": "GomObject",
+        "name": "abl.sith_inquisitor.skill.lightning.lightning_barrage",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/291.bkt",
+          "uncompressedOffset": 141732,
+          "blockLength": 590,
+          "resourceSha256": "f99cf6c7dcbb15ff53647f92aa50dc198dac58b8a7469ea27b239dc289d7a653"
+        }
+      },
+      "descriptions": [
+        "Next Force Lightning channels and ticks twice as fast.",
+        "Affliction's critical hits have a <<1>>% chance to grant Lightning Barrage, causing your next Force Lightning to channel and tick twice as fast. This effect cannot occur more than once every 10 seconds.",
+        "Lightning Barrage"
+      ]
+    },
+    {
+      "identity": {
+        "id": "0xE000DFEDFE90380F",
+        "decimalId": "16141147277766965263",
+        "kind": "GomObject",
+        "name": "abl.sith_inquisitor.skill.lightning.lightning_storm",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/263.bkt",
+          "uncompressedOffset": 270628,
+          "blockLength": 631,
+          "resourceSha256": "5c994b2d3d630ef9085d25291fada509b5e226ee516d2a1e2fe740b90e143a94"
+        }
+      },
+      "descriptions": [
+        "Chain Lightning activation time reduced by 100%.",
+        "Your Lightning Strike has a <<1>>% chance and your Force Storm has a <<2>>% chance when dealing damage to cause a Lightning Storm, immediately finishing the cooldown on Chain Lightning and reducing the activation time of your next Chain Lightning by 100%. This effect cannot occur more than once every 10 seconds.",
+        "Lightning Storm"
+      ]
+    },
+    {
+      "identity": {
+        "id": "0xE000160AF36E02DC",
+        "decimalId": "16140925300785414876",
+        "kind": "GomObject",
+        "name": "abl.sith_inquisitor.skill.lightning.forked_lightning",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/376.bkt",
+          "uncompressedOffset": 25228,
+          "blockLength": 504,
+          "resourceSha256": "5e67bf7707dae91a1fbe9b6ab925555b862f71a0f326251d78014f20c99714f7"
+        }
+      },
+      "descriptions": [
+        "When you activate Lightning Strike or Chain Lightning, there is a <<1>>% chance the ability will produce a second arc of lightning that strikes the same targets for 30% damage.",
+        "Forked Lightning"
+      ]
+    },
+    {
+      "identity": {
+        "id": "0xE0003DA96CF076AA",
+        "decimalId": "16140968862382323370",
+        "kind": "GomObject",
+        "name": "abl.sith_inquisitor.skill.lightning.backlash",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/370.bkt",
+          "uncompressedOffset": 69892,
+          "blockLength": 498,
+          "resourceSha256": "155c69b1f89bd3908d875e561705f94f4d00304fe141088c2e730ff8b383ff65"
+        }
+      },
+      "descriptions": [
+        "Your Static Barrier has a <<1>>% chance to erupt in a flash of light when it ends, blinding all nearby enemies for 3 seconds. Damage causes this effect to end prematurely.",
+        "Backlash"
+      ]
+    },
+    {
+      "identity": {
+        "id": "0xE0006C61274C3CAD",
+        "decimalId": "16141020229022792877",
+        "kind": "GomObject",
+        "name": "abl.sith_inquisitor.skill.lightning.polarity_shift",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/377.bkt",
+          "uncompressedOffset": 102884,
+          "blockLength": 505,
+          "resourceSha256": "70a64e2fb50688761d6591e83b2d8faa9e3b94bd116e58e7b31b0bfb3a65df1c"
+        }
+      },
+      "descriptions": [
+        "Alacrity increased by 20%.",
+        "Your connection to the Force shifts, granting <<1[%d/%d/%d]>>% alacrity for <<2[%d/%d/%d]>> seconds.",
+        "Polarity Shift"
+      ]
+    },
+    {
+      "identity": {
+        "id": "0xE000C3B97785EB5E",
+        "decimalId": "16141116265837488990",
+        "kind": "GomObject",
+        "name": "abl.sith_inquisitor.skill.lightning.exsanguinate",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/490.bkt",
+          "uncompressedOffset": 237564,
+          "blockLength": 421,
+          "resourceSha256": "0fb2d29365f72de080f5b1e959a795c113e300cf1b1cf78d0afc655523441e7c"
+        }
+      },
+      "descriptions": [
+        "Increases the duration of Affliction by <<1[%d/%d/%d]>> seconds.",
+        "Exsanguinate"
+      ]
+    },
+    {
+      "identity": {
+        "id": "0xE00016A1BC7AC0AC",
+        "decimalId": "16140925948403564716",
+        "kind": "GomObject",
+        "name": "abl.sith_inquisitor.skill.madness.wrath",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/216.bkt",
+          "uncompressedOffset": 24252,
+          "blockLength": 555,
+          "resourceSha256": "647273bdbaf0ff7918e9e84d3b7a1ce68a7f9fc7fa693aca6a4942aafc3c1a3c"
+        }
+      },
+      "descriptions": [
+        "Next Lightning Strike or Crushing Darkness activates instantly.",
+        "When your Force Lightning deals damage, you have a <<1>>% chance to gain Wrath, causing your next Lightning Strike or Crushing Darkness to activate instantly and deal 20% more damage.",
+        "Wrath"
+      ]
+    },
+    {
+      "identity": {
+        "id": "0xE000F4CA893CA40A",
+        "decimalId": "16141170215218881546",
+        "kind": "GomObject",
+        "name": "abl.sith_inquisitor.skill.madness.deathmark",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/46.bkt",
+          "uncompressedOffset": 306516,
+          "blockLength": 628,
+          "resourceSha256": "361fff19e1c4206c83c4670215aa61d3b2e1b49358c58fc83d6849c179a5f28f"
+        }
+      },
+      "descriptions": [
+        "Damage taken from Inquisitor's periodic effects increased.",
+        "Deathmark",
+        "Death Field places a deathmark on affected targets, increasing the amount of damage the targets suffer from your next 10 periodic damaging abilities by <<1[%d/%d/%d]>>%. Lasts <<2[%d/%d/%d]>> seconds.",
+        "Deathmark"
+      ]
+    }
+  ]
+}

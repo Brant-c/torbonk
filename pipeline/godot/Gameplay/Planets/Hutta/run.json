@@ -2,6 +2,21 @@
   "CoreLevel": 30,
   "FirstLevelExperience": 16,
   "ExperienceGrowth": 1.105,
+  "Difficulty": {
+    "HealthPerLevel": 0.08,
+    "DamagePerLevel": 0.045,
+    "SpeedPerLevel": 0.01,
+    "MaximumSpeedBonus": 0.25,
+    "AttackFrequencyPerLevel": 0.005,
+    "MaximumAttackFrequencyBonus": 0.15,
+    "InitialPopulation": 16,
+    "PopulationPerLevel": 3,
+    "MaximumPopulation": 100,
+    "InitialSpawnInterval": 0.5,
+    "MinimumSpawnInterval": 0.15,
+    "RecoverySeconds": 20,
+    "ReturnRampSeconds": 8
+  },
   "ArtifactCatalog": "res://Gameplay/RunItems/artifacts.json",
   "Stages": [
     {
@@ -41,9 +56,9 @@
       "Region": "Industrial Rust Yards",
       "Description": "Armed patrols converge. Watch the firing lanes and keep moving.",
       "Focus": [
-        32.9,
+        29,
         0,
-        7
+        13
       ],
       "Enemies": [
         {
@@ -81,9 +96,9 @@
       "Region": "Chemical Processing District",
       "Description": "Armed patrols converge. Watch the firing lanes and keep moving.",
       "Focus": [
-        32.9,
+        29,
         0,
-        7
+        22
       ],
       "Enemies": [
         {
@@ -121,9 +136,9 @@
       "Region": "Fa\u2019athra Factory Territory",
       "Description": "Armed patrols converge. Watch the firing lanes and keep moving.",
       "Focus": [
-        32.9,
+        38,
         0,
-        7
+        24
       ],
       "Enemies": [
         {

@@ -5,6 +5,26 @@ using System.Text.Json;
 
 namespace SwtorSurvivors;
 
+public sealed class RunDifficulty
+{
+    public float HealthPerLevel { get; set; } = .08f;
+    public float DamagePerLevel { get; set; } = .045f;
+    public float SpeedPerLevel { get; set; } = .01f;
+    public float MaximumSpeedBonus { get; set; } = .25f;
+    public float AttackFrequencyPerLevel { get; set; } = .005f;
+    public float MaximumAttackFrequencyBonus { get; set; } = .15f;
+    public int InitialPopulation { get; set; } = 16;
+    public int PopulationPerLevel { get; set; } = 3;
+    public int MaximumPopulation { get; set; } = 100;
+    public float InitialSpawnInterval { get; set; } = .5f;
+    public float MinimumSpawnInterval { get; set; } = .15f;
+    public float RecoverySeconds { get; set; } = 20;
+    public float ReturnRampSeconds { get; set; } = 8;
+    public int Population(int level) => (int)Math.Clamp((long)InitialPopulation + Math.Max(0L, (long)level - 1) * PopulationPerLevel, 1, Math.Max(1, MaximumPopulation));
+    public double SpawnInterval(int level, int coreLevel) => Math.Max(.1, InitialSpawnInterval +
+        (MinimumSpawnInterval - InitialSpawnInterval) * Math.Clamp((level - 1.0) / Math.Max(1, coreLevel - 1), 0, 1));
+}
+
 public sealed class PlanetEnemyWeight
 {
     public string Scene { get; set; } = "";
@@ -37,6 +57,7 @@ public sealed class PlanetCacheDefinition
 /// <summary>Optional planet data. Worlds without this resource retain their existing wave/roster/reward rules.</summary>
 public sealed class PlanetRunDefinition
 {
+    public RunDifficulty Difficulty { get; set; } = new();
     public int CoreLevel { get; set; } = 30;
     public int FirstLevelExperience { get; set; } = 16;
     public float ExperienceGrowth { get; set; } = 1.105f;

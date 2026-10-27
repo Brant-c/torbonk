@@ -1,0 +1,171 @@
+{
+  "profile": "Installed SWTOR client UI artwork; not April2012 gameplay data",
+  "archive": "C:\\Program Files (x86)\\Electronic Arts\\BioWare\\Star Wars - The Old Republic\\Assets\\swtor_main_gfx_assets_1.tor",
+  "archiveBytes": 761869392,
+  "archiveMtimeNs": "1790741769516073700",
+  "resources": [
+    {
+      "name": "darkness",
+      "path": "/resources/gfx/icons/ass_darkness.dds",
+      "archiveHash": "0x81F1CCCADF17AB18",
+      "dataOffset": 146349788,
+      "compressedSize": 1413,
+      "length": 2832,
+      "compression": 1,
+      "packedPath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\icons\\ass_darkness.packed",
+      "sourcePath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\icons\\ass_darkness.dds",
+      "sourceSha256": "301aadcc3ecf897540f5eca152e8f652aa7cd26f9fb98b054cfbe168879325dd",
+      "output": "godot\\Assets\\UI\\specs\\darkness.png",
+      "outputSha256": "22301ee9d555fe1bafe1cc4c8e2d270582a400eb0ee6c01d40e928fc15fccaf3",
+      "dimensions": [
+        52,
+        52
+      ]
+    },
+    {
+      "name": "deception",
+      "path": "/resources/gfx/icons/ass_deception.dds",
+      "archiveHash": "0x0A7C07CFA6A40F9D",
+      "dataOffset": 146351237,
+      "compressedSize": 1381,
+      "length": 2832,
+      "compression": 1,
+      "packedPath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\icons\\ass_deception.packed",
+      "sourcePath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\icons\\ass_deception.dds",
+      "sourceSha256": "b56f8beaf68352bf1d12bf6076b38cd8cbbb04972d9529615f354b725df940cb",
+      "output": "godot\\Assets\\UI\\specs\\deception.png",
+      "outputSha256": "a6479cfc57df707c0cfba6fbdc522e4014ca58c2df7f7f1d19bb4d6c68b56a7b",
+      "dimensions": [
+        52,
+        52
+      ]
+    },
+    {
+      "name": "hatred",
+      "path": "/resources/gfx/icons/ass_hatred.dds",
+      "archiveHash": "0xFB3F43D69503F9FD",
+      "dataOffset": 146354158,
+      "compressedSize": 1417,
+      "length": 2832,
+      "compression": 1,
+      "packedPath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\icons\\ass_hatred.packed",
+      "sourcePath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\icons\\ass_hatred.dds",
+      "sourceSha256": "655db1511896e8e8ebbc29e6400f133320cb45966e03f5dbd676ac8993dd9f35",
+      "output": "godot\\Assets\\UI\\specs\\hatred.png",
+      "outputSha256": "495468654784e4c8eeaf2984d1dbc78436a3f0a5d8bf84d736c258cab3833433",
+      "dimensions": [
+        52,
+        52
+      ]
+    },
+    {
+      "name": "corruption",
+      "path": "/resources/gfx/icons/sorc_corruption.dds",
+      "archiveHash": "0x5140628CD2BF947C",
+      "dataOffset": 258659616,
+      "compressedSize": 1429,
+      "length": 2832,
+      "compression": 1,
+      "packedPath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\icons\\sorc_corruption.packed",
+      "sourcePath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\icons\\sorc_corruption.dds",
+      "sourceSha256": "f872da5edf1169545e6638614216e5140fd92b6b2c6e83f0cf7721b8b87c2479",
+      "output": "godot\\Assets\\UI\\specs\\corruption.png",
+      "outputSha256": "667678d962982799227fc698e7e50f5cdbe2ab16ef4b50c957a7f726c58cf258",
+      "dimensions": [
+        52,
+        52
+      ]
+    },
+    {
+      "name": "lightning",
+      "path": "/resources/gfx/icons/sorc_lightning.dds",
+      "archiveHash": "0x6AE5EC22E78E5B0E",
+      "dataOffset": 258661081,
+      "compressedSize": 1456,
+      "length": 2832,
+      "compression": 1,
+      "packedPath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\icons\\sorc_lightning.packed",
+      "sourcePath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\icons\\sorc_lightning.dds",
+      "sourceSha256": "ca911e32fbcf93bb6cf3ce3f68e5726e40fa254afa5c485017895f568b757c96",
+      "output": "godot\\Assets\\UI\\specs\\lightning.png",
+      "outputSha256": "6414b257ae828b0681e6d26840e4d85fafefba9798c260664de6dd88bf538806",
+      "dimensions": [
+        52,
+        52
+      ]
+    },
+    {
+      "name": "madness",
+      "path": "/resources/gfx/icons/sorc_madness.dds",
+      "archiveHash": "0x594F558D033EC066",
+      "dataOffset": 258662573,
+      "compressedSize": 1464,
+      "length": 2832,
+      "compression": 1,
+      "packedPath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\icons\\sorc_madness.packed",
+      "sourcePath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\icons\\sorc_madness.dds",
+      "sourceSha256": "96c87f52c3e5b36516d05e92e1b22a4e2d94f4d95ecf5a21e85574305e98f0e4",
+      "output": "godot\\Assets\\UI\\specs\\madness.png",
+      "outputSha256": "2463014b2276ef5018f5d9be1aa31108ffb128973e959db0b0347d78b7a235db",
+      "dimensions": [
+        52,
+        52
+      ]
+    },
+    {
+      "name": "role_dps",
+      "path": "/resources/gfx/symbols/icon_dps.dds",
+      "archiveHash": "0x4F07930D0DB3D2E9",
+      "dataOffset": 749383252,
+      "compressedSize": 495,
+      "length": 608,
+      "compression": 1,
+      "packedPath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\symbols\\icon_dps.packed",
+      "sourcePath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\symbols\\icon_dps.dds",
+      "sourceSha256": "72ef700d1b7e6596c02db4b1703324b9b47115318fba1da22ce265f6fb114c16",
+      "output": "godot\\Assets\\UI\\specs\\role_dps.png",
+      "outputSha256": "e6345ff7b30815641a51a4bf10807cdcfb23e381ffdc1ce22f6d4864406abe92",
+      "dimensions": [
+        24,
+        20
+      ]
+    },
+    {
+      "name": "role_heal",
+      "path": "/resources/gfx/symbols/icon_heal.dds",
+      "archiveHash": "0x35137350E0A6003D",
+      "dataOffset": 749383783,
+      "compressedSize": 447,
+      "length": 608,
+      "compression": 1,
+      "packedPath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\symbols\\icon_heal.packed",
+      "sourcePath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\symbols\\icon_heal.dds",
+      "sourceSha256": "5d3c336fc64a2596b42f746a6cce8df347b5a0396373ecf0bd1608aa7a4bec1d",
+      "output": "godot\\Assets\\UI\\specs\\role_heal.png",
+      "outputSha256": "09b79a7f4f29a7f54a8a3b062f0712b8ffcf803e9c51cbb794dcb0505889c298",
+      "dimensions": [
+        20,
+        24
+      ]
+    },
+    {
+      "name": "role_tank",
+      "path": "/resources/gfx/symbols/icon_tank.dds",
+      "archiveHash": "0x669B198BB45AE2FE",
+      "dataOffset": 749389997,
+      "compressedSize": 512,
+      "length": 704,
+      "compression": 1,
+      "packedPath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\symbols\\icon_tank.packed",
+      "sourcePath": "D:\\SWTORClassic\\torbonk\\pipeline\\source-assets\\installed-swtor\\resources\\gfx\\symbols\\icon_tank.dds",
+      "sourceSha256": "f9ed13a8aa4321e1a3a3b779669ae21ef69baa58342f182bcaf5432d05b3d5c0",
+      "output": "godot\\Assets\\UI\\specs\\role_tank.png",
+      "outputSha256": "e355678126e7c4183e592800706e343712db24dfce029ca4ed6be1d20f50f280",
+      "dimensions": [
+        24,
+        24
+      ]
+    }
+  ],
+  "conversion": "Original DDS to native-resolution RGBA PNG; no redraw or recolor"
+}

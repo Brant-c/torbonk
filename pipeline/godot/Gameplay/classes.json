@@ -9,7 +9,8 @@
     "Presentation": "sorcerer",
     "AnimationScene": "res://Assets/Abilities/casts.glb",
     "ArtifactEffects": [],
-    "TalentPool": []
+    "TalentPool": [],
+    "BasicAttack": ""
   },
   {
     "Id": "juggernaut",
@@ -36,7 +37,8 @@
       "viciousslash",
       "crushingblow",
       "intimidatingroar"
-    ]
+    ],
+    "BasicAttack": "basicassault"
   },
   {
     "Id": "marauder",
@@ -63,7 +65,8 @@
       "annihilate",
       "forcescream",
       "berserk"
-    ]
+    ],
+    "BasicAttack": "basicassaultdual"
   },
   {
     "Id": "assassin",
@@ -84,13 +87,27 @@
       "unlock_discharge",
       "unlock_forceshroud",
       "assassin_contagion",
-      "assassin_static_blades"
+      "assassin_static_blades",
+      "unlock_deathfield",
+      "deathfield_power",
+      "unlock_affliction"
     ],
     "Kit": [
       "creepingterror",
       "discharge",
-      "forceshroud"
-    ]
+      "forceshroud",
+      "deathfield",
+      "affliction"
+    ],
+    "ArtifactEffects": [
+      "guardian",
+      "sacrifice",
+      "heal",
+      "shield",
+      "recovery",
+      "vulnerability"
+    ],
+    "BasicAttack": "basicpole"
   },
   {
     "Id": "operative",
@@ -117,7 +134,8 @@
       "corrosivegrenade",
       "weakeningblast",
       "adrenalstim"
-    ]
+    ],
+    "BasicAttack": "basicrifle"
   },
   {
     "Id": "sniper",
@@ -144,7 +162,8 @@
       "ambush",
       "seriesofshots",
       "shieldprobe"
-    ]
+    ],
+    "BasicAttack": "basicrifle"
   },
   {
     "Id": "mercenary",
@@ -169,7 +188,8 @@
     "Kit": [
       "heatseeker",
       "unload"
-    ]
+    ],
+    "BasicAttack": "basicrapiddual"
   },
   {
     "Id": "powertech",
@@ -203,6 +223,7 @@
       "flamethrower",
       "oilslick"
     ],
-    "UtilitySlots": 3
+    "UtilitySlots": 3,
+    "BasicAttack": "basicrapid"
   }
 ]

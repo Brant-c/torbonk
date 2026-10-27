@@ -1,0 +1,19 @@
+{
+  "clips": [
+    {
+      "name": "BlastCharge",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\fp_1h_elect_charge_right_1.jba",
+      "seconds": 1.0666667222976685,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "BlastRelease",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\fp_2h_elect_instant_right_1.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    }
+  ],
+  "output": "godot\\Assets\\Sorcerer\\casts.glb",
+  "sha256": "848f122503a9e2bcd91dc36666aaae116fa54119a7e37b3c98702bf6bdbaafc2",
+  "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
+}

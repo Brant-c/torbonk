@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource("1")
 Id = "storm"
+ExclusiveWith = "deathfield"
 StartsUnlocked = false
 Title = "Force Storm"
 Icon = "forcestorm"

@@ -22,6 +22,11 @@ public partial class KitSmoke : Node
     /// <summary>Starts one ability and runs its lifecycle to completion in fixed steps; returns hit points lost per fixture.</summary>
     private float[] Cast(AutomaticAbility a,bool resetHealth=true)
     {
+        if(!a.Unlocked)
+        {
+            var replace=_w.Abilities.Abilities.FirstOrDefault(other=>other.Unlocked && other!=_w.Combat && !other.Definition.IsBasicAttack && other.Definition.Category==a.Definition.Category);
+            replace?.SetUnlocked(false);Check(a.Definition.Id+" equips for isolated fixture",_w.Abilities.Unlock(a.Definition.Id));
+        }
         if(resetHealth)foreach(var f in _fixtures)f.Health.Restore();
         var before=_fixtures.Select(f=>f.Health.Current).ToArray();
         Check(a.Definition.Id+" starts",a.TryBegin());
@@ -48,13 +53,22 @@ public partial class KitSmoke : Node
             {
             // Registry and slots.
             var kit=profile.Kit.Select(k=>w.Abilities.Find(k)).ToArray();
-            Check(id+" kit abilities are wired and locked",kit.All(k=>k!=null && !k.Unlocked) && w.Abilities.Abilities.Count(a=>a.Unlocked)==1);
+            Check(id+" kit abilities are wired and locked",kit.All(k=>k!=null && !k.Unlocked) && w.Abilities.Abilities.Count(a=>a.Unlocked)==2);
             Check(id+" pool offers unlock for every kit ability",profile.Kit.All(k=>w.Progression!.Upgrades.Any(u=>u.Effect==UpgradeEffect.UnlockAbility && u.AbilityId==k)));
             Check(id+" pool contains two mechanic talents",w.Progression!.Upgrades.Count(u=>u.Effect==UpgradeEffect.Mechanic)==2);
             Check(id+" damage track covers the whole kit",w.Progression.Upgrades.Any(u=>u.Effect==UpgradeEffect.Damage && u.AbilityId==""));
-            foreach(var k in profile.Kit)Check(id+" grants "+k,w.Progression.Grant("unlock_"+k));
-            Check(id+" slot limits respected",w.Abilities.Equipped(AbilityCategory.Offensive)<=4 && w.Abilities.Equipped(AbilityCategory.Utility)<=2 && kit.All(k=>k!.Unlocked));
-            Check(id+" action bar lists starter and kit",w.Abilities.Abilities.Count(a=>a.Unlocked)==1+profile.Kit.Length);
+            foreach(var k in profile.Kit)
+            {
+                var ability=w.Abilities.Find(k)!;
+                if(!w.Abilities.CanUnlock(ability))
+                {
+                    Check(id+" full slots reject "+k,!w.Progression.Grant("unlock_"+k));
+                    kit.First(other=>other!.Unlocked && other.Definition.Category==ability.Definition.Category)!.SetUnlocked(false);
+                }
+                Check(id+" grants "+k,w.Progression.Grant("unlock_"+k));
+            }
+            Check(id+" slot limits respected",w.Abilities.Equipped(AbilityCategory.Offensive)<=4 && w.Abilities.Equipped(AbilityCategory.Utility)<=w.Abilities.UtilityLimit);
+            Check(id+" action bar lists starter, basic and owned kit",w.Abilities.Abilities.Count(a=>a.Unlocked)==2+kit.Count(k=>k!.Unlocked));
             // Every damaging kit ability hits and publishes through the normal path; presentation has no damage authority.
             foreach(var k in kit.Where(k=>k!.Definition.Effect==AbilityEffect.Damage))
             {
@@ -64,6 +78,12 @@ public partial class KitSmoke : Node
                 else if(k.Definition.Area==AbilityArea.SingleTarget)Check(k.Definition.Id+" is single-target",lost[1]==0 && lost[2]==0);
             }
             // Class mechanics.
+            if(id=="assassin")
+            {
+                w.Abilities.Find("affliction")!.SetUnlocked(false);
+                w.Abilities.Find("deathfield")!.SetUnlocked(false);
+                w.Abilities.Unlock("creepingterror");w.Abilities.Unlock("discharge");
+            }
             var b=w.Build;var P=w.Periodic;
             if(id=="marauder")
             {

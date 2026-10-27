@@ -21,6 +21,11 @@ public partial class UpgradeDefinition : Resource
     [Export] public string MechanicalDescription {get;set;}="";
     [Export] public string RequiresUpgrade {get;set;}="";
     [Export] public bool D2Choice {get;set;}
+    [Export] public int MilestoneLevel {get;set;}
+    [Export] public string Spec {get;set;}="";
+    [Export] public string Role {get;set;}="dps";
+    [Export] public string ChoiceDescription {get;set;}="";
+    public string AbilityTitle {get;set;}="";
     [Export] public float DamagePerRank { get; set; }
     [Export] public float RadiusPerRank { get; set; }
     [Export] public float HealingPerRank { get; set; }
@@ -31,18 +36,22 @@ public partial class UpgradeDefinition : Resource
     public float RarityMultiplier => RarityRules?.Multiplier(Rarity)??1;
     [Export] public RarityTuning? RarityRules { get; set; }
     public float EffectiveAmount => AmountPerRank*(RarityRules?.Multiplier(Rarity)??1);
-    public string Scope => AbilityId switch { "shock"=>"Shock","storm"=>"Force Storm","lightning"=>"Force Lightning",
-        "deathfield"=>"Death Field","barrier"=>"Static Barrier","darkheal"=>"Dark Heal","chain"=>"Chain Lightning","overload"=>"Overload",_=>AbilityId!="" && Godot.ResourceLoader.Exists($"res://Gameplay/Abilities/{AbilityId}.tres")?Godot.GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{AbilityId}.tres").Title:"All abilities" };
+    public string Scope => AbilityTitle!=""?AbilityTitle:AbilityId switch { "shock"=>"Shock","storm"=>"Force Storm","lightning"=>"Force Lightning",
+        "deathfield"=>"Death Field","barrier"=>"Static Barrier","darkheal"=>"Dark Heal","chain"=>"Chain Lightning","overload"=>"Overload",_=>AbilityId!=""?AbilityId:"All abilities" };
     // Unbounded by default so three distinct meaningful choices remain available indefinitely.
     [Export] public int MaximumRank { get; set; }
     public string Description => Effect switch
     {
-        UpgradeEffect.Mechanic => MechanicalDescription+" Authored Survivors rule; lasts this run.",
+        UpgradeEffect.Mechanic => MechanicalDescription,
         UpgradeEffect.UnlockAbility => AbilityId=="chain"
-            ? "Unlock a separate automatic Chain Lightning cast with its own 8-second cooldown. Hits one enemy, then jumps to nearby hostiles. Uses one offensive slot."
+            ? "Unlock a separate automatic Chain Lightning cast with its own 6-second cooldown. Hits one enemy, then jumps to nearby hostiles. Uses one offensive slot."
+            : AbilityId is "thunderingblast" or "affliction"
+            ? Godot.GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{AbilityId}.tres").Description+" Uses one offensive slot."
             : $"Unlock {Scope}. Adds its automatic ability to your action bar for this run.",
-        UpgradeEffect.AbilityPower => AbilityId switch {
-            "deathfield" => $"Death Field: +{DamagePerRank*RarityMultiplier:P0} damage, +{RadiusPerRank*RarityMultiplier:P0} radius, +{HealingPerRank*RarityMultiplier:P0} healing per target. Healing cap stays 15.",
+        UpgradeEffect.AbilityPower => DamagePerRank>0 && AbilityId is not ("deathfield" or "barrier")
+            ? $"{Scope}: +{DamagePerRank*RarityMultiplier:P0} base damage per rank."
+            : AbilityId switch {
+            "deathfield" => $"Death Field: +{DamagePerRank*RarityMultiplier:P0} damage, +{RadiusPerRank*RarityMultiplier:P0} radius, +{HealingPerRank*RarityMultiplier:P0} healing per target. Healing cap stays 8.",
             "barrier" => $"Static Barrier: +{ShieldPerRank*RarityMultiplier:P0} capacity, +{DurationPerRank*RarityMultiplier:P0} duration, +{CooldownPerRank*RarityMultiplier:P0} cooldown recovery rate.",
             _ => $"Dark Heal: +{HealingPerRank*RarityMultiplier:P0} healing, +{CooldownPerRank*RarityMultiplier:P0} cooldown recovery rate; trigger {ThresholdPerRank*RarityMultiplier*100:0.#} percentage points earlier (up to 80% HP)." },
         UpgradeEffect.Damage => $"{Scope}: +{EffectiveAmount:P0} base damage per rank.",

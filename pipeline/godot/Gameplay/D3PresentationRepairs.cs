@@ -90,13 +90,13 @@ public partial class D3AbilityPresentation
             Play(Definition.ImpactAudio,at,3);
             Burst(at,Definition.ImpactTexture,.15f);return true;
         }
-        if(Definition.Id is "unload" or "seriesofshots" or "ambush" or "weakeningblast")
+        if(Definition.Id is "unload" or "seriesofshots" or "ambush" or "weakeningblast" or "basicrapiddual")
         {
             ClearReticle();ShotsPresented++;
             int shotSlot=_voices.FindIndex(5,v=>!v.Playing);if(shotSlot<0)shotSlot=5;
             Play(Definition.ShotAudio,Actor.GlobalPosition,shotSlot);Play(Definition.ImpactAudio,at,3);
             MuzzleFlash();Bolt(MuzzleWorld(),at,.006f,.1);
-            if(Definition.Id=="unload")
+            if(Definition.Id is "unload" or "basicrapiddual")
             {
                 var left=BoneWorld("LeftWeapon");
                 var flash=Sprite("res://Assets/D3/bw_orange_flare02.png",.045f);

@@ -29,7 +29,7 @@ public partial class UpgradeCard : SwtorButton
             Modulate = _selected ? Colors.White.Lerp(_rarityColor, 0.22f) * flash : new Color(0.4f,0.4f,0.4f);
         }
     }
-    public UpgradeCard(UpgradeDefinition definition,int rank,int number,string itemType="")
+    public UpgradeCard(UpgradeDefinition definition,int rank,int number,string itemType="",string action="")
     {
         CustomMinimumSize=new Vector2(228,320);
         SizeFlagsHorizontal=SizeFlags.ExpandFill;
@@ -41,8 +41,8 @@ public partial class UpgradeCard : SwtorButton
         };
         _rarityColor = rarityColor;
         bool unlock=definition.Effect==UpgradeEffect.UnlockAbility;
-        TooltipText=definition.Title+" · "+definition.Rarity+"\n"+definition.Description+
-            (unlock?"":definition.Effect==UpgradeEffect.Mechanic?"\nFixed mechanical effect; rarity identifies its tier.":$"\nBonuses last for this run. Rarity strength ×{definition.RarityRules?.Multiplier(definition.Rarity)??1:0.##}.");
+        bool milestone=definition.MilestoneLevel>0;
+        TooltipText=definition.Title+"\n"+(milestone?definition.ChoiceDescription:definition.Description);
         AddThemeStyleboxOverride("normal",SwtorSkin.ButtonArtwork());
         AddThemeStyleboxOverride("hover",SwtorSkin.ButtonArtwork(hovered:true));
         AddThemeStyleboxOverride("pressed",SwtorSkin.ButtonArtwork(hovered:true));
@@ -53,6 +53,16 @@ public partial class UpgradeCard : SwtorButton
         content.AddThemeConstantOverride("separation",8);
         AddChild(content); content.SetAnchorsAndOffsetsPreset(LayoutPreset.FullRect);
         content.OffsetLeft=18;content.OffsetTop=20;content.OffsetRight=-18;content.OffsetBottom=-20;
+        if(milestone)
+        {
+            var heading=new HBoxContainer {MouseFilter=MouseFilterEnum.Ignore,Alignment=BoxContainer.AlignmentMode.Center};
+            TextureRect Art(string path,int size)=>new() {Texture=GD.Load<Texture2D>(path),CustomMinimumSize=Vector2.One*size,
+                ExpandMode=TextureRect.ExpandModeEnum.IgnoreSize,StretchMode=TextureRect.StretchModeEnum.KeepAspectCentered,MouseFilter=MouseFilterEnum.Ignore};
+            if(definition.Spec!="")heading.AddChild(Art($"res://Assets/UI/specs/{definition.Spec}.png",36));
+            var spec=SwtorSkin.Text(definition.Spec.ToUpperInvariant(),18,true);spec.SizeFlagsHorizontal=SizeFlags.ExpandFill;heading.AddChild(spec);
+            heading.AddChild(Art($"res://Assets/UI/specs/role_{definition.Role}.png",24));content.AddChild(heading);
+            TooltipText=definition.Title+"\n"+definition.ChoiceDescription;
+        }
         var title=SwtorSkin.Text(definition.Title,17);title.HorizontalAlignment=HorizontalAlignment.Center;
         title.CustomMinimumSize=new Vector2(0,42);title.VerticalAlignment=VerticalAlignment.Center;
         title.AddThemeColorOverride("font_color",rarityColor);
@@ -60,15 +70,18 @@ public partial class UpgradeCard : SwtorButton
         var center=new CenterContainer {MouseFilter=MouseFilterEnum.Ignore}; content.AddChild(center);
         var icon=new AbilityIcon { IconName=definition.Icon,SlotSize=56,IconPadding=4,
             FrameTexture=SwtorSkin.HudArt(rarityFrame),MouseFilter=MouseFilterEnum.Ignore };center.AddChild(icon);
-        var rankLabel=SwtorSkin.Text($"{definition.Rarity.ToString().ToUpperInvariant()}  ·  "+(itemType!=""?itemType:unlock?"NEW ABILITY":definition.Effect==UpgradeEffect.Mechanic?$"PASSIVE RANK {rank+1}":$"RANK {rank+1}"),12);
-        rankLabel.AddThemeColorOverride("font_color",rarityColor);
-        rankLabel.HorizontalAlignment=HorizontalAlignment.Center;content.AddChild(rankLabel);
+        if(!milestone)
+        {
+            var rankLabel=SwtorSkin.Text($"{definition.Rarity.ToString().ToUpperInvariant()}  ·  "+(itemType!=""?itemType:unlock?"NEW ABILITY":definition.Effect==UpgradeEffect.Mechanic?$"PASSIVE RANK {rank+1}":$"RANK {rank+1}"),12);
+            rankLabel.AddThemeColorOverride("font_color",rarityColor);
+            rankLabel.HorizontalAlignment=HorizontalAlignment.Center;content.AddChild(rankLabel);
+        }
         var description=SwtorSkin.Text(Summary(definition),15);description.AutowrapMode=TextServer.AutowrapMode.WordSmart;
         description.HorizontalAlignment=HorizontalAlignment.Center;description.VerticalAlignment=VerticalAlignment.Center;
         description.SizeFlagsVertical=SizeFlags.ExpandFill;content.AddChild(description);
-        _select=SwtorSkin.Text($"{(itemType!=""?"SELECT":unlock?"UNLOCK":"TRAIN")}  [{number}]",14);_select.AddThemeColorOverride("font_color",SwtorSkin.Blue);
+        _select=SwtorSkin.Text($"{(action!=""?action:milestone?(unlock?"UNLOCK":"UPGRADE"):itemType!=""?"SELECT":unlock?"UNLOCK":"TRAIN")}  [{number}]",14);_select.AddThemeColorOverride("font_color",SwtorSkin.Blue);
         _select.HorizontalAlignment=HorizontalAlignment.Center;content.AddChild(_select);
     }
 
-    private static string Summary(UpgradeDefinition power) => power.Description;
+    private static string Summary(UpgradeDefinition power) => power.ChoiceDescription!=""?power.ChoiceDescription:power.Description;
 }

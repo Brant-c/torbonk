@@ -170,6 +170,8 @@ public partial class AutomaticAbility : Node
             ? Targeting.InArea(GroundCenter,Radius,Range,Definition.PersistentArea).ToArray()
             : Definition.Area==AbilityArea.FrontalCone ? Targeting.InArea(Caster.GlobalPosition,Radius,Radius).Where(t=>InCone(t)).ToArray()
             : Targeting.IsValidTarget(CastTarget,Range)?new[]{CastTarget!}:Array.Empty<Combatant>();
+        // Snapshot before damage: a lethal field hit must still spread the victim's owned DoTs.
+        var spread=Definition.SpreadsPeriodicEffects?Periodic?.SpreadSources(Caster,targets):null;
         if(_presented) Present(()=>Presentation.Impact(Definition.Area==AbilityArea.GroundSphere?GroundCenter:CastTarget?.AimPosition??GroundCenter));
         if(Definition.Id=="flamesweep")
         {
@@ -195,6 +197,9 @@ public partial class AutomaticAbility : Node
             DamageDealt?.Invoke(target,applied);
             Build?.Hit(this,target,targets);
         }
+        if(spread!=null)
+            foreach(var target in targets.Where(t=>GodotObject.IsInstanceValid(t) && t.Alive))
+                foreach(var source in spread)Periodic!.Apply(source,target);
         if(Healing>0 && ChannelSeconds<=0)
         {
             LastHealing=Caster.Health.ApplyHealing(Math.Min(Definition.HealingCap,_damaged.Count*Healing));
@@ -211,7 +216,13 @@ public partial class AutomaticAbility : Node
         var direction=target.GlobalPosition-Caster.GlobalPosition;direction.Y=0;
         return direction.LengthSquared()<.00001f || forward.Normalized().Dot(direction.Normalized())>=.7071f;
     }
-    private float DealHit(Combatant target,float amount) => target.Health.ApplyDamage(amount*(Build?.DamageMultiplier(this,target)??1)*(Definition.AfflictedBonus>0 && Periodic?.Has(target)==true?1+Definition.AfflictedBonus:1),Definition.DamageType);
+    private float DealHit(Combatant target,float amount)
+    {
+        bool critical=Definition.CriticalAgainstPeriodic!="" && Periodic?.On(target).Any(a=>a.Caster==Caster && a.Definition.Id==Definition.CriticalAgainstPeriodic)==true;
+        return target.Health.ApplyDamage(amount*(Build?.DamageMultiplier(this,target)??1)
+            *(Definition.AfflictedBonus>0 && Periodic?.Has(target)==true?1+Definition.AfflictedBonus:1)
+            *(critical?Definition.CriticalMultiplier:1),Definition.DamageType,critical);
+    }
     public void ApplyPeriodicHit(Combatant target,float amount)
     {
         if(!Caster.Alive || !target.Alive || !Caster.IsHostileTo(target))return;
@@ -251,6 +262,12 @@ public partial class AutomaticAbility : Node
         if(_presented) Present(()=>Presentation.End(interrupted));
         Present(()=>Presentation.Actor.SetGestureClip(this,Definition.EndClip));
         State=LightningState.Ending;_phaseRemaining=Definition.RecoverySeconds;LastEvent=reason;
+    }
+    public void Interrupt()
+    {
+        double remaining=CooldownRemaining,duration=CooldownDuration;
+        Abort();CooldownRemaining=remaining;CooldownDuration=duration;
+        State=Unlocked?(remaining>0?LightningState.Cooldown:LightningState.Idle):LightningState.Disabled;
     }
     public void Abort()
     {

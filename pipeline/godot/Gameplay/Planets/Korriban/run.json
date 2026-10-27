@@ -2,6 +2,21 @@
   "CoreLevel": 30,
   "FirstLevelExperience": 16,
   "ExperienceGrowth": 1.105,
+  "Difficulty": {
+    "HealthPerLevel": 0.08,
+    "DamagePerLevel": 0.045,
+    "SpeedPerLevel": 0.01,
+    "MaximumSpeedBonus": 0.25,
+    "AttackFrequencyPerLevel": 0.005,
+    "MaximumAttackFrequencyBonus": 0.15,
+    "InitialPopulation": 16,
+    "PopulationPerLevel": 3,
+    "MaximumPopulation": 100,
+    "InitialSpawnInterval": 0.5,
+    "MinimumSpawnInterval": 0.15,
+    "RecoverySeconds": 20,
+    "ReturnRampSeconds": 8
+  },
   "ArtifactCatalog": "res://Gameplay/Planets/Korriban/artifacts.json",
   "AudioTuning": "res://Gameplay/Planets/Korriban/audio.json",
   "Stages": [

@@ -32,6 +32,12 @@ public partial class WaveDirector : Node
     public bool CoreComplete => PlanetRun != null && MilestonesCompleted == PlanetRun.Milestones.Length;
     private bool _milestoneLoaded;
     private double _encounterRecovery;
+    public double RecoveryRemaining => _encounterRecovery;
+    public bool Recovering => _encounterRecovery > 0;
+    public double ReturnRampRemaining { get; private set; }
+    public PlanetStage? TravelDestination { get; private set; }
+    private PlanetStage? _stage;
+    private PlanetStage? _pendingTravel;
     private readonly Dictionary<string,PackedScene> _planetScenes = new();
     private readonly Dictionary<string,BossEncounterDefinition> _planetEncounters = new();
     public int Wave { get; private set; }
@@ -53,10 +59,21 @@ public partial class WaveDirector : Node
         AddChild(Encounter);
         if(PlanetRun!=null)
         {
-            foreach(var e in PlanetRun.Stages.SelectMany(s=>s.Enemies))
-                _planetScenes.TryAdd(e.Scene,GD.Load<PackedScene>(e.Scene));
+            Spawner.Difficulty = PlanetRun.Difficulty;
+            Spawner.PlayerLevel = () => PlayerLevel?.Invoke() ?? 1;
+            Spawner.HardActiveLimit = Math.Max(1, PlanetRun.Difficulty.MaximumPopulation);
+            foreach(var stage in PlanetRun.Stages)
+                foreach(var e in stage.Enemies)
+                {
+                    _planetScenes.TryAdd(e.Scene,GD.Load<PackedScene>(e.Scene));
+                    Spawner.ReferenceLevels.TryAdd(e.Scene, stage.Level);
+                }
             foreach(var m in PlanetRun.Milestones)
-                _planetEncounters.TryAdd(m.Encounter,GD.Load<BossEncounterDefinition>(m.Encounter));
+            {
+                var definition = GD.Load<BossEncounterDefinition>(m.Encounter);
+                _planetEncounters.TryAdd(m.Encounter, definition);
+                Spawner.ReferenceLevels.TryAdd(definition.Scene.ResourcePath, m.Level);
+            }
             return;
         }
         using var config = JsonDocument.Parse(FileAccess.GetFileAsString(RosterPath));
@@ -84,6 +101,10 @@ public partial class WaveDirector : Node
     {
         Encounter.ResetEncounter(); Spawner.ResetSpawner(); Wave = 1; ApplyWave(); _spawnIn = 0.5; Running = true;
         MilestonesCompleted=MilestonesStarted=0;_milestoneLoaded=false;_encounterRecovery=0;
+        ReturnRampRemaining=0;TravelDestination=null;_pendingTravel=null;
+        _stage=PlanetRun?.StageAt(PlayerLevel?.Invoke()??1);
+        Spawner.ReservedSlots=PlanetRun!=null?1:0;
+        ApplyPlanetPressure();
     }
 
     private void ApplyWave()
@@ -94,22 +115,77 @@ public partial class WaveDirector : Node
         // Only newly spawned enemies scale. Existing health is never replenished at a wave boundary.
         Spawner.HealthMultiplier = Math.Clamp(1 + (Wave - 1) * HealthPerWave, 1, 3);
         Spawner.DamageMultiplier = Math.Clamp(1 + (Wave - 1) * DamagePerWave, 1, 2.5f);
+        ApplyPlanetPressure();
+    }
+
+    public void ApplyPlanetPressure()
+    {
+        if (PlanetRun == null) return;
+        int level = Math.Max(1, PlayerLevel?.Invoke() ?? 1);
+        Spawner.ActiveLimit = PlanetRun.Difficulty.Population(level);
+        SpawnInterval = PlanetRun.Difficulty.SpawnInterval(level, PlanetRun.CoreLevel);
+        Spawner.HealthMultiplier = Spawner.DamageMultiplier = 1;
+    }
+
+    private void BeginRecovery(PlanetStage? destination)
+    {
+        if (PlanetRun == null || CoreComplete) return;
+        TravelDestination = destination;
+        // A stage unlocked during a reward/recovery belongs to the same break.
+        if (!Recovering) _encounterRecovery = Math.Max(0, PlanetRun.Difficulty.RecoverySeconds);
+        ReturnRampRemaining = 0;
+        Spawner.ReinforcementsEnabled = !Recovering;
+        _spawnIn = Math.Max(_spawnIn, SpawnInterval);
+    }
+
+    public bool BeginNextPhase()
+    {
+        if (!Running || !Recovering || TravelDestination == null || CanStartMilestone?.Invoke() == false ||
+            Spawner.Player.GlobalPosition.DistanceTo(new Vector3(TravelDestination.Focus[0], TravelDestination.Focus[1], TravelDestination.Focus[2])) > .65f) return false;
+        FinishRecovery();
+        return true;
+    }
+
+    private void FinishRecovery()
+    {
+        _encounterRecovery = 0;
+        ReturnRampRemaining = Math.Max(0, PlanetRun?.Difficulty.ReturnRampSeconds ?? 0);
+        Spawner.ReinforcementsEnabled = true;
+        _spawnIn = Math.Max(SpawnInterval, .5);
     }
 
     public override void _PhysicsProcess(double delta)
     {
         if (!Running) return;
         if (!Spawner.Player.Alive) { Stop(); return; }
+        if (PlanetRun != null)
+        {
+            ApplyPlanetPressure();
+            bool recoveringBeforeStage = Recovering;
+            var stage = PlanetRun.StageAt(PlayerLevel?.Invoke() ?? 1);
+            if (_stage != stage)
+            {
+                _stage = stage;
+                // Active bosses finish before a travel break can begin.
+                if (!_milestoneLoaded) BeginRecovery(stage);
+                else _pendingTravel=stage;
+            }
+            if (!recoveringBeforeStage && Recovering) return;
+            bool wasRecovering = Recovering;
+            TickMilestones(delta);
+            if (!Running || wasRecovering || Recovering) return;
+            ReturnRampRemaining = Math.Max(0, ReturnRampRemaining - delta);
+        }
         WaveRemaining -= delta;
         if (WaveRemaining <= 0) { Wave++; ApplyWave(); _spawnIn = Math.Min(_spawnIn, SpawnInterval); }
         if(PlanetRun==null) Encounter.Tick(delta, Wave >= BossWave);
-        else TickMilestones(delta);
         _spawnIn -= delta;
         if (_spawnIn > 0) return;
         // One attempt per interval, with bounded retries when blocked; never catch up in a burst.
         bool allowed = Encounter.AllowRegularSpawn(Spawner.ActiveLimit);
         bool spawned = allowed && Spawner.TrySpawn(SelectEnemy(),elite:PlanetRun==null && Wave>=EliteFirstWave && EliteEverySpawns>0 && (Spawner.Spawned+1)%EliteEverySpawns==0);
-        _spawnIn = spawned || !allowed || Spawner.ActiveCount >= Spawner.ActiveLimit ? SpawnInterval * Encounter.CadenceMultiplier : 0.5;
+        double ramp = 1 + 3 * ReturnRampRemaining / Math.Max(.01, PlanetRun?.Difficulty.ReturnRampSeconds ?? 1);
+        _spawnIn = spawned || !allowed || Spawner.ActiveCount >= Spawner.ActiveLimit ? SpawnInterval * Encounter.CadenceMultiplier * ramp : 0.5;
     }
 
     public void Stop() { Running = false; Encounter.Fail(); Spawner.Stop(); }
@@ -120,12 +196,26 @@ public partial class WaveDirector : Node
         if(PlanetRun==null || CoreComplete)return;
         if(_milestoneLoaded && Encounter.State==EncounterState.Defeated)
         {
-            MilestonesCompleted++;_milestoneLoaded=false;_encounterRecovery=5;
+            MilestonesCompleted++;_milestoneLoaded=false;
             if(CoreComplete){Running=false;Spawner.Stop();}
+            else
+            {
+                var level = PlayerLevel?.Invoke() ?? 1;
+                BeginRecovery(_pendingTravel ?? PlanetRun.Stages.FirstOrDefault(s => s.Level > level) ?? PlanetRun.StageAt(level));
+                _pendingTravel=null;
+            }
             return;
         }
         if(Encounter.State==EncounterState.Failed)return;
-        _encounterRecovery=Math.Max(0,_encounterRecovery-delta);
+        if (Recovering)
+        {
+            if (CanStartMilestone?.Invoke() != false)
+            {
+                _encounterRecovery = Math.Max(0, _encounterRecovery - delta);
+                if (!Recovering) FinishRecovery();
+            }
+            return;
+        }
         if(!_milestoneLoaded)
         {
             if(_encounterRecovery>0 || CanStartMilestone?.Invoke()==false)return;

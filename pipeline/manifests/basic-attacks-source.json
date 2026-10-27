@@ -1,0 +1,137 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 180,
+  "maximumDecodedBytes": 104857600,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0xC75E1F56727D1D48",
+      "entryOffset": 32661260,
+      "headerSize": 36,
+      "dataOffset": 32661296,
+      "compressedSize": 15563,
+      "length": 26433,
+      "compressionMethod": 1,
+      "crc32Index": "c8335d71",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_attack_right_1.jba",
+      "sha256": "a1d703b5ba5b5f52821683f713c729ec34ddddfe129c579365e5741639f3cdcd",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_saber_attack_right_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x4F86B57BB07CCA1F",
+      "entryOffset": 22330865,
+      "headerSize": 36,
+      "dataOffset": 22330901,
+      "compressedSize": 14110,
+      "length": 26305,
+      "compressionMethod": 1,
+      "crc32Index": "b39306ee",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_attack_right_1.jba",
+      "sha256": "75d76febfbc1064bd3299137f173b1dc01195142f97e0cc7774f6140c957881a",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2saber_attack_right_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x280157E29793C5DA",
+      "entryOffset": 28609550,
+      "headerSize": 36,
+      "dataOffset": 28609586,
+      "compressedSize": 15634,
+      "length": 26561,
+      "compressionMethod": 1,
+      "crc32Index": "4186857c",
+      "path": "/resources/anim/humanoid/bmnnew/cb_pole_attack_right_1.jba",
+      "sha256": "0946d1065301a77f7a4bc92f3817cae2e3d8882c1ee7119349f34185406d2810",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_pole_attack_right_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x51FB4FC619BEBC0E",
+      "entryOffset": 31449765,
+      "headerSize": 36,
+      "dataOffset": 31449801,
+      "compressedSize": 12549,
+      "length": 24129,
+      "compressionMethod": 1,
+      "crc32Index": "635f023f",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_fire_1.jba",
+      "sha256": "8cc30464d57b2914df9b200030f76ca157057d704f8943582853af44c61a14ea",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_fire_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x0886A350ED24AA87",
+      "entryOffset": 27953975,
+      "headerSize": 36,
+      "dataOffset": 27954011,
+      "compressedSize": 12426,
+      "length": 23617,
+      "compressionMethod": 1,
+      "crc32Index": "12fe9eb9",
+      "path": "/resources/anim/humanoid/bmnnew/cb_pistol_fire_1.jba",
+      "sha256": "d394c22b0b153732174c6304bbfb995b84c53447e6eff9713ccefe024d3a3be5",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_pistol_fire_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x0FD34E3D3B692C1A",
+      "entryOffset": 21673200,
+      "headerSize": 36,
+      "dataOffset": 21673236,
+      "compressedSize": 12796,
+      "length": 24129,
+      "compressionMethod": 1,
+      "crc32Index": "99549cfa",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2pistol_fire_1.jba",
+      "sha256": "5422d35921b701c4514efe697e354b6d36e919967839a27fba546e10b2310092",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2pistol_fire_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "Saber",
+      "to": "/resources/anim/humanoid/bmnnew/cb_saber_attack_right_1.jba",
+      "relation": "Original weapon attack clip; semantic Godot mapping, not native action-graph parity"
+    },
+    {
+      "from": "DualSaber",
+      "to": "/resources/anim/humanoid/bmnnew/cb_2saber_attack_right_1.jba",
+      "relation": "Original weapon attack clip; semantic Godot mapping, not native action-graph parity"
+    },
+    {
+      "from": "Pole",
+      "to": "/resources/anim/humanoid/bmnnew/cb_pole_attack_right_1.jba",
+      "relation": "Original weapon attack clip; semantic Godot mapping, not native action-graph parity"
+    },
+    {
+      "from": "Rifle",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_fire_1.jba",
+      "relation": "Original weapon attack clip; semantic Godot mapping, not native action-graph parity"
+    },
+    {
+      "from": "Pistol",
+      "to": "/resources/anim/humanoid/bmnnew/cb_pistol_fire_1.jba",
+      "relation": "Original weapon attack clip; semantic Godot mapping, not native action-graph parity"
+    },
+    {
+      "from": "DualPistol",
+      "to": "/resources/anim/humanoid/bmnnew/cb_2pistol_fire_1.jba",
+      "relation": "Original weapon attack clip; semantic Godot mapping, not native action-graph parity"
+    }
+  ],
+  "unresolved": [],
+  "selection": "human male body type 2; bmnnew skeleton"
+}

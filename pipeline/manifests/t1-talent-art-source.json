@@ -1,0 +1,515 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 30,
+  "maximumDecodedBytes": 8388608,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xD0CDD65B3348E3AD",
+      "entryOffset": 74449076,
+      "headerSize": 36,
+      "dataOffset": 74449112,
+      "compressedSize": 1510,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "6a92840a",
+      "path": "/resources/gfx/icons/darkinfusion.dds",
+      "sha256": "943c46320605ff2b979f99f1e7b0b019f2ea42f444dc95ddaf8e9e863f6f3e83",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\darkinfusion.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x53183086A185D503",
+      "entryOffset": 146792070,
+      "headerSize": 36,
+      "dataOffset": 146792106,
+      "compressedSize": 1487,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "155a768c",
+      "path": "/resources/gfx/icons/outerrimveteran.dds",
+      "sha256": "0bb2917d736d167f76d58e545753962b1681f8adab9cfefaf83d2747cccc21b8",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\outerrimveteran.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x056272FBDD0AFA9F",
+      "entryOffset": 147016727,
+      "headerSize": 36,
+      "dataOffset": 147016763,
+      "compressedSize": 1454,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "fb763e79",
+      "path": "/resources/gfx/icons/rage.dds",
+      "sha256": "1015aaeade3c4a7da01e9d3f1fbffa705323b2d253452d065bd309e7f225c1c5",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\rage.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x1A6C534AC079E3BA",
+      "entryOffset": 74750387,
+      "headerSize": 36,
+      "dataOffset": 74750423,
+      "compressedSize": 1401,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "163765a9",
+      "path": "/resources/gfx/icons/electricshield.dds",
+      "sha256": "b8cad6e31a84d90945831aeafe40804023b163c1b86179c4d7078c44250cb9b2",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\electricshield.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x0D90B04ED5F4D509",
+      "entryOffset": 148663286,
+      "headerSize": 36,
+      "dataOffset": 148663322,
+      "compressedSize": 1389,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "3587b742",
+      "path": "/resources/gfx/icons/smugglerrecuperate.dds",
+      "sha256": "235d0dde52c8b3aec79b708d490fcbb9b1d669931ff394874db5980963fe0356",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\smugglerrecuperate.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x9FA41B5AA6A2A203",
+      "entryOffset": 74637833,
+      "headerSize": 36,
+      "dataOffset": 74637869,
+      "compressedSize": 1491,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "35d66c28",
+      "path": "/resources/gfx/icons/drain_life.dds",
+      "sha256": "c07d8b0e5939f8b6264b1492471d3b466b5a0e3003c25123ba7b0067a23bf4f1",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\drain_life.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xCC56F4F6C29D39C5",
+      "entryOffset": 147040370,
+      "headerSize": 36,
+      "dataOffset": 147040406,
+      "compressedSize": 1487,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "61b87622",
+      "path": "/resources/gfx/icons/recuperativenanotech.dds",
+      "sha256": "31b528e7ff11c556e7b8dad4436733285d3d30fa94c974cbd89abc9dc42d7dcf",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\recuperativenanotech.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x3A00AC07E7C596E1",
+      "entryOffset": 71783094,
+      "headerSize": 36,
+      "dataOffset": 71783130,
+      "compressedSize": 1461,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "21573b28",
+      "path": "/resources/gfx/icons/berserk.dds",
+      "sha256": "3fc81b33a0e8e0e3aa165df2d9b6d6a995a9030da2ef390f9e4816bdfbb4f6a2",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\berserk.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x7F42024332B10037",
+      "entryOffset": 146251671,
+      "headerSize": 36,
+      "dataOffset": 146251707,
+      "compressedSize": 1469,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "34e59b1c",
+      "path": "/resources/gfx/icons/lightningstrike.dds",
+      "sha256": "d320ecca221daeacfed40fdd9bae802c5fd54511a39832234cd1f85a9289efab",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\lightningstrike.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x8A961B1C3725DB8A",
+      "entryOffset": 74281739,
+      "headerSize": 36,
+      "dataOffset": 74281775,
+      "compressedSize": 1520,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "215ec17d",
+      "path": "/resources/gfx/icons/childoftheempire.dds",
+      "sha256": "2bb27cec73690398ac5f1275cf48b672d5831915a513ad2ebeae96d286fe03ed",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\childoftheempire.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x26CD66CC17AC072D",
+      "entryOffset": 148777161,
+      "headerSize": 36,
+      "dataOffset": 148777197,
+      "compressedSize": 1541,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "3e631ff9",
+      "path": "/resources/gfx/icons/swchildoftheempire.dds",
+      "sha256": "367e5490a7f26ed1829be5bffddc81294bbaa34b18172b705ce8dd3fcc5472f1",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\swchildoftheempire.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x1B2D8D7E763D5F0F",
+      "entryOffset": 75057780,
+      "headerSize": 36,
+      "dataOffset": 75057816,
+      "compressedSize": 1466,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "482a260d",
+      "path": "/resources/gfx/icons/forkedlightning.dds",
+      "sha256": "52e279c7b5f1a271d1322b1d0288f5143e2fb69e5b02746ae211f7bf33f68e75",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\forkedlightning.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xC0D4F0799FE81861",
+      "entryOffset": 148489708,
+      "headerSize": 36,
+      "dataOffset": 148489744,
+      "compressedSize": 1529,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "21669adb",
+      "path": "/resources/gfx/icons/sithsorcerer.dds",
+      "sha256": "e57b01ae868f46511870a30017dd65b017feb1759c762b4557daf3bc247a8bef",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\sithsorcerer.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x265BC65AC54CC0C6",
+      "entryOffset": 148682676,
+      "headerSize": 36,
+      "dataOffset": 148682712,
+      "compressedSize": 1481,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "6ad6d5ab",
+      "path": "/resources/gfx/icons/spaceupgradeempburst.dds",
+      "sha256": "571e311ea1df6db0eafb57dcde1499d1de75a661b0142606ce486b041e2b7b3b",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\spaceupgradeempburst.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x6BD0B8FD4C0E3D78",
+      "entryOffset": 72930343,
+      "headerSize": 36,
+      "dataOffset": 72930379,
+      "compressedSize": 1524,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "527f6c50",
+      "path": "/resources/gfx/icons/chainlightning.dds",
+      "sha256": "8a59c09d67984afa7e02cb66c88ea4ab4dfd9533b36bcf8ebb98051e06b9c880",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\chainlightning.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x34F2600639B0F29C",
+      "entryOffset": 148413104,
+      "headerSize": 36,
+      "dataOffset": 148413140,
+      "compressedSize": 1552,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "31e911ed",
+      "path": "/resources/gfx/icons/shadowtechnique.dds",
+      "sha256": "9c5534c72cfb6457616ca5b8af3ee03747b75d80e82c0d3d3a945bbdbaa6b05d",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\shadowtechnique.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xFD7A18FEC81BE085",
+      "entryOffset": 148445886,
+      "headerSize": 36,
+      "dataOffset": 148445922,
+      "compressedSize": 1495,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "8775f406",
+      "path": "/resources/gfx/icons/shocked.dds",
+      "sha256": "0c883f7e5881d18643690c43ed3d1fbf1504dcfc0b79419108e42146fd0df28f",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\shocked.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xF0DED1A9F82A02E9",
+      "entryOffset": 149168089,
+      "headerSize": 36,
+      "dataOffset": 149168125,
+      "compressedSize": 1313,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "90c8ef89",
+      "path": "/resources/gfx/icons/viciousslash.dds",
+      "sha256": "0b3fa5df00dfa05b8a7a7b8ccfcf57b8e9e999c6e3719a2751b54381a4b9ebd0",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\viciousslash.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x187CA9CDE39A459D",
+      "entryOffset": 146550296,
+      "headerSize": 36,
+      "dataOffset": 146550332,
+      "compressedSize": 1540,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "2872d434",
+      "path": "/resources/gfx/icons/mindcrush.dds",
+      "sha256": "2a947782c7ee27041b1162373a69fd08eeb57efb71c123d1e921f07b3352b9be",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\mindcrush.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xC28FC95CB1E03893",
+      "entryOffset": 71271145,
+      "headerSize": 36,
+      "dataOffset": 71271181,
+      "compressedSize": 1470,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "d40b2084",
+      "path": "/resources/gfx/icons/animalinsectmouthpart.dds",
+      "sha256": "85b69272a23fd4e3b46ed6f7df05086ae419df6a4b78d9d9ba35255e980d4493",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\animalinsectmouthpart.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xF2C9A4700F6EFCD7",
+      "entryOffset": 74305932,
+      "headerSize": 36,
+      "dataOffset": 74305968,
+      "compressedSize": 1483,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "e9c45fc6",
+      "path": "/resources/gfx/icons/cloakofpain.dds",
+      "sha256": "c37c6ab77416a9ad9db8a63aa56afcef7d825da95af70635214e5b69521be1f2",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\cloakofpain.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xAD8C1EFE3F0C6295",
+      "entryOffset": 71204892,
+      "headerSize": 36,
+      "dataOffset": 71204928,
+      "compressedSize": 1482,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "3a53dc0d",
+      "path": "/resources/gfx/icons/alienskull.dds",
+      "sha256": "e3c9cf8b7423589584b363c8622be3cc0c471bf69199a2645c5ea8e3542c99db",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\alienskull.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x96F6D4798587A0BC",
+      "entryOffset": 74443380,
+      "headerSize": 36,
+      "dataOffset": 74443416,
+      "compressedSize": 1421,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "12349174",
+      "path": "/resources/gfx/icons/dark_embrace.dds",
+      "sha256": "f32cf30f7b101af64162885f8f5efadadb72066ee9529bf31445e1c5779d51f6",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\dark_embrace.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xDE108357581C621F",
+      "entryOffset": 74990780,
+      "headerSize": 36,
+      "dataOffset": 74990816,
+      "compressedSize": 1463,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "61230c21",
+      "path": "/resources/gfx/icons/forcecrush.dds",
+      "sha256": "fc94c8a8757833e9ccb7fa9144beac3863adbb512b58b643b76768ab6aec08f9",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\forcecrush.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "abl.sith_inquisitor.skill.corruption.dark_mending",
+      "to": "/resources/gfx/icons/darkinfusion.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.corruption.empty_body",
+      "to": "/resources/gfx/icons/outerrimveteran.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.corruption.dark_resilience",
+      "to": "/resources/gfx/icons/rage.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.corruption.efficacious_currents",
+      "to": "/resources/gfx/icons/electricshield.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.corruption.resurgence",
+      "to": "/resources/gfx/icons/smugglerrecuperate.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.corruption.force_bending",
+      "to": "/resources/gfx/icons/drain_life.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.corruption.reconstruct",
+      "to": "/resources/gfx/icons/recuperativenanotech.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.corruption.force_surge",
+      "to": "/resources/gfx/icons/berserk.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.lightning.convection",
+      "to": "/resources/gfx/icons/lightningstrike.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.lightning.lightning_spire",
+      "to": "/resources/gfx/icons/childoftheempire.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.lightning.conduction",
+      "to": "/resources/gfx/icons/swchildoftheempire.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.lightning.forked_lightning",
+      "to": "/resources/gfx/icons/forkedlightning.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.lightning.lightning_barrage",
+      "to": "/resources/gfx/icons/sithsorcerer.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.lightning.lightning_storm",
+      "to": "/resources/gfx/icons/spaceupgradeempburst.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.lightning.chain_lightning",
+      "to": "/resources/gfx/icons/chainlightning.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.lightning.thundering_blast",
+      "to": "/resources/gfx/icons/shadowtechnique.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.madness.calcify",
+      "to": "/resources/gfx/icons/shocked.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.madness.torment",
+      "to": "/resources/gfx/icons/viciousslash.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.madness.force_horrors",
+      "to": "/resources/gfx/icons/mindcrush.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.madness.parasitism",
+      "to": "/resources/gfx/icons/animalinsectmouthpart.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.madness.wrath",
+      "to": "/resources/gfx/icons/cloakofpain.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.madness.deathmark",
+      "to": "/resources/gfx/icons/alienskull.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.madness.lingering_nightmares",
+      "to": "/resources/gfx/icons/dark_embrace.dds",
+      "relation": "April ablIconSpec exact mapping"
+    },
+    {
+      "from": "abl.sith_inquisitor.skill.madness.creeping_death",
+      "to": "/resources/gfx/icons/forcecrush.dds",
+      "relation": "April ablIconSpec exact mapping"
+    }
+  ],
+  "unresolved": [],
+  "selection": "T1 April talent ablIconSpec icons"
+}

@@ -30,6 +30,12 @@ public partial class RunProgression : Node3D
     public event Action<UpgradeDefinition>? UpgradeApplied;
     private double _presentationRemaining;
     public IReadOnlyList<UpgradeDefinition> Offers => _offers;
+    public bool SpecChoice=>_offers.Any(u=>u.MilestoneLevel>0);
+    private UpgradeDefinition? _replacement;
+    public bool Replacing=>_replacement!=null;
+    public string ReplacementTitle=>_replacement?.Title??"";
+    public IReadOnlyList<AutomaticAbility> ReplacementOptions=>_replacement==null?Array.Empty<AutomaticAbility>():World.Abilities.Abilities
+        .Where(a=>a.Unlocked && !a.Definition.IsBasicAttack && a.Definition.Category==World.Abilities.Find(_replacement.AbilityId)!.Definition.Category).ToArray();
     public IReadOnlyDictionary<string,int> Ranks => _ranks;
     public int PickupCount => _pickups.Count;
     public double ElapsedSeconds { get; private set; }
@@ -57,7 +63,7 @@ public partial class RunProgression : Node3D
         if (Upgrades.Count == 0)
         {
             foreach (string name in new[] { "damage", "tick", "range", "cooldown", "health", "speed", "unlock_shock", "unlock_storm", "shock_damage", "storm_radius",
-                "unlock_deathfield", "unlock_barrier", "unlock_darkheal", "deathfield_power", "barrier_power", "darkheal_power" })
+                "unlock_thunderingblast", "unlock_affliction", "unlock_lightning", "unlock_creepingterror", "unlock_deathfield", "deathfield_power", "unlock_barrier", "unlock_darkheal", "barrier_power", "darkheal_power" })
                 Upgrades.Add(GD.Load<UpgradeDefinition>($"res://Gameplay/Upgrades/{name}.tres"));
             foreach(string name in new[]{"unlock_chain","unlock_overload","chain_reach","fork","storm_duration","storm_slow","backlash","haste","bloodlust"})
                 Upgrades.Add(GD.Load<UpgradeDefinition>($"res://Gameplay/Upgrades/{name}.tres"));
@@ -77,11 +83,14 @@ public partial class RunProgression : Node3D
                 Upgrades.Add(u);
             }
         }
+        foreach(var milestone in SpecMilestones.Catalog(World))Upgrades.Add(milestone);
+        foreach(var training in World.Build.Pregame.RunUpgrades())Upgrades.Add(training);
         var rarity=GD.Load<RarityTuning>("res://Gameplay/Upgrades/rarity.tres");
-        foreach(var upgrade in Upgrades) upgrade.RarityRules??=rarity;
+        foreach(var upgrade in Upgrades) {upgrade.RarityRules??=rarity;upgrade.AbilityTitle=World.Abilities.Find(upgrade.AbilityId)?.Definition.Title??"";}
         if (Upgrades.Count < 3 || Upgrades.Select(x=>x.Id).Distinct().Count()!=Upgrades.Count)
             throw new InvalidOperationException("Progression needs at least three unique upgrade IDs");
         World.Spawner!.EnemyReward += Drop;
+        ApplyStats();
     }
 
     public override void _PhysicsProcess(double delta)
@@ -139,18 +148,22 @@ public partial class RunProgression : Node3D
         if(MaximumLevel>0 && Level>=MaximumLevel)return;
         if(World.Artifacts?.Pending==true)return;
         if (Experience<RequiredExperience) return;
-        var eligible=Upgrades.Where(IsEligible).ToList();
+        int nextLevel=Level+1;
+        var milestones=Upgrades.Where(u=>u.MilestoneLevel==nextLevel).ToArray();
+        foreach(var milestone in milestones)SpecMilestones.Prepare(milestone,World.Abilities.Find(milestone.AbilityId)!);
+        var eligible=Upgrades.Where(u=>u.MilestoneLevel==0 && !SpecMilestones.Reserved(World,u)).Where(IsEligible).ToList();
         // Custom finite catalogs must retain three eligible choices. Do not trap the game paused.
-        if (eligible.Count<3) return;
+        if (milestones.Length==0 && eligible.Count<3) return;
         Experience-=RequiredExperience; Level++;
-        for (int i=0;i<3;i++)
+        if(milestones.Length>0)_offers.AddRange(milestones.Where(IsEligible));
+        for (int i=0;milestones.Length==0 && i<3;i++)
         {
             // Preserve the old eligible catalog's rarity distribution; improve choice quality within that tier.
             var baseline=eligible.Where(u=>!u.D2Choice).ToArray();
             var rarityPool=baseline.Length>0?baseline:eligible.ToArray();
             var tier=rarityPool[_random.RandiRange(0,rarityPool.Length-1)].Rarity;
             var choices=eligible.Where(u=>u.Rarity==tier).ToArray();
-            float Weight(UpgradeDefinition u) => u.Effect is UpgradeEffect.Mechanic or UpgradeEffect.UnlockAbility or UpgradeEffect.AbilityPower?3:1;
+            float Weight(UpgradeDefinition u) => (u.Effect is UpgradeEffect.Mechanic or UpgradeEffect.UnlockAbility or UpgradeEffect.AbilityPower?3:1)*World.Build.Pregame.OfferWeight(u);
             float roll=_random.Randf()*choices.Sum(Weight);var chosen=choices.Last();
             foreach(var choice in choices){roll-=Weight(choice);if(roll<=0){chosen=choice;break;}}
             int index=eligible.IndexOf(chosen);
@@ -174,19 +187,38 @@ public partial class RunProgression : Node3D
 
     public bool IsEligible(UpgradeDefinition upgrade)
     {
+        if(upgrade.Effect==UpgradeEffect.TickRate && !World.Abilities.Abilities.Any(a=>a.Unlocked && a.ChannelSeconds>0 && (upgrade.AbilityId=="" || upgrade.AbilityId==a.Definition.Id)))return false;
         if(upgrade.Mechanic=="haste" && World.Abilities.Equipped(AbilityCategory.Utility)==0)return false;
         if(upgrade.RequiresUpgrade!="" && _ranks.GetValueOrDefault(upgrade.RequiresUpgrade)==0)return false;
         if(upgrade.MaximumRank>0 && Rank(upgrade)>=upgrade.MaximumRank) return false;
         if(upgrade.AbilityId=="") return upgrade.Effect!=UpgradeEffect.UnlockAbility;
         var ability=World.Abilities.Find(upgrade.AbilityId);
+        if(World.RunConfiguration.AdvancedClassId=="sorcerer" && upgrade.Effect==UpgradeEffect.UnlockAbility)
+            return ability!=null && !ability.Unlocked && !World.Abilities.Conflicts(ability);
+        if(upgrade.MilestoneLevel>0)return ability!=null && !World.Abilities.Conflicts(ability) && (upgrade.Effect!=UpgradeEffect.UnlockAbility || !ability.Unlocked);
         return ability!=null && (upgrade.Effect==UpgradeEffect.UnlockAbility?!ability.Unlocked && World.Abilities.CanUnlock(ability):ability.Unlocked);
     }
 
     public bool Choose(int index)
     {
-        if (!CanChoose || index<0 || index>=_offers.Count || !World.PlayerActor.Alive) return false;
+        if (!CanChoose || Replacing || index<0 || index>=_offers.Count || !World.PlayerActor.Alive) return false;
         var upgrade=_offers[index];
         if(!IsEligible(upgrade)) return false;
+        if(upgrade.Effect==UpgradeEffect.UnlockAbility && !World.Abilities.CanUnlock(World.Abilities.Find(upgrade.AbilityId)!))
+        { _replacement=upgrade;Changed?.Invoke();return true; }
+        return ApplyChoice(upgrade,index);
+    }
+    public void CancelReplacement(){_replacement=null;Changed?.Invoke();}
+    public bool Replace(int index)
+    {
+        if(!Replacing || !CanChoose || index<0 || index>=ReplacementOptions.Count || !World.PlayerActor.Alive)return false;
+        var old=ReplacementOptions[index];var chosen=_replacement!;
+        old.SetUnlocked(false);World.Periodic.RemoveSource(old);_replacement=null;
+        if(ApplyChoice(chosen,_offers.IndexOf(chosen)))return true;
+        old.SetUnlocked(true);return false;
+    }
+    private bool ApplyChoice(UpgradeDefinition upgrade,int index)
+    {
         if(upgrade.Effect==UpgradeEffect.UnlockAbility && !World.Abilities.Unlock(upgrade.AbilityId))return false;
         _ranks[upgrade.Id]=Rank(upgrade)+1;
         ApplyStats(upgrade.Effect==UpgradeEffect.Health ? upgrade.EffectiveAmount : 0);
@@ -212,7 +244,7 @@ public partial class RunProgression : Node3D
             string id=ability.Definition.Id;var original=_abilityBases[id];
             var survival=_survivalBases[id];
             float Power(Func<UpgradeDefinition,float> select) => Upgrades.Where(u=>u.Effect==UpgradeEffect.AbilityPower && u.AbilityId==id)
-                .Sum(u=>Rank(u)*u.RarityMultiplier*select(u));
+                .Sum(u=>Rank(u)*(u.MilestoneLevel>0?1:u.RarityMultiplier)*select(u));
             ability.DamagePerTick=original.damage*(1+Bonus(UpgradeEffect.Damage,id)+Power(u=>u.DamagePerRank));
             ability.TickSeconds=original.tick/(1+Bonus(UpgradeEffect.TickRate,id));
             ability.Range=original.range*(1+Bonus(UpgradeEffect.Range,id));
@@ -224,6 +256,7 @@ public partial class RunProgression : Node3D
             ability.HealthThreshold=Math.Min(0.8f,survival.threshold+Power(u=>u.ThresholdPerRank));
             ability.ExtraBounces=World.Build.Talent("chain_reach")+(int)World.Build.Item("bounce");
             ability.ChannelSeconds=ability.Definition.ChannelSeconds+(id=="storm"?World.Build.Talent("storm_duration")*2+World.Build.Item("storm_duration"):0);
+            World.Build.Pregame.ApplyStats(ability);
         }
         World.Targeting.AcquisitionRange=World.Combat.Range;
         World.PlayerActor.Health.SetMaximum((_health+Bonus(UpgradeEffect.Health))*(1-World.Build.Item("health_cost")),heal);
@@ -236,6 +269,7 @@ public partial class RunProgression : Node3D
     {
         CancelPresentation(); _ranks.Clear(); Level=1; Experience=0; ElapsedSeconds=0;
         World.Artifacts?.Clear();World.Build.Reset();
+        World.Build.Pregame.Reset();
         World.Abilities.ResetUnlocks();
         foreach (var pickup in _pickups) { RemoveChild(pickup); pickup.QueueFree(); }
         _pickups.Clear(); ApplyStats(); Changed?.Invoke();
@@ -244,7 +278,7 @@ public partial class RunProgression : Node3D
 
     public void CancelPresentation()
     {
-        GetTree().Paused = false; _offers.Clear(); SelectedOfferIndex = -1;
+        GetTree().Paused = false; _offers.Clear(); _replacement=null; SelectedOfferIndex = -1;
         PresentationPhase = ProgressionPresentationPhase.Idle; _presentationRemaining = 0;
         Changed?.Invoke();
     }

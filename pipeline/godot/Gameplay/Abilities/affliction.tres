@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "affliction"
+Title = "Affliction"
+Icon = "lifedrain"
+Description = "Inflict internal damage immediately and every three seconds for 15 seconds. Enables guaranteed Thundering Blast critical hits. Reapplication refreshes your own effect."
+StartsUnlocked = false
+Damage = 8
+DamageType = 2
+PeriodicDamage = 8
+PeriodicDuration = 15
+PeriodicInterval = 3
+CooldownSeconds = 6
+Range = 1.1
+WindupSeconds = 0.2
+ChannelSeconds = 0
+TickSeconds = 1
+RecoverySeconds = 0.4
+GestureSeconds = 0.6
+StartClip = "B5/Shock"
+RequireGesture = true
+ImpactTailsOnTargetDeath = true

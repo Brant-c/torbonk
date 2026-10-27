@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "thunderingblast"
+Title = "Thundering Blast"
+Icon = "shadowtechnique"
+Description = "A two-second cast dealing internal damage to one enemy. Automatically critically hits targets affected by your Affliction."
+StartsUnlocked = false
+Damage = 60
+DamageType = 2
+CooldownSeconds = 9
+Range = 1.1
+WindupSeconds = 2
+ChannelSeconds = 0
+TickSeconds = 1
+RecoverySeconds = 1.6
+GestureSeconds = 3.6
+StartClip = "Sorc/BlastCharge"
+EndClip = "Sorc/BlastRelease"
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+CriticalAgainstPeriodic = "affliction"
+CriticalMultiplier = 1.5
+SourceFx = "si_thundering_blast_projectile"
+CastAudioEvent = "Play_ability_sithinquisitor_thunderclap_longbuildgrip"
+LoopAudioEvent = "Play_ability_sithinquisitor_thunderingblast_castloop"
+ImpactAudioEvent = "Play_ability_sithinquisitor_thunderingblast_impact"

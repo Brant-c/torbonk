@@ -19,6 +19,7 @@ public sealed class ClassProfile
     public string Idle {get;set;}="";
     public string Run {get;set;}="";
     public string StartingAbility {get;set;}="";
+    public string BasicAttack {get;set;}="";
     public string Presentation {get;set;}="d3";
     public int UtilitySlots {get;set;} = -1;
     public float Health {get;set;}=100;
@@ -29,6 +30,7 @@ public sealed class ClassProfile
     public string[] ArtifactEffects {get;set;}=["guardian","sacrifice","heal","shield","recovery"];
     public bool Ready => ResourceLoader.Exists(CharacterScene) && ResourceLoader.Exists(AnimationScene)
         && ResourceLoader.Exists($"res://Gameplay/Abilities/{StartingAbility}.tres")
+        && (BasicAttack=="" || ResourceLoader.Exists($"res://Gameplay/Abilities/{BasicAttack}.tres") && ResourceLoader.Exists("res://Assets/BasicAttacks/casts.glb"))
         && Equipment.EquipmentCatalog.Load().Presets.FirstOrDefault(p=>p.Id==EquipmentPreset) is {} preset
         && preset.Items.Values.All(id=>Equipment.EquipmentCatalog.Load().Items.FirstOrDefault(i=>i.Id==id) is {} item
             && Equipment.EquipmentCatalog.Load().Appearances.FirstOrDefault(a=>a.Id==item.Appearance) is {} a && ResourceLoader.Exists(a.Scene));

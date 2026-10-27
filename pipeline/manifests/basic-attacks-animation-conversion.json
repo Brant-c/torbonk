@@ -1,0 +1,43 @@
+{
+  "clips": [
+    {
+      "name": "Saber",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_saber_attack_right_1.jba",
+      "seconds": 1.0666667222976685,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "DualSaber",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2saber_attack_right_1.jba",
+      "seconds": 1.0666667222976685,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Pole",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_pole_attack_right_1.jba",
+      "seconds": 1.0666667222976685,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Rifle",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_fire_1.jba",
+      "seconds": 1.0666667222976685,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Pistol",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_pistol_fire_1.jba",
+      "seconds": 1.0666667222976685,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "DualPistol",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2pistol_fire_1.jba",
+      "seconds": 1.0666667222976685,
+      "sourceFps": 15.0
+    }
+  ],
+  "output": "godot\\Assets\\BasicAttacks\\casts.glb",
+  "sha256": "c560dc2c95f58f6a7c1cb969387b5cfb45ca8a4068c2c7fac966c5ad4dbfd364",
+  "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
+}

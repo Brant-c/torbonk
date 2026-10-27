@@ -54,7 +54,7 @@ public partial class D4Smoke : Node
             foreach(int milestone in new[]{5,10,15,20,25,30})
             {
                 level=30; // Multiple future level milestones are already due throughout this fight.
-                for(int retry=0;retry<16 && !w.Waves.Encounter.InEncounter;retry++)w.Waves.TickMilestones(1.1);
+                for(int retry=0;retry<32 && !w.Waves.Encounter.InEncounter;retry++)w.Waves.TickMilestones(1.1);
                 var controller=w.Waves.Encounter;var boss=controller.Boss!;
                 Check("one actor at milestone "+milestone,controller.InEncounter && w.Spawner.ActiveCount==1 && boss.GuaranteedReward);
                 boss.SetPhysicsProcess(false);string id=controller.Definition.Id;seen.Add(id);

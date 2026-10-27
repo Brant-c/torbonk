@@ -23,6 +23,8 @@ public partial class SurvivorsHud : CanvasLayer
     private int _offerLevel = -1;
     private HBoxContainer _choices=null!;
     private Label _chooseTitle=null!;
+    private bool _showingReplacement;
+    private SwtorButton _backChoice=null!;
     public int VisibleChoiceCount => _choices.GetChildCount();
     public bool SelectionVisible => _modal.Visible;
 
@@ -121,6 +123,8 @@ public partial class SurvivorsHud : CanvasLayer
         _chooseTitle=SwtorSkin.Text("CHOOSE A POWER",20);_chooseTitle.AddThemeColorOverride("font_color",SwtorSkin.Blue);
         _chooseTitle.HorizontalAlignment=HorizontalAlignment.Center;body.AddChild(_chooseTitle);
         _choices=new HBoxContainer {SizeFlagsVertical=Control.SizeFlags.Fill};body.AddChild(_choices);
+        _backChoice=new SwtorButton {Text="BACK",CustomMinimumSize=new Vector2(160,32),SizeFlagsHorizontal=Control.SizeFlags.ShrinkCenter};
+        _backChoice.Pressed+=()=>World.Progression!.CancelReplacement();body.AddChild(_backChoice);_backChoice.Visible=false;
     }
 
     private void RefreshChoices()
@@ -128,10 +132,12 @@ public partial class SurvivorsHud : CanvasLayer
         _combatHud.RefreshAbilities();
         var progression=World.Progression!;
         _modal.Visible=progression.PresentationPhase is ProgressionPresentationPhase.Choosing or ProgressionPresentationPhase.Confirming;
-        if (progression.Selecting && _offerLevel == progression.Level)
+        _backChoice.Visible=progression.Replacing;
+        string heading=progression.Replacing?$"REPLACE AN ABILITY WITH {progression.ReplacementTitle.ToUpperInvariant()}":progression.SpecChoice?$"CHOOSE A TALENT · LEVEL {progression.Level}":"CHOOSE A POWER";
+        if (progression.Selecting && _offerLevel == progression.Level && _showingReplacement==progression.Replacing)
         {
             bool confirming = progression.PresentationPhase == ProgressionPresentationPhase.Confirming;
-            _chooseTitle.Text = confirming ? "POWER APPLIED" : "CHOOSE A POWER";
+            _chooseTitle.Text = confirming ? (progression.SpecChoice?"TALENT APPLIED":"POWER APPLIED") : heading;
             for (int i=0; i<_choices.GetChildCount(); i++)
             {
                 var card = _choices.GetChild<UpgradeCard>(i); card.Disabled = !progression.CanChoose;
@@ -143,13 +149,35 @@ public partial class SurvivorsHud : CanvasLayer
         // Keep cards stable while ordinary XP changes; only rebuild at an offer boundary.
         foreach (var child in _choices.GetChildren()) { _choices.RemoveChild(child); child.QueueFree(); }
         if (!progression.Selecting) { _offerLevel = -1; return; }
-        _offerLevel = progression.Level; _chooseTitle.Text = "CHOOSE A POWER";
+        _offerLevel = progression.Level;_showingReplacement=progression.Replacing;_chooseTitle.Text=heading;
+        _selectionLayout.Size=new Vector2(progression.Replacing?1040:812,progression.Replacing?510:460);LayoutDock();
+        if(progression.Replacing)
+        {
+            for(int i=0;i<progression.ReplacementOptions.Count;i++)
+            {
+                int index=i;var ability=progression.ReplacementOptions[i];string spec=SpecMilestones.SpecFor(World.RunConfiguration.AdvancedClassId,ability.Definition.Id);
+                var definition=new UpgradeDefinition {Title=ability.Definition.Title,Icon=ability.Definition.Icon,MilestoneLevel=progression.Level,Spec=spec,
+                    Rarity=progression.AbilityRarity(ability.Definition.Id),Role=spec=="darkness"?"tank":"dps",
+                    ChoiceDescription=ability.Definition.PeriodicDuration>0?
+                        $"{ability.DamagePerTick+ability.Definition.PeriodicDamage*(ability.DamagePerTick/ability.Definition.Damage)*Mathf.Floor(ability.Definition.PeriodicDuration/ability.Definition.PeriodicInterval):0.#} total damage\n{ability.CooldownSeconds:0.#}s cooldown":
+                        $"{ability.DamagePerTick:0.#} damage\n{ability.CooldownSeconds:0.#}s cooldown"};
+                var card=new UpgradeCard(definition,0,i+1,action:"REPLACE");card.Pressed+=()=>progression.Replace(index);_choices.AddChild(card);
+            }
+            _choices.GetChild<Control>(0).GrabFocus();return;
+        }
         for (int i=0;i<progression.Offers.Count;i++)
         {
             int index=i;var definition=progression.Offers[i];
-            var card=new UpgradeCard(definition,progression.Rank(definition),i+1);
+            var ability=World.Abilities.Find(definition.AbilityId);
+            string action=definition.MilestoneLevel>0 && definition.Effect==UpgradeEffect.UnlockAbility && ability!=null && !World.Abilities.CanUnlock(ability)?"REPLACE":"";
+            var card=new UpgradeCard(definition,progression.Rank(definition),i+1,action:action);
             card.Disabled = !progression.CanChoose;
             card.Pressed+=()=>progression.Choose(index);_choices.AddChild(card);
+        }
+        if(progression.PresentationPhase==ProgressionPresentationPhase.Confirming)
+        {
+            _chooseTitle.Text=progression.SpecChoice?"TALENT APPLIED":"POWER APPLIED";
+            for(int i=0;i<_choices.GetChildCount();i++)_choices.GetChild<UpgradeCard>(i).Confirm(i==progression.SelectedOfferIndex);
         }
         if (progression.CanChoose) _choices.GetChild<Control>(0).GrabFocus();
     }
@@ -170,8 +198,11 @@ public partial class SurvivorsHud : CanvasLayer
         if(Menu.IsOpen || key.PhysicalKeycode==Key.Escape)return;
         bool handled=true;
         if (key.PhysicalKeycode==Key.R) World.ResetCombatWorld();
-        else if (World.Progression!.CanChoose && key.PhysicalKeycode is >= Key.Key1 and <= Key.Key3)
-            World.Progression.Choose((int)key.PhysicalKeycode-(int)Key.Key1);
+        else if (World.Progression!.CanChoose && key.PhysicalKeycode is >= Key.Key1 and <= Key.Key4)
+        {
+            int index=(int)key.PhysicalKeycode-(int)Key.Key1;
+            if(World.Progression.Replacing)World.Progression.Replace(index);else World.Progression.Choose(index);
+        }
         else handled=false;
         if (handled) GetViewport().SetInputAsHandled();
     }

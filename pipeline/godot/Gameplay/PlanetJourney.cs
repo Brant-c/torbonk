@@ -15,16 +15,24 @@ public partial class PlanetJourney : Node3D
     private readonly List<TombCache> _caches=new();
     private Label _journeyLabel=null!;
     private CanvasLayer _layer=null!;
+    private UI.SwtorButton _beginPhase=null!;
     private bool _won;
     private double _regionCheck;
     public override void _Ready()
     {
         _layer=new CanvasLayer();AddChild(_layer);
         _journeyLabel=UI.SwtorSkin.Text("",14,true);_journeyLabel.HorizontalAlignment=HorizontalAlignment.Right;
-        _journeyLabel.Size=new Vector2(420,48);_journeyLabel.MouseFilter=Control.MouseFilterEnum.Ignore;
+        _journeyLabel.Size=new Vector2(420,100);_journeyLabel.MouseFilter=Control.MouseFilterEnum.Ignore;
         _layer.AddChild(_journeyLabel);
         _journeyLabel.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.TopRight);
-        _journeyLabel.OffsetLeft=-440;_journeyLabel.OffsetRight=-20;_journeyLabel.OffsetTop=170;_journeyLabel.OffsetBottom=218;
+        _journeyLabel.OffsetLeft=-440;_journeyLabel.OffsetRight=-20;_journeyLabel.OffsetTop=170;_journeyLabel.OffsetBottom=270;
+        _beginPhase=new UI.SwtorButton {Text="BEGIN NEXT PHASE",Visible=false};
+        _layer.AddChild(_beginPhase);
+        _beginPhase.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.TopRight);
+        _beginPhase.OffsetLeft=-260;_beginPhase.OffsetRight=-20;_beginPhase.OffsetTop=404;_beginPhase.OffsetBottom=440;
+        _beginPhase.Pressed+=()=>World.Waves!.BeginNextPhase();
+        foreach(var stage in World.PlanetRun!.Stages)
+            if(FindOpen(stage.Focus,out var destination))stage.Focus=[destination.X,destination.Y,destination.Z];
         foreach(var d in World.PlanetRun!.Caches)
         {
             if(!FindOpen(d.Position,out var floor)) {GD.PushError("No reachable planet cache site: "+d.Id);continue;}
@@ -52,7 +60,7 @@ public partial class PlanetJourney : Node3D
     }
     public override void _PhysicsProcess(double delta)
     {
-        if(!World.PlayerActor.Alive)return;
+        if(!World.PlayerActor.Alive){_beginPhase.Visible=false;return;}
         var stage=World.PlanetRun!.StageAt(World.Progression!.Level);
         if(CurrentStage!=stage)
         {
@@ -77,6 +85,23 @@ public partial class PlanetJourney : Node3D
             string objective=next<World.PlanetRun.Milestones.Length?$"NEXT TRIAL  ·  LEVEL {World.PlanetRun.Milestones[next].Level}":"TRIALS COMPLETE";
             if(World.RunConfiguration.MapId!="korriban")objective=objective.Replace("TRIAL","ENCOUNTER");
             _journeyLabel.Text=$"{Region.ToUpperInvariant()}\n{objective}";
+            _journeyLabel.OffsetTop=World.Waves.Recovering?320:170;
+            _journeyLabel.OffsetBottom=_journeyLabel.OffsetTop+100;
+            _beginPhase.Visible=false;
+            if(World.Waves.Recovering && World.Waves.TravelDestination is {} destination)
+            {
+                var target=new Vector3(destination.Focus[0],destination.Focus[1],destination.Focus[2]);
+                var offset=target-p;
+                string[] directions={"N","NE","E","SE","S","SW","W","NW"};
+                int heading=((int)Math.Round(Math.Atan2(offset.X,-offset.Z)/(Math.PI/4))+8)%8;
+                float distance=new Vector2(offset.X,offset.Z).Length();
+                _journeyLabel.Text=$"RECOVERY  ·  {Math.Ceiling(World.Waves.RecoveryRemaining)}s\n"+
+                    $"{destination.Region.ToUpperInvariant()}  ·  {directions[heading]}\n"+
+                    (distance<=.65f?"DESTINATION REACHED":$"DISTANCE  {distance:0.0}  ·  COLLECT REWARDS AND RELOCATE");
+                _beginPhase.Visible=offset.Length()<=.65f;
+            }
+            else if(World.Waves.ReturnRampRemaining>0)
+                _journeyLabel.Text+="\nHOSTILES REGROUPING";
         }
         if(!_won && World.Waves!.CoreComplete)
         {_won=true;World.Rewards!.Announce(World.RunConfiguration.MapId=="korriban"?"TRIALS OF THE SITH COMPLETE":"UNDERWORLD ENCOUNTERS COMPLETE",(Integration.MapRegistry.Find(World.RunConfiguration.MapId)?.Name.ToUpperInvariant()??"")+" SURVIVED","Choose your final reward. Restart or return to the galaxy.","boss_victory");}
@@ -84,6 +109,7 @@ public partial class PlanetJourney : Node3D
     public void ResetJourney()
     {
         _won=false;CurrentStage=null!;Region="";_regionCheck=0;
+        _beginPhase.Visible=false;
         foreach(var c in _caches)c.ResetCache();
     }
     private void UpdateAmbience() { if(World.RunConfiguration.MapId!="korriban")return; World.Audio.SetWorldAmbience(

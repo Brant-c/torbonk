@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "basicrapiddual"
+Title = "Rapid Shots"
+Icon = "unload"
+IsBasicAttack = true
+StartsUnlocked = true
+Damage = 10
+CooldownSeconds = 1.5
+Range = 1.1
+Radius = 0
+Area = 0
+ChannelSeconds = 0
+TickSeconds = 1
+WindupSeconds = 0.12
+RecoverySeconds = 0.9466667222976685
+GestureSeconds = 1.0666667222976685
+StartClip = "Basic/DualPistol"
+GesturePriority = -10
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+PresentationKind = "rifle"
+Description = "Automatic weapon attack. Fills gaps between class abilities; uses no offensive slot or shared cooldown."
+ShotAudio = "res://Assets/D3/Audio/226704088.wav"

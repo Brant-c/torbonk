@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    "correct starting attacks begin unlocked",
+    "locked Death Field relic excluded",
+    "Assassin owns field unlock and power",
+    "Assassin cannot learn blast",
+    "Assassin learns Death Field",
+    "Assassin can also learn Affliction",
+    "original field clip available",
+    "deathfield starts",
+    "Death Field deals internal area damage",
+    "Death Field relic follows Assassin",
+    "restart restores starting attacks and clears effects"
+  ],
+  "failure": null
+}

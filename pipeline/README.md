@@ -1,5 +1,11 @@
 # SWTOR Survivors: Tasks 1–3 conversion proof
 
+**Spec milestones:** Sorcerer starts with Force Lightning alone, then unlocks Shock or Affliction at level five. Further Lightning/Madness choices occur every five levels. Assassin gets Darkness / Deception / Hatred choices. Both share Affliction, Creeping Terror and Death Field. See [SPEC-MILESTONES.md](SPEC-MILESTONES.md) for the progression, uncapped Death Field spread, original SWTOR role/spec artwork and validation.
+
+**Basic attacks:** Sorcerer starts with Force Lightning alone; other Imperial classes retain their basic weapon attack plus their class starter. Affliction is available to both Assassin and Sorcerer. See [BASIC-ATTACKS.md](BASIC-ATTACKS.md) and `Run-Basic-Attacks-Smoke.ps1`.
+
+**Sorcerer baseline (2026-10-26):** Death Field moved to Assassin; Thundering Blast and Affliction added to Sorcerer with the owned-Affliction critical interaction. [SORCERER-BASELINE.md](SORCERER-BASELINE.md) records source evidence, tuning, validation and the talent/drop improvement review. Use `Run-Sorcerer-Smoke.ps1` for the class ownership regression.
+
 **D4 expands Korriban into Trials of the Sith:** six contiguous original terrain sectors,
 additional original creature rigs, three major bosses, elites at levels 5/15/25,
 level 1–30 stages, guarded caches and run rewards. Other planets are preserved.

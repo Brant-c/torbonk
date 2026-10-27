@@ -13,6 +13,13 @@ public partial class PeriodicEffects : Node
         public double Remaining,Next,Interval;public float Damage;public int Ticks,Dose;public Node3D? Visual;
     }
     private readonly Dictionary<(ulong,string,ulong),Effect> _effects=new();
+    private double _elapsed;
+    private readonly Dictionary<(ulong,string),double> _nextHeal=new();
+    public void RemoveSource(AutomaticAbility source)
+    {
+        foreach(var pair in _effects.Where(p=>p.Value.Source==source).ToArray())
+        {if(GodotObject.IsInstanceValid(pair.Value.Visual))pair.Value.Visual!.QueueFree();_effects.Remove(pair.Key);}
+    }
     public int Count=>_effects.Count;
     public int Ticks {get;private set;}
     /// <summary>Raised after each applied periodic hit with that effect's own tick number (1-based).</summary>
@@ -20,6 +27,8 @@ public partial class PeriodicEffects : Node
     public bool Has(Combatant target)=>_effects.Keys.Any(k=>k.Item3==target.GetInstanceId());
     public bool Has(AutomaticAbility source,Combatant target)=>_effects.ContainsKey((source.Caster.GetInstanceId(),source.Definition.Id,target.GetInstanceId()));
     public IReadOnlyList<AutomaticAbility> On(Combatant target)=>_effects.Where(p=>p.Key.Item3==target.GetInstanceId()).Select(p=>p.Value.Source).ToArray();
+    public AutomaticAbility[] SpreadSources(Combatant caster,IEnumerable<Combatant> targets) => targets.SelectMany(On)
+        .Where(a=>a.Caster==caster && a.Unlocked).DistinctBy(a=>a.Definition.Id).ToArray();
     /// <summary>Re-applies every owned DoT on the target at full duration (Static Blades / Searing Sweep).</summary>
     public void RefreshAll(Combatant target)
     { foreach(var e in _effects.Values.Where(e=>e.Target==target)){e.Remaining=e.Source.Definition.PeriodicDuration;} }
@@ -34,7 +43,8 @@ public partial class PeriodicEffects : Node
         int dose=_effects.TryGetValue(key,out var old)&&(source.Build?.Talent("lethal_dose")??0)>0?Math.Min(3,old.Dose+1):0;
         if(old?.Visual!=null && GodotObject.IsInstanceValid(old.Visual))old.Visual.QueueFree();
         var effect=new Effect {
-            Source=source,Target=target,Remaining=d.PeriodicDuration,Next=d.PeriodicInterval,Interval=d.PeriodicInterval,Dose=dose,
+            Source=source,Target=target,Remaining=source.Build?.Pregame.PeriodicDuration(source)??d.PeriodicDuration,
+            Next=source.Build?.Pregame.PeriodicInterval(source)??d.PeriodicInterval,Interval=source.Build?.Pregame.PeriodicInterval(source)??d.PeriodicInterval,Dose=dose,
             Damage=d.PeriodicDamage*scale*(1+.1f*dose)*(source.DamagePerTick/Math.Max(.001f,d.Damage)) };
         _effects[key]=effect;
         if(d.Id=="creepingterror")effect.Visual=PresentationStatusVisual.AttachTerror(target,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
@@ -42,6 +52,7 @@ public partial class PeriodicEffects : Node
     }
     public void Advance(double delta)
     {
+        double start=_elapsed;_elapsed+=delta;
         foreach(var pair in new List<KeyValuePair<(ulong,string,ulong),Effect>>(_effects))
         {
             var e=pair.Value;
@@ -49,10 +60,17 @@ public partial class PeriodicEffects : Node
             { _effects.Remove(pair.Key);continue; }
             double active=Math.Min(delta,e.Remaining);e.Next-=active;e.Remaining-=delta;
             while(e.Next<=.000001 && e.Target.Alive)
-            { e.Next+=e.Interval;e.Source.ApplyPeriodicHit(e.Target,e.Damage);Ticks++;e.Ticks++;Ticked?.Invoke(e.Source,e.Target,e.Ticks); }
+            {
+                double tickAt=start+active+e.Next;e.Next+=e.Interval;int before=e.Source.DamageEvents;
+                e.Source.ApplyPeriodicHit(e.Target,e.Damage*(e.Source.Build?.Pregame.PeriodicMultiplier(e.Target)??1));
+                var healKey=(e.Source.Caster.GetInstanceId(),e.Source.Definition.Id);
+                if(e.Source.DamageEvents>before && e.Source.Definition.PeriodicHealing>0 && tickAt+0.00001>=_nextHeal.GetValueOrDefault(healKey))
+                {e.Source.Caster.Health.ApplyHealing(e.Source.Definition.PeriodicHealing);_nextHeal[healKey]=tickAt+1;}
+                Ticks++;e.Ticks++;Ticked?.Invoke(e.Source,e.Target,e.Ticks);
+            }
             if(e.Remaining<=0 || !e.Target.Alive)_effects.Remove(pair.Key);
         }
     }
     public override void _PhysicsProcess(double delta)=>Advance(delta);
-    public void Clear(){foreach(var e in _effects.Values)if(e.Visual!=null && GodotObject.IsInstanceValid(e.Visual))e.Visual.QueueFree();_effects.Clear();Ticks=0;}
+    public void Clear(){foreach(var e in _effects.Values)if(e.Visual!=null && GodotObject.IsInstanceValid(e.Visual))e.Visual.QueueFree();_effects.Clear();_nextHeal.Clear();_elapsed=0;Ticks=0;}
 }

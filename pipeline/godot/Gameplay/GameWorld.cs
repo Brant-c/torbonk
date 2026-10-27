@@ -147,6 +147,7 @@ public partial class GameWorld : Node3D
             if (!AddCombat(!b2Validation)) { GetTree().Quit(1); return; }
             if (!b2Validation && !OS.GetCmdlineUserArgs().Contains("--survival-smoke"))
             {
+                Abilities.AllowHybrid=RunConfiguration.AdvancedClassId=="sorcerer";
                 Build=new RunBuildEffects {Name="RunBuildEffects",World=this};AddChild(Build);
                 Artifacts=new RunArtifacts {Name="RunArtifacts",World=this,SlotLimit=System.Math.Clamp(SlotRules.ArtifactSlots,1,6),
                     CatalogPath=PlanetRun?.ArtifactCatalog??"res://Gameplay/RunItems/artifacts.json"};AddChild(Artifacts);
@@ -163,6 +164,7 @@ public partial class GameWorld : Node3D
                 if(PlanetRun!=null) {Journey=new PlanetJourney {Name="PlanetJourney",World=this};AddChild(Journey);}
                 if(Waves!=null) {CosmeticUnlocks=new SwtorSurvivors.Equipment.CosmeticUnlockTracker {Name="CosmeticUnlocks",World=this};AddChild(CosmeticUnlocks);}
                 if(OS.GetCmdlineUserArgs().Contains("--d2-smoke")) {var smoke=new D2Smoke();AddChild(smoke);smoke.Run(this);}
+                if(OS.GetCmdlineUserArgs().Contains("--difficulty-smoke")) {var smoke=new DifficultySmoke();AddChild(smoke);smoke.Run(this);}
                 _legacyOverlay.Visible = false;
                 if (OS.GetCmdlineUserArgs().Contains("--combat-meter-smoke"))
                 { var smoke = new CombatMeterSmoke(); AddChild(smoke); smoke.Run(this); }
@@ -217,6 +219,9 @@ public partial class GameWorld : Node3D
         if(OS.GetCmdlineUserArgs().Contains("--d3-smoke"))
         {var smoke=new D3Smoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--powertech-smoke")){var smoke=new PowertechSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--sorcerer-smoke")){var smoke=new SorcererSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--basic-attacks-smoke")){var smoke=new BasicAttacksSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--spec-milestones-smoke")){var smoke=new SpecMilestonesSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--presentation-repair-smoke")){var smoke=new PresentationRepairSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--kit-smoke"))
         {var smoke=new KitSmoke();AddChild(smoke);smoke.Run(this);}
@@ -297,7 +302,14 @@ public partial class GameWorld : Node3D
         var profile=RunConfiguration.Profile;
         PlayerActor.Health.Maximum=profile.Health;PlayerActor.Health.Restore();Player.MoveSpeed*=profile.Movement;
         Combat.Configure(GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{profile.StartingAbility}.tres"));
-        if(profile.Presentation=="sorcerer") Combat.Range=AcquisitionRange;
+        if(profile.Presentation=="sorcerer")
+        {
+            Player.Presentation.LoadAbilityAnimations();
+            Player.Presentation.LoadAbilityLibrary("res://Assets/D3/casts.glb","D3");
+            if(Combat.Definition.Id=="shock")
+            {var shockVisual=new OriginalAbilityPresentation {Actor=Player.Presentation,Definition=Combat.Definition};AddChild(shockVisual);Combat.Presentation=shockVisual;}
+            Combat.Definition.StartsUnlocked=true;Combat.SetUnlocked(true);Combat.Range=AcquisitionRange;
+        }
         else
         {
             Player.Presentation.LoadAbilityLibrary(profile.AnimationScene,"D3");
@@ -306,27 +318,59 @@ public partial class GameWorld : Node3D
             AcquisitionRange=Combat.Range;Targeting.AcquisitionRange=Combat.Range;
         }
         if(profile.Id=="powertech")Player.Presentation.LoadAbilityLibrary("res://Assets/Powertech/casts.glb","PT");
+        if(profile.Id=="assassin")Player.Presentation.LoadAbilityLibrary("res://Assets/B8/casts.glb","B8");
         Periodic=new PeriodicEffects {Name="PeriodicEffects"};AddChild(Periodic);Combat.Periodic=Periodic;
         AddChild(Combat);
         Abilities=new AbilityController { Name="AutomaticAbilities",Targeting=Targeting,
             OffensiveLimit=SlotRules!.OffensiveSlots,UtilityLimit=profile.UtilitySlots>=0?profile.UtilitySlots:SlotRules.UtilitySlots };
         Abilities.Abilities.Add(Combat);
+        if(profile.BasicAttack!="")
+        {
+            Player.Presentation.LoadAbilityLibrary("res://Assets/BasicAttacks/casts.glb","Basic");
+            var definition=GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{profile.BasicAttack}.tres");
+            var basicVisual=new D3AbilityPresentation {Name="BasicAttackPresentation",Actor=Player.Presentation,Definition=definition};AddChild(basicVisual);
+            var basic=new AutomaticAbility {Name=profile.BasicAttack,Caster=PlayerActor,Targeting=Targeting,Presentation=basicVisual,Periodic=Periodic};
+            basic.Configure(definition);AddChild(basic);Abilities.Abilities.Add(basic);
+        }
         // Class kits: locked until a level-up unlocks them; same lifecycle, presentation adapter and slot rules as the starter.
         foreach(string id in profile.Presentation=="sorcerer"?System.Array.Empty<string>():profile.Kit)
         {
             var definition=GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{id}.tres");
-            var kitVisual=new D3AbilityPresentation {Name=id+"Presentation",Actor=Player.Presentation,Definition=definition};AddChild(kitVisual);
+            IAbilityPresentation kitVisual;
+            if(id=="affliction")
+            {
+                Player.Presentation.LoadAbilityLibrary("res://Assets/Abilities/casts.glb","B5");
+                var affliction=new SorcererAbilityPresentation {Actor=Player.Presentation,Definition=definition};AddChild(affliction);kitVisual=affliction;
+            }
+            else if(id=="deathfield")
+            {
+                var field=new SurvivalAbilityPresentation {Name=id+"Presentation",Actor=Player.Presentation,Definition=definition,Health=PlayerActor.Health};
+                AddChild(field);kitVisual=field;
+            }
+            else {var visualKit=new D3AbilityPresentation {Name=id+"Presentation",Actor=Player.Presentation,Definition=definition};AddChild(visualKit);kitVisual=visualKit;}
             var kit=new AutomaticAbility {Name=id,Caster=PlayerActor,Targeting=Targeting,Presentation=kitVisual,Periodic=Periodic};
             kit.Configure(definition);AddChild(kit);Abilities.Abilities.Add(kit);
         }
         if (survival && RunConfiguration.Profile.Presentation=="sorcerer" && !OS.GetCmdlineUserArgs().Any(x=>x is "--survival-smoke" or "--progression-smoke"))
         {
-            Player.Presentation.LoadAbilityAnimations();
-            foreach(string id in new[]{"shock","storm","deathfield","barrier","darkheal","chain","overload"})
+            Player.Presentation.LoadAbilityLibrary("res://Assets/Sorcerer/casts.glb","Sorc");
+            foreach(string id in new[]{"shock","lightning","storm","thunderingblast","affliction","creepingterror","deathfield","barrier","darkheal","chain","overload"})
             {
-                var definition=GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{id}.tres");
+                if(id==profile.StartingAbility)continue;
+                var definition=(AbilityDefinition)GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{id}.tres").Duplicate();
+                definition.StartsUnlocked=false;
                 IAbilityPresentation presentation;
-                if(id is "shock" or "storm")
+                if(id=="lightning")presentation=visual;
+                else if(id=="creepingterror")
+                {
+                    var original=new D3AbilityPresentation {Actor=Player.Presentation,Definition=definition};AddChild(original);presentation=original;
+                }
+                else if(id is "thunderingblast" or "affliction")
+                {
+                    var original=new SorcererAbilityPresentation {Actor=Player.Presentation,Definition=definition};
+                    AddChild(original);presentation=original;
+                }
+                else if(id is "shock" or "storm")
                 {
                     var original=new OriginalAbilityPresentation { Actor=Player.Presentation,Definition=definition };
                     AddChild(original);presentation=original;
@@ -341,7 +385,7 @@ public partial class GameWorld : Node3D
                     var original=new SurvivalAbilityPresentation { Actor=Player.Presentation,Definition=definition,Health=PlayerActor.Health };
                     AddChild(original);presentation=original;
                 }
-                var ability=new AutomaticAbility {Name=id,Caster=PlayerActor,Targeting=Targeting,Presentation=presentation};
+                var ability=new AutomaticAbility {Name=id,Caster=PlayerActor,Targeting=Targeting,Presentation=presentation,Periodic=Periodic};
                 if(id=="storm") ((OriginalAbilityPresentation)presentation).EffectiveRadius=()=>ability.Radius;
                 ability.Configure(definition);AddChild(ability);Abilities.Abilities.Add(ability);
             }

@@ -7,12 +7,13 @@ namespace SwtorSurvivors;
 /// <summary>Run-only mechanical hooks. Equipment modifiers are derived from current ownership, never accumulated.</summary>
 public partial class RunBuildEffects : Node
 {
+    public Talents.TalentRuntime Pregame {get;private set;}=null!;
     public int SpreadLimit {get;set;}=4;
     public float SpreadEffectiveness {get;set;}=1;
     private bool _energyShield;
     private double _pyroLock,_reinforced;
     private float _reinforcedReduction;
-    public float IncomingMultiplier=>_reinforced>0?1-_reinforcedReduction:1;
+    public float IncomingMultiplier=>(_reinforced>0?1-_reinforcedReduction:1)*(Pregame?.IncomingMultiplier??1);
     public void Attacked(EnemyAgent enemy,bool shielded)
     {
         if(enemy.GlobalPosition.DistanceSquaredTo(World.PlayerActor.GlobalPosition)>.36f*.36f || !_energyShield || !shielded || _pyroLock>0 || Talent("pyro_shield")==0 || World.Abilities.Find("ionshield")?.Unlocked!=true)return;
@@ -40,7 +41,7 @@ public partial class RunBuildEffects : Node
     public float Item(string key) => key=="health_cost"?World.Artifacts?.Equipped.Sum(a=>a.HealthCost)??0:World.Artifacts?.Equipped.Where(a=>a.Effect==key).Sum(a=>a.Amount)??0;
     public float DamageMultiplier(AutomaticAbility ability,Combatant target)
     {
-        float bonus=Item("sacrifice");
+        float bonus=Item("sacrifice")+(Pregame?.DirectBonus(ability,target)??0);
         var burn=World.Abilities.Find("incendiarymissile");
         if(burn!=null && World.Periodic.Has(burn,target))
         {
@@ -58,6 +59,7 @@ public partial class RunBuildEffects : Node
     public float HealingAmount(float amount) => amount*(World.PlayerActor.Health.Current<World.PlayerActor.Health.Maximum*0.3f?1+Item("restoration"):1);
     public void Activated(AutomaticAbility ability)
     {
+        Pregame?.Activated(ability);
         if(ability.Definition.Id=="ionshield")_energyShield=true;
         if(ability.Definition.Id=="oilslick"){
             var slick=new PowertechOilSlick {Source=ability};World.AddChild(slick);slick.GlobalPosition=ability.Caster.GlobalPosition;
@@ -72,6 +74,8 @@ public partial class RunBuildEffects : Node
     /// <summary>Per-hit class mechanics that need the ability, not just the target.</summary>
     public void AbilityHit(AutomaticAbility ability,Combatant target)
     {
+        Pregame?.DirectHit(ability,target);
+        if(ability.Definition.IsBasicAttack)return;
         if(ability.Definition.Id=="flameburst" && Talent("accelerant")>0 && World.Abilities.Find("incendiarymissile") is {} burn)World.Periodic.Extend(burn,target,1,8);
         if(ability.Definition.Id=="carbonize" && target is EnemyAgent frozen && frozen.Stun(3) && Talent("reinforced_shielding")>0){_reinforced=4;_reinforcedReduction=Math.Min(.25f,_reinforcedReduction+.05f);}
         if(Item("leech")>0 && _leechLock<=0) {_leechLock=1;World.PlayerActor.Health.ApplyHealing(Item("leech"));}
@@ -87,6 +91,7 @@ public partial class RunBuildEffects : Node
     /// <summary>DoT mechanics: Contagion jumps every third tick; Blood Rhythm shortens Rupture's cooldown.</summary>
     private void PeriodicTicked(AutomaticAbility source,Combatant target,int tick)
     {
+        Pregame?.PeriodicTick(source);
         if(Talent("contagion")>0 && tick%3==0)Spread(source,target);
         if(Talent("blood_rhythm")>0 && tick%4==0)source.ReduceCooldown(0.5f);
     }
@@ -110,6 +115,7 @@ public partial class RunBuildEffects : Node
     }
     public void Hit(AutomaticAbility ability,Combatant target,IEnumerable<Combatant> primary)
     {
+        Pregame?.Hit(ability);
         if(ability.Definition.Id=="storm" && Talent("storm_slow")>0 && target is EnemyAgent enemy)enemy.Slow(0.65f,1.4f);
         if(ability.Definition.Id=="deathfield" && Item("vulnerability")>0 && target.Alive)target.Health.VulnerabilitySeconds=4;
         if(ability.Definition.Id=="lightning" && Talent("fork")>0)
@@ -131,9 +137,10 @@ public partial class RunBuildEffects : Node
         }
     }
     private int _lightningHits;
-    public override void _Ready() { World.PlayerActor.Health.ShieldEnded+=ShieldEnded;World.Spawner!.EnemyKilled+=EnemyKilled;World.Periodic.Ticked+=PeriodicTicked; }
+    public override void _Ready() { Pregame=new Talents.TalentRuntime(World);World.PlayerActor.Health.Damaged+=Pregame.Damaged;World.PlayerActor.Health.ShieldEnded+=ShieldEnded;World.Spawner!.EnemyKilled+=EnemyKilled;World.Periodic.Ticked+=PeriodicTicked; }
     private void ShieldEnded(bool depleted)
     {
+        Pregame?.ShieldEnded(depleted);
         _energyShield=false;_guardianShield=false;
         if(!depleted || Talent("backlash")==0 || !World.PlayerActor.Alive)return;
         foreach(var enemy in World.Targeting.InArea(World.PlayerActor.GlobalPosition,0.35f,0.35f).ToArray())
@@ -146,6 +153,7 @@ public partial class RunBuildEffects : Node
     }
     public override void _PhysicsProcess(double delta)
     {
+        Pregame?.Advance(delta);
         _pyroLock=Math.Max(0,_pyroLock-delta);_reinforced=Math.Max(0,_reinforced-delta);if(_reinforced==0)_reinforcedReduction=0;
         _leechLock=Math.Max(0,_leechLock-delta);
         _conduitLock=Math.Max(0,_conduitLock-delta);
@@ -157,6 +165,7 @@ public partial class RunBuildEffects : Node
     public void Reset() { foreach(var oil in World.GetChildren().OfType<PowertechOilSlick>())oil.QueueFree(); _energyShield=false; _pyroLock=_reinforced=0;_reinforcedReduction=0; _haste=_conduitLock=_buff=_leechLock=0;_rage=_lockStacks=0;_rageTime=0;_lockTarget=0;_marks.Clear();_lightningHits=0;_guardianShield=false; }
     public override void _ExitTree()
     {
+        if(GodotObject.IsInstanceValid(World.PlayerActor))World.PlayerActor.Health.Damaged-=Pregame.Damaged;
         if(GodotObject.IsInstanceValid(World.PlayerActor))World.PlayerActor.Health.ShieldEnded-=ShieldEnded;
         if(GodotObject.IsInstanceValid(World.Spawner))World.Spawner!.EnemyKilled-=EnemyKilled;
         if(GodotObject.IsInstanceValid(World.Periodic))World.Periodic.Ticked-=PeriodicTicked;

@@ -16,6 +16,12 @@ public partial class EnemySpawner : Node3D
     public ArenaNavigation Navigation { get; set; } = null!;
     public Combatant Player { get; set; } = null!;
     public int ActiveLimit { get; set; } = 3;
+    public int HardActiveLimit { get; set; } = int.MaxValue;
+    public int ReservedSlots { get; set; }
+    public bool ReinforcementsEnabled { get; set; } = true;
+    public RunDifficulty? Difficulty { get; set; }
+    public Func<int>? PlayerLevel { get; set; }
+    public Dictionary<string, int> ReferenceLevels { get; } = new();
     public float HealthMultiplier { get; set; } = 1;
     public float DamageMultiplier { get; set; } = 1;
     public bool Running { get; set; } = true;
@@ -40,8 +46,11 @@ public partial class EnemySpawner : Node3D
 
     public bool TrySpawn(PackedScene? scene = null, bool ignoreLimit = false, bool elite = false, Vector3? anchor = null)
     {
-        if (!Running || !Player.Alive || (!ignoreLimit && ActiveCount >= ActiveLimit)) return false;
-        var body = (scene ?? EnemyScene).Instantiate<CharacterBody3D>();
+        int count = ActiveCount;
+        if (!Running || !Player.Alive || count >= HardActiveLimit ||
+            (!ignoreLimit && (!ReinforcementsEnabled || count >= Math.Min(ActiveLimit, Math.Max(0, HardActiveLimit - ReservedSlots))))) return false;
+        var source = scene ?? EnemyScene;
+        var body = source.Instantiate<CharacterBody3D>();
         var enemy = body.GetNode<EnemyAgent>("Actor");
         if(enemy.GetNodeOrNull<EnemyPresentation>("Visual") is {} visual)visual.ReuseLoopLibrary=ReuseAnimations;
         if(elite) { enemy.RewardTier=1;enemy.KnockbackResistance=0.65f;enemy.DisplayName="Elite "+enemy.DisplayName;enemy.GetNode<Health>("Health").Maximum*=2;enemy.ExperienceReward*=2; }
@@ -65,7 +74,17 @@ public partial class EnemySpawner : Node3D
             enemy.Navigation = navigation; enemy.Target = Player; enemy.Crowd = this;
             enemy.TargetId = $"Enemy{++Spawned:0000}"; enemy.SteeringSide = Spawned % 2 == 0 ? 1 : -1;
             var health = enemy.GetNode<Health>("Health");
-            if(enemy.ScaleWithWaves) {health.Maximum *= HealthMultiplier; enemy.AttackDamage *= DamageMultiplier;}
+            if (Difficulty is {} tuning)
+            {
+                enemy.SpawnLevel = Math.Max(1, PlayerLevel?.Invoke() ?? 1);
+                enemy.ReferenceLevel = ReferenceLevels.GetValueOrDefault(source.ResourcePath, 1);
+                int levels = Math.Max(0, enemy.SpawnLevel - enemy.ReferenceLevel);
+                health.Maximum *= (float)Math.Pow(1 + tuning.HealthPerLevel, levels);
+                enemy.LevelDamageMultiplier = 1 + tuning.DamagePerLevel * levels;
+                enemy.MoveSpeed *= 1 + Math.Min(tuning.MaximumSpeedBonus, tuning.SpeedPerLevel * levels);
+                enemy.AttackInterval /= 1 + Math.Min(tuning.MaximumAttackFrequencyBonus, tuning.AttackFrequencyPerLevel * levels);
+            }
+            else if(enemy.ScaleWithWaves) {health.Maximum *= HealthMultiplier; enemy.AttackDamage *= DamageMultiplier;}
             body.Position = ToLocal(feet); AddChild(body);
             _enemies.Add(enemy);
             enemy.Health.Died += () =>
@@ -143,5 +162,6 @@ public partial class EnemySpawner : Node3D
         }
         _enemies.Clear(); _corpses.Clear(); _cells.Clear(); Defeated = 0; Spawned = 0;
         LastPlacement = "Waiting to spawn"; Running = true;
+        ReinforcementsEnabled = true;
     }
 }

@@ -1,0 +1,15 @@
+wwiser v20260808 (python 3.12.14)
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\abilities_imperialmelee_data.bnk
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\abilities_imperialmelee_media.bnk
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\init.bnk
+parser: done
+names: loading names
+names: couldn't find D:\SWTORClassic\torbonk\pipeline\tools\wwnames.db3 name file
+names: done
+generator: start
+generator: processing nodes
+generator: elapsed 0.154385s
+generator: done (created 4)
+(done)
+{"resources": 51, "textures": 16, "unresolved": [{"source": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_thundering_blast_cast.fxspec", "field": "_fxResourceName", "target": "/resources/engine/zap.zzp", "status": "Engine primitive"}]}
+{"events": {"Play_ability_sithinquisitor_thunderclap_longbuildgrip": "450886894", "Play_ability_sithinquisitor_thunderingblast_castloop": "583264999", "Play_ability_sithinquisitor_thunderingblast_impact": "2404693542", "Play_ability_sithinquisitor_thunderingblast_projectile": "2942861789", "Stop_ability_sithinquisitor_thunderingblast_castloop": "1757931213"}, "missing": [], "media": 23}

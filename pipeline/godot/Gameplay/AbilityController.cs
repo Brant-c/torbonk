@@ -10,8 +10,10 @@ public partial class AbilityController : Node
     [Export] public int OffensiveLimit { get; set; } = 4;
     [Export] public int UtilityLimit { get; set; } = 2;
     public int Limit(AbilityCategory category) => Math.Max(0,category==AbilityCategory.Offensive?OffensiveLimit:UtilityLimit);
-    public int Equipped(AbilityCategory category) => Abilities.Count(a=>a.Unlocked && a.Definition.Category==category);
-    public bool CanUnlock(AutomaticAbility ability) => ability.Unlocked || Equipped(ability.Definition.Category)<Limit(ability.Definition.Category);
+    public int Equipped(AbilityCategory category) => Abilities.Count(a=>a.Unlocked && !a.Definition.IsBasicAttack && a.Definition.Category==category);
+    public bool AllowHybrid {get;set;}
+    public bool Conflicts(AutomaticAbility ability) => !AllowHybrid && ability.Definition.ExclusiveWith!="" && Find(ability.Definition.ExclusiveWith)?.Unlocked==true;
+    public bool CanUnlock(AutomaticAbility ability) => ability.Unlocked || !Conflicts(ability) && Equipped(ability.Definition.Category)<Limit(ability.Definition.Category);
     public bool Unlock(string id)
     {
         var ability=Find(id);if(ability==null || !CanUnlock(ability))return false;
@@ -39,8 +41,10 @@ public partial class AbilityController : Node
         {
             int index=(_next+offset)%Abilities.Count;
             var ability=Abilities[index];
+            if(ability.Definition.IsBasicAttack) continue;
             if(ability.Definition.UsesGlobalCooldown && GlobalCooldownRemaining>0) continue;
             if(!ability.TryBegin()) continue;
+            foreach(var basic in Abilities.Where(a=>a.Definition.IsBasicAttack && a.Casting))basic.Interrupt();
             _next=(index+1)%Abilities.Count;
             _activationSpacing=Math.Max(0,MinimumActivationSpacing);
             // Never reset a running GCD for an exception which may trigger another GCD.
@@ -48,6 +52,11 @@ public partial class AbilityController : Node
                 GlobalCooldownRemaining=GlobalCooldownDuration=float.IsFinite(GlobalCooldownSeconds)?Math.Max(0,GlobalCooldownSeconds):1.5;
             break;
         }
+        // Weapon attacks fill gaps after normal abilities have had first refusal.
+        // Their low-priority gesture can be replaced immediately by a class ability.
+        if(_activationSpacing>0 || Abilities.Any(a=>!a.Definition.IsBasicAttack && a.Casting))return;
+        foreach(var basic in Abilities.Where(a=>a.Definition.IsBasicAttack))
+            if(basic.TryBegin()){_activationSpacing=Math.Max(0,MinimumActivationSpacing);break;}
     }
     public void Abort() { foreach(var ability in Abilities) ability.Abort();Targeting.Clear();GlobalCooldownRemaining=0;_activationSpacing=0; }
     public void ResetCombat() { Abort();foreach(var ability in Abilities) ability.ResetCombat();_next=0; }

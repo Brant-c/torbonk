@@ -1,0 +1,43 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+ERROR: No loader found for resource: res://Assets/Sorcerer/casts.glb (expected type: unknown)
+   at: _load (core/io/resource_loader.cpp:332)
+   C# backtrace (most recent call first):
+       [0] Godot.GodotObject Godot.NativeCalls.godot_icall_3_1268(nint, nint, string, string, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:11611)
+       [1] Godot.Resource Godot.ResourceLoader.Load(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/ResourceLoader.cs:120)
+       [2] T Godot.ResourceLoader.Load<T>(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Extensions/ResourceLoaderExtensions.cs:27)
+       [3] T Godot.GD.Load<T>(string) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/GD.cs:129)
+       [4] void SwtorSurvivors.CharacterPresentation.LoadAbilityLibrary(string, string, bool) (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:298)
+       [5] bool SwtorSurvivors.GameWorld.AddCombat(bool) (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\GameWorld.cs:334)
+       [6] void SwtorSurvivors.GameWorld+<_Ready>d__193.MoveNext() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\GameWorld.cs:147)
+       [7] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [8] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [9] void Godot.SignalAwaiter.SignalCallback(nint, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_bool*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/SignalAwaiter.cs:65)
+ERROR: Error loading resource: 'res://Assets/Sorcerer/casts.glb'.
+   at: load (core/core_bind.cpp:82)
+   C# backtrace (most recent call first):
+       [0] Godot.GodotObject Godot.NativeCalls.godot_icall_3_1268(nint, nint, string, string, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:11611)
+       [1] Godot.Resource Godot.ResourceLoader.Load(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/ResourceLoader.cs:120)
+       [2] T Godot.ResourceLoader.Load<T>(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Extensions/ResourceLoaderExtensions.cs:27)
+       [3] T Godot.GD.Load<T>(string) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/GD.cs:129)
+       [4] void SwtorSurvivors.CharacterPresentation.LoadAbilityLibrary(string, string, bool) (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:298)
+       [5] bool SwtorSurvivors.GameWorld.AddCombat(bool) (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\GameWorld.cs:334)
+       [6] void SwtorSurvivors.GameWorld+<_Ready>d__193.MoveNext() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\GameWorld.cs:147)
+       [7] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [8] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [9] void Godot.SignalAwaiter.SignalCallback(nint, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_bool*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/SignalAwaiter.cs:65)
+ERROR: System.NullReferenceException: Object reference not set to an instance of an object.
+   at SwtorSurvivors.CharacterPresentation.LoadAbilityLibrary(String path, String key, Boolean gestureClips) in D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:line 298
+   at SwtorSurvivors.GameWorld.AddCombat(Boolean survival) in D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\GameWorld.cs:line 334
+   at SwtorSurvivors.GameWorld._Ready() in D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\GameWorld.cs:line 147
+   at System.Threading.Tasks.Task.<>c.<ThrowAsync>b__124_0(Object state)
+   at Godot.GodotSynchronizationContext.ExecutePendingContinuations() in /root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/GodotSynchronizationContext.cs:line 51
+   at Godot.GodotTaskScheduler.Activate() in /root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/GodotTaskScheduler.cs:line 76
+   at Godot.Bridge.ScriptManagerBridge.FrameCallback() in /root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/ScriptManagerBridge.cs:line 84
+   at: void Godot.NativeInterop.ExceptionUtils.LogException(System.Exception) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/NativeInterop/ExceptionUtils.cs:113)
+   C# backtrace (most recent call first):
+       [0] void Godot.GD.PushError(string) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/GD.cs:366)
+       [1] void Godot.NativeInterop.ExceptionUtils.LogException(System.Exception) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/NativeInterop/ExceptionUtils.cs:113)
+       [2] void Godot.Bridge.ScriptManagerBridge.FrameCallback() (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/ScriptManagerBridge.cs:84)
+WARNING: 1 ObjectDB instance was leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
