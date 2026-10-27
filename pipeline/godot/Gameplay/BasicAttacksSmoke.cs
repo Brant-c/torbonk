@@ -26,6 +26,14 @@ public partial class BasicAttacksSmoke : Node
                 Check("Force Lightning deals starting damage",w.Combat.DamageEvents>0);
                 w.Progression!.ResetRun();Check("Sorcerer restart retains one starting attack",w.Abilities.Abilities.Count(a=>a.Unlocked)==1);
             }
+            else if(w.RunConfiguration.AdvancedClassId=="assassin")
+            {
+                Check("Assassin starts with Lacerate alone",w.Combat.Definition.Id=="lacerate" && w.Combat.Unlocked && w.Abilities.Abilities.Count(a=>a.Unlocked)==1);
+                Check("Assassin has no filler basic attack",!w.Abilities.Abilities.Any(a=>a.Definition.IsBasicAttack));
+                w.Player.Presentation.ResetPresentation();w.Abilities._PhysicsProcess(.01);for(int i=0;i<40;i++)w.Abilities._PhysicsProcess(.05);
+                Check("Lacerate deals starting damage",w.Combat.DamageEvents>0);
+                w.Progression!.ResetRun();Check("Assassin restart retains Lacerate alone",w.Abilities.Abilities.Count(a=>a.Unlocked)==1);
+            }
             else
             {
             var basic=w.Abilities.Abilities.Single(a=>a.Definition.IsBasicAttack);var starter=w.Combat;

@@ -1,0 +1,4239 @@
+[
+  {
+    "id": "0xE0000AF3620BFB7D",
+    "decimalId": "16140913104934140797",
+    "kind": "GomObject",
+    "name": "pkg.abilities.sith_warrior.base",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/297.bkt",
+      "uncompressedOffset": 9820,
+      "blockLength": 808,
+      "resourceSha256": "2ef9ea2d6434697538f78664cdcfd7ee93aeb6a0d0073f66cb65de165a47cf83"
+    },
+    "description": "",
+    "class": {
+      "id": "0x40000002EEB6A653",
+      "decimalId": "4611686031022270035",
+      "kind": "DomClass",
+      "name": "ablPackageTemplate",
+      "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+      "source": {
+        "path": "/resources/systemgenerated/client.gom",
+        "uncompressedOffset": 422568,
+        "blockLength": 80,
+        "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+      }
+    },
+    "data": [
+      {
+        "key": "Script_Type",
+        "value": {
+          "id": "0x40000002EEB6A653",
+          "decimalId": "4611686031022270035",
+          "kind": "DomClass",
+          "name": "ablPackageTemplate",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 422568,
+            "blockLength": 80,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "value": "0x0000000000000003"
+      },
+      {
+        "key": "Script_NumFields",
+        "value": 2
+      },
+      {
+        "key": "ablPackageSpec",
+        "value": "0xE0000AF3620BFB7D"
+      },
+      {
+        "key": "ablPackageAbilitiesList",
+        "value": [
+          {
+            "key": "0xE000082944AFA2A5",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00008F383BE50EF",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0001C6851EA8574",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000345C809C4538",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00035F29C16106E",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0003BD300460BEC",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00052FF2DA43E94",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00056BB7FA575B9",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0005B16E686495E",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0005F7C55E3A68A",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000601A69FF7702",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000648A3342D4C7",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0006E55371C6F9B",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00071FCC3C241C3",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000813BDFF1517D",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00081CEF00BAF68",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00086BFB66B0406",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000883E23E0EB97",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000A56095115F36",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000A565B70C47CC",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000AA4F4DB324FA",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000B9F6AACF3BE8",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000C61B1845702D",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000D3274F223789",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000DD01060B0C2F",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000DD8AB077AEBA",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000E4856D6CC510",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000EC88BF514898",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          }
+        ]
+      }
+    ],
+    "glommedClasses": [],
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "id": "0xE00024F09C8FC78A",
+    "decimalId": "16140941680333277066",
+    "kind": "GomObject",
+    "name": "pkg.abilities.sith_warrior.marauder.annihilation_layoutprototype",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/66.bkt",
+      "uncompressedOffset": 36148,
+      "blockLength": 389,
+      "resourceSha256": "879fbde4d1186164ef9ac2245ef1591c1c1839a1a9c8137cd8577e789ba26e39"
+    },
+    "description": "",
+    "class": {
+      "id": "0x40000017BBBDF891",
+      "decimalId": "4611686120361425041",
+      "kind": "DomClass",
+      "name": "sklSkillTreeLayoutData",
+      "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+      "source": {
+        "path": "/resources/systemgenerated/client.gom",
+        "uncompressedOffset": 502800,
+        "blockLength": 64,
+        "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+      }
+    },
+    "data": [
+      {
+        "key": "Script_Type",
+        "value": {
+          "id": "0x40000017BBBDF891",
+          "decimalId": "4611686120361425041",
+          "kind": "DomClass",
+          "name": "sklSkillTreeLayoutData",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 502800,
+            "blockLength": 64,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "value": "0x0000000000000001"
+      },
+      {
+        "key": "Script_NumFields",
+        "value": 1
+      },
+      {
+        "key": "sklSkillTreeLayoutList",
+        "value": [
+          {
+            "key": {
+              "signed64": "1",
+              "bits": "0x0000000000000001"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "2",
+              "bits": "0x0000000000000002"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "3",
+              "bits": "0x0000000000000003"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "4",
+              "bits": "0x0000000000000004"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "5",
+              "bits": "0x0000000000000005"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "6",
+              "bits": "0x0000000000000006"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "7",
+              "bits": "0x0000000000000007"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "glommedClasses": [],
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "id": "0xE00051175EDE4F29",
+    "decimalId": "16140990225313582889",
+    "kind": "GomObject",
+    "name": "pkg.abilities.sith_warrior.juggernaut.rage_layoutprototype",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/389.bkt",
+      "uncompressedOffset": 85684,
+      "blockLength": 386,
+      "resourceSha256": "e180ea2991d99df120cdbb470c0dcf2d186a564eed1e30f9c793a57144ae1579"
+    },
+    "description": "",
+    "class": {
+      "id": "0x40000017BBBDF891",
+      "decimalId": "4611686120361425041",
+      "kind": "DomClass",
+      "name": "sklSkillTreeLayoutData",
+      "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+      "source": {
+        "path": "/resources/systemgenerated/client.gom",
+        "uncompressedOffset": 502800,
+        "blockLength": 64,
+        "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+      }
+    },
+    "data": [
+      {
+        "key": "Script_Type",
+        "value": {
+          "id": "0x40000017BBBDF891",
+          "decimalId": "4611686120361425041",
+          "kind": "DomClass",
+          "name": "sklSkillTreeLayoutData",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 502800,
+            "blockLength": 64,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "value": "0x0000000000000001"
+      },
+      {
+        "key": "Script_NumFields",
+        "value": 1
+      },
+      {
+        "key": "sklSkillTreeLayoutList",
+        "value": [
+          {
+            "key": {
+              "signed64": "1",
+              "bits": "0x0000000000000001"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "2",
+              "bits": "0x0000000000000002"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "3",
+              "bits": "0x0000000000000003"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "4",
+              "bits": "0x0000000000000004"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "5",
+              "bits": "0x0000000000000005"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "6",
+              "bits": "0x0000000000000006"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "7",
+              "bits": "0x0000000000000007"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "glommedClasses": [],
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "id": "0xE0005FE005CC049A",
+    "decimalId": "16141006480270427290",
+    "kind": "GomObject",
+    "name": "pkg.abilities.sith_warrior.marauder.carnage_layoutprototype",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/290.bkt",
+      "uncompressedOffset": 101188,
+      "blockLength": 405,
+      "resourceSha256": "154b694d94fe5a8470760ed48fe28d24114eb4cc9239f60a759bc0421aac37c1"
+    },
+    "description": "",
+    "class": {
+      "id": "0x40000017BBBDF891",
+      "decimalId": "4611686120361425041",
+      "kind": "DomClass",
+      "name": "sklSkillTreeLayoutData",
+      "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+      "source": {
+        "path": "/resources/systemgenerated/client.gom",
+        "uncompressedOffset": 502800,
+        "blockLength": 64,
+        "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+      }
+    },
+    "data": [
+      {
+        "key": "Script_Type",
+        "value": {
+          "id": "0x40000017BBBDF891",
+          "decimalId": "4611686120361425041",
+          "kind": "DomClass",
+          "name": "sklSkillTreeLayoutData",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 502800,
+            "blockLength": 64,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "value": "0x0000000000000001"
+      },
+      {
+        "key": "Script_NumFields",
+        "value": 1
+      },
+      {
+        "key": "sklSkillTreeLayoutList",
+        "value": [
+          {
+            "key": {
+              "signed64": "1",
+              "bits": "0x0000000000000001"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "2",
+              "bits": "0x0000000000000002"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "3",
+              "bits": "0x0000000000000003"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "4",
+              "bits": "0x0000000000000004"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "5",
+              "bits": "0x0000000000000005"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "6",
+              "bits": "0x0000000000000006"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "7",
+              "bits": "0x0000000000000007"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "glommedClasses": [],
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "id": "0xE0007E61093820D7",
+    "decimalId": "16141040019727458519",
+    "kind": "GomObject",
+    "name": "pkg.abilities.sith_warrior.juggernaut.rage",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/19.bkt",
+      "uncompressedOffset": 132836,
+      "blockLength": 535,
+      "resourceSha256": "2ccb61fcb4909b3c0887492eb12dac11491e4ef00355a880eeba2b490fbc5ef8"
+    },
+    "description": "",
+    "class": {
+      "id": "0x40000002EEB6A653",
+      "decimalId": "4611686031022270035",
+      "kind": "DomClass",
+      "name": "ablPackageTemplate",
+      "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+      "source": {
+        "path": "/resources/systemgenerated/client.gom",
+        "uncompressedOffset": 422568,
+        "blockLength": 80,
+        "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+      }
+    },
+    "data": [
+      {
+        "key": "Script_Type",
+        "value": {
+          "id": "0x40000002EEB6A653",
+          "decimalId": "4611686031022270035",
+          "kind": "DomClass",
+          "name": "ablPackageTemplate",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 422568,
+            "blockLength": 80,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "value": "0x0000000000000003"
+      },
+      {
+        "key": "Script_NumFields",
+        "value": 2
+      },
+      {
+        "key": "ablPackageSpec",
+        "value": "0xE0007E61093820D7"
+      },
+      {
+        "key": "ablPackageAbilitiesList",
+        "value": [
+          {
+            "key": "0xE0000C51160E988B",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0001AAD39E205B8",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00027D1FBA77C01",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0002E8C1ED0BD35",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0002F22B4F691A5",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000378DB244DCE1",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000407A62E9D180",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0004BF3A48C0355",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0005807F0423263",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0005BC3DD54F902",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0007DBC3BB4C92B",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000935D6B31A10F",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000A3238E9CD99A",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000B21F7FFD8C65",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000B6C5388EE9C4",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000B9826334B252",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000C1B01E7A14C0",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000E04AA8DF1902",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000EEB258A22F39",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          }
+        ]
+      }
+    ],
+    "glommedClasses": [],
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "id": "0xE0007EE8E071ECDB",
+    "decimalId": "16141040603158932699",
+    "kind": "GomObject",
+    "name": "pkg.abilities.sith_warrior.juggernaut.base",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/199.bkt",
+      "uncompressedOffset": 160596,
+      "blockLength": 531,
+      "resourceSha256": "c0a41b51b86973abcb0562126e0cefcf6c27cb71d18d12fd3017d8f348ea122c"
+    },
+    "description": "",
+    "class": {
+      "id": "0x40000002EEB6A653",
+      "decimalId": "4611686031022270035",
+      "kind": "DomClass",
+      "name": "ablPackageTemplate",
+      "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+      "source": {
+        "path": "/resources/systemgenerated/client.gom",
+        "uncompressedOffset": 422568,
+        "blockLength": 80,
+        "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+      }
+    },
+    "data": [
+      {
+        "key": "Script_Type",
+        "value": {
+          "id": "0x40000002EEB6A653",
+          "decimalId": "4611686031022270035",
+          "kind": "DomClass",
+          "name": "ablPackageTemplate",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 422568,
+            "blockLength": 80,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "value": "0x0000000000000003"
+      },
+      {
+        "key": "Script_NumFields",
+        "value": 2
+      },
+      {
+        "key": "ablPackageSpec",
+        "value": "0xE0007EE8E071ECDB"
+      },
+      {
+        "key": "ablPackageAbilitiesList",
+        "value": [
+          {
+            "key": "0xE0001778866AC78F",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00019500F1DD031",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00040F0E05FEFBA",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000843A5F38D0D7",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00084EF4D4D640B",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0009CC7C0A6A328",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000A1CBEFF2B707",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000BCFF113B3B71",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000C77E9DEB54A2",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000CA3835B92359",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000CD9B2339BF55",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000D07026AFE38C",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000D9E63442D848",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000DF278B76B3E0",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000DF7E17A077C0",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000E2FB8369E8DD",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000EC3975F0D2A7",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          }
+        ]
+      }
+    ],
+    "glommedClasses": [],
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "id": "0xE00083CB0A98AD41",
+    "decimalId": "16141045972575235393",
+    "kind": "GomObject",
+    "name": "pkg.abilities.sith_warrior.juggernaut.immortal",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/393.bkt",
+      "uncompressedOffset": 144924,
+      "blockLength": 543,
+      "resourceSha256": "b7602b9f7e8e8e1a50d7aea873f933b56013c0f4c96e2c6f5b4489f4dad3c67f"
+    },
+    "description": "",
+    "class": {
+      "id": "0x40000002EEB6A653",
+      "decimalId": "4611686031022270035",
+      "kind": "DomClass",
+      "name": "ablPackageTemplate",
+      "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+      "source": {
+        "path": "/resources/systemgenerated/client.gom",
+        "uncompressedOffset": 422568,
+        "blockLength": 80,
+        "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+      }
+    },
+    "data": [
+      {
+        "key": "Script_Type",
+        "value": {
+          "id": "0x40000002EEB6A653",
+          "decimalId": "4611686031022270035",
+          "kind": "DomClass",
+          "name": "ablPackageTemplate",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 422568,
+            "blockLength": 80,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "value": "0x0000000000000003"
+      },
+      {
+        "key": "Script_NumFields",
+        "value": 2
+      },
+      {
+        "key": "ablPackageSpec",
+        "value": "0xE00083CB0A98AD41"
+      },
+      {
+        "key": "ablPackageAbilitiesList",
+        "value": [
+          {
+            "key": "0xE0000BB7A75C4D4C",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00022B269C5808C",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0003A3EEB98BE3E",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000474078BCFD10",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0004DBD5B03FC0C",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000518C7CCC4E5E",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00070536CDC1387",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00070B8BC922458",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00081F93119EADC",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00087961177E265",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00089DA67EB0BDE",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0008B724531CE27",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000963DD69C6360",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00098F043F675E1",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000CC500D01E806",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000D5E3112EC534",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000DBFB8F9C4A1E",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000E8C859E55CC2",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000F66762EE714C",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          }
+        ]
+      }
+    ],
+    "glommedClasses": [],
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "id": "0xE0008ECA690112E5",
+    "decimalId": "16141058064492073701",
+    "kind": "GomObject",
+    "name": "pkg.abilities.sith_warrior.rage_layoutprototype",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/201.bkt",
+      "uncompressedOffset": 180140,
+      "blockLength": 378,
+      "resourceSha256": "1690b91759a9eb6d3df83d1dcf1d14d1ff6bb88aff2e18305f441550dff12fb2"
+    },
+    "description": "",
+    "class": {
+      "id": "0x40000017BBBDF891",
+      "decimalId": "4611686120361425041",
+      "kind": "DomClass",
+      "name": "sklSkillTreeLayoutData",
+      "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+      "source": {
+        "path": "/resources/systemgenerated/client.gom",
+        "uncompressedOffset": 502800,
+        "blockLength": 64,
+        "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+      }
+    },
+    "data": [
+      {
+        "key": "Script_Type",
+        "value": {
+          "id": "0x40000017BBBDF891",
+          "decimalId": "4611686120361425041",
+          "kind": "DomClass",
+          "name": "sklSkillTreeLayoutData",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 502800,
+            "blockLength": 64,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "value": "0x0000000000000001"
+      },
+      {
+        "key": "Script_NumFields",
+        "value": 1
+      },
+      {
+        "key": "sklSkillTreeLayoutList",
+        "value": [
+          {
+            "key": {
+              "signed64": "1",
+              "bits": "0x0000000000000001"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "2",
+              "bits": "0x0000000000000002"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "3",
+              "bits": "0x0000000000000003"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "4",
+              "bits": "0x0000000000000004"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "5",
+              "bits": "0x0000000000000005"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "6",
+              "bits": "0x0000000000000006"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "7",
+              "bits": "0x0000000000000007"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "glommedClasses": [],
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "id": "0xE0009B78C6FBC693",
+    "decimalId": "16141072007532627603",
+    "kind": "GomObject",
+    "name": "pkg.abilities.sith_warrior.rage",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/103.bkt",
+      "uncompressedOffset": 170236,
+      "blockLength": 527,
+      "resourceSha256": "9ab2a1d03aa45a53bc78be403e97fe5c6040e658ae4f2ffc2c6019bdde5952cc"
+    },
+    "description": "",
+    "class": {
+      "id": "0x40000002EEB6A653",
+      "decimalId": "4611686031022270035",
+      "kind": "DomClass",
+      "name": "ablPackageTemplate",
+      "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+      "source": {
+        "path": "/resources/systemgenerated/client.gom",
+        "uncompressedOffset": 422568,
+        "blockLength": 80,
+        "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+      }
+    },
+    "data": [
+      {
+        "key": "Script_Type",
+        "value": {
+          "id": "0x40000002EEB6A653",
+          "decimalId": "4611686031022270035",
+          "kind": "DomClass",
+          "name": "ablPackageTemplate",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 422568,
+            "blockLength": 80,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "value": "0x0000000000000003"
+      },
+      {
+        "key": "Script_NumFields",
+        "value": 2
+      },
+      {
+        "key": "ablPackageSpec",
+        "value": "0xE0009B78C6FBC693"
+      },
+      {
+        "key": "ablPackageAbilitiesList",
+        "value": [
+          {
+            "key": "0xE0000C51160E988B",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00027D1FBA77C01",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0002F22B4F691A5",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000378DB244DCE1",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0003FC8C3C12220",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000407A62E9D180",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0004BF3A48C0355",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0005807F0423263",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0007DBC3BB4C92B",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0008546B745D6C8",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000935D6B31A10F",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000A3238E9CD99A",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000B21F7FFD8C65",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000B9826334B252",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000C1B01E7A14C0",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000C2E2A0D08F96",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000E04AA8DF1902",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000EEB258A22F39",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000F55A8099DC4E",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          }
+        ]
+      }
+    ],
+    "glommedClasses": [],
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "id": "0xE0009D624CE31896",
+    "decimalId": "16141074110018164886",
+    "kind": "GomObject",
+    "name": "pkg.abilities.sith_warrior.marauder.annihilation",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/386.bkt",
+      "uncompressedOffset": 185692,
+      "blockLength": 532,
+      "resourceSha256": "2dc2c1bd3eecec0fa404740c6eb9c9ae7580e0a6241765ce40e976f212dbacb0"
+    },
+    "description": "",
+    "class": {
+      "id": "0x40000002EEB6A653",
+      "decimalId": "4611686031022270035",
+      "kind": "DomClass",
+      "name": "ablPackageTemplate",
+      "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+      "source": {
+        "path": "/resources/systemgenerated/client.gom",
+        "uncompressedOffset": 422568,
+        "blockLength": 80,
+        "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+      }
+    },
+    "data": [
+      {
+        "key": "Script_Type",
+        "value": {
+          "id": "0x40000002EEB6A653",
+          "decimalId": "4611686031022270035",
+          "kind": "DomClass",
+          "name": "ablPackageTemplate",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 422568,
+            "blockLength": 80,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "value": "0x0000000000000003"
+      },
+      {
+        "key": "Script_NumFields",
+        "value": 2
+      },
+      {
+        "key": "ablPackageSpec",
+        "value": "0xE0009D624CE31896"
+      },
+      {
+        "key": "ablPackageAbilitiesList",
+        "value": [
+          {
+            "key": "0xE0001251C9B4F02C",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000308C70A8110B",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0003172439F0587",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0004201AEB80689",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0004E3F46D1A5B8",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0005B09D479C25E",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00082C976D5BCAA",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00084CC885E8F3C",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000A28626640F5D",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000B8B80942E576",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000B9BD75B01A39",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000BCC981CB687A",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000C2878D2C9918",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000C40658DBA330",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000C9E84E1CC673",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000DA87241FA756",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000ED89F950528E",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000F3B323394D6A",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          }
+        ]
+      }
+    ],
+    "glommedClasses": [],
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "id": "0xE000A64116E202A5",
+    "decimalId": "16141083862982853285",
+    "kind": "GomObject",
+    "name": "pkg.abilities.sith_warrior.juggernaut.vengeance_layoutprototype",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/285.bkt",
+      "uncompressedOffset": 220708,
+      "blockLength": 414,
+      "resourceSha256": "0e02d41bc8e7f1c7cc47cf05af9411c020362e1967e7ebcc8abe0a73cafdef89"
+    },
+    "description": "",
+    "class": {
+      "id": "0x40000017BBBDF891",
+      "decimalId": "4611686120361425041",
+      "kind": "DomClass",
+      "name": "sklSkillTreeLayoutData",
+      "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+      "source": {
+        "path": "/resources/systemgenerated/client.gom",
+        "uncompressedOffset": 502800,
+        "blockLength": 64,
+        "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+      }
+    },
+    "data": [
+      {
+        "key": "Script_Type",
+        "value": {
+          "id": "0x40000017BBBDF891",
+          "decimalId": "4611686120361425041",
+          "kind": "DomClass",
+          "name": "sklSkillTreeLayoutData",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 502800,
+            "blockLength": 64,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "value": "0x0000000000000001"
+      },
+      {
+        "key": "Script_NumFields",
+        "value": 1
+      },
+      {
+        "key": "sklSkillTreeLayoutList",
+        "value": [
+          {
+            "key": {
+              "signed64": "1",
+              "bits": "0x0000000000000001"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "2",
+              "bits": "0x0000000000000002"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "3",
+              "bits": "0x0000000000000003"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "4",
+              "bits": "0x0000000000000004"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "5",
+              "bits": "0x0000000000000005"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "6",
+              "bits": "0x0000000000000006"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "7",
+              "bits": "0x0000000000000007"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "glommedClasses": [],
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "id": "0xE000D77A4E8587DE",
+    "decimalId": "16141137984799213534",
+    "kind": "GomObject",
+    "name": "pkg.abilities.sith_warrior.marauder.carnage",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/34.bkt",
+      "uncompressedOffset": 237476,
+      "blockLength": 537,
+      "resourceSha256": "ad8e7176c983a1915de091091cfb3fd1100e4c8ce16ff386ac9fecd6b2ee1fba"
+    },
+    "description": "",
+    "class": {
+      "id": "0x40000002EEB6A653",
+      "decimalId": "4611686031022270035",
+      "kind": "DomClass",
+      "name": "ablPackageTemplate",
+      "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+      "source": {
+        "path": "/resources/systemgenerated/client.gom",
+        "uncompressedOffset": 422568,
+        "blockLength": 80,
+        "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+      }
+    },
+    "data": [
+      {
+        "key": "Script_Type",
+        "value": {
+          "id": "0x40000002EEB6A653",
+          "decimalId": "4611686031022270035",
+          "kind": "DomClass",
+          "name": "ablPackageTemplate",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 422568,
+            "blockLength": 80,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "value": "0x0000000000000003"
+      },
+      {
+        "key": "Script_NumFields",
+        "value": 2
+      },
+      {
+        "key": "ablPackageSpec",
+        "value": "0xE000D77A4E8587DE"
+      },
+      {
+        "key": "ablPackageAbilitiesList",
+        "value": [
+          {
+            "key": "0xE00008BD07271901",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0001A9309F18DA1",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0001BF6EB572257",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00026C26C734388",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0002A9110CC0955",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00037AB7F22E571",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0004DA84D7EAC1F",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00065B5B387BB62",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0006E455EA8D691",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00075D909E0562E",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0007D2153BB0A8A",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0008D6DFDA79167",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00093B244620865",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000AD07C6D163B6",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000B0B3A26EDA73",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000BAD1EF5531F7",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000C403EF07D146",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000C5301429F1F0",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000CE83C38DB4C3",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          }
+        ]
+      }
+    ],
+    "glommedClasses": [],
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "id": "0xE000E69B7F5DE1D6",
+    "decimalId": "16141154620027036118",
+    "kind": "GomObject",
+    "name": "pkg.abilities.sith_warrior.marauder.base",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/118.bkt",
+      "uncompressedOffset": 290308,
+      "blockLength": 537,
+      "resourceSha256": "6b43a4dd087f9c8dbd92ff5bfef982a63e4b4667e59b8d4b0f3efb269d9a9d46"
+    },
+    "description": "",
+    "class": {
+      "id": "0x40000002EEB6A653",
+      "decimalId": "4611686031022270035",
+      "kind": "DomClass",
+      "name": "ablPackageTemplate",
+      "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+      "source": {
+        "path": "/resources/systemgenerated/client.gom",
+        "uncompressedOffset": 422568,
+        "blockLength": 80,
+        "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+      }
+    },
+    "data": [
+      {
+        "key": "Script_Type",
+        "value": {
+          "id": "0x40000002EEB6A653",
+          "decimalId": "4611686031022270035",
+          "kind": "DomClass",
+          "name": "ablPackageTemplate",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 422568,
+            "blockLength": 80,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "value": "0x0000000000000003"
+      },
+      {
+        "key": "Script_NumFields",
+        "value": 2
+      },
+      {
+        "key": "ablPackageSpec",
+        "value": "0xE000E69B7F5DE1D6"
+      },
+      {
+        "key": "ablPackageAbilitiesList",
+        "value": [
+          {
+            "key": "0xE00000748B03B034",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0000917CD244017",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0001D8D4EB699BD",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000287FB28619F0",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0002CF9017892F5",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000402645DC06B6",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0007E49B4EE2B1D",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000963B0124FE67",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000A6AC3E08FE4A",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000AC093870C72C",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000AD85B818B374",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000C8C24C810AF3",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000CD343EE72A75",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000DF30F510D45F",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000DF807458791F",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000FF6CF259E3AA",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          }
+        ]
+      }
+    ],
+    "glommedClasses": [],
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "id": "0xE000F6B8E77ECD41",
+    "decimalId": "16141172338514120001",
+    "kind": "GomObject",
+    "name": "pkg.abilities.sith_warrior.juggernaut.immortal_layoutprototype",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/1.bkt",
+      "uncompressedOffset": 298036,
+      "blockLength": 381,
+      "resourceSha256": "0c0d85fdd5aafeefd5af3417a452c75d99522212d36fc24cddc8554612a476b2"
+    },
+    "description": "",
+    "class": {
+      "id": "0x40000017BBBDF891",
+      "decimalId": "4611686120361425041",
+      "kind": "DomClass",
+      "name": "sklSkillTreeLayoutData",
+      "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+      "source": {
+        "path": "/resources/systemgenerated/client.gom",
+        "uncompressedOffset": 502800,
+        "blockLength": 64,
+        "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+      }
+    },
+    "data": [
+      {
+        "key": "Script_Type",
+        "value": {
+          "id": "0x40000017BBBDF891",
+          "decimalId": "4611686120361425041",
+          "kind": "DomClass",
+          "name": "sklSkillTreeLayoutData",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 502800,
+            "blockLength": 64,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "value": "0x0000000000000001"
+      },
+      {
+        "key": "Script_NumFields",
+        "value": 1
+      },
+      {
+        "key": "sklSkillTreeLayoutList",
+        "value": [
+          {
+            "key": {
+              "signed64": "1",
+              "bits": "0x0000000000000001"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "2",
+              "bits": "0x0000000000000002"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "3",
+              "bits": "0x0000000000000003"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "4",
+              "bits": "0x0000000000000004"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "5",
+              "bits": "0x0000000000000005"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "6",
+              "bits": "0x0000000000000006"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          },
+          {
+            "key": {
+              "signed64": "7",
+              "bits": "0x0000000000000007"
+            },
+            "value": [
+              {
+                "key": {
+                  "signed64": "1",
+                  "bits": "0x0000000000000001"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "2",
+                  "bits": "0x0000000000000002"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "3",
+                  "bits": "0x0000000000000003"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              },
+              {
+                "key": {
+                  "signed64": "4",
+                  "bits": "0x0000000000000004"
+                },
+                "value": {
+                  "truncated": true,
+                  "type": "GomObjectData"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "glommedClasses": [],
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "id": "0xE000F930F38D5FE5",
+    "decimalId": "16141175053135732709",
+    "kind": "GomObject",
+    "name": "pkg.abilities.sith_warrior.juggernaut.vengeance",
+    "nameEvidence": "April bucket/prototype",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/209.bkt",
+      "uncompressedOffset": 287876,
+      "blockLength": 557,
+      "resourceSha256": "7963a747414083d41184a66d7c8befc032dc5cae862d3c2389d482f56d0b3bf4"
+    },
+    "description": "",
+    "class": {
+      "id": "0x40000002EEB6A653",
+      "decimalId": "4611686031022270035",
+      "kind": "DomClass",
+      "name": "ablPackageTemplate",
+      "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+      "source": {
+        "path": "/resources/systemgenerated/client.gom",
+        "uncompressedOffset": 422568,
+        "blockLength": 80,
+        "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+      }
+    },
+    "data": [
+      {
+        "key": "Script_Type",
+        "value": {
+          "id": "0x40000002EEB6A653",
+          "decimalId": "4611686031022270035",
+          "kind": "DomClass",
+          "name": "ablPackageTemplate",
+          "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+          "source": {
+            "path": "/resources/systemgenerated/client.gom",
+            "uncompressedOffset": 422568,
+            "blockLength": 80,
+            "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "value": "0x0000000000000003"
+      },
+      {
+        "key": "Script_NumFields",
+        "value": 2
+      },
+      {
+        "key": "ablPackageSpec",
+        "value": "0xE000F930F38D5FE5"
+      },
+      {
+        "key": "ablPackageAbilitiesList",
+        "value": [
+          {
+            "key": "0xE00027E8F76B3B22",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0002B74B2E8CBE9",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0002F4B628663BB",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00052ADF65E5C94",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0005875FEF24C9A",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0005ABA2EBDEB62",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0006370202AB1B8",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00063F0DC118CBA",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE00068AF1CFBE746",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE0009EA30E0FE792",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000A002B68C2E9E",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000A1BE912E9B58",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000A5B43AA6CFE3",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000ADA9A91109C9",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000C3DA2F33E87F",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000D7ACF6B5A038",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000DB0F4ACBA040",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000DE3B89571C96",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000FAE11F3237CC",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          },
+          {
+            "key": "0xE000FCBEB3B8CB53",
+            "value": {
+              "truncated": true,
+              "type": "Dictionary`2"
+            }
+          }
+        ]
+      }
+    ],
+    "glommedClasses": [],
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  }
+]

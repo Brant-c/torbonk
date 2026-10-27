@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "crushingdarkness"
+StartsUnlocked = false
+Range = 1.1
+ChannelSeconds = 0
+TickSeconds = 1
+RecoverySeconds = 0.18
+GestureSeconds = 0.85
+RequireGesture = true
+Title = "Crushing Darkness"
+Icon = "dark_embrace"
+Description = "Crush one enemy for 18 internal damage, then 14 every second for 9 seconds. Death Field spreads this DoT; deaths transfer its remaining duration."
+Damage = 18
+DamageType = 2
+PeriodicDamage = 14
+PeriodicInterval = 1
+PeriodicDuration = 9
+CooldownSeconds = 18
+WindupSeconds = 0.6
+StartClip = "T22/Darkness"
+CastAudioEvent = "Play_ability_sithinquisitor_crushingdarkness_cast"
+ImpactAudioEvent = "Play_ability_sithinquisitor_crushingdarkness_targethit"

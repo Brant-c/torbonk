@@ -1,0 +1,15 @@
+wwiser v20260808 (python 3.12.14)
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\abilities_republicmelee_data.bnk
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\init.bnk
+parser: done
+names: loading names
+names: couldn't find D:\SWTORClassic\torbonk\pipeline\tools\wwnames.db3 name file
+names: done
+generator: start
+generator: processing nodes
+generator: elapsed 0.138284s
+generator: WARNING! missing 21 memory audio (load more banks?)
+generator: done (created 6)
+(done)
+{"events": {"Play_ability_jediconsular_forcearmor_buff": "3169075703", "Play_ability_jediconsular_lowslash_hugehit": "413664939", "Play_ability_jediknight_forcepush_gustloop": "105266566", "Play_ability_jediknight_overloadsaber_activate": "251461622", "Play_ability_jediknight_overloadsaber_sparks": "806315607", "Play_ability_jediknight_precisethrow_spinlayer": "119297694", "Stop_ability_jediknight_forcepush_gustloop": "3553643412", "Stop_ability_jediknight_precisethrow_spinlayer": "3028410924"}, "missing": ["Play_ability_pvp_guard_deflectloop", "Play_ability_general_fear_loop", "Play_ability_general_forcedark_boomshort", "Play_weapon_layer_lightsaber_trail", "Play_damage_lightsaber_normalimpact", "Play_ability_pvp_guard_activate", "Stop_ability_pvp_guard_deflectloop", "Stop_weapon_layer_lightsaber_trail", "Play_damage_lightsaber_criticalimpact", "Play_ability_sithwarrior_rupture_tick", "Stop_ability_bountyhunter_electrodart_electromadness", "Play_damage_lightsaber_hugehit", "Play_damage_vibroblade_hit", "Play_damage_lightsaber_saberhit_medium", "Stop_ability_general_fear_loop", "Play_ability_general_fear_activate", "Play_ability_bountyhunter_electrodart_electromadness", "Play_ability_pvp_guard_targetshieldup", "Play_damage_lightsaber_clash", "Play_damage_lightsaber_flesh_critical"], "media": 21}
+Shared-bank records 21 Remaining events ['Play_damage_lightsaber_criticalimpact', 'Play_ability_general_fear_activate', 'Play_ability_sithwarrior_rupture_tick', 'Play_damage_lightsaber_clash', 'Play_damage_lightsaber_saberhit_medium', 'Play_weapon_layer_lightsaber_trail', 'Play_ability_pvp_guard_deflectloop', 'Play_damage_lightsaber_normalimpact', 'Play_ability_bountyhunter_electrodart_electromadness', 'Stop_ability_jediknight_precisethrow_spinlayer', 'Play_ability_general_forcedark_boomshort', 'Play_damage_lightsaber_hugehit', 'Stop_weapon_layer_lightsaber_trail', 'Stop_ability_general_fear_loop', 'Stop_ability_bountyhunter_electrodart_electromadness', 'Play_ability_pvp_guard_targetshieldup', 'Play_damage_lightsaber_flesh_critical', 'Stop_ability_pvp_guard_deflectloop', 'Stop_ability_jediknight_forcepush_gustloop', 'Play_ability_general_fear_loop', 'Play_damage_vibroblade_hit', 'Play_ability_pvp_guard_activate']

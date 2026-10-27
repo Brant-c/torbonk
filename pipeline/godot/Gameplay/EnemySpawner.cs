@@ -18,6 +18,7 @@ public partial class EnemySpawner : Node3D
     public int ActiveLimit { get; set; } = 3;
     public int HardActiveLimit { get; set; } = int.MaxValue;
     public int ReservedSlots { get; set; }
+    public int ExperienceDropEvery { get; set; } = 1;
     public bool ReinforcementsEnabled { get; set; } = true;
     public RunDifficulty? Difficulty { get; set; }
     public Func<int>? PlayerLevel { get; set; }
@@ -80,7 +81,9 @@ public partial class EnemySpawner : Node3D
                 enemy.ReferenceLevel = ReferenceLevels.GetValueOrDefault(source.ResourcePath, 1);
                 int levels = Math.Max(0, enemy.SpawnLevel - enemy.ReferenceLevel);
                 health.Maximum *= (float)Math.Pow(1 + tuning.HealthPerLevel, levels);
-                enemy.LevelDamageMultiplier = 1 + tuning.DamagePerLevel * levels;
+                enemy.LevelDamageMultiplier = tuning.EndlessPressure ? (float)Math.Pow(1 + tuning.DamagePerLevel, levels) : 1 + tuning.DamagePerLevel * levels;
+                var pattern = enemy.GetNodeOrNull<TombAttack>("TombAttack");
+                if(pattern != null && tuning.EndlessPressure) { pattern.Cooldown /= 1 + Math.Min(1.5f, levels * .025f); pattern.Windup = Math.Max(.5f, pattern.Windup / (1 + levels * .008f)); }
                 enemy.MoveSpeed *= 1 + Math.Min(tuning.MaximumSpeedBonus, tuning.SpeedPerLevel * levels);
                 enemy.AttackInterval /= 1 + Math.Min(tuning.MaximumAttackFrequencyBonus, tuning.AttackFrequencyPerLevel * levels);
             }
@@ -91,7 +94,8 @@ public partial class EnemySpawner : Node3D
             {
                 Defeated++; _corpses[enemy] = Math.Max(0.5f, CorpseSeconds);
                 EnemyDefeated?.Invoke(enemy.GlobalPosition);
-                EnemyReward?.Invoke(enemy.GlobalPosition, enemy.ExperienceReward);
+                if (Defeated % Math.Max(1,ExperienceDropEvery) == 0)
+                    EnemyReward?.Invoke(enemy.GlobalPosition, enemy.ExperienceReward);
                 EnemyKilled?.Invoke(enemy);
             };
             enemy.TreeExiting += () => { _enemies.Remove(enemy); _corpses.Remove(enemy); };

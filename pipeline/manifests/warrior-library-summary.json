@@ -1,0 +1,408 @@
+{
+  "evidence": "Client-derived April archive bytes; historical field labels retained by research decoder",
+  "definitions": 808,
+  "catalog": 173,
+  "packageMembers": 160,
+  "talents": 110,
+  "resources": 1824,
+  "textures": 319,
+  "animationClips": 32,
+  "audioMedia": 351,
+  "missingResources": [
+    {
+      "source": "epp.sith_warrior.feint.cast_instant",
+      "path": "/resources/art/fx/fxspec/audio_weapon_swingright_normal.fxspec",
+      "relation": "/effAppearanceSchedule/2/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:21",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "epp.sith_warrior.feint.cast_instant",
+      "path": "/resources/art/fx/fxspec/audio_weapon_swingleft_normal.fxspec",
+      "relation": "/effAppearanceSchedule/3/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:21",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "epp.sith_warrior.ataru_form.hit",
+      "path": "/resources/anim/humanoid/bmnnew/cb_warrior_assault.jba",
+      "relation": "/effAppearanceSchedule/0/effAppearanceActions/0/effAppStringParams/enum:0x40000006EFA6AEC8:11",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "epp.sith_warrior.saber_throw_execute.cast_instant",
+      "path": "/resources/art/fx/fxspec/audio_weapon_melee_swingright_slow.fxspec",
+      "relation": "/effAppearanceSchedule/0/effAppearanceActions/3/effAppStringParams/enum:0x40000006EFA6AEC8:21",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_barrage_exit_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_barrage_loop_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_blade_barrage_end_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_blade_barrage_mid_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_blade_barrage_start_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_dash_attack_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_driving_lance.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_gore_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_overhead_throw_enter_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_overhead_throw_exit_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_overhead_throw_loop_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_projectile_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_ravage_end_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_ravage_mid_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_ravage_start_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_sp1_attack_right_8.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_takeoff_enter_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_takeoff_exit_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_takeoff_loop_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_throw_end_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_throw_end_02.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_throw_loop_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_throw_loop_02.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_throw_start_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_throw_start_02.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_360_smash_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_360_smash_02.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_blade_barrage_end_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_blade_barrage_mid_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_blade_barrage_start_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_blink_teleport_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_dash_attack_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_dash_attack_end_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_force_impale.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_force_impale_end.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_force_impale_enter.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_force_impale_mid.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_force_skewer.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_force_skewer_end.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_force_skewer_enter.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_force_skewer_mid.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_force_sweep.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_idle_to_saber_lock_loop_a_right_high_1.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_idle_to_saber_lock_loop_a_right_low_1.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_idle_to_saber_lock_loop_b_right_high_1.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_ravage_end_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_ravage_mid_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_ravage_start_01.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_sp1_attack_right_7.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_sp1_attack_right_8.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_sp1_attack_right_9.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_throw_end_02.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_throw_loop_02.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "weapon-animation-library",
+      "path": "/resources/anim/humanoid/bmnnew/cb_saber_throw_start_02.jba",
+      "relation": "Source-confirmed single/dual saber clip; no inferred ability assignment",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "/resources/art/fx/fxspec/abilities/sith_warrior/sw_force_slow_dbuff.fxspec",
+      "path": "/resources/engine/zap.zzp",
+      "relation": "_fxResourceName",
+      "status": "No unique April archive entry"
+    },
+    {
+      "source": "/resources/art/fx/fxspec/abilities/jedi_knight/jk_saberthrow_caster_01.fxspec",
+      "path": "/resources/engine/light.lit",
+      "relation": "_fxResourceName",
+      "status": "No unique April archive entry"
+    }
+  ],
+  "missingAudio": [
+    "Play_damage_lightsaber_criticalimpact",
+    "Play_ability_general_fear_activate",
+    "Play_ability_sithwarrior_rupture_tick",
+    "Play_damage_lightsaber_clash",
+    "Play_damage_lightsaber_saberhit_medium",
+    "Play_weapon_layer_lightsaber_trail",
+    "Play_ability_pvp_guard_deflectloop",
+    "Play_damage_lightsaber_normalimpact",
+    "Play_ability_bountyhunter_electrodart_electromadness",
+    "Play_ability_general_forcedark_boomshort",
+    "Play_damage_lightsaber_hugehit",
+    "Stop_weapon_layer_lightsaber_trail",
+    "Stop_ability_general_fear_loop",
+    "Stop_ability_bountyhunter_electrodart_electromadness",
+    "Play_ability_pvp_guard_targetshieldup",
+    "Play_damage_lightsaber_flesh_critical",
+    "Stop_ability_pvp_guard_deflectloop",
+    "Play_ability_general_fear_loop",
+    "Play_damage_vibroblade_hit",
+    "Play_ability_pvp_guard_activate"
+  ],
+  "verification": "All extracted original SHA256, converted texture SHA256, original WEM SHA256 and animation GLB SHA256 checked",
+  "limits": [
+    "Source-complete namespace inventory includes unused/prototype records; package membership is explicit.",
+    "Full effect and appearance trees saved; localization maps/tokens remain bounded in summary definitions.",
+    "Semantic animation graph selection is unresolved; single/dual saber libraries are separate original clips, not inferred replacements.",
+    "FXSpec/material/particle JSON and original GR2 retained; native particle renderer and GR2 effect mesh conversion remain pending.",
+    "Audio uses the Imperial and Republic melee bank graphs; missing cross-bank events are listed.",
+    "External package references include proficiencies and Assault; external presentation closure remains partial.",
+    "No gameplay abilities or talent trees implemented; existing Smash implementation untouched."
+  ],
+  "originalAnimationClips": 277,
+  "uniqueAudioFiles": 228,
+  "godotImport": "Passed in isolated work/warrior-library-import project; see logs/warrior-library-godot-import.log"
+}

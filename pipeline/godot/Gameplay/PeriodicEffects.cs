@@ -47,8 +47,25 @@ public partial class PeriodicEffects : Node
             Next=source.Build?.Pregame.PeriodicInterval(source)??d.PeriodicInterval,Interval=source.Build?.Pregame.PeriodicInterval(source)??d.PeriodicInterval,Dose=dose,
             Damage=d.PeriodicDamage*scale*(1+.1f*dose)*(source.DamagePerTick/Math.Max(.001f,d.Damage)) };
         _effects[key]=effect;
+        if(d.Id=="affliction")effect.Visual=PresentationStatusVisual.AttachAffliction(target,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
+        if(d.Id=="crushingdarkness")effect.Visual=PresentationStatusVisual.AttachDarkness(target,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
         if(d.Id=="creepingterror")effect.Visual=PresentationStatusVisual.AttachTerror(target,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
         if(d.Id=="incendiarymissile")effect.Visual=PowertechStatusVisual.Attach(target,"4x4_flame_lick_02_bw",16,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
+    }
+    public double Remaining(AutomaticAbility source,Combatant target)=>_effects.GetValueOrDefault((source.Caster.GetInstanceId(),source.Definition.Id,target.GetInstanceId()))?.Remaining??0;
+    public void TransferOwned(Combatant caster,Combatant dead)
+    {
+        foreach(var e in _effects.Values.Where(e=>e.Target==dead && e.Source.Caster==caster && e.Remaining>0 && e.Source.Unlocked).ToArray())
+        {
+            var skip=_effects.Values.Where(x=>x.Source.Caster==caster && x.Source.Definition.Id==e.Source.Definition.Id).Select(x=>x.Target.GetInstanceId()).ToHashSet();
+            skip.Add(dead.GetInstanceId());
+            var next=e.Source.Targeting.ChainTarget(dead.AimPosition,e.Source.Build?.Talent("last_gasp")>0?.45f:.3f,skip);
+            if(next==null)continue;
+            Apply(e.Source,next);
+            var transferred=_effects[(caster.GetInstanceId(),e.Source.Definition.Id,next.GetInstanceId())];
+            transferred.Remaining=e.Remaining;transferred.Next=e.Next;transferred.Interval=e.Interval;
+            transferred.Damage=e.Damage;transferred.Dose=e.Dose;transferred.Ticks=e.Ticks;
+        }
     }
     public void Advance(double delta)
     {
@@ -58,6 +75,8 @@ public partial class PeriodicEffects : Node
             var e=pair.Value;
             if(!GodotObject.IsInstanceValid(e.Target) || !e.Target.Alive || !GodotObject.IsInstanceValid(e.Source.Caster) || !e.Source.Caster.Alive || !e.Source.Unlocked)
             { _effects.Remove(pair.Key);continue; }
+            double interval=e.Source.Build?.Pregame.PeriodicInterval(e.Source)??e.Source.Definition.PeriodicInterval;
+            if(Math.Abs(interval-e.Interval)>.000001){e.Next*=interval/e.Interval;e.Interval=interval;}
             double active=Math.Min(delta,e.Remaining);e.Next-=active;e.Remaining-=delta;
             while(e.Next<=.000001 && e.Target.Alive)
             {

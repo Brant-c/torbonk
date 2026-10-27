@@ -23,6 +23,9 @@ public partial class PlayerController : CharacterBody3D
     private Vector3 _safePosition;
     private Vector3 _groundFootprint;
     private bool _jumpQueued;
+    private Vector3 _abilityDash;
+    private float _dashRemaining;
+    public void BeginAbilityDash(Vector3 direction,float distance){_abilityDash=direction.Normalized();_dashRemaining=Mathf.Clamp(distance,0,.4f);}
 
     public override void _Ready()
     {
@@ -67,6 +70,7 @@ public partial class PlayerController : CharacterBody3D
         var desired = CameraDirection(input, Mathf.DegToRad(Rig.YawDegrees)) * MoveSpeed;
         var horizontal = new Vector3(Velocity.X, 0, Velocity.Z).MoveToward(desired,
             (input.IsZeroApprox() ? Deceleration : Acceleration) * dt);
+        if(_dashRemaining>0){float step=Mathf.Min(_dashRemaining,2.2f*dt);horizontal=_abilityDash*(step/Mathf.Max(dt,.001f));_dashRemaining-=step;}
         var before = GlobalPosition;
         // Ground-footprint safety remains active in the air. Probe from the last
         // traversable ground height, rather than treating jump height as a terrain hole.
@@ -114,7 +118,7 @@ public partial class PlayerController : CharacterBody3D
     public void ResetPlayer()
     {
         GlobalPosition = SpawnPosition; _safePosition = _groundFootprint = SpawnPosition; Velocity = Vector3.Zero;
-        _jumpQueued = false;
+        _jumpQueued = false;_dashRemaining=0;
         ActualVelocity = Vector3.Zero; Presentation.ResetPresentation();
         ResetPhysicsInterpolation(); Rig.Snap();
     }

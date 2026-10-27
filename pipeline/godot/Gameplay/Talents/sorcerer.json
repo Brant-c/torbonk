@@ -246,7 +246,7 @@
       "Column": 0,
       "Icon": "res://Assets/UI/talents/lightningstrike.png",
       "Name": "Convection",
-      "Description": "Shock and Thundering Blast deal 8% more damage per rank.",
+      "Description": "Shock, Lightning Strike and Thundering Blast deal 8% more damage per rank.",
       "MaxRank": 2,
       "Cost": 1,
       "RequiredPoints": 0,
@@ -262,6 +262,12 @@
           "Kind": "damage",
           "Ability": "thunderingblast",
           "Amount": 0.08
+        },
+        {
+          "Kind": "damage",
+          "Ability": "lightningstrike",
+          "Amount": 0.08,
+          "Key": ""
         }
       ],
       "Source": "0xE00006BA07D0EF65"
@@ -312,6 +318,12 @@
           "Kind": "radius",
           "Ability": "storm",
           "Amount": 0.08
+        },
+        {
+          "Kind": "range",
+          "Ability": "lightningstrike",
+          "Amount": 0.08,
+          "Key": ""
         }
       ],
       "Source": "0xE000D1CEE89D6526"
@@ -351,7 +363,7 @@
       "Column": 1,
       "Icon": "res://Assets/UI/talents/forkedlightning.png",
       "Name": "Forked Lightning",
-      "Description": "Force Lightning forks to one nearby enemy for 45% damage. Enables Forked Lightning training during a run.",
+      "Description": "Force Lightning and Lightning Strike fork to one nearby enemy for 45% damage. Enables Forked Lightning training during a run.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 3,
@@ -381,7 +393,7 @@
       "Column": 0,
       "Icon": "res://Assets/UI/talents/sithsorcerer.png",
       "Name": "Lightning Barrage",
-      "Description": "An Affliction tick grants 10% faster Force Lightning ticks per rank for 4 seconds. Once every 10 seconds.",
+      "Description": "Affliction grants 10% faster Force Lightning ticks per rank for 4 seconds (10 second cooldown). Also triggers Polarity Shift in combat: 25% faster ticks and recovery for 6 seconds, every 30 seconds.",
       "MaxRank": 2,
       "Cost": 1,
       "RequiredPoints": 6,
@@ -397,6 +409,12 @@
           "Kind": "hook",
           "Key": "barrage",
           "Amount": 0.1
+        },
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "polarity"
         }
       ],
       "Source": "0xE0008402A7993CA3"
@@ -411,7 +429,7 @@
       "Column": 1,
       "Icon": "res://Assets/UI/talents/spaceupgradeempburst.png",
       "Name": "Lightning Storm",
-      "Description": "Every sixth Shock or Force Storm hit reduces Chain Lightning's remaining cooldown by 1 second per rank. Once every 8 seconds.",
+      "Description": "Every sixth Shock, Lightning Strike or Force Storm hit reduces Chain Lightning cooldown by 1 second per rank. Once every 8 seconds.",
       "MaxRank": 2,
       "Cost": 1,
       "RequiredPoints": 6,
@@ -511,7 +529,7 @@
       "Column": 0,
       "Icon": "res://Assets/UI/talents/shocked.png",
       "Name": "Calcify",
-      "Description": "Force Lightning and Affliction deal 6% more damage per rank.",
+      "Description": "Force Lightning, Affliction and Crushing Darkness deal 6% more damage per rank.",
       "MaxRank": 2,
       "Cost": 1,
       "RequiredPoints": 0,
@@ -527,6 +545,12 @@
           "Kind": "damage",
           "Ability": "affliction",
           "Amount": 0.06
+        },
+        {
+          "Kind": "damage",
+          "Ability": "crushingdarkness",
+          "Amount": 0.06,
+          "Key": ""
         }
       ],
       "Source": "0xE00046732128ED1A"
@@ -566,7 +590,7 @@
       "Column": 0,
       "Icon": "res://Assets/UI/talents/mindcrush.png",
       "Name": "Force Horrors",
-      "Description": "Affliction and Creeping Terror last 1 second longer per rank.",
+      "Description": "Affliction, Creeping Terror and Crushing Darkness last 1 second longer per rank.",
       "MaxRank": 2,
       "Cost": 1,
       "RequiredPoints": 3,
@@ -615,7 +639,7 @@
       "Column": 0,
       "Icon": "res://Assets/UI/talents/cloakofpain.png",
       "Name": "Wrath",
-      "Description": "Every sixth Force Lightning hit reduces Affliction and Creeping Terror's remaining cooldowns by 0.5 seconds per rank. At most once per second.",
+      "Description": "Every sixth Force Lightning hit reduces Affliction, Creeping Terror and Crushing Darkness cooldowns by 0.5 seconds per rank. At most once per second.",
       "MaxRank": 2,
       "Cost": 1,
       "RequiredPoints": 6,
@@ -645,7 +669,7 @@
       "Column": 1,
       "Icon": "res://Assets/UI/talents/alienskull.png",
       "Name": "Deathmark",
-      "Description": "Death Field marks affected enemies for 6 seconds. Your periodic damage against them increases by 10% per rank.",
+      "Description": "Death Field gains 8% radius and cooldown recovery per rank, and marks enemies for 6 seconds. Your periodic damage against them increases by 10% per rank.",
       "MaxRank": 2,
       "Cost": 1,
       "RequiredPoints": 6,
@@ -661,6 +685,18 @@
           "Kind": "hook",
           "Key": "deathmark",
           "Amount": 0.1
+        },
+        {
+          "Kind": "radius",
+          "Ability": "deathfield",
+          "Amount": 0.08,
+          "Key": ""
+        },
+        {
+          "Kind": "cooldown",
+          "Ability": "deathfield",
+          "Amount": 0.08,
+          "Key": ""
         }
       ],
       "Source": "0xE000F4CA893CA40A"
@@ -675,7 +711,7 @@
       "Column": 0,
       "Icon": "res://Assets/UI/talents/dark_embrace.png",
       "Name": "Lingering Nightmares",
-      "Description": "Affliction and Creeping Terror tick 15% faster. Enables Affliction training during a run.",
+      "Description": "Affliction, Creeping Terror and Crushing Darkness tick 15% faster without shortening their durations. Enables Affliction training during a run.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 9,
@@ -709,7 +745,7 @@
       "Column": 1,
       "Icon": "res://Assets/UI/talents/forcecrush.png",
       "Name": "Creeping Death",
-      "Description": "When an afflicted enemy dies, each of your DoTs passes to one nearby uninfected enemy using the existing periodic-effect system. Death Field retains its full area spread.",
+      "Description": "Death transfers each owned DoT to one nearby uninfected enemy with its remaining duration. Creeping Death increases transfer reach to 0.45. Death Field retains its full area spread.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 9,

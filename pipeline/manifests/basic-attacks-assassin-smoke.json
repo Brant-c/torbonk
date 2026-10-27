@@ -1,29 +1,10 @@
 {
   "passed": true,
   "checks": [
-    "starter plus correct basic are unlocked",
-    "basic uses no offensive slot",
-    "original weapon animation available",
-    "basic avoids shared cooldown",
-    "class starter wins priority",
-    "basic fills an active global cooldown",
-    "basic deals weapon damage",
-    "basic leaves global cooldown running",
-    "starter is not starved by weapon attacks",
-    "weapon windup can begin between abilities",
-    "ready starter preempts weapon gesture without an extra hit",
-    "preemption preserves weapon recovery",
-    "basic respects weapon reach",
-    "Assassin learns Affliction",
-    "Assassin casts Affliction",
-    "Assassin applies periodic Affliction",
-    "Assassin Affliction ticks",
-    "Creeping Terror prerequisite learnable with Affliction",
-    "Static Blades available alongside Affliction",
-    "Assassin basic hits afflicted target",
-    "basic cannot refresh Affliction through Static Blades",
-    "restart retains two starting attacks",
-    "basic remains outside unlock offers"
+    "Assassin starts with Lacerate alone",
+    "Assassin has no filler basic attack",
+    "Lacerate deals starting damage",
+    "Assassin restart retains Lacerate alone"
   ],
   "failure": null
 }

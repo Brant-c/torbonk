@@ -1,0 +1,16 @@
+wwiser v20260808 (python 3.12.14)
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\abilities_imperialmelee_data.bnk
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\abilities_imperialmelee_media.bnk
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\init.bnk
+parser: done
+names: loading names
+names: couldn't find D:\SWTORClassic\torbonk\pipeline\tools\wwnames.db3 name file
+names: done
+generator: start
+generator: processing nodes
+generator: elapsed 0.173901s
+generator: done (created 9)
+(done)
+PROVIDER b'AMX \x01\x00\x00\x00\x00\x00' 10
+RESOURCES 213 FX ['si_wither_debuff_target', 'jc_clairvoyantstrike_target_01', 'all_dynamic_saber_crit_trail_01', 'jc_saberreturn_pole_01', 'all_dynamic_saber_trail_alphagrad_01', 'si_hand_cast_particle_trail', 'si_spike_source_saber', 'jc_lowslash_impact_01', 'all_dynamic_saber_hiltflare_01', 'sw_vicious_slash_hit_02', 'si_reflection_buff_loop', 'si_mindtrick_loop_01', 'si_mindtrick_cast_01', 'si_maul_01', 'si_spike_target_02', 'all_dynamic_polesaber_crit_trail_01', 'si_vicioussaber_buff', 'jc_clairvoyantstrike_impact_01', 'si_vicioussaber_bladesparks_01'] TEXTURES 76 MISSING []
+{"events": {"Play_ability_sithinquisitor_deflection_cast": "1737657956", "Play_ability_sithinquisitor_maul_impact": "1473172983", "Play_ability_sithinquisitor_shadowcloak_activate": "2258381739", "Play_ability_sithinquisitor_shadowcloak_cast": "2338025509", "Play_ability_sithinquisitor_shadowcloak_loop": "1257131610", "Play_ability_sithinquisitor_slow_castloop": "3724731252", "Play_ability_sithinquisitor_spike_saber_lightning": "3028947750", "Play_ability_sithinquisitor_spike_saber_shock": "1360671918", "Play_ability_sithinquisitor_wither_aoe": "674390186", "Stop_ability_sithinquisitor_slow_castloop": "2260680586", "Stop_ability_sithinquisitor_spike_saber_lightning": "122721816"}, "missing": ["Play_ability_jediconsular_clairvoyantstrike_friction", "Play_ability_jediconsular_lowslash_hugehit", "Play_ability_jediconsular_clairvoyantstrike_flesh_normal", "Play_ability_jediconsular_breakfree_lightsaber_trail", "Stop_ability_jediconsular_deflection_shieldloop", "Stop_ability_jediconsular_breakfree_lightsaber_trail", "Play_ability_jediconsular_hemorrhage_spurt", "Play_ability_jediconsular_clairvoyantstrike_hugehit", "Stop_ability_jediconsular_hemorrhage_spurt", "Play_ability_jediconsular_deflection_shieldloop", "Play_ability_jediconsular_clairvoyantstrike_smoke"], "media": 54}

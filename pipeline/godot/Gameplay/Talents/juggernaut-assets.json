@@ -1,0 +1,250 @@
+[
+  {
+    "id": "forcescream",
+    "source": "abl.sith_warrior.force_scream",
+    "clip": "Warrior/cb_buff_frenzy",
+    "animationFallback": false,
+    "audio": [
+      "res://Assets/WarriorLibrary/Audio/3382654.wav",
+      "res://Assets/WarriorLibrary/Audio/19338821.wav",
+      "res://Assets/WarriorLibrary/Audio/40903169.wav",
+      "res://Assets/WarriorLibrary/Audio/47620726.wav",
+      "res://Assets/WarriorLibrary/Audio/59761497.wav",
+      "res://Assets/WarriorLibrary/Audio/67230115.wav",
+      "res://Assets/WarriorLibrary/Audio/78956783.wav",
+      "res://Assets/WarriorLibrary/Audio/87250350.wav",
+      "res://Assets/WarriorLibrary/Audio/114063990.wav",
+      "res://Assets/WarriorLibrary/Audio/115385106.wav",
+      "res://Assets/WarriorLibrary/Audio/136391428.wav",
+      "res://Assets/WarriorLibrary/Audio/243220938.wav"
+    ],
+    "texture": "res://Assets/WarriorLibrary/Textures/art/fx/texture/debris/bw_2x2_metal_shards.png"
+  },
+  {
+    "id": "impale",
+    "source": "abl.sith_warrior.skill.vengeance.impale",
+    "clip": "Warrior/cb_saber_sp2_attack_right_13",
+    "animationFallback": false,
+    "audio": [
+      "res://Assets/WarriorLibrary/Audio/10681804.wav",
+      "res://Assets/WarriorLibrary/Audio/12207239.wav",
+      "res://Assets/WarriorLibrary/Audio/75273465.wav",
+      "res://Assets/WarriorLibrary/Audio/80721193.wav",
+      "res://Assets/WarriorLibrary/Audio/157531335.wav",
+      "res://Assets/WarriorLibrary/Audio/487704814.wav"
+    ],
+    "texture": "res://Assets/WarriorLibrary/Textures/art/fx/texture/damage/bw_fx_proj_melted_hole.png"
+  },
+  {
+    "id": "ravage",
+    "source": "abl.sith_warrior.ravage",
+    "clip": "Basic/Saber",
+    "animationFallback": true,
+    "audio": [],
+    "texture": "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/bw_flare_gray.png"
+  },
+  {
+    "id": "forcecrush",
+    "source": "abl.sith_warrior.skill.rage.force_crush",
+    "clip": "Warrior/fp_1h_elect_instant_right_4",
+    "animationFallback": false,
+    "audio": [
+      "res://Assets/WarriorLibrary/Audio/1709192.wav",
+      "res://Assets/WarriorLibrary/Audio/13800022.wav",
+      "res://Assets/WarriorLibrary/Audio/18069803.wav",
+      "res://Assets/WarriorLibrary/Audio/23364535.wav",
+      "res://Assets/WarriorLibrary/Audio/35601037.wav",
+      "res://Assets/WarriorLibrary/Audio/40129408.wav",
+      "res://Assets/WarriorLibrary/Audio/67837780.wav",
+      "res://Assets/WarriorLibrary/Audio/70458762.wav",
+      "res://Assets/WarriorLibrary/Audio/76884431.wav",
+      "res://Assets/WarriorLibrary/Audio/87270619.wav",
+      "res://Assets/WarriorLibrary/Audio/100894690.wav",
+      "res://Assets/WarriorLibrary/Audio/108455855.wav",
+      "res://Assets/WarriorLibrary/Audio/123523564.wav",
+      "res://Assets/WarriorLibrary/Audio/154330055.wav",
+      "res://Assets/WarriorLibrary/Audio/158460919.wav",
+      "res://Assets/WarriorLibrary/Audio/183766153.wav",
+      "res://Assets/WarriorLibrary/Audio/192370695.wav",
+      "res://Assets/WarriorLibrary/Audio/220804532.wav",
+      "res://Assets/WarriorLibrary/Audio/361487411.wav",
+      "res://Assets/WarriorLibrary/Audio/414136578.wav",
+      "res://Assets/WarriorLibrary/Audio/591086114.wav"
+    ],
+    "texture": "res://Assets/WarriorLibrary/Textures/art/fx/texture/damage/bw_fx_grnd_crack_2.png"
+  },
+  {
+    "id": "obliterate",
+    "source": "abl.sith_warrior.skill.rage.obliterate",
+    "clip": "Warrior/cb_saber_charge_4",
+    "animationFallback": false,
+    "audio": [],
+    "texture": "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/2x2_elec_blast_ring_alpha.png"
+  },
+  {
+    "id": "forcecharge",
+    "source": "abl.sith_warrior.force_charge",
+    "clip": "Basic/Saber",
+    "animationFallback": true,
+    "audio": [],
+    "texture": "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/bw_flare_gray.png"
+  },
+  {
+    "id": "forcechoke",
+    "source": "abl.sith_warrior.force_choke",
+    "clip": "Warrior/fp_1h_elect_instant_right_4",
+    "animationFallback": false,
+    "audio": [
+      "res://Assets/WarriorLibrary/Audio/6103524.wav",
+      "res://Assets/WarriorLibrary/Audio/7098880.wav",
+      "res://Assets/WarriorLibrary/Audio/25518009.wav",
+      "res://Assets/WarriorLibrary/Audio/26055024.wav",
+      "res://Assets/WarriorLibrary/Audio/33034242.wav",
+      "res://Assets/WarriorLibrary/Audio/34476175.wav",
+      "res://Assets/WarriorLibrary/Audio/34511561.wav",
+      "res://Assets/WarriorLibrary/Audio/41300347.wav",
+      "res://Assets/WarriorLibrary/Audio/48038207.wav",
+      "res://Assets/WarriorLibrary/Audio/84848789.wav",
+      "res://Assets/WarriorLibrary/Audio/95041464.wav",
+      "res://Assets/WarriorLibrary/Audio/146474154.wav",
+      "res://Assets/WarriorLibrary/Audio/290581122.wav",
+      "res://Assets/WarriorLibrary/Audio/340401179.wav",
+      "res://Assets/WarriorLibrary/Audio/345684701.wav"
+    ],
+    "texture": "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/2x2_elec_blast_ring_alpha.png"
+  },
+  {
+    "id": "saberward",
+    "source": "abl.sith_warrior.saber_ward",
+    "clip": "Warrior/cb_buff_feint",
+    "animationFallback": false,
+    "audio": [
+      "res://Assets/WarriorLibrary/Audio/10244116.wav",
+      "res://Assets/WarriorLibrary/Audio/10681804.wav",
+      "res://Assets/WarriorLibrary/Audio/12207239.wav",
+      "res://Assets/WarriorLibrary/Audio/80721193.wav",
+      "res://Assets/WarriorLibrary/Audio/129457895.wav",
+      "res://Assets/WarriorLibrary/Audio/157531335.wav",
+      "res://Assets/WarriorLibrary/Audio/213894810.wav"
+    ],
+    "texture": "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/vfx_force_impact_ring.png"
+  },
+  {
+    "id": "enrageddefense",
+    "source": "abl.sith_warrior.enraged_defense",
+    "clip": "Basic/Saber",
+    "animationFallback": true,
+    "audio": [
+      "res://Assets/WarriorLibrary/Audio/61363040.wav",
+      "res://Assets/WarriorLibrary/Audio/122701609.wav",
+      "res://Assets/WarriorLibrary/Audio/228448621.wav",
+      "res://Assets/WarriorLibrary/Audio/473256935.wav",
+      "res://Assets/WarriorLibrary/Audio/857325983.wav"
+    ],
+    "texture": "res://Assets/WarriorLibrary/Textures/art/fx/texture/fire/fx_explosion_core_02_bw.png"
+  },
+  {
+    "id": "endurepain",
+    "source": "abl.sith_warrior.endure_pain",
+    "clip": "Warrior/cb_buff_presence",
+    "animationFallback": false,
+    "audio": [
+      "res://Assets/WarriorLibrary/Audio/10681804.wav",
+      "res://Assets/WarriorLibrary/Audio/12207239.wav",
+      "res://Assets/WarriorLibrary/Audio/36875206.wav",
+      "res://Assets/WarriorLibrary/Audio/80721193.wav",
+      "res://Assets/WarriorLibrary/Audio/157531335.wav",
+      "res://Assets/WarriorLibrary/Audio/256217830.wav"
+    ],
+    "texture": "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/2x2_elec_blast_ring_alpha.png"
+  },
+  {
+    "id": "viciousthrow",
+    "source": "abl.sith_warrior.vicious_throw",
+    "clip": "Warrior/cb_saber_throw_start",
+    "animationFallback": false,
+    "audio": [
+      "res://Assets/WarriorLibrary/Audio/3382654.wav",
+      "res://Assets/WarriorLibrary/Audio/19338821.wav",
+      "res://Assets/WarriorLibrary/Audio/20649011.wav",
+      "res://Assets/WarriorLibrary/Audio/40903169.wav",
+      "res://Assets/WarriorLibrary/Audio/47620726.wav",
+      "res://Assets/WarriorLibrary/Audio/59761497.wav",
+      "res://Assets/WarriorLibrary/Audio/67230115.wav",
+      "res://Assets/WarriorLibrary/Audio/78956783.wav",
+      "res://Assets/WarriorLibrary/Audio/87250350.wav",
+      "res://Assets/WarriorLibrary/Audio/112663865.wav",
+      "res://Assets/WarriorLibrary/Audio/114063990.wav",
+      "res://Assets/WarriorLibrary/Audio/136391428.wav",
+      "res://Assets/WarriorLibrary/Audio/138702950.wav",
+      "res://Assets/WarriorLibrary/Audio/242666013.wav",
+      "res://Assets/WarriorLibrary/Audio/243220938.wav",
+      "res://Assets/WarriorLibrary/Audio/360599161.wav",
+      "res://Assets/WarriorLibrary/Audio/374076449.wav",
+      "res://Assets/WarriorLibrary/Audio/420639072.wav",
+      "res://Assets/WarriorLibrary/Audio/526773970.wav",
+      "res://Assets/WarriorLibrary/Audio/538365099.wav",
+      "res://Assets/WarriorLibrary/Audio/539220385.wav"
+    ],
+    "texture": "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/2x2_elec_blast_ring_alpha.png"
+  },
+  {
+    "id": "retaliation",
+    "source": "abl.sith_warrior.retaliation",
+    "clip": "Warrior/cb_saber_sp1_attack_right_5",
+    "animationFallback": false,
+    "audio": [
+      "res://Assets/WarriorLibrary/Audio/22465456.wav",
+      "res://Assets/WarriorLibrary/Audio/27875865.wav",
+      "res://Assets/WarriorLibrary/Audio/29362423.wav",
+      "res://Assets/WarriorLibrary/Audio/52014303.wav",
+      "res://Assets/WarriorLibrary/Audio/52499594.wav",
+      "res://Assets/WarriorLibrary/Audio/52602382.wav",
+      "res://Assets/WarriorLibrary/Audio/90353777.wav",
+      "res://Assets/WarriorLibrary/Audio/132981038.wav",
+      "res://Assets/WarriorLibrary/Audio/142346317.wav",
+      "res://Assets/WarriorLibrary/Audio/197202772.wav",
+      "res://Assets/WarriorLibrary/Audio/216077368.wav"
+    ],
+    "texture": "res://Assets/WarriorLibrary/Textures/art/fx/texture/fire/4x4_flame_lick_02_bw.png"
+  },
+  {
+    "id": "sunderingassault",
+    "source": "abl.sith_warrior.sundering_assault",
+    "clip": "Basic/Saber",
+    "animationFallback": true,
+    "audio": [
+      "res://Assets/WarriorLibrary/Audio/33904093.wav",
+      "res://Assets/WarriorLibrary/Audio/34150325.wav",
+      "res://Assets/WarriorLibrary/Audio/43033884.wav",
+      "res://Assets/WarriorLibrary/Audio/44171853.wav",
+      "res://Assets/WarriorLibrary/Audio/59352599.wav",
+      "res://Assets/WarriorLibrary/Audio/88461358.wav",
+      "res://Assets/WarriorLibrary/Audio/193496925.wav",
+      "res://Assets/WarriorLibrary/Audio/194286000.wav",
+      "res://Assets/WarriorLibrary/Audio/201589943.wav"
+    ],
+    "texture": "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/2x2_elec_blast_ring_alpha.png"
+  },
+  {
+    "id": "forcepush",
+    "source": "abl.sith_warrior.push",
+    "clip": "Warrior/fp_force_push_1",
+    "animationFallback": false,
+    "audio": [
+      "res://Assets/WarriorLibrary/Audio/10879047.wav",
+      "res://Assets/WarriorLibrary/Audio/25432250.wav",
+      "res://Assets/WarriorLibrary/Audio/29107890.wav",
+      "res://Assets/WarriorLibrary/Audio/112245474.wav"
+    ],
+    "texture": "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/2x2_elec_blast_ring_alpha.png"
+  },
+  {
+    "id": "backhand",
+    "source": "abl.sith_warrior.skill.immortal.backhand",
+    "clip": "Warrior/cb_saber_backhand",
+    "animationFallback": false,
+    "audio": [],
+    "texture": "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/bw_flare_gray.png"
+  }
+]

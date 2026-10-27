@@ -9,6 +9,8 @@ public enum AbilityEffect { Damage, Shield, Heal, Buff }
 [GlobalClass]
 public partial class AbilityDefinition : Resource
 {
+    [Export] public bool Slotless {get;set;}
+    [Export] public bool DetachedArea {get;set;}
     [Export] public bool IsBasicAttack {get;set;}
     [Export] public string ExclusiveWith {get;set;}="";
     [Export] public bool SpreadsPeriodicEffects {get;set;}

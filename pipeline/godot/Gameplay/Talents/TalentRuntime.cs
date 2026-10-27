@@ -6,7 +6,7 @@ using System.Linq;
 namespace SwtorSurvivors.Talents;
 
 /// <summary>Validated immutable run snapshot; all modifiers are derived, never accumulated.</summary>
-public sealed class TalentRuntime
+public sealed partial class TalentRuntime
 {
     private readonly GameWorld _world;
     public IReadOnlyDictionary<string,int> Ranks {get;}
@@ -39,7 +39,10 @@ public sealed class TalentRuntime
     {
         string id=a.Definition.Id;
         a.DamagePerTick*=1+Sum("damage",id);
+        AssassinStats(a);JuggernautStats(a);
+        a.TickSeconds/=Acceleration;
         a.TickSeconds/=1+(_barrage>0 && id=="lightning"?Hook("barrage"):0);
+        a.CooldownSeconds/=Acceleration;
         a.CooldownSeconds/=1+Sum("cooldown",id);
         a.Range*=1+Sum("range",id);
         a.Radius*=1+Sum("radius",id);
@@ -48,13 +51,20 @@ public sealed class TalentRuntime
         a.ExtraBounces+=(int)Sum("bounces",id);
     }
     public float PeriodicDuration(AutomaticAbility a)=>a.Definition.PeriodicDuration+Sum("duration",a.Definition.Id);
-    public float PeriodicInterval(AutomaticAbility a)=>a.Definition.PeriodicInterval/(1+Sum("periodic_rate",a.Definition.Id));
-    public float IncomingMultiplier=>_world.PlayerActor.Health.Current<_world.PlayerActor.Health.Maximum*.35f?1-Math.Min(.2f,Hook("low_defense")):1;
-    public float DirectBonus(AutomaticAbility a,Combatant target)=>
-        a.Definition.Id=="thunderingblast" && _world.Abilities.Find("affliction") is {} affliction && _world.Periodic.Has(affliction,target)?Hook("afflicted_blast"):0;
-    public float PeriodicMultiplier(Combatant target)=>1+(_deathmarks.GetValueOrDefault(target.GetInstanceId())>0?Hook("deathmark"):0);
+    public float PeriodicInterval(AutomaticAbility a)=>a.Definition.PeriodicInterval/(1+Sum("periodic_rate",a.Definition.Id))
+        *a.TickSeconds/Math.Max(.001f,a.Definition.TickSeconds);
+    public bool PolarityReady=>Hook("polarity")>0 || _world.Build.Talent("polarity")>0;
+    public bool PolarityActive=>_polarity>0;
+    private double _polarity;
+    public float Acceleration=>_polarity>0?1.25f:1;
+    public float IncomingMultiplier=>JuggernautIncoming*AssassinIncoming*(_world.PlayerActor.Health.Current<_world.PlayerActor.Health.Maximum*.35f?1-Math.Min(.2f,Hook("low_defense")):1);
+    public float DirectBonus(AutomaticAbility a,Combatant target)=>JuggernautBonus(a,target)+AssassinBonus(a,target)+(
+        a.Definition.Id=="thunderingblast" && _world.Abilities.Find("affliction") is {} affliction && _world.Periodic.Has(affliction,target)?Hook("afflicted_blast"):0);
+    public float PeriodicMultiplier(Combatant target)=>1+(_deathmarks.GetValueOrDefault(target.GetInstanceId())>0?(Hook("deathmark")+(IsAssassin?.1f:0)):0);
     public void Activated(AutomaticAbility a)
     {
+        AssassinActivated(a);JuggernautActivated(a);
+        if(a.Definition.Id=="polarityshift"){_polarity=6;_world.Progression?.Recalculate();return;}
         if(a.Definition.Id!="barrier")return;
         _barrier=true;
         if(Hook("barrier_heal")>0 && _world.PlayerActor.Health.Current<_world.PlayerActor.Health.Maximum*.5f && Ready("resurgence",12))
@@ -63,7 +73,9 @@ public sealed class TalentRuntime
     }
     public void Damaged(float amount)
     {
+        JuggernautDamaged(amount);
         var health=_world.PlayerActor.Health;
+        if(IsAssassin && health.IsAlive && Hook("reactive")>0 && Ready("assassin_reactive",5))health.ApplyHealing(Hook("reactive"));
         if(health.IsAlive && Hook("emergency")>0 && health.Current<health.Maximum*.25f && Ready("emergency",30))
         {health.ApplyHealing(12);_world.Abilities.Find("barrier")?.ReduceCooldown(4);}
     }
@@ -77,29 +89,33 @@ public sealed class TalentRuntime
     }
     public void DirectHit(AutomaticAbility a,Combatant target)
     {
+        AssassinHit(a,target);JuggernautHit(a,target);
         string id=a.Definition.Id;
         if(id=="shock" && Hook("shock_extend")>0 && _world.Abilities.Find("affliction") is {} affliction)
             _world.Periodic.Extend(affliction,target,Hook("shock_extend"),PeriodicDuration(affliction)+4);
-        if(id=="deathfield" && target.Alive && Hook("deathmark")>0)_deathmarks[target.GetInstanceId()]=6;
+        if(id=="deathfield" && target.Alive && (IsAssassin || Hook("deathmark")>0))_deathmarks[target.GetInstanceId()]=6;
     }
     public void Hit(AutomaticAbility a)
     {
         string id=a.Definition.Id;
-        if(id is "lightning" or "shock" or "chain" or "storm" or "thunderingblast")
+        if(id is "lightning" or "shock" or "chain" or "storm" or "thunderingblast" or "lightningstrike")
             if(Hook("conduction")>0 && Every("conduction",6) && Ready("conduction",1))
                 _world.Abilities.Find("chain")?.ReduceCooldown(Hook("conduction"));
-        if(id is "shock" or "storm")
+        if(id is "shock" or "storm" or "lightningstrike")
             if(Hook("lightning_storm")>0 && Every("storm",6) && Ready("storm",8))
                 _world.Abilities.Find("chain")?.ReduceCooldown(Hook("lightning_storm"));
         if(id=="lightning" && Hook("wrath")>0 && Every("wrath",6) && Ready("wrath",1))
         {
             _world.Abilities.Find("affliction")?.ReduceCooldown(Hook("wrath"));
             _world.Abilities.Find("creepingterror")?.ReduceCooldown(Hook("wrath"));
+            _world.Abilities.Find("crushingdarkness")?.ReduceCooldown(Hook("wrath"));
         }
     }
     public void PeriodicTick(AutomaticAbility a)
     {
         if(a.Caster!=_world.PlayerActor)return;
+        JuggernautPeriodic(a);
+        if(IsAssassin && Hook("drain")>0 && Ready("assassin_drain",1.5))_world.PlayerActor.Health.ApplyHealing(Hook("drain"));
         var health=_world.PlayerActor.Health;
         if(Hook("periodic_heal")>0 && health.Current<health.Maximum*.5f && Ready("parasitism",2))
             health.ApplyHealing(Hook("periodic_heal"));
@@ -118,15 +134,20 @@ public sealed class TalentRuntime
     }
     public float OfferWeight(UpgradeDefinition u)
     {
+        if(IsAssassin && u.AbilityId=="creepingterror" && Mechanic("early_terror")>0)return 5;
         // Modest preference only: off-tree unlocks retain full eligibility.
         float affinity=_effects.Where(p=>p.effect.Ability!="" && p.effect.Ability==u.AbilityId).Sum(p=>p.rank);
-        return 1+Math.Min(.6f,affinity*.1f);
+        string tree=u.AbilityId switch {"lightningstrike" or "shock" or "chain" or "storm" or "thunderingblast" or "polarityshift"=>"lightning", "affliction" or "crushingdarkness" or "creepingterror" or "deathfield"=>"madness",_=>""};
+        int investment=TalentCatalog.Current.ForClass(_world.RunConfiguration.AdvancedClassId).Where(t=>t.Tree==tree).Sum(t=>Ranks.GetValueOrDefault(t.Id));
+        return 1+Math.Min(1.2f,affinity*.1f+investment*.08f);
     }
     public void Advance(double delta)
     {
+        AdvanceAssassin(delta);AdvanceJuggernaut(delta);
+        if(_polarity>0){_polarity=Math.Max(0,_polarity-delta);if(_polarity==0)_world.Progression?.Recalculate();}
         foreach(var key in _locks.Keys.ToArray())_locks[key]=Math.Max(0,_locks[key]-delta);
         foreach(var key in _deathmarks.Keys.ToArray()){_deathmarks[key]-=delta;if(_deathmarks[key]<=0)_deathmarks.Remove(key);}
         if(_barrage>0){_barrage=Math.Max(0,_barrage-delta);if(_barrage==0)_world.Progression?.Recalculate();}
     }
-    public void Reset(){_locks.Clear();_counts.Clear();_deathmarks.Clear();_barrage=0;_barrier=false;}
+    public void Reset(){ResetJuggernaut();ResetAssassin();_locks.Clear();_counts.Clear();_deathmarks.Clear();_barrage=_polarity=0;_barrier=false;}
 }

@@ -21,7 +21,9 @@ PlanetRunPath = "res://Gameplay/Planets/Korriban/run.json"
 
 [node name="ArenaBounds" type="Node3D" parent="."]
 script = ExtResource("3")
-Maximum = Vector2(58.0,31.4)
+Minimum = Vector2(19.5,5.5)
+Maximum = Vector2(58.8,32.2)
+SpawnSeed = Vector2(39.51257,22.627346)
 
 [node name="Player" type="CharacterBody3D" parent="."]
 position = Vector3(36, -17.13, 12.6)

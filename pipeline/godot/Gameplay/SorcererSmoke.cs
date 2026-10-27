@@ -20,8 +20,8 @@ public partial class SorcererSmoke : Node
             await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);
             bool assassin=w.RunConfiguration.AdvancedClassId=="assassin";
             var p=w.Progression!;
-            int startingCount=assassin?2:1;
-            Check("correct starting attacks begin unlocked",w.Abilities.Abilities.Count(a=>a.Unlocked)==startingCount && w.Abilities.Equipped(AbilityCategory.Offensive)==1);
+            int startingCount=assassin?1:2;
+            Check("correct starting attacks begin unlocked",w.Abilities.Abilities.Count(a=>a.Unlocked)==startingCount && w.Abilities.Equipped(AbilityCategory.Offensive)==(assassin?0:1));
             var ritual=w.Artifacts!.Catalog.Single(a=>a.Id=="run.ritual");
             Check("locked Death Field relic excluded",!w.Artifacts.Eligible(ritual,2));
             void Cast(AutomaticAbility a)
@@ -45,7 +45,7 @@ public partial class SorcererSmoke : Node
             else
             {
                 Check("Sorcerer shares Death Field and Creeping Terror",w.Abilities.Find("deathfield")?.Unlocked==false && w.Abilities.Find("creepingterror")?.Unlocked==false);
-                Check("blast and Affliction are learnable",p.Grant("unlock_thunderingblast") && p.Grant("unlock_affliction"));
+                Check("blast is learnable alongside baseline Affliction",p.Grant("unlock_thunderingblast") && w.Abilities.Find("affliction")!.Unlocked);
                 Check("blast cannot be learned twice",!p.Grant("unlock_thunderingblast"));
                 var blast=w.Abilities.Find("thunderingblast")!;var dot=w.Abilities.Find("affliction")!;
                 Check("April cast and cooldown",blast.Definition.WindupSeconds==2 && blast.CooldownSeconds==9 && blast.ChannelSeconds==0);
@@ -81,7 +81,7 @@ public partial class SorcererSmoke : Node
                 blast.ResetCombat();Check("cancellable blast starts",blast.TryBegin());hp=target.Health.Current;target.GlobalPosition+=Vector3.Right*3;blast.Advance(2.1);
                 Check("lost target cancels without damage",target.Health.Current==hp && !blast.Casting || target.Health.Current==hp && blast.State==LightningState.Ending);
                 target.GlobalPosition=w.PlayerActor.GlobalPosition+Vector3.Right*.2f;
-                Check("four offensive slot limit preserved",w.Abilities.Unlock("chain") && !w.Abilities.Unlock("storm"));
+                Check("four offensive slot limit preserved",w.Abilities.Unlock("chain") && w.Abilities.Unlock("shock") && !w.Abilities.Unlock("storm"));
             }
             w.Periodic.Clear();w.Abilities.Abort();p.ResetRun();
             Check("restart restores starting attacks and clears effects",w.Abilities.Abilities.Count(a=>a.Unlocked)==startingCount && w.Periodic.Count==0 && p.Ranks.Count==0);

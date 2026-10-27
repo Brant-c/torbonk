@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "spike"
+StartsUnlocked = false
+Title = "Spike"
+Icon = "spike"
+Damage = 24
+CooldownSeconds = 16
+Range = 0.22
+Radius = 0.22
+Area = 3
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+WindupSeconds = 1.0
+ChannelSeconds = 0.0
+RecoverySeconds = 1.74
+GestureSeconds = 1.74
+StartClip = "Assassin/Spike"
+LoopClip = "Assassin/Spike"
+EndClip = ""
+PeriodicDamage = 0
+PeriodicDuration = 0
+PeriodicInterval = 1
+DamageType = 0
+Description = "Vanish for 1 second, then emerge with a 24-damage close-range Spike. Briefly stuns nearby enemies. Talents increase its modest starting area and damage. Opens a Maul burst window."
+ImpactTexture = ""
+CastAudio = ""
+ImpactAudio = ""
+PresentationKind = "assassin"
+WeaponAudio = ""
+ImpactTailsOnTargetDeath = true
+RequireGesture = true
+
+SourceFx = "si_spike_source_saber"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/UpgradeDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "polarity_training"
+Title = "Polarity Shift"
+Icon = "polaritycharge"
+Effect = 9
+AbilityId = "polarityshift"
+Mechanic = "polarity"
+MechanicalDescription = "Trigger Polarity Shift in combat: 25% faster ability recovery and ticks for 6 seconds, every 30 seconds. Uses no slot."
+MaximumRank = 1

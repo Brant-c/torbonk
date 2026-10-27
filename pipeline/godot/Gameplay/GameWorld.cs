@@ -64,12 +64,10 @@ public partial class GameWorld : Node3D
     /// <summary>The environment instance is "KorribanEnvironment" in the original composition and "MapEnvironment" in map sections.</summary>
     private Node3D EnvironmentNode() => GetNodeOrNull<Node3D>("MapEnvironment") ?? GetNode<Node3D>("KorribanEnvironment");
 
-    /// <summary>Authored seed first (Korriban's original spawn); other maps pick the most open supported ground.</summary>
+    /// <summary>Find supported ground with full body clearance and open paths around the preferred start.</summary>
     private bool FindSpawn(Vector3 seed, out Vector3 floor)
     {
-        bool original = GetNodeOrNull<Node3D>("MapEnvironment") == null;
-        if (original && Arena.GroundAt(seed, out floor, out _, 40, 60) && Arena.Supported(floor, Player.CapsuleRadius)) return true;
-        // Other maps: walk outward from the seed and take the first ground that is open all around, using the same
+        // Walk outward from the seed and take the first ground that is open all around, using the same
         // standing/walking tests as the enemy spawner so props and canopy count. Bounded so start-up stays quick.
         float radius = Player.CapsuleRadius * 3, bestScore = -1; floor = default; bool found = false; int tried = 0;
         var navigation = new ArenaNavigation { Arena = Arena, Radius = 0.05f, Height = 0.2f };
@@ -82,6 +80,8 @@ public partial class GameWorld : Node3D
             {
                 float turn = k * Mathf.Tau / samples;
                 var probe = seed + new Vector3(Mathf.Cos(turn), 0, Mathf.Sin(turn)) * ringRadius;
+                // Keep Korriban starts on the approach side of the camp, away from the mountain behind it.
+                if (RunConfiguration.MapId == "korriban" && (probe.X < 38 || probe.X > 42 || probe.Z < 21 || probe.Z > 26)) continue;
                 if (!Arena.GroundAt(probe, out var ground, out _, 40, 60) || !Arena.Supported(ground, radius)) continue;
                 if (!navigation.TryStandingPoint(ground, out var feetHere)) continue;
                 tried++; int open = 0;
@@ -97,7 +97,7 @@ public partial class GameWorld : Node3D
         }
         navigation.QueueFree();
         GD.Print($"Map spawn: open ring samples {bestScore}/8 at {floor} after {tried} candidates (found={found})");
-        return found;
+        return found && bestScore >= 7;
     }
 
     public override async void _Ready()
@@ -113,6 +113,7 @@ public partial class GameWorld : Node3D
         Player = GetNode<PlayerController>("Player"); Player.SetPhysicsProcess(false);
         Rig = GetNode<CameraRig>("CameraRig"); Arena = GetNode<ArenaBounds>("ArenaBounds");
         EnvironmentRoot = EnvironmentNode();
+        if(RunConfiguration.MapId=="korriban") { var frontier=new KorribanFrontier {Name="KorribanFrontier"}; AddChild(frontier); }
         Player.Arena = Arena; Player.Rig = Rig; Rig.Target = Player;
         foreach (var body in EnvironmentRoot.FindChildren("*", "StaticBody3D", true, false).OfType<StaticBody3D>())
         {
@@ -221,10 +222,15 @@ public partial class GameWorld : Node3D
         if(OS.GetCmdlineUserArgs().Contains("--powertech-smoke")){var smoke=new PowertechSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--sorcerer-smoke")){var smoke=new SorcererSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--basic-attacks-smoke")){var smoke=new BasicAttacksSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--sorcerer-refinement-smoke")){var smoke=new SorcererRefinementSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--spec-milestones-smoke")){var smoke=new SpecMilestonesSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--assassin-refinement-smoke")){var smoke=new AssassinRefinementSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--juggernaut-smoke")){var smoke=new JuggernautSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--assassin-expansion-smoke")){var smoke=new AssassinExpansionSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--presentation-repair-smoke")){var smoke=new PresentationRepairSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--kit-smoke"))
         {var smoke=new KitSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--korriban-endless-smoke")){var smoke=new KorribanEndlessSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--d4-smoke"))
         {var smoke=new D4Smoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--d1-smoke"))
@@ -270,8 +276,8 @@ public partial class GameWorld : Node3D
         var layer = new CanvasLayer(); AddChild(layer); _legacyOverlay = layer;
         var panel = new VBoxContainer { Position = new Vector2(18,14), MouseFilter = Control.MouseFilterEnum.Ignore };
         layer.AddChild(panel);
-        panel.AddChild(new Label { Text = "SWTOR SURVIVORS  /  B3 · Korriban Survival" });
-        panel.AddChild(new Label { Text = "WASD: move   ·   Lightning: automatic   ·   R: restart   ·   F3: collision/bounds   ·   Esc: quit" });
+        panel.AddChild(new Label { Text = "SWTOR SURVIVORS  /  B3 Â· Korriban Survival" });
+        panel.AddChild(new Label { Text = "WASD: move   Â·   Lightning: automatic   Â·   R: restart   Â·   F3: collision/bounds   Â·   Esc: quit" });
         Status = new Label(); panel.AddChild(Status);
         _combatStatus = new Label(); panel.AddChild(_combatStatus);
     }
@@ -317,12 +323,13 @@ public partial class GameWorld : Node3D
             var presentation=new D3AbilityPresentation {Actor=Player.Presentation,Definition=Combat.Definition};AddChild(presentation);Combat.Presentation=presentation;
             AcquisitionRange=Combat.Range;Targeting.AcquisitionRange=Combat.Range;
         }
+        if(profile.Id=="juggernaut") {Player.Presentation.LoadAbilityLibrary("res://Assets/WarriorLibrary/casts.glb","Warrior");Combat.Definition.StartsUnlocked=true;Combat.Definition.Slotless=true;Combat.SetUnlocked(true);}
         if(profile.Id=="powertech")Player.Presentation.LoadAbilityLibrary("res://Assets/Powertech/casts.glb","PT");
-        if(profile.Id=="assassin")Player.Presentation.LoadAbilityLibrary("res://Assets/B8/casts.glb","B8");
+        if(profile.Id=="assassin") {Player.Presentation.LoadAbilityLibrary("res://Assets/B8/casts.glb","B8");Player.Presentation.LoadAbilityLibrary("res://Assets/Assassin/casts.glb","Assassin");Combat.DamagePerTick=Combat.Definition.Damage=12;Combat.CooldownSeconds=Combat.Definition.CooldownSeconds=2.4f;Combat.Radius=Combat.Definition.Radius=.24f;Combat.Definition.Slotless=true;Combat.Definition.Description="Modest saber sweep. Spreads existing Discharge to nearby enemies hit; talents can spread other DoTs. Starts free and can be replaced.";}
         Periodic=new PeriodicEffects {Name="PeriodicEffects"};AddChild(Periodic);Combat.Periodic=Periodic;
         AddChild(Combat);
         Abilities=new AbilityController { Name="AutomaticAbilities",Targeting=Targeting,
-            OffensiveLimit=SlotRules!.OffensiveSlots,UtilityLimit=profile.UtilitySlots>=0?profile.UtilitySlots:SlotRules.UtilitySlots };
+            OffensiveLimit=profile.Id=="assassin"?6:SlotRules!.OffensiveSlots,UtilityLimit=profile.UtilitySlots>=0?profile.UtilitySlots:SlotRules!.UtilitySlots };
         Abilities.Abilities.Add(Combat);
         if(profile.BasicAttack!="")
         {
@@ -330,16 +337,20 @@ public partial class GameWorld : Node3D
             var definition=GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{profile.BasicAttack}.tres");
             var basicVisual=new D3AbilityPresentation {Name="BasicAttackPresentation",Actor=Player.Presentation,Definition=definition};AddChild(basicVisual);
             var basic=new AutomaticAbility {Name=profile.BasicAttack,Caster=PlayerActor,Targeting=Targeting,Presentation=basicVisual,Periodic=Periodic};
-            basic.Configure(definition);AddChild(basic);Abilities.Abilities.Add(basic);
+            basic.Configure(definition);
+            if(profile.Id=="juggernaut")basic.Definition.Icon="jg_assault";AddChild(basic);Abilities.Abilities.Add(basic);
         }
         // Class kits: locked until a level-up unlocks them; same lifecycle, presentation adapter and slot rules as the starter.
         foreach(string id in profile.Presentation=="sorcerer"?System.Array.Empty<string>():profile.Kit)
         {
             var definition=GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{id}.tres");
             IAbilityPresentation kitVisual;
-            if(id=="affliction")
+            if(profile.Id=="assassin" && id is "voltaicslash" or "maul" or "spike" or "wither" or "lowslash" or "forcecloak" or "deflection") {var original=new AssassinAbilityPresentation {Actor=Player.Presentation,Definition=definition,World=this};AddChild(original);kitVisual=original;}
+            else if(id is "forcespeed" or "crushingdarkness") {var speed=new SorcererRefinementPresentation {Actor=Player.Presentation,Definition=definition};AddChild(speed);kitVisual=speed;}
+            else if(id=="shock") {var shock=new OriginalAbilityPresentation {Actor=Player.Presentation,Definition=definition};AddChild(shock);kitVisual=shock;}
+            else if(id=="affliction")
             {
-                Player.Presentation.LoadAbilityLibrary("res://Assets/Abilities/casts.glb","B5");
+                if(!Player.Presentation.Animator.HasAnimationLibrary("B5"))Player.Presentation.LoadAbilityLibrary("res://Assets/Abilities/casts.glb","B5");
                 var affliction=new SorcererAbilityPresentation {Actor=Player.Presentation,Definition=definition};AddChild(affliction);kitVisual=affliction;
             }
             else if(id=="deathfield")
@@ -349,18 +360,39 @@ public partial class GameWorld : Node3D
             }
             else {var visualKit=new D3AbilityPresentation {Name=id+"Presentation",Actor=Player.Presentation,Definition=definition};AddChild(visualKit);kitVisual=visualKit;}
             var kit=new AutomaticAbility {Name=id,Caster=PlayerActor,Targeting=Targeting,Presentation=kitVisual,Periodic=Periodic};
-            kit.Configure(definition);AddChild(kit);Abilities.Abilities.Add(kit);
+            kit.Configure(definition);
+            if(profile.Id=="juggernaut"){kit.Definition.StartsUnlocked=false;kit.SetUnlocked(false);}
+            if(profile.Id=="assassin") {
+                if(!Player.Presentation.Animator.HasAnimationLibrary("B5"))Player.Presentation.LoadAbilityLibrary("res://Assets/Abilities/casts.glb","B5");
+                if(!Player.Presentation.Animator.HasAnimationLibrary("T22"))Player.Presentation.LoadAbilityLibrary("res://Assets/SorcererRefinement/casts.glb","T22");
+                if(kit.Definition.Category==AbilityCategory.Utility || id=="lowslash"){kit.Definition.Category=AbilityCategory.Utility;kit.Definition.Slotless=true;}
+                if(id=="shock") {kit.Definition.Area=AbilityArea.SingleTarget;kit.Range=.45f;}
+                if(id=="creepingterror") {kit.Range=.55f;kit.Definition.PeriodicHealing=2;}
+                if(id=="crushingdarkness")kit.Range=.55f;
+                if(id=="discharge")kit.Definition.NearbyTriggerCount=1;
+                if(id=="deathfield") {kit.Range=.55f;kit.Healing=3;kit.Definition.HealingCap=10;kit.Definition.ExclusiveWith="";}
+            }
+            AddChild(kit);Abilities.Abilities.Add(kit);
         }
         if (survival && RunConfiguration.Profile.Presentation=="sorcerer" && !OS.GetCmdlineUserArgs().Any(x=>x is "--survival-smoke" or "--progression-smoke"))
         {
             Player.Presentation.LoadAbilityLibrary("res://Assets/Sorcerer/casts.glb","Sorc");
-            foreach(string id in new[]{"shock","lightning","storm","thunderingblast","affliction","creepingterror","deathfield","barrier","darkheal","chain","overload"})
+            Player.Presentation.LoadAbilityLibrary("res://Assets/SorcererRefinement/casts.glb","T22");
+            foreach(string id in new[]{"shock","lightning","storm","thunderingblast","affliction","creepingterror","deathfield","barrier","darkheal","chain","overload","lightningstrike","crushingdarkness","polarityshift","forcespeed"})
             {
                 if(id==profile.StartingAbility)continue;
                 var definition=(AbilityDefinition)GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{id}.tres").Duplicate();
-                definition.StartsUnlocked=false;
+                definition.StartsUnlocked=id=="affliction";
+                if(id is "affliction" or "polarityshift")definition.Slotless=true;
+                if(id=="shock"){definition.Damage=22;definition.Area=AbilityArea.SingleTarget;}
+                if(id=="affliction")definition.CooldownSeconds=12;
+                if(id=="creepingterror")definition.CooldownSeconds=14;
                 IAbilityPresentation presentation;
                 if(id=="lightning")presentation=visual;
+                else if(id is "lightningstrike" or "crushingdarkness" or "polarityshift" or "forcespeed")
+                {
+                    var original=new SorcererRefinementPresentation {Actor=Player.Presentation,Definition=definition};AddChild(original);presentation=original;
+                }
                 else if(id=="creepingterror")
                 {
                     var original=new D3AbilityPresentation {Actor=Player.Presentation,Definition=definition};AddChild(original);presentation=original;
@@ -477,22 +509,22 @@ public partial class GameWorld : Node3D
     public override void _Process(double delta)
     {
         if (!Initialized) return;
-        Status.Text = $"{Player.Presentation.State} · {(Player.IsOnFloor() ? "grounded" : "gravity")} · {Player.ActualVelocity.Length():0.00} source units/s" +
-            (_debug?.Visible == true ? $"\nPosition {Player.GlobalPosition} · bounds blocks {Arena.RejectedMoves} · recovery {Player.Recoveries}\n{Arena.LastRejection}" : "");
+        Status.Text = $"{Player.Presentation.State} Â· {(Player.IsOnFloor() ? "grounded" : "gravity")} Â· {Player.ActualVelocity.Length():0.00} source units/s" +
+            (_debug?.Visible == true ? $"\nPosition {Player.GlobalPosition} Â· bounds blocks {Arena.RejectedMoves} Â· recovery {Player.Recoveries}\n{Arena.LastRejection}" : "");
         if (Combat != null)
         {
             var target = Combat.CastTarget ?? Targeting.Current;
             bool valid = GodotObject.IsInstanceValid(target);
-            _combatStatus.Text = $"Player {PlayerActor.Health.Current:0}/{PlayerActor.Health.Maximum:0} HP · {Combat.State} · cooldown {Combat.CooldownRemaining:0.0}s\n" +
-                $"Target: {(valid ? target!.SelectionKey : "none")} · HP {(valid ? $"{target!.Health.Current:0}/{target.Health.Maximum:0}" : "—")} · damage events {Combat.DamageEvents}\n{Combat.LastEvent}";
+            _combatStatus.Text = $"Player {PlayerActor.Health.Current:0}/{PlayerActor.Health.Maximum:0} HP Â· {Combat.State} Â· cooldown {Combat.CooldownRemaining:0.0}s\n" +
+                $"Target: {(valid ? target!.SelectionKey : "none")} Â· HP {(valid ? $"{target!.Health.Current:0}/{target.Health.Maximum:0}" : "â€”")} Â· damage events {Combat.DamageEvents}\n{Combat.LastEvent}";
             if (Waves != null && Spawner != null)
             {
-                _combatStatus.Text = $"HEALTH  {PlayerActor.Health.Current:0}/{PlayerActor.Health.Maximum:0}   ·   WAVE {Waves.Wave}  ({Waves.WaveRemaining:0}s)\n" +
-                    $"Enemies {Spawner.ActiveCount}/{Spawner.ActiveLimit}   ·   Defeated {Spawner.Defeated}\n" +
-                    (PlayerActor.Alive ? $"Lightning: {Combat.State}   ·   {Spawner.LastPlacement}\n{Combat.LastEvent}" : "YOU DIED · Press R to restart from wave 1");
+                _combatStatus.Text = $"HEALTH  {PlayerActor.Health.Current:0}/{PlayerActor.Health.Maximum:0}   Â·   WAVE {Waves.Wave}  ({Waves.WaveRemaining:0}s)\n" +
+                    $"Enemies {Spawner.ActiveCount}/{Spawner.ActiveLimit}   Â·   Defeated {Spawner.Defeated}\n" +
+                    (PlayerActor.Alive ? $"Lightning: {Combat.State}   Â·   {Spawner.LastPlacement}\n{Combat.LastEvent}" : "YOU DIED Â· Press R to restart from wave 1");
             }
             if (GodotObject.IsInstanceValid(Enemy))
-                Enemy.GetNode<Label3D>("Nameplate").Text = Enemy.Health.IsAlive ? $"HOSTILE · {Enemy.Health.Current:0}/{Enemy.Health.Maximum:0}" : "DEFEATED · R to reset";
+                Enemy.GetNode<Label3D>("Nameplate").Text = Enemy.Health.IsAlive ? $"HOSTILE Â· {Enemy.Health.Current:0}/{Enemy.Health.Maximum:0}" : "DEFEATED Â· R to reset";
         }
     }
 

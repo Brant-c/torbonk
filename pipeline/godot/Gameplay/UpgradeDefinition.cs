@@ -51,11 +51,11 @@ public partial class UpgradeDefinition : Resource
         UpgradeEffect.AbilityPower => DamagePerRank>0 && AbilityId is not ("deathfield" or "barrier")
             ? $"{Scope}: +{DamagePerRank*RarityMultiplier:P0} base damage per rank."
             : AbilityId switch {
-            "deathfield" => $"Death Field: +{DamagePerRank*RarityMultiplier:P0} damage, +{RadiusPerRank*RarityMultiplier:P0} radius, +{HealingPerRank*RarityMultiplier:P0} healing per target. Healing cap stays 8.",
+            "deathfield" => $"Death Field: +{DamagePerRank*RarityMultiplier:P0} damage, +{RadiusPerRank*RarityMultiplier:P0} radius, +{CooldownPerRank*RarityMultiplier:P0} cooldown recovery, +{HealingPerRank*RarityMultiplier:P0} healing per target. Healing cap stays 8.",
             "barrier" => $"Static Barrier: +{ShieldPerRank*RarityMultiplier:P0} capacity, +{DurationPerRank*RarityMultiplier:P0} duration, +{CooldownPerRank*RarityMultiplier:P0} cooldown recovery rate.",
             _ => $"Dark Heal: +{HealingPerRank*RarityMultiplier:P0} healing, +{CooldownPerRank*RarityMultiplier:P0} cooldown recovery rate; trigger {ThresholdPerRank*RarityMultiplier*100:0.#} percentage points earlier (up to 80% HP)." },
         UpgradeEffect.Damage => $"{Scope}: +{EffectiveAmount:P0} base damage per rank.",
-        UpgradeEffect.TickRate => $"{Scope}: +{EffectiveAmount:P0} tick frequency per rank (channels).",
+        UpgradeEffect.TickRate => $"{Scope}: +{EffectiveAmount:P0} tick frequency per rank (channels and periodic damage; durations unchanged).",
         UpgradeEffect.Range => $"{Scope}: +{EffectiveAmount:P0} base range per rank.",
         UpgradeEffect.Cooldown => $"{Scope}: +{EffectiveAmount:P0} recovery rate per rank.",
         UpgradeEffect.Radius => $"{Scope}: +{EffectiveAmount:P0} base area radius per rank.",

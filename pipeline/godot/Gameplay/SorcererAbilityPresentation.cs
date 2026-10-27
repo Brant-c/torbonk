@@ -26,7 +26,7 @@ public partial class SorcererAbilityPresentation : Node3D,IAbilityPresentation
     public override void _Ready()
     {
         ProcessPriority=100; // Follow the updated animation/skeleton pose.
-        _audio=JsonDocument.Parse(FileAccess.GetFileAsString("res://Assets/Sorcerer/audio.json"));
+        _audio=JsonDocument.Parse(FileAccess.GetFileAsString(Definition.Id=="affliction"?"res://Assets/SorcererRefinement/audio.json":"res://Assets/Sorcerer/audio.json"));
         for(int i=0;i<4;i++)
         {
             var voice=new AudioStreamPlayer3D {Bus="B7Combat",VolumeDb=-18,AttenuationModel=AudioStreamPlayer3D.AttenuationModelEnum.Disabled};
@@ -41,7 +41,7 @@ public partial class SorcererAbilityPresentation : Node3D,IAbilityPresentation
     private Vector3 Hand=>Socket("vfx_hand_right");
     private Sprite3D Sprite(string stem,float size,int atlas=1,float brightness=2.5f,Node3D? parent=null)
     {
-        var texture=GD.Load<Texture2D>($"res://Assets/Sorcerer/{stem}.png");
+        var texture=GD.Load<Texture2D>($"res://Assets/{(Definition.Id=="affliction"?"SorcererRefinement":"Sorcerer")}/{stem}.png");
         var material=new ShaderMaterial {Shader=GD.Load<Shader>("res://Gameplay/SorcererParticle.gdshader")};
         material.SetShaderParameter("source_texture",texture);material.SetShaderParameter("brightness",brightness);
         var sprite=new Sprite3D {Texture=texture,Hframes=atlas,Vframes=atlas,PixelSize=size/(texture.GetWidth()/atlas),
@@ -54,12 +54,18 @@ public partial class SorcererAbilityPresentation : Node3D,IAbilityPresentation
         if(!_audio.RootElement.GetProperty("graphs").TryGetProperty(eventId.GetString()!,out var graph))return;
         var media=graph.GetProperty("media");if(media.GetArrayLength()==0)return;
         var voice=_voices[slot];voice.GlobalPosition=at;
-        voice.Stream=GD.Load<AudioStream>($"res://Assets/Sorcerer/Audio/{media[0].GetInt32()}.wav");
+        voice.Stream=GD.Load<AudioStream>($"res://Assets/{(Definition.Id=="affliction"?"SorcererRefinement":"Sorcerer")}/Audio/{media[0].GetInt32()}.wav");
         voice.Play();AudioVoicesStarted++;
     }
     public bool Begin(Combatant target,Vector3 center,float radius)
     {
         Release();
+        if(Definition.Id=="affliction")
+        {
+            Play(Definition.CastAudioEvent,2,Hand);
+            _voices[2].VolumeDb=-13;
+            var flare=Sprite("bw_flare_gray",.09f,brightness:2);flare.GlobalPosition=Hand;_effects.Add((flare,.4,.4));
+        }
         if(Definition.Id=="thunderingblast")
         {
             _charge=new Node3D {Name="ThunderingBlastCharge"};AddChild(_charge);_chargeAge=0;
@@ -79,6 +85,11 @@ public partial class SorcererAbilityPresentation : Node3D,IAbilityPresentation
     public void Channel(){StopCharge();}
     public void Impact(Vector3 center)
     {
+        if(Definition.Id=="affliction")
+        {
+            var glow=Sprite("2x2_electrical_blast_alpha",.19f,atlas:2,brightness:1.8f);glow.GlobalPosition=center;_effects.Add((glow,.7,.7));
+            return;
+        }
         if(Definition.Id!="thunderingblast")return;
         Play("Play_ability_sithinquisitor_thunderingblast_projectile",2,Hand);
         Play(Definition.ImpactAudioEvent,3,center);

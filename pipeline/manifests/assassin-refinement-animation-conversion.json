@@ -1,0 +1,43 @@
+{
+  "clips": [
+    {
+      "name": "Maul",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_saber_sp1_attack_right_5.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "VoltaicSlash",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_pole_throw_alternate_1.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Spike",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_saber_sp3_attack_right_1.jba",
+      "seconds": 1.7333333492279053,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "LowSlash",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_pole_sp1_attack_right_5.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Deflection",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_buff_pole_feint_1.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Wither",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\fp_1h_elect_instant_right_4.jba",
+      "seconds": 1.2000000476837158,
+      "sourceFps": 15.0
+    }
+  ],
+  "output": "godot\\Assets\\Assassin\\casts.glb",
+  "sha256": "9d4b420d570a407aa7a23813c631d88621a1675010684256465d40acda3b8fb3",
+  "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
+}

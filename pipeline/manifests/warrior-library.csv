@@ -1,0 +1,174 @@
+display_name,identity,id,eligibility,classification,package_count,icon,recovered_dependencies,direct_clips,audio_events,audio_media,missing_resources,missing_audio,status
+Assault,abl.flurry.sith_warrior.assault_optimize,0xE00052FF2DA43E94,Juggernaut / Marauder,active,1,assault,1,0,0,0,0,0,Package member; external presentation requires follow-up
+dual_wield,abl.player.dual_wield,0xE0000917CD244017,Marauder,passive,1,duelwield,1,0,0,0,0,0,Package member; external presentation requires follow-up
+speeder_piloting,abl.player.mount.skill.speeder_piloting,0xE000AA4F4DB324FA,Juggernaut / Marauder,passive,1,mount.speederbike.anteater.02,1,0,0,0,0,0,Package member; external presentation requires follow-up
+focus,abl.player.proficiency.armor.focus,0xE000D9E63442D848,Juggernaut,passive,1,shieldgeneratorproficiency,1,0,0,0,0,0,Package member; external presentation requires follow-up
+heavy,abl.player.proficiency.armor.heavy,0xE00019500F1DD031,Juggernaut,passive,1,heavyArmors,1,0,0,0,0,0,Package member; external presentation requires follow-up
+medium,abl.player.proficiency.armor.medium,0xE000B9F6AACF3BE8,Juggernaut / Marauder,passive,1,mediumArmors,1,0,0,0,0,0,Package member; external presentation requires follow-up
+shield,abl.player.proficiency.armor.shield,0xE000843A5F38D0D7,Juggernaut,passive,1,shieldgeneratorproficiency,1,0,0,0,0,0,Package member; external presentation requires follow-up
+empire,abl.player.proficiency.faction.empire,0xE000883E23E0EB97,Juggernaut / Marauder,passive,1,imperialbanner,1,0,0,0,0,0,Package member; external presentation requires follow-up
+lightsaber,abl.player.proficiency.weapon.lightsaber,0xE0005F7C55E3A68A,Juggernaut / Marauder,passive,1,lightsabers,1,0,0,0,0,0,Package member; external presentation requires follow-up
+trainingsaber,abl.player.proficiency.weapon.trainingsaber,0xE00008F383BE50EF,Juggernaut / Marauder,passive,1,melee.trainingsaber.a01_v01,1,0,0,0,0,0,Package member; external presentation requires follow-up
+vibrosword,abl.player.proficiency.weapon.vibrosword,0xE000813BDFF1517D,Juggernaut / Marauder,passive,1,vibroblades,1,0,0,0,0,0,Package member; external presentation requires follow-up
+Sprint,abl.player.sprint,0xE00081CEF00BAF68,Juggernaut / Marauder,active,1,sprint,1,0,0,0,0,0,Package member; external presentation requires follow-up
+Battering Assault,abl.sith_warrior.battering_assault,0xE000CD343EE72A75,Marauder,active,1,batteringAssault,36,1,1,0,0,1,Package member
+Berserk,abl.sith_warrior.berserk,0xE0001D8D4EB699BD,Marauder,active,1,berserk,25,1,5,5,0,0,Package member
+Blade Turning,abl.sith_warrior.blade_turning,0xE00084EF4D4D640B,Juggernaut,passive,1,lightsaberdeflection,5,0,0,0,0,0,Package member
+Bloodthirst,abl.sith_warrior.bloodthirst,0xE000DF30F510D45F,Marauder,active,1,bloodthirst,21,1,2,5,0,0,Package member
+Heroic Moment: Call on the Force,abl.sith_warrior.call_on_the_force,0xE000DD8AB077AEBA,Juggernaut / Marauder,active,1,callontheforce,5,0,0,0,0,0,Package member
+Channel Hatred,abl.sith_warrior.channel_hatred,0xE000EC88BF514898,Juggernaut / Marauder,active,1,channelHatred,7,0,0,0,0,0,Package member
+Chilling Scream,abl.sith_warrior.chilling_presence,0xE000C77E9DEB54A2,Juggernaut,active,1,chillingPresence,33,1,2,4,0,0,Package member
+Cloak of Pain,abl.sith_warrior.cloak_of_pain,0xE000287FB28619F0,Marauder,defensive,1,cloakofpain,30,1,4,6,1,0,Package member
+Crash,abl.sith_warrior.crash,0xE000D95E47C57A8C,,passive,0,suckerpunch,7,0,0,0,0,0,Archive record; player availability not established
+Crippling Slash,abl.sith_warrior.crippling_slash,0xE000A6AC3E08FE4A,Marauder,active,1,lowslash_old,59,1,2,3,1,0,Package member
+Disable Droid,abl.sith_warrior.disable_droid,0xE0007E49B4EE2B1D,Marauder,active,1,slicedroid,45,2,6,2,2,2,Package member
+Endure Pain,abl.sith_warrior.endure_pain,0xE0009CC7C0A6A328,Juggernaut,defensive,1,regenerate,22,1,2,6,0,0,Package member
+enrage,abl.sith_warrior.enrage,0xE000DF278B76B3E0,Juggernaut,active,1,rage,10,1,3,3,0,0,Package member
+Enraged Defense,abl.sith_warrior.enraged_defense,0xE000CA3835B92359,Juggernaut,defensive,1,identifyweakness,22,0,1,5,0,0,Package member
+enraged_defense_custom_spender,abl.sith_warrior.enraged_defense_custom_spender,0xE000A1CBEFF2B707,Juggernaut,defensive,1,identifyweakness,12,0,1,1,0,0,Package member
+Force Camouflage,abl.sith_warrior.feint,0xE000AD85B818B374,Marauder,active,1,feint,28,1,0,0,2,0,Package member
+Juyo Form,abl.sith_warrior.ferocity_form,0xE000AC093870C72C,Marauder,active,1,juyo,28,1,1,4,0,0,Package member
+Force Charge,abl.sith_warrior.force_charge,0xE00071FCC3C241C3,Juggernaut / Marauder,movement,1,forceCharge,39,0,2,0,0,2,Package member
+Force Choke,abl.sith_warrior.force_choke,0xE0006E55371C6F9B,Juggernaut / Marauder,active,1,choke,34,1,6,15,0,0,Package member
+Disruption,abl.sith_warrior.force_push,0xE000A565B70C47CC,Juggernaut / Marauder,active,1,rocketpunch,27,1,3,4,1,0,Package member
+Force Scream,abl.sith_warrior.force_scream,0xE000601A69FF7702,Juggernaut / Marauder,active,1,forcestream,36,1,3,12,1,1,Package member
+Frenzy,abl.sith_warrior.frenzy,0xE000DF807458791F,Marauder,active,1,frenzy,49,1,2,4,0,0,Package member
+Fury,abl.sith_warrior.fury,0xE00000748B03B034,Marauder,passive,1,rage,12,0,2,4,0,0,Package member
+Guard,abl.sith_warrior.guard,0xE0001778866AC78F,Juggernaut,defensive,1,sitwilekrenegade,45,0,4,0,1,4,Package member
+Intercede,abl.sith_warrior.intercede,0xE000CD9B2339BF55,Juggernaut,movement,1,swwarhardenednoble,39,0,2,9,0,0,Package member
+Intimidating Roar,abl.sith_warrior.intimidating_roar,0xE00086BFB66B0406,Juggernaut / Marauder,active,1,afraid,36,1,3,20,0,0,Package member
+Obfuscate,abl.sith_warrior.obfuscate,0xE0002CF9017892F5,Marauder,active,1,obfuscate,35,1,7,17,1,0,Package member
+Pommel Strike,abl.sith_warrior.pommel_strike,0xE000D3274F223789,Juggernaut / Marauder,conditional,1,hiltstrike,4,0,0,0,0,0,Package member
+Predation,abl.sith_warrior.predation,0xE000C8C24C810AF3,Marauder,movement,1,forcecharge_old,36,1,5,2,0,0,Package member
+Force Push,abl.sith_warrior.push,0xE000BCFF113B3B71,Juggernaut,active,1,forcethrow,28,1,3,4,1,0,Package member
+Ravage,abl.sith_warrior.ravage,0xE000082944AFA2A5,Juggernaut / Marauder,active,1,bladerush,29,0,0,0,0,0,Package member
+Soresu Form,abl.sith_warrior.resilience_form,0xE00040F0E05FEFBA,Juggernaut,active,1,soresu,37,1,3,5,0,2,Package member
+Retaliation,abl.sith_warrior.retaliation,0xE0005B16E686495E,Juggernaut / Marauder,conditional,1,vicious_slash,37,1,2,11,0,0,Package member
+riposte_passive,abl.sith_warrior.riposte_passive,0xE000A56095115F36,Juggernaut / Marauder,passive,1,vicious_slash,21,0,1,4,0,0,Package member
+Rupture,abl.sith_warrior.rupture,0xE000402645DC06B6,Marauder,active,1,rupture,59,1,2,11,0,0,Package member
+Saber Throw,abl.sith_warrior.saber_throw,0xE000E2FB8369E8DD,Juggernaut,active,1,saberThrowSith,59,3,8,21,2,2,Package member
+Saber Ward,abl.sith_warrior.saber_ward,0xE00035F29C16106E,Juggernaut / Marauder,defensive,1,lightsaberReflection,20,1,3,7,0,0,Package member
+Savage Kick,abl.sith_warrior.savage_kick,0xE0003BD300460BEC,Juggernaut / Marauder,conditional,1,spinningkick,35,0,0,0,0,0,Package member
+Shii-Cho Form,abl.sith_warrior.shiicho_form,0xE000648A3342D4C7,Juggernaut / Marauder,active,1,shiicho,36,0,3,5,0,2,Package member
+Annihilate,abl.sith_warrior.skill.annihilation.annihilate,0xE0001251C9B4F02C,Marauder,active,1,execute,36,1,1,8,0,0,Package member
+bleedout,abl.sith_warrior.skill.annihilation.bleedout,0xE000308C70A8110B,Marauder,passive,1,bloomingshot,4,0,0,0,0,0,Package member
+Cloak of Annihilation,abl.sith_warrior.skill.annihilation.cloak_of_annihilation,0xE000DA87241FA756,Marauder,passive,1,lightningdrain,4,0,0,0,0,0,Package member
+close_quarters,abl.sith_warrior.skill.annihilation.close_quarters,0xE0003172439F0587,Marauder,passive,1,force_charge,4,0,0,0,0,0,Package member
+Deadly Saber,abl.sith_warrior.skill.annihilation.deadly_saber,0xE00084CC885E8F3C,Marauder,active,1,vengefulstrike,24,1,2,0,1,0,Package member
+deep_wound,abl.sith_warrior.skill.annihilation.deep_wound,0xE0005B09D479C25E,Marauder,passive,1,rupture,4,0,0,0,0,0,Package member
+Empowerment,abl.sith_warrior.skill.annihilation.empowerment,0xE000B8B80942E576,Marauder,passive,1,regenerate,4,0,0,0,0,0,Package member
+Enraged Charge,abl.sith_warrior.skill.annihilation.enraged_charge,0xE0004E3F46D1A5B8,Marauder,passive,1,forcecharge,4,0,0,0,0,0,Package member
+Enraged Slash,abl.sith_warrior.skill.annihilation.enraged_slash,0xE0004201AEB80689,Marauder,passive,1,vampiricslash,4,0,0,0,0,0,Package member
+ferocity,abl.sith_warrior.skill.annihilation.ferocity,0xE00037800B5A8F13,,passive,0,forcecharge_old,4,0,0,0,0,0,Archive record; player availability not established
+hemmorhage,abl.sith_warrior.skill.annihilation.hemmorhage,0xE000C9E84E1CC673,Marauder,passive,1,disable,4,0,0,0,0,0,Package member
+Hungering,abl.sith_warrior.skill.annihilation.hungering,0xE000ED89F950528E,Marauder,passive,1,blood_soaked_skull,4,0,0,0,0,0,Package member
+impact,abl.sith_warrior.skill.annihilation.impact,0xE000C40658DBA330,Marauder,passive,1,forcespeed,4,0,0,0,0,0,Package member
+juyo_mastery,abl.sith_warrior.skill.annihilation.juyo_mastery,0xE000F3B323394D6A,Marauder,passive,1,juyo,4,0,0,0,0,0,Package member
+phantom,abl.sith_warrior.skill.annihilation.phantom,0xE00082C976D5BCAA,Marauder,passive,1,feint,4,0,0,0,0,0,Package member
+Pulverize,abl.sith_warrior.skill.annihilation.pulverize,0xE000C2878D2C9918,Marauder,passive,1,vampiricslash,14,0,0,0,0,0,Package member
+quick_recovery,abl.sith_warrior.skill.annihilation.quick_recovery,0xE0004E2441910A0C,,passive,0,bravado,4,0,0,0,0,0,Archive record; player availability not established
+Seeping Wound,abl.sith_warrior.skill.annihilation.seeping_wound,0xE000B9BD75B01A39,Marauder,passive,1,hamstring,6,0,0,0,0,0,Package member
+Short Fuse,abl.sith_warrior.skill.annihilation.short_fuse,0xE000BCC981CB687A,Marauder,passive,1,frenzy,4,0,0,0,0,0,Package member
+subjugation,abl.sith_warrior.skill.annihilation.subjugation,0xE000A28626640F5D,Marauder,passive,1,identifyweakness,4,0,0,0,0,0,Package member
+viciousness,abl.sith_warrior.skill.annihilation.viciousness,0xE0002871E252AE31,,passive,0,slash,4,0,0,0,0,0,Archive record; player availability not established
+Ataru Form,abl.sith_warrior.skill.carnage.ataru_form,0xE0004DA84D7EAC1F,Marauder,active,1,ataru,61,1,5,14,1,3,Package member
+ataru_mastery,abl.sith_warrior.skill.carnage.ataru_mastery,0xE0007D2153BB0A8A,Marauder,passive,1,vicioussaber,4,0,0,0,0,0,Package member
+Blood Frenzy,abl.sith_warrior.skill.carnage.blood_frenzy,0xE00026C26C734388,Marauder,passive,1,cc_attack,18,0,3,7,0,0,Package member
+cloak_of_carnage,abl.sith_warrior.skill.carnage.cloak_of_carnage,0xE00075D909E0562E,Marauder,passive,1,cloakofpain,4,0,0,0,0,0,Package member
+Defensive Forms,abl.sith_warrior.skill.carnage.defensive_forms,0xE000AD07C6D163B6,Marauder,passive,1,sitwilekrenegade,13,0,2,4,0,0,Package member
+defensive_roll,abl.sith_warrior.skill.carnage.defensive_roll,0xE0001BF6EB572257,Marauder,passive,1,cc_defensive,4,0,0,0,0,0,Package member
+Displacement,abl.sith_warrior.skill.carnage.displacement,0xE00065B5B387BB62,Marauder,passive,1,cc_stay,20,0,1,3,1,0,Package member
+dual_wield_mastery,abl.sith_warrior.skill.carnage.dual_wield_mastery,0xE00037AB7F22E571,Marauder,passive,1,dualmastery,4,0,0,0,0,0,Package member
+enraged_assault,abl.sith_warrior.skill.carnage.enraged_assault,0xE0006E455EA8D691,Marauder,passive,1,batteringAssault,4,0,0,0,0,0,Package member
+Enraged Charge,abl.sith_warrior.skill.carnage.enraged_charge,0xE000B3B1DE05AFE5,,passive,0,forcecharge,4,0,0,0,0,0,Archive record; player availability not established
+Erupting Fury,abl.sith_warrior.skill.carnage.erupting_fury,0xE0009BDEE6E7FE63,,passive,0,rage,12,0,2,4,0,0,Archive record; player availability not established
+Execute,abl.sith_warrior.skill.carnage.execute,0xE000C403EF07D146,Marauder,passive,1,spinningstrike,5,0,0,0,0,0,Package member
+focused_hatred,abl.sith_warrior.skill.carnage.focused_hatred,0xE00008BD07271901,Marauder,passive,1,cc_aggressive,4,0,0,0,0,0,Package member
+Gore,abl.sith_warrior.skill.carnage.gore,0xE000C5301429F1F0,Marauder,active,1,sweepingslash,38,1,2,11,0,0,Package member
+Massacre,abl.sith_warrior.skill.carnage.massacre,0xE00093B244620865,Marauder,active,1,overpower,41,1,2,21,0,0,Package member
+overwhelm,abl.sith_warrior.skill.carnage.overwhelm,0xE000B0B3A26EDA73,Marauder,passive,1,bladerush,4,0,0,0,0,0,Package member
+pierce,abl.sith_warrior.skill.carnage.pierce,0xE000CE83C38DB4C3,Marauder,passive,1,creepingterror,4,0,0,0,0,0,Package member
+sever,abl.sith_warrior.skill.carnage.sever,0xE0008D6DFDA79167,Marauder,passive,1,sunderingassault,4,0,0,0,0,0,Package member
+stagger,abl.sith_warrior.skill.carnage.stagger,0xE0002A9110CC0955,Marauder,passive,1,knockdown,4,0,0,0,0,0,Package member
+towering_rage,abl.sith_warrior.skill.carnage.towering_rage,0xE000BAD1EF5531F7,Marauder,passive,1,childoftheempire,4,0,0,0,0,0,Package member
+Unbound,abl.sith_warrior.skill.carnage.unbound,0xE0001A9309F18DA1,Marauder,passive,1,outerrimveteran,4,0,0,0,0,0,Package member
+Backhand,abl.sith_warrior.skill.immortal.backhand,0xE0000BB7A75C4D4C,Juggernaut,active,1,backhand,27,1,0,0,0,0,Package member
+Blade Barricade,abl.sith_warrior.skill.immortal.barricade,0xE0004DBD5B03FC0C,Juggernaut,passive,1,hailofbolts,5,0,0,0,0,0,Package member
+Battle Cry,abl.sith_warrior.skill.immortal.battle_cry,0xE00087961177E265,Juggernaut,passive,1,forcestream,5,0,0,0,0,0,Package member
+choke_mastery,abl.sith_warrior.skill.immortal.choke_mastery,0xE000963DD69C6360,Juggernaut,passive,1,choke,4,0,0,0,0,0,Package member
+Crushing Blow,abl.sith_warrior.skill.immortal.crushing_blow,0xE00070B8BC922458,Juggernaut,active,1,vampiricslash,70,1,2,9,0,1,Package member
+dark_blood,abl.sith_warrior.skill.immortal.dark_blood,0xE000DBFB8F9C4A1E,Juggernaut,passive,1,blood_soaked_skull,4,0,0,0,0,0,Package member
+Endure Pain,abl.sith_warrior.skill.immortal.endure_pain,0xE000C5C7656CAB9A,,defensive,0,regenerate,22,1,2,6,0,0,Archive record; player availability not established
+Enraged Sunder,abl.sith_warrior.skill.immortal.enraged_sunder,0xE0003A3EEB98BE3E,Juggernaut,passive,1,perforatingshot,4,0,0,0,0,0,Package member
+guard_stance,abl.sith_warrior.skill.immortal.guard_stance,0xE000474078BCFD10,Juggernaut,passive,1,lightsaberDeflection,4,0,0,0,0,0,Package member
+heavy_handed,abl.sith_warrior.skill.immortal.heavy_handed,0xE000D5E3112EC534,Juggernaut,passive,1,cc_attack,4,0,0,0,0,0,Package member
+intimidation,abl.sith_warrior.skill.immortal.intimidation,0xE00081F93119EADC,Juggernaut,passive,1,chillingpresence,4,0,0,0,0,0,Package member
+Invincible,abl.sith_warrior.skill.immortal.invincible,0xE00098F043F675E1,Juggernaut,defensive,1,cloakofpain,18,1,1,1,0,0,Package member
+lash_out,abl.sith_warrior.skill.immortal.lash_out,0xE000CC500D01E806,Juggernaut,passive,1,vicious_slash,4,0,0,0,0,0,Package member
+Quake,abl.sith_warrior.skill.immortal.quake,0xE00089DA67EB0BDE,Juggernaut,passive,1,concussionmissiles,6,0,0,0,0,0,Package member
+Revenge,abl.sith_warrior.skill.immortal.revenge,0xE00022B269C5808C,Juggernaut,passive,1,reflection,5,0,0,0,0,0,Package member
+shield_specialization,abl.sith_warrior.skill.immortal.shield_specialization,0xE000518C7CCC4E5E,Juggernaut,passive,1,shieldgeneratorproficiency,4,0,0,0,0,0,Package member
+Sonic Barrier,abl.sith_warrior.skill.immortal.sonic_barrier,0xE00070536CDC1387,Juggernaut,passive,1,drain_life,17,0,2,22,0,0,Package member
+Sweeping Fury,abl.sith_warrior.skill.immortal.sweeping_fury,0xE0008B724531CE27,Juggernaut,passive,1,whirlingassault,4,0,0,0,0,0,Package member
+thrown_gauntlet,abl.sith_warrior.skill.immortal.thrown_gauntlet,0xE000F66762EE714C,Juggernaut,passive,1,attackslowed,4,0,0,0,0,0,Package member
+unleashed,abl.sith_warrior.skill.immortal.unleashed,0xE000E8C859E55CC2,Juggernaut,passive,1,unleash,4,0,0,0,0,0,Package member
+backlash,abl.sith_warrior.skill.rage.backlash,0xE00027D1FBA77C01,Juggernaut / Marauder,passive,2,spike,4,0,0,0,0,0,Package member
+brutality,abl.sith_warrior.skill.rage.brutality,0xE000378DB244DCE1,Juggernaut / Marauder,passive,2,slash,4,0,0,0,0,0,Package member
+dark_resonance,abl.sith_warrior.skill.rage.dark_resonance,0xE000B9826334B252,Juggernaut / Marauder,passive,2,doom_aura,4,0,0,0,0,0,Package member
+decimate,abl.sith_warrior.skill.rage.decimate,0xE000A3238E9CD99A,Juggernaut / Marauder,passive,2,smash,4,0,0,0,0,0,Package member
+Dominate,abl.sith_warrior.skill.rage.dominate,0xE0004BF3A48C0355,Juggernaut / Marauder,passive,2,thunder,6,0,0,0,0,0,Package member
+Empowering Rage,abl.sith_warrior.skill.rage.empowering_rage,0xE000B6C5388EE9C4,Juggernaut,passive,1,rage,7,0,0,0,0,0,Package member
+endless_rage,abl.sith_warrior.skill.rage.endless_rage,0xE0002E8C1ED0BD35,Juggernaut,passive,1,adrenelinerush,4,0,0,0,0,0,Package member
+enraged_scream,abl.sith_warrior.skill.rage.enraged_scream,0xE0003FC8C3C12220,Juggernaut / Marauder,passive,1,forcestream,4,0,0,0,0,0,Package member
+Force Crush,abl.sith_warrior.skill.rage.force_crush,0xE0007DBC3BB4C92B,Juggernaut / Marauder,active,2,forceCrush,60,1,10,21,1,0,Package member
+gravity,abl.sith_warrior.skill.rage.gravity,0xE0005BC3DD54F902,Juggernaut,passive,1,forceactivate,4,0,0,0,0,0,Package member
+gravity_marauder,abl.sith_warrior.skill.rage.gravity_marauder,0xE000C2E2A0D08F96,Juggernaut / Marauder,passive,1,forceactivate,4,0,0,0,0,0,Package member
+huddle,abl.sith_warrior.skill.rage.huddle,0xE0001AAD39E205B8,Juggernaut,passive,1,identifyweakness,4,0,0,0,0,0,Package member
+improved_choke,abl.sith_warrior.skill.rage.improved_choke,0xE0005807F0423263,Juggernaut / Marauder,passive,2,rattatakiacolyte,4,0,0,0,0,0,Package member
+Interceptor,abl.sith_warrior.skill.rage.interceptor,0xE000E04AA8DF1902,Juggernaut / Marauder,passive,2,rocketpunch,5,0,0,0,0,0,Package member
+malice,abl.sith_warrior.skill.rage.malice,0xE000935D6B31A10F,Juggernaut / Marauder,passive,2,bhoutlaw,4,0,0,0,0,0,Package member
+Obliterate,abl.sith_warrior.skill.rage.obliterate,0xE000C1B01E7A14C0,Juggernaut / Marauder,movement,2,saberstorm,52,2,2,0,0,2,Package member
+Overpower,abl.sith_warrior.skill.rage.overpower,0xE0002F22B4F691A5,Juggernaut / Marauder,passive,2,meleedpsunlock,4,0,0,0,0,0,Package member
+Payback,abl.sith_warrior.skill.rage.payback,0xE000B21F7FFD8C65,Juggernaut / Marauder,passive,2,drainingpresence,13,0,0,0,1,0,Package member
+Berserker,abl.sith_warrior.skill.rage.relentless_marauder,0xE000F55A8099DC4E,Juggernaut / Marauder,passive,1,recklessness,7,0,0,0,0,0,Package member
+saber_strength,abl.sith_warrior.skill.rage.saber_strength,0xE0000C51160E988B,Juggernaut / Marauder,passive,2,sithwarrior,4,0,0,0,0,0,Package member
+Shockwave,abl.sith_warrior.skill.rage.shockwave,0xE000EEB258A22F39,Juggernaut / Marauder,passive,2,riflegrenade,6,0,0,0,0,0,Package member
+stabbing_pain,abl.sith_warrior.skill.rage.stabbing_pain,0xE0009FB6217A5F25,,passive,0,deflection,4,0,0,0,0,0,Archive record; player availability not established
+strangulate,abl.sith_warrior.skill.rage.strangulate,0xE000407A62E9D180,Juggernaut / Marauder,passive,2,suffocate,4,0,0,0,0,0,Package member
+unbreakable_rage,abl.sith_warrior.skill.rage.unbreakable_rage,0xE000E6B6093CF28E,,passive,0,hatred,4,0,0,0,0,0,Archive record; player availability not established
+undying,abl.sith_warrior.skill.rage.undying,0xE0008546B745D6C8,Juggernaut / Marauder,passive,1,shadowcloak,4,0,0,0,0,0,Package member
+accuracy,abl.sith_warrior.skill.vengeance.accuracy,0xE000ADA9A91109C9,Juggernaut,passive,1,linetheshot,4,0,0,0,0,0,Package member
+deadly_rage,abl.sith_warrior.skill.vengeance.deadly_rage,0xE0006370202AB1B8,Juggernaut,passive,1,counterattack,4,0,0,0,0,0,Package member
+deafening_defense,abl.sith_warrior.skill.vengeance.deafening_defense,0xE000C3DA2F33E87F,Juggernaut,passive,1,berserk,4,0,0,0,0,0,Package member
+Draining Scream,abl.sith_warrior.skill.vengeance.draining_scream,0xE0005ABA2EBDEB62,Juggernaut,passive,1,forcestream,6,0,0,0,0,0,Package member
+dreadnaught,abl.sith_warrior.skill.vengeance.dreadnaught,0xE000D7ACF6B5A038,Juggernaut,passive,1,cc_aggressive,4,0,0,0,0,0,Package member
+Eviscerate,abl.sith_warrior.skill.vengeance.furor,0xE000FAE11F3237CC,Juggernaut,passive,1,sithwarrior,6,0,0,0,0,0,Package member
+huddle,abl.sith_warrior.skill.vengeance.huddle,0xE000321DE13535A0,,passive,0,cc_defensive,4,0,0,0,0,0,Archive record; player availability not established
+impale,abl.sith_warrior.skill.vengeance.impale,0xE000A002B68C2E9E,Juggernaut,active,1,impale,52,1,1,6,0,0,Package member
+improved_sundering_assault,abl.sith_warrior.skill.vengeance.improved_sundering_assault,0xE0002F4B628663BB,Juggernaut,passive,1,sunderingAssault,4,0,0,0,0,0,Package member
+Outrage,abl.sith_warrior.skill.vengeance.outrage,0xE00012B41F7079F0,,passive,0,cc_aggressive,4,0,0,0,0,0,Archive record; player availability not established
+Pooled Hatred,abl.sith_warrior.skill.vengeance.pooled_hatred,0xE00027E8F76B3B22,Juggernaut,passive,1,damageincreased,5,0,0,0,0,0,Package member
+Rampage,abl.sith_warrior.skill.vengeance.rampage,0xE000DE3B89571C96,Juggernaut,passive,1,bladerush,14,0,0,0,0,0,Package member
+rend,abl.sith_warrior.skill.vengeance.rend,0xE0006AADA964CEC2,,passive,0,armorpiercingclip,4,0,0,0,0,0,Archive record; player availability not established
+ruin,abl.sith_warrior.skill.vengeance.ruin,0xE00052ADF65E5C94,Juggernaut,passive,1,forcequake,4,0,0,0,0,0,Package member
+Savagery,abl.sith_warrior.skill.vengeance.savagery,0xE00063F0DC118CBA,Juggernaut,passive,1,nightmare,21,0,3,4,0,0,Package member
+Shatter,abl.sith_warrior.skill.vengeance.shatter,0xE000A1BE912E9B58,Juggernaut,active,1,shatter,76,0,1,0,0,1,Package member
+Shien Form,abl.sith_warrior.skill.vengeance.shien_form,0xE0002B74B2E8CBE9,Juggernaut,active,1,shien,22,1,1,4,0,0,Package member
+single_saber_mastery,abl.sith_warrior.skill.vengeance.single_saber_mastery,0xE00068AF1CFBE746,Juggernaut,passive,1,shiicho,4,0,0,0,0,0,Package member
+stagger,abl.sith_warrior.skill.vengeance.stagger,0xE0009EA30E0FE792,Juggernaut,passive,1,knockdown,4,0,0,0,0,0,Package member
+Sundering Throw,abl.sith_warrior.skill.vengeance.sundering_throw,0xE0005875FEF24C9A,Juggernaut,passive,1,saberthrowsith,6,0,0,0,0,0,Package member
+Unstoppable,abl.sith_warrior.skill.vengeance.unstoppable,0xE000FCBEB3B8CB53,Juggernaut,passive,1,siupstartslave,35,0,3,9,0,0,Package member
+Unyielding,abl.sith_warrior.skill.vengeance.unyielding,0xE000A5B43AA6CFE3,Juggernaut,passive,1,chargedgauntlets,4,0,0,0,0,0,Package member
+vengeance,abl.sith_warrior.skill.vengeance.vengeance,0xE000DB0F4ACBA040,Juggernaut,passive,1,swsithpureblood,4,0,0,0,0,0,Package member
+Smash,abl.sith_warrior.smash,0xE000E4856D6CC510,Juggernaut / Marauder,active,1,smash,79,0,6,31,0,2,Package member
+Sundering Assault,abl.sith_warrior.sundering_assault,0xE000D07026AFE38C,Juggernaut,active,1,sunderingAssault,48,0,1,9,0,0,Package member
+Sweeping Slash,abl.sith_warrior.sweeping_slash,0xE000345C809C4538,Juggernaut / Marauder,active,1,whirlingassault,52,1,1,0,0,1,Package member
+Taunt,abl.sith_warrior.taunt,0xE000EC3975F0D2A7,Juggernaut,active,1,taunt,15,1,2,2,0,0,Package member
+Threatening Scream,abl.sith_warrior.threatening_presence,0xE000DF7E17A077C0,Juggernaut,active,1,intimidatingPresence,30,1,1,1,0,0,Package member
+Undying Rage,abl.sith_warrior.undying_rage,0xE000FF6CF259E3AA,Marauder,defensive,1,shadowcloak,21,1,3,9,0,0,Package member
+Unleash,abl.sith_warrior.unleash,0xE000DD01060B0C2F,Juggernaut / Marauder,defensive,1,unleash,22,0,0,0,0,0,Package member
+Unnatural Might,abl.sith_warrior.unnatural_might,0xE00056BB7FA575B9,Juggernaut / Marauder,active,1,swsithpureblood,29,1,2,1,0,0,Package member
+unrelenting,abl.sith_warrior.unrelenting,0xE0009EC8DC651151,,passive,0,forcecharge_old,4,0,0,0,0,0,Archive record; player availability not established
+Vicious Slash,abl.sith_warrior.vicious_slash,0xE0001C6851EA8574,Juggernaut / Marauder,active,1,slash,61,0,3,0,0,3,Package member
+Vicious Throw,abl.sith_warrior.vicious_throw,0xE000C61B1845702D,Juggernaut / Marauder,conditional,1,ambush,59,3,8,21,2,2,Package member
+Deadly Throw,abl.sith_warrior.wounding_throw,0xE000963B0124FE67,Marauder,active,1,traumaticslash,73,3,11,22,2,3,Package member

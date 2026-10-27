@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "obliterate"
+Title = "Obliterate"
+Icon = "jg_obliterate"
+StartsUnlocked = false
+Category = 0
+Damage = 24
+CooldownSeconds = 10
+Range = 0.8
+Radius = 0
+ChannelSeconds = 0
+TickSeconds = 1
+WindupSeconds = 0.2
+RecoverySeconds = 0.25
+GestureSeconds = 1.2
+StartClip = "Warrior/cb_saber_charge_4"
+LoopClip = "Warrior/cb_saber_charge_4"
+RequireGesture = true
+PresentationKind = "impact"
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/2x2_elec_blast_ring_alpha.png"
+CastAudio = ""
+ImpactAudio = ""
+SourceFx = "epp.sith_warrior.obliterate.cast_instant;epp.sith_warrior.obliterate.cast_instant_close"
+Description = "April Warrior ability; survivors adaptation."

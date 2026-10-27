@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "viciousthrow"
+Title = "Vicious Throw"
+Icon = "jg_viciousthrow"
+StartsUnlocked = false
+Category = 0
+Damage = 48
+CooldownSeconds = 9
+Range = 0.8
+Radius = 0
+ChannelSeconds = 0
+TickSeconds = 1
+WindupSeconds = 0.2
+RecoverySeconds = 0.25
+GestureSeconds = 1.2
+StartClip = "Warrior/cb_saber_throw_start"
+LoopClip = "Warrior/cb_saber_throw_start"
+RequireGesture = true
+PresentationKind = "saber"
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/2x2_elec_blast_ring_alpha.png"
+CastAudio = "res://Assets/WarriorLibrary/Audio/3382654.wav"
+ImpactAudio = "res://Assets/WarriorLibrary/Audio/539220385.wav"
+SourceFx = "epp.sith_warrior.saber_throw.projectile;epp.sith_warrior.saber_throw.throw"
+Description = "April Warrior ability; survivors adaptation."
+Slotless = true

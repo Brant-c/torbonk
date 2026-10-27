@@ -31,6 +31,7 @@ public partial class WaveDirector : Node
     public int MilestonesStarted { get; private set; }
     public bool CoreComplete => PlanetRun != null && MilestonesCompleted == PlanetRun.Milestones.Length;
     private bool _milestoneLoaded;
+    public double PressureSeconds { get; private set; }
     private double _encounterRecovery;
     public double RecoveryRemaining => _encounterRecovery;
     public bool Recovering => _encounterRecovery > 0;
@@ -60,6 +61,8 @@ public partial class WaveDirector : Node
         if(PlanetRun!=null)
         {
             Spawner.Difficulty = PlanetRun.Difficulty;
+            Spawner.ExperienceDropEvery = Math.Max(1,PlanetRun.EnemyExperienceDropEvery);
+            Spawner.Difficulty.EndlessPressure = PlanetRun.Endless;
             Spawner.PlayerLevel = () => PlayerLevel?.Invoke() ?? 1;
             Spawner.HardActiveLimit = Math.Max(1, PlanetRun.Difficulty.MaximumPopulation);
             foreach(var stage in PlanetRun.Stages)
@@ -99,7 +102,7 @@ public partial class WaveDirector : Node
 
     public void ResetWaves()
     {
-        Encounter.ResetEncounter(); Spawner.ResetSpawner(); Wave = 1; ApplyWave(); _spawnIn = 0.5; Running = true;
+        PressureSeconds=0; Encounter.ResetEncounter(); Spawner.ResetSpawner(); Wave = 1; ApplyWave(); _spawnIn = 0.5; Running = true;
         MilestonesCompleted=MilestonesStarted=0;_milestoneLoaded=false;_encounterRecovery=0;
         ReturnRampRemaining=0;TravelDestination=null;_pendingTravel=null;
         _stage=PlanetRun?.StageAt(PlayerLevel?.Invoke()??1);
@@ -125,11 +128,12 @@ public partial class WaveDirector : Node
         Spawner.ActiveLimit = PlanetRun.Difficulty.Population(level);
         SpawnInterval = PlanetRun.Difficulty.SpawnInterval(level, PlanetRun.CoreLevel);
         Spawner.HealthMultiplier = Spawner.DamageMultiplier = 1;
+        if(PlanetRun.Endless) Spawner.PlayerLevel = () => Math.Max(PlayerLevel?.Invoke() ?? 1, 1 + (int)(PressureSeconds / 24));
     }
 
     private void BeginRecovery(PlanetStage? destination)
     {
-        if (PlanetRun == null || CoreComplete) return;
+        if (PlanetRun == null || PlanetRun.Endless || CoreComplete) return;
         TravelDestination = destination;
         // A stage unlocked during a reward/recovery belongs to the same break.
         if (!Recovering) _encounterRecovery = Math.Max(0, PlanetRun.Difficulty.RecoverySeconds);
@@ -160,6 +164,7 @@ public partial class WaveDirector : Node
         if (!Spawner.Player.Alive) { Stop(); return; }
         if (PlanetRun != null)
         {
+            PressureSeconds += delta;
             ApplyPlanetPressure();
             bool recoveringBeforeStage = Recovering;
             var stage = PlanetRun.StageAt(PlayerLevel?.Invoke() ?? 1);
@@ -182,10 +187,10 @@ public partial class WaveDirector : Node
         _spawnIn -= delta;
         if (_spawnIn > 0) return;
         // One attempt per interval, with bounded retries when blocked; never catch up in a burst.
-        bool allowed = Encounter.AllowRegularSpawn(Spawner.ActiveLimit);
+        bool allowed = PlanetRun?.Endless == true || Encounter.AllowRegularSpawn(Spawner.ActiveLimit);
         bool spawned = allowed && Spawner.TrySpawn(SelectEnemy(),elite:PlanetRun==null && Wave>=EliteFirstWave && EliteEverySpawns>0 && (Spawner.Spawned+1)%EliteEverySpawns==0);
         double ramp = 1 + 3 * ReturnRampRemaining / Math.Max(.01, PlanetRun?.Difficulty.ReturnRampSeconds ?? 1);
-        _spawnIn = spawned || !allowed || Spawner.ActiveCount >= Spawner.ActiveLimit ? SpawnInterval * Encounter.CadenceMultiplier * ramp : 0.5;
+        _spawnIn = spawned || !allowed || Spawner.ActiveCount >= Spawner.ActiveLimit ? SpawnInterval * (PlanetRun?.Endless == true ? 1 : Encounter.CadenceMultiplier) * ramp : 0.5;
     }
 
     public void Stop() { Running = false; Encounter.Fail(); Spawner.Stop(); }
@@ -197,8 +202,8 @@ public partial class WaveDirector : Node
         if(_milestoneLoaded && Encounter.State==EncounterState.Defeated)
         {
             MilestonesCompleted++;_milestoneLoaded=false;
-            if(CoreComplete){Running=false;Spawner.Stop();}
-            else
+            if(CoreComplete && !PlanetRun.Endless){Running=false;Spawner.Stop();}
+            else if(!CoreComplete)
             {
                 var level = PlayerLevel?.Invoke() ?? 1;
                 BeginRecovery(_pendingTravel ?? PlanetRun.Stages.FirstOrDefault(s => s.Level > level) ?? PlanetRun.StageAt(level));

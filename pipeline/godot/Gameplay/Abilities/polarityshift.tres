@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "polarityshift"
+StartsUnlocked = false
+Range = 1.1
+ChannelSeconds = 0
+TickSeconds = 1
+RecoverySeconds = 0.18
+GestureSeconds = 0.6
+RequireGesture = true
+Title = "Polarity Shift"
+Icon = "polaritycharge"
+Description = "Talent-triggered: gain 25% faster ticks and ability recovery for 6 seconds in combat. No ability slot."
+Category = 1
+Slotless = true
+Effect = 3
+Damage = 0
+CooldownSeconds = 30
+WindupSeconds = 0
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+StartClip = "T22/Polarity"
+CastAudioEvent = "Play_ability_sithinquisitor_polaritycharge_subtlemediumgrip"

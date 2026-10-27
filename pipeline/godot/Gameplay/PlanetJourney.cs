@@ -78,11 +78,11 @@ public partial class PlanetJourney : Node3D
             _regionCheck=.4;
             // Spatial titles describe the adapted playable regions; stage enemy mixtures remain level-driven.
             var p=World.Player.GlobalPosition;
-            string region=p.X>49 && p.Z>24?"Forbidden Tombs":p.X>44 && p.Z>17?"Lower Wilds":p.Z>16?"Tomb Precinct":"Valley of the Dark Lords";
+            string region=p.X<40 && p.Z>23?"Imperial Base":p.X>49 && p.Z>24?"Forbidden Tombs":p.X>44 && p.Z>17?"Lower Wilds":p.Z>16?"Tomb Precinct":"Valley of the Dark Lords";
             if(World.RunConfiguration.MapId!="korriban")region=stage.Region;
             if(region!=Region) {Region=region;UpdateAmbience();World.Rewards!.Announce("AREA DISCOVERED",region.ToUpperInvariant());}
             int next=World.Waves!.MilestonesCompleted;
-            string objective=next<World.PlanetRun.Milestones.Length?$"NEXT TRIAL  ·  LEVEL {World.PlanetRun.Milestones[next].Level}":"TRIALS COMPLETE";
+            string objective=next<World.PlanetRun.Milestones.Length?$"NEXT TRIAL  ·  LEVEL {World.PlanetRun.Milestones[next].Level}":World.PlanetRun.Endless?"ENDLESS ONSLAUGHT":"TRIALS COMPLETE";
             if(World.RunConfiguration.MapId!="korriban")objective=objective.Replace("TRIAL","ENCOUNTER");
             _journeyLabel.Text=$"{Region.ToUpperInvariant()}\n{objective}";
             _journeyLabel.OffsetTop=World.Waves.Recovering?320:170;
@@ -103,7 +103,7 @@ public partial class PlanetJourney : Node3D
             else if(World.Waves.ReturnRampRemaining>0)
                 _journeyLabel.Text+="\nHOSTILES REGROUPING";
         }
-        if(!_won && World.Waves!.CoreComplete)
+        if(!_won && !World.PlanetRun!.Endless && World.Waves!.CoreComplete)
         {_won=true;World.Rewards!.Announce(World.RunConfiguration.MapId=="korriban"?"TRIALS OF THE SITH COMPLETE":"UNDERWORLD ENCOUNTERS COMPLETE",(Integration.MapRegistry.Find(World.RunConfiguration.MapId)?.Name.ToUpperInvariant()??"")+" SURVIVED","Choose your final reward. Restart or return to the galaxy.","boss_victory");}
     }
     public void ResetJourney()
@@ -167,6 +167,7 @@ public partial class TombCache : Node3D
     private Node3D _model=null!;
     private Label3D _label=null!;
     private MeshInstance3D _glow=null!;
+    private Sprite3D _lootIcon=null!;
     private PackedScene? _guardScene;
     private bool _guarded;
     private double _retry;
@@ -181,11 +182,18 @@ public partial class TombCache : Node3D
                 AlbedoColor=new Color(.35f,.8f,1,.8f),ShadingMode=BaseMaterial3D.ShadingModeEnum.Unshaded,
                 Transparency=BaseMaterial3D.TransparencyEnum.Alpha,DisableFog=true,BlendMode=BaseMaterial3D.BlendModeEnum.Add},
             CastShadow=GeometryInstance3D.ShadowCastingSetting.Off};AddChild(_glow);
+        float top=.22f;
+        foreach(var mesh in _model.FindChildren("*","MeshInstance3D",true,false).OfType<MeshInstance3D>()) {
+            var box=mesh.GetAabb();
+            for(int i=0;i<8;i++)top=Math.Max(top,ToLocal(mesh.ToGlobal(box.GetEndpoint(i))).Y);
+        }
+        _lootIcon=DropSymbol.Icon(DropSymbolKind.Special,.10f);AddChild(_lootIcon);
+        _lootIcon.Position=Vector3.Up*(top+.09f);_label.Position=Vector3.Up*(top+.20f);
         if(Definition.Guard!="")_guardScene=GD.Load<PackedScene>(Definition.Guard);
     }
     public override void _PhysicsProcess(double delta)
     {
-        _model.Visible=_label.Visible=_glow.Visible=Available;
+        _model.Visible=_label.Visible=_glow.Visible=_lootIcon.Visible=Available;
         if(!Available || !World.PlayerActor.Alive)return;
         float distance=World.Player.GlobalPosition.DistanceTo(GlobalPosition);
         _retry-=delta;
@@ -202,7 +210,7 @@ public partial class TombCache : Node3D
     public bool Claim()
     {
         if(!Available || !World.PlayerActor.Alive || _guardScene!=null && (!_guarded || GodotObject.IsInstanceValid(Guard) && Guard!.Alive))return false;
-        Claimed=true;_model.Visible=_label.Visible=_glow.Visible=false;
+        Claimed=true;_model.Visible=_label.Visible=_glow.Visible=_lootIcon.Visible=false;
         if(Definition.Reward=="artifact")World.Artifacts!.EnqueueCache(Definition.Id);
         else if(Definition.Reward=="heal")World.PlayerActor.Health.ApplyHealing(40);
         else World.Progression!.AddExperience(28);

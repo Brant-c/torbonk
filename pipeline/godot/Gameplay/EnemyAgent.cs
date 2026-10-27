@@ -34,13 +34,15 @@ public partial class EnemyAgent : Combatant
         build?.Attacked(this,Target.Health.Shielded);
         return Target.Health.ApplyDamage(amount*LevelDamageMultiplier*(OilRemaining>0?.75f:1)*(build?.IncomingMultiplier??1),type);
     }
-    public bool Stun(float seconds)
+    private bool _carbonized;
+    public bool Stun(float seconds,bool carbonized=true)
     {
         if(!Alive || RewardTier>=2)return false;
-        Visual?.CarbonizePose();
+        _carbonized=carbonized;
+        if(carbonized)Visual?.CarbonizePose();
         StunRemaining=Math.Max(StunRemaining,seconds*(RewardTier==1?.35:1));
         if(Visual!=null)Visual.ProcessMode=ProcessModeEnum.Disabled;if(Presentation!=null)Presentation.ProcessMode=ProcessModeEnum.Disabled;
-        PowertechCarbonite.Attach(this);
+        if(carbonized)PowertechCarbonite.Attach(this);
         return true;
     }
     public double SlowRemaining { get; private set; }
@@ -58,7 +60,7 @@ public partial class EnemyAgent : Combatant
         {
             var before=Body.GlobalPosition;var candidate=before+direction*Math.Min(0.015f,length-i*0.015f);
             if(!Navigation.CanWalk(before,candidate) || !Navigation.TryStandingPoint(candidate,out var feet))break;
-            Body.GlobalPosition=feet;
+            if(Body.MoveAndCollide(feet-before)!=null)break;
         }
         Body.Velocity=Vector3.Zero;_steerIn=0;
         _attackIn=Math.Max(_attackIn,stagger); // Resistant enemies still take damage and delay their next melee swing.
@@ -102,7 +104,7 @@ public partial class EnemyAgent : Combatant
     {
         if (!Alive || !Running) return;
         OilRemaining=Math.Max(0,OilRemaining-delta);
-        if(StunRemaining>0){Visual?.CarbonizePose();
+        if(StunRemaining>0){if(_carbonized)Visual?.CarbonizePose();
         StunRemaining=Math.Max(0,StunRemaining-delta);Body.Velocity=Vector3.Zero;
             if(StunRemaining==0){if(Visual!=null)Visual.ProcessMode=ProcessModeEnum.Inherit;if(Presentation!=null)Presentation.ProcessMode=ProcessModeEnum.Inherit;_attackIn=Math.Max(_attackIn,.35);}
             return;
@@ -113,6 +115,7 @@ public partial class EnemyAgent : Combatant
         { Body.Velocity=Vector3.Zero;Visual?.Present(Vector3.Zero,Target.GlobalPosition,delta);return; }
         if (GetNodeOrNull<BossEncounter>("BossEncounter") is { } boss && boss.Tick(delta))
         { Body.Velocity = Vector3.Zero; Visual?.Present(Vector3.Zero, Target.GlobalPosition, delta); return; }
+        if(RewardTier<2 && (Target.GetParent()?.GetParent() as GameWorld)?.Build?.Pregame.AssassinCloaked==true) {Body.Velocity=Vector3.Zero;Visual?.Present(Vector3.Zero,Target.GlobalPosition,delta);return;}
         float distance = GlobalPosition.DistanceTo(Target.GlobalPosition);
         // Detection starts pursuit; distance alone never ends an existing fight.
         _engaged |= distance <= DetectionRange;

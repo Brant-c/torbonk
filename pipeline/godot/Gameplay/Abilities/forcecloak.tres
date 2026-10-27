@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "forcecloak"
+StartsUnlocked = false
+Title = "Force Cloak"
+Icon = "force"
+Damage = 1
+CooldownSeconds = 22
+Range = 0.28
+Radius = 0.28
+Area = 0
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+WindupSeconds = 0.0
+ChannelSeconds = 0.0
+RecoverySeconds = 0.35
+GestureSeconds = 0.6
+StartClip = ""
+LoopClip = ""
+EndClip = ""
+PeriodicDamage = 0
+PeriodicDuration = 0
+PeriodicInterval = 1
+DamageType = 0
+Description = "Disengage for two seconds with 65% avoidance. Enables Spike and empowers Maul for four seconds."
+ImpactTexture = ""
+CastAudio = ""
+ImpactAudio = ""
+PresentationKind = "assassin"
+WeaponAudio = ""
+ImpactTailsOnTargetDeath = true
+RequireGesture = false
+
+Category = 1
+Effect = 3
+BuffSeconds = 0.1
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+
+SourceFx = "si_mindtrick_cast_01"

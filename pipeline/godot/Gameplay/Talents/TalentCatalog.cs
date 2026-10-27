@@ -52,6 +52,12 @@ public sealed class TalentCatalog
     private static TalentCatalog Load()
     {
         var catalog=JsonSerializer.Deserialize<TalentCatalog>(FileAccess.GetFileAsString("res://Gameplay/Talents/sorcerer.json"))!;
+        var assassin=JsonSerializer.Deserialize<TalentCatalog>(FileAccess.GetFileAsString("res://Gameplay/Talents/assassin.json"))!;
+        catalog.Trees=catalog.Trees.Concat(assassin.Trees).ToArray();
+        catalog.Talents=catalog.Talents.Concat(assassin.Talents).ToArray();
+        var juggernaut=JsonSerializer.Deserialize<TalentCatalog>(FileAccess.GetFileAsString("res://Gameplay/Talents/juggernaut.json"))!;
+        catalog.Trees=catalog.Trees.Concat(juggernaut.Trees).ToArray();
+        catalog.Talents=catalog.Talents.Concat(juggernaut.Talents).ToArray();
         if(catalog.Budget<0 || catalog.Talents.Select(t=>t.Id).Distinct().Count()!=catalog.Talents.Length ||
             catalog.Talents.Any(t=>t.Cost<1 || t.MaxRank<1 || t.RequiredPoints<0 || t.Tier<0 ||
                 !catalog.Trees.Any(tree=>tree.Id==t.Tree) || t.Prerequisites.Any(p=>p.Rank<1 ||

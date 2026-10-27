@@ -23,7 +23,10 @@ public partial class SurvivorsHud : CanvasLayer
     private int _offerLevel = -1;
     private HBoxContainer _choices=null!;
     private Label _chooseTitle=null!;
-    private bool _showingReplacement;
+    private bool _showingReplacement, _banishing;
+    private int _offerRevision=-1;
+    private HBoxContainer _choiceActions=null!;
+    private SwtorButton _banish=null!, _reroll=null!, _skip=null!;
     private SwtorButton _backChoice=null!;
     public int VisibleChoiceCount => _choices.GetChildCount();
     public bool SelectionVisible => _modal.Visible;
@@ -112,7 +115,7 @@ public partial class SurvivorsHud : CanvasLayer
         _modal.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.FullRect);
         var shade=new ColorRect {Color=new Color(0,0.015f,0.035f,0.65f),MouseFilter=Control.MouseFilterEnum.Stop};
         _modal.AddChild(shade);shade.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.FullRect);
-        _selectionLayout=new Control {Size=new Vector2(812,460), MouseFilter=Control.MouseFilterEnum.Ignore};_modal.AddChild(_selectionLayout);
+        _selectionLayout=new Control {Size=new Vector2(812,530), MouseFilter=Control.MouseFilterEnum.Ignore};_modal.AddChild(_selectionLayout);
         var frame=new SwtorPanel {CustomMinimumSize=_selectionLayout.Size};_selectionLayout.AddChild(frame);
         frame.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.FullRect);
         var selectionBox=SwtorSkin.MenuFrame();
@@ -123,6 +126,14 @@ public partial class SurvivorsHud : CanvasLayer
         _chooseTitle=SwtorSkin.Text("CHOOSE A POWER",20);_chooseTitle.AddThemeColorOverride("font_color",SwtorSkin.Blue);
         _chooseTitle.HorizontalAlignment=HorizontalAlignment.Center;body.AddChild(_chooseTitle);
         _choices=new HBoxContainer {SizeFlagsVertical=Control.SizeFlags.Fill};body.AddChild(_choices);
+        _choiceActions=new HBoxContainer {Alignment=BoxContainer.AlignmentMode.Center};body.AddChild(_choiceActions);
+        _banish=new SwtorButton {CustomMinimumSize=new Vector2(220,36),TooltipText="Select a card to remove it for this run and refill its choice. Requires an eligible replacement."};
+        _reroll=new SwtorButton {CustomMinimumSize=new Vector2(220,36),TooltipText="Replace the current choices. No charge is spent if there are too few fresh eligible options."};
+        _skip=new SwtorButton {CustomMinimumSize=new Vector2(220,36)};
+        _choiceActions.AddChild(_banish);_choiceActions.AddChild(_reroll);_choiceActions.AddChild(_skip);
+        _banish.Pressed+=()=>{_banishing=!_banishing;RefreshChoices();};
+        _reroll.Pressed+=()=>{_banishing=false;World.Progression!.Reroll();RefreshChoices();};
+        _skip.Pressed+=()=>{_banishing=false;World.Progression!.Skip();};
         _backChoice=new SwtorButton {Text="BACK",CustomMinimumSize=new Vector2(160,32),SizeFlagsHorizontal=Control.SizeFlags.ShrinkCenter};
         _backChoice.Pressed+=()=>World.Progression!.CancelReplacement();body.AddChild(_backChoice);_backChoice.Visible=false;
     }
@@ -133,8 +144,16 @@ public partial class SurvivorsHud : CanvasLayer
         var progression=World.Progression!;
         _modal.Visible=progression.PresentationPhase is ProgressionPresentationPhase.Choosing or ProgressionPresentationPhase.Confirming;
         _backChoice.Visible=progression.Replacing;
-        string heading=progression.Replacing?$"REPLACE AN ABILITY WITH {progression.ReplacementTitle.ToUpperInvariant()}":progression.SpecChoice?$"CHOOSE A TALENT · LEVEL {progression.Level}":"CHOOSE A POWER";
-        if (progression.Selecting && _offerLevel == progression.Level && _showingReplacement==progression.Replacing)
+        if(!progression.CanChoose || progression.Replacing || progression.BanishesRemaining==0)_banishing=false;
+        _choiceActions.Visible=!progression.Replacing;
+        _banish.Text=_banishing?"CANCEL BANISH":$"BANISH ({progression.BanishesRemaining}/3)";
+        _reroll.Text=$"REROLL ({progression.RerollsRemaining}/3)";
+        _skip.Text=$"SKIP ({progression.SkipsRemaining}/2) · +{progression.SkipExperience} XP";
+        _banish.Disabled=!progression.CanChoose || progression.BanishesRemaining==0;
+        _reroll.Disabled=!progression.CanChoose || progression.RerollsRemaining==0;
+        _skip.Disabled=!progression.CanChoose || progression.SkipsRemaining==0;
+        string heading=_banishing?"SELECT A POWER TO BANISH":progression.AbilityChoice?$"CHOOSE AN ABILITY · LEVEL {progression.Level}":progression.Replacing?$"REPLACE AN ABILITY WITH {progression.ReplacementTitle.ToUpperInvariant()}":progression.SpecChoice?$"CHOOSE A TALENT · LEVEL {progression.Level}":"CHOOSE A POWER";
+        if (progression.Selecting && _offerLevel == progression.Level && _offerRevision==progression.OfferRevision && _showingReplacement==progression.Replacing)
         {
             bool confirming = progression.PresentationPhase == ProgressionPresentationPhase.Confirming;
             _chooseTitle.Text = confirming ? (progression.SpecChoice?"TALENT APPLIED":"POWER APPLIED") : heading;
@@ -149,8 +168,8 @@ public partial class SurvivorsHud : CanvasLayer
         // Keep cards stable while ordinary XP changes; only rebuild at an offer boundary.
         foreach (var child in _choices.GetChildren()) { _choices.RemoveChild(child); child.QueueFree(); }
         if (!progression.Selecting) { _offerLevel = -1; return; }
-        _offerLevel = progression.Level;_showingReplacement=progression.Replacing;_chooseTitle.Text=heading;
-        _selectionLayout.Size=new Vector2(progression.Replacing?1040:812,progression.Replacing?510:460);LayoutDock();
+        _offerLevel = progression.Level;_offerRevision=progression.OfferRevision;_showingReplacement=progression.Replacing;_chooseTitle.Text=heading;
+        _selectionLayout.Size=new Vector2(progression.Replacing?1040:812,progression.Replacing?510:530);LayoutDock();
         if(progression.Replacing)
         {
             for(int i=0;i<progression.ReplacementOptions.Count;i++)
@@ -169,10 +188,10 @@ public partial class SurvivorsHud : CanvasLayer
         {
             int index=i;var definition=progression.Offers[i];
             var ability=World.Abilities.Find(definition.AbilityId);
-            string action=definition.MilestoneLevel>0 && definition.Effect==UpgradeEffect.UnlockAbility && ability!=null && !World.Abilities.CanUnlock(ability)?"REPLACE":"";
+            string action=definition.Effect==UpgradeEffect.UnlockAbility && ability!=null && !World.Abilities.CanUnlock(ability)?"REPLACE":"";
             var card=new UpgradeCard(definition,progression.Rank(definition),i+1,action:action);
             card.Disabled = !progression.CanChoose;
-            card.Pressed+=()=>progression.Choose(index);_choices.AddChild(card);
+            card.Pressed+=()=>SelectOffer(index);_choices.AddChild(card);
         }
         if(progression.PresentationPhase==ProgressionPresentationPhase.Confirming)
         {
@@ -180,6 +199,15 @@ public partial class SurvivorsHud : CanvasLayer
             for(int i=0;i<_choices.GetChildCount();i++)_choices.GetChild<UpgradeCard>(i).Confirm(i==progression.SelectedOfferIndex);
         }
         if (progression.CanChoose) _choices.GetChild<Control>(0).GrabFocus();
+    }
+
+    private void SelectOffer(int index)
+    {
+        if(_banishing)
+        {
+            _banishing=false;World.Progression!.Banish(index);RefreshChoices();
+        }
+        else World.Progression!.Choose(index);
     }
 
     public override void _Process(double delta)
@@ -201,7 +229,7 @@ public partial class SurvivorsHud : CanvasLayer
         else if (World.Progression!.CanChoose && key.PhysicalKeycode is >= Key.Key1 and <= Key.Key4)
         {
             int index=(int)key.PhysicalKeycode-(int)Key.Key1;
-            if(World.Progression.Replacing)World.Progression.Replace(index);else World.Progression.Choose(index);
+            if(World.Progression.Replacing)World.Progression.Replace(index);else SelectOffer(index);
         }
         else handled=false;
         if (handled) GetViewport().SetInputAsHandled();

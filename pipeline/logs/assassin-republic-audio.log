@@ -1,0 +1,24 @@
+wwiser v20260808 (python 3.12.14)
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\abilities_republicmelee_data.bnk
+parser: done
+names: loading names
+names: couldn't find D:\SWTORClassic\torbonk\pipeline\tools\wwnames.db3 name file
+names: done
+dumper: writting D:\SWTORClassic\torbonk\pipeline\work\assassin-refinement\republic-bank.xml
+dumper: done
+(done)
+wwiser v20260808 (python 3.12.14)
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\abilities_republicmelee_data.bnk
+parser: parsing D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\bnk2\init.bnk
+parser: done
+names: loading names
+names: couldn't find D:\SWTORClassic\torbonk\pipeline\tools\wwnames.db3 name file
+names: done
+generator: start
+generator: processing nodes
+generator: elapsed 0.121396s
+generator: WARNING! missing 49 memory audio (load more banks?)
+generator: done (created 7, 1 duplicates)
+(done)
+{"events": {"Play_ability_jediconsular_breakfree_lightsaber_trail": "4284574759", "Play_ability_jediconsular_clairvoyantstrike_flesh_normal": "4134191796", "Play_ability_jediconsular_clairvoyantstrike_friction": "1933933486", "Play_ability_jediconsular_clairvoyantstrike_hugehit": "2491658392", "Play_ability_jediconsular_clairvoyantstrike_smoke": "76682875", "Play_ability_jediconsular_deflection_shieldloop": "3339540600", "Play_ability_jediconsular_hemorrhage_spurt": "1722132242", "Play_ability_jediconsular_lowslash_hugehit": "413664939", "Stop_ability_jediconsular_breakfree_lightsaber_trail": "3480244405", "Stop_ability_jediconsular_deflection_shieldloop": "4071860194", "Stop_ability_jediconsular_hemorrhage_spurt": "4131490532"}, "missing": ["Play_ability_sithinquisitor_maul_impact", "Play_ability_sithinquisitor_spike_saber_lightning", "Play_ability_sithinquisitor_spike_saber_shock", "Play_ability_sithinquisitor_shadowcloak_loop", "Play_ability_sithinquisitor_slow_castloop", "Stop_ability_sithinquisitor_spike_saber_lightning", "Stop_ability_sithinquisitor_slow_castloop", "Play_ability_sithinquisitor_wither_aoe", "Play_ability_sithinquisitor_deflection_cast", "Play_ability_sithinquisitor_shadowcloak_cast", "Play_ability_sithinquisitor_shadowcloak_activate"], "media": 49}
+Remaining missing ['Stop_ability_jediconsular_deflection_shieldloop', 'Stop_ability_jediconsular_breakfree_lightsaber_trail', 'Play_ability_jediconsular_clairvoyantstrike_hugehit', 'Stop_ability_jediconsular_hemorrhage_spurt']

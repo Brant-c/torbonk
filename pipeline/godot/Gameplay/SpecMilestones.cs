@@ -18,7 +18,7 @@ public static class SpecMilestones
     };
     private static Choice[] Choices(string id)=>id=="assassin"?Assassin:Array.Empty<Choice>();
     public static string SpecFor(string classId,string ability)=>Choices(classId).FirstOrDefault(c=>c.Ability==ability)?.Spec??"";
-    public static bool Reserved(GameWorld world,UpgradeDefinition upgrade)=>upgrade.Effect==UpgradeEffect.UnlockAbility && Choices(world.RunConfiguration.AdvancedClassId).Any(c=>c.Ability==upgrade.AbilityId);
+    public static bool Reserved(GameWorld world,UpgradeDefinition upgrade)=>!(world.RunConfiguration.AdvancedClassId=="assassin" && upgrade.AbilityId is "creepingterror" or "deathfield" or "discharge" or "spike") && !(world.RunConfiguration.AdvancedClassId=="assassin" && upgrade.AbilityId=="creepingterror" && world.Build.Pregame.Mechanic("early_terror")>0) && upgrade.Effect==UpgradeEffect.UnlockAbility && Choices(world.RunConfiguration.AdvancedClassId).Any(c=>c.Ability==upgrade.AbilityId);
     public static IEnumerable<UpgradeDefinition> Catalog(GameWorld world)
     {
         foreach(var choice in Choices(world.RunConfiguration.AdvancedClassId))

@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "forcechoke"
+Title = "Force Choke"
+Icon = "jg_forcechoke"
+StartsUnlocked = false
+Category = 1
+Damage = 7
+CooldownSeconds = 15
+Range = 0.65
+Radius = 0
+ChannelSeconds = 2.4
+TickSeconds = 0.8
+WindupSeconds = 0.2
+RecoverySeconds = 0.25
+GestureSeconds = 1.2
+StartClip = "Warrior/fp_1h_elect_instant_right_4"
+LoopClip = "Warrior/fp_1h_elect_instant_right_4"
+RequireGesture = true
+PresentationKind = "impact"
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/2x2_elec_blast_ring_alpha.png"
+CastAudio = "res://Assets/WarriorLibrary/Audio/6103524.wav"
+ImpactAudio = "res://Assets/WarriorLibrary/Audio/345684701.wav"
+SourceFx = "epp.sith_warrior.force_choke.cast_instant;epp.sith_warrior.force_choke.channel_loop;epp.sith_warrior.force_choke.choke_start;epp.sith_warrior.force_choke.choke_tick;epp.sith_warrior.force_choke.restore_target_weapon"
+Description = "April Warrior ability; survivors adaptation."
+SlowFactor = 0
+SlowSeconds = 3

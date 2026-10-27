@@ -37,7 +37,7 @@ public partial class RunBuildEffects : Node
             foreach(var actor in GetTree().GetNodesInGroup(Combatant.GroupName).OfType<Combatant>())
                 if(World.PlayerActor.IsHostileTo(actor))actor.Health.VulnerabilitySeconds=0;
     }
-    public int Talent(string key) => World.Progression?.Upgrades.Where(u=>u.Mechanic==key && (!u.Id.StartsWith("powertech_") || ((u.AbilityId=="" || World.Abilities.Find(u.AbilityId)?.Unlocked==true) && (u.RequiresUpgrade=="" || World.Progression.Ranks.GetValueOrDefault(u.RequiresUpgrade)>0)))).Sum(u=>World.Progression.Rank(u))??0;
+    public int Talent(string key) => (Pregame?.Mechanic(key)??0)+(World.Progression?.Upgrades.Where(u=>u.Mechanic==key && (!u.Id.StartsWith("powertech_") || ((u.AbilityId=="" || World.Abilities.Find(u.AbilityId)?.Unlocked==true) && (u.RequiresUpgrade=="" || World.Progression.Ranks.GetValueOrDefault(u.RequiresUpgrade)>0)))).Sum(u=>World.Progression.Rank(u))??0);
     public float Item(string key) => key=="health_cost"?World.Artifacts?.Equipped.Sum(a=>a.HealthCost)??0:World.Artifacts?.Equipped.Where(a=>a.Effect==key).Sum(a=>a.Amount)??0;
     public float DamageMultiplier(AutomaticAbility ability,Combatant target)
     {
@@ -70,11 +70,13 @@ public partial class RunBuildEffects : Node
     public float SpeedMultiplier => (_haste>0?1.3f:1)*(_buff>0?1+_speedBuff:1)*(1+Item("stride"));
     public bool Buffed => _buff>0;
     public void ApplyBuff(AbilityDefinition d)
-    { _buff=d.BuffSeconds;_damageBuff=d.DamageBuff;_speedBuff=d.SpeedBuff;World.Progression?.Recalculate(); }
+    { if(World.RunConfiguration.AdvancedClassId=="assassin" && d.Id is "forcecloak" or "deflection")return;
+        _buff=d.BuffSeconds;_damageBuff=d.DamageBuff;_speedBuff=d.SpeedBuff;World.Progression?.Recalculate(); }
     /// <summary>Per-hit class mechanics that need the ability, not just the target.</summary>
     public void AbilityHit(AutomaticAbility ability,Combatant target)
     {
         Pregame?.DirectHit(ability,target);
+        if(ability.Presentation is AssassinAbilityPresentation original)original.TargetImpact(target);
         if(ability.Definition.IsBasicAttack)return;
         if(ability.Definition.Id=="flameburst" && Talent("accelerant")>0 && World.Abilities.Find("incendiarymissile") is {} burn)World.Periodic.Extend(burn,target,1,8);
         if(ability.Definition.Id=="carbonize" && target is EnemyAgent frozen && frozen.Stun(3) && Talent("reinforced_shielding")>0){_reinforced=4;_reinforcedReduction=Math.Min(.25f,_reinforcedReduction+.05f);}
@@ -103,7 +105,8 @@ public partial class RunBuildEffects : Node
             _marks.Remove(dead.GetInstanceId());
             foreach(var near in World.Targeting.InArea(dead.GlobalPosition,0.2f,0.2f,true).Where(c=>c!=dead).ToArray())near.Health.ApplyDamage(20,DamageType.Energy);
         }
-        if(Talent("last_gasp")>0)
+        if(World.RunConfiguration.AdvancedClassId=="sorcerer" || World.Build.Pregame.Mechanic("assassin_transfer")>0)World.Periodic.TransferOwned(World.PlayerActor,dead);
+        if(World.RunConfiguration.AdvancedClassId!="sorcerer" && Talent("last_gasp")>0)
             foreach(var source in World.Periodic.On(dead))Spread(source,dead);
     }
     private void Spread(AutomaticAbility source,Combatant from)
@@ -118,11 +121,15 @@ public partial class RunBuildEffects : Node
         Pregame?.Hit(ability);
         if(ability.Definition.Id=="storm" && Talent("storm_slow")>0 && target is EnemyAgent enemy)enemy.Slow(0.65f,1.4f);
         if(ability.Definition.Id=="deathfield" && Item("vulnerability")>0 && target.Alive)target.Health.VulnerabilitySeconds=4;
-        if(ability.Definition.Id=="lightning" && Talent("fork")>0)
+        if(ability.Definition.Id is "lightning" or "lightningstrike" && Talent("fork")>0)
         {
             var excluded=primary.Select(c=>c.GetInstanceId()).ToHashSet();
             var next=World.Targeting.ChainTarget(target.AimPosition,0.3f,excluded);
-            if(next!=null)next.Health.ApplyDamage(ability.DamagePerTick*0.45f*DamageMultiplier(ability,next),ability.Definition.DamageType);
+            if(next!=null)
+            {
+                next.Health.ApplyDamage(ability.DamagePerTick*0.45f*DamageMultiplier(ability,next),ability.Definition.DamageType);
+                if(ability.Presentation is SorcererRefinementPresentation original)original.Arc(target.AimPosition,next.AimPosition);
+            }
         }
         if(ability.Definition.Id is "lightning" or "chain" && Item("conduit")>0 && _conduitLock<=0)
         {

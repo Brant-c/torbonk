@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "animations": 32,
+  "singleSaber": 9,
+  "dualSaber": 10,
+  "requiredAbilityPackageMembership": 14,
+  "bufferViews": 6549,
+  "checks": [
+    "GLB header and bounds",
+    "all expected clips exported",
+    "bmnnew skin retained",
+    "strict finite animation time sequences",
+    "requested roster package membership"
+  ]
+}

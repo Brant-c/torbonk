@@ -1,0 +1,5308 @@
+[
+  {
+    "identity": {
+      "id": "0xE000BE3ADE86DF6C",
+      "decimalId": "16141110224546619244",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.darkness.dark_ward",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/244.bkt",
+        "uncompressedOffset": 245060,
+        "blockLength": 546,
+        "resourceSha256": "2292b9f1021610e45b9913267008ff4e42c5c68455cde780e6de64446373a359"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 18,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 15
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 4,
+          "label": "aiAbilityBuff",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "swchildoftheempire"
+      },
+      {
+        "key": "ablCooldownTime",
+        "path": "/ablCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 12
+      },
+      {
+        "key": "ablForceCost",
+        "path": "/ablForceCost",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 10
+      },
+      {
+        "key": "ablTargetArc",
+        "path": "/ablTargetArc",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 360
+      },
+      {
+        "key": "ablCombatMode",
+        "path": "/ablCombatMode",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 2,
+          "label": "staCombatModeMelee",
+          "enum": {
+            "id": "0x400000002264A589",
+            "decimalId": "4611686019004409225",
+            "kind": "DomEnum",
+            "name": "staCombatModeType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 10608,
+              "blockLength": 140,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE000BE3ADE86DF6C"
+      },
+      {
+        "key": "ablCooldownTimerSpecs",
+        "path": "/ablCooldownTimerSpecs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE000502C4CBB9D88",
+            "decimalId": "16140989215692004744",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.darkness.dark_ward/0/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/244.bkt",
+              "uncompressedOffset": 103428,
+              "blockLength": 286,
+              "resourceSha256": "2292b9f1021610e45b9913267008ff4e42c5c68455cde780e6de64446373a359"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 3,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE00048DD09417C64",
+      "decimalId": "16140981178676116580",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.darkness.lightning_reflexes",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/80.bkt",
+        "uncompressedOffset": 94788,
+        "blockLength": 590,
+        "resourceSha256": "b708ba47aac8cb18009acdd4803d870059ca4032786517e178e96b96c27852a2"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "field_400000003D2E41E7",
+        "path": "/field_400000003D2E41E7",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "ablIsPassive",
+        "path": "/ablIsPassive",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "force_charge"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsHidden",
+        "path": "/ablIsHidden",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE00048DD09417C64"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE0002904D6BD5FB7",
+            "decimalId": "16140946165255200695",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.darkness.lightning_reflexes/0/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/195.bkt",
+              "uncompressedOffset": 49644,
+              "blockLength": 218,
+              "resourceSha256": "210c209fb7df3af22dc1308355e92adb397b8d5bc63c5cdd843484c1fcbe0a34"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 4,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE00041D6BD942828",
+      "decimalId": "16140973455055267880",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.darkness.shroud_of_darkness",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/380.bkt",
+        "uncompressedOffset": 75964,
+        "blockLength": 412,
+        "resourceSha256": "309c8a67be04cab96a57c6d530fd6a1e3e3a53ecc44609afdfb437d4a0d05ad7"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "field_400000003D2E41E7",
+        "path": "/field_400000003D2E41E7",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "ablIsPassive",
+        "path": "/ablIsPassive",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "doom_aura"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsHidden",
+        "path": "/ablIsHidden",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE00041D6BD942828"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE0002478A46D4488",
+            "decimalId": "16140941165069157512",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.darkness.shroud_of_darkness/0/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/12.bkt",
+              "uncompressedOffset": 38204,
+              "blockLength": 218,
+              "resourceSha256": "b7036aea8156034e96af5405e2d89b37e5243102cfb614c8a601ca717c448b95"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000D23C0907A4EF",
+      "decimalId": "16141132219787224303",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.darkness.premonition",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/303.bkt",
+        "uncompressedOffset": 244996,
+        "blockLength": 425,
+        "resourceSha256": "61c5033906ac66c61744f158f00ca0ccd00666d4c4a31a0f092f47a6cc62367d"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "field_400000003D2E41E7",
+        "path": "/field_400000003D2E41E7",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "ablIsPassive",
+        "path": "/ablIsPassive",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "unleash"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsHidden",
+        "path": "/ablIsHidden",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE000D23C0907A4EF"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE0004222DBC720E7",
+            "decimalId": "16140973781979439335",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.darkness.premonition/0/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/335.bkt",
+              "uncompressedOffset": 70028,
+              "blockLength": 210,
+              "resourceSha256": "0ea198504a37849fd2098886e94cc06ae7d3552e6a189cbdad360d404d01885b"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000DF66C19F2BE7",
+      "decimalId": "16141146696923950055",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.deception.dark_embrace",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/55.bkt",
+        "uncompressedOffset": 269060,
+        "blockLength": 472,
+        "resourceSha256": "21cbb2a88bab9caace45df28d6b6038f22d1438ca3d916351a6d394040de33c1"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "field_400000003D2E41E7",
+        "path": "/field_400000003D2E41E7",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "ablIsPassive",
+        "path": "/ablIsPassive",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "rattatakiacolyte"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsHidden",
+        "path": "/ablIsHidden",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE000DF66C19F2BE7"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE00079218F904FA1",
+            "decimalId": "16141034249545338785",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.deception.dark_embrace/0/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/285.bkt",
+              "uncompressedOffset": 169588,
+              "blockLength": 210,
+              "resourceSha256": "0e02d41bc8e7f1c7cc47cf05af9411c020362e1967e7ebcc8abe0a73cafdef89"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE0001493809C13C5",
+      "decimalId": "16140923688246318021",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.darkness.harnessed_darkness",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/21.bkt",
+        "uncompressedOffset": 23572,
+        "blockLength": 697,
+        "resourceSha256": "ecc4b63006f653626d4e57f482e3cb8b6175e3ad9a4bd78af7b59ba075c28c30"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "field_400000003D2E41E7",
+        "path": "/field_400000003D2E41E7",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "ablIsPassive",
+        "path": "/ablIsPassive",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "cloakofpain"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsHidden",
+        "path": "/ablIsHidden",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE0001493809C13C5"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 4,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE000DA0261678D8C",
+            "decimalId": "16141140768254823820",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.darkness.harnessed_darkness/3/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/320.bkt",
+              "uncompressedOffset": 255436,
+              "blockLength": 218,
+              "resourceSha256": "d4dcb0290c3e593b7c314fb647ba0c8ef9d381dc6f306bede81d0873ae57cbe2"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 8,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE00083179CD52E5F",
+      "decimalId": "16141045201934560863",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.darkness.hollow",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/363.bkt",
+        "uncompressedOffset": 147996,
+        "blockLength": 545,
+        "resourceSha256": "ec84e4c4d3149a227b421f7d96d7e22b6b2d3acba837632356e4148a1fdc53ed"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "field_400000003D2E41E7",
+        "path": "/field_400000003D2E41E7",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "ablIsPassive",
+        "path": "/ablIsPassive",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "drain_life"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsHidden",
+        "path": "/ablIsHidden",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE00083179CD52E5F"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE0000047E97950CF",
+            "decimalId": "16140901373355577551",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.darkness.hollow/0/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/51.bkt",
+              "uncompressedOffset": 36,
+              "blockLength": 205,
+              "resourceSha256": "09cb2eb507c0bec26f0c3b241631ddfcf162090ff49c4077c990502f63e77766"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 6,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE0001E15DD20D045",
+      "decimalId": "16140934143748919365",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.deception.duplicity",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/365.bkt",
+        "uncompressedOffset": 27460,
+        "blockLength": 637,
+        "resourceSha256": "9adffbb4dd6a9f387de533384ecb7135a0d150952e6d6ee1e4d80bf2b1d610ed"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "field_400000003D2E41E7",
+        "path": "/field_400000003D2E41E7",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "ablIsPassive",
+        "path": "/ablIsPassive",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "sunderingassault"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsHidden",
+        "path": "/ablIsHidden",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE0001E15DD20D045"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 4,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE0007BBA8AB14FF7",
+            "decimalId": "16141037105616867319",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.deception.duplicity/0/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/319.bkt",
+              "uncompressedOffset": 148404,
+              "blockLength": 210,
+              "resourceSha256": "6dc9e5f9c59701a03bb7cb6c57d9067aa24ba9cb9aff1c801093d57c94b276e3"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 10,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000E65B86CF6802",
+      "decimalId": "16141154345274009602",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.deception.surging_charge",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/102.bkt",
+        "uncompressedOffset": 276844,
+        "blockLength": 675,
+        "resourceSha256": "7565d1bad3436422c3a8ffd4b56dd0df097fccae19f2b74d6aa8439f7b4ea335"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 4,
+          "label": "aiAbilityBuff",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "novaSaber"
+      },
+      {
+        "key": "ablForceCost",
+        "path": "/ablForceCost",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 100
+      },
+      {
+        "key": "ablTargetArc",
+        "path": "/ablTargetArc",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 180
+      },
+      {
+        "key": "ablCombatMode",
+        "path": "/ablCombatMode",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 2,
+          "label": "staCombatModeMelee",
+          "enum": {
+            "id": "0x400000002264A589",
+            "decimalId": "4611686019004409225",
+            "kind": "DomEnum",
+            "name": "staCombatModeType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 10608,
+              "blockLength": 140,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE000E65B86CF6802"
+      },
+      {
+        "key": "ablCooldownTimerSpecs",
+        "path": "/ablCooldownTimerSpecs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 4,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE0002FEA05C3EE21",
+            "decimalId": "16140953746661436961",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.deception.surging_charge/2/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/461.bkt",
+              "uncompressedOffset": 55300,
+              "blockLength": 419,
+              "resourceSha256": "91a7ead62d35f92a4a45b186f2596e9427d68bc20d3f254d95f4cb606408b4f0"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 9,
+        "value": null
+      },
+      {
+        "key": "ablModalGroup",
+        "path": "/ablModalGroup",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "6352531585477573755",
+          "bits": "0x5828B9D1E0D6FC7B"
+        }
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE0006923F6D15B60",
+      "decimalId": "16141016667681545056",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.deception.induction",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/56.bkt",
+        "uncompressedOffset": 123716,
+        "blockLength": 645,
+        "resourceSha256": "0dc6518e6f4fbca57cfa0f7c52534c97a50c7ab594758866053540beb693fc0c"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "field_400000003D2E41E7",
+        "path": "/field_400000003D2E41E7",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "ablIsPassive",
+        "path": "/ablIsPassive",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "force_crush"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsHidden",
+        "path": "/ablIsHidden",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE0006923F6D15B60"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 3,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE000A0C33C729E6C",
+            "decimalId": "16141077824889069164",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.deception.induction/1/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/164.bkt",
+              "uncompressedOffset": 178700,
+              "blockLength": 210,
+              "resourceSha256": "444dd4bb319142550a2259de70cf678c7dfc3e85f3bd6b71f1c4bfa4fdb3eecc"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 7,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE0006E993934FF6C",
+      "decimalId": "16141022668864683884",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.deception.saber_conduit",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/384.bkt",
+        "uncompressedOffset": 128220,
+        "blockLength": 513,
+        "resourceSha256": "2ba066edf757f342874e6062978381617448a0ca3daf6c75cbbb15f3a3f903e8"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "field_400000003D2E41E7",
+        "path": "/field_400000003D2E41E7",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "ablIsPassive",
+        "path": "/ablIsPassive",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "chargedsaber"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsHidden",
+        "path": "/ablIsHidden",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE0006E993934FF6C"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE000D07CEE2599BA",
+            "decimalId": "16141130299485821370",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.deception.saber_conduit/1/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/370.bkt",
+              "uncompressedOffset": 234988,
+              "blockLength": 213,
+              "resourceSha256": "155c69b1f89bd3908d875e561705f94f4d00304fe141088c2e730ff8b383ff65"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 4,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE00003922B3BEEF6",
+      "decimalId": "16140904990821314294",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.madness.chain_shock",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/294.bkt",
+        "uncompressedOffset": 1980,
+        "blockLength": 449,
+        "resourceSha256": "2672b8394b3f2b4390f34a288b1711d7eb5aa00b87d29c4b081e008d67436826"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "field_400000003D2E41E7",
+        "path": "/field_400000003D2E41E7",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "ablIsPassive",
+        "path": "/ablIsPassive",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "thundering_blast"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsHidden",
+        "path": "/ablIsHidden",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE00003922B3BEEF6"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE000E61716A52FC3",
+            "decimalId": "16141154051334418371",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.madness.chain_shock/0/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/371.bkt",
+              "uncompressedOffset": 300220,
+              "blockLength": 210,
+              "resourceSha256": "6fbae3924e3d147c42ac2545fc2239292ea084b35311871de38d5b50597b2426"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000B0F352B3B998",
+      "decimalId": "16141095623606909336",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.deception.darkswell",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/336.bkt",
+        "uncompressedOffset": 203228,
+        "blockLength": 572,
+        "resourceSha256": "080c3f45ad91709e15766bc6f197808531e340b380838d5290a1faa98bd002ca"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "field_400000003D2E41E7",
+        "path": "/field_400000003D2E41E7",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "ablIsPassive",
+        "path": "/ablIsPassive",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "disappear"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsHidden",
+        "path": "/ablIsHidden",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE000B0F352B3B998"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 3,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE00042CC34CC8463",
+            "decimalId": "16140974509322437731",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.deception.darkswell/2/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/231.bkt",
+              "uncompressedOffset": 89188,
+              "blockLength": 210,
+              "resourceSha256": "1930295a18e6d304e74332affcbf7949829042da4a53f880451112d306e12d55"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 6,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE00089E38AB081B6",
+      "decimalId": "16141052674873262518",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.madness.creeping_terror",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/18.bkt",
+        "uncompressedOffset": 151084,
+        "blockLength": 649,
+        "resourceSha256": "e4c3c2b2475db158ac8adeeae2f776582d71b5917d338ecd2207c57a5fb00cc5"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 20,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 17
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 5,
+          "label": "aiAbilityDebuff",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "creepingTerror"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablCooldownTime",
+        "path": "/ablCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 9
+      },
+      {
+        "key": "ablForceCost",
+        "path": "/ablForceCost",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 20
+      },
+      {
+        "key": "ablMaxRange",
+        "path": "/ablMaxRange",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 3
+      },
+      {
+        "key": "ablTargetArc",
+        "path": "/ablTargetArc",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 180
+      },
+      {
+        "key": "ablTargetRule",
+        "path": "/ablTargetRule",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 2,
+          "label": "tgtRuleAttackable",
+          "enum": {
+            "id": "0x80000000007A71C9",
+            "decimalId": "9223372036862800329",
+            "kind": "DomEnum",
+            "name": "tgtTargettingRule",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 131872,
+              "blockLength": 388,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_4000000197D6D791",
+        "path": "/field_4000000197D6D791",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE00089E38AB081B6"
+      },
+      {
+        "key": "ablCooldownTimerSpecs",
+        "path": "/ablCooldownTimerSpecs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 4,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 3,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE000ADF4E2189E37",
+            "decimalId": "16141092331772747319",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.madness.creeping_terror/0/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/319.bkt",
+              "uncompressedOffset": 209348,
+              "blockLength": 291,
+              "resourceSha256": "6dc9e5f9c59701a03bb7cb6c57d9067aa24ba9cb9aff1c801093d57c94b276e3"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 13,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000EE2288E27B76",
+      "decimalId": "16141162896588700534",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.madness.claws_of_decay",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/34.bkt",
+        "uncompressedOffset": 268980,
+        "blockLength": 434,
+        "resourceSha256": "ad8e7176c983a1915de091091cfb3fd1100e4c8ce16ff386ac9fecd6b2ee1fba"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "field_400000003D2E41E7",
+        "path": "/field_400000003D2E41E7",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "ablIsPassive",
+        "path": "/ablIsPassive",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "animalinsectclaw"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsHidden",
+        "path": "/ablIsHidden",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE000EE2288E27B76"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE000DF9771E8E165",
+            "decimalId": "16141146906040000869",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.madness.claws_of_decay/0/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/369.bkt",
+              "uncompressedOffset": 262036,
+              "blockLength": 210,
+              "resourceSha256": "fd3a033010bed03a2b677ee254271428169ace5c6d50053e659ce0a8dd347290"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE00060BD0E1944C6",
+      "decimalId": "16141007429597480134",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.madness.parasitism",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/134.bkt",
+        "uncompressedOffset": 119196,
+        "blockLength": 489,
+        "resourceSha256": "e50060bfdc4fbf1f32fd5a9f7282c27a76d46e8ff102ab90fbb86c485313fcad"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "field_400000003D2E41E7",
+        "path": "/field_400000003D2E41E7",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "ablIsPassive",
+        "path": "/ablIsPassive",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "animalinsectmouthpart"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsHidden",
+        "path": "/ablIsHidden",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE00060BD0E1944C6"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE00003343F53C9CE",
+            "decimalId": "16140904587431496142",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.madness.parasitism/0/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/142.bkt",
+              "uncompressedOffset": 2836,
+              "blockLength": 209,
+              "resourceSha256": "1dd04ba3043ef3a83340ceacb4711f043036f263affede7de414a4e15fa6333f"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 6,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000F4CA893CA40A",
+      "decimalId": "16141170215218881546",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.madness.deathmark",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/46.bkt",
+        "uncompressedOffset": 306516,
+        "blockLength": 628,
+        "resourceSha256": "361fff19e1c4206c83c4670215aa61d3b2e1b49358c58fc83d6849c179a5f28f"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "field_400000003D2E41E7",
+        "path": "/field_400000003D2E41E7",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "ablIsPassive",
+        "path": "/ablIsPassive",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "alienskull"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsHidden",
+        "path": "/ablIsHidden",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE000F4CA893CA40A"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 3,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE0003450DA8DB2A9",
+            "decimalId": "16140958586364605097",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.madness.deathmark/0/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/97.bkt",
+              "uncompressedOffset": 67844,
+              "blockLength": 207,
+              "resourceSha256": "b6ebcd42f9aec1ab10fa368764570d379fc59f495106193d5cb887b8ba32e47d"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 9,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE0002D7135E659D6",
+      "decimalId": "16140951028754700758",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.madness.raze",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/258.bkt",
+        "uncompressedOffset": 43572,
+        "blockLength": 639,
+        "resourceSha256": "27cfc220d68116157f5c83a7000de8198997181b5783f744df082c0a82d5ecb1"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "field_400000003D2E41E7",
+        "path": "/field_400000003D2E41E7",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "ablIsPassive",
+        "path": "/ablIsPassive",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "rupture"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsHidden",
+        "path": "/ablIsHidden",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE0002D7135E659D6"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 4,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE000A1191E630334",
+            "decimalId": "16141078193751917364",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.madness.raze/2/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/364.bkt",
+              "uncompressedOffset": 201036,
+              "blockLength": 202,
+              "resourceSha256": "69f9bffdc426c23551775151383e78d1a09c0ac9b248fa3f376c7d472c105765"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 6,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000B6A548225F23",
+      "decimalId": "16141101885491928867",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.madness.death_field",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/367.bkt",
+        "uncompressedOffset": 216412,
+        "blockLength": 578,
+        "resourceSha256": "98327055df8c292d85c38ec9c89153da982aaaa7d8fbd7dde805f9c586070df0"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 22,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 19
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "deathfield"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablCooldownTime",
+        "path": "/ablCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 15
+      },
+      {
+        "key": "ablForceCost",
+        "path": "/ablForceCost",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 50
+      },
+      {
+        "key": "ablMaxRange",
+        "path": "/ablMaxRange",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 3
+      },
+      {
+        "key": "ablTargetArc",
+        "path": "/ablTargetArc",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 360
+      },
+      {
+        "key": "ablTargetRule",
+        "path": "/ablTargetRule",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 9,
+          "label": "tgtRuleGround",
+          "enum": {
+            "id": "0x80000000007A71C9",
+            "decimalId": "9223372036862800329",
+            "kind": "DomEnum",
+            "name": "tgtTargettingRule",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 131872,
+              "blockLength": 388,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablCombatMode",
+        "path": "/ablCombatMode",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 2,
+          "label": "staCombatModeMelee",
+          "enum": {
+            "id": "0x400000002264A589",
+            "decimalId": "4611686019004409225",
+            "kind": "DomEnum",
+            "name": "staCombatModeType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 10608,
+              "blockLength": 140,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_4000000197D6D791",
+        "path": "/field_4000000197D6D791",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE000B6A548225F23"
+      },
+      {
+        "key": "ablCooldownTimerSpecs",
+        "path": "/ablCooldownTimerSpecs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 3,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE000309AFF4FB07B",
+            "decimalId": "16140954506762367099",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.madness.death_field/6/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/99.bkt",
+              "uncompressedOffset": 52364,
+              "blockLength": 309,
+              "resourceSha256": "6c2bf4dd2d5c80f2ec4d09a8f197cb380bdabd0108ae33a5740e31b5e11869bd"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 7,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE0003D0FCB97C205",
+      "decimalId": "16140968202545381893",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.madness.haunted_dreams",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/393.bkt",
+        "uncompressedOffset": 54596,
+        "blockLength": 516,
+        "resourceSha256": "b7602b9f7e8e8e1a50d7aea873f933b56013c0f4c96e2c6f5b4489f4dad3c67f"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 17,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 14
+      },
+      {
+        "key": "field_400000003D2E41E7",
+        "path": "/field_400000003D2E41E7",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "ablIsPassive",
+        "path": "/ablIsPassive",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 10,
+          "label": "aiAbilityNone",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "nightmare"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsHidden",
+        "path": "/ablIsHidden",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE0003D0FCB97C205"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE0008A857D894ADC",
+            "decimalId": "16141053370437290716",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.madness.haunted_dreams/0/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/216.bkt",
+              "uncompressedOffset": 145196,
+              "blockLength": 210,
+              "resourceSha256": "647273bdbaf0ff7918e9e84d3b7a1ce68a7f9fc7fa693aca6a4942aafc3c1a3c"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE00000D6D2FBE452",
+      "decimalId": "16140901987158582354",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.deception.low_slash",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/354.bkt",
+        "uncompressedOffset": 1388,
+        "blockLength": 601,
+        "resourceSha256": "3725baa3aeeda171c41d7c5a76b0181e2aeb4b54c5ddf987af536a60fc5803d1"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 21,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 18
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "lowslash"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablCooldownTime",
+        "path": "/ablCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 15
+      },
+      {
+        "key": "ablForceCost",
+        "path": "/ablForceCost",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 30
+      },
+      {
+        "key": "ablMaxRange",
+        "path": "/ablMaxRange",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 0.4
+      },
+      {
+        "key": "ablTargetArc",
+        "path": "/ablTargetArc",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 180
+      },
+      {
+        "key": "ablTargetRule",
+        "path": "/ablTargetRule",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 2,
+          "label": "tgtRuleAttackable",
+          "enum": {
+            "id": "0x80000000007A71C9",
+            "decimalId": "9223372036862800329",
+            "kind": "DomEnum",
+            "name": "tgtTargettingRule",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 131872,
+              "blockLength": 388,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablCombatMode",
+        "path": "/ablCombatMode",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 2,
+          "label": "staCombatModeMelee",
+          "enum": {
+            "id": "0x400000002264A589",
+            "decimalId": "4611686019004409225",
+            "kind": "DomEnum",
+            "name": "staCombatModeType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 10608,
+              "blockLength": 140,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_4000000197D6D791",
+        "path": "/field_4000000197D6D791",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_400000024DB5B1E6",
+        "path": "/field_400000024DB5B1E6",
+        "type": "Int64",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "signed64": "-1",
+          "bits": "0xFFFFFFFFFFFFFFFF"
+        }
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE00000D6D2FBE452"
+      },
+      {
+        "key": "ablCooldownTimerSpecs",
+        "path": "/ablCooldownTimerSpecs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 3,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE000559BFEF8309D",
+            "decimalId": "16140995192981827741",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.deception.low_slash/0/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/241.bkt",
+              "uncompressedOffset": 98964,
+              "blockLength": 394,
+              "resourceSha256": "12961c14951440fbc863dc3abaa5d22721025bd7c9bb036f2fbb1f275bdb985c"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 6,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE00024891DCCFD3F",
+      "decimalId": "16140941235824950591",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.darkness.wither",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/91.bkt",
+        "uncompressedOffset": 56180,
+        "blockLength": 697,
+        "resourceSha256": "e7d2ab0f6633becc6c86d4a03f8cc690f906bd374a21bc2039b752fb7dbf66d0"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 21,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 18
+      },
+      {
+        "key": "ablAiType",
+        "path": "/ablAiType",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 5,
+          "label": "aiAbilityDebuff",
+          "enum": {
+            "id": "0x400000004F14C933",
+            "decimalId": "4611686019754150195",
+            "kind": "DomEnum",
+            "name": "aiAbilityType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16008,
+              "blockLength": 202,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "crushingdarkness"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablCooldownTime",
+        "path": "/ablCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 7.5
+      },
+      {
+        "key": "ablForceCost",
+        "path": "/ablForceCost",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 30
+      },
+      {
+        "key": "ablMaxRange",
+        "path": "/ablMaxRange",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 1
+      },
+      {
+        "key": "ablTargetArc",
+        "path": "/ablTargetArc",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 180
+      },
+      {
+        "key": "ablTargetRule",
+        "path": "/ablTargetRule",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 2,
+          "label": "tgtRuleAttackable",
+          "enum": {
+            "id": "0x80000000007A71C9",
+            "decimalId": "9223372036862800329",
+            "kind": "DomEnum",
+            "name": "tgtTargettingRule",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 131872,
+              "blockLength": 388,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablCombatMode",
+        "path": "/ablCombatMode",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 2,
+          "label": "staCombatModeMelee",
+          "enum": {
+            "id": "0x400000002264A589",
+            "decimalId": "4611686019004409225",
+            "kind": "DomEnum",
+            "name": "staCombatModeType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 10608,
+              "blockLength": 140,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_4000000197D6D791",
+        "path": "/field_4000000197D6D791",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE00024891DCCFD3F"
+      },
+      {
+        "key": "ablCooldownTimerSpecs",
+        "path": "/ablCooldownTimerSpecs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 4,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 2,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE00069C4A2290130",
+            "decimalId": "16141017357750960432",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.darkness.wither/2/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/432.bkt",
+              "uncompressedOffset": 104516,
+              "blockLength": 293,
+              "resourceSha256": "35af7075acb4cd9d1f3b0901b9ad76777130a4ce03389f91cf8332cf9fc902e3"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 10,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  },
+  {
+    "identity": {
+      "id": "0xE000EF0F4A50EA69",
+      "decimalId": "16141163913446222441",
+      "kind": "GomObject",
+      "name": "abl.sith_inquisitor.skill.deception.voltaic_slash",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/441.bkt",
+        "uncompressedOffset": 291908,
+        "blockLength": 591,
+        "resourceSha256": "9eb27d109c4a8dbdf9e6a3713a0e387c2061c418dcf67c276e1a72be65b39c07"
+      }
+    },
+    "path": "",
+    "type": "GomObjectData",
+    "childCount": 19,
+    "children": [
+      {
+        "key": "Script_Type",
+        "path": "/Script_Type",
+        "type": "DomClass",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0x400000000283F4D2",
+            "decimalId": "4611686018469590226",
+            "kind": "DomClass",
+            "name": "ablAbility",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 390240,
+              "blockLength": 304,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "Script_TypeId",
+        "path": "/Script_TypeId",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0x0000000000000029"
+      },
+      {
+        "key": "Script_NumFields",
+        "path": "/Script_NumFields",
+        "type": "Int32",
+        "expandable": false,
+        "childCount": 0,
+        "value": 16
+      },
+      {
+        "key": "ablIconSpec",
+        "path": "/ablIconSpec",
+        "type": "String",
+        "expandable": false,
+        "childCount": 0,
+        "value": "vampiricslash"
+      },
+      {
+        "key": "ablGlobalCooldownTime",
+        "path": "/ablGlobalCooldownTime",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": -1
+      },
+      {
+        "key": "ablForceCost",
+        "path": "/ablForceCost",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 25
+      },
+      {
+        "key": "ablMaxRange",
+        "path": "/ablMaxRange",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 0.4
+      },
+      {
+        "key": "ablTargetArc",
+        "path": "/ablTargetArc",
+        "type": "Single",
+        "expandable": false,
+        "childCount": 0,
+        "value": 180
+      },
+      {
+        "key": "ablTargetRule",
+        "path": "/ablTargetRule",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 2,
+          "label": "tgtRuleAttackable",
+          "enum": {
+            "id": "0x80000000007A71C9",
+            "decimalId": "9223372036862800329",
+            "kind": "DomEnum",
+            "name": "tgtTargettingRule",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 131872,
+              "blockLength": 388,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablCombatMode",
+        "path": "/ablCombatMode",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 2,
+          "label": "staCombatModeMelee",
+          "enum": {
+            "id": "0x400000002264A589",
+            "decimalId": "4611686019004409225",
+            "kind": "DomEnum",
+            "name": "staCombatModeType",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 10608,
+              "blockLength": 140,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablAutoAttackMode",
+        "path": "/ablAutoAttackMode",
+        "type": "ScriptEnum",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "enum",
+          "value": 2,
+          "label": "ablAutoAttackStart",
+          "enum": {
+            "id": "0x400000005161352B",
+            "decimalId": "4611686019792713003",
+            "kind": "DomEnum",
+            "name": "ablAutoAttackMode",
+            "nameEvidence": "historical gom_type_names.xml fallback; not April-verified",
+            "source": {
+              "path": "/resources/systemgenerated/client.gom",
+              "uncompressedOffset": 16216,
+              "blockLength": 92,
+              "resourceSha256": "aa05f532724fb2e95359fda7f440bf78aa6c73dfe876c13583c60427fc82d450"
+            }
+          }
+        }
+      },
+      {
+        "key": "ablIsValid",
+        "path": "/ablIsValid",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "ablIsLineOfSightChecked",
+        "path": "/ablIsLineOfSightChecked",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "field_4000000197D6D791",
+        "path": "/field_4000000197D6D791",
+        "type": "Boolean",
+        "expandable": false,
+        "childCount": 0,
+        "value": true
+      },
+      {
+        "key": "conEntitySpec",
+        "path": "/conEntitySpec",
+        "type": "UInt64",
+        "expandable": false,
+        "childCount": 0,
+        "value": "0xE000EF0F4A50EA69"
+      },
+      {
+        "key": "ablEffectIDs",
+        "path": "/ablEffectIDs",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 3,
+        "value": null
+      },
+      {
+        "key": "ablDescriptionTokens",
+        "path": "/ablDescriptionTokens",
+        "type": "List`1",
+        "expandable": true,
+        "childCount": 1,
+        "value": null
+      },
+      {
+        "key": "ablEffectZero",
+        "path": "/ablEffectZero",
+        "type": "GomObject",
+        "expandable": false,
+        "childCount": 0,
+        "value": {
+          "type": "definitionReference",
+          "definition": {
+            "id": "0xE0003B1557A689D4",
+            "decimalId": "16140966027346741716",
+            "kind": "GomObject",
+            "name": "abl.sith_inquisitor.skill.deception.voltaic_slash/1/0",
+            "nameEvidence": "April bucket/prototype",
+            "source": {
+              "path": "/resources/systemgenerated/buckets/216.bkt",
+              "uncompressedOffset": 56012,
+              "blockLength": 396,
+              "resourceSha256": "647273bdbaf0ff7918e9e84d3b7a1ce68a7f9fc7fa693aca6a4942aafc3c1a3c"
+            }
+          }
+        }
+      },
+      {
+        "key": "locTextRetrieverMap",
+        "path": "/locTextRetrieverMap",
+        "type": "Dictionary`2",
+        "expandable": true,
+        "childCount": 5,
+        "value": null
+      }
+    ],
+    "value": null,
+    "start": 0,
+    "nextStart": null,
+    "coverage": "Decoded logical keys/ordinal list indexes. Expand child paths for all values; original wire field IDs/lookup-list indexes may not be retained by inherited decoder.",
+    "profile": "April2012",
+    "parser": "SwtorResearch/0.2.0",
+    "accessVersion": "0.2.0",
+    "parserSourceSha256": "8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae",
+    "profileEvidence": "Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates."
+  }
+]

@@ -1,0 +1,71 @@
+{
+  "evidence": "Client-derived April bucket/prototype names and decoded appearance schedules. Exact original asset archive hashes, offsets and SHA256 values are in t22-source.json.",
+  "abilities": [
+    {
+      "id": "0xE000C95B2EE7DD36",
+      "name": "abl.sith_inquisitor.lightning_strike",
+      "icon": "lightningStrike",
+      "appearance": "epp.sith_inquisitor.lightning_strike.cast_loop",
+      "release": "fp_1h_elect_instant_right_4",
+      "fx": [
+        "abilities/sith_inquisitor/si_lightning_strike_caster_hand_loop",
+        "si_lightning_strike_target_01",
+        "abilities/sith_inquisitor/si_lightningdrain_bodyarcs"
+      ]
+    },
+    {
+      "id": "0xE0004BAD9E5CDACF",
+      "name": "abl.sith_inquisitor.crushing_darkness",
+      "icon": "dark_embrace",
+      "appearance": "epp.sith_inquisitor.crushing_darkness.cast_loop",
+      "releaseSemantic": "AbilityCastInstant1Hand2",
+      "adapter": "fp_1h_elect_instant_right_2",
+      "fx": [
+        "abilities/sith_inquisitor/si_crushing_darkness_hand_cast",
+        "abilities/sith_inquisitor/si_crushing_darkness_cast",
+        "abilities/sith_inquisitor/si_crushing_darkness"
+      ]
+    },
+    {
+      "id": "0xE0006C61274C3CAD",
+      "name": "abl.sith_inquisitor.skill.lightning.polarity_shift",
+      "icon": "polarityCharge",
+      "appearance": "epp.sith_inquisitor.polarity_charge.cast_instant",
+      "release": "cb_buff_consumption_exit",
+      "fx": [
+        "abilities/sith_inquisitor/si_polaritycharge_cast_01"
+      ]
+    },
+    {
+      "id": "0xE00099E4362E8945",
+      "name": "abl.sith_inquisitor.force_speed",
+      "icon": "forceSpeed",
+      "appearance": "epp.sith_inquisitor.force_speed.cast_instant",
+      "gesture": "No gesture in selected appearance schedule; preserve current locomotion",
+      "fx": [
+        "abilities/sith_inquisitor/si_forcespeed_01"
+      ]
+    },
+    {
+      "id": "0xE000892C91A4F3EA",
+      "name": "abl.sith_inquisitor.affliction",
+      "icon": "lifedrain",
+      "castAppearance": "epp.sith_inquisitor.affliction.cast_instant",
+      "targetAppearance": "epp.sith_inquisitor.affliction.target_loop",
+      "fx": [
+        "abilities/sith_inquisitor/si_consumingdarkness_cast",
+        "si_darkaffliction_target"
+      ],
+      "evidence": "Client-derived: effect /2/1 and /2/2 effSubEffectEppDetails/1; decoded appearance schedule strings."
+    }
+  ],
+  "limits": [
+    "Survivors timings and damage are authored balance, separate from recovered presentation evidence.",
+    "Godot translates selected original FX layers and PCM audio rather than executing the native FXSpec/Wwise runtimes.",
+    "Optional shared crushing-darkness boom event is absent from the selected audio bank; recovered ability-specific events are used."
+  ],
+  "darkEscapeIcon": {
+    "icon": "forcespeed",
+    "evidence": "Authored run talent with movement-speed mechanics; uses recovered April Force Speed artwork rather than Overload."
+  }
+}

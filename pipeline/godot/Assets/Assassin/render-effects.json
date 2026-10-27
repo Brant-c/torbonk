@@ -1,0 +1,688 @@
+{
+  "si_wither_debuff_target": [
+    {
+      "texture": "2x2_smoke_whisps_02",
+      "atlas": 2,
+      "alpha": true,
+      "color": [
+        0.407088,
+        0.0,
+        0.008,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/si_wither_dark_whisps_p.prt"
+    },
+    {
+      "texture": "2x2_electrical_blast_alpha",
+      "atlas": 2,
+      "alpha": true,
+      "color": [
+        0.883,
+        0.337,
+        0.883,
+        0.899
+      ],
+      "source": "/resources/art/fx/particles/si_wither_impact_rings_p.prt"
+    },
+    {
+      "texture": "fx_shockwave_ring",
+      "atlas": 1,
+      "alpha": true,
+      "color": [
+        0.796,
+        0.667,
+        0.991,
+        0.8
+      ],
+      "source": "/resources/art/fx/particles/si_shockwave_glow_p.prt"
+    },
+    {
+      "texture": "flare_long_01",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.38948,
+        0.002373,
+        0.610213,
+        0.75
+      ],
+      "source": "/resources/art/fx/particles/si_impact_horizontal_glow_p.prt"
+    }
+  ],
+  "jc_clairvoyantstrike_target_01": [
+    {
+      "texture": "fx_smoke_09",
+      "atlas": 1,
+      "alpha": true,
+      "color": [
+        0.84,
+        0.84,
+        0.84,
+        0.676
+      ],
+      "source": "/resources/art/fx/particles/jc_clairvoyant_strike_impact_smoke_p.prt"
+    }
+  ],
+  "all_dynamic_saber_crit_trail_01": [
+    {
+      "texture": "black",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "/resources/art/fx/particles/dynamic_saber_trail_01_p.prt"
+    }
+  ],
+  "jc_saberreturn_pole_01": [
+    {
+      "texture": "dynamic_saber_slash_core_01",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.7,
+        0.7,
+        0.7,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/jc_saberreturn_slashcore_model_01_p.prt"
+    },
+    {
+      "texture": "dynamic_saber_slash_glow_01",
+      "atlas": 1,
+      "alpha": true,
+      "color": [
+        0.8,
+        0.8,
+        0.8,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/jc_saberreturn_slashglow_model_01_p.prt"
+    },
+    {
+      "texture": "fx_saber_hilt_01",
+      "atlas": 1,
+      "alpha": true,
+      "color": [
+        0.85,
+        0.85,
+        0.85,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/sw_saberthrow_hilt_blur_01_p.prt"
+    }
+  ],
+  "all_dynamic_saber_trail_alphagrad_01": [
+    {
+      "texture": "Lightsaber_critblade",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "source": "/resources/art/fx/particles/dynamic_saber_trail_alphagrad_01_p.prt"
+    }
+  ],
+  "si_hand_cast_particle_trail": [
+    {
+      "texture": "electric_rings_bw_02",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.992,
+        0.868,
+        0.892,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/si_crushing_darkness_hand_light_p.prt"
+    },
+    {
+      "texture": "2x2_electrical_blast_alpha",
+      "atlas": 2,
+      "alpha": true,
+      "color": [
+        0.529,
+        0.086,
+        0.734,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/si_purge_hand_lightrays_p.prt"
+    },
+    {
+      "texture": "streak_blue_horizontal",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.83,
+        0.49,
+        0.99,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/si_heal_hand_lightrays_p.prt"
+    },
+    {
+      "texture": "2x2_smoke_whisps_02",
+      "atlas": 2,
+      "alpha": true,
+      "color": [
+        0.268822,
+        0.0,
+        0.63,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/si_hand_whisps_trail_off_p.prt"
+    }
+  ],
+  "si_spike_source_saber": [
+    {
+      "texture": "bw_fx_horizontal_flare_orange_hot",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/si_directional_hit_01_p.prt"
+    },
+    {
+      "texture": "spark_core",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/si_directional_hit_face_01_p.prt"
+    },
+    {
+      "texture": "bw_fx_2x2_sparknglow_01",
+      "atlas": 2,
+      "alpha": false,
+      "color": [
+        0.773,
+        0.187,
+        0.636,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/si_saber_sparks_purple_directional_01prt_p.prt"
+    }
+  ],
+  "jc_lowslash_impact_01": [
+    {
+      "texture": "bw_flare_gray",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.26880000000000004,
+        0.09824100000000001,
+        0.022463999999999998,
+        0.15
+      ],
+      "source": "/resources/art/fx/particles/sweep_impact_flash_01_p.prt"
+    },
+    {
+      "texture": "bw_orange_flare02",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.895,
+        0.731,
+        0.605,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/sweep_impact_flash_02_p.prt"
+    },
+    {
+      "texture": "2x2_elec_blast_ring_alpha",
+      "atlas": 2,
+      "alpha": false,
+      "color": [
+        0.867,
+        0.586,
+        0.413,
+        0.784
+      ],
+      "source": "/resources/art/fx/particles/leap_impact_rings_01_p.prt"
+    },
+    {
+      "texture": "bw_fx_2x2_sparknglow_01",
+      "atlas": 2,
+      "alpha": false,
+      "color": [
+        0.646,
+        0.37587000000000004,
+        0.0584,
+        0.906
+      ],
+      "source": "/resources/art/fx/particles/zen_impact_coll_sparks_01_p.prt"
+    }
+  ],
+  "all_dynamic_saber_hiltflare_01": [
+    {
+      "texture": "bw_flare_gray",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/lightsaber_dynamic_flare_1_p.prt"
+    },
+    {
+      "texture": "bw_fx_horizontal_flare_orange_hot",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        0.8
+      ],
+      "source": "/resources/art/fx/particles/lightsaber_dynamic_flare_2_p.prt"
+    }
+  ],
+  "sw_vicious_slash_hit_02": [
+    {
+      "texture": "bw_flare_gray",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.26880000000000004,
+        0.09824100000000001,
+        0.022463999999999998,
+        0.15
+      ],
+      "source": "/resources/art/fx/particles/sweep_impact_flash_01_p.prt"
+    },
+    {
+      "texture": "bw_orange_flare02",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.895,
+        0.731,
+        0.605,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/sweep_impact_flash_02_p.prt"
+    },
+    {
+      "texture": "2x2_elec_blast_ring_alpha",
+      "atlas": 2,
+      "alpha": false,
+      "color": [
+        0.867,
+        0.586,
+        0.413,
+        0.784
+      ],
+      "source": "/resources/art/fx/particles/leap_impact_rings_01_p.prt"
+    },
+    {
+      "texture": "fx_2x2_white_smoke_alpha",
+      "atlas": 2,
+      "alpha": true,
+      "color": [
+        0.782,
+        0.676,
+        0.557,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/leap_impact_smokeburst_01_p.prt"
+    },
+    {
+      "texture": "bw_fx_2x2_sparknglow_01",
+      "atlas": 2,
+      "alpha": false,
+      "color": [
+        0.646,
+        0.37587000000000004,
+        0.0584,
+        0.906
+      ],
+      "source": "/resources/art/fx/particles/zen_impact_sparks_03_p.prt"
+    },
+    {
+      "texture": "glow_basic_alpha",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.894,
+        0.569,
+        0.346,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/leap_impact_sparks_02_p.prt"
+    }
+  ],
+  "si_reflection_buff_loop": [
+    {
+      "texture": "2x2_smokewisps_white",
+      "atlas": 2,
+      "alpha": false,
+      "color": [
+        0.539,
+        0.189,
+        0.971,
+        0.75
+      ],
+      "source": "/resources/art/fx/particles/si_reflection_glow_ring_loop_p.prt"
+    }
+  ],
+  "si_mindtrick_loop_01": [
+    {
+      "texture": "smoke_thin",
+      "atlas": 1,
+      "alpha": true,
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "/resources/art/fx/particles/si_shadowcloak_smoke_01_p.prt"
+    },
+    {
+      "texture": "bw_flare_gray",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.21119,
+        0.0022559999999999998,
+        0.5342960000000001,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/si_shadowcloak_eye_glow_01prt_p.prt"
+    },
+    {
+      "texture": "bw_fx_horizontal_flare_orange_hot",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.431,
+        0.282,
+        0.658,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/si_shadowcloak_target_02_p.prt"
+    }
+  ],
+  "si_mindtrick_cast_01": [
+    {
+      "texture": "smoke_thin",
+      "atlas": 1,
+      "alpha": true,
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "/resources/art/fx/particles/si_shadowcloak_smoke_03_p.prt"
+    },
+    {
+      "texture": "2x2_electrical_blast_alpha",
+      "atlas": 2,
+      "alpha": true,
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "/resources/art/fx/particles/si_shadowcloak_darkglow_01_p.prt"
+    }
+  ],
+  "si_maul_01": [
+    {
+      "texture": "bw_flare_gray",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.26880000000000004,
+        0.09824100000000001,
+        0.022463999999999998,
+        0.15
+      ],
+      "source": "/resources/art/fx/particles/sweep_impact_flash_01_p.prt"
+    },
+    {
+      "texture": "bw_orange_flare02",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.895,
+        0.731,
+        0.605,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/sweep_impact_flash_02_p.prt"
+    },
+    {
+      "texture": "2x2_elec_blast_ring_alpha",
+      "atlas": 2,
+      "alpha": false,
+      "color": [
+        0.867,
+        0.586,
+        0.413,
+        0.784
+      ],
+      "source": "/resources/art/fx/particles/leap_impact_rings_01_p.prt"
+    },
+    {
+      "texture": "fx_2x2_white_smoke_alpha",
+      "atlas": 2,
+      "alpha": true,
+      "color": [
+        0.782,
+        0.676,
+        0.557,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/leap_impact_smokeburst_01_p.prt"
+    },
+    {
+      "texture": "bw_fx_2x2_sparknglow_01",
+      "atlas": 2,
+      "alpha": false,
+      "color": [
+        0.646,
+        0.37587000000000004,
+        0.0584,
+        0.906
+      ],
+      "source": "/resources/art/fx/particles/frenzy_saber_sparks_02_p.prt"
+    },
+    {
+      "texture": "glow_basic_alpha",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.894,
+        0.569,
+        0.346,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/frenzy_saber_sparks_01_p.prt"
+    },
+    {
+      "texture": "5x5_flame_lick_04_bw",
+      "atlas": 5,
+      "alpha": false,
+      "color": [
+        0.34,
+        0.028,
+        0.0,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/si_hiddenstrike_burnflames_01_p.prt"
+    },
+    {
+      "texture": "2x2_whispy_smoke_a_01",
+      "atlas": 2,
+      "alpha": true,
+      "color": [
+        0.225,
+        0.075,
+        0.075,
+        0.95
+      ],
+      "source": "/resources/art/fx/particles/si_hiddenstrike_burnsmoke_01_p.prt"
+    }
+  ],
+  "si_spike_target_02": [
+    {
+      "texture": "electric_rings_bw_02",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.30402900000000005,
+        0.0,
+        0.992,
+        0.671
+      ],
+      "source": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01_p.prt"
+    },
+    {
+      "texture": "sparks_core_halo",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/si_saber_elec_hit_flashes_01_p.prt"
+    }
+  ],
+  "all_dynamic_polesaber_crit_trail_01": [
+    {
+      "texture": "black",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "/resources/art/fx/particles/dynamic_saber_trail_01_p.prt"
+    }
+  ],
+  "si_vicioussaber_buff": [
+    {
+      "texture": "bw_fx_2x2_sparknglow_01",
+      "atlas": 2,
+      "alpha": false,
+      "color": [
+        0.40737100000000004,
+        0.115379,
+        0.631548,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/si_vicioussaber_drippingsparks_01_p.prt"
+    },
+    {
+      "texture": "black",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "/resources/art/fx/particles/si_vicioussaber_parent_sparks_01_p.prt"
+    }
+  ],
+  "jc_clairvoyantstrike_impact_01": [
+    {
+      "texture": "bw_flare_gray",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.26880000000000004,
+        0.09824100000000001,
+        0.022463999999999998,
+        0.15
+      ],
+      "source": "/resources/art/fx/particles/batt_assault_impact_flash_01_p.prt"
+    },
+    {
+      "texture": "bw_orange_flare02",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.898,
+        0.733,
+        0.602,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/batt_assault_impact_flash_02_p.prt"
+    },
+    {
+      "texture": "2x2_elec_blast_ring_alpha",
+      "atlas": 2,
+      "alpha": false,
+      "color": [
+        0.867,
+        0.586,
+        0.413,
+        0.784
+      ],
+      "source": "/resources/art/fx/particles/batt_assault_impact_rings_01_p.prt"
+    },
+    {
+      "texture": "glow_basic_alpha",
+      "atlas": 1,
+      "alpha": false,
+      "color": [
+        0.894,
+        0.569,
+        0.346,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/batt_assault_impact_sparks_02_p.prt"
+    },
+    {
+      "texture": "bw_fx_2x2_sparknglow_01",
+      "atlas": 2,
+      "alpha": false,
+      "color": [
+        0.646,
+        0.37587000000000004,
+        0.0584,
+        0.906
+      ],
+      "source": "/resources/art/fx/particles/batt_assault_impact_sparks_01_p.prt"
+    }
+  ],
+  "si_vicioussaber_bladesparks_01": [
+    {
+      "texture": "bw_fx_2x2_sparknglow_01",
+      "atlas": 2,
+      "alpha": false,
+      "color": [
+        0.40737100000000004,
+        0.11594,
+        0.631548,
+        1.0
+      ],
+      "source": "/resources/art/fx/particles/si_vicioussaber_child_sparks_01_p.prt"
+    }
+  ]
+}

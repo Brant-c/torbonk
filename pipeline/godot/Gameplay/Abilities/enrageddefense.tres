@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "enrageddefense"
+Title = "Enraged Defense"
+Icon = "jg_enrageddefense"
+StartsUnlocked = false
+Category = 1
+Damage = 0
+CooldownSeconds = 30
+Range = 0.6
+Radius = 0
+ChannelSeconds = 0
+TickSeconds = 1
+WindupSeconds = 0.2
+RecoverySeconds = 0.25
+GestureSeconds = 1.2
+StartClip = "Basic/Saber"
+LoopClip = "Basic/Saber"
+RequireGesture = true
+PresentationKind = "impact"
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/fire/fx_explosion_core_02_bw.png"
+CastAudio = "res://Assets/WarriorLibrary/Audio/61363040.wav"
+ImpactAudio = "res://Assets/WarriorLibrary/Audio/857325983.wav"
+SourceFx = "epp.sith_warrior.enraged_defense.buff"
+Description = "April Warrior ability; survivors adaptation."
+Effect = 3
+BuffSeconds = 6
+Slotless = true

@@ -32,7 +32,10 @@ public partial class AutomaticAbility : Node
     private readonly HashSet<ulong> _damaged = new();
     public bool CombatEnabled { get; set; } = true;
     public bool Unlocked { get; private set; } = true;
+    // Trading Affliction carries its free position to the replacement for this run.
+    public bool InheritsFreeSlot { get; set; }
     public LightningState State { get; private set; }
+    public bool BlocksCasting => Casting && !(Definition.DetachedArea && State==LightningState.Channeling && _gestureRemaining<=0);
     public bool Casting => State is LightningState.Starting or LightningState.Channeling or LightningState.Ending;
     public Combatant? CastTarget { get; private set; }
     public Vector3 GroundCenter { get; private set; }
@@ -91,12 +94,14 @@ public partial class AutomaticAbility : Node
         {
             _phaseRemaining-=delta;if(_phaseRemaining>0) return;
             delta=-_phaseRemaining;State=LightningState.Channeling;
-            Present(()=>Presentation.Actor.SetGestureClip(this,Definition.LoopClip));
+            if(Definition.Id=="spike" && Build?.World.RunConfiguration.AdvancedClassId=="assassin") {Build.Pregame.RevealSpike();_gestureRemaining=Definition.GestureSeconds;Present(()=>Presentation.Actor.TryBeginGesture(this,Definition.LoopClip,Definition.GesturePriority,true));}
+            if(!Definition.DetachedArea)Present(()=>Presentation.Actor.SetGestureClip(this,Definition.LoopClip));
             if(_presented) Present(Presentation.Channel);
             if(ChannelSeconds<=0) { Tick();if(State==LightningState.Channeling) Finish(false,"Burst complete");return; }
         }
         if(State==LightningState.Channeling)
         {
+            _clock.SetInterval(TickSeconds);
             _clock.Advance(delta,Tick);
             if(State==LightningState.Channeling && _clock.Complete) Finish(false,"Channel complete");
             return;
@@ -112,12 +117,21 @@ public partial class AutomaticAbility : Node
     public bool TryBegin()
     {
         if(!Unlocked || !CombatEnabled || !Caster.Alive || State!=LightningState.Idle || CooldownRemaining>0) return false;
+        if(Build?.Pregame.CanBeginJuggernaut(this)==false)return false;
+        bool spikeOpening=Definition.Id=="spike" && Build?.World.RunConfiguration.AdvancedClassId=="assassin";
         if(Definition.Effect==AbilityEffect.Heal && (Caster.Health.Current>=Caster.Health.Maximum || Caster.Health.Current>=Caster.Health.Maximum*HealthThreshold)) return false;
         if(Definition.Effect==AbilityEffect.Shield && (Caster.Health.Shielded || Targeting.Acquire(Range,AbilityTargetRule.NearestHostile,0)==null)) return false;
-        if(Definition.Effect==AbilityEffect.Buff && (Build?.Buffed==true || Targeting.Acquire(Range,AbilityTargetRule.NearestHostile,0)==null)) return false;
+        if(Definition.Effect==AbilityEffect.Buff && ((Definition.Id=="polarityshift"?Build?.Pregame.PolarityActive==true:Build?.Buffed==true) || Targeting.Acquire(Range,AbilityTargetRule.NearestHostile,0)==null)) return false;
         if(Definition.Area==AbilityArea.CasterRadial && Targeting.InArea(Caster.GlobalPosition,Radius,Radius).Count()<Math.Max(1,Definition.NearbyTriggerCount)) return false;
         var target=Definition.Area==AbilityArea.CasterRadial || Definition.Effect!=AbilityEffect.Damage?Caster:Targeting.Acquire(Range,Definition.TargetRule,Radius);
+        if(Definition.PeriodicDuration>0 && Caster==Build?.World.PlayerActor && Build.World.RunConfiguration.AdvancedClassId is "sorcerer" or "assassin")
+        {
+            target=Targeting.InArea(Caster.GlobalPosition,Range,Range).Where(t=>Periodic?.Has(this,t)!=true)
+                .OrderBy(t=>Caster.GlobalPosition.DistanceSquaredTo(t.GlobalPosition)).ThenBy(t=>t.SelectionKey,StringComparer.Ordinal).FirstOrDefault();
+        }
+        if(Definition.Id=="polarityshift" && Build?.Pregame.PolarityReady!=true)return false;
         if(target==null) return false;
+        if(Build?.World.RunConfiguration.AdvancedClassId=="juggernaut" && Definition.Id=="viciousthrow" && target.Health.Current>target.Health.Maximum*.3f)return false;
         if(!float.IsFinite(DamagePerTick) || (Definition.Effect==AbilityEffect.Damage && DamagePerTick<=0) || !float.IsFinite(TickSeconds) || TickSeconds<=0 ||
             !float.IsFinite(ChannelSeconds) || ChannelSeconds<0 || !float.IsFinite(Range) || Range<=0 ||
             !float.IsFinite(Radius) || Radius<0 || !float.IsFinite(Definition.WindupSeconds) || Definition.WindupSeconds<0 ||
@@ -131,7 +145,7 @@ public partial class AutomaticAbility : Node
         if(Definition.Id=="carbonize" && Presentation.Actor.GestureOwner!=null)return false;
         if(Definition.FullBodyGesture && Definition.GestureSeconds>0 && Presentation!=null && !Presentation.Actor.CanBeginGesture(Definition.StartClip,Definition.GesturePriority)) return false;
         // Defer activation until its gesture can start. Missing clips keep the failure-reporting path.
-        if(Definition.RequireGesture && Presentation.Actor.Animator.HasAnimation(Definition.StartClip) && !Presentation.Actor.TryBeginGesture(this,Definition.StartClip,Definition.GesturePriority,Definition.FullBodyGesture))return false;
+        if(!spikeOpening && Definition.RequireGesture && Presentation.Actor.Animator.HasAnimation(Definition.StartClip) && !Presentation.Actor.TryBeginGesture(this,Definition.StartClip,Definition.GesturePriority,Definition.FullBodyGesture))return false;
         CastTarget=target;GroundCenter=target.GlobalPosition;_coneForward=target.GlobalPosition-Caster.GlobalPosition;
         if(Definition.Area==AbilityArea.FrontalCone)Presentation.Actor.FacingTarget=GroundCenter;
         _damaged.Clear();_sweepHits.Clear();_spreadSeed=false;LastHealing=0;
@@ -139,6 +153,7 @@ public partial class AutomaticAbility : Node
         State=LightningState.Starting;_phaseRemaining=Definition.WindupSeconds;
         CooldownRemaining=CooldownDuration=Math.Max(CooldownSeconds,Definition.FullBodyGesture?Definition.GestureSeconds:0);
         _gestureRemaining=Definition.GestureSeconds;
+        if(spikeOpening)_gestureRemaining=0;
         if(_gestureRemaining>0) Present(()=>Presentation.Actor.TryBeginGesture(this,Definition.StartClip,Definition.GesturePriority,Definition.FullBodyGesture));
         // Presentation failures are reported and cannot suppress damage.
         try { _presented=Presentation.Begin(target,GroundCenter,Radius); }
@@ -156,7 +171,7 @@ public partial class AutomaticAbility : Node
         if(Definition.Effect!=AbilityEffect.Damage)
         {
             if(Definition.Effect==AbilityEffect.Shield) Caster.Health.ApplyShield(ShieldCapacity,ShieldDuration);
-            else if(Definition.Effect==AbilityEffect.Buff) Build?.ApplyBuff(Definition);
+            else if(Definition.Effect==AbilityEffect.Buff && Definition.Id!="polarityshift") Build?.ApplyBuff(Definition);
             else LastHealing=Caster.Health.ApplyHealing(Build?.HealingAmount(Healing)??Healing);
             if(_presented) Present(()=>Presentation.Impact(Caster.AimPosition));
             return true;
@@ -171,7 +186,8 @@ public partial class AutomaticAbility : Node
             : Definition.Area==AbilityArea.FrontalCone ? Targeting.InArea(Caster.GlobalPosition,Radius,Radius).Where(t=>InCone(t)).ToArray()
             : Targeting.IsValidTarget(CastTarget,Range)?new[]{CastTarget!}:Array.Empty<Combatant>();
         // Snapshot before damage: a lethal field hit must still spread the victim's owned DoTs.
-        var spread=Definition.SpreadsPeriodicEffects?Periodic?.SpreadSources(Caster,targets):null;
+        var spread=(Definition.SpreadsPeriodicEffects || Definition.Id=="lacerate" && Build?.World.RunConfiguration.AdvancedClassId=="assassin")?Periodic?.SpreadSources(Caster,targets):null;
+        if(Definition.Id=="lacerate" && Build?.World.RunConfiguration.AdvancedClassId=="assassin" && Build.Pregame.AssassinSpread!=true)spread=spread?.Where(a=>a.Definition.Id=="discharge").ToArray();
         if(_presented) Present(()=>Presentation.Impact(Definition.Area==AbilityArea.GroundSphere?GroundCenter:CastTarget?.AimPosition??GroundCenter));
         if(Definition.Id=="flamesweep")
         {
@@ -188,6 +204,7 @@ public partial class AutomaticAbility : Node
             if(target.Alive && Definition.PeriodicDuration>0)Periodic?.Apply(this,target,secondary?Definition.SecondaryPeriodicScale:1);
             if(target.Alive && Definition.VulnerabilitySeconds>0 && !secondary)target.Health.VulnerabilitySeconds=Math.Max(target.Health.VulnerabilitySeconds,Definition.VulnerabilitySeconds);
             if(target.Alive && Definition.SlowSeconds>0 && target is EnemyAgent slowed)slowed.Slow(Definition.SlowFactor,Definition.SlowSeconds);
+            if(Build?.World.RunConfiguration.AdvancedClassId=="juggernaut" && Definition.Id is "forcechoke" or "backhand" && target is EnemyAgent controlled)controlled.DisplaceFrom(Caster.GlobalPosition,0,3);
             Build?.AbilityHit(this,target);
             if(Definition.Area==AbilityArea.CasterRadial && target is EnemyAgent enemy && enemy.Alive) enemy.DisplaceFrom(Caster.GlobalPosition,Definition.KnockbackDistance,Definition.StaggerSeconds);
             if(applied<=0) continue;
@@ -199,7 +216,7 @@ public partial class AutomaticAbility : Node
         }
         if(spread!=null)
             foreach(var target in targets.Where(t=>GodotObject.IsInstanceValid(t) && t.Alive))
-                foreach(var source in spread)Periodic!.Apply(source,target);
+                foreach(var source in spread)if(Definition.Id!="lacerate" || !Periodic!.Has(source,target))Periodic!.Apply(source,target);
         if(Healing>0 && ChannelSeconds<=0)
         {
             LastHealing=Caster.Health.ApplyHealing(Math.Min(Definition.HealingCap,_damaged.Count*Healing));
@@ -242,6 +259,7 @@ public partial class AutomaticAbility : Node
             var point=current.AimPosition;
             // One gameplay hit per link. Rendering an arc has no combat authority.
             float applied=DealHit(current,damage);
+            if(Build?.World.RunConfiguration.AdvancedClassId=="assassin")Build.AbilityHit(this,current);
             if(_presented && Presentation is D2AbilityPresentation visual)Present(()=>visual.Arc(from,point));
             if(applied>0) { _damaged.Add(current.GetInstanceId());DamageEvents++;DamageDealt?.Invoke(current,applied);Build?.Hit(this,current,new[]{current}); }
             from=point;
@@ -260,7 +278,7 @@ public partial class AutomaticAbility : Node
             if(burn!=null && burn.Unlocked)foreach(var t in _sweepHits.Where(t=>GodotObject.IsInstanceValid(t) && t.Alive).OrderBy(t=>t.GetInstanceId()).Take(Build.SpreadLimit))Periodic?.Apply(burn,t,Build.SpreadEffectiveness);
         }
         if(_presented) Present(()=>Presentation.End(interrupted));
-        Present(()=>Presentation.Actor.SetGestureClip(this,Definition.EndClip));
+        if(!Definition.DetachedArea)Present(()=>Presentation.Actor.SetGestureClip(this,Definition.EndClip));
         State=LightningState.Ending;_phaseRemaining=Definition.RecoverySeconds;LastEvent=reason;
     }
     public void Interrupt()
@@ -274,6 +292,7 @@ public partial class AutomaticAbility : Node
         if(Definition.Effect==AbilityEffect.Shield && Caster!=null && GodotObject.IsInstanceValid(Caster.Health)) Caster.Health.ClearShield();
         // Completed gestures can leave finite tails or a persistent shield presentation.
         if(Presentation!=null) Present(Presentation.Release);
+        if(Definition.Id=="spike" && Build?.World.RunConfiguration.AdvancedClassId=="assassin")Build.Pregame?.RevealSpike();
         if(Presentation!=null && GodotObject.IsInstanceValid(Presentation.Actor)) Presentation.Actor.ReleaseGesture(this);
         _gestureRemaining=0;_presented=false;CastTarget=null;CooldownRemaining=CooldownDuration=0;State=LightningState.Disabled;
     }

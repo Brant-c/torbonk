@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "sunderingassault"
+Title = "Sundering Assault"
+Icon = "jg_sunderingassault"
+StartsUnlocked = false
+Category = 0
+Damage = 22
+CooldownSeconds = 6
+Range = 0.36
+Radius = 0
+ChannelSeconds = 0
+TickSeconds = 1
+WindupSeconds = 0.2
+RecoverySeconds = 0.25
+GestureSeconds = 1.2
+StartClip = "Basic/Saber"
+LoopClip = "Basic/Saber"
+RequireGesture = true
+PresentationKind = "saber"
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/2x2_elec_blast_ring_alpha.png"
+CastAudio = "res://Assets/WarriorLibrary/Audio/33904093.wav"
+ImpactAudio = "res://Assets/WarriorLibrary/Audio/201589943.wav"
+SourceFx = "epp.sith_warrior.sundering_assault.cast_instant"
+Description = "April Warrior ability; survivors adaptation."
+VulnerabilitySeconds = 6

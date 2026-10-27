@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "forcespeed"
+StartsUnlocked = false
+Range = 0.35
+ChannelSeconds = 0
+TickSeconds = 1
+RecoverySeconds = 0.18
+GestureSeconds = 0
+RequireGesture = false
+Title = "Force Speed"
+Icon = "forcespeed"
+Description = "When enemies threaten you within 0.35, gain 100% movement speed for 2 seconds. Movement stays under your control."
+Category = 1
+Effect = 3
+Damage = 0
+BuffSeconds = 2
+SpeedBuff = 1
+CooldownSeconds = 20
+WindupSeconds = 0
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+StartClip = ""
+CastAudioEvent = "Play_ability_sithinquisitor_forcespeed_quickcharge"

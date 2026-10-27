@@ -1,0 +1,2670 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 240,
+  "maximumDecodedBytes": 62914560,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x3E1352F41E92A3C1",
+      "entryOffset": 108430646,
+      "headerSize": 36,
+      "dataOffset": 108430682,
+      "compressedSize": 15888,
+      "length": 28353,
+      "compressionMethod": 1,
+      "crc32Index": "f8c7d5b2",
+      "path": "/resources/anim/humanoid/bmnnew/fp_1h_elect_instant_right_4.jba",
+      "sha256": "562056aa81ae8be114f741687fe28ccbd067db7d843dc021d5717b73d7d473d9",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\fp_1h_elect_instant_right_4.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0xF9A0B7D51C7A78D0",
+      "entryOffset": 108397657,
+      "headerSize": 36,
+      "dataOffset": 108397693,
+      "compressedSize": 18588,
+      "length": 34497,
+      "compressionMethod": 1,
+      "crc32Index": "6621b298",
+      "path": "/resources/anim/humanoid/bmnnew/fp_1h_elect_instant_right_2.jba",
+      "sha256": "8bd4362098ab968e7882dad8c3cf9ab1f0f7614f51d9ced7271a39ba5a1d73ce",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\fp_1h_elect_instant_right_2.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x5E0A1AD6B5C5544A",
+      "entryOffset": 25394713,
+      "headerSize": 36,
+      "dataOffset": 25394749,
+      "compressedSize": 14204,
+      "length": 25025,
+      "compressionMethod": 1,
+      "crc32Index": "bdd1cb0c",
+      "path": "/resources/anim/humanoid/bmnnew/cb_buff_consumption_exit.jba",
+      "sha256": "fca0286c91188ece4dcd04f8eed2fa4db9124e0a21fbca5ddf83b3c0e25fa656",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_buff_consumption_exit.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x7F42024332B10037",
+      "entryOffset": 146251671,
+      "headerSize": 36,
+      "dataOffset": 146251707,
+      "compressedSize": 1469,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "34e59b1c",
+      "path": "/resources/gfx/icons/lightningstrike.dds",
+      "sha256": "d320ecca221daeacfed40fdd9bae802c5fd54511a39832234cd1f85a9289efab",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\lightningstrike.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x96F6D4798587A0BC",
+      "entryOffset": 74443380,
+      "headerSize": 36,
+      "dataOffset": 74443416,
+      "compressedSize": 1421,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "12349174",
+      "path": "/resources/gfx/icons/dark_embrace.dds",
+      "sha256": "f32cf30f7b101af64162885f8f5efadadb72066ee9529bf31445e1c5779d51f6",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\dark_embrace.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x687F5295A11E009B",
+      "entryOffset": 146894444,
+      "headerSize": 36,
+      "dataOffset": 146894480,
+      "compressedSize": 1531,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "126f6f96",
+      "path": "/resources/gfx/icons/polaritycharge.dds",
+      "sha256": "4a116140498421b2357c3e38d83c11cf6de9c6c3babec016190684bf36bfa86b",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\polaritycharge.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x0D96CBADFE6B68B4",
+      "entryOffset": 75038339,
+      "headerSize": 36,
+      "dataOffset": 75038375,
+      "compressedSize": 1504,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "e1dc30d3",
+      "path": "/resources/gfx/icons/forcespeed.dds",
+      "sha256": "919279f5cd4a098f2ca559322a49a8b0ea9de7d537c15abd51b8d08a232c2759",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\forcespeed.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD43C6FDA4101FAEF",
+      "entryOffset": 152221228,
+      "headerSize": 36,
+      "dataOffset": 152221264,
+      "compressedSize": 2706,
+      "length": 32184,
+      "compressionMethod": 1,
+      "crc32Index": "875f9cdb",
+      "path": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightning_strike_caster_hand_loop.fxspec",
+      "sha256": "f1ea1f71539f0a8d526279232a4b95a7c115b8e6d795d48c0efc1dab340d711f",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\sith_inquisitor\\si_lightning_strike_caster_hand_loop.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xA574BE03AE33EB1F",
+      "entryOffset": 152427258,
+      "headerSize": 36,
+      "dataOffset": 152427294,
+      "compressedSize": 576,
+      "length": 1147,
+      "compressionMethod": 1,
+      "crc32Index": "2eeaf2aa",
+      "path": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01.prt",
+      "sha256": "76b8c0b8cd9700830b50804642e584280f56cd1ac7176c260422abb948036368",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_saber_elec_hit_purple_limbs_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xCB1C9B3A02A89FE8",
+      "entryOffset": 102557926,
+      "headerSize": 36,
+      "dataOffset": 102557962,
+      "compressedSize": 248,
+      "length": 373,
+      "compressionMethod": 1,
+      "crc32Index": "b91b0dba",
+      "path": "/resources/art/fx/particles/fxtemplate_dummy_point.prt",
+      "sha256": "8362bf8b01842d0919a029bc1837842beedc7313347d4f12fe91af191e13387c",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\fxtemplate_dummy_point.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x42E0CC59E9B32099",
+      "entryOffset": 152223970,
+      "headerSize": 36,
+      "dataOffset": 152224006,
+      "compressedSize": 562,
+      "length": 1128,
+      "compressionMethod": 1,
+      "crc32Index": "16763ee0",
+      "path": "/resources/art/fx/particles/si_lightning_strike_hand_charge.prt",
+      "sha256": "6bb2a247c26a99b2ed85c74df40c7f46c83416ff976a07ecb38e8bfcaed2c18e",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_lightning_strike_hand_charge.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x4E12D6AE790D5A4F",
+      "entryOffset": 9329105,
+      "headerSize": 36,
+      "dataOffset": 9329141,
+      "compressedSize": 10036,
+      "length": 32896,
+      "compressionMethod": 1,
+      "crc32Index": "f33623f9",
+      "path": "/resources/art/fx/texture/electricity/512_singlearcb_bw.dds",
+      "sha256": "09123b2387a3aedbacb3e8d88e4279fa65b345a72b3023fffef808d8400c35b4",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\electricity\\512_singlearcb_bw.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x2F93FE9521C60B9C",
+      "entryOffset": 152228776,
+      "headerSize": 36,
+      "dataOffset": 152228812,
+      "compressedSize": 4120,
+      "length": 85896,
+      "compressionMethod": 1,
+      "crc32Index": "1adc2b01",
+      "path": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightningdrain_bodyarcs.fxspec",
+      "sha256": "32069fa84ff69bb511531eb2f321bc3dda4bb8153b47cc9800a0643b452df62e",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\sith_inquisitor\\si_lightningdrain_bodyarcs.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xB52F5672DA66AA79",
+      "entryOffset": 152232932,
+      "headerSize": 36,
+      "dataOffset": 152232968,
+      "compressedSize": 577,
+      "length": 1137,
+      "compressionMethod": 1,
+      "crc32Index": "f4060226",
+      "path": "/resources/art/fx/particles/si_lightningdrain_bodyarcs.prt",
+      "sha256": "7e3f6876e0877846ccbf7e33a33991ae528739602421be08a6910df28efda5cf",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_lightningdrain_bodyarcs.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x0C52FDEF32CFC09C",
+      "entryOffset": 60697689,
+      "headerSize": 36,
+      "dataOffset": 60697725,
+      "compressedSize": 362,
+      "length": 1096,
+      "compressionMethod": 1,
+      "crc32Index": "505ca9ac",
+      "path": "/resources/art/fx/geometry/fx_dummy_cube.gr2",
+      "sha256": "5c57af35d528cd570e48e4c2ab9fd1b1c499d3217d21c9d104fb60a9c50d067a",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\geometry\\fx_dummy_cube.gr2",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xFBF1137331799EBD",
+      "entryOffset": 151912399,
+      "headerSize": 36,
+      "dataOffset": 151912435,
+      "compressedSize": 1826,
+      "length": 22284,
+      "compressionMethod": 1,
+      "crc32Index": "92bb0793",
+      "path": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness_hand_cast.fxspec",
+      "sha256": "03b13ecbf8234cfdcbac94a37c315772e4d56c2de4d1e53d0b5e2101b2e357eb",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\sith_inquisitor\\si_crushing_darkness_hand_cast.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x6D8D29DC14B002C9",
+      "entryOffset": 151914261,
+      "headerSize": 36,
+      "dataOffset": 151914297,
+      "compressedSize": 557,
+      "length": 1125,
+      "compressionMethod": 1,
+      "crc32Index": "413a9bc1",
+      "path": "/resources/art/fx/particles/si_crushing_darkness_hand_light.prt",
+      "sha256": "d5b28f0e197cc34f3889581b1078e89f0070b8b3fa5c28109579523ae7ec68c0",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_crushing_darkness_hand_light.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x8D88821B8A72A4F1",
+      "entryOffset": 151915782,
+      "headerSize": 36,
+      "dataOffset": 151915818,
+      "compressedSize": 559,
+      "length": 1127,
+      "compressionMethod": 1,
+      "crc32Index": "2dab2109",
+      "path": "/resources/art/fx/particles/si_crushing_darkness_hand_rings.prt",
+      "sha256": "dfc77817f2abd6c5ee664337d9d7fd305323d0c2034e399e8acc01c24d92cca7",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_crushing_darkness_hand_rings.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x70EFA6284489777C",
+      "entryOffset": 151909596,
+      "headerSize": 36,
+      "dataOffset": 151909632,
+      "compressedSize": 572,
+      "length": 1141,
+      "compressionMethod": 1,
+      "crc32Index": "3fb794fa",
+      "path": "/resources/art/fx/particles/si_crushing_darkness_forearm_light.prt",
+      "sha256": "31ae3bcd695c4f0da3851ba01536419f6b0db9a161e21cb4fcbcc3cf25e58248",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_crushing_darkness_forearm_light.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x90CEB626BF1159CD",
+      "entryOffset": 151904581,
+      "headerSize": 36,
+      "dataOffset": 151904617,
+      "compressedSize": 3554,
+      "length": 45838,
+      "compressionMethod": 1,
+      "crc32Index": "1fa9a1c4",
+      "path": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness_cast.fxspec",
+      "sha256": "4051869ac269baeacfa41a64241fe7d5496f81ba49452c06755c81039f914bdb",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\sith_inquisitor\\si_crushing_darkness_cast.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x3492617D2A454A90",
+      "entryOffset": 102560933,
+      "headerSize": 36,
+      "dataOffset": 102560969,
+      "compressedSize": 549,
+      "length": 1087,
+      "compressionMethod": 1,
+      "crc32Index": "ad55b37f",
+      "path": "/resources/art/fx/particles/fxtemplate_dummy_randrot3axis.prt",
+      "sha256": "77636c7cf93f0b062b9735238bf456baa87588d7ccbfe8b487ba9801e8030e2c",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\fxtemplate_dummy_randrot3axis.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xC99FBD011EB26CE8",
+      "entryOffset": 151911093,
+      "headerSize": 36,
+      "dataOffset": 151911129,
+      "compressedSize": 543,
+      "length": 1106,
+      "compressionMethod": 1,
+      "crc32Index": "a38f92df",
+      "path": "/resources/art/fx/particles/si_crushing_darkness_geo_rays.prt",
+      "sha256": "5fe2694d38dfae0e98d604b643d9a6feb896c36b49f648043e43bbd36fe80b76",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_crushing_darkness_geo_rays.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xF5F4A23F51CB1BDF",
+      "entryOffset": 102562759,
+      "headerSize": 36,
+      "dataOffset": 102562795,
+      "compressedSize": 551,
+      "length": 1074,
+      "compressionMethod": 1,
+      "crc32Index": "ba65267d",
+      "path": "/resources/art/fx/particles/fxtemplate_dummy_rot157.prt",
+      "sha256": "30d9843b9ffa405f30e95b3f0342e8ec57d8a116a9fd41b11f31c93ae0312555",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\fxtemplate_dummy_rot157.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x57320BDA3E020259",
+      "entryOffset": 151908171,
+      "headerSize": 36,
+      "dataOffset": 151908207,
+      "compressedSize": 560,
+      "length": 1119,
+      "compressionMethod": 1,
+      "crc32Index": "f8dd6ad1",
+      "path": "/resources/art/fx/particles/si_crushing_darkness_cloud.prt",
+      "sha256": "55dd4c2e3ae0d36a49e5f2a889e3416dbc06d9816a4b12f21815e90c1993a6ad",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_crushing_darkness_cloud.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xAD0A2CE0B120B24E",
+      "entryOffset": 136910996,
+      "headerSize": 36,
+      "dataOffset": 136911032,
+      "compressedSize": 4895,
+      "length": 8264,
+      "compressionMethod": 1,
+      "crc32Index": "37eec7be",
+      "path": "/resources/art/fx/geometry/jediknight/jk_force_shield_wave.gr2",
+      "sha256": "316fc63dd4d0fe6bb7ea9d54d249c4b25d6350ce1336d102d07342a95845f0b6",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\geometry\\jediknight\\jk_force_shield_wave.gr2",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x311201D0D1CB4E51",
+      "entryOffset": 152559912,
+      "headerSize": 36,
+      "dataOffset": 152559948,
+      "compressedSize": 76194,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "e7d75779",
+      "path": "/resources/art/fx/texture/smoke/si_smoke_highlights_purple.dds",
+      "sha256": "36d3c7ee241aa54a01f09a7e65209128b38b9824ca77bb70cab222f6a8917f9d",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\smoke\\si_smoke_highlights_purple.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x1AB20CE301958411",
+      "entryOffset": 151902063,
+      "headerSize": 36,
+      "dataOffset": 151902099,
+      "compressedSize": 2482,
+      "length": 29016,
+      "compressionMethod": 1,
+      "crc32Index": "bb01c09b",
+      "path": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness.fxspec",
+      "sha256": "35a4c6fe7fde6146ebd80465a1dcbe60fb236b5b5b60e6f0b2413489eb854ffa",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\sith_inquisitor\\si_crushing_darkness.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x2A8E32F9C1691C21",
+      "entryOffset": 151535939,
+      "headerSize": 36,
+      "dataOffset": 151535975,
+      "compressedSize": 267241,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "285890cf",
+      "path": "/resources/art/fx/texture/glow/si_body_crack_projector.dds",
+      "sha256": "9000ecb9d4254c3ed985a9d584e326d47611be155c7a4800f23ac64e562c01a2",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\glow\\si_body_crack_projector.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x0DE3BBF4D8684636",
+      "entryOffset": 152101001,
+      "headerSize": 36,
+      "dataOffset": 152101037,
+      "compressedSize": 1729,
+      "length": 20066,
+      "compressionMethod": 1,
+      "crc32Index": "a4e2e95a",
+      "path": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_forcespeed_01.fxspec",
+      "sha256": "be7731b596c85818e38c095a42ebc45b07fc25b802610acebbf058fa4c21847e",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\sith_inquisitor\\si_forcespeed_01.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x1799ABD2893A5230",
+      "entryOffset": 152105296,
+      "headerSize": 36,
+      "dataOffset": 152105332,
+      "compressedSize": 581,
+      "length": 1150,
+      "compressionMethod": 1,
+      "crc32Index": "b1039b19",
+      "path": "/resources/art/fx/particles/si_forcespeed_lines_01.prt",
+      "sha256": "a0e530ac70e4e96d48ff262c5cfbeb869562445cb6f90b2d9a3f44be8a97147f",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_forcespeed_lines_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xFE23127B0C7E8203",
+      "entryOffset": 152102766,
+      "headerSize": 36,
+      "dataOffset": 152102802,
+      "compressedSize": 536,
+      "length": 1075,
+      "compressionMethod": 1,
+      "crc32Index": "68cb2096",
+      "path": "/resources/art/fx/particles/si_forcespeed_blast_01.prt",
+      "sha256": "11298ba2f11f5c2c77a9876473de621bbc3b223fbf61d6a4577a1405ed63595a",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_forcespeed_blast_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x38F0804CFD704C44",
+      "entryOffset": 152104031,
+      "headerSize": 36,
+      "dataOffset": 152104067,
+      "compressedSize": 537,
+      "length": 1077,
+      "compressionMethod": 1,
+      "crc32Index": "aa48dfae",
+      "path": "/resources/art/fx/particles/si_forcespeed_blast_02.prt",
+      "sha256": "ac1a40e0fb66cafed3cfbc61dea35daff5604cf48f0be558a439a5e1528eb97d",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_forcespeed_blast_02.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x1D9F1D32CF7C4414",
+      "entryOffset": 152333950,
+      "headerSize": 36,
+      "dataOffset": 152333986,
+      "compressedSize": 3623,
+      "length": 80632,
+      "compressionMethod": 1,
+      "crc32Index": "5adf6f7b",
+      "path": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_polaritycharge_cast_01.fxspec",
+      "sha256": "4c86c0241fd68efb3940dded8732ac22f613ca0b10843cb1cbe76a328693aae2",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\sith_inquisitor\\si_polaritycharge_cast_01.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x63AABF81AC7481BA",
+      "entryOffset": 152337609,
+      "headerSize": 36,
+      "dataOffset": 152337645,
+      "compressedSize": 570,
+      "length": 1137,
+      "compressionMethod": 1,
+      "crc32Index": "fbbbbb0b",
+      "path": "/resources/art/fx/particles/si_polaritycharge_sparks_02.prt",
+      "sha256": "b646cb65aae60eb56713c695e5fb8063135c0cd6090f9e901372c6c24f4e0be0",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_polaritycharge_sparks_02.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x12483922711D46E1",
+      "entryOffset": 7044611,
+      "headerSize": 36,
+      "dataOffset": 7044647,
+      "compressedSize": 134803,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "3c451aba",
+      "path": "/resources/art/fx/texture/electricity/4x1_tiling_electrical_bw.dds",
+      "sha256": "00e3a14817cfeea4c920f170d4d02304a9713d22e19757e1ac5a3befbed28451",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\electricity\\4x1_tiling_electrical_bw.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x01C499D5E9FAA727",
+      "entryOffset": 152427870,
+      "headerSize": 36,
+      "dataOffset": 152427906,
+      "compressedSize": 909,
+      "length": 1872,
+      "compressionMethod": 1,
+      "crc32Index": "57c6122b",
+      "path": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01_p.prt",
+      "sha256": "895e3528360ffd59a7de0be00b009beb52f688285ae9ffb0481213bb386f3009",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_saber_elec_hit_purple_limbs_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x2638BA40967A960F",
+      "entryOffset": 152224568,
+      "headerSize": 36,
+      "dataOffset": 152224604,
+      "compressedSize": 827,
+      "length": 1705,
+      "compressionMethod": 1,
+      "crc32Index": "d5067d9b",
+      "path": "/resources/art/fx/particles/si_lightning_strike_hand_charge_p.prt",
+      "sha256": "d5efe29ceeb84298624c7784317f841abc850cd8ecb841f27adec5c13e0f7eab",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_lightning_strike_hand_charge_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xA633C669589F7DBA",
+      "entryOffset": 152236594,
+      "headerSize": 36,
+      "dataOffset": 152236630,
+      "compressedSize": 870,
+      "length": 1793,
+      "compressionMethod": 1,
+      "crc32Index": "a02cc0bc",
+      "path": "/resources/art/fx/particles/si_lightningdrain_bodyarcs_p.prt",
+      "sha256": "b7ff03dbca257b13e376a4fbe04bab5dd2ea0197ed296465f3737914711b6ce1",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_lightningdrain_bodyarcs_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xFE888042DA010C4E",
+      "entryOffset": 151914854,
+      "headerSize": 36,
+      "dataOffset": 151914890,
+      "compressedSize": 892,
+      "length": 1827,
+      "compressionMethod": 1,
+      "crc32Index": "0344f347",
+      "path": "/resources/art/fx/particles/si_crushing_darkness_hand_light_p.prt",
+      "sha256": "c9b572b2be8af417c09df74acd0e6d58e8177ccdd184303137bec99fb1ef09ea",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_crushing_darkness_hand_light_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x5EA5EED1AB132714",
+      "entryOffset": 151916377,
+      "headerSize": 36,
+      "dataOffset": 151916413,
+      "compressedSize": 843,
+      "length": 1733,
+      "compressionMethod": 1,
+      "crc32Index": "51cf3ce6",
+      "path": "/resources/art/fx/particles/si_crushing_darkness_hand_rings_p.prt",
+      "sha256": "2dc5c6c7d69be897cc5b3e0188dcef75720dac3bd077dcedd109779f13524676",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_crushing_darkness_hand_rings_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x5C57922B492BABAC",
+      "entryOffset": 151910204,
+      "headerSize": 36,
+      "dataOffset": 151910240,
+      "compressedSize": 853,
+      "length": 1740,
+      "compressionMethod": 1,
+      "crc32Index": "057abf4b",
+      "path": "/resources/art/fx/particles/si_crushing_darkness_forearm_light_p.prt",
+      "sha256": "fc47f3f6f88a0ad6150fce6587e32737594a9f211a78543e631a66d77faf5502",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_crushing_darkness_forearm_light_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xBA25CC4FD4D1038A",
+      "entryOffset": 151911672,
+      "headerSize": 36,
+      "dataOffset": 151911708,
+      "compressedSize": 691,
+      "length": 1309,
+      "compressionMethod": 1,
+      "crc32Index": "3c5981e0",
+      "path": "/resources/art/fx/particles/si_crushing_darkness_geo_rays_p.prt",
+      "sha256": "c1e7209a35021d2c218054691c86d58876df8658a967f3496d250c09e1ca7405",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_crushing_darkness_geo_rays_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x593ABD0E93D36F51",
+      "entryOffset": 151908767,
+      "headerSize": 36,
+      "dataOffset": 151908803,
+      "compressedSize": 793,
+      "length": 1625,
+      "compressionMethod": 1,
+      "crc32Index": "c7bcbc3a",
+      "path": "/resources/art/fx/particles/si_crushing_darkness_cloud_p.prt",
+      "sha256": "116c2a28399e47562cde2c4092231545b5c162764556f6aade5142d9a5084fb1",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_crushing_darkness_cloud_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x21FE3F94F8C372EE",
+      "entryOffset": 152105913,
+      "headerSize": 36,
+      "dataOffset": 152105949,
+      "compressedSize": 957,
+      "length": 2111,
+      "compressionMethod": 1,
+      "crc32Index": "cc51872d",
+      "path": "/resources/art/fx/particles/si_forcespeed_lines_01_p.prt",
+      "sha256": "5b5147e09878bfd1b23c936cf2828707a47dd09a75564e78c7a6f2e6aede9fc8",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_forcespeed_lines_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x68DCA82FD6F93BDB",
+      "entryOffset": 152103338,
+      "headerSize": 36,
+      "dataOffset": 152103374,
+      "compressedSize": 657,
+      "length": 1249,
+      "compressionMethod": 1,
+      "crc32Index": "688a6b9e",
+      "path": "/resources/art/fx/particles/si_forcespeed_blast_01_p.prt",
+      "sha256": "317c0ae19207006486e3c0be6ac8f6e468d9f9a9bd884e54ba403f2cbe53e648",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_forcespeed_blast_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x5543BE4591A9C02D",
+      "entryOffset": 152104604,
+      "headerSize": 36,
+      "dataOffset": 152104640,
+      "compressedSize": 656,
+      "length": 1249,
+      "compressionMethod": 1,
+      "crc32Index": "2ed63517",
+      "path": "/resources/art/fx/particles/si_forcespeed_blast_02_p.prt",
+      "sha256": "4d8386d9483c4a11def050c8ee82b9ca810a0dbb01a69da9b79f9fc4b7f2430b",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_forcespeed_blast_02_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xDE1C4A10C6E47FC1",
+      "entryOffset": 152338215,
+      "headerSize": 36,
+      "dataOffset": 152338251,
+      "compressedSize": 865,
+      "length": 1705,
+      "compressionMethod": 1,
+      "crc32Index": "8edc5b7b",
+      "path": "/resources/art/fx/particles/si_polaritycharge_sparks_02_p.prt",
+      "sha256": "a60f8c3081fad6d129830f5ac6dafde4e20595322a97fd268aa86b2b899b6f6d",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_polaritycharge_sparks_02_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x141D0204D1DDA67D",
+      "entryOffset": 36285116,
+      "headerSize": 36,
+      "dataOffset": 36285152,
+      "compressedSize": 37708,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "5542be04",
+      "path": "/resources/art/fx/texture/electricity/electric_rings_bw_02.dds",
+      "sha256": "1d8afb288152f78fcb0c32aa4de03cc57d1b212c3384594aab47dbb1932454ac",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\electricity\\electric_rings_bw_02.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xE336DA064069AEFD",
+      "entryOffset": 138450618,
+      "headerSize": 36,
+      "dataOffset": 138450654,
+      "compressedSize": 50456,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "09eedf4e",
+      "path": "/resources/art/fx/texture/electricity/lightning03.dds",
+      "sha256": "41ae66955ed979b0e60c6e968aa2590e21bf1d9307cbe8a15a423d2ba79147f7",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\electricity\\lightning03.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xC66A1A6D5092F378",
+      "entryOffset": 1289293,
+      "headerSize": 36,
+      "dataOffset": 1289329,
+      "compressedSize": 94758,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "1727f79d",
+      "path": "/resources/art/fx/texture/electricity/2x2_dark_energy_clouds_02.dds",
+      "sha256": "add53027bad1f1f0abc96f511e76a6aad7e9cf0d755bcd21507945b7d60c291e",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\electricity\\2x2_dark_energy_clouds_02.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD4B108CA8193637C",
+      "entryOffset": 1996263,
+      "headerSize": 36,
+      "dataOffset": 1996299,
+      "compressedSize": 50238,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "1384aef3",
+      "path": "/resources/art/fx/texture/electricity/2x2_electricity_lightning_streaks_blue_2.dds",
+      "sha256": "1a2a9d6c77037a48273aa0d2f9b8c406dd6d2d33aa3d3bcaebe1f3c36a688f3f",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\electricity\\2x2_electricity_lightning_streaks_blue_2.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD0A9806C5F0D0736",
+      "entryOffset": 77172161,
+      "headerSize": 36,
+      "dataOffset": 77172197,
+      "compressedSize": 4248,
+      "length": 6104,
+      "compressionMethod": 1,
+      "crc32Index": "46dd1fed",
+      "path": "/resources/art/fx/geometry/sith_inquisitor/fx_si_crushing_darkness_rays.gr2",
+      "sha256": "4c1cb5fd2574090a0032d6145ba525b579bd90697f9d941deeb2ef573e76df42",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\geometry\\sith_inquisitor\\fx_si_crushing_darkness_rays.gr2",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xFD0F1747F066CC9F",
+      "entryOffset": 129763617,
+      "headerSize": 36,
+      "dataOffset": 129763653,
+      "compressedSize": 3526,
+      "length": 8320,
+      "compressionMethod": 1,
+      "crc32Index": "5e3311ec",
+      "path": "/resources/art/fx/texture/glow/glow_basic_nomips.dds",
+      "sha256": "3e4cc2908576cf2401b80978d00cab95bb1d6a9434c4b8cecb0c011958ea652d",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\glow\\glow_basic_nomips.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_misc_1.tor",
+      "archiveHash": "0x927EC4C4BF51BF0E",
+      "entryOffset": 47364813,
+      "headerSize": 36,
+      "dataOffset": 47364849,
+      "compressedSize": 56,
+      "length": 384,
+      "compressionMethod": 1,
+      "crc32Index": "084a80b4",
+      "path": "/resources/art/defaultassets/black.dds",
+      "sha256": "f6fc96233461b12b33ffd2e0c79c96216fbee0af5c31597d1cc1fa940a16057d",
+      "output": "source-assets\\april2012\\resources\\art\\defaultassets\\black.dds",
+      "archiveSha256": "9ac8eae93e1ed26e964a9b1146f653b73276ea7294f2311329c1699dbca7b7d6",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x3277F1A37E21F221",
+      "entryOffset": 77266938,
+      "headerSize": 36,
+      "dataOffset": 77266974,
+      "compressedSize": 4018,
+      "length": 5848,
+      "compressionMethod": 1,
+      "crc32Index": "d151ebb3",
+      "path": "/resources/art/fx/geometry/inquisitor/fx_si_forcespeed_blast_01.gr2",
+      "sha256": "ae77fb88b1321ddd45a6b9209f31ee58340c621b21f61a61029bcd6e84b767f9",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\geometry\\inquisitor\\fx_si_forcespeed_blast_01.gr2",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xDFB0CC504C9D3FF2",
+      "entryOffset": 23962121,
+      "headerSize": 36,
+      "dataOffset": 23962157,
+      "compressedSize": 15295,
+      "length": 43832,
+      "compressionMethod": 1,
+      "crc32Index": "2d3f212d",
+      "path": "/resources/art/fx/texture/spark/bw_fx_2x2_sparknglow_01.dds",
+      "sha256": "976ea6f566f7c262e2d7845bff6e6d690608c92c02f3273dc2f729d0502a9733",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\spark\\bw_fx_2x2_sparknglow_01.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x72D1F008B7F30872",
+      "entryOffset": 152225431,
+      "headerSize": 36,
+      "dataOffset": 152225467,
+      "compressedSize": 3309,
+      "length": 39264,
+      "compressionMethod": 1,
+      "crc32Index": "61c0cae3",
+      "path": "/resources/art/fx/fxspec/si_lightning_strike_target_01.fxspec",
+      "sha256": "b6eaca785e8363a48fbab11ce015f2ef7a66a871daba03bc9230605f5acdd56c",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\si_lightning_strike_target_01.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x8E4DA8BB88F5B12E",
+      "entryOffset": 152058033,
+      "headerSize": 36,
+      "dataOffset": 152058069,
+      "compressedSize": 442,
+      "length": 841,
+      "compressionMethod": 1,
+      "crc32Index": "7082cd21",
+      "path": "/resources/art/fx/particles/si_electric_flash_impact_01.prt",
+      "sha256": "a7cabf0ced4dc09d15b6b090c46dc7e533075b347c48bd385f27ce2d7834bac3",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_electric_flash_impact_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x6526665D39E5D559",
+      "entryOffset": 152058511,
+      "headerSize": 36,
+      "dataOffset": 152058547,
+      "compressedSize": 760,
+      "length": 1576,
+      "compressionMethod": 1,
+      "crc32Index": "a9e07ef7",
+      "path": "/resources/art/fx/particles/si_electric_flash_impact_01_p.prt",
+      "sha256": "77b15e207221c26e9a7a26eec039a4614a1841dd7ced739fd56f0990757a78bc",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_electric_flash_impact_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xCED746BB48EE963E",
+      "entryOffset": 155583526,
+      "headerSize": 36,
+      "dataOffset": 155583562,
+      "compressedSize": 18263,
+      "length": 43832,
+      "compressionMethod": 1,
+      "crc32Index": "ebe6b573",
+      "path": "/resources/art/fx/texture/spark/spark_core.dds",
+      "sha256": "bd582ac8106b146f846193ea37cc1effd9d2f879ae11fbd2f9a309bf93ae4c2b",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\spark\\spark_core.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x0E737E21285FD6B4",
+      "entryOffset": 151848943,
+      "headerSize": 36,
+      "dataOffset": 151848979,
+      "compressedSize": 2801,
+      "length": 41218,
+      "compressionMethod": 1,
+      "crc32Index": "a71de5ab",
+      "path": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_consumingdarkness_cast.fxspec",
+      "sha256": "b99755ae8171da1d37c48abdb6ec0dcbefdeebaa7a699e2e6b467b6b438c8ad9",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\sith_inquisitor\\si_consumingdarkness_cast.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x4BAB585CBE9AF12F",
+      "entryOffset": 151860758,
+      "headerSize": 36,
+      "dataOffset": 151860794,
+      "compressedSize": 564,
+      "length": 1105,
+      "compressionMethod": 1,
+      "crc32Index": "3ab7de78",
+      "path": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_01.prt",
+      "sha256": "81b54786b1b8a87a09a81d1af18f91aca380c0fdd33c0b9c7e883a1f6d1b4782",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_consumingdarkness_smoke_hand_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xC301D46B3D7B067A",
+      "entryOffset": 151862221,
+      "headerSize": 36,
+      "dataOffset": 151862257,
+      "compressedSize": 563,
+      "length": 1106,
+      "compressionMethod": 1,
+      "crc32Index": "66c420dc",
+      "path": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_02.prt",
+      "sha256": "c2c8151e1e6f21ad2b959fd7a872a1cb0a0e7d56e84d4ab59fa27cba3f276370",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_consumingdarkness_smoke_hand_02.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x15DEE0E5DA049F3E",
+      "entryOffset": 151924923,
+      "headerSize": 36,
+      "dataOffset": 151924959,
+      "compressedSize": 436,
+      "length": 809,
+      "compressionMethod": 1,
+      "crc32Index": "c89e24f1",
+      "path": "/resources/art/fx/particles/si_darkafflic_handflare.prt",
+      "sha256": "a9b0392529a34c414b8a7f4f0267e839b0fa2a20adb2b9c2a7c3e490f1aa7bfb",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_darkafflic_handflare.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xAE12DF0D56D7FC65",
+      "entryOffset": 154342530,
+      "headerSize": 36,
+      "dataOffset": 154342566,
+      "compressedSize": 442,
+      "length": 788,
+      "compressionMethod": 1,
+      "crc32Index": "8a32b2fa",
+      "path": "/resources/art/fx/particles/sorc_drkaff_handwisps.prt",
+      "sha256": "c81766fbd52f599819054f787f038fa70f78d51f337ef7981ab6d20d88b3a616",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sorc_drkaff_handwisps.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x8DF0BEC62D5140FD",
+      "entryOffset": 154343708,
+      "headerSize": 36,
+      "dataOffset": 154343744,
+      "compressedSize": 456,
+      "length": 806,
+      "compressionMethod": 1,
+      "crc32Index": "45028a08",
+      "path": "/resources/art/fx/particles/sorc_drkaff_orb_bolts.prt",
+      "sha256": "d2785975816136ac3d9775ad2c682ff8d60f9e2b7ef97adbe386f0d8077b8bb7",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sorc_drkaff_orb_bolts.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xAD655F32514C68D2",
+      "entryOffset": 151925395,
+      "headerSize": 36,
+      "dataOffset": 151925431,
+      "compressedSize": 426,
+      "length": 803,
+      "compressionMethod": 1,
+      "crc32Index": "68538013",
+      "path": "/resources/art/fx/particles/si_darkafflic_handflare_long.prt",
+      "sha256": "cddfaccc6fa4243ab9e4f1cc7126a01ee54120a5de076a4166a8f3bc36f9d17f",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_darkafflic_handflare_long.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x1B443DCFEB71F136",
+      "entryOffset": 33567104,
+      "headerSize": 36,
+      "dataOffset": 33567140,
+      "compressedSize": 9245,
+      "length": 43832,
+      "compressionMethod": 1,
+      "crc32Index": "f2a24822",
+      "path": "/resources/art/fx/texture/smoke/consuming_smoke_ring_01.dds",
+      "sha256": "2e0898a73521acfaa141d261a3d1142840282ee5fd4f2c6c73922b5aafbe7767",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\smoke\\consuming_smoke_ring_01.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x795975B0D494533F",
+      "entryOffset": 151938848,
+      "headerSize": 36,
+      "dataOffset": 151938884,
+      "compressedSize": 2046,
+      "length": 39076,
+      "compressionMethod": 1,
+      "crc32Index": "332d29ba",
+      "path": "/resources/art/fx/fxspec/si_darkaffliction_target.fxspec",
+      "sha256": "2084e8ec46311468698c7486f6480c528e3dbe0cb9b3f55ee82ad64f8d8c1c98",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\si_darkaffliction_target.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xEA0ECCA4223B14C6",
+      "entryOffset": 151927626,
+      "headerSize": 36,
+      "dataOffset": 151927662,
+      "compressedSize": 571,
+      "length": 1131,
+      "compressionMethod": 1,
+      "crc32Index": "3c458f50",
+      "path": "/resources/art/fx/particles/si_darkafflic_smoke_01.prt",
+      "sha256": "1b727a2b2803c6db66008196fec6c4167de236153549fc99b457c51b9c8e2850",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_darkafflic_smoke_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x7DA153E9680F028A",
+      "entryOffset": 151929134,
+      "headerSize": 36,
+      "dataOffset": 151929170,
+      "compressedSize": 571,
+      "length": 1132,
+      "compressionMethod": 1,
+      "crc32Index": "bcb4ca5f",
+      "path": "/resources/art/fx/particles/si_darkafflic_smoke_02.prt",
+      "sha256": "e9b7709d35ff9640ae3cc6b9d95d0b28c9b390c7b03ed70d2ad195c9a169d11a",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_darkafflic_smoke_02.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x92AD620EA6F0B9B5",
+      "entryOffset": 151930640,
+      "headerSize": 36,
+      "dataOffset": 151930676,
+      "compressedSize": 489,
+      "length": 907,
+      "compressionMethod": 1,
+      "crc32Index": "6af2be84",
+      "path": "/resources/art/fx/particles/si_darkafflic_smoke_03.prt",
+      "sha256": "081b6a709371d96d63c0b5e29b9ba5ed1498298e7197830d5e7ea486cc8ac5b0",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_darkafflic_smoke_03.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xFE2951F396590F37",
+      "entryOffset": 151921815,
+      "headerSize": 36,
+      "dataOffset": 151921851,
+      "compressedSize": 572,
+      "length": 1132,
+      "compressionMethod": 1,
+      "crc32Index": "ee3e3ad9",
+      "path": "/resources/art/fx/particles/si_darkafflic_glowtarget_01.prt",
+      "sha256": "ef2f5d8cacada9248fe6767f6f2d27a305e635f2b607a2b41886a8ce6bfe271d",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_darkafflic_glowtarget_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xED3462D27D5DE418",
+      "entryOffset": 151923378,
+      "headerSize": 36,
+      "dataOffset": 151923414,
+      "compressedSize": 577,
+      "length": 1141,
+      "compressionMethod": 1,
+      "crc32Index": "5cb1ba0a",
+      "path": "/resources/art/fx/particles/si_darkafflic_glowtarget_leg_01.prt",
+      "sha256": "16cad8909a6b84907d3208535826b0a6f36c6d928c846a9541592cd4d80d6845",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_darkafflic_glowtarget_leg_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x4E30E0EB7779A32B",
+      "entryOffset": 151861358,
+      "headerSize": 36,
+      "dataOffset": 151861394,
+      "compressedSize": 827,
+      "length": 1693,
+      "compressionMethod": 1,
+      "crc32Index": "2853d46f",
+      "path": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_01_p.prt",
+      "sha256": "4c6c4f06d429958561afff42e7f5b35d3a7aed5807d4b06c665c7e7616152583",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_consumingdarkness_smoke_hand_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x29401858AC8FEF6E",
+      "entryOffset": 151862820,
+      "headerSize": 36,
+      "dataOffset": 151862856,
+      "compressedSize": 827,
+      "length": 1693,
+      "compressionMethod": 1,
+      "crc32Index": "4b57b95e",
+      "path": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_02_p.prt",
+      "sha256": "9cd8b117d02c104f8023e03e93863bd3f4a45e46bb08a514de51f171432a4308",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_consumingdarkness_smoke_hand_02_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x67274B369E3EA52B",
+      "entryOffset": 151926757,
+      "headerSize": 36,
+      "dataOffset": 151926793,
+      "compressedSize": 833,
+      "length": 1663,
+      "compressionMethod": 1,
+      "crc32Index": "41c8e32f",
+      "path": "/resources/art/fx/particles/si_darkafflic_handflare_p.prt",
+      "sha256": "0a284e04ba6098ff2c4b1a105a5c0401af408135a33f4abcf8e57db30ad4a7ae",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_darkafflic_handflare_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xC47EBA97076D11EE",
+      "entryOffset": 154343008,
+      "headerSize": 36,
+      "dataOffset": 154343044,
+      "compressedSize": 664,
+      "length": 1227,
+      "compressionMethod": 1,
+      "crc32Index": "161699bb",
+      "path": "/resources/art/fx/particles/sorc_drkaff_handwisps_p.prt",
+      "sha256": "e5f69f1da319e2321ca13ea94806e66fa81b48b2c19f790a1c38e4df075eefe3",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sorc_drkaff_handwisps_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x57F925B60A17ADB9",
+      "entryOffset": 154344200,
+      "headerSize": 36,
+      "dataOffset": 154344236,
+      "compressedSize": 625,
+      "length": 1162,
+      "compressionMethod": 1,
+      "crc32Index": "ee36e4dd",
+      "path": "/resources/art/fx/particles/sorc_drkaff_orb_bolts_p.prt",
+      "sha256": "3cd5f1dc44ce0c90aed6db3b12358d51c0ad4a08e6e688c3aadef986067b183f",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\sorc_drkaff_orb_bolts_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x9909569D93B5DA0B",
+      "entryOffset": 151925857,
+      "headerSize": 36,
+      "dataOffset": 151925893,
+      "compressedSize": 864,
+      "length": 1710,
+      "compressionMethod": 1,
+      "crc32Index": "7ce4e2ce",
+      "path": "/resources/art/fx/particles/si_darkafflic_handflare_long_p.prt",
+      "sha256": "b81d165a6ba6e7788a45f6893db1476809b6413d6494fbfae121604a52cf5bbf",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_darkafflic_handflare_long_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xADADDBC1F5722AEC",
+      "entryOffset": 151928233,
+      "headerSize": 36,
+      "dataOffset": 151928269,
+      "compressedSize": 865,
+      "length": 1792,
+      "compressionMethod": 1,
+      "crc32Index": "c30766b8",
+      "path": "/resources/art/fx/particles/si_darkafflic_smoke_01_p.prt",
+      "sha256": "a66bf12efad93a421e3afa99f67ec3a7322e340191006340df4659fc0a49f7ce",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_darkafflic_smoke_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x0C0611A972A9E19C",
+      "entryOffset": 151929741,
+      "headerSize": 36,
+      "dataOffset": 151929777,
+      "compressedSize": 863,
+      "length": 1794,
+      "compressionMethod": 1,
+      "crc32Index": "f0a38e13",
+      "path": "/resources/art/fx/particles/si_darkafflic_smoke_02_p.prt",
+      "sha256": "398e4ede5f7ce625c7697568613e9138c893fbaee273903b70a59e9ac5b05a94",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_darkafflic_smoke_02_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xB17786C0E910FC04",
+      "entryOffset": 151931165,
+      "headerSize": 36,
+      "dataOffset": 151931201,
+      "compressedSize": 875,
+      "length": 1848,
+      "compressionMethod": 1,
+      "crc32Index": "7ae0ccea",
+      "path": "/resources/art/fx/particles/si_darkafflic_smoke_03_p.prt",
+      "sha256": "691be5fa9b16b54d66be00591c0d3fda7a2876f715db3b3ef075be8d5ae498fa",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_darkafflic_smoke_03_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xE4C27549248FCC6B",
+      "entryOffset": 151922423,
+      "headerSize": 36,
+      "dataOffset": 151922459,
+      "compressedSize": 919,
+      "length": 1868,
+      "compressionMethod": 1,
+      "crc32Index": "b504dac8",
+      "path": "/resources/art/fx/particles/si_darkafflic_glowtarget_01_p.prt",
+      "sha256": "c62e814b45c88249b93679694268b0547dd802c2312e30af3f7cec774fff5226",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_darkafflic_glowtarget_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xDE69EE944FC5C5E4",
+      "entryOffset": 151923991,
+      "headerSize": 36,
+      "dataOffset": 151924027,
+      "compressedSize": 896,
+      "length": 1786,
+      "compressionMethod": 1,
+      "crc32Index": "73900ef4",
+      "path": "/resources/art/fx/particles/si_darkafflic_glowtarget_leg_01_p.prt",
+      "sha256": "bab29ba735fcbeb115a91561d4b1b33d3528b1c77b302aa713c3f22d7d554b4e",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_darkafflic_glowtarget_leg_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xB709B42F87BC41F4",
+      "entryOffset": 153941847,
+      "headerSize": 36,
+      "dataOffset": 153941883,
+      "compressedSize": 64499,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "c15e783e",
+      "path": "/resources/art/fx/texture/smoke/smoke_thin.dds",
+      "sha256": "022ca27095d289998135b1aca7f0c77623d66ea9c4bc6fc4b1c6e727fd07b814",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\smoke\\smoke_thin.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xCACB0D6351A8BBC0",
+      "entryOffset": 23715490,
+      "headerSize": 36,
+      "dataOffset": 23715526,
+      "compressedSize": 30405,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "a8b99307",
+      "path": "/resources/art/fx/texture/glow/bw_flare_gray.dds",
+      "sha256": "f375d79f322cbdcb2cdcc8fcf61153f4a903dbbff4639e4bf7ef9bc8e9132558",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\glow\\bw_flare_gray.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x3AD8C1041231ABA1",
+      "entryOffset": 138507767,
+      "headerSize": 36,
+      "dataOffset": 138507803,
+      "compressedSize": 55640,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "a1c0f4b7",
+      "path": "/resources/art/fx/texture/electricity/lightning_core.dds",
+      "sha256": "03c0cd056d1a6c943da458ec6dd964eed0088c46ca8bbbe429f18b3c357edcdb",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\electricity\\lightning_core.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xF0F5D082D9544ABB",
+      "entryOffset": 1920442,
+      "headerSize": 36,
+      "dataOffset": 1920478,
+      "compressedSize": 13680,
+      "length": 43832,
+      "compressionMethod": 1,
+      "crc32Index": "89a0ba6d",
+      "path": "/resources/art/fx/texture/electricity/2x2_electricity_bolts.dds",
+      "sha256": "7aece997568bb31afaa3225530723a7e138636c5283dc9fbfa5858c46e00e5f2",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\electricity\\2x2_electricity_bolts.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xACAA0E6BD90BE776",
+      "entryOffset": 24855692,
+      "headerSize": 36,
+      "dataOffset": 24855728,
+      "compressedSize": 12634,
+      "length": 87568,
+      "compressionMethod": 1,
+      "crc32Index": "253e3d64",
+      "path": "/resources/art/fx/texture/glow/bw_fx_horizontal_flare_orange_hot.dds",
+      "sha256": "4f8ba44e6007105291c96002290d0e75431da9c71f7e682db0560651947e5b27",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\glow\\bw_fx_horizontal_flare_orange_hot.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xA664F6B358E1A591",
+      "entryOffset": 1760615,
+      "headerSize": 36,
+      "dataOffset": 1760651,
+      "compressedSize": 158916,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "70f6ca64",
+      "path": "/resources/art/fx/texture/glow/2x2_electrical_blast_alpha.dds",
+      "sha256": "de0ea6581c25690965f8fbc618ea3234faf5d793545b46e416fc3bc9045a8a2e",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\glow\\2x2_electrical_blast_alpha.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "Strike",
+      "to": "/resources/anim/humanoid/bmnnew/fp_1h_elect_instant_right_4.jba",
+      "relation": "April appearance semantic gesture; matching original electrical JBA adapter"
+    },
+    {
+      "from": "Darkness",
+      "to": "/resources/anim/humanoid/bmnnew/fp_1h_elect_instant_right_2.jba",
+      "relation": "April appearance semantic gesture; matching original electrical JBA adapter"
+    },
+    {
+      "from": "Polarity",
+      "to": "/resources/anim/humanoid/bmnnew/cb_buff_consumption_exit.jba",
+      "relation": "April appearance semantic gesture; matching original electrical JBA adapter"
+    },
+    {
+      "from": "lightningstrike",
+      "to": "/resources/gfx/icons/lightningstrike.dds",
+      "relation": "April Sorcerer ablIconSpec artwork"
+    },
+    {
+      "from": "dark_embrace",
+      "to": "/resources/gfx/icons/dark_embrace.dds",
+      "relation": "April Sorcerer ablIconSpec artwork"
+    },
+    {
+      "from": "polaritycharge",
+      "to": "/resources/gfx/icons/polaritycharge.dds",
+      "relation": "April Sorcerer ablIconSpec artwork"
+    },
+    {
+      "from": "forcespeed",
+      "to": "/resources/gfx/icons/forcespeed.dds",
+      "relation": "April Sorcerer ablIconSpec artwork"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightning_strike_caster_hand_loop.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightning_strike_caster_hand_loop.fxspec",
+      "to": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightning_strike_caster_hand_loop.fxspec",
+      "to": "/resources/art/fx/particles/fxtemplate_dummy_point.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightning_strike_caster_hand_loop.fxspec",
+      "to": "/resources/art/fx/particles/si_lightning_strike_hand_charge.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightning_strike_caster_hand_loop.fxspec",
+      "to": "/resources/art/fx/texture/electricity/512_singlearcb_bw.dds",
+      "relation": "_fxTextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightningdrain_bodyarcs.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightningdrain_bodyarcs.fxspec",
+      "to": "/resources/art/fx/particles/si_lightningdrain_bodyarcs.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightningdrain_bodyarcs.fxspec",
+      "to": "/resources/art/fx/geometry/fx_dummy_cube.gr2",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightningdrain_bodyarcs.fxspec",
+      "to": "/resources/art/fx/texture/electricity/512_singlearcb_bw.dds",
+      "relation": "_fxTextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness_hand_cast.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness_hand_cast.fxspec",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_hand_light.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness_hand_cast.fxspec",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_hand_rings.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness_hand_cast.fxspec",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_forearm_light.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness_cast.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness_cast.fxspec",
+      "to": "/resources/art/fx/particles/fxtemplate_dummy_randrot3axis.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness_cast.fxspec",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_geo_rays.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness_cast.fxspec",
+      "to": "/resources/art/fx/particles/fxtemplate_dummy_rot157.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness_cast.fxspec",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_cloud.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness_cast.fxspec",
+      "to": "/resources/art/fx/geometry/jediknight/jk_force_shield_wave.gr2",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness_cast.fxspec",
+      "to": "/resources/art/fx/texture/smoke/si_smoke_highlights_purple.dds",
+      "relation": "_fxProjectionTexture"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness_cast.fxspec",
+      "to": "/resources/art/fx/texture/smoke/si_smoke_highlights_purple.dds",
+      "relation": "_fxProjectionTexture_layer1"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness.fxspec",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_cloud.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness.fxspec",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_geo_rays.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_crushing_darkness.fxspec",
+      "to": "/resources/art/fx/texture/glow/si_body_crack_projector.dds",
+      "relation": "_fxProjectionTexture"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_forcespeed_01.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_forcespeed_01.fxspec",
+      "to": "/resources/art/fx/particles/si_forcespeed_lines_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_forcespeed_01.fxspec",
+      "to": "/resources/art/fx/particles/si_forcespeed_blast_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_forcespeed_01.fxspec",
+      "to": "/resources/art/fx/particles/si_forcespeed_blast_02.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_polaritycharge_cast_01.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_polaritycharge_cast_01.fxspec",
+      "to": "/resources/art/fx/particles/fxtemplate_dummy_point.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_polaritycharge_cast_01.fxspec",
+      "to": "/resources/art/fx/particles/si_polaritycharge_sparks_02.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_polaritycharge_cast_01.fxspec",
+      "to": "/resources/art/fx/texture/electricity/4x1_tiling_electrical_bw.dds",
+      "relation": "_fxTextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01.prt",
+      "to": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01.prt",
+      "to": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/fxtemplate_dummy_point.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/fxtemplate_dummy_point.prt",
+      "to": "/resources/art/fx/particles/fxtemplate_dummy_point.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_lightning_strike_hand_charge.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_lightning_strike_hand_charge.prt",
+      "to": "/resources/art/fx/particles/si_lightning_strike_hand_charge.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_lightning_strike_hand_charge.prt",
+      "to": "/resources/art/fx/particles/si_lightning_strike_hand_charge_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/electricity/512_singlearcb_bw.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_lightningdrain_bodyarcs.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_lightningdrain_bodyarcs.prt",
+      "to": "/resources/art/fx/particles/si_lightningdrain_bodyarcs.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_lightningdrain_bodyarcs.prt",
+      "to": "/resources/art/fx/particles/si_lightningdrain_bodyarcs_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/geometry/fx_dummy_cube.gr2",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_hand_light.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_hand_light.prt",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_hand_light.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_hand_light.prt",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_hand_light_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_hand_rings.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_hand_rings.prt",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_hand_rings.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_hand_rings.prt",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_hand_rings_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_forearm_light.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_forearm_light.prt",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_forearm_light.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_forearm_light.prt",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_forearm_light_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/fxtemplate_dummy_randrot3axis.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/fxtemplate_dummy_randrot3axis.prt",
+      "to": "/resources/art/fx/particles/fxtemplate_dummy_randrot3axis.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_geo_rays.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_geo_rays.prt",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_geo_rays.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_geo_rays.prt",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_geo_rays_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/fxtemplate_dummy_rot157.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/fxtemplate_dummy_rot157.prt",
+      "to": "/resources/art/fx/particles/fxtemplate_dummy_rot157.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_cloud.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_cloud.prt",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_cloud.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_cloud.prt",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_cloud_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/geometry/jediknight/jk_force_shield_wave.gr2",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/smoke/si_smoke_highlights_purple.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/glow/si_body_crack_projector.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_forcespeed_lines_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_forcespeed_lines_01.prt",
+      "to": "/resources/art/fx/particles/si_forcespeed_lines_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_forcespeed_lines_01.prt",
+      "to": "/resources/art/fx/particles/si_forcespeed_lines_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_forcespeed_blast_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_forcespeed_blast_01.prt",
+      "to": "/resources/art/fx/particles/si_forcespeed_blast_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_forcespeed_blast_01.prt",
+      "to": "/resources/art/fx/particles/si_forcespeed_blast_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_forcespeed_blast_02.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_forcespeed_blast_02.prt",
+      "to": "/resources/art/fx/particles/si_forcespeed_blast_02.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_forcespeed_blast_02.prt",
+      "to": "/resources/art/fx/particles/si_forcespeed_blast_02_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_polaritycharge_sparks_02.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_polaritycharge_sparks_02.prt",
+      "to": "/resources/art/fx/particles/si_polaritycharge_sparks_02.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_polaritycharge_sparks_02.prt",
+      "to": "/resources/art/fx/particles/si_polaritycharge_sparks_02_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/electricity/4x1_tiling_electrical_bw.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01_p.prt",
+      "to": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01_p.prt",
+      "to": "/resources/art/fx/texture/electricity/electric_rings_bw_02.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_lightning_strike_hand_charge_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_lightning_strike_hand_charge_p.prt",
+      "to": "/resources/art/fx/particles/si_lightning_strike_hand_charge_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_lightning_strike_hand_charge_p.prt",
+      "to": "/resources/art/fx/texture/electricity/lightning03.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_lightningdrain_bodyarcs_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_lightningdrain_bodyarcs_p.prt",
+      "to": "/resources/art/fx/particles/si_lightningdrain_bodyarcs_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_lightningdrain_bodyarcs_p.prt",
+      "to": "/resources/art/fx/texture/electricity/electric_rings_bw_02.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_hand_light_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_hand_light_p.prt",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_hand_light_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_hand_light_p.prt",
+      "to": "/resources/art/fx/texture/electricity/electric_rings_bw_02.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_hand_rings_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_hand_rings_p.prt",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_hand_rings_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_hand_rings_p.prt",
+      "to": "/resources/art/fx/texture/electricity/2x2_dark_energy_clouds_02.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_forearm_light_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_forearm_light_p.prt",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_forearm_light_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_forearm_light_p.prt",
+      "to": "/resources/art/fx/texture/electricity/2x2_electricity_lightning_streaks_blue_2.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_geo_rays_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_geo_rays_p.prt",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_geo_rays_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_geo_rays_p.prt",
+      "to": "/resources/art/fx/geometry/sith_inquisitor/fx_si_crushing_darkness_rays.gr2",
+      "relation": "GrannyFileName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_cloud_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_cloud_p.prt",
+      "to": "/resources/art/fx/particles/si_crushing_darkness_cloud_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_crushing_darkness_cloud_p.prt",
+      "to": "/resources/art/fx/texture/electricity/2x2_dark_energy_clouds_02.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_forcespeed_lines_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_forcespeed_lines_01_p.prt",
+      "to": "/resources/art/fx/particles/si_forcespeed_lines_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_forcespeed_lines_01_p.prt",
+      "to": "/resources/art/fx/texture/glow/glow_basic_nomips.dds",
+      "relation": "TrailTexture"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_forcespeed_lines_01_p.prt",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_forcespeed_blast_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_forcespeed_blast_01_p.prt",
+      "to": "/resources/art/fx/particles/si_forcespeed_blast_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_forcespeed_blast_01_p.prt",
+      "to": "/resources/art/fx/geometry/inquisitor/fx_si_forcespeed_blast_01.gr2",
+      "relation": "GrannyFileName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_forcespeed_blast_02_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_forcespeed_blast_02_p.prt",
+      "to": "/resources/art/fx/particles/si_forcespeed_blast_02_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_forcespeed_blast_02_p.prt",
+      "to": "/resources/art/fx/geometry/inquisitor/fx_si_forcespeed_blast_01.gr2",
+      "relation": "GrannyFileName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_polaritycharge_sparks_02_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_polaritycharge_sparks_02_p.prt",
+      "to": "/resources/art/fx/particles/si_polaritycharge_sparks_02_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_polaritycharge_sparks_02_p.prt",
+      "to": "/resources/art/fx/texture/spark/bw_fx_2x2_sparknglow_01.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/electricity/electric_rings_bw_02.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/electricity/lightning03.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/electricity/2x2_dark_energy_clouds_02.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/electricity/2x2_electricity_lightning_streaks_blue_2.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/geometry/sith_inquisitor/fx_si_crushing_darkness_rays.gr2",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/glow/glow_basic_nomips.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/geometry/inquisitor/fx_si_forcespeed_blast_01.gr2",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/spark/bw_fx_2x2_sparknglow_01.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/si_lightning_strike_target_01.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/si_lightning_strike_target_01.fxspec",
+      "to": "/resources/art/fx/particles/si_electric_flash_impact_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/si_lightning_strike_target_01.fxspec",
+      "to": "/resources/art/fx/geometry/fx_dummy_cube.gr2",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/si_lightning_strike_target_01.fxspec",
+      "to": "/resources/art/fx/texture/electricity/512_singlearcb_bw.dds",
+      "relation": "_fxTextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_electric_flash_impact_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_electric_flash_impact_01.prt",
+      "to": "/resources/art/fx/particles/si_electric_flash_impact_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_electric_flash_impact_01.prt",
+      "to": "/resources/art/fx/particles/si_electric_flash_impact_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_electric_flash_impact_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_electric_flash_impact_01_p.prt",
+      "to": "/resources/art/fx/particles/si_electric_flash_impact_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_electric_flash_impact_01_p.prt",
+      "to": "/resources/art/fx/texture/spark/spark_core.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/spark/spark_core.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_consumingdarkness_cast.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_consumingdarkness_cast.fxspec",
+      "to": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_consumingdarkness_cast.fxspec",
+      "to": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_02.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_consumingdarkness_cast.fxspec",
+      "to": "/resources/art/fx/particles/si_darkafflic_handflare.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_consumingdarkness_cast.fxspec",
+      "to": "/resources/art/fx/particles/sorc_drkaff_handwisps.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_consumingdarkness_cast.fxspec",
+      "to": "/resources/art/fx/particles/sorc_drkaff_orb_bolts.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_consumingdarkness_cast.fxspec",
+      "to": "/resources/art/fx/particles/si_darkafflic_handflare_long.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_consumingdarkness_cast.fxspec",
+      "to": "/resources/art/fx/texture/smoke/consuming_smoke_ring_01.dds",
+      "relation": "_fxProjectionTexture"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/fxspec/si_darkaffliction_target.fxspec",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/si_darkaffliction_target.fxspec",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/si_darkaffliction_target.fxspec",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_02.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/si_darkaffliction_target.fxspec",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_03.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/si_darkaffliction_target.fxspec",
+      "to": "/resources/art/fx/particles/si_darkafflic_glowtarget_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "/resources/art/fx/fxspec/si_darkaffliction_target.fxspec",
+      "to": "/resources/art/fx/particles/si_darkafflic_glowtarget_leg_01.prt",
+      "relation": "_fxResourceName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_01.prt",
+      "to": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_01.prt",
+      "to": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_02.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_02.prt",
+      "to": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_02.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_02.prt",
+      "to": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_02_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_darkafflic_handflare.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_handflare.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_handflare.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_handflare.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_handflare_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sorc_drkaff_handwisps.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sorc_drkaff_handwisps.prt",
+      "to": "/resources/art/fx/particles/sorc_drkaff_handwisps.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sorc_drkaff_handwisps.prt",
+      "to": "/resources/art/fx/particles/sorc_drkaff_handwisps_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sorc_drkaff_orb_bolts.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sorc_drkaff_orb_bolts.prt",
+      "to": "/resources/art/fx/particles/sorc_drkaff_orb_bolts.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sorc_drkaff_orb_bolts.prt",
+      "to": "/resources/art/fx/particles/sorc_drkaff_orb_bolts_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_darkafflic_handflare_long.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_handflare_long.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_handflare_long.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_handflare_long.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_handflare_long_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/smoke/consuming_smoke_ring_01.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_smoke_01.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_smoke_01.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_02.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_smoke_02.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_02.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_smoke_02.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_02_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_03.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_smoke_03.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_03.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_smoke_03.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_03_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_darkafflic_glowtarget_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_glowtarget_01.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_glowtarget_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_glowtarget_01.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_glowtarget_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_darkafflic_glowtarget_leg_01.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_glowtarget_leg_01.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_glowtarget_leg_01.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_glowtarget_leg_01.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_glowtarget_leg_01_p.prt",
+      "relation": "EmitSpec"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_01_p.prt",
+      "to": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_01_p.prt",
+      "to": "/resources/art/fx/texture/smoke/smoke_thin.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_02_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_02_p.prt",
+      "to": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_02_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_consumingdarkness_smoke_hand_02_p.prt",
+      "to": "/resources/art/fx/texture/smoke/smoke_thin.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_darkafflic_handflare_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_handflare_p.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_handflare_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_handflare_p.prt",
+      "to": "/resources/art/fx/texture/glow/bw_flare_gray.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sorc_drkaff_handwisps_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sorc_drkaff_handwisps_p.prt",
+      "to": "/resources/art/fx/particles/sorc_drkaff_handwisps_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sorc_drkaff_handwisps_p.prt",
+      "to": "/resources/art/fx/texture/electricity/lightning_core.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/sorc_drkaff_orb_bolts_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/sorc_drkaff_orb_bolts_p.prt",
+      "to": "/resources/art/fx/particles/sorc_drkaff_orb_bolts_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/sorc_drkaff_orb_bolts_p.prt",
+      "to": "/resources/art/fx/texture/electricity/2x2_electricity_bolts.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_darkafflic_handflare_long_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_handflare_long_p.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_handflare_long_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_handflare_long_p.prt",
+      "to": "/resources/art/fx/texture/glow/bw_fx_horizontal_flare_orange_hot.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_smoke_01_p.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_smoke_01_p.prt",
+      "to": "/resources/art/fx/texture/smoke/smoke_thin.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_02_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_smoke_02_p.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_02_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_smoke_02_p.prt",
+      "to": "/resources/art/fx/texture/smoke/smoke_thin.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_03_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_smoke_03_p.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_smoke_03_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_smoke_03_p.prt",
+      "to": "/resources/art/fx/texture/smoke/smoke_thin.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_darkafflic_glowtarget_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_glowtarget_01_p.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_glowtarget_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_glowtarget_01_p.prt",
+      "to": "/resources/art/fx/texture/glow/2x2_electrical_blast_alpha.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/particles/si_darkafflic_glowtarget_leg_01_p.prt",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_glowtarget_leg_01_p.prt",
+      "to": "/resources/art/fx/particles/si_darkafflic_glowtarget_leg_01_p.prt",
+      "relation": "Name"
+    },
+    {
+      "from": "/resources/art/fx/particles/si_darkafflic_glowtarget_leg_01_p.prt",
+      "to": "/resources/art/fx/texture/glow/2x2_electrical_blast_alpha.dds",
+      "relation": "TextureName"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/smoke/smoke_thin.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/glow/bw_flare_gray.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/electricity/lightning_core.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/electricity/2x2_electricity_bolts.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/glow/bw_fx_horizontal_flare_orange_hot.dds",
+      "relation": "FXSpec / particle / material dependency"
+    },
+    {
+      "from": "D2 selected dependency traversal",
+      "to": "/resources/art/fx/texture/glow/2x2_electrical_blast_alpha.dds",
+      "relation": "FXSpec / particle / material dependency"
+    }
+  ],
+  "unresolved": [
+    {
+      "source": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightning_strike_caster_hand_loop.fxspec",
+      "field": "_fxResourceName",
+      "target": "/resources/engine/zap.zzp",
+      "status": "Engine primitive"
+    },
+    {
+      "source": "/resources/art/fx/fxspec/si_lightning_strike_target_01.fxspec",
+      "field": "_fxResourceName",
+      "target": "/resources/engine/light.lit",
+      "status": "Engine primitive"
+    },
+    {
+      "source": "/resources/art/fx/fxspec/si_lightning_strike_target_01.fxspec",
+      "field": "_fxResourceName",
+      "target": "/resources/engine/zap.zzp",
+      "status": "Engine primitive"
+    },
+    {
+      "source": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightningdrain_bodyarcs.fxspec",
+      "field": "_fxResourceName",
+      "target": "/resources/engine/light.lit",
+      "status": "Engine primitive"
+    },
+    {
+      "source": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_lightningdrain_bodyarcs.fxspec",
+      "field": "_fxResourceName",
+      "target": "/resources/engine/zap.zzp",
+      "status": "Engine primitive"
+    },
+    {
+      "source": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_polaritycharge_cast_01.fxspec",
+      "field": "_fxResourceName",
+      "target": "/resources/engine/light.lit",
+      "status": "Engine primitive"
+    },
+    {
+      "source": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_polaritycharge_cast_01.fxspec",
+      "field": "_fxResourceName",
+      "target": "/resources/engine/zap.zzp",
+      "status": "Engine primitive"
+    }
+  ],
+  "selection": "T2.2 Lightning Strike, Crushing Darkness, Polarity Shift and Force Speed"
+}

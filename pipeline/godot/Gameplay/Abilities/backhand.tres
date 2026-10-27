@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "backhand"
+Title = "Backhand"
+Icon = "jg_backhand"
+StartsUnlocked = false
+Category = 1
+Damage = 18
+CooldownSeconds = 12
+Range = 0.36
+Radius = 0
+ChannelSeconds = 0
+TickSeconds = 1
+WindupSeconds = 0.2
+RecoverySeconds = 0.25
+GestureSeconds = 1.2
+StartClip = "Warrior/cb_saber_backhand"
+LoopClip = "Warrior/cb_saber_backhand"
+RequireGesture = true
+PresentationKind = "saber"
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/bw_flare_gray.png"
+CastAudio = ""
+ImpactAudio = ""
+SourceFx = "epp.generic.weapon_pop.target_pop_in;epp.sith_warrior.backhand.backhand_anticipation;epp.sith_warrior.backhand.backhand_real;epp.sith_warrior.backhand.stun"
+Description = "April Warrior ability; survivors adaptation."
+SlowFactor = 0
+SlowSeconds = 3

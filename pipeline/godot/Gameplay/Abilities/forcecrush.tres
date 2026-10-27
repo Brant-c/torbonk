@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "forcecrush"
+Title = "Force Crush"
+Icon = "jg_forcecrush"
+StartsUnlocked = false
+Category = 0
+Damage = 5
+CooldownSeconds = 10
+Range = 0.7
+Radius = 0
+ChannelSeconds = 0
+TickSeconds = 1
+WindupSeconds = 0.2
+RecoverySeconds = 0.25
+GestureSeconds = 1.2
+StartClip = "Warrior/fp_1h_elect_instant_right_4"
+LoopClip = "Warrior/fp_1h_elect_instant_right_4"
+RequireGesture = true
+PresentationKind = "impact"
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/damage/bw_fx_grnd_crack_2.png"
+CastAudio = "res://Assets/WarriorLibrary/Audio/1709192.wav"
+ImpactAudio = "res://Assets/WarriorLibrary/Audio/591086114.wav"
+SourceFx = "epp.sith_warrior.force_crush.cast_instant;epp.sith_warrior.force_crush.crush_tick;epp.sith_warrior.force_crush.duration_end;epp.sith_warrior.force_crush.duration_start"
+Description = "April Warrior ability; survivors adaptation."
+PeriodicDamage = 6
+PeriodicDuration = 6
+SlowFactor = 0.5
+SlowSeconds = 6

@@ -72,6 +72,10 @@ public partial class CombatHud : Control
         AddChild(_targetPortrait);_targetPortrait.FaceVisible=false;
     }
 
+    private string SlotHelp=>World.RunConfiguration.AdvancedClassId=="assassin"?
+        $"Damage abilities: {World.Abilities.Equipped(AbilityCategory.Offensive)}/6. Lacerate starts in a free, replaceable position; its replacement keeps that position. Utilities and control use no damage slots.":
+        $"Offensive: {World.Abilities.Equipped(AbilityCategory.Offensive)}/{World.Abilities.Limit(AbilityCategory.Offensive)} · Utility: {World.Abilities.Equipped(AbilityCategory.Utility)}/{World.Abilities.Limit(AbilityCategory.Utility)}. Full categories offer replacements; owned abilities can still be upgraded. Affliction and Polarity Shift use no slots for Sorcerers.";
+
     private void RefreshAbilitySlots(AutomaticAbility[] unlocked)
     {
         foreach(var slot in _slotNodes) {RemoveChild(slot);slot.QueueFree();}
@@ -82,7 +86,7 @@ public partial class CombatHud : Control
             var slot=new AbilityIcon {IconName=ability?.Definition.Icon??"",SlotSize=46,IconPadding=4,
                 FrameTexture=SwtorSkin.HudArt("player_slot"),Position=new Vector2(118+column*47,77),Size=new Vector2(46,46),
                 TooltipText=ability!=null?ability.Definition.Title+" · automatic":"Empty player quickbar slot. Only abilities unlocked this run appear here.\n"+
-                    $"Offensive: {World.Abilities.Equipped(AbilityCategory.Offensive)}/{World.Abilities.Limit(AbilityCategory.Offensive)} · Utility: {World.Abilities.Equipped(AbilityCategory.Utility)}/{World.Abilities.Limit(AbilityCategory.Utility)}. Full categories stop offering new unlocks; owned abilities can still be upgraded."};
+                    SlotHelp};
             AddChild(slot);_slotNodes.Add(slot);SlotCount++;
             if(ability!=null) _abilitySlots.Add((slot,ability));
         }
@@ -114,6 +118,7 @@ public partial class CombatHud : Control
         {
             var category=ability.Definition.Category;var controller=World.Abilities;
             string slots=ability.Definition.IsBasicAttack?"Basic weapon attack · no ability slot. Fills gaps between class abilities.":$"{category}: {controller.Equipped(category)}/{controller.Limit(category)} equipped. Passive talents use no ability slots.";
+            if(World.RunConfiguration.AdvancedClassId=="assassin")slots=SlotHelp+(ability.Definition.Category==AbilityCategory.Utility?" This is a utility/control ability.":ability.Definition.Slotless || ability.InheritsFreeSlot?" This ability occupies the free starter position.":"");
             slot.UpdateCooldown(ability.CooldownRemaining,ability.CooldownDuration,
                 ability.Definition.UsesGlobalCooldown?World.Abilities.GlobalCooldownRemaining:0,
                 World.Abilities.GlobalCooldownDuration,ability.Casting);

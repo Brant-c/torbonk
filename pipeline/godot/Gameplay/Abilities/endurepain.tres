@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "endurepain"
+Title = "Endure Pain"
+Icon = "jg_endurepain"
+StartsUnlocked = false
+Category = 1
+Damage = 0
+CooldownSeconds = 32
+Range = 0.6
+Radius = 0
+ChannelSeconds = 0
+TickSeconds = 1
+WindupSeconds = 0.2
+RecoverySeconds = 0.25
+GestureSeconds = 1.2
+StartClip = "Warrior/cb_buff_presence"
+LoopClip = "Warrior/cb_buff_presence"
+RequireGesture = true
+PresentationKind = "impact"
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/2x2_elec_blast_ring_alpha.png"
+CastAudio = "res://Assets/WarriorLibrary/Audio/10681804.wav"
+ImpactAudio = "res://Assets/WarriorLibrary/Audio/256217830.wav"
+SourceFx = "epp.sith_warrior.endure_pain.cast_instant;epp.sith_warrior.endure_pain.tick"
+Description = "April Warrior ability; survivors adaptation."
+Effect = 1
+ShieldCapacity = 32
+ShieldDuration = 6
+Slotless = true

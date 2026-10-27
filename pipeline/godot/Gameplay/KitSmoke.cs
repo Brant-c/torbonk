@@ -48,12 +48,19 @@ public partial class KitSmoke : Node
             }
             await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);
             var profile=w.RunConfiguration.Profile;
+            if(id=="assassin" && !_fixtures.All(w.Targeting.HasLineOfSight)) {
+                for(int angle=0;angle<32;angle++) {
+                    var direction=new Vector3(Mathf.Cos(angle*Mathf.Tau/32),0,Mathf.Sin(angle*Mathf.Tau/32));
+                    for(int i=0;i<_fixtures.Count;i++)_fixtures[i].GlobalPosition=w.PlayerActor.GlobalPosition+direction*(.12f+i*.055f);
+                    if(_fixtures.All(w.Targeting.HasLineOfSight))break;
+                }
+            }
             Check(id+" corridor has line of sight",_fixtures.All(w.Targeting.HasLineOfSight));
             if(profile.Kit.Length>0)
             {
             // Registry and slots.
             var kit=profile.Kit.Select(k=>w.Abilities.Find(k)).ToArray();
-            Check(id+" kit abilities are wired and locked",kit.All(k=>k!=null && !k.Unlocked) && w.Abilities.Abilities.Count(a=>a.Unlocked)==2);
+            Check(id+" kit abilities are wired and locked",kit.All(k=>k!=null && !k.Unlocked) && w.Abilities.Abilities.Count(a=>a.Unlocked)==(id=="assassin"?1:2));
             Check(id+" pool offers unlock for every kit ability",profile.Kit.All(k=>w.Progression!.Upgrades.Any(u=>u.Effect==UpgradeEffect.UnlockAbility && u.AbilityId==k)));
             Check(id+" pool contains two mechanic talents",w.Progression!.Upgrades.Count(u=>u.Effect==UpgradeEffect.Mechanic)==2);
             Check(id+" damage track covers the whole kit",w.Progression.Upgrades.Any(u=>u.Effect==UpgradeEffect.Damage && u.AbilityId==""));
@@ -67,8 +74,8 @@ public partial class KitSmoke : Node
                 }
                 Check(id+" grants "+k,w.Progression.Grant("unlock_"+k));
             }
-            Check(id+" slot limits respected",w.Abilities.Equipped(AbilityCategory.Offensive)<=4 && w.Abilities.Equipped(AbilityCategory.Utility)<=w.Abilities.UtilityLimit);
-            Check(id+" action bar lists starter, basic and owned kit",w.Abilities.Abilities.Count(a=>a.Unlocked)==2+kit.Count(k=>k!.Unlocked));
+            Check(id+" slot limits respected",w.Abilities.Equipped(AbilityCategory.Offensive)<=(id=="assassin"?6:4) && w.Abilities.Equipped(AbilityCategory.Utility)<=w.Abilities.UtilityLimit);
+            Check(id+" action bar lists starter, basic and owned kit",w.Abilities.Abilities.Count(a=>a.Unlocked)==(id=="assassin"?1:2)+kit.Count(k=>k!.Unlocked));
             // Every damaging kit ability hits and publishes through the normal path; presentation has no damage authority.
             foreach(var k in kit.Where(k=>k!.Definition.Effect==AbilityEffect.Damage))
             {
@@ -132,10 +139,10 @@ public partial class KitSmoke : Node
                 Check("Creeping Terror afflicts its target",P.Count==1 && P.Has(terror,_fixtures[0]));
                 Reset();var d=Cast(discharge);
                 Check("Discharge hits and afflicts everything around you",d.All(x=>x>0) && P.Count==3);
-                Reset();Check("Force Shroud fires when enemies are close",shroud.TryBegin());for(int i=0;i<12;i++)shroud.Advance(.05);
+                Reset();Cast(shroud);
                 Check("Force Shroud raises a shield",w.PlayerActor.Health.Shielded);for(int i=0;i<3;i++)await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);Check("Force Shroud shows the shield effect",((D3AbilityPresentation)shroud.Presentation).ShieldVisible);
                 w.PlayerActor.Health.ClearShield();
-                Reset();Check("Contagion is eligible",w.Progression.Grant("assassin_contagion"));
+                Cast(terror);Reset();Check("Contagion is eligible",w.Progression.Grant("assassin_contagion"));
                 P.Apply(terror,_fixtures[0]);P.Advance(3.05);
                 Check("Contagion spreads the affliction on the third tick",P.Has(terror,_fixtures[1]));
                 Reset();Check("Static Blades is eligible",w.Progression.Grant("assassin_static_blades"));

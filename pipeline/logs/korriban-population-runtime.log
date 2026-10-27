@@ -1,0 +1,223 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+WARNING: 'res://Assets/Korriban/D4/all_item_imp_small_scaffold.glb': In external resource #1, invalid UID: 'uid://buvufi7k30rnr' - using text path instead: 'res://Assets/Korriban/D4/all_item_imp_small_scaffold_all_item_imp_scaffold_rough.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/kor_vod_ruins_roof.glb': In external resource #2, invalid UID: 'uid://foe22me7sjjt' - using text path instead: 'res://Assets/Korriban/D4/kor_vod_ruins_roof_kor_vod_ruins_roof_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/kor_tomb_item_statue_01_broken.glb': In external resource #2, invalid UID: 'uid://b10t3uqpvocnp' - using text path instead: 'res://Assets/Korriban/D4/kor_tomb_item_statue_01_broken_kor_tomb_item_statue_01_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/kor_tomb_item_statue_02_broken_head.glb': In external resource #2, invalid UID: 'uid://ddmshei4w158m' - using text path instead: 'res://Assets/Korriban/D4/kor_tomb_item_statue_02_broken_head_kor_tomb_item_statue_02_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/all_item_bone_human_pile_00.glb': In external resource #3, invalid UID: 'uid://b4xsf5ucjutio' - using text path instead: 'res://Assets/Korriban/D4/all_item_bone_human_pile_00_all_item_bone_human_whole_01_no_collision_normal.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/all_item_bone_human_whole_01.glb': In external resource #0, invalid UID: 'uid://d3yh3x3icd6sj' - using text path instead: 'res://Assets/Korriban/D4/all_item_bone_human_whole_01_all_item_bone_human_whole_01_no_collision_base.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/all_item_bone_human_whole_01.glb': In external resource #1, invalid UID: 'uid://drktuvxj0idmg' - using text path instead: 'res://Assets/Korriban/D4/all_item_bone_human_whole_01_all_item_bone_human_whole_01_no_collision_rough.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/all_item_imp_scaffold.glb': In external resource #9, invalid UID: 'uid://ddhhtk4lanm2h' - using text path instead: 'res://Assets/Korriban/D4/all_item_imp_scaffold_all_arch_imp_buildings_tech_rough.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/kor_vodl_item_ancient_pottery_03.glb': In external resource #2, invalid UID: 'uid://el0kavakftlx' - using text path instead: 'res://Assets/Korriban/D4/kor_vodl_item_ancient_pottery_03_kor_vodl_item_ancient_pottery_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/all_item_misc_toolbox_small_lip.glb': In external resource #2, invalid UID: 'uid://boay3fp4u8xnn' - using text path instead: 'res://Assets/Korriban/D4/all_item_misc_toolbox_small_lip_all_item_misc_toolbox_small_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/kor_vod_ruins_pillar02.glb': In external resource #2, invalid UID: 'uid://dgl14tvxf6ias' - using text path instead: 'res://Assets/Korriban/D4/kor_vod_ruins_pillar02_kor_vod_ruins_pillar02_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/kor_wilds_cliff_40m_small_v1.glb': In external resource #2, invalid UID: 'uid://cuxrsf6k22ce' - using text path instead: 'res://Assets/Korriban/D4/kor_wilds_cliff_40m_small_v1_kor_wilds_cliff_40m_small_v1_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/kor_env_cactus.glb': In external resource #2, invalid UID: 'uid://dcj8x3mipqv24' - using text path instead: 'res://Assets/Korriban/D4/kor_env_cactus_kor_env_cactus_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/all_item_imp_scaffold_platform_a.glb': In external resource #2, invalid UID: 'uid://3tiv72qx7mt5' - using text path instead: 'res://Assets/Korriban/D4/all_item_imp_scaffold_platform_a_all_item_imp_scaffold_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+Map spawn: open ring samples 7/8 at (39.51257, -16.923206, 22.627346) after 1 candidates (found=True)
+WARNING: 'res://Assets/Korriban/D4/item_con_crate_ancient_01.glb': In external resource #2, invalid UID: 'uid://dxuqn50323uso' - using text path instead: 'res://Assets/Korriban/D4/item_con_crate_ancient_01_item_con_crate_ancient_01_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+   C# backtrace (most recent call first):
+       [0] Godot.GodotObject Godot.NativeCalls.godot_icall_3_1268(nint, nint, string, string, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:11611)
+       [1] Godot.Resource Godot.ResourceLoader.Load(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/ResourceLoader.cs:120)
+       [2] T Godot.ResourceLoader.Load<T>(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Extensions/ResourceLoaderExtensions.cs:27)
+       [3] T Godot.GD.Load<T>(string) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/GD.cs:129)
+       [4] void SwtorSurvivors.TombCache._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\PlanetJourney.cs:176)
+       [5] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [6] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [7] bool SwtorSurvivors.TombCache.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.TombCache_ScriptMethods.generated.cs:70)
+       [8] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+       [9] void Godot.NativeInterop.NativeFuncs.godotsharp_method_bind_ptrcall(nint, nint, System.Void**, System.Void*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Godot.SourceGenerators.Internal/Godot.SourceGenerators.Internal.UnmanagedCallbacksGenerator/Godot.NativeInterop.NativeFuncs.generated.cs:380)
+       [10] void Godot.NativeCalls.godot_icall_3_912(nint, nint, nint, Godot.NativeInterop.godot_bool, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:8061)
+       [11] void Godot.Node.AddChild(Godot.Node, bool, Godot.Node+InternalMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:848)
+       [12] void SwtorSurvivors.PlanetJourney._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\PlanetJourney.cs:39)
+       [13] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [14] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [15] bool SwtorSurvivors.PlanetJourney.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.PlanetJourney_ScriptMethods.generated.cs:80)
+       [16] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+       [17] void Godot.NativeInterop.NativeFuncs.godotsharp_method_bind_ptrcall(nint, nint, System.Void**, System.Void*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Godot.SourceGenerators.Internal/Godot.SourceGenerators.Internal.UnmanagedCallbacksGenerator/Godot.NativeInterop.NativeFuncs.generated.cs:380)
+       [18] void Godot.NativeCalls.godot_icall_3_912(nint, nint, nint, Godot.NativeInterop.godot_bool, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:8061)
+       [19] void Godot.Node.AddChild(Godot.Node, bool, Godot.Node+InternalMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:848)
+       [20] void SwtorSurvivors.GameWorld+<_Ready>d__193.MoveNext() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\GameWorld.cs:165)
+       [21] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [22] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [23] void Godot.SignalAwaiter.SignalCallback(nint, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_bool*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/SignalAwaiter.cs:65)
+WARNING: 'res://Assets/Korriban/D4/kor_tomb_item_sarcophagus.glb': In external resource #1, invalid UID: 'uid://s6crb14l4qpa' - using text path instead: 'res://Assets/Korriban/D4/kor_tomb_item_sarcophagus_kor_tomb_item_sarcophagus_ruin_rough.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+   C# backtrace (most recent call first):
+       [0] Godot.GodotObject Godot.NativeCalls.godot_icall_3_1268(nint, nint, string, string, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:11611)
+       [1] Godot.Resource Godot.ResourceLoader.Load(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/ResourceLoader.cs:120)
+       [2] T Godot.ResourceLoader.Load<T>(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Extensions/ResourceLoaderExtensions.cs:27)
+       [3] T Godot.GD.Load<T>(string) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/GD.cs:129)
+       [4] void SwtorSurvivors.PlanetJourney.BuildBurialCourts() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\PlanetJourney.cs:144)
+       [5] void SwtorSurvivors.PlanetJourney._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\PlanetJourney.cs:41)
+       [6] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [7] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [8] bool SwtorSurvivors.PlanetJourney.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.PlanetJourney_ScriptMethods.generated.cs:80)
+       [9] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+       [10] void Godot.NativeInterop.NativeFuncs.godotsharp_method_bind_ptrcall(nint, nint, System.Void**, System.Void*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Godot.SourceGenerators.Internal/Godot.SourceGenerators.Internal.UnmanagedCallbacksGenerator/Godot.NativeInterop.NativeFuncs.generated.cs:380)
+       [11] void Godot.NativeCalls.godot_icall_3_912(nint, nint, nint, Godot.NativeInterop.godot_bool, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:8061)
+       [12] void Godot.Node.AddChild(Godot.Node, bool, Godot.Node+InternalMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:848)
+       [13] void SwtorSurvivors.GameWorld+<_Ready>d__193.MoveNext() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\GameWorld.cs:165)
+       [14] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [15] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [16] void Godot.SignalAwaiter.SignalCallback(nint, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_bool*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/SignalAwaiter.cs:65)
+WARNING: 'res://Assets/Korriban/D4/kor_tomb_item_brazier_ancient.glb': In external resource #1, invalid UID: 'uid://d0c18m1p40eyd' - using text path instead: 'res://Assets/Korriban/D4/kor_tomb_item_brazier_ancient_kor_tomb_item_brazier_ancient_rough.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+   C# backtrace (most recent call first):
+       [0] Godot.GodotObject Godot.NativeCalls.godot_icall_3_1268(nint, nint, string, string, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:11611)
+       [1] Godot.Resource Godot.ResourceLoader.Load(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/ResourceLoader.cs:120)
+       [2] T Godot.ResourceLoader.Load<T>(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Extensions/ResourceLoaderExtensions.cs:27)
+       [3] T Godot.GD.Load<T>(string) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/GD.cs:129)
+       [4] void SwtorSurvivors.PlanetJourney.BuildBurialCourts() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\PlanetJourney.cs:144)
+       [5] void SwtorSurvivors.PlanetJourney._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\PlanetJourney.cs:41)
+       [6] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [7] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [8] bool SwtorSurvivors.PlanetJourney.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.PlanetJourney_ScriptMethods.generated.cs:80)
+       [9] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+       [10] void Godot.NativeInterop.NativeFuncs.godotsharp_method_bind_ptrcall(nint, nint, System.Void**, System.Void*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Godot.SourceGenerators.Internal/Godot.SourceGenerators.Internal.UnmanagedCallbacksGenerator/Godot.NativeInterop.NativeFuncs.generated.cs:380)
+       [11] void Godot.NativeCalls.godot_icall_3_912(nint, nint, nint, Godot.NativeInterop.godot_bool, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:8061)
+       [12] void Godot.Node.AddChild(Godot.Node, bool, Godot.Node+InternalMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:848)
+       [13] void SwtorSurvivors.GameWorld+<_Ready>d__193.MoveNext() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\GameWorld.cs:165)
+       [14] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [15] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [16] void Godot.SignalAwaiter.SignalCallback(nint, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_bool*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/SignalAwaiter.cs:65)
+KORRIBAN ENDLESS PASS: level 50 cap and ten milestones
+KORRIBAN ENDLESS PASS: imperial camp spawn
+KORRIBAN ENDLESS PASS: spawn has full body clearance
+KORRIBAN ENDLESS PASS: spawn has at least seven clear walking exits
+KORRIBAN ENDLESS PASS: spawn stays on the entrance side of the base
+KORRIBAN ENDLESS PASS: terrain apron loaded
+KORRIBAN ENDLESS PASS: population stays capped at 36 through level 50 and beyond
+KORRIBAN ENDLESS PASS: spawn XP sample 0
+KORRIBAN ENDLESS PASS: hard cap blocks regular and boss spawns
+KORRIBAN ENDLESS PASS: spawn XP sample 1
+KORRIBAN ENDLESS PASS: hard cap blocks regular and boss spawns
+KORRIBAN ENDLESS PASS: spawn XP sample 2
+KORRIBAN ENDLESS PASS: hard cap blocks regular and boss spawns
+KORRIBAN ENDLESS PASS: spawn XP sample 3
+KORRIBAN ENDLESS PASS: hard cap blocks regular and boss spawns
+KORRIBAN ENDLESS PASS: spawn XP sample 4
+KORRIBAN ENDLESS PASS: hard cap blocks regular and boss spawns
+KORRIBAN ENDLESS PASS: spawn XP sample 5
+KORRIBAN ENDLESS PASS: hard cap blocks regular and boss spawns
+KORRIBAN ENDLESS PASS: six kills drop exactly three XP pickups
+KORRIBAN ENDLESS PASS: cap level can choose
+KORRIBAN ENDLESS PASS: capped XP ignored and pickups cleared
+KORRIBAN ENDLESS PASS: XP chest reward excluded at cap
+KORRIBAN ENDLESS PASS: level 2 offers an upgrade
+KORRIBAN ENDLESS PASS: level 2 choice applies
+KORRIBAN ENDLESS PASS: level 3 offers an upgrade
+KORRIBAN ENDLESS PASS: level 3 choice applies
+KORRIBAN ENDLESS PASS: level 4 offers an upgrade
+KORRIBAN ENDLESS PASS: level 4 choice applies
+KORRIBAN ENDLESS PASS: level 5 offers an upgrade
+KORRIBAN ENDLESS PASS: level 5 choice applies
+KORRIBAN ENDLESS PASS: level 6 offers an upgrade
+KORRIBAN ENDLESS PASS: level 6 choice applies
+KORRIBAN ENDLESS PASS: level 7 offers an upgrade
+KORRIBAN ENDLESS PASS: level 7 choice applies
+KORRIBAN ENDLESS PASS: level 8 offers an upgrade
+KORRIBAN ENDLESS PASS: level 8 choice applies
+KORRIBAN ENDLESS PASS: level 9 offers an upgrade
+KORRIBAN ENDLESS PASS: level 9 choice applies
+KORRIBAN ENDLESS PASS: level 10 offers an upgrade
+KORRIBAN ENDLESS PASS: level 10 choice applies
+KORRIBAN ENDLESS PASS: level 11 offers an upgrade
+KORRIBAN ENDLESS PASS: level 11 choice applies
+KORRIBAN ENDLESS PASS: level 12 offers an upgrade
+KORRIBAN ENDLESS PASS: level 12 choice applies
+KORRIBAN ENDLESS PASS: level 13 offers an upgrade
+KORRIBAN ENDLESS PASS: level 13 choice applies
+KORRIBAN ENDLESS PASS: level 14 offers an upgrade
+KORRIBAN ENDLESS PASS: level 14 choice applies
+KORRIBAN ENDLESS PASS: level 15 offers an upgrade
+KORRIBAN ENDLESS PASS: level 15 choice applies
+KORRIBAN ENDLESS PASS: level 16 offers an upgrade
+KORRIBAN ENDLESS PASS: level 16 choice applies
+KORRIBAN ENDLESS PASS: level 17 offers an upgrade
+KORRIBAN ENDLESS PASS: level 17 choice applies
+KORRIBAN ENDLESS PASS: level 18 offers an upgrade
+KORRIBAN ENDLESS PASS: level 18 choice applies
+KORRIBAN ENDLESS PASS: level 19 offers an upgrade
+KORRIBAN ENDLESS PASS: level 19 choice applies
+KORRIBAN ENDLESS PASS: level 20 offers an upgrade
+KORRIBAN ENDLESS PASS: level 20 choice applies
+KORRIBAN ENDLESS PASS: level 21 offers an upgrade
+KORRIBAN ENDLESS PASS: level 21 choice applies
+KORRIBAN ENDLESS PASS: level 22 offers an upgrade
+KORRIBAN ENDLESS PASS: level 22 choice applies
+KORRIBAN ENDLESS PASS: level 23 offers an upgrade
+KORRIBAN ENDLESS PASS: level 23 choice applies
+KORRIBAN ENDLESS PASS: level 24 offers an upgrade
+KORRIBAN ENDLESS PASS: level 24 choice applies
+KORRIBAN ENDLESS PASS: level 25 offers an upgrade
+KORRIBAN ENDLESS PASS: level 25 choice applies
+KORRIBAN ENDLESS PASS: level 26 offers an upgrade
+KORRIBAN ENDLESS PASS: level 26 choice applies
+KORRIBAN ENDLESS PASS: level 27 offers an upgrade
+KORRIBAN ENDLESS PASS: level 27 choice applies
+KORRIBAN ENDLESS PASS: level 28 offers an upgrade
+KORRIBAN ENDLESS PASS: level 28 choice applies
+KORRIBAN ENDLESS PASS: level 29 offers an upgrade
+KORRIBAN ENDLESS PASS: level 29 choice applies
+KORRIBAN ENDLESS PASS: level 30 offers an upgrade
+KORRIBAN ENDLESS PASS: level 30 choice applies
+KORRIBAN ENDLESS PASS: level 31 offers an upgrade
+KORRIBAN ENDLESS PASS: level 31 choice applies
+KORRIBAN ENDLESS PASS: level 32 offers an upgrade
+KORRIBAN ENDLESS PASS: level 32 choice applies
+KORRIBAN ENDLESS PASS: level 33 offers an upgrade
+KORRIBAN ENDLESS PASS: level 33 choice applies
+KORRIBAN ENDLESS PASS: level 34 offers an upgrade
+KORRIBAN ENDLESS PASS: level 34 choice applies
+KORRIBAN ENDLESS PASS: level 35 offers an upgrade
+KORRIBAN ENDLESS PASS: level 35 choice applies
+KORRIBAN ENDLESS PASS: level 36 offers an upgrade
+KORRIBAN ENDLESS PASS: level 36 choice applies
+KORRIBAN ENDLESS PASS: level 37 offers an upgrade
+KORRIBAN ENDLESS PASS: level 37 choice applies
+KORRIBAN ENDLESS PASS: level 38 offers an upgrade
+KORRIBAN ENDLESS PASS: level 38 choice applies
+KORRIBAN ENDLESS PASS: level 39 offers an upgrade
+KORRIBAN ENDLESS PASS: level 39 choice applies
+KORRIBAN ENDLESS PASS: level 40 offers an upgrade
+KORRIBAN ENDLESS PASS: level 40 choice applies
+KORRIBAN ENDLESS PASS: level 41 offers an upgrade
+KORRIBAN ENDLESS PASS: level 41 choice applies
+KORRIBAN ENDLESS PASS: level 42 offers an upgrade
+KORRIBAN ENDLESS PASS: level 42 choice applies
+KORRIBAN ENDLESS PASS: level 43 offers an upgrade
+KORRIBAN ENDLESS PASS: level 43 choice applies
+KORRIBAN ENDLESS PASS: level 44 offers an upgrade
+KORRIBAN ENDLESS PASS: level 44 choice applies
+KORRIBAN ENDLESS PASS: level 45 offers an upgrade
+KORRIBAN ENDLESS PASS: level 45 choice applies
+KORRIBAN ENDLESS PASS: level 46 offers an upgrade
+KORRIBAN ENDLESS PASS: level 46 choice applies
+KORRIBAN ENDLESS PASS: level 47 offers an upgrade
+KORRIBAN ENDLESS PASS: level 47 choice applies
+KORRIBAN ENDLESS PASS: level 48 offers an upgrade
+KORRIBAN ENDLESS PASS: level 48 choice applies
+KORRIBAN ENDLESS PASS: level 49 offers an upgrade
+KORRIBAN ENDLESS PASS: level 49 choice applies
+KORRIBAN ENDLESS PASS: level 50 offers an upgrade
+KORRIBAN ENDLESS PASS: level 50 choice applies
+KORRIBAN ENDLESS PASS: full run reaches 50
+KORRIBAN ENDLESS PASS: time pressure exceeds level cap
+KORRIBAN ENDLESS PASS: restart clears time pressure
+KORRIBAN ENDLESS ALL PASSED

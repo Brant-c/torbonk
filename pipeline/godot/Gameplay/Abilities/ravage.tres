@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "ravage"
+Title = "Ravage"
+Icon = "jg_ravage"
+StartsUnlocked = false
+Category = 0
+Damage = 15
+CooldownSeconds = 9
+Range = 0.38
+Radius = 0
+ChannelSeconds = 2.4
+TickSeconds = 0.8
+WindupSeconds = 0.2
+RecoverySeconds = 0.25
+GestureSeconds = 2.6
+StartClip = "Basic/Saber"
+LoopClip = "Basic/Saber"
+RequireGesture = true
+PresentationKind = "saber"
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/bw_flare_gray.png"
+CastAudio = ""
+ImpactAudio = ""
+SourceFx = "epp.jedi_knight.master_strike.cancel;epp.jedi_knight.master_strike.target_cancel;epp.sith_warrior.ravage.cast_channel;epp.sith_warrior.ravage.reaction"
+Description = "April Warrior ability; survivors adaptation."

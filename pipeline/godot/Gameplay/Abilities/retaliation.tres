@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "retaliation"
+Title = "Retaliation"
+Icon = "jg_retaliation"
+StartsUnlocked = false
+Category = 0
+Damage = 25
+CooldownSeconds = 5
+Range = 0.38
+Radius = 0
+ChannelSeconds = 0
+TickSeconds = 1
+WindupSeconds = 0.2
+RecoverySeconds = 0.25
+GestureSeconds = 1.2
+StartClip = "Warrior/cb_saber_sp1_attack_right_5"
+LoopClip = "Warrior/cb_saber_sp1_attack_right_5"
+RequireGesture = true
+PresentationKind = "saber"
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/fire/4x4_flame_lick_02_bw.png"
+CastAudio = "res://Assets/WarriorLibrary/Audio/22465456.wav"
+ImpactAudio = "res://Assets/WarriorLibrary/Audio/216077368.wav"
+SourceFx = "epp.sith_warrior.retaliation.retaliation_anticipation;epp.sith_warrior.retaliation.retaliation_real"
+Description = "April Warrior ability; survivors adaptation."
+Slotless = true

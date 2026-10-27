@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "lightningstrike"
+StartsUnlocked = false
+Range = 1.1
+ChannelSeconds = 0
+TickSeconds = 1
+RecoverySeconds = 0.18
+GestureSeconds = 0.65
+RequireGesture = true
+Title = "Lightning Strike"
+Icon = "lightningstrike"
+Description = "A fast electrical strike. Cleave and Forked Current evolve it into multi-target damage."
+Damage = 28
+CooldownSeconds = 3.8
+Radius = 0.16
+SplashMultiplier = 0.4
+WindupSeconds = 0.28
+StartClip = "T22/Strike"
+CastAudioEvent = "Play_ability_sithinquisitor_lightningstrike_handcast"
+ImpactAudioEvent = "Play_ability_sithinquisitor_shock_aftershock"

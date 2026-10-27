@@ -138,7 +138,7 @@ public partial class AudioPresentation : Node
         }
         _last[key] = _clock; return true;
     }
-    public void RegisterCombatVoice(AudioStreamPlayer3D voice) => _combatVoices.Add(voice);
+    public void RegisterCombatVoice(AudioStreamPlayer3D voice) { _combatVoices.RemoveAll(v=>!GodotObject.IsInstanceValid(v));_combatVoices.Add(voice); }
     public void SetCategoryGain(string category, float db)
     {
         if (!_categories.TryGetValue(category, out var entry)) return;

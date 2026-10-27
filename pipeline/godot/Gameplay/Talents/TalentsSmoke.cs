@@ -30,7 +30,7 @@ public partial class TalentsSmoke : Node
             else
             {
                 Check("isolated profile initialized",TalentProfiles.Save("sorcerer",new Dictionary<string,int>())==null);
-                Check("24 data talents across three trees",catalog.Talents.Length==24 && catalog.Trees.All(t=>catalog.Talents.Count(a=>a.Tree==t.Id)==8));
+                Check("24 data talents across three trees",catalog.ForClass("sorcerer").Length==24 && catalog.Trees.Where(t=>catalog.ForClass("sorcerer").Any(a=>a.Tree==t.Id)).All(t=>catalog.ForClass("sorcerer").Count(a=>a.Tree==t.Id)==8));
                 menu.ShowTalents();
                 var screen=menu.FindChild("Talents",true,false) as TalentsScreen;
                 Check("main menu opens Talents",screen!=null);
@@ -69,14 +69,14 @@ public partial class TalentsSmoke : Node
                 w.Waves!.SetPhysicsProcess(false);w.Spawner!.Running=false;w.Abilities.SetPhysicsProcess(false);w.Periodic.SetPhysicsProcess(false);
                 foreach(var enemy in w.Spawner.Enemies){enemy.CombatEnabled=false;enemy.SetPhysicsProcess(false);}
                 var p=w.Progression!;
-                Check("starting ability preserved",w.Abilities.Abilities.Count(a=>a.Unlocked)==1 && w.Combat.Definition.Id=="lightning");
+                Check("starting ability preserved",w.Abilities.Abilities.Count(a=>a.Unlocked)==2 && w.Combat.Definition.Id=="lightning");
                 Check("run uses validated saved snapshot",w.Build.Pregame.Ranks.Count==build.Count);
                 float damage=w.Combat.DamagePerTick;
                 Check("talent damage applied",Math.Abs(damage-w.Combat.Definition.Damage*1.12f)<.001f);
                 p.Recalculate();p.Recalculate();Check("recalculation applies once",Math.Abs(w.Combat.DamagePerTick-damage)<.001f);
-                Check("Storm and Death Field hybrid unlocks",p.Grant("unlock_storm") && p.Grant("unlock_deathfield") && p.Grant("unlock_affliction"));
-                Check("offensive limit retained",w.Abilities.Equipped(AbilityCategory.Offensive)==4 && !p.Grant("unlock_shock"));
-                Check("full-slot off-tree unlock remains replacement eligible",p.IsEligible(p.Upgrades.First(u=>u.Id=="unlock_shock")));
+                Check("Storm and Death Field hybrid unlocks",p.Grant("unlock_storm") && p.Grant("unlock_deathfield") && w.Abilities.Find("affliction")!.Unlocked);
+                Check("offensive limit retained",p.Grant("unlock_shock") && w.Abilities.Equipped(AbilityCategory.Offensive)==4 && !p.Grant("unlock_chain"));
+                Check("full-slot off-tree unlock remains replacement eligible",p.IsEligible(p.Upgrades.First(u=>u.Id=="unlock_chain")));
                 Check("no Sorcerer spec milestones remain",p.Upgrades.All(u=>u.MilestoneLevel==0));
                 for(int level=2;level<=5;level++)
                 {
@@ -96,7 +96,7 @@ public partial class TalentsSmoke : Node
                 Check("Death Field still uses existing area propagation",w.Abilities.Find("deathfield")!.Definition.SpreadsPeriodicEffects);
                 w.ResetCombatWorld();
                 Check("restart clears temporary run power",p.Level==1 && p.Ranks.Count==0);
-                Check("restart preserves talent snapshot without stacking",Math.Abs(w.Combat.DamagePerTick-damage)<.001f && w.Abilities.Abilities.Count(a=>a.Unlocked)==1);
+                Check("restart preserves talent snapshot without stacking",Math.Abs(w.Combat.DamagePerTick-damage)<.001f && w.Abilities.Abilities.Count(a=>a.Unlocked)==2);
                 Check("respec cannot change active run snapshot",TalentProfiles.Save("sorcerer",new Dictionary<string,int>())==null && w.Build.Pregame.Ranks.Count==build.Count);
                 Check("restore fixture for launch-persistence check",TalentProfiles.Save("sorcerer",build)==null);
             }

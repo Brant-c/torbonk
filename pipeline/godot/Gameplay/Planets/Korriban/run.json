@@ -1,33 +1,33 @@
 {
-  "CoreLevel": 30,
+  "CoreLevel": 50,
   "FirstLevelExperience": 16,
-  "ExperienceGrowth": 1.105,
+  "ExperienceGrowth": 1.075,
   "Difficulty": {
     "HealthPerLevel": 0.08,
     "DamagePerLevel": 0.045,
     "SpeedPerLevel": 0.01,
-    "MaximumSpeedBonus": 0.25,
-    "AttackFrequencyPerLevel": 0.005,
-    "MaximumAttackFrequencyBonus": 0.15,
-    "InitialPopulation": 16,
-    "PopulationPerLevel": 3,
-    "MaximumPopulation": 100,
+    "MaximumSpeedBonus": 0.85,
+    "AttackFrequencyPerLevel": 0.018,
+    "MaximumAttackFrequencyBonus": 0.85,
+    "InitialPopulation": 12,
+    "PopulationPerLevel": 1,
+    "MaximumPopulation": 36,
     "InitialSpawnInterval": 0.5,
     "MinimumSpawnInterval": 0.15,
-    "RecoverySeconds": 20,
-    "ReturnRampSeconds": 8
+    "RecoverySeconds": 0,
+    "ReturnRampSeconds": 0
   },
   "ArtifactCatalog": "res://Gameplay/Planets/Korriban/artifacts.json",
   "AudioTuning": "res://Gameplay/Planets/Korriban/audio.json",
   "Stages": [
     {
       "Level": 1,
-      "Region": "Valley of the Dark Lords",
-      "Description": "The old tomb roads stir. Survive the Valley.",
+      "Region": "Imperial Base",
+      "Description": "The assault begins. Explore Korriban freely as enemy pressure rises.",
       "Focus": [
-        36,
-        -17.1,
-        12.6
+        36.8,
+        -17,
+        25.4
       ],
       "AmbientGain": -24,
       "Enemies": [
@@ -98,7 +98,7 @@
     {
       "Level": 16,
       "Region": "Lower Wilds",
-      "Description": "Tuk\u2019ata hunt the broken cliffs. Keep clear of their spit.",
+      "Description": "Tuk’ata hunt the broken cliffs. Keep clear of their spit.",
       "Focus": [
         48,
         -17,
@@ -156,7 +156,7 @@
     {
       "Level": 26,
       "Region": "Forbidden Tombs",
-      "Description": "The final trial wakes. Ancient Fury follows the first wounds.",
+      "Description": "Ancient Fury awakens. The onslaught continues beyond the trials.",
       "Focus": [
         51,
         -15.8,
@@ -167,6 +167,122 @@
         {
           "Scene": "res://Gameplay/Planets/Korriban/Terentatek.tscn",
           "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/AncientDroid.tscn",
+          "Weight": 4
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/SpittingTukata.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Enemies/Shyrack.tscn",
+          "Weight": 2
+        }
+      ]
+    },
+    {
+      "Level": 31,
+      "Region": "Sith Onslaught 31",
+      "Description": "Hunters, ranged sentries and maulers attack together. Explore freely.",
+      "Focus": [
+        51,
+        -15.8,
+        24.5
+      ],
+      "AmbientGain": -17,
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/Terentatek.tscn",
+          "Weight": 4
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/AncientDroid.tscn",
+          "Weight": 4
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/SpittingTukata.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Enemies/Shyrack.tscn",
+          "Weight": 2
+        }
+      ]
+    },
+    {
+      "Level": 36,
+      "Region": "Sith Onslaught 36",
+      "Description": "Hunters, ranged sentries and maulers attack together. Explore freely.",
+      "Focus": [
+        51,
+        -15.8,
+        24.5
+      ],
+      "AmbientGain": -17,
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/Terentatek.tscn",
+          "Weight": 6
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/AncientDroid.tscn",
+          "Weight": 4
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/SpittingTukata.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Enemies/Shyrack.tscn",
+          "Weight": 2
+        }
+      ]
+    },
+    {
+      "Level": 41,
+      "Region": "Sith Onslaught 41",
+      "Description": "Hunters, ranged sentries and maulers attack together. Explore freely.",
+      "Focus": [
+        51,
+        -15.8,
+        24.5
+      ],
+      "AmbientGain": -17,
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/Terentatek.tscn",
+          "Weight": 9
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/AncientDroid.tscn",
+          "Weight": 4
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/SpittingTukata.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Enemies/Shyrack.tscn",
+          "Weight": 2
+        }
+      ]
+    },
+    {
+      "Level": 46,
+      "Region": "Sith Onslaught 46",
+      "Description": "Hunters, ranged sentries and maulers attack together. Explore freely.",
+      "Focus": [
+        51,
+        -15.8,
+        24.5
+      ],
+      "AmbientGain": -17,
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Korriban/Terentatek.tscn",
+          "Weight": 13
         },
         {
           "Scene": "res://Gameplay/Planets/Korriban/AncientDroid.tscn",
@@ -207,6 +323,22 @@
     {
       "Level": 30,
       "Encounter": "res://Gameplay/Planets/Korriban/AncientBeastEncounter.tres"
+    },
+    {
+      "Level": 35,
+      "Encounter": "res://Gameplay/Planets/Korriban/BroodmatronEncounter.tres"
+    },
+    {
+      "Level": 40,
+      "Encounter": "res://Gameplay/Planets/Korriban/ScreecherEncounter.tres"
+    },
+    {
+      "Level": 45,
+      "Encounter": "res://Gameplay/Planets/Korriban/ProtectorBossEncounter.tres"
+    },
+    {
+      "Level": 50,
+      "Encounter": "res://Gameplay/Planets/Korriban/MaulerEliteEncounter.tres"
     }
   ],
   "Caches": [
@@ -219,7 +351,7 @@
         13.5
       ],
       "Level": 1,
-      "Reward": "xp"
+      "Reward": "artifact"
     },
     {
       "Id": "precinct",
@@ -229,7 +361,7 @@
         -17,
         18.5
       ],
-      "Level": 8,
+      "Level": 1,
       "Reward": "artifact",
       "Guard": "res://Gameplay/Planets/Korriban/AncientDroid.tscn"
     },
@@ -241,8 +373,8 @@
         -17,
         23.5
       ],
-      "Level": 15,
-      "Reward": "heal"
+      "Level": 1,
+      "Reward": "artifact"
     },
     {
       "Id": "forbidden",
@@ -252,9 +384,11 @@
         -15.8,
         24.5
       ],
-      "Level": 23,
+      "Level": 1,
       "Reward": "artifact",
       "Guard": "res://Gameplay/Planets/Korriban/Terentatek.tscn"
     }
-  ]
+  ],
+  "Endless": true,
+  "EnemyExperienceDropEvery": 2
 }

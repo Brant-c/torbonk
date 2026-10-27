@@ -1,0 +1,25 @@
+{
+  "clips": [
+    {
+      "name": "Strike",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\fp_1h_elect_instant_right_4.jba",
+      "seconds": 1.2000000476837158,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Darkness",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\fp_1h_elect_instant_right_2.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Polarity",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_buff_consumption_exit.jba",
+      "seconds": 1.0,
+      "sourceFps": 15.0
+    }
+  ],
+  "output": "godot\\Assets\\SorcererRefinement\\casts.glb",
+  "sha256": "564090c2bed30d2e09194f81bd935debb9fec7c4529f90c72b369e5caa2717eb",
+  "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
+}

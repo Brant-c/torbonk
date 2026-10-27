@@ -1,0 +1,340 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Could not open 'user://' directory: 'user://'.
+   at: _get_and_create_snapshot_storage_dir (modules/objectdb_profiler/editor/objectdb_profiler_panel.cpp:157)
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | Started Registering global classes... (13 steps)[39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   7% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  14% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  21% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  28% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  35% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  42% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  50% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  57% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  64% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  71% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  78% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  85% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+[   0% ] [90m[1m_update_scan_actions[22m | Started Scanning actions... (104 steps)[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | kor_tomb_item_sarcophagus_kor_tomb_item_sarcophagus_ruin_rough.png[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | kor_vod_ruins_pillar02_kor_vod_ruins_pillar02_emission.png[39m[0m
+[   1% ] [90m[1m_update_scan_actions[22m | kor_vod_ruins_roof_kor_vod_ruins_roof_emission.png[39m[0m
+[   2% ] [90m[1m_update_scan_actions[22m | dro_terrain_boulder_dro_terrain_boulder_emission.png[39m[0m
+[   3% ] [90m[1m_update_scan_actions[22m | dro_trail_plank_dro_trail_plank_rough.png[39m[0m
+[   4% ] [90m[1m_update_scan_actions[22m | item_con_plasteel_crate_03_item_con_plasteel_crate_03_emission.png[39m[0m
+[   5% ] [90m[1m_update_scan_actions[22m | all_arch_slum_dock_straight_all_arch_slum_dock_metal_normal.png[39m[0m
+[   6% ] [90m[1m_update_scan_actions[22m | 18124.wav[39m[0m
+[   7% ] [90m[1m_update_scan_actions[22m | 151191.wav[39m[0m
+[   8% ] [90m[1m_update_scan_actions[22m | 925098.wav[39m[0m
+[   9% ] [90m[1m_update_scan_actions[22m | 2005362.wav[39m[0m
+[  10% ] [90m[1m_update_scan_actions[22m | 2828639.wav[39m[0m
+[  11% ] [90m[1m_update_scan_actions[22m | 3124562.wav[39m[0m
+[  12% ] [90m[1m_update_scan_actions[22m | 6921508.wav[39m[0m
+[  13% ] [90m[1m_update_scan_actions[22m | 7098880.wav[39m[0m
+[  14% ] [90m[1m_update_scan_actions[22m | 8262027.wav[39m[0m
+[  15% ] [90m[1m_update_scan_actions[22m | 9282082.wav[39m[0m
+[  16% ] [90m[1m_update_scan_actions[22m | 9717495.wav[39m[0m
+[  17% ] [90m[1m_update_scan_actions[22m | 10244116.wav[39m[0m
+[  18% ] [90m[1m_update_scan_actions[22m | 10503425.wav[39m[0m
+[  19% ] [90m[1m_update_scan_actions[22m | 11443991.wav[39m[0m
+[  20% ] [90m[1m_update_scan_actions[22m | 13246494.wav[39m[0m
+[  20% ] [90m[1m_update_scan_actions[22m | 13800022.wav[39m[0m
+[  21% ] [90m[1m_update_scan_actions[22m | 14357579.wav[39m[0m
+[  22% ] [90m[1m_update_scan_actions[22m | 17106924.wav[39m[0m
+[  23% ] [90m[1m_update_scan_actions[22m | 17145206.wav[39m[0m
+[  24% ] [90m[1m_update_scan_actions[22m | 17414480.wav[39m[0m
+[  25% ] [90m[1m_update_scan_actions[22m | 17811174.wav[39m[0m
+[  26% ] [90m[1m_update_scan_actions[22m | 18708494.wav[39m[0m
+[  27% ] [90m[1m_update_scan_actions[22m | 19617793.wav[39m[0m
+[  28% ] [90m[1m_update_scan_actions[22m | 23364535.wav[39m[0m
+[  29% ] [90m[1m_update_scan_actions[22m | 23470766.wav[39m[0m
+[  30% ] [90m[1m_update_scan_actions[22m | 25518009.wav[39m[0m
+[  31% ] [90m[1m_update_scan_actions[22m | 26218830.wav[39m[0m
+[  32% ] [90m[1m_update_scan_actions[22m | 26605792.wav[39m[0m
+[  33% ] [90m[1m_update_scan_actions[22m | 27875865.wav[39m[0m
+[  34% ] [90m[1m_update_scan_actions[22m | 30550027.wav[39m[0m
+[  35% ] [90m[1m_update_scan_actions[22m | 32918848.wav[39m[0m
+[  36% ] [90m[1m_update_scan_actions[22m | 33815473.wav[39m[0m
+[  37% ] [90m[1m_update_scan_actions[22m | 35226537.wav[39m[0m
+[  38% ] [90m[1m_update_scan_actions[22m | 35854337.wav[39m[0m
+[  39% ] [90m[1m_update_scan_actions[22m | 36403629.wav[39m[0m
+[  40% ] [90m[1m_update_scan_actions[22m | 36704300.wav[39m[0m
+[  40% ] [90m[1m_update_scan_actions[22m | 37764586.wav[39m[0m
+[  41% ] [90m[1m_update_scan_actions[22m | 38107453.wav[39m[0m
+[  42% ] [90m[1m_update_scan_actions[22m | 40856786.wav[39m[0m
+[  43% ] [90m[1m_update_scan_actions[22m | 41158987.wav[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | 41300347.wav[39m[0m
+[  45% ] [90m[1m_update_scan_actions[22m | 43710584.wav[39m[0m
+[  46% ] [90m[1m_update_scan_actions[22m | 47460001.wav[39m[0m
+[  47% ] [90m[1m_update_scan_actions[22m | 47992697.wav[39m[0m
+[  48% ] [90m[1m_update_scan_actions[22m | 48038207.wav[39m[0m
+[  49% ] [90m[1m_update_scan_actions[22m | 50181172.wav[39m[0m
+[  50% ] [90m[1m_update_scan_actions[22m | 52014303.wav[39m[0m
+[  51% ] [90m[1m_update_scan_actions[22m | 53227178.wav[39m[0m
+[  52% ] [90m[1m_update_scan_actions[22m | 53261156.wav[39m[0m
+[  53% ] [90m[1m_update_scan_actions[22m | 57320707.wav[39m[0m
+[  54% ] [90m[1m_update_scan_actions[22m | 58948851.wav[39m[0m
+[  55% ] [90m[1m_update_scan_actions[22m | 63896203.wav[39m[0m
+[  56% ] [90m[1m_update_scan_actions[22m | 66773992.wav[39m[0m
+[  57% ] [90m[1m_update_scan_actions[22m | 67642838.wav[39m[0m
+[  58% ] [90m[1m_update_scan_actions[22m | 67837780.wav[39m[0m
+[  59% ] [90m[1m_update_scan_actions[22m | 70458762.wav[39m[0m
+[  60% ] [90m[1m_update_scan_actions[22m | 72225944.wav[39m[0m
+[  60% ] [90m[1m_update_scan_actions[22m | 76656491.wav[39m[0m
+[  61% ] [90m[1m_update_scan_actions[22m | 78144926.wav[39m[0m
+[  62% ] [90m[1m_update_scan_actions[22m | 83117028.wav[39m[0m
+[  63% ] [90m[1m_update_scan_actions[22m | 84848789.wav[39m[0m
+[  64% ] [90m[1m_update_scan_actions[22m | 87239095.wav[39m[0m
+[  65% ] [90m[1m_update_scan_actions[22m | 92890106.wav[39m[0m
+[  66% ] [90m[1m_update_scan_actions[22m | 95257055.wav[39m[0m
+[  67% ] [90m[1m_update_scan_actions[22m | 96655364.wav[39m[0m
+[  68% ] [90m[1m_update_scan_actions[22m | 106194850.wav[39m[0m
+[  69% ] [90m[1m_update_scan_actions[22m | 108968875.wav[39m[0m
+[  70% ] [90m[1m_update_scan_actions[22m | 110004555.wav[39m[0m
+[  71% ] [90m[1m_update_scan_actions[22m | 111637633.wav[39m[0m
+[  72% ] [90m[1m_update_scan_actions[22m | 115083768.wav[39m[0m
+[  73% ] [90m[1m_update_scan_actions[22m | 132237971.wav[39m[0m
+[  74% ] [90m[1m_update_scan_actions[22m | 132981038.wav[39m[0m
+[  75% ] [90m[1m_update_scan_actions[22m | 133966111.wav[39m[0m
+[  76% ] [90m[1m_update_scan_actions[22m | 135833827.wav[39m[0m
+[  77% ] [90m[1m_update_scan_actions[22m | 138027827.wav[39m[0m
+[  78% ] [90m[1m_update_scan_actions[22m | 141302872.wav[39m[0m
+[  79% ] [90m[1m_update_scan_actions[22m | 155127750.wav[39m[0m
+[  80% ] [90m[1m_update_scan_actions[22m | 186175857.wav[39m[0m
+[  80% ] [90m[1m_update_scan_actions[22m | 191183975.wav[39m[0m
+[  81% ] [90m[1m_update_scan_actions[22m | 197202772.wav[39m[0m
+[  82% ] [90m[1m_update_scan_actions[22m | 270369229.wav[39m[0m
+[  83% ] [90m[1m_update_scan_actions[22m | 283725930.wav[39m[0m
+[  84% ] [90m[1m_update_scan_actions[22m | 294434565.wav[39m[0m
+[  85% ] [90m[1m_update_scan_actions[22m | 319014809.wav[39m[0m
+[  86% ] [90m[1m_update_scan_actions[22m | 356892347.wav[39m[0m
+[  87% ] [90m[1m_update_scan_actions[22m | 450073914.wav[39m[0m
+[  88% ] [90m[1m_update_scan_actions[22m | 2x2_electrical_blast_alpha.png[39m[0m
+[  89% ] [90m[1m_update_scan_actions[22m | 2x2_electricity_bolts.png[39m[0m
+[  90% ] [90m[1m_update_scan_actions[22m | bw_flare_gray.png[39m[0m
+[  91% ] [90m[1m_update_scan_actions[22m | bw_fx_horizontal_flare_orange_hot.png[39m[0m
+[  92% ] [90m[1m_update_scan_actions[22m | consuming_smoke_ring_01.png[39m[0m
+[  93% ] [90m[1m_update_scan_actions[22m | lightning_core.png[39m[0m
+[  94% ] [90m[1m_update_scan_actions[22m | smoke_thin.png[39m[0m
+[  95% ] [90m[1m_update_scan_actions[22m | dark_embrace.png[39m[0m
+[  96% ] [90m[1m_update_scan_actions[22m | forcespeed.png[39m[0m
+[  97% ] [90m[1m_update_scan_actions[22m | lightningstrike.png[39m[0m
+[  98% ] [90m[1m_update_scan_actions[22m | polaritycharge.png[39m[0m
+[92m[ DONE ][39m [1m_update_scan_actions[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started (Re)Importing Assets (93 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   1% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   2% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   3% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   4% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   5% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   6% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   7% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   8% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   9% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  10% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  11% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  12% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  13% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  14% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  15% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  17% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  18% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  19% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  20% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  21% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  22% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  23% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  24% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  25% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  26% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  27% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  28% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  29% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  30% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  31% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  32% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  34% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  35% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  36% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  37% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  38% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  39% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  40% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  41% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  42% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  43% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  44% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  45% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  46% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  47% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  48% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  50% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  51% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  52% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  53% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  54% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  55% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  56% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  57% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  58% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  59% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  60% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  61% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  62% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  63% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  64% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  65% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  67% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  68% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  69% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  70% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  71% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  72% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  73% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  74% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  75% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  76% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  77% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  78% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  79% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  80% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  81% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  82% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  84% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  85% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  86% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  87% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  88% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  89% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  90% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  91% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  92% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  93% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  94% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  95% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  96% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  97% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   0% ] [90m[1mreimport[22m | Executing pre-reimport operations...[39m[0m
+[   0% ] [90m[1mreimport[22m | 95257055.wav[39m[0m
+[   1% ] [90m[1mreimport[22m | 92890106.wav[39m[0m
+[   2% ] [90m[1mreimport[22m | 87239095.wav[39m[0m
+[   3% ] [90m[1mreimport[22m | 84848789.wav[39m[0m
+[   4% ] [90m[1mreimport[22m | 83117028.wav[39m[0m
+[   5% ] [90m[1mreimport[22m | 78144926.wav[39m[0m
+[   6% ] [90m[1mreimport[22m | 76656491.wav[39m[0m
+[   7% ] [90m[1mreimport[22m | 72225944.wav[39m[0m
+[   8% ] [90m[1mreimport[22m | 70458762.wav[39m[0m
+[   9% ] [90m[1mreimport[22m | 67837780.wav[39m[0m
+[  10% ] [90m[1mreimport[22m | 67642838.wav[39m[0m
+[  11% ] [90m[1mreimport[22m | 66773992.wav[39m[0m
+[  12% ] [90m[1mreimport[22m | 63896203.wav[39m[0m
+[  13% ] [90m[1mreimport[22m | 58948851.wav[39m[0m
+[  14% ] [90m[1mreimport[22m | 57320707.wav[39m[0m
+[  15% ] [90m[1mreimport[22m | 53261156.wav[39m[0m
+[  17% ] [90m[1mreimport[22m | 53227178.wav[39m[0m
+[  18% ] [90m[1mreimport[22m | 52014303.wav[39m[0m
+[  19% ] [90m[1mreimport[22m | 50181172.wav[39m[0m
+[  20% ] [90m[1mreimport[22m | 48038207.wav[39m[0m
+[  21% ] [90m[1mreimport[22m | 47992697.wav[39m[0m
+[  22% ] [90m[1mreimport[22m | 450073914.wav[39m[0m
+[  23% ] [90m[1mreimport[22m | 356892347.wav[39m[0m
+[  24% ] [90m[1mreimport[22m | 319014809.wav[39m[0m
+[  25% ] [90m[1mreimport[22m | 294434565.wav[39m[0m
+[  26% ] [90m[1mreimport[22m | 283725930.wav[39m[0m
+[  27% ] [90m[1mreimport[22m | 270369229.wav[39m[0m
+[  28% ] [90m[1mreimport[22m | 197202772.wav[39m[0m
+[  29% ] [90m[1mreimport[22m | 191183975.wav[39m[0m
+[  30% ] [90m[1mreimport[22m | 186175857.wav[39m[0m
+[  31% ] [90m[1mreimport[22m | 155127750.wav[39m[0m
+[  32% ] [90m[1mreimport[22m | 141302872.wav[39m[0m
+[  34% ] [90m[1mreimport[22m | 138027827.wav[39m[0m
+[  35% ] [90m[1mreimport[22m | 135833827.wav[39m[0m
+[  36% ] [90m[1mreimport[22m | 133966111.wav[39m[0m
+[  37% ] [90m[1mreimport[22m | 132981038.wav[39m[0m
+[  38% ] [90m[1mreimport[22m | 132237971.wav[39m[0m
+[  39% ] [90m[1mreimport[22m | 115083768.wav[39m[0m
+[  40% ] [90m[1mreimport[22m | 111637633.wav[39m[0m
+[  41% ] [90m[1mreimport[22m | 110004555.wav[39m[0m
+[  42% ] [90m[1mreimport[22m | 108968875.wav[39m[0m
+[  43% ] [90m[1mreimport[22m | 106194850.wav[39m[0m
+[  44% ] [90m[1mreimport[22m | 96655364.wav[39m[0m
+[  45% ] [90m[1mreimport[22m | 17811174.wav[39m[0m
+[  46% ] [90m[1mreimport[22m | 17414480.wav[39m[0m
+[  47% ] [90m[1mreimport[22m | 17145206.wav[39m[0m
+[  48% ] [90m[1mreimport[22m | 17106924.wav[39m[0m
+[  50% ] [90m[1mreimport[22m | 14357579.wav[39m[0m
+[  51% ] [90m[1mreimport[22m | 13800022.wav[39m[0m
+[  52% ] [90m[1mreimport[22m | 13246494.wav[39m[0m
+[  53% ] [90m[1mreimport[22m | 11443991.wav[39m[0m
+[  54% ] [90m[1mreimport[22m | 10503425.wav[39m[0m
+[  55% ] [90m[1mreimport[22m | 10244116.wav[39m[0m
+[  56% ] [90m[1mreimport[22m | 9717495.wav[39m[0m
+[  57% ] [90m[1mreimport[22m | 9282082.wav[39m[0m
+[  58% ] [90m[1mreimport[22m | 8262027.wav[39m[0m
+[  59% ] [90m[1mreimport[22m | 7098880.wav[39m[0m
+[  60% ] [90m[1mreimport[22m | 6921508.wav[39m[0m
+[  61% ] [90m[1mreimport[22m | 3124562.wav[39m[0m
+[  62% ] [90m[1mreimport[22m | 2828639.wav[39m[0m
+[  63% ] [90m[1mreimport[22m | 2005362.wav[39m[0m
+[  64% ] [90m[1mreimport[22m | 925098.wav[39m[0m
+[  65% ] [90m[1mreimport[22m | 151191.wav[39m[0m
+[  67% ] [90m[1mreimport[22m | 18124.wav[39m[0m
+[  68% ] [90m[1mreimport[22m | 47460001.wav[39m[0m
+[  69% ] [90m[1mreimport[22m | 43710584.wav[39m[0m
+[  70% ] [90m[1mreimport[22m | 41300347.wav[39m[0m
+[  71% ] [90m[1mreimport[22m | 41158987.wav[39m[0m
+[  72% ] [90m[1mreimport[22m | 40856786.wav[39m[0m
+[  73% ] [90m[1mreimport[22m | 38107453.wav[39m[0m
+[  74% ] [90m[1mreimport[22m | 37764586.wav[39m[0m
+[  75% ] [90m[1mreimport[22m | 36704300.wav[39m[0m
+[  76% ] [90m[1mreimport[22m | 36403629.wav[39m[0m
+[  77% ] [90m[1mreimport[22m | 35854337.wav[39m[0m
+[  78% ] [90m[1mreimport[22m | 35226537.wav[39m[0m
+[  79% ] [90m[1mreimport[22m | 18708494.wav[39m[0m
+[  80% ] [90m[1mreimport[22m | 19617793.wav[39m[0m
+[  81% ] [90m[1mreimport[22m | 23364535.wav[39m[0m
+[  82% ] [90m[1mreimport[22m | 23470766.wav[39m[0m
+[  84% ] [90m[1mreimport[22m | 25518009.wav[39m[0m
+[  85% ] [90m[1mreimport[22m | 26218830.wav[39m[0m
+[  86% ] [90m[1mreimport[22m | 26605792.wav[39m[0m
+[  87% ] [90m[1mreimport[22m | 27875865.wav[39m[0m
+[  88% ] [90m[1mreimport[22m | 30550027.wav[39m[0m
+[  89% ] [90m[1mreimport[22m | 32918848.wav[39m[0m
+[  90% ] [90m[1mreimport[22m | 33815473.wav[39m[0m
+[  91% ] [90m[1mreimport[22m | 95257055.wav[39m[0m
+[  92% ] [90m[1mreimport[22m | 92890106.wav[39m[0m
+[  93% ] [90m[1mreimport[22m | 87239095.wav[39m[0m
+[  94% ] [90m[1mreimport[22m | 84848789.wav[39m[0m
+[  95% ] [90m[1mreimport[22m | 83117028.wav[39m[0m
+[  96% ] [90m[1mreimport[22m | 78144926.wav[39m[0m
+[  97% ] [90m[1mreimport[22m | 76656491.wav[39m[0m
+[  98% ] [90m[1mreimport[22m | Finalizing Asset Import...[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started (Re)Importing Assets (93 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Executing post-reimport operations...[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Loading editor (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Loading editor layout...[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Loading docks...[39m[0m
+[  33% ] [90m[1mloading_editor_layout[22m | Reopening scenes...[39m[0m
+[  50% ] [90m[1mloading_editor_layout[22m | Loading central editor layout...[39m[0m
+[  66% ] [90m[1mloading_editor_layout[22m | Loading plugin window layout...[39m[0m
+[  83% ] [90m[1mloading_editor_layout[22m | Editor layout ready.[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m

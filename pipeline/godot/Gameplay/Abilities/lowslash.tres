@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "lowslash"
+StartsUnlocked = false
+Title = "Low Slash"
+Icon = "lowslash"
+Damage = 6
+CooldownSeconds = 12
+Range = 0.28
+Radius = 0.28
+Area = 0
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+WindupSeconds = 0.0
+ChannelSeconds = 0.0
+RecoverySeconds = 1.6
+GestureSeconds = 1.6
+StartClip = "Assassin/LowSlash"
+LoopClip = "Assassin/LowSlash"
+EndClip = ""
+PeriodicDamage = 0
+PeriodicDuration = 0
+PeriodicInterval = 1
+DamageType = 0
+Description = "Short-range control for two seconds, with six seconds between controls per enemy."
+ImpactTexture = ""
+CastAudio = ""
+ImpactAudio = ""
+PresentationKind = "assassin"
+WeaponAudio = ""
+ImpactTailsOnTargetDeath = true
+RequireGesture = true
+
+SourceFx = "jc_lowslash_impact_01"
+
+Category = 1

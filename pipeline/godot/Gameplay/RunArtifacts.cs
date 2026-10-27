@@ -57,8 +57,8 @@ public partial class RunArtifacts : Node
         if(enemy.RewardTier==1 && !enemy.GuaranteedReward && _random.Randf()>=EliteRewardChance)return;
         _pending.Enqueue((enemy.RewardTier,enemy.GuaranteedReward,false,enemy.GlobalPosition));
     }
-    public bool Eligible(RunArtifactDefinition item,int tier) => (World.RunConfiguration.Profile.ArtifactEffects.Length==0 || World.RunConfiguration.Profile.ArtifactEffects.Contains(item.Effect)
-        || World.PlanetRun!=null && item.Effect is "leech" or "stride" or "execution") && item.MinimumTier<=tier &&
+    public bool Eligible(RunArtifactDefinition item,int tier) => (item.Effect!="growth" || World.Progression!.MaximumLevel<=0 || World.Progression.Level<World.Progression.MaximumLevel) && (World.RunConfiguration.Profile.ArtifactEffects.Length==0 || World.RunConfiguration.Profile.ArtifactEffects.Contains(item.Effect)
+        || World.PlanetRun!=null && item.Effect is "leech" or "stride" or "execution" or "magnet" or "permanent_haste" or "growth") && item.MinimumTier<=tier &&
         !_equipped.Any(a=>a.Id==item.Id) && (item.RequiresAbility=="" || World.Abilities.Find(item.RequiresAbility)?.Unlocked==true);
     public override void _Process(double delta)
     {
@@ -104,6 +104,9 @@ public partial class RunArtifacts : Node
             }
             else _equipped.Add(item);
         }
+        else if(item.Effect=="magnet") { World.Progression!.MagnetRadius *= 1 + item.Amount; World.Progression.PickupRadius *= 1 + item.Amount; }
+        else if(item.Effect=="permanent_haste") { _hasteBonus += item.Amount; }
+        else if(item.Effect=="growth") { World.Progression!.AddExperience(Math.Max(1,World.Progression.RequiredExperience)); }
         else if(item.Effect=="heal")World.PlayerActor.Health.ApplyHealing(item.Amount);
         else if(item.Effect=="shield")World.PlayerActor.Health.ApplyShield(item.Amount,10);
         else if(item.Effect=="recovery")foreach(var a in World.Abilities.Abilities)a.ReduceCooldown(item.Amount);
@@ -112,16 +115,19 @@ public partial class RunArtifacts : Node
         GetTree().Paused=false;Changed?.Invoke();World.Progression.ResumePending();
         World.Rig.SetControlsEnabled(!GetTree().Paused);return true;
     }
+    private float _hasteBonus;
+    public float PermanentHaste => _hasteBonus;
     public void Clear()
     {
         foreach(var marker in GetChildren().OfType<DropSymbol>())marker.QueueFree();
+        _hasteBonus=0;World.Progression!.MagnetRadius=.45f;World.Progression.PickupRadius=.14f;
         _pending.Clear();_offers.Clear();_equipped.Clear();_paid.Clear();_cachePaid.Clear();SelectedIndex=-1;
         RewardsOpened=RewardsClaimed=0;ExplorationReward=false;GetTree().Paused=false;Changed?.Invoke();
     }
     public bool EnqueueCache(string id)
     {
         if(!World.PlayerActor.Alive || !_cachePaid.Add(id))return false;
-        _pending.Enqueue((1,true,true,World.PlayerActor.GlobalPosition));return true;
+        _pending.Enqueue((2,true,true,World.PlayerActor.GlobalPosition));return true;
     }
     private readonly HashSet<string> _cachePaid=new();
     public override void _ExitTree() { if(GodotObject.IsInstanceValid(World.Spawner))World.Spawner!.EnemyKilled-=Defeated; }

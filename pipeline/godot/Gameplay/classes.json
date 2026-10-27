@@ -17,7 +17,7 @@
     "BaseClass": "sith_warrior",
     "Appearance": "d3.war.bmn",
     "EquipmentPreset": "d3.juggernaut",
-    "StartingAbility": "smash",
+    "StartingAbility": "viciousslash",
     "Idle": "",
     "Run": "",
     "TalentPool": [
@@ -27,18 +27,49 @@
       "health",
       "speed",
       "d3_smash",
-      "unlock_viciousslash",
       "unlock_crushingblow",
       "unlock_intimidatingroar",
       "juggernaut_rage",
-      "juggernaut_shockwave"
+      "juggernaut_shockwave",
+      "unlock_smash",
+      "unlock_forcescream",
+      "unlock_impale",
+      "unlock_ravage",
+      "unlock_forcecrush",
+      "unlock_obliterate",
+      "unlock_forcecharge",
+      "unlock_forcechoke",
+      "unlock_saberward",
+      "unlock_enrageddefense",
+      "unlock_endurepain",
+      "unlock_viciousthrow",
+      "unlock_retaliation",
+      "unlock_sunderingassault",
+      "unlock_forcepush",
+      "unlock_backhand"
     ],
     "Kit": [
-      "viciousslash",
+      "smash",
       "crushingblow",
-      "intimidatingroar"
+      "intimidatingroar",
+      "forcescream",
+      "impale",
+      "ravage",
+      "forcecrush",
+      "obliterate",
+      "forcecharge",
+      "forcechoke",
+      "saberward",
+      "enrageddefense",
+      "endurepain",
+      "viciousthrow",
+      "retaliation",
+      "sunderingassault",
+      "forcepush",
+      "backhand"
     ],
-    "BasicAttack": "basicassault"
+    "BasicAttack": "basicassault",
+    "Health": 155
   },
   {
     "Id": "marauder",
@@ -82,7 +113,6 @@
       "cooldown",
       "health",
       "speed",
-      "d3_lacerate",
       "unlock_creepingterror",
       "unlock_discharge",
       "unlock_forceshroud",
@@ -90,14 +120,34 @@
       "assassin_static_blades",
       "unlock_deathfield",
       "deathfield_power",
-      "unlock_affliction"
+      "unlock_affliction",
+      "unlock_voltaicslash",
+      "unlock_maul",
+      "unlock_spike",
+      "unlock_shock",
+      "unlock_crushingdarkness",
+      "unlock_wither",
+      "unlock_lowslash",
+      "unlock_forcecloak",
+      "unlock_forcespeed",
+      "unlock_deflection"
     ],
     "Kit": [
       "creepingterror",
       "discharge",
       "forceshroud",
       "deathfield",
-      "affliction"
+      "affliction",
+      "voltaicslash",
+      "maul",
+      "spike",
+      "shock",
+      "crushingdarkness",
+      "wither",
+      "lowslash",
+      "forcecloak",
+      "forcespeed",
+      "deflection"
     ],
     "ArtifactEffects": [
       "guardian",
@@ -107,7 +157,7 @@
       "recovery",
       "vulnerability"
     ],
-    "BasicAttack": "basicpole"
+    "BasicAttack": ""
   },
   {
     "Id": "operative",

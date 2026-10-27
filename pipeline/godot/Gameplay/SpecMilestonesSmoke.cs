@@ -82,7 +82,7 @@ public partial class SpecMilestonesSmoke : Node
                 Check("Madness Force Lightning casts",channel.TryBegin());for(int tick=0;tick<40;tick++)channel.Advance(.05);Check("Madness channel deals damage",channel.DamageEvents>0);
                 AdvanceTo(25);Pick("madness");Check("later unlock can replace a full slot",p.Replacing && p.Replace(2));p._Process(1);AdvanceTo(30);Check("milestones continue through level thirty",p.Offers.Count==2 && p.Offers.All(u=>u.MilestoneLevel==30));
             }
-            p.ResetRun();Check("reset restores starting attacks and clears choices",p.Level==1 && !p.Replacing && p.Ranks.Count==0 && w.Abilities.Abilities.Count(a=>a.Unlocked)==(w.RunConfiguration.AdvancedClassId=="sorcerer"?1:2));
+            p.ResetRun();Check("reset restores starting attacks and clears choices",p.Level==1 && !p.Replacing && p.Ranks.Count==0 && w.Abilities.Abilities.Count(a=>a.Unlocked)==1);
             if(w.RunConfiguration.AdvancedClassId=="sorcerer")
             {Check("Storm first excludes Death Field too",p.Grant("unlock_storm") && !p.Grant("unlock_deathfield"));p.ResetRun();}
         }
