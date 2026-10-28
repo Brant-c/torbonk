@@ -26,4 +26,8 @@ ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/damage/bw_f
 CastAudio = "res://Assets/WarriorLibrary/Audio/10681804.wav"
 ImpactAudio = "res://Assets/WarriorLibrary/Audio/487704814.wav"
 SourceFx = "epp.sith_warrior.impale.cast_instant"
-Description = "April Warrior ability; survivors adaptation."
+Description = "Heavy single-target saber strike. Vengeance talents add bleeding, empower Force Scream and accelerate Ravage."
+
+FullBodyGesture = true
+
+FinishGesture = true

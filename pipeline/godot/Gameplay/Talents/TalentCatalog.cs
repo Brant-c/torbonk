@@ -58,6 +58,9 @@ public sealed class TalentCatalog
         var juggernaut=JsonSerializer.Deserialize<TalentCatalog>(FileAccess.GetFileAsString("res://Gameplay/Talents/juggernaut.json"))!;
         catalog.Trees=catalog.Trees.Concat(juggernaut.Trees).ToArray();
         catalog.Talents=catalog.Talents.Concat(juggernaut.Talents).ToArray();
+        var marauder=JsonSerializer.Deserialize<TalentCatalog>(FileAccess.GetFileAsString("res://Gameplay/Talents/marauder.json"))!;
+        catalog.Trees=catalog.Trees.Concat(marauder.Trees).ToArray();
+        catalog.Talents=catalog.Talents.Concat(marauder.Talents).ToArray();
         if(catalog.Budget<0 || catalog.Talents.Select(t=>t.Id).Distinct().Count()!=catalog.Talents.Length ||
             catalog.Talents.Any(t=>t.Cost<1 || t.MaxRank<1 || t.RequiredPoints<0 || t.Tier<0 ||
                 !catalog.Trees.Any(tree=>tree.Id==t.Tree) || t.Prerequisites.Any(p=>p.Rank<1 ||

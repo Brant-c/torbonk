@@ -31,6 +31,9 @@ public partial class TombAttack : Node
     private readonly Vector3[] _centers=new Vector3[3],_directions=new Vector3[3];
     private readonly int[] _shapes=new int[3];
     private int _count,_turn;
+    private bool _followup;
+    private double _vulnerability;
+    private int Tier=>_actor.Crowd?.OperationMode.MechanicsTier??0;
     private float _radius;
     private double _remaining=2.5;
     private PackedScene? _summon;
@@ -50,12 +53,13 @@ public partial class TombAttack : Node
     public bool Tick(double delta)
     {
         if(Phase==BossPhase.Ended || !_actor.Alive)return false;
+        _vulnerability=Math.Max(0,_vulnerability-delta);
         _remaining-=delta;
         if(Phase==BossPhase.Pursuit)
         {
             if(_remaining>0 || _actor.GlobalPosition.DistanceTo(_actor.Target.GlobalPosition)>TriggerRange
                 || !_actor.Navigation.HasLineOfSight(_actor.AimPosition,_actor.Target.AimPosition))return false;
-            LockPattern();Phase=BossPhase.Telegraph;_remaining=Windup;
+            _followup=false;LockPattern();Phase=BossPhase.Telegraph;_remaining=Windup;
             AudioPresentation.Find(this)?.PlayCue(WarningCue);return true;
         }
         if(Phase==BossPhase.Telegraph)
@@ -63,6 +67,11 @@ public partial class TombAttack : Node
             for(int i=0;i<_count;i++)_materials[i].SetShaderParameter("progress",1-(float)(_remaining/Windup));
             if(_remaining>0)return true;
             Strike();if(Phase==BossPhase.Ended)return true;
+            if(!_followup && Tier>0 && (Pattern is "trial" or "crossfire" or "cleave" || Tier==2 && Pattern=="bolt")) {
+                _followup=true;LockPattern();_remaining=Windup;
+                Instruction="FOLLOW-UP · MOVE OUT OF THE NEW WARNING";
+                return true;
+            }
             Phase=BossPhase.Recovery;_remaining=PoolSeconds>0?PoolSeconds:Pattern=="trial"?1.45:0.8;_poolTick=1;return true;
         }
         if(_remaining>0)
@@ -104,6 +113,7 @@ public partial class TombAttack : Node
         }
         else if(Pattern=="brood")
         { _centers[0]=actor;_radius=0.18f;Instruction="BROOD CALL  ·  LESSER SLUGS ARE GATHERING"; }
+        _radius*=_actor.Crowd?.OperationMode.MechanicRadius??1;
         if(InstructionOverride!="")Instruction=InstructionOverride;
         for(int i=0;i<_count;i++)
         {
@@ -126,7 +136,7 @@ public partial class TombAttack : Node
             var offset=player-_centers[i];offset.Y=0;float forward=offset.Dot(_directions[i]);
             bool inside=_shapes[i] switch
             {
-                1=>Math.Abs(offset.Dot(_directions[i].Rotated(Vector3.Up,Mathf.Pi/2)))<=0.075f && Math.Abs(forward)<=_radius,
+                1=>Math.Abs(offset.Dot(_directions[i].Rotated(Vector3.Up,Mathf.Pi/2)))<=_radius*.079f && Math.Abs(forward)<=_radius,
                 2=>offset.Length()<=_radius && (offset.Length()<0.03f || forward/offset.Length()>=0.55f),
                 _=>offset.Length()<=_radius
             };
@@ -134,7 +144,7 @@ public partial class TombAttack : Node
         }
         // Overlapping lanes are one attack. Applied hits always follow Health -> combat events -> flytext.
         if(hit && _actor.Target.Alive && _actor.Navigation.HasLineOfSight(_actor.AimPosition,_actor.Target.AimPosition))
-            _actor.DealAttack(Damage,DamageType.Kinetic);
+            {_actor.DealAttack(Damage*(_vulnerability>0?1.25f:1),DamageType.Kinetic);if(Tier>0)_vulnerability=Tier==2?12:8;}
         if(_summon!=null && _actor.Crowd is {} crowd && crowd.Running && _actor.Target.Alive)
             for(int i=0;i<2;i++)crowd.TrySpawn(_summon);
     }

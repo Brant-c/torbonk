@@ -117,11 +117,11 @@ public partial class AutomaticAbility : Node
     public bool TryBegin()
     {
         if(!Unlocked || !CombatEnabled || !Caster.Alive || State!=LightningState.Idle || CooldownRemaining>0) return false;
-        if(Build?.Pregame.CanBeginJuggernaut(this)==false)return false;
+        if(Build?.Pregame.CanBeginJuggernaut(this)==false || Build?.Pregame.CanBeginMarauder(this)==false)return false;
         bool spikeOpening=Definition.Id=="spike" && Build?.World.RunConfiguration.AdvancedClassId=="assassin";
         if(Definition.Effect==AbilityEffect.Heal && (Caster.Health.Current>=Caster.Health.Maximum || Caster.Health.Current>=Caster.Health.Maximum*HealthThreshold)) return false;
         if(Definition.Effect==AbilityEffect.Shield && (Caster.Health.Shielded || Targeting.Acquire(Range,AbilityTargetRule.NearestHostile,0)==null)) return false;
-        if(Definition.Effect==AbilityEffect.Buff && ((Definition.Id=="polarityshift"?Build?.Pregame.PolarityActive==true:Build?.Buffed==true) || Targeting.Acquire(Range,AbilityTargetRule.NearestHostile,0)==null)) return false;
+        if(Definition.Effect==AbilityEffect.Buff && ((Definition.Id=="polarityshift"?Build?.Pregame.PolarityActive==true:Build?.World.RunConfiguration.AdvancedClassId!="marauder" && Build?.Buffed==true) || Targeting.Acquire(Range,AbilityTargetRule.NearestHostile,0)==null)) return false;
         if(Definition.Area==AbilityArea.CasterRadial && Targeting.InArea(Caster.GlobalPosition,Radius,Radius).Count()<Math.Max(1,Definition.NearbyTriggerCount)) return false;
         var target=Definition.Area==AbilityArea.CasterRadial || Definition.Effect!=AbilityEffect.Damage?Caster:Targeting.Acquire(Range,Definition.TargetRule,Radius);
         if(Definition.PeriodicDuration>0 && Caster==Build?.World.PlayerActor && Build.World.RunConfiguration.AdvancedClassId is "sorcerer" or "assassin")
@@ -129,7 +129,10 @@ public partial class AutomaticAbility : Node
             target=Targeting.InArea(Caster.GlobalPosition,Range,Range).Where(t=>Periodic?.Has(this,t)!=true)
                 .OrderBy(t=>Caster.GlobalPosition.DistanceSquaredTo(t.GlobalPosition)).ThenBy(t=>t.SelectionKey,StringComparer.Ordinal).FirstOrDefault();
         }
+        if(Build?.World.RunConfiguration.AdvancedClassId=="marauder" && Definition.Id is "rupture" or "forcecrush")
+            target=Build.Pregame.MarauderDotTarget(this);
         if(Definition.Id=="polarityshift" && Build?.Pregame.PolarityReady!=true)return false;
+        if(Build?.World.RunConfiguration.AdvancedClassId=="juggernaut" && Definition.Id=="viciousthrow")target=Targeting.InArea(Caster.GlobalPosition,Range,Range).Where(t=>t.Health.Current<=t.Health.Maximum*.3f).OrderBy(t=>t.Health.Current).FirstOrDefault();
         if(target==null) return false;
         if(Build?.World.RunConfiguration.AdvancedClassId=="juggernaut" && Definition.Id=="viciousthrow" && target.Health.Current>target.Health.Maximum*.3f)return false;
         if(!float.IsFinite(DamagePerTick) || (Definition.Effect==AbilityEffect.Damage && DamagePerTick<=0) || !float.IsFinite(TickSeconds) || TickSeconds<=0 ||
@@ -185,8 +188,12 @@ public partial class AutomaticAbility : Node
             ? Targeting.InArea(GroundCenter,Radius,Range,Definition.PersistentArea).ToArray()
             : Definition.Area==AbilityArea.FrontalCone ? Targeting.InArea(Caster.GlobalPosition,Radius,Radius).Where(t=>InCone(t)).ToArray()
             : Targeting.IsValidTarget(CastTarget,Range)?new[]{CastTarget!}:Array.Empty<Combatant>();
+        if(Definition.MaximumTargets>0)targets=targets.OrderBy(t=>t==CastTarget?0:1)
+            .ThenBy(t=>t.GlobalPosition.DistanceSquaredTo(CastTarget?.GlobalPosition??Caster.GlobalPosition))
+            .ThenBy(t=>t.SelectionKey,StringComparer.Ordinal).Take(Definition.MaximumTargets).ToArray();
         // Snapshot before damage: a lethal field hit must still spread the victim's owned DoTs.
         var spread=(Definition.SpreadsPeriodicEffects || Definition.Id=="lacerate" && Build?.World.RunConfiguration.AdvancedClassId=="assassin")?Periodic?.SpreadSources(Caster,targets):null;
+        if(Definition.Id=="smash" && Build?.World.RunConfiguration.AdvancedClassId=="juggernaut")spread=spread?.Where(a=>a.Definition.Id=="forcecrush").ToArray();
         if(Definition.Id=="lacerate" && Build?.World.RunConfiguration.AdvancedClassId=="assassin" && Build.Pregame.AssassinSpread!=true)spread=spread?.Where(a=>a.Definition.Id=="discharge").ToArray();
         if(_presented) Present(()=>Presentation.Impact(Definition.Area==AbilityArea.GroundSphere?GroundCenter:CastTarget?.AimPosition??GroundCenter));
         if(Definition.Id=="flamesweep")
@@ -199,24 +206,34 @@ public partial class AutomaticAbility : Node
         {
             if(State!=LightningState.Channeling || !Caster.Alive || !CombatEnabled) return false;
             if(!GodotObject.IsInstanceValid(target) || !target.Alive) continue;
-            bool secondary=Definition.Area==AbilityArea.TargetSplash && target!=CastTarget;
+            bool secondary=(Definition.Area==AbilityArea.TargetSplash || Definition.Area==AbilityArea.FrontalCone && Definition.MaximumTargets>0) && target!=CastTarget;
             float applied=DealHit(target,DamagePerTick*(secondary?Definition.SplashMultiplier:1));
             if(target.Alive && Definition.PeriodicDuration>0)Periodic?.Apply(this,target,secondary?Definition.SecondaryPeriodicScale:1);
-            if(target.Alive && Definition.VulnerabilitySeconds>0 && !secondary)target.Health.VulnerabilitySeconds=Math.Max(target.Health.VulnerabilitySeconds,Definition.VulnerabilitySeconds);
+            if(target.Alive && Definition.VulnerabilitySeconds>0 && (!secondary || Definition.SplashAppliesVulnerability))target.Health.VulnerabilitySeconds=Math.Max(target.Health.VulnerabilitySeconds,Definition.VulnerabilitySeconds);
             if(target.Alive && Definition.SlowSeconds>0 && target is EnemyAgent slowed)slowed.Slow(Definition.SlowFactor,Definition.SlowSeconds);
-            if(Build?.World.RunConfiguration.AdvancedClassId=="juggernaut" && Definition.Id is "forcechoke" or "backhand" && target is EnemyAgent controlled)controlled.DisplaceFrom(Caster.GlobalPosition,0,3);
+            if(Build?.World.RunConfiguration.AdvancedClassId=="juggernaut" && Definition.Id is "forcechoke" or "backhand" && target is EnemyAgent controlled)controlled.Stun(3,false);
             Build?.AbilityHit(this,target);
             if(Definition.Area==AbilityArea.CasterRadial && target is EnemyAgent enemy && enemy.Alive) enemy.DisplaceFrom(Caster.GlobalPosition,Definition.KnockbackDistance,Definition.StaggerSeconds);
             if(applied<=0) continue;
             _damaged.Add(target.GetInstanceId());
-            if(_presented && Presentation is SurvivalAbilityPresentation original) Present(()=>original.TargetImpact(target));
+            if(_presented && Presentation is D3AbilityPresentation warrior) Present(()=>warrior.TargetImpact(target)); else if(_presented && Presentation is SurvivalAbilityPresentation original) Present(()=>original.TargetImpact(target));
             DamageEvents++;LastEvent=$"{Definition.Title}: {target.SelectionKey} −{applied:0.#}";
             DamageDealt?.Invoke(target,applied);
             Build?.Hit(this,target,targets);
         }
-        if(spread!=null)
+        if(spread!=null){
+            bool marauder=Build?.World.RunConfiguration.AdvancedClassId=="marauder";
+            var newlyWounded=new HashSet<Combatant>();
             foreach(var target in targets.Where(t=>GodotObject.IsInstanceValid(t) && t.Alive))
-                foreach(var source in spread)if(Definition.Id!="lacerate" || !Periodic!.Has(source,target))Periodic!.Apply(source,target);
+                foreach(var source in spread){
+                    if(marauder && !Build!.Pregame.MarauderMaySpread(this,source))continue;
+                    bool fresh=!Periodic!.Has(source,target);
+                    if(marauder && !fresh)continue;
+                    if(Definition.Id!="lacerate" || fresh)Periodic.Apply(source,target,marauder && fresh?1.35f:1);
+                    if(fresh)newlyWounded.Add(target);
+                }
+            if(marauder)Build!.Pregame.MarauderSpread(this,newlyWounded.ToArray());
+        }
         if(Healing>0 && ChannelSeconds<=0)
         {
             LastHealing=Caster.Health.ApplyHealing(Math.Min(Definition.HealingCap,_damaged.Count*Healing));
@@ -224,7 +241,7 @@ public partial class AutomaticAbility : Node
         }
         if(State!=LightningState.Channeling) return false;
         if(Definition.Area==AbilityArea.SingleTarget && !Targeting.IsValidTarget(CastTarget,Range))
-        { Finish(!Definition.ImpactTailsOnTargetDeath,"Target died / invalidated");return false; }
+        { Finish(!(Definition.ImpactTailsOnTargetDeath || ChannelSeconds<=0 && _damaged.Count>0),"Target died / invalidated");return false; }
         return true;
     }
     private bool InCone(Combatant target)
@@ -238,7 +255,7 @@ public partial class AutomaticAbility : Node
         bool critical=Definition.CriticalAgainstPeriodic!="" && Periodic?.On(target).Any(a=>a.Caster==Caster && a.Definition.Id==Definition.CriticalAgainstPeriodic)==true;
         return target.Health.ApplyDamage(amount*(Build?.DamageMultiplier(this,target)??1)
             *(Definition.AfflictedBonus>0 && Periodic?.Has(target)==true?1+Definition.AfflictedBonus:1)
-            *(critical?Definition.CriticalMultiplier:1),Definition.DamageType,critical);
+            *(critical?Definition.CriticalMultiplier:1),Definition.DamageType,critical,Definition.Id);
     }
     public void ApplyPeriodicHit(Combatant target,float amount)
     {
@@ -279,7 +296,7 @@ public partial class AutomaticAbility : Node
         }
         if(_presented) Present(()=>Presentation.End(interrupted));
         if(!Definition.DetachedArea)Present(()=>Presentation.Actor.SetGestureClip(this,Definition.EndClip));
-        State=LightningState.Ending;_phaseRemaining=Definition.RecoverySeconds;LastEvent=reason;
+        State=LightningState.Ending;_phaseRemaining=Definition.FinishGesture?Math.Max(Definition.RecoverySeconds,_gestureRemaining):Definition.RecoverySeconds;LastEvent=reason;
     }
     public void Interrupt()
     {

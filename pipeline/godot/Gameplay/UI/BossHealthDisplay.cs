@@ -47,6 +47,9 @@ public partial class BossHealthDisplay : Control
         _health.UpdateValue(_shown, 1, $"{boss.Health.Current:0.##} / {boss.Health.Maximum:0.##}   ·   {value * 100:0.0}%");
         _loss.UpdateValue(_delayed, 1, ""); _name.Text = Encounter.Definition.Title.ToUpperInvariant();
         var trial=boss.GetNodeOrNull<TombAttack>("TombAttack");
+        if(boss.GetNodeOrNull<Xrr3Attack>("Xrr3Attack") is {} raid) {
+            _attack.Text=raid.Instruction!=""?raid.Instruction:$"XRR-3 · PHASE {raid.PhaseNumber}";return;
+        }
         _attack.Text = trial?.Phase==BossPhase.Telegraph?trial.Instruction:
             boss.GetNodeOrNull<BossEncounter>("BossEncounter")?.Phase == BossPhase.Telegraph ? "BURROW ERUPTION  ·  MOVE OUT OF THE AMBER RING" :
             trial?.SecondPhase==true?"ANCIENT FURY  ·  PHASE II":boss.RewardTier>=2?"CHAMPION":"ELITE";

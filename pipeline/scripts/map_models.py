@@ -30,7 +30,7 @@ def image(name,rgb,cs):
     im.filepath_raw=str(GEN/f'{name}.png');im.file_format='PNG';im.save();return im
 mats={}
 for path,info in sorted(selection['materials'].items()):
-    assert info['derived'] in ('Uber','OpacityFade'),info
+    assert info['derived'] in ('Uber','OpacityFade','Skydome'),info
     if info['derived']=='OpacityFade':info=dict(info,alpha='Full')
     tex=info['textures'];diff=pixels(tex['DiffuseMap'],True)
     base=np.maximum(diff[:,:,:3],0)**2.1
@@ -41,6 +41,8 @@ for path,info in sorted(selection['materials'].items()):
     def link(im,target):
         n=nodes.new('ShaderNodeTexImage');n.image=im;links.new(n.outputs['Color'],bsdf.inputs[target]);return n
     baseim=image(stem+'_base',srgb(base),'sRGB');baseNode=link(baseim,'Base Color')
+    if info['derived']=='Skydome':
+        link(baseim,'Emission Color');bsdf.inputs['Emission Strength'].default_value=1
     if info['alpha'] in ['Test','Full']:
         links.new(baseNode.outputs['Alpha'],bsdf.inputs['Alpha'])
         # Preserve diffuse alpha in the portable albedo image.
@@ -76,12 +78,21 @@ for info in selection['models']:
     bpy.ops.object.select_all(action='DESELECT')
     triangles=0;vertices=0;mins=Vector((1e9,)*3);maxs=-mins
     for obj in objects:
+        # Authoring helpers are present in the GR2 but not visible client art.
+        # Remove only their faces, preserving the entrance's stone and door surfaces.
+        if map_id()=='eternity_vault':
+            import bmesh
+            helper={i for i,s in enumerate(obj.material_slots) if s.material.name.split('.')[0] in ('portal','util_collision_none','dbo_universal_superexclusion_test')}
+            if helper:
+                bm=bmesh.new();bm.from_mesh(obj.data)
+                bmesh.ops.delete(bm,geom=[f for f in bm.faces if f.material_index in helper],context='FACES')
+                bm.to_mesh(obj.data);bm.free()
         obj.select_set(True);obj.data.calc_loop_triangles()
         triangles+=len(obj.data.loop_triangles);vertices+=len(obj.data.vertices)
         for i,slot in enumerate(obj.material_slots):
             # Name table order is the source binding; importer slot labels retain those names.
             name=slot.material.name.split('.')[0]
-            candidates=[m for m in info['materials'] if Path(m).stem==name]
+            candidates=info['materials'] if info.get('closedDoor') else [m for m in info['materials'] if Path(m).stem==name]
             assert len(candidates)==1,(path,name,info['materials'])
             obj.data.materials[i]=mats[candidates[0]]
         obj['source_path']=path;obj['source_sha256']=sha(local(path))

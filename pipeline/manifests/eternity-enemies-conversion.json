@@ -1,0 +1,213 @@
+{
+  "icecat": {
+    "output": "godot\\Assets\\Maps\\eternity_vault\\Enemies\\icecat.glb",
+    "sha256": "c01a89fe5f00971dc63167957060612d57d3ca0073b4b429810981ed7c72e133",
+    "bones": 85,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/creature/cat/cb_ready_1.jba",
+        "seconds": 1.9666666984558105,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/creature/cat/mv_run_forward.jba",
+        "seconds": 0.5333333611488342,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/creature/cat/cb_attack_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/creature/cat/dg_damage_1.jba",
+        "seconds": 0.9333333373069763,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/creature/cat/dg_death_1.jba",
+        "seconds": 1.7999999523162842,
+        "unmatched": []
+      },
+      {
+        "name": "Walk",
+        "path": "/resources/anim/creature/cat/mv_walk_forward.jba",
+        "seconds": 1.3333333730697632,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 1,
+    "sockets": [
+      "attach_portrait_left",
+      "vfx_hand_left",
+      "vfx_hand_right",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "tauntaun": {
+    "output": "godot\\Assets\\Maps\\eternity_vault\\Enemies\\tauntaun.glb",
+    "sha256": "a27839337749bb7b85a1cca2023f469da3f7a59df27829024984f0629b72d758",
+    "bones": 93,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/creature/tauntaun/cb_ready_1.jba",
+        "seconds": 1.6666666269302368,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/creature/tauntaun/mv_run_forward.jba",
+        "seconds": 0.800000011920929,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/creature/tauntaun/cb_attack_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/creature/tauntaun/dg_damage_1.jba",
+        "seconds": 0.8666666746139526,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/creature/tauntaun/dg_death_1.jba",
+        "seconds": 2.0999999046325684,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 1,
+    "sockets": [
+      "attach_portrait_left",
+      "vfx_hand_left",
+      "vfx_hand_right"
+    ]
+  },
+  "guard": {
+    "output": "godot\\Assets\\Maps\\eternity_vault\\Enemies\\guard.glb",
+    "sha256": "706ba43d22055392259366cb40e48d4f41f0f3b5979f77758a340acc52405b63",
+    "bones": 134,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bmfnew/cb_pole_idle_right_1.jba",
+        "seconds": 1.3333333730697632,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bmfnew/mv_cb_pole_run_forward.jba",
+        "seconds": 0.6000000238418579,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bmfnew/cb_pole_attack_right_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bmfnew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bmfnew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      },
+      {
+        "name": "Walk",
+        "path": "/resources/anim/humanoid/bmfnew/mv_cb_pole_walk_forward.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 1,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "RightWeapon",
+      "vfx_hand_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "xrr3": {
+    "output": "godot\\Assets\\Maps\\eternity_vault\\Enemies\\xrr3.glb",
+    "sha256": "1c3327b518de63f9d32a7afa8103150df781fc1ecf9bb415c8d7b4298566296b",
+    "bones": 114,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/droid/battle_warbot_rakata_boss/cb_ready_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/droid/battle_warbot_rakata_boss/mv_run_forward.jba",
+        "seconds": 1.2666666507720947,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/droid/battle_warbot_rakata_boss/cb_attack_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/droid/battle_warbot_rakata_boss/dg_damage_1.jba",
+        "seconds": 0.03333333507180214,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/droid/battle_warbot_rakata_boss/dg_death_1.jba",
+        "seconds": 0.03333333507180214,
+        "unmatched": []
+      },
+      {
+        "name": "Walk",
+        "path": "/resources/anim/droid/battle_warbot_rakata_boss/mv_walk_forward.jba",
+        "seconds": 1.2999999523162842,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 1,
+    "sockets": [
+      "attach_portrait_right",
+      "attach_portrait_left",
+      "vfx_hand_right",
+      "vfx_hand_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "staff": {
+    "output": "godot\\Assets\\Maps\\eternity_vault\\Enemies\\staff.glb",
+    "sha256": "dfe7ded87be98d5f476ab2d5c9bba3cb492d26a94d153965a111d91799e2908b",
+    "bounds": [
+      [
+        -0.009392649866640568,
+        -0.07622133940458298,
+        -0.008661911822855473
+      ]
+    ]
+  }
+}

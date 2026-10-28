@@ -36,6 +36,13 @@ public partial class SorcererRefinementSmoke : Node
             foreach(var enemy in w.Spawner.Enemies){enemy.CombatEnabled=false;enemy.SetPhysicsProcess(false);}
             Combatant Target(string name,float x,float z=0){var t=new Combatant {Name=name,Team=CombatTeam.Hostile};t.AddChild(new Health {Name="Health",Maximum=100000});w.AddChild(t);t.GlobalPosition=w.PlayerActor.GlobalPosition+new Vector3(x,0,z);return t;}
             var a=Target("T22A",.2f);var b=Target("T22B",.25f,.05f);var c=Target("T22C",.28f,-.05f);
+            var lightningVisual=(LightningPresentation)w.Combat.Presentation;
+            var originalPosition=a.GlobalPosition;float originalAimHeight=a.AimHeight;a.AimHeight=.145f;
+            Check("Force Lightning configures a target without an attachment rig",lightningVisual.Start(a));
+            Check("Force Lightning ends at torso height",lightningVisual.Effect.Call("aim_point").AsVector3().IsEqualApprox(a.AimPosition));
+            a.GlobalPosition+=new Vector3(.03f,.02f,0);
+            Check("Force Lightning torso endpoint follows moving targets",lightningVisual.Effect.Call("aim_point").AsVector3().IsEqualApprox(a.AimPosition));
+            lightningVisual.Release();a.GlobalPosition=originalPosition;a.AimHeight=originalAimHeight;
             var aff=w.Abilities.Find("affliction")!;var storm=w.Abilities.Find("storm")!;
             Check("Affliction starts unlocked and slotless",aff.Unlocked && aff.Definition.Slotless && w.Abilities.Equipped(AbilityCategory.Offensive)==1);
             Check("untalented Polarity is locked and absent from starting bar",w.Abilities.Find("polarityshift")?.Unlocked==false && w.Hud!.UnlockedAbilityCount==2);

@@ -54,6 +54,9 @@ public partial class CameraRig : Node3D
     public float CurrentZoom { get; private set; }
     public bool ControlsEnabled { get; private set; }
     public bool Orbiting => _orbitButton != MouseButton.None;
+    public bool Steering => CanOrbit && _rightHeld;
+    public bool RunForward => CanOrbit && _leftHeld && _rightHeld;
+    private bool _leftHeld, _rightHeld;
     private readonly SphereShape3D _probe = new();
     private readonly Dictionary<MeshInstance3D, bool> _hidden = new();
     private readonly Godot.Collections.Array<Rid> _excluded = new();
@@ -87,6 +90,7 @@ public partial class CameraRig : Node3D
     public void CancelOrbit(bool warp = true)
     {
         _leftPending = false; _leftTravel = Vector2.Zero; _orbitButton = MouseButton.None;
+        _leftHeld = _rightHeld = false;
         SwtorCursor.Instance.Release(this, warp);
     }
     private void OnFocusExited() => CancelOrbit(false);
@@ -96,11 +100,28 @@ public partial class CameraRig : Node3D
     // Releases and captured motion must be seen even if the pointer finishes over UI.
     public override void _Input(InputEvent e)
     {
+        // Once a world drag owns the mouse, see the second press before GUI handling.
+        if (CanOrbit && Orbiting && e is InputEventMouseButton { Pressed: true } press
+            && press.ButtonIndex is MouseButton.Left or MouseButton.Right)
+        {
+            if (press.ButtonIndex == MouseButton.Left) _leftHeld = true;
+            else _rightHeld = true;
+            GetViewport().SetInputAsHandled(); return;
+        }
         if (e is InputEventMouseButton { Pressed: false } b)
         {
-            if (b.ButtonIndex == _orbitButton && Orbiting)
-            { CancelOrbit(); GetViewport().SetInputAsHandled(); }
-            else if (b.ButtonIndex == MouseButton.Left) _leftPending = false;
+            if (b.ButtonIndex is MouseButton.Left or MouseButton.Right)
+            {
+                bool owned = Orbiting;
+                if (b.ButtonIndex == MouseButton.Left) { _leftHeld = false; _leftPending = false; }
+                else _rightHeld = false;
+                if (owned)
+                {
+                    if (!_leftHeld && !_rightHeld) CancelOrbit();
+                    else _orbitButton = _rightHeld ? MouseButton.Right : MouseButton.Left;
+                    GetViewport().SetInputAsHandled();
+                }
+            }
         }
         if (!CanOrbit) { CancelOrbit(); return; }
         if (Orbiting && e is InputEventMouseButton { Pressed: true } wheel
@@ -126,15 +147,18 @@ public partial class CameraRig : Node3D
     {
         if (CanOrbit && _leftPending && !Orbiting && e is InputEventMouseMotion motion)
         {
-            if (SwtorCursor.PointerOverUi(GetViewport())) { _leftPending = false; return; }
+            if (SwtorCursor.PointerOverUi(GetViewport())) { _leftPending = _leftHeld = false; return; }
             _leftTravel += motion.ScreenRelative;
             if (_leftTravel.Length() >= LeftDragThreshold && BeginOrbit(MouseButton.Left)) ApplyOrbitMotion(motion);
             return;
         }
         if (!CanOrbit || e is not InputEventMouseButton { Pressed: true } b || Orbiting
             || SwtorCursor.PointerOverUi(GetViewport())) return;
-        if (b.ButtonIndex == MouseButton.Right) BeginOrbit(MouseButton.Right);
-        else if (b.ButtonIndex == MouseButton.Left) { _leftPending = true; _leftTravel = Vector2.Zero; }
+        if (b.ButtonIndex == MouseButton.Right)
+        {
+            if (BeginOrbit(MouseButton.Right)) _rightHeld = true;
+        }
+        else if (b.ButtonIndex == MouseButton.Left) { _leftHeld = true; _leftPending = true; _leftTravel = Vector2.Zero; }
         else if (b.ButtonIndex is MouseButton.WheelUp or MouseButton.WheelDown)
         {
             Zoom(b);

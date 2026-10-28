@@ -7,7 +7,13 @@
     "rates use elapsed run seconds",
     "pause freezes run clock and rates",
     "death preserves totals and freezes rates",
-    "restart clears totals and rates"
+    "restart clears totals and rates",
+    "ability reset clears all rows",
+    "ability damage excludes shield and overkill",
+    "abilities remain separate and exclude incoming damage",
+    "ability DPS uses run clock",
+    "ability DPS freezes while paused",
+    "restart clears ability damage"
   ],
   "failure": null
 }

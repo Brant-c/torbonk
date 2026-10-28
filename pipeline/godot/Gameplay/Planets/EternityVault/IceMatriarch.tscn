@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=3]
+[ext_resource type="Script" path="res://Gameplay/EnemyAgent.cs" id="1"]
+[ext_resource type="Script" path="res://Gameplay/Health.cs" id="2"]
+[ext_resource type="Script" path="res://Gameplay/EnemyPresentation.cs" id="3"]
+[ext_resource type="PackedScene" path="res://Assets/Maps/eternity_vault/Enemies/icecat.glb" id="4"]
+[ext_resource type="FontFile" path="res://Assets/UI/EurostileBold.ttf" id="6"]
+[ext_resource type="Script" path="res://Gameplay/TombAttack.cs" id="5"]
+
+[sub_resource type="CapsuleShape3D" id="Capsule"]
+radius = 0.1
+height = 0.44
+margin = 0.0005
+[node name="AncientDroidProtector" type="CharacterBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+position = Vector3(0,0.22,0)
+shape = SubResource("Capsule")
+[node name="Actor" type="Node3D" parent="."]
+script = ExtResource("1")
+Team = 2
+DisplayName = "Whitefang Matriarch"
+ExperienceReward = 90
+CollisionRadius = 0.1
+CollisionHeight = 0.44
+MoveSpeed = 0.3
+AttackDamage = 7
+AttackInterval = 1.65
+MeleeRange = 0.248
+AimHeight = 0.28600000000000003
+RewardTier = 2
+GuaranteedReward = true
+KnockbackResistance = 1
+ScaleWithWaves = true
+[node name="Health" type="Node" parent="Actor"]
+script = ExtResource("2")
+Maximum = 550
+[node name="Visual" type="Node3D" parent="Actor"]
+script = ExtResource("3")
+
+RunClip = "Walk"
+LocomotionStrideSpeed = 0.480217
+[node name="Original" parent="Actor/Visual" instance=ExtResource("4")]
+scale = Vector3(3.2,3.2,3.2)
+[node name="Nameplate" type="Label3D" parent="Actor"]
+position = Vector3(0,0.515,0)
+pixel_size = 0.00030
+billboard = 1
+font = ExtResource("6")
+font_size = 20
+outline_size = 6
+modulate = Color(1,0.42,0.23,1)
+[node name="TombAttack" type="Node" parent="Actor"]
+script = ExtResource("5")
+Pattern = "cleave"
+Damage = 16
+Windup = 1.5
+Cooldown = 5.5
+TriggerRange = 1.2
+WarningCue = "burrow_warning"

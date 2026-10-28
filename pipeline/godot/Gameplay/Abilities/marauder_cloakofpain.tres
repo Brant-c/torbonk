@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "cloakofpain"
+Title = "Cloak of Pain"
+Icon = "mr_cloakofpain"
+StartsUnlocked = false
+Damage = 1
+CooldownSeconds = 20
+Range = 0.4
+Radius = 0
+Area = 0
+WindupSeconds = 0
+ChannelSeconds = 0
+TickSeconds = 0.4
+RecoverySeconds = 0.12
+GestureSeconds = 0.95
+StartClip = "Marauder/cb_buff_unleash"
+LoopClip = "Marauder/cb_buff_unleash"
+RequireGesture = false
+PresentationKind = "saber"
+SourceFx = "epp.sith_warrior.cloak_of_pain.buff;epp.sith_warrior.cloak_of_pain.cast_instant;epp.sith_warrior.cloak_of_pain.proc"
+Description = "Four seconds of 20% damage reduction and reactive damage."
+Category = 1
+Effect = 3
+BuffSeconds = 0.01
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+Slotless = false
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/fire/shockwave_bw_01.png"
+ImpactAudio = "res://Assets/WarriorLibrary/Audio/10681804.wav"
+
+FinishGesture = true
+GesturePriority = -5

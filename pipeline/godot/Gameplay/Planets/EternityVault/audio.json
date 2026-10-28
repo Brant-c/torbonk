@@ -1,0 +1,301 @@
+{
+  "maximumPresentationVoices": 12,
+  "maximumCombatVoices": 16,
+  "identicalCombatMinimumSeconds": 0.075,
+  "combatDuckDb": -9,
+  "musicDuckDb": -5,
+  "worldDuckDb": -4,
+  "categories": {
+    "Music": {
+      "gainDb": -12,
+      "voices": 2
+    },
+    "World": {
+      "gainDb": -10,
+      "voices": 4
+    },
+    "Combat": {
+      "gainDb": -6,
+      "voices": 16
+    },
+    "UI": {
+      "gainDb": -2,
+      "voices": 3
+    },
+    "Reward": {
+      "gainDb": -3,
+      "voices": 4
+    },
+    "Boss": {
+      "gainDb": -3,
+      "voices": 3
+    }
+  },
+  "cues": {
+    "hover": {
+      "category": "UI",
+      "path": "res://Assets/Presentation/Audio/163129423.wav",
+      "gainDb": 2,
+      "cooldown": 0.08,
+      "duration": 0.075,
+      "pitch": 1.35,
+      "priority": false
+    },
+    "click": {
+      "category": "UI",
+      "path": "res://Assets/Presentation/Audio/163129423.wav",
+      "gainDb": 8,
+      "cooldown": 0.06,
+      "duration": 0.16,
+      "pitch": 1.1,
+      "priority": false
+    },
+    "pickup": {
+      "category": "Reward",
+      "path": "res://Assets/Presentation/Audio/xp_17892505_quiet.wav",
+      "gainDb": 0,
+      "cooldown": 0.12,
+      "duration": 0,
+      "pitch": 1,
+      "priority": false
+    },
+    "level": {
+      "category": "Reward",
+      "path": "res://Assets/Presentation/Audio/787228180.wav",
+      "gainDb": -3,
+      "cooldown": 0.1,
+      "duration": 2.1,
+      "pitch": 1,
+      "priority": true
+    },
+    "upgrade_premium": {
+      "category": "Reward",
+      "path": "res://Assets/Presentation/Audio/163129423.wav",
+      "gainDb": 12,
+      "cooldown": 0.1,
+      "duration": 0,
+      "pitch": 1,
+      "priority": false
+    },
+    "upgrade_prototype": {
+      "category": "Reward",
+      "path": "res://Assets/Presentation/Audio/130814347.wav",
+      "gainDb": -4,
+      "cooldown": 0.1,
+      "duration": 0.7,
+      "pitch": 1.12,
+      "priority": false
+    },
+    "upgrade_artifact": {
+      "category": "Reward",
+      "path": "res://Assets/Presentation/Audio/576226339.wav",
+      "gainDb": 3,
+      "cooldown": 0.1,
+      "duration": 0.85,
+      "pitch": 1,
+      "priority": true
+    },
+    "boss_start": {
+      "category": "Boss",
+      "path": "res://Assets/Presentation/Audio/130814347.wav",
+      "gainDb": -3,
+      "cooldown": 0.1,
+      "duration": 1.15,
+      "pitch": 0.8,
+      "priority": true
+    },
+    "boss_victory": {
+      "category": "Boss",
+      "path": "res://Assets/Presentation/Audio/576226339.wav",
+      "gainDb": -2,
+      "cooldown": 0.1,
+      "duration": 2.1,
+      "pitch": 1,
+      "priority": true
+    },
+    "burrow_warning": {
+      "category": "Boss",
+      "path": "res://Assets/Presentation/Audio/24757886.wav",
+      "gainDb": 9,
+      "cooldown": 0.4,
+      "duration": 1.35,
+      "pitch": 1,
+      "priority": true
+    },
+    "burrow_impact": {
+      "category": "Boss",
+      "path": "res://Assets/Presentation/Audio/113287997.wav",
+      "gainDb": -5,
+      "cooldown": 0.4,
+      "duration": 0.95,
+      "pitch": 1,
+      "priority": false
+    },
+    "d4_tukata": {
+      "category": "World",
+      "path": "res://Assets/Korriban/D4/Audio/tukata.wav",
+      "gainDb": -10,
+      "cooldown": 1.0,
+      "duration": 1.5,
+      "pitch": 1,
+      "priority": false
+    },
+    "d4_beast": {
+      "category": "Boss",
+      "path": "res://Assets/Korriban/D4/Audio/beast.wav",
+      "gainDb": -10,
+      "cooldown": 1.0,
+      "duration": 1.5,
+      "pitch": 1,
+      "priority": false
+    },
+    "d4_droid": {
+      "category": "Boss",
+      "path": "res://Assets/Korriban/D4/Audio/droid.wav",
+      "gainDb": -22,
+      "cooldown": 2.0,
+      "duration": 1.5,
+      "pitch": 1,
+      "priority": false
+    },
+    "d4_region": {
+      "category": "Boss",
+      "path": "res://Assets/Presentation/Audio/130814347.wav",
+      "gainDb": -10,
+      "cooldown": 3,
+      "duration": 1.15,
+      "pitch": 0.8,
+      "priority": false
+    },
+    "ev_guard_warning": {
+      "category": "Combat",
+      "path": "res://Assets/Presentation/Audio/24757886.wav",
+      "gainDb": -9,
+      "cooldown": 1.5,
+      "duration": 0.65,
+      "pitch": 1,
+      "priority": false
+    },
+    "ev_guard_impact": {
+      "category": "Combat",
+      "path": "res://Assets/Presentation/Audio/113287997.wav",
+      "gainDb": -18,
+      "cooldown": 1.0,
+      "duration": 0.65,
+      "pitch": 1,
+      "priority": false
+    }
+  },
+  "abilityEvents": {
+    "Play_ability_sithinquisitor_shock_buildup": {
+      "layers": [
+        {
+          "media": [
+            50181172,
+            38107453
+          ],
+          "gainDb": -8
+        },
+        {
+          "media": [
+            13800022,
+            67837780,
+            70458762,
+            23364535
+          ],
+          "gainDb": -8
+        }
+      ]
+    },
+    "Play_ability_sithinquisitor_shock_cast": {
+      "layers": [
+        {
+          "media": [
+            35854337,
+            41158987
+          ],
+          "gainDb": -5
+        }
+      ]
+    },
+    "Play_ability_sithinquisitor_shock_explode": {
+      "priority": true,
+      "layers": [
+        {
+          "media": [
+            294434565,
+            133966111,
+            186175857
+          ],
+          "gainDb": -3
+        },
+        {
+          "media": [
+            18124,
+            17414480,
+            72225944
+          ],
+          "gainDb": -9
+        }
+      ]
+    },
+    "Play_ability_sithinquisitor_forcestorm_cast_caster": {
+      "layers": [
+        {
+          "media": [
+            43766601,
+            60467976,
+            676198
+          ],
+          "gainDb": -5
+        },
+        {
+          "media": [
+            61761001,
+            129620424,
+            21323851
+          ],
+          "gainDb": -9
+        }
+      ]
+    },
+    "Play_ability_sithinquisitor_forcestorm_channelloop": {
+      "priority": true,
+      "layers": [
+        {
+          "media": [
+            31429439
+          ],
+          "gainDb": 1
+        },
+        {
+          "media": [
+            7737937,
+            48136250,
+            142805332,
+            34158220,
+            68384798,
+            44696493,
+            15050748,
+            13840107
+          ],
+          "gainDb": 2
+        }
+      ]
+    },
+    "Play_ability_sithinquisitor_forcestorm_aoe_bolt": {
+      "priority": true,
+      "layers": [
+        {
+          "media": [
+            403988737,
+            227842474,
+            332179516,
+            186569051
+          ],
+          "gainDb": -3
+        }
+      ]
+    }
+  }
+}

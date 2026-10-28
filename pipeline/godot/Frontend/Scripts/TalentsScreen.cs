@@ -81,7 +81,7 @@ public partial class TalentsScreen : Control
                 var points=FrontendSkin.Label(Catalog.TreeSpent(tree.Id,_ranks)+" Points",17);points.HorizontalAlignment=HorizontalAlignment.Center;Put(points,50,56,366,25,column);
                 var scroll=new ScrollContainer {HorizontalScrollMode=ScrollContainer.ScrollMode.Disabled};
                 Put(scroll,18,100,430,442,column);
-                var body=new Control {CustomMinimumSize=new(410,440)};scroll.AddChild(body);
+                var body=new Control {CustomMinimumSize=new(410,ClassId=="juggernaut"?Math.Max(440,(Catalog.ForClass(ClassId).Where(t=>t.Tree==tree.Id).Max(t=>t.Tier)+1)*103+24):440)};scroll.AddChild(body);
                 scroll.ScrollVertical=_scrolls.GetValueOrDefault(tree.Id);
                 scroll.GetVScrollBar().ValueChanged+=value=>_scrolls[tree.Id]=(int)value;
                 Vector2 Position(TalentDefinition t)=>new(74+t.Column*212,12+t.Tier*103);

@@ -19,6 +19,8 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
     private Vector3 _forward;
     private double _flame,_flameSpawn;
     private double _carbon,_carbonSpawn;
+    public int PlayingAudioVoices=>_voices.Count(v=>v.Playing);
+    public int PendingAudioEvents=>_delayed.Count;
     public bool CarbonizeEmitting=>_carbon>0;
     public bool CarbonizeAudioPlaying=>Definition.Id=="carbonize" && _voices.Any(v=>v.Playing);
     private const int MaxEffects=90;
@@ -44,12 +46,13 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
         _radius=radius;Play(Definition.CastAudio,Actor.GlobalPosition,0);
         // The swing sounds when the blade lands, not when a long leap or wind-up begins.
         double swing=Math.Max(0,Definition.WindupSeconds-.15);
-        if(Definition.WeaponAudio!="")
+        if(Definition.WeaponAudio!="" && !(WarriorVisual && Definition.ChannelSeconds>0))
         { if(swing<=.01)Play(Definition.WeaponAudio,Actor.GlobalPosition,1);else _delayed.Add((swing,()=>Play(Definition.WeaponAudio,Actor.GlobalPosition,1))); }
-        if(Definition.OffhandAudio!="")_delayed.Add((swing+.3,()=>Play(Definition.OffhandAudio,Actor.GlobalPosition,2)));
+        if(Definition.OffhandAudio!="" && !(WarriorVisual && Definition.ChannelSeconds>0))_delayed.Add((swing+.3,()=>Play(Definition.OffhandAudio,Actor.GlobalPosition,2)));
         if(Definition.Effect==AbilityEffect.Shield)ShowShield(target);
         else if(Definition.Effect!=AbilityEffect.Damage)Pulse(Actor.GlobalPosition+Vector3.Up*.06f);
         if(Definition.PresentationKind=="gas" && Definition.Effect==AbilityEffect.Damage)Projectile(MuzzleWorld(),target.AimPosition,Math.Max(.2,Definition.WindupSeconds));
+        BeginMarauder(target);
         BeginRepair(target);
         return Actor.Animator.HasAnimation(Definition.StartClip);
     }
@@ -59,6 +62,7 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
         if(Definition.Effect!=AbilityEffect.Damage)return;
         bool radial=Definition.Area==AbilityArea.CasterRadial;
         var at=radial?Actor.GlobalPosition+Vector3.Up*.06f:center;
+        if(ImpactMarauder(at))return;
         if(ImpactRepair(at))return;
         Play(Definition.ImpactAudio,at,3);
         if(Definition.Id=="flameburst"){Burst(center,"res://Assets/Powertech/4x4_flame_lick_02_bw.png",.16f);return;}
@@ -238,6 +242,7 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
     }
     public override void _Process(double delta)
     {
+        AdvanceMarauderEffects(delta);
         AdvanceRepair(delta);
         for(int i=_delayed.Count-1;i>=0;i--){var d=_delayed[i];d.at-=delta;if(d.at<=0){_delayed.RemoveAt(i);d.run();}else _delayed[i]=d;}
         if(_gas>0)
@@ -272,7 +277,7 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
     public void Complete(){ _flame=0;_carbon=0; }
     public void Release()
     {
-        _flame=0;_carbon=0;_gas=0;_delayed.Clear();
+        ReleaseWarrior();_marauderAura="";_flame=0;_carbon=0;_gas=0;_delayed.Clear();
         ReleaseRepair();
         if(_bubble!=null && GodotObject.IsInstanceValid(_bubble))_bubble.QueueFree();_bubble=null;
         foreach(var e in _effects)if(GodotObject.IsInstanceValid(e.Node))e.Node.QueueFree();

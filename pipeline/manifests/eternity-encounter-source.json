@@ -1,0 +1,283 @@
+{
+  "evidence": "Client-derived April unique archive entries. NPC/NPP appearance model/material IDs resolved separately through research MCP; stats and boss mechanics are authored.",
+  "resources": [
+    {
+      "path": "/resources/art/dynamic/creature/index.xml",
+      "sha256": "61d8de2af01463e76cb8a8c278405d0a34afbd91143e09014bb8e2eeca8f1aa8"
+    },
+    {
+      "path": "/resources/art/dynamic/creature/model/cat_pantranwhitefang_a01.gr2",
+      "sha256": "10708252918063dedeff69271cf1f0cb29030e302420cd24fc5f60b2bd771b25"
+    },
+    {
+      "path": "/resources/art/dynamic/spec/cat.dyc",
+      "sha256": "bc762d556b866e414c8e67761a66aa91852c07904140c06af039ce6f8b432629"
+    },
+    {
+      "path": "/resources/art/dynamic/spec/catboss_skeleton.gr2",
+      "sha256": "67dc8c6024b634ebfb24c1b62c999212892692c079a61bf8908e75cd52406ffb"
+    },
+    {
+      "path": "/resources/anim/creature/cat/cb_ready_1.jba",
+      "sha256": "465d80c386a32b2c03a7fae15457016c6d40fa551ccd8c2a7e963a07bb37a3ad"
+    },
+    {
+      "path": "/resources/anim/creature/cat/mv_run_forward.jba",
+      "sha256": "63c052afcec284a4d0bf9bb06a15bfdb2969a17a91edc4938eac21f125464be6"
+    },
+    {
+      "path": "/resources/anim/creature/cat/cb_attack_1.jba",
+      "sha256": "9acaa9346a853b8c1e4e9f0b9b2d9a1653410b456048a190f83b1150cfa713a5"
+    },
+    {
+      "path": "/resources/anim/creature/cat/dg_damage_1.jba",
+      "sha256": "4dd856186146e171d5128f5650e03f9cd0be52755d9c29b419697d2ebff38968"
+    },
+    {
+      "path": "/resources/anim/creature/cat/dg_death_1.jba",
+      "sha256": "6c4e8d66d1d29493df51d6de993631e2f3209f8c294a5d855a8a6834c283a5ce"
+    },
+    {
+      "path": "/resources/anim/creature/cat/mv_walk_forward.jba",
+      "sha256": "3135cf8345e05ed13683c01b7c88e41f0b574f410679c0abc97bdaba2e93ae3f"
+    },
+    {
+      "path": "/resources/art/shaders/materials/cat_pantranwhitefang_a01_v01.mat",
+      "sha256": "bdf4db2f14caa2bb7fd5f3f53ac894f651472d18b4ba5c03f08df0b2e34d5047"
+    },
+    {
+      "path": "/resources/art/dynamic/creature/cat/texture/___psd/cat_pantranwhitefang_a01_v01_d.dds",
+      "sha256": "06b0c7b6614ef8a603eb0e2aae1325b01a024bde4bf7fc5d170e459a76c4132f"
+    },
+    {
+      "path": "/resources/art/dynamic/creature/cat/texture/___psd/cat_pantranwhitefang_a01_v01_n.dds",
+      "sha256": "a07c89eeddecbd08521ba582a6c2a61291dcd8184916abae1c805774eee37d41"
+    },
+    {
+      "path": "/resources/art/dynamic/creature/cat/texture/___psd/cat_pantranwhitefang_a01_v01_s.dds",
+      "sha256": "4c47336d8d6ffc32d874fb815722ace18a22f0861f18ef76de003f9ab74c9b59"
+    },
+    {
+      "path": "/resources/art/dynamic/creature/cat/texture/___psd/cat_pantranwhitefang_a01_v01_m.dds",
+      "sha256": "9f5df0143e89c4c2d14decd3f15fd139dea1266c077c6a2b7afe69cab3905d1d"
+    },
+    {
+      "path": "/resources/art/lookuptables/table_hair_02.dds",
+      "sha256": "6aeda4055198ce5f4a48b6d30f5f2cc90592d42d7181d90060dab873a8798b96"
+    },
+    {
+      "path": "/resources/art/dynamic/creature/model/tauntaun_tauntaun_a01.gr2",
+      "sha256": "ea096a181cca2e46223036d298fa0e952d89f7be6741f21973a25d544054998a"
+    },
+    {
+      "path": "/resources/art/dynamic/spec/tauntaun.dyc",
+      "sha256": "66ed25042b438a1c50d0caa0cadbbfd4adcc433e584f3c6c3c915b67f4f8fb7e"
+    },
+    {
+      "path": "/resources/art/dynamic/spec/tauntaun_skeleton.gr2",
+      "sha256": "45902f440f251d6bd0d15c3518a36481cc9e8230e82cdb7b6b13290b62526351"
+    },
+    {
+      "path": "/resources/anim/creature/tauntaun/cb_ready_1.jba",
+      "sha256": "a694b8759d1c464b32f71e76add28db844311655cf7ec28c2f1b04149a3a921b"
+    },
+    {
+      "path": "/resources/anim/creature/tauntaun/mv_run_forward.jba",
+      "sha256": "ab678224c18c013a227d435de07554b8e0fc36481ecbb1f4c75e07a61e1dbd92"
+    },
+    {
+      "path": "/resources/anim/creature/tauntaun/cb_attack_1.jba",
+      "sha256": "57e5c9056cc82506ce7c1d970df09ccdb0a903bcf2d3e3c30d79dbb1660bd060"
+    },
+    {
+      "path": "/resources/anim/creature/tauntaun/dg_damage_1.jba",
+      "sha256": "51e845e29b3b9e9cfa5593a0e8aac39ae6d1883bcd00e6386bf7c43a2c051eb9"
+    },
+    {
+      "path": "/resources/anim/creature/tauntaun/dg_death_1.jba",
+      "sha256": "c35540466e530ae8610311502824edccdc821a4512910c152d644387e7e50b5e"
+    },
+    {
+      "path": "/resources/art/shaders/materials/tauntaun_tauntaun_a01_v01.mat",
+      "sha256": "d593215deef93cce4220aeddd0b5c7baf6aed9c766c6390c092ff30dea6bfe0a"
+    },
+    {
+      "path": "/resources/art/dynamic/creature/tauntaun/texture/___psd/tauntaun_tauntaun_a01_v01_d.dds",
+      "sha256": "afeec7ce777019cf27a8f10fd30bd987226c661902a370bb63903c90db1ab118"
+    },
+    {
+      "path": "/resources/art/dynamic/creature/tauntaun/texture/___psd/tauntaun_tauntaun_a01_v01_n.dds",
+      "sha256": "d27cf198eeca6055d414b34b7238c09fa559efbe22c3316acf4320aee84456f6"
+    },
+    {
+      "path": "/resources/art/dynamic/creature/tauntaun/texture/___psd/tauntaun_tauntaun_a01_v01_s.dds",
+      "sha256": "060bf81d2031d2c7c13bd9a61ff7832bc0821a7f393380ec25ceec6e0cad7ace"
+    },
+    {
+      "path": "/resources/art/dynamic/creature/tauntaun/texture/___psd/tauntaun_tauntaun_a01_v01_m.dds",
+      "sha256": "b42a75fd115ba2f0dfe03a23ca73a6eba6697c20adb43e0f0cce643a06c4f0cf"
+    },
+    {
+      "path": "/resources/art/lookuptables/table_hair_creature_01.dds",
+      "sha256": "333a617503be1c53e953961fd192e3f088bb347a37261da1cb60ff9282a7fa6f"
+    },
+    {
+      "path": "/resources/art/dynamic/creature/model/bmf_underworlddroid_a01.gr2",
+      "sha256": "232704bc1f3d10f71bde8a3814895c48f1a8f8eee847bf6bca2739860d6e3a43"
+    },
+    {
+      "path": "/resources/art/dynamic/spec/bmf.dyc",
+      "sha256": "5ac5bf7f614d1053dfe37a29c941a4f73059ed77a1e8fcd8602ee27e326f7344"
+    },
+    {
+      "path": "/resources/art/dynamic/spec/bmfnew_skeleton.gr2",
+      "sha256": "707f3ae1c8131f21866e6fd31e64c68c561e3e2cd7b3b867988922037ee1e40f"
+    },
+    {
+      "path": "/resources/anim/humanoid/bmfnew/cb_pole_idle_right_1.jba",
+      "sha256": "b3dca197cbd2d61fda19996a62f2361ef4706265fefc459edab407f7df7cbc77"
+    },
+    {
+      "path": "/resources/anim/humanoid/bmfnew/mv_cb_pole_run_forward.jba",
+      "sha256": "64f6217979fa722a916e5256532d5d5209519ea2b0dcf7377b04a4a55d40e390"
+    },
+    {
+      "path": "/resources/anim/humanoid/bmfnew/cb_pole_attack_right_1.jba",
+      "sha256": "bc3accaf99c97e37e8d941bdd2c140c867c9a5406819739ae7b724a06e877745"
+    },
+    {
+      "path": "/resources/anim/humanoid/bmfnew/dg_unarmed_crit_damage_right_1.jba",
+      "sha256": "09cbfb262e57d9bf93c7a4355a36804be2f2ba65fb53f90f5225ad476ec84e7b"
+    },
+    {
+      "path": "/resources/anim/humanoid/bmfnew/dg_death_1.jba",
+      "sha256": "4cf785872d170e1d7e0920757e4bd5a56d0019b23509063ecb861f49f44a4626"
+    },
+    {
+      "path": "/resources/anim/humanoid/bmfnew/mv_cb_pole_walk_forward.jba",
+      "sha256": "fa466c966803e4d21b6e7fb758ce69a68d3631e3613a8c1f2da1b400d9e867c1"
+    },
+    {
+      "path": "/resources/art/shaders/materials/bmf_underworlddroid_a01_v02.mat",
+      "sha256": "93a6d0f488cce4caf4ec4590bc3b3730f4e8e83ed879dc26e7cd13616222e0dd"
+    },
+    {
+      "path": "/resources/art/dynamic/droid/bmf_droid/texture/___psd/bmf_underworlddroid_a01_v02_d.dds",
+      "sha256": "42694c7db74e145a500655fc4cb0488166f3944ddd4e3fb907b2b32510f26b02"
+    },
+    {
+      "path": "/resources/art/dynamic/droid/bmf_droid/texture/___psd/bmf_underworlddroid_a01_v02_n.dds",
+      "sha256": "20ab297c28fd47fc7e48ee75150beb7c13027de80b86071055793557c80710dd"
+    },
+    {
+      "path": "/resources/art/dynamic/droid/bmf_droid/texture/___psd/bmf_underworlddroid_a01_v02_s.dds",
+      "sha256": "05ad8a4ee29d78e6010afd8e736ccfebf997b3b3a576ad8c6da1afbe7088bf44"
+    },
+    {
+      "path": "/resources/art/defaultassets/black.dds",
+      "sha256": "f6fc96233461b12b33ffd2e0c79c96216fbee0af5c31597d1cc1fa940a16057d"
+    },
+    {
+      "path": "/resources/art/defaultassets/flat_n.dds",
+      "sha256": "d3db93092ebf95a5554b43888e679f505124b82bd37ca0808c43c44a33e239ef"
+    },
+    {
+      "path": "/resources/art/dynamic/creature/model/battledroid_warbot_rakata.gr2",
+      "sha256": "5eadb8d5b7aff0b1e8aebefcebb05060152eb17ea393032b8ead60a8302eeaed"
+    },
+    {
+      "path": "/resources/art/dynamic/spec/battlewarbotrakataboss.dyc",
+      "sha256": "6831c19092e16f5d53f0e45797ad417badf46f4552371602673f86525cca5554"
+    },
+    {
+      "path": "/resources/art/dynamic/spec/battlewarbotrakataboss_skeleton.gr2",
+      "sha256": "e8f5cd9db3f74c66cc965e58cde5d4cb382c7e8deeaf6a7014ccbf6f5ce34fd2"
+    },
+    {
+      "path": "/resources/anim/droid/battle_warbot_rakata_boss/cb_ready_1.jba",
+      "sha256": "579b032265d5097db10f08e1a081385f525f839110864fc0a286187abf9f4958"
+    },
+    {
+      "path": "/resources/anim/droid/battle_warbot_rakata_boss/mv_run_forward.jba",
+      "sha256": "5a3092feee0ddb8aa0c92d8df123a4bbc5df7fd03713c4ab5bab3ebb9a7cdbb2"
+    },
+    {
+      "path": "/resources/anim/droid/battle_warbot_rakata_boss/cb_attack_1.jba",
+      "sha256": "124a37eb15e4d9581f4ec99f26f61f0118d879ac7e9b30c1311f537275208b40"
+    },
+    {
+      "path": "/resources/anim/droid/battle_warbot_rakata_boss/dg_damage_1.jba",
+      "sha256": "56d40b9d4de9f0cacb8555e9189679b0c5c177dc5cf76723dd2ea39a0c57760e"
+    },
+    {
+      "path": "/resources/anim/droid/battle_warbot_rakata_boss/dg_death_1.jba",
+      "sha256": "52de017dde74b5194729fa7560516f80af030b5aef09749d250defcf60b707a2"
+    },
+    {
+      "path": "/resources/anim/droid/battle_warbot_rakata_boss/mv_walk_forward.jba",
+      "sha256": "4074e70c7965e382afb3a5c652dfac028960b4041305209b1b9a9384fe8eedc6"
+    },
+    {
+      "path": "/resources/art/shaders/materials/battledroid_warbot_rakata_v01.mat",
+      "sha256": "3d8dcd3300a71cb40c77ea659c063df7ed69c777e17266fdb3f5bb238be2598b"
+    },
+    {
+      "path": "/resources/art/dynamic/droid/battle_droid/texture/___psd/battledroid_warbot_rakata_v01_d.dds",
+      "sha256": "d50f2e84a976858ce90d53df4b71e7fefb4ae85c15726805716d97191b1411e3"
+    },
+    {
+      "path": "/resources/art/dynamic/droid/battle_droid/texture/___psd/battledroid_warbot_rakata_v01_n.dds",
+      "sha256": "1c309c745c02f7e65ccf14ee1ad4021bb1da46e87adcd9a2fe9f6a5295b44bf7"
+    },
+    {
+      "path": "/resources/art/dynamic/droid/battle_droid/texture/___psd/battledroid_warbot_rakata_v01_s.dds",
+      "sha256": "f3b90847e873b7150078cbdc5dfd6960f0b2225799abe4df9762f2cde27b6dca"
+    },
+    {
+      "path": "/resources/art/defaultassets/black.dds",
+      "sha256": "f6fc96233461b12b33ffd2e0c79c96216fbee0af5c31597d1cc1fa940a16057d"
+    },
+    {
+      "path": "/resources/art/lookuptables/table_hair_01.dds",
+      "sha256": "a9cd23d6d7de246d05018ad80d4d5fa41587df64348c09dbc9639345e8b8e6d1"
+    },
+    {
+      "path": "/resources/art/dynamic/weapon/model/electrostaff_high04_a03_v01.gr2",
+      "sha256": "7ea303c54aae11207b7f348fb737f9b8b3305b92abbcd02f84510c9b5535b21a"
+    },
+    {
+      "path": "/resources/art/shaders/materials/electrostaff_high04_a01_v01.mat",
+      "sha256": "dd058fef60d98b4da15e0e6caef53c7017e626290996c83163ee8d5db230c45d"
+    },
+    {
+      "path": "/resources/art/dynamic/weapon/texture/electrostaff_high04_a01_v01_d.dds",
+      "sha256": "9afcb07839e4921d9f31b368949fe9b4757749f36a976d7b89226e4ce5b106d0"
+    },
+    {
+      "path": "/resources/art/dynamic/weapon/texture/electrostaff_high04_a01_v01_n.dds",
+      "sha256": "38be61c577e89c41375ae34180247001e1f7e1ff3fdb0f4bc9f3552b704fef00"
+    },
+    {
+      "path": "/resources/art/dynamic/weapon/texture/electrostaff_high04_a01_v01_s.dds",
+      "sha256": "e35f22aa3c1b79f33ac11a210a57adfe3ed2528c824fa5271b3df3660fe68bce"
+    }
+  ],
+  "appearanceIds": {
+    "icecat": [
+      "1000473",
+      "1001432"
+    ],
+    "tauntaun": [
+      "1000154",
+      "1001461"
+    ],
+    "guard": [
+      "1005669",
+      "1177013"
+    ],
+    "xrr3": [
+      "1492589",
+      "1492590"
+    ]
+  }
+}

@@ -1,12 +1,24 @@
 """Write Gameplay/GameWorld_<Map>.tscn from the Korriban world template and the map's source footprint."""
-import json, sys
+import json, sys, re
 from source_pipeline import ROOT
 
-NAMES = {'hutta': 'Hutta', 'dromund': 'Dromund', 'balmorra': 'Balmorra'}
+NAMES = {'hutta': 'Hutta', 'dromund': 'Dromund', 'balmorra': 'Balmorra', 'eternity_vault': 'EternityVault'}
 
 def main(ids):
     template = (ROOT/'godot/Gameplay/GameWorld.tscn').read_text(encoding='utf-8')
     for m in ids:
+        if m == 'eternity_vault':
+            sel = json.loads((ROOT/f'work/maps/{m}/selection.json').read_text())
+            r = json.loads((ROOT/f'maps/{m}.json').read_text())
+            x0,x1,z0,z1 = sel['footprintXZ']; x,y,z = r['spawnSourceXYZ']
+            t = (ROOT/'godot/Gameplay/GameWorld_Balmorra.tscn').read_text()
+            t = t.replace('Maps/balmorra/', f'Maps/{m}/').replace('script = ExtResource("1")', 'script = ExtResource("1")\nPlanetRunPath = "res://Gameplay/Planets/EternityVault/run.json"')
+            t = t.replace('script = ExtResource("3")','script = ExtResource("3")\nGroundCollisionMask = 3')
+            for key,value in [('Minimum',f'Vector2({x0}, {z0})'),('Maximum',f'Vector2({x1}, {z1})'),('SpawnSeed',f'Vector2({x}, {z})')]:
+                t = re.sub(key+r' = Vector2\([^\n]+\)',key+' = '+value,t)
+            t = re.sub(r'position = Vector3\([^\n]+\)\nscript = ExtResource\("4"\)',f'position = Vector3({x}, {y}, {z})\nscript = ExtResource("4")',t)
+            (ROOT/f'godot/Gameplay/GameWorld_{NAMES[m]}.tscn').write_text(t,encoding='utf-8')
+            continue
         sel = json.loads((ROOT/f'work/maps/{m}/selection.json').read_text())
         x0, x1, z0, z1 = sel['footprintXZ']
         cx, cz = round((x0+x1)/2, 3), round((z0+z1)/2, 3)

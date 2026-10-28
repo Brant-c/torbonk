@@ -1,0 +1,13 @@
+21:46:11 | INFO: Data are loaded, start creating Blender stuff
+21:46:11 | INFO: Blender create Mesh node cat_pantranwhitefang_a01
+21:46:11 | INFO: glTF import finished in 0.17s
+21:46:11 | INFO: Data are loaded, start creating Blender stuff
+21:46:11 | INFO: Blender create Mesh node bmf_underworlddroid_a01
+21:46:11 | INFO: glTF import finished in 0.36s
+21:46:12 | INFO: Data are loaded, start creating Blender stuff
+21:46:12 | INFO: Blender create Mesh node battledroid_warbot_rakata
+21:46:12 | INFO: glTF import finished in 0.30s
+STRIDE_FIT {"icecat": {"clip": "Walk", "unitScaleStrideSpeed": 0.15006779298011036, "duration": 1.3333333333333333, "feet": {"LeftAnkle": {"contactSpeed": 0.15438526266291253, "contactSamples": 45}, "RightAnkle": {"contactSpeed": 0.14743657309768718, "contactSamples": 45}, "LeftWrist": {"contactSpeed": 0.13909205591725896, "contactSamples": 33}, "RightWrist": {"contactSpeed": 0.1526990128625335, "contactSamples": 33}}, "method": "Median horizontal paw/ankle speed during lowest 35% of foot height; approximate contact fit, not native movement metadata."}, "guard": {"clip": "Walk", "unitScaleStrideSpeed": 0.13954376628283519, "duration": 1.0666667620340984, "feet": {"LeftAnkle": {"contactSpeed": 0.15054709495032664, "contactSamples": 40}, "RightAnkle": {"contactSpeed": 0.12854043761534373, "contactSamples": 45}}, "method": "Median horizontal paw/ankle speed during lowest 35% of foot height; approximate contact fit, not native movement metadata."}, "xrr3": {"clip": "Walk", "unitScaleStrideSpeed": 0.15381146435930165, "duration": 1.2999998728434246, "feet": {"LeftAnkle": {"contactSpeed": 0.15388419517762697, "contactSamples": 25}, "RightAnkle": {"contactSpeed": 0.15381146435930165, "contactSamples": 31}, "CenterAnkle": {"contactSpeed": 0.1446109834611587, "contactSamples": 30}}, "method": "Median horizontal paw/ankle speed during lowest 35% of foot height; approximate contact fit, not native movement metadata."}}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

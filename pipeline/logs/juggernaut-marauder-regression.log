@@ -1,0 +1,157 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+WARNING: 'res://Assets/Korriban/D4/all_item_imp_small_scaffold.glb': In external resource #1, invalid UID: 'uid://buvufi7k30rnr' - using text path instead: 'res://Assets/Korriban/D4/all_item_imp_small_scaffold_all_item_imp_scaffold_rough.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/kor_vod_ruins_roof.glb': In external resource #2, invalid UID: 'uid://foe22me7sjjt' - using text path instead: 'res://Assets/Korriban/D4/kor_vod_ruins_roof_kor_vod_ruins_roof_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/kor_tomb_item_statue_01_broken.glb': In external resource #2, invalid UID: 'uid://b10t3uqpvocnp' - using text path instead: 'res://Assets/Korriban/D4/kor_tomb_item_statue_01_broken_kor_tomb_item_statue_01_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/kor_tomb_item_statue_02_broken_head.glb': In external resource #2, invalid UID: 'uid://ddmshei4w158m' - using text path instead: 'res://Assets/Korriban/D4/kor_tomb_item_statue_02_broken_head_kor_tomb_item_statue_02_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/all_item_bone_human_pile_00.glb': In external resource #3, invalid UID: 'uid://b4xsf5ucjutio' - using text path instead: 'res://Assets/Korriban/D4/all_item_bone_human_pile_00_all_item_bone_human_whole_01_no_collision_normal.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/all_item_bone_human_whole_01.glb': In external resource #0, invalid UID: 'uid://d3yh3x3icd6sj' - using text path instead: 'res://Assets/Korriban/D4/all_item_bone_human_whole_01_all_item_bone_human_whole_01_no_collision_base.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/all_item_bone_human_whole_01.glb': In external resource #1, invalid UID: 'uid://drktuvxj0idmg' - using text path instead: 'res://Assets/Korriban/D4/all_item_bone_human_whole_01_all_item_bone_human_whole_01_no_collision_rough.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/all_item_imp_scaffold.glb': In external resource #9, invalid UID: 'uid://ddhhtk4lanm2h' - using text path instead: 'res://Assets/Korriban/D4/all_item_imp_scaffold_all_arch_imp_buildings_tech_rough.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/kor_vodl_item_ancient_pottery_03.glb': In external resource #2, invalid UID: 'uid://el0kavakftlx' - using text path instead: 'res://Assets/Korriban/D4/kor_vodl_item_ancient_pottery_03_kor_vodl_item_ancient_pottery_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/all_item_misc_toolbox_small_lip.glb': In external resource #2, invalid UID: 'uid://boay3fp4u8xnn' - using text path instead: 'res://Assets/Korriban/D4/all_item_misc_toolbox_small_lip_all_item_misc_toolbox_small_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/kor_vod_ruins_pillar02.glb': In external resource #2, invalid UID: 'uid://dgl14tvxf6ias' - using text path instead: 'res://Assets/Korriban/D4/kor_vod_ruins_pillar02_kor_vod_ruins_pillar02_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/kor_wilds_cliff_40m_small_v1.glb': In external resource #2, invalid UID: 'uid://cuxrsf6k22ce' - using text path instead: 'res://Assets/Korriban/D4/kor_wilds_cliff_40m_small_v1_kor_wilds_cliff_40m_small_v1_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/kor_env_cactus.glb': In external resource #2, invalid UID: 'uid://dcj8x3mipqv24' - using text path instead: 'res://Assets/Korriban/D4/kor_env_cactus_kor_env_cactus_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+WARNING: 'res://Assets/Korriban/D4/all_item_imp_scaffold_platform_a.glb': In external resource #2, invalid UID: 'uid://3tiv72qx7mt5' - using text path instead: 'res://Assets/Korriban/D4/all_item_imp_scaffold_platform_a_all_item_imp_scaffold_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+Map spawn: open ring samples 7/8 at (39.51257, -16.923206, 22.627346) after 1 candidates (found=True)
+WARNING: 'res://Assets/Korriban/D4/item_con_crate_ancient_01.glb': In external resource #2, invalid UID: 'uid://dxuqn50323uso' - using text path instead: 'res://Assets/Korriban/D4/item_con_crate_ancient_01_item_con_crate_ancient_01_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+   C# backtrace (most recent call first):
+       [0] Godot.GodotObject Godot.NativeCalls.godot_icall_3_1268(nint, nint, string, string, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:11611)
+       [1] Godot.Resource Godot.ResourceLoader.Load(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/ResourceLoader.cs:120)
+       [2] T Godot.ResourceLoader.Load<T>(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Extensions/ResourceLoaderExtensions.cs:27)
+       [3] T Godot.GD.Load<T>(string) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/GD.cs:129)
+       [4] void SwtorSurvivors.TombCache._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\PlanetJourney.cs:176)
+       [5] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [6] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [7] bool SwtorSurvivors.TombCache.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.TombCache_ScriptMethods.generated.cs:70)
+       [8] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+       [9] void Godot.NativeInterop.NativeFuncs.godotsharp_method_bind_ptrcall(nint, nint, System.Void**, System.Void*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Godot.SourceGenerators.Internal/Godot.SourceGenerators.Internal.UnmanagedCallbacksGenerator/Godot.NativeInterop.NativeFuncs.generated.cs:380)
+       [10] void Godot.NativeCalls.godot_icall_3_912(nint, nint, nint, Godot.NativeInterop.godot_bool, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:8061)
+       [11] void Godot.Node.AddChild(Godot.Node, bool, Godot.Node+InternalMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:848)
+       [12] void SwtorSurvivors.PlanetJourney._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\PlanetJourney.cs:39)
+       [13] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [14] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [15] bool SwtorSurvivors.PlanetJourney.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.PlanetJourney_ScriptMethods.generated.cs:80)
+       [16] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+       [17] void Godot.NativeInterop.NativeFuncs.godotsharp_method_bind_ptrcall(nint, nint, System.Void**, System.Void*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Godot.SourceGenerators.Internal/Godot.SourceGenerators.Internal.UnmanagedCallbacksGenerator/Godot.NativeInterop.NativeFuncs.generated.cs:380)
+       [18] void Godot.NativeCalls.godot_icall_3_912(nint, nint, nint, Godot.NativeInterop.godot_bool, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:8061)
+       [19] void Godot.Node.AddChild(Godot.Node, bool, Godot.Node+InternalMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:848)
+       [20] void SwtorSurvivors.GameWorld+<_Ready>d__193.MoveNext() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\GameWorld.cs:165)
+       [21] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [22] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [23] void Godot.SignalAwaiter.SignalCallback(nint, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_bool*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/SignalAwaiter.cs:65)
+WARNING: 'res://Assets/Korriban/D4/item_con_crate_ancient_01.glb': In external resource #2, invalid UID: 'uid://dxuqn50323uso' - using text path instead: 'res://Assets/Korriban/D4/item_con_crate_ancient_01_item_con_crate_ancient_01_emission.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+   C# backtrace (most recent call first):
+       [0] Godot.GodotObject Godot.NativeCalls.godot_icall_3_1268(nint, nint, string, string, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:11611)
+       [1] Godot.Resource Godot.ResourceLoader.Load(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/ResourceLoader.cs:120)
+       [2] T Godot.ResourceLoader.Load<T>(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Extensions/ResourceLoaderExtensions.cs:27)
+       [3] T Godot.GD.Load<T>(string) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/GD.cs:129)
+       [4] void SwtorSurvivors.TombCache._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\PlanetJourney.cs:176)
+       [5] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [6] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [7] bool SwtorSurvivors.TombCache.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.TombCache_ScriptMethods.generated.cs:70)
+       [8] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+       [9] void Godot.NativeInterop.NativeFuncs.godotsharp_method_bind_ptrcall(nint, nint, System.Void**, System.Void*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Godot.SourceGenerators.Internal/Godot.SourceGenerators.Internal.UnmanagedCallbacksGenerator/Godot.NativeInterop.NativeFuncs.generated.cs:380)
+       [10] void Godot.NativeCalls.godot_icall_3_912(nint, nint, nint, Godot.NativeInterop.godot_bool, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:8061)
+       [11] void Godot.Node.AddChild(Godot.Node, bool, Godot.Node+InternalMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:848)
+       [12] void SwtorSurvivors.PlanetJourney._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\PlanetJourney.cs:39)
+       [13] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [14] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [15] bool SwtorSurvivors.PlanetJourney.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.PlanetJourney_ScriptMethods.generated.cs:80)
+       [16] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+       [17] void Godot.NativeInterop.NativeFuncs.godotsharp_method_bind_ptrcall(nint, nint, System.Void**, System.Void*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Godot.SourceGenerators.Internal/Godot.SourceGenerators.Internal.UnmanagedCallbacksGenerator/Godot.NativeInterop.NativeFuncs.generated.cs:380)
+       [18] void Godot.NativeCalls.godot_icall_3_912(nint, nint, nint, Godot.NativeInterop.godot_bool, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:8061)
+       [19] void Godot.Node.AddChild(Godot.Node, bool, Godot.Node+InternalMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:848)
+       [20] void SwtorSurvivors.GameWorld+<_Ready>d__193.MoveNext() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\GameWorld.cs:165)
+       [21] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [22] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [23] void Godot.SignalAwaiter.SignalCallback(nint, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_bool*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/SignalAwaiter.cs:65)
+WARNING: 'res://Assets/Korriban/D4/kor_tomb_item_sarcophagus.glb': In external resource #1, invalid UID: 'uid://s6crb14l4qpa' - using text path instead: 'res://Assets/Korriban/D4/kor_tomb_item_sarcophagus_kor_tomb_item_sarcophagus_ruin_rough.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+   C# backtrace (most recent call first):
+       [0] Godot.GodotObject Godot.NativeCalls.godot_icall_3_1268(nint, nint, string, string, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:11611)
+       [1] Godot.Resource Godot.ResourceLoader.Load(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/ResourceLoader.cs:120)
+       [2] T Godot.ResourceLoader.Load<T>(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Extensions/ResourceLoaderExtensions.cs:27)
+       [3] T Godot.GD.Load<T>(string) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/GD.cs:129)
+       [4] void SwtorSurvivors.PlanetJourney.BuildBurialCourts() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\PlanetJourney.cs:144)
+       [5] void SwtorSurvivors.PlanetJourney._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\PlanetJourney.cs:41)
+       [6] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [7] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [8] bool SwtorSurvivors.PlanetJourney.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.PlanetJourney_ScriptMethods.generated.cs:80)
+       [9] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+       [10] void Godot.NativeInterop.NativeFuncs.godotsharp_method_bind_ptrcall(nint, nint, System.Void**, System.Void*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Godot.SourceGenerators.Internal/Godot.SourceGenerators.Internal.UnmanagedCallbacksGenerator/Godot.NativeInterop.NativeFuncs.generated.cs:380)
+       [11] void Godot.NativeCalls.godot_icall_3_912(nint, nint, nint, Godot.NativeInterop.godot_bool, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:8061)
+       [12] void Godot.Node.AddChild(Godot.Node, bool, Godot.Node+InternalMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:848)
+       [13] void SwtorSurvivors.GameWorld+<_Ready>d__193.MoveNext() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\GameWorld.cs:165)
+       [14] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [15] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [16] void Godot.SignalAwaiter.SignalCallback(nint, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_bool*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/SignalAwaiter.cs:65)
+WARNING: 'res://Assets/Korriban/D4/kor_tomb_item_brazier_ancient.glb': In external resource #1, invalid UID: 'uid://d0c18m1p40eyd' - using text path instead: 'res://Assets/Korriban/D4/kor_tomb_item_brazier_ancient_kor_tomb_item_brazier_ancient_rough.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+   C# backtrace (most recent call first):
+       [0] Godot.GodotObject Godot.NativeCalls.godot_icall_3_1268(nint, nint, string, string, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:11611)
+       [1] Godot.Resource Godot.ResourceLoader.Load(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/ResourceLoader.cs:120)
+       [2] T Godot.ResourceLoader.Load<T>(string, string, Godot.ResourceLoader+CacheMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Extensions/ResourceLoaderExtensions.cs:27)
+       [3] T Godot.GD.Load<T>(string) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/GD.cs:129)
+       [4] void SwtorSurvivors.PlanetJourney.BuildBurialCourts() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\PlanetJourney.cs:144)
+       [5] void SwtorSurvivors.PlanetJourney._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\PlanetJourney.cs:41)
+       [6] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [7] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [8] bool SwtorSurvivors.PlanetJourney.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.PlanetJourney_ScriptMethods.generated.cs:80)
+       [9] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+       [10] void Godot.NativeInterop.NativeFuncs.godotsharp_method_bind_ptrcall(nint, nint, System.Void**, System.Void*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Godot.SourceGenerators.Internal/Godot.SourceGenerators.Internal.UnmanagedCallbacksGenerator/Godot.NativeInterop.NativeFuncs.generated.cs:380)
+       [11] void Godot.NativeCalls.godot_icall_3_912(nint, nint, nint, Godot.NativeInterop.godot_bool, int) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:8061)
+       [12] void Godot.Node.AddChild(Godot.Node, bool, Godot.Node+InternalMode) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:848)
+       [13] void SwtorSurvivors.GameWorld+<_Ready>d__193.MoveNext() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\GameWorld.cs:165)
+       [14] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [15] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [16] void Godot.SignalAwaiter.SignalCallback(nint, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_bool*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/SignalAwaiter.cs:65)
+KIT: marauder corridor has line of sight
+KIT: marauder kit abilities are wired and locked
+KIT: marauder pool offers unlock for every kit ability
+KIT: marauder pool contains two mechanic talents
+KIT: marauder damage track covers the whole kit
+KIT: marauder grants annihilate
+KIT: marauder grants forcescream
+KIT: marauder grants berserk
+KIT: marauder slot limits respected
+KIT: marauder action bar lists starter, basic and owned kit
+KIT: annihilate starts
+KIT: annihilate damages its primary target
+KIT: annihilate is single-target
+KIT: forcescream starts
+KIT: forcescream damages its primary target
+KIT: forcescream splash reaches neighbours
+KIT: annihilate starts
+KIT: annihilate starts
+KIT: Annihilate: +50% against a bleeding target
+KIT: forcescream starts
+KIT: Force Scream bleeds primary and both bystanders
+KIT: bystanders bleed at half strength
+KIT: Berserk fires near enemies
+KIT: Berserk grants +25% damage
+KIT: Berserk expires
+KIT: Last Gasp is eligible
+KIT: Last Gasp passes the bleed to the nearest enemy
+KIT: Blood Rhythm is eligible
+KIT: rupture starts
+KIT: Blood Rhythm refunds 0.5 s on the fourth bleed tick
+KIT: marauder saber hum is imported, looping and audible
+KIT: no kit presentation raised a duplicate hit

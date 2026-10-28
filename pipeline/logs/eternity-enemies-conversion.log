@@ -1,0 +1,355 @@
+D:\SWTORClassic\torbonk\pipeline\scripts\convert_b6.py:26: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  t=info['textures'];stem=Path(p).stem;mat=bpy.data.materials.new(stem);mat.use_nodes=True
+register_class(...):
+Warning: 'import_mesh.gr2_presets' does not contain '_MT_' with prefix and suffix
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\catboss_skeleton.gr2
+OBJS: ['catboss_skeleton']
+TIME: 0.003 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\creature\model\cat_pantranwhitefang_a01.gr2
+OBJS: ['cat_pantranwhitefang_a01']
+TIME: 0.125 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\cb_ready_1.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0081 sec |   0.0081 sec) Done, building ...
+Progress: 100.00%
+  (  0.1652 sec |   0.1651 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\cb_ready_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\mv_run_forward.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0049 sec |   0.0049 sec) Done, building ...
+Progress: 100.00%
+  (  0.0342 sec |   0.0341 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\mv_run_forward.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\cb_attack_1.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0084 sec |   0.0084 sec) Done, building ...
+Progress: 100.00%
+  (  0.0787 sec |   0.0787 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\cb_attack_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\dg_damage_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0066 sec |   0.0065 sec) Done, building ...
+Progress: 100.00%
+  (  0.0756 sec |   0.0756 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\dg_damage_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0074 sec |   0.0074 sec) Done, building ...
+Progress: 100.00%
+  (  0.0598 sec |   0.0597 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\mv_walk_forward.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0085 sec |   0.0085 sec) Done, building ...
+Progress: 100.00%
+  (  0.1014 sec |   0.1014 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\mv_walk_forward.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+21:45:14 | INFO: Starting glTF 2.0 export
+21:45:14 | INFO: Extracting primitive: cat_pantranwhitefang_a01
+21:45:14 | INFO: Primitives created: 1
+21:45:16 | INFO: Finished glTF 2.0 export in 2.591244697570801 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\tauntaun_skeleton.gr2
+OBJS: ['tauntaun_skeleton']
+TIME: 0.005 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\creature\model\tauntaun_tauntaun_a01.gr2
+OBJS: ['tauntaun_tauntaun_a01']
+TIME: 0.181 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\tauntaun\cb_ready_1.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0144 sec |   0.0144 sec) Done, building ...
+Progress: 100.00%
+  (  0.1632 sec |   0.1632 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\tauntaun\cb_ready_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\tauntaun\mv_run_forward.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0060 sec |   0.0060 sec) Done, building ...
+Progress: 100.00%
+  (  0.0709 sec |   0.0709 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\tauntaun\mv_run_forward.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\tauntaun\cb_attack_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0081 sec |   0.0080 sec) Done, building ...
+Progress: 100.00%
+  (  0.0983 sec |   0.0983 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\tauntaun\cb_attack_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\tauntaun\dg_damage_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0070 sec |   0.0069 sec) Done, building ...
+Progress: 100.00%
+  (  0.0667 sec |   0.0667 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\tauntaun\dg_damage_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\tauntaun\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0165 sec |   0.0164 sec) Done, building ...
+Progress: 100.00%
+  (  0.2095 sec |   0.2094 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\tauntaun\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+21:45:18 | INFO: Starting glTF 2.0 export
+21:45:18 | INFO: Extracting primitive: tauntaun_tauntaun_a01
+21:45:19 | INFO: Primitives created: 1
+21:45:21 | INFO: Finished glTF 2.0 export in 2.4438047409057617 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\bmfnew_skeleton.gr2
+OBJS: ['bmfnew_skeleton']
+TIME: 0.004 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\creature\model\bmf_underworlddroid_a01.gr2
+OBJS: ['bmf_underworlddroid_a01']
+TIME: 0.285 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\cb_pole_idle_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0086 sec |   0.0086 sec) Done, building ...
+Progress: 100.00%
+  (  0.0692 sec |   0.0692 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\cb_pole_idle_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\mv_cb_pole_run_forward.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0066 sec |   0.0066 sec) Done, building ...
+Progress: 100.00%
+  (  0.0735 sec |   0.0735 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\mv_cb_pole_run_forward.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\cb_pole_attack_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0072 sec |   0.0071 sec) Done, building ...
+Progress: 100.00%
+  (  0.0700 sec |   0.0700 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\cb_pole_attack_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\dg_unarmed_crit_damage_right_1.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0101 sec |   0.0101 sec) Done, building ...
+Progress: 100.00%
+  (  0.0974 sec |   0.0974 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\dg_unarmed_crit_damage_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0116 sec |   0.0115 sec) Done, building ...
+Progress: 100.00%
+  (  0.2005 sec |   0.2005 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\mv_cb_pole_walk_forward.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0123 sec |   0.0123 sec) Done, building ...
+Progress: 100.00%
+  (  0.1677 sec |   0.1676 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\mv_cb_pole_walk_forward.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+21:45:23 | INFO: Starting glTF 2.0 export
+21:45:24 | INFO: Extracting primitive: bmf_underworlddroid_a01
+21:45:24 | INFO: Primitives created: 1
+21:45:28 | INFO: Finished glTF 2.0 export in 4.385280609130859 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\battlewarbotrakataboss_skeleton.gr2
+OBJS: ['battlewarbotrakataboss_skeleton']
+TIME: 0.007 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\creature\model\battledroid_warbot_rakata.gr2
+OBJS: ['battledroid_warbot_rakata']
+TIME: 0.383 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\droid\battle_warbot_rakata_boss\cb_ready_1.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0095 sec |   0.0095 sec) Done, building ...
+Progress: 100.00%
+  (  0.1018 sec |   0.1017 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\droid\battle_warbot_rakata_boss\cb_ready_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\droid\battle_warbot_rakata_boss\mv_run_forward.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0075 sec |   0.0075 sec) Done, building ...
+Progress: 100.00%
+  (  0.1341 sec |   0.1341 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\droid\battle_warbot_rakata_boss\mv_run_forward.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\droid\battle_warbot_rakata_boss\cb_attack_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0093 sec |   0.0093 sec) Done, building ...
+Progress: 100.00%
+  (  0.0840 sec |   0.0840 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\droid\battle_warbot_rakata_boss\cb_attack_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\droid\battle_warbot_rakata_boss\dg_damage_1.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0016 sec |   0.0016 sec) Done, building ...
+Progress: 100.00%
+  (  0.0074 sec |   0.0074 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\droid\battle_warbot_rakata_boss\dg_damage_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\droid\battle_warbot_rakata_boss\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0014 sec |   0.0014 sec) Done, building ...
+Progress: 100.00%
+  (  0.0080 sec |   0.0079 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\droid\battle_warbot_rakata_boss\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\droid\battle_warbot_rakata_boss\mv_walk_forward.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0124 sec |   0.0123 sec) Done, building ...
+Progress: 100.00%
+  (  0.1499 sec |   0.1498 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\droid\battle_warbot_rakata_boss\mv_walk_forward.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+21:45:30 | INFO: Starting glTF 2.0 export
+21:45:30 | INFO: Extracting primitive: battledroid_warbot_rakata
+21:45:30 | INFO: Primitives created: 1
+21:45:33 | INFO: Finished glTF 2.0 export in 2.7054591178894043 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\weapon\model\electrostaff_high04_a03_v01.gr2
+OBJS: ['electrostaff_high04_a03_v01']
+TIME: 0.043 s.
+
+21:45:33 | INFO: Starting glTF 2.0 export
+21:45:33 | INFO: Extracting primitive: electrostaff_high04_a03_v01
+21:45:33 | INFO: Primitives created: 1
+21:45:33 | INFO: Finished glTF 2.0 export in 0.020812273025512695 s
+
+B6 CONVERSION COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+Blender quit

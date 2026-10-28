@@ -1,0 +1,18 @@
+{
+  "id": "eternity_vault",
+  "name": "Eternity Vault",
+  "section": "01_Surface (Annihilation Droid XRR-3 approach)",
+  "areaId": "4611686096259570491",
+  "areaLabel": "raid_eternity_vault",
+  "room": "01_Surface",
+  "patchCenterWindowXZ": [-110, -30, 0, 45],
+  "propMarginXZ": 5,
+  "propYRange": [-50, 80],
+  "maximumUniqueModels": 250,
+  "maximumPlacements": 1600,
+  "allowCopiedTerrainOrigins": true,
+  "spawnSourceXYZ": [-64, 4, 30.7],
+  "doorAlignmentOffsetSourceXYZ": [0.1681976318, 0, 0.4],
+  "location": "location.flashpoint.raid.eternity_vault",
+  "mapReferences": ["map_eternity_vault_world", "map_eternity_vault_surface"]
+}

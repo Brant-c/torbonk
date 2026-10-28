@@ -1,0 +1,14 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+NPC navigation: hole cannot be traversed
+NPC navigation: crop edge cannot be traversed
+NPC navigation: steep ground is rejected
+NPC navigation: NPC pursues across supported ground
+NPC navigation: moving query budget below old 1200-ray floor (810 rays)
+NPC navigation: stationary NPC performs no ground raycasts
+NPC navigation: NPC stays on supported side of hole
+NPC navigation: knockback cannot push NPC across hole
+NPC navigation: NPC follows wall without crossing it
+NPC navigation: enclosed NPC cannot cross walls
+NPC navigation: blocked steering retries stay bounded
+NPC_NAVIGATION_PASSED

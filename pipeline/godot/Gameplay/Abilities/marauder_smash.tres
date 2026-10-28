@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "smash"
+Title = "Smash"
+Icon = "juggernautsmash"
+StartsUnlocked = false
+Damage = 58
+CooldownSeconds = 18
+Range = 0.4
+Radius = 0.46
+Area = 3
+WindupSeconds = 1.7
+ChannelSeconds = 0
+TickSeconds = 0.4
+RecoverySeconds = 0.7
+GestureSeconds = 2.4
+StartClip = "D3/SmashLeap"
+LoopClip = "D3/SmashLeap"
+FullBodyGesture = true
+RequireGesture = true
+PresentationKind = "slam"
+SourceFx = "epp.sith_warrior.skill.shockwave;epp.sith_warrior.smash.smash_anticipation;epp.sith_warrior.smash.smash_real;epp.sith_warrior.smash.stun;epp.sith_warrior.smash.target_instant"
+Description = "Light Force shockwave; Rage can empower it with Crush ticks."
+NearbyTriggerCount = 2
+KnockbackDistance = 0
+StaggerSeconds = 0
+ImpactTexture = "res://Assets/D3/radial_trails_out.png"
+CastAudio = "res://Assets/D3/Audio/142158238.wav"
+ImpactAudio = "res://Assets/D3/Audio/157531335.wav"
+WeaponAudio = "res://Assets/D3/Audio/173808209.wav"
+OffhandAudio = "res://Assets/D3/Audio/173808209.wav"
+
+FinishGesture = true

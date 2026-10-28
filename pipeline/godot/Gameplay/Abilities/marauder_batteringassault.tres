@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "batteringassault"
+Title = "Battering Assault"
+Icon = "mr_talent_batteringassault"
+StartsUnlocked = false
+Damage = 38
+CooldownSeconds = 8
+Range = 0.4
+Radius = 0
+Area = 0
+WindupSeconds = 0.18
+ChannelSeconds = 0
+TickSeconds = 0.4
+RecoverySeconds = 0.12
+GestureSeconds = 0.95
+StartClip = "Marauder/cb_2saber_sp1_attack_right_3"
+LoopClip = "Marauder/cb_2saber_sp1_attack_right_3"
+RequireGesture = true
+PresentationKind = "saber"
+SourceFx = "epp.sith_warrior.battering_assault.battering_assault_anticipation;epp.sith_warrior.battering_assault.battering_assault_real"
+Description = "A heavy direct-damage dual-saber attack. Gore empowers weapon damage for four seconds; Battering Assault empowers the next Massacre or Ravage."
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/spark/bw_fx_2x2_sparknglow_01.png"
+ImpactAudio = "res://Assets/WarriorLibrary/Audio/10681804.wav"
+WeaponAudio = "res://Assets/D3/Audio/173808209.wav"
+OffhandAudio = "res://Assets/D3/Audio/173808209.wav"
+
+FinishGesture = true
+
+FullBodyGesture = true

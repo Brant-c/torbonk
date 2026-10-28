@@ -25,7 +25,8 @@ public partial class PlayerController : CharacterBody3D
     private bool _jumpQueued;
     private Vector3 _abilityDash;
     private float _dashRemaining;
-    public void BeginAbilityDash(Vector3 direction,float distance){_abilityDash=direction.Normalized();_dashRemaining=Mathf.Clamp(distance,0,.4f);}
+    private float? _facingYaw;
+    public void BeginAbilityDash(Vector3 direction,float distance){_abilityDash=direction.Normalized();_dashRemaining=Mathf.Clamp(distance,0,1.1f);}
 
     public override void _Ready()
     {
@@ -60,14 +61,21 @@ public partial class PlayerController : CharacterBody3D
 
     public override void _PhysicsProcess(double delta)
     {
-        Step(delta, TestInput ?? Input.GetVector("b1_left", "b1_right", "b1_forward", "b1_back"));
+        _facingYaw ??= Rig.YawDegrees;
+        if (Rig.Steering) _facingYaw = Rig.YawDegrees;
+        var input = TestInput ?? (Rig.ControlsEnabled
+            ? Input.GetVector("b1_left", "b1_right", "b1_forward", "b1_back") : Vector2.Zero);
+        if (TestInput == null && Rig.RunForward) input.Y = -1;
+        Step(delta, input);
     }
 
     public void Step(double delta, Vector2 input)
     {
         PhysicsSteps++;
         float dt = (float)delta;
-        var desired = CameraDirection(input, Mathf.DegToRad(Rig.YawDegrees)) * MoveSpeed;
+        // Live keyboard movement follows character facing, independent of left-drag orbit.
+        // Explicit fixture input retains its authored camera-relative coordinates.
+        var desired = CameraDirection(input, Mathf.DegToRad(TestInput.HasValue ? Rig.YawDegrees : _facingYaw ?? Rig.YawDegrees)) * MoveSpeed;
         var horizontal = new Vector3(Velocity.X, 0, Velocity.Z).MoveToward(desired,
             (input.IsZeroApprox() ? Deceleration : Acceleration) * dt);
         if(_dashRemaining>0){float step=Mathf.Min(_dashRemaining,2.2f*dt);horizontal=_abilityDash*(step/Mathf.Max(dt,.001f));_dashRemaining-=step;}
@@ -110,7 +118,12 @@ public partial class PlayerController : CharacterBody3D
             Recoveries++; GlobalPosition = _safePosition; _groundFootprint = _safePosition; Velocity = Vector3.Zero;
         }
         ActualVelocity = (GlobalPosition - before) / dt;
-        Presentation.Present(ActualVelocity, delta);
+        // Keep the movement basis independent of the visual model: strafing should
+        // turn the running model toward travel without redirecting keyboard input.
+        // Only stationary right-drag needs an explicit camera-facing pose.
+        bool stationarySteering = !TestInput.HasValue && Rig.Steering
+            && new Vector2(ActualVelocity.X, ActualVelocity.Z).Length() <= 0.025f;
+        Presentation.Present(ActualVelocity, delta, stationarySteering ? _facingYaw : null);
         Presentation.PresentJump(IsOnFloor(), jump && !IsOnFloor(), Velocity.Y,
             Mathf.Sqrt(2 * Mathf.Max(0, JumpHeight) / Mathf.Max(0.01f, Gravity)), delta);
     }
@@ -119,6 +132,7 @@ public partial class PlayerController : CharacterBody3D
     {
         GlobalPosition = SpawnPosition; _safePosition = _groundFootprint = SpawnPosition; Velocity = Vector3.Zero;
         _jumpQueued = false;_dashRemaining=0;
+        _facingYaw = Rig.YawDegrees;
         ActualVelocity = Vector3.Zero; Presentation.ResetPresentation();
         ResetPhysicsInterpolation(); Rig.Snap();
     }

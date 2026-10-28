@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "sweepingslash"
+Title = "Sweeping Slash"
+Icon = "mr_whirlingassault"
+StartsUnlocked = false
+Damage = 24
+CooldownSeconds = 2.6
+Range = 0.4
+Radius = 0.52
+Area = 5
+WindupSeconds = 0.18
+ChannelSeconds = 0
+TickSeconds = 0.4
+RecoverySeconds = 0.12
+GestureSeconds = 0.95
+StartClip = "Marauder/cb_2saber_sp1_attack_right_2"
+LoopClip = "Marauder/cb_2saber_sp1_attack_right_2"
+RequireGesture = true
+PresentationKind = "saber"
+SourceFx = "epp.sith_warrior.sweeping_slash.sweeping_slash_anticipation;epp.sith_warrior.sweeping_slash.sweeping_slash_real;epp.sith_warrior.sweeping_slash.target"
+Description = "Fast frontal cleave. Annihilation talents spread existing bleeds."
+MaximumTargets = 8
+SplashMultiplier = 1
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/bw_flare_gray.png"
+WeaponAudio = "res://Assets/D3/Audio/173808209.wav"
+OffhandAudio = "res://Assets/D3/Audio/173808209.wav"
+
+FinishGesture = true
+
+FullBodyGesture = true

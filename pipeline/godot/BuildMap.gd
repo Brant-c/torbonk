@@ -35,6 +35,7 @@ func build():
 		mat.metallic_specular = 0.15
 		mat.texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC
 		mesh.surface_set_material(0,mat)
+		if p.has("detailMaterial"): mesh.surface_set_material(0,load(p.detailMaterial))
 		var node = MeshInstance3D.new(); node.name = "Terrain_"+p.id; node.mesh = mesh; node.position = v(p.position)
 		node.set_meta("source_instance_id",p.id); node.set_meta("source_asset_id",p.asset)
 		terrain.add_child(node); node.owner = root
@@ -78,6 +79,18 @@ func build():
 					check("material "+p.id+"/"+str(s),m is StandardMaterial3D and m.albedo_texture != null)
 				collision(mi,root,node,p.path.get_file().get_basename())
 			check("source triangle count "+p.id,model_info != null and triangle_count == int(model_info.triangles))
+	if map_id == "eternity_vault" and nodes.has("4611686142220981203"):
+		# Operator-requested dark backing, separate from the original door geometry.
+		var backing = MeshInstance3D.new(); backing.name = "DoorGapBacking"
+		var quad = QuadMesh.new(); quad.size = Vector2(3.2,2.3)
+		var black = StandardMaterial3D.new(); black.albedo_color = Color.BLACK
+		black.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+		black.cull_mode = BaseMaterial3D.CULL_DISABLED
+		black.set_flag(BaseMaterial3D.FLAG_DISABLE_FOG,true)
+		quad.material = black; backing.mesh = quad
+		backing.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+		backing.position = Vector3(0,0.8,0.18)
+		nodes["4611686142220981203"].add_child(backing); backing.owner = root
 	await process_frame
 	var max_transform_error = 0.0
 	for id in nodes:

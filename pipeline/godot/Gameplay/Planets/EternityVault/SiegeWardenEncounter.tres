@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BossEncounterDefinition" load_steps=3 format=3]
+[ext_resource type="Script" path="res://Gameplay/BossEncounterDefinition.cs" id="1"]
+[ext_resource type="PackedScene" path="res://Gameplay/Planets/EternityVault/SiegeWarden.tscn" id="2"]
+[resource]
+script = ExtResource("1")
+Id = "eternity_vault.siegewarden"
+Title = "Rakata Siege Warden"
+Scene = ExtResource("2")
+IntroductionSeconds = 1.8
+RegularSpawnIntervalMultiplier = 3.0
+RegularCapFraction = 0.35
+ClearRegularEnemiesOnStart = false

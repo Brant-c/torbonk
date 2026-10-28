@@ -1,0 +1,13 @@
+{
+  "UpgradeCosts": [500, 1500, 3000],
+  "Items": [
+    {"Id":"resolve_implant","Name":"Resolve Implant","Kind":"implant","Icon":"implant1","Rarity":"Prototype","Classes":["sorcerer","assassin","sage","shadow"],"Description":"A neural implant for Force practitioners."},
+    {"Id":"might_implant","Name":"Might Implant","Kind":"implant","Icon":"implant1","Rarity":"Artifact","Classes":["juggernaut","marauder","guardian","sentinel"],"Description":"A combat implant for trained melee combatants."},
+    {"Id":"skill_implant","Name":"Skill Implant","Kind":"implant","Icon":"implant1","Rarity":"Prototype","Classes":["operative","sniper","scoundrel","gunslinger"],"Description":"A targeting implant for precision specialists."},
+    {"Id":"reflex_implant","Name":"Reflex Implant","Kind":"implant","Icon":"implant1","Rarity":"Prototype","Classes":["mercenary","powertech","commando","vanguard"],"Description":"A reflex implant for heavy weapons specialists."},
+    {"Id":"universal_implant","Name":"Fortitude Implant","Kind":"implant","Icon":"implant1","Rarity":"Premium","Classes":[],"Description":"A general purpose endurance implant."},
+    {"Id":"earpiece","Name":"Combat Earpiece","Kind":"earpiece","Icon":"earpiece1","Rarity":"Prototype","Classes":[],"Description":"A compact tactical communications device."},
+    {"Id":"relic_dark","Name":"Dark Side Relic","Kind":"relic","Icon":"darksiderelic1","Rarity":"Artifact","Classes":[],"Description":"An ancient relic infused with dark side energy."},
+    {"Id":"relic_light","Name":"Light Side Relic","Kind":"relic","Icon":"lightsiderelic2","Rarity":"Artifact","Classes":[],"Description":"A relic resonating with the light side of the Force."}
+  ]
+}

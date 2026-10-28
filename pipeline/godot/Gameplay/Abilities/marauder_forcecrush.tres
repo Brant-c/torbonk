@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "forcecrush"
+Title = "Force Crush"
+Icon = "mr_forceCrush"
+StartsUnlocked = false
+Damage = 10
+CooldownSeconds = 9
+Range = 1.1
+Radius = 0
+Area = 0
+WindupSeconds = 0
+ChannelSeconds = 0
+TickSeconds = 0.4
+RecoverySeconds = 0.12
+GestureSeconds = 0.95
+StartClip = "Marauder/fp_1h_elect_instant_right_4"
+LoopClip = "Marauder/fp_1h_elect_instant_right_4"
+RequireGesture = true
+PresentationKind = "impact"
+SourceFx = "epp.sith_warrior.force_crush.cast_instant;epp.sith_warrior.force_crush.crush_tick;epp.sith_warrior.force_crush.duration_end;epp.sith_warrior.force_crush.duration_start"
+Description = "Force Crush - rapid dual-saber combat."
+PeriodicDamage = 8
+PeriodicDuration = 6
+PeriodicInterval = 1
+SlowFactor = 0.5
+SlowSeconds = 6
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/damage/bw_fx_grnd_crack_2.png"
+ImpactAudio = "res://Assets/WarriorLibrary/Audio/1709192.wav"
+WeaponAudio = "res://Assets/D3/Audio/173808209.wav"
+OffhandAudio = "res://Assets/D3/Audio/173808209.wav"
+
+FinishGesture = true

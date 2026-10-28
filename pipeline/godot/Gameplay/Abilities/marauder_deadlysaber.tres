@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "deadlysaber"
+Title = "Deadly Saber"
+Icon = "mr_vengefulstrike"
+StartsUnlocked = false
+Damage = 1
+CooldownSeconds = 12
+Range = 0.4
+Radius = 0
+Area = 0
+WindupSeconds = 0
+ChannelSeconds = 0
+TickSeconds = 0.4
+RecoverySeconds = 0.12
+GestureSeconds = 0.95
+StartClip = "Marauder/cb_buff_unleash"
+LoopClip = "Marauder/cb_buff_unleash"
+RequireGesture = false
+PresentationKind = "saber"
+SourceFx = "epp.sith_warrior.deadly_saber.cast_instant"
+Description = "For six seconds, the next three weapon hits apply a separate refreshing bleed. Uses no offensive slot."
+PeriodicDamage = 11
+PeriodicDuration = 6
+PeriodicInterval = 1
+Category = 1
+Effect = 3
+BuffSeconds = 0.01
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+Slotless = true
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/electricity/electric_center.png"
+
+FinishGesture = true
+GesturePriority = -5

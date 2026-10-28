@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "viciousslash"
+Title = "Vicious Slash"
+Icon = "mr_slash"
+StartsUnlocked = true
+Damage = 23
+CooldownSeconds = 1.2
+Range = 0.4
+Radius = 0
+Area = 0
+WindupSeconds = 0.18
+ChannelSeconds = 0
+TickSeconds = 0.4
+RecoverySeconds = 0.12
+GestureSeconds = 0.95
+StartClip = "WarriorExtra/DualViciousSlash"
+LoopClip = "WarriorExtra/DualViciousSlash"
+RequireGesture = true
+PresentationKind = "saber"
+SourceFx = "epp.sith_warrior.vicious_slash.impact;epp.sith_warrior.vicious_slash.vicious_slash_anticipation;epp.sith_warrior.vicious_slash.vicious_slash_real"
+Description = "Vicious Slash - rapid dual-saber combat."
+Slotless = true
+ReplaceableStarter = true
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/2x2_elec_blast_ring_alpha.png"
+ImpactAudio = "res://Assets/D3/Audio/174681073.wav"
+WeaponAudio = "res://Assets/D3/Audio/173808209.wav"
+OffhandAudio = "res://Assets/D3/Audio/173808209.wav"
+
+FinishGesture = true
+
+FullBodyGesture = true

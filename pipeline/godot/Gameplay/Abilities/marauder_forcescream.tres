@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "forcescream"
+Title = "Force Scream"
+Icon = "jg_forcescream"
+StartsUnlocked = false
+Category = 0
+Damage = 52
+CooldownSeconds = 6
+Range = 0.65
+Radius = 0
+ChannelSeconds = 0
+TickSeconds = 1
+WindupSeconds = 0.2
+RecoverySeconds = 0.25
+GestureSeconds = 1.2
+StartClip = "Marauder/cb_buff_frenzy"
+LoopClip = "Marauder/cb_buff_frenzy"
+RequireGesture = true
+PresentationKind = "impact"
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/debris/bw_2x2_metal_shards.png"
+CastAudio = "res://Assets/WarriorLibrary/Audio/3382654.wav"
+ImpactAudio = "res://Assets/WarriorLibrary/Audio/243220938.wav"
+SourceFx = "epp.sith_warrior.force_scream.force_scream_anticipation;epp.sith_warrior.force_scream.force_scream_real;epp.sith_warrior.intimidating_roar.target"
+Description = "Force damage to a nearby enemy. Rage talents evolve it into a group-clearing splash; Impale can empower it."

@@ -142,7 +142,8 @@ public partial class CombatHud : Control
             }
             if(ability.Definition.Id=="chain")tooltip+=$"\n{ability.Definition.BounceCount+ability.ExtraBounces} extra links · bounce range {ability.Definition.BounceRange:0.00} · {ability.Definition.BounceFalloff:P0} damage retained per bounce. Distinct targets only.";
             if(ability.Definition.Id=="overload")tooltip+=$"\nTriggers with {ability.Definition.NearbyTriggerCount} hostiles within {ability.Radius:0.00}. Pushes up to {ability.Definition.KnockbackDistance:0.00} along safe terrain. Resistant enemies still take damage and delay their next melee swing by at least 0.45s.";
-            tooltip+="\n"+slots;
+            if(AbilityTooltips.Warrior(World))tooltip=AbilityTooltips.Describe(World,ability);
+            else tooltip+="\n"+slots;
             if(slot.TooltipText!=tooltip)slot.TooltipText=tooltip;
         }
         var activeTarget=World.Abilities.Active?.CastTarget;

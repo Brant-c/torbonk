@@ -42,7 +42,7 @@ public partial class Health : Node
         if (existed) ShieldEnded?.Invoke(depleted);
     }
 
-    public float ApplyDamage(float amount, DamageType damageType = DamageType.Energy, bool isCritical = false)
+    public float ApplyDamage(float amount, DamageType damageType = DamageType.Energy, bool isCritical = false, string abilityId = "")
     {
         if (!IsAlive || !float.IsFinite(amount) || amount <= 0) return 0;
         float absorbed = Shielded ? Math.Min(ShieldRemaining, amount) : 0;
@@ -58,7 +58,7 @@ public partial class Health : Node
         Current -= applied;
         DamageEvents++;
         // Publish before reactions/death can despawn the recipient. Keep the legacy event intact.
-        Resolved?.Invoke(new HealthChange(CombatEventKind.Damage, applied, damageType, isCritical));
+        Resolved?.Invoke(new HealthChange(CombatEventKind.Damage, applied, damageType, isCritical, AbilityId: abilityId));
         Damaged?.Invoke(applied);
         if (!IsAlive) { ClearShield(); Died?.Invoke(); }
         return applied;
@@ -83,7 +83,7 @@ public partial class Health : Node
         }
     }
 
-    public float ApplyHealing(float amount, bool isCritical = false)
+    public float ApplyHealing(float amount, bool isCritical = false, string abilityId = "")
     {
         if (!IsAlive || !float.IsFinite(amount) || amount <= 0) return 0;
         float applied = Math.Min(Math.Max(0, Maximum - Current), amount);
@@ -93,3 +93,4 @@ public partial class Health : Node
         return applied;
     }
 }
+

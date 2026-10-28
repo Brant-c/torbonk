@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "forcecamouflage"
+Title = "Force Camouflage"
+Icon = "mr_feint"
+StartsUnlocked = false
+Damage = 1
+CooldownSeconds = 22
+Range = 0.4
+Radius = 0
+Area = 0
+WindupSeconds = 0
+ChannelSeconds = 0
+TickSeconds = 0.4
+RecoverySeconds = 0.12
+GestureSeconds = 0.95
+StartClip = "Marauder/cb_buff_feint"
+LoopClip = "Marauder/cb_buff_feint"
+RequireGesture = false
+PresentationKind = "saber"
+SourceFx = "epp.sith_warrior.feint.cast;epp.sith_warrior.feint.end;epp.sith_warrior.feint.loop"
+Description = "Two seconds of 65% avoidance and 35% movement speed."
+Category = 1
+Effect = 3
+BuffSeconds = 0.01
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+Slotless = false
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/fx_force_shockwave.png"
+
+FinishGesture = true
+GesturePriority = -5

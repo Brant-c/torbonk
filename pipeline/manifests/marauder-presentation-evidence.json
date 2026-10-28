@@ -1,0 +1,121 @@
+[
+  {
+    "source": "abl.sith_warrior.berserk",
+    "id": "0xE0001D8D4EB699BD",
+    "provenance": {
+      "path": "/resources/systemgenerated/buckets/161.bkt",
+      "uncompressedOffset": 37580,
+      "blockLength": 857,
+      "resourceSha256": "9eb403785fa34ca371a63546bf4e1fac10540d992a6da0a8bc0369c5d3019b24"
+    },
+    "appearances": [
+      "epp.sith_warrior.berserk.buff",
+      "epp.sith_warrior.berserk.cast_instant"
+    ],
+    "clips": [
+      "cb_buff_unleash"
+    ],
+    "textures": [
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\glow\\bw_fx_lsblue_flare_256.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\glow\\glow_basic_alpha.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\smoke\\2x2_whispy_smoke_a_01.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\berserk.png"
+    ]
+  },
+  {
+    "source": "abl.sith_warrior.predation",
+    "id": "0xE000C8C24C810AF3",
+    "provenance": {
+      "path": "/resources/systemgenerated/buckets/151.bkt",
+      "uncompressedOffset": 237364,
+      "blockLength": 589,
+      "resourceSha256": "39d97f2cf7aa2d85d6d0d49251de62af8b060770d7525a8c18fba7b877785d4a"
+    },
+    "appearances": [
+      "epp.sith_warrior.predation.buff",
+      "epp.sith_warrior.predation.cast_instant"
+    ],
+    "clips": [
+      "cb_buff_unleash"
+    ],
+    "textures": [
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\defaultassets\\black.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\electricity\\lighting_2x2_anim_01_bw.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\fire\\shockwave_bw_01.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\fire\\tile_fire_01_bw.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\glow\\bw_flare_gray.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\liquid\\caustics_tile_01.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\smoke\\env_fog_layer_projection_tile.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\smoke\\fx_smoke_2x2_alpha.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\trail\\cr_trail_swipe_heavy.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\trail\\trail_melee_02.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\forcecharge_old.png"
+    ]
+  },
+  {
+    "source": "abl.sith_warrior.frenzy",
+    "id": "0xE000DF807458791F",
+    "provenance": {
+      "path": "/resources/systemgenerated/buckets/331.bkt",
+      "uncompressedOffset": 242100,
+      "blockLength": 388,
+      "resourceSha256": "d69593a62f58603d5296a2eb6f527a18c00a449558f1ce95b01d2f4a0b372ab0"
+    },
+    "appearances": [
+      "epp.sith_warrior.frenzy.cast_instant",
+      "epp.sith_warrior.fury.buff"
+    ],
+    "clips": [
+      "cb_buff_frenzy"
+    ],
+    "textures": [
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\fire\\5x5_flame_lick_04_bw.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\fire\\tile_fire_01_bw.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\glow\\2x2_elec_blast_ring_alpha.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\glow\\bw_flare_gray.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\glow\\bw_fx_lsblue_flare_256.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\glow\\bw_orange_flare02.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\glow\\bw_starflare.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\glow\\glow_basic_alpha.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\liquid\\proj_caustics_02_bw.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\smoke\\fx_2x2_white_smoke_alpha.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\spark\\bw_fx_2x2_sparknglow_01.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\frenzy.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\rage.png"
+    ]
+  },
+  {
+    "source": "abl.sith_warrior.saber_throw",
+    "id": "0xE000E2FB8369E8DD",
+    "provenance": {
+      "path": "/resources/systemgenerated/buckets/25.bkt",
+      "uncompressedOffset": 271900,
+      "blockLength": 454,
+      "resourceSha256": "9884f9ef0176d6aef4a9e037c7afd3e16b14d02979649740c5e56a56f43cbd96"
+    },
+    "appearances": [
+      "epp.sith_warrior.saber_throw.projectile",
+      "epp.sith_warrior.saber_throw.throw"
+    ],
+    "clips": [
+      "cb_saber_throw_end",
+      "cb_saber_throw_loop",
+      "cb_saber_throw_start"
+    ],
+    "textures": [
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\defaultassets\\black.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\glow\\2x2_elec_blast_ring_alpha.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\glow\\bw_flare_gray.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\glow\\bw_fx_lsblue_flare_256.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\glow\\bw_orange_flare02.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\glow\\glow_basic_alpha.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\spark\\bw_fx_2x2_sparknglow_01.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\weapon_melee\\bw_saber_left_01.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\weapon_melee\\dynamic_saber_core.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\weapon_melee\\dynamic_saber_with_alpha.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\weapon_melee\\fx_saber_hilt_01.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\art\\fx\\texture\\weapon_melee\\lightsaber02_trail_nomips.png",
+      "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\saberthrowsith.png"
+    ]
+  }
+]

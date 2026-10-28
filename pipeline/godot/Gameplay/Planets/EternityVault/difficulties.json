@@ -1,0 +1,35 @@
+{
+  "Normal": {
+    "EnemyHealth": 0.75,
+    "EnemyDamage": 0.7,
+    "Population": 0.75,
+    "SpawnInterval": 1.2,
+    "WarningTime": 1.25,
+    "AttackInterval": 1.2,
+    "RecoveryTime": 1.25
+  },
+  "Hard": {
+    "MechanicRadius": 1.18,
+    "MechanicsTier": 1,
+    "WarningTime": 0.95,
+    "BossAddCapFraction": 0.75,
+    "FinalBossAddCapFraction": 0.5,
+    "BossAddCadence": 1.5,
+    "FinalBossAddCadence": 1.25
+  },
+  "Nightmare": {
+    "EnemyHealth": 1.35,
+    "EnemyDamage": 1.3,
+    "Population": 1.25,
+    "SpawnInterval": 0.85,
+    "WarningTime": 0.75,
+    "AttackInterval": 0.85,
+    "RecoveryTime": 0.85,
+    "MechanicRadius": 1.35,
+    "MechanicsTier": 2,
+    "BossAddCapFraction": 0.95,
+    "FinalBossAddCapFraction": 0.75,
+    "BossAddCadence": 1,
+    "FinalBossAddCadence": 1
+  }
+}

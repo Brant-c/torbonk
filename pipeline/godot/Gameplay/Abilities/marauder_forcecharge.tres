@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "forcecharge"
+Title = "Force Charge"
+Icon = "mr_forceCharge"
+StartsUnlocked = false
+Damage = 26
+CooldownSeconds = 8
+Range = 1.1
+Radius = 0
+Area = 0
+WindupSeconds = 0
+ChannelSeconds = 0
+TickSeconds = 0.4
+RecoverySeconds = 0.12
+GestureSeconds = 0.65
+StartClip = "Marauder/cb_2saber_charge_4"
+LoopClip = "Marauder/cb_2saber_charge_4"
+RequireGesture = true
+PresentationKind = "saber"
+SourceFx = "epp.agent.leg_shot.debuff;epp.sith_warrior.force_charge.cast_instant"
+Description = "Force Charge - rapid dual-saber combat."
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/bw_flare_gray.png"
+WeaponAudio = "res://Assets/D3/Audio/173808209.wav"
+OffhandAudio = "res://Assets/D3/Audio/173808209.wav"
+
+FinishGesture = true

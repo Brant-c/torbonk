@@ -54,7 +54,7 @@ public partial class AudioPresentation : Node
 
     public override void _Ready()
     {
-        ProcessMode = ProcessModeEnum.Always; AddToGroup(Group);
+        AudioPreferences.Load(); ProcessMode = ProcessModeEnum.Always; AddToGroup(Group);
         using var config = JsonDocument.Parse(FileAccess.GetFileAsString(TuningPath));
         var root = config.RootElement;
         _voiceLimit = root.GetProperty("maximumPresentationVoices").GetInt32();
@@ -151,7 +151,7 @@ public partial class AudioPresentation : Node
         foreach (var (category, item) in _categories)
         {
             float duck = category switch { "Combat" => _combatDuckDb, "Music" => _musicDuckDb, "World" => _worldDuckDb, _ => 0 };
-            AudioServer.SetBusVolumeDb(item.bus, item.gain + duck * _duck);
+            AudioServer.SetBusVolumeDb(item.bus, item.gain + AudioPreferences.Offset(category) + duck * _duck);
         }
         foreach (var voice in _voices)
         {
@@ -172,3 +172,4 @@ public partial class AudioPresentation : Node
     }
     public override void _ExitTree() => Clear();
 }
+

@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "ravage"
+Title = "Ravage"
+Icon = "mr_bladerush"
+StartsUnlocked = false
+Damage = 22
+CooldownSeconds = 7
+Range = 0.4
+Radius = 0
+Area = 0
+WindupSeconds = 0
+ChannelSeconds = 1.5
+TickSeconds = 0.5
+RecoverySeconds = 0.12
+GestureSeconds = 1.5
+StartClip = "Marauder/cb_2saber_sp3_attack_right_6"
+LoopClip = "Marauder/cb_2saber_sp3_attack_right_6"
+RequireGesture = true
+MaintainChannelGesture = true
+PresentationKind = "saber"
+SourceFx = "epp.jedi_knight.master_strike.cancel;epp.jedi_knight.master_strike.target_cancel;epp.sith_warrior.ravage.cast_channel;epp.sith_warrior.ravage.reaction"
+Description = "Three rapid dual-saber hits over 1.5 seconds, with the complete recovered multi-strike sequence. Movement remains available."
+DetachedArea = false
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/bw_flare_gray.png"
+ImpactAudio = "res://Assets/D3/Audio/174681073.wav"
+WeaponAudio = "res://Assets/D3/Audio/173808209.wav"
+OffhandAudio = "res://Assets/D3/Audio/173808209.wav"
+
+FinishGesture = true
+
+FullBodyGesture = true

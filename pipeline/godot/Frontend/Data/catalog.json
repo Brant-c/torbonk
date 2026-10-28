@@ -268,6 +268,22 @@
       "X": 0.35,
       "Y": 0.5,
       "GameplayImplemented": true
+    },
+    {
+      "Id": "eternity_vault",
+      "ContentKind": "Operation",
+      "EncounterId": "xrr3",
+      "EncounterName": "Annihilation Droid XRR-3",
+      "EncounterRegion": "Surface",
+      "PreviewModel": "res://Assets/Maps/eternity_vault/Enemies/xrr3.glb",
+      "Name": "Eternity Vault",
+      "Region": "Belsavis \u00b7 Surface",
+      "Description": "Fight from level 1 to 50 across the frozen surface. Survive wildlife, prison guards and the Annihilation Droid XRR-3.",
+      "Artwork": "res://Assets/UI/loading/eternity_vault_overlay.png",
+      "Surface": "res://Frontend/Assets/Recovered/planets_belsavis_d.png",
+      "X": 0.4,
+      "Y": 0.5,
+      "GameplayImplemented": true
     }
   ]
 }

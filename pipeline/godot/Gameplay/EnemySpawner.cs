@@ -19,8 +19,10 @@ public partial class EnemySpawner : Node3D
     public int HardActiveLimit { get; set; } = int.MaxValue;
     public int ReservedSlots { get; set; }
     public int ExperienceDropEvery { get; set; } = 1;
+    public int ExperienceMultiplier { get; set; } = 1;
     public bool ReinforcementsEnabled { get; set; } = true;
     public RunDifficulty? Difficulty { get; set; }
+    public OperationDifficultyTuning OperationMode {get;set;}=OperationDifficultyTuning.Baseline;
     public Func<int>? PlayerLevel { get; set; }
     public Dictionary<string, int> ReferenceLevels { get; } = new();
     public float HealthMultiplier { get; set; } = 1;
@@ -53,6 +55,7 @@ public partial class EnemySpawner : Node3D
         var source = scene ?? EnemyScene;
         var body = source.Instantiate<CharacterBody3D>();
         var enemy = body.GetNode<EnemyAgent>("Actor");
+        enemy.ExperienceReward=(int)Math.Clamp((long)enemy.ExperienceReward*Math.Max(1,ExperienceMultiplier),1,int.MaxValue);
         if(enemy.GetNodeOrNull<EnemyPresentation>("Visual") is {} visual)visual.ReuseLoopLibrary=ReuseAnimations;
         if(elite) { enemy.RewardTier=1;enemy.KnockbackResistance=0.65f;enemy.DisplayName="Elite "+enemy.DisplayName;enemy.GetNode<Health>("Health").Maximum*=2;enemy.ExperienceReward*=2; }
         string key = $"{enemy.CollisionRadius}/{enemy.CollisionHeight}";
@@ -80,9 +83,12 @@ public partial class EnemySpawner : Node3D
                 enemy.SpawnLevel = Math.Max(1, PlayerLevel?.Invoke() ?? 1);
                 enemy.ReferenceLevel = ReferenceLevels.GetValueOrDefault(source.ResourcePath, 1);
                 int levels = Math.Max(0, enemy.SpawnLevel - enemy.ReferenceLevel);
-                health.Maximum *= (float)Math.Pow(1 + tuning.HealthPerLevel, levels);
-                enemy.LevelDamageMultiplier = tuning.EndlessPressure ? (float)Math.Pow(1 + tuning.DamagePerLevel, levels) : 1 + tuning.DamagePerLevel * levels;
+                health.Maximum *= tuning.EnemyHealthMultiplier * (float)Math.Pow(1 + tuning.HealthPerLevel, levels);
+                enemy.LevelDamageMultiplier = tuning.EndlessPressure || tuning.ExponentialDamageScaling ? (float)Math.Pow(1 + tuning.DamagePerLevel, levels) : 1 + tuning.DamagePerLevel * levels;
+                enemy.LevelDamageMultiplier *= tuning.EnemyDamageMultiplier;
+                enemy.AttackInterval *= OperationMode.AttackInterval;
                 var pattern = enemy.GetNodeOrNull<TombAttack>("TombAttack");
+                if(pattern!=null) {pattern.Windup*=OperationMode.WarningTime;pattern.Cooldown*=OperationMode.AttackInterval;}
                 if(pattern != null && tuning.EndlessPressure) { pattern.Cooldown /= 1 + Math.Min(1.5f, levels * .025f); pattern.Windup = Math.Max(.5f, pattern.Windup / (1 + levels * .008f)); }
                 enemy.MoveSpeed *= 1 + Math.Min(tuning.MaximumSpeedBonus, tuning.SpeedPerLevel * levels);
                 enemy.AttackInterval /= 1 + Math.Min(tuning.MaximumAttackFrequencyBonus, tuning.AttackFrequencyPerLevel * levels);
@@ -153,6 +159,13 @@ public partial class EnemySpawner : Node3D
     {
         Running = false;
         foreach (var enemy in _enemies) if (GodotObject.IsInstanceValid(enemy)) enemy.Stop();
+    }
+
+    public void ClearRegularEnemies()
+    {
+        // Despawn without death or rewards; the encounter intro must not farm XP.
+        foreach(var enemy in _enemies.ToArray())
+            if(GodotObject.IsInstanceValid(enemy) && enemy.Alive && enemy.RewardTier<2)enemy.Body.QueueFree();
     }
 
     public void ResetSpawner()

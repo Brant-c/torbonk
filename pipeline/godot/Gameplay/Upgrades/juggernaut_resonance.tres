@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/UpgradeDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "juggernaut_resonance"
+Title = "Resonant Voice"
+Icon = "jg_forcescream"
+AbilityId = "forcescream"
+Effect = 9
+Mechanic = "jg_resonance"
+MaximumRank = 3
+AmountPerRank = 0
+MechanicalDescription = "Force Scream gains +2 nearby targets per rank: 3 / 5 / 7 targets. Secondary targets take 65% damage."

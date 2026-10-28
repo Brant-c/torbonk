@@ -47,6 +47,8 @@ public partial class PeriodicEffects : Node
             Next=source.Build?.Pregame.PeriodicInterval(source)??d.PeriodicInterval,Interval=source.Build?.Pregame.PeriodicInterval(source)??d.PeriodicInterval,Dose=dose,
             Damage=d.PeriodicDamage*scale*(1+.1f*dose)*(source.DamagePerTick/Math.Max(.001f,d.Damage)) };
         _effects[key]=effect;
+        if(source.Build?.World.RunConfiguration.AdvancedClassId is "marauder" or "juggernaut")
+            effect.Visual=PresentationStatusVisual.AttachWarrior(target,d.Id=="forcecrush",()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
         if(d.Id=="affliction")effect.Visual=PresentationStatusVisual.AttachAffliction(target,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
         if(d.Id=="crushingdarkness")effect.Visual=PresentationStatusVisual.AttachDarkness(target,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
         if(d.Id=="creepingterror")effect.Visual=PresentationStatusVisual.AttachTerror(target,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);

@@ -115,6 +115,11 @@ public partial class D3AbilityPresentation
     }
     private bool ShowDistinctShield()
     {
+        if(WarriorVisual && Definition.Id=="saberward"){
+            _bubble=new Node3D {Name="SaberWardAura"};AddChild(_bubble);
+            var guard=Sprite(WarriorTexture+"glow/vfx_force_impact_ring.png",.22f);guard.Modulate=new Color(1,.65f,.25f,.4f);_bubble.AddChild(guard);
+            _bubble.GlobalPosition=ShieldPosition();return true;
+        }
         if(Definition.Id=="shieldprobe")
         {
             _bubble=GD.Load<PackedScene>(RepairAssets+"vfx_probe_mini01.glb").Instantiate<Node3D>();

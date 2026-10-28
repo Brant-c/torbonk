@@ -1,0 +1,38 @@
+00:05.109  blend            | Read blend: "D:\SWTORClassic\torbonk\pipeline\work\sorcerer-portable.blend"
+register_class(...):
+Warning: 'import_mesh.gr2_presets' does not contain '_MT_' with prefix and suffix
+Progress:   0.00%
+(  0.0002 sec |   0.0002 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_saber_sp3_attack_right_6.jba' ...
+Progress:   0.00%
+  (  0.0002 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0186 sec |   0.0184 sec) Done, building ...
+Progress: 100.00%
+  (  0.2053 sec |   0.2051 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_saber_sp3_attack_right_6.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_2saber_sp1_attack_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0063 sec |   0.0063 sec) Done, building ...
+Progress: 100.00%
+  (  0.0657 sec |   0.0657 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_2saber_sp1_attack_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+11:36:35 | INFO: Starting glTF 2.0 export
+11:36:35 | INFO: Extracting primitive: boot_tall_bmn_archetype
+11:36:35 | INFO: Primitives created: 1
+11:36:36 | INFO: Finished glTF 2.0 export in 0.8906512260437012 s
+
+warrior-library animation conversion complete
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

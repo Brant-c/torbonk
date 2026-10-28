@@ -62,6 +62,7 @@ public partial class WaveDirector : Node
         {
             Spawner.Difficulty = PlanetRun.Difficulty;
             Spawner.ExperienceDropEvery = Math.Max(1,PlanetRun.EnemyExperienceDropEvery);
+            Spawner.ExperienceMultiplier = Math.Max(1,PlanetRun.EnemyExperienceMultiplier);
             Spawner.Difficulty.EndlessPressure = PlanetRun.Endless;
             Spawner.PlayerLevel = () => PlayerLevel?.Invoke() ?? 1;
             Spawner.HardActiveLimit = Math.Max(1, PlanetRun.Difficulty.MaximumPopulation);

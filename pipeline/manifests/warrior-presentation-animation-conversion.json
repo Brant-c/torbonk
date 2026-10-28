@@ -1,0 +1,19 @@
+{
+  "clips": [
+    {
+      "name": "SaberRavage",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_saber_sp3_attack_right_6.jba",
+      "seconds": 3.933333396911621,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "DualViciousSlash",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2saber_sp1_attack_right_1.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    }
+  ],
+  "output": "godot\\Assets\\WarriorPresentation\\casts.glb",
+  "sha256": "dbdd2ac2eb154720dd6a5d95f2721e9393726ab7f29da358692a385830e45c79",
+  "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
+}

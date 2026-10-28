@@ -26,5 +26,9 @@ ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/fire/4x4_fl
 CastAudio = "res://Assets/WarriorLibrary/Audio/22465456.wav"
 ImpactAudio = "res://Assets/WarriorLibrary/Audio/216077368.wav"
 SourceFx = "epp.sith_warrior.retaliation.retaliation_anticipation;epp.sith_warrior.retaliation.retaliation_real"
-Description = "April Warrior ability; survivors adaptation."
+Description = "Counterattack within 4 seconds of taking damage. Conditional reaction; no offensive slot."
 Slotless = true
+
+FullBodyGesture = true
+
+FinishGesture = true

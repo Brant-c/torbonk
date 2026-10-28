@@ -23,7 +23,10 @@ def main():
         assert f.get('ParentInstance', '0') == '0' and vec(f, 'Rotation', '(0,0,0)') == [0, 0, 0] and vec(f, 'Scale', '(1,1,1)') == [1, 1, 1], rec['id']
         data = decode(rec)
         if data['embeddedPosition'] is not None:
-            assert max(abs(a - b) for a, b in zip(data['embeddedPosition'], p)) < 1e-8
+            # Copied source patches can retain their original embedded origin.
+            # Vertices are local; the room placement remains authoritative.
+            data['embeddedPositionDelta'] = [a - b for a, b in zip(data['embeddedPosition'], p)]
+            assert R.get('allowCopiedTerrainOrigins', False) or max(abs(v) for v in data['embeddedPositionDelta']) < 1e-8
         terrain.append(dict(id=rec['id'], asset=rec['asset'], room=R['room'], sourceLine=rec['line'],
                             tessellation=f.get('tesselation', ''), position=p, **data))
     assert terrain, 'no terrain patches in window'

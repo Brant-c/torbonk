@@ -48,6 +48,20 @@ public partial class CombatMeterSmoke : Node
             Check("death preserves totals and freezes rates",world.Progression.ElapsedSeconds==deathTime && meter.OverallDamage==100 && meter.OverallHealing==40);
             world.ResetCombatWorld(); world.Waves.Stop(); world.Spawner.Running=false;
             Check("restart clears totals and rates",meter.OverallDamage==0 && meter.OverallHealing==0 && meter.Dps==0 && meter.Hps==0);
+            var abilities=world.Hud.AbilityMeter;
+            Check("ability reset clears all rows",abilities.Damage.Count==0);
+            target.Health.Restore();target.Health.ApplyShield(20,30);
+            target.Health.ApplyDamage(30,abilityId:"ravage");target.Health.ApplyDamage(500,abilityId:"ravage");
+            Check("ability damage excludes shield and overkill",abilities.Damage.GetValueOrDefault("ravage")==100);
+            target.Health.Restore();target.Health.ApplyDamage(25,abilityId:"assault");
+            world.PlayerActor.Health.ApplyDamage(1);
+            Check("abilities remain separate and exclude incoming damage",abilities.Damage.Count==2 && abilities.Damage["assault"]==25 && abilities.Damage["ravage"]==100);
+            await Frames(3);
+            Check("ability DPS uses run clock",Math.Abs(abilities.Dps("ravage")-100/world.Progression.ElapsedSeconds)<.001);
+            GetTree().Paused=true;double abilityDps=abilities.Dps("ravage");await Frames(3);
+            Check("ability DPS freezes while paused",abilities.Dps("ravage")==abilityDps);GetTree().Paused=false;
+            world.ResetCombatWorld();world.Waves.Stop();world.Spawner.Running=false;
+            Check("restart clears ability damage",abilities.Damage.Count==0 && abilities.Dps("ravage")==0);
             // Populate a readable capture through the same resolved-health path.
             target.Health.Maximum=300000; target.Health.Restore(); target.Health.ApplyDamage(248560);
             world.PlayerActor.Health.Maximum=40000; world.PlayerActor.Health.Restore();
@@ -67,3 +81,4 @@ public partial class CombatMeterSmoke : Node
         GetTree().Quit(failure==null?0:1);
     }
 }
+

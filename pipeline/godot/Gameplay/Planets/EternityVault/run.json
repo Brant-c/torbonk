@@ -1,0 +1,221 @@
+{
+  "CoreLevel": 50,
+  "FirstLevelExperience": 16,
+  "ExperienceGrowth": 1.075,
+  "Difficulty": {
+    "HealthPerLevel": 0.08,
+    "DamagePerLevel": 0.045,
+    "SpeedPerLevel": 0.01,
+    "MaximumSpeedBonus": 0.85,
+    "AttackFrequencyPerLevel": 0.018,
+    "MaximumAttackFrequencyBonus": 0.85,
+    "InitialPopulation": 8,
+    "PopulationPerLevel": 1,
+    "MaximumPopulation": 24,
+    "InitialSpawnInterval": 0.6,
+    "MinimumSpawnInterval": 0.2,
+    "RecoverySeconds": 5,
+    "ReturnRampSeconds": 3,
+    "ExponentialDamageScaling": true
+  },
+  "ArtifactCatalog": "res://Gameplay/Planets/Korriban/artifacts.json",
+  "AudioTuning": "res://Gameplay/Planets/EternityVault/audio.json",
+  "Endless": false,
+  "EnemyExperienceDropEvery": 2,
+  "Caches": [],
+  "EnemyExperienceMultiplier": 2,
+  "Stages": [
+    {
+      "Level": 1,
+      "Region": "Snow Wilderness",
+      "Description": "Hold the surface. Kill hostiles, collect experience and prepare for the next security escalation.",
+      "Focus": [
+        -64,
+        2.8,
+        30.7
+      ],
+      "AmbientGain": -22,
+      "SourceEncounter": "b:enc.location.flashpoint.raid.eternity_vault.flavor.enc_snow_wilderness",
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/IceCat.tscn",
+          "Weight": 1
+        }
+      ]
+    },
+    {
+      "Level": 4,
+      "Region": "Wildlife Migration",
+      "Description": "Hold the surface. Kill hostiles, collect experience and prepare for the next security escalation.",
+      "Focus": [
+        -64,
+        2.8,
+        30.7
+      ],
+      "AmbientGain": -22,
+      "SourceEncounter": "a:enc.location.flashpoint.raid.eternity_vault.flavor.enc_snow_wilderness",
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/IceCat.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/Tauntaun.tscn",
+          "Weight": 2
+        }
+      ]
+    },
+    {
+      "Level": 11,
+      "Region": "Prison Guard Patrol",
+      "Description": "Hold the surface. Kill hostiles, collect experience and prepare for the next security escalation.",
+      "Focus": [
+        -64,
+        2.8,
+        30.7
+      ],
+      "AmbientGain": -22,
+      "SourceEncounter": "a:enc.location.flashpoint.raid.eternity_vault.enemy.enc_trash_prison_guards",
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/Guard.tscn",
+          "Weight": 4
+        },
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/IceCat.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/Tauntaun.tscn",
+          "Weight": 1
+        }
+      ]
+    },
+    {
+      "Level": 16,
+      "Region": "Security Response",
+      "Description": "Hold the surface. Kill hostiles, collect experience and prepare for the next security escalation.",
+      "Focus": [
+        -64,
+        2.8,
+        30.7
+      ],
+      "AmbientGain": -22,
+      "SourceEncounter": "authored mixed security response",
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/Guard.tscn",
+          "Weight": 4
+        },
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/Gunner.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/IceCat.tscn",
+          "Weight": 1
+        }
+      ]
+    },
+    {
+      "Level": 26,
+      "Region": "Rakata Lockdown",
+      "Description": "Hold the surface. Kill hostiles, collect experience and prepare for the next security escalation.",
+      "Focus": [
+        -64,
+        2.8,
+        30.7
+      ],
+      "AmbientGain": -22,
+      "SourceEncounter": "authored mixed lockdown",
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/Guard.tscn",
+          "Weight": 4
+        },
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/Gunner.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/IceCat.tscn",
+          "Weight": 2
+        }
+      ]
+    },
+    {
+      "Level": 36,
+      "Region": "Siege Protocol",
+      "Description": "Hold the surface. Kill hostiles, collect experience and prepare for the next security escalation.",
+      "Focus": [
+        -64,
+        2.8,
+        30.7
+      ],
+      "AmbientGain": -22,
+      "SourceEncounter": "authored siege pressure",
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/Guard.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/Gunner.tscn",
+          "Weight": 4
+        },
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/IceCat.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/Tauntaun.tscn",
+          "Weight": 1
+        }
+      ]
+    },
+    {
+      "Level": 46,
+      "Region": "Annihilation Protocol",
+      "Description": "XRR-3 activates at level 50. Keep routes open and evade security fire.",
+      "Focus": [
+        -64,
+        2.8,
+        30.7
+      ],
+      "AmbientGain": -22,
+      "SourceEncounter": "authored final approach",
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/Guard.tscn",
+          "Weight": 4
+        },
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/Gunner.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/EternityVault/IceCat.tscn",
+          "Weight": 1
+        }
+      ]
+    }
+  ],
+  "Milestones": [
+    {
+      "Level": 10,
+      "Encounter": "res://Gameplay/Planets/EternityVault/IceMatriarchEncounter.tres"
+    },
+    {
+      "Level": 25,
+      "Encounter": "res://Gameplay/Planets/EternityVault/GuardCaptainEncounter.tres"
+    },
+    {
+      "Level": 40,
+      "Encounter": "res://Gameplay/Planets/EternityVault/SiegeWardenEncounter.tres"
+    },
+    {
+      "Level": 50,
+      "Encounter": "res://Gameplay/Planets/EternityVault/Xrr3Encounter.tres"
+    }
+  ]
+}

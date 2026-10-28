@@ -1,0 +1,149 @@
+{
+  "icecat": {
+    "skeleton": "/resources/art/dynamic/spec/catboss_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "creature",
+        "modelId": "1000473",
+        "materialId": "1001432",
+        "models": [
+          "/resources/art/dynamic/creature/model/cat_pantranwhitefang_a01.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/cat_pantranwhitefang_a01_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/creature/cat/texture/___psd/cat_pantranwhitefang_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/creature/cat/texture/___psd/cat_pantranwhitefang_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/creature/cat/texture/___psd/cat_pantranwhitefang_a01_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/creature/cat/texture/___psd/cat_pantranwhitefang_a01_v01_m.dds",
+            "DirectionMap": "/resources/art/lookuptables/table_hair_02.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/creature/cat/cb_ready_1.jba",
+      "Run": "/resources/anim/creature/cat/mv_run_forward.jba",
+      "Attack": "/resources/anim/creature/cat/cb_attack_1.jba",
+      "Hit": "/resources/anim/creature/cat/dg_damage_1.jba",
+      "Death": "/resources/anim/creature/cat/dg_death_1.jba",
+      "Walk": "/resources/anim/creature/cat/mv_walk_forward.jba"
+    }
+  },
+  "tauntaun": {
+    "skeleton": "/resources/art/dynamic/spec/tauntaun_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "creature",
+        "modelId": "1000154",
+        "materialId": "1001461",
+        "models": [
+          "/resources/art/dynamic/creature/model/tauntaun_tauntaun_a01.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/tauntaun_tauntaun_a01_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/creature/tauntaun/texture/___psd/tauntaun_tauntaun_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/creature/tauntaun/texture/___psd/tauntaun_tauntaun_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/creature/tauntaun/texture/___psd/tauntaun_tauntaun_a01_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/dynamic/creature/tauntaun/texture/___psd/tauntaun_tauntaun_a01_v01_m.dds",
+            "DirectionMap": "/resources/art/lookuptables/table_hair_creature_01.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/creature/tauntaun/cb_ready_1.jba",
+      "Run": "/resources/anim/creature/tauntaun/mv_run_forward.jba",
+      "Attack": "/resources/anim/creature/tauntaun/cb_attack_1.jba",
+      "Hit": "/resources/anim/creature/tauntaun/dg_damage_1.jba",
+      "Death": "/resources/anim/creature/tauntaun/dg_death_1.jba"
+    }
+  },
+  "guard": {
+    "skeleton": "/resources/art/dynamic/spec/bmfnew_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "creature",
+        "modelId": "1005669",
+        "materialId": "1177013",
+        "models": [
+          "/resources/art/dynamic/creature/model/bmf_underworlddroid_a01.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/bmf_underworlddroid_a01_v02.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/droid/bmf_droid/texture/___psd/bmf_underworlddroid_a01_v02_d.dds",
+            "RotationMap1": "/resources/art/dynamic/droid/bmf_droid/texture/___psd/bmf_underworlddroid_a01_v02_n.dds",
+            "GlossMap": "/resources/art/dynamic/droid/bmf_droid/texture/___psd/bmf_underworlddroid_a01_v02_s.dds",
+            "PaletteMaskMap": "/resources/art/defaultassets/black.dds",
+            "DirectionMap": "/resources/art/defaultassets/flat_n.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/humanoid/bmfnew/cb_pole_idle_right_1.jba",
+      "Run": "/resources/anim/humanoid/bmfnew/mv_cb_pole_run_forward.jba",
+      "Attack": "/resources/anim/humanoid/bmfnew/cb_pole_attack_right_1.jba",
+      "Hit": "/resources/anim/humanoid/bmfnew/dg_unarmed_crit_damage_right_1.jba",
+      "Death": "/resources/anim/humanoid/bmfnew/dg_death_1.jba",
+      "Walk": "/resources/anim/humanoid/bmfnew/mv_cb_pole_walk_forward.jba"
+    }
+  },
+  "xrr3": {
+    "skeleton": "/resources/art/dynamic/spec/battlewarbotrakataboss_skeleton.gr2",
+    "parts": [
+      {
+        "slot": "creature",
+        "modelId": "1492589",
+        "materialId": "1492590",
+        "models": [
+          "/resources/art/dynamic/creature/model/battledroid_warbot_rakata.gr2"
+        ],
+        "material": {
+          "path": "/resources/art/shaders/materials/battledroid_warbot_rakata_v01.mat",
+          "derived": "Creature",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/droid/battle_droid/texture/___psd/battledroid_warbot_rakata_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/droid/battle_droid/texture/___psd/battledroid_warbot_rakata_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/droid/battle_droid/texture/___psd/battledroid_warbot_rakata_v01_s.dds",
+            "PaletteMaskMap": "/resources/art/defaultassets/black.dds",
+            "DirectionMap": "/resources/art/lookuptables/table_hair_01.dds"
+          }
+        },
+        "overrides": []
+      }
+    ],
+    "clips": {
+      "Idle": "/resources/anim/droid/battle_warbot_rakata_boss/cb_ready_1.jba",
+      "Run": "/resources/anim/droid/battle_warbot_rakata_boss/mv_run_forward.jba",
+      "Attack": "/resources/anim/droid/battle_warbot_rakata_boss/cb_attack_1.jba",
+      "Hit": "/resources/anim/droid/battle_warbot_rakata_boss/dg_damage_1.jba",
+      "Death": "/resources/anim/droid/battle_warbot_rakata_boss/dg_death_1.jba",
+      "Walk": "/resources/anim/droid/battle_warbot_rakata_boss/mv_walk_forward.jba"
+    }
+  },
+  "weapons": {
+    "staff": {
+      "model": "/resources/art/dynamic/weapon/model/electrostaff_high04_a03_v01.gr2",
+      "materials": [
+        {
+          "path": "/resources/art/shaders/materials/electrostaff_high04_a01_v01.mat",
+          "derived": "Uber",
+          "textures": {
+            "DiffuseMap": "/resources/art/dynamic/weapon/texture/electrostaff_high04_a01_v01_d.dds",
+            "RotationMap1": "/resources/art/dynamic/weapon/texture/electrostaff_high04_a01_v01_n.dds",
+            "GlossMap": "/resources/art/dynamic/weapon/texture/electrostaff_high04_a01_v01_s.dds"
+          }
+        }
+      ]
+    }
+  }
+}

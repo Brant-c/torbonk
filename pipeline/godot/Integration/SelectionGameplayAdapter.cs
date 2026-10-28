@@ -4,6 +4,8 @@ public sealed record GameplayConfiguration(string FactionId,string BaseClassId,s
     string AppearancePresetId,string WorldScene,string EnvironmentScene,string CharacterScene)
 {
     public ClassProfile Profile=>ClassProfile.Find(AdvancedClassId)!;
+    public string OperationDifficulty {get;init;}="Hard";
+    public OperationDifficultyTuning ModeTuning=>OperationDifficultyTuning.Resolve(MapId,OperationDifficulty);
 }
 public static class SelectionGameplayAdapter
 {
@@ -17,11 +19,13 @@ public static class SelectionGameplayAdapter
         if(selection==null || selection.SchemaVersion!=1)return false;
         var map=MapRegistry.Find(selection.MapId);
         if(map==null)return false;
+        if(map.Id=="eternity_vault" && !OperationDifficultyTuning.IsValid(selection.OperationDifficulty))
+        {reason="Choose Normal, Hard or Nightmare difficulty.";return false;}
         var p=ClassProfile.Find(selection.AdvancedClassId);
         if(p==null || p.Faction!=selection.FactionId || p.BaseClass!=selection.BaseClassId || !p.Ready)return false;
         if(!selection.Appearance.IsSupportedPreset || selection.Appearance.PresetId!=p.Appearance)
         {reason="The selected appearance does not match this class profile.";return false;}
         if(map.FactionId!=null && map.FactionId!=p.Faction){reason="This destination is not open to the selected faction.";return false;}
-        configuration=Configuration(p,map);reason="";return true;
+        configuration=Configuration(p,map) with {OperationDifficulty=map.Id=="eternity_vault"?selection.OperationDifficulty:"Hard"};reason="";return true;
     }
 }

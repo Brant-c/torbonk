@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UpgradeDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/UpgradeDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "juggernaut_sundering"
+Title = "Sundering Swings"
+Icon = "jg_sunderingassault"
+AbilityId = "sunderingassault"
+Effect = 9
+Mechanic = "jg_sundering"
+MaximumRank = 3
+AmountPerRank = 0
+MechanicalDescription = "Sundering Assault cleaves +1 enemy per rank: 2 / 3 / 4 targets. Secondary hits deal 60% damage and weaken armor."

@@ -79,7 +79,10 @@ public partial class RewardPresentation : CanvasLayer
             World.Audio.PlayCue("boss_start");
         else if (state == EncounterState.Defeated)
         {
-            _queue.Enqueue((encounter.Boss!.RewardTier>=2?"BOSS DEFEATED":"ELITE DEFEATED", encounter.Definition.Title, $"{encounter.Boss.ExperienceReward} XP RELEASED  ·  COLLECT YOUR REWARD", "boss_victory"));
+            string detail=World.Progression!.MaximumLevel>0 && World.Progression.Level>=World.Progression.MaximumLevel
+                ? "LEVEL CAP REACHED  ·  COLLECT YOUR REWARD"
+                : $"{encounter.Boss!.ExperienceReward} XP RELEASED  ·  COLLECT YOUR REWARD";
+            _queue.Enqueue((encounter.Boss!.RewardTier>=2?"BOSS DEFEATED":"ELITE DEFEATED", encounter.Definition.Title, detail, "boss_victory"));
             Burst(encounter.Boss.GlobalPosition, SwtorSkin.Gold);
         }
         else if (state is EncounterState.Failed or EncounterState.Scheduled) Clear();

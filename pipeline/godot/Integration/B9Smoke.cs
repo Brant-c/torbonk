@@ -84,11 +84,12 @@ public partial class B9Smoke : Node
             Check("jump lands normally without a queued repeat", world.Player.IsOnFloor() && Mathf.Abs(world.Player.GlobalPosition.Y-groundY) < 0.04f);
             await Point(new Vector2(450,300));
             Check("world test point is outside interactive HUD", !SwtorCursor.PointerOverUi(GetViewport()));
+            world.Player.TestInput = null;
             var facing = world.Player.Presentation.Rotation; float yaw = rig.YawDegrees;
-            Button(MouseButton.Right); Motion(new Vector2(120,-40)); await Frames();
-            Check("RMB captures and rotates independently of a stationary character", rig.Orbiting && cursor.Captured
+            Button(MouseButton.Right); Motion(new Vector2(120,-40)); await Frames(8);
+            Check("RMB captures and steers a stationary character", rig.Orbiting && cursor.Captured
                 && Input.MouseMode == Input.MouseModeEnum.Captured && rig.YawDegrees != yaw
-                && world.Player.Presentation.Rotation.IsEqualApprox(facing));
+                && !world.Player.Presentation.Rotation.IsEqualApprox(facing));
             Motion(new Vector2(0,-10000));
             rig.UpdateCamera(0);
             Check("pitch reaches below the horizon directly without easing or flips", rig.AngleDegrees == rig.MinimumPitch
@@ -104,11 +105,54 @@ public partial class B9Smoke : Node
             Button(MouseButton.Right,false); await Frames();
             Check("RMB release restores native cursor", !rig.Orbiting && !cursor.Captured && Input.MouseMode == Input.MouseModeEnum.Visible);
             await Point(new Vector2(450,300)); yaw = rig.YawDegrees;
+            facing = world.Player.Presentation.Rotation;
+            world.Player.TestInput = null;
             Button(MouseButton.Left); Motion(new Vector2(1,0));
             Check("LMB click waits for drag threshold", !rig.Orbiting && rig.YawDegrees == yaw);
             Motion(new Vector2(40,0)); await Frames();
             Check("LMB world drag orbits", rig.Orbiting && rig.YawDegrees != yaw);
+            Check("LMB orbit preserves character facing", world.Player.Presentation.Rotation.IsEqualApprox(facing));
             Button(MouseButton.Left,false); await Frames();
+            foreach (var first in new[] { MouseButton.Left, MouseButton.Right })
+            foreach (bool releaseFirst in new[] { false, true })
+            {
+                await Point(new Vector2(450,300));
+                var second = first == MouseButton.Left ? MouseButton.Right : MouseButton.Left;
+                Button(first); Button(second);
+                Check("both buttons start forward movement without a drag: " + first, rig.RunForward && rig.Steering);
+                var start = world.Player.GlobalPosition;
+                await Frames(12);
+                var forward = PlayerController.CameraDirection(Vector2.Up, Mathf.DegToRad(rig.YawDegrees));
+                Check("both buttons move forward: " + first, (world.Player.GlobalPosition-start).Dot(forward)>0.01f);
+                var released = releaseFirst ? first : second;
+                var remaining = releaseFirst ? second : first;
+                Button(released,false);
+                Check("either release stops mouse forward and retains remaining drag", !rig.RunForward && rig.Orbiting
+                    && rig.Steering == (remaining == MouseButton.Right));
+                Button(remaining,false); await Frames(12);
+                Check("final release clears capture", !rig.Orbiting && !rig.RunForward && !cursor.Captured);
+            }
+            await Point(new Vector2(450,300));
+            facing = world.Player.Presentation.Rotation;
+            Button(MouseButton.Left); Motion(new Vector2(100,0));
+            Input.ActionPress("b1_forward");
+            var walkStart = world.Player.GlobalPosition;
+            await Frames(12); Input.ActionRelease("b1_forward");
+            Check("walking during LMB orbit keeps facing",
+                Mathf.Abs(Mathf.AngleDifference(facing.Y,world.Player.Presentation.Rotation.Y)) < 0.1f);
+            var walkForward = new Vector3(0,0,-1).Rotated(Vector3.Up,
+                facing.Y-Mathf.DegToRad(world.Player.Presentation.ForwardOffsetDegrees));
+            Check("walking during LMB orbit follows character direction", (world.Player.GlobalPosition-walkStart).Dot(walkForward)>0.01f);
+            Button(MouseButton.Left,false); await Frames(12);
+            var strafeFacing = world.Player.Presentation.Rotation.Y;
+            Input.ActionPress("b1_right"); await Frames(30); Input.ActionRelease("b1_right");
+            Check("keyboard strafe turns the running model toward travel",
+                Mathf.Abs(Mathf.AngleDifference(strafeFacing,world.Player.Presentation.Rotation.Y)) > 0.5f);
+            var travel = new Vector3(world.Player.ActualVelocity.X,0,world.Player.ActualVelocity.Z).Normalized();
+            var modelForward = Vector3.Forward.Rotated(Vector3.Up,world.Player.Presentation.Rotation.Y
+                -Mathf.DegToRad(world.Player.Presentation.ForwardOffsetDegrees));
+            Check("strafe model faces actual movement", modelForward.Dot(travel)>0.9f);
+            await Frames(12);
             yaw = rig.YawDegrees; world.Player.TestInput = new Vector2(0,-1);
             await Frames(12); world.Player.TestInput = Vector2.Zero; await Frames(12);
             Check("movement preserves orbit yaw and remains camera-relative", rig.YawDegrees == yaw

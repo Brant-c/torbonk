@@ -80,8 +80,9 @@ public partial class CharacterPresentation : Node3D
         graph.ConnectNode("JumpLocomotion", 0, "Locomotion"); graph.ConnectNode("JumpLocomotion", 1, "JumpSeek");
         _gestures = new AnimationNodeStateMachine { AllowTransitionToSelf = true };
         graph.AddNode("Gesture", _gestures); AddGestureClips();
+        graph.AddNode("GestureRate",new AnimationNodeTimeScale());graph.ConnectNode("GestureRate",0,"Gesture");
         graph.AddNode("StandingCast", new AnimationNodeBlend2 { Sync=true });
-        graph.ConnectNode("StandingCast", 0, "JumpLocomotion"); graph.ConnectNode("StandingCast", 1, "Gesture");
+        graph.ConnectNode("StandingCast", 0, "JumpLocomotion"); graph.ConnectNode("StandingCast", 1, "GestureRate");
         // Root splits into Pelvis and RootSpine -> LowerBack -> Chest -> Chest1.
         // Disjoint masks soften the waist without diluting finger or hand socket motion.
         string previous = "StandingCast";
@@ -100,7 +101,8 @@ public partial class CharacterPresentation : Node3D
             // a shared state machine several times per frame through different blend paths.
             var machine=(AnimationNodeStateMachine)_gestures.Duplicate(true);
             _layerMachines.Add(machine);graph.AddNode(layer+"Gesture",machine);
-            graph.AddNode(layer, blend); graph.ConnectNode(layer, 0, previous); graph.ConnectNode(layer, 1, layer+"Gesture");
+            graph.AddNode(layer+"Rate",new AnimationNodeTimeScale());graph.ConnectNode(layer+"Rate",0,layer+"Gesture");
+            graph.AddNode(layer, blend); graph.ConnectNode(layer, 0, previous); graph.ConnectNode(layer, 1, layer+"Rate");
             previous = layer;
         }
         _reactionNode = new AnimationNodeAnimation { Animation = "Hit" };
@@ -152,12 +154,14 @@ public partial class CharacterPresentation : Node3D
         }
     }
 
-    public void Present(Vector3 actualVelocity, double delta)
+    public void Present(Vector3 actualVelocity, double delta, float? facingYawDegrees = null)
     {
         var flat = new Vector3(actualVelocity.X, 0, actualVelocity.Z); _speed = flat.Length();
         Locomotion = _speed > (Locomotion == "Run" ? 0.025f : 0.055f) ? "Run" : "Idle";
-        var facing = _speed > 0.025f ? flat : FacingTarget.HasValue ? FacingTarget.Value - GlobalPosition : Vector3.Zero;
-        if (new Vector2(facing.X, facing.Z).Length() > 0.001f)
+        var facing = GestureOwner!=null && FacingTarget.HasValue ? FacingTarget.Value-GlobalPosition : _speed > 0.025f ? flat : FacingTarget.HasValue ? FacingTarget.Value - GlobalPosition : Vector3.Zero;
+        if (facingYawDegrees.HasValue)
+            Rotation = new Vector3(0, Mathf.DegToRad(facingYawDegrees.Value + ForwardOffsetDegrees), 0);
+        else if (new Vector2(facing.X, facing.Z).Length() > 0.001f)
         {
             float target = Mathf.Atan2(-facing.X, -facing.Z) + Mathf.DegToRad(ForwardOffsetDegrees);
             Rotation = new Vector3(0, Mathf.LerpAngle(Rotation.Y, target, 1 - Mathf.Exp(-TurnSharpness * (float)delta)), 0);
@@ -242,6 +246,7 @@ public partial class CharacterPresentation : Node3D
         bool crossfade=GestureOwner!=null || _gestureWeight>0.05f;
         GestureOwner = owner; _gestureClip = clip;_gesturePriority=priority;
         FullBodyGesture=fullBody;
+        SetGestureRate(1);
         if(crossfade)_playback.Travel(ClipState(clip));else _playback.Start(ClipState(clip));
         foreach(var playback in _layerPlaybacks)
             if(crossfade)playback.Travel(ClipState(clip));else playback.Start(ClipState(clip));
@@ -255,6 +260,20 @@ public partial class CharacterPresentation : Node3D
         if (GestureOwner != owner || string.IsNullOrEmpty(clip) || !Animator.HasAnimation(clip) || _gestureClip==clip) return;
         _gestureClip = clip; _playback.Travel(ClipState(clip));
         foreach(var playback in _layerPlaybacks) playback.Travel(ClipState(clip));
+    }
+    public void FitGesture(object owner,double duration,bool repeatFinished=false)
+    {
+        if(GestureOwner!=owner || duration<=0 || !Animator.HasAnimation(_gestureClip))return;
+        double length=Animator.GetAnimation(_gestureClip).Length;
+        SetGestureRate((float)(length/duration));
+        if(repeatFinished && _playback.GetCurrentPlayPosition()>=length-.00001){
+            _playback.Start(ClipState(_gestureClip));
+            foreach(var playback in _layerPlaybacks)playback.Start(ClipState(_gestureClip));
+        }
+    }
+    private void SetGestureRate(float rate)
+    {
+        foreach(string node in new[]{"GestureRate","WaistRate","ChestRate","UpperRate"})Tree.Set("parameters/"+node+"/scale",rate);
     }
     public void ReleaseGesture(object owner)
     {
@@ -291,6 +310,19 @@ public partial class CharacterPresentation : Node3D
         }
         if(IdleClip==idle && RunClip==run)return;
         _idleNode.Animation=idle;_runNode.Animation=run;
+    }
+    public void LoadMarauderAnimations()
+    {
+        LoadAbilityLibrary("res://Assets/WarriorLibrary/casts.glb","Marauder",false);
+        var lib=Animator.GetAnimationLibrary("Marauder");
+        foreach(var name in lib.GetAnimationList()) {
+            var a=lib.GetAnimation(name);double duration=name=="cb_2saber_sp3_attack_right_6"?1.5:name.ToString().Contains("charge")?.65:name.ToString().Contains("throw")?a.Length:Math.Min(a.Length,.95);
+            double factor=duration/a.Length;
+            for(int t=0;t<a.GetTrackCount();t++)for(int k=0;k<a.TrackGetKeyCount(t);k++)a.TrackSetKeyTime(t,k,a.TrackGetKeyTime(t,k)*factor);
+            a.Length=duration;
+        }
+        lib.AddAnimation("DualThrow",JoinAnimations(lib.GetAnimation("cb_saber_throw_start"),lib.GetAnimation("cb_saber_throw_end"),"Root",1));
+        AddGestureClips();
     }
     public void LoadJumpAnimations() => LoadAbilityLibrary("res://Assets/Jump/jump.glb", "Jump", false);
     public void LoadAbilityLibrary(string path, string key, bool gestureClips = true)

@@ -5,6 +5,7 @@ namespace SwtorSurvivors;
 
 public partial class GameWorld : Node3D
 {
+    [Export] public bool ExplorationOnly { get; set; }
     [Export] public string PlanetRunPath {get;set;} = "";
     public PlanetRunDefinition? PlanetRun {get;private set;}
     public PlanetJourney? Journey {get;private set;}
@@ -103,7 +104,9 @@ public partial class GameWorld : Node3D
     public override async void _Ready()
     {
         RunConfiguration = Integration.GameNavigation.TakeRunConfiguration();
+        if(OS.GetCmdlineUserArgs().Contains("--eternity-vault-smoke")) ExplorationOnly=true;
         if(PlanetRunPath!="")PlanetRun=PlanetRunDefinition.Load(PlanetRunPath);
+        if(PlanetRun!=null)RunConfiguration.ModeTuning.Apply(PlanetRun);
         SlotRules??=GD.Load<RunSlotRules>("res://Gameplay/run-slots.tres");
         // The adapter selects an existing composition, never substitutes assets for an unsupported key.
         if (SceneFilePath != RunConfiguration.WorldScene
@@ -135,8 +138,13 @@ public partial class GameWorld : Node3D
         await ToSignal(GetTree(), SceneTree.SignalName.PhysicsFrame);
         await ToSignal(GetTree(), SceneTree.SignalName.ProcessFrame);
         // Authored spawn on the existing second patch, never a source NPC-placement claim.
-        var seed = new Vector3(Arena.SpawnSeed.X, 0, Arena.SpawnSeed.Y);
-        if (!FindSpawn(seed, out var floor))
+        bool fixedSpawn=ExplorationOnly || RunConfiguration.MapId=="eternity_vault";
+        var seed = new Vector3(Arena.SpawnSeed.X, fixedSpawn ? Player.Position.Y : 0, Arena.SpawnSeed.Y);
+        Vector3 floor;
+        bool spawnFound = fixedSpawn
+            ? Arena.GroundAt(seed, out floor, out _, 1, 3)
+            : FindSpawn(seed, out floor);
+        if (!spawnFound)
         { GD.PushError("B1 spawn has no safe source terrain"); GetTree().Quit(1); return; }
         Player.SpawnPosition = floor + Vector3.Up * 0.002f;
         Player.ResetPlayer(); Player.SetPhysicsProcess(true); Initialized = true;
@@ -146,6 +154,20 @@ public partial class GameWorld : Node3D
         {
             bool b2Validation = OS.GetCmdlineUserArgs().Contains("--combat-smoke");
             if (!AddCombat(!b2Validation)) { GetTree().Quit(1); return; }
+            if(!ExplorationOnly && RunConfiguration.MapId=="eternity_vault") AddChild(new EternityVaultAtmosphere());
+            if (ExplorationOnly)
+            {
+                if (RunConfiguration.MapId == "eternity_vault") AddChild(new EternityVaultAtmosphere());
+                var explore = new CanvasLayer(); AddChild(explore);
+                var panel = new VBoxContainer { Position = new Vector2(18, 14) }; explore.AddChild(panel);
+                panel.AddChild(new Label { Text = "ETERNITY VAULT · 01_Surface\nWASD: move · Space: jump · Mouse: camera" });
+                var back = new Button { Text = "Main Menu" }; back.Pressed += ReturnToMainMenu; panel.AddChild(back);
+                _legacyOverlay.Visible = false;
+                SyncCameraControls(); ReadyForPlay = true;
+                GD.Print($"EXPLORATION_READY {RunConfiguration.MapId} at {Player.SpawnPosition}; no encounters");
+                if (OS.GetCmdlineUserArgs().Contains("--eternity-vault-smoke")) AddChild(new EternityVaultSmoke());
+                return;
+            }
             if (!b2Validation && !OS.GetCmdlineUserArgs().Contains("--survival-smoke"))
             {
                 Abilities.AllowHybrid=RunConfiguration.AdvancedClassId=="sorcerer";
@@ -158,7 +180,9 @@ public partial class GameWorld : Node3D
                     MaximumLevel=PlanetRun?.CoreLevel??0 };
                 AddChild(Progression);
                 Progression.Changed += SyncCameraControls;
-                Hud = new UI.SurvivorsHud { Name = "SwtorHud", World = this, ArenaName = Integration.MapRegistry.Find(RunConfiguration.MapId)?.Name ?? RunConfiguration.MapId }; AddChild(Hud);
+                string arenaName=Integration.MapRegistry.Find(RunConfiguration.MapId)?.Name ?? RunConfiguration.MapId;
+                if(RunConfiguration.MapId=="eternity_vault")arenaName+=" · "+RunConfiguration.OperationDifficulty;
+                Hud = new UI.SurvivorsHud { Name = "SwtorHud", World = this, ArenaName = arenaName }; AddChild(Hud);
                 Rewards = new UI.RewardPresentation { Name = "RewardPresentation", World = this }; AddChild(Rewards);
                 AddChild(new UI.ArtifactRewardsHud {Name="RunArtifactInterface",World=this});
                 if(RunConfiguration.MapId=="hutta") {AddChild(new HuttaAtmosphere());if(OS.GetCmdlineUserArgs().Contains("--d5-smoke")){var smoke=new D5Smoke();AddChild(smoke);smoke.Run(this);}}
@@ -225,6 +249,9 @@ public partial class GameWorld : Node3D
         if(OS.GetCmdlineUserArgs().Contains("--sorcerer-refinement-smoke")){var smoke=new SorcererRefinementSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--spec-milestones-smoke")){var smoke=new SpecMilestonesSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--assassin-refinement-smoke")){var smoke=new AssassinRefinementSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--marauder-identity-smoke")){var smoke=new MarauderIdentitySmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--warrior-presentation-smoke")){var smoke=new WarriorPresentationSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--marauder-smoke")){var smoke=new MarauderSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--juggernaut-smoke")){var smoke=new JuggernautSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--assassin-expansion-smoke")){var smoke=new AssassinExpansionSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--presentation-repair-smoke")){var smoke=new PresentationRepairSmoke();AddChild(smoke);smoke.Run(this);}
@@ -236,6 +263,7 @@ public partial class GameWorld : Node3D
         if(OS.GetCmdlineUserArgs().Contains("--d1-smoke"))
         { var smoke=new SwtorSurvivors.Equipment.D1EquipmentSmoke();AddChild(smoke);smoke.Run(this); }
         ReadyForPlay = true;
+        if(OS.GetCmdlineUserArgs().Contains("--eternity-encounter-smoke")) {var smoke=new EternityVaultEncounterSmoke();AddChild(smoke);smoke.Run(this);}
     }
 
     private void SyncCameraControls() => Rig.SetControlsEnabled(Initialized && !_leavingForMenu && !GetTree().Paused
@@ -307,7 +335,7 @@ public partial class GameWorld : Node3D
         Combat = new AutomaticLightning { Name = "AutomaticLightning", Caster = PlayerActor, Targeting = Targeting, Visual = visual };
         var profile=RunConfiguration.Profile;
         PlayerActor.Health.Maximum=profile.Health;PlayerActor.Health.Restore();Player.MoveSpeed*=profile.Movement;
-        Combat.Configure(GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{profile.StartingAbility}.tres"));
+        Combat.Configure(GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{(profile.Id=="marauder"?"marauder_"+profile.StartingAbility:profile.StartingAbility)}.tres"));
         if(profile.Presentation=="sorcerer")
         {
             Player.Presentation.LoadAbilityAnimations();
@@ -323,13 +351,16 @@ public partial class GameWorld : Node3D
             var presentation=new D3AbilityPresentation {Actor=Player.Presentation,Definition=Combat.Definition};AddChild(presentation);Combat.Presentation=presentation;
             AcquisitionRange=Combat.Range;Targeting.AcquisitionRange=Combat.Range;
         }
-        if(profile.Id=="juggernaut") {Player.Presentation.LoadAbilityLibrary("res://Assets/WarriorLibrary/casts.glb","Warrior");Combat.Definition.StartsUnlocked=true;Combat.Definition.Slotless=true;Combat.SetUnlocked(true);}
+        if(profile.Id=="juggernaut") {Player.Presentation.LoadAbilityLibrary("res://Assets/WarriorLibrary/casts.glb","Warrior");Combat.Definition.StartsUnlocked=true;Combat.Definition.Slotless=true;Combat.Definition.ReplaceableStarter=true;Combat.SetUnlocked(true);}
+        if(profile.Id is "marauder" or "juggernaut")Player.Presentation.LoadAbilityLibrary("res://Assets/WarriorPresentation/casts.glb","WarriorExtra");
+        if(profile.Id=="marauder"){Player.Presentation.LoadMarauderAnimations();Player.Presentation.AddChild(new MarauderBladeTrails {Actor=Player.Presentation});}
         if(profile.Id=="powertech")Player.Presentation.LoadAbilityLibrary("res://Assets/Powertech/casts.glb","PT");
         if(profile.Id=="assassin") {Player.Presentation.LoadAbilityLibrary("res://Assets/B8/casts.glb","B8");Player.Presentation.LoadAbilityLibrary("res://Assets/Assassin/casts.glb","Assassin");Combat.DamagePerTick=Combat.Definition.Damage=12;Combat.CooldownSeconds=Combat.Definition.CooldownSeconds=2.4f;Combat.Radius=Combat.Definition.Radius=.24f;Combat.Definition.Slotless=true;Combat.Definition.Description="Modest saber sweep. Spreads existing Discharge to nearby enemies hit; talents can spread other DoTs. Starts free and can be replaced.";}
         Periodic=new PeriodicEffects {Name="PeriodicEffects"};AddChild(Periodic);Combat.Periodic=Periodic;
         AddChild(Combat);
         Abilities=new AbilityController { Name="AutomaticAbilities",Targeting=Targeting,
             OffensiveLimit=profile.Id=="assassin"?6:SlotRules!.OffensiveSlots,UtilityLimit=profile.UtilitySlots>=0?profile.UtilitySlots:SlotRules!.UtilitySlots };
+        if(profile.Id=="marauder")Abilities.GlobalCooldownSeconds=.8f;
         Abilities.Abilities.Add(Combat);
         if(profile.BasicAttack!="")
         {
@@ -338,12 +369,13 @@ public partial class GameWorld : Node3D
             var basicVisual=new D3AbilityPresentation {Name="BasicAttackPresentation",Actor=Player.Presentation,Definition=definition};AddChild(basicVisual);
             var basic=new AutomaticAbility {Name=profile.BasicAttack,Caster=PlayerActor,Targeting=Targeting,Presentation=basicVisual,Periodic=Periodic};
             basic.Configure(definition);
+            if(profile.Id=="marauder"){basic.Definition.Icon="mr_assault";basic.Definition.StartClip="Marauder/cb_2saber_attack_right_6";basic.Definition.FinishGesture=true;basic.Definition.RecoverySeconds=.12f;basic.Definition.GestureSeconds=.95f;basic.CooldownSeconds=basic.Definition.CooldownSeconds=.9f;}
             if(profile.Id=="juggernaut")basic.Definition.Icon="jg_assault";AddChild(basic);Abilities.Abilities.Add(basic);
         }
         // Class kits: locked until a level-up unlocks them; same lifecycle, presentation adapter and slot rules as the starter.
         foreach(string id in profile.Presentation=="sorcerer"?System.Array.Empty<string>():profile.Kit)
         {
-            var definition=GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{id}.tres");
+            var definition=GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{(profile.Id=="juggernaut" && id=="forcescream"?"juggernaut_forcescream":profile.Id=="marauder"?"marauder_"+id:id)}.tres");
             IAbilityPresentation kitVisual;
             if(profile.Id=="assassin" && id is "voltaicslash" or "maul" or "spike" or "wither" or "lowslash" or "forcecloak" or "deflection") {var original=new AssassinAbilityPresentation {Actor=Player.Presentation,Definition=definition,World=this};AddChild(original);kitVisual=original;}
             else if(id is "forcespeed" or "crushingdarkness") {var speed=new SorcererRefinementPresentation {Actor=Player.Presentation,Definition=definition};AddChild(speed);kitVisual=speed;}
@@ -431,13 +463,14 @@ public partial class GameWorld : Node3D
             Waves?.Stop(); Player.SetPhysicsProcess(false); Player.Velocity = Vector3.Zero;
             Player.Presentation.PlayReaction("Death");
         };
+        if (ExplorationOnly) return true;
         if (survival)
         {
             var navigation = new ArenaNavigation { Name = "ArenaNavigation", Arena = Arena }; AddChild(navigation);
             Spawner = new EnemySpawner { Name = "EnemySpawner", Navigation = navigation, Player = PlayerActor,
                 EnemyScene = EnemyScene ?? GD.Load<PackedScene>("res://Gameplay/Enemies/Broodling.tscn"),
                 MinimumSpawnDistance = MinimumSpawnDistance, MaximumSpawnDistance = MaximumSpawnDistance,
-                CorpseSeconds = CorpseSeconds,ReuseAnimations=PlanetRun!=null }; AddChild(Spawner);
+                CorpseSeconds = CorpseSeconds,ReuseAnimations=PlanetRun!=null,OperationMode=RunConfiguration.ModeTuning }; AddChild(Spawner);
             Waves = new WaveDirector { Name = "WaveDirector", Spawner = Spawner, WaveSeconds = WaveSeconds,
                 PlanetRun=PlanetRun,PlayerLevel=()=>Progression?.Level??1,
                 CanStartMilestone=()=>Progression!=null && !Progression.Selecting && Artifacts?.Pending!=true,
@@ -484,6 +517,7 @@ public partial class GameWorld : Node3D
         Waves?.ResetWaves();
         Journey?.ResetJourney();
         Hud?.Meter.ResetRun();
+        Hud?.AbilityMeter.ResetRun();
         SyncCameraControls();
     }
 
@@ -565,3 +599,4 @@ public partial class GameWorld : Node3D
         AddChild(_debug);
     }
 }
+

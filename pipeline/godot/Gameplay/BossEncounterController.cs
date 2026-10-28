@@ -31,6 +31,7 @@ public partial class BossEncounterController : Node
         _retry -= delta;
         if (_retry > 0) return;
         _retry = 1;
+        if(Definition.ClearRegularEnemiesOnStart)Spawner.ClearRegularEnemies();
         if (!Spawner.TrySpawn(Definition.Scene, true)) return;
         Boss = Spawner.Enemies.Last(); Spawned = true;
         Boss.Health.Died += Defeat;
@@ -43,10 +44,24 @@ public partial class BossEncounterController : Node
     {
         if (!InEncounter) return true;
         if (State == EncounterState.Introducing || !Definition.SpawnRegularEnemies) return false;
-        int cap = Math.Max(1, (int)Math.Ceiling(normalCap * Math.Clamp(Definition.RegularCapFraction, 0, 1)));
+        int cap = RegularEnemyCap(normalCap);
         return Spawner.Enemies.Count(e => GodotObject.IsInstanceValid(e) && e != Boss && e.Alive) < cap;
     }
-    public double CadenceMultiplier => InEncounter ? Math.Max(1, Definition.RegularSpawnIntervalMultiplier) : 1;
+    private bool FinalBoss => Boss?.GetNodeOrNull<Xrr3Attack>("Xrr3Attack")!=null;
+    public int RegularEnemyCap(int normalCap) {
+        var mode=Spawner.OperationMode;
+        float configured=FinalBoss?mode.FinalBossAddCapFraction:mode.BossAddCapFraction;
+        float fraction=Math.Max(Definition.RegularCapFraction,configured);
+        return Math.Min(Math.Max(0,Spawner.HardActiveLimit-1),Math.Max(1,(int)Math.Ceiling(normalCap*Math.Clamp(fraction,0,1))));
+    }
+    public double CadenceMultiplier {
+        get {
+            if(!InEncounter)return 1;
+            var mode=Spawner.OperationMode;
+            float configured=FinalBoss?mode.FinalBossAddCadence:mode.BossAddCadence;
+            return Math.Max(1,configured>0?configured:Definition.RegularSpawnIntervalMultiplier);
+        }
+    }
 
     private void Defeat()
     {

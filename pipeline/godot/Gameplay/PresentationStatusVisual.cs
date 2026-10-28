@@ -47,6 +47,15 @@ public partial class PresentationStatusVisual : Node3D
         }
         return node;
     }
+    public static Node3D AttachWarrior(Combatant target,bool crush,Func<bool> active)
+    {
+        var node=new PresentationStatusVisual {Name="MarauderPeriodicStatus",_active=()=>GodotObject.IsInstanceValid(target) && target.Alive && active()};
+        target.AddChild(node);node.Position=Vector3.Up*.1f;
+        const string root="res://Assets/WarriorLibrary/Textures/art/fx/texture/";
+        node._glow=node.Make(root+(crush?"electricity/2x2_dark_energy_clouds_02.png":"spark/bw_fx_2x2_sparknglow_01.png"),2,crush?.18f:.075f,crush?new Color(.65f,.18f,.8f,.45f):new Color(1,.08f,.025f,.4f));
+        node._smoke=node.Make(root+"glow/bw_flare_gray.png",1,.06f,new Color(1,.1f,.03f,.18f));
+        return node;
+    }
     private void SetOriginalMaterial(Sprite3D sprite,bool smoke)
     {
         var material=new ShaderMaterial {Shader=GD.Load<Shader>(smoke?"res://Gameplay/AfflictionSmoke.gdshader":"res://Gameplay/SorcererParticle.gdshader")};

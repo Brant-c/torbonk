@@ -14,6 +14,8 @@ public sealed class SelectionConfiguration
     public string AdvancedClassId { get; set; } = "sorcerer";
     public AppearanceConfiguration Appearance { get; set; } = new();
     public string MapId { get; set; } = "korriban";
+    // Missing fields in older selections retain the authored encounter's Hard tuning.
+    public string OperationDifficulty { get; set; } = "Hard";
     // Never deserialize a cached playable flag as authority. Always derive from current content.
     public bool Playable => Integration.SelectionGameplayAdapter.TryResolve(this,out _,out _);
     public string PlayableStatus => Playable ? "content_available" : "preview_only";

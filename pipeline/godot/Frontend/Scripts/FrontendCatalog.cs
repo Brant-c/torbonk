@@ -37,6 +37,12 @@ public sealed class AdvancedClassDefinition
 }
 public sealed class MapDefinition
 {
+    public string ContentKind { get; set; } = "World";
+    public string EncounterId { get; set; } = "";
+    public string EncounterName { get; set; } = "";
+    public string EncounterRegion { get; set; } = "";
+    public string PreviewModel { get; set; } = "";
+    public bool IsOperation => ContentKind == "Operation";
     public string Id { get; set; } = "";
     public string Name { get; set; } = "";
     public string Region { get; set; } = "";

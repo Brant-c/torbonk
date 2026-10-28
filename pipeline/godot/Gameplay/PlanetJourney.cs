@@ -104,7 +104,7 @@ public partial class PlanetJourney : Node3D
                 _journeyLabel.Text+="\nHOSTILES REGROUPING";
         }
         if(!_won && !World.PlanetRun!.Endless && World.Waves!.CoreComplete)
-        {_won=true;World.Rewards!.Announce(World.RunConfiguration.MapId=="korriban"?"TRIALS OF THE SITH COMPLETE":"UNDERWORLD ENCOUNTERS COMPLETE",(Integration.MapRegistry.Find(World.RunConfiguration.MapId)?.Name.ToUpperInvariant()??"")+" SURVIVED","Choose your final reward. Restart or return to the galaxy.","boss_victory");}
+        {_won=true;World.Rewards!.Announce(World.RunConfiguration.MapId=="eternity_vault"?"ETERNITY VAULT SECURED":World.RunConfiguration.MapId=="korriban"?"TRIALS OF THE SITH COMPLETE":"UNDERWORLD ENCOUNTERS COMPLETE",(Integration.MapRegistry.Find(World.RunConfiguration.MapId)?.Name.ToUpperInvariant()??"")+" SURVIVED","Choose your final reward. Restart or return to the galaxy.","boss_victory");}
     }
     public void ResetJourney()
     {

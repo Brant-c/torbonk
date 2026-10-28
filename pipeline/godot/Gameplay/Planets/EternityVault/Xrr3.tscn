@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3]
+[ext_resource type="Script" path="res://Gameplay/EnemyAgent.cs" id="1"]
+[ext_resource type="Script" path="res://Gameplay/Health.cs" id="2"]
+[ext_resource type="Script" path="res://Gameplay/EnemyPresentation.cs" id="3"]
+[ext_resource type="PackedScene" path="res://Assets/Maps/eternity_vault/Enemies/xrr3.glb" id="4"]
+[ext_resource type="FontFile" path="res://Assets/UI/EurostileBold.ttf" id="6"]
+[ext_resource type="Script" path="res://Gameplay/Xrr3Attack.cs" id="5"]
+
+[sub_resource type="CapsuleShape3D" id="Capsule"]
+radius = 0.16
+height = 0.65
+margin = 0.0005
+[node name="AncientDroidProtector" type="CharacterBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+position = Vector3(0,0.325,0)
+shape = SubResource("Capsule")
+[node name="Actor" type="Node3D" parent="."]
+script = ExtResource("1")
+Team = 2
+DisplayName = "Annihilation Droid XRR-3"
+ExperienceReward = 600
+CollisionRadius = 0.16
+CollisionHeight = 0.65
+MoveSpeed = 0.18
+AttackDamage = 14
+AttackInterval = 1.65
+MeleeRange = 0.124
+AimHeight = 0.42250000000000004
+RewardTier = 2
+GuaranteedReward = true
+KnockbackResistance = 1
+ScaleWithWaves = true
+[node name="Health" type="Node" parent="Actor"]
+script = ExtResource("2")
+Maximum = 18000
+[node name="Visual" type="Node3D" parent="Actor"]
+script = ExtResource("3")
+
+RunClip = "Walk"
+LocomotionStrideSpeed = 0.692152
+[node name="Original" parent="Actor/Visual" instance=ExtResource("4")]
+scale = Vector3(4.5,4.5,4.5)
+[node name="Nameplate" type="Label3D" parent="Actor"]
+position = Vector3(0,0.725,0)
+pixel_size = 0.00030
+billboard = 1
+font = ExtResource("6")
+font_size = 20
+outline_size = 6
+modulate = Color(1,0.42,0.23,1)
+[node name="Xrr3Attack" type="Node" parent="Actor"]
+script = ExtResource("5")

@@ -9,6 +9,10 @@ public enum AbilityEffect { Damage, Shield, Heal, Buff }
 [GlobalClass]
 public partial class AbilityDefinition : Resource
 {
+    [Export] public bool FinishGesture {get;set;}
+    [Export] public int MaximumTargets {get;set;} // Zero retains the existing uncapped area behavior.
+    [Export] public bool SplashAppliesVulnerability {get;set;}
+    [Export] public bool ReplaceableStarter {get;set;}
     [Export] public bool Slotless {get;set;}
     [Export] public bool DetachedArea {get;set;}
     [Export] public bool IsBasicAttack {get;set;}

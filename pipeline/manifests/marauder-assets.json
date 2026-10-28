@@ -1,0 +1,177 @@
+[
+  {
+    "ability": "viciousslash",
+    "source": "abl.sith_warrior.vicious_slash",
+    "clip": "WarriorExtra/DualViciousSlash",
+    "direct": false,
+    "limitation": "Recovered SaberSpecial1Attack1 dual-saber variant; native graph conditions remain unverified.",
+    "playback": "Complete source motion with instance-local compressed key timing; source GLB unchanged."
+  },
+  {
+    "ability": "rupture",
+    "source": "abl.sith_warrior.rupture",
+    "clip": "cb_2saber_sp2_attack_right_13",
+    "direct": true,
+    "limitation": "",
+    "playback": "Complete source motion with instance-local compressed key timing; source GLB unchanged."
+  },
+  {
+    "ability": "sweepingslash",
+    "source": "abl.sith_warrior.sweeping_slash",
+    "clip": "cb_2saber_sp1_attack_right_2",
+    "direct": true,
+    "limitation": "",
+    "playback": "Complete source motion with instance-local compressed key timing; source GLB unchanged."
+  },
+  {
+    "ability": "ravage",
+    "source": "abl.sith_warrior.ravage",
+    "clip": "cb_2saber_sp3_attack_right_6",
+    "direct": false,
+    "limitation": "Recovered dual-saber sequence selected for this adaptation; exact native graph selection remains unresolved.",
+    "playback": "Complete source motion with instance-local compressed key timing; source GLB unchanged."
+  },
+  {
+    "ability": "annihilate",
+    "source": "abl.sith_warrior.skill.annihilation.annihilate",
+    "clip": "cb_2saber_sp2_attack_right_15",
+    "direct": true,
+    "limitation": "",
+    "playback": "Complete source motion with instance-local compressed key timing; source GLB unchanged."
+  },
+  {
+    "ability": "deadlysaber",
+    "source": "abl.sith_warrior.skill.annihilation.deadly_saber",
+    "clip": "cb_buff_unleash",
+    "direct": false,
+    "limitation": "Recovered supporting dual-saber/buff clip; native semantic assignment unresolved",
+    "playback": "Complete source motion with instance-local compressed key timing; source GLB unchanged."
+  },
+  {
+    "ability": "deadlythrow",
+    "source": "abl.sith_warrior.wounding_throw",
+    "clip": "cb_saber_throw_start",
+    "direct": true,
+    "limitation": "",
+    "playback": "Complete source motion with instance-local compressed key timing; source GLB unchanged."
+  },
+  {
+    "ability": "saberthrow",
+    "source": "abl.sith_warrior.saber_throw",
+    "clip": "cb_saber_throw_start",
+    "direct": true,
+    "limitation": "",
+    "playback": "Complete source motion with instance-local compressed key timing; source GLB unchanged."
+  },
+  {
+    "ability": "forcecrush",
+    "source": "abl.sith_warrior.skill.rage.force_crush",
+    "clip": "fp_1h_elect_instant_right_4",
+    "direct": true,
+    "limitation": "",
+    "playback": "Complete source motion with instance-local compressed key timing; source GLB unchanged."
+  },
+  {
+    "ability": "smash",
+    "source": "abl.sith_warrior.smash",
+    "clip": "D3/SmashLeap",
+    "direct": false,
+    "limitation": "Shared recovered launch/descent composition and full-body timing with Juggernaut.",
+    "playback": "Complete source motion with instance-local compressed key timing; source GLB unchanged."
+  },
+  {
+    "ability": "berserk",
+    "source": "abl.sith_warrior.berserk",
+    "clip": "cb_buff_unleash",
+    "direct": true,
+    "limitation": "",
+    "playback": "Complete source motion with instance-local compressed key timing; source GLB unchanged."
+  },
+  {
+    "ability": "predation",
+    "source": "abl.sith_warrior.predation",
+    "clip": "cb_buff_unleash",
+    "direct": true,
+    "limitation": "",
+    "playback": "Complete source motion with instance-local compressed key timing; source GLB unchanged."
+  },
+  {
+    "ability": "obfuscate",
+    "source": "abl.sith_warrior.obfuscate",
+    "clip": "cb_buff_feint",
+    "direct": false,
+    "limitation": "Recovered supporting dual-saber/buff clip; native semantic assignment unresolved",
+    "playback": "Complete source motion with instance-local compressed key timing; source GLB unchanged."
+  },
+  {
+    "ability": "forcecamouflage",
+    "source": "abl.sith_warrior.feint",
+    "clip": "cb_buff_feint",
+    "direct": true,
+    "limitation": "",
+    "playback": "Complete source motion with instance-local compressed key timing; source GLB unchanged."
+  },
+  {
+    "ability": "cloakofpain",
+    "source": "abl.sith_warrior.cloak_of_pain",
+    "clip": "cb_buff_unleash",
+    "direct": true,
+    "limitation": "",
+    "playback": "Complete source motion with instance-local compressed key timing; source GLB unchanged."
+  },
+  {
+    "ability": "forcecharge",
+    "source": "abl.sith_warrior.force_charge",
+    "clip": "cb_2saber_charge_4",
+    "direct": true,
+    "limitation": "Recovered dual-saber sequence selected for this adaptation; exact native graph selection remains unresolved.",
+    "playback": "Complete source motion with instance-local compressed key timing; source GLB unchanged."
+  },
+  {
+    "ability": "frenzy",
+    "source": "abl.sith_warrior.frenzy",
+    "clip": "cb_buff_frenzy",
+    "direct": true,
+    "limitation": "Original textures and animation; adapted timed particle renderer."
+  },
+  {
+    "ability": "massacre",
+    "source": "abl.sith_warrior.skill.carnage.massacre",
+    "clip": "Marauder/cb_2saber_sp2_attack_right_12",
+    "direct": true,
+    "limitation": "Explicit recovered clip reference; original native graph conditions remain unverified.",
+    "playback": "Instance-local full-body gesture fitted to gameplay presentation duration."
+  },
+  {
+    "ability": "gore",
+    "source": "abl.sith_warrior.skill.carnage.gore",
+    "clip": "Marauder/cb_2saber_kill_attack_right_1",
+    "direct": true,
+    "limitation": "Explicit recovered clip reference; original native graph conditions remain unverified.",
+    "playback": "Instance-local full-body gesture fitted to gameplay presentation duration."
+  },
+  {
+    "ability": "intimidatingroar",
+    "source": "abl.sith_warrior.intimidating_roar",
+    "clip": "Marauder/cb_buff_frenzy",
+    "direct": true,
+    "limitation": "Explicit recovered clip reference; original native graph conditions remain unverified.",
+    "playback": "Instance-local full-body gesture fitted to gameplay presentation duration."
+  },
+  {
+    "ability": "batteringassault",
+    "source": "abl.sith_warrior.battering_assault",
+    "clip": "Marauder/cb_2saber_sp1_attack_right_3",
+    "direct": true,
+    "limitation": "Explicit recovered clip reference; original native graph conditions remain unverified.",
+    "playback": "Instance-local full-body gesture fitted to gameplay presentation duration."
+  },
+  {
+    "ability": "forcescream",
+    "source": "abl.sith_warrior.force_scream",
+    "clip": "Marauder/cb_buff_frenzy",
+    "direct": true,
+    "limitation": "Explicit recovered clip reference; original native graph conditions remain unverified.",
+    "playback": "Instance-local full-body gesture fitted to gameplay presentation duration."
+  }
+]

@@ -1,0 +1,572 @@
+{
+  "Version": 1,
+  "Budget": 12,
+  "Trees": [
+    {
+      "Id": "annihilation",
+      "Name": "Annihilation"
+    },
+    {
+      "Id": "carnage",
+      "Name": "Carnage"
+    },
+    {
+      "Id": "marauder_rage",
+      "Name": "Rage"
+    }
+  ],
+  "Talents": [
+    {
+      "Id": "annihilation.spread",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "annihilation",
+      "Tier": 0,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/mr_talent_bloomingshot.png",
+      "Name": "Blood Wake",
+      "Description": "Sweeping Slash spreads Deadly Saber and Force Crush as well as its innate Rupture spread. Each newly wounded enemy also takes 12 damage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_spread",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.annihilation.bleedout; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "annihilation.rhythm",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "annihilation",
+      "Tier": 0,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/mr_talent_frenzy.png",
+      "Name": "Blood Rhythm",
+      "Description": "Weapon hits shorten Deadly Saber cooldown, once per 0.4 seconds.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_rhythm",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.annihilation.short_fuse; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "annihilation.heal",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "annihilation",
+      "Tier": 0,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/mr_talent_blood_soaked_skull.png",
+      "Name": "Hungering Wounds",
+      "Description": "Bleed ticks heal 2 health, once per second. Successful spreads grant a brief eight-health shield.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_heal",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.annihilation.hungering; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "annihilation.charges",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "annihilation",
+      "Tier": 1,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/mr_talent_vengefulstrike.png",
+      "Name": "Deadly Focus",
+      "Description": "Deadly Saber gains one additional application.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_charges",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.annihilation.deadly_saber; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "annihilation.extend",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "annihilation",
+      "Tier": 1,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/mr_talent_rupture.png",
+      "Name": "Lingering Wounds",
+      "Description": "Weapon hits extend active Rupture up to eight seconds.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_extend",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.annihilation.deep_wound; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "annihilation.reset",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "annihilation",
+      "Tier": 1,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/mr_talent_vampiricslash.png",
+      "Name": "Annihilation Cycle",
+      "Description": "Annihilate reduces Rupture cooldown by three seconds.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_reset",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.annihilation.pulverize; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "annihilation.hemorrhage",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "annihilation",
+      "Tier": 2,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/mr_talent_disable.png",
+      "Name": "Hemorrhage",
+      "Description": "Bleed ticks accelerate Annihilate, capped once per second.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 4,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_hemorrhage",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.annihilation.hemmorhage; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "annihilation.siphon",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "annihilation",
+      "Tier": 2,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/mr_talent_regenerate.png",
+      "Name": "Saber Siphon",
+      "Description": "Weapon hits on afflicted targets heal four health, once per two seconds.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 4,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_siphon",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.annihilation.empowerment; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "carnage.alacrity",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "carnage",
+      "Tier": 0,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/mr_talent_ataru.png",
+      "Name": "Ataru Rhythm",
+      "Description": "15% faster attack ticks and cooldowns, including bleed intervals.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_alacrity",
+          "Amount": 0.15
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.carnage.ataru_form; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "carnage.cleave",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "carnage",
+      "Tier": 0,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/mr_talent_bladerush.png",
+      "Name": "Sweeping Ravage",
+      "Description": "Ravage hits up to four enemies in a frontal cone.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_cleave",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.carnage.overwhelm; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "carnage.precision",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "carnage",
+      "Tier": 0,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/mr_talent_spinningstrike.png",
+      "Name": "Calculated Ferocity",
+      "Description": "Every fourth weapon activation deals 50% additional direct damage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_precision",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.carnage.execute; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "carnage.bloodletting",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "carnage",
+      "Tier": 1,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/mr_talent_cc_attack.png",
+      "Name": "Blood Frenzy",
+      "Description": "Every third weapon hit triggers a follow-up for 50% of the triggering attack damage. No bleed required.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_bloodletting",
+          "Amount": 0.2
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.carnage.blood_frenzy; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "carnage.flurry",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "carnage",
+      "Tier": 1,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/mr_talent_vicioussaber.png",
+      "Name": "Ataru Flurry",
+      "Description": "Every fifth weapon hit triggers a follow-up for 60% of the triggering attack damage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_flurry",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.carnage.ataru_mastery; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "carnage.gore",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "carnage",
+      "Tier": 1,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/mr_talent_sweepingslash.png",
+      "Name": "Gore Window",
+      "Description": "Gore grants two additional seconds of 60% additional weapon damage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_gore",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.carnage.gore; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "carnage.relentless",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "carnage",
+      "Tier": 2,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/mr_talent_batteringassault.png",
+      "Name": "Relentless Assault",
+      "Description": "Rapid hits accelerate Berserk, capped twice per second.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 4,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_relentless",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.carnage.enraged_assault; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "carnage.frenzy",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "carnage",
+      "Tier": 2,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/mr_talent_rage.png",
+      "Name": "Lasting Frenzy",
+      "Description": "Berserk lasts two additional seconds. Spreading a DoT while Berserk is active refunds two seconds of Frenzy.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 4,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_frenzy",
+          "Amount": 2
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.carnage.erupting_fury; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "marauder_rage.shockwave",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "marauder_rage",
+      "Tier": 0,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/juggernautsmash.png",
+      "Name": "Decimate",
+      "Description": "Smash has 30% more radius; a fully Crush-empowered Smash restores Predation four seconds sooner.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_shockwave",
+          "Amount": 0.3
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.rage.decimate; original icon identity, adapted Survivors mechanics. Sith orange action-bar Smash artwork replaces the recovered blue shared icon."
+    },
+    {
+      "Id": "marauder_rage.forceflow",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "marauder_rage",
+      "Tier": 0,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/mr_talent_forcecrush.png",
+      "Name": "Force Flow",
+      "Description": "Crush ticks accelerate Dual Saber Throw; Smash remains a deliberate burst cooldown.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_forceflow",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.rage.force_crush; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "marauder_rage.rageblade",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "marauder_rage",
+      "Tier": 0,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/mr_talent_sithwarrior.png",
+      "Name": "Empowered Blades",
+      "Description": "While Crush charges are held, weapon hits trigger a six-damage strike once per second.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_rageblade",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.rage.saber_strength; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "marauder_rage.dominate",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "marauder_rage",
+      "Tier": 1,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/mr_talent_thunder.png",
+      "Name": "Dominate",
+      "Description": "Force Scream strikes a group at full damage in a 0.45 radius.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_dominate",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.rage.dominate; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "marauder_rage.fissure",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "marauder_rage",
+      "Tier": 1,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/mr_talent_doom_aura.png",
+      "Name": "Rending Shockwave",
+      "Description": "Smash deals 30% additional direct damage and spreads existing periodic effects.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_fissure",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.rage.dark_resonance; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "marauder_rage.crushreset",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "marauder_rage",
+      "Tier": 1,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/mr_talent_meleedpsunlock.png",
+      "Name": "Aggressive Cycle",
+      "Description": "Every sixth weapon hit accelerates Force Crush.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_crushreset",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.rage.overpower; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "marauder_rage.ricochet",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "marauder_rage",
+      "Tier": 2,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/mr_talent_saberstorm.png",
+      "Name": "Ricochet Throw",
+      "Description": "Dual Saber Throw reaches eight enemies and secondary hits deal full damage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 4,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_ricochet",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.rage.obliterate; original icon identity, adapted Survivors mechanics."
+    },
+    {
+      "Id": "marauder_rage.execution",
+      "Classes": [
+        "marauder"
+      ],
+      "Tree": "marauder_rage",
+      "Tier": 2,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/mr_talent_recklessness.png",
+      "Name": "Execution Pursuit",
+      "Description": "Weapon kills shorten Deadly Throw cooldown by two seconds.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 4,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "mr_execution",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.sith_warrior.skill.rage.relentless_marauder; original icon identity, adapted Survivors mechanics."
+    }
+  ]
+}

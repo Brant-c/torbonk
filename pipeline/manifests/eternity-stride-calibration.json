@@ -1,0 +1,62 @@
+{
+  "icecat": {
+    "clip": "Walk",
+    "unitScaleStrideSpeed": 0.15006779298011036,
+    "duration": 1.3333333333333333,
+    "feet": {
+      "LeftAnkle": {
+        "contactSpeed": 0.15438526266291253,
+        "contactSamples": 45
+      },
+      "RightAnkle": {
+        "contactSpeed": 0.14743657309768718,
+        "contactSamples": 45
+      },
+      "LeftWrist": {
+        "contactSpeed": 0.13909205591725896,
+        "contactSamples": 33
+      },
+      "RightWrist": {
+        "contactSpeed": 0.1526990128625335,
+        "contactSamples": 33
+      }
+    },
+    "method": "Median horizontal paw/ankle speed during lowest 35% of foot height; approximate contact fit, not native movement metadata."
+  },
+  "guard": {
+    "clip": "Walk",
+    "unitScaleStrideSpeed": 0.13954376628283519,
+    "duration": 1.0666667620340984,
+    "feet": {
+      "LeftAnkle": {
+        "contactSpeed": 0.15054709495032664,
+        "contactSamples": 40
+      },
+      "RightAnkle": {
+        "contactSpeed": 0.12854043761534373,
+        "contactSamples": 45
+      }
+    },
+    "method": "Median horizontal paw/ankle speed during lowest 35% of foot height; approximate contact fit, not native movement metadata."
+  },
+  "xrr3": {
+    "clip": "Walk",
+    "unitScaleStrideSpeed": 0.15381146435930165,
+    "duration": 1.2999998728434246,
+    "feet": {
+      "LeftAnkle": {
+        "contactSpeed": 0.15388419517762697,
+        "contactSamples": 25
+      },
+      "RightAnkle": {
+        "contactSpeed": 0.15381146435930165,
+        "contactSamples": 31
+      },
+      "CenterAnkle": {
+        "contactSpeed": 0.1446109834611587,
+        "contactSamples": 30
+      }
+    },
+    "method": "Median horizontal paw/ankle speed during lowest 35% of foot height; approximate contact fit, not native movement metadata."
+  }
+}

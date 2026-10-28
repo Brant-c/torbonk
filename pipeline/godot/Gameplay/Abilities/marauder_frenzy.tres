@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "frenzy"
+Title = "Frenzy"
+Icon = "mr_frenzy"
+StartsUnlocked = false
+Damage = 1
+CooldownSeconds = 32
+Range = 0.4
+Radius = 0
+Area = 0
+WindupSeconds = 0
+ChannelSeconds = 0
+TickSeconds = 0.4
+RecoverySeconds = 0.12
+GestureSeconds = 0.95
+StartClip = "Marauder/cb_buff_frenzy"
+LoopClip = "Marauder/cb_buff_frenzy"
+RequireGesture = false
+PresentationKind = "saber"
+SourceFx = "epp.sith_warrior.frenzy.cast_instant;epp.sith_warrior.fury.buff"
+Description = "Prepare a burst: ready Berserk and Deadly Saber. Activates while Berserk is recovering; uses no utility slot."
+Category = 1
+Effect = 3
+BuffSeconds = 0.01
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+Slotless = false
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/bw_fx_lsblue_flare_256.png"
+ImpactAudio = "res://Assets/WarriorLibrary/Audio/10244116.wav"
+
+FinishGesture = true
+GesturePriority = -5
+
+Slotless = true

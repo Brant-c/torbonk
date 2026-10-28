@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "predation"
+Title = "Predation"
+Icon = "mr_forcecharge_old"
+StartsUnlocked = false
+Damage = 1
+CooldownSeconds = 20
+Range = 0.4
+Radius = 0
+Area = 0
+WindupSeconds = 0
+ChannelSeconds = 0
+TickSeconds = 0.4
+RecoverySeconds = 0.12
+GestureSeconds = 0.95
+StartClip = "Marauder/cb_buff_unleash"
+LoopClip = "Marauder/cb_buff_unleash"
+RequireGesture = false
+PresentationKind = "saber"
+SourceFx = "epp.sith_warrior.predation.buff;epp.sith_warrior.predation.cast_instant"
+Description = "Six seconds of 45% movement speed and 15% avoidance."
+Category = 1
+Effect = 3
+BuffSeconds = 0.01
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+Slotless = false
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/electricity/lighting_2x2_anim_01_bw.png"
+ImpactAudio = "res://Assets/WarriorLibrary/Audio/274347736.wav"
+
+FinishGesture = true
+GesturePriority = -5

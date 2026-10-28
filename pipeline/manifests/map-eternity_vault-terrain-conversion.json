@@ -1,0 +1,787 @@
+{
+  "patches": [
+    {
+      "id": "4611686096676870037",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -77.0,
+        -8.76039981842,
+        22.3999996185
+      ],
+      "version": 1,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8972,
+      "embeddedSha256": "7ab34fe3b55f3a50559cd566d14696105dade6f68a08bf67dbd22a52a4af44c0",
+      "decodedSha256": "4e8485103639f9ae3b12eab66325e002a8683e8d503918d74dc7595e3d748a59",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "11",
+        "5",
+        "3",
+        "12",
+        "13"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686096676870037_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686096676870037_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686096676870037_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686096676870039",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -77.0,
+        -8.76039981842,
+        35.2000007629
+      ],
+      "version": 1,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8972,
+      "embeddedSha256": "205ed42ae258144cc01aa915a350d3e89d7423b842e38b1e7a427282530b015e",
+      "decodedSha256": "891ac2aa5cbbefc2ba961789de9e8a5ecca58c48ae4e4accdc09965b16eef7f8",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "3",
+        "11",
+        "13"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686096676870039_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686096676870039_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686096676870039_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686096676870041",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -64.1999969482,
+        -8.76039981842,
+        22.3999996185
+      ],
+      "version": 1,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8972,
+      "embeddedSha256": "bad4634b24e8b98d567d28948dde9167010d02cef974500dfb6225984e1e0883",
+      "decodedSha256": "8936441d9c22b6ec3342bc0c1099ce9eb4ab638d8f11a09cfa82577b55fd6b01",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "3",
+        "5",
+        "11",
+        "12",
+        "13"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686096676870041_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686096676870041_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686096676870041_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686096676870043",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -64.1999969482,
+        1.01129996777,
+        35.2000007629
+      ],
+      "version": 9,
+      "vertices": 4225,
+      "triangles": 8138,
+      "sourceHeightEnd": 9513,
+      "embeddedSha256": "1d2cbe8e9426f4e1e098682df6a92161d78a9cddd62b76dc53252d1e0c26408a",
+      "decodedSha256": "896915b019c194218ff297c12242009d14bc4d491a16688315bbf409c901f5d3",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "2",
+        "3",
+        "5",
+        "9",
+        "11",
+        "12",
+        "13"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0000001192092896
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": true,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686096676870043_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686096676870043_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686096676870043_roughness.png"
+      },
+      "embeddedPosition": [
+        -64.19999694824219,
+        1.011299967765808,
+        35.20000076293945
+      ]
+    },
+    {
+      "id": "4611686096676870045",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -51.4000015259,
+        -8.75930023193,
+        22.3999996185
+      ],
+      "version": 1,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8972,
+      "embeddedSha256": "dffc0e49d98f00ce7a3313ba3c3a6b0feb2faef278576bcd833291187ed7f8cc",
+      "decodedSha256": "9a557a0bac82d393d6ee8ddf4a29f4fbb459c0a65c4d2af1abe08daeab4fffe2",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "11",
+        "3",
+        "12",
+        "13"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686096676870045_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686096676870045_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686096676870045_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686096676870047",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -51.4000015259,
+        -13.3169002533,
+        35.2000007629
+      ],
+      "version": 9,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8984,
+      "embeddedSha256": "7878b06876a35656de6db71b22f5f2963e48b0373fab29c8d8bb52e6e9fc1e84",
+      "decodedSha256": "f663c35a57a7f180b8f0326e026062b5c1405bb6262b9700bc12f3e379b9757a",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "3",
+        "5",
+        "11",
+        "13"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686096676870047_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686096676870047_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686096676870047_roughness.png"
+      },
+      "embeddedPosition": [
+        -51.400001525878906,
+        -13.316900253295898,
+        35.20000076293945
+      ]
+    },
+    {
+      "id": "4611686096676870054",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -51.4000015259,
+        -8.76039981842,
+        9.60000038147
+      ],
+      "version": 1,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8972,
+      "embeddedSha256": "5fc77aee0f81a1471ea7164c06b70b22aba16e4b83d108ac064418f35e20c3d1",
+      "decodedSha256": "5e08a2cd90f9fb19c0144bdff7ea0fd6206e7a37ba05cccd5700ec31c1ca667e",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "11",
+        "3",
+        "12",
+        "13"
+      ],
+      "blendSumRange": [
+        1.0,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686096676870054_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686096676870054_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686096676870054_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686096676870055",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -64.1999969482,
+        -8.76039981842,
+        9.60000038147
+      ],
+      "version": 1,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8972,
+      "embeddedSha256": "4246ed92956107162257b6f16036be29df9e12bec1c155ccda5a199a8303f32f",
+      "decodedSha256": "45dabfc98b9d20ffbcdd390a3b8165c7c1ed9ec6a954840ebecb42786dc3d526",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "11",
+        "3",
+        "12",
+        "13"
+      ],
+      "blendSumRange": [
+        0.9999999403953552,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686096676870055_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686096676870055_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686096676870055_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686096676870056",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -77.0,
+        -8.76039981842,
+        9.60000038147
+      ],
+      "version": 1,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8972,
+      "embeddedSha256": "dbfbf2fb995ad882aa89116248f45df664a31a344614af28fe621538b111bf7a",
+      "decodedSha256": "6be23da25ae4fde00f619bfb96b5b4599538563192e93effb324f9b3a2ec616a",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "11",
+        "3",
+        "13"
+      ],
+      "blendSumRange": [
+        1.0,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686096676870056_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686096676870056_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686096676870056_roughness.png"
+      },
+      "embeddedPosition": null
+    },
+    {
+      "id": "4611686136141595627",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -89.8000030518,
+        -8.76039981842,
+        22.3999996185
+      ],
+      "version": 9,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8984,
+      "embeddedSha256": "ece6ccfc3e1f1bc2872b6c469b04370707dec62d95457ea753b9aa843b9f9ec7",
+      "decodedSha256": "d0abef5524ed350169c5a036f04b41e7304406a8e21c97f4c1ff914d9ae3d54a",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "11"
+      ],
+      "blendSumRange": [
+        1.0,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686136141595627_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686136141595627_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686136141595627_roughness.png"
+      },
+      "embeddedPosition": [
+        -89.80000305175781,
+        -8.76039981842041,
+        22.399999618530273
+      ]
+    },
+    {
+      "id": "4611686136141595628",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -89.8000030518,
+        -8.76039981842,
+        35.2000007629
+      ],
+      "version": 9,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8984,
+      "embeddedSha256": "559beb515658eff2f93772cb4e6cad10c2749a62a0e546b2605819bdd441bc1b",
+      "decodedSha256": "b6036a244b2e34c64a5566eaf31cb16405a2d55f3118cf10f8502730cc9255a3",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "3",
+        "11",
+        "13"
+      ],
+      "blendSumRange": [
+        1.0,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686136141595628_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686136141595628_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686136141595628_roughness.png"
+      },
+      "embeddedPosition": [
+        -89.80000305175781,
+        -8.76039981842041,
+        35.20000076293945
+      ]
+    },
+    {
+      "id": "4611686136141595629",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -89.8000030518,
+        -8.76039981842,
+        9.60000038147
+      ],
+      "version": 9,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8984,
+      "embeddedSha256": "becc48c0c7c5e9b2ddcbe75ff00797d8b3b31828ec5b5729b6647f16ea31c527",
+      "decodedSha256": "4120bda27dab8c24b96e877d62cb40d98c2e2b690d0804b5a3be7fa113af7a0a",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "11"
+      ],
+      "blendSumRange": [
+        1.0,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686136141595629_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686136141595629_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686136141595629_roughness.png"
+      },
+      "embeddedPosition": [
+        -89.80000305175781,
+        -8.76039981842041,
+        9.600000381469727
+      ]
+    },
+    {
+      "id": "4611686136141595630",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -102.599998474,
+        -8.76039981842,
+        22.3999996185
+      ],
+      "version": 9,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8984,
+      "embeddedSha256": "ece6ccfc3e1f1bc2872b6c469b04370707dec62d95457ea753b9aa843b9f9ec7",
+      "decodedSha256": "d0abef5524ed350169c5a036f04b41e7304406a8e21c97f4c1ff914d9ae3d54a",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "11"
+      ],
+      "blendSumRange": [
+        1.0,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686136141595630_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686136141595630_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686136141595630_roughness.png"
+      },
+      "embeddedPosition": [
+        -89.80000305175781,
+        -8.76039981842041,
+        22.399999618530273
+      ]
+    },
+    {
+      "id": "4611686136141595632",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -102.599998474,
+        -8.76039981842,
+        35.2000007629
+      ],
+      "version": 9,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8984,
+      "embeddedSha256": "ece6ccfc3e1f1bc2872b6c469b04370707dec62d95457ea753b9aa843b9f9ec7",
+      "decodedSha256": "d0abef5524ed350169c5a036f04b41e7304406a8e21c97f4c1ff914d9ae3d54a",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "11"
+      ],
+      "blendSumRange": [
+        1.0,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686136141595632_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686136141595632_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686136141595632_roughness.png"
+      },
+      "embeddedPosition": [
+        -89.80000305175781,
+        -8.76039981842041,
+        22.399999618530273
+      ]
+    },
+    {
+      "id": "4611686136141595633",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -38.5999984741,
+        -8.76039981842,
+        22.3999996185
+      ],
+      "version": 9,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8984,
+      "embeddedSha256": "d4c371dc2e71feeea6a612b1bcbbb8da119705a01e9d33dd6a6b956bef5484d4",
+      "decodedSha256": "31b7c3091b4e5110654a8e6147a690d6871caceaa089f75af2cf65303ca2a0d7",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "11"
+      ],
+      "blendSumRange": [
+        1.0,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686136141595633_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686136141595633_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686136141595633_roughness.png"
+      },
+      "embeddedPosition": [
+        -38.599998474121094,
+        -8.76039981842041,
+        22.399999618530273
+      ]
+    },
+    {
+      "id": "4611686136141595634",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -38.5999984741,
+        -8.76039981842,
+        35.2000007629
+      ],
+      "version": 9,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8984,
+      "embeddedSha256": "8b8cd71412f1f0bd1c343d3b4d1c76c38d0e0d48755219385241ef1cf2dd480c",
+      "decodedSha256": "a0bad11a502be6222187a40ea9ef29868c2fc66ac1c49d8fafd6c3d77ca38987",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "11"
+      ],
+      "blendSumRange": [
+        1.0,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686136141595634_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686136141595634_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686136141595634_roughness.png"
+      },
+      "embeddedPosition": [
+        -38.599998474121094,
+        -8.76039981842041,
+        35.20000076293945
+      ]
+    },
+    {
+      "id": "4611686136141595635",
+      "room": "01_Surface",
+      "width": 65,
+      "depth": 65,
+      "position": [
+        -38.5999984741,
+        -8.76039981842,
+        9.60000038147
+      ],
+      "version": 9,
+      "vertices": 4225,
+      "triangles": 8192,
+      "sourceHeightEnd": 8984,
+      "embeddedSha256": "4a5f68afefac88afad88b2e913ab874f935773791cb9d2d361742e485f3dee53",
+      "decodedSha256": "a5fc40b3585f2d6e4659850fa46631e7df242f97312e6ccc2fba40622e6ec664",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        129,
+        129
+      ],
+      "layers": [
+        "11"
+      ],
+      "blendSumRange": [
+        1.0,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": true,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/eternity_vault/4611686136141595635_albedo.png",
+        "normal": "res://Assets/Maps/eternity_vault/4611686136141595635_normal.png",
+        "roughness": "res://Assets/Maps/eternity_vault/4611686136141595635_roughness.png"
+      },
+      "embeddedPosition": [
+        -38.599998474121094,
+        -8.76039981842041,
+        9.600000381469727
+      ]
+    }
+  ],
+  "adjacency": [
+    {
+      "note": "authored patches staged unmodified; seams not repaired",
+      "patchCount": 17
+    }
+  ],
+  "lighting": "authored warm directional/ambient; no native parity",
+  "limitations": [
+    "World-space UV phase/scale reconstruction is not native-client verified.",
+    "SWTOR material lighting translated to portable PBR; original vertex color used as multiplicative tint.",
+    "DYD density data retained; procedural native billboard/mesh scattering is not reproduced.",
+    "Static collision is derived from converted visible triangles, not original physics shapes."
+  ],
+  "passed": true
+}

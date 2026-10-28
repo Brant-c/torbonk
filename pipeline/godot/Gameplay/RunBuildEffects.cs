@@ -67,7 +67,7 @@ public partial class RunBuildEffects : Node
         if(ability.Definition.Category==AbilityCategory.Utility && Talent("haste")>0)
         { _haste=3;World.Progression?.Recalculate(); }
     }
-    public float SpeedMultiplier => (_haste>0?1.3f:1)*(_buff>0?1+_speedBuff:1)*(1+Item("stride"));
+    public float SpeedMultiplier => (Pregame?.MarauderSpeed??1)* (_haste>0?1.3f:1)*(_buff>0?1+_speedBuff:1)*(1+Item("stride"));
     public bool Buffed => _buff>0;
     public void ApplyBuff(AbilityDefinition d)
     { if(World.RunConfiguration.AdvancedClassId=="assassin" && d.Id is "forcecloak" or "deflection")return;
@@ -127,7 +127,7 @@ public partial class RunBuildEffects : Node
             var next=World.Targeting.ChainTarget(target.AimPosition,0.3f,excluded);
             if(next!=null)
             {
-                next.Health.ApplyDamage(ability.DamagePerTick*0.45f*DamageMultiplier(ability,next),ability.Definition.DamageType);
+                next.Health.ApplyDamage(ability.DamagePerTick*0.45f*DamageMultiplier(ability,next),ability.Definition.DamageType,abilityId:ability.Definition.Id);
                 if(ability.Presentation is SorcererRefinementPresentation original)original.Arc(target.AimPosition,next.AimPosition);
             }
         }
@@ -178,3 +178,4 @@ public partial class RunBuildEffects : Node
         if(GodotObject.IsInstanceValid(World.Periodic))World.Periodic.Ticked-=PeriodicTicked;
     }
 }
+

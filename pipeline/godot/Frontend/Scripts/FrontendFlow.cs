@@ -34,7 +34,7 @@ public partial class FrontendFlow : Control
     private bool _talentsOpen;
     public override void _Ready()
     {
-        Theme = FrontendSkin.MakeTheme(); _catalog = FrontendCatalog.Load();
+        SwtorSurvivors.AudioPreferences.Load(); Theme = FrontendSkin.MakeTheme(); _catalog = FrontendCatalog.Load();
         var backing = new ColorRect { Color = Colors.Black, MouseFilter = MouseFilterEnum.Ignore };
         AddChild(backing); backing.SetAnchorsAndOffsetsPreset(LayoutPreset.FullRect);
         var stars = new TextureRect {
@@ -44,7 +44,7 @@ public partial class FrontendFlow : Control
             Modulate = new Color(.4f,.5f,.65f), MouseFilter = MouseFilterEnum.Ignore };
         AddChild(stars); stars.SetAnchorsAndOffsetsPreset(LayoutPreset.FullRect);
         _canvas = new Control { Name = "DesignCanvas", Size = new Vector2(1600,900), MouseFilter = MouseFilterEnum.Ignore }; AddChild(_canvas);
-        _sound = new AudioStreamPlayer { VolumeDb = -12 }; AddChild(_sound);
+        _sound = new AudioStreamPlayer { Bus = "B7UI", VolumeDb = -12 }; AddChild(_sound);
         BuildNavigation();
         Resized += Fit; Fit(); ShowStep(0);
     }
@@ -141,7 +141,8 @@ public partial class FrontendFlow : Control
             {
                 title.Position=new Vector2(500,48);title.Size=new Vector2(600,58);title.AddThemeFontSizeOverride("font_size",38);title.AddThemeColorOverride("font_color",new Color("dce9ef"));
                 var faction=_catalog.Factions.Single(f=>f.Id==_session.Configuration.FactionId);
-                var subtitle=FrontendSkin.Label((_step==4?"Select a world to explore":_step==3?_catalog.Class(_session.Configuration.BaseClassId).Name:faction.Name).ToUpperInvariant(),19);subtitle.Position=new Vector2(500,110);subtitle.Size=new Vector2(600,32);subtitle.HorizontalAlignment=HorizontalAlignment.Center;
+                var subtitle=FrontendSkin.Label((_step==4?(_catalog.Map(_session.Configuration.MapId).IsOperation?"Select an operation":"Select a world to explore"):_step==3?_catalog.Class(_session.Configuration.BaseClassId).Name:faction.Name).ToUpperInvariant(),19);subtitle.Position=new Vector2(500,110);subtitle.Size=new Vector2(600,32);subtitle.HorizontalAlignment=HorizontalAlignment.Center;
+                if(_step==4)subtitle.Name="DestinationSubtitle";
                 subtitle.AddThemeColorOverride("font_color",_step!=4 && faction.Id=="empire"?new Color(1,.25f,.22f):new Color("81cbed"));_canvas.AddChild(subtitle);
                 if(_step==4){title.Position=new Vector2(450,48);title.Size=new Vector2(700,58);}
                 _brand.Position=new Vector2(76,28);_brand.Size=_brand.CustomMinimumSize=new Vector2(260,84);
@@ -173,8 +174,9 @@ public partial class FrontendFlow : Control
         }
         var start=Entry("New Run","Choose your allegiance. Begin a new journey.","bwaui_buttons_132",114,200,()=> { _session=new SelectionSession(); _chosenFaction=null; Sound(); ShowStep(1); });
         var collection=Entry("Collections","Explore your unlocked appearances.","bwaui_buttons_135",754,200,ShowCollections);
-        var talents=Entry("Talents","Configure your combat style.","bwaui_buttons_135",114,365,ShowTalents);
+        var talents=Entry("Talents","Configure your combat style.","bwaui_buttons_298",114,365,ShowTalents);
         var settings=Entry("Settings","Adjust your display and interface sounds.","bwaui_buttons_90",754,365,ShowSettings);
+        var equipment=FrontendSkin.Button("Equipment",()=>SwtorSurvivors.UI.EquipmentWindows.Instance.Open());Place(equipment,374,540,230,52);
         var exit=FrontendSkin.Button("Exit",()=>GetTree().Quit());Place(exit,624,540,200,52);
         talents.FocusNeighborTop=start.GetPath();talents.FocusNeighborRight=settings.GetPath();
         start.FocusNeighborBottom=talents.GetPath();
@@ -184,7 +186,7 @@ public partial class FrontendFlow : Control
         exit.FocusNeighborTop=collection.GetPath();exit.FocusNeighborLeft=settings.GetPath();
         start.FocusNeighborBottom=talents.GetPath();collection.FocusNeighborBottom=settings.GetPath();
         talents.FocusNeighborBottom=exit.GetPath();settings.FocusNeighborBottom=exit.GetPath();
-        Control[] menuOrder=[start,collection,talents,settings,exit];
+        Control[] menuOrder=[start,collection,talents,settings,equipment,exit];
         for(int i=0;i<menuOrder.Length;i++)
         {menuOrder[i].FocusNext=menuOrder[(i+1)%menuOrder.Length].GetPath();menuOrder[i].FocusPrevious=menuOrder[(i+menuOrder.Length-1)%menuOrder.Length].GetPath();}
         start.GrabFocus();
@@ -215,7 +217,15 @@ public partial class FrontendFlow : Control
         foreach (var button in Buttons(_page!)) button.FocusMode=FocusModeEnum.None;
         _settings=new Control { Size=new Vector2(1600,900), MouseFilter=MouseFilterEnum.Stop }; _canvas.AddChild(_settings);
         _settings.AddChild(new ColorRect { Color=new Color(0,0,0,.72f), Size=_settings.Size });
-        var body=Column(480); body.AddThemeConstantOverride("separation",24);
+        var body=Column(480); body.AddThemeConstantOverride("separation",8);
+        var sliders=new List<Control>();
+        foreach(var category in new[]{"Master","Music","World","Combat","UI","Reward","Boss"})
+        {
+            var label=FrontendSkin.Label(category+" Volume",17); body.AddChild(label);
+            var slider=new HSlider {MinValue=0,MaxValue=100,Step=1,Value=SwtorSurvivors.AudioPreferences.Get(category)*100,CustomMinimumSize=new Vector2(480,22)};
+            slider.ValueChanged+=value=>{label.Text=category+" Volume: "+(int)value+"%";SwtorSurvivors.AudioPreferences.Set(category,(float)value/100);};
+            body.AddChild(slider);sliders.Add(slider);
+        }
         Button mute=null!;
         mute=FrontendSkin.Button("Interface Sounds: "+(_muted?"Off":"On"),()=> {
             _muted=!_muted; mute.Text="Interface Sounds: "+(_muted?"Off":"On"); Sound();
@@ -242,9 +252,9 @@ public partial class FrontendFlow : Control
         }
         mode.ItemSelected+=_=>ApplyDisplay(); resolution.ItemSelected+=_=>ApplyDisplay();
         var close=FrontendSkin.Button("Close",CloseSettings); body.AddChild(close);
-        _settings.AddChild(FrontendSkin.TitledPanel("Settings",body,new Vector2(530,180),new Vector2(540,540)));
+        _settings.AddChild(FrontendSkin.TitledPanel("Settings",body,new Vector2(530,30),new Vector2(540,840)));
         // Keep tab traversal inside the modal.
-        Control[] controls=[mute,mode,resolution,close];
+        Control[] controls=sliders.Concat(new Control[]{mute,mode,resolution,close}).ToArray();
         for(int i=0;i<controls.Length;i++)
         {
             var previous=controls[(i+controls.Length-1)%controls.Length].GetPath();
@@ -316,11 +326,21 @@ public partial class FrontendFlow : Control
         var map=_catalog.Map(_session.Configuration.MapId);
         var chart=new GalaxyChart { Size=new Vector2(1448,650),AvailabilityReason=()=>UnavailableReason }; _page!.AddChild(chart);
         chart.DestinationSelected+=id=>{_session.SelectMap(id,_catalog);Sound("map");};
-        chart.CourseRequested+=()=>{if(_transitioning || _starting)return;Sound();StartRun();};chart.Populate(_catalog,map.Id);
-        var destinations=chart.Destinations;
-        Control[] order=[_back,_menu,..destinations,chart.CourseButton];
-        for(int i=0;i<order.Length;i++){order[i].FocusNext=order[(i+1)%order.Length].GetPath();order[i].FocusPrevious=order[(i+order.Length-1)%order.Length].GetPath();}
-        destinations[^1].FocusNeighborBottom=_back.GetPath();_back.FocusNeighborTop=destinations[^1].GetPath();_menu.FocusNeighborTop=destinations[^1].GetPath();
+        chart.DifficultySelected+=level=>{_session.Configuration.OperationDifficulty=level;Sound();};
+        chart.CategorySelected+=operation=>{
+            _canvas.GetNode<Label>("DestinationSubtitle").Text=operation?"SELECT AN OPERATION":"SELECT A WORLD TO EXPLORE";Sound();};
+        void Navigation()
+        {
+            Control[] order=[_back,_menu,..chart.NavigationButtons];
+            for(int i=0;i<order.Length;i++)
+            {
+                order[i].FocusNext=order[(i+1)%order.Length].GetPath();order[i].FocusPrevious=order[(i+order.Length-1)%order.Length].GetPath();
+                order[i].FocusNeighborBottom=order[i].FocusNext;order[i].FocusNeighborTop=order[i].FocusPrevious;
+            }
+        }
+        chart.NavigationChanged+=Navigation;
+        chart.CourseRequested+=()=>{if(_transitioning || _starting)return;Sound();StartRun();};
+        chart.Populate(_catalog,map.Id,_session.Configuration.OperationDifficulty);Navigation();
     }
     private void StartRun()
     {
@@ -349,3 +369,5 @@ public partial class FrontendFlow : Control
         }
     }
 }
+
+

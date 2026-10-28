@@ -10,6 +10,7 @@ public partial class SurvivorsHud : CanvasLayer
     public GameWorld World { get; set; }=null!;
     public RunMenu Menu {get;private set;}=null!;
     public CombatMeter Meter {get;private set;}=null!;
+    public AbilityDpsMeter AbilityMeter {get;private set;}=null!;
     [Export] public string ArenaName { get; set; }="Korriban";
     private Control _root=null!;
     private CombatHud _combatHud=null!;
@@ -40,6 +41,7 @@ public partial class SurvivorsHud : CanvasLayer
         _combatHud=new CombatHud {World=World};_root.AddChild(_combatHud);
         BuildStatus();
         Meter=new CombatMeter {World=World};_root.AddChild(Meter);
+        AbilityMeter=new AbilityDpsMeter {World=World};_root.AddChild(AbilityMeter);
         Menu=new RunMenu {Name="RunMenu",World=World};AddChild(Menu);
         _deathFrame=ChromePanel();_root.AddChild(_deathFrame);
         _deathFrame.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.CenterTop);
@@ -103,7 +105,11 @@ public partial class SurvivorsHud : CanvasLayer
         float statusTop=16+_statusRoot.Size.X*statusScale+8>bossLeft ? 170*bossScale+12 : 16;
         _statusRoot.Position=new Vector2(16,statusTop);
         Meter.Scale=Vector2.One*statusScale;
-        Meter.Position=new Vector2(16,statusTop+(_statusRoot.Size.Y+8)*statusScale);
+        AbilityMeter.Scale=Meter.Scale;
+        bool stack=_root.Size.X<1400;
+        float bottom=stack?_combatHud.Position.Y-12:_root.Size.Y-20;
+        AbilityMeter.Position=new Vector2(_root.Size.X-16-240*statusScale,bottom-184*statusScale);
+        Meter.Position=AbilityMeter.Position-(stack?new Vector2(0,192*statusScale):new Vector2(252*statusScale,0));
         float choiceScale = Mathf.Min(1, Mathf.Min((_root.Size.X-24)/(_selectionLayout.Size.X+24), (_root.Size.Y-32)/(_selectionLayout.Size.Y+40)));
         _selectionLayout.Scale = Vector2.One * Mathf.Max(0.3f, choiceScale);
         _selectionLayout.Position = (_root.Size - _selectionLayout.Size * _selectionLayout.Scale) / 2;
@@ -180,7 +186,7 @@ public partial class SurvivorsHud : CanvasLayer
                     ChoiceDescription=ability.Definition.PeriodicDuration>0?
                         $"{ability.DamagePerTick+ability.Definition.PeriodicDamage*(ability.DamagePerTick/ability.Definition.Damage)*Mathf.Floor(ability.Definition.PeriodicDuration/ability.Definition.PeriodicInterval):0.#} total damage\n{ability.CooldownSeconds:0.#}s cooldown":
                         $"{ability.DamagePerTick:0.#} damage\n{ability.CooldownSeconds:0.#}s cooldown"};
-                var card=new UpgradeCard(definition,0,i+1,action:"REPLACE");card.Pressed+=()=>progression.Replace(index);_choices.AddChild(card);
+                var card=new UpgradeCard(definition,0,i+1,action:"REPLACE");if(AbilityTooltips.Warrior(World))card.TooltipText="Replace this equipped ability\n"+AbilityTooltips.Describe(World,ability);card.Pressed+=()=>progression.Replace(index);_choices.AddChild(card);
             }
             _choices.GetChild<Control>(0).GrabFocus();return;
         }
@@ -189,7 +195,9 @@ public partial class SurvivorsHud : CanvasLayer
             int index=i;var definition=progression.Offers[i];
             var ability=World.Abilities.Find(definition.AbilityId);
             string action=definition.Effect==UpgradeEffect.UnlockAbility && ability!=null && !World.Abilities.CanUnlock(ability)?"REPLACE":"";
+            if(AbilityTooltips.Warrior(World) && ability!=null && definition.Effect==UpgradeEffect.UnlockAbility)definition.ChoiceDescription=AbilityTooltips.Summary(World,ability);
             var card=new UpgradeCard(definition,progression.Rank(definition),i+1,action:action);
+            if(AbilityTooltips.Warrior(World))card.TooltipText=AbilityTooltips.Choice(World,definition,ability);
             card.Disabled = !progression.CanChoose;
             card.Pressed+=()=>SelectOffer(index);_choices.AddChild(card);
         }
@@ -240,3 +248,4 @@ public partial class SurvivorsHud : CanvasLayer
         if (GodotObject.IsInstanceValid(World.Progression)) World.Progression!.Changed-=RefreshChoices;
     }
 }
+

@@ -2,7 +2,7 @@ using Godot;
 
 namespace SwtorSurvivors;
 
-/// <summary>Thin interop adapter for the unchanged A3 effect. No VFX implementation or damage here.</summary>
+/// <summary>Interop adapter for the A3 effect; supplies the torso fallback for enemies without attachment rigs.</summary>
 public partial class LightningPresentation : Node, IAbilityPresentation
 {
     public Node3D Effect { get; private set; } = null!;
@@ -22,7 +22,7 @@ public partial class LightningPresentation : Node, IAbilityPresentation
     {
         Variant targetRig = target.Presentation == null ? default : Variant.From(target.Presentation.Skeleton);
         if (!Effect.Call("configure", Actor.Skeleton, Actor.Animator, target,
-            targetRig).AsBool())
+            targetRig,target.AimHeight).AsBool())
         { GD.PushError("Lightning configure failed: " + Effect.Get("last_error").AsString()); return false; }
         if (Effect.Call("start_channel").AsBool()) return true;
         Release(); return false;

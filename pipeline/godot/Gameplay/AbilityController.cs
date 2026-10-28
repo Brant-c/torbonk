@@ -31,6 +31,7 @@ public partial class AbilityController : Node
     private int ActivationPriority(AutomaticAbility ability)
     {
         var build=ability.Build;
+        if(build?.World.RunConfiguration.AdvancedClassId=="marauder")return build.Pregame.MarauderPriority(ability);
         if(build?.World.RunConfiguration.AdvancedClassId=="assassin") {
             if(ability.Definition.Id=="maul" && build.Pregame.StealthOpening)return -4;
             if(ability.Definition.Id=="shock" && build.Pregame.VoltaicCharges>0)return -2;

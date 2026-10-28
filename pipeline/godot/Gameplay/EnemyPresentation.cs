@@ -10,6 +10,8 @@ public partial class EnemyPresentation : Node3D
 {
     [Export] public string IdleClip { get; set; } = "Idle";
     [Export] public string RunClip { get; set; } = "Run";
+    /// <summary>World-space stride speed at playback 1, including model scale; zero preserves existing maps.</summary>
+    [Export] public float LocomotionStrideSpeed { get; set; }
     [Export] public string AttackClip { get; set; } = "Attack";
     [Export] public string HitClip { get; set; } = "Hit";
     [Export] public string DeathClip { get; set; } = "Death";
@@ -66,6 +68,7 @@ public partial class EnemyPresentation : Node3D
     }
     private void Play(string clip)
     {
+        if(clip!=RunClip)Animator.SpeedScale=1;
         if (State == clip || !Animator.HasAnimation(clip)) return;
         State = clip; Animator.Play(clip, 0.09);
     }
@@ -80,7 +83,11 @@ public partial class EnemyPresentation : Node3D
             float angle = Mathf.Atan2(-facing.X, -facing.Z) + Mathf.DegToRad(ForwardOffsetDegrees);
             Rotation = new Vector3(0, Mathf.LerpAngle(Rotation.Y, angle, 1 - Mathf.Exp(-12 * (float)delta)), 0);
         }
-        if (_hold <= 0) Play(_locomotion);
+        if (_hold <= 0) {
+            Play(_locomotion);
+            if(LocomotionStrideSpeed>0)Animator.SpeedScale=_locomotion==RunClip
+                ? Mathf.Clamp(flat.Length()/LocomotionStrideSpeed,.01f,2.5f):1;
+        }
     }
     public override void _Process(double delta)
     {

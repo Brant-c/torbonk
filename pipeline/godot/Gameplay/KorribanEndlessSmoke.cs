@@ -45,7 +45,9 @@ public partial class KorribanEndlessSmoke : Node
             for(int level=2;level<=50;level++) {
                 p.AddExperience(p.RequiredExperience);p._Process(10);
                 Check("level "+level+" offers an upgrade",p.Level==level && p.CanChoose);
-                Check("level "+level+" choice applies",p.Choose(0));p._Process(10);
+                Check("level "+level+" choice applies",p.Choose(0));
+                if(p.Replacing)Check("level "+level+" replacement applies",p.Replace(0));
+                p._Process(10);w.Artifacts!.Clear();
             }
             Check("full run reaches 50",p.Level==50 && p.Experience==0);
             waves.PlayerLevel=()=>50;waves.CanStartMilestone=()=>false;

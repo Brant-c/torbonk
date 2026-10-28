@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "massacre"
+Title = "Massacre"
+Icon = "mr_massacre"
+StartsUnlocked = false
+Damage = 58
+CooldownSeconds = 6
+Range = 0.4
+Radius = 0
+Area = 0
+WindupSeconds = 0.18
+ChannelSeconds = 0
+TickSeconds = 0.4
+RecoverySeconds = 0.12
+GestureSeconds = 0.95
+StartClip = "Marauder/cb_2saber_sp2_attack_right_12"
+LoopClip = "Marauder/cb_2saber_sp2_attack_right_12"
+RequireGesture = true
+PresentationKind = "saber"
+SourceFx = "epp.sith_warrior.massacre.cast_instant"
+Description = "A heavy direct-damage dual-saber attack. Gore empowers weapon damage for four seconds; Battering Assault empowers the next Massacre or Ravage."
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/weapon_melee/tr_horizontal_slash.png"
+ImpactAudio = "res://Assets/WarriorLibrary/Audio/135833827.wav"
+WeaponAudio = "res://Assets/D3/Audio/173808209.wav"
+OffhandAudio = "res://Assets/D3/Audio/173808209.wav"
+
+FinishGesture = true
+
+FullBodyGesture = true

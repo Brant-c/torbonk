@@ -17,13 +17,36 @@
   ],
   "Talents": [
     {
-      "Id": "immortal.mitigation",
+      "Id": "immortal.grip",
       "Classes": [
         "juggernaut"
       ],
       "Tree": "immortal",
       "Tier": 0,
       "Column": 0,
+      "Icon": "res://Assets/UI/icons/jg_forcechoke.png",
+      "Name": "Crushing Grip",
+      "Description": "Force Choke affects one additional nearby enemy per rank (up to four total).",
+      "MaxRank": 3,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "jg_grip",
+          "Amount": 1
+        }
+      ],
+      "Source": "Survivors AoE adaptation using recovered Warrior abilities; not a native 2012 talent claim."
+    },
+    {
+      "Id": "immortal.mitigation",
+      "Classes": [
+        "juggernaut"
+      ],
+      "Tree": "immortal",
+      "Tier": 0,
+      "Column": 1,
       "Icon": "res://Assets/UI/icons/jg_saberward.png",
       "Name": "Soresu Mastery",
       "Description": "Incoming damage reduced by 8%.",
@@ -45,8 +68,8 @@
         "juggernaut"
       ],
       "Tree": "immortal",
-      "Tier": 0,
-      "Column": 1,
+      "Tier": 1,
+      "Column": 0,
       "Icon": "res://Assets/UI/icons/jg_saberward.png",
       "Name": "Blade Barricade",
       "Description": "Retaliation grants 15% mitigation for 4 seconds.",
@@ -68,8 +91,8 @@
         "juggernaut"
       ],
       "Tree": "immortal",
-      "Tier": 0,
-      "Column": 2,
+      "Tier": 1,
+      "Column": 1,
       "Icon": "res://Assets/UI/icons/jg_saberward.png",
       "Name": "Revenge",
       "Description": "Taking damage reduces Retaliation cooldown once per second.",
@@ -86,36 +109,13 @@
       "Source": "April Warrior library tree identity; survivors synergy adaptation"
     },
     {
-      "Id": "immortal.darkblood",
-      "Classes": [
-        "juggernaut"
-      ],
-      "Tree": "immortal",
-      "Tier": 1,
-      "Column": 0,
-      "Icon": "res://Assets/UI/icons/jg_saberward.png",
-      "Name": "Dark Blood",
-      "Description": "Sundering Assault heals 3 health once per activation.",
-      "MaxRank": 1,
-      "Cost": 1,
-      "RequiredPoints": 2,
-      "Effects": [
-        {
-          "Kind": "hook",
-          "Key": "jg_darkblood",
-          "Amount": 1
-        }
-      ],
-      "Source": "April Warrior library tree identity; survivors synergy adaptation"
-    },
-    {
       "Id": "immortal.sonic",
       "Classes": [
         "juggernaut"
       ],
       "Tree": "immortal",
-      "Tier": 1,
-      "Column": 1,
+      "Tier": 2,
+      "Column": 0,
       "Icon": "res://Assets/UI/icons/jg_saberward.png",
       "Name": "Sonic Barrier",
       "Description": "Force Scream grants a small shield once per activation.",
@@ -132,13 +132,36 @@
       "Source": "April Warrior library tree identity; survivors synergy adaptation"
     },
     {
+      "Id": "immortal.darkblood",
+      "Classes": [
+        "juggernaut"
+      ],
+      "Tree": "immortal",
+      "Tier": 2,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/jg_saberward.png",
+      "Name": "Dark Blood",
+      "Description": "Sundering Assault heals 3 health once per activation.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "jg_darkblood",
+          "Amount": 1
+        }
+      ],
+      "Source": "April Warrior library tree identity; survivors synergy adaptation"
+    },
+    {
       "Id": "immortal.unleashed",
       "Classes": [
         "juggernaut"
       ],
       "Tree": "immortal",
-      "Tier": 1,
-      "Column": 2,
+      "Tier": 3,
+      "Column": 0,
       "Icon": "res://Assets/UI/icons/jg_saberward.png",
       "Name": "Unleashed",
       "Description": "Roar and Choke reduce Saber Ward cooldown.",
@@ -160,14 +183,14 @@
         "juggernaut"
       ],
       "Tree": "immortal",
-      "Tier": 2,
-      "Column": 0,
+      "Tier": 3,
+      "Column": 1,
       "Icon": "res://Assets/UI/icons/jg_saberward.png",
       "Name": "Invincible",
       "Description": "Saber Ward also grants 20% mitigation for 6 seconds.",
       "MaxRank": 1,
       "Cost": 1,
-      "RequiredPoints": 4,
+      "RequiredPoints": 2,
       "Effects": [
         {
           "Kind": "hook",
@@ -183,8 +206,8 @@
         "juggernaut"
       ],
       "Tree": "immortal",
-      "Tier": 2,
-      "Column": 1,
+      "Tier": 4,
+      "Column": 0,
       "Icon": "res://Assets/UI/icons/jg_saberward.png",
       "Name": "Undying",
       "Description": "Enraged Defense reactions also reduce Endure Pain cooldown.",
@@ -201,12 +224,58 @@
       "Source": "April Warrior library tree identity; survivors synergy adaptation"
     },
     {
-      "Id": "vengeance.savagery",
+      "Id": "vengeance.sweep",
       "Classes": [
         "juggernaut"
       ],
       "Tree": "vengeance",
       "Tier": 0,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/jg_ravage.png",
+      "Name": "Ravaging Sweep",
+      "Description": "Ravage cleaves one additional enemy in front per rank, at 60% damage (up to four total).",
+      "MaxRank": 3,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "jg_sweep",
+          "Amount": 1
+        }
+      ],
+      "Source": "Survivors AoE adaptation using recovered Warrior abilities; not a native 2012 talent claim."
+    },
+    {
+      "Id": "vengeance.scream_bleed",
+      "Classes": [
+        "juggernaut"
+      ],
+      "Tree": "vengeance",
+      "Tier": 0,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/jg_impale.png",
+      "Name": "Draining Scream",
+      "Description": "Force Scream applies a 6-second bleed.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "jg_scream_bleed",
+          "Amount": 1
+        }
+      ],
+      "Source": "April Warrior library tree identity; survivors synergy adaptation"
+    },
+    {
+      "Id": "vengeance.savagery",
+      "Classes": [
+        "juggernaut"
+      ],
+      "Tree": "vengeance",
+      "Tier": 1,
       "Column": 0,
       "Icon": "res://Assets/UI/icons/jg_impale.png",
       "Name": "Savagery",
@@ -229,7 +298,7 @@
         "juggernaut"
       ],
       "Tree": "vengeance",
-      "Tier": 0,
+      "Tier": 1,
       "Column": 1,
       "Icon": "res://Assets/UI/icons/jg_impale.png",
       "Name": "Rampage",
@@ -247,35 +316,12 @@
       "Source": "April Warrior library tree identity; survivors synergy adaptation"
     },
     {
-      "Id": "vengeance.scream_bleed",
-      "Classes": [
-        "juggernaut"
-      ],
-      "Tree": "vengeance",
-      "Tier": 0,
-      "Column": 2,
-      "Icon": "res://Assets/UI/icons/jg_impale.png",
-      "Name": "Draining Scream",
-      "Description": "Force Scream applies a 6-second bleed.",
-      "MaxRank": 1,
-      "Cost": 1,
-      "RequiredPoints": 0,
-      "Effects": [
-        {
-          "Kind": "hook",
-          "Key": "jg_scream_bleed",
-          "Amount": 1
-        }
-      ],
-      "Source": "April Warrior library tree identity; survivors synergy adaptation"
-    },
-    {
       "Id": "vengeance.impale_bleed",
       "Classes": [
         "juggernaut"
       ],
       "Tree": "vengeance",
-      "Tier": 1,
+      "Tier": 2,
       "Column": 0,
       "Icon": "res://Assets/UI/icons/jg_impale.png",
       "Name": "Eviscerate",
@@ -298,7 +344,7 @@
         "juggernaut"
       ],
       "Tree": "vengeance",
-      "Tier": 1,
+      "Tier": 2,
       "Column": 1,
       "Icon": "res://Assets/UI/icons/jg_impale.png",
       "Name": "Pooled Hatred",
@@ -321,8 +367,8 @@
         "juggernaut"
       ],
       "Tree": "vengeance",
-      "Tier": 1,
-      "Column": 2,
+      "Tier": 3,
+      "Column": 0,
       "Icon": "res://Assets/UI/icons/jg_impale.png",
       "Name": "Unstoppable",
       "Description": "Charge and Obliterate grant 15% mitigation for 4 seconds.",
@@ -344,14 +390,14 @@
         "juggernaut"
       ],
       "Tree": "vengeance",
-      "Tier": 2,
-      "Column": 0,
+      "Tier": 3,
+      "Column": 1,
       "Icon": "res://Assets/UI/icons/jg_impale.png",
       "Name": "Bloodmaster",
       "Description": "Ravage deals 20% more damage to your bleeding targets.",
       "MaxRank": 1,
       "Cost": 1,
-      "RequiredPoints": 4,
+      "RequiredPoints": 2,
       "Effects": [
         {
           "Kind": "hook",
@@ -367,8 +413,8 @@
         "juggernaut"
       ],
       "Tree": "vengeance",
-      "Tier": 2,
-      "Column": 1,
+      "Tier": 4,
+      "Column": 0,
       "Icon": "res://Assets/UI/icons/jg_impale.png",
       "Name": "Shatter",
       "Description": "Crushing Blow spreads your existing periodic effects to nearby victims.",
@@ -385,12 +431,58 @@
       "Source": "April Warrior library tree identity; survivors synergy adaptation"
     },
     {
-      "Id": "juggernaut_rage.shockwave",
+      "Id": "juggernaut_rage.resonance",
       "Classes": [
         "juggernaut"
       ],
       "Tree": "juggernaut_rage",
       "Tier": 0,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/smash.png",
+      "Name": "Force Resonance",
+      "Description": "Force Scream hits 2 additional nearby enemies per rank, at 65% damage (3 / 5 / 7 targets).",
+      "MaxRank": 3,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "jg_resonance",
+          "Amount": 1
+        }
+      ],
+      "Source": "April Warrior library tree identity; survivors synergy adaptation"
+    },
+    {
+      "Id": "juggernaut_rage.decimate",
+      "Classes": [
+        "juggernaut"
+      ],
+      "Tree": "juggernaut_rage",
+      "Tier": 0,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/smash.png",
+      "Name": "Decimate",
+      "Description": "Smash gains 25% radius.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "jg_decimate",
+          "Amount": 1
+        }
+      ],
+      "Source": "April Warrior library tree identity; survivors synergy adaptation"
+    },
+    {
+      "Id": "juggernaut_rage.shockwave",
+      "Classes": [
+        "juggernaut"
+      ],
+      "Tree": "juggernaut_rage",
+      "Tier": 1,
       "Column": 0,
       "Icon": "res://Assets/UI/icons/smash.png",
       "Name": "Shockwave",
@@ -413,7 +505,7 @@
         "juggernaut"
       ],
       "Tree": "juggernaut_rage",
-      "Tier": 0,
+      "Tier": 1,
       "Column": 1,
       "Icon": "res://Assets/UI/icons/smash.png",
       "Name": "Dominate",
@@ -431,59 +523,13 @@
       "Source": "April Warrior library tree identity; survivors synergy adaptation"
     },
     {
-      "Id": "juggernaut_rage.decimate",
-      "Classes": [
-        "juggernaut"
-      ],
-      "Tree": "juggernaut_rage",
-      "Tier": 0,
-      "Column": 2,
-      "Icon": "res://Assets/UI/icons/smash.png",
-      "Name": "Decimate",
-      "Description": "Smash gains 25% radius.",
-      "MaxRank": 1,
-      "Cost": 1,
-      "RequiredPoints": 0,
-      "Effects": [
-        {
-          "Kind": "hook",
-          "Key": "jg_decimate",
-          "Amount": 1
-        }
-      ],
-      "Source": "April Warrior library tree identity; survivors synergy adaptation"
-    },
-    {
-      "Id": "juggernaut_rage.resonance",
-      "Classes": [
-        "juggernaut"
-      ],
-      "Tree": "juggernaut_rage",
-      "Tier": 1,
-      "Column": 0,
-      "Icon": "res://Assets/UI/icons/smash.png",
-      "Name": "Force Resonance",
-      "Description": "Force Scream evolves into a splash hitting nearby enemies at 65% strength.",
-      "MaxRank": 1,
-      "Cost": 1,
-      "RequiredPoints": 2,
-      "Effects": [
-        {
-          "Kind": "hook",
-          "Key": "jg_resonance",
-          "Amount": 1
-        }
-      ],
-      "Source": "April Warrior library tree identity; survivors synergy adaptation"
-    },
-    {
       "Id": "juggernaut_rage.crushingwave",
       "Classes": [
         "juggernaut"
       ],
       "Tree": "juggernaut_rage",
-      "Tier": 1,
-      "Column": 1,
+      "Tier": 2,
+      "Column": 0,
       "Icon": "res://Assets/UI/icons/smash.png",
       "Name": "Crushing Wave",
       "Description": "Smash spreads an existing Force Crush to nearby enemies.",
@@ -505,8 +551,8 @@
         "juggernaut"
       ],
       "Tree": "juggernaut_rage",
-      "Tier": 1,
-      "Column": 2,
+      "Tier": 2,
+      "Column": 1,
       "Icon": "res://Assets/UI/icons/smash.png",
       "Name": "Force Alacrity",
       "Description": "Scream reduces Force Crush cooldown by 2 seconds.",
@@ -528,14 +574,14 @@
         "juggernaut"
       ],
       "Tree": "juggernaut_rage",
-      "Tier": 2,
+      "Tier": 3,
       "Column": 0,
       "Icon": "res://Assets/UI/icons/smash.png",
       "Name": "Undying Rage",
       "Description": "Smash heals 2 health per enemy, capped at 6 per activation.",
       "MaxRank": 1,
       "Cost": 1,
-      "RequiredPoints": 4,
+      "RequiredPoints": 2,
       "Effects": [
         {
           "Kind": "hook",
@@ -551,14 +597,14 @@
         "juggernaut"
       ],
       "Tree": "juggernaut_rage",
-      "Tier": 2,
+      "Tier": 3,
       "Column": 1,
       "Icon": "res://Assets/UI/icons/smash.png",
       "Name": "Obliteration",
       "Description": "Force Crush ticks reduce Obliterate cooldown, once per second.",
       "MaxRank": 1,
       "Cost": 1,
-      "RequiredPoints": 4,
+      "RequiredPoints": 2,
       "Effects": [
         {
           "Kind": "hook",
@@ -567,6 +613,29 @@
         }
       ],
       "Source": "April Warrior library tree identity; survivors synergy adaptation"
+    },
+    {
+      "Id": "juggernaut_rage.fissure",
+      "Classes": [
+        "juggernaut"
+      ],
+      "Tree": "juggernaut_rage",
+      "Tier": 4,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/smash.png",
+      "Name": "Rupturing Smash",
+      "Description": "Smash leaves a four-second Force wound on every enemy hit.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 4,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Key": "jg_fissure",
+          "Amount": 1
+        }
+      ],
+      "Source": "Survivors AoE adaptation using recovered Warrior abilities; not a native 2012 talent claim."
     }
   ]
 }

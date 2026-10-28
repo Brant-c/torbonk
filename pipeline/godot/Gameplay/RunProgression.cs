@@ -87,7 +87,7 @@ public partial class RunProgression : Node3D
             foreach(string id in World.RunConfiguration.Profile.TalentPool)
             {
                 var u=(UpgradeDefinition)GD.Load<UpgradeDefinition>($"res://Gameplay/Upgrades/{id}.tres").Duplicate();
-                if(u.Effect is UpgradeEffect.Range or UpgradeEffect.Cooldown)u.AbilityId=World.Combat.Definition.Id;
+                if(u.Effect is UpgradeEffect.Range or UpgradeEffect.Cooldown)u.AbilityId=World.RunConfiguration.AdvancedClassId=="marauder"?"":World.Combat.Definition.Id;
                 // Class kits share one damage track so unlocked abilities stay relevant.
                 if(u.Effect==UpgradeEffect.Damage && World.RunConfiguration.Profile.Kit.Length>0)u.AbilityId="";
                 else if(u.Effect==UpgradeEffect.Damage)u.AbilityId=World.Combat.Definition.Id;
@@ -101,6 +101,17 @@ public partial class RunProgression : Node3D
             foreach(string id in new[]{"unlock_lightningstrike","unlock_crushingdarkness","unlock_forcespeed","shock_cleave","strike_cleave","polarity_training","crushing_power","deathfield_cooldown"})
                 Upgrades.Add(GD.Load<UpgradeDefinition>($"res://Gameplay/Upgrades/{id}.tres"));
         if(World.RunConfiguration.AdvancedClassId=="assassin")Upgrades.Add(new UpgradeDefinition {Id="unlock_lacerate",Title="Lacerate",Icon="spinningstrike",AbilityId="lacerate",Effect=UpgradeEffect.UnlockAbility,MaximumRank=1});
+        if(World.RunConfiguration.AdvancedClassId=="marauder")
+        {
+            foreach(string id in new[]{"viciousslash","rupture","deadlysaber","annihilate","ravage","sweepingslash","saberthrow","deadlythrow","forcecrush","smash","batteringassault","massacre","gore","forcescream","intimidatingroar"})
+            {
+                var ability=World.Abilities.Find(id);if(ability==null)continue;
+                Upgrades.Add(new UpgradeDefinition {Id=$"marauder_power_{id}",Title=$"{ability.Definition.Title} Mastery",
+                    Icon=ability.Definition.Icon,AbilityId=id,Effect=UpgradeEffect.AbilityPower,DamagePerRank=.2f,MaximumRank=0});
+            }
+            Upgrades.Add(new UpgradeDefinition {Id="marauder_blademaster",Title="Blademaster Cleave",Icon="mr_talent_bladerush",AbilityId="ravage",Effect=UpgradeEffect.Mechanic,Mechanic="mr_blademaster",MaximumRank=6,MechanicalDescription="Melee attacks gain a target and 10% secondary damage per rank, up to eight targets and full secondary damage."});
+            foreach(var recovery in Upgrades.Where(u=>u.Effect==UpgradeEffect.Cooldown))recovery.MaximumRank=2;
+        }
         foreach(var milestone in SpecMilestones.Catalog(World))Upgrades.Add(milestone);
         foreach(var training in World.Build.Pregame.RunUpgrades())Upgrades.Add(training);
         var rarity=GD.Load<RarityTuning>("res://Gameplay/Upgrades/rarity.tres");
@@ -211,13 +222,50 @@ public partial class RunProgression : Node3D
                 result.Add(core);if(result.Count==2)break;
             }
         }
+        if(World.RunConfiguration.AdvancedClassId=="marauder" && level<=7 &&
+            (count>1 || !excluded.Any(u=>u.Effect==UpgradeEffect.UnlockAbility && !_banished.Contains(u.Id)))) {
+            foreach(string id in World.Build.Pregame.MarauderEarlyAbilities) {
+                var core=abilities.FirstOrDefault(a=>a.AbilityId==id);
+                if(core==null)continue;
+                result.Add(core);if(result.Count==Math.Min(3,count))break;
+            }
+        }
+        // Juggernaut needs dependable group damage before random utility unlocks.
+        // Work from eligible candidates so banish, ownership and replacement rules still apply.
+        if(World.RunConfiguration.AdvancedClassId=="juggernaut" && level<=6 &&
+            (count>1 || !excluded.Any(u=>u.Effect==UpgradeEffect.UnlockAbility && !_banished.Contains(u.Id)))) {
+            foreach(string id in World.Build.Pregame.JuggernautEarlyAbilities) {
+                var core=abilities.FirstOrDefault(a=>a.AbilityId==id);
+                if(core==null)continue;
+                result.Add(core);if(result.Count==Math.Min(level<=3?2:1,count))break;
+            }
+        }
         if(result.Count==0 && offeredAbility!=null)result.Add(offeredAbility);
+        if(World.RunConfiguration.AdvancedClassId=="juggernaut" && level<=6 && count>1 && result.Count<count) {
+            while(result.Count<count) {
+                var talents=eligible.Where(u=>u.Mechanic.StartsWith("jg_",StringComparison.Ordinal)).ToArray();
+                if(talents.Length==0)break;
+                int lowest=talents.Min(u=>Rank(u));var fresh=talents.Where(u=>Rank(u)==lowest).ToArray();
+                var talent=fresh[_random.RandiRange(0,fresh.Length-1)];
+                result.Add(talent);eligible.RemoveAll(u=>u.Id==talent.Id);
+            }
+        }
         while(result.Count<count && eligible.Count>0)
         {
-            var baseline=eligible.Where(u=>!u.D2Choice).ToArray();
-            var rarityPool=baseline.Length>0?baseline:eligible.ToArray();
+            // Choose class scope before rarity, reserving two slots and one damage upgrade.
+            bool ClassUpgrade(UpgradeDefinition u)=>u.Id.StartsWith("marauder_",StringComparison.Ordinal) || u.Mechanic.StartsWith("mr_",StringComparison.Ordinal);
+            var pool=eligible.ToArray();
+            if(World.RunConfiguration.AdvancedClassId=="marauder")
+            {
+                var preferred=pool.Where(ClassUpgrade).ToArray();
+                var damage=preferred.Where(u=>u.Effect==UpgradeEffect.AbilityPower && u.DamagePerRank>0).ToArray();
+                if(damage.Length>0 && !result.Any(u=>u.Effect==UpgradeEffect.AbilityPower && u.DamagePerRank>0))pool=damage;
+                else if(preferred.Length>0 && result.Count(ClassUpgrade)<Math.Min(2,count))pool=preferred;
+            }
+            var baseline=pool.Where(u=>!u.D2Choice).ToArray();
+            var rarityPool=baseline.Length>0?baseline:pool;
             var tier=rarityPool[_random.RandiRange(0,rarityPool.Length-1)].Rarity;
-            var choices=eligible.Where(u=>u.Rarity==tier).ToArray();
+            var choices=pool.Where(u=>u.Rarity==tier).ToArray();
             float Weight(UpgradeDefinition u)=>(u.Effect is UpgradeEffect.Mechanic or UpgradeEffect.UnlockAbility or UpgradeEffect.AbilityPower?3:1)*World.Build.Pregame.OfferWeight(u);
             float roll=_random.Randf()*choices.Sum(Weight);var chosen=choices.Last();
             foreach(var choice in choices){roll-=Weight(choice);if(roll<=0){chosen=choice;break;}}
@@ -246,7 +294,9 @@ public partial class RunProgression : Node3D
     public bool Reroll()
     {
         if(!CanChoose || Replacing || RerollsRemaining<=0 || !World.PlayerActor.Alive)return false;
-        var choices=GenerateOffers(Level,_offers);
+        var excluded=World.RunConfiguration.AdvancedClassId=="juggernaut" && Level<=6
+            ?_offers.Where(u=>!World.Build.Pregame.JuggernautEarlyAbilities.Contains(u.AbilityId)):_offers;
+        var choices=GenerateOffers(Level,excluded);
         if(choices.Count<_offers.Count)return false;
         _offers.Clear();_offers.AddRange(choices);RerollsRemaining--;OfferRevision++;Changed?.Invoke();return true;
     }
@@ -273,8 +323,12 @@ public partial class RunProgression : Node3D
     {
         if(_banished.Contains(upgrade.Id) || _banishedAbilities.Contains(upgrade.AbilityId))return false;
         if(upgrade.Effect==UpgradeEffect.TickRate && !World.Abilities.Abilities.Any(a=>a.Unlocked && (a.ChannelSeconds>0 || a.Definition.PeriodicDuration>0) && (upgrade.AbilityId=="" || upgrade.AbilityId==a.Definition.Id)))return false;
+        if(World.RunConfiguration.AdvancedClassId=="marauder" && upgrade.Mechanic.StartsWith("mr_",StringComparison.Ordinal) && upgrade.Mechanic!="mr_blademaster" && World.Build.Pregame.MarauderTalentRank(upgrade.Mechanic)+Rank(upgrade)>=1)return false;
+        if(upgrade.Mechanic=="jg_convergence" && World.Abilities.Find("forcecrush")?.Unlocked!=true)return false;
         if(upgrade.Mechanic=="haste" && World.Abilities.Equipped(AbilityCategory.Utility)==0)return false;
         if(upgrade.RequiresUpgrade!="" && _ranks.GetValueOrDefault(upgrade.RequiresUpgrade)==0)return false;
+        if(World.RunConfiguration.AdvancedClassId=="juggernaut" && upgrade.Mechanic.StartsWith("jg_",StringComparison.Ordinal) && upgrade.MaximumRank>0 &&
+            Rank(upgrade)+World.Build.Pregame.JuggernautTalentRank(upgrade.Mechanic)>=upgrade.MaximumRank)return false;
         if(upgrade.MaximumRank>0 && Rank(upgrade)>=upgrade.MaximumRank) return false;
         if(upgrade.Mechanic=="polarity")return !World.Build.Pregame.PolarityReady && World.Abilities.Find(upgrade.AbilityId)!=null;
         if(upgrade.AbilityId=="") return upgrade.Effect!=UpgradeEffect.UnlockAbility;
@@ -282,7 +336,7 @@ public partial class RunProgression : Node3D
         return ability!=null && (upgrade.Effect==UpgradeEffect.UnlockAbility?!ability.Unlocked && !World.Abilities.Conflicts(ability) && (World.Abilities.CanUnlock(ability) || ReplacementCandidates(ability)):ability.Unlocked);
     }
 
-    private static bool CanReplace(AutomaticAbility ability)=>ability.Unlocked && !ability.Definition.IsBasicAttack && (!ability.Definition.Slotless || ability.Definition.Id is "affliction" or "lacerate" or "viciousslash");
+    private static bool CanReplace(AutomaticAbility ability)=>ability.Unlocked && !ability.Definition.IsBasicAttack && (!ability.Definition.Slotless || ability.Definition.ReplaceableStarter || ability.Definition.Id is "affliction" or "lacerate" or "viciousslash");
     private bool ReplacementCandidates(AutomaticAbility ability)=>World.Abilities.Abilities.Any(a=>CanReplace(a) && a.Definition.Category==ability.Definition.Category);
 
     public bool Choose(int index)
@@ -302,7 +356,7 @@ public partial class RunProgression : Node3D
         var incoming=World.Abilities.Find(chosen.AbilityId)!;
         bool oldFree=old.InheritsFreeSlot,incomingFree=incoming.InheritsFreeSlot,oldSlotless=old.Definition.Slotless;
         old.SetUnlocked(false);old.InheritsFreeSlot=false;
-        incoming.InheritsFreeSlot=oldFree || (old.Definition.Id is "affliction" or "lacerate" or "viciousslash") && oldSlotless;
+        incoming.InheritsFreeSlot=oldFree || (old.Definition.ReplaceableStarter || old.Definition.Id is "affliction" or "lacerate" or "viciousslash") && oldSlotless;
         if(old.Definition.Id=="lacerate")old.Definition.Slotless=false;
         _replacement=null;
         if(ApplyChoice(chosen,_offers.IndexOf(chosen)))

@@ -18,12 +18,17 @@ TickSeconds = 0.8
 WindupSeconds = 0.2
 RecoverySeconds = 0.25
 GestureSeconds = 2.6
-StartClip = "Basic/Saber"
-LoopClip = "Basic/Saber"
+StartClip = "WarriorExtra/SaberRavage"
+LoopClip = "WarriorExtra/SaberRavage"
 RequireGesture = true
 PresentationKind = "saber"
 ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/bw_flare_gray.png"
 CastAudio = ""
-ImpactAudio = ""
+ImpactAudio = "res://Assets/D3/Audio/174681073.wav"
+WeaponAudio = "res://Assets/D3/Audio/173808209.wav"
 SourceFx = "epp.jedi_knight.master_strike.cancel;epp.jedi_knight.master_strike.target_cancel;epp.sith_warrior.ravage.cast_channel;epp.sith_warrior.ravage.reaction"
-Description = "April Warrior ability; survivors adaptation."
+Description = "Three saber hits over 2.4 seconds. Remain in melee range; movement remains available."
+
+FullBodyGesture = true
+
+FinishGesture = true

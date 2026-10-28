@@ -3,6 +3,9 @@
   "failure": null,
   "checks": [
     "in-flight channel accelerates without replaying ticks or changing duration",
+    "Force Lightning configures a target without an attachment rig",
+    "Force Lightning ends at torso height",
+    "Force Lightning torso endpoint follows moving targets",
     "Affliction starts unlocked and slotless",
     "untalented Polarity is locked and absent from starting bar",
     "Dark Escape uses movement artwork",

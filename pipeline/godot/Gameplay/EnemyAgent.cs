@@ -111,6 +111,8 @@ public partial class EnemyAgent : Combatant
         }
         SlowRemaining=Math.Max(0,SlowRemaining-delta);if(SlowRemaining<=0)_slowFactor=1;
         if (!GodotObject.IsInstanceValid(Target) || !Target.Alive) { Stop(); return; }
+        if (GetNodeOrNull<Xrr3Attack>("Xrr3Attack") is { } raid && raid.Tick(delta))
+        { Body.Velocity=Vector3.Zero;Visual?.Present(Vector3.Zero,Target.GlobalPosition,delta);return; }
         if (GetNodeOrNull<TombAttack>("TombAttack") is { } trial && trial.Tick(delta))
         { Body.Velocity=Vector3.Zero;Visual?.Present(Vector3.Zero,Target.GlobalPosition,delta);return; }
         if (GetNodeOrNull<BossEncounter>("BossEncounter") is { } boss && boss.Tick(delta))
@@ -152,16 +154,22 @@ public partial class EnemyAgent : Combatant
             horizontal = _direction * MoveSpeed;
             if (Crowd != null) horizontal = (horizontal + Crowd.Separation(this) * MoveSpeed * 0.7f).LimitLength(MoveSpeed);
             horizontal *= _slowFactor;
-            if (!Navigation.CanWalk(before, before + horizontal * (float)delta))
-            { horizontal = Vector3.Zero; _steerIn = 0; }
+            // MoveAndSlide handles walls. Validate the actual slide path below, rather than
+            // probing an intended path and then probing almost the same path a second time.
         }
         Body.Velocity = new Vector3(horizontal.X, Body.IsOnFloor() ? 0 : Mathf.Max(-3, Body.Velocity.Y - Gravity * (float)delta), horizontal.Z);
         Body.MoveAndSlide();
         // Slide motion can differ from the steering sweep: reject unsafe sideways slips and falls.
         var flatAfter = new Vector3(Body.GlobalPosition.X, before.Y, Body.GlobalPosition.Z);
-        if (!Navigation.Arena.CanTraverse(before, flatAfter, Navigation.Radius) || Body.GlobalPosition.Y < before.Y - 0.065f)
-        { Body.GlobalPosition = before; Body.Velocity = Vector3.Zero; _steerIn = 0; }
-        if (Body.IsOnWall()) _steerIn = 0;
+        bool movedHorizontally = flatAfter != before;
+        if ((movedHorizontally && !Navigation.Arena.CanTraverse(before, flatAfter, Navigation.Radius)) || Body.GlobalPosition.Y < before.Y - 0.065f)
+        {
+            Body.GlobalPosition = before; Body.Velocity = Vector3.Zero; _direction = Vector3.Zero;
+            // A blocked crowd must not retry all nine directions every physics tick.
+            _steerIn = Math.Max(_steerIn, 0.06);
+        }
+        if (Body.IsOnWall() && !_direction.IsZeroApprox())
+        { _direction = Vector3.Zero; _steerIn = 0.06; }
         Presentation?.Present((Body.GlobalPosition - before) / (float)delta, delta);
         Visual?.Present((Body.GlobalPosition - before) / (float)delta, Target.GlobalPosition, delta);
     }
@@ -188,6 +196,7 @@ public partial class EnemyAgent : Combatant
         if (State != EnemyState.Dead) { State = EnemyState.Idle; Presentation?.Present(Vector3.Zero, 0.1); }
         GetNodeOrNull<BossEncounter>("BossEncounter")?.End();
         GetNodeOrNull<TombAttack>("TombAttack")?.End();
+        GetNodeOrNull<Xrr3Attack>("Xrr3Attack")?.End();
         if (Visual != null && Target != null) Visual.Present(Vector3.Zero, Target.GlobalPosition, 0.1);
         SetPhysicsProcess(false);
     }

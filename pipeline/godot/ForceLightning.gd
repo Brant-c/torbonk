@@ -9,6 +9,7 @@ signal phase_changed(phase: String)
 var caster: Skeleton3D
 var target_rig: Skeleton3D
 var target_node: Node3D
+var target_aim_height: float = 0.0
 var animator: AnimationPlayer
 var phase: String = "idle"
 var elapsed: float = 0.0
@@ -54,9 +55,10 @@ func _ready():
 		if mixer: mixer.call("RegisterCombatVoice", sound)
 	set_process(false)
 
-func configure(rig: Skeleton3D, animation_player: AnimationPlayer, target: Node3D = null, target_skeleton: Skeleton3D = null) -> bool:
+func configure(rig: Skeleton3D, animation_player: AnimationPlayer, target: Node3D = null, target_skeleton: Skeleton3D = null, aim_height: float = 0.0) -> bool:
 	interrupt(false); last_error=""
 	caster = rig; animator = animation_player; target_node = target; target_rig = target_skeleton
+	target_aim_height = aim_height
 	target_was_assigned = target != null or target_skeleton != null
 	for entry in config.caster._fxLightningList:
 		if caster.find_bone(entry._fxAttachBone) < 0:
@@ -122,7 +124,7 @@ func aim_point() -> Vector3:
 	if is_instance_valid(target_rig):
 		var index = target_rig.find_bone("vfx_aim01")
 		if index >= 0: return (target_rig.global_transform * target_rig.get_bone_global_pose(index)).origin
-	if is_instance_valid(target_node): return target_node.global_position
+	if is_instance_valid(target_node): return target_node.global_position + Vector3.UP * target_aim_height
 	return target_point
 
 func make_material(path: String, particle: bool) -> ShaderMaterial:

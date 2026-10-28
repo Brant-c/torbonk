@@ -19,7 +19,9 @@ public partial class DestinationChoice : SwtorButton
         var panel=new Panel {Size=_visual.Size,MouseFilter=MouseFilterEnum.Ignore};panel.AddThemeStyleboxOverride("panel",new StyleBoxFlat {BgColor=new Color(.01f,.025f,.045f,.38f),CornerRadiusTopLeft=18,CornerRadiusTopRight=18,CornerRadiusBottomLeft=18,CornerRadiusBottomRight=18});_visual.AddChild(panel);
         ColorRect Rule(float y){var r=new ColorRect {Position=new Vector2(50,y),Size=new Vector2(210,2),MouseFilter=MouseFilterEnum.Ignore};_visual.AddChild(r);return r;}
         _top=Rule(0);_bottom=Rule(96);
+        if(!string.IsNullOrEmpty(Map.Surface)) {
         var planet=new TextureRect {Name="PlanetIcon",ExpandMode=TextureRect.ExpandModeEnum.IgnoreSize,Texture=FrontendSkin.Texture(Map.Surface),Position=new Vector2(20,22),Size=new Vector2(52,52),StretchMode=TextureRect.StretchModeEnum.Scale,Material=new ShaderMaterial {Shader=GD.Load<Shader>(FrontendSkin.Assets+"planet.gdshader")},MouseFilter=MouseFilterEnum.Ignore};_visual.AddChild(planet);
+        }
         void Line(string text,int size,float y,Color color,bool bold=false){var l=FrontendSkin.Label(text,size);l.Position=new Vector2(90,y);l.Size=new Vector2(220,38);l.AddThemeColorOverride("font_color",color);if(bold)l.AddThemeFontOverride("font",GD.Load<FontFile>("res://Assets/UI/EurostileBold.ttf"));_visual.AddChild(l);}
         Line(Map.Name,25,15,new Color("e4edf2"),true);Line(Map.Region,19,53,new Color("8cabbf"));
         MouseEntered+=()=>{_hover=true;Refresh();};MouseExited+=()=>{_hover=false;Refresh();};FocusEntered+=()=>{_focus=true;Refresh();};FocusExited+=()=>{_focus=false;Refresh();};

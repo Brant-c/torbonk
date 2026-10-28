@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "gore"
+Title = "Gore"
+Icon = "mr_talent_sweepingslash"
+StartsUnlocked = false
+Damage = 70
+CooldownSeconds = 14
+Range = 0.4
+Radius = 0
+Area = 0
+WindupSeconds = 0.18
+ChannelSeconds = 0
+TickSeconds = 0.4
+RecoverySeconds = 0.12
+GestureSeconds = 0.95
+StartClip = "Marauder/cb_2saber_kill_attack_right_1"
+LoopClip = "Marauder/cb_2saber_kill_attack_right_1"
+RequireGesture = true
+PresentationKind = "saber"
+SourceFx = "epp.sith_warrior.gore.gore_anticipation;epp.sith_warrior.gore.gore_real"
+Description = "A heavy direct-damage dual-saber attack. Gore empowers weapon damage for four seconds; Battering Assault empowers the next Massacre or Ravage."
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/fx_force_suppression_in.png"
+ImpactAudio = "res://Assets/WarriorLibrary/Audio/22465456.wav"
+WeaponAudio = "res://Assets/D3/Audio/173808209.wav"
+OffhandAudio = "res://Assets/D3/Audio/173808209.wav"
+
+FinishGesture = true
+
+FullBodyGesture = true

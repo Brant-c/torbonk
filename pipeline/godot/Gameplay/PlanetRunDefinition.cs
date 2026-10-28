@@ -7,7 +7,10 @@ namespace SwtorSurvivors;
 
 public sealed class RunDifficulty
 {
+    public float EnemyHealthMultiplier { get; set; } = 1;
+    public float EnemyDamageMultiplier { get; set; } = 1;
     public bool EndlessPressure { get; set; }
+    public bool ExponentialDamageScaling { get; set; }
     public float HealthPerLevel { get; set; } = .08f;
     public float DamagePerLevel { get; set; } = .045f;
     public float SpeedPerLevel { get; set; } = .01f;
@@ -33,6 +36,7 @@ public sealed class PlanetEnemyWeight
 }
 public sealed class PlanetStage
 {
+    public string SourceEncounter { get; set; } = "";
     public int Level { get; set; } = 1;
     public string Region { get; set; } = "";
     public string Description { get; set; } = "";
@@ -61,6 +65,7 @@ public sealed class PlanetRunDefinition
     public RunDifficulty Difficulty { get; set; } = new();
     public bool Endless { get; set; }
     public int EnemyExperienceDropEvery { get; set; } = 1;
+    public int EnemyExperienceMultiplier { get; set; } = 1;
     public int CoreLevel { get; set; } = 30;
     public int FirstLevelExperience { get; set; } = 16;
     public float ExperienceGrowth { get; set; } = 1.105f;
