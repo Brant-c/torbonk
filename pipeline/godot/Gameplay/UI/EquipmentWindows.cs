@@ -80,6 +80,7 @@ public partial class EquipmentWindows : CanvasLayer
         var selection=Integration.GameNavigation.LastSelection ?? new SelectionConfiguration();
         if(GetTree().CurrentScene is FrontendFlow flow)selection=flow.CurrentConfiguration;
         if(GetTree().CurrentScene is GameWorld w && w.Initialized)selection.AdvancedClassId=w.RunConfiguration.AdvancedClassId;
+        if(_class!=selection.AdvancedClassId)_selected="";
         _class=selection.AdvancedClassId;
         _canvas=new Control {Size=new Vector2(1600,900),Theme=FrontendSkin.MakeTheme(),MouseFilter=Control.MouseFilterEnum.Ignore};AddChild(_canvas);
         var sheetBody=new VBoxContainer();
@@ -110,19 +111,22 @@ public partial class EquipmentWindows : CanvasLayer
             return new KeyValuePair<string,string>(SlotName(s),id==""?"Empty":Inventory.Items.Single(i=>i.Id==id).Name+" +"+Inventory.State.Owned[id]);
         }).ToArray();
         string requirements=item.Classes.Length==0?"Usable by all classes":"Requires "+string.Join(", ",item.Classes.Select(id=>System.Globalization.CultureInfo.InvariantCulture.TextInfo.ToTitleCase(id.Replace('_',' '))));
-        return new(item.Name,item.Kind,item.Rarity,Rarity(item),GD.Load<Texture2D>("res://Assets/Inventory/"+item.Icon+".dds"),rank,item.Description,requirements,PersistentInventory.Compatible(item,_class),item.Stats,item.Effects,comparison,rank<3?Inventory.Costs[rank]:null,rank<3 && Inventory.State.Credits>=Inventory.Costs[rank]);
+        if(!PersistentInventory.Compatible(item,_class))requirements+=" · Cannot equip on this character";
+        return new(item.Name,item.Kind,item.Rarity,Rarity(item),GD.Load<Texture2D>("res://Assets/Inventory/"+item.Icon+".dds"),rank,item.Description,requirements,PersistentInventory.Compatible(item,_class),item.Stats,item.RankEffects.Length==4?new[]{item.RankEffects[rank]}:item.Effects,comparison,rank<3?Inventory.Costs[rank]:null,rank<3 && Inventory.State.Credits>=Inventory.Costs[rank]);
     }
     private void RefreshLater()=>Callable.From(()=>{if(_canvas!=null && IsInstanceValid(_canvas))Refresh();}).CallDeferred();
     private EquipmentItemCell Cell(Accessory? item,string slot="")
     {
         string destination=slot==""?"inventory":slot;
         var b=new EquipmentItemCell {Name=item==null?"Empty_"+slot:"Item_"+item.Id,ItemId=item?.Id??"",SourceSlot=slot,CharacterClass=_class,CustomMinimumSize=new Vector2(78,78),CanReceive=data=>CanTransfer(data,destination),Receive=data=>Transfer(data,destination)};
+        b.CanEquip=item==null || PersistentInventory.Compatible(item,_class);
         b.MouseEntered+=()=>ShowItemTooltip(b);b.MouseExited+=HideItemTooltip;
         b.Pressed+=()=>{_selected=item?.Id??"";RefreshLater();};
         b.RightClicked=()=>{if(item==null)return;if(slot=="")AutoEquip(item.Id);else Inventory.Unequip(_class,slot);RefreshLater();};
         foreach(string state in new[]{"normal","hover","pressed","disabled","focus"}){var box=SwtorSkin.Box("bwaui_buttons_381",14,14,14,14);box.ModulateColor=item==null?new Color("53677d"):Rarity(item);b.AddThemeStyleboxOverride(state,box);}
         if(item!=null){b.ItemTexture=GD.Load<Texture2D>("res://Assets/Inventory/"+item.Icon+".dds");var art=FrontendSkin.Art("res://Assets/Inventory/"+item.Icon+".dds",new Vector2(48,48));art.Position=new Vector2(15,12);b.AddChild(art);b.TooltipText=item.Name;b.TooltipData=()=>TooltipData(item);var rank=FrontendSkin.Label("+"+Inventory.State.Owned[item.Id],16);rank.Position=new Vector2(44,52);b.AddChild(rank);}
         else if(slot!="")b.TooltipText=SlotName(slot);
+        if(item!=null && !b.CanEquip){var restriction=FrontendSkin.Label("×",24);restriction.AddThemeColorOverride("font_color",new Color("ff4444"));restriction.Position=new Vector2(4,0);restriction.MouseFilter=Control.MouseFilterEnum.Ignore;b.AddChild(restriction);}
         return b;
     }
     private string Destination(string id)=>PersistentInventory.Slots.Where(s=>PersistentInventory.Kind(s)==Inventory.Items.Single(i=>i.Id==id).Kind).OrderBy(s=>Inventory.Equipped(_class,s)!="").First();
@@ -159,7 +163,7 @@ public partial class EquipmentWindows : CanvasLayer
         var bag=Inventory.BagItems(_class).ToArray();
         foreach(var item in bag)_grid.AddChild(Cell(item));
         for(int n=bag.Length;n<24;n++)_grid.AddChild(Cell(null));
-        var selected=Inventory.Items.FirstOrDefault(i=>i.Id==_selected && Inventory.State.Owned.ContainsKey(i.Id));
+        var selected=Inventory.Items.FirstOrDefault(i=>i.Id==_selected && Inventory.State.Owned.ContainsKey(i.Id) && PersistentInventory.VisibleForClass(i,_class));
         if(selected!=null)
         {
             int rank=Inventory.State.Owned[selected.Id];

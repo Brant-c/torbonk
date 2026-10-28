@@ -19,6 +19,7 @@ GestureSeconds = 2.4
 StartClip = "D3/SmashLeap"
 LoopClip = "D3/SmashLeap"
 FullBodyGesture = true
+KeepFullBodyWhileMoving = true
 RequireGesture = true
 PresentationKind = "slam"
 SourceFx = "epp.sith_warrior.skill.shockwave;epp.sith_warrior.smash.smash_anticipation;epp.sith_warrior.smash.smash_real;epp.sith_warrior.smash.stun;epp.sith_warrior.smash.target_instant"

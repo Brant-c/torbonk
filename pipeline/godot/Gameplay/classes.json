@@ -66,7 +66,7 @@
       "sunderingassault",
       "backhand"
     ],
-    "BasicAttack": "basicassault",
+    "BasicAttack": "viciousslash",
     "Health": 155
   },
   {
@@ -107,7 +107,16 @@
       "marauder_unlock_gore",
       "marauder_unlock_massacre",
       "marauder_unlock_forcescream",
-      "marauder_unlock_intimidatingroar"
+      "marauder_unlock_intimidatingroar",
+      "marauder_unlock_ataruform",
+      "marauder_unlock_bloodthirst",
+      "marauder_unlock_undyingrage",
+      "marauder_unlock_saberward",
+      "marauder_unlock_cripplingslash",
+      "marauder_unlock_forcechoke",
+      "marauder_unlock_retaliation",
+      "marauder_unlock_viciousthrow",
+      "marauder_unlock_forcecharge"
     ],
     "Kit": [
       "rupture",
@@ -129,9 +138,18 @@
       "gore",
       "massacre",
       "forcescream",
-      "intimidatingroar"
+      "intimidatingroar",
+      "ataruform",
+      "bloodthirst",
+      "undyingrage",
+      "saberward",
+      "cripplingslash",
+      "forcechoke",
+      "retaliation",
+      "viciousthrow",
+      "forcecharge"
     ],
-    "BasicAttack": "",
+    "BasicAttack": "basicassaultdual",
     "Health": 115
   },
   {

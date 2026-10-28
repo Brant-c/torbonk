@@ -45,7 +45,8 @@ public partial class CharacterPresentation : Node3D
     private double _reactionTime;
     private float _movement, _speed, _gestureWeight, _reactionWeight;
     public bool FullBodyGesture {get;private set;}
-    private float _jumpWeight;
+    public bool KeepFullBodyWhileMoving {get;private set;}
+    private float _jumpWeight,_movingFullBodyWeight;
     private int _gesturePriority;
     private double _jumpClock, _takeoffDuration, _ungroundedSeconds;
 
@@ -71,8 +72,9 @@ public partial class CharacterPresentation : Node3D
         _runNode = new AnimationNodeAnimation { Animation = "Run" };
         graph.AddNode("Idle", _idleNode);
         graph.AddNode("Run", _runNode);
+        AddDirectionalLocomotion(graph);
         graph.AddNode("Locomotion", new AnimationNodeBlend2 { Sync=true });
-        graph.ConnectNode("Locomotion", 0, "Idle"); graph.ConnectNode("Locomotion", 1, "Run");
+        graph.ConnectNode("Locomotion", 0, "Idle"); graph.ConnectNode("Locomotion", 1, "RunSpeed");
         _jumpNode = new AnimationNodeAnimation { Animation = "Idle" };
         graph.AddNode("JumpClip", _jumpNode);
         graph.AddNode("JumpSeek", new AnimationNodeTimeSeek()); graph.ConnectNode("JumpSeek", 0, "JumpClip");
@@ -135,7 +137,7 @@ public partial class CharacterPresentation : Node3D
     {
         foreach (string clip in Animator.GetAnimationList())
         {
-            if (clip.StartsWith("Jump/", StringComparison.Ordinal)) continue;
+            if (clip.StartsWith("Jump/", StringComparison.Ordinal) || clip.StartsWith("Travel/",StringComparison.Ordinal)) continue;
             string state = ClipState(clip);
             if (clip == "RESET" || _gestureStates.Contains(state)) continue;
             _gestures.AddNode(state, new AnimationNodeAnimation { Animation = clip });
@@ -156,7 +158,7 @@ public partial class CharacterPresentation : Node3D
 
     public void Present(Vector3 actualVelocity, double delta, float? facingYawDegrees = null)
     {
-        var flat = new Vector3(actualVelocity.X, 0, actualVelocity.Z); _speed = flat.Length();
+        var flat = new Vector3(actualVelocity.X, 0, actualVelocity.Z); _speed = flat.Length();_movementVelocity=flat;
         Locomotion = _speed > (Locomotion == "Run" ? 0.025f : 0.055f) ? "Run" : "Idle";
         var facing = GestureOwner!=null && FacingTarget.HasValue ? FacingTarget.Value-GlobalPosition : _speed > 0.025f ? flat : FacingTarget.HasValue ? FacingTarget.Value - GlobalPosition : Vector3.Zero;
         if (facingYawDegrees.HasValue)
@@ -173,12 +175,14 @@ public partial class CharacterPresentation : Node3D
         float step = (float)delta / Math.Max(0.01f, BlendSeconds);
         _movement = Mathf.MoveToward(_movement, Locomotion == "Run" ? 1 : 0, step);
         _gestureWeight = Mathf.MoveToward(_gestureWeight, GestureOwner != null ? 1 : 0, step);
+        _movingFullBodyWeight=Mathf.MoveToward(_movingFullBodyWeight,KeepFullBodyWhileMoving && GestureOwner!=null?1:0,step);
         if (_reaction == "Hit" && (_reactionTime -= delta) <= 0) _reaction = "";
         _reactionWeight = Mathf.MoveToward(_reactionWeight, OverrideActive ? 1 : 0, step);
+        UpdateDirectionalLocomotion();
         Tree.Set("parameters/Locomotion/blend_amount", _movement);
         Tree.Set("parameters/JumpLocomotion/blend_amount", _jumpWeight);
         // Briefly crossfade the original standing pose into the moving bone masks.
-        Tree.Set("parameters/StandingCast/blend_amount", (FullBodyGesture ? 1 : 1 - Mathf.Max(_movement, _jumpWeight)) * _gestureWeight);
+        Tree.Set("parameters/StandingCast/blend_amount", Mathf.Max(_movingFullBodyWeight,1-Mathf.Max(_movement,_jumpWeight)) * _gestureWeight);
         Tree.Set("parameters/Waist/blend_amount", _gestureWeight * Mathf.Clamp(LowerBackCastWeight, 0, 1));
         Tree.Set("parameters/Chest/blend_amount", _gestureWeight * Mathf.Clamp(ChestCastWeight, 0, 1));
         Tree.Set("parameters/Upper/blend_amount", _gestureWeight);
@@ -239,13 +243,13 @@ public partial class CharacterPresentation : Node3D
         Tree.Set("parameters/JumpSeek/seek_request", 0.0);
     }
     // Ordinary busy gestures are skipped. A sustained higher-priority cast can crossfade in; never queue.
-    public bool TryBeginGesture(object owner, string clip, int priority=0, bool fullBody=false)
+    public bool TryBeginGesture(object owner, string clip, int priority=0, bool fullBody=false, bool keepFullBodyWhileMoving=false)
     {
         if (OverrideActive || !Animator.HasAnimation(clip) ||
             (GestureOwner!=null && priority<=_gesturePriority) || (GestureOwner==null && _gestureWeight>0.05f && priority<=0)) return false;
         bool crossfade=GestureOwner!=null || _gestureWeight>0.05f;
         GestureOwner = owner; _gestureClip = clip;_gesturePriority=priority;
-        FullBodyGesture=fullBody;
+        FullBodyGesture=fullBody;KeepFullBodyWhileMoving=keepFullBodyWhileMoving;
         SetGestureRate(1);
         if(crossfade)_playback.Travel(ClipState(clip));else _playback.Start(ClipState(clip));
         foreach(var playback in _layerPlaybacks)
@@ -275,17 +279,22 @@ public partial class CharacterPresentation : Node3D
     {
         foreach(string node in new[]{"GestureRate","WaistRate","ChestRate","UpperRate"})Tree.Set("parameters/"+node+"/scale",rate);
     }
+    public void ReleaseMovingBody(object owner)
+    {
+        if(GestureOwner==owner)KeepFullBodyWhileMoving=false;
+    }
     public void ReleaseGesture(object owner)
     {
         if (GestureOwner != owner) return;
         GestureOwner = null; FacingTarget = null;
-        FullBodyGesture=false;
+        FullBodyGesture=false;KeepFullBodyWhileMoving=false;
         _gesturePriority=0;
     }
     public void ResetPresentation()
     {
         ResetJumpPresentation();
-        GestureOwner = null; FullBodyGesture=false; _reaction = ""; FacingTarget = null; _speed = _movement = _gestureWeight = _reactionWeight = 0;
+        GestureOwner = null; FullBodyGesture=false;KeepFullBodyWhileMoving=false; _reaction = ""; FacingTarget = null; _speed = _movement = _gestureWeight = _reactionWeight = 0;
+        _movementVelocity=Vector3.Zero;LocomotionDirection=Vector2.Up;_movingFullBodyWeight=0;
         Locomotion = State = "Idle"; _playback.Start("Idle");
         foreach(var playback in _layerPlaybacks) playback.Start("Idle");
         _Process(0);

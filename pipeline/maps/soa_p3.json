@@ -1,0 +1,16 @@
+{
+  "id": "soa_p3",
+  "name": "Soa Phase 3",
+  "section": "05_Infernal_Prison lower arena; encounter two environment",
+  "areaId": "4611686096259570491",
+  "areaLabel": "raid_eternity_vault",
+  "room": "05_Infernal_Prison",
+  "patchCenterWindowXZ": [82, 83, 68, 70],
+  "propMarginXZ": 0,
+  "propYRange": [-40, -34],
+  "maximumUniqueModels": 60,
+  "maximumPlacements": 400,
+  "spawnSourceXYZ": [82.5, -38, 69],
+  "location": "location.flashpoint.raid.eternity_vault",
+  "mapReferences": ["map_eternity_vault_infernal_prison"]
+}

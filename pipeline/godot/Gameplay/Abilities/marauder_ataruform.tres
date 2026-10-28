@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "ataruform"
+Title = "Ataru Form"
+Icon = "mr_ataruform"
+StartsUnlocked = false
+Damage = 1
+CooldownSeconds = 0
+Range = 0.4
+Radius = 0
+Area = 0
+WindupSeconds = 0
+ChannelSeconds = 0
+TickSeconds = 0.4
+RecoverySeconds = 0.12
+GestureSeconds = 0.95
+StartClip = "Marauder/cb_buff_unleash"
+LoopClip = "Marauder/cb_buff_unleash"
+RequireGesture = false
+PresentationKind = "saber"
+SourceFx = "epp.sith_warrior.ataru_form.cast;epp.sith_warrior.ataru_form.hit"
+Description = "Activate Ataru stance: weapon hits may strike again, at most once per 1.5 seconds. Massacre guarantees a strike when ready and raises the chance for six seconds."
+Category = 1
+Effect = 3
+BuffSeconds = 0.01
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+Slotless = true
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/glow/bw_fx_lsblue_flare_256.png"
+ImpactAudio = ""
+
+FinishGesture = true
+GesturePriority = -5
+
+CastAudio = "res://Assets/WarriorLibrary/Audio/10244116.wav"

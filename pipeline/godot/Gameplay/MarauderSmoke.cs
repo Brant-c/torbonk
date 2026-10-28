@@ -60,7 +60,7 @@ public partial class MarauderSmoke : Node
   }
   AutomaticAbility Cast(string id){var a=w.Abilities.Find(id)!;w.Player.Presentation.ResetPresentation();a.SetUnlocked(true);a.ResetCombat();Check(id+" activates",a.TryBegin());for(int i=0;i<80;i++)a.Advance(.025);return a;}
   var actor=w.Player.Presentation;
-  Check("Marauder has no separate basic Assault",w.Abilities.Find("basicassaultdual")==null && !w.Abilities.Abilities.Any(a=>a.Definition.IsBasicAttack));
+  Check("Marauder has free baseline Assault in slot 1",w.Abilities.Find("basicassaultdual") is {Unlocked:true} assault && assault.Definition.IsBasicAttack && w.Abilities.QuickbarAbilities[0]==assault && w.Abilities.Equipped(AbilityCategory.Offensive)==0);
   Check("starter can be replaced",w.Combat.Definition.ReplaceableStarter);
   Check("generic cooldown training no longer targets starter",w.Progression!.Upgrades.Where(u=>u.Effect==UpgradeEffect.Cooldown).All(u=>u.AbilityId==""));
   foreach(string id in new[]{"viciousslash","rupture","sweepingslash","annihilate","ravage"}){
@@ -115,12 +115,48 @@ public partial class MarauderSmoke : Node
   w.RemoveChild(overlapB);overlapB.QueueFree();Check("overlapping throws restore original weapon visibility",w.Equipment.Weapon("main_hand")!.Visible);
   var hybrid=new[]{"annihilation.spread","annihilation.rhythm","annihilation.heal","annihilation.charges","carnage.alacrity","carnage.cleave","carnage.precision","carnage.bloodletting","marauder_rage.shockwave","marauder_rage.forceflow","marauder_rage.rageblade","marauder_rage.dominate"}.ToDictionary(x=>x,x=>1);
   Check("12 point hybrid validates",cat.Validate("marauder",hybrid).Count==12);TalentProfiles.Save("marauder",hybrid);var runtime=new TalentRuntime(w);
-  var sweep=w.Abilities.Find("sweepingslash")!;runtime.ApplyStats(sweep);Check("bleed spread enabled",sweep.Definition.SpreadsPeriodicEffects);runtime.ApplyStats(ravage);Check("Ravage cleave enabled",ravage.Definition.MaximumTargets==4);
+  var sweep=w.Abilities.Find("sweepingslash")!;runtime.ApplyStats(sweep);Check("bleed spread enabled",sweep.Definition.SpreadsPeriodicEffects);runtime.ApplyStats(ravage);Check("Ravage cleave enabled",ravage.Definition.MaximumTargets==6);
   runtime.PeriodicTick(w.Abilities.Find("forcecrush")!);runtime.Activated(w.Abilities.Find("smash")!);Check("Crush empowers Smash",runtime.DirectBonus(w.Abilities.Find("smash")!,target)>.1f);
+  var carnageStrike=w.Abilities.Find("massacre")!;runtime.Activated(carnageStrike);runtime.DirectHit(carnageStrike,target);
+  var scream=w.Abilities.Find("forcescream")!;Check("Ataru proc prioritizes talented Force Scream",runtime.MarauderPriority(scream)==-3);
+  runtime.Activated(scream);Check("Force Scream snapshots its Ataru critical",runtime.MarauderScreamCritical);
+  runtime.Activated(scream);Check("Force Scream consumes Ataru critical once",!runtime.MarauderScreamCritical);
   Check("starter has no offensive talent procs",runtime.DirectBonus(w.Combat,target)==0);
   Check("Carnage benefits owned bleeds",runtime.DirectBonus(w.Abilities.Find("annihilate")!,target)>.19f);
   var smash=w.Abilities.Find("smash")!;smash.CooldownSeconds=.1f;runtime.ApplyStats(smash);Check("Smash cannot become a spam cooldown",smash.CooldownSeconds>=10);
   w.Progression.ResetRun();Check("restart clears utility state",w.Build.SpeedMultiplier==1 && w.Build.IncomingMultiplier==1);
+  w.Build.Pregame.Reset();target.Health.Restore();w.PlayerActor.Health.Restore();
+  var reaction=w.Abilities.Find("retaliation")!;reaction.SetUnlocked(true);reaction.ResetCombat();actor.ResetPresentation();
+  Check("Retaliation requires incoming damage",!reaction.TryBegin());
+  w.PlayerActor.Health.ApplyDamage(1);Cast("retaliation");Check("Retaliation consumes reaction",!w.Build.Pregame.CanBeginMarauder(reaction));
+  var execute=w.Abilities.Find("viciousthrow")!;execute.SetUnlocked(true);execute.ResetCombat();actor.ResetPresentation();
+  Check("Vicious Throw refuses healthy targets",!execute.TryBegin());
+  target.Health.ApplyDamage(target.Health.Current-target.Health.Maximum*.2f);Cast("viciousthrow");Check("Vicious Throw executes wounded targets",execute.DamageEvents==1);execute.Abort();target.Health.Restore();
+  Cast("ataruform");Check("Ataru stance activates",w.Build.Pregame.MarauderAtaruActive);
+  var massacre=w.Abilities.Find("massacre")!;var massacreFx=(D3AbilityPresentation)massacre.Presentation;int ataruBefore=massacreFx.AtaruImpacts;
+  Cast("massacre");Check("Massacre guarantees Ataru strike",massacreFx.AtaruImpacts==ataruBefore+1);
+  Check("Ataru does not steal the attack gesture",actor.GestureOwner==null || actor.GestureOwner==massacre);
+  w.Build.Pregame.Advance(2);Cast("bloodthirst");Check("Bloodthirst empowers attacks",w.Build.Pregame.DirectBonus(w.Combat,target)>=.15f);
+  w.Build.Pregame.Advance(11);Check("Bloodthirst expires",w.Build.Pregame.DirectBonus(w.Combat,target)==0);
+  w.PlayerActor.Health.ApplyDamage(w.PlayerActor.Health.Current-w.PlayerActor.Health.Maximum*.2f);float sacrifice=w.PlayerActor.Health.Current;
+  w.PlayerActor.Health.ApplyShield(9,20);int damageEventsBeforeCost=w.PlayerActor.Health.DamageEvents;
+  Cast("undyingrage");Check("Undying Rage sacrifices half current health",Math.Abs(w.PlayerActor.Health.Current-sacrifice*.5f)<.01f);
+  Check("Undying health cost bypasses shields and hit reactions",w.PlayerActor.Health.ShieldRemaining==9 && w.PlayerActor.Health.DamageEvents==damageEventsBeforeCost);w.PlayerActor.Health.ClearShield();
+  Check("Undying Rage grants finite protection",w.Build.IncomingMultiplier<=.011f);w.Build.Pregame.Advance(6);Check("Undying protection expires",w.Build.IncomingMultiplier==1);
+  Cast("saberward");Check("Saber Ward reduces damage",w.Build.IncomingMultiplier==.5f);w.Build.Pregame.Advance(7);
+  var choke=Cast("forcechoke");choke.Advance(1);Check("Marauder Choke delivers all channel hits",choke.DamageEvents==3);choke.Abort();
+  Cast("berserk");Check("Berserk haste fits attack gesture",massacre.GestureDuration<massacre.Definition.GestureSeconds);
+  Check("utility activation audio plays",((D3AbilityPresentation)w.Abilities.Find("berserk")!.Presentation).PlayingAudioVoices>0);
+  var berserkFx=(D3AbilityPresentation)w.Abilities.Find("berserk")!.Presentation;berserkFx._Process(.11);Check("Berserk sustains recovered loop audio",berserkFx.WarriorLoopPlaying);
+  ravage.SetUnlocked(true);ravage.ResetCombat();actor.ResetPresentation();Check("hasted Ravage starts",ravage.TryBegin());
+  var movingBuff=w.Abilities.Find("predation")!;movingBuff.SetUnlocked(true);movingBuff.ResetCombat();
+  Check("Predation activates during Ravage without stealing gesture",movingBuff.TryBegin() && actor.GestureOwner==ravage);
+  var movingFx=(D3AbilityPresentation)movingBuff.Presentation;int tails=movingFx.PredationTrailsPresented;
+  actor.Present(Vector3.Right*.6f,.1);movingFx._Process(.11);Check("Predation leaves movement trails",movingFx.PredationTrailsPresented>tails);
+  ravage.Abort();w.Build.Pregame.Advance(20);berserkFx._Process(.4);Check("Berserk loop stops on gameplay expiry",!berserkFx.WarriorLoopPlaying);
+  var charge=w.Abilities.Find("forcecharge")!;charge.SetUnlocked(true);charge.ResetCombat();actor.ResetPresentation();target.GlobalPosition=w.PlayerActor.GlobalPosition+Vector3.Right*.7f;
+  Check("Force Charge starts outside melee range",charge.TryBegin());charge.Advance(.46);Check("blocked charge cannot deal remote melee damage",charge.DamageEvents==0);charge.Abort();
+  w.Progression.ResetRun();Check("restart clears new stance and windows",!w.Build.Pregame.MarauderAtaruActive && w.Build.IncomingMultiplier==1);
  }catch(Exception e){failure=e.ToString();GD.PushError(failure);}finally{TalentProfiles.Save("marauder",new Dictionary<string,int>());System.IO.File.WriteAllText(ProjectSettings.GlobalizePath("res://../manifests/marauder-smoke.json"),JsonSerializer.Serialize(new{passed=failure==null,checks,failure},new JsonSerializerOptions{WriteIndented=true}));GetTree().Quit(failure==null?0:1);}}
 }
 

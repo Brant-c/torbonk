@@ -29,6 +29,12 @@ def scene(name,model,title,hp,damage,speed,xp,scale=1,radius=.035,height=.18,pat
   t=t.replace('[node name="Original" parent="Actor/Visual"',f'RunClip = "Walk"\nLocomotionStrideSpeed = {nominal:.6f}\n[node name="Original" parent="Actor/Visual"')
   t=t.replace('position = Vector3(0,0.275,0)',f'position = Vector3(0,{height+.075:.3f},0)')
   if name!='Xrr3':line('MeleeRange','0.248')
+ if name=='IceCat':
+  t=t.replace('load_steps=8','load_steps=9').replace('[ext_resource type="Script"', '[ext_resource type="Script" path="res://Gameplay/NpcVocalPresentation.cs" id="vocals"]\n[ext_resource type="Script"',1)
+  vocal='[node name="Vocals" type="Node" parent="Actor"]\nscript = ExtResource("vocals")\n'
+  for key,media in [('HurtClips',[41823499,764195414,110314226,526138516]),('DeathClips',[806132088,44205520,846499615])]:
+   vocal+=key+' = Array[String]('+json.dumps([f'res://Assets/NpcVocals/Manka/{mid}.wav' for mid in media])+')\n'
+  t=t.replace('[node name="Visual"',vocal+'[node name="Visual"',1)
  (out/(name+'.tscn')).write_text(t,encoding='utf-8')
 scene('IceCat','icecat','Prowling Ice Cat',26,4,.245,4,scale=1,height=.14,radius=.035)
 scene('Tauntaun','tauntaun','Roaming Tauntaun',38,5,.19,5,scale=1.2,height=.22,radius=.04)

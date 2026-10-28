@@ -7,6 +7,8 @@ namespace SwtorSurvivors;
 /// <summary>Run-only mechanical hooks. Equipment modifiers are derived from current ownership, never accumulated.</summary>
 public partial class RunBuildEffects : Node
 {
+    public MarauderRelics MarauderRelics {get;private set;}=null!;
+    public AssassinRelics AssassinRelics {get;private set;}=null!;
     public Talents.TalentRuntime Pregame {get;private set;}=null!;
     public int SpreadLimit {get;set;}=4;
     public float SpreadEffectiveness {get;set;}=1;
@@ -41,7 +43,7 @@ public partial class RunBuildEffects : Node
     public float Item(string key) => key=="health_cost"?World.Artifacts?.Equipped.Sum(a=>a.HealthCost)??0:World.Artifacts?.Equipped.Where(a=>a.Effect==key).Sum(a=>a.Amount)??0;
     public float DamageMultiplier(AutomaticAbility ability,Combatant target)
     {
-        float bonus=Item("sacrifice")+(Pregame?.DirectBonus(ability,target)??0);
+        float bonus=(MarauderRelics?.Bonus(ability,target)??0)+(AssassinRelics?.Bonus(ability,target)??0)+Item("sacrifice")+(Pregame?.DirectBonus(ability,target)??0);
         var burn=World.Abilities.Find("incendiarymissile");
         if(burn!=null && World.Periodic.Has(burn,target))
         {
@@ -59,6 +61,7 @@ public partial class RunBuildEffects : Node
     public float HealingAmount(float amount) => amount*(World.PlayerActor.Health.Current<World.PlayerActor.Health.Maximum*0.3f?1+Item("restoration"):1);
     public void Activated(AutomaticAbility ability)
     {
+        AssassinRelics?.Activated(ability);MarauderRelics?.Activated(ability);
         Pregame?.Activated(ability);
         if(ability.Definition.Id=="ionshield")_energyShield=true;
         if(ability.Definition.Id=="oilslick"){
@@ -76,7 +79,7 @@ public partial class RunBuildEffects : Node
     public void AbilityHit(AutomaticAbility ability,Combatant target)
     {
         Pregame?.DirectHit(ability,target);
-        if(ability.Presentation is AssassinAbilityPresentation original)original.TargetImpact(target);
+
         if(ability.Definition.IsBasicAttack)return;
         if(ability.Definition.Id=="flameburst" && Talent("accelerant")>0 && World.Abilities.Find("incendiarymissile") is {} burn)World.Periodic.Extend(burn,target,1,8);
         if(ability.Definition.Id=="carbonize" && target is EnemyAgent frozen && frozen.Stun(3) && Talent("reinforced_shielding")>0){_reinforced=4;_reinforcedReduction=Math.Min(.25f,_reinforcedReduction+.05f);}
@@ -93,7 +96,7 @@ public partial class RunBuildEffects : Node
     /// <summary>DoT mechanics: Contagion jumps every third tick; Blood Rhythm shortens Rupture's cooldown.</summary>
     private void PeriodicTicked(AutomaticAbility source,Combatant target,int tick)
     {
-        Pregame?.PeriodicTick(source);
+        Pregame?.PeriodicTick(source);MarauderRelics?.Periodic(source);
         if(Talent("contagion")>0 && tick%3==0)Spread(source,target);
         if(Talent("blood_rhythm")>0 && tick%4==0)source.ReduceCooldown(0.5f);
     }
@@ -144,7 +147,7 @@ public partial class RunBuildEffects : Node
         }
     }
     private int _lightningHits;
-    public override void _Ready() { Pregame=new Talents.TalentRuntime(World);World.PlayerActor.Health.Damaged+=Pregame.Damaged;World.PlayerActor.Health.ShieldEnded+=ShieldEnded;World.Spawner!.EnemyKilled+=EnemyKilled;World.Periodic.Ticked+=PeriodicTicked; }
+    public override void _Ready() { Pregame=new Talents.TalentRuntime(World);AssassinRelics=new AssassinRelics(this);MarauderRelics=new MarauderRelics(this);World.PlayerActor.Health.Damaged+=Pregame.Damaged;World.PlayerActor.Health.ShieldEnded+=ShieldEnded;World.Spawner!.EnemyKilled+=EnemyKilled;World.Periodic.Ticked+=PeriodicTicked; }
     private void ShieldEnded(bool depleted)
     {
         Pregame?.ShieldEnded(depleted);
@@ -155,12 +158,15 @@ public partial class RunBuildEffects : Node
     }
     private void EnemyKilled(EnemyAgent enemy)
     {
+        MarauderRelics?.Killed(enemy);AssassinRelics?.Killed(enemy);
+        World.Periodic.Detonate(enemy);
         PassOn(enemy);
         if(enemy.RewardTier>0 && Item("guardian")>0 && World.PlayerActor.Health.ApplyShield(Item("guardian"),8))_guardianShield=true;
     }
     public override void _PhysicsProcess(double delta)
     {
         Pregame?.Advance(delta);
+        AssassinRelics?.Advance(delta);MarauderRelics?.Advance(delta);
         _pyroLock=Math.Max(0,_pyroLock-delta);_reinforced=Math.Max(0,_reinforced-delta);if(_reinforced==0)_reinforcedReduction=0;
         _leechLock=Math.Max(0,_leechLock-delta);
         _conduitLock=Math.Max(0,_conduitLock-delta);
@@ -169,7 +175,7 @@ public partial class RunBuildEffects : Node
         if(_buff>0) { _buff=Math.Max(0,_buff-delta);if(_buff==0)World.Progression?.Recalculate(); }
         if(_haste>0) { _haste=Math.Max(0,_haste-delta);if(_haste==0)World.Progression?.Recalculate(); }
     }
-    public void Reset() { foreach(var oil in World.GetChildren().OfType<PowertechOilSlick>())oil.QueueFree(); _energyShield=false; _pyroLock=_reinforced=0;_reinforcedReduction=0; _haste=_conduitLock=_buff=_leechLock=0;_rage=_lockStacks=0;_rageTime=0;_lockTarget=0;_marks.Clear();_lightningHits=0;_guardianShield=false; }
+    public void Reset() { AssassinRelics?.Reset();MarauderRelics?.Reset(); foreach(var oil in World.GetChildren().OfType<PowertechOilSlick>())oil.QueueFree(); _energyShield=false; _pyroLock=_reinforced=0;_reinforcedReduction=0; _haste=_conduitLock=_buff=_leechLock=0;_rage=_lockStacks=0;_rageTime=0;_lockTarget=0;_marks.Clear();_lightningHits=0;_guardianShield=false; }
     public override void _ExitTree()
     {
         if(GodotObject.IsInstanceValid(World.PlayerActor))World.PlayerActor.Health.Damaged-=Pregame.Damaged;

@@ -1,0 +1,96 @@
+{
+  "relics": [
+    {
+      "item": "accelerated_agony",
+      "ability": "annihilate",
+      "icon": "mr_execute",
+      "sourceFx": "epp.sith_warrior.annihilate.annihilate_anticipation;epp.sith_warrior.annihilate.annihilate_real",
+      "presentation": "Existing D3 Warrior target contacts / AtaruImpact; Smash repeats existing Impact with audio. No new character animations.",
+      "evidence": "manifests/marauder-presentation-evidence.json; godot/Assets/WarriorLibrary/catalog.json"
+    },
+    {
+      "item": "exsanguination",
+      "ability": "rupture",
+      "icon": "mr_rupture",
+      "sourceFx": "epp.sith_warrior.rupture.new;epp.sith_warrior.rupture.tick",
+      "presentation": "Existing D3 Warrior target contacts / AtaruImpact; Smash repeats existing Impact with audio. No new character animations.",
+      "evidence": "manifests/marauder-presentation-evidence.json; godot/Assets/WarriorLibrary/catalog.json"
+    },
+    {
+      "item": "crimson_executioner",
+      "ability": "viciousthrow",
+      "icon": "mr_viciousthrow",
+      "sourceFx": "epp.sith_warrior.saber_throw.projectile;epp.sith_warrior.saber_throw.throw",
+      "presentation": "Existing D3 Warrior target contacts / AtaruImpact; Smash repeats existing Impact with audio. No new character animations.",
+      "evidence": "manifests/marauder-presentation-evidence.json; godot/Assets/WarriorLibrary/catalog.json"
+    },
+    {
+      "item": "gore_master",
+      "ability": "gore",
+      "icon": "mr_talent_sweepingslash",
+      "sourceFx": "epp.sith_warrior.gore.gore_anticipation;epp.sith_warrior.gore.gore_real",
+      "presentation": "Existing D3 Warrior target contacts / AtaruImpact; Smash repeats existing Impact with audio. No new character animations.",
+      "evidence": "manifests/marauder-presentation-evidence.json; godot/Assets/WarriorLibrary/catalog.json"
+    },
+    {
+      "item": "ataru_frenzy",
+      "ability": "ataruform",
+      "icon": "mr_ataruform",
+      "sourceFx": "epp.sith_warrior.ataru_form.cast;epp.sith_warrior.ataru_form.hit",
+      "presentation": "Existing D3 Warrior target contacts / AtaruImpact; Smash repeats existing Impact with audio. No new character animations.",
+      "evidence": "manifests/marauder-presentation-evidence.json; godot/Assets/WarriorLibrary/catalog.json"
+    },
+    {
+      "item": "predatory_carnage",
+      "ability": "predation",
+      "icon": "mr_forcecharge_old",
+      "sourceFx": "epp.sith_warrior.predation.buff;epp.sith_warrior.predation.cast_instant",
+      "presentation": "Existing D3 Warrior target contacts / AtaruImpact; Smash repeats existing Impact with audio. No new character animations.",
+      "evidence": "manifests/marauder-presentation-evidence.json; godot/Assets/WarriorLibrary/catalog.json"
+    },
+    {
+      "item": "crushing_fury",
+      "ability": "forcecrush",
+      "icon": "mr_forceCrush",
+      "sourceFx": "epp.sith_warrior.force_crush.cast_instant;epp.sith_warrior.force_crush.crush_tick;epp.sith_warrior.force_crush.duration_end;epp.sith_warrior.force_crush.duration_start",
+      "presentation": "Existing D3 Warrior target contacts / AtaruImpact; Smash repeats existing Impact with audio. No new character animations.",
+      "evidence": "manifests/marauder-presentation-evidence.json; godot/Assets/WarriorLibrary/catalog.json"
+    },
+    {
+      "item": "shockwave",
+      "ability": "smash",
+      "icon": "juggernautsmash",
+      "sourceFx": "epp.sith_warrior.skill.shockwave;epp.sith_warrior.smash.smash_anticipation;epp.sith_warrior.smash.smash_real;epp.sith_warrior.smash.stun;epp.sith_warrior.smash.target_instant",
+      "presentation": "Existing D3 Warrior target contacts / AtaruImpact; Smash repeats existing Impact with audio. No new character animations.",
+      "evidence": "manifests/marauder-presentation-evidence.json; godot/Assets/WarriorLibrary/catalog.json"
+    },
+    {
+      "item": "obliteration",
+      "ability": "forcecharge",
+      "icon": "mr_forceCharge",
+      "sourceFx": "epp.sith_warrior.force_charge.cast_instant",
+      "presentation": "Existing D3 Warrior target contacts / AtaruImpact; Smash repeats existing Impact with audio. No new character animations.",
+      "evidence": "manifests/marauder-presentation-evidence.json; godot/Assets/WarriorLibrary/catalog.json"
+    },
+    {
+      "item": "endless_berserk",
+      "ability": "berserk",
+      "icon": "mr_berserk",
+      "sourceFx": "epp.sith_warrior.berserk.buff;epp.sith_warrior.berserk.cast_instant",
+      "presentation": "Existing D3 Warrior target contacts / AtaruImpact; Smash repeats existing Impact with audio. No new character animations.",
+      "evidence": "manifests/marauder-presentation-evidence.json; godot/Assets/WarriorLibrary/catalog.json"
+    },
+    {
+      "item": "twin_blades",
+      "ability": "saberthrow",
+      "icon": "mr_saberThrowSith",
+      "sourceFx": "epp.sith_warrior.saber_throw.projectile;epp.sith_warrior.saber_throw.throw",
+      "presentation": "Existing D3 Warrior target contacts / AtaruImpact; Smash repeats existing Impact with audio. No new character animations.",
+      "evidence": "manifests/marauder-presentation-evidence.json; godot/Assets/WarriorLibrary/catalog.json"
+    }
+  ],
+  "limitations": [
+    "No playable Obliterate in current Marauder kit. Obliteration uses existing Force Charge engagement; it does not add an unverified animation.",
+    "Saber Throw uses recovered cb_saber_throw_start/end joined by existing DualThrow alias, not a new Dual Saber Throw animation."
+  ]
+}

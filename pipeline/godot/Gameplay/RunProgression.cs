@@ -103,7 +103,7 @@ public partial class RunProgression : Node3D
         if(World.RunConfiguration.AdvancedClassId=="assassin")Upgrades.Add(new UpgradeDefinition {Id="unlock_lacerate",Title="Lacerate",Icon="spinningstrike",AbilityId="lacerate",Effect=UpgradeEffect.UnlockAbility,MaximumRank=1});
         if(World.RunConfiguration.AdvancedClassId=="marauder")
         {
-            foreach(string id in new[]{"viciousslash","rupture","deadlysaber","annihilate","ravage","sweepingslash","saberthrow","deadlythrow","forcecrush","smash","batteringassault","massacre","gore","forcescream","intimidatingroar"})
+            foreach(string id in new[]{"viciousslash","rupture","deadlysaber","annihilate","ravage","sweepingslash","saberthrow","deadlythrow","forcecrush","smash","batteringassault","massacre","gore","forcescream","intimidatingroar","cripplingslash","retaliation","viciousthrow","forcecharge","forcechoke"})
             {
                 var ability=World.Abilities.Find(id);if(ability==null)continue;
                 Upgrades.Add(new UpgradeDefinition {Id=$"marauder_power_{id}",Title=$"{ability.Definition.Title} Mastery",

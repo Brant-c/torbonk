@@ -248,8 +248,13 @@ public partial class GameWorld : Node3D
         if(OS.GetCmdlineUserArgs().Contains("--basic-attacks-smoke")){var smoke=new BasicAttacksSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--sorcerer-refinement-smoke")){var smoke=new SorcererRefinementSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--spec-milestones-smoke")){var smoke=new SpecMilestonesSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--assassin-presentation-smoke")){var presentationSmoke=new AssassinPresentationSmoke();AddChild(presentationSmoke);presentationSmoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--assassin-refinement-smoke")){var smoke=new AssassinRefinementSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--marauder-identity-smoke")){var smoke=new MarauderIdentitySmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--marauder-relic-smoke")){var smoke=new MarauderRelicSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--assassin-relic-smoke")){var smoke=new AssassinRelicSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--sorcerer-relic-smoke")){var smoke=new SorcererRelicSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--warrior-movement-smoke")){var smoke=new WarriorMovementSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--warrior-presentation-smoke")){var smoke=new WarriorPresentationSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--marauder-smoke")){var smoke=new MarauderSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--juggernaut-smoke")){var smoke=new JuggernautSmoke();AddChild(smoke);smoke.Run(this);}
@@ -353,9 +358,10 @@ public partial class GameWorld : Node3D
         }
         if(profile.Id=="juggernaut") {Player.Presentation.LoadAbilityLibrary("res://Assets/WarriorLibrary/casts.glb","Warrior");Combat.Definition.StartsUnlocked=true;Combat.Definition.Slotless=true;Combat.Definition.ReplaceableStarter=true;Combat.SetUnlocked(true);}
         if(profile.Id is "marauder" or "juggernaut")Player.Presentation.LoadAbilityLibrary("res://Assets/WarriorPresentation/casts.glb","WarriorExtra");
+        if(profile.Id is "marauder" or "juggernaut")Player.Presentation.LoadDirectionalLocomotion(profile.Id=="marauder",Player.MoveSpeed);
         if(profile.Id=="marauder"){Player.Presentation.LoadMarauderAnimations();Player.Presentation.AddChild(new MarauderBladeTrails {Actor=Player.Presentation});}
         if(profile.Id=="powertech")Player.Presentation.LoadAbilityLibrary("res://Assets/Powertech/casts.glb","PT");
-        if(profile.Id=="assassin") {Player.Presentation.LoadAbilityLibrary("res://Assets/B8/casts.glb","B8");Player.Presentation.LoadAbilityLibrary("res://Assets/Assassin/casts.glb","Assassin");Combat.DamagePerTick=Combat.Definition.Damage=12;Combat.CooldownSeconds=Combat.Definition.CooldownSeconds=2.4f;Combat.Radius=Combat.Definition.Radius=.24f;Combat.Definition.Slotless=true;Combat.Definition.Description="Modest saber sweep. Spreads existing Discharge to nearby enemies hit; talents can spread other DoTs. Starts free and can be replaced.";}
+        if(profile.Id=="assassin") {Player.Presentation.LoadDirectionalLocomotion(false,Player.MoveSpeed,true);Player.Presentation.AddChild(new MarauderBladeTrails {Actor=Player.Presentation,Assassin=true});Player.Presentation.LoadAbilityLibrary("res://Assets/B8/casts.glb","B8");Player.Presentation.LoadAbilityLibrary("res://Assets/Assassin/casts.glb","Assassin");Combat.DamagePerTick=Combat.Definition.Damage=12;Combat.CooldownSeconds=Combat.Definition.CooldownSeconds=2.4f;Combat.Radius=Combat.Definition.Radius=.24f;Combat.Definition.Slotless=true;Combat.Definition.Description="Modest saber sweep. Spreads existing Discharge to nearby enemies hit; talents can spread other DoTs. Starts free and can be replaced.";}
         Periodic=new PeriodicEffects {Name="PeriodicEffects"};AddChild(Periodic);Combat.Periodic=Periodic;
         AddChild(Combat);
         Abilities=new AbilityController { Name="AutomaticAbilities",Targeting=Targeting,
@@ -369,8 +375,8 @@ public partial class GameWorld : Node3D
             var basicVisual=new D3AbilityPresentation {Name="BasicAttackPresentation",Actor=Player.Presentation,Definition=definition};AddChild(basicVisual);
             var basic=new AutomaticAbility {Name=profile.BasicAttack,Caster=PlayerActor,Targeting=Targeting,Presentation=basicVisual,Periodic=Periodic};
             basic.Configure(definition);
-            if(profile.Id=="marauder"){basic.Definition.Icon="mr_assault";basic.Definition.StartClip="Marauder/cb_2saber_attack_right_6";basic.Definition.FinishGesture=true;basic.Definition.RecoverySeconds=.12f;basic.Definition.GestureSeconds=.95f;basic.CooldownSeconds=basic.Definition.CooldownSeconds=.9f;}
-            if(profile.Id=="juggernaut")basic.Definition.Icon="jg_assault";AddChild(basic);Abilities.Abilities.Add(basic);
+            basicVisual.Definition=basic.Definition;
+            AddChild(basic);Abilities.Abilities.Add(basic);
         }
         // Class kits: locked until a level-up unlocks them; same lifecycle, presentation adapter and slot rules as the starter.
         foreach(string id in profile.Presentation=="sorcerer"?System.Array.Empty<string>():profile.Kit)
@@ -599,4 +605,3 @@ public partial class GameWorld : Node3D
         AddChild(_debug);
     }
 }
-

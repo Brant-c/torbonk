@@ -1,13 +1,613 @@
 {
-  "UpgradeCosts": [500, 1500, 3000],
+  "UpgradeCosts": [
+    500,
+    1500,
+    3000
+  ],
   "Items": [
-    {"Id":"resolve_implant","Name":"Resolve Implant","Kind":"implant","Icon":"implant1","Rarity":"Prototype","Classes":["sorcerer","assassin","sage","shadow"],"Description":"A neural implant for Force practitioners."},
-    {"Id":"might_implant","Name":"Might Implant","Kind":"implant","Icon":"implant1","Rarity":"Artifact","Classes":["juggernaut","marauder","guardian","sentinel"],"Description":"A combat implant for trained melee combatants."},
-    {"Id":"skill_implant","Name":"Skill Implant","Kind":"implant","Icon":"implant1","Rarity":"Prototype","Classes":["operative","sniper","scoundrel","gunslinger"],"Description":"A targeting implant for precision specialists."},
-    {"Id":"reflex_implant","Name":"Reflex Implant","Kind":"implant","Icon":"implant1","Rarity":"Prototype","Classes":["mercenary","powertech","commando","vanguard"],"Description":"A reflex implant for heavy weapons specialists."},
-    {"Id":"universal_implant","Name":"Fortitude Implant","Kind":"implant","Icon":"implant1","Rarity":"Premium","Classes":[],"Description":"A general purpose endurance implant."},
-    {"Id":"earpiece","Name":"Combat Earpiece","Kind":"earpiece","Icon":"earpiece1","Rarity":"Prototype","Classes":[],"Description":"A compact tactical communications device."},
-    {"Id":"relic_dark","Name":"Dark Side Relic","Kind":"relic","Icon":"darksiderelic1","Rarity":"Artifact","Classes":[],"Description":"An ancient relic infused with dark side energy."},
-    {"Id":"relic_light","Name":"Light Side Relic","Kind":"relic","Icon":"lightsiderelic2","Rarity":"Artifact","Classes":[],"Description":"A relic resonating with the light side of the Force."}
+    {
+      "Id": "resolve_implant",
+      "Name": "Resolve Implant",
+      "Kind": "implant",
+      "Icon": "implant1",
+      "Rarity": "Prototype",
+      "Classes": [
+        "sorcerer",
+        "assassin",
+        "sage",
+        "shadow"
+      ],
+      "Description": "A neural implant for Force practitioners."
+    },
+    {
+      "Id": "might_implant",
+      "Name": "Might Implant",
+      "Kind": "implant",
+      "Icon": "implant1",
+      "Rarity": "Artifact",
+      "Classes": [
+        "juggernaut",
+        "marauder",
+        "guardian",
+        "sentinel"
+      ],
+      "Description": "A combat implant for trained melee combatants."
+    },
+    {
+      "Id": "skill_implant",
+      "Name": "Skill Implant",
+      "Kind": "implant",
+      "Icon": "implant1",
+      "Rarity": "Prototype",
+      "Classes": [
+        "operative",
+        "sniper",
+        "scoundrel",
+        "gunslinger"
+      ],
+      "Description": "A targeting implant for precision specialists."
+    },
+    {
+      "Id": "reflex_implant",
+      "Name": "Reflex Implant",
+      "Kind": "implant",
+      "Icon": "implant1",
+      "Rarity": "Prototype",
+      "Classes": [
+        "mercenary",
+        "powertech",
+        "commando",
+        "vanguard"
+      ],
+      "Description": "A reflex implant for heavy weapons specialists."
+    },
+    {
+      "Id": "universal_implant",
+      "Name": "Fortitude Implant",
+      "Kind": "implant",
+      "Icon": "implant1",
+      "Rarity": "Premium",
+      "Classes": [],
+      "Description": "A general purpose endurance implant."
+    },
+    {
+      "Id": "earpiece",
+      "Name": "Combat Earpiece",
+      "Kind": "earpiece",
+      "Icon": "earpiece1",
+      "Rarity": "Prototype",
+      "Classes": [],
+      "Description": "A compact tactical communications device."
+    },
+    {
+      "Id": "relic_dark",
+      "Name": "Dark Side Relic",
+      "Kind": "relic",
+      "Icon": "darksiderelic1",
+      "Rarity": "Artifact",
+      "Classes": [],
+      "Description": "An ancient relic infused with dark side energy."
+    },
+    {
+      "Id": "relic_light",
+      "Name": "Light Side Relic",
+      "Kind": "relic",
+      "Icon": "lightsiderelic2",
+      "Rarity": "Artifact",
+      "Classes": [],
+      "Description": "A relic resonating with the light side of the Force."
+    },
+    {
+      "Id": "eye_of_the_tempest",
+      "Name": "Eye of the Tempest",
+      "Kind": "relic",
+      "Icon": "darksiderelic1",
+      "Rarity": "Artifact",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Description": "Sith Sorcerer relic. Equip in either relic slot. Permanent upgrades +0 to +3. Values below are ordered +0 / +1 / +2 / +3.",
+      "Effects": [
+        "Force Storm supports 2 / 3 / 4 / 5 independent storms. Recast without its normal cooldown, subject to global cooldown and storm capacity."
+      ]
+    },
+    {
+      "Id": "thundering_dominion",
+      "Name": "Thundering Dominion",
+      "Kind": "relic",
+      "Icon": "darksiderelic2",
+      "Rarity": "Artifact",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Description": "Sith Sorcerer relic. Equip in either relic slot. Permanent upgrades +0 to +3. Values below are ordered +0 / +1 / +2 / +3.",
+      "Effects": [
+        "Thundering Blast hits each enemy in your storms once: 40 / 60 / 80 / 100% secondary damage."
+      ]
+    },
+    {
+      "Id": "forked_lightning",
+      "Name": "Forked Lightning",
+      "Kind": "relic",
+      "Icon": "darksiderelic3",
+      "Rarity": "Artifact",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Description": "Sith Sorcerer relic. Equip in either relic slot. Permanent upgrades +0 to +3. Values below are ordered +0 / +1 / +2 / +3.",
+      "Effects": [
+        "Chain Lightning casts 2 / 2 / 2 / 3 times with original presentation and targeting."
+      ]
+    },
+    {
+      "Id": "lightning_prison",
+      "Name": "Lightning Prison",
+      "Kind": "relic",
+      "Icon": "lightsiderelic2",
+      "Rarity": "Artifact",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Description": "Sith Sorcerer relic. Equip in either relic slot. Permanent upgrades +0 to +3. Values below are ordered +0 / +1 / +2 / +3.",
+      "Effects": [
+        "Chain Lightning refreshes a movement root for 1.5 / 2 / 2.5 / 3 seconds."
+      ]
+    },
+    {
+      "Id": "corrupting_storm",
+      "Name": "Corrupting Storm",
+      "Kind": "relic",
+      "Icon": "darksiderelic2",
+      "Rarity": "Artifact",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Description": "Sith Sorcerer relic. Equip in either relic slot. Permanent upgrades +0 to +3. Values below are ordered +0 / +1 / +2 / +3.",
+      "Effects": [
+        "Successive storm ticks apply Affliction at +0, then Crushing Darkness at +1, then Creeping Terror at +2. At +3 all three apply every tick. Existing effects keep their normal duration."
+      ]
+    },
+    {
+      "Id": "lingering_agony",
+      "Name": "Lingering Agony",
+      "Kind": "relic",
+      "Icon": "darksiderelic3",
+      "Rarity": "Artifact",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Description": "Sith Sorcerer relic. Equip in either relic slot. Permanent upgrades +0 to +3. Values below are ordered +0 / +1 / +2 / +3.",
+      "Effects": [
+        "On death, remaining owned DoT damage explodes for 50 / 65 / 80 / 100% in a 3 / 4 / 5 / 6 metre radius. Cannot chain explosions."
+      ]
+    },
+    {
+      "Id": "grip_of_madness",
+      "Name": "Grip of Madness",
+      "Kind": "relic",
+      "Icon": "lightsiderelic3",
+      "Rarity": "Artifact",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Description": "Sith Sorcerer relic. Equip in either relic slot. Permanent upgrades +0 to +3. Values below are ordered +0 / +1 / +2 / +3.",
+      "Effects": [
+        "Each different owned DoT slows by 8 / 10 / 12 / 14%, capped at 42%."
+      ]
+    },
+    {
+      "Id": "accelerated_torment",
+      "Name": "Accelerated Torment",
+      "Kind": "relic",
+      "Icon": "darksiderelic1",
+      "Rarity": "Artifact",
+      "Classes": [
+        "sorcerer"
+      ],
+      "Description": "Sith Sorcerer relic. Equip in either relic slot. Permanent upgrades +0 to +3. Values below are ordered +0 / +1 / +2 / +3.",
+      "Effects": [
+        "Shock accelerates owned DoT ticks by 50 / 65 / 80 / 100% for 4 / 4 / 4.5 / 5 seconds, adding ticks. Shock cooldown becomes 20 seconds."
+      ]
+    },
+    {
+      "Id": "voltaic_fury",
+      "Name": "Voltaic Fury",
+      "Kind": "relic",
+      "Icon": "darksiderelic1",
+      "Rarity": "Artifact",
+      "Classes": [
+        "assassin"
+      ],
+      "Description": "Permanent Sith Assassin relic. Usable with any specialization in either relic slot.",
+      "RankEffects": [
+        "Voltaic Slash empowers the next Shock to arc to 2 additional nearby enemies for 70% Shock damage.",
+        "Voltaic Slash empowers the next Shock to arc to 3 additional nearby enemies for 70% Shock damage.",
+        "Voltaic Slash empowers the next Shock to arc to 4 additional nearby enemies for 70% Shock damage.",
+        "Voltaic Slash empowers the next Shock to arc to 5 additional nearby enemies for 70% Shock damage."
+      ],
+      "Effects": [
+        "Voltaic Slash empowers the next Shock to arc to 2 additional nearby enemies for 70% Shock damage."
+      ]
+    },
+    {
+      "Id": "phantom_blade",
+      "Name": "Phantom Blade",
+      "Kind": "relic",
+      "Icon": "darksiderelic2",
+      "Rarity": "Artifact",
+      "Classes": [
+        "assassin"
+      ],
+      "Description": "Permanent Sith Assassin relic. Usable with any specialization in either relic slot.",
+      "RankEffects": [
+        "Maul adds a spectral strike for 40% damage against its target and enemies within 1.8 metres.",
+        "Maul adds a spectral strike for 60% damage against its target and enemies within 2.4 metres.",
+        "Maul adds a spectral strike for 80% damage against its target and enemies within 3 metres.",
+        "Maul adds a spectral strike for 100% damage against its target and enemies within 3.5999999999999996 metres."
+      ],
+      "Effects": [
+        "Maul adds a spectral strike for 40% damage against its target and enemies within 1.8 metres."
+      ]
+    },
+    {
+      "Id": "hidden_predator",
+      "Name": "Hidden Predator",
+      "Kind": "relic",
+      "Icon": "darksiderelic3",
+      "Rarity": "Artifact",
+      "Classes": [
+        "assassin"
+      ],
+      "Description": "Permanent Sith Assassin relic. Usable with any specialization in either relic slot.",
+      "RankEffects": [
+        "After Force Cloak, the next saber attack hits 2 additional enemies within 3.5 metres. Gain 50% faster attack recovery for 2 seconds.",
+        "After Force Cloak, the next saber attack hits 3 additional enemies within 3.5 metres. Gain 50% faster attack recovery for 3 seconds.",
+        "After Force Cloak, the next saber attack hits 4 additional enemies within 3.5 metres. Gain 50% faster attack recovery for 4 seconds.",
+        "After Force Cloak, the next saber attack hits 5 additional enemies within 3.5 metres. Gain 50% faster attack recovery for 5 seconds."
+      ],
+      "Effects": [
+        "After Force Cloak, the next saber attack hits 2 additional enemies within 3.5 metres. Gain 50% faster attack recovery for 2 seconds."
+      ]
+    },
+    {
+      "Id": "lingering_death_field",
+      "Name": "Lingering Death Field",
+      "Kind": "relic",
+      "Icon": "darksiderelic1",
+      "Rarity": "Artifact",
+      "Classes": [
+        "assassin"
+      ],
+      "Description": "Permanent Sith Assassin relic. Usable with any specialization in either relic slot.",
+      "RankEffects": [
+        "Death Field persists for 4 seconds, dealing 30% of its damage each second.",
+        "Death Field persists for 6 seconds, dealing 30% of its damage each second.",
+        "Death Field persists for 8 seconds, dealing 30% of its damage each second.",
+        "Death Field persists for 10 seconds, dealing 30% of its damage each second. Enemies inside take 25% additional saber damage."
+      ],
+      "Effects": [
+        "Death Field persists for 4 seconds, dealing 30% of its damage each second."
+      ]
+    },
+    {
+      "Id": "devouring_plague",
+      "Name": "Devouring Plague",
+      "Kind": "relic",
+      "Icon": "darksiderelic2",
+      "Rarity": "Artifact",
+      "Classes": [
+        "assassin"
+      ],
+      "Description": "Permanent Sith Assassin relic. Usable with any specialization in either relic slot.",
+      "RankEffects": [
+        "Lacerate bursts up to 2 newly infected enemies for 50% Lacerate damage. Existing owned DoTs spread once without duplication.",
+        "Lacerate bursts up to 3 newly infected enemies for 75% Lacerate damage. Existing owned DoTs spread once without duplication.",
+        "Lacerate bursts up to 4 newly infected enemies for 100% Lacerate damage. Existing owned DoTs spread once without duplication.",
+        "Lacerate bursts up to 5 newly infected enemies for 125% Lacerate damage. Existing owned DoTs spread once without duplication."
+      ],
+      "Effects": [
+        "Lacerate bursts up to 2 newly infected enemies for 50% Lacerate damage. Existing owned DoTs spread once without duplication."
+      ]
+    },
+    {
+      "Id": "dark_parasite",
+      "Name": "Dark Parasite",
+      "Kind": "relic",
+      "Icon": "darksiderelic3",
+      "Rarity": "Artifact",
+      "Classes": [
+        "assassin"
+      ],
+      "Description": "Permanent Sith Assassin relic. Usable with any specialization in either relic slot.",
+      "RankEffects": [
+        "Damage against your Creeping Terror victims heals 2 health, at most once per second. Afflicted deaths pulse for 75% Creeping Terror direct damage within 2 metres. Pulses cannot chain.",
+        "Damage against your Creeping Terror victims heals 4 health, at most once per second. Afflicted deaths pulse for 75% Creeping Terror direct damage within 2.5 metres. Pulses cannot chain.",
+        "Damage against your Creeping Terror victims heals 6 health, at most once per second. Afflicted deaths pulse for 75% Creeping Terror direct damage within 3 metres. Pulses cannot chain.",
+        "Damage against your Creeping Terror victims heals 8 health, at most once per second. Afflicted deaths pulse for 75% Creeping Terror direct damage within 3.5 metres. Pulses cannot chain."
+      ],
+      "Effects": [
+        "Damage against your Creeping Terror victims heals 2 health, at most once per second. Afflicted deaths pulse for 75% Creeping Terror direct damage within 2 metres. Pulses cannot chain."
+      ]
+    },
+    {
+      "Id": "shrouded_assassin",
+      "Name": "Shrouded Assassin",
+      "Kind": "relic",
+      "Icon": "darksiderelic1",
+      "Rarity": "Artifact",
+      "Classes": [
+        "assassin"
+      ],
+      "Description": "Permanent Sith Assassin relic. Usable with any specialization in either relic slot.",
+      "RankEffects": [
+        "Force Shroud and Deflection deal 10 internal damage every 0.80 seconds within 2.5 metres for their active duration.",
+        "Force Shroud and Deflection deal 10 internal damage every 0.65 seconds within 3 metres for their active duration.",
+        "Force Shroud and Deflection deal 10 internal damage every 0.50 seconds within 3.5 metres for their active duration.",
+        "Force Shroud and Deflection deal 10 internal damage every 0.35 seconds within 4 metres for their active duration."
+      ],
+      "Effects": [
+        "Force Shroud and Deflection deal 10 internal damage every 0.80 seconds within 2.5 metres for their active duration."
+      ]
+    },
+    {
+      "Id": "crushing_darkness",
+      "Name": "Crushing Darkness",
+      "Kind": "relic",
+      "Icon": "darksiderelic2",
+      "Rarity": "Artifact",
+      "Classes": [
+        "assassin"
+      ],
+      "Description": "Permanent Sith Assassin relic. Usable with any specialization in either relic slot.",
+      "RankEffects": [
+        "Wither marks for 6 seconds. Saber hits pulse for 30% attack damage to 2 other marks within 6 metres.",
+        "Wither marks for 6 seconds. Saber hits pulse for 45% attack damage to 3 other marks within 6 metres.",
+        "Wither marks for 6 seconds. Saber hits pulse for 60% attack damage to 4 other marks within 6 metres.",
+        "Wither marks for 6 seconds. Saber hits pulse for 75% attack damage to 5 other marks within 6 metres."
+      ],
+      "Effects": [
+        "Wither marks for 6 seconds. Saber hits pulse for 30% attack damage to 2 other marks within 6 metres."
+      ]
+    },
+    {
+      "Id": "withering_force",
+      "Name": "Withering Force",
+      "Kind": "relic",
+      "Icon": "darksiderelic3",
+      "Rarity": "Artifact",
+      "Classes": [
+        "assassin"
+      ],
+      "Description": "Permanent Sith Assassin relic. Usable with any specialization in either relic slot.",
+      "RankEffects": [
+        "Wither deals 75% bonus damage in a 25% larger radius.",
+        "Wither deals 125% bonus damage in a 40% larger radius.",
+        "Wither deals 175% bonus damage in a 60% larger radius.",
+        "Wither deals 250% bonus damage in a 80% larger radius. Its kills release half-radius shockwaves for 175% base Wither damage; secondary waves cannot chain."
+      ],
+      "Effects": [
+        "Wither deals 75% bonus damage in a 25% larger radius."
+      ]
+    },
+    {
+      "Id": "accelerated_agony",
+      "Name": "Accelerated Agony",
+      "Kind": "relic",
+      "Icon": "mr_execute",
+      "Rarity": "Artifact",
+      "Classes": [
+        "marauder"
+      ],
+      "Description": "Permanent Marauder relic. Any specialization; either relic slot.",
+      "RankEffects": [
+        "Annihilate accelerates all active bleeds by 50% for 3s; durations unchanged.",
+        "Annihilate accelerates all active bleeds by 66.6667% for 3.66667s; durations unchanged.",
+        "Annihilate accelerates all active bleeds by 83.3333% for 4.33333s; durations unchanged.",
+        "Annihilate accelerates all active bleeds by 100% for 5s; durations unchanged."
+      ],
+      "Effects": [
+        "Annihilate accelerates all active bleeds by 50% for 3s; durations unchanged."
+      ]
+    },
+    {
+      "Id": "exsanguination",
+      "Name": "Exsanguination",
+      "Kind": "relic",
+      "Icon": "mr_rupture",
+      "Rarity": "Artifact",
+      "Classes": [
+        "marauder"
+      ],
+      "Description": "Permanent Marauder relic. Any specialization; either relic slot.",
+      "RankEffects": [
+        "Annihilate releases 20% remaining bleed damage. 2s internal cooldown.",
+        "Annihilate releases 30% remaining bleed damage. 2s internal cooldown.",
+        "Annihilate releases 40% remaining bleed damage. 2s internal cooldown.",
+        "Annihilate releases 50% remaining bleed damage. 2s internal cooldown."
+      ],
+      "Effects": [
+        "Annihilate releases 20% remaining bleed damage. 2s internal cooldown."
+      ]
+    },
+    {
+      "Id": "crimson_executioner",
+      "Name": "Crimson Executioner",
+      "Kind": "relic",
+      "Icon": "mr_viciousthrow",
+      "Rarity": "Artifact",
+      "Classes": [
+        "marauder"
+      ],
+      "Description": "Permanent Marauder relic. Any specialization; either relic slot.",
+      "RankEffects": [
+        "Bleeding kills store 25% remaining damage, capped at 150. Next Annihilate or Vicious Throw releases it.",
+        "Bleeding kills store 40% remaining damage, capped at 300. Next Annihilate or Vicious Throw releases it.",
+        "Bleeding kills store 55% remaining damage, capped at 450. Next Annihilate or Vicious Throw releases it.",
+        "Bleeding kills store 70% remaining damage, capped at 600. Next Annihilate or Vicious Throw releases it."
+      ],
+      "Effects": [
+        "Bleeding kills store 25% remaining damage, capped at 150. Next Annihilate or Vicious Throw releases it."
+      ]
+    },
+    {
+      "Id": "gore_master",
+      "Name": "Gore Master",
+      "Kind": "relic",
+      "Icon": "mr_talent_sweepingslash",
+      "Rarity": "Artifact",
+      "Classes": [
+        "marauder"
+      ],
+      "Description": "Permanent Marauder relic. Any specialization; either relic slot.",
+      "RankEffects": [
+        "During Gore, Massacre and each Ravage strike add 25% damage. Gore lasts 0.5s longer.",
+        "During Gore, Massacre and each Ravage strike add 40% damage. Gore lasts 0.75s longer.",
+        "During Gore, Massacre and each Ravage strike add 55% damage. Gore lasts 1s longer.",
+        "During Gore, Massacre and each Ravage strike add 70% damage. Gore lasts 1.25s longer."
+      ],
+      "Effects": [
+        "During Gore, Massacre and each Ravage strike add 25% damage. Gore lasts 0.5s longer."
+      ]
+    },
+    {
+      "Id": "ataru_frenzy",
+      "Name": "Ataru Frenzy",
+      "Kind": "relic",
+      "Icon": "mr_ataruform",
+      "Rarity": "Artifact",
+      "Classes": [
+        "marauder"
+      ],
+      "Description": "Permanent Marauder relic. Any specialization; either relic slot.",
+      "RankEffects": [
+        "Massacre empowers Ataru for 6s: 25% more damage, 0.9s internal cooldown, up to 3 targets.",
+        "Massacre empowers Ataru for 6s: 40% more damage, 0.75s internal cooldown, up to 4 targets.",
+        "Massacre empowers Ataru for 6s: 55% more damage, 0.6s internal cooldown, up to 5 targets.",
+        "Massacre empowers Ataru for 6s: 70% more damage, 0.45s internal cooldown, up to 6 targets."
+      ],
+      "Effects": [
+        "Massacre empowers Ataru for 6s: 25% more damage, 0.9s internal cooldown, up to 3 targets."
+      ]
+    },
+    {
+      "Id": "predatory_carnage",
+      "Name": "Predatory Carnage",
+      "Kind": "relic",
+      "Icon": "mr_forcecharge_old",
+      "Rarity": "Artifact",
+      "Classes": [
+        "marauder"
+      ],
+      "Description": "Permanent Marauder relic. Any specialization; either relic slot.",
+      "RankEffects": [
+        "Predation grants 20% attack and recovery speed, lasts 7s. Massacre recovers 1s of Gore cooldown.",
+        "Predation grants 30% attack and recovery speed, lasts 8s. Massacre recovers 1.5s of Gore cooldown.",
+        "Predation grants 40% attack and recovery speed, lasts 9s. Massacre recovers 2s of Gore cooldown.",
+        "Predation grants 50% attack and recovery speed, lasts 10s. Massacre recovers 2.5s of Gore cooldown."
+      ],
+      "Effects": [
+        "Predation grants 20% attack and recovery speed, lasts 7s. Massacre recovers 1s of Gore cooldown."
+      ]
+    },
+    {
+      "Id": "crushing_fury",
+      "Name": "Crushing Fury",
+      "Kind": "relic",
+      "Icon": "mr_forceCrush",
+      "Rarity": "Artifact",
+      "Classes": [
+        "marauder"
+      ],
+      "Description": "Permanent Marauder relic. Any specialization; either relic slot.",
+      "RankEffects": [
+        "Smash releases 20% remaining Force Crush damage without consuming it.",
+        "Smash releases 30% remaining Force Crush damage without consuming it.",
+        "Smash releases 40% remaining Force Crush damage without consuming it.",
+        "Smash releases 50% remaining Force Crush damage without consuming it."
+      ],
+      "Effects": [
+        "Smash releases 20% remaining Force Crush damage without consuming it."
+      ]
+    },
+    {
+      "Id": "shockwave",
+      "Name": "Shockwave",
+      "Kind": "relic",
+      "Icon": "juggernautsmash",
+      "Rarity": "Artifact",
+      "Classes": [
+        "marauder"
+      ],
+      "Description": "Permanent Marauder relic. Any specialization; either relic slot.",
+      "RankEffects": [
+        "Force Crush builds 3 charges. Each adds 10% Smash damage and 8% radius.",
+        "Force Crush builds 3 charges. Each adds 15% Smash damage and 12% radius.",
+        "Force Crush builds 3 charges. Each adds 20% Smash damage and 16% radius.",
+        "Force Crush builds 3 charges. Each adds 25% Smash damage and 20% radius. Adds a delayed 60% impact."
+      ],
+      "Effects": [
+        "Force Crush builds 3 charges. Each adds 10% Smash damage and 8% radius."
+      ]
+    },
+    {
+      "Id": "obliteration",
+      "Name": "Obliteration",
+      "Kind": "relic",
+      "Icon": "mr_forceCharge",
+      "Rarity": "Artifact",
+      "Classes": [
+        "marauder"
+      ],
+      "Description": "Permanent Marauder relic. Any specialization; either relic slot.",
+      "RankEffects": [
+        "Engaging with Force Charge (recovered Obliterate substitute) empowers next Smash: 30% damage, 20% radius, centered on target.",
+        "Engaging with Force Charge (recovered Obliterate substitute) empowers next Smash: 45% damage, 30% radius, centered on target.",
+        "Engaging with Force Charge (recovered Obliterate substitute) empowers next Smash: 60% damage, 40% radius, centered on target.",
+        "Engaging with Force Charge (recovered Obliterate substitute) empowers next Smash: 75% damage, 50% radius, centered on target."
+      ],
+      "Effects": [
+        "Engaging with Force Charge (recovered Obliterate substitute) empowers next Smash: 30% damage, 20% radius, centered on target."
+      ]
+    },
+    {
+      "Id": "endless_berserk",
+      "Name": "Endless Berserk",
+      "Kind": "relic",
+      "Icon": "mr_berserk",
+      "Rarity": "Artifact",
+      "Classes": [
+        "marauder"
+      ],
+      "Description": "Permanent Marauder relic. Any specialization; either relic slot.",
+      "RankEffects": [
+        "Kills during Berserk add 0.5s, up to 10s total duration.",
+        "Kills during Berserk add 1s, up to 14s total duration.",
+        "Kills during Berserk add 1.5s, up to 18s total duration.",
+        "Kills during Berserk add 2s, up to 22s total duration."
+      ],
+      "Effects": [
+        "Kills during Berserk add 0.5s, up to 10s total duration."
+      ]
+    },
+    {
+      "Id": "twin_blades",
+      "Name": "Twin Blades",
+      "Kind": "relic",
+      "Icon": "mr_saberThrowSith",
+      "Rarity": "Artifact",
+      "Classes": [
+        "marauder"
+      ],
+      "Description": "Permanent Marauder relic. Any specialization; either relic slot.",
+      "RankEffects": [
+        "Saber Throw applies Deadly Saber bleed to 2 targets; existing bleeds are preserved.",
+        "Saber Throw applies Deadly Saber bleed to 3 targets; existing bleeds are preserved. Adds one 25% Saber Throw hit.",
+        "Saber Throw applies Deadly Saber bleed to 4 targets; existing bleeds are preserved. Adds one 50% Saber Throw hit.",
+        "Saber Throw applies Deadly Saber bleed to 5 targets; existing bleeds are preserved. Adds one 75% Saber Throw hit."
+      ],
+      "Effects": [
+        "Saber Throw applies Deadly Saber bleed to 2 targets; existing bleeds are preserved."
+      ]
+    }
   ]
 }

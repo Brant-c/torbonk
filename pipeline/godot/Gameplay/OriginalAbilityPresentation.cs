@@ -7,7 +7,7 @@ using System.Linq;
 namespace SwtorSurvivors;
 
 /// <summary>Bounded FXSpec adapter. Original pixels, sockets, clips and PCM; no combat side effects.</summary>
-public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
+public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation, IArcPresentation
 {
     public CharacterPresentation Actor { get; set; } = null!;
     public AbilityDefinition Definition { get; set; } = null!;
@@ -24,6 +24,15 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
     private bool _active, _impact, _ending;
     private double _age, _redraw;
     private double _shockTail;
+    private readonly List<(Vector3 from,Vector3 to)> _links=new();
+    public Vector3 Hand=>Socket("vfx_hand_left");
+    public int ChainArcCount=>_links.Count;
+    public void Arc(Vector3 from,Vector3 to)
+    {
+        if(_links.Count>=24)return;
+        _links.Add((from,to));_shockTail=Math.Max(_shockTail,.24);_active=true;SetProcess(true);
+        DrawBolt(from,to,_beam);Flash(to,"electric_orb",.065f,.24);
+    }
     public int BoltCount => _bolts.Count;
     public int PlayingAudioVoices => _sounds.Count(s => s.Playing);
     public int LoopingAudioVoices => _sounds.Count(s => s.Playing && s.Stream is AudioStreamWav wav && wav.LoopMode != AudioStreamWav.LoopModeEnum.Disabled);
@@ -100,7 +109,7 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
         _impact=true;
         if(Definition.Id=="shock") { _shockTail=.24;_redraw=0; }
         PlayEvent(Definition.ImpactAudioEvent,false,Definition.Area==AbilityArea.GroundSphere?_center:Aim());
-        if(Definition.Area==AbilityArea.SingleTarget) Flash(Aim(),"electric_orb",0.065f,0.24);
+        if(Definition.Area==AbilityArea.SingleTarget || Definition.Id=="shock") Flash(Aim(),"electric_orb",0.065f,0.24);
     }
     public void End(bool interrupted)
     {
@@ -124,7 +133,7 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
         foreach(var sound in _sounds) if(sound.Stream is AudioStreamWav w && w.LoopMode!=AudioStreamWav.LoopModeEnum.Disabled) sound.Stop();
     }
     public void Complete() { StopLoops(); if(_shockTail<=0)ClearVisuals(); }
-    public void Release() { _shockTail=0;ClearVisuals(); foreach(var sound in _sounds) sound.Stop(); }
+    public void Release() { _links.Clear();_shockTail=0;ClearVisuals(); foreach(var sound in _sounds) sound.Stop(); }
     public override void _Process(double delta)
     {
         if(!_active)return;
@@ -143,11 +152,12 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
         if(Definition.Id=="shock" && _shockTail>0)
         {
             _shockTail-=delta;
-            if(_shockTail<=0) { ClearBolts(); if(_ending && _flashes.Count==0)ClearVisuals(); }
+            if(_shockTail<=0) { _links.Clear();ClearBolts(); if(_ending && _flashes.Count==0)ClearVisuals(); }
             else if(_redraw<=0)
             {
                 _redraw=.04;ClearBolts();
                 DrawBolt(Socket("vfx_hand_left"),Aim(),_beam);
+                foreach(var link in _links)DrawBolt(link.from,link.to,_beam);
                 DrawBolt(Socket("vfx_elbow_left"),Socket("vfx_hand_left"),_beam);
             }
         }
@@ -195,6 +205,8 @@ public partial class OriginalAbilityPresentation : Node3D, IAbilityPresentation
     {
         var sprite=new Sprite3D {Texture=GD.Load<Texture2D>($"res://Assets/Abilities/{texture}.png"),
             Billboard=BaseMaterial3D.BillboardModeEnum.Enabled,Shaded=false,Modulate=new Color(0.6f,0.25f,1),NoDepthTest=false};
+        var material=new ShaderMaterial {Shader=GD.Load<Shader>("res://Gameplay/D3Particle.gdshader")};
+        material.SetShaderParameter("source_texture",sprite.Texture);sprite.MaterialOverride=material;
         sprite.PixelSize=size/sprite.Texture.GetWidth();AddChild(sprite);sprite.GlobalPosition=point;_flashes.Add((sprite,life));
     }
     private void ClearBolts() {foreach(var bolt in _bolts)bolt.Free();_bolts.Clear();}

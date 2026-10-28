@@ -1,0 +1,61 @@
+{
+  "patches": [
+    {
+      "id": "4611686136141596212",
+      "room": "05_Infernal_Prison",
+      "width": 67,
+      "depth": 71,
+      "position": [
+        82.5999984741,
+        -39.5453987122,
+        69.0
+      ],
+      "version": 1,
+      "vertices": 4757,
+      "triangles": 9240,
+      "sourceHeightEnd": 10068,
+      "embeddedSha256": "b6b111955e87c6eea668e8e7d9fadd5357a79f3b5d02da61bbdd38d01e5c742d",
+      "decodedSha256": "d6aa5ddafcabfd1e8d3d002a50468a39b4bb27f12607a3bf5b66a4d9552a5479",
+      "sourceTessellation": "",
+      "topology": "STE2 fixed diagonal when source field empty; native default unverified",
+      "sourceHeightUnit": "border float32; interior uint16 / 512; STE2 approximate scalar compared separately",
+      "splatSize": [
+        133,
+        141
+      ],
+      "layers": [
+        "16",
+        "7",
+        "6"
+      ],
+      "blendSumRange": [
+        1.0,
+        1.0
+      ],
+      "droppedUnmappedLayerTexels": {},
+      "legacyDenseCopy": false,
+      "holes": false,
+      "dyd": [],
+      "maps": {
+        "albedo": "res://Assets/Maps/soa_p3/4611686136141596212_albedo.png",
+        "normal": "res://Assets/Maps/soa_p3/4611686136141596212_normal.png",
+        "roughness": "res://Assets/Maps/soa_p3/4611686136141596212_roughness.png"
+      },
+      "embeddedPosition": null
+    }
+  ],
+  "adjacency": [
+    {
+      "note": "authored patches staged unmodified; seams not repaired",
+      "patchCount": 1
+    }
+  ],
+  "lighting": "authored warm directional/ambient; no native parity",
+  "limitations": [
+    "World-space UV phase/scale reconstruction is not native-client verified.",
+    "SWTOR material lighting translated to portable PBR; original vertex color used as multiplicative tint.",
+    "DYD density data retained; procedural native billboard/mesh scattering is not reproduced.",
+    "Static collision is derived from converted visible triangles, not original physics shapes."
+  ],
+  "passed": true
+}

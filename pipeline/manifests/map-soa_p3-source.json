@@ -1,0 +1,1819 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 600,
+  "maximumDecodedBytes": 314572800,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_areadat_1.tor",
+      "archiveHash": "0xAAFB99D6CBD05845",
+      "entryOffset": 437560619,
+      "headerSize": 36,
+      "dataOffset": 437560655,
+      "compressedSize": 31854,
+      "length": 204490,
+      "compressionMethod": 1,
+      "crc32Index": "618ceaac",
+      "path": "/resources/world/areas/4611686096259570491/area.dat",
+      "sha256": "96f2a37775f625425a1bbc71accdf6af3d8032bf696c49e8076dc8443184a15b",
+      "output": "source-assets\\april2012\\resources\\world\\areas\\4611686096259570491\\area.dat",
+      "archiveSha256": "4cec6a43fc15eb0001a081f1073b0dcb97cd44244b39164173c53dc7271bb4db",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_areadat_1.tor",
+      "archiveHash": "0xFB333EAC70C2C235",
+      "entryOffset": 437372033,
+      "headerSize": 36,
+      "dataOffset": 437372069,
+      "compressedSize": 90580,
+      "length": 1202992,
+      "compressionMethod": 1,
+      "crc32Index": "a4fb9fe5",
+      "path": "/resources/world/areas/4611686096259570491/05_infernal_prison.dat",
+      "sha256": "f204807e5a77fb37e3d7dcd0f6a5cd93a45607b11a15a16697afb423b4a3e464",
+      "output": "source-assets\\april2012\\resources\\world\\areas\\4611686096259570491\\05_infernal_prison.dat",
+      "archiveSha256": "4cec6a43fc15eb0001a081f1073b0dcb97cd44244b39164173c53dc7271bb4db",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_area_all_item_1.tor",
+      "archiveHash": "0xCF146CDE0A1C71F1",
+      "entryOffset": 20583854,
+      "headerSize": 36,
+      "dataOffset": 20583890,
+      "compressedSize": 23578,
+      "length": 44086,
+      "compressionMethod": 1,
+      "crc32Index": "da6e8461",
+      "path": "/resources/art/static/area/all_all/item/caves/all_item_caves_rubble_mound_ald_01.gr2",
+      "sha256": "159c3111bafc7afea00451aa50b9cfb721d6948407f08ff615228ec5a4de2817",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\item\\caves\\all_item_caves_rubble_mound_ald_01.gr2",
+      "archiveSha256": "d34f56365d4debb0b874a5cc45e900cb9b1085eeae2063bc9e5afdcf99c08cbf",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_quesh_1.tor",
+      "archiveHash": "0x3343D68A20484DAC",
+      "entryOffset": 39757850,
+      "headerSize": 36,
+      "dataOffset": 39757886,
+      "compressedSize": 493,
+      "length": 2073,
+      "compressionMethod": 1,
+      "crc32Index": "14433682",
+      "path": "/resources/art/shaders/materials/all_item_caves_rubble_mounds_01.mat",
+      "sha256": "b1362f8ec9a35ebc10f45e19b3eb0835e0182eb3d620d16fa5074573d8520603",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\all_item_caves_rubble_mounds_01.mat",
+      "archiveSha256": "2e63b82a6f7c3e170a1251f62067deb7fe355aa3f606f6eed183ec31129a781b",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_quesh_1.tor",
+      "archiveHash": "0x8682DDD91594B8AC",
+      "entryOffset": 39761578,
+      "headerSize": 36,
+      "dataOffset": 39761614,
+      "compressedSize": 27534,
+      "length": 43832,
+      "compressionMethod": 1,
+      "crc32Index": "59762982",
+      "path": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_rubble_mounds_01_d.dds",
+      "sha256": "6519e929a6a6ec3ed7a10750094a3a29592076af890a27b32a5266e88138f49f",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\item\\caves\\texture\\all_item_caves_rubble_mounds_01_d.dds",
+      "archiveSha256": "2e63b82a6f7c3e170a1251f62067deb7fe355aa3f606f6eed183ec31129a781b",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_quesh_1.tor",
+      "archiveHash": "0xF2460A4244F49A0D",
+      "entryOffset": 39789148,
+      "headerSize": 36,
+      "dataOffset": 39789184,
+      "compressedSize": 53692,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "8f34d094",
+      "path": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_rubble_mounds_01_n.dds",
+      "sha256": "45fca6112b29df62d3aafee6c59ac084b923226c28edc1c1a30edbb2cddc9eaf",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\item\\caves\\texture\\all_item_caves_rubble_mounds_01_n.dds",
+      "archiveSha256": "2e63b82a6f7c3e170a1251f62067deb7fe355aa3f606f6eed183ec31129a781b",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_quesh_1.tor",
+      "archiveHash": "0x24901E2A78E34656",
+      "entryOffset": 39842876,
+      "headerSize": 36,
+      "dataOffset": 39842912,
+      "compressedSize": 11122,
+      "length": 22000,
+      "compressionMethod": 1,
+      "crc32Index": "aadbc6b5",
+      "path": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_rubble_mounds_01_s.dds",
+      "sha256": "0a20fd37c51adfd421af2b42a7c50d2d9d0c5cc82b3fc2641f2f9bec746c644e",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\item\\caves\\texture\\all_item_caves_rubble_mounds_01_s.dds",
+      "archiveSha256": "2e63b82a6f7c3e170a1251f62067deb7fe355aa3f606f6eed183ec31129a781b",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_misc_1.tor",
+      "archiveHash": "0x927EC4C4BF51BF0E",
+      "entryOffset": 47364813,
+      "headerSize": 36,
+      "dataOffset": 47364849,
+      "compressedSize": 56,
+      "length": 384,
+      "compressionMethod": 1,
+      "crc32Index": "084a80b4",
+      "path": "/resources/art/defaultassets/black.dds",
+      "sha256": "f6fc96233461b12b33ffd2e0c79c96216fbee0af5c31597d1cc1fa940a16057d",
+      "output": "source-assets\\april2012\\resources\\art\\defaultassets\\black.dds",
+      "archiveSha256": "9ac8eae93e1ed26e964a9b1146f653b73276ea7294f2311329c1699dbca7b7d6",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_area_all_item_1.tor",
+      "archiveHash": "0xC5CA9B1B381788BC",
+      "entryOffset": 17972575,
+      "headerSize": 36,
+      "dataOffset": 17972611,
+      "compressedSize": 470,
+      "length": 1905,
+      "compressionMethod": 1,
+      "crc32Index": "699ee2b4",
+      "path": "/resources/art/shaders/materials/all_item_caves_boulders_ald.mat",
+      "sha256": "5b4702e5d038f89adbdac5c17feed015e90ede44e2296097e14e4da475fe5688",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\all_item_caves_boulders_ald.mat",
+      "archiveSha256": "d34f56365d4debb0b874a5cc45e900cb9b1085eeae2063bc9e5afdcf99c08cbf",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_area_all_item_1.tor",
+      "archiveHash": "0x4DA86A8CCCCEC731",
+      "entryOffset": 17987252,
+      "headerSize": 36,
+      "dataOffset": 17987288,
+      "compressedSize": 427188,
+      "length": 699192,
+      "compressionMethod": 1,
+      "crc32Index": "110f7fc4",
+      "path": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_boulders_ald_d.dds",
+      "sha256": "9fce79e73ea17a03c692edf77d69de7ce3d1b4892b814cccbe636ff4f0915605",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\item\\caves\\texture\\all_item_caves_boulders_ald_d.dds",
+      "archiveSha256": "d34f56365d4debb0b874a5cc45e900cb9b1085eeae2063bc9e5afdcf99c08cbf",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_balmorra_1.tor",
+      "archiveHash": "0xAC1B4808FB80071B",
+      "entryOffset": 51826962,
+      "headerSize": 36,
+      "dataOffset": 51826998,
+      "compressedSize": 267405,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "1f39110d",
+      "path": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_boulders_n.dds",
+      "sha256": "ede5fe3075202bbc7ef7bc5480c9e3a12eb1afee130a96b9d70cc11bb0707c00",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\item\\caves\\texture\\all_item_caves_boulders_n.dds",
+      "archiveSha256": "d9f0c126d5eb529e52af8f64657974bbd0e2a23bc9899104cae929cc62672f6a",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_area_all_item_1.tor",
+      "archiveHash": "0x4B5EB64A2F1B053F",
+      "entryOffset": 18414476,
+      "headerSize": 36,
+      "dataOffset": 18414512,
+      "compressedSize": 246356,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "ea6c7a37",
+      "path": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_boulders_neu_s.dds",
+      "sha256": "cd71c0398b776fadd0472af2d352c404affb09f98b94af11f75e4e9ee1cb32c4",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\item\\caves\\texture\\all_item_caves_boulders_neu_s.dds",
+      "archiveSha256": "d34f56365d4debb0b874a5cc45e900cb9b1085eeae2063bc9e5afdcf99c08cbf",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_area_all_item_1.tor",
+      "archiveHash": "0x488391EB53B3E91C",
+      "entryOffset": 69102101,
+      "headerSize": 36,
+      "dataOffset": 69102137,
+      "compressedSize": 265,
+      "length": 728,
+      "compressionMethod": 1,
+      "crc32Index": "6160313c",
+      "path": "/resources/art/static/area/all_all/item/decal/all_item_decal_lava.gr2",
+      "sha256": "218be9ec6df72c4acf27b9cfb1643cbe3ecee7b7f54dc36f68c95ba6b4929440",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\item\\decal\\all_item_decal_lava.gr2",
+      "archiveSha256": "d34f56365d4debb0b874a5cc45e900cb9b1085eeae2063bc9e5afdcf99c08cbf",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_area_all_item_1.tor",
+      "archiveHash": "0xE2D929B758016114",
+      "entryOffset": 69102402,
+      "headerSize": 36,
+      "dataOffset": 69102438,
+      "compressedSize": 483,
+      "length": 1851,
+      "compressionMethod": 1,
+      "crc32Index": "9a5c388a",
+      "path": "/resources/art/shaders/materials/all_item_decal_lava.mat",
+      "sha256": "3a771a895b10eed70ff6b7b54800caa0410e2492f6b0d0711809d0ef2e5c9678",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\all_item_decal_lava.mat",
+      "archiveSha256": "d34f56365d4debb0b874a5cc45e900cb9b1085eeae2063bc9e5afdcf99c08cbf",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_area_all_item_1.tor",
+      "archiveHash": "0x80F76FA0E3243D0B",
+      "entryOffset": 69107595,
+      "headerSize": 36,
+      "dataOffset": 69107631,
+      "compressedSize": 111108,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "502b52ea",
+      "path": "/resources/art/static/area/all_all/item/decal/texture/all_item_decal_lava_02_d.dds",
+      "sha256": "fdde2de941fa0e9235c8c461f84defe5ba20f88ad237188de5732ffbd4a5e694",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\item\\decal\\texture\\all_item_decal_lava_02_d.dds",
+      "archiveSha256": "d34f56365d4debb0b874a5cc45e900cb9b1085eeae2063bc9e5afdcf99c08cbf",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_area_all_item_1.tor",
+      "archiveHash": "0x2E51DC6CC2F72ED8",
+      "entryOffset": 69218739,
+      "headerSize": 36,
+      "dataOffset": 69218775,
+      "compressedSize": 62952,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "25d41b80",
+      "path": "/resources/art/static/area/all_all/item/decal/texture/all_item_decal_lava_02_n.dds",
+      "sha256": "ef8f4c9113992bca4900a9ca4d4df94dc3f5b680f9d4e8ef29a17fd413ea2e0c",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\item\\decal\\texture\\all_item_decal_lava_02_n.dds",
+      "archiveSha256": "d34f56365d4debb0b874a5cc45e900cb9b1085eeae2063bc9e5afdcf99c08cbf",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x3E34D26047140812",
+      "entryOffset": 40681413,
+      "headerSize": 36,
+      "dataOffset": 40681449,
+      "compressedSize": 1271,
+      "length": 3825,
+      "compressionMethod": 1,
+      "crc32Index": "94f4b8e5",
+      "path": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_energy_obelisk_base.gr2",
+      "sha256": "090bddec509eee6505ab030300a89feda25a634c50e05a2bb773e32ebb444cd4",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\bel_arch_rakata_raid_energy_obelisk_base.gr2",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xE417E6D057DFDC51",
+      "entryOffset": 26880363,
+      "headerSize": 36,
+      "dataOffset": 26880399,
+      "compressedSize": 505,
+      "length": 2063,
+      "compressionMethod": 1,
+      "crc32Index": "738f0f47",
+      "path": "/resources/art/shaders/materials/bel_arch_rakata_int_stone01.mat",
+      "sha256": "bca89fffad0a27279f1c739b915c95694335994f1ba62668e57406e3302774c4",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\bel_arch_rakata_int_stone01.mat",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xC06177F56795364F",
+      "entryOffset": 26889734,
+      "headerSize": 36,
+      "dataOffset": 26889770,
+      "compressedSize": 112936,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "d8ef844d",
+      "path": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_stone01_d.dds",
+      "sha256": "e48c12da25e95ec32a70075e0071005cac56929d39a56aaeff13e7da9a9a10dd",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\texture\\bel_arch_rakata_int_stone01_d.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x2B2A6BE62867EBD8",
+      "entryOffset": 27002706,
+      "headerSize": 36,
+      "dataOffset": 27002742,
+      "compressedSize": 257757,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "eff26928",
+      "path": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_stone01_n.dds",
+      "sha256": "064f4ad32fc4e884cb61299c3820838fb9246ebedf002d42a8a5ee60ae64289a",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\texture\\bel_arch_rakata_int_stone01_n.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x31EFD3F3BC1A2E9C",
+      "entryOffset": 27260499,
+      "headerSize": 36,
+      "dataOffset": 27260535,
+      "compressedSize": 72423,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "844e11bd",
+      "path": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_stone01_s.dds",
+      "sha256": "957836d13e2f743e998020e0835764d4625cf8174f0a6322f32dc2bd1de12ed1",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\texture\\bel_arch_rakata_int_stone01_s.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xC38B196A94393C0F",
+      "entryOffset": 40248675,
+      "headerSize": 36,
+      "dataOffset": 40248711,
+      "compressedSize": 468,
+      "length": 1888,
+      "compressionMethod": 1,
+      "crc32Index": "2cb6da09",
+      "path": "/resources/art/shaders/materials/all_arch_rakata_wall_set03.mat",
+      "sha256": "9ed1a329b29a9892c185075a2b260edfcb14fe1ee592ff5bf4f8870dbf27413d",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\all_arch_rakata_wall_set03.mat",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xC94B4D20FDBF8C24",
+      "entryOffset": 40258399,
+      "headerSize": 36,
+      "dataOffset": 40258435,
+      "compressedSize": 141262,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "7a398482",
+      "path": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set03_d.dds",
+      "sha256": "f95d741a1854d3c34b91cd545db46eb90f2ddf20dd35fbb6be420e58b3d1e36a",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\arch\\texture\\all_arch_rakata_wall_set03_d.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x4949291BC9B5A455",
+      "entryOffset": 40399697,
+      "headerSize": 36,
+      "dataOffset": 40399733,
+      "compressedSize": 214652,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "a4a02b84",
+      "path": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set03_n.dds",
+      "sha256": "563561dc43a3e989128f991d23531701bce702f6abd32c5f613aa52877a4b1ec",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\arch\\texture\\all_arch_rakata_wall_set03_n.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xF76863BC8616706C",
+      "entryOffset": 40614385,
+      "headerSize": 36,
+      "dataOffset": 40614421,
+      "compressedSize": 66992,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "6888f30b",
+      "path": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set03_s.dds",
+      "sha256": "14296c1a894137715edfb38f08bd47b205513b7923da5e23f23144f6397ce435",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\arch\\texture\\all_arch_rakata_wall_set03_s.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x833FB31B8E1FA6F7",
+      "entryOffset": 41475879,
+      "headerSize": 36,
+      "dataOffset": 41475915,
+      "compressedSize": 4808,
+      "length": 12532,
+      "compressionMethod": 1,
+      "crc32Index": "bd52f390",
+      "path": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_platform_piece01.gr2",
+      "sha256": "7975827448be97818afde0528c0b1dc380e59de53be576a5d64774cbabcc48ca",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\bel_arch_rakata_raid_infernal_platform_piece01.gr2",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xE4C26CCC424C41ED",
+      "entryOffset": 20937474,
+      "headerSize": 36,
+      "dataOffset": 20937510,
+      "compressedSize": 503,
+      "length": 2056,
+      "compressionMethod": 1,
+      "crc32Index": "f8109f05",
+      "path": "/resources/art/shaders/materials/bel_arch_rakata_int_wall01.mat",
+      "sha256": "4f61354522355919bfc202309c736bcbb8140a1d42189ad72e63a9980acda1f9",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\bel_arch_rakata_int_wall01.mat",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x4CB1C7604D2EEC72",
+      "entryOffset": 20977681,
+      "headerSize": 36,
+      "dataOffset": 20977717,
+      "compressedSize": 517965,
+      "length": 699192,
+      "compressionMethod": 1,
+      "crc32Index": "af321b6d",
+      "path": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_wall01_d.dds",
+      "sha256": "ee08e129ef67560644a8e8ec8e0d6573db4da2d04147e5aab3f1e8f6b22149e1",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\texture\\bel_arch_rakata_int_wall01_d.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xCAD999054846F4F8",
+      "entryOffset": 21495682,
+      "headerSize": 36,
+      "dataOffset": 21495718,
+      "compressedSize": 942789,
+      "length": 1398256,
+      "compressionMethod": 1,
+      "crc32Index": "e536858a",
+      "path": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_wall01_n.dds",
+      "sha256": "7041460deba983c910e314fa151a9f1e22172c1e466e12995d310c6212962c64",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\texture\\bel_arch_rakata_int_wall01_n.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xAA2B1CEAE466B072",
+      "entryOffset": 22438507,
+      "headerSize": 36,
+      "dataOffset": 22438543,
+      "compressedSize": 279530,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "9a6b6c02",
+      "path": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_wall01_s.dds",
+      "sha256": "ff9cc24fcaa256147d4072b41f0a686fbbb4596a6e2c8a90df612b4dadab8a7e",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\texture\\bel_arch_rakata_int_wall01_s.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xBA31ED431F4221C7",
+      "entryOffset": 34559561,
+      "headerSize": 36,
+      "dataOffset": 34559597,
+      "compressedSize": 485,
+      "length": 1927,
+      "compressionMethod": 1,
+      "crc32Index": "629eddce",
+      "path": "/resources/art/shaders/materials/bel_arch_rakata_int_floortile01.mat",
+      "sha256": "60ca61cdce01da3d571a55d6ee27397a2578a881f05bbf988542b569a20a0ddc",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\bel_arch_rakata_int_floortile01.mat",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x5BEB96944BAA0BF6",
+      "entryOffset": 35021063,
+      "headerSize": 36,
+      "dataOffset": 35021099,
+      "compressedSize": 307840,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "4e156730",
+      "path": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_floortile01_d.dds",
+      "sha256": "20f21c52ec67e045891cb0a022e9127d23931d77840caa814ad26806bfe43426",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\texture\\bel_arch_rakata_int_floortile01_d.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xF9AB8DF645783B6D",
+      "entryOffset": 35328939,
+      "headerSize": 36,
+      "dataOffset": 35328975,
+      "compressedSize": 269576,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "30ab2f2c",
+      "path": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_floortile01_n.dds",
+      "sha256": "66528e247caebfb8de96491e9d354f4a849278ab3d7376dfbd5dee72e7c52e9c",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\texture\\bel_arch_rakata_int_floortile01_n.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x9C99974DE8AD2DC8",
+      "entryOffset": 35598551,
+      "headerSize": 36,
+      "dataOffset": 35598587,
+      "compressedSize": 67186,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "ff72380a",
+      "path": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_floortile01_s.dds",
+      "sha256": "244aa8eb0dc22a3b5406daf82773122a8082eb14eb5f3a8052c14baf7bb45c1d",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\texture\\bel_arch_rakata_int_floortile01_s.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xBAE365ECC2DCFE10",
+      "entryOffset": 20938013,
+      "headerSize": 36,
+      "dataOffset": 20938049,
+      "compressedSize": 484,
+      "length": 2010,
+      "compressionMethod": 1,
+      "crc32Index": "ea9c2478",
+      "path": "/resources/art/shaders/materials/bel_arch_rakata_int_wall_raw.mat",
+      "sha256": "c142f0334c2afd99b8f7b5fe2da7e6e1788f57da3c2b8808f8f6d98a5e734dc8",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\bel_arch_rakata_int_wall_raw.mat",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x7F1ED3DDA1FE3EA1",
+      "entryOffset": 22718073,
+      "headerSize": 36,
+      "dataOffset": 22718109,
+      "compressedSize": 129994,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "1f98115a",
+      "path": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_wall_raw_d.dds",
+      "sha256": "7d21391328c7d6bd9e256becdd67fa983af7d2162deec5b3cdbfc212100b70b2",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\texture\\bel_arch_rakata_int_wall_raw_d.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xF839F1734EE69801",
+      "entryOffset": 22848103,
+      "headerSize": 36,
+      "dataOffset": 22848139,
+      "compressedSize": 312865,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "1f425b69",
+      "path": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_wall_raw_n.dds",
+      "sha256": "b5d35cbd62931deade0987bcdc1482e6753fb89999bf2fdb16350bef090efc1a",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\texture\\bel_arch_rakata_int_wall_raw_n.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x377BE10427D3F760",
+      "entryOffset": 41480723,
+      "headerSize": 36,
+      "dataOffset": 41480759,
+      "compressedSize": 5074,
+      "length": 12914,
+      "compressionMethod": 1,
+      "crc32Index": "3d94ea4b",
+      "path": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_platform_piece02.gr2",
+      "sha256": "0a47c885ac8dc15e55f1edba016cc5351f3b8070c372029c4c002ae0ef82cfd6",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\bel_arch_rakata_raid_infernal_platform_piece02.gr2",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x99374BAB0C3CBBF6",
+      "entryOffset": 41485833,
+      "headerSize": 36,
+      "dataOffset": 41485869,
+      "compressedSize": 3423,
+      "length": 8985,
+      "compressionMethod": 1,
+      "crc32Index": "96493aad",
+      "path": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_platform_piece03.gr2",
+      "sha256": "52869fee8fa131973a5e6556005a654078c25751896b90e0dca3e0e3f9ff7e55",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\bel_arch_rakata_raid_infernal_platform_piece03.gr2",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xB1BB79212BBA6ED5",
+      "entryOffset": 41489292,
+      "headerSize": 36,
+      "dataOffset": 41489328,
+      "compressedSize": 3620,
+      "length": 9438,
+      "compressionMethod": 1,
+      "crc32Index": "8fa348ea",
+      "path": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_platform_piece04.gr2",
+      "sha256": "e97cb5ad4c1ce791113a9c19a54ae0df8626d2c32c2b049e6d247d84584c6e6b",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\bel_arch_rakata_raid_infernal_platform_piece04.gr2",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x8A74CDB9E0C989BB",
+      "entryOffset": 42767497,
+      "headerSize": 36,
+      "dataOffset": 42767533,
+      "compressedSize": 177099,
+      "length": 487756,
+      "compressionMethod": 1,
+      "crc32Index": "dce91bf5",
+      "path": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_room_wall01.gr2",
+      "sha256": "f2be6fc47eeaac5baee22ce202a134e75795b94264598f419aab20f1bdd5892c",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\bel_arch_rakata_raid_infernal_room_wall01.gr2",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_misc_1.tor",
+      "archiveHash": "0x0DB77A5D9442DBD4",
+      "entryOffset": 30285775,
+      "headerSize": 36,
+      "dataOffset": 30285811,
+      "compressedSize": 462,
+      "length": 1801,
+      "compressionMethod": 1,
+      "crc32Index": "6561d1b1",
+      "path": "/resources/art/shaders/materials/util_collision_hidden.mat",
+      "sha256": "571403a3b6e29fa5dd1aa8fa6e48f40ceda3a9b1e5b0b3ba1164962950d7f6ac",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\util_collision_hidden.mat",
+      "archiveSha256": "9ac8eae93e1ed26e964a9b1146f653b73276ea7294f2311329c1699dbca7b7d6",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_misc_1.tor",
+      "archiveHash": "0xBF57E5DAE64B73EB",
+      "entryOffset": 36582113,
+      "headerSize": 36,
+      "dataOffset": 36582149,
+      "compressedSize": 400,
+      "length": 8320,
+      "compressionMethod": 1,
+      "crc32Index": "97c1ffb6",
+      "path": "/resources/art/util/texture/util_collision_hidden_d.dds",
+      "sha256": "42d17119c0019e0a44b7f04ce05d6f1f1795cb2b6cf46aa2d278581a29833ba2",
+      "output": "source-assets\\april2012\\resources\\art\\util\\texture\\util_collision_hidden_d.dds",
+      "archiveSha256": "9ac8eae93e1ed26e964a9b1146f653b73276ea7294f2311329c1699dbca7b7d6",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_misc_1.tor",
+      "archiveHash": "0xDDA2D064B6700513",
+      "entryOffset": 36582007,
+      "headerSize": 36,
+      "dataOffset": 36582043,
+      "compressedSize": 70,
+      "length": 496,
+      "compressionMethod": 1,
+      "crc32Index": "f956a678",
+      "path": "/resources/art/util/texture/util_collision_hidden_01_n.dds",
+      "sha256": "1c9a18aeaf6fe0fd945737356f11417ff7cd71bce89f7095de6f4560ebd55d92",
+      "output": "source-assets\\april2012\\resources\\art\\util\\texture\\util_collision_hidden_01_n.dds",
+      "archiveSha256": "9ac8eae93e1ed26e964a9b1146f653b73276ea7294f2311329c1699dbca7b7d6",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xB3C4BB87614FDA73",
+      "entryOffset": 41651289,
+      "headerSize": 36,
+      "dataOffset": 41651325,
+      "compressedSize": 481,
+      "length": 2038,
+      "compressionMethod": 1,
+      "crc32Index": "1bbcdae8",
+      "path": "/resources/art/shaders/materials/all_arch_rakata_wall_set01.mat",
+      "sha256": "d2b42360ab68f3859a2b99e3bb7fd38a054b2c8e357486acaa0247a15d4a881f",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\all_arch_rakata_wall_set01.mat",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x4EE71E2B73E1A358",
+      "entryOffset": 41671742,
+      "headerSize": 36,
+      "dataOffset": 41671778,
+      "compressedSize": 136470,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "b8b5fecb",
+      "path": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set01_d.dds",
+      "sha256": "3884ffe2bc9e46a63b0fd5d39d8825f3dd5823ad1d12462523815232cd918542",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\arch\\texture\\all_arch_rakata_wall_set01_d.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x67C071328DA40ED2",
+      "entryOffset": 41808248,
+      "headerSize": 36,
+      "dataOffset": 41808284,
+      "compressedSize": 191571,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "12ea9a0b",
+      "path": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set01_n.dds",
+      "sha256": "f2f8389f07947898b78ca39c528f5edab61fc1ca89d46a15ce030025275f2151",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\arch\\texture\\all_arch_rakata_wall_set01_n.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x6757EBD4F4C706C0",
+      "entryOffset": 41999855,
+      "headerSize": 36,
+      "dataOffset": 41999891,
+      "compressedSize": 51528,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "e646e5df",
+      "path": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set01_s.dds",
+      "sha256": "633fcc8ab3c59ad13ad48f0a1a5686cdc21abfb35883ae771c05750c74c25820",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\arch\\texture\\all_arch_rakata_wall_set01_s.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x873C6B1DC5E2E7FC",
+      "entryOffset": 41651806,
+      "headerSize": 36,
+      "dataOffset": 41651842,
+      "compressedSize": 490,
+      "length": 2040,
+      "compressionMethod": 1,
+      "crc32Index": "65401731",
+      "path": "/resources/art/shaders/materials/all_arch_rakata_wall_set04.mat",
+      "sha256": "28dac265a40b99ada325dcc628f538cfecfae6cef6da38a454cc174ad90c4e9c",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\all_arch_rakata_wall_set04.mat",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x4C98C5F2A7D8C1DC",
+      "entryOffset": 42051419,
+      "headerSize": 36,
+      "dataOffset": 42051455,
+      "compressedSize": 149534,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "fe586e8e",
+      "path": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set04_d.dds",
+      "sha256": "1cf43fe8072237312edea7448187a1cc3832ba21c9c033b2ae3f755d7d1aa09e",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\arch\\texture\\all_arch_rakata_wall_set04_d.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xCDAE57D48C51F05C",
+      "entryOffset": 42200989,
+      "headerSize": 36,
+      "dataOffset": 42201025,
+      "compressedSize": 170257,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "11c80131",
+      "path": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set04_n.dds",
+      "sha256": "03272ff14f3213ddadd2b76f65eede282eff8e8fbd54854259a664236e4f436f",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\arch\\texture\\all_arch_rakata_wall_set04_n.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x4EBB791EDF95FDF2",
+      "entryOffset": 42371282,
+      "headerSize": 36,
+      "dataOffset": 42371318,
+      "compressedSize": 221486,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "639eb91f",
+      "path": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set04_s.dds",
+      "sha256": "2bf4f64f072b476e5f74a5473c36fb4f0901d30ad903193200b20f7b8058b3c1",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\all_all\\arch\\texture\\all_arch_rakata_wall_set04_s.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xDF15C9525999F66C",
+      "entryOffset": 45407660,
+      "headerSize": 36,
+      "dataOffset": 45407696,
+      "compressedSize": 35227,
+      "length": 63153,
+      "compressionMethod": 1,
+      "crc32Index": "c379d843",
+      "path": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_statue.gr2",
+      "sha256": "7a0846f2525efa316e9b463c63202841bdbf89b09efff0c000f7699f4de64e6c",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\bel_arch_rakata_statue.gr2",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xD8773F49D2803E58",
+      "entryOffset": 45442923,
+      "headerSize": 36,
+      "dataOffset": 45442959,
+      "compressedSize": 480,
+      "length": 1895,
+      "compressionMethod": 1,
+      "crc32Index": "6bbf98a0",
+      "path": "/resources/art/shaders/materials/bel_arch_rakata_statue.mat",
+      "sha256": "7fd5abf14febad44f838eb848be0c58573f5b340f5e239029dc5c550b2fb881a",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\bel_arch_rakata_statue.mat",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x77CDA43FB173B5E6",
+      "entryOffset": 45463390,
+      "headerSize": 36,
+      "dataOffset": 45463426,
+      "compressedSize": 565564,
+      "length": 699192,
+      "compressionMethod": 1,
+      "crc32Index": "1c8720f3",
+      "path": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_statue_d.dds",
+      "sha256": "27dc1103cd7301046995cebc8f47e69bac5dfd81775e72c6e7e047c16ebc2006",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\texture\\bel_arch_rakata_statue_d.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xA719A4EE9F75085B",
+      "entryOffset": 46028990,
+      "headerSize": 36,
+      "dataOffset": 46029026,
+      "compressedSize": 242424,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "e97f5fa3",
+      "path": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_statue_n.dds",
+      "sha256": "d21f8de2185c3577404fd66f6dbc416ccac660fbad4724134b83edb4ce5b43d6",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\texture\\bel_arch_rakata_statue_n.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x7B17B0C519BF5A93",
+      "entryOffset": 46271450,
+      "headerSize": 36,
+      "dataOffset": 46271486,
+      "compressedSize": 265027,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "ad9ef6e1",
+      "path": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_statue_s.dds",
+      "sha256": "bbeccde4a595372914d741233ec8d358e3bf13dc527602f5244732aec9514e96",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\texture\\bel_arch_rakata_statue_s.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x1C25FAE7A895EF3B",
+      "entryOffset": 51418684,
+      "headerSize": 36,
+      "dataOffset": 51418720,
+      "compressedSize": 11207,
+      "length": 23883,
+      "compressionMethod": 1,
+      "crc32Index": "d4042364",
+      "path": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_statue_broken_legs.gr2",
+      "sha256": "526f0463db69c6c782a73cdf5692630dfdf886db37bbd30678a4f6bdfae454ff",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\arch\\bel_arch_rakata_statue_broken_legs.gr2",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x3C1159C8CE2654DA",
+      "entryOffset": 73116595,
+      "headerSize": 36,
+      "dataOffset": 73116631,
+      "compressedSize": 28062,
+      "length": 57056,
+      "compressionMethod": 1,
+      "crc32Index": "0e242805",
+      "path": "/resources/art/static/area/bel_belsavis/env/bel_env_boulder_overhang.gr2",
+      "sha256": "2f86a1eeb043d90bafe5cab14c5c0056cf09bdc4d3231254702504ca3ae12e2f",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\env\\bel_env_boulder_overhang.gr2",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xA704073B1F0204AC",
+      "entryOffset": 73144693,
+      "headerSize": 36,
+      "dataOffset": 73144729,
+      "compressedSize": 488,
+      "length": 2049,
+      "compressionMethod": 1,
+      "crc32Index": "60a5db18",
+      "path": "/resources/art/shaders/materials/ord_env_boulder_overhang.mat",
+      "sha256": "4aa18ac3f4618eaf5bc696bd7d6455d7834eb5c4645cb42285bb1c52df9a3eba",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\ord_env_boulder_overhang.mat",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xA33DE160722CBDC8",
+      "entryOffset": 73180249,
+      "headerSize": 36,
+      "dataOffset": 73180285,
+      "compressedSize": 2025785,
+      "length": 2796344,
+      "compressionMethod": 1,
+      "crc32Index": "5f51252e",
+      "path": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulder_overhang_d.dds",
+      "sha256": "4e40fd22a7e6ebac7e3c4139202f40a5fc05d629f588e4e91ca690aeb6a992cf",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\ord_ordmantell\\env\\texture\\ord_env_boulder_overhang_d.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xC34EF80DC2E8CA6C",
+      "entryOffset": 67975145,
+      "headerSize": 36,
+      "dataOffset": 67975181,
+      "compressedSize": 4855879,
+      "length": 5592560,
+      "compressionMethod": 1,
+      "crc32Index": "b64116e2",
+      "path": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulder_overhang_n.dds",
+      "sha256": "1b74d2c38bdea95c12c8616d23c82ca41d0505645a8dc1c942e28fe9f3dbbdb1",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\ord_ordmantell\\env\\texture\\ord_env_boulder_overhang_n.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xB2242C193630F1BC",
+      "entryOffset": 72831060,
+      "headerSize": 36,
+      "dataOffset": 72831096,
+      "compressedSize": 285499,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "c9a521e6",
+      "path": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulder_overhang_s.dds",
+      "sha256": "ac5f4bd966f1cc6b334278a4767e1005a1e55b64b28b5efdc772e28e0db7bd93",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\ord_ordmantell\\env\\texture\\ord_env_boulder_overhang_s.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xB6A40D5D1F9F77E9",
+      "entryOffset": 76237786,
+      "headerSize": 36,
+      "dataOffset": 76237822,
+      "compressedSize": 302749,
+      "length": 527531,
+      "compressionMethod": 1,
+      "crc32Index": "4f93a325",
+      "path": "/resources/art/static/area/bel_belsavis/env/bel_env_boulder_wall_curve_05.gr2",
+      "sha256": "98da3e65a97c152743b6cfd1e8d37ca076e2c636b44fb3653e4e7fb088178108",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\env\\bel_env_boulder_wall_curve_05.gr2",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xE6E8636AC0209371",
+      "entryOffset": 76843363,
+      "headerSize": 36,
+      "dataOffset": 76843399,
+      "compressedSize": 302001,
+      "length": 526676,
+      "compressionMethod": 1,
+      "crc32Index": "11e80bc7",
+      "path": "/resources/art/static/area/bel_belsavis/env/bel_env_boulder_wall_curve_06.gr2",
+      "sha256": "4e265c262eca7ae510ea36cbd60ec2cd660bc7930198c9d12e99f1d8eb880fc6",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\env\\bel_env_boulder_wall_curve_06.gr2",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_ord_mantell_1.tor",
+      "archiveHash": "0xBBC3AA49048AC3A9",
+      "entryOffset": 13585666,
+      "headerSize": 36,
+      "dataOffset": 13585702,
+      "compressedSize": 4634,
+      "length": 9609,
+      "compressionMethod": 1,
+      "crc32Index": "b389edf1",
+      "path": "/resources/art/static/area/ord_ordmantell/env/ord_env_boulders_sml_no_moss_01.gr2",
+      "sha256": "dab865054f1d503c977b8181314a9e49079cf9c5c086888b7ee017b99728e258",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\ord_ordmantell\\env\\ord_env_boulders_sml_no_moss_01.gr2",
+      "archiveSha256": "f4c7fce577b860991322cb927de730d1189545181d0b82b5b0c906c9bf504cc0",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_ord_mantell_1.tor",
+      "archiveHash": "0x752BA254FB32CFFD",
+      "entryOffset": 11907187,
+      "headerSize": 36,
+      "dataOffset": 11907223,
+      "compressedSize": 488,
+      "length": 2041,
+      "compressionMethod": 1,
+      "crc32Index": "5816c0e7",
+      "path": "/resources/art/shaders/materials/ord_env_boulders_no_moss.mat",
+      "sha256": "7420204b4eab8125f56872f90cb4794cc52de9eb2ce185f42e15ef6499c9b642",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\ord_env_boulders_no_moss.mat",
+      "archiveSha256": "f4c7fce577b860991322cb927de730d1189545181d0b82b5b0c906c9bf504cc0",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_ord_mantell_1.tor",
+      "archiveHash": "0xC59650475D4FB5C1",
+      "entryOffset": 11940790,
+      "headerSize": 36,
+      "dataOffset": 11940826,
+      "compressedSize": 395093,
+      "length": 699192,
+      "compressionMethod": 1,
+      "crc32Index": "52b779db",
+      "path": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulders_no_moss_d.dds",
+      "sha256": "7b9b592aa0624938ce504fbfd7a78fe58c99c6ea9a95449825741d9643a4c47d",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\ord_ordmantell\\env\\texture\\ord_env_boulders_no_moss_d.dds",
+      "archiveSha256": "f4c7fce577b860991322cb927de730d1189545181d0b82b5b0c906c9bf504cc0",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_ord_mantell_1.tor",
+      "archiveHash": "0x434890B980EB1483",
+      "entryOffset": 12335919,
+      "headerSize": 36,
+      "dataOffset": 12335955,
+      "compressedSize": 1012758,
+      "length": 1398256,
+      "compressionMethod": 1,
+      "crc32Index": "268e62ee",
+      "path": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulders_no_moss_n.dds",
+      "sha256": "0e0a5c4b4421a2be41236d1b7a203374ca11b0c226e699a91127e793e210e572",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\ord_ordmantell\\env\\texture\\ord_env_boulders_no_moss_n.dds",
+      "archiveSha256": "f4c7fce577b860991322cb927de730d1189545181d0b82b5b0c906c9bf504cc0",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_ord_mantell_1.tor",
+      "archiveHash": "0x6F950D7DAE19BEF0",
+      "entryOffset": 13348713,
+      "headerSize": 36,
+      "dataOffset": 13348749,
+      "compressedSize": 226278,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "eeb72ceb",
+      "path": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulders_s.dds",
+      "sha256": "34acbb0e32eb99f1231a102b58d36ac589fc115d13b8591fc0b7fdba54466e98",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\ord_ordmantell\\env\\texture\\ord_env_boulders_s.dds",
+      "archiveSha256": "f4c7fce577b860991322cb927de730d1189545181d0b82b5b0c906c9bf504cc0",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_ord_mantell_1.tor",
+      "archiveHash": "0x90815F03968405D8",
+      "entryOffset": 13590336,
+      "headerSize": 36,
+      "dataOffset": 13590372,
+      "compressedSize": 2090,
+      "length": 4751,
+      "compressionMethod": 1,
+      "crc32Index": "48545ff8",
+      "path": "/resources/art/static/area/ord_ordmantell/env/ord_env_boulders_sml_no_moss_02.gr2",
+      "sha256": "662d02929166748c23b4739b4b3222a5bc65ad2f88a7eab4bb89c3ba82853a0c",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\ord_ordmantell\\env\\ord_env_boulders_sml_no_moss_02.gr2",
+      "archiveSha256": "f4c7fce577b860991322cb927de730d1189545181d0b82b5b0c906c9bf504cc0",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xB07739ED542160FE",
+      "entryOffset": 173076303,
+      "headerSize": 36,
+      "dataOffset": 173076339,
+      "compressedSize": 482,
+      "length": 2014,
+      "compressionMethod": 1,
+      "crc32Index": "180460fc",
+      "path": "/resources/art/shaders/materials/ter_bel_rock03.mat",
+      "sha256": "933395750b3082236cab7238ba7fd579dffdff5beb998fdc6cf7d95f5cc5d9e8",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\ter_bel_rock03.mat",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x151DF1C70B52D585",
+      "entryOffset": 173085543,
+      "headerSize": 36,
+      "dataOffset": 173085579,
+      "compressedSize": 121177,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "6e5c12b9",
+      "path": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock03_d.dds",
+      "sha256": "9b1ef1e994f2bc17b0e85f87ca06525cd6a95f79498f01def58d107e0f457961",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\terrain_map\\ter_bel_rock03_d.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x5739925888078AEC",
+      "entryOffset": 173206756,
+      "headerSize": 36,
+      "dataOffset": 173206792,
+      "compressedSize": 260243,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "3e1b3da5",
+      "path": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock03_n.dds",
+      "sha256": "0b55641b4ce75934448c68a05a3ede84b053d95449c101df431b109940206034",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\terrain_map\\ter_bel_rock03_n.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x6F1E1C5E6EFD1C09",
+      "entryOffset": 173467035,
+      "headerSize": 36,
+      "dataOffset": 173467071,
+      "compressedSize": 17835,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "73ce0264",
+      "path": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock03_s.dds",
+      "sha256": "70e33937e35b7e7fb10958e62dcda92d809904fa1bdbab5c2827c328b8c16ee1",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\terrain_map\\ter_bel_rock03_s.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x9E3AD0E27FBBA357",
+      "entryOffset": 171588110,
+      "headerSize": 36,
+      "dataOffset": 171588146,
+      "compressedSize": 481,
+      "length": 2014,
+      "compressionMethod": 1,
+      "crc32Index": "85d77b72",
+      "path": "/resources/art/shaders/materials/ter_bel_rock01.mat",
+      "sha256": "8b33f43c272cbf7bb8c72c10d25a99403343972cbc6d05b3862a14c3815ebc07",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\ter_bel_rock01.mat",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x83E6F9AD74384946",
+      "entryOffset": 171598130,
+      "headerSize": 36,
+      "dataOffset": 171598166,
+      "compressedSize": 128487,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "9ea44653",
+      "path": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock01_d.dds",
+      "sha256": "9d68dc3f3d7c81999ca712202ba2017a4a275b14ac636b3286333dadbbec299e",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\terrain_map\\ter_bel_rock01_d.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x86F6E4EA02394998",
+      "entryOffset": 171726653,
+      "headerSize": 36,
+      "dataOffset": 171726689,
+      "compressedSize": 311649,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "cc3d4777",
+      "path": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock01_n.dds",
+      "sha256": "19cab32a07e30400571dce052a81677e9801da5449e0b65896b8f717687cbb57",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\terrain_map\\ter_bel_rock01_n.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x74F010EC70BDFE30",
+      "entryOffset": 172038338,
+      "headerSize": 36,
+      "dataOffset": 172038374,
+      "compressedSize": 71269,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "6e496c54",
+      "path": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock01_s.dds",
+      "sha256": "88eaa962ac39864da39468cb421b63c57c3d02885b3857854dcf65d58307949d",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\terrain_map\\ter_bel_rock01_s.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x21345B1C0CEF8C1C",
+      "entryOffset": 173484906,
+      "headerSize": 36,
+      "dataOffset": 173484942,
+      "compressedSize": 482,
+      "length": 2014,
+      "compressionMethod": 1,
+      "crc32Index": "f1a3e6b4",
+      "path": "/resources/art/shaders/materials/ter_bel_rock04.mat",
+      "sha256": "f08b002525766feb0639927363716f1b750c11b09f369ef665bec1efaedb3cf1",
+      "output": "source-assets\\april2012\\resources\\art\\shaders\\materials\\ter_bel_rock04.mat",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x16FBCAC88846EB83",
+      "entryOffset": 173494584,
+      "headerSize": 36,
+      "dataOffset": 173494620,
+      "compressedSize": 128496,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "0647a902",
+      "path": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock04_d.dds",
+      "sha256": "a90a464058d512a57d88d6a389ffd71fcd33d7318c0554ecd2d738161ca42dea",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\terrain_map\\ter_bel_rock04_d.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0xA285B630B7752B53",
+      "entryOffset": 173623116,
+      "headerSize": 36,
+      "dataOffset": 173623152,
+      "compressedSize": 300908,
+      "length": 349680,
+      "compressionMethod": 1,
+      "crc32Index": "d192b902",
+      "path": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock04_n.dds",
+      "sha256": "2213ae3426f0c18c93dd2a70db5654465608a6591721449fe7d767e8da388df0",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\terrain_map\\ter_bel_rock04_n.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_area_belsavis_1.tor",
+      "archiveHash": "0x3B435AEB2C14AE2B",
+      "entryOffset": 173924060,
+      "headerSize": 36,
+      "dataOffset": 173924096,
+      "compressedSize": 63917,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "046c694a",
+      "path": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock04_s.dds",
+      "sha256": "d518e08f7ba61be9f1ccbfe6f6fcd79a70fcc1cfaf04507d5ac980e369812923",
+      "output": "source-assets\\april2012\\resources\\art\\static\\area\\bel_belsavis\\terrain_map\\ter_bel_rock04_s.dds",
+      "archiveSha256": "6029131dd9d73e578ddc42f8ef3120eb8e324a4bc16c72f64389981537e85244",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "area",
+      "to": "/resources/world/areas/4611686096259570491/area.dat",
+      "relation": "area data"
+    },
+    {
+      "from": "area",
+      "to": "/resources/world/areas/4611686096259570491/05_infernal_prison.dat",
+      "relation": "room data"
+    },
+    {
+      "from": "room placements",
+      "to": "/resources/art/static/area/all_all/item/caves/all_item_caves_rubble_mound_ald_01.gr2",
+      "relation": "ASSETS exact model path"
+    },
+    {
+      "from": "/resources/art/static/area/all_all/item/caves/all_item_caves_rubble_mound_ald_01.gr2",
+      "to": "/resources/art/shaders/materials/all_item_caves_rubble_mounds_01.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_item_caves_rubble_mounds_01.mat",
+      "to": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_rubble_mounds_01_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_item_caves_rubble_mounds_01.mat",
+      "to": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_rubble_mounds_01_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_item_caves_rubble_mounds_01.mat",
+      "to": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_rubble_mounds_01_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_item_caves_rubble_mounds_01.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "EmissiveMap"
+    },
+    {
+      "from": "/resources/art/static/area/all_all/item/caves/all_item_caves_rubble_mound_ald_01.gr2",
+      "to": "/resources/art/shaders/materials/all_item_caves_boulders_ald.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_item_caves_boulders_ald.mat",
+      "to": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_boulders_ald_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_item_caves_boulders_ald.mat",
+      "to": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_boulders_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_item_caves_boulders_ald.mat",
+      "to": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_boulders_neu_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "room placements",
+      "to": "/resources/art/static/area/all_all/item/decal/all_item_decal_lava.gr2",
+      "relation": "ASSETS exact model path"
+    },
+    {
+      "from": "/resources/art/static/area/all_all/item/decal/all_item_decal_lava.gr2",
+      "to": "/resources/art/shaders/materials/all_item_decal_lava.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_item_decal_lava.mat",
+      "to": "/resources/art/static/area/all_all/item/decal/texture/all_item_decal_lava_02_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_item_decal_lava.mat",
+      "to": "/resources/art/static/area/all_all/item/decal/texture/all_item_decal_lava_02_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_item_decal_lava.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "room placements",
+      "to": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_energy_obelisk_base.gr2",
+      "relation": "ASSETS exact model path"
+    },
+    {
+      "from": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_energy_obelisk_base.gr2",
+      "to": "/resources/art/shaders/materials/bel_arch_rakata_int_stone01.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_int_stone01.mat",
+      "to": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_stone01_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_int_stone01.mat",
+      "to": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_stone01_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_int_stone01.mat",
+      "to": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_stone01_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_int_stone01.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "EmissiveMap"
+    },
+    {
+      "from": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_energy_obelisk_base.gr2",
+      "to": "/resources/art/shaders/materials/all_arch_rakata_wall_set03.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_arch_rakata_wall_set03.mat",
+      "to": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set03_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_arch_rakata_wall_set03.mat",
+      "to": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set03_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_arch_rakata_wall_set03.mat",
+      "to": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set03_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "room placements",
+      "to": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_platform_piece01.gr2",
+      "relation": "ASSETS exact model path"
+    },
+    {
+      "from": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_platform_piece01.gr2",
+      "to": "/resources/art/shaders/materials/bel_arch_rakata_int_wall01.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_int_wall01.mat",
+      "to": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_wall01_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_int_wall01.mat",
+      "to": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_wall01_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_int_wall01.mat",
+      "to": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_wall01_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_int_wall01.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "EmissiveMap"
+    },
+    {
+      "from": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_platform_piece01.gr2",
+      "to": "/resources/art/shaders/materials/bel_arch_rakata_int_floortile01.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_int_floortile01.mat",
+      "to": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_floortile01_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_int_floortile01.mat",
+      "to": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_floortile01_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_int_floortile01.mat",
+      "to": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_floortile01_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_platform_piece01.gr2",
+      "to": "/resources/art/shaders/materials/bel_arch_rakata_int_wall_raw.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_int_wall_raw.mat",
+      "to": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_wall_raw_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_int_wall_raw.mat",
+      "to": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_wall_raw_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_int_wall_raw.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_int_wall_raw.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "EmissiveMap"
+    },
+    {
+      "from": "room placements",
+      "to": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_platform_piece02.gr2",
+      "relation": "ASSETS exact model path"
+    },
+    {
+      "from": "room placements",
+      "to": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_platform_piece03.gr2",
+      "relation": "ASSETS exact model path"
+    },
+    {
+      "from": "room placements",
+      "to": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_platform_piece04.gr2",
+      "relation": "ASSETS exact model path"
+    },
+    {
+      "from": "room placements",
+      "to": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_room_wall01.gr2",
+      "relation": "ASSETS exact model path"
+    },
+    {
+      "from": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_room_wall01.gr2",
+      "to": "/resources/art/shaders/materials/util_collision_hidden.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/util_collision_hidden.mat",
+      "to": "/resources/art/util/texture/util_collision_hidden_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/util_collision_hidden.mat",
+      "to": "/resources/art/util/texture/util_collision_hidden_01_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/util_collision_hidden.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_room_wall01.gr2",
+      "to": "/resources/art/shaders/materials/all_arch_rakata_wall_set01.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_arch_rakata_wall_set01.mat",
+      "to": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set01_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_arch_rakata_wall_set01.mat",
+      "to": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set01_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_arch_rakata_wall_set01.mat",
+      "to": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set01_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_arch_rakata_wall_set01.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "EmissiveMap"
+    },
+    {
+      "from": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_room_wall01.gr2",
+      "to": "/resources/art/shaders/materials/all_arch_rakata_wall_set04.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_arch_rakata_wall_set04.mat",
+      "to": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set04_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_arch_rakata_wall_set04.mat",
+      "to": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set04_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_arch_rakata_wall_set04.mat",
+      "to": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set04_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/all_arch_rakata_wall_set04.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "EmissiveMap"
+    },
+    {
+      "from": "room placements",
+      "to": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_statue.gr2",
+      "relation": "ASSETS exact model path"
+    },
+    {
+      "from": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_statue.gr2",
+      "to": "/resources/art/shaders/materials/bel_arch_rakata_statue.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_statue.mat",
+      "to": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_statue_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_statue.mat",
+      "to": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_statue_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/bel_arch_rakata_statue.mat",
+      "to": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_statue_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "room placements",
+      "to": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_statue_broken_legs.gr2",
+      "relation": "ASSETS exact model path"
+    },
+    {
+      "from": "room placements",
+      "to": "/resources/art/static/area/bel_belsavis/env/bel_env_boulder_overhang.gr2",
+      "relation": "ASSETS exact model path"
+    },
+    {
+      "from": "/resources/art/static/area/bel_belsavis/env/bel_env_boulder_overhang.gr2",
+      "to": "/resources/art/shaders/materials/ord_env_boulder_overhang.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ord_env_boulder_overhang.mat",
+      "to": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulder_overhang_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ord_env_boulder_overhang.mat",
+      "to": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulder_overhang_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ord_env_boulder_overhang.mat",
+      "to": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulder_overhang_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ord_env_boulder_overhang.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "EmissiveMap"
+    },
+    {
+      "from": "room placements",
+      "to": "/resources/art/static/area/bel_belsavis/env/bel_env_boulder_wall_curve_05.gr2",
+      "relation": "ASSETS exact model path"
+    },
+    {
+      "from": "room placements",
+      "to": "/resources/art/static/area/bel_belsavis/env/bel_env_boulder_wall_curve_06.gr2",
+      "relation": "ASSETS exact model path"
+    },
+    {
+      "from": "room placements",
+      "to": "/resources/art/static/area/ord_ordmantell/env/ord_env_boulders_sml_no_moss_01.gr2",
+      "relation": "ASSETS exact model path"
+    },
+    {
+      "from": "/resources/art/static/area/ord_ordmantell/env/ord_env_boulders_sml_no_moss_01.gr2",
+      "to": "/resources/art/shaders/materials/ord_env_boulders_no_moss.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ord_env_boulders_no_moss.mat",
+      "to": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulders_no_moss_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ord_env_boulders_no_moss.mat",
+      "to": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulders_no_moss_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ord_env_boulders_no_moss.mat",
+      "to": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulders_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ord_env_boulders_no_moss.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "EmissiveMap"
+    },
+    {
+      "from": "room placements",
+      "to": "/resources/art/static/area/ord_ordmantell/env/ord_env_boulders_sml_no_moss_02.gr2",
+      "relation": "ASSETS exact model path"
+    },
+    {
+      "from": "area terrain layer 6",
+      "to": "/resources/art/shaders/materials/ter_bel_rock03.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ter_bel_rock03.mat",
+      "to": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock03_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ter_bel_rock03.mat",
+      "to": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock03_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ter_bel_rock03.mat",
+      "to": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock03_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ter_bel_rock03.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "EmissiveMap"
+    },
+    {
+      "from": "area terrain layer 7",
+      "to": "/resources/art/shaders/materials/ter_bel_rock01.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ter_bel_rock01.mat",
+      "to": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock01_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ter_bel_rock01.mat",
+      "to": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock01_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ter_bel_rock01.mat",
+      "to": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock01_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ter_bel_rock01.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "EmissiveMap"
+    },
+    {
+      "from": "area terrain layer 16",
+      "to": "/resources/art/shaders/materials/ter_bel_rock04.mat",
+      "relation": "source material dependency"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ter_bel_rock04.mat",
+      "to": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock04_d.dds",
+      "relation": "DiffuseMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ter_bel_rock04.mat",
+      "to": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock04_n.dds",
+      "relation": "RotationMap1"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ter_bel_rock04.mat",
+      "to": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock04_s.dds",
+      "relation": "GlossMap"
+    },
+    {
+      "from": "/resources/art/shaders/materials/ter_bel_rock04.mat",
+      "to": "/resources/art/defaultassets/black.dds",
+      "relation": "EmissiveMap"
+    }
+  ],
+  "unresolved": [],
+  "selection": "Soa Phase 3: 05_Infernal_Prison lower arena; encounter two environment"
+}

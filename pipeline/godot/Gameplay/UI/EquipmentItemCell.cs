@@ -13,11 +13,12 @@ public partial class EquipmentItemCell : SwtorButton
     public string CharacterClass {get;set;}="";
     public Texture2D? ItemTexture {get;set;}
     public Action? RightClicked {get;set;}
+    public bool CanEquip {get;set;}=true;
     public Func<Variant,bool>? CanReceive {get;set;}
     public Action<Variant>? Receive {get;set;}
     public override void _GuiInput(InputEvent e)
     {
-        if(e is InputEventMouseButton {Pressed:true,ButtonIndex:MouseButton.Right}){RightClicked?.Invoke();AcceptEvent();}
+        if(e is InputEventMouseButton {Pressed:true,ButtonIndex:MouseButton.Right}){if(CanEquip || SourceSlot!="")RightClicked?.Invoke();AcceptEvent();}
     }
     private bool _dragSource;
     public override void _Notification(int what)
@@ -26,7 +27,7 @@ public partial class EquipmentItemCell : SwtorButton
     }
     public override Variant _GetDragData(Vector2 position)
     {
-        if(ItemId=="")return default;
+        if(ItemId=="" || !CanEquip && SourceSlot=="")return default;
         EquipmentWindows.Instance.HideItemTooltip();
         _dragSource=true;Modulate=new Color(1,1,1,.35f);
         SetDragPreview(new TextureRect {Texture=ItemTexture,CustomMinimumSize=new Vector2(48,48),Size=new Vector2(48,48),ExpandMode=TextureRect.ExpandModeEnum.IgnoreSize,MouseFilter=MouseFilterEnum.Ignore});

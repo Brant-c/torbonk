@@ -19,10 +19,10 @@ public partial class JuggernautSmoke : Node
             Check("27 talents, nine per tree",cat.ForClass("juggernaut").Length==27 && cat.ForClass("juggernaut").GroupBy(t=>t.Tree).All(t=>t.Count()==9));
             Check("other talent catalogs retained",cat.ForClass("sorcerer").Length==24 && cat.ForClass("assassin").Length==24);
             Check("free replaceable starting Smash",w.Combat.Definition.Id=="smash" && w.Combat.Unlocked && w.Combat.Definition.Slotless && w.Abilities.Equipped(AbilityCategory.Offensive)==0);
-            Check("Assault icon is source Warrior Assault",w.Abilities.Find("basicassault")!.Definition.Icon=="jg_assault");
+            Check("free Vicious Slash occupies slot 1",w.Abilities.Find("basicassault")==null && w.Abilities.Find("viciousslash") is {Unlocked:true} slash && slash.Definition.IsBasicAttack && w.Abilities.QuickbarAbilities[0]==slash);
             Check("normal offensive and utility budgets",w.Abilities.OffensiveLimit==w.SlotRules!.OffensiveSlots && w.Abilities.UtilityLimit==w.SlotRules.UtilitySlots);
             Check("durable baseline",w.PlayerActor.Health.Maximum>=155 && w.Build.IncomingMultiplier<.9f);
-            Check("Push and Slash removed from Juggernaut",w.Abilities.Find("forcepush")==null && w.Abilities.Find("viciousslash")==null && !w.Progression!.Upgrades.Any(u=>u.AbilityId is "forcepush" or "viciousslash"));
+            Check("Push removed and baseline Slash stays out of unlock offers",w.Abilities.Find("forcepush")==null && !w.Progression!.Upgrades.Any(u=>u.Effect==UpgradeEffect.UnlockAbility && u.AbilityId is "forcepush" or "viciousslash"));
             var opening=w.Progression!;
             for(ulong seed=1;seed<=8;seed++) {
                 opening.ResetRun();opening.SeedOffers(seed);opening.AddExperience(opening.RequiredExperience);opening._Process(3);

@@ -10,6 +10,8 @@ public partial class D3AbilityPresentation
  private bool MarauderVisual=>GetParent() is GameWorld w && w.RunConfiguration.AdvancedClassId=="marauder";
  private bool WarriorVisual=>GetParent() is GameWorld w && w.RunConfiguration.AdvancedClassId is "marauder" or "juggernaut";
  private double _warriorAuraClock;
+ private AudioStreamPlayer3D? _warriorLoopVoice;
+ public bool WarriorLoopPlaying=>_warriorLoopVoice?.Playing??false;
  private bool _warriorEnabled;
  private Combatant? _obfuscatedTarget;
  private readonly Dictionary<GeometryInstance3D,float> _camouflage=new();
@@ -22,6 +24,9 @@ public partial class D3AbilityPresentation
  public int WarriorDistinctTargets=>_warriorTargets.Count;
  public int WarriorProcImpacts {get;private set;}
  public bool CamouflageVisible=>_camouflage.Count>0;
+ public int AtaruImpacts {get;private set;}
+ public int PredationTrailsPresented {get;private set;}
+ public void AtaruImpact(Combatant target){AtaruImpacts++;WarriorFlash("trail/trail_white_hollow.png",target.AimPosition,.15f,.2,new(1,.65f,.25f,.8f),target);Play(Definition.ImpactAudio,target.AimPosition,4);}
  private bool AuraActive(GameWorld w)=>MarauderVisual?w.Build.Pregame.MarauderAuraActive(Definition.Id):w.Build.Pregame.JuggernautAuraActive(Definition.Id);
  private void AdvanceWarriorEffects(double delta)
  {
@@ -31,11 +36,33 @@ public partial class D3AbilityPresentation
    Actor.FitGesture(channel,Definition.GestureSeconds*channel.TickSeconds/Math.Max(.001f,Definition.TickSeconds),true);
   bool active=_warriorEnabled && world.PlayerActor.Alive && AuraActive(world);
   if(Definition.Id=="forcecamouflage")SetCamouflage(active);
-  if(!active){_marauderAura="";return;}
+  if(!active){_warriorLoopVoice?.Stop();_marauderAura="";return;}
+  if(Definition.Id=="berserk" && !WarriorLoopPlaying){
+   _warriorLoopVoice??=CreateChannelVoice();
+   var loop=(AudioStreamWav)GD.Load<AudioStreamWav>("res://Assets/WarriorLibrary/Audio/10244116.wav").Duplicate();
+   loop.LoopMode=AudioStreamWav.LoopModeEnum.Forward;loop.LoopBegin=0;loop.LoopEnd=(int)(loop.GetLength()*loop.MixRate);
+   _warriorLoopVoice.Stream=loop;_warriorLoopVoice.Play();
+  }
+  if(_warriorLoopVoice!=null)_warriorLoopVoice.GlobalPosition=Actor.GlobalPosition;
   _marauderAura=Definition.Id;
   _warriorAuraClock-=delta;if(_warriorAuraClock>0)return;_warriorAuraClock=.1;
   MarauderAuraBursts++;
   string id=Definition.Id;
+  if(id=="berserk"){
+   foreach(string bone in new[]{"LeftShoulder","RightShoulder","Chest1","Neck","LeftElbow","RightElbow"}){
+    WarriorFlash("smoke/2x2_whispy_smoke_a_01.png",BoneWorld(bone),.12f,.3,new(1,.22f,.08f,.45f),bone:bone);
+    WarriorFlash("glow/glow_basic_alpha.png",BoneWorld(bone),.07f,.25,new(1,.15f,.04f,.4f),bone:bone);
+   }return;
+  }
+  if(id=="predation"){
+   foreach(string bone in new[]{"Chest","LeftWrist","RightWrist"})WarriorFlash("electricity/lighting_2x2_anim_01_bw.png",BoneWorld(bone),.09f,.3,new(1,.2f,.05f,.55f),bone:bone);
+   if(Actor.Locomotion=="Run"){
+    PredationTrailsPresented+=8;
+    // World-space tails remain behind the moving actor; aura stays bone attached.
+    foreach(string bone in new[]{"vfx_elbow_left","vfx_elbow_right","vfx_shoulder_left","vfx_shoulder_right","vfx_hip_left","vfx_hip_right","vfx_knee_left","vfx_knee_right"})
+     WarriorFlash("trail/trail_melee_02.png",BoneWorld(bone),.09f,.3,new(1,.25f,.05f,.45f));
+   }return;
+  }
   string texture=id switch {
    "predation"=>"electricity/lighting_2x2_anim_01_bw.png",
    "berserk"=>"fire/5x5_flame_lick_04_bw.png",
@@ -44,6 +71,12 @@ public partial class D3AbilityPresentation
    "obfuscate"=>"electricity/512_singlearc_alpha_bw_tiled.png",
    "forcecamouflage"=>"smoke/2x2_smoke_whisps_02.png",
    "saberward"=>"glow/vfx_force_impact_ring.png",
+   "ataruform"=>"trail/trail_white_hollow.png",
+   "bloodthirst"=>"fire/shockwave_bw_01.png",
+   "undyingrage"=>"smoke/2x2_whispy_smoke_a_01.png",
+   "gore"=>"glow/fx_force_suppression_in.png",
+   "deadlysaber"=>"fire/4x4_flame_lick_02_bw.png",
+   "batteringassault"=>"spark/bw_fx_2x2_sparknglow_01.png",
    _=>"glow/bw_flare_gray.png"};
   Color tint=id switch {
    "predation"=>new(1,.18f,.04f,.55f),"frenzy"=>new(1,.7f,.15f,.65f),
@@ -78,8 +111,9 @@ public partial class D3AbilityPresentation
  {
   if(!WarriorVisual)return;
   _warriorEnabled=true;_warriorTargets.Clear();_warriorAuraClock=0;
-  if(GetParent() is GameWorld gw && gw.Abilities.Find(Definition.Id) is {} abilityOwner)Actor.FitGesture(abilityOwner,Definition.GestureSeconds);
-  if(MarauderVisual && Definition.Id is "saberthrow" or "deadlythrow" && GetParent() is GameWorld world){
+  if(GetParent() is GameWorld gw && gw.Abilities.Find(Definition.Id) is {} abilityOwner)Actor.FitGesture(abilityOwner,abilityOwner.GestureDuration);
+  if(Definition.Effect!=AbilityEffect.Damage && Definition.CastAudio=="")Play(Definition.ImpactAudio,Actor.GlobalPosition,0);
+  if(MarauderVisual && Definition.Id is "saberthrow" or "deadlythrow" or "viciousthrow" && GetParent() is GameWorld world){
    var ability=world.Abilities.Find(Definition.Id);
    double tick=ability?.TickSeconds??Definition.TickSeconds;
    foreach(string slot in Definition.Id=="saberthrow"?new[]{"main_hand","off_hand"}:new[]{"main_hand"})
@@ -94,6 +128,12 @@ public partial class D3AbilityPresentation
   if(Definition.Id=="smash"){
    WarriorFlash("electricity/bw_2x2_electricity_multi_01.png",BoneWorld("LeftWrist"),.1f,Definition.WindupSeconds,new(1,.35f,.05f,.5f),bone:"LeftWrist");
    WarriorFlash("glow/bw_flare_gray.png",BoneWorld("RightWrist"),.07f,Definition.WindupSeconds,new(1,.5f,.15f,.6f),bone:"RightWrist");
+  }else if(Definition.Id=="berserk"){
+   Play("res://Assets/WarriorLibrary/Audio/136110332.wav",Actor.GlobalPosition,4);
+   WarriorFlash("glow/bw_fx_lsblue_flare_256.png",BoneWorld("Chest"),.22f,.4,new(1,.35f,.15f,.65f),bone:"Chest");
+  }else if(Definition.Id=="predation"){
+   Ring(Actor.GlobalPosition,WarriorTexture+"fire/shockwave_bw_01.png",.35f);
+   WarriorFlash("glow/bw_flare_gray.png",BoneWorld("Chest"),.2f,.35,new(1,.4f,.1f,.65f),bone:"Chest");
   }else if(Definition.Id is "forcecrush" or "forcechoke")
    WarriorFlash("electricity/lighting_2x2_anim_01_bw.png",BoneWorld("LeftWrist"),.08f,.3,new(.65f,.15f,.8f,.7f),bone:"LeftWrist");
   else if(Definition.PresentationKind=="saber" && Definition.Effect==AbilityEffect.Damage){
@@ -127,7 +167,9 @@ public partial class D3AbilityPresentation
  }
  public void TargetImpact(Combatant target)
  {
-  if(!WarriorVisual || !GodotObject.IsInstanceValid(target))return;
+  if(!GodotObject.IsInstanceValid(target))return;
+  if(AssassinTargetImpact(target))return;
+  if(!WarriorVisual)return;
   WarriorTargetImpacts++;_warriorTargets.Add(target.GetInstanceId());
   string id=Definition.Id;var at=target.AimPosition;
   if(Definition.PresentationKind=="saber") {
@@ -153,7 +195,9 @@ public partial class D3AbilityPresentation
  }
  public void ProcImpact(Combatant target)
  {
-  if(!WarriorVisual || !GodotObject.IsInstanceValid(target))return;
+  if(!GodotObject.IsInstanceValid(target))return;
+  if(AssassinTargetImpact(target))return;
+  if(!WarriorVisual)return;
   WarriorProcImpacts++;
   WarriorFlash(Definition.Id=="cloakofpain"?"fire/shockwave_bw_01.png":"spark/bw_fx_2x2_sparknglow_01.png",target.AimPosition,.12f,.25,new(1,.2f,.04f,.75f),target);
  }
@@ -171,6 +215,7 @@ public partial class D3AbilityPresentation
  }
  private void ReleaseWarrior()
  {
+  _warriorLoopVoice?.Stop();
   _warriorEnabled=false;_obfuscatedTarget=null;SetCamouflage(false);
   foreach(var flight in _throws)if(GodotObject.IsInstanceValid(flight)){
    if(flight.IsInsideTree())flight.GetParent().RemoveChild(flight);

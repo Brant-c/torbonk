@@ -39,7 +39,7 @@ public static class AbilityTooltips
   if(d.Effect==AbilityEffect.Heal)lines.Add($"Heals {a.Healing:0.#} health; activates below {a.HealthThreshold:P0} maximum health.");
   if(d.SlowSeconds>0)lines.Add($"Slows movement by {1-d.SlowFactor:P0} for {d.SlowSeconds:0.#}s.");
   lines.Add($"Cooldown {a.CooldownSeconds:0.##}s."+(d.UsesGlobalCooldown?" Uses the shared attack cooldown.":" Can activate outside the shared attack cooldown."));
-  if(d.IsBasicAttack)lines.Add("Automatic basic attack; uses no ability slot.");
+  if(d.IsBasicAttack)lines.Add("Automatic fallback in quickbar slot 1. Only used when other attacks cannot activate; uses no offensive slot.");
   else if(d.ReplaceableStarter)lines.Add("Free starting ability. Can be replaced; its replacement keeps the free position.");
   else if(d.Slotless || a.InheritsFreeSlot)lines.Add("Uses no ordinary ability slot.");
   else lines.Add($"Uses one {(d.Category==AbilityCategory.Utility?"utility":"offensive")} slot."+(equipped?"":" Learning it may require replacing an equipped ability."));

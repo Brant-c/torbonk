@@ -92,5 +92,11 @@ public partial class Health : Node
         Resolved?.Invoke(new HealthChange(CombatEventKind.Healing, applied, IsCritical: isCritical));
         return applied;
     }
+    // Health costs bypass shields and do not trigger incoming-hit reactions.
+    public float SpendHealth(float amount)
+    {
+        if(!IsAlive || !float.IsFinite(amount) || amount<=0)return 0;
+        float spent=Math.Min(Math.Max(0,Current-1),amount);Current-=spent;return spent;
+    }
 }
 

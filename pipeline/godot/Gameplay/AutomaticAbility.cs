@@ -46,10 +46,16 @@ public partial class AutomaticAbility : Node
     public string LastEvent { get; private set; } = "Waiting for a hostile target";
     public event Action<Combatant, float>? DamageDealt;
     public void ReduceCooldown(float seconds) { CooldownRemaining=Math.Max(0,CooldownRemaining-Math.Max(0,seconds)); }
-    private readonly ChannelClock _clock = new();
+    private ChannelClock _clock = new();
+    private readonly List<AutomaticAbility> _storms=new();
+    private bool _stormInstance;
+    private int _stormTicks;
+    private int _chainRepeats;
+    public IEnumerable<AutomaticAbility> ActiveStorms => _storms.Where(a=>a.State==LightningState.Channeling).Concat(Definition.Id=="storm" && State==LightningState.Channeling?new[]{this}:Array.Empty<AutomaticAbility>());
     private double _phaseRemaining;
     private bool _presented;
     private double _gestureRemaining;
+    public double GestureDuration => Definition.GestureSeconds / (Definition.Effect==AbilityEffect.Damage && Definition.Id!="smash" ? Build?.Pregame.MarauderAnimationHaste??1 : 1);
     private void Present(Action action)
     {
         try { action(); }
@@ -65,9 +71,23 @@ public partial class AutomaticAbility : Node
     }
     public void Advance(double delta)
     {
+        foreach(var storm in _storms.ToArray()) {
+            if(SorcererRelics.Rank(this,"eye_of_the_tempest")<0 || !Unlocked || !CombatEnabled || !Caster.Alive)storm.Abort();
+            else storm.Advance(delta);
+            if(!storm.Casting){storm.Abort();((Node)storm.Presentation).QueueFree();_storms.Remove(storm);storm.Free();}
+        }
+        if (!_stormInstance && Definition.Id=="storm" && State==LightningState.Channeling && _gestureRemaining<=0 && SorcererRelics.Rank(this,"eye_of_the_tempest")>=0) {
+            var detached=new AutomaticAbility {Definition=Definition,Caster=Caster,Targeting=Targeting,Presentation=Presentation,Build=Build,Periodic=Periodic,
+                DamagePerTick=DamagePerTick,Radius=Radius,Range=Range,TickSeconds=TickSeconds,ChannelSeconds=ChannelSeconds,
+                State=State,GroundCenter=GroundCenter,CastTarget=CastTarget,_clock=_clock,_presented=_presented,_stormInstance=true,_stormTicks=_stormTicks};
+            _storms.Add(detached);_clock=new();_presented=false;
+            Present(()=>Presentation.Actor.ReleaseGesture(this));
+            var visual=new OriginalAbilityPresentation {Actor=Presentation.Actor,Definition=Definition};GetParent().AddChild(visual);Presentation=visual;
+            State=CooldownRemaining>0?LightningState.Cooldown:LightningState.Idle;CastTarget=null;
+        }
         if (!Unlocked || !CombatEnabled || !Caster.Alive) { if(State!=LightningState.Disabled) Abort();return; }
         if(State==LightningState.Disabled) State=LightningState.Idle;
-        CooldownRemaining=Math.Max(0,CooldownRemaining-delta);
+        CooldownRemaining=Math.Max(0,CooldownRemaining-delta*(Build?.AssassinRelics?.Haste??1)*(Build?.MarauderRelics?.Acceleration??1));
         if(State==LightningState.Cooldown && CooldownRemaining<=0) State=LightningState.Idle;
         if(!Casting) return;
         _gestureRemaining-=delta;
@@ -76,7 +96,7 @@ public partial class AutomaticAbility : Node
             _gestureRemaining=Math.Max(0.2,_gestureRemaining);
             Present(()=> {
                 if(Presentation.Actor.GestureOwner!=this)
-                    Presentation.Actor.TryBeginGesture(this,State==LightningState.Starting?Definition.StartClip:Definition.LoopClip,Definition.GesturePriority,Definition.FullBodyGesture);
+                    Presentation.Actor.TryBeginGesture(this,State==LightningState.Starting?Definition.StartClip:Definition.LoopClip,Definition.GesturePriority,Definition.FullBodyGesture,Definition.KeepFullBodyWhileMoving);
             });
         }
         if(_gestureRemaining<=0) Present(()=>Presentation.Actor.ReleaseGesture(this));
@@ -96,8 +116,19 @@ public partial class AutomaticAbility : Node
             delta=-_phaseRemaining;State=LightningState.Channeling;
             if(Definition.Id=="spike" && Build?.World.RunConfiguration.AdvancedClassId=="assassin") {Build.Pregame.RevealSpike();_gestureRemaining=Definition.GestureSeconds;Present(()=>Presentation.Actor.TryBeginGesture(this,Definition.LoopClip,Definition.GesturePriority,true));}
             if(!Definition.DetachedArea)Present(()=>Presentation.Actor.SetGestureClip(this,Definition.LoopClip));
+            if(Definition.Id=="smash")Present(()=>Presentation.Actor.ReleaseMovingBody(this));
             if(_presented) Present(Presentation.Channel);
-            if(ChannelSeconds<=0) { Tick();if(State==LightningState.Channeling) Finish(false,"Burst complete");return; }
+            if(ChannelSeconds<=0) { Tick();
+                int fork=Definition.Id=="chain"?SorcererRelics.Rank(this,"forked_lightning"):-1;
+                if(fork>=0 && !Targeting.IsValidTarget(CastTarget,Range))CastTarget=Targeting.Acquire(Range,Definition.TargetRule,Radius);
+                if(fork>=0 && _chainRepeats<(fork==3?2:1) && Targeting.IsValidTarget(CastTarget,Range)) {
+                    _chainRepeats++;Present(()=>Presentation.End(false));
+                    _gestureRemaining=Definition.GestureSeconds;
+                    Present(()=>Presentation.Actor.ReleaseGesture(this));
+                    Present(()=>Presentation.Actor.TryBeginGesture(this,Definition.StartClip,Definition.GesturePriority,Definition.FullBodyGesture,Definition.KeepFullBodyWhileMoving));
+                    _presented=Presentation.Begin(CastTarget!,GroundCenter,Radius);State=LightningState.Starting;_phaseRemaining=Math.Max(Definition.WindupSeconds,Definition.GestureSeconds);return;
+                }
+                if(State==LightningState.Channeling) Finish(false,"Burst complete");return; }
         }
         if(State==LightningState.Channeling)
         {
@@ -116,13 +147,14 @@ public partial class AutomaticAbility : Node
     }
     public bool TryBegin()
     {
+        if(Definition.Id=="storm" && SorcererRelics.Rank(this,"eye_of_the_tempest") is int stormRank && stormRank>=0 && _storms.Count>=stormRank+2)return false;
         if(!Unlocked || !CombatEnabled || !Caster.Alive || State!=LightningState.Idle || CooldownRemaining>0) return false;
         if(Build?.Pregame.CanBeginJuggernaut(this)==false || Build?.Pregame.CanBeginMarauder(this)==false)return false;
         bool spikeOpening=Definition.Id=="spike" && Build?.World.RunConfiguration.AdvancedClassId=="assassin";
         if(Definition.Effect==AbilityEffect.Heal && (Caster.Health.Current>=Caster.Health.Maximum || Caster.Health.Current>=Caster.Health.Maximum*HealthThreshold)) return false;
         if(Definition.Effect==AbilityEffect.Shield && (Caster.Health.Shielded || Targeting.Acquire(Range,AbilityTargetRule.NearestHostile,0)==null)) return false;
         if(Definition.Effect==AbilityEffect.Buff && ((Definition.Id=="polarityshift"?Build?.Pregame.PolarityActive==true:Build?.World.RunConfiguration.AdvancedClassId!="marauder" && Build?.Buffed==true) || Targeting.Acquire(Range,AbilityTargetRule.NearestHostile,0)==null)) return false;
-        if(Definition.Area==AbilityArea.CasterRadial && Targeting.InArea(Caster.GlobalPosition,Radius,Radius).Count()<Math.Max(1,Definition.NearbyTriggerCount)) return false;
+        if(Definition.Area==AbilityArea.CasterRadial && Targeting.InArea(Caster.GlobalPosition,AssassinRelicRadius,AssassinRelicRadius).Count()<Math.Max(1,Definition.NearbyTriggerCount)) return false;
         var target=Definition.Area==AbilityArea.CasterRadial || Definition.Effect!=AbilityEffect.Damage?Caster:Targeting.Acquire(Range,Definition.TargetRule,Radius);
         if(Definition.PeriodicDuration>0 && Caster==Build?.World.PlayerActor && Build.World.RunConfiguration.AdvancedClassId is "sorcerer" or "assassin")
         {
@@ -132,9 +164,9 @@ public partial class AutomaticAbility : Node
         if(Build?.World.RunConfiguration.AdvancedClassId=="marauder" && Definition.Id is "rupture" or "forcecrush")
             target=Build.Pregame.MarauderDotTarget(this);
         if(Definition.Id=="polarityshift" && Build?.Pregame.PolarityReady!=true)return false;
-        if(Build?.World.RunConfiguration.AdvancedClassId=="juggernaut" && Definition.Id=="viciousthrow")target=Targeting.InArea(Caster.GlobalPosition,Range,Range).Where(t=>t.Health.Current<=t.Health.Maximum*.3f).OrderBy(t=>t.Health.Current).FirstOrDefault();
+        if((Build?.World.RunConfiguration.AdvancedClassId is "juggernaut" or "marauder") && Definition.Id=="viciousthrow")target=Targeting.InArea(Caster.GlobalPosition,Range,Range).Where(t=>t.Health.Current<=t.Health.Maximum*.3f).OrderBy(t=>t.Health.Current).FirstOrDefault();
         if(target==null) return false;
-        if(Build?.World.RunConfiguration.AdvancedClassId=="juggernaut" && Definition.Id=="viciousthrow" && target.Health.Current>target.Health.Maximum*.3f)return false;
+        if((Build?.World.RunConfiguration.AdvancedClassId is "juggernaut" or "marauder") && Definition.Id=="viciousthrow" && target.Health.Current>target.Health.Maximum*.3f)return false;
         if(!float.IsFinite(DamagePerTick) || (Definition.Effect==AbilityEffect.Damage && DamagePerTick<=0) || !float.IsFinite(TickSeconds) || TickSeconds<=0 ||
             !float.IsFinite(ChannelSeconds) || ChannelSeconds<0 || !float.IsFinite(Range) || Range<=0 ||
             !float.IsFinite(Radius) || Radius<0 || !float.IsFinite(Definition.WindupSeconds) || Definition.WindupSeconds<0 ||
@@ -148,18 +180,18 @@ public partial class AutomaticAbility : Node
         if(Definition.Id=="carbonize" && Presentation.Actor.GestureOwner!=null)return false;
         if(Definition.FullBodyGesture && Definition.GestureSeconds>0 && Presentation!=null && !Presentation.Actor.CanBeginGesture(Definition.StartClip,Definition.GesturePriority)) return false;
         // Defer activation until its gesture can start. Missing clips keep the failure-reporting path.
-        if(!spikeOpening && Definition.RequireGesture && Presentation.Actor.Animator.HasAnimation(Definition.StartClip) && !Presentation.Actor.TryBeginGesture(this,Definition.StartClip,Definition.GesturePriority,Definition.FullBodyGesture))return false;
+        if(!spikeOpening && Definition.RequireGesture && Presentation.Actor.Animator.HasAnimation(Definition.StartClip) && !Presentation.Actor.TryBeginGesture(this,Definition.StartClip,Definition.GesturePriority,Definition.FullBodyGesture,Definition.KeepFullBodyWhileMoving))return false;
         CastTarget=target;GroundCenter=target.GlobalPosition;_coneForward=target.GlobalPosition-Caster.GlobalPosition;
         if(Definition.Area==AbilityArea.FrontalCone)Presentation.Actor.FacingTarget=GroundCenter;
-        _damaged.Clear();_sweepHits.Clear();_spreadSeed=false;LastHealing=0;
+        _damaged.Clear();_sweepHits.Clear();_spreadSeed=false;LastHealing=0;_stormTicks=0;_chainRepeats=0;
         if(ChannelSeconds>0) _clock.Reset(ChannelSeconds,TickSeconds);
         State=LightningState.Starting;_phaseRemaining=Definition.WindupSeconds;
-        CooldownRemaining=CooldownDuration=Math.Max(CooldownSeconds,Definition.FullBodyGesture?Definition.GestureSeconds:0);
-        _gestureRemaining=Definition.GestureSeconds;
+        CooldownRemaining=CooldownDuration=Math.Max(Definition.Id=="shock" && SorcererRelics.Rank(this,"accelerated_torment")>=0?20:Definition.Id=="storm" && SorcererRelics.Rank(this,"eye_of_the_tempest")>=0?0:CooldownSeconds,Definition.FullBodyGesture?GestureDuration:0);
+        _gestureRemaining=GestureDuration;
         if(spikeOpening)_gestureRemaining=0;
-        if(_gestureRemaining>0) Present(()=>Presentation.Actor.TryBeginGesture(this,Definition.StartClip,Definition.GesturePriority,Definition.FullBodyGesture));
+        if(_gestureRemaining>0) Present(()=>Presentation.Actor.TryBeginGesture(this,Definition.StartClip,Definition.GesturePriority,Definition.FullBodyGesture,Definition.KeepFullBodyWhileMoving));
         // Presentation failures are reported and cannot suppress damage.
-        try { _presented=Presentation.Begin(target,GroundCenter,Radius); }
+        try { _presented=Presentation.Begin(target,GroundCenter,AssassinRelicRadius); }
         catch(Exception ex) { _presented=false;GD.PushWarning(Definition.Title+": "+ex.Message); }
         if(!_presented) GD.PushWarning(Definition.Title+": original presentation unavailable; see B5 provenance.");
         Casts++;LastEvent="Cast started: "+target.SelectionKey;
@@ -168,6 +200,7 @@ public partial class AutomaticAbility : Node
         { State=LightningState.Channeling;Tick();Finish(false,"Self effect applied"); }
         return true;
     }
+    private float AssassinRelicRadius => Build?.MarauderRelics?.Radius(this) ?? Build?.AssassinRelics?.Radius(this) ?? Radius;
     private bool Tick()
     {
         if(State!=LightningState.Channeling || !Caster.Alive || !CombatEnabled) return false;
@@ -180,17 +213,27 @@ public partial class AutomaticAbility : Node
             return true;
         }
         if(Definition.Area==AbilityArea.Chain) return ChainTick();
-        var targets=Definition.Area==AbilityArea.TargetSplash && Targeting.IsValidTarget(CastTarget,Range)
+        _stormTicks++;
+        var targets=Definition.Id=="smash" && Build?.MarauderRelics?.TargetSmash==true && CastTarget!=null
+            ? Targeting.InArea(CastTarget.GlobalPosition,AssassinRelicRadius,Range,true).Append(CastTarget).Distinct().ToArray()
+            : Definition.Area==AbilityArea.TargetSplash && Targeting.IsValidTarget(CastTarget,Range)
             ? Targeting.InArea(CastTarget!.GlobalPosition,Radius,Range,true).Append(CastTarget!).Distinct().ToArray()
             : Definition.Area==AbilityArea.CasterRadial
-            ? Targeting.InArea(Caster.GlobalPosition,Radius,Radius).ToArray()
+            ? Targeting.InArea(Caster.GlobalPosition,AssassinRelicRadius,AssassinRelicRadius).ToArray()
             : Definition.Area==AbilityArea.GroundSphere
             ? Targeting.InArea(GroundCenter,Radius,Range,Definition.PersistentArea).ToArray()
-            : Definition.Area==AbilityArea.FrontalCone ? Targeting.InArea(Caster.GlobalPosition,Radius,Radius).Where(t=>InCone(t)).ToArray()
+            : Definition.Area==AbilityArea.FrontalCone ? Targeting.InArea(Caster.GlobalPosition,AssassinRelicRadius,AssassinRelicRadius).Where(t=>InCone(t)).ToArray()
             : Targeting.IsValidTarget(CastTarget,Range)?new[]{CastTarget!}:Array.Empty<Combatant>();
+        if(Definition.Id=="forcecharge" && Build?.World.RunConfiguration.AdvancedClassId=="marauder")
+            targets=targets.Where(t=>t.GlobalPosition.DistanceSquaredTo(Caster.GlobalPosition)<=.45f*.45f).ToArray();
         if(Definition.MaximumTargets>0)targets=targets.OrderBy(t=>t==CastTarget?0:1)
             .ThenBy(t=>t.GlobalPosition.DistanceSquaredTo(CastTarget?.GlobalPosition??Caster.GlobalPosition))
             .ThenBy(t=>t.SelectionKey,StringComparer.Ordinal).Take(Definition.MaximumTargets).ToArray();
+        var dominion=SorcererRelics.Rank(this,"thundering_dominion");
+        if(Definition.Id=="thunderingblast" && dominion>=0) {
+            var storm=Build?.World.Abilities.Find("storm");
+            if(storm!=null)targets=targets.Concat(storm.ActiveStorms.SelectMany(a=>Targeting.InArea(a.GroundCenter,a.Radius,a.Range,true))).Distinct().ToArray();
+        }
         // Snapshot before damage: a lethal field hit must still spread the victim's owned DoTs.
         var spread=(Definition.SpreadsPeriodicEffects || Definition.Id=="lacerate" && Build?.World.RunConfiguration.AdvancedClassId=="assassin")?Periodic?.SpreadSources(Caster,targets):null;
         if(Definition.Id=="smash" && Build?.World.RunConfiguration.AdvancedClassId=="juggernaut")spread=spread?.Where(a=>a.Definition.Id=="forcecrush").ToArray();
@@ -207,20 +250,31 @@ public partial class AutomaticAbility : Node
             if(State!=LightningState.Channeling || !Caster.Alive || !CombatEnabled) return false;
             if(!GodotObject.IsInstanceValid(target) || !target.Alive) continue;
             bool secondary=(Definition.Area==AbilityArea.TargetSplash || Definition.Area==AbilityArea.FrontalCone && Definition.MaximumTargets>0) && target!=CastTarget;
-            float applied=DealHit(target,DamagePerTick*(secondary?Definition.SplashMultiplier:1));
+            float applied=DealHit(target,DamagePerTick*(Definition.Id=="thunderingblast" && target!=CastTarget && dominion>=0?new[]{.4f,.6f,.8f,1f}[dominion]:secondary?Definition.SplashMultiplier:1));
+            if(Definition.Id=="shock")Periodic?.Accelerate(this,target);
+            int corruption=SorcererRelics.Rank(this,"corrupting_storm");
+            if(Definition.Id=="storm" && corruption>=0 && target.Alive) {
+                var ids=new[]{"affliction","crushingdarkness","creepingterror"};
+                foreach(var id in ids.Take(corruption==3?3:Math.Min(corruption+1,_stormTicks))) {
+                    var dot=Build?.World.Abilities.Find(id);
+                    if(dot!=null && Periodic?.Has(dot,target)!=true)Periodic?.Apply(dot,target,relicApplied:true);
+                }
+            }
             if(target.Alive && Definition.PeriodicDuration>0)Periodic?.Apply(this,target,secondary?Definition.SecondaryPeriodicScale:1);
             if(target.Alive && Definition.VulnerabilitySeconds>0 && (!secondary || Definition.SplashAppliesVulnerability))target.Health.VulnerabilitySeconds=Math.Max(target.Health.VulnerabilitySeconds,Definition.VulnerabilitySeconds);
             if(target.Alive && Definition.SlowSeconds>0 && target is EnemyAgent slowed)slowed.Slow(Definition.SlowFactor,Definition.SlowSeconds);
-            if(Build?.World.RunConfiguration.AdvancedClassId=="juggernaut" && Definition.Id is "forcechoke" or "backhand" && target is EnemyAgent controlled)controlled.Stun(3,false);
+            if((Build?.World.RunConfiguration.AdvancedClassId is "juggernaut" or "marauder") && Definition.Id is "forcechoke" or "backhand" && target is EnemyAgent controlled)controlled.Stun(3,false);
             Build?.AbilityHit(this,target);
             if(Definition.Area==AbilityArea.CasterRadial && target is EnemyAgent enemy && enemy.Alive) enemy.DisplaceFrom(Caster.GlobalPosition,Definition.KnockbackDistance,Definition.StaggerSeconds);
             if(applied<=0) continue;
             _damaged.Add(target.GetInstanceId());
+            if(_presented && Presentation is AssassinAbilityPresentation assassin)Present(()=>assassin.TargetImpact(target));
             if(_presented && Presentation is D3AbilityPresentation warrior) Present(()=>warrior.TargetImpact(target)); else if(_presented && Presentation is SurvivalAbilityPresentation original) Present(()=>original.TargetImpact(target));
-            DamageEvents++;LastEvent=$"{Definition.Title}: {target.SelectionKey} −{applied:0.#}";
+            DamageEvents++;LastEvent=$"{Definition.Title}: {target.SelectionKey} Ã¢Ë†â€™{applied:0.#}";
             DamageDealt?.Invoke(target,applied);
             Build?.Hit(this,target,targets);
         }
+        Build?.AssassinRelics?.Resolved(this,targets);Build?.MarauderRelics?.Resolved(this,targets);
         if(spread!=null){
             bool marauder=Build?.World.RunConfiguration.AdvancedClassId=="marauder";
             var newlyWounded=new HashSet<Combatant>();
@@ -229,9 +283,12 @@ public partial class AutomaticAbility : Node
                     if(marauder && !Build!.Pregame.MarauderMaySpread(this,source))continue;
                     bool fresh=!Periodic!.Has(source,target);
                     if(marauder && !fresh)continue;
+                    int plague=Build?.AssassinRelics?.Rank("devouring_plague")??-1;
+                    if(Definition.Id=="lacerate" && plague>=0 && fresh && !newlyWounded.Contains(target) && newlyWounded.Count>=2+plague)continue;
                     if(Definition.Id!="lacerate" || fresh)Periodic.Apply(source,target,marauder && fresh?1.35f:1);
                     if(fresh)newlyWounded.Add(target);
                 }
+            Build?.AssassinRelics?.Spread(this,newlyWounded);
             if(marauder)Build!.Pregame.MarauderSpread(this,newlyWounded.ToArray());
         }
         if(Healing>0 && ChannelSeconds<=0)
@@ -252,10 +309,12 @@ public partial class AutomaticAbility : Node
     }
     private float DealHit(Combatant target,float amount)
     {
-        bool critical=Definition.CriticalAgainstPeriodic!="" && Periodic?.On(target).Any(a=>a.Caster==Caster && a.Definition.Id==Definition.CriticalAgainstPeriodic)==true;
-        return target.Health.ApplyDamage(amount*(Build?.DamageMultiplier(this,target)??1)
+        bool critical=Definition.Id=="forcescream" && Build?.Pregame.MarauderScreamCritical==true || Definition.CriticalAgainstPeriodic!="" && Periodic?.On(target).Any(a=>a.Caster==Caster && a.Definition.Id==Definition.CriticalAgainstPeriodic)==true;
+        float applied=target.Health.ApplyDamage(amount*(Build?.DamageMultiplier(this,target)??1)
             *(Definition.AfflictedBonus>0 && Periodic?.Has(target)==true?1+Definition.AfflictedBonus:1)
             *(critical?Definition.CriticalMultiplier:1),Definition.DamageType,critical,Definition.Id);
+        if(applied>0){Build?.AssassinRelics?.Damaged(this,target);if(!target.Alive)Build?.AssassinRelics?.WitherKilled(this,target);}
+        return applied;
     }
     public void ApplyPeriodicHit(Combatant target,float amount)
     {
@@ -276,14 +335,17 @@ public partial class AutomaticAbility : Node
             var point=current.AimPosition;
             // One gameplay hit per link. Rendering an arc has no combat authority.
             float applied=DealHit(current,damage);
+            int prison=SorcererRelics.Rank(this,"lightning_prison");
+            if(prison>=0 && current is EnemyAgent rooted)rooted.Root(1.5f+.5f*prison);
             if(Build?.World.RunConfiguration.AdvancedClassId=="assassin")Build.AbilityHit(this,current);
-            if(_presented && Presentation is D2AbilityPresentation visual)Present(()=>visual.Arc(from,point));
+            if(_presented && Presentation is IArcPresentation visual && (i>0 || Presentation is not OriginalAbilityPresentation))Present(()=>visual.Arc(from,point));
             if(applied>0) { _damaged.Add(current.GetInstanceId());DamageEvents++;DamageDealt?.Invoke(current,applied);Build?.Hit(this,current,new[]{current}); }
             from=point;
             var next=Targeting.ChainTarget(point,Definition.BounceRange,visited);
             if(next==null)break;
             current=next;damage*=Math.Clamp(Definition.BounceFalloff,0,1);
         }
+        Build?.AssassinRelics?.Resolved(this,_damaged.Select(id=>Targeting.InArea(Caster.GlobalPosition,Range,Range,true).FirstOrDefault(t=>t.GetInstanceId()==id)).Where(t=>t!=null).Cast<Combatant>().Append(CastTarget!).Distinct().ToArray());
         LastEvent=$"Chain Lightning: {_damaged.Count} distinct hits";
         return true;
     }
@@ -296,7 +358,7 @@ public partial class AutomaticAbility : Node
         }
         if(_presented) Present(()=>Presentation.End(interrupted));
         if(!Definition.DetachedArea)Present(()=>Presentation.Actor.SetGestureClip(this,Definition.EndClip));
-        State=LightningState.Ending;_phaseRemaining=Definition.FinishGesture?Math.Max(Definition.RecoverySeconds,_gestureRemaining):Definition.RecoverySeconds;LastEvent=reason;
+        State=LightningState.Ending;_phaseRemaining=Definition.FinishGesture?Math.Max(Definition.RecoverySeconds/(Build?.MarauderRelics?.Acceleration??1),_gestureRemaining):Definition.RecoverySeconds/(Build?.MarauderRelics?.Acceleration??1);LastEvent=reason;
     }
     public void Interrupt()
     {
@@ -306,6 +368,7 @@ public partial class AutomaticAbility : Node
     }
     public void Abort()
     {
+        foreach(var storm in _storms.ToArray()){storm.Abort();((Node)storm.Presentation).QueueFree();storm.Free();}_storms.Clear();
         if(Definition.Effect==AbilityEffect.Shield && Caster!=null && GodotObject.IsInstanceValid(Caster.Health)) Caster.Health.ClearShield();
         // Completed gestures can leave finite tails or a persistent shield presentation.
         if(Presentation!=null) Present(Presentation.Release);

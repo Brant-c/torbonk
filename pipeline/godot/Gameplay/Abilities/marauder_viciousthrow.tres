@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "viciousthrow"
+Title = "Vicious Throw"
+Icon = "mr_viciousthrow"
+StartsUnlocked = false
+Damage = 48
+CooldownSeconds = 9
+Range = 1.1
+Radius = 0
+Area = 0
+WindupSeconds = 0.3
+ChannelSeconds = 0
+TickSeconds = 0.4
+RecoverySeconds = 0.12
+GestureSeconds = 0.65
+StartClip = "Marauder/DualThrow"
+LoopClip = "Marauder/DualThrow"
+RequireGesture = true
+PresentationKind = "saber"
+SourceFx = "epp.sith_warrior.saber_throw.projectile;epp.sith_warrior.saber_throw.throw"
+Description = "Throw a saber to execute an enemy at or below 30% health."
+ImpactTexture = "res://Assets/WarriorLibrary/Textures/art/fx/texture/fire/4x4_flame_lick_02_bw.png"
+ImpactAudio = "res://Assets/WarriorLibrary/Audio/3382654.wav"
+WeaponAudio = "res://Assets/D3/Audio/173808209.wav"
+OffhandAudio = "res://Assets/D3/Audio/173808209.wav"
+
+FinishGesture = true
+
+FullBodyGesture = true
+
+Slotless = true

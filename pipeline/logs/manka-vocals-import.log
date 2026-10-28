@@ -1,0 +1,80 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Could not open 'user://' directory: 'user://'.
+   at: _get_and_create_snapshot_storage_dir (modules/objectdb_profiler/editor/objectdb_profiler_panel.cpp:157)
+[   0% ] first_scan_filesystem | Started Project initialization (5 steps)
+[   0% ] first_scan_filesystem | Scanning file structure...
+[  16% ] first_scan_filesystem | Loading global class names...
+[  33% ] first_scan_filesystem | Verifying GDExtensions...
+[  50% ] first_scan_filesystem | Creating autoload scripts...
+[  66% ] first_scan_filesystem | Initializing plugins...
+[  83% ] first_scan_filesystem | Starting file scan...
+[ DONE ] first_scan_filesystem
+
+[   0% ] update_scripts_classes | Started Registering global classes... (14 steps)
+[   0% ] update_scripts_classes | 
+[   6% ] update_scripts_classes | 
+[  13% ] update_scripts_classes | 
+[  20% ] update_scripts_classes | 
+[  26% ] update_scripts_classes | 
+[  33% ] update_scripts_classes | 
+[  40% ] update_scripts_classes | 
+[  46% ] update_scripts_classes | 
+[  53% ] update_scripts_classes | 
+[  60% ] update_scripts_classes | 
+[  66% ] update_scripts_classes | 
+[  73% ] update_scripts_classes | 
+[  80% ] update_scripts_classes | 
+[  86% ] update_scripts_classes | 
+[ DONE ] update_scripts_classes
+
+[   0% ] _update_scan_actions | Started Scanning actions... (15 steps)
+[   0% ] _update_scan_actions | 41823499.wav
+[   6% ] _update_scan_actions | 44205520.wav
+[  12% ] _update_scan_actions | 110314226.wav
+[  18% ] _update_scan_actions | 526138516.wav
+[  25% ] _update_scan_actions | 764195414.wav
+[  31% ] _update_scan_actions | 806132088.wav
+[  37% ] _update_scan_actions | 846499615.wav
+[  43% ] _update_scan_actions | mr_ataruform.png
+[  50% ] _update_scan_actions | mr_bloodthirst.png
+[  56% ] _update_scan_actions | mr_cripplingslash.png
+[  62% ] _update_scan_actions | mr_forcechoke.png
+[  68% ] _update_scan_actions | mr_retaliation.png
+[  75% ] _update_scan_actions | mr_saberward.png
+[  81% ] _update_scan_actions | mr_undyingrage.png
+[  87% ] _update_scan_actions | mr_viciousthrow.png
+[ DONE ] _update_scan_actions
+
+[   0% ] reimport | Started (Re)Importing Assets (7 steps)
+[   0% ] reimport | Preparing files to reimport...
+[  12% ] reimport | Preparing files to reimport...
+[  25% ] reimport | Preparing files to reimport...
+[  37% ] reimport | Preparing files to reimport...
+[  50% ] reimport | Preparing files to reimport...
+[  62% ] reimport | Preparing files to reimport...
+[  75% ] reimport | Preparing files to reimport...
+[   0% ] reimport | Executing pre-reimport operations...
+[   0% ] reimport | 41823499.wav
+[  12% ] reimport | 44205520.wav
+[  25% ] reimport | 110314226.wav
+[  37% ] reimport | 526138516.wav
+[  50% ] reimport | 764195414.wav
+[  62% ] reimport | 806132088.wav
+[  75% ] reimport | 846499615.wav
+[  87% ] reimport | Finalizing Asset Import...
+[ DONE ] reimport
+
+[   0% ] reimport | Started (Re)Importing Assets (7 steps)
+[   0% ] reimport | Executing post-reimport operations...
+[ DONE ] reimport
+
+[   0% ] loading_editor_layout | Started Loading editor (5 steps)
+[   0% ] loading_editor_layout | Loading editor layout...
+[  16% ] loading_editor_layout | Loading docks...
+[  33% ] loading_editor_layout | Reopening scenes...
+[  50% ] loading_editor_layout | Loading central editor layout...
+[  66% ] loading_editor_layout | Loading plugin window layout...
+[  83% ] loading_editor_layout | Editor layout ready.
+[ DONE ] loading_editor_layout
+

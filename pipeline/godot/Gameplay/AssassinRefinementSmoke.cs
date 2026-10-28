@@ -55,7 +55,7 @@ public partial class AssassinRefinementSmoke : Node
             spike.Interrupt();visual.Release();Check("Spike interruption clears particles",visual.EffectCount==0);w.Build.Pregame.Advance(5);
             spike.ResetCombat();w.Player.Presentation.ResetPresentation();Check("Spike can restart for interruption check",spike.TryBegin());spike.Interrupt();Check("interrupting vanish restores visibility immediately",!w.Build.Pregame.AssassinCloaked && w.Player.Presentation.Visible && w.Player.Presentation.IsVisibleInTree());
             foreach(string id in new[]{"maul","voltaicslash","wither","lowslash","deflection","forcecloak"}){
-                w.Player.Presentation.ResetPresentation();var a=w.Abilities.Find(id)!;a.SetUnlocked(true);a.ResetCombat();Check(id+" casts",a.TryBegin());a.Advance(.05);
+                w.Player.Presentation.ResetPresentation();var a=w.Abilities.Find(id)!;a.SetUnlocked(true);a.ResetCombat();Check(id+" casts",a.TryBegin());a.Advance(a.Definition.WindupSeconds+.05);
                 var v=(AssassinAbilityPresentation)a.Presentation;Check(id+" original effects/audio resolve",v.AudioVoicesStarted>0 || v.EffectCount>0);
                 if(id=="wither") {
                     var emitters=v.GetChildren().OfType<AssassinWitherVisual>().ToArray();

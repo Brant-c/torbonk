@@ -33,12 +33,15 @@ public partial class WarriorPresentationSmoke : Node
     camera.LookAt(w.PlayerActor.GlobalPosition+new Vector3(0,.12f,-.1f));camera.Current=true;
    }
    void Reset(){
+    w.Player.ResetPlayer();
     w.Abilities.ResetCombat();w.Build.Pregame.Reset();w.Build.Reset();w.Periodic.Clear();w.Player.Presentation.ResetPresentation();
     foreach(var a in w.Abilities.Abilities)a.SetUnlocked(false);
     for(int i=0;i<targets.Count;i++){var t=targets[i];t.CombatEnabled=true;t.Health.Restore();t.Body.GlobalPosition=w.PlayerActor.GlobalPosition+new Vector3((i-1)*.08f,0,-.22f);}
     w.PlayerActor.Health.ClearShield();w.PlayerActor.Health.Restore();w.PlayerActor.Health.ApplyDamage(w.PlayerActor.Health.Maximum*.85f);
    }
    AutomaticAbility Start(string id){
+    if(cls=="marauder" && id=="forcecharge")foreach(var t in targets)t.Body.GlobalPosition=w.PlayerActor.GlobalPosition+Vector3.Forward*.7f;
+    if(cls=="marauder" && id=="retaliation")w.Build.Pregame.Damaged(1);
     if(id=="viciousthrow")foreach(var t in targets)t.Health.ApplyDamage(t.Health.Current-t.Health.Maximum*.2f);
     var a=w.Abilities.Find(id)!;a.SetUnlocked(true);a.ResetCombat();w.Player.Presentation.ResetPresentation();
     Check(id+" can start",a.TryBegin());return a;
@@ -59,10 +62,16 @@ public partial class WarriorPresentationSmoke : Node
     Check(d.Id+" owns gesture",w.Player.Presentation.GestureOwner==a);
     bool snapped=false,checkedAudio=false,noEarlySmash=true;float rootMin=float.PositiveInfinity,rootMax=float.NegativeInfinity;
     int root=w.Player.Presentation.Skeleton.FindBone("Root");
-    double snapAt=d.WindupSeconds+(a.ChannelSeconds>0?a.TickSeconds:0)+.04;
+    double snapAt=d.Effect!=AbilityEffect.Damage?.45:d.WindupSeconds+(a.ChannelSeconds>0?a.TickSeconds:0)+.04;
     int steps=(int)Math.Ceiling((d.WindupSeconds+a.ChannelSeconds+d.GestureSeconds+d.RecoverySeconds+.3)/.02);
     for(int i=0;i<steps;i++){
-     a.Advance(.02);w.Player.Presentation.Present(Vector3.Right*.12f,.02);w.Player.Presentation._Process(.02);fx._Process(.02);
+     a.Advance(.02);
+     // Presentation fixture advances the dash along unobstructed authored space.
+     // Gameplay separately checks that a blocked charge cannot hit at range.
+     if(d.Id=="forcecharge" && a.CastTarget is {} charged && charged.GlobalPosition.DistanceTo(w.PlayerActor.GlobalPosition)>.3f)
+      w.Player.GlobalPosition=w.Player.GlobalPosition.MoveToward(charged.GlobalPosition,2.2f*.02f);
+     w.Player.Presentation.Present(Vector3.Right*.12f,.02);
+     w.Player.Presentation._Process(.02);fx._Process(.02);
      foreach(var flight in w.GetChildren().OfType<MarauderThrownSaber>().ToArray()){flight.SetProcess(false);flight._Process(.02);}
      if(d.Id=="ravage" && !checkedAudio && i*.02>=snapAt){Check("Ravage presents timed strike audio",fx.PlayingAudioVoices>0);checkedAudio=true;}
      if(d.Id=="smash"){
@@ -70,6 +79,9 @@ public partial class WarriorPresentationSmoke : Node
       if(root>=0){float y=w.Player.Presentation.Skeleton.GetBoneGlobalPose(root).Origin.Y;rootMin=Math.Min(rootMin,y);rootMax=Math.Max(rootMax,y);}
      }
      if(capture && !snapped && i*.02>=snapAt){
+      var captureCamera=GetViewport().GetCamera3D();
+      captureCamera.GlobalPosition=w.PlayerActor.GlobalPosition+new Vector3(.65f,.65f,.8f);
+      captureCamera.LookAt(w.PlayerActor.GlobalPosition+new Vector3(0,.12f,-.1f));
       await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);await ToSignal(RenderingServer.Singleton,RenderingServer.SignalName.FramePostDraw);
       GetViewport().GetTexture().GetImage().SavePng(ProjectSettings.GlobalizePath($"res://../manifests/warrior-{cls}-{d.Id}.png"));snapped=true;
      }

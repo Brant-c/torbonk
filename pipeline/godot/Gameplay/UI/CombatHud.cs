@@ -61,7 +61,7 @@ public partial class CombatHud : Control
         Art(SwtorSkin.Slice("bwaui_bars_183"),new Vector2(118,124),new Vector2(564,2));
         Art(SwtorSkin.Slice("bwaui_quickslots_1"),new Vector2(94,72),new Vector2(27,54));
         Art(SwtorSkin.Slice("bwaui_quickslots_3"),new Vector2(680,72),new Vector2(27,54));
-        RefreshAbilitySlots(World.Abilities.Abilities.Where(a=>a.Unlocked).Take(12).ToArray());
+        RefreshAbilitySlots(World.Abilities.QuickbarAbilities);
         Art(SwtorSkin.Slice("bwaui_quickslots_6"),new Vector2(685,72),new Vector2(19,54));
         LabelAt("1",11,new Vector2(687,91),new Vector2(15,16));
         _xp=Bar("bwaui_bars_45",new Vector2(118,130),new Vector2(564,12),3,10,true);
@@ -94,7 +94,7 @@ public partial class CombatHud : Control
 
     public void RefreshAbilities()
     {
-        var unlocked=World.Abilities.Abilities.Where(a=>a.Unlocked).Take(12).ToArray();
+        var unlocked=World.Abilities.QuickbarAbilities;
         if(!_abilitySlots.Select(x=>x.ability).SequenceEqual(unlocked)) RefreshAbilitySlots(unlocked);
     }
 

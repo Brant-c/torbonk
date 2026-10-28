@@ -7,14 +7,15 @@ namespace SwtorSurvivors;
 public partial class MarauderBladeTrails : Node3D
 {
  public CharacterPresentation Actor {get;set;}=null!;
+ public bool Assassin {get;set;}
  private readonly List<(MeshInstance3D blade,Vector3 root,Vector3 tip)> _previous=new();
  private readonly List<(MeshInstance3D mesh,double life)> _ribbons=new();
  private StandardMaterial3D _material=null!;
  public int RibbonCount=>_ribbons.Count;
- public override void _Ready(){ProcessPriority=100;_material=new StandardMaterial3D{ShadingMode=BaseMaterial3D.ShadingModeEnum.Unshaded,Transparency=BaseMaterial3D.TransparencyEnum.Alpha,BlendMode=BaseMaterial3D.BlendModeEnum.Add,CullMode=BaseMaterial3D.CullModeEnum.Disabled,AlbedoTexture=GD.Load<Texture2D>("res://Assets/WarriorLibrary/Textures/art/fx/texture/weapon_melee/lightsaber02_trail_red_nomips.png"),AlbedoColor=new Color(1,.22f,.12f,.4f)};}
+ public override void _Ready(){ProcessPriority=100;_material=new StandardMaterial3D{ShadingMode=BaseMaterial3D.ShadingModeEnum.Unshaded,Transparency=BaseMaterial3D.TransparencyEnum.Alpha,BlendMode=BaseMaterial3D.BlendModeEnum.Add,CullMode=BaseMaterial3D.CullModeEnum.Disabled,AlbedoTexture=GD.Load<Texture2D>(Assassin?"res://Assets/Assassin/lightsaber_critblade.png":"res://Assets/WarriorLibrary/Textures/art/fx/texture/weapon_melee/lightsaber02_trail_red_nomips.png"),AlbedoColor=new Color(1,.22f,.12f,.4f)};}
  public override void _Process(double delta){
   for(int i=_ribbons.Count-1;i>=0;i--){var r=_ribbons[i];r.life-=delta;if(r.life<=0){r.mesh.QueueFree();_ribbons.RemoveAt(i);}else{r.mesh.Transparency=(float)(1-r.life/.12);_ribbons[i]=r;}}
-  bool active=Actor.GestureOwner is AutomaticAbility a && a.Definition.PresentationKind=="saber" && a.Definition.Effect==AbilityEffect.Damage;
+  bool active=Actor.GestureOwner is AutomaticAbility a && (a.Definition.PresentationKind=="saber" || Assassin && a.Definition.Id is "maul" or "voltaicslash" or "lowslash" or "spike") && a.Definition.Effect==AbilityEffect.Damage;
   if(!active){_previous.Clear();return;}
   var blades=Actor.FindChildren("RedBlade","MeshInstance3D",true,false).OfType<MeshInstance3D>().Where(b=>b.IsVisibleInTree() && b.Mesh is CylinderMesh c && c.TopRadius<.002f).ToArray();
   foreach(var b in blades){var c=(CylinderMesh)b.Mesh;var root=b.ToGlobal(Vector3.Down*c.Height/2);var tip=b.ToGlobal(Vector3.Up*c.Height/2);var old=_previous.FirstOrDefault(x=>x.blade==b);

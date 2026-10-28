@@ -6,7 +6,7 @@ using System.Text.Json;
 namespace SwtorSurvivors;
 
 /// <summary>Bounded April FXSpec adapter: source ribbons, atlas particles, hand sockets and Wwise PCM only.</summary>
-public partial class D2AbilityPresentation : Node3D,IAbilityPresentation
+public partial class D2AbilityPresentation : Node3D,IAbilityPresentation,IArcPresentation
 {
     public CharacterPresentation Actor {get;set;}=null!;
     public AbilityDefinition Definition {get;set;}=null!;

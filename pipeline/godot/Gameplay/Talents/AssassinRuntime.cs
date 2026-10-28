@@ -10,6 +10,8 @@ public sealed partial class TalentRuntime
     private int _voltaic;
     private bool _shockSpent;
     private readonly Dictionary<ulong,double> _control=new();
+    public float AssassinDeflectionDuration=>4+Hook("deflection_time");
+    public bool AssassinDeflecting=>IsAssassin && _deflection>0;
     public bool AssassinCloaked=>IsAssassin && _cloak>0;
     public bool StealthOpening=>IsAssassin && _opening>0;
     public int VoltaicCharges=>IsAssassin?_voltaic:0;

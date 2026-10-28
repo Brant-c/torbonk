@@ -1,0 +1,53 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 2,
+  "maximumDecodedBytes": 8388608,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x9D46B689AE15E2AD",
+      "entryOffset": 117377011,
+      "headerSize": 36,
+      "dataOffset": 117377047,
+      "compressedSize": 17253,
+      "length": 29505,
+      "compressionMethod": 1,
+      "crc32Index": "670675a3",
+      "path": "/resources/anim/humanoid/bmnnew/mv_pole_run_forward_01.jba",
+      "sha256": "d2695aa2bdc19c0e26ddbd869e5a74d30e8beb545cb82c77d63be4dc94cc85cf",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_pole_run_forward_01.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x5B3A92F6E61BC3D2",
+      "entryOffset": 117362631,
+      "headerSize": 36,
+      "dataOffset": 117362667,
+      "compressedSize": 14344,
+      "length": 26689,
+      "compressionMethod": 1,
+      "crc32Index": "8f5341f1",
+      "path": "/resources/anim/humanoid/bmnnew/mv_pole_run_back_01.jba",
+      "sha256": "9ac59c321ea2e20945c58d5db1e67197b0115bebbdfe6ad49d6613a4c6033965",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_pole_run_back_01.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "PoleForward",
+      "to": "/resources/anim/humanoid/bmnnew/mv_pole_run_forward_01.jba",
+      "relation": "Polearm directional locomotion; original bytes hashed"
+    },
+    {
+      "from": "PoleBack",
+      "to": "/resources/anim/humanoid/bmnnew/mv_pole_run_back_01.jba",
+      "relation": "Polearm directional locomotion; original bytes hashed"
+    }
+  ],
+  "unresolved": [],
+  "selection": "human male body type 2; bmnnew skeleton"
+}

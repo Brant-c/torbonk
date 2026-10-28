@@ -1,0 +1,137 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 6,
+  "maximumDecodedBytes": 16777216,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x7151305EB23D99DC",
+      "entryOffset": 121906687,
+      "headerSize": 36,
+      "dataOffset": 121906723,
+      "compressedSize": 11409,
+      "length": 25921,
+      "compressionMethod": 1,
+      "crc32Index": "9676d8b7",
+      "path": "/resources/anim/humanoid/bmnnew/mv_saber_run_forward_01.jba",
+      "sha256": "dbb23902f44e7750a1874dfb2d991fbd83af3f156fe5fa27ccb50d1500a30130",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_saber_run_forward_01.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0xC38590D4FC078E87",
+      "entryOffset": 121867490,
+      "headerSize": 36,
+      "dataOffset": 121867526,
+      "compressedSize": 12397,
+      "length": 26049,
+      "compressionMethod": 1,
+      "crc32Index": "426efcca",
+      "path": "/resources/anim/humanoid/bmnnew/mv_saber_run_back_01.jba",
+      "sha256": "aca876a407719edd50dc6107fb156a12872b42d1d3080fe81ca2095ba5cb37ba",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_saber_run_back_01.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x5C5E13FBCCE56987",
+      "entryOffset": 111745400,
+      "headerSize": 36,
+      "dataOffset": 111745436,
+      "compressedSize": 12386,
+      "length": 23361,
+      "compressionMethod": 1,
+      "crc32Index": "60bd3432",
+      "path": "/resources/anim/humanoid/bmnnew/mv_2saber_run_forward_01.jba",
+      "sha256": "66e635c4e67413f5468a309b2c7ac76f6046bf46c9fbbb6ad98352413172078f",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_2saber_run_forward_01.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0xA7075E07D6E03EF6",
+      "entryOffset": 111731592,
+      "headerSize": 36,
+      "dataOffset": 111731628,
+      "compressedSize": 13772,
+      "length": 26433,
+      "compressionMethod": 1,
+      "crc32Index": "07fde9b3",
+      "path": "/resources/anim/humanoid/bmnnew/mv_2saber_run_back_01.jba",
+      "sha256": "39c216a48c47150dd3ea385fe276e9a2b4c9c0af32a432c18ee92ab78fd099d0",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_2saber_run_back_01.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0xCBE47C4DBA78DF05",
+      "entryOffset": 120922775,
+      "headerSize": 36,
+      "dataOffset": 120922811,
+      "compressedSize": 37291,
+      "length": 65857,
+      "compressionMethod": 1,
+      "crc32Index": "68f9c7de",
+      "path": "/resources/anim/humanoid/bmnnew/mv_run_left.jba",
+      "sha256": "e1eb430e60e2711ccd9122740a226a3d27399d1c11402efe02d2a15227d47906",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_run_left.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x75EA644BE2508453",
+      "entryOffset": 121249045,
+      "headerSize": 36,
+      "dataOffset": 121249081,
+      "compressedSize": 36506,
+      "length": 65729,
+      "compressionMethod": 1,
+      "crc32Index": "c999c65c",
+      "path": "/resources/anim/humanoid/bmnnew/mv_run_right.jba",
+      "sha256": "66d1874568905963fb75962d10bdd096203fa9a9e0e768bced4b231a751f4c83",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_run_right.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "SaberForward",
+      "to": "/resources/anim/humanoid/bmnnew/mv_saber_run_forward_01.jba",
+      "relation": "Explicit directional locomotion candidate; extracted bytes hashed"
+    },
+    {
+      "from": "SaberBack",
+      "to": "/resources/anim/humanoid/bmnnew/mv_saber_run_back_01.jba",
+      "relation": "Explicit directional locomotion candidate; extracted bytes hashed"
+    },
+    {
+      "from": "DualForward",
+      "to": "/resources/anim/humanoid/bmnnew/mv_2saber_run_forward_01.jba",
+      "relation": "Explicit directional locomotion candidate; extracted bytes hashed"
+    },
+    {
+      "from": "DualBack",
+      "to": "/resources/anim/humanoid/bmnnew/mv_2saber_run_back_01.jba",
+      "relation": "Explicit directional locomotion candidate; extracted bytes hashed"
+    },
+    {
+      "from": "Left",
+      "to": "/resources/anim/humanoid/bmnnew/mv_run_left.jba",
+      "relation": "Explicit directional locomotion candidate; extracted bytes hashed"
+    },
+    {
+      "from": "Right",
+      "to": "/resources/anim/humanoid/bmnnew/mv_run_right.jba",
+      "relation": "Explicit directional locomotion candidate; extracted bytes hashed"
+    }
+  ],
+  "unresolved": [],
+  "selection": "single/dual saber forward/back and shared lateral running; original bmnnew rig"
+}

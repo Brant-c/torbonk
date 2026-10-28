@@ -64,6 +64,7 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
         var at=radial?Actor.GlobalPosition+Vector3.Up*.06f:center;
         if(ImpactMarauder(at))return;
         if(ImpactRepair(at))return;
+        if(ImpactAssassin())return;
         Play(Definition.ImpactAudio,at,3);
         if(Definition.Id=="flameburst"){Burst(center,"res://Assets/Powertech/4x4_flame_lick_02_bw.png",.16f);return;}
         if(Definition.Id=="flamethrower")return;

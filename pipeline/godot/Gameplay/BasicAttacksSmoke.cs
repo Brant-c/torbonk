@@ -38,7 +38,7 @@ public partial class BasicAttacksSmoke : Node
             {
             var basic=w.Abilities.Abilities.Single(a=>a.Definition.IsBasicAttack);var starter=w.Combat;
             Check("starter plus correct basic are unlocked",basic.Unlocked && starter.Unlocked && w.Abilities.Abilities.Count(a=>a.Unlocked)==2 && basic.Definition.Id==w.RunConfiguration.Profile.BasicAttack);
-            Check("basic uses no offensive slot",w.Abilities.Equipped(AbilityCategory.Offensive)==1);
+            Check("basic uses no offensive slot",w.Abilities.Equipped(AbilityCategory.Offensive)==(w.RunConfiguration.AdvancedClassId is "marauder" or "juggernaut"?0:1));
             Check("original weapon animation available",w.Player.Presentation.Animator.HasAnimation(basic.Definition.StartClip));
             Check("basic avoids shared cooldown",!basic.Definition.UsesGlobalCooldown && !basic.Definition.TriggersGlobalCooldown);
             // Force starter readiness with a single target for radial starter fixtures.
@@ -49,9 +49,9 @@ public partial class BasicAttacksSmoke : Node
             starter.Abort();starter.CombatEnabled=false;w.Player.Presentation.ResetPresentation();
             w.Abilities._PhysicsProcess(.2);
             Check("basic fills an active global cooldown",basic.Casts==1 && w.Abilities.GlobalCooldownRemaining>0);
-            float hp=target.Health.Current;w.Abilities._PhysicsProcess(.13);
+            float hp=target.Health.Current;w.Abilities._PhysicsProcess(basic.Definition.WindupSeconds+.01);
             Check("basic deals weapon damage",target.Health.Current<hp && basic.DamageEvents==1);
-            Check("basic leaves global cooldown running",w.Abilities.GlobalCooldownRemaining>1);
+            Check("basic leaves global cooldown running",w.Abilities.GlobalCooldownRemaining>0);
             if(OS.GetCmdlineUserArgs().Contains("--basic-attacks-review"))
             {
                 for(int i=0;i<6;i++)await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);
@@ -83,7 +83,7 @@ public partial class BasicAttacksSmoke : Node
                 Check("basic cannot refresh Affliction through Static Blades",!w.Periodic.Has(dot,target));
             }
             w.Abilities.Abort();w.Periodic.Clear();w.Progression!.ResetRun();
-            Check("restart retains two starting attacks",w.Abilities.Abilities.Count(a=>a.Unlocked)==2 && w.Abilities.Equipped(AbilityCategory.Offensive)==1);
+            Check("restart retains two starting attacks",w.Abilities.Abilities.Count(a=>a.Unlocked)==2 && w.Abilities.Equipped(AbilityCategory.Offensive)==(w.RunConfiguration.AdvancedClassId is "marauder" or "juggernaut"?0:1));
             Check("basic remains outside unlock offers",!w.Progression.Upgrades.Any(u=>u.Effect==UpgradeEffect.UnlockAbility && u.AbilityId==basic.Definition.Id));
             }
         }

@@ -8,6 +8,7 @@ namespace SwtorSurvivors.Equipment;
 
 public sealed record Accessory(string Id, string Name, string Kind, string Icon, string Rarity, string[] Classes, string Description)
 {
+    public string[] RankEffects {get;init;}=[];
     public string[] Stats {get;init;}=[];
     public string[] Effects {get;init;}=[];
 }
@@ -40,11 +41,22 @@ public sealed class PersistentInventory
             } catch(Exception e) { State=new(); Notice="Equipment profile could not be loaded. Original file preserved: "+e.Message; _blocked=true; }
         }
         else { State=new(); foreach(var i in Items) State.Owned[i.Id]=0; Commit(State); }
+        if(!_blocked && Items.Any(i=>i.Classes.SequenceEqual(new[]{"marauder"}) && !State.Owned.ContainsKey(i.Id)))
+            Change(next=>{foreach(var i in Items.Where(i=>i.Classes.SequenceEqual(new[]{"marauder"})))next.Owned.TryAdd(i.Id,0);});
+        if(!_blocked && Items.Any(i=>i.Classes.SequenceEqual(new[]{"assassin"}) && !State.Owned.ContainsKey(i.Id)))
+            Change(next=>{foreach(var i in Items.Where(i=>i.Classes.SequenceEqual(new[]{"assassin"})))next.Owned.TryAdd(i.Id,0);});
+        if(!_blocked && Items.Any(i=>i.Classes.SequenceEqual(new[]{"sorcerer"}) && !State.Owned.ContainsKey(i.Id)))
+            Change(next=>{foreach(var i in Items.Where(i=>i.Classes.SequenceEqual(new[]{"sorcerer"})))next.Owned.TryAdd(i.Id,0);});
     }
     private bool _blocked;
-    public static bool Compatible(Accessory item,string cls)=>item.Classes.Length==0 || item.Classes.Contains(cls);
+    // Derive families from character selection data so future equipment follows the same rule.
+    private static readonly Lazy<Frontend.FrontendCatalog> ClassCatalog = new(Frontend.FrontendCatalog.Load);
+    public static string BaseClass(string cls)=>ClassCatalog.Value.Classes.FirstOrDefault(c=>c.Id==cls || c.AdvancedClasses.Any(a=>a.Id==cls))?.Id ?? cls;
+    public static bool VisibleForClass(Accessory item,string cls)=>item.Classes.Length==0 || item.Classes.Any(c=>BaseClass(c)==BaseClass(cls));
+    // Visibility does not grant proficiency. Only explicit advanced/base class designations do.
+    public static bool Compatible(Accessory item,string cls)=>item.Classes.Length==0 || item.Classes.Contains(cls) || item.Classes.Contains(BaseClass(cls));
     public string Equipped(string cls,string slot)=>State.Loadouts.GetValueOrDefault(cls)?.GetValueOrDefault(slot) ?? "";
-    public IEnumerable<Accessory> BagItems(string cls)=>Items.Where(i=>State.Owned.ContainsKey(i.Id) && State.Loadouts.GetValueOrDefault(cls)?.ContainsValue(i.Id)!=true);
+    public IEnumerable<Accessory> BagItems(string cls)=>Items.Where(i=>State.Owned.ContainsKey(i.Id) && VisibleForClass(i,cls) && State.Loadouts.GetValueOrDefault(cls)?.ContainsValue(i.Id)!=true);
     public bool Equip(string cls,string slot,string id)
     {
         var item=Items.FirstOrDefault(i=>i.Id==id);

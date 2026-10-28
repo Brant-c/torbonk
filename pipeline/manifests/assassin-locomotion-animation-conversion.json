@@ -1,0 +1,19 @@
+{
+  "clips": [
+    {
+      "name": "PoleForward",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_pole_run_forward_01.jba",
+      "seconds": 0.6333333253860474,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "PoleBack",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_pole_run_back_01.jba",
+      "seconds": 0.6333333253860474,
+      "sourceFps": 30.0
+    }
+  ],
+  "output": "godot\\Assets\\AssassinLocomotion\\casts.glb",
+  "sha256": "638ec7fb479dbab1e3f36c5ade9fb9751843cbcba5488576d5bf89366ea3472f",
+  "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
+}

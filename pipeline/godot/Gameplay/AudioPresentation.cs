@@ -164,6 +164,7 @@ public partial class AudioPresentation : Node
     }
     public void Clear()
     {
+        GetNodeOrNull<NpcVocalMixer>("NpcVocals")?.Clear();
         _worldAmbience?.Stop();
         foreach (var v in _voices) v.Player.Stop();
         foreach (var v in _combatVoices) if (GodotObject.IsInstanceValid(v)) v.Stop();

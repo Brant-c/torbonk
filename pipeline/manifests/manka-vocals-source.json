@@ -1,0 +1,53 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 180,
+  "maximumDecodedBytes": 104857600,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_voc_1.tor",
+      "archiveHash": "0x7B04AA0E8DC86D1D",
+      "entryOffset": 87347018,
+      "headerSize": 36,
+      "dataOffset": 87347054,
+      "compressedSize": 424313,
+      "length": 424313,
+      "compressionMethod": 0,
+      "crc32Index": "139e0d7e",
+      "path": "/resources/bnk2/voc_manka.bnk",
+      "sha256": "1662b4e7dec838146831bd2ef94fea08078c96d8110cc2d6013318afe2d0975c",
+      "output": "source-assets\\april2012\\resources\\bnk2\\voc_manka.bnk",
+      "archiveSha256": "bbfac0ee12d14820bbb62069aec467e4724bba228b2e2baf5339f64e04610072",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audiodata_1.tor",
+      "archiveHash": "0x3E835D3444A335C0",
+      "entryOffset": 7695220,
+      "headerSize": 36,
+      "dataOffset": 7695256,
+      "compressedSize": 886333,
+      "length": 2927823,
+      "compressionMethod": 1,
+      "crc32Index": "749d8ac1",
+      "path": "/resources/bnk2/voc_all.bnk",
+      "sha256": "f7f34c4753472adf11f49279401a953595320bf5ea768d15227ab077b7cc1205",
+      "output": "source-assets\\april2012\\resources\\bnk2\\voc_all.bnk",
+      "archiveSha256": "932a885608e1a1b1f4a9f5c55a02bc8e426558371ae5a58faf88642ebe5f4491",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "EV ice cat vocal trial",
+      "to": "/resources/bnk2/voc_manka.bnk",
+      "relation": "original manka vocal bank"
+    },
+    {
+      "from": "EV ice cat vocal trial",
+      "to": "/resources/bnk2/voc_all.bnk",
+      "relation": "vocal event/container evidence"
+    }
+  ],
+  "unresolved": [],
+  "selection": "human male body type 2; bmnnew skeleton"
+}

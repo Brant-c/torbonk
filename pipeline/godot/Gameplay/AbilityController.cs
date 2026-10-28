@@ -26,6 +26,7 @@ public partial class AbilityController : Node
     // Off-GCD exceptions still do not all activate on the same frame.
     [Export] public float MinimumActivationSpacing { get; set; } = 0.18f;
     public AutomaticAbility? Active => Abilities.FirstOrDefault(a=>a.BlocksCasting);
+    public AutomaticAbility[] QuickbarAbilities=>Abilities.Where(a=>a.Unlocked).OrderBy(a=>a.Definition.IsBasicAttack?0:1).Take(12).ToArray();
     public AutomaticAbility? Find(string id) => Abilities.FirstOrDefault(a=>a.Definition.Id==id);
     public void ResetUnlocks() { foreach(var ability in Abilities) {ability.InheritsFreeSlot=false;if(ability.Definition.Id=="lacerate")ability.Definition.Slotless=true;ability.SetUnlocked(ability.Definition.StartsUnlocked);} }
     private int ActivationPriority(AutomaticAbility ability)
@@ -43,7 +44,7 @@ public partial class AbilityController : Node
     private double _activationSpacing;
     public override void _PhysicsProcess(double delta)
     {
-        GlobalCooldownRemaining=Math.Max(0,GlobalCooldownRemaining-delta);
+        GlobalCooldownRemaining=Math.Max(0,GlobalCooldownRemaining-delta*(Abilities.FirstOrDefault()?.Build?.AssassinRelics?.Haste??1)*(Abilities.FirstOrDefault()?.Build?.MarauderRelics?.Acceleration??1));
         _activationSpacing=Math.Max(0,_activationSpacing-delta);
         foreach(var ability in Abilities) ability.Advance(delta);
         Targeting.Update(delta,false);

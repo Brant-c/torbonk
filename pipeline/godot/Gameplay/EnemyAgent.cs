@@ -45,6 +45,9 @@ public partial class EnemyAgent : Combatant
         if(carbonized)PowertechCarbonite.Attach(this);
         return true;
     }
+    public double RootRemaining {get;private set;}
+    public void Root(float seconds)=>RootRemaining=Math.Max(RootRemaining,seconds);
+    public float SorcererDotMovementFactor {get;set;}=1;
     public double SlowRemaining { get; private set; }
     private float _slowFactor=1;
     public void Slow(float factor,float seconds) { _slowFactor=Math.Min(_slowFactor,Math.Clamp(factor,0.1f,1));SlowRemaining=Math.Max(SlowRemaining,seconds); }
@@ -103,6 +106,7 @@ public partial class EnemyAgent : Combatant
     public override void _PhysicsProcess(double delta)
     {
         if (!Alive || !Running) return;
+        RootRemaining=Math.Max(0,RootRemaining-delta);
         OilRemaining=Math.Max(0,OilRemaining-delta);
         if(StunRemaining>0){if(_carbonized)Visual?.CarbonizePose();
         StunRemaining=Math.Max(0,StunRemaining-delta);Body.Velocity=Vector3.Zero;
@@ -153,7 +157,7 @@ public partial class EnemyAgent : Combatant
             }
             horizontal = _direction * MoveSpeed;
             if (Crowd != null) horizontal = (horizontal + Crowd.Separation(this) * MoveSpeed * 0.7f).LimitLength(MoveSpeed);
-            horizontal *= _slowFactor;
+            horizontal *= RootRemaining>0?0:_slowFactor*SorcererDotMovementFactor;
             // MoveAndSlide handles walls. Validate the actual slide path below, rather than
             // probing an intended path and then probing almost the same path a second time.
         }

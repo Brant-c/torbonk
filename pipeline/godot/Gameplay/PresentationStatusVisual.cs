@@ -9,6 +9,15 @@ public partial class PresentationStatusVisual : Node3D
     private Sprite3D _glow=null!,_smoke=null!;
     private double _age;
     private bool _afflictionSmoke;
+    public static Node3D AttachDischarge(Combatant target,Func<bool> active)
+    {
+        var node=new PresentationStatusVisual {Name="DischargeStatus",_active=()=>GodotObject.IsInstanceValid(target) && target.Alive && active()};
+        target.AddChild(node);node.Position=Vector3.Up*.1f;
+        node.AddToGroup("DischargeStatus");
+        node._glow=node.Make("res://Assets/D3/bw_2x2_electricity_multi_01.png",2,.14f,new Color(.62f,.2f,.95f,.55f));
+        node._smoke=node.Make("res://Assets/Assassin/2x2_whispy_smoke_a_01.png",2,.12f,new Color(.32f,.08f,.5f,.3f));
+        return node;
+    }
     public static Node3D AttachTerror(Combatant target,Func<bool> active)
     {
         var node=new PresentationStatusVisual {_active=()=>GodotObject.IsInstanceValid(target) && target.Alive && active()};

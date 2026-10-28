@@ -43,6 +43,8 @@ public partial class AbilityDefinition : Resource
     [Export] public bool RequireGesture {get;set;}
     [Export] public string ImpactAudio {get;set;}="";
     [Export] public bool FullBodyGesture {get;set;}
+    // Reserve moving full-body playback for deliberate airborne moves such as Smash.
+    [Export] public bool KeepFullBodyWhileMoving {get;set;}
     [Export] public bool ImpactTailsOnTargetDeath {get;set;}
     [Export] public string WeaponAudio {get;set;}="";
     [Export] public string OffhandAudio {get;set;}="";

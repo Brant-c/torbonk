@@ -11,12 +11,18 @@ public partial class AssassinAbilityPresentation : Node3D,IAbilityPresentation
     public CharacterPresentation Actor {get;set;}=null!;
     public AbilityDefinition Definition {get;set;}=null!;
     public GameWorld World {get;set;}=null!;
-    private sealed class Particle {public Sprite3D Node=null!;public double Age,Life;public float Size;public int Frames;public bool Follow;public Color Tint;}
+    private sealed class Particle {public Sprite3D Node=null!;public double Age,Life;public float Size;public int Frames;public Func<Vector3>? Anchor;public Vector3 Offset;public Color Tint;}
     private readonly List<Particle> _particles=new();
     private readonly List<AudioStreamPlayer3D> _voices=new();
     private JsonDocument _effects=null!,_audio=null!;
     private float _radius;private double _loop,_emit;
     public int EffectCount=>_particles.Count;
+    public bool DefensiveLoopVisible=>_loop>0 && Definition.Id=="deflection";
+    public int TargetImpacts {get;private set;}
+    private Vector3 BoneWorld(string bone) {
+        int index=Actor.Skeleton.FindBone(bone);
+        return index>=0?(Actor.Skeleton.GlobalTransform*Actor.Skeleton.GetBoneGlobalPose(index)).Origin:Actor.GlobalPosition+Vector3.Up*.1f;
+    }
     public int AudioVoicesStarted {get;private set;}
     public bool Vanishing {get;private set;}
     public override void _Ready()
@@ -32,13 +38,19 @@ public partial class AssassinAbilityPresentation : Node3D,IAbilityPresentation
         var media=graph.GetProperty("media");if(media.GetArrayLength()==0)return;
         var voice=_voices[_voice++%_voices.Count];voice.GlobalPosition=at;voice.Stream=GD.Load<AudioStream>($"res://Assets/Assassin/Audio/{media[0].GetInt32()}.wav");voice.Play();AudioVoicesStarted++;
     }
-    private void Emit(string effect,Vector3 at,float size,double life,bool follow=false)
+    private void Emit(string effect,Vector3 at,float size,double life,bool follow=false,string bone="",Combatant? target=null)
     {
         if(!_effects.RootElement.TryGetProperty(effect,out var recipe))return;
         int index=0;
-        foreach(var r in recipe.EnumerateArray().Take(5))
+        // Preserve all recovered layers (up to eight); skip non-rendering graph placeholders.
+        Vector3 lastTargetPosition=at;
+        Func<Vector3>? anchor=bone!=""?()=>BoneWorld(bone):target!=null?()=>{
+            if(GodotObject.IsInstanceValid(target) && target.Alive)lastTargetPosition=target.AimPosition;
+            return lastTargetPosition;
+        }:follow?()=>Actor.GlobalPosition+Vector3.Up*.1f:null;
+        foreach(var r in recipe.EnumerateArray().Where(r=>r.GetProperty("texture").GetString()!="black").Take(8))
         {
-            if(_particles.Count>=72)break;
+            if(_particles.Count>=72){var oldest=_particles[0];oldest.Node.QueueFree();_particles.RemoveAt(0);}
             var tex=GD.Load<Texture2D>($"res://Assets/Assassin/{r.GetProperty("texture").GetString()}.png");int frames=r.GetProperty("atlas").GetInt32();
             var c=r.GetProperty("color");var tint=new Color(c[0].GetSingle(),c[1].GetSingle(),c[2].GetSingle(),Math.Max(.35f,c[3].GetSingle()));
             var material=new StandardMaterial3D {ShadingMode=BaseMaterial3D.ShadingModeEnum.Unshaded,Transparency=BaseMaterial3D.TransparencyEnum.Alpha,
@@ -46,7 +58,7 @@ public partial class AssassinAbilityPresentation : Node3D,IAbilityPresentation
                 AlbedoTexture=tex,AlbedoColor=tint,BillboardMode=BaseMaterial3D.BillboardModeEnum.Enabled,NoDepthTest=false,CullMode=BaseMaterial3D.CullModeEnum.Disabled};
             var sprite=new Sprite3D {Texture=tex,MaterialOverride=material,Hframes=frames,Vframes=frames,PixelSize=size/(tex.GetWidth()/frames),Shaded=false,CastShadow=GeometryInstance3D.ShadowCastingSetting.Off};
             AddChild(sprite);sprite.GlobalPosition=at+Vector3.Up*(index++*.012f);
-            _particles.Add(new Particle {Node=sprite,Life=life,Size=size,Frames=frames,Tint=tint,Follow=follow});
+            _particles.Add(new Particle {Node=sprite,Life=life,Size=size,Frames=frames,Tint=tint,Anchor=anchor,Offset=sprite.GlobalPosition-(anchor?.Invoke()??sprite.GlobalPosition)});
         }
     }
     public bool Begin(Combatant target,Vector3 center,float radius)
@@ -61,19 +73,20 @@ public partial class AssassinAbilityPresentation : Node3D,IAbilityPresentation
             Play("Play_ability_sithinquisitor_shadowcloak_activate",Actor.GlobalPosition);
         }
         if(Definition.Id=="deflection"){
-            _loop=4;Emit("si_reflection_buff_loop",Actor.GlobalPosition+Vector3.Up*.1f,.24f,.8,true);
+            _loop=World.Build.Pregame.AssassinDeflectionDuration;Emit("si_reflection_buff_loop",Actor.GlobalPosition+Vector3.Up*.1f,.24f,.8,true);
             Play("Play_ability_sithinquisitor_deflection_cast",Actor.GlobalPosition);
         }
-        if(Definition.Id=="wither")Emit("si_hand_cast_particle_trail",Actor.GlobalPosition+Vector3.Up*.14f,.12f,.5);
-        if(Definition.Id is "maul" or "voltaicslash" or "lowslash"){
-            var voice=_voices[_voice++%_voices.Count];voice.Stream=GD.Load<AudioStream>("res://Assets/D3/Audio/173808209.wav");voice.GlobalPosition=Actor.GlobalPosition;voice.Play();AudioVoicesStarted++;
-        }
+        if(Definition.Id=="wither")Emit("si_hand_cast_particle_trail",BoneWorld("vfx_hand_left"),.12f,.5,bone:"vfx_hand_left");
+
         return Definition.StartClip=="" || Actor.Animator.HasAnimation(Definition.StartClip);
     }
     public void Channel()
     {
+        if(Definition.Id is "maul" or "voltaicslash" or "lowslash"){
+            var voice=_voices[_voice++%_voices.Count];voice.Stream=GD.Load<AudioStream>("res://Assets/D3/Audio/173808209.wav");voice.GlobalPosition=Actor.GlobalPosition;voice.Play();AudioVoicesStarted++;
+        }
         if(Definition.Id!="spike")return;
-        Vanishing=false;Emit("si_spike_source_saber",Actor.GlobalPosition+Vector3.Up*.12f,.10f,.65);
+        Vanishing=false;Emit("si_spike_source_saber",BoneWorld("RightWeapon"),.10f,.65,bone:"RightWeapon");
         Play("Play_ability_sithinquisitor_spike_saber_shock",Actor.GlobalPosition);
     }
     public void Impact(Vector3 center)
@@ -88,20 +101,21 @@ public partial class AssassinAbilityPresentation : Node3D,IAbilityPresentation
     }
     public void TargetImpact(Combatant target)
     {
+        TargetImpacts++;
         if(Definition.Id=="wither") {if(target.Alive){var debuff=new AssassinWitherVisual {Target=target};AddChild(debuff);}return;}
         string effect=Definition.Id switch {"spike"=>"si_spike_target_02","wither"=>"si_wither_debuff_target","maul"=>"si_maul_01","lowslash"=>"jc_lowslash_impact_01","voltaicslash"=>"jc_clairvoyantstrike_impact_01",_=>""};
-        if(effect!="")Emit(effect,target.AimPosition,Definition.Id=="wither"?.18f:.14f,Definition.Id=="wither"?1.4:.55);
+        if(effect!="")Emit(effect,target.AimPosition,Definition.Id=="wither"?.18f:.14f,Definition.Id=="wither"?1.4:.55,target:target);
     }
     public override void _Process(double delta)
     {
         if(_loop>0){
             _loop-=delta;_emit-=delta;
-            if(Definition.Id=="forcecloak" && !World.Build.Pregame.AssassinCloaked)_loop=0;
+            if(!World.PlayerActor.Alive || Definition.Id=="forcecloak" && !World.Build.Pregame.AssassinCloaked || Definition.Id=="deflection" && !World.Build.Pregame.AssassinDeflecting)_loop=0;
             if(_loop>0 && _emit<=0){_emit=.4;Emit(Definition.Id=="forcecloak"?"si_mindtrick_loop_01":"si_reflection_buff_loop",Actor.GlobalPosition+Vector3.Up*.1f,.19f,.6,true);}
         }
         foreach(var p in _particles.ToArray()){
             p.Age+=delta;if(p.Age>=p.Life){p.Node.QueueFree();_particles.Remove(p);continue;}
-            if(p.Follow)p.Node.GlobalPosition=Actor.GlobalPosition+Vector3.Up*.1f;
+            if(p.Anchor!=null)p.Node.GlobalPosition=p.Anchor()+p.Offset;
             float progress=(float)(p.Age/p.Life);p.Node.Scale=Vector3.One*(.65f+progress*.5f);
             p.Node.Frame=Math.Min(p.Frames*p.Frames-1,(int)(progress*p.Frames*p.Frames));
             ((StandardMaterial3D)p.Node.MaterialOverride).AlbedoColor=new Color(p.Tint.R,p.Tint.G,p.Tint.B,p.Tint.A*(1-progress));

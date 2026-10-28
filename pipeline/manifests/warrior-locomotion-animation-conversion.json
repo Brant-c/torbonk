@@ -1,0 +1,43 @@
+{
+  "clips": [
+    {
+      "name": "SaberForward",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_saber_run_forward_01.jba",
+      "seconds": 0.6000000238418579,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "SaberBack",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_saber_run_back_01.jba",
+      "seconds": 0.6000000238418579,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "DualForward",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_2saber_run_forward_01.jba",
+      "seconds": 0.5,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "DualBack",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_2saber_run_back_01.jba",
+      "seconds": 0.6333333253860474,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "Left",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_run_left.jba",
+      "seconds": 1.7333333492279053,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "Right",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_run_right.jba",
+      "seconds": 1.7333333492279053,
+      "sourceFps": 30.0
+    }
+  ],
+  "output": "godot\\Assets\\WarriorLocomotion\\casts.glb",
+  "sha256": "9f31e7fad4765dcfe6f56e7ef7ec46879ded9380b955a0f08929581a2b3bb3b4",
+  "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
+}

@@ -1,0 +1,3299 @@
+{
+  "models": [
+    {
+      "path": "/resources/art/static/area/all_all/item/caves/all_item_caves_rubble_mound_ald_01.gr2",
+      "output": "res://Assets/Maps/soa_p3/all_item_caves_rubble_mound_ald_01.glb",
+      "sourceSha256": "159c3111bafc7afea00451aa50b9cfb721d6948407f08ff615228ec5a4de2817",
+      "sha256": "8886dc3d967f9c7bc068b6736076b59e1400e09768ac39962b3911f6405403ba",
+      "vertices": 1306,
+      "triangles": 1175,
+      "boundsMin": [
+        -0.36666691303253174,
+        -0.03127212077379227,
+        -0.39530399441719055
+      ],
+      "boundsMax": [
+        0.4317627251148224,
+        0.09474412351846695,
+        0.32671022415161133
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/all_item_caves_rubble_mounds_01.mat",
+        "/resources/art/shaders/materials/all_item_caves_boulders_ald.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/all_all/item/decal/all_item_decal_lava.gr2",
+      "output": "res://Assets/Maps/soa_p3/all_item_decal_lava.glb",
+      "sourceSha256": "218be9ec6df72c4acf27b9cfb1643cbe3ecee7b7f54dc36f68c95ba6b4929440",
+      "sha256": "33c1cefdfe1007729dd229f2def2a03e6bca4dd67315418e21fec5e2a2b1d1de",
+      "vertices": 10,
+      "triangles": 8,
+      "boundsMin": [
+        -0.20000000298023224,
+        -1.5099580252808664e-08,
+        -0.20000000298023224
+      ],
+      "boundsMax": [
+        0.20000000298023224,
+        1.5099580252808664e-08,
+        0.20000000298023224
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/all_item_decal_lava.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_energy_obelisk_base.gr2",
+      "output": "res://Assets/Maps/soa_p3/bel_arch_rakata_raid_energy_obelisk_base.glb",
+      "sourceSha256": "090bddec509eee6505ab030300a89feda25a634c50e05a2bb773e32ebb444cd4",
+      "sha256": "19e725b05d2874687ad7f9f09305cfe0183214b7114e96cc8b46a319aae4c9be",
+      "vertices": 56,
+      "triangles": 28,
+      "boundsMin": [
+        -0.4338377118110657,
+        -3.2753813883346083e-08,
+        -0.4338374733924866
+      ],
+      "boundsMax": [
+        0.4338377118110657,
+        0.9507904648780823,
+        0.4338374733924866
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/bel_arch_rakata_int_stone01.mat",
+        "/resources/art/shaders/materials/all_arch_rakata_wall_set03.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_platform_piece01.gr2",
+      "output": "res://Assets/Maps/soa_p3/bel_arch_rakata_raid_infernal_platform_piece01.glb",
+      "sourceSha256": "7975827448be97818afde0528c0b1dc380e59de53be576a5d64774cbabcc48ca",
+      "sha256": "e4bcb7a2f3363450622b51b2cc5c30a3f0a181a47e28ef7b07392602ee9cadf2",
+      "vertices": 182,
+      "triangles": 150,
+      "boundsMin": [
+        -0.6475105285644531,
+        -0.1000000610947609,
+        -0.801855742931366
+      ],
+      "boundsMax": [
+        0.8479340076446533,
+        0.1000000461935997,
+        0.5839248299598694
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/bel_arch_rakata_int_wall01.mat",
+        "/resources/art/shaders/materials/bel_arch_rakata_int_floortile01.mat",
+        "/resources/art/shaders/materials/bel_arch_rakata_int_wall_raw.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_platform_piece02.gr2",
+      "output": "res://Assets/Maps/soa_p3/bel_arch_rakata_raid_infernal_platform_piece02.glb",
+      "sourceSha256": "0a47c885ac8dc15e55f1edba016cc5351f3b8070c372029c4c002ae0ef82cfd6",
+      "sha256": "0cd68af6bb236754c048147d5057e4e746525f312fe7717974dadd486a37fdf2",
+      "vertices": 199,
+      "triangles": 150,
+      "boundsMin": [
+        -0.7742967009544373,
+        -0.1000000461935997,
+        -0.6263000965118408
+      ],
+      "boundsMax": [
+        0.5415329337120056,
+        0.1000000536441803,
+        0.6726919412612915
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/bel_arch_rakata_int_wall01.mat",
+        "/resources/art/shaders/materials/bel_arch_rakata_int_floortile01.mat",
+        "/resources/art/shaders/materials/bel_arch_rakata_int_wall_raw.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_platform_piece03.gr2",
+      "output": "res://Assets/Maps/soa_p3/bel_arch_rakata_raid_infernal_platform_piece03.glb",
+      "sourceSha256": "52869fee8fa131973a5e6556005a654078c25751896b90e0dca3e0e3f9ff7e55",
+      "sha256": "2a3a7d22fc510260684d7e5633643b5d30cb0bc9d554224ba597fa452d8e9edf",
+      "vertices": 128,
+      "triangles": 96,
+      "boundsMin": [
+        -0.6767551302909851,
+        -0.1000000536441803,
+        -0.6423887014389038
+      ],
+      "boundsMax": [
+        0.4532378017902374,
+        0.1000000610947609,
+        0.7778564691543579
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/bel_arch_rakata_int_wall01.mat",
+        "/resources/art/shaders/materials/bel_arch_rakata_int_floortile01.mat",
+        "/resources/art/shaders/materials/bel_arch_rakata_int_wall_raw.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_platform_piece04.gr2",
+      "output": "res://Assets/Maps/soa_p3/bel_arch_rakata_raid_infernal_platform_piece04.glb",
+      "sourceSha256": "e97cb5ad4c1ce791113a9c19a54ae0df8626d2c32c2b049e6d247d84584c6e6b",
+      "sha256": "8712205876edae24fefd506c2515e202162ef155082aebd95a713693e71b905a",
+      "vertices": 133,
+      "triangles": 108,
+      "boundsMin": [
+        -0.8506432771682739,
+        -0.10000003129243851,
+        -0.39375820755958557
+      ],
+      "boundsMax": [
+        0.728546142578125,
+        0.10000002384185791,
+        0.33906349539756775
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/bel_arch_rakata_int_wall01.mat",
+        "/resources/art/shaders/materials/bel_arch_rakata_int_floortile01.mat",
+        "/resources/art/shaders/materials/bel_arch_rakata_int_wall_raw.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_raid_infernal_room_wall01.gr2",
+      "output": "res://Assets/Maps/soa_p3/bel_arch_rakata_raid_infernal_room_wall01.glb",
+      "sourceSha256": "f2be6fc47eeaac5baee22ce202a134e75795b94264598f419aab20f1bdd5892c",
+      "sha256": "5747d1010ad2000012d0b0c8f87cc20f97bd69b6b8bd126e78797918fe440b76",
+      "vertices": 8838,
+      "triangles": 6180,
+      "boundsMin": [
+        -6.684713840484619,
+        -4.3687876427611627e-07,
+        -6.684713363647461
+      ],
+      "boundsMax": [
+        6.684712886810303,
+        4.000001430511475,
+        6.684712886810303
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/util_collision_hidden.mat",
+        "/resources/art/shaders/materials/bel_arch_rakata_int_stone01.mat",
+        "/resources/art/shaders/materials/bel_arch_rakata_int_wall01.mat",
+        "/resources/art/shaders/materials/all_arch_rakata_wall_set01.mat",
+        "/resources/art/shaders/materials/all_arch_rakata_wall_set03.mat",
+        "/resources/art/shaders/materials/all_arch_rakata_wall_set04.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_statue.gr2",
+      "output": "res://Assets/Maps/soa_p3/bel_arch_rakata_statue.glb",
+      "sourceSha256": "7a0846f2525efa316e9b463c63202841bdbf89b09efff0c000f7699f4de64e6c",
+      "sha256": "9c41a3c09317dbe4a75b1f7e2bb54e6002fc7b784464e9b8bd2176b732fc8af7",
+      "vertices": 1676,
+      "triangles": 1796,
+      "boundsMin": [
+        -0.16124941408634186,
+        -5.158588919584872e-06,
+        -0.14442434906959534
+      ],
+      "boundsMax": [
+        0.1591193974018097,
+        1.1433653831481934,
+        0.17505069077014923
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/bel_arch_rakata_statue.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/bel_belsavis/arch/bel_arch_rakata_statue_broken_legs.gr2",
+      "output": "res://Assets/Maps/soa_p3/bel_arch_rakata_statue_broken_legs.glb",
+      "sourceSha256": "526f0463db69c6c782a73cdf5692630dfdf886db37bbd30678a4f6bdfae454ff",
+      "sha256": "9ba92e744446a0bb9f5a346dbf79a32c405c2c62effe94a099446902debf6a64",
+      "vertices": 450,
+      "triangles": 380,
+      "boundsMin": [
+        -0.14597496390342712,
+        -5.150549895915901e-06,
+        -0.14442434906959534
+      ],
+      "boundsMax": [
+        0.14597496390342712,
+        0.624525785446167,
+        0.12981680035591125
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/bel_arch_rakata_statue.mat",
+        "/resources/art/shaders/materials/bel_arch_rakata_int_wall_raw.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/bel_belsavis/env/bel_env_boulder_overhang.gr2",
+      "output": "res://Assets/Maps/soa_p3/bel_env_boulder_overhang.glb",
+      "sourceSha256": "2f86a1eeb043d90bafe5cab14c5c0056cf09bdc4d3231254702504ca3ae12e2f",
+      "sha256": "212e5675bd02234eabd0f87876a758cd57cf5f105446cd93165dcec3a6bc8e89",
+      "vertices": 755,
+      "triangles": 1020,
+      "boundsMin": [
+        -0.8112668395042419,
+        -0.9407004117965698,
+        -0.8888466954231262
+      ],
+      "boundsMax": [
+        0.8112668991088867,
+        0.5561750531196594,
+        0.8888465762138367
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/ord_env_boulder_overhang.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/bel_belsavis/env/bel_env_boulder_wall_curve_05.gr2",
+      "output": "res://Assets/Maps/soa_p3/bel_env_boulder_wall_curve_05.glb",
+      "sourceSha256": "98da3e65a97c152743b6cfd1e8d37ca076e2c636b44fb3653e4e7fb088178108",
+      "sha256": "542faa55cc91919f369edf7557a68253517c0550428e4f62f8bb67cd4ef4a5c3",
+      "vertices": 6694,
+      "triangles": 8571,
+      "boundsMin": [
+        -3.905109405517578,
+        -1.3929753303527832,
+        -1.408368468284607
+      ],
+      "boundsMax": [
+        3.8010783195495605,
+        1.0912483930587769,
+        1.4135682582855225
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/ord_env_boulder_overhang.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/bel_belsavis/env/bel_env_boulder_wall_curve_06.gr2",
+      "output": "res://Assets/Maps/soa_p3/bel_env_boulder_wall_curve_06.glb",
+      "sourceSha256": "4e265c262eca7ae510ea36cbd60ec2cd660bc7930198c9d12e99f1d8eb880fc6",
+      "sha256": "7dc358250e11feefd6bbcb7d915928db7ba66f25c54634726bed60513d399e05",
+      "vertices": 6785,
+      "triangles": 8571,
+      "boundsMin": [
+        -3.5965089797973633,
+        -1.3238641023635864,
+        -0.8859245181083679
+      ],
+      "boundsMax": [
+        3.446403980255127,
+        1.1666148900985718,
+        1.9433163404464722
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/ord_env_boulder_overhang.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/ord_ordmantell/env/ord_env_boulders_sml_no_moss_01.gr2",
+      "output": "res://Assets/Maps/soa_p3/ord_env_boulders_sml_no_moss_01.glb",
+      "sourceSha256": "dab865054f1d503c977b8181314a9e49079cf9c5c086888b7ee017b99728e258",
+      "sha256": "4a6e49807a9c13a2f224136cc12e021df4dafc55cbec6ea530b5b8c48e74e9eb",
+      "vertices": 113,
+      "triangles": 142,
+      "boundsMin": [
+        -0.287646621465683,
+        -0.08226015418767929,
+        -0.20179767906665802
+      ],
+      "boundsMax": [
+        0.24873554706573486,
+        0.2362908124923706,
+        0.327194482088089
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/ord_env_boulders_no_moss.mat"
+      ]
+    },
+    {
+      "path": "/resources/art/static/area/ord_ordmantell/env/ord_env_boulders_sml_no_moss_02.gr2",
+      "output": "res://Assets/Maps/soa_p3/ord_env_boulders_sml_no_moss_02.glb",
+      "sourceSha256": "662d02929166748c23b4739b4b3222a5bc65ad2f88a7eab4bb89c3ba82853a0c",
+      "sha256": "eb1264333269ae9c0862ccdd7adc26d05ecaa7a697ba75c35e0a1afa89d51a82",
+      "vertices": 45,
+      "triangles": 48,
+      "boundsMin": [
+        -0.1007501557469368,
+        -0.10058402270078659,
+        -0.12638574838638306
+      ],
+      "boundsMax": [
+        0.1007501557469368,
+        0.10346643626689911,
+        0.1263856291770935
+      ],
+      "materials": [
+        "/resources/art/shaders/materials/ord_env_boulders_no_moss.mat"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "path": "/resources/art/shaders/materials/all_arch_rakata_wall_set01.mat",
+      "sourceSha256": "d2b42360ab68f3859a2b99e3bb7fd38a054b2c8e357486acaa0247a15d4a881f",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set01_d.dds",
+        "RotationMap1": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set01_n.dds",
+        "GlossMap": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set01_s.dds",
+        "EmissiveMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/all_arch_rakata_wall_set03.mat",
+      "sourceSha256": "9ed1a329b29a9892c185075a2b260edfcb14fe1ee592ff5bf4f8870dbf27413d",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set03_d.dds",
+        "RotationMap1": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set03_n.dds",
+        "GlossMap": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set03_s.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/all_arch_rakata_wall_set04.mat",
+      "sourceSha256": "28dac265a40b99ada325dcc628f538cfecfae6cef6da38a454cc174ad90c4e9c",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set04_d.dds",
+        "RotationMap1": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set04_n.dds",
+        "GlossMap": "/resources/art/static/area/all_all/arch/texture/all_arch_rakata_wall_set04_s.dds",
+        "EmissiveMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/all_item_caves_boulders_ald.mat",
+      "sourceSha256": "5b4702e5d038f89adbdac5c17feed015e90ede44e2296097e14e4da475fe5688",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_boulders_ald_d.dds",
+        "RotationMap1": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_boulders_n.dds",
+        "GlossMap": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_boulders_neu_s.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/all_item_caves_rubble_mounds_01.mat",
+      "sourceSha256": "b1362f8ec9a35ebc10f45e19b3eb0835e0182eb3d620d16fa5074573d8520603",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_rubble_mounds_01_d.dds",
+        "RotationMap1": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_rubble_mounds_01_n.dds",
+        "GlossMap": "/resources/art/static/area/all_all/item/caves/texture/all_item_caves_rubble_mounds_01_s.dds",
+        "EmissiveMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/all_item_decal_lava.mat",
+      "sourceSha256": "3a771a895b10eed70ff6b7b54800caa0410e2492f6b0d0711809d0ef2e5c9678",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/all_all/item/decal/texture/all_item_decal_lava_02_d.dds",
+        "RotationMap1": "/resources/art/static/area/all_all/item/decal/texture/all_item_decal_lava_02_n.dds",
+        "GlossMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/bel_arch_rakata_int_floortile01.mat",
+      "sourceSha256": "60ca61cdce01da3d571a55d6ee27397a2578a881f05bbf988542b569a20a0ddc",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_floortile01_d.dds",
+        "RotationMap1": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_floortile01_n.dds",
+        "GlossMap": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_floortile01_s.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/bel_arch_rakata_int_stone01.mat",
+      "sourceSha256": "bca89fffad0a27279f1c739b915c95694335994f1ba62668e57406e3302774c4",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_stone01_d.dds",
+        "RotationMap1": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_stone01_n.dds",
+        "GlossMap": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_stone01_s.dds",
+        "EmissiveMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/bel_arch_rakata_int_wall01.mat",
+      "sourceSha256": "4f61354522355919bfc202309c736bcbb8140a1d42189ad72e63a9980acda1f9",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_wall01_d.dds",
+        "RotationMap1": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_wall01_n.dds",
+        "GlossMap": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_wall01_s.dds",
+        "EmissiveMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/bel_arch_rakata_int_wall_raw.mat",
+      "sourceSha256": "c142f0334c2afd99b8f7b5fe2da7e6e1788f57da3c2b8808f8f6d98a5e734dc8",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_wall_raw_d.dds",
+        "RotationMap1": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_int_wall_raw_n.dds",
+        "GlossMap": "/resources/art/defaultassets/black.dds",
+        "EmissiveMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/bel_arch_rakata_statue.mat",
+      "sourceSha256": "7fd5abf14febad44f838eb848be0c58573f5b340f5e239029dc5c550b2fb881a",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_statue_d.dds",
+        "RotationMap1": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_statue_n.dds",
+        "GlossMap": "/resources/art/static/area/bel_belsavis/arch/texture/bel_arch_rakata_statue_s.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/ord_env_boulder_overhang.mat",
+      "sourceSha256": "4aa18ac3f4618eaf5bc696bd7d6455d7834eb5c4645cb42285bb1c52df9a3eba",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulder_overhang_d.dds",
+        "RotationMap1": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulder_overhang_n.dds",
+        "GlossMap": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulder_overhang_s.dds",
+        "EmissiveMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/ord_env_boulders_no_moss.mat",
+      "sourceSha256": "7420204b4eab8125f56872f90cb4794cc52de9eb2ce185f42e15ef6499c9b642",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulders_no_moss_d.dds",
+        "RotationMap1": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulders_no_moss_n.dds",
+        "GlossMap": "/resources/art/static/area/ord_ordmantell/env/texture/ord_env_boulders_s.dds",
+        "EmissiveMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/ter_bel_rock01.mat",
+      "sourceSha256": "8b33f43c272cbf7bb8c72c10d25a99403343972cbc6d05b3862a14c3815ebc07",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock01_d.dds",
+        "RotationMap1": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock01_n.dds",
+        "GlossMap": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock01_s.dds",
+        "EmissiveMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/ter_bel_rock03.mat",
+      "sourceSha256": "933395750b3082236cab7238ba7fd579dffdff5beb998fdc6cf7d95f5cc5d9e8",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock03_d.dds",
+        "RotationMap1": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock03_n.dds",
+        "GlossMap": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock03_s.dds",
+        "EmissiveMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/ter_bel_rock04.mat",
+      "sourceSha256": "f08b002525766feb0639927363716f1b750c11b09f369ef665bec1efaedb3cf1",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock04_d.dds",
+        "RotationMap1": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock04_n.dds",
+        "GlossMap": "/resources/art/static/area/bel_belsavis/terrain_map/ter_bel_rock04_s.dds",
+        "EmissiveMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    },
+    {
+      "path": "/resources/art/shaders/materials/util_collision_hidden.mat",
+      "sourceSha256": "571403a3b6e29fa5dd1aa8fa6e48f40ceda3a9b1e5b0b3ba1164962950d7f6ac",
+      "family": "Uber",
+      "textures": {
+        "DiffuseMap": "/resources/art/util/texture/util_collision_hidden_d.dds",
+        "RotationMap1": "/resources/art/util/texture/util_collision_hidden_01_n.dds",
+        "GlossMap": "/resources/art/defaultassets/black.dds"
+      },
+      "approximation": "A1 gamma, packed normal, gloss-to-GGX and specular luminance adapter"
+    }
+  ],
+  "placements": [
+    {
+      "id": "4611686124553325276",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          82.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -35.60000228881836
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          69.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686124553325277",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          82.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.60000228881836
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          69.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686124553325429",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          60.7318000793457,
+          0.0,
+          0.0,
+          82.5
+        ],
+        [
+          0.0,
+          60.7318000793457,
+          0.0,
+          -39.40010070800781
+        ],
+        [
+          0.0,
+          0.0,
+          60.7318000793457,
+          69.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415670",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          82.52040100097656
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          75.206298828125
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415673",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          76.20000457763672
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          69.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415674",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          82.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          75.19999694824219
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415675",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          88.80000305175781
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          69.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415676",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          82.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          62.70000076293945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415685",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.9238795042037964,
+          0.0,
+          -0.3826834559440613,
+          76.66999816894531
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.3826834559440613,
+          0.0,
+          0.9238795042037964,
+          66.58719635009766
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415686",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.9238795042037964,
+          0.0,
+          -0.3826834559440613,
+          80.11780548095703
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.3826834559440613,
+          0.0,
+          0.9238795042037964,
+          74.7260971069336
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415687",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.9238795042037964,
+          0.0,
+          -0.3826834559440613,
+          88.31090545654297
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.3826834559440613,
+          0.0,
+          0.9238795042037964,
+          71.40899658203125
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415688",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.9238795042037964,
+          0.0,
+          -0.3826834559440613,
+          84.90130615234375
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.3826834559440613,
+          0.0,
+          0.9238795042037964,
+          63.17770004272461
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415689",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.7071067690849304,
+          0.0,
+          -0.7071067690849304,
+          78.02760314941406
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.7071067690849304,
+          0.0,
+          0.7071067690849304,
+          64.53790283203125
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415690",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.7071067690849304,
+          0.0,
+          -0.7071067690849304,
+          78.09830474853516
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.7071067690849304,
+          0.0,
+          0.7071067690849304,
+          73.37670135498047
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415691",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.7071067690849304,
+          0.0,
+          -0.7071067690849304,
+          86.93710327148438
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.7071067690849304,
+          0.0,
+          0.7071067690849304,
+          73.44750213623047
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415692",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.7071067690849304,
+          0.0,
+          -0.7071067690849304,
+          86.93700408935547
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.7071067690849304,
+          0.0,
+          0.7071067690849304,
+          64.53790283203125
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415693",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.3826834261417389,
+          0.0,
+          -0.9238795042037964,
+          80.06600189208984
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.9238795042037964,
+          0.0,
+          0.3826834261417389,
+          63.164100646972656
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415694",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.3826834261417389,
+          0.0,
+          -0.9238795042037964,
+          76.7489013671875
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.9238795042037964,
+          0.0,
+          0.3826834261417389,
+          71.3572006225586
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415695",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.3826834261417389,
+          0.0,
+          -0.9238795042037964,
+          84.88780212402344
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.9238795042037964,
+          0.0,
+          0.3826834261417389,
+          74.80509948730469
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686141873415696",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.3826834261417389,
+          0.0,
+          -0.9238795042037964,
+          88.29730224609375
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -39.20000076293945
+        ],
+        [
+          0.9238795042037964,
+          0.0,
+          0.3826834261417389,
+          66.57360076904297
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142220981389",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.2985764443874359,
+          -0.02914249338209629,
+          0.9539406895637512,
+          80.98419952392578
+        ],
+        [
+          0.006301515270024538,
+          0.9995720982551575,
+          0.02856418676674366,
+          -39.2035026550293
+        ],
+        [
+          -0.9543648958206177,
+          -0.002517321379855275,
+          0.29863232374191284,
+          65.55419921875
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142220981390",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.3568767309188843,
+          0.11981447786092758,
+          0.6810864210128784,
+          78.9780044555664
+        ],
+        [
+          0.019318027421832085,
+          0.7644047737121582,
+          -0.14459386467933655,
+          -39.39990234375
+        ],
+        [
+          -0.6912749409675598,
+          0.08321695029735565,
+          0.3475760519504547,
+          67.10900115966797
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142220981392",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.5477666258811951,
+          -0.01684984751045704,
+          -0.6131961345672607,
+          79.68970489501953
+        ],
+        [
+          0.025285886600613594,
+          0.8220111727714539,
+          2.0227362007574357e-09,
+          -39.432498931884766
+        ],
+        [
+          0.612906277179718,
+          -0.01885361224412918,
+          0.5480256676673889,
+          71.50420379638672
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142220981393",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.7806432843208313,
+          0.018047211691737175,
+          0.2580930292606354,
+          83.37960052490234
+        ],
+        [
+          0.013517815619707108,
+          0.8221213221549988,
+          -0.01660023257136345,
+          -39.462501525878906
+        ],
+        [
+          -0.2583698630332947,
+          -0.011515084654092789,
+          -0.7806754112243652,
+          65.5073013305664
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142220981398",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.11746472865343094,
+          -0.1248936578631401,
+          -0.7590776085853577,
+          86.59160614013672
+        ],
+        [
+          0.010449911467730999,
+          0.7680639028549194,
+          -0.12475511431694031,
+          -39.391700744628906
+        ],
+        [
+          0.7692126035690308,
+          0.008637922815978527,
+          0.11761186271905899,
+          68.81680297851562
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142220981405",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.7800198793411255,
+          -0.020230961963534355,
+          0.3924120366573334,
+          84.53170013427734
+        ],
+        [
+          0.021481472998857498,
+          0.8731327056884766,
+          0.0023147540632635355,
+          -39.45970153808594
+        ],
+        [
+          -0.3923455476760864,
+          0.007584193721413612,
+          0.7802788019180298,
+          72.22989654541016
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142220981469",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.7071067690849304,
+          0.0,
+          -0.7071067690849304,
+          79.8528060913086
+        ],
+        [
+          0.0,
+          0.953000009059906,
+          0.0,
+          -38.726600646972656
+        ],
+        [
+          0.7071067690849304,
+          0.0,
+          0.7071067690849304,
+          68.51069641113281
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142220981471",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.7071067690849304,
+          0.0,
+          -0.7071067690849304,
+          80.16920471191406
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -38.82429885864258
+        ],
+        [
+          0.7071067690849304,
+          0.0,
+          0.7071067690849304,
+          66.46520233154297
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142220981477",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.2919127643108368,
+          0.0,
+          0.9564449191093445,
+          79.88059997558594
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -38.76140213012695
+        ],
+        [
+          -0.9564449191093445,
+          0.0,
+          0.2919127643108368,
+          71.11470031738281
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142220981478",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.2919127643108368,
+          0.0,
+          0.9564449191093445,
+          79.40060424804688
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -38.83259963989258
+        ],
+        [
+          -0.9564449191093445,
+          0.0,
+          0.2919127643108368,
+          70.15339660644531
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142220981480",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.8950931429862976,
+          0.0,
+          -0.44587916135787964,
+          84.45140075683594
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -38.70940017700195
+        ],
+        [
+          0.44587916135787964,
+          0.0,
+          0.8950931429862976,
+          71.75019836425781
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142220981481",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.7491915822029114,
+          0.0,
+          -0.6623533368110657,
+          84.55990600585938
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -38.83330154418945
+        ],
+        [
+          0.6623533368110657,
+          0.0,
+          0.7491915822029114,
+          70.58670043945312
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142220981483",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.7435849905014038,
+          0.0,
+          0.6686414480209351,
+          86.10790252685547
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -38.745399475097656
+        ],
+        [
+          -0.6686414480209351,
+          0.0,
+          0.7435849905014038,
+          69.4364013671875
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142220981484",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.7435849905014038,
+          0.0,
+          0.6686414480209351,
+          85.90230560302734
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -38.79960250854492
+        ],
+        [
+          -0.6686414480209351,
+          0.0,
+          0.7435849905014038,
+          68.25900268554688
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142220981486",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.05299297720193863,
+          0.0,
+          0.9985948801040649,
+          81.283203125
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -38.82720184326172
+        ],
+        [
+          -0.9985948801040649,
+          0.0,
+          0.05299297720193863,
+          66.122802734375
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940014",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.9651365280151367,
+          -0.035567570477724075,
+          -0.25931915640830994,
+          82.64990234375
+        ],
+        [
+          -0.04387896880507469,
+          0.9986897706985474,
+          0.026331355795264244,
+          -38.79030227661133
+        ],
+        [
+          0.2580428421497345,
+          0.03679201006889343,
+          -0.9654326438903809,
+          66.34819793701172
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940016",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.9086494445800781,
+          -0.04802782088518143,
+          0.4147885739803314,
+          83.39240264892578
+        ],
+        [
+          0.04369108006358147,
+          0.9988459944725037,
+          0.019943950697779655,
+          -38.74480056762695
+        ],
+        [
+          -0.41526779532432556,
+          5.019384730076126e-07,
+          0.9096992015838623,
+          66.16510009765625
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940017",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.829830527305603,
+          0.03266295790672302,
+          -0.5570587515830994,
+          80.63550567626953
+        ],
+        [
+          0.015504004433751106,
+          0.996550440788269,
+          0.08152816444635391,
+          -38.76740264892578
+        ],
+        [
+          0.5578001141548157,
+          -0.07629120349884033,
+          0.8264615535736084,
+          71.10359954833984
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940019",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.9096981287002563,
+          0.0012918927241116762,
+          0.4152674973011017,
+          80.79060363769531
+        ],
+        [
+          -0.0023974834475666285,
+          0.8674963116645813,
+          0.0016658635577186942,
+          -38.73570251464844
+        ],
+        [
+          -0.41526323556900024,
+          -0.0021783183328807354,
+          0.9096978306770325,
+          66.69950103759766
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940020",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.7279557585716248,
+          0.03944278135895729,
+          0.6762349605560303,
+          80.56830596923828
+        ],
+        [
+          0.032853227108716965,
+          0.8666027784347534,
+          -0.031078564003109932,
+          -38.690101623535156
+        ],
+        [
+          -0.67722088098526,
+          -0.0003571950364857912,
+          -0.728403627872467,
+          71.89839935302734
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940021",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.9025907516479492,
+          0.03197923302650452,
+          -0.41650038957595825,
+          79.67980194091797
+        ],
+        [
+          0.047576405107975006,
+          0.8664003014564514,
+          -0.015610436908900738,
+          -38.765499114990234
+        ],
+        [
+          0.41556403040885925,
+          -0.029733208939433098,
+          -0.9028372764587402,
+          70.88739776611328
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940032",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.7069360017776489,
+          0.0822543278336525,
+          -0.702478289604187,
+          78.93720245361328
+        ],
+        [
+          -0.06356315314769745,
+          0.9965840578079224,
+          0.05272515118122101,
+          -38.749900817871094
+        ],
+        [
+          0.7044155597686768,
+          0.007378425914794207,
+          0.7097494602203369,
+          69.40049743652344
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940033",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.9015949368476868,
+          0.042841970920562744,
+          -0.4173724055290222,
+          79.02960205078125
+        ],
+        [
+          0.06460005044937134,
+          0.8654422760009766,
+          -0.022708984091877937,
+          -38.71470260620117
+        ],
+        [
+          0.41542792320251465,
+          -0.041599296033382416,
+          -0.9022837281227112,
+          69.67780303955078
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940176",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.7633853554725647,
+          0.12514998018741608,
+          -0.6337036490440369,
+          80.01410675048828
+        ],
+        [
+          0.004577332641929388,
+          0.9799786806106567,
+          0.19904980063438416,
+          -38.72700119018555
+        ],
+        [
+          0.6459271311759949,
+          -0.15485237538814545,
+          0.7475284934043884,
+          71.67440032958984
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940177",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.9939311146736145,
+          0.013998405076563358,
+          -0.03832827880978584,
+          80.09380340576172
+        ],
+        [
+          0.0176941379904747,
+          0.8665655255317688,
+          -0.04261964559555054,
+          -38.761600494384766
+        ],
+        [
+          0.037614382803440094,
+          -0.037743013352155685,
+          -0.9927466511726379,
+          70.78910064697266
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940179",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.5813371539115906,
+          0.03513163700699806,
+          -0.8129040002822876,
+          79.64459991455078
+        ],
+        [
+          -0.02264609932899475,
+          0.9993789792060852,
+          0.026995565742254257,
+          -38.79970169067383
+        ],
+        [
+          0.813347578048706,
+          0.0027155783027410507,
+          0.581771731376648,
+          69.77660369873047
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940180",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.7305617332458496,
+          0.042841587215662,
+          -0.6731480956077576,
+          80.39850616455078
+        ],
+        [
+          0.06845292448997498,
+          0.8654422760009766,
+          -0.0018586746882647276,
+          -38.77580261230469
+        ],
+        [
+          0.6717296838760376,
+          -0.041599515825510025,
+          -0.7319149971008301,
+          70.27770233154297
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940181",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.901187539100647,
+          0.056676775217056274,
+          -0.4160824418067932,
+          79.60400390625
+        ],
+        [
+          0.061185549944639206,
+          0.8656347393989563,
+          0.022518470883369446,
+          -38.73789978027344
+        ],
+        [
+          0.4168265759944916,
+          -0.004529308993369341,
+          -0.9028841257095337,
+          70.09960174560547
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940182",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.985162615776062,
+          -0.033749550580978394,
+          0.1682724505662918,
+          84.20220184326172
+        ],
+        [
+          -0.026643812656402588,
+          0.998662531375885,
+          0.044308651238679886,
+          -38.79389953613281
+        ],
+        [
+          -0.16954277455806732,
+          0.03916780650615692,
+          -0.9847441911697388,
+          66.85330200195312
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940187",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.9086493253707886,
+          -0.012727925553917885,
+          0.41736605763435364,
+          84.28739929199219
+        ],
+        [
+          0.043690986931324005,
+          0.9969467520713806,
+          -0.06471709907054901,
+          -38.756900787353516
+        ],
+        [
+          -0.4152680039405823,
+          0.07704028487205505,
+          0.9064310789108276,
+          66.4666976928711
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940188",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.009845267981290817,
+          -0.07223443686962128,
+          0.9973390698432922,
+          85.23570251464844
+        ],
+        [
+          -0.16651186347007751,
+          0.9835804104804993,
+          0.06959420442581177,
+          -38.7666015625
+        ],
+        [
+          -0.9859902858734131,
+          -0.16538360714912415,
+          -0.021711502224206924,
+          70.893798828125
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940189",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.9214209318161011,
+          0.049266792833805084,
+          -0.37055107951164246,
+          85.9957046508789
+        ],
+        [
+          0.04523835331201553,
+          0.8659386038780212,
+          0.03887798264622688,
+          -38.736900329589844
+        ],
+        [
+          0.37224170565605164,
+          0.016714466735720634,
+          -0.9219608306884766,
+          70.464599609375
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940190",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.583293080329895,
+          -0.14905047416687012,
+          0.7984692454338074,
+          85.94060516357422
+        ],
+        [
+          -0.06806351989507675,
+          0.9885312914848328,
+          0.13480804860591888,
+          -38.74980163574219
+        ],
+        [
+          -0.8094050288200378,
+          0.024285972118377686,
+          -0.5867483615875244,
+          69.127197265625
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940191",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.07172372937202454,
+          -0.08417662233114243,
+          0.9938662052154541,
+          84.92880249023438
+        ],
+        [
+          0.005929927807301283,
+          0.9964508414268494,
+          0.08396759629249573,
+          -38.776100158691406
+        ],
+        [
+          -0.9974068999290466,
+          -0.00012891377264168113,
+          0.07196833193302155,
+          68.75920104980469
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940192",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.9230335354804993,
+          0.0046743592247366905,
+          -0.3708054721355438,
+          85.57279968261719
+        ],
+        [
+          -0.031350698322057724,
+          0.8633240461349487,
+          0.092277392745018,
+          -38.71590042114258
+        ],
+        [
+          0.36966630816459656,
+          0.08488844335079193,
+          -0.9180520176887512,
+          68.68939971923828
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940193",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.7285645008087158,
+          -0.030775055289268494,
+          0.6757974028587341,
+          85.02100372314453
+        ],
+        [
+          -0.007605153601616621,
+          0.7305281758308411,
+          0.05326784402132034,
+          -38.729000091552734
+        ],
+        [
+          -0.6773203015327454,
+          0.024900823831558228,
+          -0.72752445936203,
+          69.43920135498047
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940194",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.17219524085521698,
+          0.06976468861103058,
+          -0.9825893044471741,
+          80.51140594482422
+        ],
+        [
+          -0.037321336567401886,
+          0.9963107109069824,
+          0.07727935165166855,
+          -38.77730178833008
+        ],
+        [
+          0.9843555688858032,
+          0.04997868090867996,
+          -0.16895624995231628,
+          67.30680084228516
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940195",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.094302237033844,
+          0.03652406111359596,
+          0.9946529269218445,
+          79.9966049194336
+        ],
+        [
+          -0.03165304660797119,
+          0.8663957118988037,
+          -0.03927411511540413,
+          -38.73659896850586
+        ],
+        [
+          -0.9950402975082397,
+          -0.024099286645650864,
+          0.09551487118005753,
+          66.95880126953125
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940196",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.34893524646759033,
+          0.17086473107337952,
+          -0.9214388132095337,
+          78.91210174560547
+        ],
+        [
+          -0.03550411015748978,
+          0.9849427938461304,
+          0.16919554769992828,
+          -38.735599517822266
+        ],
+        [
+          0.936474084854126,
+          -0.02632342465221882,
+          0.3497476577758789,
+          68.010498046875
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940197",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.6316510438919067,
+          -0.029440240934491158,
+          0.7745096683502197,
+          79.16940307617188
+        ],
+        [
+          -0.07138947397470474,
+          0.8651949167251587,
+          -0.014520838856697083,
+          -38.73400115966797
+        ],
+        [
+          -0.7719588875770569,
+          -0.05592247098684311,
+          -0.632395327091217,
+          67.63749694824219
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940201",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.16547924280166626,
+          -0.04802790284156799,
+          -0.9850431084632874,
+          84.69380187988281
+        ],
+        [
+          0.007956292480230331,
+          0.9988459944725037,
+          -0.04736429825425148,
+          -38.77009963989258
+        ],
+        [
+          0.9861811995506287,
+          5.176832473807735e-07,
+          0.16567040979862213,
+          67.27249908447266
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940203",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.499204158782959,
+          0.056190624833106995,
+          -0.8646605014801025,
+          80.40330505371094
+        ],
+        [
+          -0.017755920067429543,
+          0.9970221519470215,
+          0.07504346966743469,
+          -38.75920104980469
+        ],
+        [
+          0.8663024306297302,
+          0.05281485617160797,
+          -0.4967198967933655,
+          66.3594970703125
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940204",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.9998385906219482,
+          0.0009183943038806319,
+          -0.017942385748028755,
+          82.71580505371094
+        ],
+        [
+          -0.0015644492814317346,
+          0.9904482960700989,
+          0.13787569105625153,
+          -38.76679992675781
+        ],
+        [
+          0.017897630110383034,
+          0.13788151741027832,
+          -0.9902870059013367,
+          65.4175033569336
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940205",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.4152717888355255,
+          0.01986478827893734,
+          0.9094091653823853,
+          82.1195068359375
+        ],
+        [
+          -0.0016658599488437176,
+          0.8672071099281311,
+          -0.025932161137461662,
+          -38.7588996887207
+        ],
+        [
+          -0.9096958637237549,
+          -0.010656234808266163,
+          -0.41509342193603516,
+          65.64759826660156
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940210",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.5545170903205872,
+          -0.05357842519879341,
+          0.8304457664489746,
+          84.09100341796875
+        ],
+        [
+          0.006739805918186903,
+          0.9981816411018372,
+          0.05989995226264,
+          -38.77370071411133
+        ],
+        [
+          -0.8321450352668762,
+          -0.02761850319802761,
+          0.553869903087616,
+          71.32869720458984
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940212",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.04113056883215904,
+          -0.060914136469364166,
+          0.9900939464569092,
+          84.20630645751953
+        ],
+        [
+          0.01565573550760746,
+          0.7289251685142517,
+          0.0835011899471283,
+          -38.72890090942383
+        ],
+        [
+          -0.9938259720802307,
+          0.014003751799464226,
+          -0.03966071829199791,
+          72.0177993774414
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940213",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.9357893466949463,
+          0.014094548299908638,
+          0.3522777259349823,
+          81.85480499267578
+        ],
+        [
+          -0.02484861947596073,
+          0.9993524551391602,
+          0.02602393366396427,
+          -38.77360153198242
+        ],
+        [
+          -0.3516828119754791,
+          -0.03310653567314148,
+          0.9355336427688599,
+          72.05259704589844
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940214",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.4747774302959442,
+          -0.0768960565328598,
+          0.8756307363510132,
+          82.1592025756836
+        ],
+        [
+          0.03389689326286316,
+          0.8640462160110474,
+          0.08244868367910385,
+          -38.76750183105469
+        ],
+        [
+          -0.8794528841972351,
+          -0.008209683932363987,
+          0.4758918285369873,
+          72.37149810791016
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940215",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.9096981287002563,
+          0.0012918927241116762,
+          0.4152674973011017,
+          81.897705078125
+        ],
+        [
+          -0.0023974834475666285,
+          0.8674963116645813,
+          0.0016658635577186942,
+          -38.768699645996094
+        ],
+        [
+          -0.41526323556900024,
+          -0.0021783183328807354,
+          0.9096978306770325,
+          71.5376968383789
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940216",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.9095165729522705,
+          0.007266907021403313,
+          0.4156041145324707,
+          84.66150665283203
+        ],
+        [
+          -0.03877704590559006,
+          0.9969702959060669,
+          0.06742829084396362,
+          -38.73990249633789
+        ],
+        [
+          -0.4138549566268921,
+          -0.07744304835796356,
+          0.9070428013801575,
+          70.78079986572266
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940218",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.7026013731956482,
+          -0.0006093829870223999,
+          0.7115833163261414,
+          84.48870086669922
+        ],
+        [
+          0.000286258349660784,
+          0.8674997687339783,
+          0.0007045317906886339,
+          -38.752201080322266
+        ],
+        [
+          -0.7115836143493652,
+          -0.00025270998594351113,
+          0.7026013731956482,
+          68.73729705810547
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940221",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.784895122051239,
+          0.04304277151823044,
+          0.7938094735145569,
+          79.42350006103516
+        ],
+        [
+          -0.039564430713653564,
+          0.8385957479476929,
+          -0.041457876563072205,
+          -38.736900329589844
+        ],
+        [
+          -0.7948907017707825,
+          0.0007617352530360222,
+          0.7858909368515015,
+          69.04280090332031
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940229",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.9208303093910217,
+          0.032805878669023514,
+          -0.3743935227394104,
+          85.91360473632812
+        ],
+        [
+          0.0315551832318306,
+          0.8668460845947266,
+          0.022255772724747658,
+          -38.7327995300293
+        ],
+        [
+          0.3751037120819092,
+          0.00761165376752615,
+          -0.9209590554237366,
+          69.743896484375
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940231",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.7026013731956482,
+          -0.0006093829870223999,
+          0.7115833163261414,
+          85.36009979248047
+        ],
+        [
+          0.000286258349660784,
+          0.8674997687339783,
+          0.0007045317906886339,
+          -38.74440002441406
+        ],
+        [
+          -0.7115836143493652,
+          -0.00025270998594351113,
+          0.7026013731956482,
+          68.23600006103516
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686142579940237",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.07997247576713562,
+          0.053622450679540634,
+          0.9948787093162537,
+          79.27750396728516
+        ],
+        [
+          -0.029729381203651428,
+          0.8653169870376587,
+          -0.0643642321228981,
+          -38.72780227661133
+        ],
+        [
+          -0.9963536262512207,
+          -0.030123500153422356,
+          -0.07793357968330383,
+          68.41549682617188
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686160115790137",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          1.8477590084075928,
+          0.0,
+          -0.7653669118881226,
+          84.87260437011719
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -35.20000076293945
+        ],
+        [
+          0.7653669118881226,
+          0.0,
+          1.8477590084075928,
+          63.27190017700195
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686160115790138",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          2.0,
+          0.0,
+          1.9558787300866243e-07,
+          82.5
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -35.20000076293945
+        ],
+        [
+          -1.9558787300866243e-07,
+          0.0,
+          2.0,
+          62.79999923706055
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686160115790139",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          1.8477590084075928,
+          0.0,
+          0.7653669118881226,
+          80.12740325927734
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -35.20000076293945
+        ],
+        [
+          -0.7653669118881226,
+          0.0,
+          1.8477590084075928,
+          63.27190017700195
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686160115790140",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.7653668522834778,
+          0.0,
+          1.8477590084075928,
+          76.77200317382812
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -35.20000076293945
+        ],
+        [
+          -1.8477590084075928,
+          0.0,
+          0.7653668522834778,
+          66.62740325927734
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686160115790141",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.765366792678833,
+          0.0,
+          1.8477591276168823,
+          76.77190399169922
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -35.20000076293945
+        ],
+        [
+          -1.8477591276168823,
+          0.0,
+          -0.765366792678833,
+          71.37259674072266
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686160115790142",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -1.8477590084075928,
+          0.0,
+          0.7653669714927673,
+          80.12740325927734
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -35.20000076293945
+        ],
+        [
+          -0.7653669714927673,
+          0.0,
+          -1.8477590084075928,
+          74.72810363769531
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686160115790143",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -2.0,
+          0.0,
+          -1.7484555314695172e-07,
+          82.5
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -35.20000076293945
+        ],
+        [
+          1.7484555314695172e-07,
+          0.0,
+          -2.0,
+          75.19999694824219
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686160115790144",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -1.8477590084075928,
+          0.0,
+          -0.7653669714927673,
+          84.87260437011719
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -35.20000076293945
+        ],
+        [
+          0.7653669714927673,
+          0.0,
+          -1.8477590084075928,
+          74.72810363769531
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686160115790145",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.7492132186889648,
+          0.0,
+          -1.854367733001709,
+          88.2280044555664
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -35.20000076293945
+        ],
+        [
+          1.854367733001709,
+          0.0,
+          -0.7492132186889648,
+          71.37259674072266
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686160115790146",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          0.7653668522834778,
+          0.0,
+          -1.8477590084075928,
+          88.2280044555664
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -35.20000076293945
+        ],
+        [
+          1.8477590084075928,
+          0.0,
+          0.7653668522834778,
+          66.62740325927734
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686160115790147",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -8.742277657347586e-08,
+          0.0,
+          -2.0,
+          88.70000457763672
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -35.20000076293945
+        ],
+        [
+          2.0,
+          0.0,
+          -8.742277657347586e-08,
+          69.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686160115790148",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          1.4142135381698608,
+          0.0,
+          1.4142135381698608,
+          78.11590576171875
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -35.21039962768555
+        ],
+        [
+          -1.4142135381698608,
+          0.0,
+          1.4142135381698608,
+          64.61589813232422
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686160115790151",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -1.4142135381698608,
+          0.0,
+          -1.4142135381698608,
+          86.88410186767578
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -35.21039962768555
+        ],
+        [
+          1.4142135381698608,
+          0.0,
+          -1.4142135381698608,
+          73.38410186767578
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686160115790153",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -1.4142135381698608,
+          0.0,
+          1.4142135381698608,
+          78.11590576171875
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -35.21039962768555
+        ],
+        [
+          -1.4142135381698608,
+          0.0,
+          -1.4142135381698608,
+          73.38410186767578
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686160115790157",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          1.4142135381698608,
+          0.0,
+          -1.4142135381698608,
+          86.88410186767578
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -35.21039962768555
+        ],
+        [
+          1.4142135381698608,
+          0.0,
+          1.4142135381698608,
+          64.61589813232422
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686189081753390",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -0.19902586936950684,
+          0.0,
+          -0.9799942374229431,
+          83.935302734375
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -38.83380126953125
+        ],
+        [
+          0.9799942374229431,
+          0.0,
+          -0.19902586936950684,
+          66.25140380859375
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "4611686332054430013",
+      "parent": "0",
+      "worldMatrix": [
+        [
+          -8.742277657347586e-08,
+          0.0,
+          2.0,
+          76.30000305175781
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -35.20000076293945
+        ],
+        [
+          -2.0,
+          0.0,
+          -8.742277657347586e-08,
+          69.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "blender": "5.2.1 LTS",
+  "units": "source units 1:1"
+}
