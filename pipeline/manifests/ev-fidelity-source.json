@@ -1,0 +1,85 @@
+{
+  "evidence": "Client-derived exact archive resources",
+  "resources": [
+    {
+      "path": "/resources/world/areas/4611686096259570491/area.dat",
+      "sha256": "96f2a37775f625425a1bbc71accdf6af3d8032bf696c49e8076dc8443184a15b"
+    },
+    {
+      "path": "/resources/world/areas/4611686096259570491/01_surface.dat",
+      "sha256": "90c6d9e58362e33175ba3b761ffd1ae108e354f33b23799e6e3622313939d536"
+    },
+    {
+      "path": "/resources/art/static/area/all_all/arch/fadeportal/all_arch_fadeportal_bel_raid_snow_sky.gr2",
+      "sha256": "7b1cb06c33dcf6f0776adb4841b40498d8ef2179f11f6dcb4b308cc59b7481f2"
+    },
+    {
+      "path": "/resources/art/shaders/materials/all_arch_fadeportal_bel_raid_snow_sky.mat",
+      "sha256": "3b722ac87a084ec283f86f6eb787addca1fbea3f0d7139057e59a35370f96d9d"
+    },
+    {
+      "path": "/resources/art/static/area/all_all/arch/fadeportal/texture/all_arch_fadeportal_bel_raid_snow_sky_d.dds",
+      "sha256": "ed2c3394ca3a80a588eca8ff5c71b921c7b8634f387e82737b583d8dcc966382"
+    },
+    {
+      "path": "/resources/art/shaders/materials/battledroid_warbot_rakata_v01.mat",
+      "sha256": "3d8dcd3300a71cb40c77ea659c063df7ed69c777e17266fdb3f5bb238be2598b"
+    },
+    {
+      "path": "/resources/art/dynamic/droid/battle_droid/texture/___psd/battledroid_warbot_rakata_v01_d.dds",
+      "sha256": "d50f2e84a976858ce90d53df4b71e7fefb4ae85c15726805716d97191b1411e3"
+    },
+    {
+      "path": "/resources/art/dynamic/droid/battle_droid/texture/___psd/battledroid_warbot_rakata_v01_n.dds",
+      "sha256": "1c309c745c02f7e65ccf14ee1ad4021bb1da46e87adcd9a2fe9f6a5295b44bf7"
+    }
+  ],
+  "horizon": {
+    "id": "4611686142666070025",
+    "sourceLine": 18094,
+    "sourceModel": "/resources/art/static/area/all_all/arch/fadeportal/all_arch_fadeportal_bel_raid_snow_sky.gr2",
+    "scene": "res://Assets/Maps/eternity_vault/surface-horizon.glb",
+    "position": [
+      -64.0999984741,
+      16.5722999573,
+      -44.4500007629
+    ],
+    "rotation": [
+      3.4150900774e-06,
+      -90.0,
+      -90.0
+    ],
+    "scale": [
+      399.999908447,
+      399.999908447,
+      400.0
+    ],
+    "material": {
+      "DiffuseMap": "art\\static\\area\\all_all\\arch\\fadeportal\\texture\\all_arch_fadeportal_bel_raid_snow_sky_d",
+      "UvScaling": "1,1",
+      "OpacityFadeMinDistance": "0",
+      "OpacityFadeMaxDistance": "1000",
+      "OpacityFadeMinOpacity": "0",
+      "OpacityFadeMaxOpacity": "1"
+    },
+    "textureSize": [
+      16,
+      16
+    ],
+    "boss": {
+      "sourceMaterial": "/resources/art/shaders/materials/battledroid_warbot_rakata_v01.mat",
+      "textureSize": [
+        1024,
+        1024
+      ],
+      "emissionMaskRange": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "limits": [
+    "OpacityFade is adapted using authored distances; native fade-space semantics remain unverified.",
+    "Packed Creature emissive response follows the existing source shader adapter; exact lighting parity is not asserted."
+  ]
+}

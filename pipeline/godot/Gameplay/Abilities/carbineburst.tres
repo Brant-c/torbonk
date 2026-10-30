@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+
+Id = "carbineburst"
+
+Title = "Carbine Burst"
+
+Icon = "barrage"
+
+StartsUnlocked = false
+
+NearbyTriggerCount = 1
+
+KnockbackDistance = 0
+
+RequireGesture = true
+
+Damage = 25
+
+CooldownSeconds = 6
+
+Range = 0.85
+
+Radius = 0.75
+
+Area = 5
+
+SplashMultiplier = 1
+
+WindupSeconds = 0.12
+
+ChannelSeconds = 1.2
+
+TickSeconds = 0.3
+
+GestureSeconds = 1.2
+
+RecoverySeconds = 0.2
+
+StartClip = "Agent/RifleAutoStart"
+
+LoopClip = "Agent/RifleAutoLoop"
+
+EndClip = "Agent/RifleAutoEnd"
+
+PresentationKind = "rifle"
+
+ShotAudio = "res://Assets/D3/Audio/28023533.wav"
+
+MaintainChannelGesture = true
+
+Description = "Short-range automatic cone fire. Full damage to every enemy in the cone; Concealment talents reward firing into controlled packs."

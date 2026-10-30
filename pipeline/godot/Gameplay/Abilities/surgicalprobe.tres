@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "surgicalprobe"
+StartsUnlocked = false
+Title = "Surgical Probe"
+Icon = "advancedmedicalprobe"
+Category = 1
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+Effect = 2
+Damage = 1
+ShieldCapacity = 20
+ShieldDuration = 6
+CooldownSeconds = 6
+Range = 1.0
+Area = 0
+WindupSeconds = 0.0
+ChannelSeconds = 0.0
+RecoverySeconds = 0.4
+GestureSeconds = 1.2
+StartClip = "Agent/Medical"
+LoopClip = "Agent/Medical"
+EndClip = ""
+CastAudio = ""
+PresentationKind = "impact"
+Description = "Tactical self healing. Surgical Probe consumes Tactical Advantage."
+RequireGesture = true
+
+Healing = 16
+
+HealingCap = 30
+
+HealthThreshold = 0.85
+
+PeriodicHealing = 0
+
+PeriodicDuration = 0
+
+ImpactAudio = ""

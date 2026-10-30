@@ -1,0 +1,35 @@
+{
+  "SchemaVersion": 1,
+  "Profiles": {
+    "sorcerer": {},
+    "assassin": {
+      "assassin_madness.claws_of_decay": 1,
+      "assassin_madness.creeping_terror": 1,
+      "darkness.dark_ward": 1,
+      "darkness.lightning_reflexes": 1,
+      "deception.thrashing_blades": 1,
+      "assassin_madness.deathmark": 1,
+      "assassin_madness.raze": 1,
+      "darkness.dark_embrace": 1,
+      "darkness.premonition": 1,
+      "assassin_madness.death_field": 1,
+      "assassin_madness.haunted_dreams": 1,
+      "darkness.eye_of_the_storm": 1
+    },
+    "juggernaut": {},
+    "marauder": {
+      "annihilation.deep_wounds": 1,
+      "annihilation.heal": 1,
+      "annihilation.siphon": 1,
+      "carnage.alacrity": 1,
+      "carnage.frenzy": 1,
+      "carnage.relentless": 1,
+      "carnage.cleave": 1,
+      "carnage.flurry": 1,
+      "carnage.gore": 1,
+      "carnage.bloodletting": 1,
+      "carnage.overwhelm": 1,
+      "carnage.precision": 1
+    }
+  }
+}

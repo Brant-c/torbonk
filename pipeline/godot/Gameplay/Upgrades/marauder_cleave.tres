@@ -3,10 +3,10 @@
 [resource]
 script = ExtResource("1")
 Id = "marauder_cleave"
-Title = "Sweeping Ravage"
+Title = "Sweeping Blades"
 Icon = "mr_talent_bladerush"
 AbilityId = "ravage"
 Effect = 9
 Mechanic = "mr_cleave"
-MechanicalDescription = "Ravage cleaves up to four enemies."
+MechanicalDescription = "Massacre cleaves five enemies and each Ravage strike cleaves six, at full damage."
 MaximumRank = 1

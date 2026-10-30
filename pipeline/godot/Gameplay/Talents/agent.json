@@ -1,0 +1,1486 @@
+{
+  "Version": 1,
+  "Budget": 10,
+  "Trees": [
+    {
+      "Id": "medicine",
+      "Name": "Medicine"
+    },
+    {
+      "Id": "concealment",
+      "Name": "Concealment"
+    },
+    {
+      "Id": "marksmanship",
+      "Name": "Marksmanship"
+    },
+    {
+      "Id": "engineering",
+      "Name": "Engineering"
+    },
+    {
+      "Id": "agent_lethality",
+      "Name": "Lethality"
+    }
+  ],
+  "Talents": [
+    {
+      "Id": "medicine.medical_consult",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "medicine",
+      "Tier": 0,
+      "Column": 0,
+      "Name": "Medical Consult",
+      "Icon": "res://Assets/UI/icons/diagnosticscan.png",
+      "Description": "Kolto Injection healing increases by 30%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "healing",
+          "Ability": "koltoinjection",
+          "Amount": 0.3,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.medic.medical_consult"
+    },
+    {
+      "Id": "medicine.medical_engineering",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "medicine",
+      "Tier": 0,
+      "Column": 1,
+      "Name": "Medical Engineering",
+      "Icon": "res://Assets/UI/icons/luminescentcells1.png",
+      "Description": "Kolto Injection generates Tactical Advantage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "agent_medical"
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.medic.medical_engineering"
+    },
+    {
+      "Id": "medicine.surgical_precision",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "medicine",
+      "Tier": 0,
+      "Column": 2,
+      "Name": "Surgical Precision",
+      "Icon": "res://Assets/UI/icons/surveyorskit.png",
+      "Description": "Surgical Probe refunds Advantage below 30% health.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "agent_surgical"
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.medic.surgical_precision"
+    },
+    {
+      "Id": "medicine.medical_therapy",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "medicine",
+      "Tier": 1,
+      "Column": 0,
+      "Name": "Medical Therapy",
+      "Icon": "res://Assets/UI/icons/medicalcrate.png",
+      "Description": "Kolto Probe healing increases by 40%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "healing",
+          "Ability": "koltoprobe",
+          "Amount": 0.4,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.medic.medical_therapy"
+    },
+    {
+      "Id": "medicine.patient_studies",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "medicine",
+      "Tier": 1,
+      "Column": 1,
+      "Name": "Patient Studies",
+      "Icon": "res://Assets/UI/icons/imperialdatapad.png",
+      "Description": "Kolto Injection cooldown recovers faster by 25%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "cooldown",
+          "Ability": "koltoinjection",
+          "Amount": 0.25,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.medic.patient_studies"
+    },
+    {
+      "Id": "medicine.accomplished_doctor",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "medicine",
+      "Tier": 1,
+      "Column": 2,
+      "Name": "Accomplished Doctor",
+      "Icon": "res://Assets/UI/icons/accomplishedsawbones.png",
+      "Description": "Surgical Probe healing increases by 40%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "healing",
+          "Ability": "surgicalprobe",
+          "Amount": 0.4,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.medic.accomplished_doctor"
+    },
+    {
+      "Id": "concealment.collateral_strike",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "concealment",
+      "Tier": 0,
+      "Column": 0,
+      "Name": "Collateral Strike",
+      "Icon": "res://Assets/UI/icons/stockstrike.png",
+      "Description": "Both Laceration swipes cleave 50% farther and deal 30% more damage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "radius",
+          "Ability": "laceration",
+          "Amount": 0.5,
+          "Key": ""
+        },
+        {
+          "Kind": "damage",
+          "Ability": "laceration",
+          "Amount": 0.3,
+          "Key": ""
+        }
+      ],
+      "Source": "TorBonk Concealment adaptation; recovered SWTOR artwork. Retained talent ID preserves saved allocations.",
+      "IconSource": "Related recovered SWTOR artwork for adapted talent."
+    },
+    {
+      "Id": "concealment.culling",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "concealment",
+      "Tier": 0,
+      "Column": 1,
+      "Name": "Culling",
+      "Icon": "res://Assets/UI/icons/lifedrain.png",
+      "Description": "Laceration deals 40% more damage and gains 50% extra damage against stunned enemies or targets marked by Mass Debilitation.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "laceration",
+          "Amount": 0.4,
+          "Key": ""
+        },
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "agent_controlled_burst"
+        }
+      ],
+      "Source": "TorBonk Concealment adaptation; recovered SWTOR artwork. Retained talent ID preserves saved allocations.",
+      "IconSource": "Related recovered SWTOR artwork for adapted talent."
+    },
+    {
+      "Id": "concealment.acid_blade",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "concealment",
+      "Tier": 0,
+      "Column": 2,
+      "Name": "Acid Blade",
+      "Icon": "res://Assets/UI/icons/acidblade.png",
+      "Description": "Backstab applies Corrosive Dart to every target hit. If the target already has your Dart, it bursts for all remaining poison damage, then receives a fresh full-duration Dart. No separately equipped Dart is needed.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "agent_acid"
+        }
+      ],
+      "Source": "TorBonk core-ability adaptation using recovered SWTOR artwork; stable talent ID retains saved allocation.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.concealment.acid_blade"
+    },
+    {
+      "Id": "concealment.flanking",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "concealment",
+      "Tier": 1,
+      "Column": 0,
+      "Name": "Counterstrike Training",
+      "Icon": "res://Assets/UI/icons/shieldprobe.png",
+      "Description": "Grants Blow for Blow: for four seconds, return 150% of health damage received to the attacker. 20-second cooldown. Reflected damage cannot reflect again.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "agent_counterstrike"
+        }
+      ],
+      "Source": "TorBonk Concealment adaptation; recovered SWTOR artwork. Retained talent ID preserves saved allocations.",
+      "IconSource": "Related recovered SWTOR artwork for adapted talent."
+    },
+    {
+      "Id": "concealment.waylay",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "concealment",
+      "Tier": 1,
+      "Column": 1,
+      "Name": "Waylay",
+      "Icon": "res://Assets/UI/icons/criticalblade.png",
+      "Description": "Hidden Strike cooldown recovers faster by 30%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "cooldown",
+          "Ability": "hiddenstrike",
+          "Amount": 0.3,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.concealment.waylay"
+    },
+    {
+      "Id": "concealment.advanced_cloaking",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "concealment",
+      "Tier": 1,
+      "Column": 2,
+      "Name": "Mass Debilitation",
+      "Icon": "res://Assets/UI/icons/hamstring.png",
+      "Description": "Debilitate hits every enemy within a 0.55 radius around you, stunning for three seconds and making affected targets take 40% more damage from you for six seconds. Stun-immune targets still receive the damage mark.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "agent_mass_debilitation"
+        }
+      ],
+      "Source": "TorBonk Concealment adaptation; recovered SWTOR artwork. Retained talent ID preserves saved allocations.",
+      "IconSource": "Related recovered SWTOR artwork for adapted talent."
+    },
+    {
+      "Id": "marksmanship.ballistic_dampers",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "marksmanship",
+      "Tier": 0,
+      "Column": 0,
+      "Name": "Ballistic Dampers",
+      "Icon": "res://Assets/UI/icons/heavyarmors.png",
+      "Description": "Stationary firing reduces incoming damage by 15%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "agent_dampers"
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.marksmanship.ballistic_damper"
+    },
+    {
+      "Id": "marksmanship.recoil_control",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "marksmanship",
+      "Tier": 0,
+      "Column": 1,
+      "Name": "Recoil Control",
+      "Icon": "res://Assets/UI/icons/rifleshot.png",
+      "Description": "Followthrough cooldown recovers faster by 40%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "cooldown",
+          "Ability": "followthrough",
+          "Amount": 0.4,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.marksmanship.recoil_control"
+    },
+    {
+      "Id": "marksmanship.penetrating_blasts",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "marksmanship",
+      "Tier": 0,
+      "Column": 2,
+      "Name": "Penetrating Blasts",
+      "Icon": "res://Assets/UI/icons/ambush.png",
+      "Description": "Ambush ricochets to 2 additional enemies.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "bounces",
+          "Ability": "ambush",
+          "Amount": 2,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Adapted talent reuses recovered ability icon"
+    },
+    {
+      "Id": "marksmanship.snipers_nest",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "marksmanship",
+      "Tier": 1,
+      "Column": 0,
+      "Name": "Entrenched Firepower",
+      "Icon": "res://Assets/UI/icons/takecover.png",
+      "Description": "While in cover, Ambush, Series of Shots, Followthrough and Suppressive Fire deal 25% more damage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "agent_nest"
+        }
+      ],
+      "Source": "TorBonk core-ability adaptation using recovered SWTOR artwork; stable talent ID retains saved allocation.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.marksmanship.snipers_nest"
+    },
+    {
+      "Id": "marksmanship.rapid_fire",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "marksmanship",
+      "Tier": 1,
+      "Column": 1,
+      "Name": "Rapid Fire",
+      "Icon": "res://Assets/UI/icons/lockandload.png",
+      "Description": "Series of Shots cooldown recovers faster by 30%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "cooldown",
+          "Ability": "seriesofshots",
+          "Amount": 0.3,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.marksmanship.rapid_fire"
+    },
+    {
+      "Id": "marksmanship.imperial_assassin",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "marksmanship",
+      "Tier": 1,
+      "Column": 2,
+      "Name": "Imperial Assassin",
+      "Icon": "res://Assets/UI/icons/ambush.png",
+      "Description": "Ambush damage increases by 35%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "ambush",
+          "Amount": 0.35,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Adapted talent reuses recovered ability icon"
+    },
+    {
+      "Id": "engineering.cluster_bombs",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "engineering",
+      "Tier": 0,
+      "Column": 0,
+      "Name": "Cluster Bombs",
+      "Icon": "res://Assets/UI/icons/democharge.png",
+      "Description": "Explosive Probe area radius increases by 50%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "radius",
+          "Ability": "explosiveprobe",
+          "Amount": 0.5,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.engineering.cluster_bombs"
+    },
+    {
+      "Id": "engineering.imperial_methodology",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "engineering",
+      "Tier": 0,
+      "Column": 1,
+      "Name": "Imperial Methodology",
+      "Icon": "res://Assets/UI/icons/shrapnelburst.png",
+      "Description": "EMP Discharge also refreshes Explosive Probe.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "agent_methodology"
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.engineering.imperial_methodology"
+    },
+    {
+      "Id": "engineering.efficient_engineering",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "engineering",
+      "Tier": 0,
+      "Column": 2,
+      "Name": "Efficient Engineering",
+      "Icon": "res://Assets/UI/icons/slicing.png",
+      "Description": "Plasma Probe cooldown recovers faster by 30%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "cooldown",
+          "Ability": "plasmaprobe",
+          "Amount": 0.3,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.engineering.efficient_engineering"
+    },
+    {
+      "Id": "engineering.experimental_explosives",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "engineering",
+      "Tier": 1,
+      "Column": 0,
+      "Name": "Experimental Explosives",
+      "Icon": "res://Assets/UI/icons/thermaldetonation.png",
+      "Description": "Fragmentation Grenade damage increases by 40%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "fragmentationgrenade",
+          "Amount": 0.4,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.engineering.experimental_explosives"
+    },
+    {
+      "Id": "engineering.electrified_railgun",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "engineering",
+      "Tier": 1,
+      "Column": 1,
+      "Name": "Electrified Railgun",
+      "Icon": "res://Assets/UI/icons/electrostaves.png",
+      "Description": "Series of Shots applies your equipped Interrogation Probe.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "agent_railgun"
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.engineering.electrified_railgun"
+    },
+    {
+      "Id": "engineering.stroke_of_genius",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "engineering",
+      "Tier": 1,
+      "Column": 2,
+      "Name": "Stroke of Genius",
+      "Icon": "res://Assets/UI/icons/iachisssecretpolice.png",
+      "Description": "EMP Discharge cooldown recovers faster by 40%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "cooldown",
+          "Ability": "empdischarge",
+          "Amount": 0.4,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.engineering.stroke_of_genius"
+    },
+    {
+      "Id": "agent_lethality.lethal_injectors",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 0,
+      "Column": 0,
+      "Name": "Lethal Injectors",
+      "Icon": "res://Assets/UI/icons/hypo4.png",
+      "Description": "Corrosive Dart lasts 4 seconds longer.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "duration",
+          "Ability": "dart",
+          "Amount": 4,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.lethality.toxic_injectors"
+    },
+    {
+      "Id": "agent_lethality.corrosive_microbes",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 0,
+      "Column": 1,
+      "Name": "Corrosive Microbes",
+      "Icon": "res://Assets/UI/icons/fungalsample1.png",
+      "Description": "Corrosive Dart poison ticks occur faster by 30%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "periodic_rate",
+          "Ability": "dart",
+          "Amount": 0.3,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.lethality.corrosive_microbes"
+    },
+    {
+      "Id": "agent_lethality.lingering_toxins",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 0,
+      "Column": 2,
+      "Name": "Lingering Toxins",
+      "Icon": "res://Assets/UI/icons/sacrifice.png",
+      "Description": "Corrosive Grenade lasts 4 seconds longer.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "duration",
+          "Ability": "corrosivegrenade",
+          "Amount": 4,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.lethality.lingering_toxins"
+    },
+    {
+      "Id": "agent_lethality.devouring_microbes",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 1,
+      "Column": 0,
+      "Name": "Devouring Microbes",
+      "Icon": "res://Assets/UI/icons/wither.png",
+      "Description": "Cull deals 20% more damage below 30% enemy health.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "agent_microbes"
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.lethality.devouring_microbes"
+    },
+    {
+      "Id": "agent_lethality.lethal_purpose",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 1,
+      "Column": 1,
+      "Name": "Lethal Purpose",
+      "Icon": "res://Assets/UI/icons/assassinstraining.png",
+      "Description": "Poison ticks recover Cull cooldown once every two seconds.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "agent_purpose"
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.lethality.lethal_purpose"
+    },
+    {
+      "Id": "agent_lethality.license_to_kill",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 1,
+      "Column": 2,
+      "Name": "License to Kill",
+      "Icon": "res://Assets/UI/icons/imperialagent.png",
+      "Description": "Cull damage increases by 35%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "agentcull",
+          "Amount": 0.35,
+          "Key": ""
+        }
+      ],
+      "Source": "April Agent talent names where confirmed; survivors effects are adaptations. See agent-april-research.json.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.lethality.license_to_kill"
+    },
+    {
+      "Id": "medicine.enduring_kolto",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "medicine",
+      "Tier": 2,
+      "Column": 0,
+      "Name": "Enduring Kolto",
+      "Description": "Poison ticks restore 2 health, at most once per second.",
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Amount": 1,
+          "Ability": "",
+          "Key": "agent_enduring"
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/surgicalprobe.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "Recovered Agent artwork; survivors adaptation, names are not all exact original talent bindings.",
+      "IconSource": "Adapted talent reuses recovered ability icon"
+    },
+    {
+      "Id": "medicine.medical_screen",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "medicine",
+      "Tier": 2,
+      "Column": 1,
+      "Name": "Medical Screen",
+      "Description": "Kolto Injection and Surgical Probe grant a 10-health shield, at most once every six seconds.",
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Amount": 1,
+          "Ability": "",
+          "Key": "agent_medical_screen"
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/shieldprobe.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "Recovered Agent artwork; survivors adaptation, names are not all exact original talent bindings.",
+      "IconSource": "Adapted talent reuses recovered ability icon"
+    },
+    {
+      "Id": "medicine.emergency_response",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "medicine",
+      "Tier": 2,
+      "Column": 2,
+      "Name": "Emergency Response",
+      "Description": "Taking damage below 30% health restores 15 health and readies Kolto Injection. Once every 25 seconds.",
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Amount": 1,
+          "Ability": "",
+          "Key": "agent_emergency"
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/koltoinfusion.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "Recovered Agent artwork; survivors adaptation, names are not all exact original talent bindings.",
+      "IconSource": "Adapted talent reuses recovered ability icon"
+    },
+    {
+      "Id": "concealment.tactical_opportunity",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "concealment",
+      "Tier": 2,
+      "Column": 0,
+      "Name": "Tactical Opportunity",
+      "Description": "Backstab and Hidden Strike grant Tactical Advantage. Every fourth Backstab, Hidden Strike or Laceration activation creates a four-second Hidden Strike opening.",
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "agent_opportunity"
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/hiltstrike.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "TorBonk core-ability adaptation using recovered SWTOR artwork; stable talent ID retains saved allocation.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.concealment.tactical_opportunity"
+    },
+    {
+      "Id": "concealment.meticulously_kept_blades",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "concealment",
+      "Tier": 2,
+      "Column": 1,
+      "Name": "Meticulously Kept Blades",
+      "Description": "Backstab, Hidden Strike and both Laceration contacts deal 20% more damage. Backstab cleaves 30% farther.",
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "backstab",
+          "Amount": 0.2,
+          "Key": ""
+        },
+        {
+          "Kind": "damage",
+          "Ability": "hiddenstrike",
+          "Amount": 0.2,
+          "Key": ""
+        },
+        {
+          "Kind": "damage",
+          "Ability": "laceration",
+          "Amount": 0.2,
+          "Key": ""
+        },
+        {
+          "Kind": "radius",
+          "Ability": "backstab",
+          "Amount": 0.3,
+          "Key": ""
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/vibroblades.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "TorBonk core-ability adaptation using recovered SWTOR artwork; stable talent ID retains saved allocation.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.concealment.meticulously_kept_blades"
+    },
+    {
+      "Id": "concealment.revitalizers",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "concealment",
+      "Tier": 2,
+      "Column": 2,
+      "Name": "Venomous Blades",
+      "Description": "Laceration replaces your separately cast Corrosive Dart and applies its full poison to every enemy hit. The poison needs no separate ability slot.",
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "agent_venomous_blades"
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/toxicdart.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "TorBonk core-ability adaptation using recovered SWTOR artwork; stable talent ID retains saved allocation.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.concealment.revitalizers"
+    },
+    {
+      "Id": "marksmanship.sector_ranger",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "marksmanship",
+      "Tier": 2,
+      "Column": 0,
+      "Name": "Focused Barrage",
+      "Description": "Series of Shots ricochets to two additional enemies. Suppressive Fire covers 30% more area.",
+      "Effects": [
+        {
+          "Kind": "bounces",
+          "Ability": "seriesofshots",
+          "Amount": 2,
+          "Key": ""
+        },
+        {
+          "Kind": "radius",
+          "Ability": "suppressivefire",
+          "Amount": 0.3,
+          "Key": ""
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/barrage.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "TorBonk core-ability adaptation using recovered SWTOR artwork; stable talent ID retains saved allocation.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.marksmanship.sector_ranger"
+    },
+    {
+      "Id": "marksmanship.reactive_shots",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "marksmanship",
+      "Tier": 2,
+      "Column": 1,
+      "Name": "Reactive Shots",
+      "Description": "Followthrough reduces Ambush and Series of Shots cooldowns by two seconds.",
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Amount": 1,
+          "Ability": "",
+          "Key": "agent_reactive_shots"
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/iaassassin.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "Recovered Agent artwork; survivors adaptation, names are not all exact original talent bindings.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.marksmanship.reactive_shots"
+    },
+    {
+      "Id": "marksmanship.deployed_cover",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "marksmanship",
+      "Tier": 2,
+      "Column": 2,
+      "Name": "Deployed Cover",
+      "Description": "Ambush, Series of Shots, Followthrough and Suppressive Fire hits grant an 8-health shield, at most once every six seconds.",
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "agent_cover_screen"
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/entrench.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "TorBonk core-ability adaptation using recovered SWTOR artwork; stable talent ID retains saved allocation.",
+      "IconSource": "Adapted talent reuses recovered ability icon"
+    },
+    {
+      "Id": "engineering.explosive_engineering",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "engineering",
+      "Tier": 2,
+      "Column": 0,
+      "Name": "Explosive Engineering",
+      "Description": "Probes and Orbital Strike deal 20% more damage; Orbital Strike covers 25% more area radius.",
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Amount": 0.2,
+          "Ability": "explosiveprobe",
+          "Key": ""
+        },
+        {
+          "Kind": "damage",
+          "Amount": 0.2,
+          "Ability": "interrogationprobe",
+          "Key": ""
+        },
+        {
+          "Kind": "damage",
+          "Amount": 0.2,
+          "Ability": "plasmaprobe",
+          "Key": ""
+        },
+        {
+          "Kind": "damage",
+          "Amount": 0.2,
+          "Ability": "orbitalstrike",
+          "Key": ""
+        },
+        {
+          "Kind": "radius",
+          "Amount": 0.25,
+          "Ability": "orbitalstrike",
+          "Key": ""
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/explosiveprobe.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "Recovered Agent artwork; survivors adaptation, names are not all exact original talent bindings.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.engineering.explosive_engineering"
+    },
+    {
+      "Id": "engineering.interrogation_tactics",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "engineering",
+      "Tier": 2,
+      "Column": 1,
+      "Name": "Interrogation Tactics",
+      "Description": "Probe hits slow enemies by 35% for three seconds. EMP Discharge also restores 12 health.",
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Amount": 1,
+          "Ability": "",
+          "Key": "agent_probe_control"
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/sonicprobe.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "Recovered Agent artwork; survivors adaptation, names are not all exact original talent bindings.",
+      "IconSource": "Adapted talent reuses recovered ability icon"
+    },
+    {
+      "Id": "engineering.energy_overrides",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "engineering",
+      "Tier": 2,
+      "Column": 2,
+      "Name": "Energy Overrides",
+      "Description": "EMP Discharge recovers four seconds of Orbital Strike and Ballistic Shield cooldowns.",
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Amount": 1,
+          "Ability": "",
+          "Key": "agent_energy_overrides"
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/ionclip.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "Recovered Agent artwork; survivors adaptation, names are not all exact original talent bindings.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.engineering.energy_overrides"
+    },
+    {
+      "Id": "agent_lethality.lethal_training",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 2,
+      "Column": 0,
+      "Name": "Lethal Training",
+      "Description": "Corrosive Dart, Corrosive Grenade and Cull deal 15% more damage.",
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Amount": 0.15,
+          "Ability": "dart",
+          "Key": ""
+        },
+        {
+          "Kind": "damage",
+          "Amount": 0.15,
+          "Ability": "corrosivegrenade",
+          "Key": ""
+        },
+        {
+          "Kind": "damage",
+          "Amount": 0.15,
+          "Ability": "agentcull",
+          "Key": ""
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/cull.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "Recovered Agent artwork; survivors adaptation, names are not all exact original talent bindings.",
+      "IconSource": "Adapted talent reuses recovered ability icon"
+    },
+    {
+      "Id": "agent_lethality.targeted_demolition",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 2,
+      "Column": 1,
+      "Name": "Targeted Demolition",
+      "Description": "Cull spreads your existing Agent poisons to two nearby enemies. At most once every two seconds.",
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Amount": 1,
+          "Ability": "",
+          "Key": "agent_toxic_spread"
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/security.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "Recovered Agent artwork; survivors adaptation, names are not all exact original talent bindings.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.lethality.targeted_demolition"
+    },
+    {
+      "Id": "agent_lethality.toxic_resilience",
+      "Classes": [
+        "operative"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 2,
+      "Column": 2,
+      "Name": "Toxic Resilience",
+      "Description": "Hitting a target with your Agent poison restores 2 health and recovers half a second of Shield Probe cooldown, at most once every two seconds.",
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Amount": 1,
+          "Ability": "",
+          "Key": "agent_toxic_resilience"
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/toxicdart.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "Recovered Agent artwork; survivors adaptation, names are not all exact original talent bindings.",
+      "IconSource": "Adapted talent reuses recovered ability icon"
+    },
+    {
+      "Id": "sniper_lethality.lethal_injectors",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 0,
+      "Column": 0,
+      "Name": "Prepared Toxins",
+      "Icon": "res://Assets/UI/icons/hypo4.png",
+      "Description": "Dart lasts two seconds longer. While in cover, your Dart and Corrosive Grenade deal 20% additional damage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "duration",
+          "Ability": "dart",
+          "Amount": 2,
+          "Key": ""
+        },
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "sn_lethal_cover"
+        }
+      ],
+      "Source": "TorBonk Sniper Lethality adaptation; recovered artwork retained. Legacy Sniper allocations migrate by talent position.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.lethality.toxic_injectors"
+    },
+    {
+      "Id": "sniper_lethality.corrosive_microbes",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 0,
+      "Column": 1,
+      "Name": "Corrosive Payload",
+      "Icon": "res://Assets/UI/icons/fungalsample1.png",
+      "Description": "Corrosive Grenade gains 30% base radius and 15% base damage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "radius",
+          "Ability": "corrosivegrenade",
+          "Amount": 0.3,
+          "Key": ""
+        },
+        {
+          "Kind": "damage",
+          "Ability": "corrosivegrenade",
+          "Amount": 0.15,
+          "Key": ""
+        }
+      ],
+      "Source": "TorBonk Sniper Lethality adaptation; recovered artwork retained. Legacy Sniper allocations migrate by talent position.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.lethality.corrosive_microbes"
+    },
+    {
+      "Id": "sniper_lethality.lingering_toxins",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 0,
+      "Column": 2,
+      "Name": "Cull Discipline",
+      "Icon": "res://Assets/UI/icons/sacrifice.png",
+      "Description": "Cull gains 15% base damage and 15% cooldown recovery rate.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "agentcull",
+          "Amount": 0.15,
+          "Key": ""
+        },
+        {
+          "Kind": "cooldown",
+          "Ability": "agentcull",
+          "Amount": 0.15,
+          "Key": ""
+        }
+      ],
+      "Source": "TorBonk Sniper Lethality adaptation; recovered artwork retained. Legacy Sniper allocations migrate by talent position.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.lethality.lingering_toxins"
+    },
+    {
+      "Id": "sniper_lethality.devouring_microbes",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 1,
+      "Column": 0,
+      "Name": "Hemotoxic Rounds",
+      "Icon": "res://Assets/UI/icons/wither.png",
+      "Description": "Weakening Blast extends your active Dart and Corrosive Grenade on each victim by two seconds, up to four seconds beyond their normal duration.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "sn_lethal_extend"
+        }
+      ],
+      "Source": "TorBonk Sniper Lethality adaptation; recovered artwork retained. Legacy Sniper allocations migrate by talent position.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.lethality.devouring_microbes"
+    },
+    {
+      "Id": "sniper_lethality.lethal_purpose",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 1,
+      "Column": 1,
+      "Name": "Lethal Alignment",
+      "Icon": "res://Assets/UI/icons/assassinstraining.png",
+      "Description": "While in cover, poison ticks recover Cull by 0.75 seconds and Weakening Blast by 0.5 seconds. Shared two-second cooldown across all victims and both poisons.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "sn_lethal_alignment"
+        }
+      ],
+      "Source": "TorBonk Sniper Lethality adaptation; recovered artwork retained. Legacy Sniper allocations migrate by talent position.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.lethality.lethal_purpose"
+    },
+    {
+      "Id": "sniper_lethality.license_to_kill",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 1,
+      "Column": 2,
+      "Name": "License to Kill",
+      "Icon": "res://Assets/UI/icons/imperialagent.png",
+      "Description": "Cull deals 35% more base damage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "agentcull",
+          "Amount": 0.35,
+          "Key": ""
+        }
+      ],
+      "Source": "TorBonk Sniper Lethality adaptation; recovered artwork retained. Legacy Sniper allocations migrate by talent position.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.lethality.license_to_kill"
+    },
+    {
+      "Id": "sniper_lethality.lethal_training",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 2,
+      "Column": 0,
+      "Name": "Toxic Precision",
+      "Description": "Each Cull hit echoes 25% of one tick of each of your Dart and Corrosive Grenade effects on that victim, without consuming or refreshing them.",
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "sn_lethal_echo"
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/cull.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "TorBonk Sniper Lethality adaptation; recovered artwork retained. Legacy Sniper allocations migrate by talent position.",
+      "IconSource": "Adapted talent reuses recovered ability icon"
+    },
+    {
+      "Id": "sniper_lethality.targeted_demolition",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 2,
+      "Column": 1,
+      "Name": "Targeted Contagion",
+      "Description": "Weakening Blast strikes a 0.30-radius group at full damage and spreads your existing Dart and Corrosive Grenade across that group. It does not spread probes.",
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "sn_lethal_spread"
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/security.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "TorBonk Sniper Lethality adaptation; recovered artwork retained. Legacy Sniper allocations migrate by talent position.",
+      "IconSource": "Exact April ablIconSpec: abl.agent.skill.lethality.targeted_demolition"
+    },
+    {
+      "Id": "sniper_lethality.toxic_resilience",
+      "Classes": [
+        "sniper"
+      ],
+      "Tree": "agent_lethality",
+      "Tier": 2,
+      "Column": 2,
+      "Name": "Toxic Focus",
+      "Description": "Cull hits while in cover grant an eight-health shield, at most once every six seconds. Weakening Blast hits recover Shield Probe by one second, at most once every two seconds.",
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "sn_lethal_focus"
+        }
+      ],
+      "Icon": "res://Assets/UI/icons/toxicdart.png",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Prerequisites": [],
+      "Source": "TorBonk Sniper Lethality adaptation; recovered artwork retained. Legacy Sniper allocations migrate by talent position.",
+      "IconSource": "Adapted talent reuses recovered ability icon"
+    }
+  ]
+}

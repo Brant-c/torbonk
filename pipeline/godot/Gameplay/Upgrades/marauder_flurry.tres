@@ -3,10 +3,10 @@
 [resource]
 script = ExtResource("1")
 Id = "marauder_flurry"
-Title = "Ataru Flurry"
+Title = "Ataru Mastery"
 Icon = "mr_talent_vicioussaber"
 AbilityId = "ravage"
 Effect = 9
 Mechanic = "mr_flurry"
-MechanicalDescription = "Every fifth weapon hit triggers an extra strike for 60% of the triggering attack damage."
+MechanicalDescription = "Enter Ataru stance. Its follow-ups deal 25% more damage, hit at least four nearby enemies and have at most a 1.2-second internal cooldown. Stacks with Ataru Frenzy."
 MaximumRank = 1

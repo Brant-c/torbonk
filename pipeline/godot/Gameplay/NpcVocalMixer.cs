@@ -8,6 +8,8 @@ namespace SwtorSurvivors;
 /// <summary>Three scene-owned voices: corpse cleanup cannot cut off death tails.</summary>
 public partial class NpcVocalMixer : Node
 {
+    // Shared listening adjustment: retain per-NPC balance beneath this quieter mix.
+    private const float VocalMixGainDb = -6;
     private sealed class Voice
     {
         public AudioStreamPlayer3D Player = null!;
@@ -45,7 +47,7 @@ public partial class NpcVocalMixer : Node
         voice.Player.Stop(); voice.Player.Stream = stream;
         voice.Player.GlobalPosition = actor.AimPosition;
         // Player-distance falloff suits the miniature world and overhead camera.
-        voice.Player.VolumeDb = gain + Mathf.LinearToDb(Math.Max(.01f, 1 - distance / 1.5f));
+        voice.Player.VolumeDb = gain + VocalMixGainDb + Mathf.LinearToDb(Math.Max(.01f, 1 - distance / 1.5f));
         voice.Player.PitchScale = (float)GD.RandRange(.97, 1.03);
         voice.Actor = id; voice.Death = death; voice.Started = _clock; voice.Player.Play();
         if (death) _deathAt = _clock; else _hurtAt = _clock;

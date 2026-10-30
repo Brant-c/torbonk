@@ -1,0 +1,115 @@
+{
+  "evidence": "Client-derived original Wwise event graph composition; representative random choices",
+  "records": [
+    {
+      "event": "Play_ability_spy_laceration_impact",
+      "inputs": [
+        {
+          "media": "142346317",
+          "source": "godot\\Assets\\Agent\\Audio\\142346317.wav",
+          "sha256": "ed122f7d406bce6e7b5835090c9b94529eeb2009c8601ffed8388f7bc3be49dd",
+          "gainDb": -3,
+          "delaySeconds": 0.2,
+          "rms": 0.02366440589828968
+        },
+        {
+          "media": "355335624",
+          "source": "godot\\Assets\\Agent\\Audio\\355335624.wav",
+          "sha256": "437169fc213d36cbdf3f80e35cbd2f5763bd02808a5d6cb7b51763852cfc3e5c",
+          "gainDb": 0,
+          "delaySeconds": 0,
+          "rms": 0.053631848706983856
+        },
+        {
+          "media": "213894810",
+          "source": "godot\\Assets\\Agent\\Audio\\213894810.wav",
+          "sha256": "f447b9a0ca78045f234ab0450977ea4d339a2be3b4f3eceb2d0b95ed6b7b9355",
+          "gainDb": -6,
+          "delaySeconds": 0,
+          "rms": 0.16129381168650458
+        }
+      ],
+      "output": "godot\\Assets\\Agent\\Audio\\laceration_impact_layered.wav",
+      "sha256": "f26537161053f983a67171b5ec99cf7984f2e56a751a68879e121aa7792344c9",
+      "peakReductionDb": 0.0,
+      "rms": 0.07919234204995636,
+      "seconds": 0.9863265306122448
+    },
+    {
+      "event": "TorBonk follow-up adapter: original alternate slash and recovered contact media",
+      "inputs": [
+        {
+          "media": "247334649",
+          "source": "godot\\Assets\\Agent\\Audio\\247334649.wav",
+          "sha256": "3304a791a5d48048fca2d99319228f4728156b74e1322542bae8961508212cf6",
+          "gainDb": 0,
+          "delaySeconds": 0,
+          "rms": 0.05453493054673508
+        },
+        {
+          "media": "82513035",
+          "source": "godot\\Assets\\Agent\\Audio\\82513035.wav",
+          "sha256": "0d88c5f83d165439fb50ff124f4fdf6ee452a28bab615e5af487d4808a53ad26",
+          "gainDb": -3,
+          "delaySeconds": 0,
+          "rms": 0.1510979668950712
+        },
+        {
+          "media": "52499594",
+          "source": "godot\\Assets\\Agent\\Audio\\52499594.wav",
+          "sha256": "3fc5188b2074e8a4fc5090f5c60e9ca6489d97df7e8dce3ba78131252833f99f",
+          "gainDb": -3,
+          "delaySeconds": 0.12,
+          "rms": 0.03513842068740551
+        }
+      ],
+      "output": "godot\\Assets\\Agent\\Audio\\laceration_followup_layered.wav",
+      "sha256": "5e2a4d3b13216d244ff6e69dd15ec1ed5e7c618ceed93528b912af0ba362916a",
+      "peakReductionDb": -0.9015937118692019,
+      "rms": 0.09928047385146711,
+      "seconds": 0.9256009070294785
+    },
+    {
+      "event": "Play_ability_spy_explosiveprobe_explode",
+      "inputs": [
+        {
+          "media": "3188403",
+          "source": "godot\\Assets\\Agent\\Audio\\3188403.wav",
+          "sha256": "c6b89440dd880384c878d51bf574dbbca45a39c305100cab3d0e2fe55fc912bc",
+          "gainDb": -3,
+          "delaySeconds": 0,
+          "rms": 0.14078033071060375
+        },
+        {
+          "media": "97066083",
+          "source": "godot\\Assets\\Agent\\Audio\\97066083.wav",
+          "sha256": "acd74e714efdf8b85839a20ce16cc9a440698a43c7679c76aadb66fa523b2f21",
+          "gainDb": -3,
+          "delaySeconds": 0,
+          "rms": 0.13296630561802825
+        },
+        {
+          "media": "26887271",
+          "source": "godot\\Assets\\Agent\\Audio\\26887271.wav",
+          "sha256": "489803781112a619a66cfe1425e4ada64336323bb90166a43eee7017ebe05ce5",
+          "gainDb": 0,
+          "delaySeconds": 0,
+          "rms": 0.2684456874437152
+        },
+        {
+          "media": "35854337",
+          "source": "godot\\Assets\\Agent\\Audio\\35854337.wav",
+          "sha256": "a60c71f63f6d5e556c3c20c7bac6ab005b3ca4810dda25ce2ce7b9a5405a27e9",
+          "gainDb": -3,
+          "delaySeconds": 0,
+          "rms": 0.1642546052059459
+        }
+      ],
+      "output": "godot\\Assets\\Agent\\Audio\\explosiveprobe_explode_layered.wav",
+      "sha256": "cd3003dc33032076640c176ce465fc4e474d51e3734fc67666c9f7adc50e8835",
+      "peakReductionDb": -4.2824105864956055,
+      "rms": 0.14299117177907858,
+      "seconds": 2.0017233560090704
+    }
+  ]
+}

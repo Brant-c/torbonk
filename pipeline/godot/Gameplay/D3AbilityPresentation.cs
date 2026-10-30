@@ -20,6 +20,8 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
     private double _flame,_flameSpawn;
     private double _carbon,_carbonSpawn;
     public int PlayingAudioVoices=>_voices.Count(v=>v.Playing);
+    public string LastPlayedAudioPath {get;private set;}="";
+    public float LastPlayedAudioGainDb {get;private set;}
     public int PendingAudioEvents=>_delayed.Count;
     public bool CarbonizeEmitting=>_carbon>0;
     public bool CarbonizeAudioPlaying=>Definition.Id=="carbonize" && _voices.Any(v=>v.Playing);
@@ -49,19 +51,25 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
         if(Definition.WeaponAudio!="" && !(WarriorVisual && Definition.ChannelSeconds>0))
         { if(swing<=.01)Play(Definition.WeaponAudio,Actor.GlobalPosition,1);else _delayed.Add((swing,()=>Play(Definition.WeaponAudio,Actor.GlobalPosition,1))); }
         if(Definition.OffhandAudio!="" && !(WarriorVisual && Definition.ChannelSeconds>0))_delayed.Add((swing+.3,()=>Play(Definition.OffhandAudio,Actor.GlobalPosition,2)));
+        bool agentVisual=BeginAgent(target);
         if(Definition.Effect==AbilityEffect.Shield)ShowShield(target);
-        else if(Definition.Effect!=AbilityEffect.Damage)Pulse(Actor.GlobalPosition+Vector3.Up*.06f);
+        else if(!agentVisual && Definition.Effect!=AbilityEffect.Damage && !(WarriorVisual && Definition.Id=="enrageddefense"))Pulse(Actor.GlobalPosition+Vector3.Up*.06f);
         if(Definition.PresentationKind=="gas" && Definition.Effect==AbilityEffect.Damage)Projectile(MuzzleWorld(),target.AimPosition,Math.Max(.2,Definition.WindupSeconds));
         BeginMarauder(target);
         BeginRepair(target);
-        return Actor.Animator.HasAnimation(Definition.StartClip);
+        return Definition.StartClip=="" && !Definition.RequireGesture || Actor.Animator.HasAnimation(Definition.StartClip);
     }
     public void Channel(){ ChannelRepair();if(Definition.Id=="carbonize"){_carbon=1.2;_carbonSpawn=0;} if(Definition.Id=="flamethrower"){_flame=Definition.ChannelSeconds;_flameSpawn=0;} if(Definition.PresentationKind=="flame"){_flame=Math.Max(.1,Definition.ChannelSeconds);_flameSpawn=0;} }
     public void Impact(Vector3 center)
     {
-        if(Definition.Effect!=AbilityEffect.Damage)return;
+        if(Definition.Effect!=AbilityEffect.Damage){
+            // Endure Pain's recovered cast FXSpec layers the cast and boom events.
+            if(WarriorVisual && Definition.Id=="endurepain")Play(Definition.ImpactAudio,Actor.GlobalPosition,3);
+            return;
+        }
         bool radial=Definition.Area==AbilityArea.CasterRadial;
         var at=radial?Actor.GlobalPosition+Vector3.Up*.06f:center;
+        if(ImpactAgent(at)){if(!AgentKnifeAbility && Definition.Id!="explosiveprobe")Play(Definition.ImpactAudio,at,3);return;}
         if(ImpactMarauder(at))return;
         if(ImpactRepair(at))return;
         if(ImpactAssassin())return;
@@ -238,11 +246,13 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
     {
         if(path=="" || !ResourceLoader.Exists(path) || _voices.Count==0)return;
         var voice=_voices[Math.Clamp(slot,0,_voices.Count-1)];
-        voice.VolumeDb=Definition.Id=="carbonize"?-9:-18;
+        voice.VolumeDb=Definition.Id=="laceration"?-4:AgentKnifeAbility || Definition.Id=="explosiveprobe"?-10:Definition.Id=="carbonize"?-9:-18;
+        LastPlayedAudioPath=path;LastPlayedAudioGainDb=voice.VolumeDb;
         voice.Stop();voice.Stream=GD.Load<AudioStream>(path);voice.GlobalPosition=point;voice.Play();
     }
     public override void _Process(double delta)
     {
+        _agentOrbitalLock=Math.Max(0,_agentOrbitalLock-delta);
         AdvanceMarauderEffects(delta);
         AdvanceRepair(delta);
         for(int i=_delayed.Count-1;i>=0;i--){var d=_delayed[i];d.at-=delta;if(d.at<=0){_delayed.RemoveAt(i);d.run();}else _delayed[i]=d;}
@@ -278,6 +288,7 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
     public void Complete(){ _flame=0;_carbon=0; }
     public void Release()
     {
+        if(GodotObject.IsInstanceValid(ActiveKnife))ActiveKnife!.Stop();ActiveKnife=null;
         ReleaseWarrior();_marauderAura="";_flame=0;_carbon=0;_gas=0;_delayed.Clear();
         ReleaseRepair();
         if(_bubble!=null && GodotObject.IsInstanceValid(_bubble))_bubble.QueueFree();_bubble=null;

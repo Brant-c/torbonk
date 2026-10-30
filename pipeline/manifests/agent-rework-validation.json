@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-29",
+  "passed": true,
+  "totalChecks": 375,
+  "reports": [
+    {
+      "report": "pipeline\\manifests\\agent-operative-smoke.json",
+      "checks": 111,
+      "sha256": "44f6f2fc9b9e0e7d58e2e1048c719e40fccc5e40f4ac23a09e3202011dbdb237"
+    },
+    {
+      "report": "pipeline\\manifests\\agent-sniper-smoke.json",
+      "checks": 100,
+      "sha256": "968c3a49bbe5b7d350825fa36934ebcc9f045db525c09e63810e8c1e41f0b94c"
+    },
+    {
+      "report": "pipeline\\manifests\\agent-operative-presentation.json",
+      "checks": 82,
+      "sha256": "c504efc37a09e03050fb89b9d65c599ddf622e427f2dbdbb9db1d615bdca7284"
+    },
+    {
+      "report": "pipeline\\manifests\\agent-sniper-presentation.json",
+      "checks": 61,
+      "sha256": "e50bd348f07e3799cd31bee2436ea16e3f625e1e40966078002a4b4341c4125a"
+    },
+    {
+      "report": "pipeline\\manifests\\sniper-cover-smoke.json",
+      "checks": 21,
+      "sha256": "720db2d4f4c0d87a673b686d95e423b4adcfb077184f82ab740b787e904ca8f7"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "godot/Assets/Agent/casts.glb",
+      "sha256": "b8b398c34a3552ffefdf38db009f96f94601a7183ca488c28cfdd049f40f3d88"
+    },
+    {
+      "path": "godot/Gameplay/Talents/agent.json",
+      "sha256": "3f77305d8fc9ef94efbf1eb43f8cfe2b1144c80d01c439ddbe500a6da27a51ca"
+    },
+    {
+      "path": "godot/Gameplay/Talents/AgentRuntime.cs",
+      "sha256": "5973e9979d2e3325ceaafbd2ace00ded88553178328548dc8b0819ffae9b0ed4"
+    },
+    {
+      "path": "godot/Gameplay/AgentAbilityPresentation.cs",
+      "sha256": "d3b104942a9914a03bdf8ecffc376a39f7e34171df4aa00754dce1ebeea4d49a"
+    },
+    {
+      "path": "manifests/agent-operative-laceration.png",
+      "sha256": "4d5a019c8bc4762a36c3482213ab4de322368e4fb353a863412d10196688bcfa"
+    },
+    {
+      "path": "manifests/agent-sniper-plasmaprobe.png",
+      "sha256": "53db282241fd70135e76a047855f719fb0b00ff9e1471e7625a1adb434a86134"
+    },
+    {
+      "path": "manifests/agent-sniper-suppressivefire.png",
+      "sha256": "0dc153df538ee11e9e0a52a8764617beebc2c5658e513a695b651d68f3ebc7f0"
+    }
+  ],
+  "sourceEvidence": "Client-derived: live Laceration ability -> effect 16141176440944758591 -> epp.agent.laceration.cast_instant -> cb_rifle_disk_left_1 and sp_lacerate_knife_cast. Original source hashes: agent-rework-source.json.",
+  "limits": [
+    "Godot presentation adapters, not native Hero execution.",
+    "Initial survivors balance; long-run parity requires gameplay review."
+  ]
+}

@@ -14,8 +14,8 @@
     "MaximumPopulation": 24,
     "InitialSpawnInterval": 0.6,
     "MinimumSpawnInterval": 0.2,
-    "RecoverySeconds": 5,
-    "ReturnRampSeconds": 3,
+    "RecoverySeconds": 0,
+    "ReturnRampSeconds": 0,
     "ExponentialDamageScaling": true
   },
   "ArtifactCatalog": "res://Gameplay/Planets/Korriban/artifacts.json",
@@ -217,5 +217,6 @@
       "Level": 50,
       "Encounter": "res://Gameplay/Planets/EternityVault/Xrr3Encounter.tres"
     }
-  ]
+  ],
+  "ContinuousEncounters": true
 }

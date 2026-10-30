@@ -24,7 +24,13 @@ public partial class TalentsScreen : Control
         CustomMinimumSize=size,Size=size,StretchMode=TextureRect.StretchModeEnum.KeepAspectCentered,
         MouseFilter=MouseFilterEnum.Ignore
     };
-    public override void _Ready(){Theme=FrontendSkin.MakeTheme();_ranks=TalentProfiles.Load(ClassId);Build();}
+    public override void _Ready()
+    {
+        Theme=FrontendSkin.MakeTheme();
+        // Custom talent tooltips draw their own frame; leave Godot's outer wrapper empty.
+        Theme.SetStylebox("panel","TooltipPanel",new StyleBoxEmpty());
+        _ranks=TalentProfiles.Load(ClassId);Build();
+    }
     private void Put(Control node,float x,float y,float w,float h,Node? parent=null)
     {node.Position=new(x,y);node.Size=new(w,h);(parent??this).AddChild(node);}
     private void Art(string slice,float x,float y,float w,float h,Node parent)
@@ -61,7 +67,10 @@ public partial class TalentsScreen : Control
         foreach(var cls in classes)selector.AddItem(cls.Name+(Catalog.ForClass(cls.Id).Length==0?" — Unavailable":""));
         selector.Select(Array.FindIndex(classes,c=>c.Id==ClassId));
         selector.ItemSelected+=i=>SelectClass(classes[(int)i].Id);Put(selector,370,-48,310,46);
-        Put(FrontendSkin.Label($"{Catalog.Budget-Catalog.Spent(_ranks)} Points Available    {Catalog.Spent(_ranks)} Allocated",23),745,-48,650,45);
+        string allocation=(ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper")
+            ?$"{Catalog.Spent(_ranks)} / {Catalog.BudgetFor(ClassId)} shared points · {Catalog.BudgetFor(ClassId)-Catalog.Spent(_ranks)} available"
+            :$"{Catalog.BudgetFor(ClassId)-Catalog.Spent(_ranks)} Points Available    {Catalog.Spent(_ranks)} Allocated";
+        Put(FrontendSkin.Label(allocation,23),745,-48,650,45);
         if(Catalog.ForClass(ClassId).Length==0)
         {
             var portrait=Image(chosen.Artwork,new(450,450));Put(portrait,495,50,450,450);
@@ -78,13 +87,15 @@ public partial class TalentsScreen : Control
                 Art("bwaui_skilltree_30",0,0,466,560,column);
                 Art("bwaui_skilltree_42",7,0,452,94,column);
                 var heading=FrontendSkin.Heading(tree.Name,28);heading.HorizontalAlignment=HorizontalAlignment.Center;Put(heading,50,11,366,46,column);
-                var points=FrontendSkin.Label(Catalog.TreeSpent(tree.Id,_ranks)+" Points",17);points.HorizontalAlignment=HorizontalAlignment.Center;Put(points,50,56,366,25,column);
+                int capacity=Catalog.ForClass(ClassId).Where(t=>t.Tree==tree.Id && t.Available).Sum(t=>t.Cost*t.MaxRank);
+                string treePoints=(ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper")?$"{Catalog.TreeSpent(tree.Id,_ranks)} / {capacity} points":Catalog.TreeSpent(tree.Id,_ranks)+" Points";
+                var points=FrontendSkin.Label(treePoints,17);points.HorizontalAlignment=HorizontalAlignment.Center;Put(points,50,56,366,25,column);
                 var scroll=new ScrollContainer {HorizontalScrollMode=ScrollContainer.ScrollMode.Disabled};
                 Put(scroll,18,100,430,442,column);
-                var body=new Control {CustomMinimumSize=new(410,ClassId=="juggernaut"?Math.Max(440,(Catalog.ForClass(ClassId).Where(t=>t.Tree==tree.Id).Max(t=>t.Tier)+1)*103+24):440)};scroll.AddChild(body);
+                var body=new Control {CustomMinimumSize=new(410,440)};scroll.AddChild(body);
                 scroll.ScrollVertical=_scrolls.GetValueOrDefault(tree.Id);
                 scroll.GetVScrollBar().ValueChanged+=value=>_scrolls[tree.Id]=(int)value;
-                Vector2 Position(TalentDefinition t)=>new(74+t.Column*212,12+t.Tier*103);
+                Vector2 Position(TalentDefinition t)=>new((ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper")?33+t.Column*137:74+t.Column*212,(ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper")?22+t.Tier*145:12+t.Tier*103);
                 foreach(var t in Catalog.ForClass(ClassId).Where(t=>t.Tree==tree.Id))
                     foreach(var prerequisite in t.Prerequisites)
                     {
@@ -112,8 +123,9 @@ public partial class TalentsScreen : Control
                     Art(rank==t.MaxRank?"bwaui_skilltree_16":"bwaui_skilltree_13",8,48,46,27,button);
                     var counter=FrontendSkin.Label($"{rank}/{t.MaxRank}",17);counter.HorizontalAlignment=HorizontalAlignment.Center;
                     counter.AddThemeColorOverride("font_color",rank>0?new Color(.65f,1,.72f):Colors.White);Put(counter,6,49,50,25,button);
-                    var name=FrontendSkin.Label(t.Name,16,true);name.HorizontalAlignment=HorizontalAlignment.Center;
-                    Put(name,pos.X-56,pos.Y+76,174,34,body);
+                    var name=FrontendSkin.Label(t.Name,(ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper")?15:16,true);name.HorizontalAlignment=HorizontalAlignment.Center;
+                    if((ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper"))Put(name,pos.X-32,pos.Y+76,126,42,body);
+                    else Put(name,pos.X-56,pos.Y+76,174,34,body);
                     button.Pressed+=()=>{if(Invest(t.Id))FindChild(t.Id.Replace('.','_'),true,false)?.CallDeferred(Control.MethodName.GrabFocus);};
                     button.GuiInput+=input=>{if(input is InputEventMouseButton {Pressed:true,ButtonIndex:MouseButton.Right})Refund(t.Id);};
                     // Tier threshold is visible while hovering and in the original-style tooltip.
@@ -147,7 +159,8 @@ public partial class TalentIconButton : Button
         var content=new VBoxContainer();panel.AddChild(content);
         content.AddChild(FrontendSkin.Heading(Talent.Name,23));
         content.AddChild(FrontendSkin.Label($"Rank {Rank}/{Talent.MaxRank}    Cost: {Talent.Cost}",18));
-        foreach(string line in new[]{Talent.Description,Requirements,Availability,"Right-click to refund a point."}.Where(s=>s!=""))
+        foreach(string line in new[]{Talent.Description,Requirements,Availability,"Right-click to refund a point."}
+            .Where(s=>!string.IsNullOrWhiteSpace(s)).DistinctBy(s=>s.Trim().TrimEnd('.')))
         {
             var label=FrontendSkin.Label(line,18,true);label.CustomMinimumSize=new(330,0);content.AddChild(label);
         }

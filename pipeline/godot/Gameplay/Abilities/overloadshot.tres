@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "overloadshot"
+Title = "Overload Shot"
+Icon = "fearsomecry"
+Damage = 26
+CooldownSeconds = 3
+Range = 1.15
+Radius = 0.16
+Area = 4
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+WindupSeconds = 0.0
+ChannelSeconds = 0.0
+RecoverySeconds = 1.066667
+GestureSeconds = 1.066667
+StartClip = "D3/RifleFire3"
+LoopClip = "D3/RifleFire3"
+EndClip = ""
+PeriodicDamage = 0
+PeriodicDuration = 0
+PeriodicInterval = 1
+DamageType = 0
+Description = "Immediate ranged rifle hit; movement and cover are unrestricted."
+CastAudio = "res://Assets/D3/Audio/28023533.wav"
+ImpactAudio = ""
+PresentationKind = "rifle"
+MuzzleBone = "RightWeapon"
+ImpactTexture = ""
+ImpactTailsOnTargetDeath = true
+RequireGesture = true
+
+StartsUnlocked = false
+
+SplashMultiplier = 0.7

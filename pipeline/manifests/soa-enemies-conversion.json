@@ -1,0 +1,663 @@
+{
+  "manka": {
+    "output": "godot\\Assets\\Maps\\soa_p3\\Enemies\\manka.glb",
+    "sha256": "e53ec69a936ba4051d1909cb8013658875143d040f639a7aa00dacea6883e44f",
+    "bones": 85,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/creature/cat/cb_ready_1.jba",
+        "seconds": 1.9666666984558105,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/creature/cat/mv_run_forward.jba",
+        "seconds": 0.5333333611488342,
+        "unmatched": []
+      },
+      {
+        "name": "Walk",
+        "path": "/resources/anim/creature/cat/mv_walk_forward.jba",
+        "seconds": 1.3333333730697632,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/creature/cat/cb_attack_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/creature/cat/dg_damage_1.jba",
+        "seconds": 0.9333333373069763,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/creature/cat/dg_death_1.jba",
+        "seconds": 1.7999999523162842,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 1,
+    "sockets": [
+      "attach_portrait_left",
+      "vfx_hand_left",
+      "vfx_hand_right",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "rakata": {
+    "output": "godot\\Assets\\Maps\\soa_p3\\Enemies\\rakata.glb",
+    "sha256": "e51278e7a9d38ae42ee85e06fd06c4b89e78008e618842ca384f7d7e42ed774e",
+    "bones": 134,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bmsnew/cb_knight_saber_idle_1.jba",
+        "seconds": 1.399999976158142,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bmsnew/mv_saber_run_forward_01.jba",
+        "seconds": 0.7333333492279053,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bmsnew/cb_saber_attack_right_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bmsnew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bmsnew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 12,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "RightWeapon",
+      "vfx_hand_right",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "watcher": {
+    "output": "godot\\Assets\\Maps\\soa_p3\\Enemies\\watcher.glb",
+    "sha256": "2feb6d283c31be652045c10389e2c7985a9649cdf9ef366bee9bb14c213211b3",
+    "bones": 134,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bmsnew/cb_knight_saber_idle_1.jba",
+        "seconds": 1.399999976158142,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bmsnew/mv_saber_run_forward_01.jba",
+        "seconds": 0.7333333492279053,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bmsnew/cb_saber_attack_right_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bmsnew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bmsnew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 12,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "RightWeapon",
+      "vfx_hand_right",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "acklay": {
+    "output": "godot\\Assets\\Maps\\soa_p3\\Enemies\\acklay.glb",
+    "sha256": "e721e79ba17fa6af725cee07e9208ce5737f994b5dd1c1fcb14cabf906984be0",
+    "bones": 63,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/creature/acklay/cb_ready_1.jba",
+        "seconds": 2.0,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/creature/acklay/mv_run_forward.jba",
+        "seconds": 0.800000011920929,
+        "unmatched": []
+      },
+      {
+        "name": "Walk",
+        "path": "/resources/anim/creature/acklay/mv_walk_forward.jba",
+        "seconds": 1.2000000476837158,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/creature/acklay/cb_attack_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/creature/acklay/dg_damage_1.jba",
+        "seconds": 0.800000011920929,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/creature/acklay/dg_death_1.jba",
+        "seconds": 2.0333333015441895,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 1,
+    "sockets": [
+      "attach_portrait_left",
+      "vfx_hand_left",
+      "vfx_hand_right",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "soa": {
+    "output": "godot\\Assets\\Maps\\soa_p3\\Enemies\\soa.glb",
+    "sha256": "dcfc3c3ec17f0dc5d57462b4127203883608f3513b2da7d91dd11a06843f2dbe",
+    "bones": 176,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bmsnew/cb_unarmed_idle_right_1.jba",
+        "seconds": 1.6666666269302368,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bmsnew/mv_cb_unarmed_run_forward.jba",
+        "seconds": 0.6000000238418579,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bmsnew/cb_unarmed_attack_right_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bmsnew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bmsnew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 13,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "RightWeapon",
+      "vfx_hand_right",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "luthro": {
+    "output": "godot\\Assets\\Maps\\soa_p3\\Enemies\\luthro.glb",
+    "sha256": "ae5592e03ac52cd933cf13bd455955737ed1e6b00440277593c4e740c0fa9ce6",
+    "bones": 192,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bmnnew/cb_knight_saber_idle_1.jba",
+        "seconds": 1.399999976158142,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bmnnew/mv_saber_run_forward_01.jba",
+        "seconds": 0.6000000238418579,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bmnnew/cb_saber_attack_right_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bmnnew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bmnnew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 17,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "RightWeapon",
+      "vfx_hand_right",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "alarii": {
+    "output": "godot\\Assets\\Maps\\soa_p3\\Enemies\\alarii.glb",
+    "sha256": "9779011a05ecc17eb2197e7c26aecfda3db15ec8f77ffc395c64bcc0b8ca5d3c",
+    "bones": 166,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bfsnew/cb_knight_saber_idle_1.jba",
+        "seconds": 1.399999976158142,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bfsnew/mv_saber_run_forward_01.jba",
+        "seconds": 0.6000000238418579,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bfsnew/cb_saber_attack_right_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bfsnew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bfsnew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 11,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "RightWeapon",
+      "vfx_hand_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "fahren": {
+    "output": "godot\\Assets\\Maps\\soa_p3\\Enemies\\fahren.glb",
+    "sha256": "44cd9492618394409ace8966a709509ed7f44790afeeaecfc4737f4d787dcb6e",
+    "bones": 155,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bmanew/cb_knight_saber_idle_1.jba",
+        "seconds": 1.399999976158142,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bmanew/mv_saber_run_forward_01.jba",
+        "seconds": 0.6000000238418579,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bmanew/cb_saber_attack_right_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bmanew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bmanew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 15,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "RightWeapon",
+      "vfx_hand_right",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "yshaar": {
+    "output": "godot\\Assets\\Maps\\soa_p3\\Enemies\\yshaar.glb",
+    "sha256": "06a1dffb1c3672e35227368dca084aa68158c4f898af1097adcdd2b7ebd19ac4",
+    "bones": 197,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bmfnew/cb_knight_saber_idle_1.jba",
+        "seconds": 1.399999976158142,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bmfnew/mv_saber_run_forward_01.jba",
+        "seconds": 0.6000000238418579,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bmfnew/cb_saber_attack_right_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bmfnew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bmfnew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 14,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "RightWeapon",
+      "vfx_hand_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "zaheen": {
+    "output": "godot\\Assets\\Maps\\soa_p3\\Enemies\\zaheen.glb",
+    "sha256": "638566a9661e0a31229580d99832cdffe028d69b2060eb09842a2ae9a2334567",
+    "bones": 190,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bmsnew/cb_knight_saber_idle_1.jba",
+        "seconds": 1.399999976158142,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bmsnew/mv_saber_run_forward_01.jba",
+        "seconds": 0.7333333492279053,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bmsnew/cb_saber_attack_right_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bmsnew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bmsnew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 14,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "RightWeapon",
+      "vfx_hand_right",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "kahesh": {
+    "output": "godot\\Assets\\Maps\\soa_p3\\Enemies\\kahesh.glb",
+    "sha256": "2a5762a0b7fd6a0b64b43716f16c933476437cbc7f93a8398867db172b5e4701",
+    "bones": 134,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bmanew/cb_knight_saber_idle_1.jba",
+        "seconds": 1.399999976158142,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bmanew/mv_saber_run_forward_01.jba",
+        "seconds": 0.6000000238418579,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bmanew/cb_saber_attack_right_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bmanew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bmanew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 13,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "RightWeapon",
+      "vfx_hand_right",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "jael": {
+    "output": "godot\\Assets\\Maps\\soa_p3\\Enemies\\jael.glb",
+    "sha256": "6597b3b7c174942df3d4bfd403174d7b49ed0dd4dfa50eff8f7db9a817fc1208",
+    "bones": 155,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bfnnew/cb_knight_saber_idle_1.jba",
+        "seconds": 1.399999976158142,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bfnnew/mv_saber_run_forward_01.jba",
+        "seconds": 0.6000000238418579,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bfnnew/cb_saber_attack_right_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bfnnew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bfnnew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 14,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "RightWeapon",
+      "vfx_hand_right",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "serrod": {
+    "output": "godot\\Assets\\Maps\\soa_p3\\Enemies\\serrod.glb",
+    "sha256": "015025f9bccc3165e034e1a47182c16751ff01ce85e1f704dab0136814576aeb",
+    "bones": 192,
+    "clips": [
+      {
+        "name": "Idle",
+        "path": "/resources/anim/humanoid/bmnnew/cb_knight_saber_idle_1.jba",
+        "seconds": 1.399999976158142,
+        "unmatched": []
+      },
+      {
+        "name": "Run",
+        "path": "/resources/anim/humanoid/bmnnew/mv_saber_run_forward_01.jba",
+        "seconds": 0.6000000238418579,
+        "unmatched": []
+      },
+      {
+        "name": "Attack",
+        "path": "/resources/anim/humanoid/bmnnew/cb_saber_attack_right_1.jba",
+        "seconds": 1.0666667222976685,
+        "unmatched": []
+      },
+      {
+        "name": "Hit",
+        "path": "/resources/anim/humanoid/bmnnew/dg_unarmed_crit_damage_right_1.jba",
+        "seconds": 1.600000023841858,
+        "unmatched": []
+      },
+      {
+        "name": "Death",
+        "path": "/resources/anim/humanoid/bmnnew/dg_death_1.jba",
+        "seconds": 2.3333332538604736,
+        "unmatched": []
+      }
+    ],
+    "meshCount": 17,
+    "sockets": [
+      "attach_portrait_left",
+      "attach_portrait_right",
+      "LeftWeapon",
+      "vfx_hand_left",
+      "RightWeapon",
+      "vfx_hand_right",
+      "socket_weapon_back_left_upper",
+      "socket_weapon_back_right",
+      "socket_weapon_back_left",
+      "attach_nameplate_fallback"
+    ]
+  },
+  "staff": {
+    "output": "godot\\Assets\\Maps\\soa_p3\\Enemies\\staff.glb",
+    "sha256": "dfe7ded87be98d5f476ab2d5c9bba3cb492d26a94d153965a111d91799e2908b",
+    "bounds": [
+      [
+        -0.009392649866640568,
+        -0.07622133940458298,
+        -0.008661911822855473
+      ]
+    ]
+  }
+}

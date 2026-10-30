@@ -14,4 +14,6 @@ public partial class BossEncounterDefinition : Resource
     [Export] public float RegularSpawnIntervalMultiplier { get; set; } = 2.5f;
     [Export] public float RegularCapFraction { get; set; } = 0.55f;
     [Export] public bool ClearRegularEnemiesOnStart { get; set; }
+    [Export] public Godot.Collections.Array<PackedScene> AdditionalScenes { get; set; } = new();
+    [Export] public int MaximumConcurrentMembers { get; set; } = 3;
 }

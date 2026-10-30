@@ -45,6 +45,7 @@ public partial class Health : Node
     public float ApplyDamage(float amount, DamageType damageType = DamageType.Energy, bool isCritical = false, string abilityId = "")
     {
         if (!IsAlive || !float.IsFinite(amount) || amount <= 0) return 0;
+        if(GetParent() is Combatant recipient && BallisticShieldField.Protects(recipient))amount*=.8f;
         float absorbed = Shielded ? Math.Min(ShieldRemaining, amount) : 0;
         if (absorbed > 0)
         {

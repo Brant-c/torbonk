@@ -1,0 +1,1574 @@
+[
+  {
+    "owner": "overloadshot",
+    "icon": "fearsomecry",
+    "definition": {
+      "id": "0xE0007B35A0966081",
+      "decimalId": "16141036534753550465",
+      "kind": "GomObject",
+      "name": "abl.agent.overload_shot",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/465.bkt",
+        "uncompressedOffset": 128844,
+        "blockLength": 429,
+        "resourceSha256": "36874efb9214dc8ccc3ff8fc8805ec6b96a4690d0ee1d594422e3cc912dc6331"
+      }
+    },
+    "path": "/resources/gfx/icons/fearsomecry.dds",
+    "output": "godot\\Assets\\UI\\icons\\fearsomecry.png",
+    "sha256": "99167528e80dea35d1ed5f285d22694e904878bc166cf6c0dcef563417eb1b6c",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "fragmentationgrenade",
+    "icon": "remotedetonationmine",
+    "definition": {
+      "id": "0xE00085C5D679DE4B",
+      "decimalId": "16141048149249220171",
+      "kind": "GomObject",
+      "name": "abl.agent.fragmentation_grenade",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/171.bkt",
+        "uncompressedOffset": 141172,
+        "blockLength": 632,
+        "resourceSha256": "3a8a7eff139fcc656e90ea2c0426bcc35c9bb36135e37071b32c7cdc8d2ab2c2"
+      }
+    },
+    "path": "/resources/gfx/icons/remotedetonationmine.dds",
+    "output": "godot\\Assets\\UI\\icons\\remotedetonationmine.png",
+    "sha256": "846d960a3be9badec31b560987ac2a732f8f4eff05ade474e539c6367991bb8b",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "flashbang",
+    "icon": "flashbang",
+    "definition": {
+      "id": "0xE000A1B3A0FBA5B9",
+      "decimalId": "16141078857367922105",
+      "kind": "GomObject",
+      "name": "abl.agent.flash_bang",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/105.bkt",
+        "uncompressedOffset": 170828,
+        "blockLength": 658,
+        "resourceSha256": "34db699043a96d4bca05ddf0e526d6114d61fc075290902b98f9692f7cb7607a"
+      }
+    },
+    "path": "/resources/gfx/icons/flashbang.dds",
+    "output": "godot\\Assets\\UI\\icons\\flashbang.png",
+    "sha256": "780cdc0caf33dec90255a6d6cc288badd2a0f3fba05b2ba5c00a8ba0a0a35110",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "debilitate",
+    "icon": "hamstring",
+    "definition": {
+      "id": "0xE0006AE51556E3CC",
+      "decimalId": "16141018596633928652",
+      "kind": "GomObject",
+      "name": "abl.agent.debilitate",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/152.bkt",
+        "uncompressedOffset": 123988,
+        "blockLength": 520,
+        "resourceSha256": "ed5d9cf104491a993435413f8d624100e965d3ece4b79ea0ae4cb326016a75d0"
+      }
+    },
+    "path": "/resources/gfx/icons/hamstring.dds",
+    "output": "godot\\Assets\\UI\\icons\\hamstring.png",
+    "sha256": "9550ab82d910e14b4c210ffb47a783435a5b0006601b3f402e35199c7b1de048",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "adrenalineprobe",
+    "icon": "antitoxinprobe",
+    "definition": {
+      "id": "0xE0007E0E7BBBDB3A",
+      "decimalId": "16141039665166408506",
+      "kind": "GomObject",
+      "name": "abl.agent.adrenaline_probe",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/6.bkt",
+        "uncompressedOffset": 156964,
+        "blockLength": 446,
+        "resourceSha256": "40da91b83ac7dfbdb708e9f841ae9547b71817206b62f418e57c3cffad5e5d7e"
+      }
+    },
+    "path": "/resources/gfx/icons/antitoxinprobe.dds",
+    "output": "godot\\Assets\\UI\\icons\\antitoxinprobe.png",
+    "sha256": "2dddbaa979d33d56f0c8b6e7efb137ff467486863b442192b99038653eed3b0d",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "agentescape",
+    "icon": "escape",
+    "definition": {
+      "id": "0xE0000D7B8366D1D6",
+      "decimalId": "16140915888632549846",
+      "kind": "GomObject",
+      "name": "abl.agent.escape",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/346.bkt",
+        "uncompressedOffset": 8772,
+        "blockLength": 373,
+        "resourceSha256": "f9b65b1ddf32ebeeb9c40ad7c3f64d0e3b292027f8834771aa91a73c02d9d2fa"
+      }
+    },
+    "path": "/resources/gfx/icons/escape.dds",
+    "output": "godot\\Assets\\UI\\icons\\escape.png",
+    "sha256": "4ca7f99027108398d4950702111c698e9aeb7e1cfe6554acee129926b515a90f",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "shieldprobe",
+    "icon": "shieldprobe",
+    "definition": {
+      "id": "0xE00057B2248E4141",
+      "decimalId": "16140997487124955457",
+      "kind": "GomObject",
+      "name": "abl.agent.shield_probe",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/457.bkt",
+        "uncompressedOffset": 101932,
+        "blockLength": 519,
+        "resourceSha256": "79c318d019662b4b4f8536fc49e8a430a859f81e41705d92a65c1c284afc3b80"
+      }
+    },
+    "path": "/resources/gfx/icons/shieldprobe.dds",
+    "output": "godot\\Assets\\UI\\icons\\shieldprobe.png",
+    "sha256": "7a3607635efcc1a450b142b73951b72396277677cfb9122d6cc6cedeade4f09a",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "dart",
+    "icon": "toxicdart",
+    "definition": {
+      "id": "0xE0000D7AAE2780F3",
+      "decimalId": "16140915885054853363",
+      "kind": "GomObject",
+      "name": "abl.agent.toxic_dart",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/363.bkt",
+        "uncompressedOffset": 17660,
+        "blockLength": 667,
+        "resourceSha256": "ec84e4c4d3149a227b421f7d96d7e22b6b2d3acba837632356e4148a1fdc53ed"
+      }
+    },
+    "path": "/resources/gfx/icons/toxicdart.dds",
+    "output": "godot\\Assets\\UI\\icons\\toxicdart.png",
+    "sha256": "298444603c252b4155a1169b9b4fc96c7fbc57eed3a41ae65dee93fe87f2528f",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "corrosivegrenade",
+    "icon": "stickygrenade",
+    "definition": {
+      "id": "0xE0009878DC600F2F",
+      "decimalId": "16141068709356637999",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.lethality.corrosive_grenade",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/499.bkt",
+        "uncompressedOffset": 159420,
+        "blockLength": 773,
+        "resourceSha256": "8baa8e4f66aebb72c6b5f42e30ec94859da7fd5b9f906f320d1840d64bdbb0b1"
+      }
+    },
+    "path": "/resources/gfx/icons/stickygrenade.dds",
+    "output": "godot\\Assets\\UI\\icons\\stickygrenade.png",
+    "sha256": "74ba942fba567abd593598623a6bfef1791500a35d5ee8948c9a0d262839f149",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "koltoinjection",
+    "icon": "koltoinfusion",
+    "definition": {
+      "id": "0xE00088FF90618D64",
+      "decimalId": "16141051695716207972",
+      "kind": "GomObject",
+      "name": "abl.agent.kolto_injection",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/472.bkt",
+        "uncompressedOffset": 136852,
+        "blockLength": 451,
+        "resourceSha256": "ade11d5f6ef680c5dae4f34f4aea275e2454e277330c3c401a3b3edc6b728e27"
+      }
+    },
+    "path": "/resources/gfx/icons/koltoinfusion.dds",
+    "output": "godot\\Assets\\UI\\icons\\koltoinfusion.png",
+    "sha256": "e28339eaa6637a01d06b4f2eca04b6c9d76e807b4cf676a1458e54eaae611300",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "agentstealth",
+    "icon": "stealth",
+    "definition": {
+      "id": "0xE000B451AEFE2EAD",
+      "decimalId": "16141099327417101997",
+      "kind": "GomObject",
+      "name": "abl.agent.stealth",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/497.bkt",
+        "uncompressedOffset": 212700,
+        "blockLength": 611,
+        "resourceSha256": "09a2c91e08d9e78fd4ebe7fcb8a3afd1e8e60bb2f25ce79e90e78fe5bff5db32"
+      }
+    },
+    "path": "/resources/gfx/icons/stealth.dds",
+    "output": "godot\\Assets\\UI\\icons\\stealth.png",
+    "sha256": "334d471f2ad90990e27bd75ec061bf06cce512d67eb013e785bb824458965955",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "cloakingscreen",
+    "icon": "coveredescape",
+    "definition": {
+      "id": "0xE0005BD90F9EB547",
+      "decimalId": "16141002052323947847",
+      "kind": "GomObject",
+      "name": "abl.agent.cloaking_screen",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/347.bkt",
+        "uncompressedOffset": 96828,
+        "blockLength": 703,
+        "resourceSha256": "6ab6f1fc2a723dd38e115373581b7594c0b3c1d6748f77a7290831d980328c56"
+      }
+    },
+    "path": "/resources/gfx/icons/coveredescape.dds",
+    "output": "godot\\Assets\\UI\\icons\\coveredescape.png",
+    "sha256": "af4b290432935c47086ba517098cdcabeb14e07a70ebf19ad53e2fe9835b0b12",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "stimboost",
+    "icon": "stimulants",
+    "definition": {
+      "id": "0xE000930238CCA7B9",
+      "decimalId": "16141062702248011705",
+      "kind": "GomObject",
+      "name": "abl.agent.stim_boost",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/205.bkt",
+        "uncompressedOffset": 165692,
+        "blockLength": 484,
+        "resourceSha256": "e5b98ff6e74d99418691bcfdc5b2fec66b61137c4dbc8aa9dfc0df4348c7c241"
+      }
+    },
+    "path": "/resources/gfx/icons/stimulants.dds",
+    "output": "godot\\Assets\\UI\\icons\\stimulants.png",
+    "sha256": "fb0680f384a28d1eea588fb3afdb9c2b81814e30ca0ef99e0b23d2e17308bf11",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "snipershot",
+    "icon": "snipe",
+    "definition": {
+      "id": "0xE0001D9CFD531B26",
+      "decimalId": "16140933624598043430",
+      "kind": "GomObject",
+      "name": "abl.agent.snipe",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/430.bkt",
+        "uncompressedOffset": 48788,
+        "blockLength": 538,
+        "resourceSha256": "bcfafbbdb68e6bd9df7bbbbb78805613938f7a60b9f2b0b638e13806553fb84f"
+      }
+    },
+    "path": "/resources/gfx/icons/snipe.dds",
+    "output": "godot\\Assets\\UI\\icons\\snipe.png",
+    "sha256": "f3f4b4088843deacd8ac9f9001e5832df3b107e27237f6e49d0fa7ba428b487b",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "ambush",
+    "icon": "ambush",
+    "definition": {
+      "id": "0xE0005BD891A7A83A",
+      "decimalId": "16141002050210605114",
+      "kind": "GomObject",
+      "name": "abl.agent.ambush",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/114.bkt",
+        "uncompressedOffset": 103972,
+        "blockLength": 546,
+        "resourceSha256": "87e89aec2a6697d1e9471b2ee5a0cc5d37ef368133bcc0e75b506739026353f7"
+      }
+    },
+    "path": "/resources/gfx/icons/ambush.dds",
+    "output": "godot\\Assets\\UI\\icons\\ambush.png",
+    "sha256": "bf75fac5e46a36152330f5c529c55ce938c0f9b5beae58a1120d50b2538b2208",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "seriesofshots",
+    "icon": "reactiveshots",
+    "definition": {
+      "id": "0xE0004B502CE1B27A",
+      "decimalId": "16140983872218313338",
+      "kind": "GomObject",
+      "name": "abl.agent.series_of_shots",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/338.bkt",
+        "uncompressedOffset": 103708,
+        "blockLength": 633,
+        "resourceSha256": "30262c13b05d4385828b7c8ee67a86b4f1f45db4f3bcae9b3600d65b6794938c"
+      }
+    },
+    "path": "/resources/gfx/icons/reactiveshots.dds",
+    "output": "godot\\Assets\\UI\\icons\\reactiveshots.png",
+    "sha256": "638be76db1051c6b29f37d57a88f5c032b2249e7cab77ad6b26b353dc3391cab",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "suppressivefire",
+    "icon": "barrage",
+    "definition": {
+      "id": "0xE000368F292C0E08",
+      "decimalId": "16140961052994833928",
+      "kind": "GomObject",
+      "name": "abl.agent.suppressive_fire",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/428.bkt",
+        "uncompressedOffset": 63220,
+        "blockLength": 515,
+        "resourceSha256": "3484c6180b05b2574b341e56fe7119233fafae161cbc38a681420607a78753a3"
+      }
+    },
+    "path": "/resources/gfx/icons/barrage.dds",
+    "output": "godot\\Assets\\UI\\icons\\barrage.png",
+    "sha256": "131a689b4850bcaccff701a43b182ecb27f78d8b84d964561b0e8e258d66986b",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "orbitalstrike",
+    "icon": "orbitalbombardment",
+    "definition": {
+      "id": "0xE0009899A1614952",
+      "decimalId": "16141068850100783442",
+      "kind": "GomObject",
+      "name": "abl.agent.orbital_strike",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/442.bkt",
+        "uncompressedOffset": 182660,
+        "blockLength": 672,
+        "resourceSha256": "f0e0ba69fcef46614e7430ace86fb50ddfb9629ddc2ea528f3ff24233f101129"
+      }
+    },
+    "path": "/resources/gfx/icons/orbitalbombardment.dds",
+    "output": "godot\\Assets\\UI\\icons\\orbitalbombardment.png",
+    "sha256": "7c9a55e33ada0bf38038468156d465c587d7c798c6aee13257951b8612394d34",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "explosiveprobe",
+    "icon": "explosiveprobe",
+    "definition": {
+      "id": "0xE000416CF6CA39E6",
+      "decimalId": "16140973000748579302",
+      "kind": "GomObject",
+      "name": "abl.agent.explosive_probe",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/302.bkt",
+        "uncompressedOffset": 68020,
+        "blockLength": 871,
+        "resourceSha256": "a66bb8ffe20280a6cca99e0991fabb9d426f1bf3be89cc4344f5b1d084b00528"
+      }
+    },
+    "path": "/resources/gfx/icons/explosiveprobe.dds",
+    "output": "godot\\Assets\\UI\\icons\\explosiveprobe.png",
+    "sha256": "e8cc6c0984b2550a499f233f794a0cde146dc8aacbd1ca7207d3c513b5b0ae14",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "coverpulse",
+    "icon": "concussionmissiles",
+    "definition": {
+      "id": "0xE0003C8FBD0ED531",
+      "decimalId": "16140967652545713457",
+      "kind": "GomObject",
+      "name": "abl.agent.cover_pulse",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/457.bkt",
+        "uncompressedOffset": 64668,
+        "blockLength": 685,
+        "resourceSha256": "79c318d019662b4b4f8536fc49e8a430a859f81e41705d92a65c1c284afc3b80"
+      }
+    },
+    "path": "/resources/gfx/icons/concussionmissiles.dds",
+    "output": "godot\\Assets\\UI\\icons\\concussionmissiles.png",
+    "sha256": "c4df6d72cb4dfc11f098287118b4c225f3cad3386f26582f4a2e7714a75c2cdf",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "entrench",
+    "icon": "entrench",
+    "definition": {
+      "id": "0xE000ADDF303F9CEE",
+      "decimalId": "16141092238594645230",
+      "kind": "GomObject",
+      "name": "abl.agent.entrench",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/230.bkt",
+        "uncompressedOffset": 196756,
+        "blockLength": 540,
+        "resourceSha256": "66a70581f9eee9300d0ce1d9ed77732fb985764da4709da1715d1fc451689a4c"
+      }
+    },
+    "path": "/resources/gfx/icons/entrench.dds",
+    "output": "godot\\Assets\\UI\\icons\\entrench.png",
+    "sha256": "ad1c7c8fdf21e23619bd0504a0ad32bf3281da9db9ee0f0097cf15599a3fbb55",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "ballisticshield",
+    "icon": "bioelectricshieldenhancer",
+    "definition": {
+      "id": "0xE000BC2D34BC88A7",
+      "decimalId": "16141107966840178855",
+      "kind": "GomObject",
+      "name": "abl.agent.ballistic_shield",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/355.bkt",
+        "uncompressedOffset": 220324,
+        "blockLength": 666,
+        "resourceSha256": "d6a8bdbc69e31765db1dbaa768cecbabab7da178ef71f74b41f0f92f633e6624"
+      }
+    },
+    "path": "/resources/gfx/icons/bioelectricshieldenhancer.dds",
+    "output": "godot\\Assets\\UI\\icons\\bioelectricshieldenhancer.png",
+    "sha256": "bb2b24f82d656ebb53cd59ef347c8c5063182897d5df08102f84e9c490008524",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "basicrifle",
+    "icon": "rifleshot",
+    "definition": {
+      "id": "0xE0000488ED29D943",
+      "decimalId": "16140906050636863811",
+      "kind": "GomObject",
+      "name": "abl.agent.rifle_shot_optimize",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/311.bkt",
+        "uncompressedOffset": 3556,
+        "blockLength": 487,
+        "resourceSha256": "2e96a23961220791d41967b7d0fc09be07df6366c33ba90c3d00fd373442e029"
+      }
+    },
+    "path": "/resources/gfx/icons/rifleshot.dds",
+    "output": "godot\\Assets\\UI\\icons\\rifleshot.png",
+    "sha256": "22f5988249b1461df795df6c7b4fe160a5485b5fd732c8170fd6033593ea38dc",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "shiv",
+    "icon": "shiv",
+    "definition": {
+      "id": "0xE00075DA37A55ED8",
+      "decimalId": "16141030644592762584",
+      "kind": "GomObject",
+      "name": "abl.agent.shiv",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/84.bkt",
+        "uncompressedOffset": 142172,
+        "blockLength": 402,
+        "resourceSha256": "114ff57bb9df103925a87c213f21f12e42ad8be163d170f3f203f9ee54f7642a"
+      }
+    },
+    "path": "/resources/gfx/icons/shiv.dds",
+    "output": "godot\\Assets\\UI\\icons\\shiv.png",
+    "sha256": "013af2e7d84bd4bdfa69254ba346909875cee02141682bae5907be7ca2afde77",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "backstab",
+    "icon": "criticalblade",
+    "definition": {
+      "id": "0xE00006EA69396F3B",
+      "decimalId": "16140908668353343291",
+      "kind": "GomObject",
+      "name": "abl.agent.backstab",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/291.bkt",
+        "uncompressedOffset": 8508,
+        "blockLength": 527,
+        "resourceSha256": "f99cf6c7dcbb15ff53647f92aa50dc198dac58b8a7469ea27b239dc289d7a653"
+      }
+    },
+    "path": "/resources/gfx/icons/criticalblade.dds",
+    "output": "godot\\Assets\\UI\\icons\\criticalblade.png",
+    "sha256": "49b5d7b6be1beda79b4e76368d3e38ba805bd3621eddb83dd8fa1493704bfd8b",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "hiddenstrike",
+    "icon": "backstab",
+    "definition": {
+      "id": "0xE000A639EE6E943F",
+      "decimalId": "16141083832239428671",
+      "kind": "GomObject",
+      "name": "abl.agent.hidden_strike",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/171.bkt",
+        "uncompressedOffset": 199956,
+        "blockLength": 620,
+        "resourceSha256": "3a8a7eff139fcc656e90ea2c0426bcc35c9bb36135e37071b32c7cdc8d2ab2c2"
+      }
+    },
+    "path": "/resources/gfx/icons/backstab.dds",
+    "output": "godot\\Assets\\UI\\icons\\backstab.png",
+    "sha256": "0a8a176fee6156b3dc7f6d97bdcd96faeaada58bbfcfe99de3423a36b42eacf1",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "laceration",
+    "icon": "finishingstrikes",
+    "definition": {
+      "id": "0xE00023D1480824E9",
+      "decimalId": "16140940446259487977",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.concealment.laceration",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/477.bkt",
+        "uncompressedOffset": 40988,
+        "blockLength": 471,
+        "resourceSha256": "f9a8c89fa25287dfee9456aa2839fa5761f26204b919606f3a9d265c3fef4d0c"
+      }
+    },
+    "path": "/resources/gfx/icons/finishingstrikes.dds",
+    "output": "godot\\Assets\\UI\\icons\\finishingstrikes.png",
+    "sha256": "f63214abd38b136684f101186ffeb0173c6654190be8a71883459229532e707a",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "agentcull",
+    "icon": "cull",
+    "definition": {
+      "id": "0xE00010E1D887AA4C",
+      "decimalId": "16140919626682313292",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.lethality.cull",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/292.bkt",
+        "uncompressedOffset": 21916,
+        "blockLength": 568,
+        "resourceSha256": "7d742e5774a68845821b44343c613610c1eac7926075bcfc71ea653ac998298e"
+      }
+    },
+    "path": "/resources/gfx/icons/cull.dds",
+    "output": "godot\\Assets\\UI\\icons\\cull.png",
+    "sha256": "5520787f894419c5258e91583179f000f62db65d588729802085c844a88b6c06",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "koltoprobe",
+    "icon": "surgicalprobe",
+    "definition": {
+      "id": "0xE0004C7D59656D81",
+      "decimalId": "16140985165750300033",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.medic.kolto_probe",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/33.bkt",
+        "uncompressedOffset": 92244,
+        "blockLength": 510,
+        "resourceSha256": "59e81caad945d40d4f9b89bb2859163f0304024629d362609016e99b2aaa7f63"
+      }
+    },
+    "path": "/resources/gfx/icons/surgicalprobe.dds",
+    "output": "godot\\Assets\\UI\\icons\\surgicalprobe.png",
+    "sha256": "bb0052dd7afeceb05e184f6cb5d22caaf98a2d845d7ccec8f1c755abdbcbdbc6",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "surgicalprobe",
+    "icon": "advancedmedicalprobe",
+    "definition": {
+      "id": "0xE000083E1EE03853",
+      "decimalId": "16140910127394863187",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.medic.surgical_probe",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/187.bkt",
+        "uncompressedOffset": 9940,
+        "blockLength": 495,
+        "resourceSha256": "ba01b31393bb39221f676f490da7ffac5daf2cf11d5e3d85a036e86d59723e7d"
+      }
+    },
+    "path": "/resources/gfx/icons/advancedmedicalprobe.dds",
+    "output": "godot\\Assets\\UI\\icons\\advancedmedicalprobe.png",
+    "sha256": "51f55f3cc30369b510d8ffde539daec2b362781511e006cd631444621bfbaeb3",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "followthrough",
+    "icon": "followthrough",
+    "definition": {
+      "id": "0xE000E721D72DB83F",
+      "decimalId": "16141155197025892415",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.marksmanship.followthrough",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/415.bkt",
+        "uncompressedOffset": 260316,
+        "blockLength": 527,
+        "resourceSha256": "aa162518e2f3b8f85bf14b2e646983571165d6ded957c9ce3ffdca5d4d6d5300"
+      }
+    },
+    "path": "/resources/gfx/icons/followthrough.dds",
+    "output": "godot\\Assets\\UI\\icons\\followthrough.png",
+    "sha256": "98138ecc44de75ade19709328f756c80fd684e984d32e277797a2e74c2652cef",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "interrogationprobe",
+    "icon": "sonicprobe",
+    "definition": {
+      "id": "0xE000BB23F0EC2136",
+      "decimalId": "16141106827536113974",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.engineering.interrogation_probe",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/474.bkt",
+        "uncompressedOffset": 226548,
+        "blockLength": 640,
+        "resourceSha256": "a06b7f36a9f7b757e980d53c4d776d5e650f4040ba03ef70021a405a766a6600"
+      }
+    },
+    "path": "/resources/gfx/icons/sonicprobe.dds",
+    "output": "godot\\Assets\\UI\\icons\\sonicprobe.png",
+    "sha256": "39562857d1f1d3751c50a3b28e76783dc3ce5bac93dc104f79a21cb72f0a0e4e",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "plasmaprobe",
+    "icon": "plasmaprobe",
+    "definition": {
+      "id": "0xE000C3C477BEC9DD",
+      "decimalId": "16141116313085856221",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.engineering.plasma_probe",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/221.bkt",
+        "uncompressedOffset": 240228,
+        "blockLength": 843,
+        "resourceSha256": "5cc56d56525b5034ed4e499850a182297d8701e69aa602ee212916dac1c254d4"
+      }
+    },
+    "path": "/resources/gfx/icons/plasmaprobe.dds",
+    "output": "godot\\Assets\\UI\\icons\\plasmaprobe.png",
+    "sha256": "5293bf154701651d38baa688130b3e34311a1379d79f445c7442e96180d553e0",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "empdischarge",
+    "icon": "detonateprobe",
+    "definition": {
+      "id": "0xE000159A49DA368B",
+      "decimalId": "16140924816904042123",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.engineering.detonate_probes",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/123.bkt",
+        "uncompressedOffset": 17084,
+        "blockLength": 603,
+        "resourceSha256": "ce4fded13d4c072af6c5399344958686ef1c3368215bd4549e34a7d59223a4b1"
+      }
+    },
+    "path": "/resources/gfx/icons/detonateprobe.dds",
+    "output": "godot\\Assets\\UI\\icons\\detonateprobe.png",
+    "sha256": "8f507448aede317338b4b335e6b8d9988f9a5e934134e7f0871bf71ecb8de785",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "weakeningblast",
+    "icon": "defensivecommand",
+    "definition": {
+      "id": "0xE000E87639C2C9F2",
+      "decimalId": "16141156658968709618",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.lethality.weakening_blast",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/118.bkt",
+        "uncompressedOffset": 293916,
+        "blockLength": 569,
+        "resourceSha256": "6b43a4dd087f9c8dbd92ff5bfef982a63e4b4667e59b8d4b0f3efb269d9a9d46"
+      }
+    },
+    "path": "/resources/gfx/icons/defensivecommand.dds",
+    "output": "godot\\Assets\\UI\\icons\\defensivecommand.png",
+    "sha256": "bcaa348bfe126bb781593e384f09772094a90e3db9b1aaa3e1ccc49f23a64eb4",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "medicine.medical_consult",
+    "icon": "diagnosticscan",
+    "definition": {
+      "id": "0xE0006477C73F90ED",
+      "decimalId": "16141011530102575341",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.medic.medical_consult",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/341.bkt",
+        "uncompressedOffset": 98652,
+        "blockLength": 498,
+        "resourceSha256": "d32f2ef0b37a2ffac2cf0074222392a437895927c1563498e30c2cb61a4b97a9"
+      }
+    },
+    "path": "/resources/gfx/icons/diagnosticscan.dds",
+    "output": "godot\\Assets\\UI\\icons\\diagnosticscan.png",
+    "sha256": "a6095188bf217393902e69f48216b5a35fbf2edd93daa4c872610660edf207b3",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "medicine.medical_engineering",
+    "icon": "luminescentcells1",
+    "definition": {
+      "id": "0xE0007016E678B4C0",
+      "decimalId": "16141024308154119360",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.medic.medical_engineering",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/360.bkt",
+        "uncompressedOffset": 127612,
+        "blockLength": 644,
+        "resourceSha256": "917d724e3786beff7f655fba4f046f9daacf063bef84691475a9b805344dff62"
+      }
+    },
+    "path": "/resources/gfx/icons/luminescentcells1.dds",
+    "output": "godot\\Assets\\UI\\icons\\luminescentcells1.png",
+    "sha256": "6f8a13c285cf7fa3ffc2705f7404ca78b23d8a93dc66b559451b05d510d3b733",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "medicine.surgical_precision",
+    "icon": "surveyorskit",
+    "definition": {
+      "id": "0xE000F2AE735EBFE6",
+      "decimalId": "16141167895569678310",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.medic.surgical_precision",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/310.bkt",
+        "uncompressedOffset": 258532,
+        "blockLength": 654,
+        "resourceSha256": "1ee0787c930e9d3b79273769e34082778fa11a333473e65f2a3780bbfa66c08a"
+      }
+    },
+    "path": "/resources/gfx/icons/surveyorskit.dds",
+    "output": "godot\\Assets\\UI\\icons\\surveyorskit.png",
+    "sha256": "a77892b93405402ec55c4a91bead2666f21068b2ba0fc37e5a777e4219b64a03",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "medicine.medical_therapy",
+    "icon": "medicalcrate",
+    "definition": {
+      "id": "0xE000802651A22792",
+      "decimalId": "16141041966562551698",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.medic.medical_therapy",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/198.bkt",
+        "uncompressedOffset": 152868,
+        "blockLength": 507,
+        "resourceSha256": "969af46c27b67851b2bfff13e563e9c6bdae6944fd7819c39903112f579786e3"
+      }
+    },
+    "path": "/resources/gfx/icons/medicalcrate.dds",
+    "output": "godot\\Assets\\UI\\icons\\medicalcrate.png",
+    "sha256": "3d274eafdf42afd834a9404b97071c4c8b75f522e4bafd89cf06a70449b15aa7",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "medicine.patient_studies",
+    "icon": "imperialdatapad",
+    "definition": {
+      "id": "0xE000DF06EEBD1948",
+      "decimalId": "16141146285364025672",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.medic.patient_studies",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/172.bkt",
+        "uncompressedOffset": 268884,
+        "blockLength": 475,
+        "resourceSha256": "55e8a934e0c7b665141a573ccba0ad407156b7943a217ac1bf630f9dc2b7b82f"
+      }
+    },
+    "path": "/resources/gfx/icons/imperialdatapad.dds",
+    "output": "godot\\Assets\\UI\\icons\\imperialdatapad.png",
+    "sha256": "98eb1320de4e9788c1322b812ab0688927df6c3e5c3f3b542300a3f1b9e35cc9",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "medicine.accomplished_doctor",
+    "icon": "accomplishedsawbones",
+    "definition": {
+      "id": "0xE00057ABE2BDC0C3",
+      "decimalId": "16140997460250968259",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.medic.accomplished_doctor",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/259.bkt",
+        "uncompressedOffset": 89548,
+        "blockLength": 466,
+        "resourceSha256": "8ff5f84ddf8bc893825651c97fe0ca8666ebcff0800846436889533ba9b38850"
+      }
+    },
+    "path": "/resources/gfx/icons/accomplishedsawbones.dds",
+    "output": "godot\\Assets\\UI\\icons\\accomplishedsawbones.png",
+    "sha256": "d7c6368ab38da09282a7ec4b0ab8c5c019f48821fc44705716a6402018527e6d",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "concealment.collateral_strike",
+    "icon": "stockstrike",
+    "definition": {
+      "id": "0xE000444B1024FE67",
+      "decimalId": "16140976153679953511",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.concealment.collateral_strike",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/11.bkt",
+        "uncompressedOffset": 68212,
+        "blockLength": 634,
+        "resourceSha256": "b8a44eb7fc0df40fcfa9578f3596fa3f2c0b8ae62a5520d8fd36a33f23183fcc"
+      }
+    },
+    "path": "/resources/gfx/icons/stockstrike.dds",
+    "output": "godot\\Assets\\UI\\icons\\stockstrike.png",
+    "sha256": "57fc0a297f2b14efe8a1ea620da0f5d2e0bee93655751914eea3a611db9fa7f2",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "concealment.culling",
+    "icon": "lifedrain",
+    "definition": {
+      "id": "0xE000C677FF27F7D9",
+      "decimalId": "16141119283180074969",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.concealment.culling",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/469.bkt",
+        "uncompressedOffset": 254804,
+        "blockLength": 477,
+        "resourceSha256": "35977831c6d8cf4d6c7003f28cbca646dd8877fb4f2b3fe4f560a9be56a50a1b"
+      }
+    },
+    "path": "/resources/gfx/icons/lifedrain.dds",
+    "output": "godot\\Assets\\UI\\icons\\lifedrain.png",
+    "sha256": "b26fbf6302da3dc6e88b6025781d7de27e78bf92a2cd7c746752d431f0e3ccf2",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "concealment.acid_blade",
+    "icon": "acidblade",
+    "definition": {
+      "id": "0xE00090537DBCB5B9",
+      "decimalId": "16141059752762062265",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.concealment.acid_blade",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/265.bkt",
+        "uncompressedOffset": 161788,
+        "blockLength": 713,
+        "resourceSha256": "7f107be85007ade6aa7de4a64c1480a32e9faa407f72287ba114c4efa8a712ce"
+      }
+    },
+    "path": "/resources/gfx/icons/acidblade.dds",
+    "output": "godot\\Assets\\UI\\icons\\acidblade.png",
+    "sha256": "385ffe4399f5f64fcf0f63855d5df1624bcc19d55aff2f810e422ad7d2aeff31",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "concealment.flanking",
+    "icon": "quickdraw",
+    "definition": {
+      "id": "0xE000F7A89D0DC7AF",
+      "decimalId": "16141173368057350063",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.concealment.flanking",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/63.bkt",
+        "uncompressedOffset": 330924,
+        "blockLength": 384,
+        "resourceSha256": "c67e4d096957a308ddfbc02b1d1873a74bbe1ebdad2855b92e5f7cfb9b51ef88"
+      }
+    },
+    "path": "/resources/gfx/icons/quickdraw.dds",
+    "output": "godot\\Assets\\UI\\icons\\quickdraw.png",
+    "sha256": "e05f8295f2b22b144ab5c94c7fcf252ddf13d84880b8670b061878e957b3f577",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "concealment.waylay",
+    "icon": "criticalblade",
+    "definition": {
+      "id": "0xE000B6C4CD99478A",
+      "decimalId": "16141102020875077514",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.concealment.waylay",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/14.bkt",
+        "uncompressedOffset": 232340,
+        "blockLength": 385,
+        "resourceSha256": "f0fb7fa49e30ba49683513d8aeb20a5f9d1a456ee10bc9454e23ba7f15f2e30b"
+      }
+    },
+    "path": "/resources/gfx/icons/criticalblade.dds",
+    "output": "godot\\Assets\\UI\\icons\\criticalblade.png",
+    "sha256": "49b5d7b6be1beda79b4e76368d3e38ba805bd3621eddb83dd8fa1493704bfd8b",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "concealment.advanced_cloaking",
+    "icon": "coveredescape",
+    "definition": {
+      "id": "0xE000EB55176E0492",
+      "decimalId": "16141159815193691282",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.concealment.advanced_cloaking",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/282.bkt",
+        "uncompressedOffset": 280468,
+        "blockLength": 538,
+        "resourceSha256": "d3a5ea8b3ed65ac7c4a31ed7006486e0b6edb1586102bcbac07da02a12465674"
+      }
+    },
+    "path": "/resources/gfx/icons/coveredescape.dds",
+    "output": "godot\\Assets\\UI\\icons\\coveredescape.png",
+    "sha256": "af4b290432935c47086ba517098cdcabeb14e07a70ebf19ad53e2fe9835b0b12",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "marksmanship.ballistic_dampers",
+    "icon": "heavyarmors",
+    "definition": {
+      "id": "0xE000E74E404E4724",
+      "decimalId": "16141155387768194852",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.marksmanship.ballistic_damper",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/352.bkt",
+        "uncompressedOffset": 273956,
+        "blockLength": 591,
+        "resourceSha256": "c229fae65b93443b1d249f0d21440b0acb10713a44249ed114d9bf50b0a143c8"
+      }
+    },
+    "path": "/resources/gfx/icons/heavyarmors.dds",
+    "output": "godot\\Assets\\UI\\icons\\heavyarmors.png",
+    "sha256": "3f53649a5d66a044178b0562893cc925e5dd41cb36cddf302c886375097433ad",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "marksmanship.recoil_control",
+    "icon": "rifleshot",
+    "definition": {
+      "id": "0xE0002FA0EC18724D",
+      "decimalId": "16140953432698155597",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.marksmanship.recoil_control",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/97.bkt",
+        "uncompressedOffset": 63604,
+        "blockLength": 449,
+        "resourceSha256": "b6ebcd42f9aec1ab10fa368764570d379fc59f495106193d5cb887b8ba32e47d"
+      }
+    },
+    "path": "/resources/gfx/icons/rifleshot.dds",
+    "output": "godot\\Assets\\UI\\icons\\rifleshot.png",
+    "sha256": "22f5988249b1461df795df6c7b4fe160a5485b5fd732c8170fd6033593ea38dc",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "marksmanship.penetrating_blasts",
+    "icon": "ambush",
+    "definition": null,
+    "path": "/resources/gfx/icons/ambush.dds",
+    "output": "godot\\Assets\\UI\\icons\\ambush.png",
+    "sha256": "bf75fac5e46a36152330f5c529c55ce938c0f9b5beae58a1120d50b2538b2208",
+    "evidence": "Adapted talent using recovered ability art"
+  },
+  {
+    "owner": "marksmanship.snipers_nest",
+    "icon": "takecover",
+    "definition": {
+      "id": "0xE000DE113AD160EE",
+      "decimalId": "16141145230078468334",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.marksmanship.snipers_nest",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/334.bkt",
+        "uncompressedOffset": 266812,
+        "blockLength": 384,
+        "resourceSha256": "5782ec6f6ab96821aa8ddfb1dd9a4cd0e911da7425dd92f3845910ce95695f81"
+      }
+    },
+    "path": "/resources/gfx/icons/takecover.dds",
+    "output": "godot\\Assets\\UI\\icons\\takecover.png",
+    "sha256": "7d185290870ee73fb8c4ee7454e74e82e01beac4b7e5f8d8b2a4de0c15e8beba",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "marksmanship.rapid_fire",
+    "icon": "lockandload",
+    "definition": {
+      "id": "0xE000E2DFF374D720",
+      "decimalId": "16141150515985962784",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.marksmanship.rapid_fire",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/284.bkt",
+        "uncompressedOffset": 256596,
+        "blockLength": 409,
+        "resourceSha256": "26342f1304164120a62034aeb2868705e5120bbd816e327d620133ceacd45e55"
+      }
+    },
+    "path": "/resources/gfx/icons/lockandload.dds",
+    "output": "godot\\Assets\\UI\\icons\\lockandload.png",
+    "sha256": "6004fca46f83ed73d8ef9fdfbe50f51baca18ea270c0245d4ca25275cf1a334c",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "marksmanship.imperial_assassin",
+    "icon": "ambush",
+    "definition": null,
+    "path": "/resources/gfx/icons/ambush.dds",
+    "output": "godot\\Assets\\UI\\icons\\ambush.png",
+    "sha256": "bf75fac5e46a36152330f5c529c55ce938c0f9b5beae58a1120d50b2538b2208",
+    "evidence": "Adapted talent using recovered ability art"
+  },
+  {
+    "owner": "engineering.cluster_bombs",
+    "icon": "democharge",
+    "definition": {
+      "id": "0xE000762DD634AC4F",
+      "decimalId": "16141031003735239759",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.engineering.cluster_bombs",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/259.bkt",
+        "uncompressedOffset": 124140,
+        "blockLength": 574,
+        "resourceSha256": "8ff5f84ddf8bc893825651c97fe0ca8666ebcff0800846436889533ba9b38850"
+      }
+    },
+    "path": "/resources/gfx/icons/democharge.dds",
+    "output": "godot\\Assets\\UI\\icons\\democharge.png",
+    "sha256": "4819be1618cdda721a6cbe49d0661f64c881ef2213c45f76903fb9651cdc4861",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "engineering.imperial_methodology",
+    "icon": "shrapnelburst",
+    "definition": {
+      "id": "0xE000D9FF90616F40",
+      "decimalId": "16141140756158050112",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.engineering.imperial_methodology",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/112.bkt",
+        "uncompressedOffset": 254452,
+        "blockLength": 511,
+        "resourceSha256": "07efa7686de3cee9ecd876be723dad1107c94c96709ce56a090fa36a3f65e115"
+      }
+    },
+    "path": "/resources/gfx/icons/shrapnelburst.dds",
+    "output": "godot\\Assets\\UI\\icons\\shrapnelburst.png",
+    "sha256": "ceb6f822391cb19d31ad97406e8bdf2bdad78e2a4b9a9f57f260bf9410e57dc6",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "engineering.efficient_engineering",
+    "icon": "slicing",
+    "definition": {
+      "id": "0xE000E6EC9718808F",
+      "decimalId": "16141154968317493391",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.engineering.efficient_engineering",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/391.bkt",
+        "uncompressedOffset": 297500,
+        "blockLength": 453,
+        "resourceSha256": "cf610f8888530f0d78c46a7803676e0a77e591519a55b2841f9bc1b123ad28f9"
+      }
+    },
+    "path": "/resources/gfx/icons/slicing.dds",
+    "output": "godot\\Assets\\UI\\icons\\slicing.png",
+    "sha256": "a472b8c2d4164bbb11502221134761d1f6373e33f8257a4daa359dc77697cb0b",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "engineering.experimental_explosives",
+    "icon": "thermaldetonation",
+    "definition": {
+      "id": "0xE00092A1AE3F98F8",
+      "decimalId": "16141062287606651128",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.engineering.experimental_explosives",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/128.bkt",
+        "uncompressedOffset": 187540,
+        "blockLength": 448,
+        "resourceSha256": "0689128753179d9f5c6697555fe690bf773b34daa881264c8bd2223762f065ff"
+      }
+    },
+    "path": "/resources/gfx/icons/thermaldetonation.dds",
+    "output": "godot\\Assets\\UI\\icons\\thermaldetonation.png",
+    "sha256": "43c7e736ca0c725a4e60e4d821157dc229d7a1e5f9668a83e8ce861d23ec7775",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "engineering.electrified_railgun",
+    "icon": "electrostaves",
+    "definition": {
+      "id": "0xE00081335BDC4C81",
+      "decimalId": "16141043122080337025",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.engineering.electrified_railgun",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/25.bkt",
+        "uncompressedOffset": 164148,
+        "blockLength": 602,
+        "resourceSha256": "9884f9ef0176d6aef4a9e037c7afd3e16b14d02979649740c5e56a56f43cbd96"
+      }
+    },
+    "path": "/resources/gfx/icons/electrostaves.dds",
+    "output": "godot\\Assets\\UI\\icons\\electrostaves.png",
+    "sha256": "eaae4ce202e468d2cff543947d193f7c1e772437b116d1e6ed1995a8ca6ec977",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "engineering.stroke_of_genius",
+    "icon": "iachisssecretpolice",
+    "definition": {
+      "id": "0xE000F71921FC4FFD",
+      "decimalId": "16141172751812284413",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.engineering.stroke_of_genius",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/413.bkt",
+        "uncompressedOffset": 265372,
+        "blockLength": 500,
+        "resourceSha256": "3e0ff16b232eade33d2f52d8153670c762cb9c9ed0dbcce9ca1a30a1e1550afb"
+      }
+    },
+    "path": "/resources/gfx/icons/iachisssecretpolice.dds",
+    "output": "godot\\Assets\\UI\\icons\\iachisssecretpolice.png",
+    "sha256": "8f0ebd1500a42098ff9d6fd4ea0c0d70dc47c332fe65e91ce71595ce803e7e37",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "agent_lethality.lethal_injectors",
+    "icon": "hypo4",
+    "definition": {
+      "id": "0xE0003E39044B8E8B",
+      "decimalId": "16140969479101976203",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.lethality.toxic_injectors",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/203.bkt",
+        "uncompressedOffset": 76956,
+        "blockLength": 419,
+        "resourceSha256": "8e63dfb4d7b263f7bfc56264fef8c802f1e7c79ec78604b3135a046b0f09e6a2"
+      }
+    },
+    "path": "/resources/gfx/icons/hypo4.dds",
+    "output": "godot\\Assets\\UI\\icons\\hypo4.png",
+    "sha256": "e3fa306ff41027df356297b66c31e1c4814d57130a2afe466689a65d9c82d2e1",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "agent_lethality.corrosive_microbes",
+    "icon": "fungalsample1",
+    "definition": {
+      "id": "0xE000D67144CD369A",
+      "decimalId": "16141136846469805722",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.lethality.corrosive_microbes",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/222.bkt",
+        "uncompressedOffset": 249188,
+        "blockLength": 428,
+        "resourceSha256": "f669be36def6b023b37adcd95a0af75da973f7e3ac90d73a39fc94b7f7c510e5"
+      }
+    },
+    "path": "/resources/gfx/icons/fungalsample1.dds",
+    "output": "godot\\Assets\\UI\\icons\\fungalsample1.png",
+    "sha256": "dcc7c7adc3239b6ac3eef815f4b893dc9089008866c634d6a9292640c7fc80a4",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "agent_lethality.lingering_toxins",
+    "icon": "sacrifice",
+    "definition": {
+      "id": "0xE000B6358F30E2AE",
+      "decimalId": "16141101405647725230",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.lethality.lingering_toxins",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/230.bkt",
+        "uncompressedOffset": 201476,
+        "blockLength": 562,
+        "resourceSha256": "66a70581f9eee9300d0ce1d9ed77732fb985764da4709da1715d1fc451689a4c"
+      }
+    },
+    "path": "/resources/gfx/icons/sacrifice.dds",
+    "output": "godot\\Assets\\UI\\icons\\sacrifice.png",
+    "sha256": "3525828a478cc6b4f2c1bd1f81e69000429b09b76ba3e7cab4690183d8c90823",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "agent_lethality.devouring_microbes",
+    "icon": "wither",
+    "definition": {
+      "id": "0xE00063040AD4D4B2",
+      "decimalId": "16141009933508596914",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.lethality.devouring_microbes",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/414.bkt",
+        "uncompressedOffset": 126452,
+        "blockLength": 443,
+        "resourceSha256": "5fde0b4bf71f59b6345be9fdcfb14b9584a57a2137586e2f77158c30acb1e931"
+      }
+    },
+    "path": "/resources/gfx/icons/wither.dds",
+    "output": "godot\\Assets\\UI\\icons\\wither.png",
+    "sha256": "0e250e26f7488577d88880509a5590106b2f718c6124a81c3486c35b7e0e6586",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "agent_lethality.lethal_purpose",
+    "icon": "assassinstraining",
+    "definition": {
+      "id": "0xE00038AFF8819696",
+      "decimalId": "16140963392935532182",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.lethality.lethal_purpose",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/182.bkt",
+        "uncompressedOffset": 63420,
+        "blockLength": 517,
+        "resourceSha256": "aebe63b3a2b988c1d2d612029d19264eeb0fa2170f8a114909832cef4d40eab5"
+      }
+    },
+    "path": "/resources/gfx/icons/assassinstraining.dds",
+    "output": "godot\\Assets\\UI\\icons\\assassinstraining.png",
+    "sha256": "77a0f2d08683a898abd1b7e8e30dad8e2d63238d8fbf524c26aed78943f42c91",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "agent_lethality.license_to_kill",
+    "icon": "imperialagent",
+    "definition": {
+      "id": "0xE0000F4F7C6F7F53",
+      "decimalId": "16140917898560372563",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.lethality.license_to_kill",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/63.bkt",
+        "uncompressedOffset": 19756,
+        "blockLength": 401,
+        "resourceSha256": "c67e4d096957a308ddfbc02b1d1873a74bbe1ebdad2855b92e5f7cfb9b51ef88"
+      }
+    },
+    "path": "/resources/gfx/icons/imperialagent.dds",
+    "output": "godot\\Assets\\UI\\icons\\imperialagent.png",
+    "sha256": "1a284de8010fb13b9a2e60abdb3e4659df6bd62d61b3ea8680e8c6c7a72497c5",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "medicine.enduring_kolto",
+    "icon": "surgicalprobe",
+    "definition": null,
+    "path": "/resources/gfx/icons/surgicalprobe.dds",
+    "output": "godot\\Assets\\UI\\icons\\surgicalprobe.png",
+    "sha256": "bb0052dd7afeceb05e184f6cb5d22caaf98a2d845d7ccec8f1c755abdbcbdbc6",
+    "evidence": "Adapted talent using recovered ability art"
+  },
+  {
+    "owner": "medicine.medical_screen",
+    "icon": "shieldprobe",
+    "definition": null,
+    "path": "/resources/gfx/icons/shieldprobe.dds",
+    "output": "godot\\Assets\\UI\\icons\\shieldprobe.png",
+    "sha256": "7a3607635efcc1a450b142b73951b72396277677cfb9122d6cc6cedeade4f09a",
+    "evidence": "Adapted talent using recovered ability art"
+  },
+  {
+    "owner": "medicine.emergency_response",
+    "icon": "koltoinfusion",
+    "definition": null,
+    "path": "/resources/gfx/icons/koltoinfusion.dds",
+    "output": "godot\\Assets\\UI\\icons\\koltoinfusion.png",
+    "sha256": "e28339eaa6637a01d06b4f2eca04b6c9d76e807b4cf676a1458e54eaae611300",
+    "evidence": "Adapted talent using recovered ability art"
+  },
+  {
+    "owner": "concealment.tactical_opportunity",
+    "icon": "hiltstrike",
+    "definition": {
+      "id": "0xE0001CC8A6BC3F37",
+      "decimalId": "16140932712612249399",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.concealment.tactical_opportunity",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/399.bkt",
+        "uncompressedOffset": 34668,
+        "blockLength": 638,
+        "resourceSha256": "ad02167c6f7673640b426f9e2f63980bfacd3a7ae4a280f320229050ea12fe5b"
+      }
+    },
+    "path": "/resources/gfx/icons/hiltstrike.dds",
+    "output": "godot\\Assets\\UI\\icons\\hiltstrike.png",
+    "sha256": "1076488848960773caecd1465889c23087c340349d15fc072aec2cfb0a8925a1",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "concealment.meticulously_kept_blades",
+    "icon": "vibroblades",
+    "definition": {
+      "id": "0xE000089CC0CC0309",
+      "decimalId": "16140910533838373641",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.concealment.meticulously_kept_blades",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/141.bkt",
+        "uncompressedOffset": 14532,
+        "blockLength": 470,
+        "resourceSha256": "81e4c5a9c2fe0ab905392d506a585e5f62a0b09d2a4ca0cfe44ecbf1f3a27426"
+      }
+    },
+    "path": "/resources/gfx/icons/vibroblades.dds",
+    "output": "godot\\Assets\\UI\\icons\\vibroblades.png",
+    "sha256": "d83301a3bf982d0049749c34dff53349a65ae5e445b3f2680fdaff3f7fa808cd",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "concealment.revitalizers",
+    "icon": "reanimation",
+    "definition": {
+      "id": "0xE0002643AE4A919E",
+      "decimalId": "16140943136624644510",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.concealment.revitalizers",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/10.bkt",
+        "uncompressedOffset": 54820,
+        "blockLength": 439,
+        "resourceSha256": "37b1477863b0b6e917831b358f4b6e66e54482b8b688e0fef7a208dcb34cb786"
+      }
+    },
+    "path": "/resources/gfx/icons/reanimation.dds",
+    "output": "godot\\Assets\\UI\\icons\\reanimation.png",
+    "sha256": "950c7cfcaf4fcbdcec8a7d292d46dc3667529d648038e0a4791318b1c3903c26",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "marksmanship.sector_ranger",
+    "icon": "iamilitaryofficer",
+    "definition": {
+      "id": "0xE000291E043636E5",
+      "decimalId": "16140946273392277221",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.marksmanship.sector_ranger",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/221.bkt",
+        "uncompressedOffset": 48252,
+        "blockLength": 492,
+        "resourceSha256": "5cc56d56525b5034ed4e499850a182297d8701e69aa602ee212916dac1c254d4"
+      }
+    },
+    "path": "/resources/gfx/icons/iamilitaryofficer.dds",
+    "output": "godot\\Assets\\UI\\icons\\iamilitaryofficer.png",
+    "sha256": "9d33fb837eab13d4434486b1399e0ac6f47ab8fc342c2026dd8de9e5eadec6b5",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "marksmanship.reactive_shots",
+    "icon": "iaassassin",
+    "definition": {
+      "id": "0xE0002B3A1EAFCEEB",
+      "decimalId": "16140948593118793451",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.marksmanship.reactive_shots",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/451.bkt",
+        "uncompressedOffset": 49572,
+        "blockLength": 518,
+        "resourceSha256": "c592229a06a4eeff04af114d793fe91d0e01bdf898990f3fe6e39cf9a8eca909"
+      }
+    },
+    "path": "/resources/gfx/icons/iaassassin.dds",
+    "output": "godot\\Assets\\UI\\icons\\iaassassin.png",
+    "sha256": "4fae295555cba6e17b789ff50fb4be8931f6a5f1d182a480274c5d2716cf5b72",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "marksmanship.deployed_cover",
+    "icon": "entrench",
+    "definition": null,
+    "path": "/resources/gfx/icons/entrench.dds",
+    "output": "godot\\Assets\\UI\\icons\\entrench.png",
+    "sha256": "ad1c7c8fdf21e23619bd0504a0ad32bf3281da9db9ee0f0097cf15599a3fbb55",
+    "evidence": "Adapted talent using recovered ability art"
+  },
+  {
+    "owner": "engineering.explosive_engineering",
+    "icon": "explosiveprobe",
+    "definition": {
+      "id": "0xE0007B5B3E39E8BC",
+      "decimalId": "16141036696312080572",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.engineering.explosive_engineering",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/72.bkt",
+        "uncompressedOffset": 132788,
+        "blockLength": 440,
+        "resourceSha256": "5360594aeda12baca66c47d6861da1b815465c1a7efec18563f9f5099ada7e78"
+      }
+    },
+    "path": "/resources/gfx/icons/explosiveprobe.dds",
+    "output": "godot\\Assets\\UI\\icons\\explosiveprobe.png",
+    "sha256": "e8cc6c0984b2550a499f233f794a0cde146dc8aacbd1ca7207d3c513b5b0ae14",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "engineering.interrogation_tactics",
+    "icon": "sonicprobe",
+    "definition": null,
+    "path": "/resources/gfx/icons/sonicprobe.dds",
+    "output": "godot\\Assets\\UI\\icons\\sonicprobe.png",
+    "sha256": "39562857d1f1d3751c50a3b28e76783dc3ce5bac93dc104f79a21cb72f0a0e4e",
+    "evidence": "Adapted talent using recovered ability art"
+  },
+  {
+    "owner": "engineering.energy_overrides",
+    "icon": "ionclip",
+    "definition": {
+      "id": "0xE0005A14E4A14DB0",
+      "decimalId": "16141000110277479856",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.engineering.energy_overrides",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/356.bkt",
+        "uncompressedOffset": 106252,
+        "blockLength": 505,
+        "resourceSha256": "e368f1671e07421f26fbd252ba0e0e76a8fd098b3d11dff7f649ac922ea9bc4a"
+      }
+    },
+    "path": "/resources/gfx/icons/ionclip.dds",
+    "output": "godot\\Assets\\UI\\icons\\ionclip.png",
+    "sha256": "273c915cc43c816d1d6c9adc731de0bba3c76dc25f436cf1d23b170cd2e9d08c",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "agent_lethality.lethal_training",
+    "icon": "cull",
+    "definition": null,
+    "path": "/resources/gfx/icons/cull.dds",
+    "output": "godot\\Assets\\UI\\icons\\cull.png",
+    "sha256": "5520787f894419c5258e91583179f000f62db65d588729802085c844a88b6c06",
+    "evidence": "Adapted talent using recovered ability art"
+  },
+  {
+    "owner": "agent_lethality.targeted_demolition",
+    "icon": "security",
+    "definition": {
+      "id": "0xE00030FD7FDBF04C",
+      "decimalId": "16140954929825837132",
+      "kind": "GomObject",
+      "name": "abl.agent.skill.lethality.targeted_demolition",
+      "nameEvidence": "April bucket/prototype",
+      "source": {
+        "path": "/resources/systemgenerated/buckets/132.bkt",
+        "uncompressedOffset": 61004,
+        "blockLength": 442,
+        "resourceSha256": "8003c38e27a8014b96e9a5b1d3fcb66f0579c4c7e3f06dbf653c13d950f04758"
+      }
+    },
+    "path": "/resources/gfx/icons/security.dds",
+    "output": "godot\\Assets\\UI\\icons\\security.png",
+    "sha256": "7eaa9ba5cf6dce70f4e05d0366703839ab6d5fdfc8357dbc51e9ad6590e5d6b7",
+    "evidence": "Client-derived exact icon binding"
+  },
+  {
+    "owner": "agent_lethality.toxic_resilience",
+    "icon": "toxicdart",
+    "definition": null,
+    "path": "/resources/gfx/icons/toxicdart.dds",
+    "output": "godot\\Assets\\UI\\icons\\toxicdart.png",
+    "sha256": "298444603c252b4155a1169b9b4fc96c7fbc57eed3a41ae65dee93fe87f2528f",
+    "evidence": "Adapted talent using recovered ability art"
+  }
+]

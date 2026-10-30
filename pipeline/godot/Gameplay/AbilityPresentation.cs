@@ -1,5 +1,6 @@
 using Godot;
 namespace SwtorSurvivors;
+public interface ITargetImpactPresentation { void TargetImpact(Combatant target); }
 /// <summary>No health, cooldown or damage API is exposed to a presentation.</summary>
 public interface IAbilityPresentation
 {

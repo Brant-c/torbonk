@@ -1,0 +1,1855 @@
+{
+  "evidence": "Client-derived April NPC visual and appearance fields. Historical DOM field labels retained by the research tool. Gameplay tuning is authored.",
+  "npcs": {
+    "jungle_cat": {
+      "identity": {
+        "id": "0xE000CA9942DDADE2",
+        "decimalId": "16141123824096488930",
+        "kind": "GomObject",
+        "name": "npc.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.jungle_cat",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/430.bkt",
+          "uncompressedOffset": 250836,
+          "blockLength": 559,
+          "resourceSha256": "bcfafbbdb68e6bd9df7bbbbb78805613938f7a60b9f2b0b638e13806553fb84f"
+        }
+      },
+      "npcVisualDataList": {
+        "0": {
+          "npcTemplateVisualDataCharSpec": "cat",
+          "npcTemplateVisualDataScaleAdjustment": 1.2,
+          "npcTemplateVisualDataMeleeWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataAppearance": "0xE000B7739C61BB60"
+        }
+      },
+      "locTextRetrieverMap": {
+        "-2761358831308646330": {
+          "strLocalizedTextRetrieverStringID": "1976011373674496",
+          "strLocalizedTextRetrieverBucket": "str.npc",
+          "field_400000490B57E470": {
+            "enum:0x400000279D1F32E0:1": 0
+          },
+          "field_400000490B57E471": {
+            "enum:0x400000279D1F32E0:1": "Primeval Manka Patriarch"
+          }
+        }
+      }
+    },
+    "jungle_rakata_warrior": {
+      "identity": {
+        "id": "0xE0003FBC8EB130EC",
+        "decimalId": "16140971143576236268",
+        "kind": "GomObject",
+        "name": "npc.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.jungle_rakata_warrior",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/268.bkt",
+          "uncompressedOffset": 86556,
+          "blockLength": 598,
+          "resourceSha256": "d42f40cbfb142933afe78787312afb4c7bb7679b4529013e3f2bbf95bddf4149"
+        }
+      },
+      "npcVisualDataList": {
+        "0": {
+          "npcTemplateVisualDataCharSpec": "bms",
+          "npcTemplateVisualDataScaleAdjustment": 1,
+          "npcTemplateVisualDataMeleeWeapon": "0xE0004E3BB44D46DD",
+          "npcTemplateVisualDataRangedWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataAppearance": "0xE000D6DF74B5BE38",
+          "npcTemplateVisualDataSpecieScale": "5312752953925432667"
+        }
+      },
+      "locTextRetrieverMap": {
+        "-2761358831308646330": {
+          "strLocalizedTextRetrieverStringID": "1784022040576000",
+          "strLocalizedTextRetrieverBucket": "str.npc",
+          "field_400000490B57E470": {
+            "enum:0x400000279D1F32E0:1": 0
+          },
+          "field_400000490B57E471": {
+            "enum:0x400000279D1F32E0:1": "Rakata Eternal Guardian"
+          }
+        }
+      }
+    },
+    "jungle_rakata_hunter": {
+      "identity": {
+        "id": "0xE0000119668CF3FD",
+        "decimalId": "16140902273102181373",
+        "kind": "GomObject",
+        "name": "npc.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.jungle_rakata_hunter",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/373.bkt",
+          "uncompressedOffset": 1004,
+          "blockLength": 597,
+          "resourceSha256": "2714cb9bf2809a96b34214acf20d65f65db12133ce402e9fbc88778537040abd"
+        }
+      },
+      "npcVisualDataList": {
+        "0": {
+          "npcTemplateVisualDataCharSpec": "bms",
+          "npcTemplateVisualDataScaleAdjustment": 1,
+          "npcTemplateVisualDataMeleeWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataRangedWeapon": "0xE0001341A80BACD4",
+          "npcTemplateVisualDataAppearance": "0xE0002481B2556EDA",
+          "npcTemplateVisualDataSpecieScale": "5312752953925432667"
+        }
+      },
+      "locTextRetrieverMap": {
+        "-2761358831308646330": {
+          "strLocalizedTextRetrieverStringID": "1796958482071552",
+          "strLocalizedTextRetrieverBucket": "str.npc",
+          "field_400000490B57E470": {
+            "enum:0x400000279D1F32E0:1": 0
+          },
+          "field_400000490B57E471": {
+            "enum:0x400000279D1F32E0:1": "Rakata Eternal Watcher"
+          }
+        }
+      }
+    },
+    "boss_soa": {
+      "identity": {
+        "id": "0xE00074A8AE44306C",
+        "decimalId": "16141029332322889836",
+        "kind": "GomObject",
+        "name": "npc.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.boss_soa",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/336.bkt",
+          "uncompressedOffset": 123428,
+          "blockLength": 613,
+          "resourceSha256": "080c3f45ad91709e15766bc6f197808531e340b380838d5290a1faa98bd002ca"
+        }
+      },
+      "npcVisualDataList": {
+        "0": {
+          "npcTemplateVisualDataCharSpec": "bms",
+          "npcTemplateVisualDataScaleAdjustment": 4.5,
+          "npcTemplateVisualDataMeleeWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataRangedWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataAppearance": "0xE0006F9133071CAA",
+          "npcTemplateVisualDataSpecieScale": "5312752953925432667"
+        }
+      },
+      "locTextRetrieverMap": {
+        "-8863348193830878519": {
+          "strLocalizedTextRetrieverStringID": "794023488913697",
+          "strLocalizedTextRetrieverBucket": "str.sys.titles",
+          "field_400000490B57E470": {},
+          "field_400000490B57E471": {}
+        },
+        "-2761358831308646330": {
+          "strLocalizedTextRetrieverStringID": "1783790112342016",
+          "strLocalizedTextRetrieverBucket": "str.npc",
+          "field_400000490B57E470": {
+            "enum:0x400000279D1F32E0:1": 0
+          },
+          "field_400000490B57E471": {
+            "enum:0x400000279D1F32E0:1": "Soa"
+          }
+        }
+      }
+    },
+    "temple_boss_sith_marauder": {
+      "identity": {
+        "id": "0xE000AC72B6E29243",
+        "decimalId": "16141090673190408771",
+        "kind": "GomObject",
+        "name": "npc.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.temple_boss_sith_marauder",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/271.bkt",
+          "uncompressedOffset": 197388,
+          "blockLength": 635,
+          "resourceSha256": "fe6fed12a9b5cec53123050fb618c90f598cf9067f909651ad7602c7c37d8da7"
+        }
+      },
+      "npcVisualDataList": {
+        "0": {
+          "npcTemplateVisualDataCharSpec": "bmn",
+          "npcTemplateVisualDataScaleAdjustment": 1.5,
+          "npcTemplateVisualDataMeleeWeapon": "0xE000C6F36DF8488B",
+          "npcTemplateVisualDataMeleeOffWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataRangedWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataRangedOffWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataAppearance": "0xE000E5AEFEFE7295"
+        }
+      },
+      "locTextRetrieverMap": {
+        "-8863348193830878519": {
+          "strLocalizedTextRetrieverStringID": "836157118087435",
+          "strLocalizedTextRetrieverBucket": "str.sys.titles",
+          "field_400000490B57E470": {},
+          "field_400000490B57E471": {}
+        },
+        "-2761358831308646330": {
+          "strLocalizedTextRetrieverStringID": "1977664936083456",
+          "strLocalizedTextRetrieverBucket": "str.npc",
+          "field_400000490B57E470": {
+            "enum:0x400000279D1F32E0:1": 0
+          },
+          "field_400000490B57E471": {
+            "enum:0x400000279D1F32E0:1": "Luthro the Kinslayer"
+          }
+        }
+      }
+    },
+    "temple_boss_sith_marauder_b": {
+      "identity": {
+        "id": "0xE000364FB16535A0",
+        "decimalId": "16140960780402374048",
+        "kind": "GomObject",
+        "name": "npc.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.temple_boss_sith_marauder_b",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/48.bkt",
+          "uncompressedOffset": 57844,
+          "blockLength": 647,
+          "resourceSha256": "4a64d34886c488c28100744ec819ed835f38a2116904ce09e7dd4f808b5a9416"
+        }
+      },
+      "npcVisualDataList": {
+        "0": {
+          "npcTemplateVisualDataCharSpec": "bfs",
+          "npcTemplateVisualDataScaleAdjustment": 1.5,
+          "npcTemplateVisualDataMeleeWeapon": "0xE000C6F36DF8488B",
+          "npcTemplateVisualDataMeleeOffWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataRangedWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataRangedOffWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataAppearance": "0xE0004F1E34A5D28E"
+        }
+      },
+      "locTextRetrieverMap": {
+        "-8863348193830878519": {
+          "strLocalizedTextRetrieverStringID": "836157118087435",
+          "strLocalizedTextRetrieverBucket": "str.sys.titles",
+          "field_400000490B57E470": {},
+          "field_400000490B57E471": {}
+        },
+        "-2761358831308646330": {
+          "strLocalizedTextRetrieverStringID": "2098327747297280",
+          "strLocalizedTextRetrieverBucket": "str.npc",
+          "field_400000490B57E470": {
+            "enum:0x400000279D1F32E0:1": 0
+          },
+          "field_400000490B57E471": {
+            "enum:0x400000279D1F32E0:1": "Alarii, Sister of Sorrow"
+          }
+        }
+      }
+    },
+    "temple_boss_sith_marauder_c": {
+      "identity": {
+        "id": "0xE000374FB1653613",
+        "decimalId": "16140961879914001939",
+        "kind": "GomObject",
+        "name": "npc.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.temple_boss_sith_marauder_c",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/439.bkt",
+          "uncompressedOffset": 51236,
+          "blockLength": 644,
+          "resourceSha256": "de382fb131185403dd50acc1b14c02b1a70b884daa12392ecb875497802d41ba"
+        }
+      },
+      "npcVisualDataList": {
+        "0": {
+          "npcTemplateVisualDataCharSpec": "bma",
+          "npcTemplateVisualDataScaleAdjustment": 1.5,
+          "npcTemplateVisualDataMeleeWeapon": "0xE000C6F36DF8488B",
+          "npcTemplateVisualDataMeleeOffWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataRangedWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataRangedOffWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataAppearance": "0xE0004E1E34A5D4FD"
+        }
+      },
+      "locTextRetrieverMap": {
+        "-8863348193830878519": {
+          "strLocalizedTextRetrieverStringID": "836157118087435",
+          "strLocalizedTextRetrieverBucket": "str.sys.titles",
+          "field_400000490B57E470": {},
+          "field_400000490B57E471": {}
+        },
+        "-2761358831308646330": {
+          "strLocalizedTextRetrieverStringID": "2098332042264576",
+          "strLocalizedTextRetrieverBucket": "str.npc",
+          "field_400000490B57E470": {
+            "enum:0x400000279D1F32E0:1": 0
+          },
+          "field_400000490B57E471": {
+            "enum:0x400000279D1F32E0:1": "Fahren Jaj, the Laughing Lord"
+          }
+        }
+      }
+    },
+    "temple_boss_sith_juggernaut": {
+      "identity": {
+        "id": "0xE0009EBCF74DA77F",
+        "decimalId": "16141075598935959423",
+        "kind": "GomObject",
+        "name": "npc.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.temple_boss_sith_juggernaut",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/423.bkt",
+          "uncompressedOffset": 196292,
+          "blockLength": 645,
+          "resourceSha256": "fbb5cc373fe06d1848718823c3a1e28582f84f85528035ed7cba814270adc25f"
+        }
+      },
+      "npcVisualDataList": {
+        "0": {
+          "npcTemplateVisualDataCharSpec": "bmf",
+          "npcTemplateVisualDataScaleAdjustment": 1.5,
+          "npcTemplateVisualDataMeleeWeapon": "0xE000C53FAF5378F9",
+          "npcTemplateVisualDataMeleeOffWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataRangedWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataRangedOffWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataAppearance": "0xE0003542F50E4C53"
+        }
+      },
+      "locTextRetrieverMap": {
+        "-8863348193830878519": {
+          "strLocalizedTextRetrieverStringID": "836157118087433",
+          "strLocalizedTextRetrieverBucket": "str.sys.titles",
+          "field_400000490B57E470": {},
+          "field_400000490B57E471": {}
+        },
+        "-2761358831308646330": {
+          "strLocalizedTextRetrieverStringID": "1977660641116160",
+          "strLocalizedTextRetrieverBucket": "str.npc",
+          "field_400000490B57E470": {
+            "enum:0x400000279D1F32E0:1": 0
+          },
+          "field_400000490B57E471": {
+            "enum:0x400000279D1F32E0:1": "Yshaar Kael, Betrayer of Adas"
+          }
+        }
+      }
+    },
+    "temple_boss_sith_juggernaut_b": {
+      "identity": {
+        "id": "0xE00096286694C309",
+        "decimalId": "16141066164759741193",
+        "kind": "GomObject",
+        "name": "npc.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.temple_boss_sith_juggernaut_b",
+        "nameEvidence": "April bucket/prototype",
+        "source": {
+          "path": "/resources/systemgenerated/buckets/193.bkt",
+          "uncompressedOffset": 157796,
+          "blockLength": 644,
+          "resourceSha256": "06932e3da29a4bb916b964db98fbeb56291c48f44ebdfb692bd3963caceca75c"
+        }
+      },
+      "npcVisualDataList": {
+        "0": {
+          "npcTemplateVisualDataCharSpec": "bms",
+          "npcTemplateVisualDataScaleAdjustment": 1.5,
+          "npcTemplateVisualDataMeleeWeapon": "0xE000C53FAF5378F9",
+          "npcTemplateVisualDataMeleeOffWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataRangedWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataRangedOffWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataAppearance": "0xE0008321FF1F58FC"
+        }
+      },
+      "locTextRetrieverMap": {
+        "-8863348193830878519": {
+          "strLocalizedTextRetrieverStringID": "836157118087433",
+          "strLocalizedTextRetrieverBucket": "str.sys.titles",
+          "field_400000490B57E470": {},
+          "field_400000490B57E471": {}
+        },
+        "-2761358831308646330": {
+          "strLocalizedTextRetrieverStringID": "2098306272460800",
+          "strLocalizedTextRetrieverBucket": "str.npc",
+          "field_400000490B57E471": {
+            "enum:0x400000279D1F32E0:1": "Za'heen Kaur, the Bowed Lord"
+          },
+          "field_400000490B57E470": {
+            "enum:0x400000279D1F32E0:1": 0
+          }
+        }
+      }
+    },
+    "jungle_acklay": {
+      "id": "0xE00059447E95BBBA",
+      "npcVisualDataList": {
+        "0": {
+          "npcTemplateVisualDataCharSpec": "acklay",
+          "npcTemplateVisualDataScaleAdjustment": 1.2,
+          "npcTemplateVisualDataRadius": 0.4,
+          "npcTemplateVisualDataMeleeWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataAppearance": "0xE000513C9863801D"
+        }
+      },
+      "locTextRetrieverMap": {
+        "-2761358831308646330": {
+          "strLocalizedTextRetrieverStringID": "2021018335969280",
+          "strLocalizedTextRetrieverBucket": "str.npc",
+          "field_400000490B57E471": {
+            "enum:0x400000279D1F32E0:1": "Proto Acklay"
+          },
+          "field_400000490B57E470": {
+            "enum:0x400000279D1F32E0:1": 0
+          }
+        }
+      }
+    },
+    "temple_boss_sith_assassin_droid": {
+      "id": "0xE000C4105571FCBD",
+      "npcVisualDataList": {
+        "0": {
+          "npcTemplateVisualDataCharSpec": "bma",
+          "npcTemplateVisualDataScaleAdjustment": 1.5,
+          "npcTemplateVisualDataMeleeWeapon": "0xE0007A48A972444C",
+          "npcTemplateVisualDataMeleeOffWeapon": "0xE0007A48A972444C",
+          "npcTemplateVisualDataRangedWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataRangedOffWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataAppearance": "0xE000EABF6AEF35B8"
+        }
+      },
+      "locTextRetrieverMap": {
+        "-8863348193830878519": {
+          "strLocalizedTextRetrieverStringID": "836157118087434",
+          "strLocalizedTextRetrieverBucket": "str.sys.titles",
+          "field_400000490B57E470": {},
+          "field_400000490B57E471": {}
+        },
+        "-2761358831308646330": {
+          "strLocalizedTextRetrieverStringID": "1977669231050752",
+          "strLocalizedTextRetrieverBucket": "str.npc",
+          "field_400000490B57E471": {
+            "enum:0x400000279D1F32E0:1": "Kahesh, the Reborn"
+          },
+          "field_400000490B57E470": {
+            "enum:0x400000279D1F32E0:1": 0
+          }
+        }
+      }
+    },
+    "temple_boss_sith_assassin_droid_b": {
+      "id": "0xE0004144633B4C13",
+      "npcVisualDataList": {
+        "0": {
+          "npcTemplateVisualDataCharSpec": "bfn",
+          "npcTemplateVisualDataScaleAdjustment": 1.5,
+          "npcTemplateVisualDataMeleeWeapon": "0xE0007A48A972444C",
+          "npcTemplateVisualDataMeleeOffWeapon": "0xE0007A48A972444C",
+          "npcTemplateVisualDataRangedWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataRangedOffWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataAppearance": "0xE0008393D6F60361"
+        }
+      },
+      "locTextRetrieverMap": {
+        "-8863348193830878519": {
+          "strLocalizedTextRetrieverStringID": "836157118087434",
+          "strLocalizedTextRetrieverBucket": "str.sys.titles",
+          "field_400000490B57E470": {},
+          "field_400000490B57E471": {}
+        },
+        "-2761358831308646330": {
+          "strLocalizedTextRetrieverStringID": "2098319157362688",
+          "strLocalizedTextRetrieverBucket": "str.npc",
+          "field_400000490B57E471": {
+            "enum:0x400000279D1F32E0:1": "Jael, the Silencer"
+          },
+          "field_400000490B57E470": {
+            "enum:0x400000279D1F32E0:1": 0
+          }
+        }
+      }
+    },
+    "temple_boss_sith_assassin_droid_c": {
+      "id": "0xE0004044633B4E5C",
+      "npcVisualDataList": {
+        "0": {
+          "npcTemplateVisualDataCharSpec": "bmn",
+          "npcTemplateVisualDataScaleAdjustment": 1.5,
+          "npcTemplateVisualDataMeleeWeapon": "0xE000487970DB3DC1",
+          "npcTemplateVisualDataMeleeOffWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataRangedWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataRangedOffWeapon": "0xE000F794C5910D2C",
+          "npcTemplateVisualDataAppearance": "0xE000E5AEFEFE7295"
+        }
+      },
+      "locTextRetrieverMap": {
+        "-8863348193830878519": {
+          "strLocalizedTextRetrieverStringID": "836157118087434",
+          "strLocalizedTextRetrieverBucket": "str.sys.titles",
+          "field_400000490B57E470": {},
+          "field_400000490B57E471": {}
+        },
+        "-2761358831308646330": {
+          "strLocalizedTextRetrieverStringID": "2098323452329984",
+          "strLocalizedTextRetrieverBucket": "str.npc",
+          "field_400000490B57E471": {
+            "enum:0x400000279D1F32E0:1": "Serrod the Messenger"
+          },
+          "field_400000490B57E470": {
+            "enum:0x400000279D1F32E0:1": 0
+          }
+        }
+      }
+    }
+  },
+  "appearances": {
+    "0xE000B7739C61BB60": {
+      "utlTemplateId": "npp.creature.cat.manka_a02",
+      "nppBodyType": "cat",
+      "nppNppType": "nppTypeCreature",
+      "nppSoundPackage": "creature_manka",
+      "nppVocalSoundsetOverride": {
+        "1960923813318275770": "",
+        "7006995385239018265": "",
+        "-6100274382065526164": ""
+      },
+      "nppAppearanceSlotMap_ForPrototype": {
+        "enum:0x4000000316C18124:6": {
+          "0": {
+            "appAppearanceSlotType": "appSlotCreature",
+            "appAppearanceSlotModelID": "1006261",
+            "appAppearanceSlotMaterialIndex": "1006262",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        }
+      }
+    },
+    "0xE000D6DF74B5BE38": {
+      "utlTemplateId": "npp.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.jungle_rakata_warrior",
+      "nppBodyType": "bms",
+      "nppNppType": "nppTypeHumanoid",
+      "nppSoundPackage": "alien_rakata_medium",
+      "nppArmorSoundsetOverride": "armor_composite",
+      "nppVocalSoundsetOverride": {
+        "1960923813318275770": "",
+        "7006995385239018265": "",
+        "-6100274382065526164": ""
+      },
+      "nppAppearanceSlotMap_ForPrototype": {
+        "enum:0x4000000316C18124:3": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBracer",
+            "appAppearanceSlotModelID": "1000040",
+            "appAppearanceSlotMaterialIndex": "1041004",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000792",
+            "appAppearanceSlotHueSecondary": "1000783",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:14": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHead",
+            "appAppearanceSlotModelID": "1474280",
+            "appAppearanceSlotMaterialIndex": "1013548",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          },
+          "1": {
+            "appAppearanceSlotType": "appSlotHead",
+            "appAppearanceSlotModelID": "1474280",
+            "appAppearanceSlotMaterialIndex": "1013548",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:15": {
+          "0": {
+            "appAppearanceSlotType": "appSlotLeg",
+            "appAppearanceSlotModelID": "1142860",
+            "appAppearanceSlotMaterialIndex": "1143875",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000792",
+            "appAppearanceSlotHueSecondary": "1000783",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:2": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBoot",
+            "appAppearanceSlotModelID": "1000009",
+            "appAppearanceSlotMaterialIndex": "1041296",
+            "appAppearanceSlotHuePrimary": "1000792",
+            "appAppearanceSlotHueSecondary": "1000783",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1003464"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:4": {
+          "0": {
+            "appAppearanceSlotType": "appSlotChest",
+            "appAppearanceSlotModelID": "1003456",
+            "appAppearanceSlotMaterialIndex": "1143088",
+            "appAppearanceSlotHuePrimary": "1000792",
+            "appAppearanceSlotHueSecondary": "1000783",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1003466"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:13": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHand",
+            "appAppearanceSlotModelID": "1003462",
+            "appAppearanceSlotMaterialIndex": "1041000",
+            "appAppearanceSlotHuePrimary": "1000792",
+            "appAppearanceSlotHueSecondary": "1000783",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1003467"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:17": {
+          "0": {
+            "appAppearanceSlotType": "appSlotWaist",
+            "appAppearanceSlotModelID": "1003457",
+            "appAppearanceSlotMaterialIndex": "1041002",
+            "appAppearanceSlotHuePrimary": "1000792",
+            "appAppearanceSlotHueSecondary": "1000783",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1003458",
+              "1": "1003463"
+            }
+          }
+        }
+      }
+    },
+    "0xE0002481B2556EDA": {
+      "utlTemplateId": "npp.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.jungle_rakata_hunter",
+      "nppBodyType": "bms",
+      "nppNppType": "nppTypeHumanoid",
+      "nppSoundPackage": "alien_rakata_medium",
+      "nppArmorSoundsetOverride": "armor_composite",
+      "nppVocalSoundsetOverride": {
+        "1960923813318275770": "",
+        "7006995385239018265": "",
+        "-6100274382065526164": ""
+      },
+      "nppAppearanceSlotMap_ForPrototype": {
+        "enum:0x4000000316C18124:3": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBracer",
+            "appAppearanceSlotModelID": "1000040",
+            "appAppearanceSlotMaterialIndex": "1041004",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000792",
+            "appAppearanceSlotHueSecondary": "1000783",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:14": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHead",
+            "appAppearanceSlotModelID": "1474280",
+            "appAppearanceSlotMaterialIndex": "1002565",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          },
+          "1": {
+            "appAppearanceSlotType": "appSlotHead",
+            "appAppearanceSlotModelID": "1474280",
+            "appAppearanceSlotMaterialIndex": "1013548",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:15": {
+          "0": {
+            "appAppearanceSlotType": "appSlotLeg",
+            "appAppearanceSlotModelID": "1142860",
+            "appAppearanceSlotMaterialIndex": "1143875",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000792",
+            "appAppearanceSlotHueSecondary": "1000783",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:2": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBoot",
+            "appAppearanceSlotModelID": "1000009",
+            "appAppearanceSlotMaterialIndex": "1041296",
+            "appAppearanceSlotHuePrimary": "1000792",
+            "appAppearanceSlotHueSecondary": "1000783",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1003464"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:17": {
+          "0": {
+            "appAppearanceSlotType": "appSlotWaist",
+            "appAppearanceSlotModelID": "1003457",
+            "appAppearanceSlotMaterialIndex": "1041002",
+            "appAppearanceSlotHuePrimary": "1000792",
+            "appAppearanceSlotHueSecondary": "1000783",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1003458",
+              "1": "1003463"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:13": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHand",
+            "appAppearanceSlotModelID": "1003462",
+            "appAppearanceSlotMaterialIndex": "1041000",
+            "appAppearanceSlotHuePrimary": "1000792",
+            "appAppearanceSlotHueSecondary": "1000783",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1003467"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:4": {
+          "0": {
+            "appAppearanceSlotType": "appSlotChest",
+            "appAppearanceSlotModelID": "1003456",
+            "appAppearanceSlotMaterialIndex": "1143088",
+            "appAppearanceSlotHuePrimary": "1000792",
+            "appAppearanceSlotHueSecondary": "1000783",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1003466"
+            }
+          }
+        }
+      }
+    },
+    "0xE0006F9133071CAA": {
+      "utlTemplateId": "npp.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.boss_soa",
+      "nppBodyType": "bms",
+      "nppNppType": "nppTypeHumanoid",
+      "nppSoundPackage": "alien_rakata_medium",
+      "nppMovementSoundsetOverride": "creature_large",
+      "nppArmorSoundsetOverride": "armor_composite",
+      "nppVoiceEffectSoundsetOverride": "1731220947021097700",
+      "nppVocalSoundsetOverride": {
+        "1960923813318275770": "",
+        "7006995385239018265": "",
+        "-6100274382065526164": ""
+      },
+      "nppAppearanceSlotMap_ForPrototype": {
+        "enum:0x4000000316C18124:3": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBracer",
+            "appAppearanceSlotModelID": "1142527",
+            "appAppearanceSlotMaterialIndex": "1123324",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1002951",
+            "appAppearanceSlotHueSecondary": "1000785",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:15": {
+          "0": {
+            "appAppearanceSlotType": "appSlotLeg",
+            "appAppearanceSlotModelID": "1142820",
+            "appAppearanceSlotMaterialIndex": "1143847",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000785",
+            "appAppearanceSlotHueSecondary": "1000787",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:14": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHead",
+            "appAppearanceSlotModelID": "1474280",
+            "appAppearanceSlotMaterialIndex": "1013548",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:2": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBoot",
+            "appAppearanceSlotModelID": "1142660",
+            "appAppearanceSlotMaterialIndex": "1130101",
+            "appAppearanceSlotHuePrimary": "1002951",
+            "appAppearanceSlotHueSecondary": "1002951",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1143362"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:13": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHand",
+            "appAppearanceSlotModelID": "1002652",
+            "appAppearanceSlotMaterialIndex": "1002663",
+            "appAppearanceSlotHuePrimary": "1002951",
+            "appAppearanceSlotHueSecondary": "1002951",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1002656"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:4": {
+          "0": {
+            "appAppearanceSlotType": "appSlotChest",
+            "appAppearanceSlotModelID": "1142780",
+            "appAppearanceSlotMaterialIndex": "1162065",
+            "appAppearanceSlotHuePrimary": "1002951",
+            "appAppearanceSlotHueSecondary": "1000783",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1125767",
+              "1": "1125749",
+              "2": "1125750"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:17": {
+          "0": {
+            "appAppearanceSlotType": "appSlotWaist",
+            "appAppearanceSlotModelID": "1215593",
+            "appAppearanceSlotMaterialIndex": "1005098",
+            "appAppearanceSlotHuePrimary": "1392577",
+            "appAppearanceSlotHueSecondary": "1000783",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1002355"
+            }
+          }
+        }
+      }
+    },
+    "0xE000E5AEFEFE7295": {
+      "utlTemplateId": "npp.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.temple_boss_sith_marauder",
+      "nppBodyType": "bmn",
+      "nppNppType": "nppTypeHumanoid",
+      "nppSoundPackage": "human_imperiallieutenant_medium_male_01",
+      "nppArmorSoundsetOverride": "armor_leather",
+      "nppVocalSoundsetOverride": {
+        "1960923813318275770": "",
+        "7006995385239018265": "",
+        "-6100274382065526164": ""
+      },
+      "nppAppearanceSlotMap_ForPrototype": {
+        "enum:0x4000000316C18124:3": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBracer",
+            "appAppearanceSlotModelID": "1142679",
+            "appAppearanceSlotMaterialIndex": "1162378",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000687",
+            "appAppearanceSlotHueSecondary": "1000697",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:5": {
+          "0": {
+            "appAppearanceSlotType": "appSlotComplexion",
+            "appAppearanceSlotModelID": "1439168",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:7": {
+          "0": {
+            "appAppearanceSlotType": "appSlotEyeColor",
+            "appAppearanceSlotModelID": "1005512",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:9": {
+          "0": {
+            "appAppearanceSlotType": "appSlotFaceHair",
+            "appAppearanceSlotModelID": "1276839",
+            "appAppearanceSlotMaterialIndex": "1276834",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:12": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHairColor",
+            "appAppearanceSlotModelID": "1003537",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:15": {
+          "0": {
+            "appAppearanceSlotType": "appSlotLeg",
+            "appAppearanceSlotModelID": "1142820",
+            "appAppearanceSlotMaterialIndex": "1162381",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000687",
+            "appAppearanceSlotHueSecondary": "1000697",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:14": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHead",
+            "appAppearanceSlotModelID": "1275506",
+            "appAppearanceSlotMaterialIndex": "1275419",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:16": {
+          "0": {
+            "appAppearanceSlotType": "appSlotSkinColor",
+            "appAppearanceSlotModelID": "1275745",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:2": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBoot",
+            "appAppearanceSlotModelID": "1142660",
+            "appAppearanceSlotMaterialIndex": "1162375",
+            "appAppearanceSlotHuePrimary": "1000697",
+            "appAppearanceSlotHueSecondary": "1000697",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1143362"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:13": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHand",
+            "appAppearanceSlotModelID": "1142611",
+            "appAppearanceSlotMaterialIndex": "1162376",
+            "appAppearanceSlotHuePrimary": "1000687",
+            "appAppearanceSlotHueSecondary": "1000697",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1143061"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:4": {
+          "0": {
+            "appAppearanceSlotType": "appSlotChest",
+            "appAppearanceSlotModelID": "1006715",
+            "appAppearanceSlotMaterialIndex": "1162371",
+            "appAppearanceSlotHuePrimary": "1000687",
+            "appAppearanceSlotHueSecondary": "1000697",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1143749",
+              "1": "1143747",
+              "2": "1143750"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:11": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHair",
+            "appAppearanceSlotModelID": "1004595",
+            "appAppearanceSlotMaterialIndex": "1003606",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1265042"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:17": {
+          "0": {
+            "appAppearanceSlotType": "appSlotWaist",
+            "appAppearanceSlotModelID": "1142701",
+            "appAppearanceSlotMaterialIndex": "1162377",
+            "appAppearanceSlotHuePrimary": "1000687",
+            "appAppearanceSlotHueSecondary": "1000697",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1143630",
+              "1": "1143629"
+            }
+          }
+        }
+      }
+    },
+    "0xE0004F1E34A5D28E": {
+      "utlTemplateId": "npp.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.temple_boss_sith_marauder_b",
+      "nppBodyType": "bfs",
+      "nppNppType": "nppTypeHumanoid",
+      "nppSoundPackage": "human_imperial_low_female_01",
+      "nppArmorSoundsetOverride": "armor_leather",
+      "nppVocalSoundsetOverride": {
+        "1960923813318275770": "",
+        "7006995385239018265": "",
+        "-6100274382065526164": ""
+      },
+      "nppAppearanceSlotMap_ForPrototype": {
+        "enum:0x4000000316C18124:1": {
+          "0": {
+            "appAppearanceSlotModelID": "1003684",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:3": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBracer",
+            "appAppearanceSlotModelID": "1142526",
+            "appAppearanceSlotMaterialIndex": "1126877",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000696",
+            "appAppearanceSlotHueSecondary": "1000697",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:2": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBoot",
+            "appAppearanceSlotModelID": "1006111",
+            "appAppearanceSlotMaterialIndex": "1126203",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000697",
+            "appAppearanceSlotHueSecondary": "1000697",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:7": {
+          "0": {
+            "appAppearanceSlotType": "appSlotEyeColor",
+            "appAppearanceSlotModelID": "1005510",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:5": {
+          "0": {
+            "appAppearanceSlotType": "appSlotComplexion",
+            "appAppearanceSlotModelID": "1276238",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:11": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHair",
+            "appAppearanceSlotModelID": "1003063",
+            "appAppearanceSlotMaterialIndex": "1026864",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:9": {
+          "0": {
+            "appAppearanceSlotType": "appSlotFaceHair",
+            "appAppearanceSlotModelID": "1276948",
+            "appAppearanceSlotMaterialIndex": "1379955",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:12": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHairColor",
+            "appAppearanceSlotModelID": "1003541",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:14": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHead",
+            "appAppearanceSlotModelID": "1275478",
+            "appAppearanceSlotMaterialIndex": "1275406",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:13": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHand",
+            "appAppearanceSlotModelID": "1279232",
+            "appAppearanceSlotMaterialIndex": "1279103",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000696",
+            "appAppearanceSlotHueSecondary": "1000697",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:16": {
+          "0": {
+            "appAppearanceSlotType": "appSlotSkinColor",
+            "appAppearanceSlotModelID": "1275745",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:15": {
+          "0": {
+            "appAppearanceSlotType": "appSlotLeg",
+            "appAppearanceSlotModelID": "1142921",
+            "appAppearanceSlotMaterialIndex": "1144020",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000687",
+            "appAppearanceSlotHueSecondary": "1000697",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:17": {
+          "0": {
+            "appAppearanceSlotType": "appSlotWaist",
+            "appAppearanceSlotModelID": "1006119",
+            "appAppearanceSlotMaterialIndex": "1006126",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000696",
+            "appAppearanceSlotHueSecondary": "1000697",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:4": {
+          "0": {
+            "appAppearanceSlotType": "appSlotChest",
+            "appAppearanceSlotModelID": "1006113",
+            "appAppearanceSlotMaterialIndex": "1143727",
+            "appAppearanceSlotHuePrimary": "1000687",
+            "appAppearanceSlotHueSecondary": "1000697",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1006117",
+              "1": "1006114"
+            }
+          }
+        }
+      }
+    },
+    "0xE0004E1E34A5D4FD": {
+      "utlTemplateId": "npp.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.temple_boss_sith_marauder_c",
+      "nppBodyType": "bma",
+      "nppNppType": "nppTypeHumanoid",
+      "nppSoundPackage": "human_imperial_high_male_01",
+      "nppArmorSoundsetOverride": "armor_cloth",
+      "nppVocalSoundsetOverride": {
+        "1960923813318275770": "",
+        "7006995385239018265": "",
+        "-6100274382065526164": ""
+      },
+      "nppAppearanceSlotMap_ForPrototype": {
+        "enum:0x4000000316C18124:1": {
+          "0": {
+            "appAppearanceSlotModelID": "1318160",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:2": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBoot",
+            "appAppearanceSlotModelID": "1142516",
+            "appAppearanceSlotMaterialIndex": "1118647",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000697",
+            "appAppearanceSlotHueSecondary": "1000705",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:3": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBracer",
+            "appAppearanceSlotModelID": "1142545",
+            "appAppearanceSlotMaterialIndex": "1162828",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000697",
+            "appAppearanceSlotHueSecondary": "1000705",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:7": {
+          "0": {
+            "appAppearanceSlotType": "appSlotEyeColor",
+            "appAppearanceSlotModelID": "1005510",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:9": {
+          "0": {
+            "appAppearanceSlotType": "appSlotFaceHair",
+            "appAppearanceSlotModelID": "1276845",
+            "appAppearanceSlotMaterialIndex": "1379957",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:11": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHair",
+            "appAppearanceSlotModelID": "1006109",
+            "appAppearanceSlotMaterialIndex": "1264965",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:12": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHairColor",
+            "appAppearanceSlotModelID": "1003539",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:13": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHand",
+            "appAppearanceSlotModelID": "1142609",
+            "appAppearanceSlotMaterialIndex": "1118915",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000697",
+            "appAppearanceSlotHueSecondary": "1000748",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:14": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHead",
+            "appAppearanceSlotModelID": "1275496",
+            "appAppearanceSlotMaterialIndex": "1275424",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:15": {
+          "0": {
+            "appAppearanceSlotType": "appSlotLeg",
+            "appAppearanceSlotModelID": "1142829",
+            "appAppearanceSlotMaterialIndex": "1161133",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000697",
+            "appAppearanceSlotHueSecondary": "1002200",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:16": {
+          "0": {
+            "appAppearanceSlotType": "appSlotSkinColor",
+            "appAppearanceSlotModelID": "1275746",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:4": {
+          "0": {
+            "appAppearanceSlotType": "appSlotChest",
+            "appAppearanceSlotModelID": "1003387",
+            "appAppearanceSlotMaterialIndex": "1003399",
+            "appAppearanceSlotHuePrimary": "1000697",
+            "appAppearanceSlotHueSecondary": "1002200",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1003389",
+              "1": "1003388",
+              "2": "1003455"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:17": {
+          "0": {
+            "appAppearanceSlotType": "appSlotWaist",
+            "appAppearanceSlotModelID": "1142643",
+            "appAppearanceSlotMaterialIndex": "1162827",
+            "appAppearanceSlotHuePrimary": "1000697",
+            "appAppearanceSlotHueSecondary": "1000705",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1143401",
+              "1": "1143402",
+              "2": "1143403"
+            }
+          }
+        }
+      }
+    },
+    "0xE0003542F50E4C53": {
+      "utlTemplateId": "npp.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.temple_boss_sith_juggernaut",
+      "nppBodyType": "bmf",
+      "nppNppType": "nppTypeHumanoid",
+      "nppSoundPackage": "human_imperiallieutenant_low_male_01",
+      "nppArmorSoundsetOverride": "armor_composite",
+      "nppVocalSoundsetOverride": {
+        "1960923813318275770": "",
+        "7006995385239018265": "",
+        "-6100274382065526164": ""
+      },
+      "nppAppearanceSlotMap_ForPrototype": {
+        "enum:0x4000000316C18124:3": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBracer",
+            "appAppearanceSlotModelID": "1142885",
+            "appAppearanceSlotMaterialIndex": "1163272",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000657",
+            "appAppearanceSlotHueSecondary": "1000662",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:7": {
+          "0": {
+            "appAppearanceSlotType": "appSlotEyeColor",
+            "appAppearanceSlotModelID": "1005513",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:5": {
+          "0": {
+            "appAppearanceSlotType": "appSlotComplexion",
+            "appAppearanceSlotModelID": "1275969",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:8": {
+          "0": {
+            "appAppearanceSlotType": "appSlotFace",
+            "appAppearanceSlotModelID": "1142865",
+            "appAppearanceSlotMaterialIndex": "1064179",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1392577",
+            "appAppearanceSlotHueSecondary": "1000662",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:9": {
+          "0": {
+            "appAppearanceSlotType": "appSlotFaceHair",
+            "appAppearanceSlotModelID": "1276955",
+            "appAppearanceSlotMaterialIndex": "1379954",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:12": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHairColor",
+            "appAppearanceSlotModelID": "1003538",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:14": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHead",
+            "appAppearanceSlotModelID": "1275519",
+            "appAppearanceSlotMaterialIndex": "1275420",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:16": {
+          "0": {
+            "appAppearanceSlotType": "appSlotSkinColor",
+            "appAppearanceSlotModelID": "1001064",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:15": {
+          "0": {
+            "appAppearanceSlotType": "appSlotLeg",
+            "appAppearanceSlotModelID": "1142822",
+            "appAppearanceSlotMaterialIndex": "1163273",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1392577",
+            "appAppearanceSlotHueSecondary": "1000662",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:17": {
+          "0": {
+            "appAppearanceSlotType": "appSlotWaist",
+            "appAppearanceSlotModelID": "1005938",
+            "appAppearanceSlotMaterialIndex": "1005949",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1392577",
+            "appAppearanceSlotHueSecondary": "1000659",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:2": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBoot",
+            "appAppearanceSlotModelID": "1142506",
+            "appAppearanceSlotMaterialIndex": "1163271",
+            "appAppearanceSlotHuePrimary": "1392577",
+            "appAppearanceSlotHueSecondary": "1392577",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1125794"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:13": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHand",
+            "appAppearanceSlotModelID": "1142602",
+            "appAppearanceSlotMaterialIndex": "1163268",
+            "appAppearanceSlotHuePrimary": "1392577",
+            "appAppearanceSlotHueSecondary": "1000662",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1125775"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:4": {
+          "0": {
+            "appAppearanceSlotType": "appSlotChest",
+            "appAppearanceSlotModelID": "1142778",
+            "appAppearanceSlotMaterialIndex": "1142978",
+            "appAppearanceSlotHuePrimary": "1392577",
+            "appAppearanceSlotHueSecondary": "1000780",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1125767",
+              "1": "1125749",
+              "2": "1125750"
+            }
+          }
+        }
+      }
+    },
+    "0xE0008321FF1F58FC": {
+      "utlTemplateId": "npp.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.temple_boss_sith_juggernaut_b",
+      "nppBodyType": "bms",
+      "nppNppType": "nppTypeHumanoid",
+      "nppSoundPackage": "human_imperiallieutenant_medium_male_01",
+      "nppArmorSoundsetOverride": "armor_composite",
+      "nppVocalSoundsetOverride": {
+        "1960923813318275770": "",
+        "7006995385239018265": "",
+        "-6100274382065526164": ""
+      },
+      "nppAppearanceSlotMap_ForPrototype": {
+        "enum:0x4000000316C18124:3": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBracer",
+            "appAppearanceSlotModelID": "1142678",
+            "appAppearanceSlotMaterialIndex": "1127329",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1392577",
+            "appAppearanceSlotHueSecondary": "1392577",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:5": {
+          "0": {
+            "appAppearanceSlotType": "appSlotComplexion",
+            "appAppearanceSlotModelID": "1275972",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:7": {
+          "0": {
+            "appAppearanceSlotType": "appSlotEyeColor",
+            "appAppearanceSlotModelID": "1005512",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:8": {
+          "0": {
+            "appAppearanceSlotType": "appSlotFace",
+            "appAppearanceSlotModelID": "1000539",
+            "appAppearanceSlotMaterialIndex": "1163176",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000785",
+            "appAppearanceSlotHueSecondary": "1392577",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:12": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHairColor",
+            "appAppearanceSlotModelID": "1003541",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:11": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHair",
+            "appAppearanceSlotModelID": "1004595",
+            "appAppearanceSlotMaterialIndex": "1003606",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:15": {
+          "0": {
+            "appAppearanceSlotType": "appSlotLeg",
+            "appAppearanceSlotModelID": "1142819",
+            "appAppearanceSlotMaterialIndex": "1143841",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000780",
+            "appAppearanceSlotHueSecondary": "1392577",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:14": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHead",
+            "appAppearanceSlotModelID": "1275535",
+            "appAppearanceSlotMaterialIndex": "1275424",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:16": {
+          "0": {
+            "appAppearanceSlotType": "appSlotSkinColor",
+            "appAppearanceSlotModelID": "1001061",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:17": {
+          "0": {
+            "appAppearanceSlotType": "appSlotWaist",
+            "appAppearanceSlotModelID": "1142668",
+            "appAppearanceSlotMaterialIndex": "1127334",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000785",
+            "appAppearanceSlotHueSecondary": "1392577",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:2": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBoot",
+            "appAppearanceSlotModelID": "1142525",
+            "appAppearanceSlotMaterialIndex": "1127330",
+            "appAppearanceSlotHuePrimary": "1000785",
+            "appAppearanceSlotHueSecondary": "1392577",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1143082"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:13": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHand",
+            "appAppearanceSlotModelID": "1142599",
+            "appAppearanceSlotMaterialIndex": "1127335",
+            "appAppearanceSlotHuePrimary": "1000793",
+            "appAppearanceSlotHueSecondary": "1392577",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1143060"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:4": {
+          "0": {
+            "appAppearanceSlotType": "appSlotChest",
+            "appAppearanceSlotModelID": "1142763",
+            "appAppearanceSlotMaterialIndex": "1143934",
+            "appAppearanceSlotHuePrimary": "1000780",
+            "appAppearanceSlotHueSecondary": "1392577",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1143643",
+              "1": "1143642",
+              "2": "1143640"
+            }
+          }
+        }
+      }
+    },
+    "0xE000513C9863801D": {
+      "utlTemplateId": "npp.creature.acklay.queen_a02",
+      "nppBodyType": "acklay",
+      "nppNppType": "nppTypeCreature",
+      "nppSoundPackage": "creature_acklayqueen",
+      "nppVocalSoundsetOverride": {
+        "1960923813318275770": "",
+        "7006995385239018265": "",
+        "-6100274382065526164": ""
+      },
+      "nppAppearanceSlotMap_ForPrototype": {
+        "enum:0x4000000316C18124:6": {
+          "0": {
+            "appAppearanceSlotType": "appSlotCreature",
+            "appAppearanceSlotModelID": "1007101",
+            "appAppearanceSlotMaterialIndex": "1007103",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        }
+      }
+    },
+    "0xE000EABF6AEF35B8": {
+      "utlTemplateId": "npp.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.temple_boss_sith_asssassin_02",
+      "nppBodyType": "bma",
+      "nppNppType": "nppTypeHumanoid",
+      "nppSoundPackage": "human_imperial_low_male_02",
+      "nppArmorSoundsetOverride": "armor_metal",
+      "nppVocalSoundsetOverride": {
+        "1960923813318275770": "",
+        "7006995385239018265": "",
+        "-6100274382065526164": ""
+      },
+      "nppAppearanceSlotMap_ForPrototype": {
+        "enum:0x4000000316C18124:15": {
+          "0": {
+            "appAppearanceSlotType": "appSlotLeg",
+            "appAppearanceSlotModelID": "1142861",
+            "appAppearanceSlotMaterialIndex": "1143939",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000659",
+            "appAppearanceSlotHueSecondary": "1000797",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:3": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBracer",
+            "appAppearanceSlotModelID": "1142526",
+            "appAppearanceSlotMaterialIndex": "1162022",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000659",
+            "appAppearanceSlotHueSecondary": "1000797",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:2": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBoot",
+            "appAppearanceSlotModelID": "1002651",
+            "appAppearanceSlotMaterialIndex": "1123775",
+            "appAppearanceSlotHuePrimary": "1000659",
+            "appAppearanceSlotHueSecondary": "1000797",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1002658"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:17": {
+          "0": {
+            "appAppearanceSlotType": "appSlotWaist",
+            "appAppearanceSlotModelID": "1002649",
+            "appAppearanceSlotMaterialIndex": "1123475",
+            "appAppearanceSlotHuePrimary": "1000659",
+            "appAppearanceSlotHueSecondary": "1000797",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1002653",
+              "1": "1002657"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:4": {
+          "0": {
+            "appAppearanceSlotType": "appSlotChest",
+            "appAppearanceSlotModelID": "1002645",
+            "appAppearanceSlotMaterialIndex": "1143095",
+            "appAppearanceSlotHuePrimary": "1000659",
+            "appAppearanceSlotHueSecondary": "1000797",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1002654"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:13": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHand",
+            "appAppearanceSlotModelID": "1002652",
+            "appAppearanceSlotMaterialIndex": "1123776",
+            "appAppearanceSlotHuePrimary": "1000659",
+            "appAppearanceSlotHueSecondary": "1000797",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1002656"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:8": {
+          "0": {
+            "appAppearanceSlotType": "appSlotFace",
+            "appAppearanceSlotModelID": "1142847",
+            "appAppearanceSlotMaterialIndex": "1126207",
+            "appAppearanceSlotHuePrimary": "1000659",
+            "appAppearanceSlotHueSecondary": "1000797",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1143903"
+            }
+          }
+        }
+      }
+    },
+    "0xE0008393D6F60361": {
+      "utlTemplateId": "npp.location.flashpoint.raid.eternity_vault.enemy.difficulty_1.temple_boss_sith_asssassin",
+      "nppBodyType": "bfn",
+      "nppNppType": "nppTypeHumanoid",
+      "nppSoundPackage": "human_imperial_low_female_01",
+      "nppArmorSoundsetOverride": "armor_composite",
+      "nppVocalSoundsetOverride": {
+        "1960923813318275770": "",
+        "7006995385239018265": "",
+        "-6100274382065526164": ""
+      },
+      "nppAppearanceSlotMap_ForPrototype": {
+        "enum:0x4000000316C18124:1": {
+          "0": {
+            "appAppearanceSlotModelID": "1318155",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:3": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBracer",
+            "appAppearanceSlotModelID": "1142543",
+            "appAppearanceSlotMaterialIndex": "1119358",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1002253",
+            "appAppearanceSlotHueSecondary": "1000731",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:5": {
+          "0": {
+            "appAppearanceSlotType": "appSlotComplexion",
+            "appAppearanceSlotModelID": "1275983",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:7": {
+          "0": {
+            "appAppearanceSlotType": "appSlotEyeColor",
+            "appAppearanceSlotModelID": "1005511",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:9": {
+          "0": {
+            "appAppearanceSlotType": "appSlotFaceHair",
+            "appAppearanceSlotModelID": "1276955",
+            "appAppearanceSlotMaterialIndex": "1379954",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:11": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHair",
+            "appAppearanceSlotModelID": "1003547",
+            "appAppearanceSlotMaterialIndex": "1003602",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:12": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHairColor",
+            "appAppearanceSlotModelID": "1003536",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:13": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHand",
+            "appAppearanceSlotModelID": "1142608",
+            "appAppearanceSlotMaterialIndex": "1163256",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000687",
+            "appAppearanceSlotHueSecondary": "1000731",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:14": {
+          "0": {
+            "appAppearanceSlotType": "appSlotHead",
+            "appAppearanceSlotModelID": "1166433",
+            "appAppearanceSlotMaterialIndex": "1275406",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:16": {
+          "0": {
+            "appAppearanceSlotType": "appSlotSkinColor",
+            "appAppearanceSlotModelID": "1275746",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:15": {
+          "0": {
+            "appAppearanceSlotType": "appSlotLeg",
+            "appAppearanceSlotModelID": "1142829",
+            "appAppearanceSlotMaterialIndex": "1163261",
+            "appAppearanceSlotAttachments": {},
+            "appAppearanceSlotHuePrimary": "1000687",
+            "appAppearanceSlotHueSecondary": "1000731",
+            "appAppearanceSlotRandomWeight": "3"
+          }
+        },
+        "enum:0x4000000316C18124:2": {
+          "0": {
+            "appAppearanceSlotType": "appSlotBoot",
+            "appAppearanceSlotModelID": "1142515",
+            "appAppearanceSlotMaterialIndex": "1163254",
+            "appAppearanceSlotHuePrimary": "1002253",
+            "appAppearanceSlotHueSecondary": "1000731",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1143070"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:4": {
+          "0": {
+            "appAppearanceSlotType": "appSlotChest",
+            "appAppearanceSlotModelID": "1142874",
+            "appAppearanceSlotMaterialIndex": "1163253",
+            "appAppearanceSlotHuePrimary": "1000687",
+            "appAppearanceSlotHueSecondary": "1000731",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1143915",
+              "1": "1143916",
+              "2": "1143914"
+            }
+          }
+        },
+        "enum:0x4000000316C18124:17": {
+          "0": {
+            "appAppearanceSlotType": "appSlotWaist",
+            "appAppearanceSlotModelID": "1005938",
+            "appAppearanceSlotMaterialIndex": "1005949",
+            "appAppearanceSlotHuePrimary": "1000690",
+            "appAppearanceSlotHueSecondary": "1000687",
+            "appAppearanceSlotRandomWeight": "3",
+            "appAppearanceSlotAttachments": {
+              "0": "1005939"
+            }
+          }
+        }
+      }
+    }
+  }
+}

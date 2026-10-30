@@ -24,6 +24,7 @@ public partial class EnemyAgent : Combatant
     [Export] public bool GuaranteedReward { get; set; }
     [Export] public bool ScaleWithWaves { get; set; } = true;
     public int SpawnLevel { get; set; } = 1;
+    public bool IsEncounterMember {get;set;}
     public int ReferenceLevel { get; set; } = 1;
     public float LevelDamageMultiplier { get; set; } = 1;
     public double StunRemaining {get;private set;}
@@ -32,7 +33,9 @@ public partial class EnemyAgent : Combatant
     {
         var build=(Target.GetParent()?.GetParent() as GameWorld)?.Build;
         build?.Attacked(this,Target.Health.Shielded);
-        return Target.Health.ApplyDamage(amount*LevelDamageMultiplier*(OilRemaining>0?.75f:1)*(build?.IncomingMultiplier??1),type);
+        float received=Target.Health.ApplyDamage(amount*LevelDamageMultiplier*(OilRemaining>0?.75f:1)*(build?.IncomingMultiplier??1),type);
+        build?.Pregame.AgentRetaliate(this,received);
+        return received;
     }
     private bool _carbonized;
     public bool Stun(float seconds,bool carbonized=true)
@@ -116,6 +119,8 @@ public partial class EnemyAgent : Combatant
         SlowRemaining=Math.Max(0,SlowRemaining-delta);if(SlowRemaining<=0)_slowFactor=1;
         if (!GodotObject.IsInstanceValid(Target) || !Target.Alive) { Stop(); return; }
         if (GetNodeOrNull<Xrr3Attack>("Xrr3Attack") is { } raid && raid.Tick(delta))
+        { Body.Velocity=Vector3.Zero;Visual?.Present(Vector3.Zero,Target.GlobalPosition,delta);return; }
+        if (GetNodeOrNull<SoaAttack>("SoaAttack") is { } soa && soa.Tick(delta))
         { Body.Velocity=Vector3.Zero;Visual?.Present(Vector3.Zero,Target.GlobalPosition,delta);return; }
         if (GetNodeOrNull<TombAttack>("TombAttack") is { } trial && trial.Tick(delta))
         { Body.Velocity=Vector3.Zero;Visual?.Present(Vector3.Zero,Target.GlobalPosition,delta);return; }
@@ -201,6 +206,7 @@ public partial class EnemyAgent : Combatant
         GetNodeOrNull<BossEncounter>("BossEncounter")?.End();
         GetNodeOrNull<TombAttack>("TombAttack")?.End();
         GetNodeOrNull<Xrr3Attack>("Xrr3Attack")?.End();
+        GetNodeOrNull<SoaAttack>("SoaAttack")?.End();
         if (Visual != null && Target != null) Visual.Present(Vector3.Zero, Target.GlobalPosition, 0.1);
         SetPhysicsProcess(false);
     }

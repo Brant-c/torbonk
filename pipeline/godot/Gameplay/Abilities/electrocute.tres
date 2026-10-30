@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+[resource]
+script = ExtResource("1")
+Id = "electrocute"
+Title = "Electrocute"
+Icon = "electrocute"
+StartsUnlocked = false
+Slotless = true
+Category = 1
+Damage = 16
+DamageType = 0
+CooldownSeconds = 12
+Range = 0.6
+Radius = 0
+Area = 0
+WindupSeconds = 0.3
+ChannelSeconds = 0
+RecoverySeconds = 0.3
+GestureSeconds = 0.65
+StartClip = "B5/Shock"
+RequireGesture = true
+FinishGesture = true
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+Description = "Deception: electrocute a target carrying your Discharge. Stuns ordinary enemies for 3 seconds and exposes victims for 6 seconds: Maul and Voltaic Slash deal 35% more damage. Opens a 4-second Maul ambush window. Bosses resist the stun but retain the exposure. Discharge keeps ticking. Uses one utility slot."
+SourceFx = "si_electrocute_01;si_electrocute_target_01"
+CastAudioEvent = "Play_ability_general_forcedark_subtleslowgrip"
+ImpactAudioEvent = "Play_ability_sithinquisitor_discharge_blast"
+LoopAudioEvent = "Play_ability_sithinquisitor_lightningdrain_loop_target"
+

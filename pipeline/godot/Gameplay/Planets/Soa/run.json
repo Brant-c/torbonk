@@ -1,0 +1,248 @@
+{
+  "CoreLevel": 50,
+  "FirstLevelExperience": 16,
+  "ExperienceGrowth": 1.075,
+  "Difficulty": {
+    "HealthPerLevel": 0.08,
+    "DamagePerLevel": 0.045,
+    "SpeedPerLevel": 0.01,
+    "MaximumSpeedBonus": 0.85,
+    "AttackFrequencyPerLevel": 0.018,
+    "MaximumAttackFrequencyBonus": 0.85,
+    "InitialPopulation": 6,
+    "PopulationPerLevel": 1,
+    "MaximumPopulation": 22,
+    "InitialSpawnInterval": 0.7,
+    "MinimumSpawnInterval": 0.25,
+    "RecoverySeconds": 0,
+    "ReturnRampSeconds": 0,
+    "ExponentialDamageScaling": true
+  },
+  "ArtifactCatalog": "res://Gameplay/Planets/Korriban/artifacts.json",
+  "AudioTuning": "res://Gameplay/Planets/EternityVault/audio.json",
+  "Endless": false,
+  "EnemyExperienceDropEvery": 2,
+  "Caches": [],
+  "EnemyExperienceMultiplier": 2,
+  "Stages": [
+    {
+      "Level": 1,
+      "Region": "Jungle Incursion",
+      "Description": "Survive the ancient guardians. Defeat the Council and confront Soa in the Infernal Prison.",
+      "Focus": [
+        82.5,
+        -38.73,
+        69
+      ],
+      "AmbientGain": -22,
+      "SourceEncounter": "a:enc.location.flashpoint.raid.eternity_vault.enemy.enc_trash_jungle",
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Manka.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Rakata.tscn",
+          "Weight": 1
+        }
+      ]
+    },
+    {
+      "Level": 4,
+      "Region": "Eternal Guardians",
+      "Description": "Survive the ancient guardians. Defeat the Council and confront Soa in the Infernal Prison.",
+      "Focus": [
+        82.5,
+        -38.73,
+        69
+      ],
+      "AmbientGain": -22,
+      "SourceEncounter": "f:enc.location.flashpoint.raid.eternity_vault.enemy.enc_trash_jungle",
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Manka.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Rakata.tscn",
+          "Weight": 3
+        }
+      ]
+    },
+    {
+      "Level": 11,
+      "Region": "Pylon Defenders",
+      "Description": "Survive the ancient guardians. Defeat the Council and confront Soa in the Infernal Prison.",
+      "Focus": [
+        82.5,
+        -38.73,
+        69
+      ],
+      "AmbientGain": -22,
+      "SourceEncounter": "d:enc.location.flashpoint.raid.eternity_vault.enemy.enc_boss_puzzle_guardian_2",
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Rakata.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Watcher.tscn",
+          "Weight": 1
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Manka.tscn",
+          "Weight": 1
+        }
+      ]
+    },
+    {
+      "Level": 18,
+      "Region": "Ancient Hunters",
+      "Description": "Survive the ancient guardians. Defeat the Council and confront Soa in the Infernal Prison.",
+      "Focus": [
+        82.5,
+        -38.73,
+        69
+      ],
+      "AmbientGain": -22,
+      "SourceEncounter": "authored jungle escalation",
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Rakata.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Watcher.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Acklay.tscn",
+          "Weight": 1
+        }
+      ]
+    },
+    {
+      "Level": 26,
+      "Region": "The Council's Legacy",
+      "Description": "Survive the ancient guardians. Defeat the Council and confront Soa in the Infernal Prison.",
+      "Focus": [
+        82.5,
+        -38.73,
+        69
+      ],
+      "AmbientGain": -22,
+      "SourceEncounter": "authored post-Council escalation",
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Watcher.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Rakata.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Acklay.tscn",
+          "Weight": 1
+        }
+      ]
+    },
+    {
+      "Level": 34,
+      "Region": "Infernal Prison",
+      "Description": "Survive the ancient guardians. Defeat the Council and confront Soa in the Infernal Prison.",
+      "Focus": [
+        82.5,
+        -38.73,
+        69
+      ],
+      "AmbientGain": -22,
+      "SourceEncounter": "authored prison pressure",
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Watcher.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Acklay.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Rakata.tscn",
+          "Weight": 2
+        }
+      ]
+    },
+    {
+      "Level": 41,
+      "Region": "The False God",
+      "Description": "Survive the ancient guardians. Defeat the Council and confront Soa in the Infernal Prison.",
+      "Focus": [
+        82.5,
+        -38.73,
+        69
+      ],
+      "AmbientGain": -22,
+      "SourceEncounter": "authored image aftermath",
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Rakata.tscn",
+          "Weight": 2
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Watcher.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Acklay.tscn",
+          "Weight": 2
+        }
+      ]
+    },
+    {
+      "Level": 46,
+      "Region": "The Infernal One",
+      "Description": "Survive the ancient guardians. Defeat the Council and confront Soa in the Infernal Prison.",
+      "Focus": [
+        82.5,
+        -38.73,
+        69
+      ],
+      "AmbientGain": -22,
+      "SourceEncounter": "authored final approach",
+      "Enemies": [
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Rakata.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Watcher.tscn",
+          "Weight": 3
+        },
+        {
+          "Scene": "res://Gameplay/Planets/Soa/Acklay.tscn",
+          "Weight": 2
+        }
+      ]
+    }
+  ],
+  "Milestones": [
+    {
+      "Level": 10,
+      "Encounter": "res://Gameplay/Planets/Soa/PuzzleGuardianEncounter.tres"
+    },
+    {
+      "Level": 25,
+      "Encounter": "res://Gameplay/Planets/Soa/LuthroEncounter.tres"
+    },
+    {
+      "Level": 40,
+      "Encounter": "res://Gameplay/Planets/Soa/SoaImageEncounter.tres"
+    },
+    {
+      "Level": 50,
+      "Encounter": "res://Gameplay/Planets/Soa/SoaEncounter.tres"
+    }
+  ],
+  "ContinuousEncounters": true
+}

@@ -32,6 +32,7 @@ public partial class FrontendFlow : Control
     private Control? _settings;
     private bool _collectionsOpen;
     private bool _talentsOpen;
+    private bool _historyOpen;
     public override void _Ready()
     {
         SwtorSurvivors.AudioPreferences.Load(); Theme = FrontendSkin.MakeTheme(); _catalog = FrontendCatalog.Load();
@@ -103,6 +104,7 @@ public partial class FrontendFlow : Control
     {
         _collectionsOpen=false;
         _talentsOpen=false;
+        _historyOpen=false;
         if(step==1 && _step!=1)_chosenFaction=null;
         if(step==2 && _step!=2)_chosenClass=null;
         if(step==3 && _step!=3)_chosenAdvanced=null;
@@ -172,24 +174,32 @@ public partial class FrontendFlow : Control
             var button=new MainMenuChoice {Text=title,Description=description,IconSlice=icon};
             button.Pressed+=action;Place(button,x,y,580,140);return button;
         }
-        var start=Entry("New Run","Choose your allegiance. Begin a new journey.","bwaui_buttons_132",114,200,()=> { _session=new SelectionSession(); _chosenFaction=null; Sound(); ShowStep(1); });
-        var collection=Entry("Collections","Explore your unlocked appearances.","bwaui_buttons_135",754,200,ShowCollections);
-        var talents=Entry("Talents","Configure your combat style.","bwaui_buttons_298",114,365,ShowTalents);
-        var settings=Entry("Settings","Adjust your display and interface sounds.","bwaui_buttons_90",754,365,ShowSettings);
-        var equipment=FrontendSkin.Button("Equipment",()=>SwtorSurvivors.UI.EquipmentWindows.Instance.Open());Place(equipment,374,540,230,52);
-        var exit=FrontendSkin.Button("Exit",()=>GetTree().Quit());Place(exit,624,540,200,52);
-        talents.FocusNeighborTop=start.GetPath();talents.FocusNeighborRight=settings.GetPath();
-        start.FocusNeighborBottom=talents.GetPath();
-        start.FocusNeighborRight=collection.GetPath();start.FocusNeighborBottom=settings.GetPath();
-        collection.FocusNeighborLeft=start.GetPath();collection.FocusNeighborBottom=exit.GetPath();
-        settings.FocusNeighborTop=collection.GetPath();settings.FocusNeighborLeft=talents.GetPath();
-        exit.FocusNeighborTop=collection.GetPath();exit.FocusNeighborLeft=settings.GetPath();
-        start.FocusNeighborBottom=talents.GetPath();collection.FocusNeighborBottom=settings.GetPath();
-        talents.FocusNeighborBottom=exit.GetPath();settings.FocusNeighborBottom=exit.GetPath();
-        Control[] menuOrder=[start,collection,talents,settings,equipment,exit];
+        var start=Entry("New Run","Choose your allegiance. Begin a new journey.","bwaui_buttons_132",114,120,()=> { _session=new SelectionSession(); _chosenFaction=null; Sound(); ShowStep(1); });
+        var collection=Entry("Collections","Explore your unlocked appearances.","bwaui_buttons_242",754,120,ShowCollections);
+        var talents=Entry("Talents","Configure your combat style.","bwaui_buttons_298",114,280,ShowTalents);
+        var equipment=Entry("Equipment","Inspect your gear and loadout.","bwaui_buttons_135",754,280,()=>SwtorSurvivors.UI.EquipmentWindows.Instance.Open());
+        var history=Entry("Leaderboards","Compare classes and review every attempt.","bwaui_buttons_26",114,440,ShowRunHistory);
+        var settings=Entry("Settings","Adjust your display and interface sounds.","bwaui_buttons_90",754,440,ShowSettings);
+        var exit=FrontendSkin.Button("Exit",()=>GetTree().Quit());Place(exit,624,602,200,52);
+        Control[] tiles=[start,collection,talents,equipment,history,settings];
+        for(int i=0;i<tiles.Length;i++)
+        {
+            tiles[i].FocusNeighborLeft=tiles[i%2==1?i-1:i].GetPath();
+            tiles[i].FocusNeighborRight=tiles[i%2==0?i+1:i].GetPath();
+            tiles[i].FocusNeighborTop=tiles[i>=2?i-2:i].GetPath();
+            tiles[i].FocusNeighborBottom=i<4?tiles[i+2].GetPath():exit.GetPath();
+        }
+        exit.FocusNeighborTop=history.GetPath();
+        Control[] menuOrder=[start,collection,talents,equipment,history,settings,exit];
         for(int i=0;i<menuOrder.Length;i++)
         {menuOrder[i].FocusNext=menuOrder[(i+1)%menuOrder.Length].GetPath();menuOrder[i].FocusPrevious=menuOrder[(i+menuOrder.Length-1)%menuOrder.Length].GetPath();}
         start.GrabFocus();
+    }
+    public void ShowRunHistory()
+    {
+        ShowStep(0);Sound();_historyOpen=true;
+        foreach(var child in _page!.GetChildren()){_page.RemoveChild(child);child.QueueFree();}
+        _page.AddChild(new RunHistoryScreen {Name="RunHistory",Size=new Vector2(1448,650),Closed=()=>ShowStep(0)});
     }
     public void ShowTalents()
     {
@@ -243,7 +253,7 @@ public partial class FrontendFlow : Control
             .Where(s=>s.X>0 && s.Y>0 && s.X<=screen.X && s.Y<=screen.Y).Distinct().OrderBy(s=>s.X).ThenBy(s=>s.Y).ToArray();
         foreach(var size in sizes) resolution.AddItem($"{size.X} × {size.Y}");
         resolution.Select(Array.IndexOf(sizes,DisplaySettings.Resolution)); body.AddChild(resolution);
-        var status=FrontendSkin.Label("Fullscreen uses this rendering resolution.",17,true); body.AddChild(status);
+        var status=FrontendSkin.Label("Fullscreen renders at desktop resolution. Resolution sets window size and interface scale.",17,true); body.AddChild(status);
         void ApplyDisplay()
         {
             if(resolution.Selected<0) return;
@@ -362,7 +372,7 @@ public partial class FrontendFlow : Control
     {
         if (e is InputEventKey { Pressed:true, Echo:false, Keycode:Key.Escape })
         {
-            if (_collectionsOpen || _talentsOpen) {Sound("back");ShowStep(0);}
+            if (_collectionsOpen || _talentsOpen || _historyOpen) {Sound("back");ShowStep(0);}
             else if (_settings!=null) CloseSettings();
             else if (_step>0 && !_transitioning) { Sound("back"); ShowStep(_step-1); }
             GetViewport().SetInputAsHandled();

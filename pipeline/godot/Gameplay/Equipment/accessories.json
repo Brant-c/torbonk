@@ -608,6 +608,126 @@
       "Effects": [
         "Saber Throw applies Deadly Saber bleed to 2 targets; existing bleeds are preserved."
       ]
+    },
+    {
+      "Id": "worldbreaker",
+      "Name": "Worldbreaker",
+      "Kind": "relic",
+      "Icon": "darksiderelic3",
+      "Rarity": "Artifact",
+      "Classes": [
+        "juggernaut"
+      ],
+      "Description": "Permanent Juggernaut relic. Any talent build; either relic slot.",
+      "RankEffects": [
+        "Smash impacts 2 times at full damage; echoes preserve the cast animation. Repeats every 0.350s.",
+        "Smash impacts 3 times at full damage; echoes preserve the cast animation. Repeats every 0.300s.",
+        "Smash impacts 3 times at full damage; echoes preserve the cast animation. Repeats every 0.250s.",
+        "Smash impacts 4 times at full damage; echoes preserve the cast animation. Repeats every 0.200s."
+      ],
+      "Effects": [
+        "Smash impacts 2 times at full damage; echoes preserve the cast animation. Repeats every 0.350s."
+      ]
+    },
+    {
+      "Id": "endless_fury",
+      "Name": "Endless Fury",
+      "Kind": "relic",
+      "Icon": "darksiderelic2",
+      "Rarity": "Artifact",
+      "Classes": [
+        "juggernaut"
+      ],
+      "Description": "Permanent Juggernaut relic. Any talent build; either relic slot.",
+      "RankEffects": [
+        "Force Crush affects 2 nearby targets with normal periodic effects.",
+        "Force Crush affects 3 nearby targets with normal periodic effects.",
+        "Force Crush affects 4 nearby targets with normal periodic effects.",
+        "Force Crush affects 5 nearby targets with normal periodic effects."
+      ],
+      "Effects": [
+        "Force Crush affects 2 nearby targets with normal periodic effects."
+      ]
+    },
+    {
+      "Id": "ravagers_wrath",
+      "Name": "Ravager's Wrath",
+      "Kind": "relic",
+      "Icon": "darksiderelic1",
+      "Rarity": "Artifact",
+      "Classes": [
+        "juggernaut"
+      ],
+      "Description": "Permanent Juggernaut relic. Any talent build; either relic slot.",
+      "RankEffects": [
+        "Each Ravage hit strikes 2 additional nearby targets at full damage.",
+        "Each Ravage hit strikes 3 additional nearby targets at full damage.",
+        "Each Ravage hit strikes 4 additional nearby targets at full damage.",
+        "Each Ravage hit strikes 5 additional nearby targets at full damage."
+      ],
+      "Effects": [
+        "Each Ravage hit strikes 2 additional nearby targets at full damage."
+      ]
+    },
+    {
+      "Id": "impaling_fury",
+      "Name": "Impaling Fury",
+      "Kind": "relic",
+      "Icon": "darksiderelic3",
+      "Rarity": "Artifact",
+      "Classes": [
+        "juggernaut"
+      ],
+      "Description": "Permanent Juggernaut relic. Any talent build; either relic slot.",
+      "RankEffects": [
+        "Impale automatically strikes 2 times at full damage. Repeats every 0.250s.",
+        "Impale automatically strikes 3 times at full damage. Repeats every 0.225s.",
+        "Impale automatically strikes 3 times at full damage. Repeats every 0.200s.",
+        "Impale automatically strikes 4 times at full damage. Repeats every 0.175s."
+      ],
+      "Effects": [
+        "Impale automatically strikes 2 times at full damage. Repeats every 0.250s."
+      ]
+    },
+    {
+      "Id": "vengeful_retribution",
+      "Name": "Vengeful Retribution",
+      "Kind": "relic",
+      "Icon": "darksiderelic2",
+      "Rarity": "Artifact",
+      "Classes": [
+        "juggernaut"
+      ],
+      "Description": "Permanent Juggernaut relic. Any talent build; either relic slot.",
+      "RankEffects": [
+        "Damage enables automatic equipped Retaliation for 4s; +25% range; +25% cooldown recovery.",
+        "Damage enables automatic equipped Retaliation for 4s; +50% range; +40% cooldown recovery.",
+        "Damage enables automatic equipped Retaliation for 4s; +75% range; +55% cooldown recovery.",
+        "Damage enables automatic equipped Retaliation for 4s; +100% range; +70% cooldown recovery."
+      ],
+      "Effects": [
+        "Damage enables automatic equipped Retaliation for 4s; +25% range; +25% cooldown recovery."
+      ]
+    },
+    {
+      "Id": "undying_wrath",
+      "Name": "Undying Wrath",
+      "Kind": "relic",
+      "Icon": "darksiderelic1",
+      "Rarity": "Artifact",
+      "Classes": [
+        "juggernaut"
+      ],
+      "Description": "Permanent Juggernaut relic. Any talent build; either relic slot.",
+      "RankEffects": [
+        "Enraged Defense: +20% damage; damage-triggered healing every 0.50s; maximum 32 healing per activation.",
+        "Enraged Defense: +30% damage; damage-triggered healing every 0.33s; maximum 40 healing per activation.",
+        "Enraged Defense: +40% damage; damage-triggered healing every 0.25s; maximum 48 healing per activation.",
+        "Enraged Defense: +50% damage; damage-triggered healing every 0.20s; maximum 56 healing per activation."
+      ],
+      "Effects": [
+        "Enraged Defense: +20% damage; damage-triggered healing every 0.50s; maximum 32 healing per activation."
+      ]
     }
   ]
 }

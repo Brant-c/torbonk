@@ -12,7 +12,10 @@ public partial class SorcererRelicSmoke : Node
         var checks=new List<string>();string? failure=null;
         void Check(string label,bool ok){if(!ok)throw new Exception(label);checks.Add(label);GD.Print(label);}
         try {
-            w.Waves!.SetPhysicsProcess(false);w.Spawner!.Running=false;w.Abilities.SetPhysicsProcess(false);w.Periodic.SetPhysicsProcess(false);w.Player.SetPhysicsProcess(false);
+            w.Waves!.SetPhysicsProcess(false);w.Spawner!.Running=false;w.Abilities.SetPhysicsProcess(false);w.Periodic.SetPhysicsProcess(false);
+            w.Player.TestInput=Vector2.Zero;
+            for(int frame=0;frame<8;frame++)await ToSignal(GetTree(),SceneTree.SignalName.PhysicsFrame);
+            w.Player.SetPhysicsProcess(false);
             foreach(var e in w.Spawner.Enemies){e.SetPhysicsProcess(false);e.CombatEnabled=false;}
             var inventory=UI.EquipmentWindows.Instance.Inventory;
             Check("eight Sorcerer relics owned",inventory.Items.Count(i=>i.Classes.SequenceEqual(new[]{"sorcerer"}) && inventory.State.Owned.ContainsKey(i.Id))==8);

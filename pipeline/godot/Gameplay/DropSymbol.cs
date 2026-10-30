@@ -2,20 +2,24 @@ using Godot;
 using SwtorSurvivors.UI;
 namespace SwtorSurvivors;
 
-public enum DropSymbolKind { Experience, Item, Special }
+public enum DropSymbolKind { Experience, Item, Special, Credits }
 
 /// <summary>Original blue UI artwork reused as world markers; no reward or collection logic.</summary>
 public partial class DropSymbol : Node3D
 {
     public DropSymbolKind Kind {get;set;}=DropSymbolKind.Item;
     public static string SliceName(DropSymbolKind kind) => kind switch {
+        DropSymbolKind.Credits => "credits",
         DropSymbolKind.Experience => "bwaui_buttons_298",
         DropSymbolKind.Special => "bwaui_buttons_242",
         _ => "bwaui_buttons_135" };
     public static Sprite3D Icon(DropSymbolKind kind,float width)
     {
-        var texture=SwtorSkin.Slice(SliceName(kind));
+        var texture=kind==DropSymbolKind.Credits
+            ? GD.Load<Texture2D>("res://Assets/UI/symbols/credits.png")
+            : SwtorSkin.Slice(SliceName(kind));
         return new Sprite3D {Name="DropIcon",Texture=texture,PixelSize=width/texture.GetWidth(),
+            Modulate=Colors.White,
             Billboard=BaseMaterial3D.BillboardModeEnum.Enabled,Shaded=false,
             TextureFilter=BaseMaterial3D.TextureFilterEnum.Linear,
             CastShadow=GeometryInstance3D.ShadowCastingSetting.Off};

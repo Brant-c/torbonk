@@ -55,9 +55,9 @@ Id = "eternity_vault.{name.lower()}"
 Title = "{title}"
 Scene = ExtResource("2")
 IntroductionSeconds = 1.8
-RegularSpawnIntervalMultiplier = 3.0
-RegularCapFraction = {'0.12' if name=='Xrr3' else '0.35'}
-ClearRegularEnemiesOnStart = {'true' if name=='Xrr3' else 'false'}
+RegularSpawnIntervalMultiplier = 1.0
+RegularCapFraction = 1.0
+ClearRegularEnemiesOnStart = false
 ''')
 k=json.loads((root/'Planets/Korriban/run.json').read_text());d=dict(CoreLevel=50,FirstLevelExperience=k['FirstLevelExperience'],ExperienceGrowth=k['ExperienceGrowth'],Difficulty=dict(k['Difficulty']),ArtifactCatalog=k['ArtifactCatalog'],AudioTuning=k['AudioTuning'],Endless=False,EnemyExperienceDropEvery=2,Caches=[])
 d['AudioTuning']=base+'audio.json'
@@ -66,7 +66,8 @@ audio['cues']['ev_guard_warning']=dict(audio['cues']['burrow_warning'],category=
 audio['cues']['ev_guard_impact']=dict(audio['cues']['burrow_impact'],category='Combat',gainDb=-18,cooldown=1.0,duration=.65,priority=False)
 (out/'audio.json').write_text(json.dumps(audio,indent=2)+'\n')
 d['EnemyExperienceMultiplier']=2
-d['Difficulty'].update(InitialPopulation=8,MaximumPopulation=24,InitialSpawnInterval=.6,MinimumSpawnInterval=.20,RecoverySeconds=5,ReturnRampSeconds=3,ExponentialDamageScaling=True)
+d['ContinuousEncounters']=True
+d['Difficulty'].update(InitialPopulation=8,MaximumPopulation=24,InitialSpawnInterval=.6,MinimumSpawnInterval=.20,RecoverySeconds=0,ReturnRampSeconds=0,ExponentialDamageScaling=True)
 stages=[(1,'Snow Wilderness',[('IceCat',1)],'b:enc.location.flashpoint.raid.eternity_vault.flavor.enc_snow_wilderness'),(4,'Wildlife Migration',[('IceCat',3),('Tauntaun',2)],'a:enc.location.flashpoint.raid.eternity_vault.flavor.enc_snow_wilderness'),(11,'Prison Guard Patrol',[('Guard',4),('IceCat',2),('Tauntaun',1)],'a:enc.location.flashpoint.raid.eternity_vault.enemy.enc_trash_prison_guards'),(16,'Security Response',[('Guard',4),('Gunner',2),('IceCat',1)],'authored mixed security response'),(26,'Rakata Lockdown',[('Guard',4),('Gunner',3),('IceCat',2)],'authored mixed lockdown'),(36,'Siege Protocol',[('Guard',3),('Gunner',4),('IceCat',2),('Tauntaun',1)],'authored siege pressure'),(46,'Annihilation Protocol',[('Guard',4),('Gunner',3),('IceCat',1)],'authored final approach')]
 d['Stages']=[dict(Level=l,Region=n,Description=('XRR-3 activates at level 50. Keep routes open and evade security fire.' if l>=46 else 'Hold the surface. Kill hostiles, collect experience and prepare for the next security escalation.'),Focus=[-64,2.8,30.7],AmbientGain=-22,SourceEncounter=src,Enemies=[dict(Scene=base+e+'.tscn',Weight=w) for e,w in mix]) for l,n,mix,src in stages]
 d['Milestones']=[dict(Level=l,Encounter=base+n+'Encounter.tres') for l,n in [(10,'IceMatriarch'),(25,'GuardCaptain'),(40,'SiegeWarden'),(50,'Xrr3')]]

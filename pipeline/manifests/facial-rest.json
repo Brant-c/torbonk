@@ -1,0 +1,390 @@
+{
+  "passed": true,
+  "policy": "Keep original facial rest positions; retain rotation and body animation",
+  "assets": [
+    {
+      "path": "godot\\Assets\\Abilities\\casts.glb",
+      "before": "7d2d25c845ac519cf1577e71f32cc8445bd7c8973277dd31c7e8284a4c3e5961",
+      "after": "a7fdb73d2d0a80c85f828872d517cb58e6c7cf85fb67f57712a267a4e3e2ec19",
+      "removedChannelCount": 116,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Agent\\casts.glb",
+      "before": "d94414cee7b884cd449b3db3c38baa0af94db8b56ff38b681d6005716759b819",
+      "after": "acbd68a6239622fa91504d0f810c0698c00df4e954fe2371ba052ea5011aa07a",
+      "removedChannelCount": 551,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Assassin\\casts.glb",
+      "before": "9d4b420d570a407aa7a23813c631d88621a1675010684256465d40acda3b8fb3",
+      "after": "4ab2f237ed24bfae20ae238c4d1f2b5be85aac98b39d42e40fd7bad7a45468b1",
+      "removedChannelCount": 174,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\AssassinLocomotion\\casts.glb",
+      "before": "638ec7fb479dbab1e3f36c5ade9fb9751843cbcba5488576d5bf89366ea3472f",
+      "after": "ef9310a9c3f07aa834d7ba4f2fe49b70cda7e30e809a4300292fe3cfc792dac1",
+      "removedChannelCount": 58,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\B8\\casts.glb",
+      "before": "3751c2f03ad0f24d596e1fcc84e46f9fb7ff55cd3dc9e27668cccb544ea49166",
+      "after": "234adab1755012fb47bfb829b51c74d7726898f03b794a2d237c5e60a3eb304c",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\BasicAttacks\\casts.glb",
+      "before": "c560dc2c95f58f6a7c1cb969387b5cfb45ca8a4068c2c7fac966c5ad4dbfd364",
+      "after": "67bca6f2a870fc5984a638fbb5a1a89a6b8eabfbcda104fa7b13da9b69b4bd1a",
+      "removedChannelCount": 174,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\D2\\casts.glb",
+      "before": "5308cb1e4cd6d4c74203dfd5895d326c769d9859f751d3f056f034cdf75d59be",
+      "after": "cf1dd748912c796f9e98b49c53452a3c62169f9c1e527c92c4ebf2e243d4389e",
+      "removedChannelCount": 58,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\D3\\bh.glb",
+      "before": "1b71d5c79ddf8c58a2b999673744ebc4e7bc1383c3e2f8dbd752e851086bc349",
+      "after": "669c7ac1ebc1d22ac74a5d427b93fa6cd6fc93d45025c1407ffc96e833b1b532",
+      "removedChannelCount": 203,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\D3\\casts.glb",
+      "before": "60fc329da02c8a698b87202b47333fa6c951e8905570e23f174abb0e24670da1",
+      "after": "7be8ae87a937d1effeb47a348253fb87c7b577d7bfb19f63b1c2bf70e2fa4d31",
+      "removedChannelCount": 1189,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy.glb",
+      "before": "337f0f7d9962c94181d9d91b9cd1af08fef5278d0a1d14900e9498564f0def12",
+      "after": "97c5beec9cc87617a3d28a2907cf529f7165aefa1e125c8a152582b209ae5e98",
+      "removedChannelCount": 203,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\D3\\war.glb",
+      "before": "fcba73986d19ed907533e9e9502d1ca84e5a4b6f4e1d3a61e71b5ca688e69b7e",
+      "after": "a9cec6daa4aebcd7a3e61dbd30b0ad5e11b575412f1efc9ad24eb23d3645684f",
+      "removedChannelCount": 203,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Enemies\\looter.glb",
+      "before": "43a6fb75bee4e41bb3213762a6abe3c5fe4b180c7e0430aea04a57d940d428f8",
+      "after": "af81a94dc3bb1f0809d99cc92c3200947d6f408e98a984b3d87dd69c0e0e06d1",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Equipment\\Arsenal\\head-bh.glb",
+      "before": "9ef876366a1a499f862c3956e149bbde5090f02eddef7b10788c0e3e9179d410",
+      "after": "2946fc36fa0fc07d1939c27c44adb85aa9b742b770c6477de6fd0b59f2bd3a7a",
+      "removedChannelCount": 29,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Equipment\\Arsenal\\head-inq.glb",
+      "before": "f226d009df6e83ab55eaff874a3814b77c4e64293c810635f6918c427b50b041",
+      "after": "ee07f5bd8122238facffd423bb66ea72af1b582010a5903dc7369a11181edb94",
+      "removedChannelCount": 29,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Equipment\\Arsenal\\head-spy.glb",
+      "before": "c2b54acc2efd93d28882afeb70c55648cdc054b1eb931bbc4393ab8a0713733a",
+      "after": "dca256755d473609436e14c57d1b715c4db67cc7ba15369303779b1defa60d6f",
+      "removedChannelCount": 29,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Equipment\\Arsenal\\head-war.glb",
+      "before": "80edbbd2d12db7ca1dd4ab9b19907d29a7ced32b0ebd184a06e335941a6a4534",
+      "after": "c764ae38475fecae3b3b3453fe79ca6527b10ac4bad1bc57f39863c922a8d2fc",
+      "removedChannelCount": 29,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Equipment\\Empire\\bh.glb",
+      "before": "56f5a275065e9afb054e676e17ce50dfc877abb63d2dd6d539379e46e83922d5",
+      "after": "b27f3d381e52b02f557a94be6a05cf3069b28918e3759bf05ee2b8ba719f50c8",
+      "removedChannelCount": 203,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Equipment\\Empire\\inq.glb",
+      "before": "1dc31f75305eafc5408298379a6469f0b32cabb3fc87bece2fd30e602710b57b",
+      "after": "74ca694b7fd5ad24a85ca2fb36299a0eee7683e3508e24f177282bec5245e661",
+      "removedChannelCount": 203,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Equipment\\Empire\\spy.glb",
+      "before": "10ad677de3d4004db79ce6b7c068424de363435025336f7c4dd6e31203618ae5",
+      "after": "b43b788147e1d1ebcf895bb4f408c2136485dcc5000131de89357f2a5cb3de0e",
+      "removedChannelCount": 203,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Equipment\\Empire\\war.glb",
+      "before": "a20a19fc679c50cc173ffb293bd4bc362d5dba5b366305fb88094759eeac0e5f",
+      "after": "fa1732b2e287fe03d6e6c7ad298842b7bf24b9ac943669f2e21c6abee2813023",
+      "removedChannelCount": 203,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Equipment\\inquisitor-level1.glb",
+      "before": "178fad5fa2975a547529cc129d6785eb6f07a407c12dbe629cdd1bee4fd27ae5",
+      "after": "142a72526d560ccfa40f356b96032d396f133b1df827e24735e9123515a90503",
+      "removedChannelCount": 203,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Jump\\jump.glb",
+      "before": "d2b44848c3658841c35518c31fdea4fca0019778eaf2ef2bda64aa6fdbf2b5c4",
+      "after": "13602a89afe75b4491979609ece6935cd7acd93e72615f03560b34df98067043",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Korriban\\D4\\Enemies\\beast.glb",
+      "before": "f9a1d49f9e9b226348d9b552a45dc84c8d91fd8843b72355fccf095d79492614",
+      "after": "f86f2610d16ff25c8c73d3f8ab37e67ccbd60c87e0cfa3020a960224ea09eec3",
+      "removedChannelCount": 70,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Korriban\\D4\\Enemies\\protector.glb",
+      "before": "6db0e410b401aab4602a364c28063f36efce13a06d6958ad16d7a4f924e8e001",
+      "after": "c5139d940d9d4d16fefd9b8867e5949f10d9a0bbfbf8ca7e76be32170959973f",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\eternity_vault\\Enemies\\guard.glb",
+      "before": "706ba43d22055392259366cb40e48d4f41f0f3b5979f77758a340acc52405b63",
+      "after": "0f265bd9627d5332082c3d63bcf4522fe1cabeb3987d79ba1dd197a4a9f292ee",
+      "removedChannelCount": 174,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\eternity_vault\\Enemies\\xrr3.glb",
+      "before": "1c3327b518de63f9d32a7afa8103150df781fc1ecf9bb415c8d7b4298566296b",
+      "after": "fe832acd94ade1dffb73cfc3348a52f96bee26ee47f3517526038f3d84fc48da",
+      "removedChannelCount": 42,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\hutta\\Enemies\\brawler.glb",
+      "before": "886ce8a2afd62c68e3ba64c11e17c7f470bc660f4e898dbfdde1b73a4a07d874",
+      "after": "46a477c911c98b83ec243e0c8a5b53b7b54780dd05683c924229ea2ad13f3f53",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\hutta\\Enemies\\droid.glb",
+      "before": "6557665f8e610670d998d41e3017c48cb2d6b7e2662990b0f3443fe852183f1a",
+      "after": "9a0ce85ff50e36cf3bf678c52ca74a270ded14ccc8150dd62160b21b0eca26a1",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\hutta\\Enemies\\gangster.glb",
+      "before": "e69e4ffbf53ff5fec1aecb65c9068022b32c282bad25a587079682b5c4640334",
+      "after": "ddd0804a3a5db6597a2de495a264d9dfd4e7137fc424d72771af68264e2fa473",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\hutta\\Enemies\\guard.glb",
+      "before": "52726c80f3dbac63a66231d0cf3adfa3a2c7afa4ac953fa0f5ad0e06010a4031",
+      "after": "7ff7be390c922bf18b4a2580078f900c06919d2d3e6b366f89fbbcf34e43949f",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\soa_p3\\Enemies\\alarii.glb",
+      "before": "9779011a05ecc17eb2197e7c26aecfda3db15ec8f77ffc395c64bcc0b8ca5d3c",
+      "after": "832e9d5085992af77e653ac9703393331bd4fdb9522d77635dc2b37ba22d85cb",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\soa_p3\\Enemies\\fahren.glb",
+      "before": "44cd9492618394409ace8966a709509ed7f44790afeeaecfc4737f4d787dcb6e",
+      "after": "ac0439ebb1de4cf07a287e1d27f967cdf0905c08971121885cc4bd5ca199ead0",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\soa_p3\\Enemies\\jael.glb",
+      "before": "6597b3b7c174942df3d4bfd403174d7b49ed0dd4dfa50eff8f7db9a817fc1208",
+      "after": "388e202e44619fd531a42a4f0f1ae6ff04eae960d01b08688497dbd15ace9b55",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\soa_p3\\Enemies\\kahesh.glb",
+      "before": "2a5762a0b7fd6a0b64b43716f16c933476437cbc7f93a8398867db172b5e4701",
+      "after": "2cc267515ee1aafa26ee578a5ebfec83cfd0e1b1461800152d1c680227520103",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\soa_p3\\Enemies\\luthro.glb",
+      "before": "ae5592e03ac52cd933cf13bd455955737ed1e6b00440277593c4e740c0fa9ce6",
+      "after": "f9cebae7159e19e048b33c8c2ba90444393237675051612d0a18e0c719368f2d",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\soa_p3\\Enemies\\rakata.glb",
+      "before": "e51278e7a9d38ae42ee85e06fd06c4b89e78008e618842ca384f7d7e42ed774e",
+      "after": "57e3dfe2a0f897d57f93ed904c288ffa6fd78887739bf14d6b7a8671d836228e",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\soa_p3\\Enemies\\serrod.glb",
+      "before": "015025f9bccc3165e034e1a47182c16751ff01ce85e1f704dab0136814576aeb",
+      "after": "283ea80cec223423610bab4074763d74b506f8d12fbd5e5a290bc97e63583d74",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\soa_p3\\Enemies\\soa.glb",
+      "before": "dcfc3c3ec17f0dc5d57462b4127203883608f3513b2da7d91dd11a06843f2dbe",
+      "after": "00879b2a1e54f56acef4584af7ce6e0eef1c9b357307263685d2d34a7be78624",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\soa_p3\\Enemies\\watcher.glb",
+      "before": "2feb6d283c31be652045c10389e2c7985a9649cdf9ef366bee9bb14c213211b3",
+      "after": "cedabd6b65a4468df5663f7005491451399cccea628a5ff17ef45950335cf8ba",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\soa_p3\\Enemies\\yshaar.glb",
+      "before": "06a1dffb1c3672e35227368dca084aa68158c4f898af1097adcdd2b7ebd19ac4",
+      "after": "150a85a5e9abf7bfcacfbea9fc099be7e38a6877ab5da44c3adfd9cd0c9bd81a",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Maps\\soa_p3\\Enemies\\zaheen.glb",
+      "before": "638566a9661e0a31229580d99832cdffe028d69b2060eb09842a2ae9a2334567",
+      "after": "c65a5822479fe87717604c5b9357d20d09e917ff67623897a3877fda65fd737c",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Powertech\\casts.glb",
+      "before": "d65abae70ff166d3b3392150c89c0b02fa2cb778b0ead67c392b82a0fcfe6243",
+      "after": "2fe2634cc69f3518f3f494fdf65fbbd5c766fd20575905b756ffd22bb8f1fa39",
+      "removedChannelCount": 145,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Sorcerer\\casts.glb",
+      "before": "848f122503a9e2bcd91dc36666aaae116fa54119a7e37b3c98702bf6bdbaafc2",
+      "after": "ba996d2fb21184e30f5f8a987c9ab4b4e4ffa7fc20c5bc2f56a0c43afc1886a2",
+      "removedChannelCount": 58,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\sorcerer.glb",
+      "before": "99526ef82f24948733a8eac4738a0147d10f893acdd234f182b2da37c64bdc9d",
+      "after": "7c6ac4597f6e9bb1eaea05515363fff68bc5ca76efcbbc25d38e18b6bb0c3a94",
+      "removedChannelCount": 203,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\SorcererRefinement\\casts.glb",
+      "before": "564090c2bed30d2e09194f81bd935debb9fec7c4529f90c72b369e5caa2717eb",
+      "after": "dce3a353851250025da04740a2c7abf96d684db1cb30e4d100241494d13f3328",
+      "removedChannelCount": 87,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\WarriorLibrary\\casts.glb",
+      "before": "93b6a5668cdfa1746df5bf30649994f440663467c2478191f1f49dc05304fff3",
+      "after": "7d36bb28d990b0e43272a7c7981165612f6d1953b946e8a72a2f765aa60e8540",
+      "removedChannelCount": 928,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\WarriorLocomotion\\casts.glb",
+      "before": "9f31e7fad4765dcfe6f56e7ef7ec46879ded9380b955a0f08929581a2b3bb3b4",
+      "after": "a4f4cd63aad206f5ec9a83a1a21790d0b0dd541e8777d212c3820bcb4d74ebfb",
+      "removedChannelCount": 174,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\WarriorPresentation\\casts.glb",
+      "before": "dbdd2ac2eb154720dd6a5d95f2721e9393726ab7f29da358692a385830e45c79",
+      "after": "8410892f3377d6c4d6d936324e40076c803d451b811d9032917df62a49b5d9b8",
+      "removedChannelCount": 58,
+      "binaryPayloadUnchanged": true,
+      "otherChannelsUnchanged": true
+    }
+  ]
+}

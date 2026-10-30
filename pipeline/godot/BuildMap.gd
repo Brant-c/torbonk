@@ -25,6 +25,9 @@ func build():
 		var st = SurfaceTool.new(); st.begin(Mesh.PRIMITIVE_TRIANGLES)
 		for i in p.indices:
 			var index = int(i)
+			if p.has("vertexColors") and not p.vertexColors.is_empty():
+				var color = p.vertexColors[index]
+				st.set_color(Color(color[0]/255.0,color[1]/255.0,color[2]/255.0))
 			st.set_uv(Vector2(float(index%int(p.width))/float(p.width-1),float(index/int(p.width))/float(p.depth-1)))
 			st.set_smooth_group(0); st.add_vertex(v(p.vertices[index]))
 		st.generate_normals(); st.generate_tangents(); st.index()

@@ -5,7 +5,7 @@ using System.Text.Json;
 namespace SwtorSurvivors;
 
 /// <summary>Bounded presentation of the recovered April T2.2 textures, gestures and Wwise media.</summary>
-public partial class SorcererRefinementPresentation : Node3D,IAbilityPresentation
+public partial class SorcererRefinementPresentation : Node3D,IAbilityPresentation,ITargetImpactPresentation
 {
     public CharacterPresentation Actor {get;set;}=null!;
     public AbilityDefinition Definition {get;set;}=null!;
@@ -16,6 +16,8 @@ public partial class SorcererRefinementPresentation : Node3D,IAbilityPresentatio
     private double _buffLife,_trailIn;
     private Vector3 _lastPosition;
     public int AudioVoicesStarted {get;private set;}
+    public int TargetImpacts {get;private set;}
+    public bool BuffLoopPlaying=>_voices.Count>2 && _voices[2].Playing && _voices[2].Stream is AudioStreamWav w && w.LoopMode!=AudioStreamWav.LoopModeEnum.Disabled;
     public int EffectCount=>_effects.Count;
     public override void _Ready()
     {
@@ -26,13 +28,15 @@ public partial class SorcererRefinementPresentation : Node3D,IAbilityPresentatio
             AddChild(voice);_voices.Add(voice);AudioPresentation.Find(this)?.RegisterCombatVoice(voice);
         }
     }
-    private void Play(string name,int slot,Vector3 at)
+    private void Play(string name,int slot,Vector3 at,bool loop=false)
     {
         if(name=="" || !_audio.RootElement.GetProperty("events").TryGetProperty(name,out var id) ||
             !_audio.RootElement.GetProperty("graphs").TryGetProperty(id.GetString()!,out var graph))return;
         var media=graph.GetProperty("media");if(media.GetArrayLength()==0)return;
         var voice=_voices[slot];voice.GlobalPosition=at;
-        voice.Stream=GD.Load<AudioStream>($"res://Assets/SorcererRefinement/Audio/{media[0].GetInt32()}.wav");
+        var stream=(AudioStreamWav)GD.Load<AudioStreamWav>($"res://Assets/SorcererRefinement/Audio/{media[0].GetInt32()}.wav").Duplicate();
+        if(loop){stream.LoopMode=AudioStreamWav.LoopModeEnum.Forward;stream.LoopBegin=0;stream.LoopEnd=(int)(stream.GetLength()*stream.MixRate);}
+        voice.Stream=stream;
         voice.Play();AudioVoicesStarted++;
     }
     private void Flash(string stem,Vector3 at,float size,double life,int atlas=1,bool follow=false)
@@ -75,20 +79,31 @@ public partial class SorcererRefinementPresentation : Node3D,IAbilityPresentatio
         switch(Definition.Id)
         {
             case "lightningstrike":
-                Arc(Actor.GlobalPosition+Vector3.Up*.13f,center);Flash("lightning03",center,.19f,.35);Flash("electric_rings_bw_02",center,.14f,.35,2);break;
+                break; // Contacts are dispatched after positive damage, for every victim.
             case "crushingdarkness":
                 Flash("2x2_dark_energy_clouds_02",center,.22f,.8,2);break;
             case "polarityshift":
                 _buffLife=6;Flash("bw_fx_2x2_sparknglow_01",center,.22f,6,2,true);
-                Play("Play_ability_sithinquisitor_polaritycharge_buffloop",2,center);break;
+                Play("Play_ability_sithinquisitor_polaritycharge_buffloop",2,center,true);break;
             case "forcespeed":
                 _buffLife=2;_lastPosition=Actor.GlobalPosition;
                 Flash("glow_basic_nomips",center,.13f,.35,1,true);
-                Play("Play_ability_sithinquisitor_forcespeed_channelloop",2,center);break;
+                Play("Play_ability_sithinquisitor_forcespeed_channelloop",2,center,true);break;
         }
+    }
+    public void TargetImpact(Combatant target)
+    {
+        if(Definition.Id!="lightningstrike")return;
+        TargetImpacts++;var at=target.AimPosition;
+        Arc(Actor.GlobalPosition+Vector3.Up*.13f,at);Flash("lightning03",at,.19f,.35);Flash("electric_rings_bw_02",at,.14f,.35,2);
     }
     public override void _Process(double delta)
     {
+        if(GetParent() is GameWorld world && _buffLife>0){
+            bool active=world.PlayerActor.Alive && (Definition.Id=="polarityshift"?world.Build.Pregame.PolarityActive:world.Build.Buffed);
+            if(!active){_buffLife=0;_voices[2].Stop();foreach(var e in _effects)if(GodotObject.IsInstanceValid(e.node))e.node.QueueFree();_effects.Clear();}
+            else _voices[2].GlobalPosition=Actor.GlobalPosition;
+        }
         if(_buffLife>0){
             if(Definition.Id=="forcespeed")
             {

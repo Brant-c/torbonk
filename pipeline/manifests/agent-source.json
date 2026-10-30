@@ -1,0 +1,346 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 180,
+  "maximumDecodedBytes": 104857600,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x9AD9CD5F85C7E9CD",
+      "entryOffset": 35467618,
+      "headerSize": 36,
+      "dataOffset": 35467654,
+      "compressedSize": 17632,
+      "length": 31681,
+      "compressionMethod": 1,
+      "crc32Index": "df1ce419",
+      "path": "/resources/anim/humanoid/bmnnew/cb_spy_shiv_1.jba",
+      "sha256": "6e1a311564c78b6789e56b0e25c6101586ec2c67753580d7594cba0b83bb6184",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_spy_shiv_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x1F074ADFCC3F4DC5",
+      "entryOffset": 23774425,
+      "headerSize": 36,
+      "dataOffset": 23774461,
+      "compressedSize": 17853,
+      "length": 31809,
+      "compressionMethod": 1,
+      "crc32Index": "6b11322b",
+      "path": "/resources/anim/humanoid/bmnnew/cb_agent_backstab.jba",
+      "sha256": "91612212c86aa7e90d49896873e23465c357523671503827835d256243d0bafa",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_agent_backstab.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x6AC080A362B94B06",
+      "entryOffset": 74410577,
+      "headerSize": 36,
+      "dataOffset": 74410613,
+      "compressedSize": 1362,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "fef15c97",
+      "path": "/resources/gfx/icons/criticalblade.dds",
+      "sha256": "ec47757557a77d4ccb29b3174ce8288304d14fc83be668f96e6d5a9128c4c0ce",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\criticalblade.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x982C809CFA954462",
+      "entryOffset": 148443004,
+      "headerSize": 36,
+      "dataOffset": 148443040,
+      "compressedSize": 1364,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "973f16f3",
+      "path": "/resources/gfx/icons/shiv.dds",
+      "sha256": "b00daf70e3f03775ae37c6702ae96b012d38b973beb579fbfd1a714db9b743d1",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\shiv.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xD26AB47574C12AA7",
+      "entryOffset": 145791950,
+      "headerSize": 36,
+      "dataOffset": 145791986,
+      "compressedSize": 1493,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "7254615d",
+      "path": "/resources/gfx/icons/koltoinjection.dds",
+      "sha256": "200416e6e0922c2c2c4664877d399d50791b1a2eb07f982ed1521c24cde21984",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\koltoinjection.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x5B40B256D200C9B5",
+      "entryOffset": 148771114,
+      "headerSize": 36,
+      "dataOffset": 148771150,
+      "compressedSize": 1482,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "d4600ae0",
+      "path": "/resources/gfx/icons/surgicalprobe.dds",
+      "sha256": "bebd514a086603614c051baa900cf1dfc85728ccf3efd1b5fc5365c8ba9bac1f",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\surgicalprobe.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x3730688F240D97E6",
+      "entryOffset": 71743843,
+      "headerSize": 36,
+      "dataOffset": 71743879,
+      "compressedSize": 1445,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "e2674631",
+      "path": "/resources/gfx/icons/backstab.dds",
+      "sha256": "d48660896269efa0ed5e3d735474040c191083edb6051cf2d6745963f82205dd",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\backstab.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x4B4FCD684A1FFDCE",
+      "entryOffset": 74932059,
+      "headerSize": 36,
+      "dataOffset": 74932095,
+      "compressedSize": 1461,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "80d3ced0",
+      "path": "/resources/gfx/icons/finishingstrikes.dds",
+      "sha256": "0495bf1f789861f685b0d8ed5978cdf64a54cc5a4f4080e282901ec8faa0e917",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\finishingstrikes.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x0B63748D4105096A",
+      "entryOffset": 74422189,
+      "headerSize": 36,
+      "dataOffset": 74422225,
+      "compressedSize": 1468,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "735734ef",
+      "path": "/resources/gfx/icons/cull.dds",
+      "sha256": "867dbe980208ccbe2143573c3fd90cd2b7e42e6665ed24c3614ed4ac575dc589",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\cull.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x7294A0F8561CAF9D",
+      "entryOffset": 71157716,
+      "headerSize": 36,
+      "dataOffset": 71157752,
+      "compressedSize": 1422,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "05e50e56",
+      "path": "/resources/gfx/icons/advancedmedicalprobe.dds",
+      "sha256": "83086ab1645262fcc7e6a49f991c66b0c5f5f168da656211c9010d964e7f47d5",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\advancedmedicalprobe.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xB828D53FE54CF485",
+      "entryOffset": 74976272,
+      "headerSize": 36,
+      "dataOffset": 74976308,
+      "compressedSize": 1460,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "ea43763a",
+      "path": "/resources/gfx/icons/followthrough.dds",
+      "sha256": "8da7c719529569ab74003d027bed703370605200cb7d2ea141267580ec7cf390",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\followthrough.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x962C12838064BA5E",
+      "entryOffset": 148670548,
+      "headerSize": 36,
+      "dataOffset": 148670584,
+      "compressedSize": 1505,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "c9dbd663",
+      "path": "/resources/gfx/icons/sonicprobe.dds",
+      "sha256": "1ca4667c6945f656ea989ed92a0fdbe22f12b1955cb27746dc8f545e09831d11",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\sonicprobe.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x9A8B87FA87FF2CB8",
+      "entryOffset": 146879518,
+      "headerSize": 36,
+      "dataOffset": 146879554,
+      "compressedSize": 1459,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "66f53a4f",
+      "path": "/resources/gfx/icons/plasmaprobe.dds",
+      "sha256": "0bdcdb49595fd4922f1e04e1487bd1b70b4decc9990f4a9b2ffe614bc15ad4fc",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\plasmaprobe.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x52D91C383A1707F0",
+      "entryOffset": 74491920,
+      "headerSize": 36,
+      "dataOffset": 74491956,
+      "compressedSize": 1437,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "e368e6e2",
+      "path": "/resources/gfx/icons/detonateprobe.dds",
+      "sha256": "ba775ab725d493623667773b78a5b9994026ffd16a5e17eb63648003116fe368",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\detonateprobe.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x2E4A22382AB12163",
+      "entryOffset": 74475700,
+      "headerSize": 36,
+      "dataOffset": 74475736,
+      "compressedSize": 1445,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "c7231b94",
+      "path": "/resources/gfx/icons/defensivecommand.dds",
+      "sha256": "19d12f5e89930157a3d125554121ca6a6d914c0f2bc35b1a46fdcf4fbfda324c",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\defensivecommand.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "Shiv",
+      "to": "/resources/anim/humanoid/bmnnew/cb_spy_shiv_1.jba",
+      "relation": "original Agent knife gesture"
+    },
+    {
+      "from": "Backstab",
+      "to": "/resources/anim/humanoid/bmnnew/cb_agent_backstab.jba",
+      "relation": "original Agent knife gesture"
+    },
+    {
+      "from": "Laceration",
+      "to": "/resources/anim/humanoid/bmnnew/cb_spy_shiv_1.jba",
+      "relation": "original Agent knife gesture"
+    },
+    {
+      "from": "criticalblade",
+      "to": "/resources/gfx/icons/criticalblade.dds",
+      "relation": "selected Agent icon"
+    },
+    {
+      "from": "shiv",
+      "to": "/resources/gfx/icons/shiv.dds",
+      "relation": "selected Agent icon"
+    },
+    {
+      "from": "koltoinjection",
+      "to": "/resources/gfx/icons/koltoinjection.dds",
+      "relation": "selected Agent icon"
+    },
+    {
+      "from": "surgicalprobe",
+      "to": "/resources/gfx/icons/surgicalprobe.dds",
+      "relation": "selected Agent icon"
+    },
+    {
+      "from": "abl.agent.shiv",
+      "to": "/resources/gfx/icons/shiv.dds",
+      "relation": "April ablIconSpec"
+    },
+    {
+      "from": "abl.agent.backstab",
+      "to": "/resources/gfx/icons/criticalblade.dds",
+      "relation": "April ablIconSpec"
+    },
+    {
+      "from": "abl.agent.hidden_strike",
+      "to": "/resources/gfx/icons/backstab.dds",
+      "relation": "April ablIconSpec"
+    },
+    {
+      "from": "abl.agent.skill.concealment.laceration",
+      "to": "/resources/gfx/icons/finishingstrikes.dds",
+      "relation": "April ablIconSpec"
+    },
+    {
+      "from": "abl.agent.skill.lethality.cull",
+      "to": "/resources/gfx/icons/cull.dds",
+      "relation": "April ablIconSpec"
+    },
+    {
+      "from": "abl.agent.skill.medic.kolto_probe",
+      "to": "/resources/gfx/icons/surgicalprobe.dds",
+      "relation": "April ablIconSpec"
+    },
+    {
+      "from": "abl.agent.skill.medic.surgical_probe",
+      "to": "/resources/gfx/icons/advancedmedicalprobe.dds",
+      "relation": "April ablIconSpec"
+    },
+    {
+      "from": "abl.agent.skill.marksmanship.followthrough",
+      "to": "/resources/gfx/icons/followthrough.dds",
+      "relation": "April ablIconSpec"
+    },
+    {
+      "from": "abl.agent.skill.engineering.interrogation_probe",
+      "to": "/resources/gfx/icons/sonicprobe.dds",
+      "relation": "April ablIconSpec"
+    },
+    {
+      "from": "abl.agent.skill.engineering.plasma_probe",
+      "to": "/resources/gfx/icons/plasmaprobe.dds",
+      "relation": "April ablIconSpec"
+    },
+    {
+      "from": "abl.agent.skill.engineering.detonate_probes",
+      "to": "/resources/gfx/icons/detonateprobe.dds",
+      "relation": "April ablIconSpec"
+    },
+    {
+      "from": "abl.agent.skill.lethality.weakening_blast",
+      "to": "/resources/gfx/icons/defensivecommand.dds",
+      "relation": "April ablIconSpec"
+    }
+  ],
+  "unresolved": [],
+  "selection": "human male body type 2; bmnnew skeleton"
+}

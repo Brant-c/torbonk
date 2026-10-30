@@ -1,0 +1,121 @@
+{
+  "clips": [
+    {
+      "name": "Shiv",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_spy_shiv_1.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Backstab",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_agent_backstab.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Laceration",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_disk_left_1.jba",
+      "seconds": 1.600000023841858,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "RifleForward",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_rifle_run_forward.jba",
+      "seconds": 0.6333333253860474,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "RifleBack",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_rifle_run_back.jba",
+      "seconds": 0.6333333253860474,
+      "sourceFps": 30.0
+    },
+    {
+      "name": "HiddenStrike",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_spy_waylay_01.jba",
+      "seconds": 1.5333333015441895,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "RifleGrenade",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_grenade_1.jba",
+      "seconds": 1.3333333730697632,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Detonator",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_detonator_01.jba",
+      "seconds": 0.7333333492279053,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "RifleAutoStart",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_fullauto_start.jba",
+      "seconds": 0.46666666865348816,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "RifleAutoLoop",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_fullauto_loop.jba",
+      "seconds": 0.800000011920929,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "RifleAutoEnd",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_fullauto_end.jba",
+      "seconds": 0.5333333611488342,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "SniperSeries",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_sniper_fire_series_01.jba",
+      "seconds": 3.0,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "StealthIdle",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_stealth_idle_1.jba",
+      "seconds": 2.933333396911621,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "Medical",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_unarmed_heal_right_1.jba",
+      "seconds": 1.4666666984558105,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "CoverIdle",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_cover_crouch_hide_idle_1.jba",
+      "seconds": 2.933333396911621,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "CoverEnter",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_cover_crouch_enter_far.jba",
+      "seconds": 1.3333333730697632,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "CoverFire",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_cover_fire_right_1.jba",
+      "seconds": 1.0666667222976685,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "CoverDetonator",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_cover_detonator_01.jba",
+      "seconds": 1.0666667222976685,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "LacerationFollowup",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_attack_1.jba",
+      "seconds": 1.0666667222976685,
+      "sourceFps": 15.0
+    }
+  ],
+  "output": "godot\\Assets\\Agent\\casts.glb",
+  "sha256": "d94414cee7b884cd449b3db3c38baa0af94db8b56ff38b681d6005716759b819",
+  "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
+}

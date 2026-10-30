@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-29",
+  "passed": true,
+  "checks": 152,
+  "reports": [
+    {
+      "path": "pipeline\\manifests\\agent-operative-presentation.json",
+      "checks": 85,
+      "sha256": "ac6afcf6409d58869f8723f060f0805cc74d13695090cc90a5a2ca85bea98020"
+    },
+    {
+      "path": "pipeline\\manifests\\agent-sniper-presentation.json",
+      "checks": 67,
+      "sha256": "529e4c29afbe7e787566a232eccfb69b0184c67a5a64b67c0ed13e7b91ffcbe8"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "manifests/agent-layered-audio-repair.json",
+      "sha256": "689f6a2c4383cc052cdb11b1d450152515ca6861ad6dba65931b9efb683dd831"
+    },
+    {
+      "path": "manifests/agent-operative-audio-output.json",
+      "sha256": "75c384bf724a0cb07415696cb536c74bad9ecdbf3ae5848ace30673714a97e37"
+    },
+    {
+      "path": "manifests/agent-sniper-audio-output.json",
+      "sha256": "427fa1f0d1b64591631fe2e19bcc9d262609108ae6a124db0cdd2ad7c1ec0a8a"
+    },
+    {
+      "path": "manifests/agent-sniper-explosiveprobe.png",
+      "sha256": "536b41f2d5bcc3fb7b074e60bb111f14ff797910ea5a5aabb6786c796df29f05"
+    },
+    {
+      "path": "manifests/agent-sniper-explosiveprobe_deploy.png",
+      "sha256": "f5c76a1aad4033daadafb135de01669c7f6759a03800846f9e8a44c0b7d5574a"
+    },
+    {
+      "path": "manifests/agent-laceration-combat-output.wav",
+      "sha256": "7590cfc21d8e19574f1fe13c8a8c9ac254a1666f73d2ab33ccb748f01bc95e64"
+    },
+    {
+      "path": "manifests/agent-explosiveprobe-combat-output.wav",
+      "sha256": "d340a9474bf8e46a4be7137eb0ea666a4a2cafd7f34f3b2fe62e52ea13bddbd6"
+    }
+  ],
+  "source": "Original April audio layers and FX dependencies; Godot scheduling and representative Wwise random choices are adaptations."
+}

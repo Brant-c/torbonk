@@ -22,6 +22,13 @@ if ($Map -eq 'eternity_vault') { Invoke-Checked $imagePython @((Join-Path $root 
 Invoke-Checked $blender @('--background','--factory-startup','--python-exit-code','1','--python',(Join-Path $root 'scripts\map_models.py')) 'models'
 Invoke-Checked $imagePython @((Join-Path $root 'scripts\map_terrain.py')) 'terrain'
 if ($Map -eq 'eternity_vault') { Invoke-Checked $imagePython @((Join-Path $root 'scripts\eternity_terrain_detail.py')) 'detail-terrain' }
+if ($Map -eq 'eternity_vault') { Invoke-Checked $imagePython @((Join-Path $root 'scripts\eternity_atmosphere_source.py')) 'atmosphere-source' }
+if ($Map -eq 'eternity_vault') { Invoke-Checked $imagePython @((Join-Path $root 'scripts\trace_ev_surface_fx.py')) 'fx-trace' }
+if ($Map -eq 'eternity_vault') { Invoke-Checked $blender @('--background','--factory-startup','--python-exit-code','1','--python',(Join-Path $root 'scripts\convert_ev_sky.py')) 'sky-geometry' }
+if ($Map -eq 'eternity_vault') {
+    Invoke-Checked $imagePython @((Join-Path $root 'scripts\restore_ev_fidelity.py')) 'surface-fidelity-source'
+    Invoke-Checked $blender @('--background','--factory-startup','--python-exit-code','1','--python',(Join-Path $root 'scripts\convert_ev_horizon.py')) 'surface-horizon'
+}
 if ($Map -eq 'eternity_vault') { Invoke-Checked $python @((Join-Path $root 'scripts\make_map_world.py'),$Map) 'world' }
 Invoke-Checked $godot @('--headless','--editor','--path',$project,'--import','--log-file',(Join-Path $root "logs\map-$Map-import-runtime.log")) 'import'
 Invoke-Checked $godot @('--headless','--path',$project,'--script','res://BuildMap.gd','--log-file',(Join-Path $root "logs\map-$Map-build-runtime.log"),'--',"--map=$Map") 'build'

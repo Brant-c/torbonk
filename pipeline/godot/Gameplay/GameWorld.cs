@@ -54,6 +54,7 @@ public partial class GameWorld : Node3D
     public EquipmentAttachment PlayerSaber => Equipment.Weapon("main_hand")!;
     public PeriodicEffects Periodic {get;private set;}=null!;
     public AudioPresentation Audio { get; private set; } = null!;
+    public Equipment.EvLoot? EvLoot {get;private set;}
     public UI.RewardPresentation? Rewards { get; private set; }
     public Integration.GameplayConfiguration RunConfiguration { get; private set; } = null!;
     private CanvasLayer _legacyOverlay = null!;
@@ -116,6 +117,7 @@ public partial class GameWorld : Node3D
         Player = GetNode<PlayerController>("Player"); Player.SetPhysicsProcess(false);
         Rig = GetNode<CameraRig>("CameraRig"); Arena = GetNode<ArenaBounds>("ArenaBounds");
         EnvironmentRoot = EnvironmentNode();
+        TerrainClarity.Apply(EnvironmentRoot, RunConfiguration.MapId);
         if(RunConfiguration.MapId=="korriban") { var frontier=new KorribanFrontier {Name="KorribanFrontier"}; AddChild(frontier); }
         Player.Arena = Arena; Player.Rig = Rig; Rig.Target = Player;
         foreach (var body in EnvironmentRoot.FindChildren("*", "StaticBody3D", true, false).OfType<StaticBody3D>())
@@ -138,7 +140,7 @@ public partial class GameWorld : Node3D
         await ToSignal(GetTree(), SceneTree.SignalName.PhysicsFrame);
         await ToSignal(GetTree(), SceneTree.SignalName.ProcessFrame);
         // Authored spawn on the existing second patch, never a source NPC-placement claim.
-        bool fixedSpawn=ExplorationOnly || RunConfiguration.MapId=="eternity_vault";
+        bool fixedSpawn=ExplorationOnly || RunConfiguration.MapId is "eternity_vault" or "soa_p3";
         var seed = new Vector3(Arena.SpawnSeed.X, fixedSpawn ? Player.Position.Y : 0, Arena.SpawnSeed.Y);
         Vector3 floor;
         bool spawnFound = fixedSpawn
@@ -160,7 +162,7 @@ public partial class GameWorld : Node3D
                 if (RunConfiguration.MapId == "eternity_vault") AddChild(new EternityVaultAtmosphere());
                 var explore = new CanvasLayer(); AddChild(explore);
                 var panel = new VBoxContainer { Position = new Vector2(18, 14) }; explore.AddChild(panel);
-                panel.AddChild(new Label { Text = "ETERNITY VAULT · 01_Surface\nWASD: move · Space: jump · Mouse: camera" });
+                panel.AddChild(new Label { Text = (RunConfiguration.MapId=="soa_p3" ? "ETERNITY VAULT · SOA · INFERNAL PRISON" : "ETERNITY VAULT · 01_Surface")+"\nWASD: move · Space: jump · Mouse: camera" });
                 var back = new Button { Text = "Main Menu" }; back.Pressed += ReturnToMainMenu; panel.AddChild(back);
                 _legacyOverlay.Visible = false;
                 SyncCameraControls(); ReadyForPlay = true;
@@ -184,6 +186,7 @@ public partial class GameWorld : Node3D
                 if(RunConfiguration.MapId=="eternity_vault")arenaName+=" · "+RunConfiguration.OperationDifficulty;
                 Hud = new UI.SurvivorsHud { Name = "SwtorHud", World = this, ArenaName = arenaName }; AddChild(Hud);
                 Rewards = new UI.RewardPresentation { Name = "RewardPresentation", World = this }; AddChild(Rewards);
+                EvLoot=new Equipment.EvLoot {World=this};AddChild(EvLoot);
                 AddChild(new UI.ArtifactRewardsHud {Name="RunArtifactInterface",World=this});
                 if(RunConfiguration.MapId=="hutta") {AddChild(new HuttaAtmosphere());if(OS.GetCmdlineUserArgs().Contains("--d5-smoke")){var smoke=new D5Smoke();AddChild(smoke);smoke.Run(this);}}
                 if(PlanetRun!=null) {Journey=new PlanetJourney {Name="PlanetJourney",World=this};AddChild(Journey);}
@@ -221,6 +224,7 @@ public partial class GameWorld : Node3D
                 }
                 if (OS.GetCmdlineUserArgs().Contains("--storm-source-smoke"))
                 {var smoke=new StormSourceSmoke();AddChild(smoke);smoke.Run(this);}
+                if(OS.GetCmdlineUserArgs().Contains("--credit-pickup-smoke")){var smoke=new CreditPickupSmoke();AddChild(smoke);smoke.Run(this);}
                 if (OS.GetCmdlineUserArgs().Contains("--progression-smoke"))
                 {
                     var smoke = new ProgressionSmoke(); AddChild(smoke); smoke.Run(this);
@@ -244,6 +248,8 @@ public partial class GameWorld : Node3D
         if(OS.GetCmdlineUserArgs().Contains("--d3-smoke"))
         {var smoke=new D3Smoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--powertech-smoke")){var smoke=new PowertechSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--ranged-movement-smoke")){var smoke=new RangedMovementSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--sorcerer-movement-smoke")){var smoke=new SorcererMovementSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--sorcerer-smoke")){var smoke=new SorcererSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--basic-attacks-smoke")){var smoke=new BasicAttacksSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--sorcerer-refinement-smoke")){var smoke=new SorcererRefinementSmoke();AddChild(smoke);smoke.Run(this);}
@@ -251,13 +257,23 @@ public partial class GameWorld : Node3D
         if(OS.GetCmdlineUserArgs().Contains("--assassin-presentation-smoke")){var presentationSmoke=new AssassinPresentationSmoke();AddChild(presentationSmoke);presentationSmoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--assassin-refinement-smoke")){var smoke=new AssassinRefinementSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--marauder-identity-smoke")){var smoke=new MarauderIdentitySmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--carnage-rework-smoke")){var smoke=new CarnageReworkSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--juggernaut-relic-smoke")){var smoke=new JuggernautRelicSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--marauder-relic-smoke")){var smoke=new MarauderRelicSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--assassin-relic-smoke")){var smoke=new AssassinRelicSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--sorcerer-relic-smoke")){var smoke=new SorcererRelicSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--warrior-movement-smoke")){var smoke=new WarriorMovementSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--warrior-presentation-smoke")){var smoke=new WarriorPresentationSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--inquisitor-revision-smoke")){var smoke=new InquisitorRevisionSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--class-slots-smoke")){var smoke=new ClassSlotsSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--agent-spec-identity-smoke")){var smoke=new AgentSpecIdentitySmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--marauder-smoke")){var smoke=new MarauderSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--juggernaut-smoke")){var smoke=new JuggernautSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--sniper-run-powers-smoke")){var smoke=new SniperRunPowersSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--sniper-cover-smoke")){var smoke=new SniperCoverSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--agent-presentation-smoke")){var smoke=new AgentPresentationSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--agent-expansion-smoke")){var smoke=new AgentExpansionSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--assassin-run-powers-smoke")){var smoke=new AssassinRunPowersSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--assassin-expansion-smoke")){var smoke=new AssassinExpansionSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--presentation-repair-smoke")){var smoke=new PresentationRepairSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--kit-smoke"))
@@ -269,6 +285,8 @@ public partial class GameWorld : Node3D
         { var smoke=new SwtorSurvivors.Equipment.D1EquipmentSmoke();AddChild(smoke);smoke.Run(this); }
         ReadyForPlay = true;
         if(OS.GetCmdlineUserArgs().Contains("--eternity-encounter-smoke")) {var smoke=new EternityVaultEncounterSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--soa-encounter-smoke")) {var smoke=new SoaEncounterSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--continuous-encounter-smoke")) {var smoke=new ContinuousEncounterSmoke();AddChild(smoke);smoke.Run(this);}
     }
 
     private void SyncCameraControls() => Rig.SetControlsEnabled(Initialized && !_leavingForMenu && !GetTree().Paused
@@ -286,6 +304,11 @@ public partial class GameWorld : Node3D
 
     private void AddLighting()
     {
+        if (RunConfiguration.MapId == "soa_p3")
+        {
+            AddChild(GD.Load<PackedScene>("res://Assets/Maps/soa_p3/RoomAtmosphere.tscn").Instantiate());
+            return;
+        }
         var skyMaterial = new ProceduralSkyMaterial
         {
             SkyTopColor = new Color(0.14f, 0.09f, 0.12f), SkyHorizonColor = new Color(0.64f, 0.37f, 0.22f),
@@ -358,14 +381,18 @@ public partial class GameWorld : Node3D
         }
         if(profile.Id=="juggernaut") {Player.Presentation.LoadAbilityLibrary("res://Assets/WarriorLibrary/casts.glb","Warrior");Combat.Definition.StartsUnlocked=true;Combat.Definition.Slotless=true;Combat.Definition.ReplaceableStarter=true;Combat.SetUnlocked(true);}
         if(profile.Id is "marauder" or "juggernaut")Player.Presentation.LoadAbilityLibrary("res://Assets/WarriorPresentation/casts.glb","WarriorExtra");
-        if(profile.Id is "marauder" or "juggernaut")Player.Presentation.LoadDirectionalLocomotion(profile.Id=="marauder",Player.MoveSpeed);
+        if(profile.Id is "marauder" or "juggernaut" or "sorcerer")Player.Presentation.LoadDirectionalLocomotion(profile.Id=="marauder",Player.MoveSpeed);
         if(profile.Id=="marauder"){Player.Presentation.LoadMarauderAnimations();Player.Presentation.AddChild(new MarauderBladeTrails {Actor=Player.Presentation});}
+        if(profile.Id is "operative" or "sniper"){Player.Presentation.LoadAbilityLibrary("res://Assets/Agent/casts.glb","Agent");Player.Presentation.LoadRifleDirectionalLocomotion(Player.MoveSpeed);}
+        if(profile.Id is "mercenary" or "powertech")Player.Presentation.LoadDirectionalLocomotion(false,Player.MoveSpeed,legsOnly:true);
         if(profile.Id=="powertech")Player.Presentation.LoadAbilityLibrary("res://Assets/Powertech/casts.glb","PT");
         if(profile.Id=="assassin") {Player.Presentation.LoadDirectionalLocomotion(false,Player.MoveSpeed,true);Player.Presentation.AddChild(new MarauderBladeTrails {Actor=Player.Presentation,Assassin=true});Player.Presentation.LoadAbilityLibrary("res://Assets/B8/casts.glb","B8");Player.Presentation.LoadAbilityLibrary("res://Assets/Assassin/casts.glb","Assassin");Combat.DamagePerTick=Combat.Definition.Damage=12;Combat.CooldownSeconds=Combat.Definition.CooldownSeconds=2.4f;Combat.Radius=Combat.Definition.Radius=.24f;Combat.Definition.Slotless=true;Combat.Definition.Description="Modest saber sweep. Spreads existing Discharge to nearby enemies hit; talents can spread other DoTs. Starts free and can be replaced.";}
+        if(profile.Id is "operative" or "sniper"){Combat.Definition.Slotless=true;Combat.Definition.ReplaceableStarter=true;}
+        if(profile.Id=="sniper")AddChild(new SniperCoverController {Name="SniperCover",World=this});
         Periodic=new PeriodicEffects {Name="PeriodicEffects"};AddChild(Periodic);Combat.Periodic=Periodic;
         AddChild(Combat);
         Abilities=new AbilityController { Name="AutomaticAbilities",Targeting=Targeting,
-            OffensiveLimit=profile.Id=="assassin"?6:SlotRules!.OffensiveSlots,UtilityLimit=profile.UtilitySlots>=0?profile.UtilitySlots:SlotRules!.UtilitySlots };
+            OffensiveLimit=profile.OffensiveSlots>=0?profile.OffensiveSlots:SlotRules!.OffensiveSlots,UtilityLimit=profile.UtilitySlots>=0?profile.UtilitySlots:SlotRules!.UtilitySlots };
         if(profile.Id=="marauder")Abilities.GlobalCooldownSeconds=.8f;
         Abilities.Abilities.Add(Combat);
         if(profile.BasicAttack!="")
@@ -383,7 +410,8 @@ public partial class GameWorld : Node3D
         {
             var definition=GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{(profile.Id=="juggernaut" && id=="forcescream"?"juggernaut_forcescream":profile.Id=="marauder"?"marauder_"+id:id)}.tres");
             IAbilityPresentation kitVisual;
-            if(profile.Id=="assassin" && id is "voltaicslash" or "maul" or "spike" or "wither" or "lowslash" or "forcecloak" or "deflection") {var original=new AssassinAbilityPresentation {Actor=Player.Presentation,Definition=definition,World=this};AddChild(original);kitVisual=original;}
+            if(profile.Id=="assassin" && id=="electrocute"){var electrocute=new ElectrocutePresentation {Actor=Player.Presentation,Definition=definition,World=this};AddChild(electrocute);kitVisual=electrocute;}
+            else if(profile.Id=="assassin" && id is "voltaicslash" or "maul" or "spike" or "wither" or "lowslash" or "forcecloak" or "deflection") {var original=new AssassinAbilityPresentation {Actor=Player.Presentation,Definition=definition,World=this};AddChild(original);kitVisual=original;}
             else if(id is "forcespeed" or "crushingdarkness") {var speed=new SorcererRefinementPresentation {Actor=Player.Presentation,Definition=definition};AddChild(speed);kitVisual=speed;}
             else if(id=="shock") {var shock=new OriginalAbilityPresentation {Actor=Player.Presentation,Definition=definition};AddChild(shock);kitVisual=shock;}
             else if(id=="affliction")
@@ -399,6 +427,7 @@ public partial class GameWorld : Node3D
             else {var visualKit=new D3AbilityPresentation {Name=id+"Presentation",Actor=Player.Presentation,Definition=definition};AddChild(visualKit);kitVisual=visualKit;}
             var kit=new AutomaticAbility {Name=id,Caster=PlayerActor,Targeting=Targeting,Presentation=kitVisual,Periodic=Periodic};
             kit.Configure(definition);
+            if((profile.Id is "operative" or "sniper") && id=="dart"){kit.Definition.StartsUnlocked=profile.Id=="operative";kit.SetUnlocked(kit.Definition.StartsUnlocked);}
             if(profile.Id=="juggernaut"){kit.Definition.StartsUnlocked=false;kit.SetUnlocked(false);}
             if(profile.Id=="assassin") {
                 if(!Player.Presentation.Animator.HasAnimationLibrary("B5"))Player.Presentation.LoadAbilityLibrary("res://Assets/Abilities/casts.glb","B5");
@@ -460,6 +489,7 @@ public partial class GameWorld : Node3D
                 ability.Configure(definition);AddChild(ability);Abilities.Abilities.Add(ability);
             }
         }
+        Abilities.ApplyClassSlotPolicy(profile.Id,profile.StartingAbility);
         AddChild(Abilities);
         PlayerActor.Health.Died += () =>
         {
@@ -510,9 +540,11 @@ public partial class GameWorld : Node3D
 
     public void ResetCombatWorld()
     {
+        Hud?.Meter.FinishRun("Incomplete · Restarted");
         Periodic?.Clear();
         Rewards?.Clear(); Audio?.Clear();
         Flytext?.Clear();
+        EvLoot?.ResetRun();
         Progression?.ResetRun();
         if (Combat != null)
         {
@@ -529,6 +561,7 @@ public partial class GameWorld : Node3D
 
     public void ReturnToMainMenu()
     {
+        Hud?.Meter.FinishRun("Incomplete · Left run");
         var error = Integration.GameNavigation.ReturnToMenu(this);
         if (error != Error.Ok) GD.PushError("Unable to return to main menu: " + error);
     }

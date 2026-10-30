@@ -1,0 +1,241 @@
+{
+  "patches": [
+    {
+      "id": "4611686096676870037",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "11",
+        "5",
+        "3",
+        "12",
+        "13"
+      ],
+      "samplers": 12,
+      "vertexColors": 4225
+    },
+    {
+      "id": "4611686096676870039",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "3",
+        "11",
+        "13"
+      ],
+      "samplers": 7,
+      "vertexColors": 4225
+    },
+    {
+      "id": "4611686096676870041",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "3",
+        "5",
+        "11",
+        "12",
+        "13"
+      ],
+      "samplers": 12,
+      "vertexColors": 4225
+    },
+    {
+      "id": "4611686096676870043",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "2",
+        "3",
+        "5",
+        "9",
+        "11",
+        "12",
+        "13"
+      ],
+      "samplers": 16,
+      "vertexColors": 4225
+    },
+    {
+      "id": "4611686096676870045",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "11",
+        "3",
+        "12",
+        "13"
+      ],
+      "samplers": 9,
+      "vertexColors": 4225
+    },
+    {
+      "id": "4611686096676870047",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "3",
+        "5",
+        "11",
+        "13"
+      ],
+      "samplers": 9,
+      "vertexColors": 4225
+    },
+    {
+      "id": "4611686096676870054",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "11",
+        "3",
+        "12",
+        "13"
+      ],
+      "samplers": 9,
+      "vertexColors": 4225
+    },
+    {
+      "id": "4611686096676870055",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "11",
+        "3",
+        "12",
+        "13"
+      ],
+      "samplers": 9,
+      "vertexColors": 4225
+    },
+    {
+      "id": "4611686096676870056",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "11",
+        "3",
+        "13"
+      ],
+      "samplers": 7,
+      "vertexColors": 4225
+    },
+    {
+      "id": "4611686136141595627",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "11"
+      ],
+      "samplers": 3,
+      "vertexColors": 4225
+    },
+    {
+      "id": "4611686136141595628",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "3",
+        "11",
+        "13"
+      ],
+      "samplers": 7,
+      "vertexColors": 4225
+    },
+    {
+      "id": "4611686136141595629",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "11"
+      ],
+      "samplers": 3,
+      "vertexColors": 4225
+    },
+    {
+      "id": "4611686136141595630",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "11"
+      ],
+      "samplers": 3,
+      "vertexColors": 4225
+    },
+    {
+      "id": "4611686136141595632",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "11"
+      ],
+      "samplers": 3,
+      "vertexColors": 4225
+    },
+    {
+      "id": "4611686136141595633",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "11"
+      ],
+      "samplers": 3,
+      "vertexColors": 4225
+    },
+    {
+      "id": "4611686136141595634",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "11"
+      ],
+      "samplers": 3,
+      "vertexColors": 4225
+    },
+    {
+      "id": "4611686136141595635",
+      "sourceBlendSum": [
+        255.0,
+        255.0
+      ],
+      "layers": [
+        "11"
+      ],
+      "samplers": 3,
+      "vertexColors": 4225
+    }
+  ],
+  "policy": "Source blend-grid endpoints aligned to texel centres; alpha is data; normal layers share diffuse weights; source vertex tint interpolated on triangles."
+}

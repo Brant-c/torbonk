@@ -1,0 +1,11 @@
+00:02.359  blend            | Read blend: "D:\SWTORClassic\torbonk\pipeline\work\sorcerer-reference.blend"
+00:05.406  render           | Saved: 'D:\SWTORClassic\torbonk\pipeline\generated\face-quality\reference.png'
+00:05.422  blend            | Read blend: "D:\SWTORClassic\torbonk\pipeline\work\sorcerer-portable.blend"
+00:07.453  render           | Saved: 'D:\SWTORClassic\torbonk\pipeline\generated\face-quality\portable.png'
+register_class(...):
+Warning: 'import_mesh.gr2_presets' does not contain '_MT_' with prefix and suffix
+FACE_GRAPH [('Mix (Legacy)', 'MIX_RGB'), ('ageDarkening', 'MIX_RGB')]
+FACE_MAPS [('diffuseMap', (512, 512)), ('rotationMap', (512, 512)), ('ageMap', (16, 16)), ('complexionMap', (512, 512)), ('facepaintMap', (16, 16))]
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

@@ -13,7 +13,7 @@ public partial class MarauderSmoke : Node
   w.Waves!.SetPhysicsProcess(false);w.Spawner!.Running=false;w.Abilities.SetPhysicsProcess(false);w.Periodic.SetPhysicsProcess(false);w.Player.SetPhysicsProcess(false);w.Build.SetPhysicsProcess(false);
   foreach(var e in w.Spawner.Enemies){e.CombatEnabled=false;e.SetPhysicsProcess(false);}
   var cat=TalentCatalog.Current;
-  Check("24 talents, eight per tree",cat.ForClass("marauder").Length==24 && cat.ForClass("marauder").GroupBy(t=>t.Tree).All(t=>t.Count()==8));
+  Check("27 talents, nine per tree",cat.ForClass("marauder").Length==27 && cat.ForClass("marauder").GroupBy(t=>t.Tree).All(t=>t.Count()==9));
   Check("other classes retain catalogs",cat.ForClass("juggernaut").Length==27 && cat.ForClass("assassin").Length==24 && cat.ForClass("sorcerer").Length==24);
   Check("fast free starter and lower health",w.Combat.Definition.Id=="viciousslash" && w.Combat.Definition.Slotless && w.PlayerActor.Health.Maximum==115 && w.Abilities.GlobalCooldownSeconds<1);
   Check("no generic damage tax",!w.Progression!.Upgrades.Any(u=>u.Effect==UpgradeEffect.Damage));
@@ -113,7 +113,7 @@ public partial class MarauderSmoke : Node
   var overlapA=new MarauderThrownSaber{Source=w.Equipment.Weapon("main_hand")!,Target=target};var overlapB=new MarauderThrownSaber{Source=w.Equipment.Weapon("main_hand")!,Target=target};w.AddChild(overlapA);w.AddChild(overlapB);
   w.RemoveChild(overlapA);overlapA.QueueFree();Check("overlapping throw keeps weapon hidden until both return",!w.Equipment.Weapon("main_hand")!.Visible);
   w.RemoveChild(overlapB);overlapB.QueueFree();Check("overlapping throws restore original weapon visibility",w.Equipment.Weapon("main_hand")!.Visible);
-  var hybrid=new[]{"annihilation.spread","annihilation.rhythm","annihilation.heal","annihilation.charges","carnage.alacrity","carnage.cleave","carnage.precision","carnage.bloodletting","marauder_rage.shockwave","marauder_rage.forceflow","marauder_rage.rageblade","marauder_rage.dominate"}.ToDictionary(x=>x,x=>1);
+  var hybrid=cat.ForClass("marauder").Where(t=>t.Tree=="carnage" || t.Tree=="annihilation" && t.Tier==0).ToDictionary(t=>t.Id,t=>1);
   Check("12 point hybrid validates",cat.Validate("marauder",hybrid).Count==12);TalentProfiles.Save("marauder",hybrid);var runtime=new TalentRuntime(w);
   var sweep=w.Abilities.Find("sweepingslash")!;runtime.ApplyStats(sweep);Check("bleed spread enabled",sweep.Definition.SpreadsPeriodicEffects);runtime.ApplyStats(ravage);Check("Ravage cleave enabled",ravage.Definition.MaximumTargets==6);
   runtime.PeriodicTick(w.Abilities.Find("forcecrush")!);runtime.Activated(w.Abilities.Find("smash")!);Check("Crush empowers Smash",runtime.DirectBonus(w.Abilities.Find("smash")!,target)>.1f);

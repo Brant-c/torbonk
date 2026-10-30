@@ -21,11 +21,11 @@ by 1.075 per level, matching Korriban. Every second kill drops XP, with a raid-o
 use Korriban's 8% health and 4.5% damage growth, with each enemy's first unlock
 level as its baseline. Movement and attack-frequency coefficients also match
 Korriban. The smaller arena caps population at 24 (Korriban: 36), reserves a
-boss slot, and uses five-second recovery breaks rather than travel to new zones.
+boss slot, and keeps continuous mob pressure through stage changes and boss entrances.
 
-XRR-3 clears ordinary enemies on activation without awarding despawn rewards.
-During the fight, regular adds are limited to 12% of the normal population cap
-and arrive at three times the normal interval. The boss starts at 18,000 HP.
+XRR-3 enters alongside the existing mob pack. Regular waves keep their normal
+spawn cadence and use the full population budget remaining around the boss.
+There is no forced mob clear or post-encounter recovery break. The boss starts at 18,000 HP.
 Its original Rakata warbot model, 4.5 appearance scale and compatible rig clips
 are retained. The attacks below are new solo-arena rules:
 
@@ -101,10 +101,8 @@ Difficulty mechanics refinement:
 - These are authored solo-arena mechanics. Manual class-by-class playtesting
   is still required to judge escape routes and final balance in the small arena.
 
-Boss reinforcements now scale with operation difficulty. Hard permits regular
-adds up to 75% of normal population during earlier bosses and 50% during XRR-3;
-Nightmare uses 95% and 75%. At level 50 XRR-3 permits 12 Hard or 23 Nightmare
-adds, versus 3 on Normal. Reinforcement interval multipliers are 1.5/1.25 for
-Hard earlier/final bosses and 1/1 for Nightmare. Normal retains authored values.
-The global population ceiling, safe spawn placement, introduction pause and
-post-encounter recovery still apply. These are ceilings, not instant spawns.
+Boss transitions use continuous pressure on Normal, Hard and Nightmare. Existing mobs retain their health and remain alive across roster changes, introductions and boss deaths. New mobs come from the current level's roster; older mobs leave through normal combat deaths. Regular waves keep their ordinary spawn cadence during introductions and active bosses. Difficulty still controls population, health, damage, cadence and mechanics; the boss itself occupies one population slot. At level 50 the XRR-3 population budget is 17 regular mobs plus the boss on Normal, 23 plus the boss on Hard, and 29 plus the boss on Nightmare. Safe placement still applies, so these are ceilings rather than instant spawns.
+
+Both raid runs set `ContinuousEncounters=true`, zero recovery/ramp times and non-clearing encounter definitions. Council encounters reserve up to three member slots and count occupied slots against that reservation so a normal mob can refill a naturally opened slot. Other world runs retain their existing transition policy.
+
+`Run-Continuous-Encounter-Smoke.ps1` verifies both raid runs on all three difficulties: wounded pack persistence, stage and boss transitions without recovery/ramp, actual director spawning during introduction, Council reinforcements at the full cap, refill after a normal mob death, late boss carryover, finite victory and restart.

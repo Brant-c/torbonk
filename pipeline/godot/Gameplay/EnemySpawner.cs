@@ -47,14 +47,17 @@ public partial class EnemySpawner : Node3D
 
     public override void _Ready() => _random.Randomize();
 
-    public bool TrySpawn(PackedScene? scene = null, bool ignoreLimit = false, bool elite = false, Vector3? anchor = null)
+    public bool TrySpawn(PackedScene? scene = null, bool ignoreLimit = false, bool elite = false, Vector3? anchor = null, bool encounterMember = false)
     {
         int count = ActiveCount;
+        int occupied = _enemies.Count(e=>GodotObject.IsInstanceValid(e) && e.Alive && e.IsEncounterMember);
+        int unfilledReservations = Math.Max(0, ReservedSlots-occupied);
         if (!Running || !Player.Alive || count >= HardActiveLimit ||
-            (!ignoreLimit && (!ReinforcementsEnabled || count >= Math.Min(ActiveLimit, Math.Max(0, HardActiveLimit - ReservedSlots))))) return false;
+            (!ignoreLimit && (!ReinforcementsEnabled || count >= Math.Min(ActiveLimit, Math.Max(0, HardActiveLimit - unfilledReservations))))) return false;
         var source = scene ?? EnemyScene;
         var body = source.Instantiate<CharacterBody3D>();
         var enemy = body.GetNode<EnemyAgent>("Actor");
+        enemy.IsEncounterMember=encounterMember;
         enemy.ExperienceReward=(int)Math.Clamp((long)enemy.ExperienceReward*Math.Max(1,ExperienceMultiplier),1,int.MaxValue);
         if(enemy.GetNodeOrNull<EnemyPresentation>("Visual") is {} visual)visual.ReuseLoopLibrary=ReuseAnimations;
         if(elite) { enemy.RewardTier=1;enemy.KnockbackResistance=0.65f;enemy.DisplayName="Elite "+enemy.DisplayName;enemy.GetNode<Health>("Health").Maximum*=2;enemy.ExperienceReward*=2; }

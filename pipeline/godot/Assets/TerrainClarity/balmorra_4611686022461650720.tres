@@ -1,0 +1,20 @@
+[gd_resource type="ShaderMaterial" load_steps=10 format=3]
+[ext_resource type="Shader" path="res://Assets/TerrainClarity/balmorra_4611686022461650720.gdshader" id="shader"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/balmorra_4611686022461650720_weights0.png" id="t0"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/ter_bal_rock_01_d.png" id="t1"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/ter_bal_soil_01_d.png" id="t2"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/ter_bal_grass_02_d.png" id="t3"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/ter_bal_cliff_01_d.png" id="t4"]
+[ext_resource type="Texture2D" path="res://Assets/Maps/balmorra/4611686022461650720_source_color.png" id="t5"]
+[ext_resource type="Texture2D" path="res://Assets/Maps/balmorra/4611686022461650720_normal.png" id="t6"]
+[ext_resource type="Texture2D" path="res://Assets/Maps/balmorra/4611686022461650720_roughness.png" id="t7"]
+[resource]
+shader = ExtResource("shader")
+shader_parameter/weights0 = ExtResource("t0")
+shader_parameter/layer0 = ExtResource("t1")
+shader_parameter/layer1 = ExtResource("t2")
+shader_parameter/layer2 = ExtResource("t3")
+shader_parameter/layer3 = ExtResource("t4")
+shader_parameter/tint = ExtResource("t5")
+shader_parameter/normal_map = ExtResource("t6")
+shader_parameter/roughness_map = ExtResource("t7")

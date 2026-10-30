@@ -1,0 +1,48 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/GameWorld.cs" id="1"]
+[ext_resource type="PackedScene" path="res://Assets/Maps/soa_p3/MapEnvironment.tscn" id="2"]
+[ext_resource type="Script" path="res://Gameplay/ArenaBounds.cs" id="3"]
+[ext_resource type="Script" path="res://Gameplay/PlayerController.cs" id="4"]
+[ext_resource type="Script" path="res://Gameplay/CharacterPresentation.cs" id="5"]
+[ext_resource type="PackedScene" path="res://Assets/sorcerer.glb" id="6"]
+[ext_resource type="Script" path="res://Gameplay/CameraRig.cs" id="7"]
+
+[sub_resource type="CapsuleShape3D" id="Capsule"]
+radius = 0.03
+height = 0.185
+margin = 0.0005
+
+[node name="GameWorld" type="Node3D"]
+script = ExtResource("1")
+PlanetRunPath = "res://Gameplay/Planets/Soa/run.json"
+
+[node name="MapEnvironment" parent="." instance=ExtResource("2")]
+
+[node name="ArenaBounds" type="Node3D" parent="."]
+script = ExtResource("3")
+Minimum = Vector2(78.8, 65.3)
+Maximum = Vector2(86.2, 72.7)
+SpawnSeed = Vector2(82.5, 69)
+
+[node name="Player" type="CharacterBody3D" parent="."]
+position = Vector3(82.5, -38, 69)
+script = ExtResource("4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+position = Vector3(0, 0.0925, 0)
+shape = SubResource("Capsule")
+
+[node name="Presentation" type="Node3D" parent="Player"]
+script = ExtResource("5")
+
+[node name="OriginalSorcerer" parent="Player/Presentation" instance=ExtResource("6")]
+
+[node name="CameraRig" type="Node3D" parent="."]
+script = ExtResource("7")
+
+[node name="Camera3D" type="Camera3D" parent="CameraRig"]
+current = true
+fov = 52.0
+near = 0.01
+far = 120.0

@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checks": [
+    "common four offensive and two utility slots",
+    "startup is inside both caps",
+    "only benchmark exemptions and the free starter survive",
+    "every ordinary utility counts",
+    "fallback weapons remain free",
+    "incendiarymissile respects admission",
+    "flamethrower respects admission",
+    "ionshield respects admission",
+    "reactivearmor respects admission",
+    "carbonize respects admission",
+    "oilslick respects admission",
+    "Utility offers replacement at the cap",
+    "Utility replacements stay within their category",
+    "Utility replacement succeeds",
+    "Utility replaced ability stays removed after recalculation",
+    "reset restores the starter and clears inherited credits",
+    "reset respects caps and original exemptions"
+  ],
+  "failure": null
+}

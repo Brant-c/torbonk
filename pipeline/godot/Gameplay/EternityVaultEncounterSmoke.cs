@@ -64,12 +64,17 @@ public partial class EternityVaultEncounterSmoke : Node
                     var old=w.Player.GlobalPosition;
                     raid.Tick(5);Check("warning precedes damage",raid.Phase==BossPhase.Telegraph && raid.Strikes==0 && raid.Warnings==1);
                     w.Player.GlobalPosition=old+new Vector3(0,0,-2);
-                    raid.Tick(2);Check("locked missile can be dodged",raid.Dodged==1 && raid.Strikes==1);
+                    raid.Tick(raid.WarningSeconds+.01);Check("locked missile can be dodged",raid.Dodged==1 && raid.Strikes==1);
                     w.Player.GlobalPosition=old;
                     boss.Health.ApplyDamage(boss.Health.Maximum*.4f);Check("phase two",raid.PhaseNumber==2);
-                    raid.Tick(3);raid.Tick(5);raid.Tick(2);Check("cannon cycle",raid.Strikes==2);
+                    // Advanced modes have multiple cannon strikes. Finish the current cycle
+                    // before starting the next, rather than assuming three fixed two-second ticks.
+                    void FinishCycle(){for(int i=0;i<12 && raid.Phase!=BossPhase.Pursuit;i++)raid.Tick(20);}
+                    FinishCycle();int beforeCannon=raid.Strikes;
+                    raid.Tick(20);raid.Tick(raid.WarningSeconds+.01);Check("cannon cycle",raid.Strikes>beforeCannon);
                     boss.Health.ApplyDamage(boss.Health.Maximum*.3f);Check("phase three",raid.PhaseNumber==3);
-                    raid.Tick(3);raid.Tick(5);raid.Tick(2);Check("swipe cycle",raid.Strikes==3);
+                    FinishCycle();int beforeSwipe=raid.Strikes;
+                    raid.Tick(20);raid.Tick(raid.WarningSeconds+.01);Check("swipe cycle",raid.Strikes>beforeSwipe);
                     if(DisplayServer.GetName()!="headless") {
                         await ToSignal(RenderingServer.Singleton,RenderingServer.SignalName.FramePostDraw);
                         GetViewport().GetTexture().GetImage().SavePng("res://../logs/eternity-encounter-review.png");

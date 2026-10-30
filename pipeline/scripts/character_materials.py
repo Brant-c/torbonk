@@ -106,14 +106,21 @@ for key,(mat,hero,info) in source_mats.items():
     # The final diffuse-BSDF input contains view-dependent specular and flush
     # lighting. Bake the actual palette color before those lighting operations.
     if info['derived']=='SkinB':
-        color=next(n for n in tree.nodes if n.type=='MIX_RGB' and n.name!='ageDarkening').outputs['Color']
+        # Follow the diffuse composition into the specular-add node rather than
+        # depending on insertion order of unrelated legacy Mix nodes.
+        skin_add=next(n for n in tree.nodes if n.type=='VECT_MATH' and n.operation=='ADD'
+                      and any(l.from_node.type=='MIX_RGB' for l in n.inputs[0].links))
+        color=skin_add.inputs[0].links[0].from_socket
     else:
         color=tree.nodes['HuePixel'].outputs['Diffuse Color']
     emit=tree.nodes.new('ShaderNodeEmission');tree.links.new(color,emit.inputs['Color'])
     output=next(n for n in tree.nodes if n.type=='GROUP_OUTPUT');tree.links.new(emit.outputs[0],output.inputs[0])
     diff=hero.diffuseMap;w,h=diff.size
     baked=bpy.data.images.new(Path(key).stem+'_albedo',width=w,height=h,alpha=True,float_buffer=True)
-    baked.colorspace_settings.name='sRGB'
+    # Cycles encodes bake pixels into the target image's color space, even for
+    # float buffers. Keep this linear: the explicit sRGB encoding below must
+    # happen exactly once or the face (and other albedo maps) is washed out.
+    baked.colorspace_settings.name='Non-Color'
     target=bake.node_tree.nodes.new('ShaderNodeTexImage');target.image=baked;bake.node_tree.nodes.active=target
     plane.data.materials.clear();plane.data.materials.append(bake)
     bpy.ops.object.select_all(action='DESELECT');plane.select_set(True);bpy.context.view_layer.objects.active=plane

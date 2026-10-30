@@ -1,0 +1,555 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Could not open 'user://' directory: 'user://'.
+   at: _get_and_create_snapshot_storage_dir (modules/objectdb_profiler/editor/objectdb_profiler_panel.cpp:157)
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | Started Registering global classes... (5 steps)[39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  16% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  33% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  50% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  66% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+[   0% ] [90m[1m_update_scan_actions[22m | Started Scanning actions... (38 steps)[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | 4611686136141596212_albedo.png[39m[0m
+[   2% ] [90m[1m_update_scan_actions[22m | 4611686136141596212_normal.png[39m[0m
+[   5% ] [90m[1m_update_scan_actions[22m | 4611686136141596212_roughness.png[39m[0m
+[   7% ] [90m[1m_update_scan_actions[22m | 4611686136141596212_source_color.png[39m[0m
+[  10% ] [90m[1m_update_scan_actions[22m | 4611686136141596212_weight_6.png[39m[0m
+[  12% ] [90m[1m_update_scan_actions[22m | 4611686136141596212_weight_7.png[39m[0m
+[  15% ] [90m[1m_update_scan_actions[22m | 4611686136141596212_weight_16.png[39m[0m
+[  17% ] [90m[1m_update_scan_actions[22m | all_arch_rakata_wall_set03.glb[39m[0m
+[  20% ] [90m[1m_update_scan_actions[22m | all_arch_rakata_wall_set04.glb[39m[0m
+[  23% ] [90m[1m_update_scan_actions[22m | all_arch_rakata_wall_set05.glb[39m[0m
+[  25% ] [90m[1m_update_scan_actions[22m | all_arch_rakata_wall_set06.glb[39m[0m
+[  28% ] [90m[1m_update_scan_actions[22m | all_arch_rakata_wall_set07.glb[39m[0m
+[  30% ] [90m[1m_update_scan_actions[22m | all_arch_ruins_floortile.glb[39m[0m
+[  33% ] [90m[1m_update_scan_actions[22m | all_item_caves_rubble_mound_ald_01.glb[39m[0m
+[  35% ] [90m[1m_update_scan_actions[22m | all_item_decal_lava.glb[39m[0m
+[  38% ] [90m[1m_update_scan_actions[22m | all_item_tech_rakata_tower.glb[39m[0m
+[  41% ] [90m[1m_update_scan_actions[22m | bel_arch_rakata_entrance01.glb[39m[0m
+[  43% ] [90m[1m_update_scan_actions[22m | bel_arch_rakata_entrance_interior.glb[39m[0m
+[  46% ] [90m[1m_update_scan_actions[22m | bel_arch_rakata_generator01.glb[39m[0m
+[  48% ] [90m[1m_update_scan_actions[22m | bel_arch_rakata_int_prop_floortile.glb[39m[0m
+[  51% ] [90m[1m_update_scan_actions[22m | bel_arch_rakata_raid_energy_obelisk_base.glb[39m[0m
+[  53% ] [90m[1m_update_scan_actions[22m | bel_arch_rakata_raid_infernal_platform_piece01.glb[39m[0m
+[  56% ] [90m[1m_update_scan_actions[22m | bel_arch_rakata_raid_infernal_platform_piece02.glb[39m[0m
+[  58% ] [90m[1m_update_scan_actions[22m | bel_arch_rakata_raid_infernal_platform_piece03.glb[39m[0m
+[  61% ] [90m[1m_update_scan_actions[22m | bel_arch_rakata_raid_infernal_platform_piece04.glb[39m[0m
+[  64% ] [90m[1m_update_scan_actions[22m | bel_arch_rakata_raid_infernal_room_ceiling.glb[39m[0m
+[  66% ] [90m[1m_update_scan_actions[22m | bel_arch_rakata_raid_infernal_room_entrance.glb[39m[0m
+[  69% ] [90m[1m_update_scan_actions[22m | bel_arch_rakata_raid_infernal_room_wall01.glb[39m[0m
+[  71% ] [90m[1m_update_scan_actions[22m | bel_arch_rakata_statue.glb[39m[0m
+[  74% ] [90m[1m_update_scan_actions[22m | bel_arch_rakata_statue_broken_legs.glb[39m[0m
+[  76% ] [90m[1m_update_scan_actions[22m | bel_env_boulder_overhang.glb[39m[0m
+[  79% ] [90m[1m_update_scan_actions[22m | bel_env_boulder_wall_curve_05.glb[39m[0m
+[  82% ] [90m[1m_update_scan_actions[22m | bel_env_boulder_wall_curve_06.glb[39m[0m
+[  84% ] [90m[1m_update_scan_actions[22m | fx_embers_02.png[39m[0m
+[  87% ] [90m[1m_update_scan_actions[22m | fx_gradient_05.png[39m[0m
+[  89% ] [90m[1m_update_scan_actions[22m | mag_envrakatapiston_01.glb[39m[0m
+[  92% ] [90m[1m_update_scan_actions[22m | ord_env_boulders_sml_no_moss_01.glb[39m[0m
+[  94% ] [90m[1m_update_scan_actions[22m | ord_env_boulders_sml_no_moss_02.glb[39m[0m
+[92m[ DONE ][39m [1m_update_scan_actions[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started (Re)Importing Assets (148 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   0% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   1% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   2% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   2% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   3% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   4% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   4% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   5% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   6% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   6% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   7% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   8% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   8% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   9% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  10% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  10% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  11% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  12% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  12% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  13% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  14% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  14% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  15% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  16% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  16% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  17% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  18% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  18% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  19% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  20% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  20% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  21% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  22% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  22% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  23% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  24% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  24% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  25% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  26% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  26% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  27% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  28% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  28% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  29% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  30% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  30% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  31% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  32% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  32% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  33% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  34% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  34% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  35% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  36% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  36% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  37% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  38% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  38% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  39% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  40% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  40% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  41% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  42% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  42% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  43% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  44% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  44% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  45% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  46% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  46% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  47% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  48% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  48% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  49% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  50% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  51% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  51% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  52% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  53% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  53% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  54% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  55% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  55% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  56% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  57% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  57% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  58% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  59% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  59% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  60% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  61% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  61% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  62% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  63% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  63% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  64% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  65% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  65% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  66% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  67% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  67% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  68% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  69% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  69% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  70% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  71% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  71% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  72% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  73% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  73% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  74% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  75% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  75% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  76% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  77% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  77% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  78% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  79% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  79% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  80% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  81% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  81% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  82% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  83% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  83% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  84% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  85% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  85% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  86% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  87% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  87% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  88% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  89% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  89% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  90% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  91% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  91% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  92% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  93% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  93% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  94% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  95% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  95% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  96% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  97% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  97% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  98% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   0% ] [90m[1mreimport[22m | Executing pre-reimport operations...[39m[0m
+[   0% ] [90m[1mpreload_reimporting_scene[22m | Started Preparing scenes for reload (1 steps)[39m[0m
+[   0% ] [90m[1mpreload_reimporting_scene[22m | Analyzing scene [empty][39m[0m
+[  50% ] [90m[1mpreload_reimporting_scene[22m | Preparation done.[39m[0m
+[92m[ DONE ][39m [1mpreload_reimporting_scene[22m
+[0m
+[   0% ] [90m[1mreimport[22m | bel_arch_rakata_int_prop_floortile.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[   0% ] [90m[1mreimport[22m | bel_arch_rakata_generator01.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[   1% ] [90m[1mreimport[22m | bel_arch_rakata_entrance_interior.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[   2% ] [90m[1mreimport[22m | bel_arch_rakata_entrance01.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[   2% ] [90m[1mreimport[22m | all_item_tech_rakata_tower.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[   3% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_entrance.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[   4% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_ceiling.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[   4% ] [90m[1mreimport[22m | mag_envrakatapiston_01.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[   5% ] [90m[1mreimport[22m | all_arch_rakata_wall_set03.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[   6% ] [90m[1mreimport[22m | all_arch_rakata_wall_set04.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[   6% ] [90m[1mreimport[22m | all_arch_rakata_wall_set05.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[   7% ] [90m[1mreimport[22m | all_arch_rakata_wall_set06.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[   8% ] [90m[1mreimport[22m | all_arch_rakata_wall_set07.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[   8% ] [90m[1mreimport[22m | all_arch_ruins_floortile.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[   9% ] [90m[1mreimport[22m | bel_arch_rakata_int_prop_floortile.glb[39m[0m
+[  10% ] [90m[1mreimport[22m | bel_arch_rakata_generator01.glb[39m[0m
+[  10% ] [90m[1mreimport[22m | bel_arch_rakata_entrance_interior.glb[39m[0m
+[  11% ] [90m[1mreimport[22m | bel_arch_rakata_entrance01.glb[39m[0m
+[  12% ] [90m[1mreimport[22m | all_item_tech_rakata_tower.glb[39m[0m
+[  12% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_entrance.glb[39m[0m
+[  13% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_ceiling.glb[39m[0m
+[  14% ] [90m[1mreimport[22m | mag_envrakatapiston_01.glb[39m[0m
+[  14% ] [90m[1mreimport[22m | all_arch_rakata_wall_set03.glb[39m[0m
+[  15% ] [90m[1mreimport[22m | all_arch_rakata_wall_set04.glb[39m[0m
+[  16% ] [90m[1mreimport[22m | all_arch_rakata_wall_set05.glb[39m[0m
+[  16% ] [90m[1mreimport[22m | all_arch_rakata_wall_set06.glb[39m[0m
+[  17% ] [90m[1mreimport[22m | all_arch_rakata_wall_set07.glb[39m[0m
+[  18% ] [90m[1mreimport[22m | all_arch_ruins_floortile.glb[39m[0m
+[  18% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_bel_arch_rakata_int_wall01_emission.png[39m[0m
+[  19% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_bel_arch_rakata_int_wall01_normal.png[39m[0m
+[  20% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_all_arch_rakata_wall_set01_base.png[39m[0m
+[  20% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_all_arch_rakata_wall_set01_rough.png[39m[0m
+[  21% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_all_arch_rakata_wall_set01_emission.png[39m[0m
+[  22% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_all_arch_rakata_wall_set01_normal.png[39m[0m
+[  22% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_all_arch_rakata_wall_set03_base.png[39m[0m
+[  23% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_all_arch_rakata_wall_set03_rough.png[39m[0m
+[  24% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_all_arch_rakata_wall_set03_emission.png[39m[0m
+[  24% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_all_arch_rakata_wall_set03_normal.png[39m[0m
+[  25% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_all_arch_rakata_wall_set04_base.png[39m[0m
+[  26% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_all_arch_rakata_wall_set04_rough.png[39m[0m
+[  26% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_all_arch_rakata_wall_set04_emission.png[39m[0m
+[  27% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_all_arch_rakata_wall_set04_normal.png[39m[0m
+[  28% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_bel_arch_rakata_int_wall01_rough.png[39m[0m
+[  28% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_bel_arch_rakata_int_wall01_base.png[39m[0m
+[  29% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_bel_arch_rakata_int_stone01_normal.png[39m[0m
+[  30% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_bel_arch_rakata_int_stone01_emission.png[39m[0m
+[  30% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_bel_arch_rakata_int_stone01_rough.png[39m[0m
+[  31% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01_bel_arch_rakata_int_stone01_base.png[39m[0m
+[  32% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece04_bel_arch_rakata_int_wall01_normal.png[39m[0m
+[  32% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece04_bel_arch_rakata_int_wall_raw_normal.png[39m[0m
+[  33% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece04_bel_arch_rakata_int_floortile01_base.png[39m[0m
+[  34% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece04_bel_arch_rakata_int_wall_raw_emission.png[39m[0m
+[  34% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece04_bel_arch_rakata_int_wall_raw_rough.png[39m[0m
+[  35% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece04_bel_arch_rakata_int_wall_raw_base.png[39m[0m
+[  36% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece04_bel_arch_rakata_int_floortile01_normal.png[39m[0m
+[  36% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece04_bel_arch_rakata_int_floortile01_emission.png[39m[0m
+[  37% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece04_bel_arch_rakata_int_floortile01_rough.png[39m[0m
+[  38% ] [90m[1mreimport[22m | ord_env_boulders_sml_no_moss_02_ord_env_boulders_no_moss_normal.png[39m[0m
+[  38% ] [90m[1mreimport[22m | ord_env_boulders_sml_no_moss_02_ord_env_boulders_no_moss_emission.png[39m[0m
+[  39% ] [90m[1mreimport[22m | ord_env_boulders_sml_no_moss_02_ord_env_boulders_no_moss_rough.png[39m[0m
+[  40% ] [90m[1mreimport[22m | ord_env_boulders_sml_no_moss_02_ord_env_boulders_no_moss_base.png[39m[0m
+[  40% ] [90m[1mreimport[22m | ord_env_boulders_sml_no_moss_01_ord_env_boulders_no_moss_normal.png[39m[0m
+[  41% ] [90m[1mreimport[22m | ord_env_boulders_sml_no_moss_01_ord_env_boulders_no_moss_emission.png[39m[0m
+[  42% ] [90m[1mreimport[22m | ord_env_boulders_sml_no_moss_01_ord_env_boulders_no_moss_rough.png[39m[0m
+[  42% ] [90m[1mreimport[22m | ord_env_boulders_sml_no_moss_01_ord_env_boulders_no_moss_base.png[39m[0m
+[  43% ] [90m[1mreimport[22m | fx_gradient_05.png[39m[0m
+[  44% ] [90m[1mreimport[22m | fx_embers_02.png[39m[0m
+[  44% ] [90m[1mreimport[22m | bel_env_boulder_wall_curve_06_ord_env_boulder_overhang_normal.png[39m[0m
+[  45% ] [90m[1mreimport[22m | bel_env_boulder_wall_curve_06_ord_env_boulder_overhang_emission.png[39m[0m
+[  46% ] [90m[1mreimport[22m | bel_env_boulder_wall_curve_06_ord_env_boulder_overhang_rough.png[39m[0m
+[  46% ] [90m[1mreimport[22m | bel_env_boulder_wall_curve_06_ord_env_boulder_overhang_base.png[39m[0m
+[  47% ] [90m[1mreimport[22m | bel_env_boulder_wall_curve_05_ord_env_boulder_overhang_normal.png[39m[0m
+[  48% ] [90m[1mreimport[22m | bel_env_boulder_wall_curve_05_ord_env_boulder_overhang_emission.png[39m[0m
+[  48% ] [90m[1mreimport[22m | bel_env_boulder_wall_curve_05_ord_env_boulder_overhang_rough.png[39m[0m
+[  49% ] [90m[1mreimport[22m | bel_env_boulder_wall_curve_05_ord_env_boulder_overhang_base.png[39m[0m
+[  50% ] [90m[1mreimport[22m | bel_env_boulder_overhang_ord_env_boulder_overhang_normal.png[39m[0m
+[  51% ] [90m[1mreimport[22m | bel_env_boulder_overhang_ord_env_boulder_overhang_emission.png[39m[0m
+[  51% ] [90m[1mreimport[22m | bel_env_boulder_overhang_ord_env_boulder_overhang_rough.png[39m[0m
+[  52% ] [90m[1mreimport[22m | bel_env_boulder_overhang_ord_env_boulder_overhang_base.png[39m[0m
+[  53% ] [90m[1mreimport[22m | bel_arch_rakata_statue_broken_legs_bel_arch_rakata_int_wall_raw_normal.png[39m[0m
+[  53% ] [90m[1mreimport[22m | bel_arch_rakata_statue_broken_legs_bel_arch_rakata_int_wall_raw_emission.png[39m[0m
+[  54% ] [90m[1mreimport[22m | bel_arch_rakata_statue_broken_legs_bel_arch_rakata_int_wall_raw_rough.png[39m[0m
+[  55% ] [90m[1mreimport[22m | bel_arch_rakata_statue_broken_legs_bel_arch_rakata_int_wall_raw_base.png[39m[0m
+[  55% ] [90m[1mreimport[22m | bel_arch_rakata_statue_broken_legs_bel_arch_rakata_statue_normal.png[39m[0m
+[  56% ] [90m[1mreimport[22m | bel_arch_rakata_statue_broken_legs_bel_arch_rakata_statue_rough.png[39m[0m
+[  57% ] [90m[1mreimport[22m | bel_arch_rakata_statue_broken_legs_bel_arch_rakata_statue_base.png[39m[0m
+[  57% ] [90m[1mreimport[22m | bel_arch_rakata_statue_bel_arch_rakata_statue_normal.png[39m[0m
+[  58% ] [90m[1mreimport[22m | bel_arch_rakata_statue_bel_arch_rakata_statue_rough.png[39m[0m
+[  59% ] [90m[1mreimport[22m | bel_arch_rakata_statue_bel_arch_rakata_statue_base.png[39m[0m
+[  59% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece01_bel_arch_rakata_int_wall_raw_normal.png[39m[0m
+[  60% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece01_bel_arch_rakata_int_wall_raw_emission.png[39m[0m
+[  61% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece01_bel_arch_rakata_int_wall_raw_rough.png[39m[0m
+[  61% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece01_bel_arch_rakata_int_wall_raw_base.png[39m[0m
+[  62% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece01_bel_arch_rakata_int_floortile01_normal.png[39m[0m
+[  63% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece01_bel_arch_rakata_int_floortile01_emission.png[39m[0m
+[  63% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece01_bel_arch_rakata_int_floortile01_rough.png[39m[0m
+[  64% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece01_bel_arch_rakata_int_floortile01_base.png[39m[0m
+[  65% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece01_bel_arch_rakata_int_wall01_normal.png[39m[0m
+[  65% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece01_bel_arch_rakata_int_wall01_emission.png[39m[0m
+[  66% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece01_bel_arch_rakata_int_wall01_rough.png[39m[0m
+[  67% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece01_bel_arch_rakata_int_wall01_base.png[39m[0m
+[  67% ] [90m[1mreimport[22m | bel_arch_rakata_raid_energy_obelisk_base_all_arch_rakata_wall_set03_normal.png[39m[0m
+[  68% ] [90m[1mreimport[22m | bel_arch_rakata_raid_energy_obelisk_base_all_arch_rakata_wall_set03_emission.png[39m[0m
+[  69% ] [90m[1mreimport[22m | bel_arch_rakata_raid_energy_obelisk_base_all_arch_rakata_wall_set03_rough.png[39m[0m
+[  69% ] [90m[1mreimport[22m | bel_arch_rakata_raid_energy_obelisk_base_all_arch_rakata_wall_set03_base.png[39m[0m
+[  70% ] [90m[1mreimport[22m | bel_arch_rakata_raid_energy_obelisk_base_bel_arch_rakata_int_stone01_normal.png[39m[0m
+[  71% ] [90m[1mreimport[22m | bel_arch_rakata_raid_energy_obelisk_base_bel_arch_rakata_int_stone01_emission.png[39m[0m
+[  71% ] [90m[1mreimport[22m | bel_arch_rakata_raid_energy_obelisk_base_bel_arch_rakata_int_stone01_rough.png[39m[0m
+[  72% ] [90m[1mreimport[22m | bel_arch_rakata_raid_energy_obelisk_base_bel_arch_rakata_int_stone01_base.png[39m[0m
+[  73% ] [90m[1mreimport[22m | all_item_decal_lava_all_item_decal_lava_normal.png[39m[0m
+[  73% ] [90m[1mreimport[22m | all_item_decal_lava_all_item_decal_lava_emission.png[39m[0m
+[  74% ] [90m[1mreimport[22m | all_item_decal_lava_all_item_decal_lava_rough.png[39m[0m
+[  75% ] [90m[1mreimport[22m | all_item_decal_lava_all_item_decal_lava_base.png[39m[0m
+[  75% ] [90m[1mreimport[22m | all_item_caves_rubble_mound_ald_01_all_item_caves_boulders_ald_normal.png[39m[0m
+[  76% ] [90m[1mreimport[22m | all_item_caves_rubble_mound_ald_01_all_item_caves_boulders_ald_rough.png[39m[0m
+[  77% ] [90m[1mreimport[22m | all_item_caves_rubble_mound_ald_01_all_item_caves_boulders_ald_base.png[39m[0m
+[  77% ] [90m[1mreimport[22m | all_item_caves_rubble_mound_ald_01_all_item_caves_rubble_mounds_01_normal.png[39m[0m
+[  78% ] [90m[1mreimport[22m | all_item_caves_rubble_mound_ald_01_all_item_caves_rubble_mounds_01_emission.png[39m[0m
+[  79% ] [90m[1mreimport[22m | all_item_caves_rubble_mound_ald_01_all_item_caves_rubble_mounds_01_rough.png[39m[0m
+[  79% ] [90m[1mreimport[22m | all_item_caves_rubble_mound_ald_01_all_item_caves_rubble_mounds_01_base.png[39m[0m
+[  80% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece03_bel_arch_rakata_int_floortile01_rough.png[39m[0m
+[  81% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece03_bel_arch_rakata_int_floortile01_base.png[39m[0m
+[  81% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece03_bel_arch_rakata_int_wall_raw_rough.png[39m[0m
+[  82% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece03_bel_arch_rakata_int_wall_raw_emission.png[39m[0m
+[  83% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece03_bel_arch_rakata_int_wall01_normal.png[39m[0m
+[  83% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece03_bel_arch_rakata_int_wall01_emission.png[39m[0m
+[  84% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece03_bel_arch_rakata_int_wall01_rough.png[39m[0m
+[  85% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece03_bel_arch_rakata_int_wall_raw_normal.png[39m[0m
+[  85% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece03_bel_arch_rakata_int_wall01_base.png[39m[0m
+[  86% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece03_bel_arch_rakata_int_floortile01_emission.png[39m[0m
+[  87% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece02_bel_arch_rakata_int_wall_raw_normal.png[39m[0m
+[  87% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece03_bel_arch_rakata_int_floortile01_normal.png[39m[0m
+[  88% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece04_bel_arch_rakata_int_wall01_base.png[39m[0m
+[  89% ] [90m[1mreimport[22m | ord_env_boulders_sml_no_moss_01.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  89% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece04.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  90% ] [90m[1mreimport[22m | ord_env_boulders_sml_no_moss_02.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  91% ] [90m[1mreimport[22m | all_item_caves_rubble_mound_ald_01.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  91% ] [90m[1mreimport[22m | all_item_decal_lava.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  92% ] [90m[1mreimport[22m | bel_arch_rakata_raid_energy_obelisk_base.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  93% ] [90m[1mreimport[22m | bel_env_boulder_wall_curve_06.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  93% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_room_wall01.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  94% ] [90m[1mreimport[22m | bel_env_boulder_wall_curve_05.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  95% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece03.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  95% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece01.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  96% ] [90m[1mreimport[22m | bel_env_boulder_overhang.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  97% ] [90m[1mreimport[22m | bel_arch_rakata_statue_broken_legs.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  97% ] [90m[1mreimport[22m | bel_arch_rakata_statue.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  98% ] [90m[1mreimport[22m | bel_arch_rakata_raid_infernal_platform_piece02.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  99% ] [90m[1mreimport[22m | Finalizing Asset Import...[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started (Re)Importing Assets (148 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Executing post-reimport operations...[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Loading editor (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Loading editor layout...[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Loading docks...[39m[0m
+[  33% ] [90m[1mloading_editor_layout[22m | Reopening scenes...[39m[0m
+[  50% ] [90m[1mloading_editor_layout[22m | Loading central editor layout...[39m[0m
+[  66% ] [90m[1mloading_editor_layout[22m | Loading plugin window layout...[39m[0m
+[  83% ] [90m[1mloading_editor_layout[22m | Editor layout ready.[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m

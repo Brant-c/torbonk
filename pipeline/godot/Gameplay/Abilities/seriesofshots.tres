@@ -8,15 +8,15 @@ Id = "seriesofshots"
 StartsUnlocked = false
 Title = "Series of Shots"
 Icon = "reactiveshots"
-Damage = 14
+Damage = 27
 CooldownSeconds = 5
-Range = 1.5
+Range = 2.4
 Radius = 0
-Area = 0
+Area = 2
 TickSeconds = 0.4
-Description = "Three rapid shots at one target."
-StartClip = "D3/SniperSeries"
-LoopClip = "D3/SniperSeries"
+Description = "Requires cover to begin. Heavy precision fire rewards holding position; an active attack may finish after leaving cover."
+StartClip = "Agent/SniperSeries"
+LoopClip = "Agent/SniperSeries"
 EndClip = ""
 ChannelSeconds = 1.2
 WindupSeconds = 0.0
@@ -30,3 +30,9 @@ RecoverySeconds = 0.3
 GestureSeconds = 2.4
 ShotAudio = "res://Assets/D3/Audio/28023533.wav"
 RequireGesture = true
+
+BounceCount = 3
+
+BounceRange = 0.4
+
+MaintainChannelGesture = true

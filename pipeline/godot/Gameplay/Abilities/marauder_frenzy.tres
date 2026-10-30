@@ -21,7 +21,7 @@ LoopClip = "Marauder/cb_buff_frenzy"
 RequireGesture = false
 PresentationKind = "saber"
 SourceFx = "epp.sith_warrior.frenzy.cast_instant;epp.sith_warrior.fury.buff"
-Description = "Prepare a burst: ready Berserk and Deadly Saber. Activates while Berserk is recovering; uses no utility slot."
+Description = "Prepare a burst: ready Berserk and Deadly Saber. Activates while Berserk is recovering; uses one utility slot."
 Category = 1
 Effect = 3
 BuffSeconds = 0.01
@@ -35,3 +35,4 @@ FinishGesture = true
 GesturePriority = -5
 
 Slotless = true
+

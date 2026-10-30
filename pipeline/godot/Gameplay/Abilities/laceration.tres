@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "laceration"
+Title = "Laceration"
+Icon = "finishingstrikes"
+Damage = 34
+CooldownSeconds = 2.6
+Range = 0.42
+Radius = 0.34
+Area = 5
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+WindupSeconds = 0.2
+ChannelSeconds = 0.6
+RecoverySeconds = 0.1
+GestureSeconds = 1.2
+StartClip = "Agent/LacerationDouble"
+LoopClip = "Agent/LacerationDouble"
+EndClip = ""
+PeriodicDamage = 0
+PeriodicDuration = 0
+PeriodicInterval = 1
+DamageType = 2
+Description = "Two knife swipes deal 34 damage each to every enemy in the cone. Each swipe has its own impact sound. Tactical Advantage grants 50% bonus damage to both swipes."
+ImpactTexture = ""
+CastAudio = ""
+ImpactAudio = "res://Assets/Agent/Audio/laceration_impact_layered.wav"
+PresentationKind = "saber"
+MuzzleBone = "LeftWrist"
+EffectTint = Color(0.58, 0.88, 0.12, 1)
+ImpactTailsOnTargetDeath = true
+RequireGesture = true
+
+StartsUnlocked = false
+
+SplashMultiplier = 1.0
+
+WeaponAudio = ""
+
+TickSeconds = 0.6
+
+FinishGesture = true
+
+FollowupImpactAudio = "res://Assets/Agent/Audio/laceration_followup_layered.wav"

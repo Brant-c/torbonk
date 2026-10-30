@@ -14,8 +14,9 @@ public sealed record Accessory(string Id, string Name, string Kind, string Icon,
 }
 public sealed class InventorySave
 {
+    public HashSet<string> OperationClears { get; set; } = new();
     public int Version { get; set; } = 1;
-    public int Credits { get; set; } = 10000;
+    public int Credits { get; set; } = 0;
     public Dictionary<string,int> Owned { get; set; } = new();
     public Dictionary<string,Dictionary<string,string>> Loadouts { get; set; } = new();
 }
@@ -40,13 +41,8 @@ public sealed class PersistentInventory
                 if(State==null || State.Version!=1 || State.Credits<0 || State.Owned==null || State.Loadouts==null || State.Owned.Any(p=>!Items.Any(i=>i.Id==p.Key) || p.Value<0 || p.Value>3) || State.Loadouts.Any(p=>p.Value==null || p.Value.Any(s=>!Slots.Contains(s.Key) || !State.Owned.ContainsKey(s.Value) || Kind(s.Key)!=Items.Single(i=>i.Id==s.Value).Kind || !Compatible(Items.Single(i=>i.Id==s.Value),p.Key)) || p.Value.Values.Distinct().Count()!=p.Value.Count)) throw new InvalidDataException("Invalid equipment profile");
             } catch(Exception e) { State=new(); Notice="Equipment profile could not be loaded. Original file preserved: "+e.Message; _blocked=true; }
         }
-        else { State=new(); foreach(var i in Items) State.Owned[i.Id]=0; Commit(State); }
-        if(!_blocked && Items.Any(i=>i.Classes.SequenceEqual(new[]{"marauder"}) && !State.Owned.ContainsKey(i.Id)))
-            Change(next=>{foreach(var i in Items.Where(i=>i.Classes.SequenceEqual(new[]{"marauder"})))next.Owned.TryAdd(i.Id,0);});
-        if(!_blocked && Items.Any(i=>i.Classes.SequenceEqual(new[]{"assassin"}) && !State.Owned.ContainsKey(i.Id)))
-            Change(next=>{foreach(var i in Items.Where(i=>i.Classes.SequenceEqual(new[]{"assassin"})))next.Owned.TryAdd(i.Id,0);});
-        if(!_blocked && Items.Any(i=>i.Classes.SequenceEqual(new[]{"sorcerer"}) && !State.Owned.ContainsKey(i.Id)))
-            Change(next=>{foreach(var i in Items.Where(i=>i.Classes.SequenceEqual(new[]{"sorcerer"})))next.Owned.TryAdd(i.Id,0);});
+        else { State=new(); Commit(State); }
+
     }
     private bool _blocked;
     // Derive families from character selection data so future equipment follows the same rule.
@@ -65,6 +61,26 @@ public sealed class PersistentInventory
     }
     public bool Unequip(string cls,string slot)=>Slots.Contains(slot) && Change(s=>{if(s.Loadouts.TryGetValue(cls,out var l))l.Remove(slot);});
     public bool Upgrade(string id)=>State.Owned.TryGetValue(id,out int rank) && rank<3 && State.Credits>=Costs[rank] && Change(s=>{s.Credits-=Costs[rank];s.Owned[id]++;});
+    public bool DifficultyUnlocked(string mode)=>OperationDifficultyTuning.IsValid(mode);
+    // Future full-operation controller supplies all canonical bosses; isolated arenas cannot record a full clear.
+    public bool CompleteOperation(string mode,IEnumerable<string> bosses)=>(mode is "Normal" or "Hard")
+        && new[]{"xrr3","gharj","ancient_pylons","infernal_council","soa"}.All(bosses.Contains)
+        && Change(s=>s.OperationClears.Add("eternity_vault"));
+    public bool Award(int credits,IReadOnlyList<(string id,int rank)> items,int duplicateCredits,out string[] descriptions)
+    {
+        var lines=new List<string>();
+        bool saved=Change(s=>{
+            s.Credits=checked(s.Credits+credits);
+            foreach(var (id,rank) in items) {
+                var item=Items.Single(i=>i.Id==id);
+                if(rank<0 || rank>3)throw new ArgumentOutOfRangeException(nameof(items));
+                if(!s.Owned.TryGetValue(id,out int owned)) {s.Owned[id]=rank;lines.Add(item.Name+" +"+rank+" · Unlocked");}
+                else if(rank>owned) {s.Owned[id]=rank;lines.Add(item.Name+" +"+rank+" · Upgraded");}
+                else {s.Credits=checked(s.Credits+duplicateCredits);lines.Add(item.Name+" · Duplicate: "+duplicateCredits+" Credits");}
+            }
+        });
+        descriptions=saved?lines.ToArray():Array.Empty<string>();return saved;
+    }
     private bool Change(Action<InventorySave> change){var next=JsonSerializer.Deserialize<InventorySave>(JsonSerializer.Serialize(State))!;change(next);return Commit(next);}
     private bool Commit(InventorySave next)
     {

@@ -39,9 +39,10 @@ public partial class DisplaySettings : Node
 
     private static void ApplyTo(Window window)
     {
-        // Fullscreen uses the desktop video mode; the chosen resolution controls rendering.
+        // Render at the actual window size; keep the chosen resolution as the UI design size.
+        // CanvasItems scales controls before rasterization instead of enlarging a finished frame.
         window.ContentScaleSize = Resolution;
-        window.ContentScaleMode = Window.ContentScaleModeEnum.Viewport;
+        window.ContentScaleMode = Window.ContentScaleModeEnum.CanvasItems;
         window.ContentScaleAspect = Window.ContentScaleAspectEnum.Expand;
         DisplayServer.WindowSetMode(DisplayServer.WindowMode.Windowed);
         DisplayServer.WindowSetSize(Resolution);

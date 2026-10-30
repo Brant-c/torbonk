@@ -4,11 +4,12 @@ public enum AbilityTargetRule { NearestHostile, HostileCluster, HighestHealth }
 public enum AbilityArea { SingleTarget, GroundSphere, Chain, CasterRadial, TargetSplash, FrontalCone }
 public enum AbilityCategory { Offensive, Utility }
 public enum DamageType { Energy, Kinetic, Internal }
-public enum AbilityEffect { Damage, Shield, Heal, Buff }
+public enum AbilityEffect { Damage, Shield, Heal, Buff, BallisticField }
 /// <summary>Survivors balance; April source facts are separately recorded in manifests.</summary>
 [GlobalClass]
 public partial class AbilityDefinition : Resource
 {
+    [Export] public float ProjectileSeconds {get;set;}
     [Export] public bool FinishGesture {get;set;}
     [Export] public int MaximumTargets {get;set;} // Zero retains the existing uncapped area behavior.
     [Export] public bool SplashAppliesVulnerability {get;set;}
@@ -42,6 +43,7 @@ public partial class AbilityDefinition : Resource
     [Export] public string ChannelAudio {get;set;}="";
     [Export] public bool RequireGesture {get;set;}
     [Export] public string ImpactAudio {get;set;}="";
+    [Export] public string FollowupImpactAudio {get;set;}="";
     [Export] public bool FullBodyGesture {get;set;}
     // Reserve moving full-body playback for deliberate airborne moves such as Smash.
     [Export] public bool KeepFullBodyWhileMoving {get;set;}

@@ -30,7 +30,7 @@ public partial class AssassinRefinementSmoke : Node
             Check("new ability and offer icons agree",expectedIcons.All(x=>w.Abilities.Find(x.Key)!.Definition.Icon==x.Value && p.Upgrades.Single(u=>u.Id=="unlock_"+x.Key).Icon==x.Value));
             string[] order=w.Build.Pregame.EarlyAbilityOrder;
             if(build=="madness")Check("Madness core priority",order[0]=="creepingterror" && order[1]=="deathfield");
-            if(build=="deception")Check("Deception core priority",order[0]=="discharge" && order[1]=="spike");
+            if(build=="deception")Check("Deception core priority",order[0]=="discharge" && order[1]=="voltaicslash" && order[2]=="maul");
             p.AddExperience(p.RequiredExperience);p._Process(3);
             Check("level two guarantees two core unlock choices",p.Offers.Count(u=>u.Effect==UpgradeEffect.UnlockAbility)==2 && p.Offers.Any(u=>u.AbilityId==order[0]) && p.Offers.Any(u=>u.AbilityId==order[1]));
             Check("first core learned at two",p.Choose(p.Offers.ToList().FindIndex(u=>u.AbilityId==order[0])));p._Process(3);
@@ -86,7 +86,7 @@ public partial class AssassinRefinementSmoke : Node
             foreach(string id in new[]{"creepingterror","deathfield","discharge","voltaicslash","shock","crushingdarkness"})Check("core fits: "+id,p.Grant("unlock_"+id));
             Check("six learned damage abilities fit beside baseline",w.Abilities.Equipped(AbilityCategory.Offensive)==6 && w.Abilities.Abilities.Count(a=>a.Unlocked && a.Definition.Category==AbilityCategory.Offensive)==7);
             foreach(string id in new[]{"forceshroud","forcespeed","forcecloak","deflection","lowslash"})Check("utility fits without consuming damage space: "+id,p.Grant("unlock_"+id));
-            Check("utility and control stay outside damage budget",w.Abilities.Equipped(AbilityCategory.Offensive)==6 && w.Abilities.Abilities.Count(a=>a.Unlocked)==12);
+            Check("utility and control stay outside damage budget",w.Abilities.Equipped(AbilityCategory.Offensive)==6 && w.Abilities.Abilities.Count(a=>a.Unlocked)==12+(w.Build.Pregame.AssassinDeception?1:0));
             p.AddExperience(p.RequiredExperience);p._Process(3);int spikeOffer=p.Offers.ToList().FindIndex(u=>u.AbilityId=="spike");
             Check("full damage budget offers replacement",spikeOffer>=0 && p.Choose(spikeOffer) && p.Replacing);
             int starter=p.ReplacementOptions.ToList().FindIndex(a=>a.Definition.Id=="lacerate");
@@ -94,7 +94,7 @@ public partial class AssassinRefinementSmoke : Node
             Check("relearning Lacerate cannot create another free slot",!w.Combat.Definition.Slotless && !p.Grant("unlock_lacerate"));
             p._Process(3);
             Check("all new original clips resolve",w.Abilities.Abilities.Where(a=>a.Definition.StartClip.StartsWith("Assassin/")).All(a=>w.Player.Presentation.Animator.HasAnimation(a.Definition.StartClip)));
-            p.ResetRun();Check("reset restores Lacerate-only build",w.Abilities.Abilities.Count(a=>a.Unlocked)==1 && w.Combat.Unlocked);
+            p.ResetRun();Check("reset restores Lacerate-only build",w.Abilities.Abilities.Count(a=>a.Unlocked)==1+(w.Build.Pregame.AssassinDeception?1:0) && w.Combat.Unlocked);
             w.Abilities.ResetCombat();w.Player.Presentation.ResetPresentation();
             var cloak=w.Abilities.Find("forcecloak")!;var maul=w.Abilities.Find("maul")!;cloak.SetUnlocked(true);maul.SetUnlocked(true);
             Check("Force Cloak opens an automatic Maul opportunity",cloak.TryBegin());w.Abilities._PhysicsProcess(.2);
@@ -106,3 +106,4 @@ public partial class AssassinRefinementSmoke : Node
         System.IO.File.WriteAllText(ProjectSettings.GlobalizePath($"res://../manifests/assassin-refinement-{build}-smoke.json"),JsonSerializer.Serialize(new{passed=failure==null,failure,checks=_checks},new JsonSerializerOptions{WriteIndented=true}));GetTree().Quit(failure==null?0:1);
     }
 }
+

@@ -75,11 +75,14 @@ public partial class CharacterPresentation : Node3D
         AddDirectionalLocomotion(graph);
         graph.AddNode("Locomotion", new AnimationNodeBlend2 { Sync=true });
         graph.ConnectNode("Locomotion", 0, "Idle"); graph.ConnectNode("Locomotion", 1, "RunSpeed");
+        graph.AddNode("CoverPose",_coverPose);
+        graph.AddNode("CoverBlend",new AnimationNodeBlend2 {Sync=true});
+        graph.ConnectNode("CoverBlend",0,"Locomotion");graph.ConnectNode("CoverBlend",1,"CoverPose");
         _jumpNode = new AnimationNodeAnimation { Animation = "Idle" };
         graph.AddNode("JumpClip", _jumpNode);
         graph.AddNode("JumpSeek", new AnimationNodeTimeSeek()); graph.ConnectNode("JumpSeek", 0, "JumpClip");
         graph.AddNode("JumpLocomotion", new AnimationNodeBlend2 { Sync = true });
-        graph.ConnectNode("JumpLocomotion", 0, "Locomotion"); graph.ConnectNode("JumpLocomotion", 1, "JumpSeek");
+        graph.ConnectNode("JumpLocomotion", 0, "CoverBlend"); graph.ConnectNode("JumpLocomotion", 1, "JumpSeek");
         _gestures = new AnimationNodeStateMachine { AllowTransitionToSelf = true };
         graph.AddNode("Gesture", _gestures); AddGestureClips();
         graph.AddNode("GestureRate",new AnimationNodeTimeScale());graph.ConnectNode("GestureRate",0,"Gesture");
@@ -158,6 +161,7 @@ public partial class CharacterPresentation : Node3D
 
     public void Present(Vector3 actualVelocity, double delta, float? facingYawDegrees = null)
     {
+        if(_sniperCoverEnabled && actualVelocity.Length()>=.03f)SetSniperCover(false);
         var flat = new Vector3(actualVelocity.X, 0, actualVelocity.Z); _speed = flat.Length();_movementVelocity=flat;
         Locomotion = _speed > (Locomotion == "Run" ? 0.025f : 0.055f) ? "Run" : "Idle";
         var facing = GestureOwner!=null && FacingTarget.HasValue ? FacingTarget.Value-GlobalPosition : _speed > 0.025f ? flat : FacingTarget.HasValue ? FacingTarget.Value - GlobalPosition : Vector3.Zero;
@@ -171,6 +175,7 @@ public partial class CharacterPresentation : Node3D
     }
     public override void _Process(double delta)
     {
+        UpdateSniperCover(delta);
         UpdateJumpAnimation(delta);
         float step = (float)delta / Math.Max(0.01f, BlendSeconds);
         _movement = Mathf.MoveToward(_movement, Locomotion == "Run" ? 1 : 0, step);
@@ -182,7 +187,7 @@ public partial class CharacterPresentation : Node3D
         Tree.Set("parameters/Locomotion/blend_amount", _movement);
         Tree.Set("parameters/JumpLocomotion/blend_amount", _jumpWeight);
         // Briefly crossfade the original standing pose into the moving bone masks.
-        Tree.Set("parameters/StandingCast/blend_amount", Mathf.Max(_movingFullBodyWeight,1-Mathf.Max(_movement,_jumpWeight)) * _gestureWeight);
+        Tree.Set("parameters/StandingCast/blend_amount", Mathf.Max(_movingFullBodyWeight,1-Mathf.Max(_movement,_jumpWeight)) * _gestureWeight * (1-_coverWeight));
         Tree.Set("parameters/Waist/blend_amount", _gestureWeight * Mathf.Clamp(LowerBackCastWeight, 0, 1));
         Tree.Set("parameters/Chest/blend_amount", _gestureWeight * Mathf.Clamp(ChestCastWeight, 0, 1));
         Tree.Set("parameters/Upper/blend_amount", _gestureWeight);
@@ -245,6 +250,7 @@ public partial class CharacterPresentation : Node3D
     // Ordinary busy gestures are skipped. A sustained higher-priority cast can crossfade in; never queue.
     public bool TryBeginGesture(object owner, string clip, int priority=0, bool fullBody=false, bool keepFullBodyWhileMoving=false)
     {
+        clip=CoverGesture(clip);
         if (OverrideActive || !Animator.HasAnimation(clip) ||
             (GestureOwner!=null && priority<=_gesturePriority) || (GestureOwner==null && _gestureWeight>0.05f && priority<=0)) return false;
         bool crossfade=GestureOwner!=null || _gestureWeight>0.05f;
@@ -261,6 +267,7 @@ public partial class CharacterPresentation : Node3D
         !(GestureOwner!=null && priority<=_gesturePriority);
     public void SetGestureClip(object owner, string clip)
     {
+        clip=CoverGesture(clip);
         if (GestureOwner != owner || string.IsNullOrEmpty(clip) || !Animator.HasAnimation(clip) || _gestureClip==clip) return;
         _gestureClip = clip; _playback.Travel(ClipState(clip));
         foreach(var playback in _layerPlaybacks) playback.Travel(ClipState(clip));
@@ -292,6 +299,7 @@ public partial class CharacterPresentation : Node3D
     }
     public void ResetPresentation()
     {
+        _coverRequested=false;_coverWeight=0;
         ResetJumpPresentation();
         GestureOwner = null; FullBodyGesture=false;KeepFullBodyWhileMoving=false; _reaction = ""; FacingTarget = null; _speed = _movement = _gestureWeight = _reactionWeight = 0;
         _movementVelocity=Vector3.Zero;LocomotionDirection=Vector2.Up;_movingFullBodyWeight=0;
@@ -355,6 +363,16 @@ public partial class CharacterPresentation : Node3D
         // Smash is the original ground-smash leap: enter (launch) then exit (descent and slam). The 8 s clip and hover loop between them are not used.
         if (library.HasAnimation("SmashEnter") && library.HasAnimation("SmashExit"))
             library.AddAnimation("SmashLeap", JoinAnimations(library.GetAnimation("SmashEnter"), library.GetAnimation("SmashExit"), "Root", LeapHeightScale));
+        if(key=="Agent" && library.HasAnimation("Laceration") && library.HasAnimation("LacerationFollowup")){
+            var first=library.GetAnimation("Laceration");var second=(Animation)library.GetAnimation("LacerationFollowup").Duplicate(true);
+            double rate=first.Length/second.Length;
+            for(int t=0;t<second.GetTrackCount();t++){
+                var keys=Enumerable.Range(0,second.TrackGetKeyCount(t));
+                foreach(int k in rate>1?keys.Reverse():keys)second.TrackSetKeyTime(t,k,second.TrackGetKeyTime(t,k)*rate);
+            }
+            second.Length=first.Length;
+            library.AddAnimation("LacerationDouble",JoinAnimations(first,second,"Root",1));
+        }
         Animator.AddAnimationLibrary(key, library); imported.Free();
         if (gestureClips) AddGestureClips();
     }

@@ -1,0 +1,11 @@
+D:\SWTORClassic\torbonk\pipeline\scripts\probe_face_color.py:6: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('constant');mat.use_nodes=True
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED_PIXEL [0.5000004172325134, 0.5000004172325134, 0.5000004172325134, 1.0]
+Info: Baking map saved to internal image, save it externally or pack it
+FACE_COLOR_REGRESSION_PASSED
+COLOR_PROBE False [0.21568629145622253, 0.21568629145622253, 0.21568629145622253, 1.0]
+COLOR_PROBE True [0.03764845058321953, 0.03764845058321953, 0.03764845058321953, 1.0]
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

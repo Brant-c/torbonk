@@ -1,0 +1,352 @@
+D:\SWTORClassic\torbonk\pipeline\scripts\map_models.py:38: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new(stem);mat.use_nodes=True;mat.use_backface_culling=info['twoSided']!='True'
+register_class(...):
+Warning: 'import_mesh.gr2_presets' does not contain '_MT_' with prefix and suffix
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\all_arch_rakata_wall_set03.gr2
+OBJS: ['all_arch_rakata_wall_set03']
+TIME: 0.003 s.
+
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+14:38:06 | INFO: Starting glTF 2.0 export
+14:38:06 | INFO: Extracting primitive: all_arch_rakata_wall_set03
+14:38:06 | INFO: Primitives created: 1
+14:38:06 | INFO: Finished glTF 2.0 export in 0.0538935661315918 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\all_arch_rakata_wall_set04.gr2
+OBJS: ['all_arch_rakata_wall_set04']
+TIME: 0.004 s.
+
+14:38:06 | INFO: Starting glTF 2.0 export
+14:38:06 | INFO: Extracting primitive: all_arch_rakata_wall_set04
+14:38:06 | INFO: Primitives created: 1
+14:38:06 | INFO: Finished glTF 2.0 export in 0.024012088775634766 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\all_arch_rakata_wall_set05.gr2
+OBJS: ['all_arch_rakata_wall_set05']
+TIME: 0.002 s.
+
+14:38:06 | INFO: Starting glTF 2.0 export
+14:38:06 | INFO: Extracting primitive: all_arch_rakata_wall_set05
+14:38:06 | INFO: Primitives created: 1
+14:38:06 | INFO: Finished glTF 2.0 export in 0.014786720275878906 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\all_arch_rakata_wall_set06.gr2
+OBJS: ['all_arch_rakata_wall_set06']
+TIME: 0.002 s.
+
+14:38:06 | INFO: Starting glTF 2.0 export
+14:38:06 | INFO: Extracting primitive: all_arch_rakata_wall_set06
+14:38:06 | INFO: Primitives created: 1
+14:38:06 | INFO: Finished glTF 2.0 export in 0.014882326126098633 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\all_arch_rakata_wall_set07.gr2
+OBJS: ['all_arch_rakata_wall_set07']
+TIME: 0.006 s.
+
+14:38:06 | INFO: Starting glTF 2.0 export
+14:38:06 | INFO: Extracting primitive: all_arch_rakata_wall_set07
+14:38:06 | INFO: Primitives created: 1
+14:38:06 | INFO: Finished glTF 2.0 export in 0.01514124870300293 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\arch\ruins\all_arch_ruins_floortile.gr2
+OBJS: ['all_arch_ruins_floortile']
+TIME: 0.009 s.
+
+14:38:06 | INFO: Starting glTF 2.0 export
+14:38:06 | INFO: Extracting primitive: all_arch_ruins_floortile
+14:38:06 | INFO: Primitives created: 1
+14:38:06 | INFO: Finished glTF 2.0 export in 0.016740798950195312 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\caves\all_item_caves_rubble_mound_ald_01.gr2
+OBJS: ['all_item_caves_rubble_mound_ald_01']
+TIME: 0.028 s.
+
+14:38:06 | INFO: Starting glTF 2.0 export
+14:38:06 | INFO: Extracting primitive: all_item_caves_rubble_mound_ald_01
+14:38:06 | INFO: Primitives created: 2
+14:38:06 | INFO: Finished glTF 2.0 export in 0.03731656074523926 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\decal\all_item_decal_lava.gr2
+OBJS: ['all_item_decal_lava']
+TIME: 0.001 s.
+
+14:38:06 | INFO: Starting glTF 2.0 export
+14:38:06 | INFO: Extracting primitive: all_item_decal_lava
+14:38:06 | INFO: Primitives created: 1
+14:38:06 | INFO: Finished glTF 2.0 export in 0.008545160293579102 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\all_all\item\tech\all_item_tech_rakata_tower.gr2
+OBJS: ['all_item_tech_rakata_tower']
+TIME: 0.052 s.
+
+14:38:06 | INFO: Starting glTF 2.0 export
+14:38:06 | INFO: Extracting primitive: all_item_tech_rakata_tower
+14:38:07 | INFO: Primitives created: 1
+14:38:07 | INFO: Finished glTF 2.0 export in 0.025983095169067383 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\arch\bel_arch_rakata_entrance_interior.gr2
+OBJS: ['bel_arch_rakata_entrance_interior']
+TIME: 0.004 s.
+
+14:38:07 | INFO: Starting glTF 2.0 export
+14:38:07 | INFO: Extracting primitive: bel_arch_rakata_entrance_interior
+14:38:07 | INFO: Primitives created: 2
+14:38:07 | INFO: Finished glTF 2.0 export in 0.04635500907897949 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\arch\bel_arch_rakata_generator01.gr2
+OBJS: ['bel_arch_rakata_generator01']
+TIME: 0.059 s.
+
+14:38:07 | INFO: Starting glTF 2.0 export
+14:38:07 | INFO: Extracting primitive: bel_arch_rakata_generator01
+14:38:07 | INFO: Primitives created: 2
+14:38:07 | INFO: Finished glTF 2.0 export in 0.030173063278198242 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\arch\bel_arch_rakata_int_prop_floortile.gr2
+OBJS: ['bel_arch_rakata_int_prop_floortile']
+TIME: 0.001 s.
+
+14:38:07 | INFO: Starting glTF 2.0 export
+14:38:07 | INFO: Extracting primitive: bel_arch_rakata_int_prop_floortile
+14:38:07 | INFO: Primitives created: 1
+14:38:07 | INFO: Finished glTF 2.0 export in 0.01497650146484375 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\arch\bel_arch_rakata_raid_energy_obelisk_base.gr2
+OBJS: ['bel_arch_rakata_raid_energy_obelisk_base']
+TIME: 0.002 s.
+
+14:38:07 | INFO: Starting glTF 2.0 export
+14:38:07 | INFO: Extracting primitive: bel_arch_rakata_raid_energy_obelisk_base
+14:38:07 | INFO: Primitives created: 2
+14:38:07 | INFO: Finished glTF 2.0 export in 0.029584646224975586 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\arch\bel_arch_rakata_raid_infernal_platform_piece01.gr2
+OBJS: ['bel_arch_rakata_raid_infernal_platform_piece01']
+TIME: 0.005 s.
+
+14:38:07 | INFO: Starting glTF 2.0 export
+14:38:07 | INFO: Extracting primitive: bel_arch_rakata_raid_infernal_platform_piece01
+14:38:07 | INFO: Primitives created: 3
+14:38:07 | INFO: Finished glTF 2.0 export in 0.045758962631225586 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\arch\bel_arch_rakata_raid_infernal_platform_piece02.gr2
+OBJS: ['bel_arch_rakata_raid_infernal_platform_piece02']
+TIME: 0.005 s.
+
+14:38:07 | INFO: Starting glTF 2.0 export
+14:38:07 | INFO: Extracting primitive: bel_arch_rakata_raid_infernal_platform_piece02
+14:38:07 | INFO: Primitives created: 3
+14:38:07 | INFO: Finished glTF 2.0 export in 0.042990922927856445 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\arch\bel_arch_rakata_raid_infernal_platform_piece03.gr2
+OBJS: ['bel_arch_rakata_raid_infernal_platform_piece03']
+TIME: 0.004 s.
+
+14:38:07 | INFO: Starting glTF 2.0 export
+14:38:07 | INFO: Extracting primitive: bel_arch_rakata_raid_infernal_platform_piece03
+14:38:07 | INFO: Primitives created: 3
+14:38:07 | INFO: Finished glTF 2.0 export in 0.04600238800048828 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\arch\bel_arch_rakata_raid_infernal_platform_piece04.gr2
+OBJS: ['bel_arch_rakata_raid_infernal_platform_piece04']
+TIME: 0.004 s.
+
+14:38:07 | INFO: Starting glTF 2.0 export
+14:38:07 | INFO: Extracting primitive: bel_arch_rakata_raid_infernal_platform_piece04
+14:38:07 | INFO: Primitives created: 3
+14:38:07 | INFO: Finished glTF 2.0 export in 0.04453587532043457 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\arch\bel_arch_rakata_raid_infernal_room_ceiling.gr2
+OBJS: ['NGon57', 'NGon56', 'NGon55', 'NGon54', 'NGon53', 'NGon52', 'NGon51', 'NGon50', 'NGon49', 'NGon48', 'NGon47', 'NGon46', 'NGon45', 'NGon44', 'NGon43', 'NGon42', 'bel_arch_rakata_raid_infernal_room_ceiling12']
+TIME: 0.155 s.
+
+14:38:08 | INFO: Starting glTF 2.0 export
+14:38:08 | INFO: Extracting primitive: bel_arch_rakata_raid_infernal_room_ceiling12
+14:38:08 | INFO: Primitives created: 2
+14:38:08 | INFO: Extracting primitive: NGon42
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon43
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon44
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon45
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon46
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon47
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon48
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon49
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon50
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon51
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon52
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon53
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon54
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon55
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon56
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon57
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Finished glTF 2.0 export in 0.11784768104553223 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\arch\bel_arch_rakata_raid_infernal_room_entrance.gr2
+OBJS: ['bel_arch_rakata_raid_infernal_room_entrance08', 'Object01', 'NGon31', 'NGon27', 'NGon23', 'NGon19']
+TIME: 0.185 s.
+
+14:38:08 | INFO: Starting glTF 2.0 export
+14:38:08 | INFO: Extracting primitive: bel_arch_rakata_raid_infernal_room_entrance08
+14:38:08 | INFO: Primitives created: 2
+14:38:08 | INFO: Extracting primitive: NGon19
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon23
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon27
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: NGon31
+14:38:08 | INFO: Primitives created: 3
+14:38:08 | INFO: Extracting primitive: Object01
+14:38:08 | INFO: Primitives created: 1
+14:38:08 | INFO: Finished glTF 2.0 export in 0.11415219306945801 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\arch\bel_arch_rakata_raid_infernal_room_wall01.gr2
+OBJS: ['bel_arch_rakata_raid_infernal_room_wall23', 'Object03', 'NGon73', 'NGon70', 'NGon66', 'NGon59']
+TIME: 0.187 s.
+
+14:38:09 | INFO: Starting glTF 2.0 export
+14:38:09 | INFO: Extracting primitive: bel_arch_rakata_raid_infernal_room_wall23
+14:38:09 | INFO: Primitives created: 2
+14:38:09 | INFO: Extracting primitive: NGon59
+14:38:09 | INFO: Primitives created: 3
+14:38:09 | INFO: Extracting primitive: NGon66
+14:38:09 | INFO: Primitives created: 3
+14:38:09 | INFO: Extracting primitive: NGon70
+14:38:09 | INFO: Primitives created: 3
+14:38:09 | INFO: Extracting primitive: NGon73
+14:38:09 | INFO: Primitives created: 3
+14:38:09 | INFO: Extracting primitive: Object03
+14:38:09 | INFO: Primitives created: 1
+14:38:09 | INFO: Finished glTF 2.0 export in 0.10299038887023926 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\arch\bel_arch_rakata_statue.gr2
+OBJS: ['bel_arch_rakata_statue']
+TIME: 0.043 s.
+
+14:38:09 | INFO: Starting glTF 2.0 export
+14:38:09 | INFO: Extracting primitive: bel_arch_rakata_statue
+14:38:09 | INFO: Primitives created: 1
+14:38:09 | INFO: Finished glTF 2.0 export in 0.02679586410522461 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\arch\bel_arch_rakata_statue_broken_legs.gr2
+OBJS: ['bel_arch_rakata_statue_broken_legs']
+TIME: 0.012 s.
+
+14:38:09 | INFO: Starting glTF 2.0 export
+14:38:09 | INFO: Extracting primitive: bel_arch_rakata_statue_broken_legs
+14:38:09 | INFO: Primitives created: 2
+14:38:09 | INFO: Finished glTF 2.0 export in 0.034377098083496094 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\env\bel_arch_rakata_entrance01.gr2
+OBJS: ['bel_arch_rakata_entrance01']
+TIME: 0.030 s.
+
+14:38:09 | INFO: Starting glTF 2.0 export
+14:38:09 | INFO: Extracting primitive: bel_arch_rakata_entrance01
+14:38:09 | INFO: Primitives created: 3
+14:38:09 | INFO: Finished glTF 2.0 export in 0.0664832592010498 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\env\bel_env_boulder_overhang.gr2
+OBJS: ['bel_env_boulder_overhang']
+TIME: 0.025 s.
+
+14:38:09 | INFO: Starting glTF 2.0 export
+14:38:09 | INFO: Extracting primitive: bel_env_boulder_overhang
+14:38:09 | INFO: Primitives created: 1
+14:38:09 | INFO: Finished glTF 2.0 export in 0.04446864128112793 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\env\bel_env_boulder_wall_curve_05.gr2
+OBJS: ['bel_env_boulder_wall_curve_05']
+TIME: 0.193 s.
+
+14:38:10 | INFO: Starting glTF 2.0 export
+14:38:10 | INFO: Extracting primitive: bel_env_boulder_wall_curve_05
+14:38:10 | INFO: Primitives created: 1
+14:38:10 | INFO: Finished glTF 2.0 export in 0.05688881874084473 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\bel_belsavis\env\bel_env_boulder_wall_curve_06.gr2
+OBJS: ['bel_env_boulder_wall_curve_06']
+TIME: 0.242 s.
+
+14:38:10 | INFO: Starting glTF 2.0 export
+14:38:10 | INFO: Extracting primitive: bel_env_boulder_wall_curve_06
+14:38:10 | INFO: Primitives created: 1
+14:38:10 | INFO: Finished glTF 2.0 export in 0.056969404220581055 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\ord_ordmantell\env\ord_env_boulders_sml_no_moss_01.gr2
+OBJS: ['ord_env_boulders_sml_no_moss_01']
+TIME: 0.005 s.
+
+14:38:10 | INFO: Starting glTF 2.0 export
+14:38:10 | INFO: Extracting primitive: ord_env_boulders_sml_no_moss_01
+14:38:11 | INFO: Primitives created: 1
+14:38:11 | INFO: Finished glTF 2.0 export in 0.027980566024780273 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\static\area\ord_ordmantell\env\ord_env_boulders_sml_no_moss_02.gr2
+OBJS: ['ord_env_boulders_sml_no_moss_02']
+TIME: 0.002 s.
+
+14:38:11 | INFO: Starting glTF 2.0 export
+14:38:11 | INFO: Extracting primitive: ord_env_boulders_sml_no_moss_02
+14:38:11 | INFO: Primitives created: 1
+14:38:11 | INFO: Finished glTF 2.0 export in 0.02718353271484375 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\mag\model\mag_envrakatapiston_01.gr2
+OBJS: ['mag_envrakatapiston_01']
+TIME: 0.051 s.
+
+14:38:11 | INFO: Starting glTF 2.0 export
+14:38:11 | INFO: Extracting primitive: mag_envrakatapiston_01
+14:38:11 | INFO: Primitives created: 2
+14:38:11 | INFO: Finished glTF 2.0 export in 0.06605839729309082 s
+
+MAP_MODELS_CONVERTED 29
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

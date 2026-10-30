@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": [
+    "grounded stationary admission",
+    "deathfield rejects moving start",
+    "deathfield starts on stopping",
+    "deathfield survives movement after initiation",
+    "storm rejects moving start",
+    "storm starts on stopping",
+    "storm survives movement after initiation",
+    "stationary area spell wins over ready Shock",
+    "thunderingblast starts",
+    "Blast cast audio loops",
+    "Blast release launches without damage",
+    "Blast follows moving endpoint",
+    "Blast arrival applies contact and damage",
+    "thunderingblast starts",
+    "Blast abort cleans projectile and loop",
+    "Strike cleave learns",
+    "lightningstrike starts",
+    "Strike cleave presents every victim",
+    "forcespeed starts",
+    "Force Speed sound loops",
+    "Force Speed loop follows actual buff reset",
+    "Polarity training learns",
+    "polarityshift starts",
+    "Polarity sound loops",
+    "Polarity sound expires"
+  ],
+  "failure": null
+}

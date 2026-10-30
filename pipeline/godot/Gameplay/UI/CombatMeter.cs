@@ -10,6 +10,11 @@ public partial class CombatMeter : Control
     public GameWorld World { get; set; } = null!;
     public double OverallDamage { get; private set; }
     public double OverallHealing { get; private set; }
+    public double DamageTaken { get; private set; }
+    private RunRecord _record = new();
+    private double _saveIn;
+    private bool _finished;
+    private bool SaveEnabled => RunHistory.TestDirectory != null || !System.Linq.Enumerable.Any(OS.GetCmdlineUserArgs(), a => a.Contains("smoke") || a.Contains("validation"));
     public double Dps => World.Progression!.ElapsedSeconds > 0 ? OverallDamage / World.Progression.ElapsedSeconds : 0;
     public double Hps => World.Progression!.ElapsedSeconds > 0 ? OverallHealing / World.Progression.ElapsedSeconds : 0;
     private Label _damage=null!, _dps=null!, _healing=null!, _hps=null!;
@@ -48,17 +53,39 @@ public partial class CombatMeter : Control
     private void Record(CombatEvent resolved)
     {
         if (!float.IsFinite(resolved.Change.Amount) || resolved.Change.Amount<=0) return;
-        // This solo game has one friendly damage producer. Incoming damage and enemy healing are excluded.
+        // This solo game has one friendly damage producer. Track incoming HP loss separately.
         if (resolved.Change.Kind==CombatEventKind.Damage && resolved.RecipientTeam==CombatTeam.Hostile)
             OverallDamage+=resolved.Change.Amount;
         else if (resolved.Change.Kind==CombatEventKind.Healing && resolved.RecipientId==World.PlayerActor.GetInstanceId())
             OverallHealing+=resolved.Change.Amount;
+        else if (resolved.Change.Kind==CombatEventKind.Damage && resolved.RecipientId==World.PlayerActor.GetInstanceId())
+            DamageTaken+=resolved.Change.Amount;
     }
 
     public void ResetRun()
     {
-        OverallDamage=OverallHealing=0;
+        _record=new RunRecord(); _finished=false; _saveIn=0;
+        OverallDamage=OverallHealing=DamageTaken=0;
         Refresh();
+    }
+
+    public void FinishRun(string outcome)
+    {
+        if (_finished) return;
+        Capture();
+        _record.Outcome=World.Waves?.CoreComplete==true ? "Cleared" : !World.PlayerActor.Alive ? "Defeated" : outcome;
+        if (SaveEnabled) RunHistory.Save(_record);
+        _finished=true;
+    }
+    private void Capture()
+    {
+        _record.ClassId=World.RunConfiguration.AdvancedClassId;
+        _record.MapId=World.RunConfiguration.MapId;
+        _record.Difficulty=_record.MapId is "eternity_vault" or "soa_p3" ? World.RunConfiguration.OperationDifficulty : "";
+        _record.Duration=World.Progression?.ElapsedSeconds ?? 0;
+        _record.Level=World.Progression?.Level ?? 1;
+        if (World.Waves?.CoreComplete==true) _record.Outcome="Cleared";
+        _record.Damage=OverallDamage; _record.Healing=OverallHealing; _record.Taken=DamageTaken;
     }
 
     private static string Amount(double value) => value>=9_999_999.5
@@ -70,9 +97,19 @@ public partial class CombatMeter : Control
         _damage.Text=Amount(OverallDamage); _dps.Text=Amount(Dps);
         _healing.Text=Amount(OverallHealing); _hps.Text=Amount(Hps);
     }
-    public override void _Process(double delta) => Refresh();
+    public override void _Process(double delta)
+    {
+        Refresh();
+        if (_finished) return;
+        Capture();
+        if (!World.PlayerActor.Alive) { FinishRun("Defeated"); return; }
+        _saveIn-=delta;
+        if (_saveIn<=0) { if (SaveEnabled) RunHistory.Save(_record); _saveIn=5; }
+    }
     public override void _ExitTree()
     {
+        // Cached totals remain usable even if sibling gameplay nodes have already left the tree.
+        if (!_finished && SaveEnabled) RunHistory.Save(_record);
         if (GodotObject.IsInstanceValid(World.Events)) World.Events.Resolved-=Record;
     }
 }

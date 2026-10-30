@@ -1,0 +1,11 @@
+# Eternity Vault loot
+
+EV and the playable Soa arena award persistent Credits and relics through encounter completion. Ordinary kills across playable maps drop 3–9 Credits as green Credit-stack pickups; minibosses award 150 Credits and a 35% relic roll; XRR-3 and Soa award 500 Credits and two guaranteed relic rolls. Group members do not award encounter loot individually. Encounter IDs are claimed once per run and cleared on restart.
+
+Normal relics are +0, Hard +1, Nightmare +2 with a 15% +3 chance. Compatible relics have four times the selection weight of other relics in the same base-class family. New profiles start with an empty inventory and zero Credits; existing ownership is preserved. New relics unlock, higher duplicates upgrade, and equal/lower duplicates convert to 200 Credits. Credit upgrades retain their existing costs and +3 cap.
+
+Tune rewards in `godot/Gameplay/Equipment/ev-loot.json`. Relics save directly through the equipment window inventory. Mob and encounter Credits drop into the world using the original transparent green Credit symbol (`/resources/gfx/symbols/credits.dds`, no frame or tint), bob and magnet toward the player, and commit to persistent inventory on collection. A short +Credits label confirms collection. Failed saves retain the pickup for retry. At most 128 pending Credit pickups render; additional amounts merge into the nearest pickup. Restart clears uncollected drops.
+
+Normal, Hard and Nightmare are available immediately in the difficulty UI, with no full-clear requirement. The future operation controller can still record full clears through `PersistentInventory.CompleteOperation` with Normal/Hard and all five canonical boss IDs. XRR-3 and isolated Soa are not full-operation completions.
+
+Validation: `dotnet build pipeline/godot --no-restore`; run `Gameplay/Equipment/EvLootSmoke.tscn` headlessly for acquisition, duplicates, upgrades, persistence, shared class-family inventory and full-clear requirements. `--credit-pickup-smoke` checks real mob drops, no early balance changes, collection persistence, duplicate collection rejection, green icon, save failure retention, merging and reset without modifying the real Credit balance. Live loot layout has not been visually tested.

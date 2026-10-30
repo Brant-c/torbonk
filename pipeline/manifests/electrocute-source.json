@@ -1,0 +1,557 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 160,
+  "maximumDecodedBytes": 67108864,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gamedata_1.tor",
+      "archiveHash": "0x19528C8E3B15751C",
+      "entryOffset": 4692101,
+      "headerSize": 36,
+      "dataOffset": 4692137,
+      "compressedSize": 996,
+      "length": 8498,
+      "compressionMethod": 1,
+      "crc32Index": "de813677",
+      "path": "/resources/gamedata/epp/sith_inquisitor/electrocution/cast_instant.epp",
+      "sha256": "6451b2aeac595a627ab49341aef470906741e9b8eacdd7ff9ecc2aeb2a653319",
+      "output": "source-assets\\april2012\\resources\\gamedata\\epp\\sith_inquisitor\\electrocution\\cast_instant.epp",
+      "archiveSha256": "6c66e6dd3ba17b274fccaa5f354929ba3b0837a9b2f74503c229240bf8a1cf82",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gamedata_1.tor",
+      "archiveHash": "0x5E21E848409D3691",
+      "entryOffset": 4693133,
+      "headerSize": 36,
+      "dataOffset": 4693169,
+      "compressedSize": 814,
+      "length": 4652,
+      "compressionMethod": 1,
+      "crc32Index": "2db31845",
+      "path": "/resources/gamedata/epp/sith_inquisitor/electrocution/cast_loop.epp",
+      "sha256": "b162c059e81a7c66a96106f71643aeb1b3c9af32168bf4af7a5f4da58ef97c7f",
+      "output": "source-assets\\april2012\\resources\\gamedata\\epp\\sith_inquisitor\\electrocution\\cast_loop.epp",
+      "archiveSha256": "6c66e6dd3ba17b274fccaa5f354929ba3b0837a9b2f74503c229240bf8a1cf82",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gamedata_1.tor",
+      "archiveHash": "0x202C4EA461A99BD2",
+      "entryOffset": 4693983,
+      "headerSize": 36,
+      "dataOffset": 4694019,
+      "compressedSize": 785,
+      "length": 5502,
+      "compressionMethod": 1,
+      "crc32Index": "c5543ee4",
+      "path": "/resources/gamedata/epp/sith_inquisitor/electrocution/stun.epp",
+      "sha256": "79ac0888810b9b2c5bd9d38e954e56b5a875b513c89d177d64d495dbbc96fa6c",
+      "output": "source-assets\\april2012\\resources\\gamedata\\epp\\sith_inquisitor\\electrocution\\stun.epp",
+      "archiveSha256": "6c66e6dd3ba17b274fccaa5f354929ba3b0837a9b2f74503c229240bf8a1cf82",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xC14BBA909D28DED4",
+      "entryOffset": 152060690,
+      "headerSize": 36,
+      "dataOffset": 152060726,
+      "compressedSize": 3364,
+      "length": 55898,
+      "compressionMethod": 1,
+      "crc32Index": "008fb4ab",
+      "path": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_electrocute_01.fxspec",
+      "sha256": "d4b2c3e2f5dcd8d7f59778d509a1ef24ec9d1ef27e7b229057964965f323c6d1",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\sith_inquisitor\\si_electrocute_01.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x613A1C2DE54C63FD",
+      "entryOffset": 152064090,
+      "headerSize": 36,
+      "dataOffset": 152064126,
+      "compressedSize": 2854,
+      "length": 64256,
+      "compressionMethod": 1,
+      "crc32Index": "9850c1a6",
+      "path": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_electrocute_target_01.fxspec",
+      "sha256": "080f0442a279a27ebed026780de43cef2616ec56238842ef98434eb296504f0e",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\sith_inquisitor\\si_electrocute_target_01.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x4DEBB6006A774F51",
+      "entryOffset": 74785820,
+      "headerSize": 36,
+      "dataOffset": 74785856,
+      "compressedSize": 1509,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "8aeeeb7c",
+      "path": "/resources/gfx/icons/electrocute.dds",
+      "sha256": "ac566683853c256bd313cb0171ddec3c7dd8d6aa620ce38ab94cc89442f5b89c",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\electrocute.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x6C2C302C8BED418B",
+      "entryOffset": 152166516,
+      "headerSize": 36,
+      "dataOffset": 152166552,
+      "compressedSize": 421,
+      "length": 823,
+      "compressionMethod": 1,
+      "crc32Index": "3f67bed3",
+      "path": "/resources/art/fx/particles/si_hit_small_core_01.prt",
+      "sha256": "89ddd98b9c5777b981b647083d322740e350798ddcb6d19daab0e4552815caa2",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_hit_small_core_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xF47F47AA94013CA5",
+      "entryOffset": 152428815,
+      "headerSize": 36,
+      "dataOffset": 152428851,
+      "compressedSize": 447,
+      "length": 867,
+      "compressionMethod": 1,
+      "crc32Index": "418a850d",
+      "path": "/resources/art/fx/particles/si_saber_elec_sparks_purple_02.prt",
+      "sha256": "124d88b1565c1865f792911d754288e9ea9df61130950051a12e8159c40b265f",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_saber_elec_sparks_purple_02.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x8E4DA8BB88F5B12E",
+      "entryOffset": 152058033,
+      "headerSize": 36,
+      "dataOffset": 152058069,
+      "compressedSize": 442,
+      "length": 841,
+      "compressionMethod": 1,
+      "crc32Index": "7082cd21",
+      "path": "/resources/art/fx/particles/si_electric_flash_impact_01.prt",
+      "sha256": "a7cabf0ced4dc09d15b6b090c46dc7e533075b347c48bd385f27ce2d7834bac3",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_electric_flash_impact_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xA574BE03AE33EB1F",
+      "entryOffset": 152427258,
+      "headerSize": 36,
+      "dataOffset": 152427294,
+      "compressedSize": 576,
+      "length": 1147,
+      "compressionMethod": 1,
+      "crc32Index": "2eeaf2aa",
+      "path": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01.prt",
+      "sha256": "76b8c0b8cd9700830b50804642e584280f56cd1ac7176c260422abb948036368",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_saber_elec_hit_purple_limbs_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x4E12D6AE790D5A4F",
+      "entryOffset": 9329105,
+      "headerSize": 36,
+      "dataOffset": 9329141,
+      "compressedSize": 10036,
+      "length": 32896,
+      "compressionMethod": 1,
+      "crc32Index": "f33623f9",
+      "path": "/resources/art/fx/texture/electricity/512_singlearcb_bw.dds",
+      "sha256": "09123b2387a3aedbacb3e8d88e4279fa65b345a72b3023fffef808d8400c35b4",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\electricity\\512_singlearcb_bw.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xD02EDC514150FED7",
+      "entryOffset": 151932076,
+      "headerSize": 36,
+      "dataOffset": 151932112,
+      "compressedSize": 574,
+      "length": 1141,
+      "compressionMethod": 1,
+      "crc32Index": "710900aa",
+      "path": "/resources/art/fx/particles/si_darkafflic_smokechest_01.prt",
+      "sha256": "e30c68058e3d730984c8991603564cb6fb0e8d736c9de693fbd55636da19f1a4",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_darkafflic_smokechest_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x8603AA3869B0222F",
+      "entryOffset": 152424433,
+      "headerSize": 36,
+      "dataOffset": 152424469,
+      "compressedSize": 473,
+      "length": 872,
+      "compressionMethod": 1,
+      "crc32Index": "ee7c594f",
+      "path": "/resources/art/fx/particles/si_saber_elec_hit_flashes_01.prt",
+      "sha256": "7f39fd9293f0457f1657a69c8c2a471afb87c03b00b4abbccdb9be2245582da4",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_saber_elec_hit_flashes_01.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x3323ECEBA7273039",
+      "entryOffset": 152166973,
+      "headerSize": 36,
+      "dataOffset": 152167009,
+      "compressedSize": 776,
+      "length": 1570,
+      "compressionMethod": 1,
+      "crc32Index": "f3e7657d",
+      "path": "/resources/art/fx/particles/si_hit_small_core_01_p.prt",
+      "sha256": "61bebef7e8e02a2e6ba1b8058b91755b8c24fdb9aa675f4599ebc6229fdba7a0",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_hit_small_core_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xA0C66BD524CC82AE",
+      "entryOffset": 152429298,
+      "headerSize": 36,
+      "dataOffset": 152429334,
+      "compressedSize": 875,
+      "length": 1726,
+      "compressionMethod": 1,
+      "crc32Index": "fa63863f",
+      "path": "/resources/art/fx/particles/si_saber_elec_sparks_purple_02_p.prt",
+      "sha256": "36b22e20e2dbc0776fbf5fb0400aa7c031fc6682739d35c449fed526020b5d38",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_saber_elec_sparks_purple_02_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x6526665D39E5D559",
+      "entryOffset": 152058511,
+      "headerSize": 36,
+      "dataOffset": 152058547,
+      "compressedSize": 760,
+      "length": 1576,
+      "compressionMethod": 1,
+      "crc32Index": "a9e07ef7",
+      "path": "/resources/art/fx/particles/si_electric_flash_impact_01_p.prt",
+      "sha256": "77b15e207221c26e9a7a26eec039a4614a1841dd7ced739fd56f0990757a78bc",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_electric_flash_impact_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x01C499D5E9FAA727",
+      "entryOffset": 152427870,
+      "headerSize": 36,
+      "dataOffset": 152427906,
+      "compressedSize": 909,
+      "length": 1872,
+      "compressionMethod": 1,
+      "crc32Index": "57c6122b",
+      "path": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01_p.prt",
+      "sha256": "895e3528360ffd59a7de0be00b009beb52f688285ae9ffb0481213bb386f3009",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_saber_elec_hit_purple_limbs_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x0C3583A779C742D4",
+      "entryOffset": 151932686,
+      "headerSize": 36,
+      "dataOffset": 151932722,
+      "compressedSize": 831,
+      "length": 1705,
+      "compressionMethod": 1,
+      "crc32Index": "851aa866",
+      "path": "/resources/art/fx/particles/si_darkafflic_smokechest_01_p.prt",
+      "sha256": "cece39a249806f8f11895be0c007a253e0eb261952d990c8b6e9ed431688dca6",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_darkafflic_smokechest_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x60DE3BE3317E1EC8",
+      "entryOffset": 152424942,
+      "headerSize": 36,
+      "dataOffset": 152424978,
+      "compressedSize": 860,
+      "length": 1705,
+      "compressionMethod": 1,
+      "crc32Index": "e3f4d919",
+      "path": "/resources/art/fx/particles/si_saber_elec_hit_flashes_01_p.prt",
+      "sha256": "e05f6d7dace5d9a1906404bad14557de552b55a9da5741d7334328594c9b09be",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\particles\\si_saber_elec_hit_flashes_01_p.prt",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x63222084FB47EC2D",
+      "entryOffset": 36230694,
+      "headerSize": 36,
+      "dataOffset": 36230730,
+      "compressedSize": 12213,
+      "length": 43832,
+      "compressionMethod": 1,
+      "crc32Index": "43e72501",
+      "path": "/resources/art/fx/texture/electricity/electric_orb.dds",
+      "sha256": "7bc959d57b339d7033358d726656d561bd14436ea58d0f420323a9bdbffcd8a2",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\electricity\\electric_orb.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xDFB0CC504C9D3FF2",
+      "entryOffset": 23962121,
+      "headerSize": 36,
+      "dataOffset": 23962157,
+      "compressedSize": 15295,
+      "length": 43832,
+      "compressionMethod": 1,
+      "crc32Index": "2d3f212d",
+      "path": "/resources/art/fx/texture/spark/bw_fx_2x2_sparknglow_01.dds",
+      "sha256": "976ea6f566f7c262e2d7845bff6e6d690608c92c02f3273dc2f729d0502a9733",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\spark\\bw_fx_2x2_sparknglow_01.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xCED746BB48EE963E",
+      "entryOffset": 155583526,
+      "headerSize": 36,
+      "dataOffset": 155583562,
+      "compressedSize": 18263,
+      "length": 43832,
+      "compressionMethod": 1,
+      "crc32Index": "ebe6b573",
+      "path": "/resources/art/fx/texture/spark/spark_core.dds",
+      "sha256": "bd582ac8106b146f846193ea37cc1effd9d2f879ae11fbd2f9a309bf93ae4c2b",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\spark\\spark_core.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x141D0204D1DDA67D",
+      "entryOffset": 36285116,
+      "headerSize": 36,
+      "dataOffset": 36285152,
+      "compressedSize": 37708,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "5542be04",
+      "path": "/resources/art/fx/texture/electricity/electric_rings_bw_02.dds",
+      "sha256": "1d8afb288152f78fcb0c32aa4de03cc57d1b212c3384594aab47dbb1932454ac",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\electricity\\electric_rings_bw_02.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xB709B42F87BC41F4",
+      "entryOffset": 153941847,
+      "headerSize": 36,
+      "dataOffset": 153941883,
+      "compressedSize": 64499,
+      "length": 87536,
+      "compressionMethod": 1,
+      "crc32Index": "c15e783e",
+      "path": "/resources/art/fx/texture/smoke/smoke_thin.dds",
+      "sha256": "022ca27095d289998135b1aca7f0c77623d66ea9c4bc6fc4b1c6e727fd07b814",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\smoke\\smoke_thin.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x9BC449C1455FD0CE",
+      "entryOffset": 155643207,
+      "headerSize": 36,
+      "dataOffset": 155643243,
+      "compressedSize": 39544,
+      "length": 174904,
+      "compressionMethod": 1,
+      "crc32Index": "70dc357e",
+      "path": "/resources/art/fx/texture/spark/sparks_core_halo.dds",
+      "sha256": "7061718cd987552c75baffed6cac73d74a5ae866f1b1a7f85b51d19ef53ef71e",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\texture\\spark\\sparks_core_halo.dds",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audiodata_1.tor",
+      "archiveHash": "0x1038BF63774A242E",
+      "entryOffset": 36895,
+      "headerSize": 36,
+      "dataOffset": 36931,
+      "compressedSize": 23091,
+      "length": 72592,
+      "compressionMethod": 1,
+      "crc32Index": "929acd04",
+      "path": "/resources/bnk2/abilities_general_data.bnk",
+      "sha256": "26b1a9e7aa61aaf86377487d9150adcef34a475b42f5984ef06c2d47d5a44971",
+      "output": "source-assets\\april2012\\resources\\bnk2\\abilities_general_data.bnk",
+      "archiveSha256": "932a885608e1a1b1f4a9f5c55a02bc8e426558371ae5a58faf88642ebe5f4491",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "Electrocute",
+      "to": "/resources/gamedata/epp/sith_inquisitor/electrocution/cast_instant.epp",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/gamedata/epp/sith_inquisitor/electrocution/cast_loop.epp",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/gamedata/epp/sith_inquisitor/electrocution/stun.epp",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_electrocute_01.fxspec",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/fxspec/abilities/sith_inquisitor/si_electrocute_target_01.fxspec",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/gfx/icons/electrocute.dds",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/particles/si_hit_small_core_01.prt",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/particles/si_saber_elec_sparks_purple_02.prt",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/particles/si_electric_flash_impact_01.prt",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01.prt",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/texture/electricity/512_singlearcb_bw.dds",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/particles/si_darkafflic_smokechest_01.prt",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/particles/si_saber_elec_hit_flashes_01.prt",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/particles/si_hit_small_core_01_p.prt",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/particles/si_saber_elec_sparks_purple_02_p.prt",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/particles/si_electric_flash_impact_01_p.prt",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/particles/si_saber_elec_hit_purple_limbs_01_p.prt",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/particles/si_darkafflic_smokechest_01_p.prt",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/particles/si_saber_elec_hit_flashes_01_p.prt",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/texture/electricity/electric_orb.dds",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/texture/spark/bw_fx_2x2_sparknglow_01.dds",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/texture/spark/spark_core.dds",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/texture/electricity/electric_rings_bw_02.dds",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/texture/smoke/smoke_thin.dds",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute",
+      "to": "/resources/art/fx/texture/spark/sparks_core_halo.dds",
+      "relation": "selected original dependency"
+    },
+    {
+      "from": "Electrocute generic cast",
+      "to": "/resources/bnk2/abilities_general_data.bnk",
+      "relation": "April sound event bank"
+    }
+  ],
+  "unresolved": [],
+  "selection": "April Electrocute cast/stun and dependency closure"
+}

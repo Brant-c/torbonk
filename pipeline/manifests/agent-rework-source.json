@@ -1,0 +1,79 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 180,
+  "maximumDecodedBytes": 104857600,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0x563176A75A5FA333",
+      "entryOffset": 148375978,
+      "headerSize": 36,
+      "dataOffset": 148376014,
+      "compressedSize": 1385,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "9ca8dd95",
+      "path": "/resources/gfx/icons/severtendon.dds",
+      "sha256": "c2bf093b0fb7a6f2ff85d334e0868bfce32d6553414156b752a2d80a9180e8db",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\severtendon.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0xEA30161D3A0EEF18",
+      "entryOffset": 23584750,
+      "headerSize": 36,
+      "dataOffset": 23584786,
+      "compressedSize": 20036,
+      "length": 34625,
+      "compressionMethod": 1,
+      "crc32Index": "03319ad4",
+      "path": "/resources/anim/humanoid/bmnnew/cb_2saber_sp2_attack_right_8.jba",
+      "sha256": "61b9b4aef1ef49f62c7c7f656478f82290971ced3238a3f866b08f4726a38fa2",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2saber_sp2_attack_right_8.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0xB988EAE929801288",
+      "entryOffset": 31402425,
+      "headerSize": 36,
+      "dataOffset": 31402461,
+      "compressedSize": 18101,
+      "length": 31553,
+      "compressionMethod": 1,
+      "crc32Index": "4f7eb9cc",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_disk_left_1.jba",
+      "sha256": "4a1f75b8dcea11469ac8303da31bd1fdafca8522fd535618db3023941a66c49b",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_disk_left_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "character selection",
+      "to": "/resources/gfx/icons/severtendon.dds",
+      "relation": "Agent rework candidate verified unique bytes"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/anim/humanoid/bmnnew/cb_2saber_sp2_attack_right_8.jba",
+      "relation": "April Laceration appearance schedule animation"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_disk_left_1.jba",
+      "relation": "April Laceration appearance schedule animation"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/gfx/icons/severtendon.dds",
+      "relation": "selected dependency"
+    }
+  ],
+  "unresolved": [],
+  "selection": "human male body type 2; bmnnew skeleton"
+}

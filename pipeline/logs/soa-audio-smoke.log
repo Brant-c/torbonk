@@ -1,0 +1,12 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+Actual ice cat damage starts one hurt vocal
+Rapid damage cannot chatter
+Death replaces its hurt voice without changing death state
+Death tail survives corpse removal
+Reset clears NPC voices
+Same-frame lethal followup cancels queued hurt
+Crowd vocals stay within three voices
+One-shots finish naturally
+Distant enemies are suppressed
+No stale playback after reset

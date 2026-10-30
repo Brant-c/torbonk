@@ -60,6 +60,7 @@ public partial class WaveDirector : Node
         AddChild(Encounter);
         if(PlanetRun!=null)
         {
+            Encounter.MaintainRegularPressure=PlanetRun.ContinuousEncounters;
             Spawner.Difficulty = PlanetRun.Difficulty;
             Spawner.ExperienceDropEvery = Math.Max(1,PlanetRun.EnemyExperienceDropEvery);
             Spawner.ExperienceMultiplier = Math.Max(1,PlanetRun.EnemyExperienceMultiplier);
@@ -77,6 +78,7 @@ public partial class WaveDirector : Node
                 var definition = GD.Load<BossEncounterDefinition>(m.Encounter);
                 _planetEncounters.TryAdd(m.Encounter, definition);
                 Spawner.ReferenceLevels.TryAdd(definition.Scene.ResourcePath, m.Level);
+                foreach(var member in definition.AdditionalScenes)Spawner.ReferenceLevels.TryAdd(member.ResourcePath,m.Level);
             }
             return;
         }
@@ -135,6 +137,12 @@ public partial class WaveDirector : Node
     private void BeginRecovery(PlanetStage? destination)
     {
         if (PlanetRun == null || PlanetRun.Endless || CoreComplete) return;
+        if(PlanetRun.ContinuousEncounters)
+        {
+            TravelDestination=null;_encounterRecovery=0;ReturnRampRemaining=0;
+            Spawner.ReinforcementsEnabled=true;
+            return;
+        }
         TravelDestination = destination;
         // A stage unlocked during a reward/recovery belongs to the same break.
         if (!Recovering) _encounterRecovery = Math.Max(0, PlanetRun.Difficulty.RecoverySeconds);
@@ -203,6 +211,7 @@ public partial class WaveDirector : Node
         if(_milestoneLoaded && Encounter.State==EncounterState.Defeated)
         {
             MilestonesCompleted++;_milestoneLoaded=false;
+            if(PlanetRun.ContinuousEncounters)Spawner.ReservedSlots=1;
             if(CoreComplete && !PlanetRun.Endless){Running=false;Spawner.Stop();}
             else if(!CoreComplete)
             {
@@ -228,6 +237,9 @@ public partial class WaveDirector : Node
             var next=PlanetRun.Milestones[MilestonesCompleted];
             if((PlayerLevel?.Invoke()??1)<next.Level)return;
             Encounter.ResetEncounter();Encounter.Definition=_planetEncounters[next.Encounter];_milestoneLoaded=true;
+            if(PlanetRun.ContinuousEncounters)
+                Spawner.ReservedSlots=Encounter.Definition.AdditionalScenes.Count>0
+                    ? Math.Min(Encounter.Definition.MaximumConcurrentMembers,Encounter.Definition.AdditionalScenes.Count+1) : 1;
         }
         bool before=Encounter.Spawned;Encounter.Tick(delta,true);
         if(!before && Encounter.Spawned)MilestonesStarted++;

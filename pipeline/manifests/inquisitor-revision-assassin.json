@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": [
+    "Deception grants Electrocute",
+    "Electrocute waits for owned Discharge",
+    "discharge starts",
+    "Discharge remains strengthened main DoT",
+    "electrocute starts",
+    "Conductive Field reaches three enemies",
+    "Electrocute stuns and exposes victims",
+    "Electrocute retains Discharge",
+    "Electrocute opens Maul burst window",
+    "Maul gains exposed-target bonus",
+    "Electrocute plays recovered sustained sound",
+    "Exposure expires without consuming DoT",
+    "discharge starts",
+    "electrocute starts",
+    "boss resists stun but retains exposure",
+    "Razor Wake learns",
+    "lacerate starts",
+    "Razor Wake extra damage gets its own contacts",
+    "capped Deception build keeps all learned abilities visible",
+    "deathfield starts",
+    "Assassin Death Field still starts while moving",
+    "forcecloak starts",
+    "Force Cloak starts recovered loop",
+    "Force Cloak loop ends on reveal"
+  ],
+  "failure": null
+}

@@ -1,0 +1,192 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+WARNING: AnimationNodeBlendSpace2D::add_blend_point: No name provided, using safe index as reference. In the future, empty names will be deprecated, so explicitly passing a name is recommended.
+   at: add_blend_point (scene/animation/animation_blend_space_2d.cpp:74)
+   C# backtrace (most recent call first):
+       [0] void Godot.NativeCalls.godot_icall_4_174(nint, nint, nint, Godot.Vector2*, int, Godot.NativeInterop.godot_string_name) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:1567)
+       [1] void Godot.AnimationNodeBlendSpace2D.AddBlendPoint(Godot.AnimationRootNode, Godot.Vector2, int, Godot.StringName) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/AnimationNodeBlendSpace2D.cs:255)
+       [2] void SwtorSurvivors.CharacterPresentation.AddDirectionalLocomotion(Godot.AnimationNodeBlendTree) (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\DirectionalLocomotion.cs:21)
+       [3] void SwtorSurvivors.CharacterPresentation.BuildTree() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:75)
+       [4] void SwtorSurvivors.CharacterPresentation._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:65)
+       [5] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [6] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [7] bool SwtorSurvivors.CharacterPresentation.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.CharacterPresentation_ScriptMethods.generated.cs:270)
+       [8] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+WARNING: AnimationNodeBlendSpace2D::add_blend_point: No name provided, using safe index as reference. In the future, empty names will be deprecated, so explicitly passing a name is recommended.
+   at: add_blend_point (scene/animation/animation_blend_space_2d.cpp:74)
+   C# backtrace (most recent call first):
+       [0] void Godot.NativeCalls.godot_icall_4_174(nint, nint, nint, Godot.Vector2*, int, Godot.NativeInterop.godot_string_name) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:1567)
+       [1] void Godot.AnimationNodeBlendSpace2D.AddBlendPoint(Godot.AnimationRootNode, Godot.Vector2, int, Godot.StringName) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/AnimationNodeBlendSpace2D.cs:255)
+       [2] void SwtorSurvivors.CharacterPresentation.AddDirectionalLocomotion(Godot.AnimationNodeBlendTree) (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\DirectionalLocomotion.cs:22)
+       [3] void SwtorSurvivors.CharacterPresentation.BuildTree() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:75)
+       [4] void SwtorSurvivors.CharacterPresentation._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:65)
+       [5] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [6] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [7] bool SwtorSurvivors.CharacterPresentation.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.CharacterPresentation_ScriptMethods.generated.cs:270)
+       [8] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+WARNING: AnimationNodeBlendSpace2D::add_blend_point: No name provided, using safe index as reference. In the future, empty names will be deprecated, so explicitly passing a name is recommended.
+   at: add_blend_point (scene/animation/animation_blend_space_2d.cpp:74)
+   C# backtrace (most recent call first):
+       [0] void Godot.NativeCalls.godot_icall_4_174(nint, nint, nint, Godot.Vector2*, int, Godot.NativeInterop.godot_string_name) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:1567)
+       [1] void Godot.AnimationNodeBlendSpace2D.AddBlendPoint(Godot.AnimationRootNode, Godot.Vector2, int, Godot.StringName) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/AnimationNodeBlendSpace2D.cs:255)
+       [2] void SwtorSurvivors.CharacterPresentation.AddDirectionalLocomotion(Godot.AnimationNodeBlendTree) (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\DirectionalLocomotion.cs:23)
+       [3] void SwtorSurvivors.CharacterPresentation.BuildTree() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:75)
+       [4] void SwtorSurvivors.CharacterPresentation._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:65)
+       [5] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [6] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [7] bool SwtorSurvivors.CharacterPresentation.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.CharacterPresentation_ScriptMethods.generated.cs:270)
+       [8] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+WARNING: AnimationNodeBlendSpace2D::add_blend_point: No name provided, using safe index as reference. In the future, empty names will be deprecated, so explicitly passing a name is recommended.
+   at: add_blend_point (scene/animation/animation_blend_space_2d.cpp:74)
+   C# backtrace (most recent call first):
+       [0] void Godot.NativeCalls.godot_icall_4_174(nint, nint, nint, Godot.Vector2*, int, Godot.NativeInterop.godot_string_name) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:1567)
+       [1] void Godot.AnimationNodeBlendSpace2D.AddBlendPoint(Godot.AnimationRootNode, Godot.Vector2, int, Godot.StringName) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/AnimationNodeBlendSpace2D.cs:255)
+       [2] void SwtorSurvivors.CharacterPresentation.AddDirectionalLocomotion(Godot.AnimationNodeBlendTree) (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\DirectionalLocomotion.cs:24)
+       [3] void SwtorSurvivors.CharacterPresentation.BuildTree() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:75)
+       [4] void SwtorSurvivors.CharacterPresentation._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:65)
+       [5] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [6] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [7] bool SwtorSurvivors.CharacterPresentation.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.CharacterPresentation_ScriptMethods.generated.cs:270)
+       [8] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+SOA_ROOM_ENVIRONMENT 11 source lights; 4 ember placements
+SOA_CHECK level-one finite run
+SOA_CHECK requested jungle selectors
+SOA_CHECK milestone levels
+SOA_CHECK native-art enemy spawns: res://Gameplay/Planets/Soa/Manka.tscn
+SOA_CHECK Primeval Manka Patriarch animation Idle
+SOA_CHECK Primeval Manka Patriarch animation Run
+SOA_CHECK Primeval Manka Patriarch animation Attack
+SOA_CHECK Primeval Manka Patriarch animation Hit
+SOA_CHECK Primeval Manka Patriarch animation Death
+SOA_CHECK native-art enemy spawns: res://Gameplay/Planets/Soa/Rakata.tscn
+SOA_CHECK Rakata Eternal Guardian animation Idle
+SOA_CHECK Rakata Eternal Guardian animation Run
+SOA_CHECK Rakata Eternal Guardian animation Attack
+SOA_CHECK Rakata Eternal Guardian animation Hit
+SOA_CHECK Rakata Eternal Guardian animation Death
+SOA_CHECK native-art enemy spawns: res://Gameplay/Planets/Soa/Watcher.tscn
+SOA_CHECK Rakata Eternal Watcher animation Idle
+SOA_CHECK Rakata Eternal Watcher animation Run
+SOA_CHECK Rakata Eternal Watcher animation Attack
+SOA_CHECK Rakata Eternal Watcher animation Hit
+SOA_CHECK Rakata Eternal Watcher animation Death
+SOA_CHECK native-art enemy spawns: res://Gameplay/Planets/Soa/Acklay.tscn
+SOA_CHECK Proto Acklay animation Idle
+SOA_CHECK Proto Acklay animation Run
+SOA_CHECK Proto Acklay animation Attack
+SOA_CHECK Proto Acklay animation Hit
+SOA_CHECK Proto Acklay animation Death
+SOA_CHECK progression level 2
+SOA_CHECK progression level 3
+SOA_CHECK progression level 4
+SOA_CHECK progression level 5
+SOA_CHECK progression level 6
+SOA_CHECK progression level 7
+SOA_CHECK progression level 8
+SOA_CHECK progression level 9
+SOA_CHECK progression level 10
+SOA_CHECK progression level 11
+SOA_CHECK progression level 12
+SOA_CHECK progression level 13
+SOA_CHECK progression level 14
+SOA_CHECK progression level 15
+SOA_CHECK progression level 16
+SOA_CHECK progression level 17
+SOA_CHECK progression level 18
+SOA_CHECK progression level 19
+SOA_CHECK progression level 20
+SOA_CHECK progression level 21
+SOA_CHECK progression level 22
+SOA_CHECK progression level 23
+SOA_CHECK progression level 24
+SOA_CHECK progression level 25
+SOA_CHECK progression level 26
+SOA_CHECK progression level 27
+SOA_CHECK progression level 28
+SOA_CHECK progression level 29
+SOA_CHECK progression level 30
+SOA_CHECK progression level 31
+SOA_CHECK progression level 32
+SOA_CHECK progression level 33
+SOA_CHECK progression level 34
+SOA_CHECK progression level 35
+SOA_CHECK progression level 36
+SOA_CHECK progression level 37
+SOA_CHECK progression level 38
+SOA_CHECK progression level 39
+SOA_CHECK progression level 40
+SOA_CHECK progression level 41
+SOA_CHECK progression level 42
+SOA_CHECK progression level 43
+SOA_CHECK progression level 44
+SOA_CHECK progression level 45
+SOA_CHECK progression level 46
+SOA_CHECK progression level 47
+SOA_CHECK progression level 48
+SOA_CHECK progression level 49
+SOA_CHECK progression level 50
+SOA_CHECK level cap
+SOA_CHECK milestone starts once 0
+SOA_CHECK boss safe grounded spawn 0
+SOA_CHECK milestone complete once 0
+SOA_CHECK milestone starts once 1
+SOA_CHECK Council concurrent cap
+SOA_CHECK Council guaranteed reward waits for last member
+SOA_CHECK Council guaranteed reward waits for last member
+SOA_CHECK Council guaranteed reward waits for last member
+SOA_CHECK Council cannot finish early
+SOA_CHECK Council concurrent cap
+SOA_CHECK Council guaranteed reward waits for last member
+SOA_CHECK Council cannot finish early
+SOA_CHECK Council concurrent cap
+SOA_CHECK Council guaranteed reward waits for last member
+SOA_CHECK Council cannot finish early
+SOA_CHECK Council concurrent cap
+SOA_CHECK Council guaranteed reward waits for last member
+SOA_CHECK Council cannot finish early
+SOA_CHECK Council concurrent cap
+SOA_CHECK Council guaranteed reward waits for last member
+SOA_CHECK Council cannot finish early
+SOA_CHECK Council concurrent cap
+SOA_CHECK Council guaranteed reward waits for last member
+SOA_CHECK Council cannot finish early
+SOA_CHECK Council concurrent cap
+SOA_CHECK Council guaranteed reward waits for last member
+SOA_CHECK Council cannot finish early
+SOA_CHECK Council concurrent cap
+SOA_CHECK Council guaranteed reward waits for last member
+SOA_CHECK Council cannot finish early
+SOA_CHECK Council concurrent cap
+SOA_CHECK Council guaranteed reward waits for last member
+SOA_CHECK Council cannot finish early
+SOA_CHECK Council concurrent cap
+SOA_CHECK Council guaranteed reward waits for last member
+SOA_CHECK Council cannot finish early
+SOA_CHECK Council concurrent cap
+SOA_CHECK Council guaranteed reward waits for last member
+SOA_CHECK Council cannot finish early
+SOA_CHECK Council concurrent cap
+SOA_CHECK Council guaranteed reward waits for last member
+SOA_CHECK Council cannot finish early
+SOA_CHECK Council concurrent cap
+SOA_CHECK Council guaranteed reward waits for last member
+SOA_CHECK Council cannot finish early
+SOA_CHECK Council concurrent cap
+SOA_CHECK all sixteen Council challengers defeated
+SOA_CHECK milestone complete once 1
+SOA_CHECK milestone starts once 2
+SOA_CHECK boss safe grounded spawn 2
+SOA_CHECK image then Soa
+SOA_CHECK Soa warns before damage
+SOA_CHECK Soa strike resolves
+SOA_CHECK milestone complete once 2
+SOA_CHECK milestone starts once 3
+SOA_CHECK boss safe grounded spawn 3
+SOA_CHECK image then Soa
+SOA_CHECK Soa warns before damage
+SOA_CHECK Soa strike resolves
+SOA_CHECK Soa breakable shield
+SOA_CHECK milestone complete once 3
+SOA_CHECK finite victory
+SOA_CHECK restart clears group and progression
+SOA_ENCOUNTER_SMOKE_PASSED

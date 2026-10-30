@@ -16,6 +16,8 @@ public partial class PlayerController : CharacterBody3D
     public CharacterPresentation Presentation { get; private set; } = null!;
     public Vector3 SpawnPosition { get; set; }
     public Vector3 ActualVelocity { get; private set; }
+    public bool StationaryForAbility=>ActualVelocity.LengthSquared()<.0009f && Velocity.LengthSquared()<.0009f && IsOnFloor()
+        && (TestInput??Input.GetVector("b1_left","b1_right","b1_forward","b1_back")).IsZeroApprox() && !Rig.RunForward;
     public Vector2? TestInput { get; set; }
     public int Recoveries { get; private set; }
     public int WallContacts { get; private set; }

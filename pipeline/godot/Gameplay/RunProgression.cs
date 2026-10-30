@@ -55,6 +55,7 @@ public partial class RunProgression : Node3D
     public event Action? Changed;
     private readonly List<UpgradeDefinition> _offers = new();
     private readonly Dictionary<string,int> _ranks = new();
+    private readonly HashSet<string> _talentAdmissions=new();
     private readonly List<ExperiencePickup> _pickups = new();
     private readonly RandomNumberGenerator _random = new();
     private float _damage, _tick, _range, _cooldown, _health, _speed;
@@ -92,7 +93,6 @@ public partial class RunProgression : Node3D
                 if(u.Effect==UpgradeEffect.Damage && World.RunConfiguration.Profile.Kit.Length>0)u.AbilityId="";
                 else if(u.Effect==UpgradeEffect.Damage)u.AbilityId=World.Combat.Definition.Id;
                 if(u.Effect==UpgradeEffect.Damage)u.Title="Combat Training";
-                if(World.RunConfiguration.AdvancedClassId=="assassin" && u.Effect==UpgradeEffect.Damage){u.AmountPerRank=.1f;u.MaximumRank=5;}
                 if(u.Effect is UpgradeEffect.Damage or UpgradeEffect.Range or UpgradeEffect.Cooldown or UpgradeEffect.Radius)u.Icon=World.Combat.Definition.Icon;
                 Upgrades.Add(u);
             }
@@ -100,7 +100,18 @@ public partial class RunProgression : Node3D
         if(World.RunConfiguration.AdvancedClassId=="sorcerer")
             foreach(string id in new[]{"unlock_lightningstrike","unlock_crushingdarkness","unlock_forcespeed","shock_cleave","strike_cleave","polarity_training","crushing_power","deathfield_cooldown"})
                 Upgrades.Add(GD.Load<UpgradeDefinition>($"res://Gameplay/Upgrades/{id}.tres"));
-        if(World.RunConfiguration.AdvancedClassId=="assassin")Upgrades.Add(new UpgradeDefinition {Id="unlock_lacerate",Title="Lacerate",Icon="spinningstrike",AbilityId="lacerate",Effect=UpgradeEffect.UnlockAbility,MaximumRank=1});
+        if(World.RunConfiguration.AdvancedClassId=="assassin") {
+            foreach(var old in Upgrades.Where(u=>u.Effect==UpgradeEffect.Damage || u.Id is "deathfield_power" or "d3_area_lacerate").ToArray())Upgrades.Remove(old);
+            foreach(var utility in Upgrades.Where(u=>u.Effect is UpgradeEffect.Health or UpgradeEffect.Speed or UpgradeEffect.Cooldown))utility.MaximumRank=2;
+            Upgrades.AddRange(World.Build.Pregame.AssassinRunPowers());
+            Upgrades.Add(new UpgradeDefinition {Id="unlock_lacerate",Title="Lacerate",Icon="spinningstrike",AbilityId="lacerate",Effect=UpgradeEffect.UnlockAbility,MaximumRank=1});
+            Upgrades.Add(new UpgradeDefinition {Id="unlock_electrocute",Title="Electrocute",Icon="electrocute",AbilityId="electrocute",Effect=UpgradeEffect.UnlockAbility,MaximumRank=1});
+        }
+        if(World.RunConfiguration.AdvancedClassId=="sniper") {
+            foreach(var old in Upgrades.Where(u=>u.Effect is UpgradeEffect.Damage or UpgradeEffect.Range or UpgradeEffect.Cooldown).ToArray())Upgrades.Remove(old);
+            foreach(var utility in Upgrades.Where(u=>u.Effect is UpgradeEffect.Health or UpgradeEffect.Speed))utility.MaximumRank=2;
+            Upgrades.AddRange(World.Build.Pregame.SniperRunPowers());
+        }
         if(World.RunConfiguration.AdvancedClassId=="marauder")
         {
             foreach(string id in new[]{"viciousslash","rupture","deadlysaber","annihilate","ravage","sweepingslash","saberthrow","deadlythrow","forcecrush","smash","batteringassault","massacre","gore","forcescream","intimidatingroar","cripplingslash","retaliation","viciousthrow","forcecharge","forcechoke"})
@@ -109,9 +120,19 @@ public partial class RunProgression : Node3D
                 Upgrades.Add(new UpgradeDefinition {Id=$"marauder_power_{id}",Title=$"{ability.Definition.Title} Mastery",
                     Icon=ability.Definition.Icon,AbilityId=id,Effect=UpgradeEffect.AbilityPower,DamagePerRank=.2f,MaximumRank=0});
             }
-            Upgrades.Add(new UpgradeDefinition {Id="marauder_blademaster",Title="Blademaster Cleave",Icon="mr_talent_bladerush",AbilityId="ravage",Effect=UpgradeEffect.Mechanic,Mechanic="mr_blademaster",MaximumRank=6,MechanicalDescription="Melee attacks gain a target and 10% secondary damage per rank, up to eight targets and full secondary damage."});
+            var carnageDrops=World.Build.Pregame.MarauderCarnageDrops().ToArray();
+            foreach(var old in Upgrades.Where(u=>carnageDrops.Any(c=>c.Mechanic==u.Mechanic)).ToArray())Upgrades.Remove(old);
+            Upgrades.AddRange(carnageDrops);
+            Upgrades.Add(new UpgradeDefinition {Id="marauder_blademaster",Title="Blademaster's Reach",Icon="mr_talent_bladerush",Effect=UpgradeEffect.Mechanic,Mechanic="mr_blademaster",Spec="carnage",MaximumRank=3,MechanicalDescription="Massacre and Ravage gain one cleave target and 8% radius per rank, up to three ranks. Secondary hits retain full damage."});
             foreach(var recovery in Upgrades.Where(u=>u.Effect==UpgradeEffect.Cooldown))recovery.MaximumRank=2;
         }
+        if(World.RunConfiguration.AdvancedClassId=="juggernaut") {
+            var drops=World.Build.Pregame.JuggernautDrops().ToArray();
+            foreach(var old in Upgrades.Where(u=>drops.Any(d=>d.Mechanic==u.Mechanic)).ToArray())Upgrades.Remove(old);
+            Upgrades.AddRange(drops);
+        }
+        if(World.RunConfiguration.AdvancedClassId=="operative" && !Upgrades.Any(u=>u.Effect==UpgradeEffect.UnlockAbility && u.AbilityId=="blowforblow"))
+            Upgrades.Add(new UpgradeDefinition {Id="unlock_blowforblow",Title="Blow for Blow",Icon="shieldprobe",AbilityId="blowforblow",Effect=UpgradeEffect.UnlockAbility,MaximumRank=1});
         foreach(var milestone in SpecMilestones.Catalog(World))Upgrades.Add(milestone);
         foreach(var training in World.Build.Pregame.RunUpgrades())Upgrades.Add(training);
         var rarity=GD.Load<RarityTuning>("res://Gameplay/Upgrades/rarity.tres");
@@ -201,14 +222,19 @@ public partial class RunProgression : Node3D
         var excludedAbilities=excluded.Where(u=>u.Effect==UpgradeEffect.UnlockAbility).Select(u=>u.AbilityId).ToHashSet();
         var eligible=Upgrades.Where(u=>(u.MilestoneLevel==0 && !SpecMilestones.Reserved(World,u) || u.MilestoneLevel==level) && IsEligible(u)).ToList();
         eligible.RemoveAll(u=>excludedIds.Contains(u.Id) || u.Effect==UpgradeEffect.UnlockAbility && excludedAbilities.Contains(u.AbilityId));
+        // Survival remains a periodic option; the growing owned kit supplies the normal choices.
+        if(World.RunConfiguration.AdvancedClassId is "assassin" or "sniper" && level%4!=0)
+            eligible.RemoveAll(u=>u.Effect is UpgradeEffect.Health or UpgradeEffect.Speed);
+        if(World.RunConfiguration.AdvancedClassId is "operative" or "sniper" && level<7)eligible.RemoveAll(u=>u.Effect==UpgradeEffect.UnlockAbility && World.Abilities.Find(u.AbilityId)?.Definition.Category==AbilityCategory.Utility);
         var abilities=eligible.Where(u=>u.Effect==UpgradeEffect.UnlockAbility).GroupBy(u=>u.AbilityId).Select(g=>g.First()).ToList();
         // The level roll is stable across rerolls/banishes; pity tracks actual acquisition.
         if(_offerLevel!=level){_offerLevel=level;_abilityOffer=_random.Randf()<AbilityOfferChance(level);}
-        if(count==1 && excluded.Any(u=>u.Effect==UpgradeEffect.UnlockAbility && !_banished.Contains(u.Id)))abilities.Clear();
+        if(count==1 && excluded.Any(u=>u.Effect==UpgradeEffect.UnlockAbility && !_banished.Contains(u.Id)) &&
+            !(World.RunConfiguration.AdvancedClassId=="sniper" && !eligible.Any(u=>u.Effect!=UpgradeEffect.UnlockAbility)))abilities.Clear();
         AbilityChoice=false;
         eligible.RemoveAll(u=>u.Effect==UpgradeEffect.UnlockAbility);
         UpgradeDefinition? offeredAbility=null;
-        if(abilities.Count>0 && (_abilityOffer || eligible.Count==0))
+        if(abilities.Count>0 && (_abilityOffer || eligible.Count==0 || World.RunConfiguration.AdvancedClassId is "assassin" or "sniper" && eligible.Count<count))
         {
             float roll=_random.Randf()*abilities.Sum(a=>World.Build.Pregame.OfferWeight(a));
             offeredAbility=abilities.Last();
@@ -240,6 +266,17 @@ public partial class RunProgression : Node3D
                 result.Add(core);if(result.Count==Math.Min(level<=3?2:1,count))break;
             }
         }
+        if(World.RunConfiguration.AdvancedClassId is "operative" or "sniper" && level<=6 && count>1) {
+            int coreCount=Math.Min(level<=3?2:1,count);
+            var early=World.Build.Pregame.AgentEarlyAbilities;
+            // A blank talent profile still gets an opening kit without being forced into Marksmanship.
+            if(early.Length==0)early=abilities.Where(u=>World.Abilities.Find(u.AbilityId)?.Definition.Category==AbilityCategory.Offensive).OrderBy(_=>_random.Randf()).Select(u=>u.AbilityId).ToArray();
+            foreach(string id in early) {
+                var core=abilities.FirstOrDefault(a=>a.AbilityId==id);
+                if(core!=null && !result.Contains(core))result.Add(core);
+                if(result.Count>=coreCount)break;
+            }
+        }
         if(result.Count==0 && offeredAbility!=null)result.Add(offeredAbility);
         if(World.RunConfiguration.AdvancedClassId=="juggernaut" && level<=6 && count>1 && result.Count<count) {
             while(result.Count<count) {
@@ -255,23 +292,47 @@ public partial class RunProgression : Node3D
             // Choose class scope before rarity, reserving two slots and one damage upgrade.
             bool ClassUpgrade(UpgradeDefinition u)=>u.Id.StartsWith("marauder_",StringComparison.Ordinal) || u.Mechanic.StartsWith("mr_",StringComparison.Ordinal);
             var pool=eligible.ToArray();
+            if(World.RunConfiguration.AdvancedClassId is "assassin" or "sniper") {
+                bool ClassPower(UpgradeDefinition u)=>u.Id.StartsWith("assassin_",StringComparison.Ordinal) || u.Id.StartsWith("sniper_",StringComparison.Ordinal);
+                bool Interaction(UpgradeDefinition u)=>u.Mechanic.StartsWith("as_",StringComparison.Ordinal) || u.Mechanic.StartsWith("sn_",StringComparison.Ordinal);
+                var preferred=pool.Where(ClassPower).ToArray();
+                var interactions=preferred.Where(Interaction).ToArray();
+                var damage=preferred.Where(u=>u.Effect==UpgradeEffect.AbilityPower).ToArray();
+                if(interactions.Length>0 && !result.Any(Interaction))pool=interactions;
+                else if(damage.Length>0 && !result.Any(u=>u.Effect==UpgradeEffect.AbilityPower))pool=damage;
+                else if(preferred.Length>0 && result.Count(ClassPower)<Math.Min(2,count))pool=preferred;
+                // Prefer a different equipped ability on each card when the kit permits it.
+                var distinct=pool.Where(u=>!result.Any(r=>r.AbilityId==u.AbilityId)).ToArray();
+                if(distinct.Length>0)pool=distinct;
+            }
             if(World.RunConfiguration.AdvancedClassId=="marauder")
             {
                 var preferred=pool.Where(ClassUpgrade).ToArray();
                 var damage=preferred.Where(u=>u.Effect==UpgradeEffect.AbilityPower && u.DamagePerRank>0).ToArray();
-                if(damage.Length>0 && !result.Any(u=>u.Effect==UpgradeEffect.AbilityPower && u.DamagePerRank>0))pool=damage;
+                var interactions=preferred.Where(u=>u.Spec=="carnage" && u.Effect==UpgradeEffect.Mechanic).ToArray();
+                if(World.Build.Pregame.MarauderCarnagePreferred && interactions.Length>0 && !result.Any(u=>u.Spec=="carnage" && u.Effect==UpgradeEffect.Mechanic))pool=interactions;
+                else if(damage.Length>0 && !result.Any(u=>u.Effect==UpgradeEffect.AbilityPower && u.DamagePerRank>0))pool=damage;
                 else if(preferred.Length>0 && result.Count(ClassUpgrade)<Math.Min(2,count))pool=preferred;
             }
             var baseline=pool.Where(u=>!u.D2Choice).ToArray();
             var rarityPool=baseline.Length>0?baseline:pool;
             var tier=rarityPool[_random.RandiRange(0,rarityPool.Length-1)].Rarity;
             var choices=pool.Where(u=>u.Rarity==tier).ToArray();
-            float Weight(UpgradeDefinition u)=>(u.Effect is UpgradeEffect.Mechanic or UpgradeEffect.UnlockAbility or UpgradeEffect.AbilityPower?3:1)*World.Build.Pregame.OfferWeight(u);
+            float Weight(UpgradeDefinition u)=>(u.Effect is UpgradeEffect.Mechanic or UpgradeEffect.UnlockAbility or UpgradeEffect.AbilityPower?3:1)*World.Build.Pregame.OfferWeight(u)
+                /(World.RunConfiguration.AdvancedClassId is "assassin" or "sniper"?1+.75f*Rank(u):1);
             float roll=_random.Randf()*choices.Sum(Weight);var chosen=choices.Last();
             foreach(var choice in choices){roll-=Weight(choice);if(roll<=0){chosen=choice;break;}}
             result.Add(chosen);
             eligible.RemoveAll(u=>u.Id==chosen.Id || chosen.Effect==UpgradeEffect.UnlockAbility && u.Effect==UpgradeEffect.UnlockAbility && u.AbilityId==chosen.AbilityId);
+            if(World.RunConfiguration.AdvancedClassId is "assassin" or "sniper" && chosen.Effect is UpgradeEffect.Health or UpgradeEffect.Speed)
+                eligible.RemoveAll(u=>u.Effect is UpgradeEffect.Health or UpgradeEffect.Speed);
         }
+        if(World.RunConfiguration.AdvancedClassId is "assassin" or "sniper")
+            while(result.Count<count) {
+                var fallback=abilities.Where(u=>!result.Any(r=>r.AbilityId==u.AbilityId)).ToArray();
+                if(fallback.Length==0)break;
+                result.Add(fallback[_random.RandiRange(0,fallback.Length-1)]);
+            }
         return result;
     }
 
@@ -321,9 +382,17 @@ public partial class RunProgression : Node3D
 
     public bool IsEligible(UpgradeDefinition upgrade)
     {
+        if(World.Build.Pregame.AgentConcealment && upgrade.AbilityId=="carbineburst")return false;
+        if(upgrade.AbilityId=="electrocute" && !World.Build.Pregame.AssassinDeception)return false;
+        if(upgrade.AbilityId=="blowforblow" && !World.Build.Pregame.AgentCounterstrikeReady)return false;
+        if(World.RunConfiguration.AdvancedClassId=="assassin" && !World.Build.Pregame.AssassinUpgradeUsable(upgrade))return false;
+        if(World.RunConfiguration.AdvancedClassId=="sniper" && !World.Build.Pregame.SniperUpgradeUsable(upgrade))return false;
+        if(World.Build.Pregame.AgentVenomousBlades && upgrade.AbilityId=="dart")return false;
         if(_banished.Contains(upgrade.Id) || _banishedAbilities.Contains(upgrade.AbilityId))return false;
         if(upgrade.Effect==UpgradeEffect.TickRate && !World.Abilities.Abilities.Any(a=>a.Unlocked && (a.ChannelSeconds>0 || a.Definition.PeriodicDuration>0) && (upgrade.AbilityId=="" || upgrade.AbilityId==a.Definition.Id)))return false;
         if(World.RunConfiguration.AdvancedClassId=="marauder" && upgrade.Mechanic.StartsWith("mr_",StringComparison.Ordinal) && upgrade.Mechanic!="mr_blademaster" && World.Build.Pregame.MarauderTalentRank(upgrade.Mechanic)+Rank(upgrade)>=1)return false;
+        if(World.RunConfiguration.AdvancedClassId=="marauder" && !World.Build.Pregame.MarauderUpgradeUsable(upgrade.Mechanic))return false;
+        if(World.RunConfiguration.AdvancedClassId=="juggernaut" && !World.Build.Pregame.JuggernautUpgradeUsable(upgrade))return false;
         if(upgrade.Mechanic=="jg_convergence" && World.Abilities.Find("forcecrush")?.Unlocked!=true)return false;
         if(upgrade.Mechanic=="haste" && World.Abilities.Equipped(AbilityCategory.Utility)==0)return false;
         if(upgrade.RequiresUpgrade!="" && _ranks.GetValueOrDefault(upgrade.RequiresUpgrade)==0)return false;
@@ -357,7 +426,7 @@ public partial class RunProgression : Node3D
         bool oldFree=old.InheritsFreeSlot,incomingFree=incoming.InheritsFreeSlot,oldSlotless=old.Definition.Slotless;
         old.SetUnlocked(false);old.InheritsFreeSlot=false;
         incoming.InheritsFreeSlot=oldFree || (old.Definition.ReplaceableStarter || old.Definition.Id is "affliction" or "lacerate" or "viciousslash") && oldSlotless;
-        if(old.Definition.Id=="lacerate")old.Definition.Slotless=false;
+        if(old.Definition.ReplaceableStarter && oldSlotless)old.Definition.Slotless=false;
         _replacement=null;
         if(ApplyChoice(chosen,_offers.IndexOf(chosen)))
         {
@@ -395,6 +464,10 @@ public partial class RunProgression : Node3D
     private void ApplyStats(float heal=0)
     {
         World.Abilities.Find("polarityshift")?.SetUnlocked(World.Build.Pregame.PolarityReady);
+        AdmitTalentAbility("blowforblow",World.Build.Pregame.AgentCounterstrikeReady);
+        AdmitTalentAbility("electrocute",World.Build.Pregame.AssassinDeception);
+        if(World.Build.Pregame.AgentConcealment)World.Abilities.Find("carbineburst")?.SetUnlocked(false);
+        World.Build.Pregame.ReplaceAgentDart();
         foreach(var ability in World.Abilities.Abilities)
         {
             string id=ability.Definition.Id;var original=_abilityBases[id];
@@ -421,11 +494,18 @@ public partial class RunProgression : Node3D
         World.Player.MoveSpeed=_speed*(1+Bonus(UpgradeEffect.Speed))*World.Build.SpeedMultiplier;
     }
     public void Recalculate() => ApplyStats();
+    private void AdmitTalentAbility(string id,bool ready)
+    {
+        var ability=World.Abilities.Find(id);if(ability==null)return;
+        if(!ready){ability.SetUnlocked(false);_talentAdmissions.Remove(id);return;}
+        if(_talentAdmissions.Contains(id))return;
+        if(World.Abilities.Unlock(id))_talentAdmissions.Add(id);
+    }
     public void ResumePending() { if(!Selecting)TryLevel();Changed?.Invoke(); }
 
     public void ResetRun()
     {
-        CancelPresentation(); _ranks.Clear(); _banished.Clear(); _banishedAbilities.Clear();
+        CancelPresentation(); _ranks.Clear(); _banished.Clear(); _banishedAbilities.Clear();_talentAdmissions.Clear();
         BanishesRemaining=3; RerollsRemaining=3; SkipsRemaining=2; AbilityChoice=false; _lastAbilityLevel=1; _offerLevel=0; Level=1; Experience=0; ElapsedSeconds=0;
         World.Artifacts?.Clear();World.Build.Reset();
         World.Build.Pregame.Reset();

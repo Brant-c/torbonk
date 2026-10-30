@@ -36,16 +36,24 @@ def main():
     maxz = max(t['position'][2] + t['vertices'][-1][2] for t in terrain)
     m = R['propMarginXZ']; ylo, yhi = R['propYRange']
     candidates = []
+    def visible_model(rec):
+        path = assets.get(rec['asset'], '')
+        return (path.endswith('.gr2') and not any(s in path for s in
+                ['/dbo_', 'occluder', 'fadeportal', 'collision', 'blocker', 'trigger'])
+                and rec['fields'].get('Hidden', 'false') == 'false')
     for rec in recs.values():
         path = assets.get(rec['asset'], '')
         if not path.endswith('.gr2'): continue
         f = rec['fields']; p = vec(f, 'Position', '(0,0,0)')
+        if R.get('includeRoomArchitecture', False):
+            if visible_model(rec) and '/art/static/area/' in path: candidates.append(rec['id'])
+            continue
         if f.get('ParentInstance', '0') == '0' and minx - m <= p[0] <= maxx + m and minz - m <= p[2] <= maxz + m and ylo <= p[1] <= yhi:
             if any(s in path for s in ['/dbo_', 'occluder', 'fadeportal', 'collision', 'blocker', 'trigger']): continue
             if f.get('Hidden', 'false') == 'false': candidates.append(rec['id'])
     selected = set(candidates)
     for _ in range(len(recs)):
-        add = {r['id'] for r in recs.values() if r['fields'].get('ParentInstance', '0') in selected}
+        add = set() if R.get('includeRoomArchitecture', False) else {r['id'] for r in recs.values() if r['fields'].get('ParentInstance', '0') in selected}
         add |= {recs[i]['fields']['ParentInstance'] for i in selected if recs[i]['fields'].get('ParentInstance', '0') != '0'}
         if add <= selected: break
         assert add <= recs.keys(), 'parent outside selected room'
@@ -56,6 +64,10 @@ def main():
         placements.append(dict(id=i, asset=rec['asset'], path=assets.get(rec['asset'], ''), room=R['room'], sourceLine=rec['line'],
                                parent=f.get('ParentInstance', '0'), position=vec(f, 'Position', '(0,0,0)'),
                                rotation=vec(f, 'Rotation', '(0,0,0)'), scale=vec(f, 'Scale', '(1,1,1)'), fields=f))
+    # Utility parents carry transforms only; never render their helper meshes.
+    if R.get('includeRoomArchitecture', False):
+        for p in placements:
+            if not visible_model(recs[p['id']]): p['path'] = ''
     modelpaths = sorted({p['path'] for p in placements if p['path'].endswith('.gr2') and p['fields'].get('Hidden', 'false') == 'false'})
     assert len(modelpaths) <= R['maximumUniqueModels'] and len(placements) <= R['maximumPlacements'], (len(modelpaths), len(placements))
     materials = {}

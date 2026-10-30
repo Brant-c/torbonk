@@ -10,7 +10,7 @@ try {
     $profileDir=Join-Path $env:APPDATA 'Godot/app_userdata/SWTOR Survivors - Static Asset Inspection'
     New-Item -ItemType Directory -Force -Path $profileDir|Out-Null
     $ranks=@{}
-    foreach($id in @('darkness.dark_ward','darkness.lightning_reflexes','darkness.shroud_of_darkness','darkness.premonition','darkness.hollow','deception.thrashing_blades','deception.duplicity','deception.chain_shock')){$ranks[$id]=1}
+    foreach($id in @('darkness.dark_ward','darkness.lightning_reflexes','darkness.shroud_of_darkness','darkness.premonition','darkness.hollow','deception.thrashing_blades','deception.induction','deception.shadow_training','deception.saber_conduit','deception.dark_swell','deception.chain_shock')){$ranks[$id]=1}
     @{SchemaVersion=1;Profiles=@{assassin=$ranks}}|ConvertTo-Json -Depth 6|Set-Content (Join-Path $profileDir 'talent-profiles.json')
     if(!$SkipImport){& $godot --headless --editor --path $project --import --quit *> (Join-Path $PSScriptRoot 'logs/assassin-presentation-import.log');if($LASTEXITCODE -ne 0){throw 'Import failed'}}
     $argsList=@('--headless','--path',$project,'res://Gameplay/GameWorld.tscn','--quit-after','2500','--','--assassin-presentation-smoke','--advanced-class=assassin')

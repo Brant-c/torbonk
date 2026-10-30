@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "agentcull"
+StartsUnlocked = false
+Title = "Cull"
+Icon = "cull"
+Damage = 12
+CooldownSeconds = 5
+Range = 1.15
+Radius = 0.22
+Area = 4
+TickSeconds = 0.4
+Description = "Repeated fire gains bonus damage for each of your two Agent poisons on the target."
+StartClip = "Agent/RifleAutoStart"
+LoopClip = "Agent/RifleAutoLoop"
+EndClip = "Agent/RifleAutoEnd"
+ChannelSeconds = 1.2
+WindupSeconds = 0.0
+PresentationKind = "rifle"
+MuzzleBone = "RightWeapon"
+ImpactTailsOnTargetDeath = true
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+CastAudio = ""
+RecoverySeconds = 0.3
+GestureSeconds = 0.65
+ShotAudio = "res://Assets/D3/Audio/28023533.wav"
+RequireGesture = true
+
+SplashMultiplier = 0.8
+
+MaintainChannelGesture = true

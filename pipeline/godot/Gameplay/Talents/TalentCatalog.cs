@@ -61,6 +61,9 @@ public sealed class TalentCatalog
         var marauder=JsonSerializer.Deserialize<TalentCatalog>(FileAccess.GetFileAsString("res://Gameplay/Talents/marauder.json"))!;
         catalog.Trees=catalog.Trees.Concat(marauder.Trees).ToArray();
         catalog.Talents=catalog.Talents.Concat(marauder.Talents).ToArray();
+        var agent=JsonSerializer.Deserialize<TalentCatalog>(FileAccess.GetFileAsString("res://Gameplay/Talents/agent.json"))!;
+        catalog.Trees=catalog.Trees.Concat(agent.Trees).ToArray();
+        catalog.Talents=catalog.Talents.Concat(agent.Talents).ToArray();
         if(catalog.Budget<0 || catalog.Talents.Select(t=>t.Id).Distinct().Count()!=catalog.Talents.Length ||
             catalog.Talents.Any(t=>t.Cost<1 || t.MaxRank<1 || t.RequiredPoints<0 || t.Tier<0 ||
                 !catalog.Trees.Any(tree=>tree.Id==t.Tree) || t.Prerequisites.Any(p=>p.Rank<1 ||
@@ -69,6 +72,7 @@ public sealed class TalentCatalog
         return catalog;
     }
     public TalentDefinition[] ForClass(string classId)=>Talents.Where(t=>t.Classes.Contains(classId)).ToArray();
+    public int BudgetFor(string classId)=>classId is "operative" or "sniper"?10:Budget;
     public int Spent(IReadOnlyDictionary<string,int> ranks)=>Talents.Sum(t=>ranks.GetValueOrDefault(t.Id)*t.Cost);
     public int TreeSpent(string tree,IReadOnlyDictionary<string,int> ranks,int belowTier=int.MaxValue)=>
         Talents.Where(t=>t.Tree==tree && t.Tier<belowTier).Sum(t=>ranks.GetValueOrDefault(t.Id)*t.Cost);
@@ -79,7 +83,7 @@ public sealed class TalentCatalog
         if(TreeSpent(t.Tree,ranks,t.Tier)<t.RequiredPoints)return $"Requires {t.RequiredPoints} points in earlier tiers";
         foreach(var p in t.Prerequisites)
             if(ranks.GetValueOrDefault(p.Id)<p.Rank)return $"Requires {Talents.First(a=>a.Id==p.Id).Name} ({p.Rank})";
-        return budget && Spent(ranks)+t.Cost>Budget?"No points available":null;
+        return budget && Spent(ranks)+t.Cost>BudgetFor(classId)?"No points available":null;
     }
     // Replay ranks in dependency order. Unknown IDs, negative ranks, invalid prerequisites and excess
     // points are discarded deterministically; later tiers cannot fund their own unlock requirement.
@@ -87,6 +91,16 @@ public sealed class TalentCatalog
     {
         var result=new Dictionary<string,int>();
         if(saved==null)return result;
+        // Old Sniper profiles used Operative's shared Lethality IDs. Preserve the
+        // chosen positions without importing those effects into the new Sniper tree.
+        if(classId=="sniper") {
+            var migrated=new Dictionary<string,int>(saved);
+            foreach(var pair in saved.Where(p=>p.Key.StartsWith("agent_lethality.",StringComparison.Ordinal))) {
+                string id="sniper_lethality."+pair.Key.Split('.',2)[1];
+                if(!migrated.ContainsKey(id))migrated[id]=pair.Value;
+            }
+            saved=migrated;
+        }
         foreach(var t in ForClass(classId).OrderBy(t=>t.Tier).ThenBy(t=>t.Id))
             for(int rank=0;rank<Math.Clamp(saved.GetValueOrDefault(t.Id),0,t.MaxRank);rank++)
             {if(Locked(classId,t,result)!=null)break;result[t.Id]=rank+1;}

@@ -1,0 +1,215 @@
+{
+  "SchemaVersion": 1,
+  "Unlocked": [
+    "level1.chest",
+    "level1.hands",
+    "level1.legs",
+    "level1.feet",
+    "level1.waist",
+    "red_saber",
+    "d3.war.chest",
+    "d3.war.hands",
+    "d3.war.legs",
+    "d3.war.feet",
+    "d3.war.waist",
+    "d3.saber.main_hand",
+    "d3.saber.off_hand",
+    "d3.staff.main_hand",
+    "d3.spy.chest",
+    "d3.spy.hands",
+    "d3.spy.legs",
+    "d3.spy.feet",
+    "d3.spy.waist",
+    "d3.sniper.main_hand",
+    "d3.rifle.main_hand",
+    "d3.bh.chest",
+    "d3.bh.hands",
+    "d3.bh.legs",
+    "d3.bh.feet",
+    "d3.bh.waist",
+    "d3.pistol.main_hand",
+    "d3.pistol.off_hand",
+    "ss_a04.feet",
+    "ss_a04.hands",
+    "ss_a04.waist",
+    "ss_a04.legs",
+    "wardrobe.spy.feet",
+    "wardrobe.bh.feet",
+    "wardrobe.spy.hands",
+    "wardrobe.bh.hands",
+    "wardrobe.spy.waist",
+    "wardrobe.bh.waist",
+    "wardrobe.spy.legs",
+    "wardrobe.bh.legs",
+    "wardrobe.spy.chest",
+    "wardrobe.bh.chest",
+    "wardrobe.inq.feet",
+    "wardrobe.inq.hands",
+    "ss_a04.chest",
+    "wardrobe.inq.waist",
+    "wardrobe.inq.legs",
+    "wardrobe.inq.chest",
+    "wardrobe.war.feet",
+    "wardrobe.war.hands",
+    "wardrobe.war.waist",
+    "wardrobe.war.legs",
+    "wardrobe.war.chest",
+    "collectible.inq.head",
+    "collectible.saber1.main_hand",
+    "collectible.saber1.off_hand",
+    "collectible.staff1.main_hand",
+    "collectible.saber2.main_hand",
+    "collectible.saber2.off_hand",
+    "collectible.staff2.main_hand",
+    "collectible.war.head"
+  ],
+  "Milestones": [
+    "korriban.wave2",
+    "korriban.wave3",
+    "korriban.wave4",
+    "korriban.wave5",
+    "empire.heroic.spy.feet",
+    "empire.heroic.bh.feet",
+    "empire.heroic.spy.hands",
+    "empire.heroic.bh.hands",
+    "empire.heroic.spy.waist",
+    "empire.heroic.bh.waist",
+    "empire.heroic.spy.legs",
+    "empire.heroic.bh.legs",
+    "empire.heroic.spy.chest",
+    "empire.heroic.bh.chest",
+    "empire.heroic.inq.feet",
+    "empire.heroic.inq.hands",
+    "korriban.boss",
+    "empire.heroic.inq.waist",
+    "empire.heroic.inq.legs",
+    "empire.heroic.inq.chest",
+    "empire.heroic.war.feet",
+    "empire.heroic.war.hands",
+    "empire.heroic.war.waist",
+    "empire.heroic.war.legs",
+    "empire.heroic.war.chest",
+    "collectible.inq.head",
+    "collectible.saber1",
+    "collectible.staff1",
+    "collectible.saber2",
+    "collectible.staff2",
+    "collectible.war.head"
+  ],
+  "Profiles": {
+    "sith_warrior/juggernaut": {
+      "DefaultLoadout": "d3.juggernaut",
+      "Equipped": {
+        "chest": "level1.chest",
+        "hands": "wardrobe.inq.hands",
+        "legs": "level1.legs",
+        "feet": "level1.feet",
+        "waist": "d3.war.waist",
+        "main_hand": "red_saber",
+        "head": "collectible.war.head"
+      }
+    },
+    "sith_warrior/marauder": {
+      "DefaultLoadout": "d3.marauder",
+      "Equipped": {
+        "chest": "ss_a04.chest",
+        "hands": "wardrobe.war.hands",
+        "legs": "ss_a04.legs",
+        "feet": "ss_a04.feet",
+        "head": "collectible.inq.head"
+      }
+    },
+    "sith_inquisitor/sorcerer": {
+      "DefaultLoadout": "inquisitor_level1",
+      "Equipped": {
+        "feet": "wardrobe.inq.feet",
+        "hands": "wardrobe.inq.hands",
+        "legs": "wardrobe.inq.legs",
+        "chest": "wardrobe.inq.chest",
+        "waist": "wardrobe.inq.waist",
+        "main_hand": "red_saber",
+        "head": "collectible.war.head"
+      }
+    },
+    "sith_inquisitor/assassin": {
+      "DefaultLoadout": "d3.assassin",
+      "Equipped": {
+        "feet": "ss_a04.feet"
+      }
+    },
+    "imperial_agent/sniper": {
+      "DefaultLoadout": "d3.sniper",
+      "Equipped": {
+        "chest": "wardrobe.spy.chest",
+        "hands": "wardrobe.spy.hands",
+        "legs": "wardrobe.spy.legs",
+        "feet": "wardrobe.spy.feet",
+        "waist": "wardrobe.spy.waist",
+        "main_hand": "d3.rifle.main_hand"
+      }
+    },
+    "imperial_agent/operative": {
+      "DefaultLoadout": "d3.operative",
+      "Equipped": {
+        "chest": "wardrobe.spy.chest",
+        "hands": "wardrobe.spy.hands",
+        "legs": "wardrobe.spy.legs",
+        "feet": "wardrobe.spy.feet",
+        "waist": "d3.spy.waist",
+        "main_hand": "d3.rifle.main_hand"
+      }
+    },
+    "bounty_hunter/mercenary": {
+      "DefaultLoadout": "d3.mercenary",
+      "Equipped": {
+        "chest": "wardrobe.spy.chest",
+        "hands": "wardrobe.bh.hands",
+        "legs": "wardrobe.bh.legs",
+        "feet": "wardrobe.bh.feet",
+        "waist": "wardrobe.bh.waist"
+      }
+    },
+    "bounty_hunter/powertech": {
+      "DefaultLoadout": "d3.powertech",
+      "Equipped": {
+        "waist": "wardrobe.bh.waist",
+        "feet": "wardrobe.bh.feet",
+        "legs": "wardrobe.bh.legs",
+        "hands": "wardrobe.bh.hands",
+        "chest": "wardrobe.bh.chest"
+      }
+    },
+    "jedi_knight/guardian": {
+      "DefaultLoadout": "",
+      "Equipped": {}
+    },
+    "jedi_knight/sentinel": {
+      "DefaultLoadout": "",
+      "Equipped": {}
+    },
+    "jedi_consular/sage": {
+      "DefaultLoadout": "",
+      "Equipped": {}
+    },
+    "jedi_consular/shadow": {
+      "DefaultLoadout": "",
+      "Equipped": {}
+    },
+    "smuggler/gunslinger": {
+      "DefaultLoadout": "",
+      "Equipped": {}
+    },
+    "smuggler/scoundrel": {
+      "DefaultLoadout": "",
+      "Equipped": {}
+    },
+    "trooper/commando": {
+      "DefaultLoadout": "",
+      "Equipped": {}
+    },
+    "trooper/vanguard": {
+      "DefaultLoadout": "",
+      "Equipped": {}
+    }
+  }
+}

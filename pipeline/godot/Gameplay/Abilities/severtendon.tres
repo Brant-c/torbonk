@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+
+Id = "severtendon"
+
+Title = "Sever Tendon"
+
+Icon = "severtendon"
+
+StartsUnlocked = false
+
+NearbyTriggerCount = 1
+
+KnockbackDistance = 0
+
+RequireGesture = true
+
+Damage = 30
+
+CooldownSeconds = 7
+
+Range = 0.42
+
+Radius = 0.32
+
+Area = 5
+
+SplashMultiplier = 1
+
+SlowFactor = 0.3
+
+SlowSeconds = 5
+
+WindupSeconds = 0.35
+
+ChannelSeconds = 0
+
+GestureSeconds = 1.066667
+
+RecoverySeconds = 1.066667
+
+StartClip = "Agent/Shiv"
+
+LoopClip = "Agent/Shiv"
+
+PresentationKind = "agent"
+
+ImpactAudio = "res://Assets/Agent/Audio/142346317.wav"
+
+Description = "Cuts nearby tendons, dealing knife damage and slowing enemies by 70% for five seconds."

@@ -35,7 +35,7 @@ public partial class RunMenu : CanvasLayer
         }
         Icon("RunReturn","bwaui_buttons_66","Return to Main Menu",()=>World.ReturnToMainMenu());
         Icon("RunRestart","bwaui_buttons_69","Restart Run [R]",Restart);
-        Icon("RunCollections","bwaui_buttons_135","Collections",OpenCollections);
+        Icon("RunCollections","bwaui_buttons_242","Collections",OpenCollections);
         _root.Resized+=Layout;
     }
     private void BeginOverlay()

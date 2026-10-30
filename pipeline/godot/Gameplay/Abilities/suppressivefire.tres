@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "suppressivefire"
+StartsUnlocked = false
+Title = "Suppressive Fire"
+Icon = "barrage"
+Damage = 23
+CooldownSeconds = 9
+Range = 2.2
+Radius = 0.42
+Area = 1
+TickSeconds = 0.5
+Description = "Requires cover to begin. Sustained suppression marks a fixed area; the active barrage continues after leaving cover."
+StartClip = "Agent/RifleAutoStart"
+LoopClip = "Agent/RifleAutoLoop"
+EndClip = "Agent/RifleAutoEnd"
+ChannelSeconds = 3
+WindupSeconds = 0.0
+PresentationKind = "rifle"
+MuzzleBone = "RightWeapon"
+ImpactTailsOnTargetDeath = true
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+CastAudio = ""
+RecoverySeconds = 0.3
+GestureSeconds = 0.65
+ShotAudio = "res://Assets/D3/Audio/28023533.wav"
+RequireGesture = true
+
+TargetRule = 1
+
+MaintainChannelGesture = true
+
+PersistentArea = true

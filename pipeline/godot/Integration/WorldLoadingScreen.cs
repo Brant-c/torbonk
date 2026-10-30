@@ -21,7 +21,7 @@ public partial class WorldLoadingScreen : CanvasLayer
         var black = new ColorRect { Color = Colors.Black }; root.AddChild(black);
         black.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.FullRect);
         _canvas = new Control { Size = new Vector2(1600, 900), Theme = FrontendSkin.MakeTheme() }; root.AddChild(_canvas);
-        string prefix = Run.MapId switch { "balmorra" => "bal", "dromund" => "dro", _ => Run.MapId };
+        string prefix = Run.MapId switch { "soa_p3" => "eternity_vault", "balmorra" => "bal", "dromund" => "dro", _ => Run.MapId };
         Picture("background_tile", Vector2.Zero, new Vector2(1600,900));
         Picture(prefix + "_overlay", new Vector2(0,100), new Vector2(1600,675));
         Picture("slice_9", new Vector2(595,10), new Vector2(410,133));

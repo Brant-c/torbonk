@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "plasmaprobe"
+StartsUnlocked = false
+Title = "Plasma Probe"
+Icon = "plasmaprobe"
+Damage = 24
+CooldownSeconds = 12
+Range = 2.2
+Radius = 0.38
+Area = 1
+TargetRule = 1
+SplashMultiplier = 1.0
+RecoverySeconds = 1.333
+GestureSeconds = 1.2
+PeriodicDamage = 0
+PeriodicDuration = 0
+PeriodicInterval = 1
+DamageType = 0
+Description = "Requires cover to deploy. A stationary plasma probe burns all enemies in its marked area for eight seconds, persisting after you leave cover."
+StartClip = "Agent/Detonator"
+LoopClip = "Agent/Detonator"
+EndClip = ""
+ChannelSeconds = 8
+WindupSeconds = 0.45
+PresentationKind = "agent"
+MuzzleBone = "LeftWrist"
+EffectTint = Color(0.16, 0.713, 0.007, 1)
+ImpactTailsOnTargetDeath = true
+CastAudio = "res://Assets/Agent/Audio/85963594.wav"
+ImpactAudio = ""
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+
+TickSeconds = 1
+
+DetachedArea = true
+
+PersistentArea = true

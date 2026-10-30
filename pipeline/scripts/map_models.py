@@ -46,7 +46,9 @@ for path,info in sorted(selection['materials'].items()):
     if info['alpha'] in ['Test','Full']:
         links.new(baseNode.outputs['Alpha'],bsdf.inputs['Alpha'])
         # Preserve diffuse alpha in the portable albedo image.
-        rgba=np.ones(diff.shape,np.float32);rgba[:,:,:3]=srgb(base);rgba[:,:,3]=diff[:,:,3]
+        rgba=np.ones(diff.shape,np.float32);rgba[:,:,:3]=srgb(base)
+        # Uber opacity lives in packed RotationMap red, not diffuse alpha.
+        rgba[:,:,3]=pixels(tex['RotationMap1'])[:,:,0] if stem=='ter_hth_snow_highfreq_alpha01' else diff[:,:,3]
         baseim.pixels.foreach_set(rgba.ravel());baseim.save()
         mat.surface_render_method='DITHERED'
     if 'RotationMap1' in tex:

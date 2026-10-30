@@ -11,6 +11,7 @@ public partial class CharacterPresentation
     private Vector3 _movementVelocity;
     private float _locomotionReferenceSpeed=.6f;
     private readonly float[] _nativeRunSpeeds=new float[4];
+    public float[] NativeRunSpeeds=>(float[])_nativeRunSpeeds.Clone();
     public bool DirectionalLocomotionEnabled=>_directionalLocomotion;
     public Vector2 LocomotionDirection {get;private set;}=Vector2.Up;
     public float LocomotionPlaybackRate {get;private set;}=1;
@@ -29,8 +30,17 @@ public partial class CharacterPresentation
         graph.AddNode("RunSpeed",new AnimationNodeTimeScale());graph.ConnectNode("RunSpeed",0,"RunSelection");
     }
 
-    public void LoadDirectionalLocomotion(bool dualSaber,float referenceSpeed,bool pole=false)
+    public void LoadDirectionalLocomotion(bool dualSaber,float referenceSpeed,bool pole=false,bool legsOnly=false)
     {
+        // Ranged classes keep their equipped pistol poses above the shared directional legs.
+        if(legsOnly){
+            var selection=(AnimationNodeBlend2)((AnimationNodeBlendTree)Tree.TreeRoot).GetNode("RunSelection");
+            selection.FilterEnabled=true;
+            var root=Animator.GetNode(Animator.RootNode);
+            for(int bone=0;bone<Skeleton.GetBoneCount();bone++)
+                if(Skeleton.GetBoneName(bone)=="Root" || IsDescendant(bone,"Pelvis"))
+                    selection.SetFilterPath(new NodePath(root.GetPathTo(Skeleton)+":"+Skeleton.GetBoneName(bone)),true);
+        }
         LoadAbilityLibrary(pole?"res://Assets/AssassinLocomotion/casts.glb":"res://Assets/WarriorLocomotion/casts.glb","Travel",false);
         string forward="Travel/"+(pole?"PoleForward":dualSaber?"DualForward":"SaberForward"),back="Travel/"+(pole?"PoleBack":dualSaber?"DualBack":"SaberBack");
         // Matching cycle lengths keep the feet in phase when blending adjacent directions.
@@ -48,6 +58,28 @@ public partial class CharacterPresentation
         library.AddAnimation("StrafeLeft",MakeLateralRun(Animator.GetAnimation(forward),Mathf.Pi/2));
         library.AddAnimation("StrafeRight",MakeLateralRun(Animator.GetAnimation(forward),-Mathf.Pi/2));
         _travelForward.Animation=forward;_travelBack.Animation=back;_travelLeft.Animation="Travel/StrafeLeft";_travelRight.Animation="Travel/StrafeRight";
+        _locomotionReferenceSpeed=Math.Max(.01f,referenceSpeed);_directionalLocomotion=true;
+        Tree.Set("parameters/RunSelection/blend_amount",1.0);
+        var points=new[]{Vector2.Up,Vector2.Down,Vector2.Left,Vector2.Right};
+        for(int i=0;i<points.Length;i++)_nativeRunSpeeds[i]=MeasureGroundStrideSpeed(points[i],cycle);
+    }
+
+    public void LoadRifleDirectionalLocomotion(float referenceSpeed)
+    {
+        string forward="Agent/RifleForward",back="Agent/RifleBack";
+        double cycle=Animator.GetAnimation(forward).Length;
+        foreach(string clip in new[]{forward,back}){
+            var animation=Animator.GetAnimation(clip);double factor=cycle/animation.Length;
+            for(int track=0;track<animation.GetTrackCount();track++)
+                for(int key=0;key<animation.TrackGetKeyCount(track);key++)animation.TrackSetKeyTime(track,key,animation.TrackGetKeyTime(track,key)*factor);
+            animation.Length=cycle;animation.LoopMode=Animation.LoopModeEnum.Linear;
+        }
+        var library=Animator.GetAnimationLibrary("Agent");
+        Animator.GetAnimation("Agent/RifleAutoLoop").LoopMode=Animation.LoopModeEnum.Linear;
+        Animator.GetAnimation("Agent/SniperSeries").LoopMode=Animation.LoopModeEnum.Linear;
+        library.AddAnimation("StrafeLeft",MakeLateralRun(Animator.GetAnimation(forward),Mathf.Pi/2));
+        library.AddAnimation("StrafeRight",MakeLateralRun(Animator.GetAnimation(forward),-Mathf.Pi/2));
+        _travelForward.Animation=forward;_travelBack.Animation=back;_travelLeft.Animation="Agent/StrafeLeft";_travelRight.Animation="Agent/StrafeRight";
         _locomotionReferenceSpeed=Math.Max(.01f,referenceSpeed);_directionalLocomotion=true;
         Tree.Set("parameters/RunSelection/blend_amount",1.0);
         var points=new[]{Vector2.Up,Vector2.Down,Vector2.Left,Vector2.Right};

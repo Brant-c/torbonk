@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BossEncounterDefinition" load_steps=3 format=3]
+[ext_resource type="Script" path="res://Gameplay/BossEncounterDefinition.cs" id="script"]
+[ext_resource type="PackedScene" path="res://Gameplay/Planets/Soa/PuzzleGuardian.tscn" id="0"]
+[resource]
+script = ExtResource("script")
+Id = "soa.puzzleguardian"
+Title = "Ancient Pylon Guardian"
+Scene = ExtResource("0")
+IntroductionSeconds = 1.8
+ClearRegularEnemiesOnStart = false
+RegularCapFraction = 1.0
+RegularSpawnIntervalMultiplier = 1.0

@@ -93,8 +93,10 @@ payloads and the emulator are read-only inputs.
   tails avoid edit-mode quantization without changing bind heads/orientations.
   CLO rest uses inverse `m_rootToBone` transforms. The cached parent-relative CLO
   transforms disagree with this rig; their discrepancies remain in the manifest.
-- **Animation:** maintained GR2 4.2.1 JBA import, facial translations retained,
-  `delete_180=false`, no translation cleanup. Actions are rescaled to a common
+- **Animation:** maintained GR2 4.2.1 JBA import, facial rotations retained,
+  `delete_180=false`. Facial translations are now ignored to preserve this head's
+  rest proportions; see `FACE-QUALITY.md` for the verified deformation correction.
+  Actions are rescaled to a common
   60 fps timebase, sampled each frame, slid to time zero, and held through their
   original source duration. Godot imports at 60 fps with optimizer/compression,
   automatic LOD generation and immutable-track removal disabled.

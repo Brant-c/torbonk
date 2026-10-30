@@ -19,10 +19,9 @@ public partial class TalentsSmoke : Node
         try
         {
             var catalog=TalentCatalog.Current;
-            var build=new Dictionary<string,int>{
-                ["lightning.convection"]=2,["lightning.lightning_spire"]=2,["lightning.conduction"]=1,
-                ["madness.calcify"]=2,["madness.torment"]=1,
-                ["corruption.dark_mending"]=2,["corruption.empty_body"]=2};
+            var build=new Dictionary<string,int>();
+            foreach(var tree in new[]{"lightning","madness","corruption"})
+                foreach(var t in catalog.ForClass("sorcerer").Where(t=>t.Tree==tree && (t.Tier==0 || tree=="lightning" && t.Tier==1)))build[t.Id]=1;
             if(OS.GetCmdlineUserArgs().Contains("--talents-persistence-check"))
             {
                 Check("allocation survives another process launch",TalentProfiles.Load("sorcerer").OrderBy(p=>p.Key).SequenceEqual(build.OrderBy(p=>p.Key)));
@@ -30,13 +29,13 @@ public partial class TalentsSmoke : Node
             else
             {
                 Check("isolated profile initialized",TalentProfiles.Save("sorcerer",new Dictionary<string,int>())==null);
-                Check("24 data talents across three trees",catalog.ForClass("sorcerer").Length==24 && catalog.Trees.Where(t=>catalog.ForClass("sorcerer").Any(a=>a.Tree==t.Id)).All(t=>catalog.ForClass("sorcerer").Count(a=>a.Tree==t.Id)==8));
+                Check("27 data talents across three trees",catalog.ForClass("sorcerer").Length==27 && catalog.Trees.Where(t=>catalog.ForClass("sorcerer").Any(a=>a.Tree==t.Id)).All(t=>catalog.ForClass("sorcerer").Count(a=>a.Tree==t.Id)==9));
                 menu.ShowTalents();
                 var screen=menu.FindChild("Talents",true,false) as TalentsScreen;
                 Check("main menu opens Talents",screen!=null);
                 Check("capstone requires investment",!screen!.Invest("lightning.thundering_blast"));
                 Check("first rank allocates",screen.Invest("lightning.convection"));
-                Check("second rank allocates",screen.Invest("lightning.convection"));
+                Check("single point rank enforced",!screen.Invest("lightning.convection"));
                 Check("rank limit enforced",!screen.Invest("lightning.convection"));
                 screen.Respec();Check("free respec clears saved profile",TalentProfiles.Load("sorcerer").Count==0);
                 screen.SelectClass("juggernaut");Check("other classes unavailable",!screen.Invest("lightning.convection"));
@@ -46,12 +45,12 @@ public partial class TalentsSmoke : Node
                 var invalid=new Dictionary<string,int>(build){["missing.old.talent"]=8,["madness.creeping_death"]=1};
                 Check("stale IDs and unmet prerequisites discarded",catalog.Validate("sorcerer",invalid).Count==build.Count);
                 Check("other class cannot inherit talents",catalog.Validate("assassin",build).Count==0);
-                var dependent=new Dictionary<string,int>{
-                    ["lightning.convection"]=2,["lightning.lightning_spire"]=2,
-                    ["lightning.conduction"]=2,["lightning.lightning_barrage"]=2};
-                Check("valid higher-tier dependency survives",catalog.Validate("sorcerer",dependent).GetValueOrDefault("lightning.lightning_barrage")==2);
-                dependent.Remove("lightning.conduction");
-                Check("invalid dependency removed on migration",!catalog.Validate("sorcerer",dependent).ContainsKey("lightning.lightning_barrage"));
+                var dependent=catalog.ForClass("sorcerer").Where(t=>t.Tree=="lightning" && t.Tier<2).ToDictionary(t=>t.Id,t=>1);
+                dependent["lightning.lightning_barrage"]=1;
+                Check("valid higher tier survives",catalog.Validate("sorcerer",dependent).GetValueOrDefault("lightning.lightning_barrage")==1);
+                foreach(var id in dependent.Keys.Where(id=>catalog.Talents.First(t=>t.Id==id).Tier==0).ToArray())dependent.Remove(id);
+                Check("unfunded tiers removed on migration",!catalog.Validate("sorcerer",dependent).ContainsKey("lightning.lightning_barrage"));
+                Check("old multi-rank saves clamp to one",catalog.Validate("sorcerer",new Dictionary<string,int>{{"lightning.convection",2}}).GetValueOrDefault("lightning.convection")==1);
                 await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);
                 await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);
                 if(DisplayServer.GetName()!="headless")
@@ -72,7 +71,7 @@ public partial class TalentsSmoke : Node
                 Check("starting ability preserved",w.Abilities.Abilities.Count(a=>a.Unlocked)==2 && w.Combat.Definition.Id=="lightning");
                 Check("run uses validated saved snapshot",w.Build.Pregame.Ranks.Count==build.Count);
                 float damage=w.Combat.DamagePerTick;
-                Check("talent damage applied",Math.Abs(damage-w.Combat.Definition.Damage*1.12f)<.001f);
+                Check("talent damage applied",Math.Abs(damage-w.Combat.Definition.Damage*1.20f)<.001f);
                 p.Recalculate();p.Recalculate();Check("recalculation applies once",Math.Abs(w.Combat.DamagePerTick-damage)<.001f);
                 Check("Storm and Death Field hybrid unlocks",p.Grant("unlock_storm") && p.Grant("unlock_deathfield") && w.Abilities.Find("affliction")!.Unlocked);
                 Check("offensive limit retained",p.Grant("unlock_shock") && w.Abilities.Equipped(AbilityCategory.Offensive)==4 && !p.Grant("unlock_chain"));

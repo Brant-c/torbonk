@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-29",
+  "passed": true,
+  "totalChecks": 610,
+  "reports": [
+    {
+      "report": "pipeline\\manifests\\agent-operative-smoke.json",
+      "checks": 211,
+      "sha256": "938b652f63d498df9788c1e402142b9c64dd5876f3f17482428558d6e9589af7"
+    },
+    {
+      "report": "pipeline\\manifests\\agent-sniper-smoke.json",
+      "checks": 221,
+      "sha256": "5eeb2c1f92e942d9dfd95b06c6fe247880de2e79702f71c3b0ea8e6beed8a250"
+    },
+    {
+      "report": "pipeline\\manifests\\agent-operative-presentation.json",
+      "checks": 89,
+      "sha256": "2d6461067a6f0ffd2cc09bf96230843286e2d5be1fc6e09ff0d079fc4ff9d8ff"
+    },
+    {
+      "report": "pipeline\\manifests\\agent-sniper-presentation.json",
+      "checks": 68,
+      "sha256": "fbf3c0c8e6165b2438cd1963ca8265894c423132858e9943764e08c45b8e8457"
+    },
+    {
+      "report": "pipeline\\manifests\\sniper-cover-smoke.json",
+      "checks": 21,
+      "sha256": "720db2d4f4c0d87a673b686d95e423b4adcfb077184f82ab740b787e904ca8f7"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "godot/Gameplay/Talents/agent.json",
+      "sha256": "7b0ae58ea1f4ea544d483ce1ce711798eea618741b53ebc710974c5b4dfe9eda"
+    },
+    {
+      "path": "godot/Gameplay/Talents/AgentRuntime.cs",
+      "sha256": "57e8bbc97e4d992c72495806a525b245dffc027063e34dc9e77ee9cd606cea56"
+    },
+    {
+      "path": "godot/Gameplay/AbilityController.cs",
+      "sha256": "ff9d3c9261f4b99ddd623afa9c5804a2eb09cd5919c24354a5ff117faf1145c6"
+    },
+    {
+      "path": "godot/Gameplay/AgentStatusVisual.cs",
+      "sha256": "a820e9859215c3ba84809fe501eaf35a3a49b4720ba384eb83b56cc1c26bb2ec"
+    },
+    {
+      "path": "godot/Assets/Agent/casts.glb",
+      "sha256": "d94414cee7b884cd449b3db3c38baa0af94db8b56ff38b681d6005716759b819"
+    },
+    {
+      "path": "manifests/agent-operative-laceration_followup.png",
+      "sha256": "0b3d7c27817a2b6939402f6048163c3a440a39643e8b0b73b291960c37817648"
+    },
+    {
+      "path": "manifests/agent-sniper-interrogationprobe.png",
+      "sha256": "2111e439581082202d15c9a80cb1182294f485e1a038eacec5fb950b83aa30ae"
+    },
+    {
+      "path": "manifests/agent-layered-audio-repair.json",
+      "sha256": "570a960677d03f0126349a96713d62107679f4bc96911a3dbd6dab595732e828"
+    }
+  ],
+  "limits": [
+    "Two contacts remain a requested TorBonk adaptation.",
+    "Follow-up sound uses compatible original media; exact native dummy-audio binding unresolved.",
+    "Native zap rendering is adapted to textured Godot ribbons."
+  ]
+}

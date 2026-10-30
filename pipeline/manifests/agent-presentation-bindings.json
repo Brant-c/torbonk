@@ -1,0 +1,274 @@
+[
+  {
+    "id": "shiv",
+    "bindings": {
+      "StartClip": "\"Agent/Shiv\"",
+      "LoopClip": "\"Agent/Shiv\"",
+      "PresentationKind": "\"saber\""
+    }
+  },
+  {
+    "id": "overloadshot",
+    "bindings": {
+      "StartClip": "\"D3/RifleFire3\"",
+      "LoopClip": "\"D3/RifleFire3\"",
+      "PresentationKind": "\"rifle\""
+    }
+  },
+  {
+    "id": "fragmentationgrenade",
+    "bindings": {
+      "StartClip": "\"Agent/RifleGrenade\"",
+      "LoopClip": "\"Agent/RifleGrenade\"",
+      "PresentationKind": "\"gas\""
+    }
+  },
+  {
+    "id": "flashbang",
+    "bindings": {
+      "StartClip": "\"Agent/RifleGrenade\"",
+      "LoopClip": "\"Agent/RifleGrenade\"",
+      "PresentationKind": "\"gas\""
+    }
+  },
+  {
+    "id": "debilitate",
+    "bindings": {
+      "StartClip": "\"Agent/Shiv\"",
+      "LoopClip": "\"Agent/Shiv\"",
+      "PresentationKind": "\"saber\""
+    }
+  },
+  {
+    "id": "adrenalineprobe",
+    "bindings": {
+      "StartClip": "\"D3/FocusBuff\"",
+      "LoopClip": "\"D3/FocusBuff\"",
+      "PresentationKind": "\"bracer\""
+    }
+  },
+  {
+    "id": "agentescape",
+    "bindings": {
+      "StartClip": "\"D3/FocusBuff\"",
+      "LoopClip": "\"D3/FocusBuff\"",
+      "PresentationKind": "\"bracer\""
+    }
+  },
+  {
+    "id": "shieldprobe",
+    "bindings": {
+      "StartClip": "\"D3/EnergyShield\"",
+      "LoopClip": "\"D3/EnergyShield\"",
+      "PresentationKind": "\"impact\""
+    }
+  },
+  {
+    "id": "dart",
+    "bindings": {
+      "StartClip": "\"D3/Dart\"",
+      "LoopClip": "\"D3/Dart\"",
+      "PresentationKind": "\"bracer\""
+    }
+  },
+  {
+    "id": "corrosivegrenade",
+    "bindings": {
+      "StartClip": "\"Agent/RifleGrenade\"",
+      "LoopClip": "\"Agent/RifleGrenade\"",
+      "PresentationKind": "\"gas\""
+    }
+  },
+  {
+    "id": "weakeningblast",
+    "bindings": {
+      "StartClip": "\"D3/RifleFire3\"",
+      "LoopClip": "\"D3/RifleFire3\"",
+      "PresentationKind": "\"rifle\""
+    }
+  },
+  {
+    "id": "agentcull",
+    "bindings": {
+      "StartClip": "\"Agent/RifleAutoStart\"",
+      "LoopClip": "\"Agent/RifleAutoLoop\"",
+      "PresentationKind": "\"rifle\""
+    }
+  },
+  {
+    "id": "backstab",
+    "bindings": {
+      "StartClip": "\"Agent/Backstab\"",
+      "LoopClip": "\"Agent/Backstab\"",
+      "PresentationKind": "\"saber\""
+    }
+  },
+  {
+    "id": "hiddenstrike",
+    "bindings": {
+      "StartClip": "\"Agent/HiddenStrike\"",
+      "LoopClip": "\"Agent/HiddenStrike\"",
+      "PresentationKind": "\"saber\""
+    }
+  },
+  {
+    "id": "laceration",
+    "bindings": {
+      "StartClip": "\"Agent/Laceration\"",
+      "LoopClip": "\"Agent/Laceration\"",
+      "PresentationKind": "\"saber\""
+    }
+  },
+  {
+    "id": "agentstealth",
+    "bindings": {
+      "StartClip": "\"Agent/Detonator\"",
+      "LoopClip": "\"Agent/Detonator\"",
+      "PresentationKind": "\"bracer\""
+    }
+  },
+  {
+    "id": "cloakingscreen",
+    "bindings": {
+      "StartClip": "\"Agent/Detonator\"",
+      "LoopClip": "\"Agent/Detonator\"",
+      "PresentationKind": "\"bracer\""
+    }
+  },
+  {
+    "id": "stimboost",
+    "bindings": {
+      "StartClip": "\"D3/FocusBuff\"",
+      "LoopClip": "\"D3/FocusBuff\"",
+      "PresentationKind": "\"bracer\""
+    }
+  },
+  {
+    "id": "koltoprobe",
+    "bindings": {
+      "StartClip": "\"Agent/Medical\"",
+      "LoopClip": "\"Agent/Medical\"",
+      "PresentationKind": "\"impact\""
+    }
+  },
+  {
+    "id": "koltoinjection",
+    "bindings": {
+      "StartClip": "\"Agent/Medical\"",
+      "LoopClip": "\"Agent/Medical\"",
+      "PresentationKind": "\"impact\""
+    }
+  },
+  {
+    "id": "surgicalprobe",
+    "bindings": {
+      "StartClip": "\"Agent/Medical\"",
+      "LoopClip": "\"Agent/Medical\"",
+      "PresentationKind": "\"impact\""
+    }
+  },
+  {
+    "id": "snipershot",
+    "bindings": {
+      "StartClip": "\"D3/Sniper\"",
+      "LoopClip": "\"D3/Sniper\"",
+      "PresentationKind": "\"rifle\""
+    }
+  },
+  {
+    "id": "ambush",
+    "bindings": {
+      "StartClip": "\"D3/RifleCharge\"",
+      "LoopClip": "\"D3/Sniper\"",
+      "PresentationKind": "\"rifle\""
+    }
+  },
+  {
+    "id": "seriesofshots",
+    "bindings": {
+      "StartClip": "\"Agent/SniperSeries\"",
+      "LoopClip": "\"Agent/SniperSeries\"",
+      "PresentationKind": "\"rifle\""
+    }
+  },
+  {
+    "id": "followthrough",
+    "bindings": {
+      "StartClip": "\"D3/Sniper\"",
+      "LoopClip": "\"D3/Sniper\"",
+      "PresentationKind": "\"rifle\""
+    }
+  },
+  {
+    "id": "suppressivefire",
+    "bindings": {
+      "StartClip": "\"Agent/RifleAutoStart\"",
+      "LoopClip": "\"Agent/RifleAutoLoop\"",
+      "PresentationKind": "\"rifle\""
+    }
+  },
+  {
+    "id": "orbitalstrike",
+    "bindings": {
+      "StartClip": "\"Agent/Detonator\"",
+      "LoopClip": "\"Agent/Detonator\"",
+      "PresentationKind": "\"agent\""
+    }
+  },
+  {
+    "id": "explosiveprobe",
+    "bindings": {
+      "StartClip": "\"Agent/Detonator\"",
+      "LoopClip": "\"Agent/Detonator\"",
+      "PresentationKind": "\"agent\""
+    }
+  },
+  {
+    "id": "interrogationprobe",
+    "bindings": {
+      "StartClip": "\"Agent/Detonator\"",
+      "LoopClip": "\"Agent/Detonator\"",
+      "PresentationKind": "\"agent\""
+    }
+  },
+  {
+    "id": "plasmaprobe",
+    "bindings": {
+      "StartClip": "\"Agent/Detonator\"",
+      "LoopClip": "\"Agent/Detonator\"",
+      "PresentationKind": "\"agent\""
+    }
+  },
+  {
+    "id": "empdischarge",
+    "bindings": {
+      "StartClip": "\"Agent/Detonator\"",
+      "LoopClip": "\"Agent/Detonator\"",
+      "PresentationKind": "\"agent\""
+    }
+  },
+  {
+    "id": "coverpulse",
+    "bindings": {
+      "StartClip": "\"D3/EnergyShield\"",
+      "LoopClip": "\"D3/EnergyShield\"",
+      "PresentationKind": "\"agent\""
+    }
+  },
+  {
+    "id": "entrench",
+    "bindings": {
+      "StartClip": "\"D3/FocusBuff\"",
+      "LoopClip": "\"D3/FocusBuff\"",
+      "PresentationKind": "\"bracer\""
+    }
+  },
+  {
+    "id": "ballisticshield",
+    "bindings": {
+      "StartClip": "\"D3/EnergyShield\"",
+      "LoopClip": "\"D3/EnergyShield\"",
+      "PresentationKind": "\"impact\""
+    }
+  }
+]

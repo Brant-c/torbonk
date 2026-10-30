@@ -70,7 +70,7 @@ for name,info in recipe.items():
  clips=[]
  for clip,p in info['clips'].items():
   bpy.ops.object.select_all(action='DESELECT');rig.select_set(True);bpy.context.view_layer.objects.active=rig
-  raw=read_jba(Reporter(),local(p));bpy.ops.import_animation.jba(filepath=local(p),ignore_facial_bones=False,delete_180=False,scale_animation=False,scale_factor=1)
+  raw=read_jba(Reporter(),local(p));bpy.ops.import_animation.jba(filepath=local(p),ignore_facial_bones=True,delete_180=False,scale_animation=False,scale_factor=1)
   a=rig.animation_data.action;a.name=clip;a.use_fake_user=True
   for layer in a.layers:
    for strip in layer.strips:

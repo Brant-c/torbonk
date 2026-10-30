@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-29",
+  "passed": true,
+  "totalChecks": 315,
+  "reports": [
+    {
+      "report": "pipeline\\manifests\\agent-operative-smoke.json",
+      "checks": 226,
+      "sha256": "fcc51df1c4e04a7943f00bc982ba30913284bd12f7867247afcd3e03a265431f"
+    },
+    {
+      "report": "pipeline\\manifests\\agent-operative-presentation.json",
+      "checks": 89,
+      "sha256": "2d6461067a6f0ffd2cc09bf96230843286e2d5be1fc6e09ff0d079fc4ff9d8ff"
+    }
+  ],
+  "behavior": "Backstab with Acid Blade consumes own Corrosive Dart remaining scheduled damage, deals a target-specific burst, and reapplies one fresh full-duration Dart to surviving targets.",
+  "outputs": [
+    {
+      "path": "godot/Gameplay/Talents/AgentRuntime.cs",
+      "sha256": "af7ffffabf678f506f5f8cb4e91bec9c923a75acbb77d62b497adfad67a4140a"
+    },
+    {
+      "path": "godot/Gameplay/Talents/agent.json",
+      "sha256": "3c1d61c350f34a4b44056678652b5645d8029943b50375dd8afab43e5ba22f21"
+    },
+    {
+      "path": "godot/Gameplay/PeriodicEffects.cs",
+      "sha256": "d70c015f92fdc4c73842db8c4ea919fade1cd9cbb3ab17588fa264fd54278490"
+    },
+    {
+      "path": "godot/Gameplay/AgentAbilityPresentation.cs",
+      "sha256": "46b9995b9cbf12f180a50321bb392a7065d6eeb60097212a50fbb86cd384cd91"
+    },
+    {
+      "path": "manifests/agent-operative-acidblade.png",
+      "sha256": "9a7d342dffffd829c533c75a9c5f57cfdc6b03d8150d38fe79a156acf587826f"
+    }
+  ]
+}

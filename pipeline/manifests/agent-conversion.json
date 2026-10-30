@@ -1,0 +1,30 @@
+{
+  "clips": {
+    "Shiv": "cb_spy_shiv_1",
+    "Backstab": "cb_agent_backstab",
+    "Laceration": "cb_rifle_disk_left_1",
+    "RifleForward": "mv_rifle_run_forward",
+    "RifleBack": "mv_rifle_run_back",
+    "HiddenStrike": "cb_spy_waylay_01",
+    "RifleGrenade": "cb_rifle_grenade_1",
+    "Detonator": "cb_rifle_detonator_01",
+    "RifleAutoStart": "cb_rifle_fullauto_start",
+    "RifleAutoLoop": "cb_rifle_fullauto_loop",
+    "RifleAutoEnd": "cb_rifle_fullauto_end",
+    "SniperSeries": "cb_rifle_sniper_fire_series_01",
+    "StealthIdle": "cb_rifle_stealth_idle_1",
+    "Medical": "cb_unarmed_heal_right_1",
+    "CoverIdle": "cb_rifle_cover_crouch_hide_idle_1",
+    "CoverEnter": "cb_rifle_cover_crouch_enter_far",
+    "CoverFire": "cb_rifle_cover_fire_right_1",
+    "CoverDetonator": "cb_rifle_cover_detonator_01",
+    "LacerationFollowup": "cb_rifle_attack_1"
+  },
+  "unavailable": [
+    "/resources/anim/humanoid/bmnnew/cb_agent_knife_combo_01.jba",
+    "/resources/anim/humanoid/bmnnew/cb_agent_knife_combo_02.jba",
+    "/resources/anim/humanoid/bmnnew/cb_rifle_artillery_start_01.jba",
+    "/resources/anim/humanoid/bmnnew/cb_rifle_artillery_mid_01.jba",
+    "/resources/anim/humanoid/bmnnew/cb_rifle_artillery_end_01.jba"
+  ]
+}

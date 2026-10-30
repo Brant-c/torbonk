@@ -1,0 +1,2006 @@
+D:\SWTORClassic\torbonk\pipeline\scripts\convert_b6.py:26: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  t=info['textures'];stem=Path(p).stem;mat=bpy.data.materials.new(stem);mat.use_nodes=True
+register_class(...):
+Warning: 'import_mesh.gr2_presets' does not contain '_MT_' with prefix and suffix
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\catboss_skeleton.gr2
+OBJS: ['catboss_skeleton']
+TIME: 0.004 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\creature\model\cat_manka_a02.gr2
+OBJS: ['cat_manka_a02']
+TIME: 0.168 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\cb_ready_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0076 sec |   0.0076 sec) Done, building ...
+Progress: 100.00%
+  (  0.1176 sec |   0.1175 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\cb_ready_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\mv_run_forward.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0048 sec |   0.0048 sec) Done, building ...
+Progress: 100.00%
+  (  0.0394 sec |   0.0393 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\mv_run_forward.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\mv_walk_forward.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0090 sec |   0.0089 sec) Done, building ...
+Progress: 100.00%
+  (  0.0952 sec |   0.0951 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\mv_walk_forward.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\cb_attack_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0074 sec |   0.0073 sec) Done, building ...
+Progress: 100.00%
+  (  0.0777 sec |   0.0776 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\cb_attack_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\dg_damage_1.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0074 sec |   0.0073 sec) Done, building ...
+Progress: 100.00%
+  (  0.0696 sec |   0.0695 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\dg_damage_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0001 sec |   0.0001 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0059 sec |   0.0058 sec) Done, building ...
+Progress: 100.00%
+  (  0.0552 sec |   0.0551 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\cat\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+14:57:19 | INFO: Starting glTF 2.0 export
+14:57:19 | INFO: Extracting primitive: cat_manka_a02
+14:57:19 | INFO: Primitives created: 1
+14:57:21 | INFO: Finished glTF 2.0 export in 2.57837176322937 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\bmsnew_skeleton.gr2
+OBJS: ['bmsnew_skeleton']
+TIME: 0.007 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\bracer\model\bracer_short_bms_archetype.gr2
+OBJS: ['bracer_short_bms_archetype']
+TIME: 0.004 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\head\model\head_rakata_bms_non_a01.gr2
+OBJS: ['head_rakata_bms_non_a01']
+TIME: 0.109 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\leg\model\leg_armor02_bms_archetype.gr2
+OBJS: ['leg_armor02_bms_archetype']
+TIME: 0.040 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_tall_bms_archetype.gr2
+OBJS: ['boot_tall_bms_archetype']
+TIME: 0.017 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_tall_bms_heavy_bh_a06_shin.gr2
+OBJS: ['boot_tall_bms_heavy_bh_a06_shin']
+TIME: 0.031 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_armor01_bms_archetype.gr2
+OBJS: ['chest_armor01_bms_archetype']
+TIME: 0.038 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_armor01_bms_heavy_bh_a06_collar.gr2
+OBJS: ['chest_armor01_bms_heavy_bh_a06_collar']
+TIME: 0.019 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_glove_bms_archetype.gr2
+OBJS: ['hand_glove_bms_archetype']
+TIME: 0.045 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_glove_bms_heavy_bh_a06_forearm.gr2
+OBJS: ['hand_glove_bms_heavy_bh_a06_forearm']
+TIME: 0.012 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bms_archetype.gr2
+OBJS: ['waist_belt_bms_archetype']
+TIME: 0.009 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bms_heavy_bh_a06_back.gr2
+OBJS: ['waist_belt_bms_heavy_bh_a06_back']
+TIME: 0.018 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bms_heavy_bh_a06_front.gr2
+OBJS: ['waist_belt_bms_heavy_bh_a06_front']
+TIME: 0.007 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\cb_knight_saber_idle_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0090 sec |   0.0090 sec) Done, building ...
+Progress: 100.00%
+  (  0.0734 sec |   0.0733 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\cb_knight_saber_idle_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\mv_saber_run_forward_01.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0092 sec |   0.0092 sec) Done, building ...
+Progress: 100.00%
+  (  0.0819 sec |   0.0818 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\mv_saber_run_forward_01.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\cb_saber_attack_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0063 sec |   0.0063 sec) Done, building ...
+Progress: 100.00%
+  (  0.0603 sec |   0.0602 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\cb_saber_attack_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\dg_unarmed_crit_damage_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0104 sec |   0.0103 sec) Done, building ...
+Progress: 100.00%
+  (  0.0844 sec |   0.0843 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\dg_unarmed_crit_damage_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0149 sec |   0.0149 sec) Done, building ...
+Progress: 100.00%
+  (  0.1545 sec |   0.1545 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+14:57:24 | INFO: Starting glTF 2.0 export
+14:57:24 | INFO: Extracting primitive: boot_tall_bms_archetype
+14:57:24 | INFO: Primitives created: 1
+14:57:24 | INFO: Extracting primitive: boot_tall_bms_heavy_bh_a06_shin
+14:57:24 | INFO: Primitives created: 1
+14:57:24 | INFO: Extracting primitive: bracer_short_bms_archetype
+14:57:24 | INFO: Primitives created: 1
+14:57:24 | INFO: Extracting primitive: chest_armor01_bms_archetype
+14:57:24 | INFO: Primitives created: 1
+14:57:24 | INFO: Extracting primitive: chest_armor01_bms_heavy_bh_a06_collar
+14:57:24 | INFO: Primitives created: 1
+14:57:24 | INFO: Extracting primitive: hand_glove_bms_archetype
+14:57:24 | INFO: Primitives created: 1
+14:57:24 | INFO: Extracting primitive: hand_glove_bms_heavy_bh_a06_forearm
+14:57:24 | INFO: Primitives created: 1
+14:57:24 | INFO: Extracting primitive: head_rakata_bms_non_a01
+14:57:24 | INFO: Primitives created: 2
+14:57:24 | INFO: Extracting primitive: leg_armor02_bms_archetype
+14:57:24 | INFO: Primitives created: 1
+14:57:24 | INFO: Extracting primitive: waist_belt_bms_archetype
+14:57:24 | INFO: Primitives created: 1
+14:57:24 | INFO: Extracting primitive: waist_belt_bms_heavy_bh_a06_back
+14:57:24 | INFO: Primitives created: 1
+14:57:24 | INFO: Extracting primitive: waist_belt_bms_heavy_bh_a06_front
+14:57:24 | INFO: Primitives created: 1
+14:57:27 | INFO: Finished glTF 2.0 export in 3.3001761436462402 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\bmsnew_skeleton.gr2
+OBJS: ['bmsnew_skeleton.001']
+TIME: 0.005 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\bracer\model\bracer_short_bms_archetype.gr2
+OBJS: ['bracer_short_bms_archetype']
+TIME: 0.006 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\head\model\head_rakata_bms_non_a01.gr2
+OBJS: ['head_rakata_bms_non_a01']
+TIME: 0.095 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\leg\model\leg_armor02_bms_archetype.gr2
+OBJS: ['leg_armor02_bms_archetype']
+TIME: 0.034 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_tall_bms_archetype.gr2
+OBJS: ['boot_tall_bms_archetype']
+TIME: 0.014 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_tall_bms_heavy_bh_a06_shin.gr2
+OBJS: ['boot_tall_bms_heavy_bh_a06_shin']
+TIME: 0.031 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bms_archetype.gr2
+OBJS: ['waist_belt_bms_archetype']
+TIME: 0.012 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bms_heavy_bh_a06_back.gr2
+OBJS: ['waist_belt_bms_heavy_bh_a06_back']
+TIME: 0.015 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bms_heavy_bh_a06_front.gr2
+OBJS: ['waist_belt_bms_heavy_bh_a06_front']
+TIME: 0.005 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_glove_bms_archetype.gr2
+OBJS: ['hand_glove_bms_archetype']
+TIME: 0.051 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_glove_bms_heavy_bh_a06_forearm.gr2
+OBJS: ['hand_glove_bms_heavy_bh_a06_forearm']
+TIME: 0.018 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_armor01_bms_archetype.gr2
+OBJS: ['chest_armor01_bms_archetype']
+TIME: 0.040 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_armor01_bms_heavy_bh_a06_collar.gr2
+OBJS: ['chest_armor01_bms_heavy_bh_a06_collar']
+TIME: 0.017 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\cb_knight_saber_idle_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0053 sec |   0.0053 sec) Done, building ...
+Progress: 100.00%
+  (  0.0667 sec |   0.0666 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\cb_knight_saber_idle_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\mv_saber_run_forward_01.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0084 sec |   0.0084 sec) Done, building ...
+Progress: 100.00%
+  (  0.0860 sec |   0.0860 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\mv_saber_run_forward_01.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\cb_saber_attack_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0060 sec |   0.0060 sec) Done, building ...
+Progress: 100.00%
+  (  0.0622 sec |   0.0622 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\cb_saber_attack_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\dg_unarmed_crit_damage_right_1.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0113 sec |   0.0112 sec) Done, building ...
+Progress: 100.00%
+  (  0.0835 sec |   0.0834 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\dg_unarmed_crit_damage_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0145 sec |   0.0145 sec) Done, building ...
+Progress: 100.00%
+  (  0.1333 sec |   0.1333 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+14:57:29 | INFO: Starting glTF 2.0 export
+14:57:29 | INFO: Extracting primitive: boot_tall_bms_archetype.001
+14:57:29 | INFO: Primitives created: 1
+14:57:29 | INFO: Extracting primitive: boot_tall_bms_heavy_bh_a06_shin.001
+14:57:29 | INFO: Primitives created: 1
+14:57:29 | INFO: Extracting primitive: bracer_short_bms_archetype.001
+14:57:29 | INFO: Primitives created: 1
+14:57:29 | INFO: Extracting primitive: chest_armor01_bms_archetype.001
+14:57:29 | INFO: Primitives created: 1
+14:57:29 | INFO: Extracting primitive: chest_armor01_bms_heavy_bh_a06_collar.001
+14:57:29 | INFO: Primitives created: 1
+14:57:29 | INFO: Extracting primitive: hand_glove_bms_archetype.001
+14:57:29 | INFO: Primitives created: 1
+14:57:29 | INFO: Extracting primitive: hand_glove_bms_heavy_bh_a06_forearm.001
+14:57:29 | INFO: Primitives created: 1
+14:57:29 | INFO: Extracting primitive: head_rakata_bms_non_a01.001
+14:57:29 | INFO: Primitives created: 2
+14:57:29 | INFO: Extracting primitive: leg_armor02_bms_archetype.001
+14:57:29 | INFO: Primitives created: 1
+14:57:29 | INFO: Extracting primitive: waist_belt_bms_archetype.001
+14:57:29 | INFO: Primitives created: 1
+14:57:29 | INFO: Extracting primitive: waist_belt_bms_heavy_bh_a06_back.001
+14:57:29 | INFO: Primitives created: 1
+14:57:29 | INFO: Extracting primitive: waist_belt_bms_heavy_bh_a06_front.001
+14:57:29 | INFO: Primitives created: 1
+14:57:32 | INFO: Finished glTF 2.0 export in 3.477221965789795 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\acklay_skeleton.gr2
+OBJS: ['acklay_skeleton']
+TIME: 0.002 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\creature\model\acklay_acklay_a02.gr2
+OBJS: ['acklay_acklay_a02']
+TIME: 0.254 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\acklay\cb_ready_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0077 sec |   0.0077 sec) Done, building ...
+Progress: 100.00%
+  (  0.0886 sec |   0.0886 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\acklay\cb_ready_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\acklay\mv_run_forward.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0039 sec |   0.0038 sec) Done, building ...
+Progress: 100.00%
+  (  0.0353 sec |   0.0352 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\acklay\mv_run_forward.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\acklay\mv_walk_forward.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0062 sec |   0.0062 sec) Done, building ...
+Progress: 100.00%
+  (  0.0603 sec |   0.0602 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\acklay\mv_walk_forward.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0001 sec |   0.0001 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\acklay\cb_attack_1.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0060 sec |   0.0059 sec) Done, building ...
+Progress: 100.00%
+  (  0.0534 sec |   0.0533 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\acklay\cb_attack_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\acklay\dg_damage_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0038 sec |   0.0037 sec) Done, building ...
+Progress: 100.00%
+  (  0.0378 sec |   0.0378 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\acklay\dg_damage_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\acklay\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0084 sec |   0.0084 sec) Done, building ...
+Progress: 100.00%
+  (  0.1042 sec |   0.1042 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\creature\acklay\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+14:57:34 | INFO: Starting glTF 2.0 export
+14:57:34 | INFO: Extracting primitive: acklay_acklay_a02
+14:57:34 | INFO: Primitives created: 1
+14:57:36 | INFO: Finished glTF 2.0 export in 1.8447492122650146 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\bmsnew_skeleton.gr2
+OBJS: ['bmsnew_skeleton.002']
+TIME: 0.004 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\bracer\model\bracer_short_bms_archetype.gr2
+OBJS: ['bracer_short_bms_archetype']
+TIME: 0.004 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\leg\model\leg_pant_bms_archetype.gr2
+OBJS: ['leg_pant_bms_archetype']
+TIME: 0.028 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\head\model\head_rakata_bms_non_a01.gr2
+OBJS: ['head_rakata_bms_non_a01']
+TIME: 0.109 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_thigh_bms_archetype.gr2
+OBJS: ['boot_thigh_bms_archetype']
+TIME: 0.034 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_thigh_bms_med_sw_a04_knee.gr2
+OBJS: ['boot_thigh_bms_med_sw_a04_knee']
+TIME: 0.024 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_glove_bms_archetype.gr2
+OBJS: ['hand_glove_bms_archetype']
+TIME: 0.048 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_glove_bms_heavy_sw_a07_forearm.gr2
+OBJS: ['hand_glove_bms_heavy_sw_a07_forearm']
+TIME: 0.067 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_capetight_bms_archetype.gr2
+OBJS: ['chest_capetight_bms_archetype']
+TIME: 0.080 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_capetight_bms_heavy_sw_a08_collar.gr2
+OBJS: ['chest_capetight_bms_heavy_sw_a08_collar']
+TIME: 0.029 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_capetight_bms_heavy_sw_a08_loin.gr2
+OBJS: ['chest_capetight_bms_heavy_sw_a08_loin']
+TIME: 0.015 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_capetight_bms_heavy_sw_a08_shld.gr2
+OBJS: ['chest_capetight_bms_heavy_sw_a08_shld']
+TIME: 0.017 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bms_archetype.gr2
+OBJS: ['waist_belt_bms_archetype']
+TIME: 0.011 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bms_heavy_ge_a18_back.gr2
+OBJS: ['waist_belt_bms_heavy_ge_a18_back']
+TIME: 0.005 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\cb_unarmed_idle_right_1.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0080 sec |   0.0079 sec) Done, building ...
+Progress: 100.00%
+  (  0.1001 sec |   0.1000 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\cb_unarmed_idle_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\mv_cb_unarmed_run_forward.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0079 sec |   0.0079 sec) Done, building ...
+Progress: 100.00%
+  (  0.0654 sec |   0.0654 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\mv_cb_unarmed_run_forward.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\cb_unarmed_attack_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0073 sec |   0.0073 sec) Done, building ...
+Progress: 100.00%
+  (  0.0554 sec |   0.0554 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\cb_unarmed_attack_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\dg_unarmed_crit_damage_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0103 sec |   0.0102 sec) Done, building ...
+Progress: 100.00%
+  (  0.0833 sec |   0.0832 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\dg_unarmed_crit_damage_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0098 sec |   0.0098 sec) Done, building ...
+Progress: 100.00%
+  (  0.1191 sec |   0.1191 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+14:57:38 | INFO: Starting glTF 2.0 export
+14:57:38 | INFO: Extracting primitive: boot_thigh_bms_archetype
+14:57:38 | INFO: Primitives created: 1
+14:57:38 | INFO: Extracting primitive: boot_thigh_bms_med_sw_a04_knee
+14:57:38 | INFO: Primitives created: 1
+14:57:38 | INFO: Extracting primitive: bracer_short_bms_archetype.002
+14:57:38 | INFO: Primitives created: 1
+14:57:38 | INFO: Extracting primitive: chest_capetight_bms_archetype
+14:57:38 | INFO: Primitives created: 1
+14:57:38 | INFO: Extracting primitive: chest_capetight_bms_heavy_sw_a08_collar
+14:57:38 | INFO: Primitives created: 1
+14:57:38 | INFO: Extracting primitive: chest_capetight_bms_heavy_sw_a08_loin
+14:57:38 | INFO: Primitives created: 1
+14:57:38 | INFO: Extracting primitive: chest_capetight_bms_heavy_sw_a08_shld
+14:57:38 | INFO: Primitives created: 1
+14:57:38 | INFO: Extracting primitive: hand_glove_bms_archetype.002
+14:57:38 | INFO: Primitives created: 1
+14:57:38 | INFO: Extracting primitive: hand_glove_bms_heavy_sw_a07_forearm
+14:57:38 | INFO: Primitives created: 1
+14:57:38 | INFO: Extracting primitive: head_rakata_bms_non_a01.002
+14:57:38 | INFO: Primitives created: 2
+14:57:38 | INFO: Extracting primitive: leg_pant_bms_archetype
+14:57:38 | INFO: Primitives created: 1
+14:57:38 | INFO: Extracting primitive: waist_belt_bms_archetype.002
+14:57:38 | INFO: Primitives created: 1
+14:57:38 | INFO: Extracting primitive: waist_belt_bms_heavy_ge_a18_back
+14:57:38 | INFO: Primitives created: 1
+14:57:42 | INFO: Finished glTF 2.0 export in 4.074201822280884 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\bmnnew_skeleton.gr2
+OBJS: ['bmnnew_skeleton']
+TIME: 0.004 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\bracer\model\bracer_short_bmn_archetype.gr2
+OBJS: ['bracer_short_bmn_archetype']
+TIME: 0.005 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\facehair\model\facehair_bloodsith_bmn_non_a05.gr2
+OBJS: ['facehair_bloodsith_bmn_non_a05']
+TIME: 0.010 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\leg\model\leg_pant_bmn_archetype.gr2
+OBJS: ['leg_pant_bmn_archetype']
+TIME: 0.027 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\head\model\head_bloodsith_bmn_non_a05.gr2
+OBJS: ['head_bloodsith_bmn_non_a05']
+TIME: 0.128 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_thigh_bmn_archetype.gr2
+OBJS: ['boot_thigh_bmn_archetype']
+TIME: 0.023 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_thigh_bmn_med_sw_a04_knee.gr2
+OBJS: ['boot_thigh_bmn_med_sw_a04_knee']
+TIME: 0.025 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_gauntlet_bmn_archetype.gr2
+OBJS: ['hand_gauntlet_bmn_archetype']
+TIME: 0.055 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_gauntlet_bmn_med_sw_a04_forearm.gr2
+OBJS: ['hand_gauntlet_bmn_med_sw_a04_forearm']
+TIME: 0.022 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_trenchtight_bmn_archetype.gr2
+OBJS: ['chest_trenchtight_bmn_archetype']
+TIME: 0.064 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_trenchtight_bmn_med_sw_a04_shld.gr2
+OBJS: ['chest_trenchtight_bmn_med_sw_a04_shld']
+TIME: 0.068 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_trenchtight_bmn_med_sw_a04_loin.gr2
+OBJS: ['chest_trenchtight_bmn_med_sw_a04_loin']
+TIME: 0.014 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_trenchtight_bmn_med_sw_a04_hooddown.gr2
+OBJS: ['chest_trenchtight_bmn_med_sw_a04_hooddown']
+TIME: 0.026 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hair\model\hair_human_bmn_non_a12.gr2
+OBJS: ['hair_human_bmn_non_a12']
+TIME: 0.041 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hair\model\hair_human_bmn_non_a12_back.gr2
+OBJS: ['hair_human_bmn_non_a12_back']
+TIME: 0.016 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bmn_archetype.gr2
+OBJS: ['waist_belt_bmn_archetype']
+TIME: 0.009 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bmn_med_sw_a04_front.gr2
+OBJS: ['waist_belt_bmn_med_sw_a04_front']
+TIME: 0.010 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bmn_med_sw_a04_back.gr2
+OBJS: ['waist_belt_bmn_med_sw_a04_back']
+TIME: 0.018 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_knight_saber_idle_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0076 sec |   0.0075 sec) Done, building ...
+Progress: 100.00%
+  (  0.0724 sec |   0.0724 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_knight_saber_idle_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\mv_saber_run_forward_01.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0049 sec |   0.0049 sec) Done, building ...
+Progress: 100.00%
+  (  0.0623 sec |   0.0622 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\mv_saber_run_forward_01.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_saber_attack_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0061 sec |   0.0061 sec) Done, building ...
+Progress: 100.00%
+  (  0.0601 sec |   0.0601 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_saber_attack_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\dg_unarmed_crit_damage_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0088 sec |   0.0088 sec) Done, building ...
+Progress: 100.00%
+  (  0.0913 sec |   0.0912 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\dg_unarmed_crit_damage_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0103 sec |   0.0103 sec) Done, building ...
+Progress: 100.00%
+  (  0.1487 sec |   0.1486 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+14:57:45 | INFO: Starting glTF 2.0 export
+14:57:45 | INFO: Extracting primitive: boot_thigh_bmn_archetype
+14:57:45 | INFO: Primitives created: 1
+14:57:45 | INFO: Extracting primitive: boot_thigh_bmn_med_sw_a04_knee
+14:57:45 | INFO: Primitives created: 1
+14:57:45 | INFO: Extracting primitive: bracer_short_bmn_archetype
+14:57:45 | INFO: Primitives created: 1
+14:57:45 | INFO: Extracting primitive: chest_trenchtight_bmn_archetype
+14:57:45 | INFO: Primitives created: 1
+14:57:45 | INFO: Extracting primitive: chest_trenchtight_bmn_med_sw_a04_hooddown
+14:57:45 | INFO: Primitives created: 1
+14:57:45 | INFO: Extracting primitive: chest_trenchtight_bmn_med_sw_a04_loin
+14:57:45 | INFO: Primitives created: 1
+14:57:45 | INFO: Extracting primitive: chest_trenchtight_bmn_med_sw_a04_shld
+14:57:45 | INFO: Primitives created: 1
+14:57:45 | INFO: Extracting primitive: facehair_bloodsith_bmn_non_a05
+14:57:45 | INFO: Primitives created: 1
+14:57:45 | INFO: Extracting primitive: hair_human_bmn_non_a12
+14:57:45 | INFO: Primitives created: 1
+14:57:45 | INFO: Extracting primitive: hair_human_bmn_non_a12_back
+14:57:45 | INFO: Primitives created: 1
+14:57:45 | INFO: Extracting primitive: hand_gauntlet_bmn_archetype
+14:57:45 | INFO: Primitives created: 1
+14:57:45 | INFO: Extracting primitive: hand_gauntlet_bmn_med_sw_a04_forearm
+14:57:45 | INFO: Primitives created: 1
+14:57:45 | INFO: Extracting primitive: head_bloodsith_bmn_non_a05
+14:57:45 | INFO: Primitives created: 2
+14:57:45 | INFO: Extracting primitive: leg_pant_bmn_archetype
+14:57:45 | INFO: Primitives created: 1
+14:57:45 | INFO: Extracting primitive: waist_belt_bmn_archetype
+14:57:45 | INFO: Primitives created: 1
+14:57:45 | INFO: Extracting primitive: waist_belt_bmn_med_sw_a04_back
+14:57:45 | INFO: Primitives created: 1
+14:57:45 | INFO: Extracting primitive: waist_belt_bmn_med_sw_a04_front
+14:57:45 | INFO: Primitives created: 1
+14:57:49 | INFO: Finished glTF 2.0 export in 4.331169843673706 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\bfsnew_skeleton.gr2
+OBJS: ['bfsnew_skeleton']
+TIME: 0.004 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\bracer\model\bracer_short_bfs_archetype.gr2
+OBJS: ['bracer_short_bfs_archetype']
+TIME: 0.005 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_thigh_bfs_archetype.gr2
+OBJS: ['boot_thigh_bfs_archetype']
+TIME: 0.028 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hair\model\hair_human_bfs_non_a11.gr2
+OBJS: ['hair_human_bfs_non_a11']
+TIME: 0.016 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\facehair\model\facehair_bloodsith_bfs_non_a02.gr2
+OBJS: ['facehair_bloodsith_bfs_non_a02']
+TIME: 0.006 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\head\model\head_bloodsith_bfs_non_a04.gr2
+OBJS: ['head_bloodsith_bfs_non_a04']
+TIME: 0.100 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_naked_bfs_archetype.gr2
+OBJS: ['hand_naked_bfs_archetype']
+TIME: 0.038 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\leg\model\leg_pant_bfs_archetype.gr2
+OBJS: ['leg_pant_bfs_archetype']
+TIME: 0.028 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bfs_archetype.gr2
+OBJS: ['waist_belt_bfs_archetype']
+TIME: 0.010 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_capetight_bfs_archetype.gr2
+OBJS: ['chest_capetight_bfs_archetype']
+TIME: 0.054 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_capetight_bfs_heavy_sw_a06_loin.gr2
+OBJS: ['chest_capetight_bfs_heavy_sw_a06_loin']
+TIME: 0.024 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_capetight_bfs_heavy_sw_a06_shld.gr2
+OBJS: ['chest_capetight_bfs_heavy_sw_a06_shld']
+TIME: 0.019 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfsnew\cb_knight_saber_idle_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0079 sec |   0.0078 sec) Done, building ...
+Progress: 100.00%
+  (  0.0763 sec |   0.0763 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfsnew\cb_knight_saber_idle_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfsnew\mv_saber_run_forward_01.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0080 sec |   0.0079 sec) Done, building ...
+Progress: 100.00%
+  (  0.0562 sec |   0.0561 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfsnew\mv_saber_run_forward_01.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfsnew\cb_saber_attack_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0048 sec |   0.0048 sec) Done, building ...
+Progress: 100.00%
+  (  0.0560 sec |   0.0560 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfsnew\cb_saber_attack_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfsnew\dg_unarmed_crit_damage_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0107 sec |   0.0106 sec) Done, building ...
+Progress: 100.00%
+  (  0.1013 sec |   0.1013 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfsnew\dg_unarmed_crit_damage_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfsnew\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0114 sec |   0.0114 sec) Done, building ...
+Progress: 100.00%
+  (  0.1366 sec |   0.1365 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfsnew\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+14:57:52 | INFO: Starting glTF 2.0 export
+14:57:52 | INFO: Extracting primitive: boot_thigh_bfs_archetype
+14:57:52 | INFO: Primitives created: 1
+14:57:52 | INFO: Extracting primitive: bracer_short_bfs_archetype
+14:57:52 | INFO: Primitives created: 1
+14:57:52 | INFO: Extracting primitive: chest_capetight_bfs_archetype
+14:57:52 | INFO: Primitives created: 1
+14:57:52 | INFO: Extracting primitive: chest_capetight_bfs_heavy_sw_a06_loin
+14:57:52 | INFO: Primitives created: 1
+14:57:52 | INFO: Extracting primitive: chest_capetight_bfs_heavy_sw_a06_shld
+14:57:52 | INFO: Primitives created: 1
+14:57:52 | INFO: Extracting primitive: facehair_bloodsith_bfs_non_a02
+14:57:52 | INFO: Primitives created: 1
+14:57:52 | INFO: Extracting primitive: hair_human_bfs_non_a11
+14:57:52 | INFO: Primitives created: 1
+14:57:52 | INFO: Extracting primitive: hand_naked_bfs_archetype
+14:57:52 | INFO: Primitives created: 1
+14:57:52 | INFO: Extracting primitive: head_bloodsith_bfs_non_a04
+14:57:52 | INFO: Primitives created: 2
+14:57:52 | INFO: Extracting primitive: leg_pant_bfs_archetype
+14:57:52 | INFO: Primitives created: 1
+14:57:52 | INFO: Extracting primitive: waist_belt_bfs_archetype
+14:57:52 | INFO: Primitives created: 1
+14:57:55 | INFO: Finished glTF 2.0 export in 3.6970772743225098 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\bmanew_skeleton.gr2
+OBJS: ['bmanew_skeleton']
+TIME: 0.004 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_tall_bma_archetype.gr2
+OBJS: ['boot_tall_bma_archetype']
+TIME: 0.017 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\bracer\model\bracer_short_bma_archetype.gr2
+OBJS: ['bracer_short_bma_archetype']
+TIME: 0.006 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\facehair\model\facehair_bloodsith_bma_non_a04.gr2
+OBJS: ['facehair_bloodsith_bma_non_a04']
+TIME: 0.020 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hair\model\hair_human_bma_non_a06.gr2
+OBJS: ['hair_human_bma_non_a06']
+TIME: 0.029 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_gauntlet_bma_archetype.gr2
+OBJS: ['hand_gauntlet_bma_archetype']
+TIME: 0.045 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\head\model\head_bloodsith_bma_non_a10.gr2
+OBJS: ['head_bloodsith_bma_non_a10']
+TIME: 0.102 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\leg\model\leg_skirt_bma_archetype.gr2
+OBJS: ['leg_skirt_bma_archetype']
+TIME: 0.044 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_tight_bma_archetype.gr2
+OBJS: ['chest_tight_bma_archetype']
+TIME: 0.032 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_tight_bma_light_ss_a05_shld.gr2
+OBJS: ['chest_tight_bma_light_ss_a05_shld']
+TIME: 0.011 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_tight_bma_light_ss_a05_straps.gr2
+OBJS: ['chest_tight_bma_light_ss_a05_straps']
+TIME: 0.011 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_tight_bma_light_ss_a05_chest.gr2
+OBJS: ['chest_tight_bma_light_ss_a05_chest']
+TIME: 0.087 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bma_archetype.gr2
+OBJS: ['waist_belt_bma_archetype']
+TIME: 0.007 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bma_light_ss_a04_back.gr2
+OBJS: ['waist_belt_bma_light_ss_a04_back']
+TIME: 0.016 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bma_light_ss_a04_front.gr2
+OBJS: ['waist_belt_bma_light_ss_a04_front']
+TIME: 0.011 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bma_light_ss_a04_sling.gr2
+OBJS: ['waist_belt_bma_light_ss_a04_sling']
+TIME: 0.007 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\cb_knight_saber_idle_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0084 sec |   0.0084 sec) Done, building ...
+Progress: 100.00%
+  (  0.0721 sec |   0.0721 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\cb_knight_saber_idle_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\mv_saber_run_forward_01.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0061 sec |   0.0061 sec) Done, building ...
+Progress: 100.00%
+  (  0.0726 sec |   0.0726 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\mv_saber_run_forward_01.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\cb_saber_attack_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0065 sec |   0.0064 sec) Done, building ...
+Progress: 100.00%
+  (  0.0542 sec |   0.0542 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\cb_saber_attack_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\dg_unarmed_crit_damage_right_1.jba' ...
+Progress:   0.00%
+  (  0.0001 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0079 sec |   0.0078 sec) Done, building ...
+Progress: 100.00%
+  (  0.0830 sec |   0.0829 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\dg_unarmed_crit_damage_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0132 sec |   0.0131 sec) Done, building ...
+Progress: 100.00%
+  (  0.1258 sec |   0.1258 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+14:57:58 | INFO: Starting glTF 2.0 export
+14:57:58 | INFO: Extracting primitive: boot_tall_bma_archetype
+14:57:58 | INFO: Primitives created: 1
+14:57:58 | INFO: Extracting primitive: bracer_short_bma_archetype
+14:57:58 | INFO: Primitives created: 1
+14:57:58 | INFO: Extracting primitive: chest_tight_bma_archetype
+14:57:58 | INFO: Primitives created: 1
+14:57:58 | INFO: Extracting primitive: chest_tight_bma_light_ss_a05_chest
+14:57:58 | INFO: Primitives created: 1
+14:57:58 | INFO: Extracting primitive: chest_tight_bma_light_ss_a05_shld
+14:57:58 | INFO: Primitives created: 1
+14:57:58 | INFO: Extracting primitive: chest_tight_bma_light_ss_a05_straps
+14:57:58 | INFO: Primitives created: 1
+14:57:58 | INFO: Extracting primitive: facehair_bloodsith_bma_non_a04
+14:57:58 | INFO: Primitives created: 1
+14:57:58 | INFO: Extracting primitive: hair_human_bma_non_a06
+14:57:58 | INFO: Primitives created: 1
+14:57:58 | INFO: Extracting primitive: hand_gauntlet_bma_archetype
+14:57:58 | INFO: Primitives created: 1
+14:57:58 | INFO: Extracting primitive: head_bloodsith_bma_non_a10
+14:57:58 | INFO: Primitives created: 2
+14:57:58 | INFO: Extracting primitive: leg_skirt_bma_archetype
+14:57:58 | INFO: Primitives created: 1
+14:57:58 | INFO: Extracting primitive: waist_belt_bma_archetype
+14:57:58 | INFO: Primitives created: 1
+14:57:58 | INFO: Extracting primitive: waist_belt_bma_light_ss_a04_back
+14:57:58 | INFO: Primitives created: 1
+14:57:58 | INFO: Extracting primitive: waist_belt_bma_light_ss_a04_front
+14:57:58 | INFO: Primitives created: 1
+14:57:58 | INFO: Extracting primitive: waist_belt_bma_light_ss_a04_sling
+14:57:58 | INFO: Primitives created: 1
+14:58:02 | INFO: Finished glTF 2.0 export in 3.8647589683532715 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\bmfnew_skeleton.gr2
+OBJS: ['bmfnew_skeleton']
+TIME: 0.004 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\bracer\model\bracer_short_bmf_archetype.gr2
+OBJS: ['bracer_short_bmf_archetype']
+TIME: 0.006 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\face\model\face_gehelmet15_bmf_archetype.gr2
+OBJS: ['face_gehelmet15_bmf_archetype']
+TIME: 0.008 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\facehair\model\facehair_bloodsith_bmf_non_a01.gr2
+OBJS: ['facehair_bloodsith_bmf_non_a01']
+TIME: 0.028 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\head\model\head_bloodsith_bmf_non_a06.gr2
+OBJS: ['head_bloodsith_bmf_non_a06']
+TIME: 0.128 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\leg\model\leg_skirt_bmf_archetype.gr2
+OBJS: ['leg_skirt_bmf_archetype']
+TIME: 0.043 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bmf_archetype.gr2
+OBJS: ['waist_belt_bmf_archetype']
+TIME: 0.009 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_tall_bmf_archetype.gr2
+OBJS: ['boot_tall_bmf_archetype']
+TIME: 0.017 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_tall_bmf_heavy_sw_a08_shin.gr2
+OBJS: ['boot_tall_bmf_heavy_sw_a08_shin']
+TIME: 0.009 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_gauntlet_bmf_archetype.gr2
+OBJS: ['hand_gauntlet_bmf_archetype']
+TIME: 0.084 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_gauntlet_bmf_heavy_sw_a08_back.gr2
+OBJS: ['hand_gauntlet_bmf_heavy_sw_a08_back']
+TIME: 0.016 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_capetight_bmf_archetype.gr2
+OBJS: ['chest_capetight_bmf_archetype']
+TIME: 0.070 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_capetight_bmf_heavy_sw_a08_collar.gr2
+OBJS: ['chest_capetight_bmf_heavy_sw_a08_collar']
+TIME: 0.027 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_capetight_bmf_heavy_sw_a08_loin.gr2
+OBJS: ['chest_capetight_bmf_heavy_sw_a08_loin']
+TIME: 0.012 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_capetight_bmf_heavy_sw_a08_shld.gr2
+OBJS: ['chest_capetight_bmf_heavy_sw_a08_shld']
+TIME: 0.013 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\cb_knight_saber_idle_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0089 sec |   0.0089 sec) Done, building ...
+Progress: 100.00%
+  (  0.0947 sec |   0.0946 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\cb_knight_saber_idle_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\mv_saber_run_forward_01.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0082 sec |   0.0082 sec) Done, building ...
+Progress: 100.00%
+  (  0.0607 sec |   0.0607 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\mv_saber_run_forward_01.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\cb_saber_attack_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0051 sec |   0.0051 sec) Done, building ...
+Progress: 100.00%
+  (  0.0540 sec |   0.0540 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\cb_saber_attack_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\dg_unarmed_crit_damage_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0073 sec |   0.0073 sec) Done, building ...
+Progress: 100.00%
+  (  0.0951 sec |   0.0951 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\dg_unarmed_crit_damage_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0088 sec |   0.0087 sec) Done, building ...
+Progress: 100.00%
+  (  0.1665 sec |   0.1665 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmfnew\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+14:58:04 | INFO: Starting glTF 2.0 export
+14:58:04 | INFO: Extracting primitive: boot_tall_bmf_archetype
+14:58:04 | INFO: Primitives created: 1
+14:58:04 | INFO: Extracting primitive: boot_tall_bmf_heavy_sw_a08_shin
+14:58:04 | INFO: Primitives created: 1
+14:58:04 | INFO: Extracting primitive: bracer_short_bmf_archetype
+14:58:04 | INFO: Primitives created: 1
+14:58:04 | INFO: Extracting primitive: chest_capetight_bmf_archetype
+14:58:04 | INFO: Primitives created: 1
+14:58:04 | INFO: Extracting primitive: chest_capetight_bmf_heavy_sw_a08_collar
+14:58:04 | INFO: Primitives created: 1
+14:58:04 | INFO: Extracting primitive: chest_capetight_bmf_heavy_sw_a08_loin
+14:58:04 | INFO: Primitives created: 1
+14:58:04 | INFO: Extracting primitive: chest_capetight_bmf_heavy_sw_a08_shld
+14:58:04 | INFO: Primitives created: 1
+14:58:04 | INFO: Extracting primitive: face_gehelmet15_bmf_archetype
+14:58:04 | INFO: Primitives created: 1
+14:58:04 | INFO: Extracting primitive: facehair_bloodsith_bmf_non_a01
+14:58:04 | INFO: Primitives created: 1
+14:58:04 | INFO: Extracting primitive: hand_gauntlet_bmf_archetype
+14:58:05 | INFO: Primitives created: 1
+14:58:05 | INFO: Extracting primitive: hand_gauntlet_bmf_heavy_sw_a08_back
+14:58:05 | INFO: Primitives created: 1
+14:58:05 | INFO: Extracting primitive: head_bloodsith_bmf_non_a06
+14:58:05 | INFO: Primitives created: 2
+14:58:05 | INFO: Extracting primitive: leg_skirt_bmf_archetype
+14:58:05 | INFO: Primitives created: 1
+14:58:05 | INFO: Extracting primitive: waist_belt_bmf_archetype
+14:58:05 | INFO: Primitives created: 1
+14:58:09 | INFO: Finished glTF 2.0 export in 4.449429273605347 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\bmsnew_skeleton.gr2
+OBJS: ['bmsnew_skeleton.003']
+TIME: 0.005 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\bracer\model\bracer_short_bms_archetype.gr2
+OBJS: ['bracer_short_bms_archetype']
+TIME: 0.005 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\face\model\face_gecollar01_bms_archetype.gr2
+OBJS: ['face_gecollar01_bms_archetype']
+TIME: 0.010 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hair\model\hair_human_bms_non_a12.gr2
+OBJS: ['hair_human_bms_non_a12']
+TIME: 0.034 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\leg\model\leg_pant_bms_archetype.gr2
+OBJS: ['leg_pant_bms_archetype']
+TIME: 0.030 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\head\model\head_bloodsith_bms_non_a10.gr2
+OBJS: ['head_bloodsith_bms_non_a10']
+TIME: 0.099 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bms_archetype.gr2
+OBJS: ['waist_belt_bms_archetype']
+TIME: 0.008 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_tall_bms_archetype.gr2
+OBJS: ['boot_tall_bms_archetype']
+TIME: 0.021 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_tall_bms_med_sw_a02_shin.gr2
+OBJS: ['boot_tall_bms_med_sw_a02_shin']
+TIME: 0.038 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_gauntlet_bms_archetype.gr2
+OBJS: ['hand_gauntlet_bms_archetype']
+TIME: 0.060 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_gauntlet_bms_med_sw_a02_forearm.gr2
+OBJS: ['hand_gauntlet_bms_med_sw_a02_forearm']
+TIME: 0.016 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_robe02_bms_archetype.gr2
+OBJS: ['chest_robe02_bms_archetype']
+TIME: 0.084 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_robe02_bms_med_sw_a02_hooddown.gr2
+OBJS: ['chest_robe02_bms_med_sw_a02_hooddown']
+TIME: 0.030 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_robe02_bms_med_sw_a02_shld.gr2
+OBJS: ['chest_robe02_bms_med_sw_a02_shld']
+TIME: 0.018 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_robe02_bms_med_sw_a02_mid.gr2
+OBJS: ['chest_robe02_bms_med_sw_a02_mid']
+TIME: 0.008 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\cb_knight_saber_idle_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0089 sec |   0.0089 sec) Done, building ...
+Progress: 100.00%
+  (  0.0757 sec |   0.0756 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\cb_knight_saber_idle_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\mv_saber_run_forward_01.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0069 sec |   0.0068 sec) Done, building ...
+Progress: 100.00%
+  (  0.0762 sec |   0.0762 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\mv_saber_run_forward_01.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\cb_saber_attack_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0067 sec |   0.0067 sec) Done, building ...
+Progress: 100.00%
+  (  0.0633 sec |   0.0633 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\cb_saber_attack_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\dg_unarmed_crit_damage_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0085 sec |   0.0084 sec) Done, building ...
+Progress: 100.00%
+  (  0.0852 sec |   0.0852 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\dg_unarmed_crit_damage_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0091 sec |   0.0091 sec) Done, building ...
+Progress: 100.00%
+  (  0.1244 sec |   0.1243 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmsnew\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+14:58:11 | INFO: Starting glTF 2.0 export
+14:58:11 | INFO: Extracting primitive: boot_tall_bms_archetype.002
+14:58:11 | INFO: Primitives created: 1
+14:58:11 | INFO: Extracting primitive: boot_tall_bms_med_sw_a02_shin
+14:58:11 | INFO: Primitives created: 1
+14:58:11 | INFO: Extracting primitive: bracer_short_bms_archetype.003
+14:58:11 | INFO: Primitives created: 1
+14:58:11 | INFO: Extracting primitive: chest_robe02_bms_archetype
+14:58:12 | INFO: Primitives created: 1
+14:58:12 | INFO: Extracting primitive: chest_robe02_bms_med_sw_a02_hooddown
+14:58:12 | INFO: Primitives created: 1
+14:58:12 | INFO: Extracting primitive: chest_robe02_bms_med_sw_a02_mid
+14:58:12 | INFO: Primitives created: 1
+14:58:12 | INFO: Extracting primitive: chest_robe02_bms_med_sw_a02_shld
+14:58:12 | INFO: Primitives created: 1
+14:58:12 | INFO: Extracting primitive: face_gecollar01_bms_archetype
+14:58:12 | INFO: Primitives created: 1
+14:58:12 | INFO: Extracting primitive: hair_human_bms_non_a12
+14:58:12 | INFO: Primitives created: 1
+14:58:12 | INFO: Extracting primitive: hand_gauntlet_bms_archetype
+14:58:12 | INFO: Primitives created: 1
+14:58:12 | INFO: Extracting primitive: hand_gauntlet_bms_med_sw_a02_forearm
+14:58:12 | INFO: Primitives created: 1
+14:58:12 | INFO: Extracting primitive: head_bloodsith_bms_non_a10
+14:58:12 | INFO: Primitives created: 2
+14:58:12 | INFO: Extracting primitive: leg_pant_bms_archetype.001
+14:58:12 | INFO: Primitives created: 1
+14:58:12 | INFO: Extracting primitive: waist_belt_bms_archetype.003
+14:58:12 | INFO: Primitives created: 1
+14:58:16 | INFO: Finished glTF 2.0 export in 4.600829839706421 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\bmanew_skeleton.gr2
+OBJS: ['bmanew_skeleton.001']
+TIME: 0.004 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\leg\model\leg_armor02_bma_archetype.gr2
+OBJS: ['leg_armor02_bma_archetype']
+TIME: 0.044 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\bracer\model\bracer_short_bma_archetype.gr2
+OBJS: ['bracer_short_bma_archetype']
+TIME: 0.005 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_tall_bma_archetype.gr2
+OBJS: ['boot_tall_bma_archetype']
+TIME: 0.018 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_tall_bma_heavy_sw_a07_shin.gr2
+OBJS: ['boot_tall_bma_heavy_sw_a07_shin']
+TIME: 0.059 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bma_archetype.gr2
+OBJS: ['waist_belt_bma_archetype']
+TIME: 0.011 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bma_heavy_sw_a07_back.gr2
+OBJS: ['waist_belt_bma_heavy_sw_a07_back']
+TIME: 0.009 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bma_heavy_sw_a07_front.gr2
+OBJS: ['waist_belt_bma_heavy_sw_a07_front']
+TIME: 0.004 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_armor01_bma_archetype.gr2
+OBJS: ['chest_armor01_bma_archetype']
+TIME: 0.040 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_armor01_bma_heavy_sw_a07_shld.gr2
+OBJS: ['chest_armor01_bma_heavy_sw_a07_shld']
+TIME: 0.019 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_glove_bma_archetype.gr2
+OBJS: ['hand_glove_bma_archetype']
+TIME: 0.056 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_glove_bma_heavy_sw_a07_forearm.gr2
+OBJS: ['hand_glove_bma_heavy_sw_a07_forearm']
+TIME: 0.061 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\face\model\face_swhelmet01_bma_archetype.gr2
+OBJS: ['face_swhelmet01_bma_archetype']
+TIME: 0.067 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\face\model\face_swhelmet01_bma_heavy_sw_a06_ear.gr2
+OBJS: ['face_swhelmet01_bma_heavy_sw_a06_ear']
+TIME: 0.013 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\cb_knight_saber_idle_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0085 sec |   0.0085 sec) Done, building ...
+Progress: 100.00%
+  (  0.0867 sec |   0.0867 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\cb_knight_saber_idle_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\mv_saber_run_forward_01.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0050 sec |   0.0050 sec) Done, building ...
+Progress: 100.00%
+  (  0.0511 sec |   0.0511 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\mv_saber_run_forward_01.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\cb_saber_attack_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0053 sec |   0.0052 sec) Done, building ...
+Progress: 100.00%
+  (  0.0600 sec |   0.0600 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\cb_saber_attack_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\dg_unarmed_crit_damage_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0087 sec |   0.0087 sec) Done, building ...
+Progress: 100.00%
+  (  0.0887 sec |   0.0886 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\dg_unarmed_crit_damage_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0121 sec |   0.0121 sec) Done, building ...
+Progress: 100.00%
+  (  0.1365 sec |   0.1365 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmanew\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+14:58:18 | INFO: Starting glTF 2.0 export
+14:58:18 | INFO: Extracting primitive: boot_tall_bma_archetype.001
+14:58:18 | INFO: Primitives created: 1
+14:58:18 | INFO: Extracting primitive: boot_tall_bma_heavy_sw_a07_shin
+14:58:18 | INFO: Primitives created: 1
+14:58:18 | INFO: Extracting primitive: bracer_short_bma_archetype.001
+14:58:18 | INFO: Primitives created: 1
+14:58:18 | INFO: Extracting primitive: chest_armor01_bma_archetype
+14:58:18 | INFO: Primitives created: 1
+14:58:19 | INFO: Extracting primitive: chest_armor01_bma_heavy_sw_a07_shld
+14:58:19 | INFO: Primitives created: 1
+14:58:19 | INFO: Extracting primitive: face_swhelmet01_bma_archetype
+14:58:19 | INFO: Primitives created: 1
+14:58:19 | INFO: Extracting primitive: face_swhelmet01_bma_heavy_sw_a06_ear
+14:58:19 | INFO: Primitives created: 1
+14:58:19 | INFO: Extracting primitive: hand_glove_bma_archetype
+14:58:19 | INFO: Primitives created: 1
+14:58:19 | INFO: Extracting primitive: hand_glove_bma_heavy_sw_a07_forearm
+14:58:19 | INFO: Primitives created: 1
+14:58:19 | INFO: Extracting primitive: leg_armor02_bma_archetype
+14:58:19 | INFO: Primitives created: 1
+14:58:19 | INFO: Extracting primitive: waist_belt_bma_archetype.001
+14:58:19 | INFO: Primitives created: 1
+14:58:19 | INFO: Extracting primitive: waist_belt_bma_heavy_sw_a07_back
+14:58:19 | INFO: Primitives created: 1
+14:58:19 | INFO: Extracting primitive: waist_belt_bma_heavy_sw_a07_front
+14:58:19 | INFO: Primitives created: 1
+14:58:22 | INFO: Finished glTF 2.0 export in 3.638826608657837 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\bfnnew_skeleton.gr2
+OBJS: ['bfnnew_skeleton']
+TIME: 0.004 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\bracer\model\bracer_short_bfn_archetype.gr2
+OBJS: ['bracer_short_bfn_archetype']
+TIME: 0.006 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\facehair\model\facehair_bloodsith_bfn_non_a01.gr2
+OBJS: ['facehair_bloodsith_bfn_non_a01']
+TIME: 0.011 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hair\model\hair_human_bfn_non_a05.gr2
+OBJS: ['hair_human_bfn_non_a05']
+TIME: 0.039 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_gauntlet_bfn_archetype.gr2
+OBJS: ['hand_gauntlet_bfn_archetype']
+TIME: 0.049 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\head\model\head_bloodsith_bfn_non_a04.gr2
+OBJS: ['head_bloodsith_bfn_non_a04']
+TIME: 0.118 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\leg\model\leg_skirt_bfn_archetype.gr2
+OBJS: ['leg_skirt_bfn_archetype']
+TIME: 0.036 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_tall_bfn_archetype.gr2
+OBJS: ['boot_tall_bfn_archetype']
+TIME: 0.019 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_tall_bfn_light_ss_a02_cuff.gr2
+OBJS: ['boot_tall_bfn_light_ss_a02_cuff']
+TIME: 0.013 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_tightskin_bfn_archetype.gr2
+OBJS: ['chest_tightskin_bfn_archetype']
+TIME: 0.051 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_tightskin_bfn_light_ss_a02_hoodup.gr2
+OBJS: ['chest_tightskin_bfn_light_ss_a02_hoodup']
+TIME: 0.026 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_tightskin_bfn_light_ss_a02_shaw.gr2
+OBJS: ['chest_tightskin_bfn_light_ss_a02_shaw']
+TIME: 0.032 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_tightskin_bfn_light_ss_a02_shld.gr2
+OBJS: ['chest_tightskin_bfn_light_ss_a02_shld']
+TIME: 0.013 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bfn_archetype.gr2
+OBJS: ['waist_belt_bfn_archetype']
+TIME: 0.010 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bfn_med_ge_a34_back.gr2
+OBJS: ['waist_belt_bfn_med_ge_a34_back']
+TIME: 0.022 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfnnew\cb_knight_saber_idle_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0098 sec |   0.0098 sec) Done, building ...
+Progress: 100.00%
+  (  0.0968 sec |   0.0968 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfnnew\cb_knight_saber_idle_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfnnew\mv_saber_run_forward_01.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0052 sec |   0.0052 sec) Done, building ...
+Progress: 100.00%
+  (  0.0569 sec |   0.0568 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfnnew\mv_saber_run_forward_01.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfnnew\cb_saber_attack_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0049 sec |   0.0049 sec) Done, building ...
+Progress: 100.00%
+  (  0.0540 sec |   0.0539 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfnnew\cb_saber_attack_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfnnew\dg_unarmed_crit_damage_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0073 sec |   0.0073 sec) Done, building ...
+Progress: 100.00%
+  (  0.0783 sec |   0.0783 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfnnew\dg_unarmed_crit_damage_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfnnew\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0117 sec |   0.0116 sec) Done, building ...
+Progress: 100.00%
+  (  0.1354 sec |   0.1354 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bfnnew\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+14:58:25 | INFO: Starting glTF 2.0 export
+14:58:25 | INFO: Extracting primitive: boot_tall_bfn_archetype
+14:58:25 | INFO: Primitives created: 1
+14:58:25 | INFO: Extracting primitive: boot_tall_bfn_light_ss_a02_cuff
+14:58:25 | INFO: Primitives created: 1
+14:58:25 | INFO: Extracting primitive: bracer_short_bfn_archetype
+14:58:25 | INFO: Primitives created: 1
+14:58:25 | INFO: Extracting primitive: chest_tightskin_bfn_archetype
+14:58:25 | INFO: Primitives created: 2
+14:58:25 | INFO: Extracting primitive: chest_tightskin_bfn_light_ss_a02_hoodup
+14:58:25 | INFO: Primitives created: 1
+14:58:25 | INFO: Extracting primitive: chest_tightskin_bfn_light_ss_a02_shaw
+14:58:25 | INFO: Primitives created: 1
+14:58:25 | INFO: Extracting primitive: chest_tightskin_bfn_light_ss_a02_shld
+14:58:25 | INFO: Primitives created: 1
+14:58:25 | INFO: Extracting primitive: facehair_bloodsith_bfn_non_a01
+14:58:25 | INFO: Primitives created: 1
+14:58:25 | INFO: Extracting primitive: hair_human_bfn_non_a05
+14:58:25 | INFO: Primitives created: 1
+14:58:25 | INFO: Extracting primitive: hand_gauntlet_bfn_archetype
+14:58:25 | INFO: Primitives created: 1
+14:58:25 | INFO: Extracting primitive: head_bloodsith_bfn_non_a04
+14:58:25 | INFO: Primitives created: 2
+14:58:25 | INFO: Extracting primitive: leg_skirt_bfn_archetype
+14:58:25 | INFO: Primitives created: 1
+14:58:25 | INFO: Extracting primitive: waist_belt_bfn_archetype
+14:58:25 | INFO: Primitives created: 1
+14:58:25 | INFO: Extracting primitive: waist_belt_bfn_med_ge_a34_back
+14:58:25 | INFO: Primitives created: 1
+14:58:28 | INFO: Finished glTF 2.0 export in 3.649446725845337 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\spec\bmnnew_skeleton.gr2
+OBJS: ['bmnnew_skeleton.001']
+TIME: 0.004 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\bracer\model\bracer_short_bmn_archetype.gr2
+OBJS: ['bracer_short_bmn_archetype']
+TIME: 0.006 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\facehair\model\facehair_bloodsith_bmn_non_a05.gr2
+OBJS: ['facehair_bloodsith_bmn_non_a05']
+TIME: 0.011 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\leg\model\leg_pant_bmn_archetype.gr2
+OBJS: ['leg_pant_bmn_archetype']
+TIME: 0.031 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\head\model\head_bloodsith_bmn_non_a05.gr2
+OBJS: ['head_bloodsith_bmn_non_a05']
+TIME: 0.100 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_thigh_bmn_archetype.gr2
+OBJS: ['boot_thigh_bmn_archetype']
+TIME: 0.025 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\boot\model\boot_thigh_bmn_med_sw_a04_knee.gr2
+OBJS: ['boot_thigh_bmn_med_sw_a04_knee']
+TIME: 0.020 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_gauntlet_bmn_archetype.gr2
+OBJS: ['hand_gauntlet_bmn_archetype']
+TIME: 0.046 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hand\model\hand_gauntlet_bmn_med_sw_a04_forearm.gr2
+OBJS: ['hand_gauntlet_bmn_med_sw_a04_forearm']
+TIME: 0.020 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_trenchtight_bmn_archetype.gr2
+OBJS: ['chest_trenchtight_bmn_archetype']
+TIME: 0.056 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_trenchtight_bmn_med_sw_a04_shld.gr2
+OBJS: ['chest_trenchtight_bmn_med_sw_a04_shld']
+TIME: 0.050 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_trenchtight_bmn_med_sw_a04_loin.gr2
+OBJS: ['chest_trenchtight_bmn_med_sw_a04_loin']
+TIME: 0.012 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\chest\model\chest_trenchtight_bmn_med_sw_a04_hooddown.gr2
+OBJS: ['chest_trenchtight_bmn_med_sw_a04_hooddown']
+TIME: 0.032 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hair\model\hair_human_bmn_non_a12.gr2
+OBJS: ['hair_human_bmn_non_a12']
+TIME: 0.043 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\hair\model\hair_human_bmn_non_a12_back.gr2
+OBJS: ['hair_human_bmn_non_a12_back']
+TIME: 0.021 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bmn_archetype.gr2
+OBJS: ['waist_belt_bmn_archetype']
+TIME: 0.010 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bmn_med_sw_a04_front.gr2
+OBJS: ['waist_belt_bmn_med_sw_a04_front']
+TIME: 0.014 s.
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\waist\model\waist_belt_bmn_med_sw_a04_back.gr2
+OBJS: ['waist_belt_bmn_med_sw_a04_back']
+TIME: 0.018 s.
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_knight_saber_idle_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0073 sec |   0.0072 sec) Done, building ...
+Progress: 100.00%
+  (  0.0729 sec |   0.0729 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_knight_saber_idle_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\mv_saber_run_forward_01.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0070 sec |   0.0070 sec) Done, building ...
+Progress: 100.00%
+  (  0.0592 sec |   0.0592 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\mv_saber_run_forward_01.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_saber_attack_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0054 sec |   0.0054 sec) Done, building ...
+Progress: 100.00%
+  (  0.0583 sec |   0.0583 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\cb_saber_attack_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\dg_unarmed_crit_damage_right_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0098 sec |   0.0098 sec) Done, building ...
+Progress: 100.00%
+  (  0.0765 sec |   0.0765 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\dg_unarmed_crit_damage_right_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+Progress:   0.00%
+(  0.0000 sec |   0.0000 sec) Importing 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\dg_death_1.jba' ...
+Progress:   0.00%
+  (  0.0000 sec |   0.0000 sec) Parsing file ...
+Progress:  33.33%
+  (  0.0100 sec |   0.0099 sec) Done, building ...
+Progress: 100.00%
+  (  0.1178 sec |   0.1177 sec) Done, finished importing: 'D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\anim\humanoid\bmnnew\dg_death_1.jba'
+Progress: 100.00%
+Progress: 100.00%
+
+
+14:58:31 | INFO: Starting glTF 2.0 export
+14:58:31 | INFO: Extracting primitive: boot_thigh_bmn_archetype.001
+14:58:31 | INFO: Primitives created: 1
+14:58:31 | INFO: Extracting primitive: boot_thigh_bmn_med_sw_a04_knee.001
+14:58:31 | INFO: Primitives created: 1
+14:58:31 | INFO: Extracting primitive: bracer_short_bmn_archetype.001
+14:58:31 | INFO: Primitives created: 1
+14:58:31 | INFO: Extracting primitive: chest_trenchtight_bmn_archetype.001
+14:58:31 | INFO: Primitives created: 1
+14:58:31 | INFO: Extracting primitive: chest_trenchtight_bmn_med_sw_a04_hooddown.001
+14:58:31 | INFO: Primitives created: 1
+14:58:31 | INFO: Extracting primitive: chest_trenchtight_bmn_med_sw_a04_loin.001
+14:58:31 | INFO: Primitives created: 1
+14:58:31 | INFO: Extracting primitive: chest_trenchtight_bmn_med_sw_a04_shld.001
+14:58:31 | INFO: Primitives created: 1
+14:58:31 | INFO: Extracting primitive: facehair_bloodsith_bmn_non_a05.001
+14:58:31 | INFO: Primitives created: 1
+14:58:31 | INFO: Extracting primitive: hair_human_bmn_non_a12.001
+14:58:31 | INFO: Primitives created: 1
+14:58:31 | INFO: Extracting primitive: hair_human_bmn_non_a12_back.001
+14:58:31 | INFO: Primitives created: 1
+14:58:31 | INFO: Extracting primitive: hand_gauntlet_bmn_archetype.001
+14:58:31 | INFO: Primitives created: 1
+14:58:31 | INFO: Extracting primitive: hand_gauntlet_bmn_med_sw_a04_forearm.001
+14:58:31 | INFO: Primitives created: 1
+14:58:31 | INFO: Extracting primitive: head_bloodsith_bmn_non_a05.001
+14:58:31 | INFO: Primitives created: 2
+14:58:31 | INFO: Extracting primitive: leg_pant_bmn_archetype.001
+14:58:31 | INFO: Primitives created: 1
+14:58:31 | INFO: Extracting primitive: waist_belt_bmn_archetype.001
+14:58:31 | INFO: Primitives created: 1
+14:58:31 | INFO: Extracting primitive: waist_belt_bmn_med_sw_a04_back.001
+14:58:31 | INFO: Primitives created: 1
+14:58:31 | INFO: Extracting primitive: waist_belt_bmn_med_sw_a04_front.001
+14:58:31 | INFO: Primitives created: 1
+14:58:35 | INFO: Finished glTF 2.0 export in 4.172581195831299 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\dynamic\weapon\model\electrostaff_high04_a03_v01.gr2
+OBJS: ['electrostaff_high04_a03_v01']
+TIME: 0.034 s.
+
+14:58:35 | INFO: Starting glTF 2.0 export
+14:58:35 | INFO: Extracting primitive: electrostaff_high04_a03_v01
+14:58:35 | INFO: Primitives created: 1
+14:58:35 | INFO: Finished glTF 2.0 export in 0.018328428268432617 s
+
+B6 CONVERSION COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

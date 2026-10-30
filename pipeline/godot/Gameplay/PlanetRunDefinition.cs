@@ -62,6 +62,7 @@ public sealed class PlanetCacheDefinition
 /// <summary>Optional planet data. Worlds without this resource retain their existing wave/roster/reward rules.</summary>
 public sealed class PlanetRunDefinition
 {
+    public bool ContinuousEncounters {get;set;}
     public RunDifficulty Difficulty { get; set; } = new();
     public bool Endless { get; set; }
     public int EnemyExperienceDropEvery { get; set; } = 1;

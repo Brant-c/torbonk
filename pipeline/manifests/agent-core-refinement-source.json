@@ -1,0 +1,53 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 180,
+  "maximumDecodedBytes": 104857600,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x7010454E6BD0E487",
+      "entryOffset": 30495976,
+      "headerSize": 36,
+      "dataOffset": 30496012,
+      "compressedSize": 13081,
+      "length": 24129,
+      "compressionMethod": 1,
+      "crc32Index": "24321f1c",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_attack_1.jba",
+      "sha256": "e652a0038f3c107d767f81d56d848a16d9f75cb538db9b3b6938cb684c10eedf",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_attack_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x7EF990BEE42BF54D",
+      "entryOffset": 159269740,
+      "headerSize": 36,
+      "dataOffset": 159269776,
+      "compressedSize": 1486,
+      "length": 16966,
+      "compressionMethod": 1,
+      "crc32Index": "e2aad6e5",
+      "path": "/resources/art/fx/fxspec/abilities/trooper/tr_stockstrike_impact.fxspec",
+      "sha256": "14499478beaef3057a812c3f1c917f4d5468723358b637e655e193eabeae013b",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\trooper\\tr_stockstrike_impact.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "character selection",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_attack_1.jba",
+      "relation": "April Laceration proc appearance follow-up"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/fx/fxspec/abilities/trooper/tr_stockstrike_impact.fxspec",
+      "relation": "April Laceration proc appearance follow-up"
+    }
+  ],
+  "unresolved": [],
+  "selection": "human male body type 2; bmnnew skeleton"
+}

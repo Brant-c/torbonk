@@ -23,7 +23,7 @@ records=[]
 for name,stem in clips.items():
     original=ROOT/f'source-assets/april2012/resources/anim/humanoid/bmnnew/{stem}.jba'
     raw=read_jba(Reporter(),str(original))
-    bpy.ops.import_animation.jba(filepath=str(original),ignore_facial_bones=False,delete_180=False,scale_animation=False,scale_factor=1)
+    bpy.ops.import_animation.jba(filepath=str(original),ignore_facial_bones=True,delete_180=False,scale_animation=False,scale_factor=1)
     action=rig.animation_data.action;action.name=name;action.use_fake_user=True
     for layer in action.layers:
         for strip in layer.strips:

@@ -12,6 +12,19 @@ public partial class AbilityController : Node
     public int Limit(AbilityCategory category) => Math.Max(0,category==AbilityCategory.Offensive?OffensiveLimit:UtilityLimit);
     public int Equipped(AbilityCategory category) => Abilities.Count(a=>a.Unlocked && !a.Definition.IsBasicAttack && !a.Definition.Slotless && !a.InheritsFreeSlot && a.Definition.Category==category);
     public bool AllowHybrid {get;set;}
+    private readonly HashSet<string> _slotExemptions=new();
+    private bool _slotPolicyApplied;
+    public void ApplyClassSlotPolicy(string classId,string starter)
+    {
+        if(classId is "mercenary" or "powertech")return;
+        OffensiveLimit=4;UtilityLimit=2;_slotExemptions.Clear();_slotPolicyApplied=true;
+        if(classId=="sorcerer"){_slotExemptions.Add("affliction");_slotExemptions.Add("polarityshift");}
+        else _slotExemptions.Add(starter);
+        foreach(var a in Abilities){
+            a.Definition.Slotless=a.Definition.IsBasicAttack || _slotExemptions.Contains(a.Definition.Id);
+            a.Definition.ReplaceableStarter=!a.Definition.IsBasicAttack && a.Definition.Slotless && a.Definition.Category==AbilityCategory.Offensive;
+        }
+    }
     public bool Conflicts(AutomaticAbility ability) => !AllowHybrid && ability.Definition.ExclusiveWith!="" && Find(ability.Definition.ExclusiveWith)?.Unlocked==true;
     public bool CanUnlock(AutomaticAbility ability) => ability.Unlocked || ability.Definition.Slotless || !Conflicts(ability) && (ability.InheritsFreeSlot || Equipped(ability.Definition.Category)<Limit(ability.Definition.Category));
     public bool Unlock(string id)
@@ -28,12 +41,16 @@ public partial class AbilityController : Node
     public AutomaticAbility? Active => Abilities.FirstOrDefault(a=>a.BlocksCasting);
     public AutomaticAbility[] QuickbarAbilities=>Abilities.Where(a=>a.Unlocked).OrderBy(a=>a.Definition.IsBasicAttack?0:1).Take(12).ToArray();
     public AutomaticAbility? Find(string id) => Abilities.FirstOrDefault(a=>a.Definition.Id==id);
-    public void ResetUnlocks() { foreach(var ability in Abilities) {ability.InheritsFreeSlot=false;if(ability.Definition.Id=="lacerate")ability.Definition.Slotless=true;ability.SetUnlocked(ability.Definition.StartsUnlocked);} }
+    public void ResetUnlocks() { foreach(var ability in Abilities) {ability.InheritsFreeSlot=false;if(_slotPolicyApplied)ability.Definition.Slotless=ability.Definition.IsBasicAttack || _slotExemptions.Contains(ability.Definition.Id);ability.SetUnlocked(ability.Definition.StartsUnlocked);} }
     private int ActivationPriority(AutomaticAbility ability)
     {
         var build=ability.Build;
+        if(build?.World.RunConfiguration.AdvancedClassId=="sorcerer" && build.World.Player.StationaryForAbility && ability.Definition.Id is "deathfield" or "storm")return -5;
+        if(build?.World.RunConfiguration.AdvancedClassId=="operative")return build.Pregame.AgentPriority(ability);
         if(build?.World.RunConfiguration.AdvancedClassId=="marauder")return build.Pregame.MarauderPriority(ability);
         if(build?.World.RunConfiguration.AdvancedClassId=="assassin") {
+            if(ability.Definition.Id=="discharge" && build.Pregame.AssassinDeception)return -6;
+            if(ability.Definition.Id=="electrocute")return -5;
             if(ability.Definition.Id=="maul" && build.Pregame.StealthOpening)return -4;
             if(ability.Definition.Id=="shock" && build.Pregame.VoltaicCharges>0)return -2;
             if(ability.Definition.Id=="lacerate")return 1;

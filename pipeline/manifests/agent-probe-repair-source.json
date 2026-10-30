@@ -1,0 +1,116 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 180,
+  "maximumDecodedBytes": 104857600,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x57013AC5306699DC",
+      "entryOffset": 154657631,
+      "headerSize": 36,
+      "dataOffset": 154657667,
+      "compressedSize": 2035,
+      "length": 33230,
+      "compressionMethod": 1,
+      "crc32Index": "5485f600",
+      "path": "/resources/art/fx/fxspec/abilities/spy/sp_explosiveprobe_explode_02.fxspec",
+      "sha256": "5227e1e60b33e2b37134f315dbda286f25470874e4374c0c150f7ca5ba9b3b72",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\spy\\sp_explosiveprobe_explode_02.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xB8F2E205C15F50A5",
+      "entryOffset": 154659702,
+      "headerSize": 36,
+      "dataOffset": 154659738,
+      "compressedSize": 3291,
+      "length": 57548,
+      "compressionMethod": 1,
+      "crc32Index": "83cbb43e",
+      "path": "/resources/art/fx/fxspec/abilities/spy/sp_explosiveprobe_planted.fxspec",
+      "sha256": "1d310b77c559a3057d66b0897005cba010c5319d59e9fb72b0bc46a1e6cf3230",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\spy\\sp_explosiveprobe_planted.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x6F5448B97BDDFE62",
+      "entryOffset": 154663029,
+      "headerSize": 36,
+      "dataOffset": 154663065,
+      "compressedSize": 3908,
+      "length": 90698,
+      "compressionMethod": 1,
+      "crc32Index": "35dabe51",
+      "path": "/resources/art/fx/fxspec/abilities/spy/sp_explosiveprobe_probe.fxspec",
+      "sha256": "b275fcd79a97e899ff8beefb3d754b9c6be4c2844f0c4f8f4c7b6a326b8d3b72",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\spy\\sp_explosiveprobe_probe.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0x5A2D4877733ACB3F",
+      "entryOffset": 154666973,
+      "headerSize": 36,
+      "dataOffset": 154667009,
+      "compressedSize": 3179,
+      "length": 54584,
+      "compressionMethod": 1,
+      "crc32Index": "ec60062d",
+      "path": "/resources/art/fx/fxspec/abilities/spy/sp_explosiveprobe_target.fxspec",
+      "sha256": "355ff041098ddaab0a11a4e4834a65cdbdeeaaeb74bf700eb9d2721eefd1b9e3",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\spy\\sp_explosiveprobe_target.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_art_fx_1.tor",
+      "archiveHash": "0xEB5B8060B24E11CC",
+      "entryOffset": 154670188,
+      "headerSize": 36,
+      "dataOffset": 154670224,
+      "compressedSize": 3679,
+      "length": 93448,
+      "compressionMethod": 1,
+      "crc32Index": "df76bc4b",
+      "path": "/resources/art/fx/fxspec/abilities/spy/sp_explosiveprobe_target_explode.fxspec",
+      "sha256": "8cfef586d675d5db14309cac18cc0464f8bee1e112e7b4e52c73466636119361",
+      "output": "source-assets\\april2012\\resources\\art\\fx\\fxspec\\abilities\\spy\\sp_explosiveprobe_target_explode.fxspec",
+      "archiveSha256": "79ab17d2c1b079aa1bae628d9f397ccad492486730764cb762111a19595dec1d",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "character selection",
+      "to": "/resources/art/fx/fxspec/abilities/spy/sp_explosiveprobe_explode_02.fxspec",
+      "relation": "Explosive Probe source FX audit"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/fx/fxspec/abilities/spy/sp_explosiveprobe_planted.fxspec",
+      "relation": "Explosive Probe source FX audit"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/fx/fxspec/abilities/spy/sp_explosiveprobe_probe.fxspec",
+      "relation": "Explosive Probe source FX audit"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/fx/fxspec/abilities/spy/sp_explosiveprobe_target.fxspec",
+      "relation": "Explosive Probe source FX audit"
+    },
+    {
+      "from": "character selection",
+      "to": "/resources/art/fx/fxspec/abilities/spy/sp_explosiveprobe_target_explode.fxspec",
+      "relation": "Explosive Probe source FX audit"
+    }
+  ],
+  "unresolved": [],
+  "selection": "human male body type 2; bmnnew skeleton"
+}

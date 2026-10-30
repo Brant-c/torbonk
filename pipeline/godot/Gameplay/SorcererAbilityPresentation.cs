@@ -6,7 +6,7 @@ using System.Text.Json;
 namespace SwtorSurvivors;
 
 /// <summary>Bounded adapter for the recovered April blast textures, cast/release gestures and Wwise media.</summary>
-public partial class SorcererAbilityPresentation : Node3D,IAbilityPresentation
+public partial class SorcererAbilityPresentation : Node3D,IAbilityPresentation,ITargetImpactPresentation
 {
     public CharacterPresentation Actor {get;set;}=null!;
     public AbilityDefinition Definition {get;set;}=null!;
@@ -19,6 +19,11 @@ public partial class SorcererAbilityPresentation : Node3D,IAbilityPresentation
     private Node3D? _projectile;
     private Vector3 _projectileStart,_projectileEnd;
     private double _projectileAge;
+    private Combatant? _flightTarget;
+    public bool ProjectileVisible=>_projectile!=null;
+    public Vector3 ProjectilePosition=>_projectile?.GlobalPosition??Vector3.Zero;
+    public int TargetImpacts {get;private set;}
+    public bool CastLoopPlaying=>_voices.Count>1 && _voices[1].Playing && _voices[1].Stream is AudioStreamWav w && w.LoopMode!=AudioStreamWav.LoopModeEnum.Disabled;
     public int AudioVoicesStarted {get;private set;}
     public bool ChargeVisible=>_charge!=null;
     public int ChargeHandCount=>_chargeHands.Count;
@@ -48,13 +53,15 @@ public partial class SorcererAbilityPresentation : Node3D,IAbilityPresentation
             Modulate=new Color(.8f,.55f,1),MaterialOverride=material};
         (parent??this).AddChild(sprite);return sprite;
     }
-    private void Play(string name,int slot,Vector3 at)
+    private void Play(string name,int slot,Vector3 at,bool loop=false)
     {
         if(name=="" || !_audio.RootElement.GetProperty("events").TryGetProperty(name,out var eventId))return;
         if(!_audio.RootElement.GetProperty("graphs").TryGetProperty(eventId.GetString()!,out var graph))return;
         var media=graph.GetProperty("media");if(media.GetArrayLength()==0)return;
         var voice=_voices[slot];voice.GlobalPosition=at;
-        voice.Stream=GD.Load<AudioStream>($"res://Assets/{(Definition.Id=="affliction"?"SorcererRefinement":"Sorcerer")}/Audio/{media[0].GetInt32()}.wav");
+        var stream=(AudioStreamWav)GD.Load<AudioStreamWav>($"res://Assets/{(Definition.Id=="affliction"?"SorcererRefinement":"Sorcerer")}/Audio/{media[0].GetInt32()}.wav").Duplicate();
+        if(loop){stream.LoopMode=AudioStreamWav.LoopModeEnum.Forward;stream.LoopBegin=0;stream.LoopEnd=(int)(stream.GetLength()*stream.MixRate);}
+        voice.Stream=stream;
         voice.Play();AudioVoicesStarted++;
     }
     public bool Begin(Combatant target,Vector3 center,float radius)
@@ -78,21 +85,27 @@ public partial class SorcererAbilityPresentation : Node3D,IAbilityPresentation
                 var ring=Sprite("electric_rings_bw_02",.10f,atlas:2,brightness:2.5f,parent:hand);
                 _chargeHands.Add((hand,bone,ring));
             }
-            Play(Definition.CastAudioEvent,0,Hand);Play(Definition.LoopAudioEvent,1,Hand);
+            Play(Definition.CastAudioEvent,0,Hand);Play(Definition.LoopAudioEvent,1,Hand,true);
         }
         return Actor.Animator.HasAnimation(Definition.StartClip);
     }
     public void Channel(){StopCharge();}
     public void Impact(Vector3 center)
     {
+        if(_projectile!=null){_projectile.Free();_projectile=null;}_flightTarget=null;
         if(Definition.Id=="affliction")
         {
             var glow=Sprite("2x2_electrical_blast_alpha",.19f,atlas:2,brightness:1.8f);glow.GlobalPosition=center;_effects.Add((glow,.7,.7));
             return;
         }
         if(Definition.Id!="thunderingblast")return;
-        Play("Play_ability_sithinquisitor_thunderingblast_projectile",2,Hand);
         Play(Definition.ImpactAudioEvent,3,center);
+    }
+    public void Launch(Combatant target)
+    {
+        StopCharge();_flightTarget=target;
+        var center=target.AimPosition;
+        Play("Play_ability_sithinquisitor_thunderingblast_projectile",2,Hand);
         _projectile=GD.Load<PackedScene>("res://Assets/Sorcerer/si_thundering_blast_force_energy.glb").Instantiate<Node3D>();
         var material=new ShaderMaterial {Shader=GD.Load<Shader>("res://Gameplay/SorcererBlast.gdshader")};
         material.SetShaderParameter("energy_texture",GD.Load<Texture2D>("res://Assets/Sorcerer/force_energy_draw_in.png"));
@@ -103,6 +116,11 @@ public partial class SorcererAbilityPresentation : Node3D,IAbilityPresentation
         AddChild(_projectile);_projectileStart=Hand;_projectileEnd=center;_projectileAge=0;_projectile.GlobalPosition=Hand;
         var direction=center-Hand;
         if(!direction.IsZeroApprox())_projectile.Basis=new Basis(new Quaternion(Vector3.Up,direction.Normalized())).Scaled(Vector3.One*.4f);
+    }
+    public void TargetImpact(Combatant target)
+    {
+        if(Definition.Id!="thunderingblast")return;
+        TargetImpacts++;var center=target.AimPosition;
         var wave=Sprite("fx_force_shockwave",.23f,brightness:2.3f);wave.GlobalPosition=center;_effects.Add((wave,.55,.55));
         var ring=Sprite("vfx_force_impact_ring",.18f,brightness:2.3f);ring.GlobalPosition=center;_effects.Add((ring,.45,.45));
         var core=Sprite("bw_flare_gray",.075f,brightness:3);core.GlobalPosition=center;_effects.Add((core,.22,.22));
@@ -123,8 +141,8 @@ public partial class SorcererAbilityPresentation : Node3D,IAbilityPresentation
         if(_projectile!=null)
         {
             _projectileAge+=delta;
-            if(_projectileAge>=.25){_projectile.Free();_projectile=null;}
-            else _projectile.GlobalPosition=_projectileStart.Lerp(_projectileEnd,(float)(_projectileAge/.25));
+            if(GodotObject.IsInstanceValid(_flightTarget) && _flightTarget!.Alive)_projectileEnd=_flightTarget.AimPosition;
+            _projectile.GlobalPosition=_projectileStart.Lerp(_projectileEnd,Math.Clamp((float)(_projectileAge/Math.Max(.001f,Definition.ProjectileSeconds)),0,1));
         }
         for(int i=_effects.Count-1;i>=0;i--)
         {
@@ -135,6 +153,6 @@ public partial class SorcererAbilityPresentation : Node3D,IAbilityPresentation
     }
     public void End(bool interrupted){StopCharge();if(interrupted)Release();}
     public void Complete(){}
-    public void Release(){StopCharge();if(_projectile!=null){_projectile.Free();_projectile=null;}foreach(var e in _effects)e.node.Free();_effects.Clear();foreach(var v in _voices)v.Stop();}
+    public void Release(){StopCharge();_flightTarget=null;if(_projectile!=null){_projectile.Free();_projectile=null;}foreach(var e in _effects)e.node.Free();_effects.Clear();foreach(var v in _voices)v.Stop();}
     public override void _ExitTree(){Release();_audio?.Dispose();}
 }

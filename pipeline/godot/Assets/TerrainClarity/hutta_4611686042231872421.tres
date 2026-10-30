@@ -1,0 +1,30 @@
+[gd_resource type="ShaderMaterial" load_steps=15 format=3]
+[ext_resource type="Shader" path="res://Assets/TerrainClarity/hutta_4611686042231872421.gdshader" id="shader"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/hutta_4611686042231872421_weights0.png" id="t0"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/hutta_4611686042231872421_weights1.png" id="t1"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/ter_hutta_swamp_trash_d.png" id="t2"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/ter_hutta_swampground3_d.png" id="t3"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/ter_hutta_swamppath2_d.png" id="t4"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/ter_hutta_swampground_d.png" id="t5"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/ter_hutta_swamppath_d.png" id="t6"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/ter_hutta_ground_metal_d.png" id="t7"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/ter_hutta_swamp_trash_mud_d.png" id="t8"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/ter_hutta_swampground5_d.png" id="t9"]
+[ext_resource type="Texture2D" path="res://Assets/Maps/hutta/4611686042231872421_source_color.png" id="t10"]
+[ext_resource type="Texture2D" path="res://Assets/Maps/hutta/4611686042231872421_normal.png" id="t11"]
+[ext_resource type="Texture2D" path="res://Assets/Maps/hutta/4611686042231872421_roughness.png" id="t12"]
+[resource]
+shader = ExtResource("shader")
+shader_parameter/weights0 = ExtResource("t0")
+shader_parameter/weights1 = ExtResource("t1")
+shader_parameter/layer0 = ExtResource("t2")
+shader_parameter/layer1 = ExtResource("t3")
+shader_parameter/layer2 = ExtResource("t4")
+shader_parameter/layer3 = ExtResource("t5")
+shader_parameter/layer4 = ExtResource("t6")
+shader_parameter/layer5 = ExtResource("t7")
+shader_parameter/layer6 = ExtResource("t8")
+shader_parameter/layer7 = ExtResource("t9")
+shader_parameter/tint = ExtResource("t10")
+shader_parameter/normal_map = ExtResource("t11")
+shader_parameter/roughness_map = ExtResource("t12")

@@ -1,0 +1,326 @@
+[
+  {
+    "query": "shiv",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE00075DA37A55ED8\", \"decimalId\": \"16141030644592762584\", \"kind\": \"GomObject\", \"name\": \"abl.agent.shiv\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/84.bkt\", \"uncompressedOffset\": 142172, \"blockLength\": 402, \"resourceSha256\": \"114ff57bb9df103925a87c213f21f12e42ad8be163d170f3f203f9ee54f7642a\"}}, {\"id\": \"0xE000BC52CE75B96B\", \"decimalId\": \"16141108128333019499\", \"kind\": \"GomObject\", \"name\": \"abl.agent.shiv/5/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/499.bkt\", \"uncompressedOffset\": 198420, \"blockLength\": 277, \"resourceSha256\": \"8baa8e4f66aebb72c6b5f42e30ec94859da7fd5b9f906f320d1840d64bdbb0b1\"}}, {\"id\": \"0xE000BD52CE75BB24\", \"decimalId\": \"16141109227844647716\", \"kind\": \"GomObject\", \"name\": \"abl.agent.shiv/5/1\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/216.bkt\", \"uncompressedOffset\": 195764, \"blockLength\": 399, \"resourceSha256\": \"647273bdbaf0ff7918e9e84d3b7a1ce68a7f9fc7fa693aca6a4942aafc3c1a3c\"}}], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "hidden_strike",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE000A639EE6E943F\", \"decimalId\": \"16141083832239428671\", \"kind\": \"GomObject\", \"name\": \"abl.agent.hidden_strike\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/171.bkt\", \"uncompressedOffset\": 199956, \"blockLength\": 620, \"resourceSha256\": \"3a8a7eff139fcc656e90ea2c0426bcc35c9bb36135e37071b32c7cdc8d2ab2c2\"}}, {\"id\": \"0xE000E8AEC8023845\", \"decimalId\": \"16141156901873399877\", \"kind\": \"GomObject\", \"name\": \"abl.agent.hidden_strike/8/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/377.bkt\", \"uncompressedOffset\": 242204, \"blockLength\": 502, \"resourceSha256\": \"70a64e2fb50688761d6591e83b2d8faa9e3b94bd116e58e7b31b0bfb3a65df1c\"}}, {\"id\": \"0xE000E9AEC8022616\", \"decimalId\": \"16141158001385022998\", \"kind\": \"GomObject\", \"name\": \"abl.agent.hidden_strike/8/1\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/498.bkt\", \"uncompressedOffset\": 275540, \"blockLength\": 458, \"resourceSha256\": \"8ef03f37f268c1a02070f98bfc8f0da6b843c38d28478f7090de100c175112db\"}}], \"truncated\": true, \"start\": 0, \"nextStart\": 3, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "laceration",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "snipe",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE0001D9CFD531B26\", \"decimalId\": \"16140933624598043430\", \"kind\": \"GomObject\", \"name\": \"abl.agent.snipe\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/430.bkt\", \"uncompressedOffset\": 48788, \"blockLength\": 538, \"resourceSha256\": \"bcfafbbdb68e6bd9df7bbbbb78805613938f7a60b9f2b0b638e13806553fb84f\"}}, {\"id\": \"0xE000DF6FEB4333BE\", \"decimalId\": \"16141146736277271486\", \"kind\": \"GomObject\", \"name\": \"abl.agent.snipe/6/2\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/486.bkt\", \"uncompressedOffset\": 243548, \"blockLength\": 607, \"resourceSha256\": \"d3acb60672f377ae5736809e8e2f17693c3790181933342eb36b421acf4f712e\"}}, {\"id\": \"0xE000E16FEB433620\", \"decimalId\": \"16141148935300527648\", \"kind\": \"GomObject\", \"name\": \"abl.agent.snipe/6/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/148.bkt\", \"uncompressedOffset\": 285956, \"blockLength\": 445, \"resourceSha256\": \"eb1cb8e5f9b4a19e3ff0c1e3da2b267c39a6308c46049235e048c9af17ab2316\"}}], \"truncated\": true, \"start\": 0, \"nextStart\": 3, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "suppressive_fire",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE000368F292C0E08\", \"decimalId\": \"16140961052994833928\", \"kind\": \"GomObject\", \"name\": \"abl.agent.suppressive_fire\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/428.bkt\", \"uncompressedOffset\": 63220, \"blockLength\": 515, \"resourceSha256\": \"3484c6180b05b2574b341e56fe7119233fafae161cbc38a681420607a78753a3\"}}, {\"id\": \"0xE0003BC7460D38C9\", \"decimalId\": \"16140966791555659977\", \"kind\": \"GomObject\", \"name\": \"abl.agent.suppressive_fire/5/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/477.bkt\", \"uncompressedOffset\": 73164, \"blockLength\": 278, \"resourceSha256\": \"f9a8c89fa25287dfee9456aa2839fa5761f26204b919606f3a9d265c3fef4d0c\"}}, {\"id\": \"0xE0003CC7460D3E7E\", \"decimalId\": \"16140967891067289214\", \"kind\": \"GomObject\", \"name\": \"abl.agent.suppressive_fire/5/1\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/214.bkt\", \"uncompressedOffset\": 53988, \"blockLength\": 772, \"resourceSha256\": \"c7ac6938522d167b94e90505a599337e2f3bb987a2139fd565bf26a0e8986f8e\"}}], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "orbital_strike",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE0009899A1614952\", \"decimalId\": \"16141068850100783442\", \"kind\": \"GomObject\", \"name\": \"abl.agent.orbital_strike\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/442.bkt\", \"uncompressedOffset\": 182660, \"blockLength\": 672, \"resourceSha256\": \"f0e0ba69fcef46614e7430ace86fb50ddfb9629ddc2ea528f3ff24233f101129\"}}, {\"id\": \"0xE000CA340A58E323\", \"decimalId\": \"16141123389356565283\", \"kind\": \"GomObject\", \"name\": \"abl.agent.orbital_strike/3/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/283.bkt\", \"uncompressedOffset\": 264244, \"blockLength\": 263, \"resourceSha256\": \"d13c4730429bb3ca752e1e110381997a8854d16e7fc5c979eaec7a0e00b2d3fe\"}}, {\"id\": \"0xE000CB340A58E170\", \"decimalId\": \"16141124488868192624\", \"kind\": \"GomObject\", \"name\": \"abl.agent.orbital_strike/3/1\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/124.bkt\", \"uncompressedOffset\": 212924, \"blockLength\": 787, \"resourceSha256\": \"13bc0d55ad7e2874d3df795ea18d3db93e45011988dd17d69f9b316801545ff1\"}}], \"truncated\": true, \"start\": 0, \"nextStart\": 3, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "explosive_probe",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE000416CF6CA39E6\", \"decimalId\": \"16140973000748579302\", \"kind\": \"GomObject\", \"name\": \"abl.agent.explosive_probe\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/302.bkt\", \"uncompressedOffset\": 68020, \"blockLength\": 871, \"resourceSha256\": \"a66bb8ffe20280a6cca99e0991fabb9d426f1bf3be89cc4344f5b1d084b00528\"}}, {\"id\": \"0xE0009D08FA75DC20\", \"decimalId\": \"16141073726383184928\", \"kind\": \"GomObject\", \"name\": \"abl.agent.explosive_probe/5/4\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/428.bkt\", \"uncompressedOffset\": 166476, \"blockLength\": 675, \"resourceSha256\": \"3484c6180b05b2574b341e56fe7119233fafae161cbc38a681420607a78753a3\"}}, {\"id\": \"0xE0009E08FA75DE5F\", \"decimalId\": \"16141074825894813279\", \"kind\": \"GomObject\", \"name\": \"abl.agent.explosive_probe/5/5\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/279.bkt\", \"uncompressedOffset\": 183084, \"blockLength\": 808, \"resourceSha256\": \"8e61a285b91fc5df5f8275fd633da274dd89adbc422000f495c59b05dfa5db40\"}}], \"truncated\": true, \"start\": 0, \"nextStart\": 3, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "interrogation_probe",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "plasma_probe",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "emp_discharge",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "cull",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "weakening_blast",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "kolto_probe",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "kolto_injection",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE0006A20509DAD1E\", \"decimalId\": \"16141017751519866142\", \"kind\": \"GomObject\", \"name\": \"abl.agent.kolto_injection/1/1\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/142.bkt\", \"uncompressedOffset\": 155692, \"blockLength\": 498, \"resourceSha256\": \"1dd04ba3043ef3a83340ceacb4711f043036f263affede7de414a4e15fa6333f\"}}, {\"id\": \"0xE0006B20509DAFD1\", \"decimalId\": \"16141018851031494609\", \"kind\": \"GomObject\", \"name\": \"abl.agent.kolto_injection/1/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/109.bkt\", \"uncompressedOffset\": 111796, \"blockLength\": 378, \"resourceSha256\": \"c77068133a7bd321bb115c4a50fde96f93cf9b904b37d3e2bb99b2258958fe0e\"}}, {\"id\": \"0xE00088FF90618D64\", \"decimalId\": \"16141051695716207972\", \"kind\": \"GomObject\", \"name\": \"abl.agent.kolto_injection\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/472.bkt\", \"uncompressedOffset\": 136852, \"blockLength\": 451, \"resourceSha256\": \"ade11d5f6ef680c5dae4f34f4aea275e2454e277330c3c401a3b3edc6b728e27\"}}], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "surgical_probe",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "stealth",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE0007DB5A9B60003\", \"decimalId\": \"16141039283685687299\", \"kind\": \"GomObject\", \"name\": \"abl.agent.stealth/4/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/299.bkt\", \"uncompressedOffset\": 138660, \"blockLength\": 476, \"resourceSha256\": \"e319d69b64625014ec29f5e23a18efeb57e92adf4f9029f8516366c557c3aca7\"}}, {\"id\": \"0xE0007EB5A9B60E50\", \"decimalId\": \"16141040383197318736\", \"kind\": \"GomObject\", \"name\": \"abl.agent.stealth/4/1\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/236.bkt\", \"uncompressedOffset\": 166652, \"blockLength\": 957, \"resourceSha256\": \"639e33e6ae288d9e6bbeda964f163488741105d0e5819c61aadf971c9f97e99b\"}}, {\"id\": \"0xE0007FB5A9B60F9D\", \"decimalId\": \"16141041482708946845\", \"kind\": \"GomObject\", \"name\": \"abl.agent.stealth/4/2\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/345.bkt\", \"uncompressedOffset\": 194220, \"blockLength\": 855, \"resourceSha256\": \"c5591966f1a2513ad209e18e9a25c116ff6c5258e5e3f41185afceafe2cb7b8e\"}}], \"truncated\": true, \"start\": 0, \"nextStart\": 3, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "cloaking_screen",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE00023228B93E89F\", \"decimalId\": \"16140939695773444255\", \"kind\": \"GomObject\", \"name\": \"abl.agent.cloaking_screen/3/1\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/255.bkt\", \"uncompressedOffset\": 41116, \"blockLength\": 955, \"resourceSha256\": \"c0dff1b82fc4656f2746eae9ba82e7e78754d6420b8d113b05a926eb15a7d0e1\"}}, {\"id\": \"0xE00024228B93EECC\", \"decimalId\": \"16140940795285073612\", \"kind\": \"GomObject\", \"name\": \"abl.agent.cloaking_screen/3/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/112.bkt\", \"uncompressedOffset\": 48756, \"blockLength\": 464, \"resourceSha256\": \"07efa7686de3cee9ecd876be723dad1107c94c96709ce56a090fa36a3f65e115\"}}, {\"id\": \"0xE00025228B93EC71\", \"decimalId\": \"16140941894796700785\", \"kind\": \"GomObject\", \"name\": \"abl.agent.cloaking_screen/3/3\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/285.bkt\", \"uncompressedOffset\": 48900, \"blockLength\": 524, \"resourceSha256\": \"0e02d41bc8e7f1c7cc47cf05af9411c020362e1967e7ebcc8abe0a73cafdef89\"}}], \"truncated\": true, \"start\": 0, \"nextStart\": 3, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "stim_boost",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE000542CC4E0D71F\", \"decimalId\": \"16140993615754221343\", \"kind\": \"GomObject\", \"name\": \"abl.agent.stim_boost/0/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/343.bkt\", \"uncompressedOffset\": 102004, \"blockLength\": 404, \"resourceSha256\": \"01683d668dae484eb7707549c88db451a64c46577f07c5d9b0b58da379f9ac6d\"}}, {\"id\": \"0xE000552CC4E0D5AC\", \"decimalId\": \"16140994715265848748\", \"kind\": \"GomObject\", \"name\": \"abl.agent.stim_boost/0/1\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/248.bkt\", \"uncompressedOffset\": 84940, \"blockLength\": 673, \"resourceSha256\": \"8f4022127e26f503eabc430023c8538ce1ca1104630c7c6a3a901eb9bc03cd38\"}}, {\"id\": \"0xE000930238CCA7B9\", \"decimalId\": \"16141062702248011705\", \"kind\": \"GomObject\", \"name\": \"abl.agent.stim_boost\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/205.bkt\", \"uncompressedOffset\": 165692, \"blockLength\": 484, \"resourceSha256\": \"e5b98ff6e74d99418691bcfdc5b2fec66b61137c4dbc8aa9dfc0df4348c7c241\"}}], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "flash_bang",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE0002F7328746FC3\", \"decimalId\": \"16140953236142321603\", \"kind\": \"GomObject\", \"name\": \"abl.agent.flash_bang/0/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/103.bkt\", \"uncompressedOffset\": 50932, \"blockLength\": 185, \"resourceSha256\": \"9ab2a1d03aa45a53bc78be403e97fe5c6040e658ae4f2ffc2c6019bdde5952cc\"}}, {\"id\": \"0xE000307328746970\", \"decimalId\": \"16140954335653947760\", \"kind\": \"GomObject\", \"name\": \"abl.agent.flash_bang/0/1\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/260.bkt\", \"uncompressedOffset\": 58780, \"blockLength\": 721, \"resourceSha256\": \"c9db5ec080b35fa63d0112e2b16f51d1b0eab7f9f531e73d2af9af4e0cbd1259\"}}, {\"id\": \"0xE000317328746B2D\", \"decimalId\": \"16140955435165575981\", \"kind\": \"GomObject\", \"name\": \"abl.agent.flash_bang/0/2\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/481.bkt\", \"uncompressedOffset\": 63716, \"blockLength\": 887, \"resourceSha256\": \"563280906965c9d4f662a4eeed989c764a129917f604a8ecdc5ba59944e81a28\"}}], \"truncated\": true, \"start\": 0, \"nextStart\": 3, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "debilitate",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE0006AE51556E3CC\", \"decimalId\": \"16141018596633928652\", \"kind\": \"GomObject\", \"name\": \"abl.agent.debilitate\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/152.bkt\", \"uncompressedOffset\": 123988, \"blockLength\": 520, \"resourceSha256\": \"ed5d9cf104491a993435413f8d624100e965d3ece4b79ea0ae4cb326016a75d0\"}}, {\"id\": \"0xE0007520751A7B64\", \"decimalId\": \"16141029846759930724\", \"kind\": \"GomObject\", \"name\": \"abl.agent.debilitate/6/2\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/224.bkt\", \"uncompressedOffset\": 119028, \"blockLength\": 699, \"resourceSha256\": \"004c3f944dffdfca458b8c31c5f6a8e9cdd0a24219cdd18d8ec46f376de4fd16\"}}, {\"id\": \"0xE0007720751A7C0A\", \"decimalId\": \"16141032045783186442\", \"kind\": \"GomObject\", \"name\": \"abl.agent.debilitate/6/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/442.bkt\", \"uncompressedOffset\": 133556, \"blockLength\": 272, \"resourceSha256\": \"f0e0ba69fcef46614e7430ace86fb50ddfb9629ddc2ea528f3ff24233f101129\"}}], \"truncated\": true, \"start\": 0, \"nextStart\": 3, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "adrenaline_probe",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE0007E0E7BBBDB3A\", \"decimalId\": \"16141039665166408506\", \"kind\": \"GomObject\", \"name\": \"abl.agent.adrenaline_probe\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/6.bkt\", \"uncompressedOffset\": 156964, \"blockLength\": 446, \"resourceSha256\": \"40da91b83ac7dfbdb708e9f841ae9547b71817206b62f418e57c3cffad5e5d7e\"}}, {\"id\": \"0xE000D161872B2872\", \"decimalId\": \"16141131281305643122\", \"kind\": \"GomObject\", \"name\": \"abl.agent.adrenaline_probe/0/1\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/122.bkt\", \"uncompressedOffset\": 216596, \"blockLength\": 792, \"resourceSha256\": \"0cc23c8c3f9835a8c6d7b81d7a2bc74542df74f76fdc26860eff4c4dc69866ea\"}}, {\"id\": \"0xE000D261872B2AA1\", \"decimalId\": \"16141132380817271457\", \"kind\": \"GomObject\", \"name\": \"abl.agent.adrenaline_probe/0/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/457.bkt\", \"uncompressedOffset\": 249900, \"blockLength\": 267, \"resourceSha256\": \"79c318d019662b4b4f8536fc49e8a430a859f81e41705d92a65c1c284afc3b80\"}}], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "escape",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE0000D7B8366D1D6\", \"decimalId\": \"16140915888632549846\", \"kind\": \"GomObject\", \"name\": \"abl.agent.escape\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/346.bkt\", \"uncompressedOffset\": 8772, \"blockLength\": 373, \"resourceSha256\": \"f9b65b1ddf32ebeeb9c40ad7c3f64d0e3b292027f8834771aa91a73c02d9d2fa\"}}, {\"id\": \"0xE000A1B5C16EBF43\", \"decimalId\": \"16141078866502270787\", \"kind\": \"GomObject\", \"name\": \"abl.agent.escape/1/1\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/287.bkt\", \"uncompressedOffset\": 205164, \"blockLength\": 417, \"resourceSha256\": \"e63eca4ec73398f92326bd53db3bb98ccb298038b630f8c733d890efdc4ec364\"}}, {\"id\": \"0xE000A2B5C16EBD14\", \"decimalId\": \"16141079966013898004\", \"kind\": \"GomObject\", \"name\": \"abl.agent.escape/1/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/4.bkt\", \"uncompressedOffset\": 207476, \"blockLength\": 446, \"resourceSha256\": \"17d34f74b6c14f7c887f448c0e35a132bcc469d0a2b451686003c1681dde4dbc\"}}], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "cover_pulse",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE0003C8FBD0ED531\", \"decimalId\": \"16140967652545713457\", \"kind\": \"GomObject\", \"name\": \"abl.agent.cover_pulse\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/457.bkt\", \"uncompressedOffset\": 64668, \"blockLength\": 685, \"resourceSha256\": \"79c318d019662b4b4f8536fc49e8a430a859f81e41705d92a65c1c284afc3b80\"}}, {\"id\": \"0xE000A2449084A38B\", \"decimalId\": \"16141079479861945227\", \"kind\": \"GomObject\", \"name\": \"abl.agent.cover_pulse/2/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/227.bkt\", \"uncompressedOffset\": 196340, \"blockLength\": 351, \"resourceSha256\": \"364cb3b7a5027067dc071470f3d132ed903a8cec025b7a39e07ebe3063976c3f\"}}, {\"id\": \"0xE000A3449084ADF8\", \"decimalId\": \"16141080579373575672\", \"kind\": \"GomObject\", \"name\": \"abl.agent.cover_pulse/2/1\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/172.bkt\", \"uncompressedOffset\": 197100, \"blockLength\": 547, \"resourceSha256\": \"55e8a934e0c7b665141a573ccba0ad407156b7943a217ac1bf630f9dc2b7b82f\"}}], \"truncated\": true, \"start\": 0, \"nextStart\": 3, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "entrench",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE000774A2ED12811\", \"decimalId\": \"16141032224992602129\", \"kind\": \"GomObject\", \"name\": \"abl.agent.entrench/2/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/129.bkt\", \"uncompressedOffset\": 138396, \"blockLength\": 347, \"resourceSha256\": \"1f358a5e1a625bf9a43ec0fa2cbf3a92a5f33b91fa40956f7ab35e23fa3e1d8d\"}}, {\"id\": \"0xE000784A2ED12E5E\", \"decimalId\": \"16141033324504231518\", \"kind\": \"GomObject\", \"name\": \"abl.agent.entrench/2/1\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/18.bkt\", \"uncompressedOffset\": 136524, \"blockLength\": 821, \"resourceSha256\": \"e4c3c2b2475db158ac8adeeae2f776582d71b5917d338ecd2207c57a5fb00cc5\"}}, {\"id\": \"0xE000ADDF303F9CEE\", \"decimalId\": \"16141092238594645230\", \"kind\": \"GomObject\", \"name\": \"abl.agent.entrench\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/230.bkt\", \"uncompressedOffset\": 196756, \"blockLength\": 540, \"resourceSha256\": \"66a70581f9eee9300d0ce1d9ed77732fb985764da4709da1715d1fc451689a4c\"}}], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "ballistic_shield",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE000BC2D34BC88A7\", \"decimalId\": \"16141107966840178855\", \"kind\": \"GomObject\", \"name\": \"abl.agent.ballistic_shield\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/355.bkt\", \"uncompressedOffset\": 220324, \"blockLength\": 666, \"resourceSha256\": \"d6a8bdbc69e31765db1dbaa768cecbabab7da178ef71f74b41f0f92f633e6624\"}}, {\"id\": \"0xE000C92D3E6C76C2\", \"decimalId\": \"16141122260653864642\", \"kind\": \"GomObject\", \"name\": \"abl.agent.ballistic_shield/1/1\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/142.bkt\", \"uncompressedOffset\": 264356, \"blockLength\": 736, \"resourceSha256\": \"1dd04ba3043ef3a83340ceacb4711f043036f263affede7de414a4e15fa6333f\"}}, {\"id\": \"0xE000CA2D3E6C78B1\", \"decimalId\": \"16141123360165492913\", \"kind\": \"GomObject\", \"name\": \"abl.agent.ballistic_shield/1/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/413.bkt\", \"uncompressedOffset\": 226812, \"blockLength\": 355, \"resourceSha256\": \"3e0ff16b232eade33d2f52d8153670c762cb9c9ed0dbcce9ca1a30a1e1550afb\"}}], \"truncated\": true, \"start\": 0, \"nextStart\": 3, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "overload_shot",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [{\"id\": \"0xE0004A302A073EB7\", \"decimalId\": \"16140982635219861175\", \"kind\": \"GomObject\", \"name\": \"abl.agent.overload_shot/4/0\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/175.bkt\", \"uncompressedOffset\": 96324, \"blockLength\": 285, \"resourceSha256\": \"9c49bd43da7c77211cda7b2976a601ceff4409613d402fb95e0d4d4ae9f4e279\"}}, {\"id\": \"0xE0004B302A073F64\", \"decimalId\": \"16140983734731489124\", \"kind\": \"GomObject\", \"name\": \"abl.agent.overload_shot/4/1\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/124.bkt\", \"uncompressedOffset\": 82012, \"blockLength\": 657, \"resourceSha256\": \"13bc0d55ad7e2874d3df795ea18d3db93e45011988dd17d69f9b316801545ff1\"}}, {\"id\": \"0xE0007B35A0966081\", \"decimalId\": \"16141036534753550465\", \"kind\": \"GomObject\", \"name\": \"abl.agent.overload_shot\", \"nameEvidence\": \"April bucket/prototype\", \"source\": {\"path\": \"/resources/systemgenerated/buckets/465.bkt\", \"uncompressedOffset\": 128844, \"blockLength\": 429, \"resourceSha256\": \"36874efb9214dc8ccc3ff8fc8805ec6b96a4690d0ee1d594422e3cc912dc6331\"}}], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "query": "followthrough",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"results\": [], \"truncated\": false, \"start\": 0, \"nextStart\": null, \"scope\": \"gom\", \"profile\": \"April2012\", \"parser\": \"SwtorResearch/0.2.0\", \"accessVersion\": \"0.2.0\", \"parserSourceSha256\": \"8b4df25867e403d2aa05c594298fae8dea59cac7967bdefb43e089d2bf9f11ae\", \"profileEvidence\": \"Operator-labelled April asset inputs; verify returned exact resource hashes. Historical/public labels remain candidates.\"}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

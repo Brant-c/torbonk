@@ -10,6 +10,8 @@ public partial class OperationModelPreview : Control
     private Node3D _world = null!, _model = null!;
     private bool _dragging;
     public bool HasModel { get; private set; }
+    public string CurrentModelPath {get;private set;}="";
+    private Camera3D? _camera;
     public override void _Ready()
     {
         _viewport = new SubViewport { Size = new Vector2I(1400,500), OwnWorld3D = true,
@@ -35,8 +37,15 @@ public partial class OperationModelPreview : Control
     }
     public void ShowModel(string path)
     {
-        if(HasModel)return;
+        if(HasModel && CurrentModelPath==path)return;
+        if(GodotObject.IsInstanceValid(_model))_model.Free();
+        if(GodotObject.IsInstanceValid(_camera))_camera!.Free();
+        HasModel=false;CurrentModelPath="";
         _model=GD.Load<PackedScene>(path).Instantiate<Node3D>(); _world.AddChild(_model);
+        var animator=_model.FindChildren("*","AnimationPlayer",true,false).OfType<AnimationPlayer>().FirstOrDefault();
+        if(animator?.HasAnimation("Idle")==true) {
+            animator.GetAnimation("Idle").LoopMode=Animation.LoopModeEnum.Linear;animator.Play("Idle");
+        }
         bool first=true; Aabb bounds=default;
         foreach(var mesh in _model.FindChildren("*","MeshInstance3D",true,false).OfType<MeshInstance3D>())
         { var box=mesh.GlobalTransform*mesh.GetAabb();bounds=first?box:bounds.Merge(box);first=false; }
@@ -48,6 +57,7 @@ public partial class OperationModelPreview : Control
         var camera=new Camera3D { Fov=32,Near=.001f,Far=1000,Current=true,
             Position=new Vector3(.36f,.13f,1).Normalized()*distance };
         _world.AddChild(camera);camera.LookAt(Vector3.Zero);
+        _camera=camera;CurrentModelPath=path;
         HasModel=true;TooltipText="Drag to rotate · Double-click to reset";UpdateRendering();
     }
     private void UpdateRendering() => _viewport.RenderTargetUpdateMode=HasModel && IsVisibleInTree()

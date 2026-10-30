@@ -17,6 +17,7 @@ public partial class MarauderRelicSmoke : Node
  var relic=w.Build.MarauderRelics;
  var items=inv.Items.Where(i=>i.Classes.SequenceEqual(new[]{"marauder"})).ToArray();
  Check("eleven owned relics, four tooltip ranks",items.Length==11 && items.All(i=>inv.State.Owned.ContainsKey(i.Id)&&i.RankEffects.Length==4));
+ Check("all relic inventory and tooltip icons load",items.All(i=>GD.Load<Texture2D>(UI.EquipmentWindows.IconPath(i)) is {} texture && texture.GetWidth()>0 && texture.GetHeight()>0));
  foreach(var a in items)foreach(var b in items.Where(b=>b!=a))Check("pair "+a.Id+" / "+b.Id,inv.Equip("marauder","relic1",a.Id)&&inv.Equip("marauder","relic2",b.Id));
  Check("visible to Warrior, restricted to Marauder",items.All(i=>PersistentInventory.VisibleForClass(i,"juggernaut")&&!PersistentInventory.Compatible(i,"juggernaut")));
  void Equip(string a,string b,int rank){relic.Reset();w.Periodic.Clear();inv.Unequip("marauder","relic1");inv.Unequip("marauder","relic2");inv.State.Owned[a]=inv.State.Owned[b]=rank;inv.Equip("marauder","relic1",a);inv.Equip("marauder","relic2",b);}

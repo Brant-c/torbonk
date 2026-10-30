@@ -38,7 +38,7 @@ public partial class AbilityDpsMeter : Control
         string id=string.IsNullOrEmpty(e.Change.AbilityId)?"other":e.Change.AbilityId;
         Damage[id]=Damage.GetValueOrDefault(id)+e.Change.Amount;
     }
-    private string Title(string id)=>id=="other"?"Other damage":World.Abilities.Find(id)?.Definition.Title??id;
+    private string Title(string id)=>id=="other"?"Other damage":id=="acid_blade"?"Acid Blade":id=="probe_overload"?"Probe Overload":World.Abilities.Find(id)?.Definition.Title??id;
     private static string Amount(double n)=>n>=9999.5?(n>=999999.5?(n/1000000).ToString("0.#",CultureInfo.InvariantCulture)+"M":(n/1000).ToString("0.#",CultureInfo.InvariantCulture)+"K"):n.ToString("N0",CultureInfo.InvariantCulture);
     private void Refresh()
     {

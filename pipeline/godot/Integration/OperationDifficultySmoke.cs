@@ -48,14 +48,14 @@ public static class OperationDifficultySmoke
             Near(enemy.AttackInterval,interval*tuning.AttackInterval/(1+Math.Min(.85f,.018f*(level-1))),"enemy attack cadence level "+level);
         }
         spawner.ResetSpawner();spawner.PlayerLevel=()=>50;
-        var encounter=new BossEncounterController {Spawner=spawner,Definition=GD.Load<BossEncounterDefinition>("res://Gameplay/Planets/EternityVault/Xrr3Encounter.tres")};
+        var encounter=new BossEncounterController {Spawner=spawner,MaintainRegularPressure=world.PlanetRun!.ContinuousEncounters,Definition=GD.Load<BossEncounterDefinition>("res://Gameplay/Planets/EternityVault/Xrr3Encounter.tres")};
         world.AddChild(encounter);
         for(int attempt=0;attempt<24 && !encounter.Spawned;attempt++)encounter.Tick(2,true);
         Check(encounter.Spawned,"final boss controller spawned");
         var boss=encounter.Boss!;encounter.Tick(2,true);boss.SetPhysicsProcess(false);
-        int expectedAdds=mode=="Normal"?3:mode=="Hard"?12:23;
+        int expectedAdds=cap-1;
         Check(encounter.RegularEnemyCap(cap)==expectedAdds,"final boss add capacity follows difficulty");
-        Near((float)encounter.CadenceMultiplier,mode=="Normal"?3:mode=="Hard"?1.25f:1,"final boss reinforcement cadence follows difficulty");
+        Near((float)encounter.CadenceMultiplier,1,"final boss preserves regular reinforcement cadence");
         Check(encounter.AllowRegularSpawn(cap),"final boss allows reinforcements after introduction");
         Near(boss.Health.Maximum,18000*tuning.EnemyHealth,"XRR-3 base health scaled once at reference level");
         Near(boss.LevelDamageMultiplier,tuning.EnemyDamage,"XRR-3 special damage multiplier");

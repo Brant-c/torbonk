@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+
+Id = "blowforblow"
+
+Title = "Blow for Blow"
+
+Icon = "shieldprobe"
+
+StartsUnlocked = false
+
+NearbyTriggerCount = 1
+
+KnockbackDistance = 0
+
+RequireGesture = true
+
+Damage = 1
+
+CooldownSeconds = 20
+
+Range = 0.65
+
+Radius = 0
+
+Area = 0
+
+Effect = 3
+
+BuffSeconds = 4
+
+GestureSeconds = 0.5
+
+RecoverySeconds = 0.2
+
+WindupSeconds = 0
+
+ChannelSeconds = 0
+
+StartClip = "Agent/Detonator"
+
+LoopClip = "Agent/Detonator"
+
+PresentationKind = "agent"
+
+Category = 1
+
+Slotless = true
+
+Description = "Talent-granted countermeasure lasting four seconds, occupying one utility slot. Return 150% of actual health damage to the attacker. Incoming damage is still received."
+

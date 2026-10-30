@@ -1,0 +1,69 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+WARNING: AnimationNodeBlendSpace2D::add_blend_point: No name provided, using safe index as reference. In the future, empty names will be deprecated, so explicitly passing a name is recommended.
+   at: add_blend_point (scene/animation/animation_blend_space_2d.cpp:74)
+   C# backtrace (most recent call first):
+       [0] void Godot.NativeCalls.godot_icall_4_174(nint, nint, nint, Godot.Vector2*, int, Godot.NativeInterop.godot_string_name) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:1567)
+       [1] void Godot.AnimationNodeBlendSpace2D.AddBlendPoint(Godot.AnimationRootNode, Godot.Vector2, int, Godot.StringName) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/AnimationNodeBlendSpace2D.cs:255)
+       [2] void SwtorSurvivors.CharacterPresentation.AddDirectionalLocomotion(Godot.AnimationNodeBlendTree) (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\DirectionalLocomotion.cs:21)
+       [3] void SwtorSurvivors.CharacterPresentation.BuildTree() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:75)
+       [4] void SwtorSurvivors.CharacterPresentation._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:65)
+       [5] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [6] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [7] bool SwtorSurvivors.CharacterPresentation.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.CharacterPresentation_ScriptMethods.generated.cs:270)
+       [8] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+WARNING: AnimationNodeBlendSpace2D::add_blend_point: No name provided, using safe index as reference. In the future, empty names will be deprecated, so explicitly passing a name is recommended.
+   at: add_blend_point (scene/animation/animation_blend_space_2d.cpp:74)
+   C# backtrace (most recent call first):
+       [0] void Godot.NativeCalls.godot_icall_4_174(nint, nint, nint, Godot.Vector2*, int, Godot.NativeInterop.godot_string_name) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:1567)
+       [1] void Godot.AnimationNodeBlendSpace2D.AddBlendPoint(Godot.AnimationRootNode, Godot.Vector2, int, Godot.StringName) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/AnimationNodeBlendSpace2D.cs:255)
+       [2] void SwtorSurvivors.CharacterPresentation.AddDirectionalLocomotion(Godot.AnimationNodeBlendTree) (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\DirectionalLocomotion.cs:22)
+       [3] void SwtorSurvivors.CharacterPresentation.BuildTree() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:75)
+       [4] void SwtorSurvivors.CharacterPresentation._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:65)
+       [5] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [6] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [7] bool SwtorSurvivors.CharacterPresentation.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.CharacterPresentation_ScriptMethods.generated.cs:270)
+       [8] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+WARNING: AnimationNodeBlendSpace2D::add_blend_point: No name provided, using safe index as reference. In the future, empty names will be deprecated, so explicitly passing a name is recommended.
+   at: add_blend_point (scene/animation/animation_blend_space_2d.cpp:74)
+   C# backtrace (most recent call first):
+       [0] void Godot.NativeCalls.godot_icall_4_174(nint, nint, nint, Godot.Vector2*, int, Godot.NativeInterop.godot_string_name) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:1567)
+       [1] void Godot.AnimationNodeBlendSpace2D.AddBlendPoint(Godot.AnimationRootNode, Godot.Vector2, int, Godot.StringName) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/AnimationNodeBlendSpace2D.cs:255)
+       [2] void SwtorSurvivors.CharacterPresentation.AddDirectionalLocomotion(Godot.AnimationNodeBlendTree) (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\DirectionalLocomotion.cs:23)
+       [3] void SwtorSurvivors.CharacterPresentation.BuildTree() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:75)
+       [4] void SwtorSurvivors.CharacterPresentation._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:65)
+       [5] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [6] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [7] bool SwtorSurvivors.CharacterPresentation.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.CharacterPresentation_ScriptMethods.generated.cs:270)
+       [8] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+WARNING: AnimationNodeBlendSpace2D::add_blend_point: No name provided, using safe index as reference. In the future, empty names will be deprecated, so explicitly passing a name is recommended.
+   at: add_blend_point (scene/animation/animation_blend_space_2d.cpp:74)
+   C# backtrace (most recent call first):
+       [0] void Godot.NativeCalls.godot_icall_4_174(nint, nint, nint, Godot.Vector2*, int, Godot.NativeInterop.godot_string_name) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/NativeCalls.cs:1567)
+       [1] void Godot.AnimationNodeBlendSpace2D.AddBlendPoint(Godot.AnimationRootNode, Godot.Vector2, int, Godot.StringName) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/AnimationNodeBlendSpace2D.cs:255)
+       [2] void SwtorSurvivors.CharacterPresentation.AddDirectionalLocomotion(Godot.AnimationNodeBlendTree) (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\DirectionalLocomotion.cs:24)
+       [3] void SwtorSurvivors.CharacterPresentation.BuildTree() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:75)
+       [4] void SwtorSurvivors.CharacterPresentation._Ready() (D:\SWTORClassic\torbonk\pipeline\godot\Gameplay\CharacterPresentation.cs:65)
+       [5] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node.cs:2660)
+       [6] bool Godot.Node3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Generated/GodotObjects/Node3D.cs:1127)
+       [7] bool SwtorSurvivors.CharacterPresentation.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&) (D:\SWTORClassic\torbonk\pipeline\godot\.godot\mono\temp\obj\Debug\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\SwtorSurvivors.CharacterPresentation_ScriptMethods.generated.cs:270)
+       [8] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*) (/root/godot/modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/CSharpInstanceBridge.cs:24)
+AUTHORED_WEATHER 104 source emitters; explicit intervals only
+PRESSURE_CHECK continuous operation policy loaded
+PRESSURE_CHECK roster change has no recovery or ramp
+PRESSURE_CHECK old-stage mobs remain alive and wounded
+PRESSURE_CHECK first boss enters alongside existing pack
+PRESSURE_CHECK regular spawn allowed during boss introduction
+PRESSURE_CHECK director keeps spawning through introduction
+PRESSURE_CHECK no boss reinforcement slowdown
+PRESSURE_CHECK boss keeps full mob budget
+PRESSURE_CHECK boss death keeps the same living pack
+PRESSURE_CHECK boss death has no recovery break
+PRESSURE_CHECK regular waves continue immediately after boss
+PRESSURE_CHECK second encounter has no stage-transition break
+PRESSURE_CHECK late boss enters with living pack 1
+PRESSURE_CHECK late boss enters with living pack 2
+PRESSURE_CHECK late boss enters with living pack 3
+PRESSURE_CHECK final victory remains finite
+PRESSURE_CHECK restart resets pressure policy and reservation
+CONTINUOUS_ENCOUNTER_PASSED

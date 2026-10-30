@@ -48,8 +48,9 @@ public partial class GalaxyChart : Control
     {
         _catalog=catalog;_selected=catalog.Map(selected);OperationsSelected=_selected.IsOperation;
         Difficulty=new[]{"Normal","Hard","Nightmare"}.Contains(difficulty)?difficulty:"Hard";
+        if(!new Equipment.PersistentInventory().DifficultyUnlocked(Difficulty))Difficulty="Hard";
         _worldTab=Tab("Worlds",false,24);_operationsTab=Tab("Operations",true,148);
-        foreach(var map in catalog.Maps.Where(m=>m.GameplayImplemented))
+        foreach(var map in catalog.Maps.Where(m=>m.GameplayImplemented && (!m.IsOperation || m.OperationKey==m.Id)))
         {
             var b=new DestinationChoice {Name="Destination_"+map.Id,Map=map,Size=new Vector2(310,98)};
             b.Pressed+=()=>{
@@ -60,17 +61,20 @@ public partial class GalaxyChart : Control
             _expanded[map.Id]=true;
             var disclosure=FrontendSkin.Label("▾",21);disclosure.Position=new Vector2(286,32);
             disclosure.AddThemeColorOverride("font_color",SwtorSkin.Blue);b.AddChild(disclosure);_disclosures[map.Id]=disclosure;
-            var boss=FrontendSkin.Button(map.EncounterName.Replace(" XRR-3","\nXRR-3"),()=>Choose(map));
-            boss.Name="Encounter_"+map.EncounterId;boss.Size=new Vector2(284,88);boss.CustomMinimumSize=new Vector2(284,88);
-            boss.Icon=FrontendSkin.Texture("res://Assets/WarriorLibrary/Textures/gfx/icons/slicedroid.png");
-            boss.AddThemeConstantOverride("icon_max_width",44);boss.AddThemeFontSizeOverride("font_size",19);
-            boss.TooltipText="01 · "+map.EncounterRegion;AddChild(boss);
-            // SwtorButton applies its default icon size on entering the tree.
-            boss.AddThemeConstantOverride("icon_max_width",44);
-            _bosses.Add(boss);_bossByMap[map.Id]=boss;
+            int encounterNumber=0;
+            foreach(var encounter in catalog.Maps.Where(m=>m.GameplayImplemented && m.IsOperation && m.OperationKey==map.Id))
+            {
+                encounterNumber++;
+                var boss=FrontendSkin.Button(encounter.EncounterName.Replace(" XRR-3","\nXRR-3"),()=>Choose(encounter));
+                boss.Name="Encounter_"+encounter.EncounterId;boss.Size=new Vector2(284,88);boss.CustomMinimumSize=new Vector2(284,88);
+                boss.AddThemeFontSizeOverride("font_size",19);
+                boss.TooltipText=encounterNumber.ToString("00")+" · "+encounter.EncounterRegion;AddChild(boss);
+                _bosses.Add(boss);_bossByMap[encounter.Id]=boss;
+            }
             var connector=new Control {MouseFilter=MouseFilterEnum.Ignore};AddChild(connector);_connectors[map.Id]=connector;
-            connector.AddChild(new ColorRect {Size=new Vector2(1,46),Color=Rule,MouseFilter=MouseFilterEnum.Ignore});
-            connector.AddChild(new ColorRect {Position=new Vector2(0,45),Size=new Vector2(15,1),Color=Rule,MouseFilter=MouseFilterEnum.Ignore});
+            connector.AddChild(new ColorRect {Size=new Vector2(1,46+(encounterNumber-1)*96),Color=Rule,MouseFilter=MouseFilterEnum.Ignore});
+            for(int i=0;i<encounterNumber;i++)
+                connector.AddChild(new ColorRect {Position=new Vector2(0,45+i*96),Size=new Vector2(15,1),Color=Rule,MouseFilter=MouseFilterEnum.Ignore});
         }
         var panel=new Panel {Position=new Vector2(350,40),Size=new Vector2(1098,600),MouseFilter=MouseFilterEnum.Ignore};
         panel.AddThemeStyleboxOverride("panel",new StyleBoxFlat {BgColor=new Color(.01f,.025f,.045f,.38f),CornerRadiusTopLeft=18,CornerRadiusTopRight=18,CornerRadiusBottomLeft=18,CornerRadiusBottomRight=18});AddChild(panel);
@@ -117,7 +121,7 @@ public partial class GalaxyChart : Control
         var map=_catalog.Maps.FirstOrDefault(m=>m.GameplayImplemented && m.IsOperation==operation && _remembered.GetValueOrDefault(operation)==m.Id)
             ?? _catalog.Maps.FirstOrDefault(m=>m.GameplayImplemented && m.IsOperation==operation);
         if(map==null)return;
-        if(operation)_expanded[map.Id]=true;
+        if(operation)_expanded[map.OperationKey]=true;
         Choose(map);LayoutChoices();CategorySelected?.Invoke(operation);NavigationChanged?.Invoke();
     }
     private void Choose(MapDefinition map) {DestinationSelected?.Invoke(map.Id);Select(map);NavigationChanged?.Invoke();}
@@ -132,14 +136,18 @@ public partial class GalaxyChart : Control
             var map=b.Map;b.Visible=map.IsOperation==OperationsSelected;b.Position=new Vector2(0,y);
             if(b.Visible)y+=103;
             if(!map.IsOperation)continue;
-            var boss=_bossByMap[map.Id];boss.Visible=b.Visible && _expanded[map.Id];boss.Position=new Vector2(26,y);
-            _connectors[map.Id].Position=new Vector2(11,y-9);_connectors[map.Id].Visible=boss.Visible;
+            bool expanded=b.Visible && _expanded[map.Id];
+            _connectors[map.Id].Position=new Vector2(11,y-9);_connectors[map.Id].Visible=expanded;
             _disclosures[map.Id].Text=_expanded[map.Id]?"▾":"▸";
-            if(boss.Visible)y+=96;
+            foreach(var encounter in _catalog.Maps.Where(m=>m.GameplayImplemented && m.IsOperation && m.OperationKey==map.Id))
+            {
+                var boss=_bossByMap[encounter.Id];boss.Visible=expanded;boss.Position=new Vector2(26,y);
+                if(boss.Visible)y+=96;
+            }
         }
         if(CourseButton!=null)
         {
-            var parent=_destinations.First(b=>b.Map.Id==_selected.Id);
+            var parent=_destinations.First(b=>b.Map.Id==_selected.OperationKey);
             CourseButton.FocusNeighborLeft=(_selected.IsOperation && _bossByMap[_selected.Id].Visible
                 ? _bossByMap[_selected.Id] : parent).GetPath();
         }
@@ -148,6 +156,7 @@ public partial class GalaxyChart : Control
     {
         foreach(var button in _difficultyButtons)
         {
+            button.Disabled=!new Equipment.PersistentInventory().DifficultyUnlocked(button.Text);
             bool selected=button.Text==Difficulty;button.SetMeta("selected",selected);
             foreach(string state in new[]{"normal","hover","pressed","hover_pressed"})
                 button.AddThemeStyleboxOverride(state,FrontendSkin.ButtonArtwork(hovered:selected || state!="normal",selected:selected));
@@ -177,10 +186,10 @@ public partial class GalaxyChart : Control
         _description.Position=new Vector2(400,map.IsOperation?530:539);
         _description.Size=new Vector2(map.IsOperation?740:680,map.IsOperation?32:90);
         _description.AddThemeFontSizeOverride("font_size",map.IsOperation?19:22);
-        _description.Text=map.IsOperation?"Survive the frozen surface and face "+map.EncounterName+".":map.Description;
+        _description.Text=map.Description;
         string? reason=AvailabilityReason?.Invoke();_availability.Text=reason!=null?"Unavailable for this class":"";
         CourseButton.Disabled=reason!=null;CourseButton.TooltipText=reason ?? "";
-        var target=map.IsOperation && _bossByMap[map.Id].Visible?_bossByMap[map.Id]:_destinations.First(b=>b.Map.Id==map.Id);
+        var target=map.IsOperation && _bossByMap[map.Id].Visible?_bossByMap[map.Id]:_destinations.First(b=>b.Map.Id==map.OperationKey);
         CourseButton.FocusNeighborLeft=target.GetPath();
     }
 }

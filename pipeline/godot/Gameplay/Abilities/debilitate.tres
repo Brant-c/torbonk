@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "debilitate"
+Title = "Debilitate"
+Icon = "hamstring"
+Damage = 28
+CooldownSeconds = 12
+Range = 0.38
+Radius = 0.22
+Area = 5
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+WindupSeconds = 0.0
+ChannelSeconds = 0.0
+RecoverySeconds = 1.066667
+GestureSeconds = 1.066667
+StartClip = "Agent/Shiv"
+LoopClip = "Agent/Shiv"
+EndClip = ""
+PeriodicDamage = 0
+PeriodicDuration = 0
+PeriodicInterval = 1
+DamageType = 2
+Description = "Offensive close-range stun lasting three seconds. Mass Debilitation turns it into an uncapped area stun and exposes enemies for six seconds."
+ImpactTexture = ""
+CastAudio = "res://Assets/D3/Audio/178831994.wav"
+ImpactAudio = "res://Assets/Agent/Audio/616886755.wav"
+PresentationKind = "saber"
+MuzzleBone = "LeftWrist"
+EffectTint = Color(0.58, 0.88, 0.12, 1)
+ImpactTailsOnTargetDeath = true
+RequireGesture = true
+
+StartsUnlocked = false
+
+SplashMultiplier = 1.0
+
+Category = 0

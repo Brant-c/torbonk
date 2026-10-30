@@ -12,7 +12,7 @@ def local(p): return str(SOURCE/p.lstrip('/'))
 def write(name,data): (ROOT/'manifests'/name).write_text(json.dumps(data,indent=2))
 report={'blender':bpy.app.version_string,'buildHash':bpy.app.build_hash.decode(),
         'meshes':[],'animations':[],'materials':[], 'settings':{
-        'scale':1,'applyAxisConversion':True,'ignoreFacialTranslations':False,
+        'scale':1,'applyAxisConversion':True,'ignoreFacialTranslations':True,
         'delete180':False,'keepAllBones':True,'automaticWeights':False}}
 for addon in ['io_scene_gr2','zg_swtor_tools']:
     addon_utils.enable(addon,default_set=True,persistent=False)
@@ -95,7 +95,7 @@ actions=[]
 for clip in recipe['animations']:
     bpy.ops.object.select_all(action='DESELECT'); rig.select_set(True); bpy.context.view_layer.objects.active=rig
     raw=read_jba(Reporter(),local(clip['path']))
-    assert bpy.ops.import_animation.jba(filepath=local(clip['path']),ignore_facial_bones=False,
+    assert bpy.ops.import_animation.jba(filepath=local(clip['path']),ignore_facial_bones=True,
             delete_180=False,scale_animation=False,scale_factor=1)=={'FINISHED'}
     action=rig.animation_data.action; action.name=clip['name']; action.use_fake_user=True
     action['sourcePath']=clip['path']; action['sourceDuration']=raw.length

@@ -1,0 +1,437 @@
+[
+  {
+    "talent": "immortal.grip",
+    "sourceName": "abl.sith_warrior.skill.immortal.choke_mastery",
+    "sourceId": "0xE000963DD69C6360",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/400.bkt",
+      "uncompressedOffset": 161412,
+      "blockLength": 397,
+      "resourceSha256": "5fdd6067e716537500ad5ace93f4f964aa82c954279f6395b934e3526952303c"
+    },
+    "originalIcon": "choke",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\choke.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_choke.png",
+    "sha256": "4ac38fb4ff7c14f7fd8a001719bf20c973e0ab2b2284a2418e11b9b3ab54d489"
+  },
+  {
+    "talent": "immortal.mitigation",
+    "sourceName": "abl.sith_warrior.skill.immortal.guard_stance",
+    "sourceId": "0xE000474078BCFD10",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/176.bkt",
+      "uncompressedOffset": 84260,
+      "blockLength": 443,
+      "resourceSha256": "071d75e71ead1e23a45d2f7ea5fc3f5ff0bcca6e27bcaffd6958ae854c2808d1"
+    },
+    "originalIcon": "lightsaberDeflection",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\lightsaberdeflection.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_lightsaberdeflection.png",
+    "sha256": "d609dd68718958b7c0e31fa14d158fa90296d8684fa72daec290e3623f3f6a2b"
+  },
+  {
+    "talent": "immortal.barricade",
+    "sourceName": "abl.sith_warrior.skill.immortal.barricade",
+    "sourceId": "0xE0004DBD5B03FC0C",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/148.bkt",
+      "uncompressedOffset": 104812,
+      "blockLength": 505,
+      "resourceSha256": "eb1cb8e5f9b4a19e3ff0c1e3da2b267c39a6308c46049235e048c9af17ab2316"
+    },
+    "originalIcon": "hailofbolts",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\hailofbolts.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_hailofbolts.png",
+    "sha256": "e2f332f0eea250770afb4d5be5d9c48a02c1bce3098f66c1e0b91cbd22d3bcb6"
+  },
+  {
+    "talent": "immortal.revenge",
+    "sourceName": "abl.sith_warrior.skill.immortal.revenge",
+    "sourceId": "0xE00022B269C5808C",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/416.bkt",
+      "uncompressedOffset": 33748,
+      "blockLength": 599,
+      "resourceSha256": "1cdcc6f21acd84c412ee9ac06defe81d432a5958dcbd799fb40b798d0b688367"
+    },
+    "originalIcon": "reflection",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\reflection.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_reflection.png",
+    "sha256": "63ffdc121088505cca0677fb970f81cb18462ece4349acb4b8cacfc2fa800021"
+  },
+  {
+    "talent": "immortal.sonic",
+    "sourceName": "abl.sith_warrior.skill.immortal.sonic_barrier",
+    "sourceId": "0xE00070536CDC1387",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/391.bkt",
+      "uncompressedOffset": 144828,
+      "blockLength": 539,
+      "resourceSha256": "cf610f8888530f0d78c46a7803676e0a77e591519a55b2841f9bc1b123ad28f9"
+    },
+    "originalIcon": "drain_life",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\drain_life.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_drain_life.png",
+    "sha256": "a2ad7c031546877a91debd80f7f3b4785fb348a48491d69646b9c14d5a9243f0"
+  },
+  {
+    "talent": "immortal.darkblood",
+    "sourceName": "abl.sith_warrior.skill.immortal.dark_blood",
+    "sourceId": "0xE000DBFB8F9C4A1E",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/382.bkt",
+      "uncompressedOffset": 247940,
+      "blockLength": 470,
+      "resourceSha256": "3ac9968dd06e17f290b7d936943d94f5af6d68e721b7e465f806fd9c08b896ae"
+    },
+    "originalIcon": "blood_soaked_skull",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\blood_soaked_skull.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_blood_soaked_skull.png",
+    "sha256": "677fc91258685162b7550642f1aa7a6d59b08be6ec515ec29c8f81b4f39f03ce"
+  },
+  {
+    "talent": "immortal.unleashed",
+    "sourceName": "abl.sith_warrior.skill.immortal.unleashed",
+    "sourceId": "0xE000E8C859E55CC2",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/110.bkt",
+      "uncompressedOffset": 279732,
+      "blockLength": 399,
+      "resourceSha256": "8b4df94847eeb04c3c92d185f3b0d2ca43cec740bcaff2a8a7c34365b436413f"
+    },
+    "originalIcon": "unleash",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\unleash.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_unleash.png",
+    "sha256": "8b446be69474d178e980c15ca4d52d710ed7fefc55bf8c09d5089f4021dd18c3"
+  },
+  {
+    "talent": "immortal.invincible",
+    "sourceName": "abl.sith_warrior.skill.immortal.invincible",
+    "sourceId": "0xE00098F043F675E1",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/161.bkt",
+      "uncompressedOffset": 171988,
+      "blockLength": 424,
+      "resourceSha256": "9eb403785fa34ca371a63546bf4e1fac10540d992a6da0a8bc0369c5d3019b24"
+    },
+    "originalIcon": "cloakofpain",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\cloakofpain.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_cloakofpain.png",
+    "sha256": "c8cc8f1a3c862cc230a14597134368fa30e3a674d2136aa2d5022c3f2a938314"
+  },
+  {
+    "talent": "immortal.undying",
+    "sourceName": "abl.sith_warrior.skill.immortal.endure_pain",
+    "sourceId": "0xE000C5C7656CAB9A",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/74.bkt",
+      "uncompressedOffset": 238268,
+      "blockLength": 498,
+      "resourceSha256": "82a5cb3e4c16c22534e72fbd7d84f1a57c1e3fbea2fe68f10c42b69790cfddf2"
+    },
+    "originalIcon": "regenerate",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\regenerate.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_regenerate.png",
+    "sha256": "c83575d772f8ca65528732b582287416e72bfc4d7ededd866113283acf2a71e3"
+  },
+  {
+    "talent": "vengeance.sweep",
+    "sourceName": "abl.sith_warrior.skill.vengeance.rampage",
+    "sourceId": "0xE000DE3B89571C96",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/442.bkt",
+      "uncompressedOffset": 276900,
+      "blockLength": 555,
+      "resourceSha256": "f0e0ba69fcef46614e7430ace86fb50ddfb9629ddc2ea528f3ff24233f101129"
+    },
+    "originalIcon": "bladerush",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\bladerush.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_bladerush.png",
+    "sha256": "2f8651c449954d6ada21d6f8c2f46e54e91803f29c267a16768ed8b6eaaef5e0"
+  },
+  {
+    "talent": "vengeance.scream_bleed",
+    "sourceName": "abl.sith_warrior.skill.vengeance.draining_scream",
+    "sourceId": "0xE0005ABA2EBDEB62",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/58.bkt",
+      "uncompressedOffset": 116092,
+      "blockLength": 587,
+      "resourceSha256": "b9c20291b090a9dc9ba49497421176096ba6de1cc52bdb9010b5560ac11a5459"
+    },
+    "originalIcon": "forcestream",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\forcestream.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_forcestream.png",
+    "sha256": "2f0c9ce18b0d60a0145f63ef17ab8822128b6c3e96918495fb10164974b9f25e"
+  },
+  {
+    "talent": "vengeance.savagery",
+    "sourceName": "abl.sith_warrior.skill.vengeance.savagery",
+    "sourceId": "0xE00063F0DC118CBA",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/186.bkt",
+      "uncompressedOffset": 120100,
+      "blockLength": 539,
+      "resourceSha256": "ddfe655584e129f90f40c221ddb9766a1c77b658b549c543e8bc690dcbc12532"
+    },
+    "originalIcon": "nightmare",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\nightmare.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_nightmare.png",
+    "sha256": "233d30504c99a851603ef61435dfca929bf2c962a904a97ea0efea3d4097999f"
+  },
+  {
+    "talent": "vengeance.rampage",
+    "sourceName": "abl.sith_warrior.skill.vengeance.outrage",
+    "sourceId": "0xE00012B41F7079F0",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/356.bkt",
+      "uncompressedOffset": 16452,
+      "blockLength": 414,
+      "resourceSha256": "e368f1671e07421f26fbd252ba0e0e76a8fd098b3d11dff7f649ac922ea9bc4a"
+    },
+    "originalIcon": "cc_aggressive",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\cc_aggressive.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_cc_aggressive.png",
+    "sha256": "5cf6fe61202c06ec163618798974d41bf795f03b2b0e78e5f0aeba0e515e1107"
+  },
+  {
+    "talent": "vengeance.impale_bleed",
+    "sourceName": "abl.sith_warrior.skill.vengeance.rend",
+    "sourceId": "0xE0006AADA964CEC2",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/162.bkt",
+      "uncompressedOffset": 102060,
+      "blockLength": 460,
+      "resourceSha256": "9fb80f2a811a87c8c15134ab60248ae4c178f8aec5862a8bc6b61359a779d63e"
+    },
+    "originalIcon": "armorpiercingclip",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\armorpiercingclip.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_armorpiercingclip.png",
+    "sha256": "af248e1bb9436fd5e5e828a7c39ae5ddda0a3caae51498ed0dec1f37df63acec"
+  },
+  {
+    "talent": "vengeance.hatred",
+    "sourceName": "abl.sith_warrior.skill.vengeance.pooled_hatred",
+    "sourceId": "0xE00027E8F76B3B22",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/442.bkt",
+      "uncompressedOffset": 39764,
+      "blockLength": 567,
+      "resourceSha256": "f0e0ba69fcef46614e7430ace86fb50ddfb9629ddc2ea528f3ff24233f101129"
+    },
+    "originalIcon": "damageincreased",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\damageincreased.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_damageincreased.png",
+    "sha256": "1114a3b7da034d7b82c8c20f78db7d30ba46429a25c8d7aad90afd7a643a72fb"
+  },
+  {
+    "talent": "vengeance.unstoppable",
+    "sourceName": "abl.sith_warrior.skill.vengeance.unstoppable",
+    "sourceId": "0xE000FCBEB3B8CB53",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/295.bkt",
+      "uncompressedOffset": 281668,
+      "blockLength": 587,
+      "resourceSha256": "69687746d67ccb5d401a14b45cc073ec92a5050125d815ae0cf07950490f3aa7"
+    },
+    "originalIcon": "siupstartslave",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\siupstartslave.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_siupstartslave.png",
+    "sha256": "cda6fd62a581dfb13f43b35788824298ab92c9d3fbe13dbb9f587510dfbda140"
+  },
+  {
+    "talent": "vengeance.bloodmaster",
+    "sourceName": "abl.sith_warrior.skill.vengeance.single_saber_mastery",
+    "sourceId": "0xE00068AF1CFBE746",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/458.bkt",
+      "uncompressedOffset": 117276,
+      "blockLength": 411,
+      "resourceSha256": "e8e8692c47147b53ad29a81adb0697288aed049761d999d2de1add324260f6b0"
+    },
+    "originalIcon": "shiicho",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\shiicho.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_shiicho.png",
+    "sha256": "7566865abe274c8ba845e1992409823bbf469c926ff2eefac589c5b97c4285bf"
+  },
+  {
+    "talent": "vengeance.shatter",
+    "sourceName": "abl.sith_warrior.skill.vengeance.shatter",
+    "sourceId": "0xE000A1BE912E9B58",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/84.bkt",
+      "uncompressedOffset": 183812,
+      "blockLength": 625,
+      "resourceSha256": "114ff57bb9df103925a87c213f21f12e42ad8be163d170f3f203f9ee54f7642a"
+    },
+    "originalIcon": "shatter",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\shatter.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_shatter.png",
+    "sha256": "0ffaa42a37039499c313bfa0c910de313c9eea834d57638d011f9d4d544d3e42"
+  },
+  {
+    "talent": "juggernaut_rage.resonance",
+    "sourceName": "abl.sith_warrior.skill.rage.enraged_scream",
+    "sourceId": "0xE0003FC8C3C12220",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/56.bkt",
+      "uncompressedOffset": 75388,
+      "blockLength": 420,
+      "resourceSha256": "0dc6518e6f4fbca57cfa0f7c52534c97a50c7ab594758866053540beb693fc0c"
+    },
+    "originalIcon": "forcestream",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\forcestream.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_forcestream.png",
+    "sha256": "2f0c9ce18b0d60a0145f63ef17ab8822128b6c3e96918495fb10164974b9f25e"
+  },
+  {
+    "talent": "juggernaut_rage.decimate",
+    "sourceName": "abl.sith_warrior.skill.rage.decimate",
+    "sourceId": "0xE000A3238E9CD99A",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/6.bkt",
+      "uncompressedOffset": 203188,
+      "blockLength": 448,
+      "resourceSha256": "40da91b83ac7dfbdb708e9f841ae9547b71817206b62f418e57c3cffad5e5d7e"
+    },
+    "originalIcon": "smash",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\smash.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_smash.png",
+    "sha256": "c55d089acb90eaaf19d14a131414f68b396d225664b3d6412f45be703e3676e3"
+  },
+  {
+    "talent": "juggernaut_rage.shockwave",
+    "sourceName": "abl.sith_warrior.skill.rage.shockwave",
+    "sourceId": "0xE000EEB258A22F39",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/469.bkt",
+      "uncompressedOffset": 304204,
+      "blockLength": 541,
+      "resourceSha256": "35977831c6d8cf4d6c7003f28cbca646dd8877fb4f2b3fe4f560a9be56a50a1b"
+    },
+    "originalIcon": "riflegrenade",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\riflegrenade.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_riflegrenade.png",
+    "sha256": "3b55c7bcc9e1bf346071ebe76997ad08024099aecfa344d606fcea0caee6096c"
+  },
+  {
+    "talent": "juggernaut_rage.dominate",
+    "sourceName": "abl.sith_warrior.skill.rage.dominate",
+    "sourceId": "0xE0004BF3A48C0355",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/109.bkt",
+      "uncompressedOffset": 79516,
+      "blockLength": 573,
+      "resourceSha256": "c77068133a7bd321bb115c4a50fde96f93cf9b904b37d3e2bb99b2258958fe0e"
+    },
+    "originalIcon": "thunder",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\thunder.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_thunder.png",
+    "sha256": "ce02024df86ea12ec48f6690c2ad4f8022ecd5f2059798e105d0f83c86f9c1e8"
+  },
+  {
+    "talent": "juggernaut_rage.crushingwave",
+    "sourceName": "abl.sith_warrior.skill.rage.force_crush",
+    "sourceId": "0xE0007DBC3BB4C92B",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/35.bkt",
+      "uncompressedOffset": 163420,
+      "blockLength": 675,
+      "resourceSha256": "56284fcfba5a454123c516d52625d62a55f0d2e45a4a1d3d5d6ee8c5e2ead872"
+    },
+    "originalIcon": "forceCrush",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\forcecrush.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_forcecrush.png",
+    "sha256": "5397f7c61c8418efb8ab7842c218cd658308820e5ff146f249f4887b608831e7"
+  },
+  {
+    "talent": "juggernaut_rage.alacrity",
+    "sourceName": "abl.sith_warrior.skill.rage.gravity",
+    "sourceId": "0xE0005BC3DD54F902",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/6.bkt",
+      "uncompressedOffset": 112316,
+      "blockLength": 372,
+      "resourceSha256": "40da91b83ac7dfbdb708e9f841ae9547b71817206b62f418e57c3cffad5e5d7e"
+    },
+    "originalIcon": "forceactivate",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\forceactivate.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_forceactivate.png",
+    "sha256": "419ca26331be09354ded76dd5211eafd9b86beace97424632cd2b00f3894b125"
+  },
+  {
+    "talent": "juggernaut_rage.rage_heal",
+    "sourceName": "abl.sith_warrior.skill.rage.payback",
+    "sourceId": "0xE000B21F7FFD8C65",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/449.bkt",
+      "uncompressedOffset": 206148,
+      "blockLength": 432,
+      "resourceSha256": "2e273bd152544d2cfdb1ed557b82bc18e94568b845a7216d51638afa8825ba9e"
+    },
+    "originalIcon": "drainingpresence",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\drainingpresence.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_drainingpresence.png",
+    "sha256": "94ca8a97f0c1ccddd0528e746a54139fcafc26ffed7cdaf6f7a2a9c0dcabc5f9"
+  },
+  {
+    "talent": "juggernaut_rage.obliteration",
+    "sourceName": "abl.sith_warrior.skill.rage.malice",
+    "sourceId": "0xE000935D6B31A10F",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/371.bkt",
+      "uncompressedOffset": 200124,
+      "blockLength": 380,
+      "resourceSha256": "6fbae3924e3d147c42ac2545fc2239292ea084b35311871de38d5b50597b2426"
+    },
+    "originalIcon": "bhoutlaw",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\bhoutlaw.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_bhoutlaw.png",
+    "sha256": "c08cda4d12b72582a7390278901ca1da3ad1c583320393f9845770b1b5a3323f"
+  },
+  {
+    "talent": "juggernaut_rage.fissure",
+    "sourceName": "abl.sith_warrior.skill.rage.dark_resonance",
+    "sourceId": "0xE000B9826334B252",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/110.bkt",
+      "uncompressedOffset": 220180,
+      "blockLength": 429,
+      "resourceSha256": "8b4df94847eeb04c3c92d185f3b0d2ca43cec740bcaff2a8a7c34365b436413f"
+    },
+    "originalIcon": "doom_aura",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\doom_aura.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_doom_aura.png",
+    "sha256": "714e8512011026248c635fcc2865d163830e315f5dc48ddaf92f71cd88715426"
+  },
+  {
+    "drop": "juggernaut_rage",
+    "sourceName": "abl.sith_warrior.skill.rage.empowering_rage",
+    "sourceId": "0xE000B6C5388EE9C4",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/260.bkt",
+      "uncompressedOffset": 221004,
+      "blockLength": 511,
+      "resourceSha256": "c9db5ec080b35fa63d0112e2b16f51d1b0eab7f9f531e73d2af9af4e0cbd1259"
+    },
+    "originalIcon": "rage",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\rage.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_rage.png",
+    "sha256": "7ebe841e30f64c911dfeb6e3c02abe634b7c98674e5a91d77030f6526d84ee27"
+  },
+  {
+    "drop": "juggernaut_shockwave",
+    "sourceName": "abl.sith_warrior.skill.rage.backlash",
+    "sourceId": "0xE00027D1FBA77C01",
+    "source": {
+      "path": "/resources/systemgenerated/buckets/265.bkt",
+      "uncompressedOffset": 43644,
+      "blockLength": 391,
+      "resourceSha256": "7f107be85007ade6aa7de4a64c1480a32e9faa407f72287ba114c4efa8a712ce"
+    },
+    "originalIcon": "spike",
+    "sourcePng": "godot\\Assets\\WarriorLibrary\\Textures\\gfx\\icons\\spike.png",
+    "uiPng": "godot\\Assets\\UI\\icons\\jg_talent_spike.png",
+    "sha256": "e022c062238d2afbf5e82cebed18b5f5d9c90c3a7b23849a2f5f434cedc715f3"
+  }
+]

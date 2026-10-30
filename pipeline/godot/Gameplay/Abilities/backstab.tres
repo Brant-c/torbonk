@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "backstab"
+Title = "Backstab"
+Icon = "criticalblade"
+Damage = 52
+CooldownSeconds = 7
+Range = 0.38
+Radius = 0.22
+Area = 5
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+WindupSeconds = 0.4
+ChannelSeconds = 0.0
+RecoverySeconds = 1.066667
+GestureSeconds = 1.066667
+StartClip = "Agent/Backstab"
+LoopClip = "Agent/Backstab"
+EndClip = ""
+PeriodicDamage = 0
+PeriodicDuration = 0
+PeriodicInterval = 1
+DamageType = 2
+Description = "Close-range multi-target knife attack. Hidden Strike requires an opening; Laceration spends Tactical Advantage for bonus damage, but always remains usable."
+ImpactTexture = ""
+CastAudio = ""
+ImpactAudio = "res://Assets/Agent/Audio/82513035.wav"
+PresentationKind = "saber"
+MuzzleBone = "LeftWrist"
+EffectTint = Color(0.58, 0.88, 0.12, 1)
+ImpactTailsOnTargetDeath = true
+RequireGesture = true
+
+StartsUnlocked = false
+
+SplashMultiplier = 1.0
+
+WeaponAudio = "res://Assets/Agent/Audio/13800022.wav"

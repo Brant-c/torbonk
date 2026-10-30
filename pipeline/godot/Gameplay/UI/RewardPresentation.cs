@@ -13,9 +13,10 @@ public partial class RewardPresentation : CanvasLayer
     public int BannersShown { get; private set; }
     private Control _root = null!, _level = null!, _notice = null!;
     private Label _levelNumber = null!, _noticeTitle = null!, _noticeBody = null!, _noticeDetail = null!;
+    private TextureRect _lootIcon=null!;
     private double _levelAge, _noticeAge;
     private bool _levelActive;
-    private readonly Queue<(string title, string body, string detail, string cue)> _queue = new();
+    private readonly Queue<(string title, string body, string detail, string cue, string icon)> _queue = new();
     private readonly List<Node3D> _bursts = new();
 
     public override void _Ready()
@@ -43,6 +44,7 @@ public partial class RewardPresentation : CanvasLayer
         _noticeTitle = Text(_notice, "", 14, new Vector2(12, 10), new Vector2(576, 21));
         _noticeBody = Text(_notice, "", 22, new Vector2(12, 32), new Vector2(576, 34));
         _noticeDetail = Text(_notice, "", 15, new Vector2(12, 72), new Vector2(576, 24));
+        _lootIcon=new TextureRect {Position=new Vector2(12,34),Size=new Vector2(32,32),ExpandMode=TextureRect.ExpandModeEnum.IgnoreSize,MouseFilter=Control.MouseFilterEnum.Ignore};_notice.AddChild(_lootIcon);
         World.Progression!.LevelReached += OnLevel;
         World.Progression.UpgradeApplied += OnUpgrade;
         World.Waves.Encounter.StateChanged += OnEncounter;
@@ -82,7 +84,7 @@ public partial class RewardPresentation : CanvasLayer
             string detail=World.Progression!.MaximumLevel>0 && World.Progression.Level>=World.Progression.MaximumLevel
                 ? "LEVEL CAP REACHED  ·  COLLECT YOUR REWARD"
                 : $"{encounter.Boss!.ExperienceReward} XP RELEASED  ·  COLLECT YOUR REWARD";
-            _queue.Enqueue((encounter.Boss!.RewardTier>=2?"BOSS DEFEATED":"ELITE DEFEATED", encounter.Definition.Title, detail, "boss_victory"));
+            _queue.Enqueue((encounter.Boss!.RewardTier>=2?"BOSS DEFEATED":"ELITE DEFEATED", encounter.Definition.Title, detail, "boss_victory", ""));
             Burst(encounter.Boss.GlobalPosition, SwtorSkin.Gold);
         }
         else if (state is EncounterState.Failed or EncounterState.Scheduled) Clear();
@@ -106,6 +108,7 @@ public partial class RewardPresentation : CanvasLayer
         if (World.Progression!.Selecting) { _notice.Visible = false; return; }
         if (_noticeAge <= 0 && _queue.TryDequeue(out var item))
         {
+            _lootIcon.Texture=item.icon==""?null:GD.Load<Texture2D>(item.icon);
             _noticeTitle.Text = item.title; _noticeBody.Text = item.body; _noticeDetail.Text = item.detail;
             _noticeAge = 2.2; World.Audio.PlayCue(item.cue);
         }
@@ -122,7 +125,8 @@ public partial class RewardPresentation : CanvasLayer
         if (BossDisplay != null) BossDisplay.Visible = false;
         foreach (var burst in _bursts) if (GodotObject.IsInstanceValid(burst)) burst.QueueFree(); _bursts.Clear();
     }
-    public void Announce(string title,string body,string detail="",string cue="") => _queue.Enqueue((title,body,detail,cue));
+    public void Announce(string title,string body,string detail="",string cue="") => _queue.Enqueue((title,body,detail,cue,""));
+    public void AnnounceItem(string result,Equipment.Accessory item)=>_queue.Enqueue(("RELIC ACQUIRED",item.Name,result,"",EquipmentWindows.IconPath(item)));
     public override void _ExitTree()
     {
         if (GodotObject.IsInstanceValid(World.Progression)) { World.Progression!.LevelReached -= OnLevel; World.Progression.UpgradeApplied -= OnUpgrade; }

@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "empdischarge"
+StartsUnlocked = false
+Title = "EMP Discharge"
+Icon = "detonateprobe"
+Damage = 38
+CooldownSeconds = 12
+Range = 2.2
+Radius = 0.38
+Area = 4
+TargetRule = 1
+SplashMultiplier = 1.0
+RecoverySeconds = 1.333
+GestureSeconds = 1.2
+PeriodicDamage = 0
+PeriodicDuration = 0
+PeriodicInterval = 1
+DamageType = 0
+Description = "Engineering area attack. EMP Discharge accelerates equipped probe cooldowns."
+StartClip = "Agent/Detonator"
+LoopClip = "Agent/Detonator"
+EndClip = ""
+ChannelSeconds = 0.0
+WindupSeconds = 0.45
+PresentationKind = "agent"
+MuzzleBone = "LeftWrist"
+EffectTint = Color(0.16, 0.713, 0.007, 1)
+ImpactTailsOnTargetDeath = true
+CastAudio = ""
+ImpactAudio = ""
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true

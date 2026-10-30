@@ -59,7 +59,7 @@ public partial class WarriorPresentationSmoke : Node
     var d=a.Definition;var fx=(D3AbilityPresentation)a.Presentation;
     foreach(string clip in new[]{d.StartClip,d.LoopClip}.Where(s=>s!=""))Check(d.Id+" clip loaded: "+clip,w.Player.Presentation.Animator.HasAnimation(clip));
     int before=fx.WarriorTargetImpacts;Start(d.Id);
-    Check(d.Id+" owns gesture",w.Player.Presentation.GestureOwner==a);
+    Check(d.Id+" respects authored gesture",d.GestureSeconds>0?w.Player.Presentation.GestureOwner==a:w.Player.Presentation.GestureOwner!=a);
     bool snapped=false,checkedAudio=false,noEarlySmash=true;float rootMin=float.PositiveInfinity,rootMax=float.NegativeInfinity;
     int root=w.Player.Presentation.Skeleton.FindBone("Root");
     double snapAt=d.Effect!=AbilityEffect.Damage?.45:d.WindupSeconds+(a.ChannelSeconds>0?a.TickSeconds:0)+.04;
@@ -98,6 +98,27 @@ public partial class WarriorPresentationSmoke : Node
     }
     a.Abort();Check(d.Id+" releases transient effects",fx.EffectCount==0);
     await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);
+   }
+   if(cls=="juggernaut"){
+    Reset();var thrown=Start("viciousthrow");
+    var flight=w.GetChildren().OfType<MarauderThrownSaber>().Single(f=>!f.IsQueuedForDeletion());
+    Check("Juggernaut throw leases main-hand weapon",!w.Equipment.Weapon("main_hand")!.Visible);
+    thrown.Advance(.1);flight._Process(.1);Check("Juggernaut throw waits for visible contact",thrown.DamageEvents==0 && !flight.Returning);
+    thrown.Advance(.11);flight._Process(.11);Check("Juggernaut throw contact matches damage",thrown.DamageEvents==1 && flight.Returning);
+    thrown.Abort();Check("Juggernaut throw abort restores saber",w.Equipment.Weapon("main_hand")!.Visible);
+    Reset();var endure=Start("endurepain");var endureFx=(D3AbilityPresentation)endure.Presentation;
+    Check("Endure Pain uses recovered aura instead of energy shell",endureFx.GetNodeOrNull<Node3D>("EndurePainAura")!=null && endureFx.GetNodeOrNull<Node3D>("EnergyShieldBubble")==null);
+    Check("Endure Pain plays second cast layer",endureFx.LastPlayedAudioPath==endure.Definition.ImpactAudio);
+    int bursts=endureFx.MarauderAuraBursts;endureFx._Process(.13);Check("Endure Pain emits shield-bound smoke",endureFx.MarauderAuraBursts>bursts);
+    w.PlayerActor.Health.ClearShield();endureFx._Process(1.1);Check("Endure Pain clears when shield ends",!endureFx.ShieldVisible && endureFx.EffectCount==0);endure.Abort();
+    Reset();var defense=Start("enrageddefense");var defenseFx=(D3AbilityPresentation)defense.Presentation;
+    Check("Enraged Defense preserves locomotion without invented attack",defense.Definition.StartClip=="" && w.Player.Presentation.GestureOwner!=defense);
+    Check("Enraged Defense startup samples the recovered atlas",defenseFx.GetChildren().OfType<Sprite3D>().Any(s=>s.Texture.ResourcePath.EndsWith("fx_explosion_core_02_bw.png") && s.Hframes==4 && s.Vframes==4));
+    bursts=defenseFx.MarauderAuraBursts;defenseFx._Process(.13);Check("Enraged Defense emits recovered rings",defenseFx.MarauderAuraBursts>bursts);
+    int procs=defenseFx.DefensiveProcsPresented;w.PlayerActor.Health.ApplyDamage(1);
+    Check("Enraged Defense heal dispatches proc visual",defenseFx.DefensiveProcsPresented==procs+1);
+    Check("Enraged Defense plays recovered proc event",defenseFx.LastPlayedAudioPath.EndsWith("/622419195.wav"));
+    w.Build.Pregame.Reset();defenseFx._Process(2.1);Check("Enraged Defense clears on expiry",defenseFx.EffectCount==0);defense.Abort();
    }
    if(cls=="marauder"){
     Reset();

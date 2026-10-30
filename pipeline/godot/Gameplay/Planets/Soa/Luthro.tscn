@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=3]
+[ext_resource type="Script" path="res://Gameplay/EnemyAgent.cs" id="1"]
+[ext_resource type="Script" path="res://Gameplay/Health.cs" id="2"]
+[ext_resource type="Script" path="res://Gameplay/EnemyPresentation.cs" id="3"]
+[ext_resource type="PackedScene" path="res://Assets/Maps/soa_p3/Enemies/luthro.glb" id="4"]
+[ext_resource type="FontFile" path="res://Assets/UI/EurostileBold.ttf" id="6"]
+[ext_resource type="Script" path="res://Gameplay/TombAttack.cs" id="5"]
+
+[sub_resource type="CapsuleShape3D" id="Capsule"]
+radius = 0.055
+height = 0.32
+margin = 0.0005
+[node name="Luthro" type="CharacterBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+position = Vector3(0,0.16,0)
+shape = SubResource("Capsule")
+[node name="Actor" type="Node3D" parent="."]
+script = ExtResource("1")
+Team = 2
+DisplayName = "Luthro the Kinslayer"
+ExperienceReward = 70
+CollisionRadius = 0.055
+CollisionHeight = 0.32
+MoveSpeed = 0.23
+AttackDamage = 8
+AttackInterval = 1.65
+DetectionRange = 12.0
+MeleeRange = 0.145
+AimHeight = 0.20800000000000002
+RewardTier = 2
+GuaranteedReward = true
+KnockbackResistance = 1
+ScaleWithWaves = true
+[node name="Health" type="Node" parent="Actor"]
+script = ExtResource("2")
+Maximum = 650
+[node name="Visual" type="Node3D" parent="Actor"]
+script = ExtResource("3")
+Weapon = "saber"
+RedBlade = true
+[node name="Original" parent="Actor/Visual" instance=ExtResource("4")]
+scale = Vector3(1.5,1.5,1.5)
+[node name="Nameplate" type="Label3D" parent="Actor"]
+position = Vector3(0,0.38,0)
+pixel_size = 0.00030
+billboard = 1
+font = ExtResource("6")
+font_size = 20
+outline_size = 6
+modulate = Color(1,0.42,0.23,1)
+[node name="TombAttack" type="Node" parent="Actor"]
+script = ExtResource("5")
+Pattern = "cleave"
+Damage = 8
+Windup = 1.6
+Cooldown = 6
+TriggerRange = 2.0
+InstructionOverride = "INFERNAL COUNCIL · LEAVE THE LOCKED WARNING"

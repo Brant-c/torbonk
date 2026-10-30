@@ -11,6 +11,7 @@ public static class AbilityTooltips
  {
   string text=Rules(w,a).Split(new[]{". "},StringSplitOptions.None)[0].TrimEnd('.');
   if(text.Length>110){int end=text.LastIndexOf(' ',107);text=text[..Math.Max(1,end)]+"...";}else text+=".";
+  if(w.RunConfiguration.AdvancedClassId=="sniper" && TalentRuntime.AgentCoverAbility(a.Definition.Id) && !text.StartsWith("Requires cover"))text="Requires cover. "+text;
   return text+$"\n{a.CooldownSeconds:0.##}s cooldown";
  }
  public static string Choice(GameWorld w,UpgradeDefinition u,AutomaticAbility? a)
@@ -22,8 +23,11 @@ public static class AbilityTooltips
  public static string Describe(GameWorld w,AutomaticAbility a,bool equipped=true)
  {
   var d=a.Definition;var lines=new List<string>{d.Title,Rules(w,a)};
+  if(w.RunConfiguration.AdvancedClassId=="sorcerer" && d.Id is "deathfield" or "storm")lines.Add("Stand still on the ground to begin. Prioritized while stationary; movement is available after activation.");
+  if(w.Build.Pregame.AssassinDeception && d.Id=="discharge")lines.Add("Deception's main DoT: stronger ticks and faster cooldown recovery. Electrocute seeks enemies carrying your Discharge.");
+  if(w.RunConfiguration.AdvancedClassId=="sniper" && TalentRuntime.AgentCoverAbility(d.Id))lines.Add("Requires cover to begin: stand still on the ground for 0.6s. Active attacks can finish after leaving cover.");
   if(d.Effect==AbilityEffect.Damage){
-   int hits=a.ChannelSeconds>0?Math.Max(1,(int)Math.Floor(a.ChannelSeconds/a.TickSeconds+.00001)):1;
+   int hits=d.Id=="laceration"?2:a.ChannelSeconds>0?Math.Max(1,(int)Math.Floor(a.ChannelSeconds/a.TickSeconds+.00001)):1;
    lines.Add(hits>1?$"{a.DamagePerTick:0.#} {d.DamageType.ToString().ToLowerInvariant()} damage per hit; {hits} hits over {a.ChannelSeconds:0.##}s.":$"{a.DamagePerTick:0.#} {d.DamageType.ToString().ToLowerInvariant()} damage per target.");
    if(d.Area is AbilityArea.CasterRadial or AbilityArea.FrontalCone or AbilityArea.TargetSplash or AbilityArea.GroundSphere){
     string shape=d.Area==AbilityArea.FrontalCone?"Frontal cleave":d.Area==AbilityArea.CasterRadial?"Around you":d.Area==AbilityArea.TargetSplash?"Around the target":"Ground area";
@@ -51,13 +55,44 @@ public static class AbilityTooltips
   return string.Join("\n",lines);
  }
  private static bool Related(string id,string key)=>key switch {
+  "sn_crossfire"=>id is "ambush" or "followthrough",
+  "sn_ricochet"=>id is "ambush" or "seriesofshots" or "followthrough",
+  "sn_suppression"=>id is "suppressivefire" or "plasmaprobe" or "interrogationprobe",
+  "sn_bombardment"=>id is "suppressivefire" or "orbitalstrike",
+  "sn_overload"=>id is "explosiveprobe" or "interrogationprobe",
+  "sn_emp"=>id is "empdischarge" or "explosiveprobe" or "orbitalstrike",
+  "sn_targeting"=>id is "interrogationprobe" or "seriesofshots" or "explosiveprobe",
+  "sn_cull" or "sn_decay" or "sn_weakening"=>id is "dart" or "corrosivegrenade" or "agentcull" or "weakeningblast",
+  "sn_contamination"=>id is "ambush" or "dart",
+  "sn_lethal_cover" or "sn_lethal_alignment" or "sn_lethal_echo" or "sn_lethal_extend" or "sn_lethal_spread" or "sn_lethal_focus"=>id is "dart" or "corrosivegrenade" or "agentcull" or "weakeningblast" or "shieldprobe",
+  "sn_entrench"=>id is "entrench" or "ambush" or "seriesofshots" or "followthrough" or "suppressivefire",
+  "as_conduit"=>id is "voltaicslash" or "shock" or "discharge",
+  "as_ambush"=>id is "maul" or "spike" or "forcecloak",
+  "as_chain" or "as_echo"=>id=="shock",
+  "as_spread"=>id is "lacerate" or "creepingterror" or "affliction" or "crushingdarkness",
+  "as_harvest"=>id=="deathfield",
+  "as_wither"=>id is "wither" or "maul" or "voltaicslash",
+  "as_guard"=>id is "lacerate" or "wither" or "forceshroud" or "deflection",
+  "as_decay"=>id is "creepingterror" or "affliction" or "crushingdarkness",
+  "agent_mass_debilitation"=>id=="debilitate",
+  "agent_counterstrike"=>id=="blowforblow",
+  "agent_controlled_burst"=>id=="laceration",
   "mr_spread" or "mr_heal"=>id is "sweepingslash" or "smash" or "rupture" or "deadlysaber",
-  "mr_cleave"=>id=="ravage", "mr_ricochet"=>id=="saberthrow",
+  "mr_cleave" or "mr_blademaster"=>id is "massacre" or "ravage",
+  "mr_alacrity" or "mr_flurry"=>id is "ataruform" or "massacre" or "ravage",
+  "mr_bloodletting" or "mr_gore" or "mr_overwhelm"=>id is "massacre" or "ravage" or "gore",
+  "mr_precision"=>id is "massacre" or "ravage" or "gore" or "forcescream", "mr_ricochet"=>id=="saberthrow",
   "mr_charges" or "mr_rhythm"=>id=="deadlysaber",
   "mr_reset" or "mr_hemorrhage"=>id is "annihilate" or "rupture",
   "mr_shockwave" or "mr_fissure"=>id=="smash",
   "mr_forceflow"=>id is "forcecrush" or "saberthrow",
-  "mr_frenzy" or "mr_relentless"=>id is "berserk" or "frenzy",
+  "mr_frenzy" or "mr_relentless"=>id=="berserk",
+  "jg_mitigation" or "jg_darkblood" or "jg_revenge"=>true,
+  "jg_hatred" or "jg_unstoppable" or "jg_bloodmaster"=>id is "impale" or "ravage" or "crushingblow" or "sunderingassault" or "retaliation" or "viciousthrow",
+  "jg_alacrity" or "jg_obliteration"=>id is "smash" or "forcescream" or "forcecrush" or "forcechoke" or "intimidatingroar",
+  "jg_dominate"=>id is "forcescream" or "smash",
+  "jg_rampage"=>id is "impale" or "ravage",
+  "jg_savagery"=>id is "impale" or "forcescream",
   "jg_grip" or "jg_convergence"=>id=="forcechoke", "jg_resonance"=>id=="forcescream", "jg_sweep"=>id=="ravage",
   "jg_fissure" or "jg_decimate" or "jg_shockwave"=>id=="smash",
   "jg_sundering"=>id=="sunderingassault",
@@ -65,14 +100,15 @@ public static class AbilityTooltips
  private static string Rules(GameWorld w,AutomaticAbility a)
  {
   var d=a.Definition;bool mara=w.RunConfiguration.AdvancedClassId=="marauder";
+  if(w.Build.Pregame.AssassinDeception && d.Id=="discharge")return "Deception's main damage-over-time attack. Spread dark energy around you; maintain it to set up Electrocute and the following Maul/Voltaic Slash burst.";
   if(mara)return d.Id switch {
    "viciousslash"=>"Quick dual-saber starter. Learned attacks take priority; replace it as your build develops.",
    "rupture"=>"Wound one enemy. With a spread attack equipped, waits for the seeded bleed to expire before applying it by hand again. Position Sweeping Slash to spread it. Cooldown stays at least 8s.",
-   "batteringassault"=>"Heavy dual-saber strike. Empowers the next Massacre strike or first Ravage hit by 40%.",
+   "batteringassault"=>"Heavy dual-saber strike. Empowers the next Massacre cleave or full Ravage sequence by 40%.",
    "gore"=>"Heavy direct strike that opens four seconds of 60% additional weapon damage.",
-   "massacre"=>"Heavy dual-saber burst. Benefits from Battering Assault, Gore and Blademaster Cleave without requiring bleeds.",
+   "massacre"=>"Fast dual-saber cleave for three enemies at full damage, five with Sweeping Blades. Guarantees an Ataru follow-up when ready and empowers its proc chance for 6s. Slaughter recovers Gore cooldown.",
    "sweepingslash"=>"Slash enemies in front of you and spread Rupture. Newly spread effects deal 35% more periodic damage; successful spreads heal up to 8 health and grant +35% weapon damage for 3s. Blood Wake also spreads Deadly Saber and Force Crush, with bonus impact damage.",
-   "ravage"=>"Rapid dual-saber multi-hit sequence. Sweeping Ravage turns it into a frontal cleave.",
+   "ravage"=>"Each existing strike cleaves four enemies at full damage, six with Sweeping Blades. Gore empowers the full sequence; Blademaster's Reach adds targets and reach.",
    "annihilate"=>"Heavy focused strike. Deals 35% additional damage to enemies carrying your Rupture or Deadly Saber bleed.",
    "deadlysaber"=>"For 6s, the next three learned weapon hits apply a separate bleed. Vicious Slash does not consume these charges. Talents can add an application.",
    "deadlythrow"=>"Ranged saber strike. Deals 60% additional damage below 30% enemy health.",

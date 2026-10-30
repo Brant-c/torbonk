@@ -17,37 +17,13 @@
   ],
   "Talents": [
     {
-      "Id": "darkness.dark_ward",
-      "Classes": [
-        "assassin"
-      ],
-      "Tree": "darkness",
-      "Tier": 0,
-      "Column": 0,
-      "Icon": "res://Assets/UI/icons/swchildoftheempire.png",
-      "Name": "Dark Ward",
-      "Description": "Reduce incoming attack damage by 8%.",
-      "MaxRank": 1,
-      "Cost": 1,
-      "RequiredPoints": 0,
-      "Effects": [
-        {
-          "Kind": "hook",
-          "Ability": "",
-          "Amount": 0.08,
-          "Key": "mitigation"
-        }
-      ],
-      "Source": "0xE000BE3ADE86DF6C (April ablIconSpec; survivor adaptation)"
-    },
-    {
       "Id": "darkness.lightning_reflexes",
       "Classes": [
         "assassin"
       ],
       "Tree": "darkness",
       "Tier": 0,
-      "Column": 1,
+      "Column": 0,
       "Icon": "res://Assets/UI/icons/force_charge.png",
       "Name": "Lightning Reflexes",
       "Description": "Lacerate cooldown recovers 15% faster.",
@@ -71,7 +47,7 @@
       ],
       "Tree": "darkness",
       "Tier": 0,
-      "Column": 2,
+      "Column": 1,
       "Icon": "res://Assets/UI/icons/doom_aura.png",
       "Name": "Shroud of Darkness",
       "Description": "Force Shroud absorbs 25% more damage.",
@@ -87,6 +63,29 @@
         }
       ],
       "Source": "0xE00041D6BD942828 (April ablIconSpec; survivor adaptation)"
+    },
+    {
+      "Id": "darkness.enduring_training",
+      "Classes": [
+        "assassin"
+      ],
+      "Tree": "darkness",
+      "Icon": "res://Assets/UI/icons/swchildoftheempire.png",
+      "Name": "Enduring Training",
+      "Description": "Force Shroud cooldown recovers 8% faster.",
+      "Effects": [
+        {
+          "Kind": "cooldown",
+          "Ability": "forceshroud",
+          "Amount": 0.08
+        }
+      ],
+      "Source": "Existing class artwork; adapted Survivors general training.",
+      "Tier": 0,
+      "Column": 2,
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0
     },
     {
       "Id": "darkness.premonition",
@@ -137,43 +136,19 @@
       "Source": "0xE000DF66C19F2BE7 (April ablIconSpec; survivor adaptation)"
     },
     {
-      "Id": "darkness.harnessed_darkness",
+      "Id": "darkness.hollow",
       "Classes": [
         "assassin"
       ],
       "Tree": "darkness",
       "Tier": 1,
       "Column": 2,
-      "Icon": "res://Assets/UI/icons/cloakofpain.png",
-      "Name": "Harnessed Darkness",
-      "Description": "After taking damage heal 2 HP, at most every 5 seconds.",
-      "MaxRank": 1,
-      "Cost": 1,
-      "RequiredPoints": 2,
-      "Effects": [
-        {
-          "Kind": "hook",
-          "Ability": "",
-          "Amount": 2,
-          "Key": "reactive"
-        }
-      ],
-      "Source": "0xE0001493809C13C5 (April ablIconSpec; survivor adaptation)"
-    },
-    {
-      "Id": "darkness.hollow",
-      "Classes": [
-        "assassin"
-      ],
-      "Tree": "darkness",
-      "Tier": 2,
-      "Column": 0,
       "Icon": "res://Assets/UI/icons/drain_life.png",
       "Name": "Hollow",
       "Description": "Deflection lasts one additional second.",
       "MaxRank": 1,
       "Cost": 1,
-      "RequiredPoints": 4,
+      "RequiredPoints": 2,
       "Effects": [
         {
           "Kind": "hook",
@@ -185,19 +160,67 @@
       "Source": "0xE00083179CD52E5F (April ablIconSpec; survivor adaptation)"
     },
     {
-      "Id": "darkness.eye_of_the_storm",
+      "Id": "darkness.dark_ward",
+      "Classes": [
+        "assassin"
+      ],
+      "Tree": "darkness",
+      "Tier": 2,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/swchildoftheempire.png",
+      "Name": "Dark Ward",
+      "Description": "Reduce incoming attack damage by 8%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 0.08,
+          "Key": "mitigation"
+        }
+      ],
+      "Source": "0xE000BE3ADE86DF6C (April ablIconSpec; survivor adaptation)"
+    },
+    {
+      "Id": "darkness.harnessed_darkness",
       "Classes": [
         "assassin"
       ],
       "Tree": "darkness",
       "Tier": 2,
       "Column": 1,
+      "Icon": "res://Assets/UI/icons/cloakofpain.png",
+      "Name": "Harnessed Darkness",
+      "Description": "After taking damage heal 2 HP, at most every 5 seconds.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 2,
+          "Key": "reactive"
+        }
+      ],
+      "Source": "0xE0001493809C13C5 (April ablIconSpec; survivor adaptation)"
+    },
+    {
+      "Id": "darkness.eye_of_the_storm",
+      "Classes": [
+        "assassin"
+      ],
+      "Tree": "darkness",
+      "Tier": 2,
+      "Column": 2,
       "Icon": "res://Assets/UI/icons/spike.png",
       "Name": "Electric Winds",
       "Description": "Wither deals 25% more damage and has 20% more radius.",
       "MaxRank": 1,
       "Cost": 1,
-      "RequiredPoints": 4,
+      "RequiredPoints": 5,
       "Effects": [
         {
           "Kind": "damage",
@@ -245,19 +268,130 @@
       "Source": "0xE000867C42A5858E (April ablIconSpec; survivor adaptation)"
     },
     {
-      "Id": "deception.duplicity",
+      "Id": "deception.induction",
       "Classes": [
         "assassin"
       ],
       "Tree": "deception",
       "Tier": 0,
       "Column": 1,
+      "Icon": "res://Assets/UI/icons/force_crush.png",
+      "Name": "Induction",
+      "Description": "Shock deals 20% more damage. Investing in Deception grants Electrocute: control a Discharge-afflicted target to open a Maul burst window.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "shock",
+          "Amount": 0.2,
+          "Key": ""
+        }
+      ],
+      "Source": "0xE0006923F6D15B60 (April ablIconSpec; survivor adaptation)"
+    },
+    {
+      "Id": "deception.shadow_training",
+      "Classes": [
+        "assassin"
+      ],
+      "Tree": "deception",
+      "Icon": "res://Assets/UI/icons/spinningstrike.png",
+      "Name": "Shadow Training",
+      "Description": "Maul cooldown recovers 8% faster.",
+      "Effects": [
+        {
+          "Kind": "cooldown",
+          "Ability": "maul",
+          "Amount": 0.08
+        }
+      ],
+      "Source": "Existing class artwork; adapted Survivors general training.",
+      "Tier": 0,
+      "Column": 2,
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0
+    },
+    {
+      "Id": "deception.saber_conduit",
+      "Classes": [
+        "assassin"
+      ],
+      "Tree": "deception",
+      "Tier": 1,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/chargedsaber.png",
+      "Name": "Conductive Field",
+      "Description": "Lacerate radius increases by 35%. Electrocute also strikes up to two nearby enemies at full damage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "radius",
+          "Ability": "lacerate",
+          "Amount": 0.35,
+          "Key": ""
+        },
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "electrocute_area"
+        }
+      ],
+      "Source": "0xE0006E993934FF6C (April ablIconSpec; survivor adaptation)"
+    },
+    {
+      "Id": "deception.dark_swell",
+      "Classes": [
+        "assassin"
+      ],
+      "Tree": "deception",
+      "Tier": 1,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/disappear.png",
+      "Name": "Darkswell",
+      "Description": "Spike has 25% more radius and 20% more damage. Electrocute hits recover 4 seconds of Maul cooldown, once per activation.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "radius",
+          "Ability": "spike",
+          "Amount": 0.25
+        },
+        {
+          "Kind": "damage",
+          "Ability": "spike",
+          "Amount": 0.2
+        },
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "electrocute_opening"
+        }
+      ],
+      "Source": "0xE000B0F352B3B998 (April ablIconSpec; survivor adaptation)"
+    },
+    {
+      "Id": "deception.duplicity",
+      "Classes": [
+        "assassin"
+      ],
+      "Tree": "deception",
+      "Tier": 1,
+      "Column": 2,
       "Icon": "res://Assets/UI/icons/sunderingassault.png",
       "Name": "Duplicity",
       "Description": "Cloaked Maul gains another 35% damage.",
       "MaxRank": 1,
       "Cost": 1,
-      "RequiredPoints": 0,
+      "RequiredPoints": 2,
       "Effects": [
         {
           "Kind": "hook",
@@ -274,71 +408,29 @@
         "assassin"
       ],
       "Tree": "deception",
-      "Tier": 0,
-      "Column": 2,
+      "Tier": 2,
+      "Column": 0,
       "Icon": "res://Assets/UI/icons/novasaber.png",
       "Name": "Surging Charge",
-      "Description": "Discharge direct damage increases by 60%.",
+      "Description": "Discharge direct and periodic damage increase by 60%, and its DoT lasts 2 seconds longer. Deception already strengthens its ticks and cooldown.",
       "MaxRank": 1,
       "Cost": 1,
-      "RequiredPoints": 0,
+      "RequiredPoints": 5,
       "Effects": [
         {
           "Kind": "hook",
           "Ability": "",
           "Amount": 0.6,
           "Key": "surging"
+        },
+        {
+          "Kind": "duration",
+          "Ability": "discharge",
+          "Amount": 2,
+          "Key": ""
         }
       ],
       "Source": "0xE000E65B86CF6802 (April ablIconSpec; survivor adaptation)"
-    },
-    {
-      "Id": "deception.induction",
-      "Classes": [
-        "assassin"
-      ],
-      "Tree": "deception",
-      "Tier": 1,
-      "Column": 0,
-      "Icon": "res://Assets/UI/icons/force_crush.png",
-      "Name": "Induction",
-      "Description": "Shock deals 20% more damage.",
-      "MaxRank": 1,
-      "Cost": 1,
-      "RequiredPoints": 2,
-      "Effects": [
-        {
-          "Kind": "damage",
-          "Ability": "shock",
-          "Amount": 0.2,
-          "Key": ""
-        }
-      ],
-      "Source": "0xE0006923F6D15B60 (April ablIconSpec; survivor adaptation)"
-    },
-    {
-      "Id": "deception.saber_conduit",
-      "Classes": [
-        "assassin"
-      ],
-      "Tree": "deception",
-      "Tier": 1,
-      "Column": 1,
-      "Icon": "res://Assets/UI/icons/chargedsaber.png",
-      "Name": "Saber Conduit",
-      "Description": "Lacerate radius increases by 35%.",
-      "MaxRank": 1,
-      "Cost": 1,
-      "RequiredPoints": 2,
-      "Effects": [
-        {
-          "Kind": "radius",
-          "Ability": "lacerate",
-          "Amount": 0.35,
-          "Key": ""
-        }
-      ],
-      "Source": "0xE0006E993934FF6C (April ablIconSpec; survivor adaptation)"
     },
     {
       "Id": "deception.chain_shock",
@@ -346,14 +438,14 @@
         "assassin"
       ],
       "Tree": "deception",
-      "Tier": 1,
-      "Column": 2,
+      "Tier": 2,
+      "Column": 1,
       "Icon": "res://Assets/UI/icons/thundering_blast.png",
       "Name": "Chain Shock",
       "Description": "Shock jumps to two enemies at 65% damage per link.",
       "MaxRank": 1,
       "Cost": 1,
-      "RequiredPoints": 2,
+      "RequiredPoints": 5,
       "Effects": [
         {
           "Kind": "hook",
@@ -365,80 +457,34 @@
       "Source": "0xE00003922B3BEEF6 (April ablIconSpec; survivor adaptation)"
     },
     {
-      "Id": "deception.dark_swell",
-      "Classes": [
-        "assassin"
-      ],
-      "Tree": "deception",
-      "Tier": 2,
-      "Column": 0,
-      "Icon": "res://Assets/UI/icons/disappear.png",
-      "Name": "Darkswell",
-      "Description": "Spike has 25% more radius and deals 20% more damage after its stealth opening.",
-      "MaxRank": 1,
-      "Cost": 1,
-      "RequiredPoints": 4,
-      "Effects": [
-        {
-          "Kind": "radius",
-          "Ability": "spike",
-          "Amount": 0.25
-        },
-        {
-          "Kind": "damage",
-          "Ability": "spike",
-          "Amount": 0.2
-        }
-      ],
-      "Source": "0xE000B0F352B3B998 (April ablIconSpec; survivor adaptation)"
-    },
-    {
       "Id": "deception.execution",
       "Classes": [
         "assassin"
       ],
       "Tree": "deception",
       "Tier": 2,
-      "Column": 1,
+      "Column": 2,
       "Icon": "res://Assets/UI/icons/debuff_moving.png",
-      "Name": "Crackling Blasts",
-      "Description": "Maul cleaves nearby enemies for 40% damage.",
+      "Name": "Crackling Blades",
+      "Description": "Maul cleaves nearby enemies for 40% damage. Electrocute exposure grants an additional 20% Maul and Voltaic Slash damage.",
       "MaxRank": 1,
       "Cost": 1,
-      "RequiredPoints": 4,
+      "RequiredPoints": 5,
       "Effects": [
         {
           "Kind": "hook",
           "Ability": "",
           "Amount": 1,
           "Key": "maul_cleave"
+        },
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 0.2,
+          "Key": "electrocute_burst"
         }
       ],
       "Source": "0xE000AC73C4D43FA2 (April ablIconSpec; survivor adaptation)"
-    },
-    {
-      "Id": "assassin_madness.creeping_terror",
-      "Classes": [
-        "assassin"
-      ],
-      "Tree": "assassin_madness",
-      "Tier": 0,
-      "Column": 0,
-      "Icon": "res://Assets/UI/icons/creepingterror.png",
-      "Name": "Creeping Terror",
-      "Description": "Creeping Terror can appear in ordinary early level-up offers. Its ticks heal 2 HP at most once per second.",
-      "MaxRank": 1,
-      "Cost": 1,
-      "RequiredPoints": 0,
-      "Effects": [
-        {
-          "Kind": "mechanic",
-          "Ability": "",
-          "Amount": 1,
-          "Key": "early_terror"
-        }
-      ],
-      "Source": "0xE00089E38AB081B6 (April ablIconSpec; survivor adaptation)"
     },
     {
       "Id": "assassin_madness.claws_of_decay",
@@ -447,7 +493,7 @@
       ],
       "Tree": "assassin_madness",
       "Tier": 0,
-      "Column": 1,
+      "Column": 0,
       "Icon": "res://Assets/UI/icons/animalinsectclaw.png",
       "Name": "Claws of Decay",
       "Description": "Discharge deals 25% more direct and periodic damage.",
@@ -471,7 +517,7 @@
       ],
       "Tree": "assassin_madness",
       "Tier": 0,
-      "Column": 2,
+      "Column": 1,
       "Icon": "res://Assets/UI/icons/animalinsectmouthpart.png",
       "Name": "Parasitism",
       "Description": "DoT ticks heal an additional 1 HP at most every 1.5 seconds across all targets.",
@@ -489,28 +535,75 @@
       "Source": "0xE00060BD0E1944C6 (April ablIconSpec; survivor adaptation)"
     },
     {
-      "Id": "assassin_madness.deathmark",
+      "Id": "assassin_madness.force_training",
+      "Classes": [
+        "assassin"
+      ],
+      "Tree": "assassin_madness",
+      "Icon": "res://Assets/UI/icons/creepingterror.png",
+      "Name": "Force Training",
+      "Description": "All damaging abilities deal 6% more damage.",
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "",
+          "Amount": 0.06
+        }
+      ],
+      "Source": "Existing class artwork; adapted Survivors general training.",
+      "Tier": 0,
+      "Column": 2,
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0
+    },
+    {
+      "Id": "assassin_madness.death_field",
       "Classes": [
         "assassin"
       ],
       "Tree": "assassin_madness",
       "Tier": 1,
       "Column": 0,
-      "Icon": "res://Assets/UI/icons/alienskull.png",
-      "Name": "Deathmark",
-      "Description": "Death Field increases periodic damage by an additional 20% for 6 seconds, on top of its baseline 10%.",
+      "Icon": "res://Assets/UI/icons/deathfield.png",
+      "Name": "Death Field",
+      "Description": "Death Field heals 25% more per enemy, still capped at 10 per cast.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 2,
       "Effects": [
         {
-          "Kind": "hook",
-          "Ability": "",
-          "Amount": 0.2,
-          "Key": "deathmark"
+          "Kind": "healing",
+          "Ability": "deathfield",
+          "Amount": 0.25,
+          "Key": ""
         }
       ],
-      "Source": "0xE000F4CA893CA40A (April ablIconSpec; survivor adaptation)"
+      "Source": "0xE000B6A548225F23 (April ablIconSpec; survivor adaptation)"
+    },
+    {
+      "Id": "assassin_madness.creeping_terror",
+      "Classes": [
+        "assassin"
+      ],
+      "Tree": "assassin_madness",
+      "Tier": 1,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/creepingterror.png",
+      "Name": "Creeping Terror",
+      "Description": "Creeping Terror can appear in ordinary early level-up offers. Its ticks heal 2 HP at most once per second.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "mechanic",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "early_terror"
+        }
+      ],
+      "Source": "0xE00089E38AB081B6 (April ablIconSpec; survivor adaptation)"
     },
     {
       "Id": "assassin_madness.raze",
@@ -519,7 +612,7 @@
       ],
       "Tree": "assassin_madness",
       "Tier": 1,
-      "Column": 1,
+      "Column": 2,
       "Icon": "res://Assets/UI/icons/rupture.png",
       "Name": "Raze",
       "Description": "Crushing Darkness deals 25% more damage. Shock echoes 60% of existing owned DoT base tick damage without consuming them.",
@@ -543,19 +636,43 @@
       "Source": "0xE0002D7135E659D6 (April ablIconSpec; survivor adaptation)"
     },
     {
+      "Id": "assassin_madness.deathmark",
+      "Classes": [
+        "assassin"
+      ],
+      "Tree": "assassin_madness",
+      "Tier": 2,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/alienskull.png",
+      "Name": "Deathmark",
+      "Description": "Death Field increases periodic damage by an additional 20% for 6 seconds, on top of its baseline 10%.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 0.2,
+          "Key": "deathmark"
+        }
+      ],
+      "Source": "0xE000F4CA893CA40A (April ablIconSpec; survivor adaptation)"
+    },
+    {
       "Id": "assassin_madness.oppressing_force",
       "Classes": [
         "assassin"
       ],
       "Tree": "assassin_madness",
-      "Tier": 1,
-      "Column": 2,
+      "Tier": 2,
+      "Column": 1,
       "Icon": "res://Assets/UI/icons/mindcrush.png",
       "Name": "Force Horrors",
       "Description": "Lacerate spreads existing owned DoTs to enemies hit. Death Field always spreads.",
       "MaxRank": 1,
       "Cost": 1,
-      "RequiredPoints": 2,
+      "RequiredPoints": 5,
       "Effects": [
         {
           "Kind": "hook",
@@ -567,43 +684,19 @@
       "Source": "0xE000E93F689BBDE4 (April ablIconSpec; survivor adaptation)"
     },
     {
-      "Id": "assassin_madness.death_field",
-      "Classes": [
-        "assassin"
-      ],
-      "Tree": "assassin_madness",
-      "Tier": 2,
-      "Column": 0,
-      "Icon": "res://Assets/UI/icons/deathfield.png",
-      "Name": "Death Field",
-      "Description": "Death Field heals 25% more per enemy, still capped at 10 per cast.",
-      "MaxRank": 1,
-      "Cost": 1,
-      "RequiredPoints": 4,
-      "Effects": [
-        {
-          "Kind": "healing",
-          "Ability": "deathfield",
-          "Amount": 0.25,
-          "Key": ""
-        }
-      ],
-      "Source": "0xE000B6A548225F23 (April ablIconSpec; survivor adaptation)"
-    },
-    {
       "Id": "assassin_madness.haunted_dreams",
       "Classes": [
         "assassin"
       ],
       "Tree": "assassin_madness",
       "Tier": 2,
-      "Column": 1,
+      "Column": 2,
       "Icon": "res://Assets/UI/icons/nightmare.png",
       "Name": "Haunted Dreams",
       "Description": "On death, owned DoTs transfer to an unaffected nearby enemy with remaining duration preserved.",
       "MaxRank": 1,
       "Cost": 1,
-      "RequiredPoints": 4,
+      "RequiredPoints": 5,
       "Effects": [
         {
           "Kind": "mechanic",

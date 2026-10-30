@@ -1,0 +1,47 @@
+register_class(...):
+Warning: 'import_mesh.gr2_presets' does not contain '_MT_' with prefix and suffix
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\fx\geometry\spy\spy_shiv_low01.gr2
+OBJS: ['fx_sp_shiv_01']
+TIME: 0.005 s.
+
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+19:09:43 | INFO: Starting glTF 2.0 export
+19:09:43 | INFO: Extracting primitive: fx_sp_shiv_01
+19:09:43 | INFO: Primitives created: 1
+19:09:43 | INFO: Finished glTF 2.0 export in 0.0391080379486084 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\fx\geometry\spy\sp_plasma_probe_top.gr2
+OBJS: ['sp_plasma_probe_top']
+TIME: 0.027 s.
+
+19:09:43 | INFO: Starting glTF 2.0 export
+19:09:43 | INFO: Extracting primitive: sp_plasma_probe_top
+19:09:43 | INFO: Primitives created: 1
+19:09:43 | INFO: Finished glTF 2.0 export in 0.004099845886230469 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\fx\geometry\spy\sp_plasma_probe_bottom.gr2
+OBJS: ['sp_plasma_probe_bottom']
+TIME: 0.015 s.
+
+19:09:43 | INFO: Starting glTF 2.0 export
+19:09:43 | INFO: Extracting primitive: sp_plasma_probe_bottom
+19:09:43 | INFO: Primitives created: 1
+19:09:43 | INFO: Finished glTF 2.0 export in 0.003330707550048828 s
+
+
+FILE: D:\SWTORClassic\torbonk\pipeline\source-assets\april2012\resources\art\fx\geometry\all\fx_invis_sphere_double.gr2
+OBJS: ['fx_invis_sphere_double']
+TIME: 0.015 s.
+
+19:09:43 | INFO: Starting glTF 2.0 export
+19:09:43 | INFO: Extracting primitive: fx_invis_sphere_double
+19:09:43 | INFO: Primitives created: 1
+19:09:43 | INFO: Finished glTF 2.0 export in 0.0029904842376708984 s
+
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

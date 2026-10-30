@@ -23,6 +23,7 @@ public partial class D3AbilityPresentation
  public int WarriorTargetImpacts {get;private set;}
  public int WarriorDistinctTargets=>_warriorTargets.Count;
  public int WarriorProcImpacts {get;private set;}
+ public int DefensiveProcsPresented {get;private set;}
  public bool CamouflageVisible=>_camouflage.Count>0;
  public int AtaruImpacts {get;private set;}
  public int PredationTrailsPresented {get;private set;}
@@ -48,6 +49,16 @@ public partial class D3AbilityPresentation
   _warriorAuraClock-=delta;if(_warriorAuraClock>0)return;_warriorAuraClock=.1;
   MarauderAuraBursts++;
   string id=Definition.Id;
+  if(id=="endurepain"){
+   foreach(string bone in new[]{"vfx_shoulder_left","vfx_shoulder_right","vfx_hip_left","vfx_hip_right","vfx_aim01"})
+    WarriorFlash("smoke/2x2_crystal_smoke.png",BoneWorld(bone),.08f,1,new(.95f,.15f,.016f,.45f),bone:bone);
+   return;
+  }
+  if(id=="enrageddefense"){
+   DefenseRing("glow/halo_crescent_01.png",.24f,2,new(.95f,.11f,0,.55f));
+   DefenseRing("glow/bw_blue_partial_ring.png",.22f,2,new(.95f,.11f,0,.55f));
+   return;
+  }
   if(id=="berserk"){
    foreach(string bone in new[]{"LeftShoulder","RightShoulder","Chest1","Neck","LeftElbow","RightElbow"}){
     WarriorFlash("smoke/2x2_whispy_smoke_a_01.png",BoneWorld(bone),.12f,.3,new(1,.22f,.08f,.45f),bone:bone);
@@ -113,7 +124,7 @@ public partial class D3AbilityPresentation
   _warriorEnabled=true;_warriorTargets.Clear();_warriorAuraClock=0;
   if(GetParent() is GameWorld gw && gw.Abilities.Find(Definition.Id) is {} abilityOwner)Actor.FitGesture(abilityOwner,abilityOwner.GestureDuration);
   if(Definition.Effect!=AbilityEffect.Damage && Definition.CastAudio=="")Play(Definition.ImpactAudio,Actor.GlobalPosition,0);
-  if(MarauderVisual && Definition.Id is "saberthrow" or "deadlythrow" or "viciousthrow" && GetParent() is GameWorld world){
+  if(Definition.Id is "saberthrow" or "deadlythrow" or "viciousthrow" && GetParent() is GameWorld world){
    var ability=world.Abilities.Find(Definition.Id);
    double tick=ability?.TickSeconds??Definition.TickSeconds;
    foreach(string slot in Definition.Id=="saberthrow"?new[]{"main_hand","off_hand"}:new[]{"main_hand"})
@@ -125,7 +136,15 @@ public partial class D3AbilityPresentation
   }
   if(Definition.Id=="obfuscate" && GetParent() is GameWorld ow)
    _obfuscatedTarget=ow.Targeting.Acquire(Definition.Range,AbilityTargetRule.NearestHostile,0);
-  if(Definition.Id=="smash"){
+  if(Definition.Id=="endurepain"){
+   WarriorFlash("glow/2x2_elec_blast_ring_alpha.png",BoneWorld("vfx_aim01"),.18f,.4,new(1,.03f,.03f,.7f),bone:"vfx_aim01");
+   WarriorFlash("glow/2x2_light_rays_07.png",BoneWorld("vfx_aim01"),.18f,.4,new(.72f,.15f,.08f,.6f),bone:"vfx_aim01");
+  }else if(Definition.Id=="enrageddefense"){
+   // Second random container in the recovered buff event (the first uses CastAudio).
+   Play("res://Assets/WarriorLibrary/Audio/857325983.wav",Actor.GlobalPosition,3);
+   DefenseRing("glow/halo_crescent_01.png",.24f,1,new(.96f,.11f,0,.7f));
+   WarriorFlash("fire/fx_explosion_core_02_bw.png",BoneWorld("Chest"),.24f,.7,new(.96f,.14f,0,.6f),bone:"Chest");
+  }else if(Definition.Id=="smash"){
    WarriorFlash("electricity/bw_2x2_electricity_multi_01.png",BoneWorld("LeftWrist"),.1f,Definition.WindupSeconds,new(1,.35f,.05f,.5f),bone:"LeftWrist");
    WarriorFlash("glow/bw_flare_gray.png",BoneWorld("RightWrist"),.07f,Definition.WindupSeconds,new(1,.5f,.15f,.6f),bone:"RightWrist");
   }else if(Definition.Id=="berserk"){
@@ -141,6 +160,20 @@ public partial class D3AbilityPresentation
   }
   else if(Definition.Effect!=AbilityEffect.Damage)
    WarriorFlash(Definition.Id=="forcecamouflage"?"smoke/2x2_smoke_whisps_02.png":"glow/bw_flare_gray.png",BoneWorld("Chest"),.18f,.35,new(1,.25f,.05f,.5f),bone:"Chest");
+ }
+ // The recovered Enraged Defense buff has no animation action. Healing has its own FXSpec/event.
+ public void DefensiveHealProc()
+ {
+  if(!WarriorVisual || Definition.Id!="enrageddefense")return;
+  DefensiveProcsPresented++;
+  Play(Definition.ImpactAudio,Actor.GlobalPosition,4);
+  WarriorFlash("fire/4x4_flame_lick_02_bw.png",BoneWorld("Chest"),.2f,1.5,new(.95f,.01f,.01f,.8f),bone:"Chest");
+ }
+ private void DefenseRing(string texture,float size,double life,Color tint)
+ {
+  var ring=Sprite(WarriorTexture+texture,size,1,false);ring.RotationDegrees=new Vector3(-90,0,0);
+  Add(ring,life,fx=>{float t=(float)(fx.Age/fx.Life);ring.GlobalPosition=Actor.GlobalPosition+Vector3.Up*.035f;ring.RotateZ(.03f);ring.Scale=Vector3.One*(.6f+.4f*t);ring.Modulate=new Color(tint,(1-t)*tint.A);});
+  ring.GlobalPosition=Actor.GlobalPosition+Vector3.Up*.035f;ring.Modulate=tint;
  }
  private bool ImpactWarrior(Vector3 at)
  {
@@ -204,7 +237,7 @@ public partial class D3AbilityPresentation
  private void WarriorFlash(string texture,Vector3 at,float size,double life,Color tint,Combatant? target=null,string bone="")
  {
   string path=texture.StartsWith("res://")?texture:WarriorTexture+texture;
-  int frames=path.Contains("5x5")?5:path.Contains("4x4")?4:path.Contains("2x2")?2:1;
+  int frames=path.Contains("5x5")?5:path.Contains("4x4") || path.EndsWith("fx_explosion_core_02_bw.png")?4:path.Contains("2x2")?2:1;
   var sprite=Sprite(path,size,frames);sprite.Modulate=tint;var offset=target!=null?at-target.AimPosition:Vector3.Zero;
   Add(sprite,life,fx=>{
    float t=(float)(fx.Age/fx.Life);

@@ -17,6 +17,7 @@ public partial class EnemyPresentation : Node3D
     [Export] public string DeathClip { get; set; } = "Death";
     [Export] public float ForwardOffsetDegrees { get; set; }
     [Export] public string Weapon { get; set; } = "";
+    [Export] public bool RedBlade {get;set;}
     [Export] public string WeaponScene { get; set; } = "";
     public bool ReuseLoopLibrary {get;set;}
     private static readonly Dictionary<string,AnimationLibrary> LoopLibraries=new();
@@ -61,7 +62,7 @@ public partial class EnemyPresentation : Node3D
             Animator.RemoveAnimationLibrary(name); Animator.AddAnimationLibrary(name, copy);
         }
         foreach (string clip in new[] { IdleClip, RunClip }) Animator.GetAnimation(clip).LoopMode = Animation.LoopModeEnum.Linear;
-        if (Weapon != "") EquipmentAttachment.Equip(Skeleton, Weapon, false);
+        if (Weapon != "") EquipmentAttachment.Equip(Skeleton, Weapon, RedBlade);
         if (WeaponScene != "") EquipmentAttachment.Equip(Skeleton,WeaponScene,new Equipment.AttachmentDefinition(
             "RightWeapon","res://Assets/Enemies/weapon-socket.json",[0,0,0],[0,0,0],1,false));
         _locomotion = IdleClip; Play(IdleClip);

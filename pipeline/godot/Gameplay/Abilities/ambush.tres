@@ -8,12 +8,12 @@ Id = "ambush"
 StartsUnlocked = false
 Title = "Ambush"
 Icon = "ambush"
-Damage = 80
+Damage = 110
 CooldownSeconds = 8
-Range = 1.8
+Range = 2.4
 Radius = 0
-Area = 0
-Description = "Heavy opening shot at extreme range."
+Area = 2
+Description = "Requires cover to begin. Heavy precision fire rewards holding position; an active attack may finish after leaving cover."
 StartClip = "D3/RifleCharge"
 LoopClip = "D3/Sniper"
 EndClip = ""
@@ -29,3 +29,7 @@ RecoverySeconds = 0.6
 GestureSeconds = 1.4
 ShotAudio = "res://Assets/D3/Audio/963263094.wav"
 RequireGesture = true
+
+BounceCount = 3
+
+BounceRange = 0.4

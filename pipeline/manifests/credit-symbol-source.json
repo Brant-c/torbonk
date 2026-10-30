@@ -1,0 +1,46 @@
+[
+  {
+    "path": "/resources/gfx/symbols/credits.dds",
+    "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+    "archiveHash": "0xE68A885194DA4C42",
+    "entryOffset": 169123693,
+    "headerSize": 36,
+    "dataOffset": 169123729,
+    "compressedSize": 302,
+    "length": 528,
+    "compressionMethod": 1,
+    "crc32Index": "1f0accc9",
+    "sha256": "281939aab0d44ca678ed43fffd9b5c54e5931069b319ec4d372207159f4922fb",
+    "output": "pipeline\\godot\\Assets\\UI\\symbols\\credits.png",
+    "dimensions": [
+      20,
+      20
+    ],
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "/resources/gfx/symbols/credits_14pt_green.dds",
+    "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+    "archiveHash": "0x10801D25A5B404D1",
+    "entryOffset": 169124267,
+    "headerSize": 36,
+    "dataOffset": 169124303,
+    "compressedSize": 265,
+    "length": 384,
+    "compressionMethod": 1,
+    "crc32Index": "2c15f39d",
+    "sha256": "c70bf441af1db95fe5cd2ea27a329224211ac94f8dc5427e4a3b4ae543c826bb",
+    "output": "pipeline\\godot\\Assets\\UI\\symbols\\credits_14pt_green.png",
+    "dimensions": [
+      16,
+      16
+    ],
+    "alphaRange": [
+      0,
+      255
+    ]
+  }
+]

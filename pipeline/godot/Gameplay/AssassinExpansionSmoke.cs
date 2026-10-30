@@ -17,9 +17,9 @@ public partial class AssassinExpansionSmoke : Node
             foreach(var e in w.Spawner.Enemies){e.CombatEnabled=false;e.SetPhysicsProcess(false);}
             TalentProfiles.Save("assassin",new Dictionary<string,int>());
             var cat=TalentCatalog.Current;
-            Check("24 Assassin talents in three trees",cat.ForClass("assassin").Length==24 && cat.ForClass("assassin").GroupBy(t=>t.Tree).All(t=>t.Count()==8));
-            Check("Sorcerer retains 24 separate talents",cat.ForClass("sorcerer").Length==24 && !cat.ForClass("sorcerer").Any(t=>t.Classes.Contains("assassin")));
-            var ranks=new Dictionary<string,int>{["deception.thrashing_blades"]=1,["deception.duplicity"]=1,["deception.chain_shock"]=1,["assassin_madness.creeping_terror"]=1,["assassin_madness.claws_of_decay"]=1,["assassin_madness.parasitism"]=1,["assassin_madness.oppressing_force"]=1,["assassin_madness.haunted_dreams"]=1};
+            Check("27 Assassin talents in three trees",cat.ForClass("assassin").Length==27 && cat.ForClass("assassin").GroupBy(t=>t.Tree).All(t=>t.Count()==9));
+            Check("Sorcerer retains 27 separate talents",cat.ForClass("sorcerer").Length==27 && !cat.ForClass("sorcerer").Any(t=>t.Classes.Contains("assassin")));
+            var ranks=cat.ForClass("assassin").Where(t=>t.Tree=="assassin_madness" || t.Tree=="deception" && t.Tier==0).ToDictionary(t=>t.Id,t=>1);
             Check("hybrid allocations validate",cat.Validate("assassin",ranks).Count==ranks.Count);
             Check("class profiles persist independently",TalentProfiles.Save("assassin",ranks)==null && TalentProfiles.Load("assassin").Count==ranks.Count && TalentProfiles.Load("sorcerer").Count==0);
             // Recreate snapshot after saving the fixture profile.
@@ -35,7 +35,10 @@ public partial class AssassinExpansionSmoke : Node
             Cast("voltaicslash");float before=target.Health.Current;Cast("shock");Check("empowered Shock deals damage",target.Health.Current<before-36);
             Cast("creepingterror");Check("Creeping Terror applies periodic effect",w.Periodic.Has(w.Abilities.Find("creepingterror")!,target));
             w.PlayerActor.Health.ApplyDamage(20,DamageType.Internal);float health=w.PlayerActor.Health.Current;w.Periodic.Advance(1);Check("Creeping Terror provides bounded life drain",w.PlayerActor.Health.Current>health && w.PlayerActor.Health.Current<=health+(w.Build.Pregame.Ranks.Count>0?3:2));
-            var shock=w.Abilities.Find("shock")!;runtime.ApplyStats(shock);Check("talent evolves Shock into chain",shock.Definition.Area==AbilityArea.Chain && shock.Definition.BounceCount==2);
+            var chainBuild=cat.ForClass("assassin").Where(t=>t.Tree=="deception").ToDictionary(t=>t.Id,t=>1);
+            TalentProfiles.Save("assassin",chainBuild);
+            var shock=w.Abilities.Find("shock")!;new TalentRuntime(w).ApplyStats(shock);
+            TalentProfiles.Save("assassin",ranks);Check("talent evolves Shock into chain",shock.Definition.Area==AbilityArea.Chain && shock.Definition.BounceCount==2);
             if(w.Build.Pregame.AssassinSpread) {
                 var other=new Combatant {Name="SpreadFixture",Team=CombatTeam.Hostile};other.AddChild(new Health {Name="Health",Maximum=10000});w.AddChild(other);other.GlobalPosition=target.GlobalPosition+Vector3.Right*.04f;
                 await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);

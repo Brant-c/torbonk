@@ -26,7 +26,7 @@ public sealed class OperationDifficultyTuning
     public static bool IsValid(string mode)=>mode is "Normal" or "Hard" or "Nightmare";
     public static OperationDifficultyTuning Resolve(string map,string mode)
     {
-        if(map!="eternity_vault")return Baseline;
+        if(map is not ("eternity_vault" or "soa_p3"))return Baseline;
         if(!IsValid(mode))throw new ArgumentException("Unknown operation difficulty: "+mode);
         _profiles??=JsonSerializer.Deserialize<Dictionary<string,OperationDifficultyTuning>>(
             FileAccess.GetFileAsString("res://Gameplay/Planets/EternityVault/difficulties.json"))!;

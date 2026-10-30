@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "orbitalstrike"
+StartsUnlocked = false
+Title = "Orbital Strike"
+Icon = "orbitalbombardment"
+Damage = 44
+CooldownSeconds = 24
+Range = 2.5
+Radius = 0.55
+Area = 1
+TickSeconds = 1
+Description = "Three artillery strikes in a persistent ground area."
+StartClip = "Agent/Detonator"
+LoopClip = "Agent/Detonator"
+EndClip = ""
+ChannelSeconds = 3
+WindupSeconds = 0.0
+PresentationKind = "agent"
+MuzzleBone = "RightWeapon"
+ImpactTailsOnTargetDeath = true
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+CastAudio = ""
+RecoverySeconds = 0.3
+GestureSeconds = 1.2
+ShotAudio = "res://Assets/D3/Audio/28023533.wav"
+RequireGesture = true
+
+TargetRule = 1
+
+PersistentArea = true
+
+DetachedArea = true
+
+ImpactAudio = ""
+
+MaintainChannelGesture = false

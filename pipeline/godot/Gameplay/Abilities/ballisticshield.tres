@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "ballisticshield"
+StartsUnlocked = false
+Title = "Ballistic Shield"
+Icon = "bioelectricshieldenhancer"
+Category = 1
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+Effect = 4
+Damage = 1
+ShieldDuration = 10
+CooldownSeconds = 32
+Range = 1.0
+Radius = 1.0
+Area = 0
+WindupSeconds = 0.0
+ChannelSeconds = 0.0
+RecoverySeconds = 0.4
+GestureSeconds = 0.9
+StartClip = "D3/EnergyShield"
+LoopClip = "D3/EnergyShield"
+EndClip = ""
+CastAudio = "res://Assets/Agent/Audio/55988953.wav"
+PresentationKind = "impact"
+Description = "Deploys a fixed ballistic dome spanning 10 meters around you. Allies inside take 20% less damage for 10 seconds. Requires cover; leaving cover ends the effect."
+RequireGesture = true

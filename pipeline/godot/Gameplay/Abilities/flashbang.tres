@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "flashbang"
+StartsUnlocked = false
+Title = "Flash Bang"
+Icon = "flashbang"
+Damage = 1
+CooldownSeconds = 18
+Range = 1.0
+Radius = 0.34
+Area = 4
+TargetRule = 1
+SplashMultiplier = 1.0
+RecoverySeconds = 1.333
+GestureSeconds = 1.3
+PeriodicDamage = 0
+PeriodicDuration = 0
+PeriodicInterval = 1
+DamageType = 1
+Description = "Blinds nearby enemies for four seconds; provides a brief escape window."
+StartClip = "Agent/RifleGrenade"
+LoopClip = "Agent/RifleGrenade"
+EndClip = ""
+ChannelSeconds = 0.0
+WindupSeconds = 0.45
+PresentationKind = "gas"
+MuzzleBone = "LeftWrist"
+EffectTint = Color(0.16, 0.713, 0.007, 1)
+ImpactTailsOnTargetDeath = true
+CastAudio = "res://Assets/D3/Audio/878565772.wav"
+ImpactAudio = "res://Assets/Agent/Audio/5658196.wav"
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+
+Category = 1

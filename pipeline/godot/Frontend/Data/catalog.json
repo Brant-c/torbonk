@@ -277,13 +277,30 @@
       "EncounterRegion": "Surface",
       "PreviewModel": "res://Assets/Maps/eternity_vault/Enemies/xrr3.glb",
       "Name": "Eternity Vault",
-      "Region": "Belsavis \u00b7 Surface",
-      "Description": "Fight from level 1 to 50 across the frozen surface. Survive wildlife, prison guards and the Annihilation Droid XRR-3.",
+      "Region": "Belsavis",
+      "Description": "Survive the frozen surface and face Annihilation Droid XRR-3.",
       "Artwork": "res://Assets/UI/loading/eternity_vault_overlay.png",
       "Surface": "res://Frontend/Assets/Recovered/planets_belsavis_d.png",
       "X": 0.4,
       "Y": 0.5,
       "GameplayImplemented": true
+    },
+    {
+      "Id": "soa_p3",
+      "ContentKind": "Operation",
+      "EncounterId": "soa",
+      "EncounterName": "Soa",
+      "EncounterRegion": "Infernal Prison \u00b7 Phase 3",
+      "PreviewModel": "res://Assets/Maps/soa_p3/Enemies/soa.glb",
+      "Name": "Eternity Vault",
+      "Region": "Belsavis \u00b7 Infernal Prison",
+      "Description": "Survive the jungle guardians, challenge the Infernal Council, and face Soa's image and the Infernal One.",
+      "Artwork": "res://Assets/Maps/soa_p3/preview.png",
+      "Surface": "res://Frontend/Assets/Recovered/planets_belsavis_d.png",
+      "X": 0.4,
+      "Y": 0.5,
+      "GameplayImplemented": true,
+      "OperationId": "eternity_vault"
     }
   ]
 }

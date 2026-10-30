@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "cloakingscreen"
+StartsUnlocked = false
+Title = "Cloaking Screen"
+Icon = "coveredescape"
+Category = 1
+Effect = 3
+Damage = 1
+CooldownSeconds = 22
+Range = 1.0
+Radius = 0
+Area = 0
+BuffSeconds = 5
+SpeedBuff = 0.2
+DamageBuff = 0.1
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+RecoverySeconds = 0.3
+GestureSeconds = 0.9
+Description = "Creates a fresh six-second Hidden Strike opportunity during combat."
+StartClip = "Agent/Detonator"
+LoopClip = "Agent/Detonator"
+EndClip = ""
+ChannelSeconds = 0.0
+WindupSeconds = 0.0
+PresentationKind = "bracer"
+MuzzleBone = "LeftWrist"
+EffectTint = Color(0.58, 0.88, 0.12, 1)
+ImpactTailsOnTargetDeath = true
+CastAudio = ""
+ImpactAudio = ""
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true

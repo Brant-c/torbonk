@@ -24,6 +24,7 @@ public partial class AssassinAbilityPresentation : Node3D,IAbilityPresentation
         return index>=0?(Actor.Skeleton.GlobalTransform*Actor.Skeleton.GetBoneGlobalPose(index)).Origin:Actor.GlobalPosition+Vector3.Up*.1f;
     }
     public int AudioVoicesStarted {get;private set;}
+    public bool CloakLoopPlaying=>_voices.Count>7 && _voices[7].Playing;
     public bool Vanishing {get;private set;}
     public override void _Ready()
     {
@@ -36,7 +37,7 @@ public partial class AssassinAbilityPresentation : Node3D,IAbilityPresentation
     {
         if(!_audio.RootElement.GetProperty("events").TryGetProperty(name,out var id) || !_audio.RootElement.GetProperty("graphs").TryGetProperty(id.GetString()!,out var graph))return;
         var media=graph.GetProperty("media");if(media.GetArrayLength()==0)return;
-        var voice=_voices[_voice++%_voices.Count];voice.GlobalPosition=at;voice.Stream=GD.Load<AudioStream>($"res://Assets/Assassin/Audio/{media[0].GetInt32()}.wav");voice.Play();AudioVoicesStarted++;
+        var voice=_voices[_voice++%7];voice.GlobalPosition=at;voice.Stream=GD.Load<AudioStream>($"res://Assets/Assassin/Audio/{media[0].GetInt32()}.wav");voice.Play();AudioVoicesStarted++;
     }
     private void Emit(string effect,Vector3 at,float size,double life,bool follow=false,string bone="",Combatant? target=null)
     {
@@ -71,6 +72,9 @@ public partial class AssassinAbilityPresentation : Node3D,IAbilityPresentation
         if(Definition.Id=="forcecloak"){
             _loop=2;Emit("si_mindtrick_cast_01",Actor.GlobalPosition+Vector3.Up*.1f,.18f,.6);
             Play("Play_ability_sithinquisitor_shadowcloak_activate",Actor.GlobalPosition);
+            var stream=(AudioStreamWav)GD.Load<AudioStreamWav>("res://Assets/Assassin/Audio/36978213.wav").Duplicate();
+            stream.LoopMode=AudioStreamWav.LoopModeEnum.Forward;stream.LoopBegin=0;stream.LoopEnd=(int)(stream.GetLength()*stream.MixRate);
+            _voices[7].Stream=stream;_voices[7].GlobalPosition=Actor.GlobalPosition;_voices[7].Play();AudioVoicesStarted++;
         }
         if(Definition.Id=="deflection"){
             _loop=World.Build.Pregame.AssassinDeflectionDuration;Emit("si_reflection_buff_loop",Actor.GlobalPosition+Vector3.Up*.1f,.24f,.8,true);
@@ -83,7 +87,7 @@ public partial class AssassinAbilityPresentation : Node3D,IAbilityPresentation
     public void Channel()
     {
         if(Definition.Id is "maul" or "voltaicslash" or "lowslash"){
-            var voice=_voices[_voice++%_voices.Count];voice.Stream=GD.Load<AudioStream>("res://Assets/D3/Audio/173808209.wav");voice.GlobalPosition=Actor.GlobalPosition;voice.Play();AudioVoicesStarted++;
+            var voice=_voices[_voice++%7];voice.Stream=GD.Load<AudioStream>("res://Assets/D3/Audio/173808209.wav");voice.GlobalPosition=Actor.GlobalPosition;voice.Play();AudioVoicesStarted++;
         }
         if(Definition.Id!="spike")return;
         Vanishing=false;Emit("si_spike_source_saber",BoneWorld("RightWeapon"),.10f,.65,bone:"RightWeapon");
@@ -112,6 +116,10 @@ public partial class AssassinAbilityPresentation : Node3D,IAbilityPresentation
             _loop-=delta;_emit-=delta;
             if(!World.PlayerActor.Alive || Definition.Id=="forcecloak" && !World.Build.Pregame.AssassinCloaked || Definition.Id=="deflection" && !World.Build.Pregame.AssassinDeflecting)_loop=0;
             if(_loop>0 && _emit<=0){_emit=.4;Emit(Definition.Id=="forcecloak"?"si_mindtrick_loop_01":"si_reflection_buff_loop",Actor.GlobalPosition+Vector3.Up*.1f,.19f,.6,true);}
+        }
+        if(Definition.Id=="forcecloak"){
+            if(_loop<=0 || !World.Build.Pregame.AssassinCloaked || !World.PlayerActor.Alive)_voices[7].Stop();
+            else _voices[7].GlobalPosition=Actor.GlobalPosition;
         }
         foreach(var p in _particles.ToArray()){
             p.Age+=delta;if(p.Age>=p.Life){p.Node.QueueFree();_particles.Remove(p);continue;}

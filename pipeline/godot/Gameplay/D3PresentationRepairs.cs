@@ -90,7 +90,7 @@ public partial class D3AbilityPresentation
             Play(Definition.ImpactAudio,at,3);
             Burst(at,Definition.ImpactTexture,.15f);return true;
         }
-        if(Definition.Id is "unload" or "seriesofshots" or "ambush" or "weakeningblast" or "basicrapiddual")
+        if(Definition.Id is "unload" or "seriesofshots" or "agentcull" or "suppressivefire" or "carbineburst" or "ambush" or "weakeningblast" or "basicrapiddual")
         {
             ClearReticle();ShotsPresented++;
             int shotSlot=_voices.FindIndex(5,v=>!v.Playing);if(shotSlot<0)shotSlot=5;
@@ -115,6 +115,11 @@ public partial class D3AbilityPresentation
     }
     private bool ShowDistinctShield()
     {
+        if(WarriorVisual && Definition.Id=="endurepain"){
+            // Recovered shoulder/hip smoke is emitted by AdvanceWarriorEffects.
+            _bubble=new Node3D {Name="EndurePainAura"};AddChild(_bubble);
+            _bubble.GlobalPosition=ShieldPosition();return true;
+        }
         if(WarriorVisual && Definition.Id=="saberward"){
             _bubble=new Node3D {Name="SaberWardAura"};AddChild(_bubble);
             var guard=Sprite(WarriorTexture+"glow/vfx_force_impact_ring.png",.22f);guard.Modulate=new Color(1,.65f,.25f,.4f);_bubble.AddChild(guard);

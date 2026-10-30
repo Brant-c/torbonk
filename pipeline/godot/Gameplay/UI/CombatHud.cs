@@ -16,6 +16,7 @@ public partial class CombatHud : Control
     private readonly List<AbilityIcon> _slotNodes=new();
     public int UnlockedAbilityCount => _abilitySlots.Count;
     private CharacterPortrait _targetPortrait=null!;
+    private Label? _agentStatus;
     private Label _level=null!, _targetName=null!;
     public int SlotCount { get; private set; }
 
@@ -61,6 +62,7 @@ public partial class CombatHud : Control
         Art(SwtorSkin.Slice("bwaui_bars_183"),new Vector2(118,124),new Vector2(564,2));
         Art(SwtorSkin.Slice("bwaui_quickslots_1"),new Vector2(94,72),new Vector2(27,54));
         Art(SwtorSkin.Slice("bwaui_quickslots_3"),new Vector2(680,72),new Vector2(27,54));
+        if(World.RunConfiguration.AdvancedClassId is "operative" or "sniper")_agentStatus=LabelAt("",10,new Vector2(340,44),new Vector2(120,25));
         RefreshAbilitySlots(World.Abilities.QuickbarAbilities);
         Art(SwtorSkin.Slice("bwaui_quickslots_6"),new Vector2(685,72),new Vector2(19,54));
         LabelAt("1",11,new Vector2(687,91),new Vector2(15,16));
@@ -72,19 +74,19 @@ public partial class CombatHud : Control
         AddChild(_targetPortrait);_targetPortrait.FaceVisible=false;
     }
 
-    private string SlotHelp=>World.RunConfiguration.AdvancedClassId=="assassin"?
-        $"Damage abilities: {World.Abilities.Equipped(AbilityCategory.Offensive)}/6. Lacerate starts in a free, replaceable position; its replacement keeps that position. Utilities and control use no damage slots.":
-        $"Offensive: {World.Abilities.Equipped(AbilityCategory.Offensive)}/{World.Abilities.Limit(AbilityCategory.Offensive)} · Utility: {World.Abilities.Equipped(AbilityCategory.Utility)}/{World.Abilities.Limit(AbilityCategory.Utility)}. Full categories offer replacements; owned abilities can still be upgraded. Affliction and Polarity Shift use no slots for Sorcerers.";
-
+    private string SlotHelp=>$"Offensive: {World.Abilities.Equipped(AbilityCategory.Offensive)}/{World.Abilities.Limit(AbilityCategory.Offensive)} · Utility: {World.Abilities.Equipped(AbilityCategory.Utility)}/{World.Abilities.Limit(AbilityCategory.Utility)}. "+
+        (World.RunConfiguration.AdvancedClassId is "mercenary" or "powertech"?"Basic fallback attacks use no slot. ":World.RunConfiguration.AdvancedClassId=="sorcerer"?"Affliction and talent-granted Polarity Shift use no slots. ":"Your starting attack is free and replaceable; its replacement keeps that free position. Basic fallback attacks use no slot. ")+
+        "Other attacks, defenses and control compete for their category's slots. Full categories offer replacements.";
     private void RefreshAbilitySlots(AutomaticAbility[] unlocked)
     {
         foreach(var slot in _slotNodes) {RemoveChild(slot);slot.QueueFree();}
         _slotNodes.Clear();_abilitySlots.Clear();SlotCount=0;
-        for(int column=0;column<12;column++)
+        int columns=System.Math.Max(12,unlocked.Length);float step=564f/columns;float size=step-1;
+        for(int column=0;column<columns;column++)
         {
             var ability=column<unlocked.Length?unlocked[column]:null;
-            var slot=new AbilityIcon {IconName=ability?.Definition.Icon??"",SlotSize=46,IconPadding=4,
-                FrameTexture=SwtorSkin.HudArt("player_slot"),Position=new Vector2(118+column*47,77),Size=new Vector2(46,46),
+            var slot=new AbilityIcon {IconName=ability?.Definition.Icon??"",SlotSize=size,IconPadding=4,
+                FrameTexture=SwtorSkin.HudArt("player_slot"),Position=new Vector2(118+column*step,77),Size=new Vector2(size,size),
                 TooltipText=ability!=null?ability.Definition.Title+" · automatic":"Empty player quickbar slot. Only abilities unlocked this run appear here.\n"+
                     SlotHelp};
             AddChild(slot);_slotNodes.Add(slot);SlotCount++;
@@ -100,6 +102,7 @@ public partial class CombatHud : Control
 
     public void UpdateHud()
     {
+        if(_agentStatus!=null && World.Build?.Pregame is {} agent)_agentStatus.Text=World.RunConfiguration.AdvancedClassId=="operative"?$"Advantage {agent.TacticalAdvantage}/2"+(agent.AgentOpening?" · Opening":""):agent.AgentPositioned?"In Cover +15%":"Mobile";
         RefreshAbilities();
         var p=World.Progression!;var health=World.PlayerActor.Health;var combat=World.Combat;
         _health.UpdateValue(health.Current,health.Maximum,$"{health.Current:0} / {health.Maximum:0}");
@@ -117,7 +120,7 @@ public partial class CombatHud : Control
         foreach(var (slot,ability) in _abilitySlots)
         {
             var category=ability.Definition.Category;var controller=World.Abilities;
-            string slots=ability.Definition.IsBasicAttack?"Basic weapon attack · no ability slot. Fills gaps between class abilities.":$"{category}: {controller.Equipped(category)}/{controller.Limit(category)} equipped. Passive talents use no ability slots.";
+            string slots=ability.Definition.IsBasicAttack?"Basic weapon attack · no ability slot. Fills gaps between class abilities.":ability.Definition.ReplaceableStarter?"Free starting ability · replacements retain the free position.":ability.Definition.Slotless || ability.InheritsFreeSlot?"Uses no ordinary ability slot.":$"{category}: {controller.Equipped(category)}/{controller.Limit(category)} equipped. Passive talents use no ability slots.";
             if(World.RunConfiguration.AdvancedClassId=="assassin")slots=SlotHelp+(ability.Definition.Category==AbilityCategory.Utility?" This is a utility/control ability.":ability.Definition.Slotless || ability.InheritsFreeSlot?" This ability occupies the free starter position.":"");
             slot.UpdateCooldown(ability.CooldownRemaining,ability.CooldownDuration,
                 ability.Definition.UsesGlobalCooldown?World.Abilities.GlobalCooldownRemaining:0,
@@ -155,4 +158,3 @@ public partial class CombatHud : Control
         _targetPortrait.TooltipText=valid?target!.SelectionKey:"No hostile target";
     }
 }
-

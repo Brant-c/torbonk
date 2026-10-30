@@ -1,0 +1,31 @@
+# Sorcerer / Assassin focused presentation review — 2026-10-29
+
+Reviewed the current working tree. No gameplay, asset, or presentation implementation was changed. Scope: configured kits, presentation dispatch, audio lifecycle, contact timing, recovered audio mappings, and current focused test suites. Evidence below establishes implementation behavior; no fresh listening pass or rendered capture was performed.
+
+## Findings
+
+1. **P2 — Sorcerer Thundering Blast damage and impact precede visible projectile arrival.** `SorcererAbilityPresentation.cs:95` plays the impact sound and creates target impact sprites at the same time it creates the projectile at the hand. Lines 125–127 then move that projectile to a fixed target snapshot over 0.25 seconds. `AutomaticAbility.cs:261` calls presentation impact immediately before dealing damage to the targets. Consequently damage and impact occur at release, a quarter-second before visible arrival. A moving enemy can also leave the snapshotted endpoint. Coordinate projectile arrival, authoritative contact, target tracking, and lethal-hit tails. Existing Sorcerer smoke checks verify charge and damage/audio presence, not projectile arrival synchronization.
+
+2. **P2 — Sorcerer evolved area attacks lack secondary-victim contact presentation.** `SorcererRefinementPresentation.cs:74–78` renders Lightning Strike's arc and flashes only at the primary center. Its cleave upgrade damages three targets. Likewise Thundering Dominion can add targets inside active storms (`AutomaticAbility.cs:250–253`), but the blast adapter renders only its primary endpoint. Per-victim dispatch at `AutomaticAbility.cs:291–292` supports AssassinAbilityPresentation, D3AbilityPresentation and SurvivalAbilityPresentation, but neither Sorcerer adapter. Secondary targets lose health without their own attack contact effect. Add a common contact interface or explicit Sorcerer callbacks; keep shared release effects separate from per-victim contacts, including lethal hits. Refinement tests assert cleave hit counts without checking per-victim feedback.
+
+3. **P2 — Force Speed and Polarity Shift sustained audio is played once rather than looped.** `SorcererRefinementPresentation.cs:35` loads the first event media directly and calls Play. Impact requests `forcespeed_channelloop` and `polaritycharge_buffloop` at lines 83/87; `_buffLife` only stops the voice after two/six seconds. Neither the adapter nor the selected WAV imports enable looping: `115083768.wav.import` and `40856786.wav.import` both have `edit/loop_mode=0`. Sustain the recovered samples while the actual buff is active, and stop on expiry, interruption, reset and death. Also audit Thundering Blast's cast-loop path, which uses the same one-shot loading pattern in SorcererAbilityPresentation. Sound-quality/actual audible gap duration requires a listening check.
+
+4. **P2 — Assassin Lacerate's extra spread hit cannot invoke its contact renderer.** `Talents/AssassinRuntime.cs:93–99` applies the `as_spread` additional damage and then checks `a.Presentation is AssassinAbilityPresentation` before calling TargetImpact. Lacerate is constructed with D3AbilityPresentation in `GameWorld.cs:408–424`; that type check is always false for the intended ability. Base Lacerate hits and spread DoT statuses still receive their existing presentation; this finding concerns the additional spread-damage event. Dispatch through the correct adapter, preferably after checking positive applied damage. Existing tests cover base contacts and spread statuses, not this additional contact.
+
+5. **P3 — Assassin Force Cloak never starts its recovered sustained sound.** `AssassinAbilityPresentation.cs:77–80` plays shadowcloak_activate, and lines 112–116 repeatedly emit cloak-loop visuals while the active cloak remains. No path requests `Play_ability_sithinquisitor_shadowcloak_loop`. That event is present in Assets/Assassin/audio.json, resolves to media 36978213, and the WAV is available. Add a bounded looping voice tied to AssassinCloaked, with cleanup matching the visual lifecycle. Deflection also has a named shieldloop event in that audio map, but its graph has no resolved media; that is a separate recovery gap, not proof that a playable Deflection loop already exists.
+
+## Test coverage gap
+
+Fresh `Run-Assassin-Presentation-Smoke.ps1 -SkipImport` completed **385 checks**, then failed at `Chain Shock talent applied` (AssassinPresentationSmoke.cs:81). The runner's saved profile contains just one tier-zero Deception point (`deception.thrashing_blades`) before requesting Duplicity and Chain Shock. Current Duplicity requires two points and Chain Shock five; rank validation discards the unsupported selections. Darkness points do not fund the Deception requirement. Update the fixture to supply a valid current allocation before relying on the later chain/relic/defensive checks. This run does not establish a Chain Shock gameplay regression.
+
+## Verification and scope
+
+- Sorcerer runtime roster: 15 abilities from GameWorld's explicit roster; all literal res:// references in those ability resources exist.
+- Assassin roster: 16 configured abilities including the starter/basic attack; no missing literal res:// references in those ability resources.
+- Fresh `Run-Sorcerer-Refinement-Smoke.ps1 -SkipImport`: **154 checks passed**.
+- Fresh Assassin presentation suite: **385 completed checks**, then the fixture failure described above. Later assertions were not executed.
+- Build succeeds; online NuGet vulnerability metadata remains unavailable (NU1900).
+- Existing Assassin fixes remain present: moving legs, polearm trails, per-victim base Lacerate/Discharge contacts, Discharge status lifecycle, Wither attachments and sustained debuff, and Deflection's gameplay-bound visual duration.
+- Examined recovered local audio maps/imports. This was not a fresh audit of every original FXSpec/action-graph binding. File existence alone does not establish correct animation identity or sound fidelity.
+
+Recommended order: repair the Assassin test allocation; synchronize Thundering Blast contact; add Sorcerer secondary contacts; fix sustained audio lifecycles; repair Lacerate's additional spread contact; then capture moving/single/multi/lethal targets and listen to overlapping buffs/channels.

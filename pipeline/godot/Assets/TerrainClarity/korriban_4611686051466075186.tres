@@ -1,0 +1,20 @@
+[gd_resource type="ShaderMaterial" load_steps=10 format=3]
+[ext_resource type="Shader" path="res://Assets/TerrainClarity/korriban_4611686051466075186.gdshader" id="shader"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/korriban_4611686051466075186_weights0.png" id="t0"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/ter_kor_dirt_d.png" id="t1"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/ter_kor_rock_purple_d.png" id="t2"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/ter_kor_sand_trodden_d.png" id="t3"]
+[ext_resource type="Texture2D" path="res://Assets/TerrainClarity/ter_kor_sand_trodden2_d.png" id="t4"]
+[ext_resource type="Texture2D" path="res://Assets/Korriban/D4/4611686051466075186_source_color.png" id="t5"]
+[ext_resource type="Texture2D" path="res://Assets/Korriban/D4/4611686051466075186_normal.png" id="t6"]
+[ext_resource type="Texture2D" path="res://Assets/Korriban/D4/4611686051466075186_roughness.png" id="t7"]
+[resource]
+shader = ExtResource("shader")
+shader_parameter/weights0 = ExtResource("t0")
+shader_parameter/layer0 = ExtResource("t1")
+shader_parameter/layer1 = ExtResource("t2")
+shader_parameter/layer2 = ExtResource("t3")
+shader_parameter/layer3 = ExtResource("t4")
+shader_parameter/tint = ExtResource("t5")
+shader_parameter/normal_map = ExtResource("t6")
+shader_parameter/roughness_map = ExtResource("t7")

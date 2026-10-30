@@ -33,7 +33,7 @@ public partial class SorcererSmoke : Node
             if(assassin)
             {
                 var field=w.Abilities.Find("deathfield")!;
-                Check("Assassin owns field unlock and power",field!=null && p.Upgrades.Any(u=>u.Id=="deathfield_power"));
+                Check("Assassin owns field unlock and power",field!=null && p.Upgrades.Any(u=>u.AbilityId=="deathfield" && u.Effect==UpgradeEffect.AbilityPower));
                 Check("Assassin cannot learn blast",w.Abilities.Find("thunderingblast")==null && !p.Upgrades.Any(u=>u.AbilityId=="thunderingblast"));
                 Check("Assassin learns Death Field",p.Grant("unlock_deathfield"));
                 Check("Assassin can also learn Affliction",p.Grant("unlock_affliction"));
@@ -63,6 +63,8 @@ public partial class SorcererSmoke : Node
                     GetViewport().GetTexture().GetImage().SavePng(ProjectSettings.GlobalizePath($"res://../manifests/sorcerer-{name}.png"));
                 }
                 await Capture("charge");blast.Advance(.11);
+                Check("blast has no damage during outbound flight",target.Health.Current==hp && buildup.ProjectileVisible);
+                blast.Advance(blast.Definition.ProjectileSeconds);
                 Check("one internal hit without Affliction",Math.Abs(hp-target.Health.Current-60)<.01 && !crit && target.Health.LastDamageType==DamageType.Internal);
                 Check("blast releases held charge on impact",!buildup.ChargeVisible);
                 await Capture("blast");

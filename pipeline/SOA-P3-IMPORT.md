@@ -1,41 +1,35 @@
-# Soa final circular arena — import investigation, 2026-10-28
+# Soa room restoration — 2026-10-28
 
-Imported into the Godot project as `res://Assets/Maps/soa_p3/MapEnvironment.tscn`.
-Open `res://Integration/SoaP3Import.tscn` to inspect it independently.
-Rebuild and inspect: `./Run-Soa-P3-Import.ps1 -Preview`.
-This is the environment prepared for the requested second raid encounter. The normal raid route still ends at XRR-3; encounter transitions, Soa actors and combat are not connected by this import.
+Operations → Eternity Vault → Soa → Set Course enters the restored room with the selected class. The level 1–50 combat run is described in `SOA-ENCOUNTER.md`. Boss navigation and difficulty selections are preserved.
 
-## Deciding source evidence
+Rebuild with `./Run-Soa-P3-Import.ps1`; add `-Preview` for the independent environment viewer. World composition: `godot/Gameplay/GameWorld_SoaP3.tscn`. Environment: `godot/Assets/Maps/soa_p3/MapEnvironment.tscn`.
 
-Client-derived April area `4611686096259570491`, label `raid_eternity_vault`, room `05_Infernal_Prison`.
-The final-phase marker is instance `4611686102611670263`, tag `soa_teleport_round6`, position `(82.8347015381,-38.7240982056,69.1054000854)`.
-The room has one terrain patch: `4611686136141596212`, authored position `(82.5999984741,-39.5453987122,69)`, grid 67 by 71, local height range 0 to 0.89453125, terrain layers 6, 7 and 16.
-Its footprint is X=76..89.2, Z=62..76. Floor at arena centre is runtime-verified at `(82.5,-38.7329,69)`.
-The marker is evidence for the lower arena height; native encounter execution has not been reproduced.
+## Restored map
 
-## What is brought in
+Client-derived April area `4611686096259570491`, label `raid_eternity_vault`, room `05_Infernal_Prison`. The initial import selected only Y=-40..-34. The expanded recipe now selects every visible static area model in this room and retains complete ancestry, including one transform-only utility parent. Helper art, collision-only/debug meshes and occluders are excluded from rendering.
 
-`maps/soa_p3.json` selects this terrain and static placements in its footprint, source Y=-40..-34. It preserves source units, rotations, scales and instance IDs. The existing importer closes parent/child dependencies; these 92 selected placements have no parents. There are 15 unique models:
+The restored selection contains 256 placements, 255 visible prop instances, 29 shared models and one original terrain patch. This includes all eight authored wall-ring placements, the full shaft, ceiling, upper entrance/interior architecture, statues and broken legs along the shaft, wall sets, floor tiles, rubble, lower obelisk bases, broken platform pieces, rocks, generator and tower. The environmental piston is resolved through its MAG → DYC → original model/material dependencies and imported in bind pose.
 
-- `bel_arch_rakata_raid_infernal_room_wall01.gr2` (two lowest wall rings)
-- `bel_arch_rakata_raid_infernal_platform_piece01.gr2` through `piece04.gr2` (15 broken floor pieces)
-- `bel_arch_rakata_raid_energy_obelisk_base.gr2` (17 source placements, including the near-overlapping pair retained as authored)
-- `bel_arch_rakata_statue.gr2`, `bel_arch_rakata_statue_broken_legs.gr2`
-- `bel_env_boulder_overhang.gr2`, `bel_env_boulder_wall_curve_05.gr2`, `bel_env_boulder_wall_curve_06.gr2`
-- `ord_env_boulders_sml_no_moss_01.gr2`, `ord_env_boulders_sml_no_moss_02.gr2`
-- `all_item_caves_rubble_mound_ald_01.gr2`, `all_item_decal_lava.gr2`
+The upper encounter platform spawners are not instantiated, leaving the shaft open for a final-phase room. Source coordinates, rotations, scales and parent transforms are retained. The lower arena remains the playable area; restoring architecture does not turn the upper shaft into a traversal course.
 
-Exact material, texture and terrain-layer dependencies are resolved from the actual model/material bytes. `manifests/map-soa_p3-source.json` lists all 83 resources (26,209,644 decoded bytes), archive identities, exact path hashes, SHA256 hashes and dependency edges. No unresolved resources. It includes the two source DATs, required models, materials and DDS textures; it is the authoritative bring-in list.
-`work/maps/soa_p3/selection.json` retains the exact placement list and decoded terrain. `Assets/Maps/soa_p3/environment.json` is the staged engine input.
+Terrain presentation now uses the original full-resolution tiled diffuse layers, source blend weights, vertex tint and dominant-layer normal rather than a patch-resolution albedo bake. Tiling/normal adaptation uses the existing surface importer; native UV phase and shader parity remain unverified.
 
-## Import boundary and later connection
+Terrain instance `4611686136141596212`: 67 by 71 grid, 9,240 triangles, terrain layers 6, 7 and 16. Authored position `(82.5999984741,-39.5453987122,69)`, footprint X=76..89.2, Z=62..76. The source final-phase marker `4611686102611670263`, tag `soa_teleport_round6`, is at `(82.8347015381,-38.7240982056,69.1054000854)`. Player spawn projects onto the terrain near `(82.5,-38.7309,69)`.
 
-The phase-one platform spawners at Y=-7.7 and phase-two platform spawners at Y=-23.7 are unnecessary for a direct final-arena start. Upper collision helpers, puzzle controllers, design markers, entrance/hallway, exterior, Adds room and mind-trap cells are outside this room-only import. Soa's model, rig, animations, effects, sounds, falling obelisks and mind traps belong to subsequent encounter work.
+## Environmental presentation
 
-For encounter two, instance the imported environment in a second world composition and spawn near `(82.5,-38.7,69)` after ground projection. Keep the source coordinates or apply one shared root translation to geometry and all spawn anchors. Use the circular island as the playable boundary: the terrain patch's rectangle includes the surrounding lava. The inspection scene is deliberately independent of raid progression.
+`soa_room_source.py` retains the 11 original light records, their colors, intensities, transforms and flags. `RoomAtmosphere.gd` adapts them to Godot lights and replaces the generic outdoor lighting only for Soa. Spherical Godot ranges approximate the source ellipsoids. Directional forward-axis conversion and modest indoor ambient fill are renderer adaptations; native light maps, restrictions and lighting parity are not claimed.
 
-## Verification and limits
+Four authored rising-ember placements use the original `fx_embers_02.dds`, emitter interval/count, lifetime/trajectory ranges, hue keys and size-curve endpoints with additive rendering. Random distributions and curve interpolation are approximations. Native drag, buoyancy, motion splines, tint multiplication and exact particle orientation are not reproduced.
 
-Godot import and scene build passed: 9,240 terrain triangles, 92 prop instances, 15 shared model resources, maximum placement matrix discrepancy 0.000000238419. A runtime physics ray hit the centre floor. `manifests/soa-p3-import.png` is a rendered overview inspected during this task.
+The lava pool FXSpec resolves to `fx_lava_pool_plane.gr2` and `fx_flowing_lava_pool.mat` (AnimatedUV). The two exact referenced textures `art/fx/texture/environment/fx_lava_pool_tile.dds` and `fx_lava_pool_tile_additive.dds` are absent from the selected April archives. The graph, speeds, tints and missing paths are retained in `room-environment.json`; this incomplete effect is not rendered. The original static lava decal remains. Lava burst effects, lava audio and piston animation state remain unresolved.
 
-Terrain uses the existing portable texture bake, materials use the existing Uber-to-PBR conversion, and lava is a static imported decal. Inspection lighting is authored. Native lighting, animated lava/FX, original physics and collision behavior across the entire arena are not verified. Collision is derived from visible geometry; existing conversion policies skip one flat mesh and use 16 convex prop shapes. The lower shell is intentionally open above the selected wall rings.
+## Evidence and validation
+
+`manifests/map-soa_p3-source.json` records 156 successfully retrieved resources (48,784,022 decoded bytes), exact archive/path hashes, SHA256 hashes and dependencies. Missing FX texture references are separately explicit in `godot/Assets/Maps/soa_p3/room-environment.json`; the successful-resource ledger is not a claim that every FX dependency exists.
+
+`work/maps/soa_p3/selection.json` retains exact placements, ancestry and terrain. `environment.json` is the engine input. `map-soa_p3-godot-build.json` confirms scene build passed, 316 prop mesh instances and maximum world-matrix discrepancy 0.000000238419. Collision is derived from imported visible geometry, with 16 convex shapes and two flat mesh exclusions; native physics shapes are not claimed.
+
+C# build, Godot import/build, centre-floor physics check and the menu-to-game Soa check passed. The gameplay check verifies all 11 lights, actual walking displacement and no recovery/falling during its bounded movement route. This is not exhaustive collision coverage of the entire island or upper architecture.
+
+Rendered lower-arena and upward-shaft views were inspected: `manifests/soa-p3-import.png` and `manifests/soa-p3-shaft.png`. The destination preview uses the refreshed lower-room view. The map restoration is independent of the combat run now composed by `make_soa_encounter.py`.

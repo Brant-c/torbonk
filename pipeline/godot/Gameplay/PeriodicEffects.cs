@@ -38,6 +38,7 @@ public partial class PeriodicEffects : Node
     public void Apply(AutomaticAbility source,Combatant target,float scale=1,bool relicApplied=false)
     {
         var d=source.Definition;
+        if(d.Id=="dart" && source.Build?.Pregame.AgentVenomousBlades==true)relicApplied=true;
         if(d.PeriodicDuration<=0 || d.PeriodicInterval<=0 || !target.Alive)return;
         var key=(source.Caster.GetInstanceId(),d.Id,target.GetInstanceId());
         // Lethal Dose: a refresh deepens the poison (+10% per stack, 3 stacks) instead of only restarting it.
@@ -55,9 +56,25 @@ public partial class PeriodicEffects : Node
         if(d.Id=="affliction")effect.Visual=PresentationStatusVisual.AttachAffliction(target,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
         if(d.Id=="crushingdarkness")effect.Visual=PresentationStatusVisual.AttachDarkness(target,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
         if(d.Id=="creepingterror")effect.Visual=PresentationStatusVisual.AttachTerror(target,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
+        if(d.Id is "dart" or "corrosivegrenade" or "interrogationprobe" or "plasmaprobe")effect.Visual=AgentStatusVisual.Attach(target,d.Id,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
         if(d.Id=="incendiarymissile")effect.Visual=PowertechStatusVisual.Attach(target,"4x4_flame_lick_02_bw",16,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
     }
     public double Remaining(AutomaticAbility source,Combatant target)=>_effects.GetValueOrDefault((source.Caster.GetInstanceId(),source.Definition.Id,target.GetInstanceId()))?.Remaining??0;
+    // Consume exactly this caster's effect before publishing damage, so death or
+    // other hit reactions cannot detonate the same remaining ticks a second time.
+    public bool DetonateOwned(AutomaticAbility source,Combatant target,string abilityId,out float applied)
+    {
+        applied=0;
+        var key=(source.Caster.GetInstanceId(),source.Definition.Id,target.GetInstanceId());
+        if(!source.Caster.Alive || !target.Alive || !_effects.TryGetValue(key,out var effect) || effect.Remaining<=0)return false;
+        double ticks=Math.Max(0,Math.Floor((effect.Remaining-effect.Next)/effect.Interval+1.000001));
+        float amount=(float)(ticks*effect.Damage)*(source.Build?.DamageMultiplier(source,target)??1)*(source.Build?.Pregame.PeriodicMultiplier(target)??1);
+        _effects.Remove(key);
+        if(effect.Visual!=null && GodotObject.IsInstanceValid(effect.Visual))effect.Visual.QueueFree();
+        RecalculateSlow(target);
+        applied=target.Health.ApplyDamage(amount,source.Definition.DamageType,false,abilityId);
+        return true;
+    }
     public void TransferOwned(Combatant caster,Combatant dead)
     {
         foreach(var e in _effects.Values.Where(e=>e.Target==dead && e.Source.Caster==caster && e.Remaining>0 && (e.Source.Unlocked || e.RelicApplied)).ToArray())

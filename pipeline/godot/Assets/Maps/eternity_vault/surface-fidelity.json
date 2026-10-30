@@ -1,0 +1,44 @@
+{
+  "id": "4611686142666070025",
+  "sourceLine": 18094,
+  "sourceModel": "/resources/art/static/area/all_all/arch/fadeportal/all_arch_fadeportal_bel_raid_snow_sky.gr2",
+  "scene": "res://Assets/Maps/eternity_vault/surface-horizon.glb",
+  "position": [
+    -64.0999984741,
+    16.5722999573,
+    -44.4500007629
+  ],
+  "rotation": [
+    3.4150900774e-06,
+    -90.0,
+    -90.0
+  ],
+  "scale": [
+    399.999908447,
+    399.999908447,
+    400.0
+  ],
+  "material": {
+    "DiffuseMap": "art\\static\\area\\all_all\\arch\\fadeportal\\texture\\all_arch_fadeportal_bel_raid_snow_sky_d",
+    "UvScaling": "1,1",
+    "OpacityFadeMinDistance": "0",
+    "OpacityFadeMaxDistance": "1000",
+    "OpacityFadeMinOpacity": "0",
+    "OpacityFadeMaxOpacity": "1"
+  },
+  "textureSize": [
+    16,
+    16
+  ],
+  "boss": {
+    "sourceMaterial": "/resources/art/shaders/materials/battledroid_warbot_rakata_v01.mat",
+    "textureSize": [
+      1024,
+      1024
+    ],
+    "emissionMaskRange": [
+      0.0,
+      1.0
+    ]
+  }
+}

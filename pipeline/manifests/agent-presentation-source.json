@@ -1,0 +1,368 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 180,
+  "maximumDecodedBytes": 104857600,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0xEC1E8A295A17CAC6",
+      "entryOffset": 119192238,
+      "headerSize": 36,
+      "dataOffset": 119192274,
+      "compressedSize": 14643,
+      "length": 26561,
+      "compressionMethod": 1,
+      "crc32Index": "5a3bb612",
+      "path": "/resources/anim/humanoid/bmnnew/mv_rifle_run_forward.jba",
+      "sha256": "c9751db5e3a1a16798468ca7fb1bfa685abb242e2859191f2b12a52ad716003e",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_rifle_run_forward.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x3805AAC0F0CDC34E",
+      "entryOffset": 119152748,
+      "headerSize": 36,
+      "dataOffset": 119152784,
+      "compressedSize": 13218,
+      "length": 26433,
+      "compressionMethod": 1,
+      "crc32Index": "8d04e33f",
+      "path": "/resources/anim/humanoid/bmnnew/mv_rifle_run_back.jba",
+      "sha256": "386fc6b647a04504abc80560e65e71d606e41fd62e6dcd7543d2d67954d8cc3a",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\mv_rifle_run_back.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x9AD9CD5F85C7E9CD",
+      "entryOffset": 35467618,
+      "headerSize": 36,
+      "dataOffset": 35467654,
+      "compressedSize": 17632,
+      "length": 31681,
+      "compressionMethod": 1,
+      "crc32Index": "df1ce419",
+      "path": "/resources/anim/humanoid/bmnnew/cb_spy_shiv_1.jba",
+      "sha256": "6e1a311564c78b6789e56b0e25c6101586ec2c67753580d7594cba0b83bb6184",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_spy_shiv_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x1F074ADFCC3F4DC5",
+      "entryOffset": 23774425,
+      "headerSize": 36,
+      "dataOffset": 23774461,
+      "compressedSize": 17853,
+      "length": 31809,
+      "compressionMethod": 1,
+      "crc32Index": "6b11322b",
+      "path": "/resources/anim/humanoid/bmnnew/cb_agent_backstab.jba",
+      "sha256": "91612212c86aa7e90d49896873e23465c357523671503827835d256243d0bafa",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_agent_backstab.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x91B8232D82DC641D",
+      "entryOffset": 35485286,
+      "headerSize": 36,
+      "dataOffset": 35485322,
+      "compressedSize": 16964,
+      "length": 30401,
+      "compressionMethod": 1,
+      "crc32Index": "8e4460bb",
+      "path": "/resources/anim/humanoid/bmnnew/cb_spy_waylay_01.jba",
+      "sha256": "ef7d0af0b83861d10df04babdb5c6e1cde92f216772494509af3d8128e0014b5",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_spy_waylay_01.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x1D10DE9BAF28259A",
+      "entryOffset": 31652397,
+      "headerSize": 36,
+      "dataOffset": 31652433,
+      "compressedSize": 15672,
+      "length": 28353,
+      "compressionMethod": 1,
+      "crc32Index": "438c2abd",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_grenade_1.jba",
+      "sha256": "0b3ac0660f0a2f4bef7e30e547012f6d098424d794fc7691d824195976ce09f5",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_grenade_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x521E43E324CB7235",
+      "entryOffset": 31393168,
+      "headerSize": 36,
+      "dataOffset": 31393204,
+      "compressedSize": 9221,
+      "length": 20929,
+      "compressionMethod": 1,
+      "crc32Index": "9ec29772",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_detonator_01.jba",
+      "sha256": "78c53aa64c074a8c2587ebc2679af9e9bfe649ca0dc72c08b00e43d624ffbcf0",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_detonator_01.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x5DA17F00CC5249C6",
+      "entryOffset": 31642740,
+      "headerSize": 36,
+      "dataOffset": 31642776,
+      "compressedSize": 9621,
+      "length": 17345,
+      "compressionMethod": 1,
+      "crc32Index": "6f516f5e",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_fullauto_start.jba",
+      "sha256": "dbed5c37715d02023eb45b241192bb33b3a29798450ecfa5658d11486c384f21",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_fullauto_start.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x36AB0328CDE87F4A",
+      "entryOffset": 31632158,
+      "headerSize": 36,
+      "dataOffset": 31632194,
+      "compressedSize": 10546,
+      "length": 20545,
+      "compressionMethod": 1,
+      "crc32Index": "0025c805",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_fullauto_loop.jba",
+      "sha256": "d57203d176d1ada5d428ed8cf61f1ddcc5be86b2dc1826ad729bdd29e787cd48",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_fullauto_loop.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x05522511DE385EEF",
+      "entryOffset": 31623276,
+      "headerSize": 36,
+      "dataOffset": 31623312,
+      "compressedSize": 8846,
+      "length": 17217,
+      "compressionMethod": 1,
+      "crc32Index": "b12703e6",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_fullauto_end.jba",
+      "sha256": "e00a23e09cf18e4aeec1850c4204c2253388ecba84a95a94917c1fc8733927ef",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_fullauto_end.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0xFEA576624889874A",
+      "entryOffset": 32438430,
+      "headerSize": 36,
+      "dataOffset": 32438466,
+      "compressedSize": 34099,
+      "length": 58177,
+      "compressionMethod": 1,
+      "crc32Index": "524473f6",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_sniper_fire_series_01.jba",
+      "sha256": "9492e3c18924f79164ee1f27cc7e970c378c94e3b33c06e3504ef9ffa520f6c6",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_sniper_fire_series_01.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x953C7445B57469F7",
+      "entryOffset": 32511692,
+      "headerSize": 36,
+      "dataOffset": 32511728,
+      "compressedSize": 29306,
+      "length": 51905,
+      "compressionMethod": 1,
+      "crc32Index": "850feb57",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_stealth_idle_1.jba",
+      "sha256": "9ce336b9c744846348a1d6a3286fd35ca2b22196bfd2c4dd03669206b36b7440",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_stealth_idle_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0xDB914CD9B1B1E756",
+      "entryOffset": 35806814,
+      "headerSize": 36,
+      "dataOffset": 35806850,
+      "compressedSize": 16755,
+      "length": 32065,
+      "compressionMethod": 1,
+      "crc32Index": "e1b6d4bf",
+      "path": "/resources/anim/humanoid/bmnnew/cb_unarmed_heal_right_1.jba",
+      "sha256": "ea8e67ad4518c29359c8d9206054292bba9c7979b675fe15c977cb985acceb15",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_unarmed_heal_right_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0xE6B2CDE8015CDCA5",
+      "entryOffset": 31036247,
+      "headerSize": 36,
+      "dataOffset": 31036283,
+      "compressedSize": 22073,
+      "length": 50497,
+      "compressionMethod": 1,
+      "crc32Index": "7117f429",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_cover_crouch_hide_idle_1.jba",
+      "sha256": "167bf636e34cb3c9d001e4891e83dece6f591ba08297773a3ee8d3af2e2493bd",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_cover_crouch_hide_idle_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0xD177AFB909DA098F",
+      "entryOffset": 31020398,
+      "headerSize": 36,
+      "dataOffset": 31020434,
+      "compressedSize": 15813,
+      "length": 28097,
+      "compressionMethod": 1,
+      "crc32Index": "2cedf8a7",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_cover_crouch_enter_far.jba",
+      "sha256": "d35e6d1bff8a7f46112e4db2ea425378e03e8e0dcf94a497bcde37bc6a3563c2",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_cover_crouch_enter_far.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0xCD62AAF047CD77A6",
+      "entryOffset": 31219617,
+      "headerSize": 36,
+      "dataOffset": 31219653,
+      "compressedSize": 12933,
+      "length": 24129,
+      "compressionMethod": 1,
+      "crc32Index": "38a700d0",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_cover_fire_right_1.jba",
+      "sha256": "d71f2d656ba822e0f40fa1d6ee6006abc58321db854b4d41c8bf6613d0ef2971",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_cover_fire_right_1.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    },
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_anim_humanoid_bmns_1.tor",
+      "archiveHash": "0x4190F57E92678133",
+      "entryOffset": 31098239,
+      "headerSize": 36,
+      "dataOffset": 31098275,
+      "compressedSize": 11787,
+      "length": 26177,
+      "compressionMethod": 1,
+      "crc32Index": "c6d192b9",
+      "path": "/resources/anim/humanoid/bmnnew/cb_rifle_cover_detonator_01.jba",
+      "sha256": "3d0936911e4f90d31eec817b632e83391269a5694d23ba87702e689499583f1c",
+      "output": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_rifle_cover_detonator_01.jba",
+      "archiveSha256": "8257bdadeb987fdcbb153947b2c8847de21b3e380406f9a045961a7a9d79b276",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "RifleForward",
+      "to": "/resources/anim/humanoid/bmnnew/mv_rifle_run_forward.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    },
+    {
+      "from": "RifleBack",
+      "to": "/resources/anim/humanoid/bmnnew/mv_rifle_run_back.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    },
+    {
+      "from": "Shiv",
+      "to": "/resources/anim/humanoid/bmnnew/cb_spy_shiv_1.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    },
+    {
+      "from": "Backstab",
+      "to": "/resources/anim/humanoid/bmnnew/cb_agent_backstab.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    },
+    {
+      "from": "HiddenStrike",
+      "to": "/resources/anim/humanoid/bmnnew/cb_spy_waylay_01.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    },
+    {
+      "from": "RifleGrenade",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_grenade_1.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    },
+    {
+      "from": "Detonator",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_detonator_01.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    },
+    {
+      "from": "RifleAutoStart",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_fullauto_start.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    },
+    {
+      "from": "RifleAutoLoop",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_fullauto_loop.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    },
+    {
+      "from": "RifleAutoEnd",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_fullauto_end.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    },
+    {
+      "from": "SniperSeries",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_sniper_fire_series_01.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    },
+    {
+      "from": "StealthIdle",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_stealth_idle_1.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    },
+    {
+      "from": "Medical",
+      "to": "/resources/anim/humanoid/bmnnew/cb_unarmed_heal_right_1.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    },
+    {
+      "from": "CoverIdle",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_cover_crouch_hide_idle_1.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    },
+    {
+      "from": "CoverEnter",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_cover_crouch_enter_far.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    },
+    {
+      "from": "CoverFire",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_cover_fire_right_1.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    },
+    {
+      "from": "CoverDetonator",
+      "to": "/resources/anim/humanoid/bmnnew/cb_rifle_cover_detonator_01.jba",
+      "relation": "Agent compatible original gesture/locomotion candidate"
+    }
+  ],
+  "unresolved": [],
+  "selection": "human male body type 2; bmnnew skeleton"
+}

@@ -48,6 +48,7 @@ public partial class UpgradeDefinition : Resource
             : AbilityId is "thunderingblast" or "affliction"
             ? Godot.GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{AbilityId}.tres").Description+" Uses one offensive slot."
             : $"Unlock {Scope}. Adds its automatic ability to your action bar for this run.",
+        UpgradeEffect.AbilityPower when MechanicalDescription!="" => MechanicalDescription,
         UpgradeEffect.AbilityPower => DamagePerRank>0 && AbilityId is not ("deathfield" or "barrier")
             ? $"{Scope}: +{DamagePerRank*RarityMultiplier:P0} base damage per rank."
             : AbilityId switch {

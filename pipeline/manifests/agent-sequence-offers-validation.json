@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-29",
+  "passed": true,
+  "totalChecks": 590,
+  "reports": [
+    {
+      "path": "pipeline\\manifests\\agent-operative-smoke.json",
+      "checks": 199,
+      "sha256": "84a01560dbaef333f100e680f6908dbaad98c44db486095dd5082bbe117f65f8"
+    },
+    {
+      "path": "pipeline\\manifests\\agent-sniper-smoke.json",
+      "checks": 219,
+      "sha256": "94c0d0729f0c19cd77cba30c2fb75bd0430755522f2bc842a4545a132c79e5a1"
+    },
+    {
+      "path": "pipeline\\manifests\\agent-operative-presentation.json",
+      "checks": 86,
+      "sha256": "ad9e5a2a1df89045e557b1a4739fe1a76047da36dc8379c02d10a89775b4f618"
+    },
+    {
+      "path": "pipeline\\manifests\\agent-sniper-presentation.json",
+      "checks": 65,
+      "sha256": "d9c624e3b59bfbb833858d9a9d478e2602bed95d2104ae115cc3eb808a329382"
+    },
+    {
+      "path": "pipeline\\manifests\\sniper-cover-smoke.json",
+      "checks": 21,
+      "sha256": "720db2d4f4c0d87a673b686d95e423b4adcfb077184f82ab740b787e904ca8f7"
+    }
+  ],
+  "audio": [
+    {
+      "id": "laceration",
+      "frames": 116224,
+      "rms": 0.026115951555322196,
+      "peak": 0.24416667
+    }
+  ],
+  "sequence": {
+    "swipes": 2,
+    "contactSeconds": [
+      0.2,
+      0.8
+    ],
+    "baseDamagePerContact": 34,
+    "totalBaseDamage": 68,
+    "source": "Two copies of recovered cb_rifle_disk_left_1; requested TorBonk sequence adaptation"
+  }
+}

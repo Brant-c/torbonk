@@ -1,0 +1,108 @@
+{
+  "cause": "sRGB bake target followed by a second sRGB encoding",
+  "images": {
+    "head_human_caucasian_a01c01_m_basecolor": "a84bbc7bf3cb80b25124ec0044e968edde2ea15dc9e6f5112144e7a02654fc24",
+    "eye_human_non_a01_c01_basecolor": "bfe14dcdbf3d6b033d4cd2361a86becd5123a4e103824b4d3cd3eaec02a04222",
+    "hair_human_non_a01_v01_m_basecolor": "b830bbfb5ffd415852b774a8a1c6a362c6fb51a589e14a153b1422ff10c6c3eb"
+  },
+  "assets": [
+    {
+      "path": "godot\\Assets\\D3\\bh.glb",
+      "after": "1b71d5c79ddf8c58a2b999673744ebc4e7bc1383c3e2f8dbd752e851086bc349",
+      "alreadyCurrent": true
+    },
+    {
+      "path": "godot\\Assets\\D3\\spy.glb",
+      "after": "337f0f7d9962c94181d9d91b9cd1af08fef5278d0a1d14900e9498564f0def12",
+      "alreadyCurrent": true
+    },
+    {
+      "path": "godot\\Assets\\D3\\war.glb",
+      "before": "7c223f2fbf26b724c08e9f4444909c18004474cce5a9395d2b64c28b093cf0e0",
+      "after": "fcba73986d19ed907533e9e9502d1ca84e5a4b6f4e1d3a61e71b5ca688e69b7e",
+      "replacedImageViews": [
+        29,
+        49,
+        59
+      ],
+      "otherBufferViewsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Enemies\\looter.glb",
+      "before": "73c5e0b82c6d3a0c67fe70f6c8a3dde6d95776454e6a9069384f655488a05033",
+      "after": "43a6fb75bee4e41bb3213762a6abe3c5fe4b180c7e0430aea04a57d940d428f8",
+      "replacedImageViews": [
+        56,
+        74,
+        83
+      ],
+      "otherBufferViewsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Equipment\\Empire\\bh.glb",
+      "before": "0d042e9dd87285f62cbd82ceb7b0286a4770c5d3affb79b2453a0e3202cf7435",
+      "after": "56f5a275065e9afb054e676e17ce50dfc877abb63d2dd6d539379e46e83922d5",
+      "replacedImageViews": [
+        50,
+        70,
+        80
+      ],
+      "otherBufferViewsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Equipment\\Empire\\inq.glb",
+      "before": "eb4050437702cde937ede6890c20768d4001802dc5fd9ac444aab2568182b8bb",
+      "after": "1dc31f75305eafc5408298379a6469f0b32cabb3fc87bece2fd30e602710b57b",
+      "replacedImageViews": [
+        43,
+        63,
+        73
+      ],
+      "otherBufferViewsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Equipment\\Empire\\spy.glb",
+      "before": "c76d1eb67ebd0b5d57556af4f797709c8aa534d759204012f71c40c4245393a5",
+      "after": "10ad677de3d4004db79ce6b7c068424de363435025336f7c4dd6e31203618ae5",
+      "replacedImageViews": [
+        57,
+        84,
+        94
+      ],
+      "otherBufferViewsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Equipment\\Empire\\war.glb",
+      "before": "4e7310eddebc85af898a20d59b6479c9d2ef545c360b0c9ce0dcdbd534d581ab",
+      "after": "a20a19fc679c50cc173ffb293bd4bc362d5dba5b366305fb88094759eeac0e5f",
+      "replacedImageViews": [
+        50,
+        77,
+        87
+      ],
+      "otherBufferViewsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\Equipment\\inquisitor-level1.glb",
+      "before": "9a6d61600179729b5e813dcb95c4a5474917a164fa4ac33fad2a395b72d00b50",
+      "after": "178fad5fa2975a547529cc129d6785eb6f07a407c12dbe629cdd1bee4fd27ae5",
+      "replacedImageViews": [
+        36,
+        56,
+        66
+      ],
+      "otherBufferViewsUnchanged": true
+    },
+    {
+      "path": "godot\\Assets\\sorcerer.glb",
+      "before": "c338202a83450f47d9976c113bb4e14a6071be6e102358e9eae1cac5b3b829ed",
+      "after": "99526ef82f24948733a8eac4738a0147d10f893acdd234f182b2da37c64bdc9d",
+      "replacedImageViews": [
+        57,
+        84,
+        94
+      ],
+      "otherBufferViewsUnchanged": true
+    }
+  ]
+}

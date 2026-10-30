@@ -1,0 +1,65 @@
+{
+  "Version": 1,
+  "Credits": 0,
+  "Owned": {
+    "resolve_implant": 0,
+    "might_implant": 0,
+    "skill_implant": 0,
+    "reflex_implant": 0,
+    "universal_implant": 0,
+    "earpiece": 0,
+    "relic_dark": 3,
+    "relic_light": 0,
+    "eye_of_the_tempest": 3,
+    "thundering_dominion": 0,
+    "forked_lightning": 0,
+    "lightning_prison": 0,
+    "corrupting_storm": 0,
+    "lingering_agony": 0,
+    "grip_of_madness": 0,
+    "accelerated_torment": 0,
+    "voltaic_fury": 0,
+    "phantom_blade": 0,
+    "hidden_predator": 0,
+    "lingering_death_field": 0,
+    "devouring_plague": 0,
+    "dark_parasite": 0,
+    "shrouded_assassin": 0,
+    "crushing_darkness": 0,
+    "withering_force": 0,
+    "accelerated_agony": 0,
+    "exsanguination": 0,
+    "crimson_executioner": 0,
+    "gore_master": 0,
+    "ataru_frenzy": 0,
+    "predatory_carnage": 0,
+    "crushing_fury": 0,
+    "shockwave": 0,
+    "obliteration": 0,
+    "endless_berserk": 0,
+    "twin_blades": 0,
+    "worldbreaker": 0,
+    "endless_fury": 0,
+    "ravagers_wrath": 0,
+    "impaling_fury": 0,
+    "vengeful_retribution": 0,
+    "undying_wrath": 0
+  },
+  "Loadouts": {
+    "sorcerer": {
+      "implant1": "universal_implant",
+      "relic2": "eye_of_the_tempest",
+      "implant2": "resolve_implant",
+      "earpiece": "earpiece",
+      "relic1": "thundering_dominion"
+    },
+    "assassin": {
+      "relic1": "lingering_death_field",
+      "relic2": "devouring_plague"
+    },
+    "marauder": {
+      "relic1": "exsanguination",
+      "relic2": "crimson_executioner"
+    }
+  }
+}

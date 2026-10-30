@@ -34,7 +34,7 @@ public static class SwtorSkin
         if(text.Contains("restart") || text.Contains("reset"))return "bwaui_buttons_69";
         if(text.Contains("settings"))return "bwaui_buttons_90";
         if(text.Contains("sound") || text.Contains("music"))return "bwaui_buttons_57";
-        if(text.Contains("collection") || text.Contains("appearance"))return "bwaui_buttons_135";
+        if(text.Contains("collection") || text.Contains("appearance"))return "bwaui_buttons_242";
         if(text.Contains("main menu"))return "bwaui_buttons_236";
         if(text.Contains("exit") || text.Contains("close") || text.Contains("back"))return "bwaui_buttons_66";
         if(text.Contains("run") || text.Contains("play") || text.Contains("continue"))return "bwaui_buttons_132";

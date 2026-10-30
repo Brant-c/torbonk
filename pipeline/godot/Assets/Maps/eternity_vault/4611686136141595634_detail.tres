@@ -1,12 +1,10 @@
-[gd_resource type="ShaderMaterial" load_steps=6 format=3]
+[gd_resource type="ShaderMaterial" load_steps=5 format=3]
 [ext_resource type="Shader" path="res://Assets/Maps/eternity_vault/4611686136141595634_detail.gdshader" id="shader"]
 [ext_resource type="Texture2D" path="res://Assets/Maps/eternity_vault/4611686136141595634_weights0.png" id="1"]
 [ext_resource type="Texture2D" path="res://Assets/Maps/eternity_vault/ter_ald_snow_ice_d.png" id="2"]
-[ext_resource type="Texture2D" path="res://Assets/Maps/eternity_vault/4611686136141595634_source_color.png" id="3"]
-[ext_resource type="Texture2D" path="res://Assets/Maps/eternity_vault/ter_ald_snow_ice_n_detail.png" id="4"]
+[ext_resource type="Texture2D" path="res://Assets/Maps/eternity_vault/ter_ald_snow_ice_n_surface.png" id="3"]
 [resource]
 shader = ExtResource("shader")
 shader_parameter/weights0 = ExtResource("1")
 shader_parameter/layer0 = ExtResource("2")
-shader_parameter/tint = ExtResource("3")
-shader_parameter/detail_normal = ExtResource("4")
+shader_parameter/normal0 = ExtResource("3")

@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "coverpulse"
+StartsUnlocked = false
+Title = "Cover Pulse"
+Icon = "concussionmissiles"
+Damage = 1
+CooldownSeconds = 18
+Range = 0.4
+Radius = 0.4
+Area = 3
+TargetRule = 1
+SplashMultiplier = 1.0
+RecoverySeconds = 1.333
+GestureSeconds = 1.333
+PeriodicDamage = 0
+PeriodicDuration = 0
+PeriodicInterval = 1
+DamageType = 1
+Description = "Repels enemies in close range without entering cover."
+StartClip = "D3/EnergyShield"
+LoopClip = "D3/EnergyShield"
+EndClip = ""
+ChannelSeconds = 0.0
+WindupSeconds = 0.45
+PresentationKind = "agent"
+MuzzleBone = "LeftWrist"
+EffectTint = Color(0.16, 0.713, 0.007, 1)
+ImpactTailsOnTargetDeath = true
+CastAudio = ""
+ImpactAudio = ""
+NearbyTriggerCount = 1
+KnockbackDistance = 0.3
+RequireGesture = true
+
+Category = 1
+
+StaggerSeconds = 2

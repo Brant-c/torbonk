@@ -76,7 +76,7 @@ public partial class AssassinPresentationSmoke : Node
             w.Periodic.Apply(discharge,targets[0]);Check("Discharge refresh replaces status rather than stacking",targets[0].GetChildren().OfType<PresentationStatusVisual>().Count(v=>v.IsInGroup("DischargeStatus") && !v.IsQueuedForDeletion())==1);
             w.Periodic.Clear();w.Periodic.Apply(discharge,targets[0]);Cast(lacerate);
             Check("spread Discharge carries its visual",targets.All(t=>w.Periodic.Has(discharge,t) && t.GetChildren().OfType<PresentationStatusVisual>().Any(v=>v.IsInGroup("DischargeStatus") && !v.IsQueuedForDeletion())));
-            w.Periodic.Advance(5);foreach(var v in targets.SelectMany(t=>t.GetChildren().OfType<PresentationStatusVisual>()))if(!v.IsQueuedForDeletion())v._Process(.01);
+            w.Periodic.Advance(w.Build.Pregame.PeriodicDuration(discharge)+.1);foreach(var v in targets.SelectMany(t=>t.GetChildren().OfType<PresentationStatusVisual>()))if(!v.IsQueuedForDeletion())v._Process(.01);
             Check("Discharge visual ends with the effect",targets.All(t=>t.GetChildren().OfType<PresentationStatusVisual>().All(v=>v.IsQueuedForDeletion())));
             Reset();var shock=w.Abilities.Find("shock")!;Check("Chain Shock talent applied",shock.Definition.Area==AbilityArea.Chain);Cast(shock,.15);
             var lightning=(OriginalAbilityPresentation)shock.Presentation;Check("Shock renders both secondary links",shock.LastDistinctHits==3 && lightning.ChainArcCount==2 && lightning.BoltCount>=2);await Capture("chain-shock");

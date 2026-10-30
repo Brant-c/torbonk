@@ -5,12 +5,17 @@ void vertex(){source_pos=(MODEL_MATRIX*vec4(VERTEX,1.0)).xyz;}
 uniform sampler2D weights0 : filter_linear, repeat_disable;
 uniform sampler2D weights1 : filter_linear, repeat_disable;
 uniform sampler2D layer0 : source_color, filter_linear_mipmap_anisotropic, repeat_enable;
+uniform sampler2D normal0 : filter_linear_mipmap_anisotropic, repeat_enable;
 uniform sampler2D layer1 : source_color, filter_linear_mipmap_anisotropic, repeat_enable;
+uniform sampler2D normal1 : filter_linear_mipmap_anisotropic, repeat_enable;
 uniform sampler2D layer2 : source_color, filter_linear_mipmap_anisotropic, repeat_enable;
+uniform sampler2D normal2 : filter_linear_mipmap_anisotropic, repeat_enable;
 uniform sampler2D layer3 : source_color, filter_linear_mipmap_anisotropic, repeat_enable;
+uniform sampler2D normal3 : filter_linear_mipmap_anisotropic, repeat_enable;
 uniform sampler2D layer4 : source_color, filter_linear_mipmap_anisotropic, repeat_enable;
+uniform sampler2D normal4 : filter_linear_mipmap_anisotropic, repeat_enable;
 uniform sampler2D layer5 : source_color, filter_linear_mipmap_anisotropic, repeat_enable;
+uniform sampler2D normal5 : filter_linear_mipmap_anisotropic, repeat_enable;
 uniform sampler2D layer6 : source_color, filter_linear_mipmap_anisotropic, repeat_enable;
-uniform sampler2D tint : source_color, filter_linear, repeat_disable;
-uniform sampler2D detail_normal : hint_normal, filter_linear_mipmap_anisotropic, repeat_enable;
-void fragment(){ALBEDO=(texture(layer0,source_pos.xz*vec2(1.5,1.5)).rgb*texture(weights0,UV).r+texture(layer1,source_pos.xz*vec2(3.0,3.0)).rgb*texture(weights0,UV).g+texture(layer2,source_pos.xz*vec2(3.0,3.0)).rgb*texture(weights0,UV).b+texture(layer3,source_pos.xz*vec2(1.5,1.5)).rgb*texture(weights0,UV).a+texture(layer4,source_pos.xz*vec2(1.5,1.5)).rgb*texture(weights1,UV).r+texture(layer5,source_pos.xz*vec2(3.0,3.0)).rgb*texture(weights1,UV).g+texture(layer6,source_pos.xz*vec2(3.0,3.0)).rgb*texture(weights1,UV).b)*texture(tint,UV).rgb;ROUGHNESS=0.88;NORMAL_MAP=texture(detail_normal,source_pos.xz*vec2(3,3)).rgb;}
+uniform sampler2D normal6 : filter_linear_mipmap_anisotropic, repeat_enable;
+void fragment(){vec2 blend_uv=(UV*vec2(128.0,128.0)+vec2(0.5))/vec2(129.0,129.0);vec4 w0=texture(weights0,blend_uv);vec4 w1=texture(weights1,blend_uv);float b0=w0.r;float b1=w0.g;float b2=w0.b;float b3=w0.a;float b4=w1.r;float b5=w1.g;float b6=w1.b;float total=b0+b1+b2+b3+b4+b5+b6;vec4 surface0=texture(normal0,source_pos.xz*vec2(1.5,1.5));vec4 surface1=texture(normal1,source_pos.xz*vec2(3.0,3.0));vec4 surface2=texture(normal2,source_pos.xz*vec2(3.0,3.0));vec4 surface3=texture(normal3,source_pos.xz*vec2(1.5,1.5));vec4 surface4=texture(normal4,source_pos.xz*vec2(1.5,1.5));vec4 surface5=texture(normal5,source_pos.xz*vec2(3.0,3.0));vec4 surface6=texture(normal6,source_pos.xz*vec2(3.0,3.0));ALBEDO=(texture(layer0,source_pos.xz*vec2(1.5,1.5)).rgb*b0+texture(layer1,source_pos.xz*vec2(3.0,3.0)).rgb*b1+texture(layer2,source_pos.xz*vec2(3.0,3.0)).rgb*b2+texture(layer3,source_pos.xz*vec2(1.5,1.5)).rgb*b3+texture(layer4,source_pos.xz*vec2(1.5,1.5)).rgb*b4+texture(layer5,source_pos.xz*vec2(3.0,3.0)).rgb*b5+texture(layer6,source_pos.xz*vec2(3.0,3.0)).rgb*b6)/max(total,0.00001)*COLOR.rgb;ROUGHNESS=max(0.88,(surface0.a*b0+surface1.a*b1+surface2.a*b2+surface3.a*b3+surface4.a*b4+surface5.a*b5+surface6.a*b6)/max(total,0.00001));SPECULAR=0.12;NORMAL_MAP=normalize((surface0.rgb*2.0-1.0)*b0+(surface1.rgb*2.0-1.0)*b1+(surface2.rgb*2.0-1.0)*b2+(surface3.rgb*2.0-1.0)*b3+(surface4.rgb*2.0-1.0)*b4+(surface5.rgb*2.0-1.0)*b5+(surface6.rgb*2.0-1.0)*b6)*0.5+0.5;}
