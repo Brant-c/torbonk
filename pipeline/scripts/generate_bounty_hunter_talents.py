@@ -9,7 +9,7 @@ TREES={
 'powertech':[('advanced_prototype','Advanced Prototype',[
  ('prototype_blade_vents',AP+'prototype_blade_vents','Prototype Blade Vents','Retractable Blade and its bleed deal 30% more damage.',[E('damage','retractableblade',amount=.3)]),
  ('prototype_weapon_systems',AP+'prototype_weapon_systems','Prototype Weapon Systems','Thermal Detonator gains 25% instead of 15% per bleeding enemy in its blast, and its blast refreshes your Retractable Blade bleed on everything it hits.',[E('hook',key='pt_td_systems',amount=.25)]),
- ('explosive_dart','abl.bounty_hunter.explosive_dart','Explosive Dart','Your starting Flame Sweep becomes Explosive Dart, so Advanced Prototype opens on bleeds instead of burns. Applies when the run starts.',[E('hook',key='pt_dart_conversion')]),
+ ('retractable_blade',AP+'retractable_blade','Retractable Blade','Your starting Flame Sweep becomes Retractable Blade, so Advanced Prototype opens on bleeds instead of burns. Explosive Dart is offered early to spread them. Applies when the run starts.',[E('hook',key='pt_dart_conversion')]),
  ('puncture',AP+'puncture','Puncture','Rail Shot deals 40% more damage to enemies bleeding from your Retractable Blade.',[E('hook',key='pt_puncture',amount=.4)]),
  ('prototype_electro_surge',AP+'prototype_electro_surge','Prototype Electro Surge','Electro Dart stuns one more enemy, and its stun lasts 1 second longer.',[E('hook',key='pt_electro_surge')]),
  ('iron_fist',AP+'iron_fist','Iron Fist','Rocket Punch cleaves enemies around its target for 60% damage and applies your Retractable Blade bleed to every enemy it hits.',[E('hook',key='pt_iron_fist')]),

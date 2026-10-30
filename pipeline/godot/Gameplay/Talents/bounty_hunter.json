@@ -77,16 +77,16 @@
       "Source": "abl.bounty_hunter.skill.advanced_prototype.prototype_weapon_systems (April ablIconSpec 0xE00055277B47DD69; survivor adaptation)"
     },
     {
-      "Id": "advanced_prototype.explosive_dart",
+      "Id": "advanced_prototype.retractable_blade",
       "Classes": [
         "powertech"
       ],
       "Tree": "advanced_prototype",
       "Tier": 0,
       "Column": 2,
-      "Icon": "res://Assets/UI/icons/koltoinhibitordart.png",
-      "Name": "Explosive Dart",
-      "Description": "Your starting Flame Sweep becomes Explosive Dart, so Advanced Prototype opens on bleeds instead of burns. Applies when the run starts.",
+      "Icon": "res://Assets/UI/icons/retractableblade.png",
+      "Name": "Retractable Blade",
+      "Description": "Your starting Flame Sweep becomes Retractable Blade, so Advanced Prototype opens on bleeds instead of burns. Explosive Dart is offered early to spread them. Applies when the run starts.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 0,
@@ -98,7 +98,7 @@
           "Amount": 1
         }
       ],
-      "Source": "abl.bounty_hunter.explosive_dart (April ablIconSpec 0xE0002F5D28C78FB4; survivor adaptation)"
+      "Source": "abl.bounty_hunter.skill.advanced_prototype.retractable_blade (April ablIconSpec 0xE0006D3F933519D0; survivor adaptation)"
     },
     {
       "Id": "advanced_prototype.puncture",

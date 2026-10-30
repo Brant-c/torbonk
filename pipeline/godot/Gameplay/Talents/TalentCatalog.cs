@@ -104,6 +104,9 @@ public sealed class TalentCatalog
             }
             saved=migrated;
         }
+        // The Advanced Prototype starter conversion moved from Explosive Dart to Retractable Blade in the same tree slot.
+        if(classId=="powertech" && saved.TryGetValue("advanced_prototype.explosive_dart",out int converted) && !saved.ContainsKey("advanced_prototype.retractable_blade"))
+            saved=new Dictionary<string,int>(saved) {["advanced_prototype.retractable_blade"]=converted};
         foreach(var t in ForClass(classId).OrderBy(t=>t.Tier).ThenBy(t=>t.Id))
             for(int rank=0;rank<Math.Clamp(saved.GetValueOrDefault(t.Id),0,t.MaxRank);rank++)
             {if(Locked(classId,t,result)!=null)break;result[t.Id]=rank+1;}

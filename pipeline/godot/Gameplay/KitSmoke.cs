@@ -210,8 +210,10 @@ public partial class KitSmoke : Node
                 tdBefore=_fixtures.Select(f=>f.Health.Current).ToArray();w.Build.Pregame.Advance(1.05);
                 Check("Thermal Detonator gains 15% per bleeding enemy in its blast",Near(tdBefore[2]-_fixtures[2].Health.Current,tdPlain*1.3f,.15f));
                 var profileRanks=Talents.TalentProfiles.Load("powertech");
-                Talents.TalentProfiles.Save("powertech",new Dictionary<string,int>{["advanced_prototype.explosive_dart"]=1});
-                Check("Advanced Prototype talent turns the Flame Sweep starter into Explosive Dart",Talents.TalentRuntime.BountyStartingAbility(profile)=="explosivedart");
+                Talents.TalentProfiles.Save("powertech",new Dictionary<string,int>{["advanced_prototype.retractable_blade"]=1});
+                Check("Advanced Prototype talent turns the Flame Sweep starter into Retractable Blade",Talents.TalentRuntime.BountyStartingAbility(profile)=="retractableblade");
+                Check("a saved Explosive Dart conversion point migrates to Retractable Blade",Talents.TalentCatalog.Current.Validate("powertech",new Dictionary<string,int>{["advanced_prototype.explosive_dart"]=1}).ContainsKey("advanced_prototype.retractable_blade"));
+                Check("Explosive Dart is the first early unlock for a converted Advanced Prototype build",w.Abilities.Find("explosivedart") is {} early && Talents.TalentCatalog.Current.ForClass("powertech").Any(x=>x.Id=="advanced_prototype.retractable_blade" && x.Icon.EndsWith("retractableblade.png")));
                 Talents.TalentProfiles.Save("powertech",new Dictionary<string,int>());
                 Check("without the talent Powertech still starts with Flame Sweep",Talents.TalentRuntime.BountyStartingAbility(profile)=="flamesweep");
                 Talents.TalentProfiles.Save("powertech",profileRanks);

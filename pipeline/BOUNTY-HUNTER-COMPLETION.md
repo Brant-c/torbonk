@@ -49,7 +49,7 @@ then Blender `scripts/convert_powertech_animations.py -- --bountyhunter`, then a
 - Explosive Dart and Thermal Detonator stick on their target, then detonate (2 s / 1 s fuse, or on death). Death From Above: Imperial area
   projector, stand-still start, immune/rooted/lifted channel, authored length.
 - Burns and Heat Signature render as triplanar coatings on the NPC's own meshes (`BountyStatusOverlay`); Bounty Hunter burns transfer on death.
-- Advanced Prototype: Explosive Dart talent converts the Flame Sweep starter; Prototype Cylinders makes the dart bleed-only (+40% damage, +30% radius);
+- Advanced Prototype: Retractable Blade talent converts the Flame Sweep starter (Explosive Dart is offered early); Prototype Cylinders makes the dart bleed-only (+40% damage, +30% radius);
   Prototype Weapon Systems tunes Thermal Detonator.
 - Thermal Detonator has no April player ability (2.0 content). It uses the April Bounty Hunter boss Sorno's ability icon (`thermaldetonator`)
   and `epp.npc.ability.tech.thermal_detonator`: `cb_unarmed_grenade_1` (D3/UnarmedGrenade), smuggler detonator FX and Republic-bank audio.
