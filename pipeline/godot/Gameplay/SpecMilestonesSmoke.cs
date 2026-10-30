@@ -47,7 +47,7 @@ public partial class SpecMilestonesSmoke : Node
             {
                 Check("Force Lightning is the sole starting attack",w.Combat.Definition.Id=="lightning" && w.Combat.Unlocked && w.Abilities.Abilities.Count(a=>a.Unlocked)==1);
                 Check("Sorcerer has no basic saber attack",!w.Abilities.Abilities.Any(a=>a.Definition.IsBasicAttack));
-                Check("channel upgrades support the starting channel",p.IsEligible(p.Upgrades.Single(u=>u.Id=="tick")));
+                Check("flat channel card is gone; tick cards are per DoT and gated by ownership",!p.Upgrades.Any(u=>u.Id is "tick" or "range" or "cooldown") && !p.IsEligible(p.Upgrades.Single(u=>u.Id=="sorcerer_tick_crushingdarkness")));
                 AdvanceTo(5);Check("level five Shock or Affliction",p.Offers.Select(u=>u.AbilityId).SequenceEqual(new[]{"shock","affliction"}));
                 Check("first choice unlocks Shock or Affliction",p.Offers.All(u=>u.Effect==UpgradeEffect.UnlockAbility) && !w.Abilities.Find("shock")!.Unlocked);
                 await Capture("5");float before=w.Combat.DamagePerTick;Pick("madness");p._Process(1);

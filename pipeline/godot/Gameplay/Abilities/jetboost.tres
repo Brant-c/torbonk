@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "jetboost"
+StartsUnlocked = false
+NearbyTriggerCount = 2
+KnockbackDistance = 0.25
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+Title = "Jet Boost"
+Icon = "jetboost"
+Category = 1
+Damage = 5
+CooldownSeconds = 15
+Range = 0.3
+Radius = 0.3
+Area = 3
+StaggerSeconds = 0.6
+WindupSeconds = 0.1
+ChannelSeconds = 0
+RecoverySeconds = 0.4
+GestureSeconds = 1.0
+StartClip = "BH/JetBoost"
+LoopClip = "BH/JetBoost"
+EndClip = ""
+PresentationKind = "bhjetboost"
+CastAudio = "res://Assets/BountyHunter/Audio/37831727.wav"
+ImpactAudio = "res://Assets/BountyHunter/Audio/112640866.wav"
+ImpactTexture = "res://Assets/BountyHunter/fx_smoke_10_alpha.png"
+EffectTint = Color(1, 0.7, 0.4, 1)
+Description = "Rocket blast around you: knocks nearby enemies back and roots them for 2 seconds."

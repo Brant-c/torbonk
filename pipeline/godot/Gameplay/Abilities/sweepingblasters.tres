@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "sweepingblasters"
+StartsUnlocked = false
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+Title = "Sweeping Blasters"
+Icon = "sweepinggunfire"
+Damage = 6
+CooldownSeconds = 8
+Range = 0.55
+Radius = 0.55
+Area = 5
+WindupSeconds = 0.2
+ChannelSeconds = 1.8
+TickSeconds = 0.3
+RecoverySeconds = 0.3
+GestureSeconds = 2.0
+MaintainChannelGesture = true
+StartClip = "BH/SweepLoop"
+LoopClip = "BH/SweepLoop"
+EndClip = ""
+PresentationKind = "bhsweep"
+MuzzleBone = "RightWeapon"
+ShotAudio = "res://Assets/D3/Audio/226704088.wav"
+EffectTint = Color(1, 0.35, 0.1, 1)
+Description = "Sweep both blasters across a frontal arc: six volleys hitting every enemy in front of you."

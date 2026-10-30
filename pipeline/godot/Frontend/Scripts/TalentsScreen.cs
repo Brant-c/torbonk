@@ -67,7 +67,7 @@ public partial class TalentsScreen : Control
         foreach(var cls in classes)selector.AddItem(cls.Name+(Catalog.ForClass(cls.Id).Length==0?" — Unavailable":""));
         selector.Select(Array.FindIndex(classes,c=>c.Id==ClassId));
         selector.ItemSelected+=i=>SelectClass(classes[(int)i].Id);Put(selector,370,-48,310,46);
-        string allocation=(ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper")
+        string allocation=(ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper" or "powertech" or "mercenary")
             ?$"{Catalog.Spent(_ranks)} / {Catalog.BudgetFor(ClassId)} shared points · {Catalog.BudgetFor(ClassId)-Catalog.Spent(_ranks)} available"
             :$"{Catalog.BudgetFor(ClassId)-Catalog.Spent(_ranks)} Points Available    {Catalog.Spent(_ranks)} Allocated";
         Put(FrontendSkin.Label(allocation,23),745,-48,650,45);
@@ -88,14 +88,14 @@ public partial class TalentsScreen : Control
                 Art("bwaui_skilltree_42",7,0,452,94,column);
                 var heading=FrontendSkin.Heading(tree.Name,28);heading.HorizontalAlignment=HorizontalAlignment.Center;Put(heading,50,11,366,46,column);
                 int capacity=Catalog.ForClass(ClassId).Where(t=>t.Tree==tree.Id && t.Available).Sum(t=>t.Cost*t.MaxRank);
-                string treePoints=(ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper")?$"{Catalog.TreeSpent(tree.Id,_ranks)} / {capacity} points":Catalog.TreeSpent(tree.Id,_ranks)+" Points";
+                string treePoints=(ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper" or "powertech" or "mercenary")?$"{Catalog.TreeSpent(tree.Id,_ranks)} / {capacity} points":Catalog.TreeSpent(tree.Id,_ranks)+" Points";
                 var points=FrontendSkin.Label(treePoints,17);points.HorizontalAlignment=HorizontalAlignment.Center;Put(points,50,56,366,25,column);
                 var scroll=new ScrollContainer {HorizontalScrollMode=ScrollContainer.ScrollMode.Disabled};
                 Put(scroll,18,100,430,442,column);
                 var body=new Control {CustomMinimumSize=new(410,440)};scroll.AddChild(body);
                 scroll.ScrollVertical=_scrolls.GetValueOrDefault(tree.Id);
                 scroll.GetVScrollBar().ValueChanged+=value=>_scrolls[tree.Id]=(int)value;
-                Vector2 Position(TalentDefinition t)=>new((ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper")?33+t.Column*137:74+t.Column*212,(ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper")?22+t.Tier*145:12+t.Tier*103);
+                Vector2 Position(TalentDefinition t)=>new((ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper" or "powertech" or "mercenary")?33+t.Column*137:74+t.Column*212,(ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper" or "powertech" or "mercenary")?22+t.Tier*145:12+t.Tier*103);
                 foreach(var t in Catalog.ForClass(ClassId).Where(t=>t.Tree==tree.Id))
                     foreach(var prerequisite in t.Prerequisites)
                     {
@@ -123,8 +123,8 @@ public partial class TalentsScreen : Control
                     Art(rank==t.MaxRank?"bwaui_skilltree_16":"bwaui_skilltree_13",8,48,46,27,button);
                     var counter=FrontendSkin.Label($"{rank}/{t.MaxRank}",17);counter.HorizontalAlignment=HorizontalAlignment.Center;
                     counter.AddThemeColorOverride("font_color",rank>0?new Color(.65f,1,.72f):Colors.White);Put(counter,6,49,50,25,button);
-                    var name=FrontendSkin.Label(t.Name,(ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper")?15:16,true);name.HorizontalAlignment=HorizontalAlignment.Center;
-                    if((ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper"))Put(name,pos.X-32,pos.Y+76,126,42,body);
+                    var name=FrontendSkin.Label(t.Name,(ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper" or "powertech" or "mercenary")?15:16,true);name.HorizontalAlignment=HorizontalAlignment.Center;
+                    if((ClassId is "marauder" or "juggernaut" or "assassin" or "sorcerer" or "operative" or "sniper" or "powertech" or "mercenary"))Put(name,pos.X-32,pos.Y+76,126,42,body);
                     else Put(name,pos.X-56,pos.Y+76,174,34,body);
                     button.Pressed+=()=>{if(Invest(t.Id))FindChild(t.Id.Replace('.','_'),true,false)?.CallDeferred(Control.MethodName.GrabFocus);};
                     button.GuiInput+=input=>{if(input is InputEventMouseButton {Pressed:true,ButtonIndex:MouseButton.Right})Refund(t.Id);};

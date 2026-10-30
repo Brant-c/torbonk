@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "immolate"
+StartsUnlocked = false
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+Title = "Immolate"
+Icon = "flamethrower"
+Damage = 22
+CooldownSeconds = 8
+Range = 0.5
+Radius = 0
+Area = 0
+PeriodicDamage = 4
+PeriodicDuration = 6
+PeriodicInterval = 1
+WindupSeconds = 0.33
+ChannelSeconds = 0
+RecoverySeconds = 0.6
+GestureSeconds = 1.3
+StartClip = "BH/ImmolateStart"
+LoopClip = "BH/ImmolateLoop"
+EndClip = "BH/ImmolateEnd"
+PresentationKind = "bhimmolate"
+MuzzleBone = "LeftWrist"
+CastAudio = "res://Assets/BountyHunter/Audio/135994990.wav"
+ImpactAudio = "res://Assets/BountyHunter/Audio/106899704.wav"
+ImpactTexture = "res://Assets/BountyHunter/4x4_flame_lick_02_bw.png"
+EffectTint = Color(1, 0.5, 0.15, 1)
+Description = "Bracer fuel ignition: heavy fire damage plus its own 6-second burn. Deals 50% more damage to enemies already burning from you; Flame Sweep spreads its burn."

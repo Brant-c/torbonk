@@ -45,4 +45,26 @@ public sealed partial class TalentRuntime
         string tree=u.Spec!=""?u.Spec:TalentCatalog.Current.ForClass("juggernaut").FirstOrDefault(t=>t.Effects.Any(e=>e.Key==u.Mechanic))?.Tree??"";
         return 1+.25f*TalentCatalog.Current.ForClass("juggernaut").Where(t=>t.Tree==tree).Sum(t=>Ranks.GetValueOrDefault(t.Id));
     }
+
+    // Scoped repeatable power cards, Assassin scale: damage may climb, recovery and area stay modest.
+    public IEnumerable<UpgradeDefinition> JuggernautRunPowers()
+    {
+        foreach(var (id,title,damage,radius,recovery) in new (string,string,float,float,float)[] {
+            ("smash","Seismic Slam",.8f,.12f,.08f),
+            ("forcescream","Piercing Scream",.8f,.1f,.08f),
+            ("ravage","Savage Onslaught",.9f,0,.1f),
+            ("forcechoke","Crushing Grasp",.7f,0,.08f),
+            ("forcecrush","Gravity Well",.7f,.12f,.08f),
+            ("impale","Rending Thrust",.9f,0,.1f),
+            ("crushingblow","Shattering Blow",.9f,.08f,.1f),
+            ("intimidatingroar","Thundering Roar",.6f,.12f,.08f)}) {
+            var a=_world.Abilities.Find(id);if(a==null)continue;
+            string description=$"{a.Definition.Title}: +{damage:P0} base damage per rank"+(a.Definition.PeriodicDamage>0?" (including its periodic damage)":"");
+            if(radius>0)description+=$", +{radius:P0} base radius";
+            if(recovery>0)description+=$", +{recovery:P0} cooldown recovery";
+            yield return new UpgradeDefinition {Id="juggernaut_power_"+id,Title=title,Icon=a.Definition.Icon,
+                AbilityId=id,Effect=UpgradeEffect.AbilityPower,DamagePerRank=damage,RadiusPerRank=radius,
+                CooldownPerRank=recovery,MechanicalDescription=description+". Bonuses add from base and scale with the card's rolled rarity; no rank cap."};
+        }
+    }
 }

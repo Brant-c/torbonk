@@ -57,7 +57,9 @@ public partial class PeriodicEffects : Node
         if(d.Id=="crushingdarkness")effect.Visual=PresentationStatusVisual.AttachDarkness(target,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
         if(d.Id=="creepingterror")effect.Visual=PresentationStatusVisual.AttachTerror(target,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
         if(d.Id is "dart" or "corrosivegrenade" or "interrogationprobe" or "plasmaprobe")effect.Visual=AgentStatusVisual.Attach(target,d.Id,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
-        if(d.Id=="incendiarymissile")effect.Visual=PowertechStatusVisual.Attach(target,"4x4_flame_lick_02_bw",16,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
+        // NPC burns coat the enemy's own meshes; mesh-less fixtures keep the original flame sprite.
+        if(d.Id is "incendiarymissile" or "immolate" or "fusionmissile" && target is EnemyAgent burning && source.Build?.Pregame is {} runtime)BountyStatusOverlay.Ensure(burning,runtime);
+        else if(d.Id=="incendiarymissile")effect.Visual=PowertechStatusVisual.Attach(target,"4x4_flame_lick_02_bw",16,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
     }
     public double Remaining(AutomaticAbility source,Combatant target)=>_effects.GetValueOrDefault((source.Caster.GetInstanceId(),source.Definition.Id,target.GetInstanceId()))?.Remaining??0;
     // Consume exactly this caster's effect before publishing damage, so death or
@@ -75,17 +77,18 @@ public partial class PeriodicEffects : Node
         applied=target.Health.ApplyDamage(amount,source.Definition.DamageType,false,abilityId);
         return true;
     }
-    public void TransferOwned(Combatant caster,Combatant dead)
+    /// <param name="only">Optional source filter (Bounty Hunter burns); <paramref name="minimumRemaining"/> keeps late transfers alive long enough to spread again.</param>
+    public void TransferOwned(Combatant caster,Combatant dead,Func<AutomaticAbility,bool>? only=null,double minimumRemaining=0,float? reach=null)
     {
-        foreach(var e in _effects.Values.Where(e=>e.Target==dead && e.Source.Caster==caster && e.Remaining>0 && (e.Source.Unlocked || e.RelicApplied)).ToArray())
+        foreach(var e in _effects.Values.Where(e=>e.Target==dead && e.Source.Caster==caster && e.Remaining>0 && (e.Source.Unlocked || e.RelicApplied) && (only==null || only(e.Source))).ToArray())
         {
             var skip=_effects.Values.Where(x=>x.Source.Caster==caster && x.Source.Definition.Id==e.Source.Definition.Id).Select(x=>x.Target.GetInstanceId()).ToHashSet();
             skip.Add(dead.GetInstanceId());
-            var next=e.Source.Targeting.ChainTarget(dead.AimPosition,e.Source.Build?.Talent("last_gasp")>0?.45f:.3f,skip);
+            var next=e.Source.Targeting.ChainTarget(dead.AimPosition,reach??(e.Source.Build?.Talent("last_gasp")>0?.45f:.3f),skip);
             if(next==null)continue;
             Apply(e.Source,next);
             var transferred=_effects[(caster.GetInstanceId(),e.Source.Definition.Id,next.GetInstanceId())];
-            transferred.Remaining=e.Remaining;transferred.Next=e.Next;transferred.Interval=e.Interval;
+            transferred.Remaining=Math.Max(e.Remaining,minimumRemaining);transferred.Next=e.Next;transferred.Interval=e.Interval;
             transferred.Damage=e.Damage;transferred.Dose=e.Dose;transferred.Ticks=e.Ticks;transferred.RelicApplied=e.RelicApplied;transferred.AcceleratedUntil=e.AcceleratedUntil;transferred.TickRate=e.TickRate;
         }
     }

@@ -202,6 +202,7 @@ public partial class D3AbilityPresentation
  {
   if(!GodotObject.IsInstanceValid(target))return;
   if(AssassinTargetImpact(target))return;
+  if(BountyTargetImpact(target))return;
   if(!WarriorVisual)return;
   WarriorTargetImpacts++;_warriorTargets.Add(target.GetInstanceId());
   string id=Definition.Id;var at=target.AimPosition;

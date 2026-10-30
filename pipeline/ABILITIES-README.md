@@ -57,7 +57,7 @@ is not implemented. The existing integer-index `ChannelClock` supplies ticks.
 start/channel/end. Ready abilities take turns in round-robin order, beginning
 with Lightning. A newly ready ability waits rather than restarting an existing
 cast. Cooldown clocks advance independently during other casts; each recovery
-cooldown begins after its own cast ends. A shared 1.5 s global cooldown begins
+cooldown begins after its own cast ends. A shared 1.0 s global cooldown (0.6 s Marauder; divided by the cooldown-reduction rate, floor 0.45 s) begins
 at each trigger and is visible as a radial sweep on every populated slot.
 The bar also shows independent cooldown seconds, CAST and upgrade rank/color.
 Hover a slot for current damage, cadence, range, radius, cooldown and upgrades.

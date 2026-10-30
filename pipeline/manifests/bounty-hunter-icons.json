@@ -1,0 +1,686 @@
+[
+  {
+    "owner": "retractableblade",
+    "node": "abl.bounty_hunter.skill.advanced_prototype.retractable_blade",
+    "icon": "retractableblade",
+    "path": "/resources/gfx/icons/retractableblade.dds",
+    "output": "godot\\Assets\\UI\\icons\\retractableblade.png",
+    "sha256": "021ca92f81b88f85f3e64f442d2a992c195eda438b203e653e97ef424ae5de9f",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "railshot",
+    "node": "abl.bounty_hunter.rail_shot",
+    "icon": "railshot",
+    "path": "/resources/gfx/icons/railshot.dds",
+    "output": "godot\\Assets\\UI\\icons\\railshot.png",
+    "sha256": "97b9ff12b455db05d07341872017bda57fe088fc421fb2e049de023ed54ce57d",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "explosivedart",
+    "node": "abl.bounty_hunter.explosive_dart",
+    "icon": "koltoinhibitordart",
+    "path": "/resources/gfx/icons/koltoinhibitordart.dds",
+    "output": "godot\\Assets\\UI\\icons\\koltoinhibitordart.png",
+    "sha256": "026ff15a38950e07b364f212bbbcfb14d4b740a8049f7529cde8e1da5a190790",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "electrodart",
+    "node": "abl.bounty_hunter.electro_dart",
+    "icon": "taserjolt",
+    "path": "/resources/gfx/icons/taserjolt.dds",
+    "output": "godot\\Assets\\UI\\icons\\taserjolt.png",
+    "sha256": "294c094c5e89089e7456ba5128207b1d9fe4c414252bb848235e7c3aa7ebeaf7",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "immolate",
+    "node": "abl.bounty_hunter.skill.advanced_prototype.immolate",
+    "icon": "flamethrower",
+    "path": "/resources/gfx/icons/flamethrower.dds",
+    "output": "godot\\Assets\\UI\\icons\\flamethrower.png",
+    "sha256": "11823075801274124ad8b5050a0f962a82113c0ccde5c51d917897e41280380d",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "jetcharge",
+    "node": "abl.bounty_hunter.skill.shield_tech.jet_charge",
+    "icon": "jetcharge",
+    "path": "/resources/gfx/icons/jetcharge.dds",
+    "output": "godot\\Assets\\UI\\icons\\jetcharge.png",
+    "sha256": "c41cefef2efaab76421b69d390b2e245237fdb27f38be726322d06166faaf98d",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "deathfromabove",
+    "node": "abl.bounty_hunter.death_from_above",
+    "icon": "deathfromabove",
+    "path": "/resources/gfx/icons/deathfromabove.dds",
+    "output": "godot\\Assets\\UI\\icons\\deathfromabove.png",
+    "sha256": "e413721d2d69cf333c68c768576489e10526046cbbbdc9f0589e2b7f552058c4",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "sweepingblasters",
+    "node": "abl.bounty_hunter.sweeping_blasters",
+    "icon": "sweepinggunfire",
+    "path": "/resources/gfx/icons/sweepinggunfire.dds",
+    "output": "godot\\Assets\\UI\\icons\\sweepinggunfire.png",
+    "sha256": "bdb8d4b84ec1c5db64e3cc2d58b0fd1312922ff8ee60bec9e9495321712950ab",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "fusionmissile",
+    "node": "abl.bounty_hunter.fusion_missile",
+    "icon": "tacticalnuke",
+    "path": "/resources/gfx/icons/tacticalnuke.dds",
+    "output": "godot\\Assets\\UI\\icons\\tacticalnuke.png",
+    "sha256": "9acc994442d90480bd8848137564f6fff2f7c2bf20989496464425175d71d736",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "powershot",
+    "node": "abl.bounty_hunter.power_shot",
+    "icon": "hammershot",
+    "path": "/resources/gfx/icons/hammershot.dds",
+    "output": "godot\\Assets\\UI\\icons\\hammershot.png",
+    "sha256": "42c88db5dc89c52989ef6cfee1983b96ea581c89844ae9a29dc2f9cabb884cb2",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "thermalsensoroverride",
+    "node": "abl.bounty_hunter.thermal_sensor_override",
+    "icon": "electronics",
+    "path": "/resources/gfx/icons/electronics.dds",
+    "output": "godot\\Assets\\UI\\icons\\electronics.png",
+    "sha256": "626c263e0fad64da191e7d729cfa429a460d16bc33c96112f85367ab510113ad",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "koltomissile",
+    "node": "abl.bounty_hunter.skill.bodyguard.kolto_missile",
+    "icon": "sonicmissle",
+    "path": "/resources/gfx/icons/sonicmissle.dds",
+    "output": "godot\\Assets\\UI\\icons\\sonicmissle.png",
+    "sha256": "f23068376ebaab288f76de4e3a8fa9b5c9627ab2c7cd1203a31cad7902c42cbf",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "koltoshell",
+    "node": "abl.bounty_hunter.skill.bodyguard.kolto_shell",
+    "icon": "mediumarmors",
+    "path": "/resources/gfx/icons/mediumarmors.dds",
+    "output": "godot\\Assets\\UI\\icons\\mediumarmors.png",
+    "sha256": "4f43cfbfc02b005090acaf3494f0271f708f269f9c059128706072b4d1f6f219",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "concussionmissile",
+    "node": "abl.bounty_hunter.concussion_missile",
+    "icon": "concussionmissiles",
+    "path": "/resources/gfx/icons/concussionmissiles.dds",
+    "output": "godot\\Assets\\UI\\icons\\concussionmissiles.png",
+    "sha256": "c4df6d72cb4dfc11f098287118b4c225f3cad3386f26582f4a2e7714a75c2cdf",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "jetboost",
+    "node": "abl.bounty_hunter.jet_boost",
+    "icon": "jetboost",
+    "path": "/resources/gfx/icons/jetboost.dds",
+    "output": "godot\\Assets\\UI\\icons\\jetboost.png",
+    "sha256": "4d4ca9a497f16822e0148c2c7010e81518e26914ddf3a7ac1d27a3cb1a6d0e58",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "missileblast",
+    "node": "abl.bounty_hunter.missile_blast",
+    "icon": "missileblast",
+    "path": "/resources/gfx/icons/missileblast.dds",
+    "output": "godot\\Assets\\UI\\icons\\missileblast.png",
+    "sha256": "b7753e843b1453e706fb49a7cd665be66b402f64c2fdafcd3082c290bfd41df3",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "thermaldetonator",
+    "node": "abl.qtr.1x1.raid.karaggas_palace.enemy.boss.boss_2_bh.sorno.difficulty_1.thermal_detonator",
+    "icon": "thermaldetonator",
+    "path": "/resources/gfx/icons/thermaldetonator.dds",
+    "output": "godot\\Assets\\UI\\icons\\thermaldetonator.png",
+    "sha256": "d80ccd8be1f08467431e7813482c8020852b77c362797f248987efcb359992c8",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "basicrapid",
+    "node": "abl.bounty_hunter.rapid_shots",
+    "icon": "rapidshots",
+    "path": "/resources/gfx/icons/rapidshots.dds",
+    "output": "godot\\Assets\\UI\\icons\\rapidshots.png",
+    "sha256": "289239a0eb5b503181f9ca3cb312f064db65c17b184532c3f2d358bd7300528e",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "combustiblegas",
+    "node": "abl.bounty_hunter.combustible_gas_cylinder",
+    "icon": "plasmaclip",
+    "path": "/resources/gfx/icons/plasmaclip.dds",
+    "output": "godot\\Assets\\UI\\icons\\plasmaclip.png",
+    "sha256": "0adafbf88be0749dda1829b72780c7e1e6d9d06e6f4986bba884b60871d5ec83",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "powertech_plating",
+    "node": "abl.bounty_hunter.skill.advanced_prototype.power_armor",
+    "icon": "heavyarmors",
+    "path": "/resources/gfx/icons/heavyarmors.dds",
+    "output": "godot\\Assets\\UI\\icons\\heavyarmors.png",
+    "sha256": "3f53649a5d66a044178b0562893cc925e5dd41cb36cddf302c886375097433ad",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "mercenary_plating",
+    "node": "abl.bounty_hunter.skill.bodyguard.reactive_armor",
+    "icon": "armortech",
+    "path": "/resources/gfx/icons/armortech.dds",
+    "output": "godot\\Assets\\UI\\icons\\armortech.png",
+    "sha256": "11aedfbb8cccc325294a55c696b1f067d18830800ede2eabdaf7a3866a1422d0",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "bh_thrusters",
+    "node": "abl.bounty_hunter.skill.shield_tech.jet_speed",
+    "icon": "jetboost",
+    "path": "/resources/gfx/icons/jetboost.dds",
+    "output": "godot\\Assets\\UI\\icons\\jetboost.png",
+    "sha256": "4d4ca9a497f16822e0148c2c7010e81518e26914ddf3a7ac1d27a3cb1a6d0e58",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "advanced_prototype.prototype_blade_vents",
+    "node": "abl.bounty_hunter.skill.advanced_prototype.prototype_blade_vents",
+    "icon": "criticalblade",
+    "path": "/resources/gfx/icons/criticalblade.dds",
+    "output": "godot\\Assets\\UI\\icons\\criticalblade.png",
+    "sha256": "49b5d7b6be1beda79b4e76368d3e38ba805bd3621eddb83dd8fa1493704bfd8b",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "advanced_prototype.charged_gauntlets",
+    "node": "abl.bounty_hunter.skill.advanced_prototype.charged_gauntlets",
+    "icon": "linetheshot",
+    "path": "/resources/gfx/icons/linetheshot.dds",
+    "output": "godot\\Assets\\UI\\icons\\linetheshot.png",
+    "sha256": "00d1e54b6ac813397cc0a95e2ad5610cf833dd77da529a4f9048a67a15c9fc03",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "advanced_prototype.explosive_dart",
+    "node": "abl.bounty_hunter.explosive_dart",
+    "icon": "koltoinhibitordart",
+    "path": "/resources/gfx/icons/koltoinhibitordart.dds",
+    "output": "godot\\Assets\\UI\\icons\\koltoinhibitordart.png",
+    "sha256": "026ff15a38950e07b364f212bbbcfb14d4b740a8049f7529cde8e1da5a190790",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "advanced_prototype.puncture",
+    "node": "abl.bounty_hunter.skill.advanced_prototype.puncture",
+    "icon": "bloomingshot",
+    "path": "/resources/gfx/icons/bloomingshot.dds",
+    "output": "godot\\Assets\\UI\\icons\\bloomingshot.png",
+    "sha256": "9e31ca1cbfa241149f7be250294f26e407d198034fd82720dc9e457198a1edb5",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "advanced_prototype.prototype_electro_surge",
+    "node": "abl.bounty_hunter.skill.advanced_prototype.prototype_electro_surge",
+    "icon": "taserjolt",
+    "path": "/resources/gfx/icons/taserjolt.dds",
+    "output": "godot\\Assets\\UI\\icons\\taserjolt.png",
+    "sha256": "294c094c5e89089e7456ba5128207b1d9fe4c414252bb848235e7c3aa7ebeaf7",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "advanced_prototype.iron_fist",
+    "node": "abl.bounty_hunter.skill.advanced_prototype.iron_fist",
+    "icon": "flameburst",
+    "path": "/resources/gfx/icons/flameburst.dds",
+    "output": "godot\\Assets\\UI\\icons\\flameburst.png",
+    "sha256": "9c74115449b59c0a364d69c7a612e106b37432445e9b45d624f0386f067b90f8",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "advanced_prototype.prototype_cylinders",
+    "node": "abl.bounty_hunter.skill.advanced_prototype.prototype_cylinders",
+    "icon": "blasterpowerpackc",
+    "path": "/resources/gfx/icons/blasterpowerpackc.dds",
+    "output": "godot\\Assets\\UI\\icons\\blasterpowerpackc.png",
+    "sha256": "6a79d60d612446216022ba217011de762cd2908f633e782543e8680289f9b7b3",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "advanced_prototype.flame_barrage",
+    "node": "abl.bounty_hunter.skill.advanced_prototype.flame_barrage",
+    "icon": "suckerpunch",
+    "path": "/resources/gfx/icons/suckerpunch.dds",
+    "output": "godot\\Assets\\UI\\icons\\suckerpunch.png",
+    "sha256": "24b927df949d514724c822ca789dd7b738c8c5e672a1938992d7c842d70bfc05",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "advanced_prototype.advanced_tools",
+    "node": "abl.bounty_hunter.skill.advanced_prototype.advanced_tools",
+    "icon": "toolbox",
+    "path": "/resources/gfx/icons/toolbox.dds",
+    "output": "godot\\Assets\\UI\\icons\\toolbox.png",
+    "sha256": "b6fdf755e34201d4861782913293db82bd140cb057f4de755add4a3a6e664b85",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "pyrotech.combustion",
+    "node": "abl.bounty_hunter.skill.firebug.combustion",
+    "icon": "plasmaclip",
+    "path": "/resources/gfx/icons/plasmaclip.dds",
+    "output": "godot\\Assets\\UI\\icons\\plasmaclip.png",
+    "sha256": "0adafbf88be0749dda1829b72780c7e1e6d9d06e6f4986bba884b60871d5ec83",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "pyrotech.bursting_flame",
+    "node": "abl.bounty_hunter.skill.firebug.bursting_flame",
+    "icon": "burned",
+    "path": "/resources/gfx/icons/burned.dds",
+    "output": "godot\\Assets\\UI\\icons\\burned.png",
+    "sha256": "247bb4ef2c82f14b738fb01ac84750253fd29bf17a9ed03796b43fbdefaec516",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "pyrotech.sweltering_heat",
+    "node": "abl.bounty_hunter.skill.firebug.sweltering_heat",
+    "icon": "creepingterror",
+    "path": "/resources/gfx/icons/creepingterror.dds",
+    "output": "godot\\Assets\\UI\\icons\\creepingterror.png",
+    "sha256": "3ed1fe83a9cc101484e47906fa9dea281fae81867410a372f1642ee3203492ae",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "pyrotech.fanned_flames",
+    "node": "abl.bounty_hunter.skill.firebug.fanned_flames",
+    "icon": "forcecrush",
+    "path": "/resources/gfx/icons/forcecrush.dds",
+    "output": "godot\\Assets\\UI\\icons\\forcecrush.png",
+    "sha256": "5397f7c61c8418efb8ab7842c218cd658308820e5ff146f249f4887b608831e7",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "pyrotech.superheated_rail",
+    "node": "abl.bounty_hunter.skill.firebug.superheated_rail",
+    "icon": "agonizingsaber",
+    "path": "/resources/gfx/icons/agonizingsaber.dds",
+    "output": "godot\\Assets\\UI\\icons\\agonizingsaber.png",
+    "sha256": "29c94cf919b9213ff5190567232503dc5e1b20a55096c63fd379dd4e48a77045",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "pyrotech.rain_of_fire",
+    "node": "abl.bounty_hunter.skill.firebug.rain_of_fire_powertech",
+    "icon": "deathfromabove",
+    "path": "/resources/gfx/icons/deathfromabove.dds",
+    "output": "godot\\Assets\\UI\\icons\\deathfromabove.png",
+    "sha256": "e413721d2d69cf333c68c768576489e10526046cbbbdc9f0589e2b7f552058c4",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "pyrotech.prototype_particle_accelerator",
+    "node": "abl.bounty_hunter.skill.firebug.prototype_particle_accelerator_powertech",
+    "icon": "terminate",
+    "path": "/resources/gfx/icons/terminate.dds",
+    "output": "godot\\Assets\\UI\\icons\\terminate.png",
+    "sha256": "bac7dc84671d738b3c83358483f2752cf6375e686e858406748f54ab1bf24637",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "pyrotech.infrared_detection",
+    "node": "abl.bounty_hunter.skill.firebug.infrared_detection",
+    "icon": "bloodthirst",
+    "path": "/resources/gfx/icons/bloodthirst.dds",
+    "output": "godot\\Assets\\UI\\icons\\bloodthirst.png",
+    "sha256": "ddbb23bff294732b6e0fd477e13e5d56ce7fe4875071ccc5dfc09ccb364f5885",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "pyrotech.incendiary_payload",
+    "node": "abl.bounty_hunter.skill.firebug.explosive_dart",
+    "icon": "thermaldetonator",
+    "path": "/resources/gfx/icons/thermaldetonator.dds",
+    "output": "godot\\Assets\\UI\\icons\\thermaldetonator.png",
+    "sha256": "d80ccd8be1f08467431e7813482c8020852b77c362797f248987efcb359992c8",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "shield_tech.ion_overload",
+    "node": "abl.bounty_hunter.skill.shield_tech.ion_overload",
+    "icon": "ionclip",
+    "path": "/resources/gfx/icons/ionclip.dds",
+    "output": "godot\\Assets\\UI\\icons\\ionclip.png",
+    "sha256": "273c915cc43c816d1d6c9adc731de0bba3c76dc25f436cf1d23b170cd2e9d08c",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "shield_tech.supercooled_carbonite",
+    "node": "abl.bounty_hunter.skill.shield_tech.supercooled_carbonite",
+    "icon": "carbonitegrenade",
+    "path": "/resources/gfx/icons/carbonitegrenade.dds",
+    "output": "godot\\Assets\\UI\\icons\\carbonitegrenade.png",
+    "sha256": "f2a20bb6c601374db3d8e0ce18abaf91c7234cab6a50c165b575b1ff8e74eb37",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "shield_tech.jet_speed",
+    "node": "abl.bounty_hunter.skill.shield_tech.jet_speed",
+    "icon": "jetboost",
+    "path": "/resources/gfx/icons/jetboost.dds",
+    "output": "godot\\Assets\\UI\\icons\\jetboost.png",
+    "sha256": "4d4ca9a497f16822e0148c2c7010e81518e26914ddf3a7ac1d27a3cb1a6d0e58",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "shield_tech.flame_shield",
+    "node": "abl.bounty_hunter.skill.shield_tech.flame_shield",
+    "icon": "armormelt",
+    "path": "/resources/gfx/icons/armormelt.dds",
+    "output": "godot\\Assets\\UI\\icons\\armormelt.png",
+    "sha256": "9650695d9f7dd005d882e2c6d307129cef973e4e4c4072383645b5ad6725ef3d",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "shield_tech.jet_charge",
+    "node": "abl.bounty_hunter.skill.shield_tech.jet_charge",
+    "icon": "jetcharge",
+    "path": "/resources/gfx/icons/jetcharge.dds",
+    "output": "godot\\Assets\\UI\\icons\\jetcharge.png",
+    "sha256": "c41cefef2efaab76421b69d390b2e245237fdb27f38be726322d06166faaf98d",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "shield_tech.rail_loaders",
+    "node": "abl.bounty_hunter.skill.shield_tech.rail_loaders",
+    "icon": "railshot",
+    "path": "/resources/gfx/icons/railshot.dds",
+    "output": "godot\\Assets\\UI\\icons\\railshot.png",
+    "sha256": "97b9ff12b455db05d07341872017bda57fe088fc421fb2e049de023ed54ce57d",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "shield_tech.heat_screen",
+    "node": "abl.bounty_hunter.skill.shield_tech.heat_screen",
+    "icon": "carbonitereinforcedshield",
+    "path": "/resources/gfx/icons/carbonitereinforcedshield.dds",
+    "output": "godot\\Assets\\UI\\icons\\carbonitereinforcedshield.png",
+    "sha256": "f0cd03ea570fac4ccaee1b819350c40e05d2c0fbc58eb059c7276d3143dab1fc",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "shield_tech.oil_slick",
+    "node": "abl.bounty_hunter.skill.shield_tech.oil_slick",
+    "icon": "oilslick",
+    "path": "/resources/gfx/icons/oilslick.dds",
+    "output": "godot\\Assets\\UI\\icons\\oilslick.png",
+    "sha256": "0621ff4e151fc40152e5850ba4c70f1390ed72410004bb3602a5e0c57717020b",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "shield_tech.heat_blast",
+    "node": "abl.bounty_hunter.skill.shield_tech.heat_blast",
+    "icon": "desperatecommand",
+    "path": "/resources/gfx/icons/desperatecommand.dds",
+    "output": "godot\\Assets\\UI\\icons\\desperatecommand.png",
+    "sha256": "1cb2045c3f19aa8e78cb592a8b50d0af99d02fa489fea83587021e1330dfaab8",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "arsenal.tracer_lock",
+    "node": "abl.bounty_hunter.skill.arsenal.tracer_lock",
+    "icon": "marktarget",
+    "path": "/resources/gfx/icons/marktarget.dds",
+    "output": "godot\\Assets\\UI\\icons\\marktarget.png",
+    "sha256": "1f93169009a6a9c536fe2d46fe4a77a4db9f3290837f4e6bd73dcccfbf22c02d",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "arsenal.tracer_missile",
+    "node": "abl.bounty_hunter.skill.arsenal.tracer_missile",
+    "icon": "unexplodedmortarshell",
+    "path": "/resources/gfx/icons/unexplodedmortarshell.dds",
+    "output": "godot\\Assets\\UI\\icons\\unexplodedmortarshell.png",
+    "sha256": "25ab33898ad0605560ef8e0dbce8be2f7be9e7b33b496de1293d5d4a4acf866e",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "arsenal.riddle",
+    "node": "abl.bounty_hunter.skill.arsenal.riddle",
+    "icon": "unload",
+    "path": "/resources/gfx/icons/unload.dds",
+    "output": "godot\\Assets\\UI\\icons\\unload.png",
+    "sha256": "01dec50267b1b5492a61ccab10b98c1915df9c0e88bd88d6e185f95c52ff67ce",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "arsenal.barrage",
+    "node": "abl.bounty_hunter.skill.arsenal.barrage",
+    "icon": "barrage",
+    "path": "/resources/gfx/icons/barrage.dds",
+    "output": "godot\\Assets\\UI\\icons\\barrage.png",
+    "sha256": "131a689b4850bcaccff701a43b182ecb27f78d8b84d964561b0e8e258d66986b",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "arsenal.mandalorian_iron_warheads",
+    "node": "abl.bounty_hunter.skill.arsenal.mandalorian_iron_warheads",
+    "icon": "tacticalnuke",
+    "path": "/resources/gfx/icons/tacticalnuke.dds",
+    "output": "godot\\Assets\\UI\\icons\\tacticalnuke.png",
+    "sha256": "9acc994442d90480bd8848137564f6fff2f7c2bf20989496464425175d71d736",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "arsenal.light_em_up",
+    "node": "abl.bounty_hunter.skill.arsenal.light_em_up",
+    "icon": "orbitalmultistrikes",
+    "path": "/resources/gfx/icons/orbitalmultistrikes.dds",
+    "output": "godot\\Assets\\UI\\icons\\orbitalmultistrikes.png",
+    "sha256": "6f1fc7012ef02a0ef19fe18bab563bdacff658722a0e057e34ae82288d5222fa",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "arsenal.terminal_velocity",
+    "node": "abl.bounty_hunter.skill.arsenal.terminal_velocity",
+    "icon": "armorpiercingclip",
+    "path": "/resources/gfx/icons/armorpiercingclip.dds",
+    "output": "godot\\Assets\\UI\\icons\\armorpiercingclip.png",
+    "sha256": "af248e1bb9436fd5e5e828a7c39ae5ddda0a3caae51498ed0dec1f37df63acec",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "arsenal.upgraded_arsenal",
+    "node": "abl.bounty_hunter.skill.arsenal.upgraded_arsenal",
+    "icon": "armament2",
+    "path": "/resources/gfx/icons/armament2.dds",
+    "output": "godot\\Assets\\UI\\icons\\armament2.png",
+    "sha256": "f611a01e053b6cead2b2133a312662fdb9d30265e539db7c60082301797b1aeb",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "arsenal.pinning_fire",
+    "node": "abl.bounty_hunter.skill.arsenal.pinning_fire",
+    "icon": "cripplingfire",
+    "path": "/resources/gfx/icons/cripplingfire.dds",
+    "output": "godot\\Assets\\UI\\icons\\cripplingfire.png",
+    "sha256": "7e9a086e07386141b074ebd044da7c4300b138651c6297c9eeaaa8a5c51a13b4",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "innovative_ordnance.pyrotech",
+    "node": "abl.bounty_hunter.skill.firebug.pyrotech",
+    "icon": "explosivefuel",
+    "path": "/resources/gfx/icons/explosivefuel.dds",
+    "output": "godot\\Assets\\UI\\icons\\explosivefuel.png",
+    "sha256": "cc15366aad451743985a41fc464a62d9e6d2334a0a22b2526445f6d9d069d5df",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "innovative_ordnance.advanced_targeting",
+    "node": "abl.bounty_hunter.skill.firebug.advanced_targeting",
+    "icon": "lockandload",
+    "path": "/resources/gfx/icons/lockandload.dds",
+    "output": "godot\\Assets\\UI\\icons\\lockandload.png",
+    "sha256": "6004fca46f83ed73d8ef9fdfbe50f51baca18ea270c0245d4ca25275cf1a334c",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "innovative_ordnance.sweltering_heat",
+    "node": "abl.bounty_hunter.skill.firebug.sweltering_heat",
+    "icon": "creepingterror",
+    "path": "/resources/gfx/icons/creepingterror.dds",
+    "output": "godot\\Assets\\UI\\icons\\creepingterror.png",
+    "sha256": "3ed1fe83a9cc101484e47906fa9dea281fae81867410a372f1642ee3203492ae",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "innovative_ordnance.combustible_gas_cylinder",
+    "node": "abl.bounty_hunter.combustible_gas_cylinder",
+    "icon": "plasmaclip",
+    "path": "/resources/gfx/icons/plasmaclip.dds",
+    "output": "godot\\Assets\\UI\\icons\\plasmaclip.png",
+    "sha256": "0adafbf88be0749dda1829b72780c7e1e6d9d06e6f4986bba884b60871d5ec83",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "innovative_ordnance.superheated_rail",
+    "node": "abl.bounty_hunter.skill.firebug.superheated_rail",
+    "icon": "agonizingsaber",
+    "path": "/resources/gfx/icons/agonizingsaber.dds",
+    "output": "godot\\Assets\\UI\\icons\\agonizingsaber.png",
+    "sha256": "29c94cf919b9213ff5190567232503dc5e1b20a55096c63fd379dd4e48a77045",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "innovative_ordnance.rain_of_fire",
+    "node": "abl.bounty_hunter.skill.firebug.rain_of_fire",
+    "icon": "deathfromabove",
+    "path": "/resources/gfx/icons/deathfromabove.dds",
+    "output": "godot\\Assets\\UI\\icons\\deathfromabove.png",
+    "sha256": "e413721d2d69cf333c68c768576489e10526046cbbbdc9f0589e2b7f552058c4",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "innovative_ordnance.prototype_particle_accelerator",
+    "node": "abl.bounty_hunter.skill.firebug.prototype_particle_accelerator",
+    "icon": "terminate",
+    "path": "/resources/gfx/icons/terminate.dds",
+    "output": "godot\\Assets\\UI\\icons\\terminate.png",
+    "sha256": "bac7dc84671d738b3c83358483f2752cf6375e686e858406748f54ab1bf24637",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "innovative_ordnance.prototype_heat_dampers",
+    "node": "abl.bounty_hunter.skill.firebug.prototype_heat_dampers",
+    "icon": "determination",
+    "path": "/resources/gfx/icons/determination.dds",
+    "output": "godot\\Assets\\UI\\icons\\determination.png",
+    "sha256": "531396508bd69562d30e5cd2110d5abbd17470529e6a282bb9a94e510e28fef7",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "innovative_ordnance.bursting_flame",
+    "node": "abl.bounty_hunter.skill.firebug.bursting_flame",
+    "icon": "burned",
+    "path": "/resources/gfx/icons/burned.dds",
+    "output": "godot\\Assets\\UI\\icons\\burned.png",
+    "sha256": "247bb4ef2c82f14b738fb01ac84750253fd29bf17a9ed03796b43fbdefaec516",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "bodyguard.med_tech",
+    "node": "abl.bounty_hunter.skill.bodyguard.med_tech",
+    "icon": "medicalcrate",
+    "path": "/resources/gfx/icons/medicalcrate.dds",
+    "output": "godot\\Assets\\UI\\icons\\medicalcrate.png",
+    "sha256": "3d274eafdf42afd834a9404b97071c4c8b75f522e4bafd89cf06a70449b15aa7",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "bodyguard.energy_overrides",
+    "node": "abl.bounty_hunter.skill.bodyguard.energy_overrides",
+    "icon": "energyshield",
+    "path": "/resources/gfx/icons/energyshield.dds",
+    "output": "godot\\Assets\\UI\\icons\\energyshield.png",
+    "sha256": "9c9ab524da63e9da4c401f1025deaf8d886da330e15c761a0a99d9a05d855548",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "bodyguard.critical_efficiency",
+    "node": "abl.bounty_hunter.skill.bodyguard.critical_efficiency",
+    "icon": "mirilantrader",
+    "path": "/resources/gfx/icons/mirilantrader.dds",
+    "output": "godot\\Assets\\UI\\icons\\mirilantrader.png",
+    "sha256": "c9733d2ee3f40b04bf2bec44f105d052bd5171f0038b7f2320c43ba138d19e57",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "bodyguard.kolto_shell",
+    "node": "abl.bounty_hunter.skill.bodyguard.kolto_shell",
+    "icon": "mediumarmors",
+    "path": "/resources/gfx/icons/mediumarmors.dds",
+    "output": "godot\\Assets\\UI\\icons\\mediumarmors.png",
+    "sha256": "4f43cfbfc02b005090acaf3494f0271f708f269f9c059128706072b4d1f6f219",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "bodyguard.proactive_medicine",
+    "node": "abl.bounty_hunter.skill.bodyguard.proactive_medicine",
+    "icon": "armament3",
+    "path": "/resources/gfx/icons/armament3.dds",
+    "output": "godot\\Assets\\UI\\icons\\armament3.png",
+    "sha256": "6535cfec1b1ba9de00e36ec684b0c3919a06b9a516cd3ab84981f146462954b5",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "bodyguard.warden",
+    "node": "abl.bounty_hunter.skill.bodyguard.warden",
+    "icon": "souterrimpirate",
+    "path": "/resources/gfx/icons/souterrimpirate.dds",
+    "output": "godot\\Assets\\UI\\icons\\souterrimpirate.png",
+    "sha256": "4b80e6bbdca2e06c352e369d2435ad851933624e348edfb6e848e6480c3438ca",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "bodyguard.supercharge",
+    "node": "abl.bounty_hunter.skill.bodyguard.supercharge",
+    "icon": "healing",
+    "path": "/resources/gfx/icons/healing.dds",
+    "output": "godot\\Assets\\UI\\icons\\healing.png",
+    "sha256": "7977fc817a8b5841b28e83025d0fed0af44bb5c576685b0efbabb240959c23d3",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "bodyguard.reactive_armor",
+    "node": "abl.bounty_hunter.skill.bodyguard.reactive_armor",
+    "icon": "armortech",
+    "path": "/resources/gfx/icons/armortech.dds",
+    "output": "godot\\Assets\\UI\\icons\\armortech.png",
+    "sha256": "11aedfbb8cccc325294a55c696b1f067d18830800ede2eabdaf7a3866a1422d0",
+    "evidence": "Client-derived exact ablIconSpec"
+  },
+  {
+    "owner": "bodyguard.empowered_scans",
+    "node": "abl.bounty_hunter.skill.bodyguard.empowered_scans",
+    "icon": "imperialdatapad",
+    "path": "/resources/gfx/icons/imperialdatapad.dds",
+    "output": "godot\\Assets\\UI\\icons\\imperialdatapad.png",
+    "sha256": "98eb1320de4e9788c1322b812ab0688927df6c3e5c3f3b542300a3f1b9e35cc9",
+    "evidence": "Client-derived exact ablIconSpec"
+  }
+]

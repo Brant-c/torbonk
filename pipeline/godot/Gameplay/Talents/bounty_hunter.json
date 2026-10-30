@@ -1,0 +1,1418 @@
+{
+  "Version": 1,
+  "Budget": 12,
+  "Trees": [
+    {
+      "Id": "advanced_prototype",
+      "Name": "Advanced Prototype"
+    },
+    {
+      "Id": "pyrotech",
+      "Name": "Pyrotech"
+    },
+    {
+      "Id": "shield_tech",
+      "Name": "Shield Tech"
+    },
+    {
+      "Id": "arsenal",
+      "Name": "Arsenal"
+    },
+    {
+      "Id": "innovative_ordnance",
+      "Name": "Innovative Ordnance"
+    },
+    {
+      "Id": "bodyguard",
+      "Name": "Bodyguard"
+    }
+  ],
+  "Talents": [
+    {
+      "Id": "advanced_prototype.prototype_blade_vents",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "advanced_prototype",
+      "Tier": 0,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/criticalblade.png",
+      "Name": "Prototype Blade Vents",
+      "Description": "Retractable Blade and its bleed deal 30% more damage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "retractableblade",
+          "Key": "",
+          "Amount": 0.3
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.advanced_prototype.prototype_blade_vents (April ablIconSpec 0xE000F71BC2AEB4D6; survivor adaptation)"
+    },
+    {
+      "Id": "advanced_prototype.prototype_weapon_systems",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "advanced_prototype",
+      "Tier": 0,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/armament2.png",
+      "Name": "Prototype Weapon Systems",
+      "Description": "Thermal Detonator gains 25% instead of 15% per bleeding enemy in its blast, and its blast refreshes your Retractable Blade bleed on everything it hits.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_td_systems",
+          "Amount": 0.25
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.advanced_prototype.prototype_weapon_systems (April ablIconSpec 0xE00055277B47DD69; survivor adaptation)"
+    },
+    {
+      "Id": "advanced_prototype.explosive_dart",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "advanced_prototype",
+      "Tier": 0,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/koltoinhibitordart.png",
+      "Name": "Explosive Dart",
+      "Description": "Your starting Flame Sweep becomes Explosive Dart, so Advanced Prototype opens on bleeds instead of burns. Applies when the run starts.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_dart_conversion",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.bounty_hunter.explosive_dart (April ablIconSpec 0xE0002F5D28C78FB4; survivor adaptation)"
+    },
+    {
+      "Id": "advanced_prototype.puncture",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "advanced_prototype",
+      "Tier": 1,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/bloomingshot.png",
+      "Name": "Puncture",
+      "Description": "Rail Shot deals 40% more damage to enemies bleeding from your Retractable Blade.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_puncture",
+          "Amount": 0.4
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.advanced_prototype.puncture (April ablIconSpec 0xE000D0057141678D; survivor adaptation)"
+    },
+    {
+      "Id": "advanced_prototype.prototype_electro_surge",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "advanced_prototype",
+      "Tier": 1,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/taserjolt.png",
+      "Name": "Prototype Electro Surge",
+      "Description": "Electro Dart stuns one more enemy, and its stun lasts 1 second longer.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_electro_surge",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.advanced_prototype.prototype_electro_surge (April ablIconSpec 0xE0003CA65D38C2F4; survivor adaptation)"
+    },
+    {
+      "Id": "advanced_prototype.iron_fist",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "advanced_prototype",
+      "Tier": 1,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/flameburst.png",
+      "Name": "Iron Fist",
+      "Description": "Rocket Punch cleaves enemies around its target for 60% damage and applies your Retractable Blade bleed to every enemy it hits.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_iron_fist",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.advanced_prototype.iron_fist (April ablIconSpec 0xE000B2BA737C2B9A; survivor adaptation)"
+    },
+    {
+      "Id": "advanced_prototype.prototype_cylinders",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "advanced_prototype",
+      "Tier": 2,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/blasterpowerpackc.png",
+      "Name": "Prototype Cylinders",
+      "Description": "Explosive Dart spreads only your Retractable Blade bleed, never burns, but its blast deals 40% more damage, covers 30% more ground, and each newly bled enemy immediately takes 50% of Retractable Blade damage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_blade_focus",
+          "Amount": 0.4
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.advanced_prototype.prototype_cylinders (April ablIconSpec 0xE00014DB5D0BE63F; survivor adaptation)"
+    },
+    {
+      "Id": "advanced_prototype.flame_barrage",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "advanced_prototype",
+      "Tier": 2,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/suckerpunch.png",
+      "Name": "Flame Barrage",
+      "Description": "Rocket Punch hits recover 3 seconds of Flame Thrower cooldown, and Flame Thrower deals 25% more damage to bleeding enemies.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_flame_barrage",
+          "Amount": 3
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.advanced_prototype.flame_barrage (April ablIconSpec 0xE00053BF7743E441; survivor adaptation)"
+    },
+    {
+      "Id": "advanced_prototype.advanced_tools",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "advanced_prototype",
+      "Tier": 2,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/toolbox.png",
+      "Name": "Advanced Tools",
+      "Description": "Enemies stunned by Electro Dart take 25% more damage from all your abilities.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_advanced_tools",
+          "Amount": 0.25
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.advanced_prototype.advanced_tools (April ablIconSpec 0xE00034033998C2F4; survivor adaptation)"
+    },
+    {
+      "Id": "pyrotech.combustion",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "pyrotech",
+      "Tier": 0,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/plasmaclip.png",
+      "Name": "Combustion",
+      "Description": "Incendiary Missile and its burn deal 25% more damage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "incendiarymissile",
+          "Key": "",
+          "Amount": 0.25
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.combustion (April ablIconSpec 0xE00000B61007CE9C; survivor adaptation)"
+    },
+    {
+      "Id": "pyrotech.bursting_flame",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "pyrotech",
+      "Tier": 0,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/burned.png",
+      "Name": "Bursting Flame",
+      "Description": "Flame Burst deals 25% more damage and Immolate 15% more.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "flameburst",
+          "Key": "",
+          "Amount": 0.25
+        },
+        {
+          "Kind": "damage",
+          "Ability": "immolate",
+          "Key": "",
+          "Amount": 0.15
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.bursting_flame (April ablIconSpec 0xE0007058F941F6DB; survivor adaptation)"
+    },
+    {
+      "Id": "pyrotech.sweltering_heat",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "pyrotech",
+      "Tier": 0,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/creepingterror.png",
+      "Name": "Sweltering Heat",
+      "Description": "Incendiary Missile and Immolate burn 2 seconds longer.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "duration",
+          "Ability": "incendiarymissile",
+          "Key": "",
+          "Amount": 2
+        },
+        {
+          "Kind": "duration",
+          "Ability": "immolate",
+          "Key": "",
+          "Amount": 2
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.sweltering_heat (April ablIconSpec 0xE000E28B66A7570F; survivor adaptation)"
+    },
+    {
+      "Id": "pyrotech.fanned_flames",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "pyrotech",
+      "Tier": 1,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/forcecrush.png",
+      "Name": "Fanned Flames",
+      "Description": "Flame Sweep spreads your burns to 3 more enemies per activation.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_fanned",
+          "Amount": 3
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.fanned_flames (April ablIconSpec 0xE00084C1570F737B; survivor adaptation)"
+    },
+    {
+      "Id": "pyrotech.superheated_rail",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "pyrotech",
+      "Tier": 1,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/agonizingsaber.png",
+      "Name": "Superheated Rail",
+      "Description": "Rail Shot on a burning enemy spreads your burns to up to 4 nearby enemies.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_superheated_rail",
+          "Amount": 4
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.superheated_rail (April ablIconSpec 0xE000F71BE14DBAAC; survivor adaptation)"
+    },
+    {
+      "Id": "pyrotech.rain_of_fire",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "pyrotech",
+      "Tier": 1,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/deathfromabove.png",
+      "Name": "Rain of Fire",
+      "Description": "Ignited Oil Slicks deal 50% more damage and burn 3 seconds longer.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_rain_of_fire",
+          "Amount": 0.5
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.rain_of_fire_powertech (April ablIconSpec 0xE0001490C8745280; survivor adaptation)"
+    },
+    {
+      "Id": "pyrotech.prototype_particle_accelerator",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "pyrotech",
+      "Tier": 2,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/terminate.png",
+      "Name": "Prototype Particle Accelerator",
+      "Description": "Flame Burst hits on burning enemies recover 2 seconds of Rail Shot and Immolate cooldown.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_accelerator",
+          "Amount": 2
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.prototype_particle_accelerator_powertech (April ablIconSpec 0xE000E843F703E243; survivor adaptation)"
+    },
+    {
+      "Id": "pyrotech.infrared_detection",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "pyrotech",
+      "Tier": 2,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/bloodthirst.png",
+      "Name": "Infrared Detection",
+      "Description": "Immolate and Flame Burst deal an extra 25% damage to burning enemies.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_infrared",
+          "Amount": 0.25
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.infrared_detection (April ablIconSpec 0xE000F569632A593D; survivor adaptation)"
+    },
+    {
+      "Id": "pyrotech.incendiary_payload",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "pyrotech",
+      "Tier": 2,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/thermaldetonator.png",
+      "Name": "Incendiary Payload",
+      "Description": "Explosive Dart applies your Incendiary Missile burn to every enemy it hits.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_incendiary_dart",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.explosive_dart (April ablIconSpec 0xE000F478899B402D; survivor adaptation)"
+    },
+    {
+      "Id": "shield_tech.ion_overload",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "shield_tech",
+      "Tier": 0,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/ionclip.png",
+      "Name": "Ion Overload",
+      "Description": "Energy Shield absorbs 25% more damage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "shield",
+          "Ability": "ionshield",
+          "Key": "",
+          "Amount": 0.25
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.shield_tech.ion_overload (April ablIconSpec 0xE0005C4B9F319223; survivor adaptation)"
+    },
+    {
+      "Id": "shield_tech.supercooled_carbonite",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "shield_tech",
+      "Tier": 0,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/carbonitegrenade.png",
+      "Name": "Supercooled Carbonite",
+      "Description": "Carbonize reaches 25% farther, and carbonized enemies take 20% more damage from you.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "radius",
+          "Ability": "carbonize",
+          "Key": "",
+          "Amount": 0.25
+        },
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_supercooled",
+          "Amount": 0.2
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.shield_tech.supercooled_carbonite (April ablIconSpec 0xE000D536F27988B8; survivor adaptation)"
+    },
+    {
+      "Id": "shield_tech.jet_speed",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "shield_tech",
+      "Tier": 0,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/jetboost.png",
+      "Name": "Jet Speed",
+      "Description": "Move 3% faster.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_jet_speed",
+          "Amount": 0.03
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.shield_tech.jet_speed (April ablIconSpec 0xE0004A19F6FB2405; survivor adaptation)"
+    },
+    {
+      "Id": "shield_tech.flame_shield",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "shield_tech",
+      "Tier": 1,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/armormelt.png",
+      "Name": "Flame Shield",
+      "Description": "While Energy Shield holds, close attackers are scorched for 8 damage and catch your Incendiary Missile burn. Feeds Pyrotech.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_flame_shield",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.shield_tech.flame_shield (April ablIconSpec 0xE00088669FBF9F07; survivor adaptation)"
+    },
+    {
+      "Id": "shield_tech.jet_charge",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "shield_tech",
+      "Tier": 1,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/jetcharge.png",
+      "Name": "Jet Charge",
+      "Description": "Jet Charge refreshes your bleeds and burns on every enemy it hits. Feeds both damage specs.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_jet_refresh",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.shield_tech.jet_charge (April ablIconSpec 0xE0006288D4EADA71; survivor adaptation)"
+    },
+    {
+      "Id": "shield_tech.rail_loaders",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "shield_tech",
+      "Tier": 1,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/railshot.png",
+      "Name": "Rail Loaders",
+      "Description": "Rail Shot recovers 25% faster and Rocket Punch 15% faster. Feeds Advanced Prototype.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "cooldown",
+          "Ability": "railshot",
+          "Key": "",
+          "Amount": 0.25
+        },
+        {
+          "Kind": "cooldown",
+          "Ability": "rocketpunch",
+          "Key": "",
+          "Amount": 0.15
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.shield_tech.rail_loaders (April ablIconSpec 0xE000AD546EB94014; survivor adaptation)"
+    },
+    {
+      "Id": "shield_tech.heat_screen",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "shield_tech",
+      "Tier": 2,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/carbonitereinforcedshield.png",
+      "Name": "Heat Screen",
+      "Description": "Take 10% less damage while Energy Shield or Explosive Fuel is active.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_heat_screen",
+          "Amount": 0.1
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.shield_tech.heat_screen (April ablIconSpec 0xE000A940A32C964F; survivor adaptation)"
+    },
+    {
+      "Id": "shield_tech.oil_slick",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "shield_tech",
+      "Tier": 2,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/oilslick.png",
+      "Name": "Oil Slick",
+      "Description": "Oil Slick covers 25% more ground and lasts 4 seconds longer.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "radius",
+          "Ability": "oilslick",
+          "Key": "",
+          "Amount": 0.25
+        },
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_oil_duration",
+          "Amount": 4
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.shield_tech.oil_slick (April ablIconSpec 0xE000F3D5345B3777; survivor adaptation)"
+    },
+    {
+      "Id": "shield_tech.heat_blast",
+      "Classes": [
+        "powertech"
+      ],
+      "Tree": "shield_tech",
+      "Tier": 2,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/desperatecommand.png",
+      "Name": "Heat Blast",
+      "Description": "When Energy Shield ends it detonates for 24 damage around you, applying your Incendiary Missile burn and Retractable Blade bleed to enemies hit if you own them.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "pt_heat_blast",
+          "Amount": 24
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.shield_tech.heat_blast (April ablIconSpec 0xE00088934BD52668; survivor adaptation)"
+    },
+    {
+      "Id": "arsenal.tracer_lock",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "arsenal",
+      "Tier": 0,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/marktarget.png",
+      "Name": "Tracer Lock",
+      "Description": "Heat Signature stacks up to 7 instead of 5.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_heat_max",
+          "Amount": 2
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.arsenal.tracer_lock (April ablIconSpec 0xE0005D0823023C17; survivor adaptation)"
+    },
+    {
+      "Id": "arsenal.tracer_missile",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "arsenal",
+      "Tier": 0,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/unexplodedmortarshell.png",
+      "Name": "Tracer Missile",
+      "Description": "Your starting Power Shot becomes Tracer Missile: a splash missile that marks its target with Heat Signature. Applies when the run starts.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_tracer_conversion",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.arsenal.tracer_missile (April ablIconSpec 0xE00090EA9B6AC120; survivor adaptation)"
+    },
+    {
+      "Id": "arsenal.riddle",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "arsenal",
+      "Tier": 0,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/unload.png",
+      "Name": "Riddle",
+      "Description": "Unload deals 25% more damage and Missile Blast 20% more.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "unload",
+          "Key": "",
+          "Amount": 0.25
+        },
+        {
+          "Kind": "damage",
+          "Ability": "missileblast",
+          "Key": "",
+          "Amount": 0.2
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.arsenal.riddle (April ablIconSpec 0xE0005670EFD6F756; survivor adaptation)"
+    },
+    {
+      "Id": "arsenal.barrage",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "arsenal",
+      "Tier": 1,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/barrage.png",
+      "Name": "Barrage",
+      "Description": "Every 2nd Power Shot or Tracer Missile cast, instead of every 4th, readies Unload.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_barrage",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.arsenal.barrage (April ablIconSpec 0xE0000D4A1CD4FC4E; survivor adaptation)"
+    },
+    {
+      "Id": "arsenal.mandalorian_iron_warheads",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "arsenal",
+      "Tier": 1,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/tacticalnuke.png",
+      "Name": "Mandalorian Iron Warheads",
+      "Description": "Heatseeker Missiles deal 25% more damage and Death From Above 20% more.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "heatseeker",
+          "Key": "",
+          "Amount": 0.25
+        },
+        {
+          "Kind": "damage",
+          "Ability": "deathfromabove",
+          "Key": "",
+          "Amount": 0.2
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.arsenal.mandalorian_iron_warheads (April ablIconSpec 0xE000F3DDD0BBBCDC; survivor adaptation)"
+    },
+    {
+      "Id": "arsenal.light_em_up",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "arsenal",
+      "Tier": 1,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/orbitalmultistrikes.png",
+      "Name": "Light 'em Up",
+      "Description": "Heatseeker Missiles consume only half of the target's Heat Signature.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_light_em_up",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.arsenal.light_em_up (April ablIconSpec 0xE0004978C132B4E3; survivor adaptation)"
+    },
+    {
+      "Id": "arsenal.terminal_velocity",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "arsenal",
+      "Tier": 2,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/armorpiercingclip.png",
+      "Name": "Terminal Velocity",
+      "Description": "Death From Above deals 10% more damage per Heat Signature stack on each enemy it hits.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_terminal",
+          "Amount": 0.1
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.arsenal.terminal_velocity (April ablIconSpec 0xE0000B8A65CEE692; survivor adaptation)"
+    },
+    {
+      "Id": "arsenal.upgraded_arsenal",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "arsenal",
+      "Tier": 2,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/armament2.png",
+      "Name": "Upgraded Arsenal",
+      "Description": "Tracer Missile and Power Shot apply 2 Heat Signature stacks to their primary target, and Tracer Missile splashes 25% wider.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_upgraded",
+          "Amount": 1
+        },
+        {
+          "Kind": "radius",
+          "Ability": "tracer",
+          "Key": "",
+          "Amount": 0.25
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.arsenal.upgraded_arsenal (April ablIconSpec 0xE000FF48393A4707; survivor adaptation)"
+    },
+    {
+      "Id": "arsenal.pinning_fire",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "arsenal",
+      "Tier": 2,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/cripplingfire.png",
+      "Name": "Pinning Fire",
+      "Description": "Unload and Missile Blast slow enemies by 40% for 2 seconds, and Unload adds 1 Heat Signature per hit, once per enemy per cast.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_pinning",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.arsenal.pinning_fire (April ablIconSpec 0xE000D1F4576F6309; survivor adaptation)"
+    },
+    {
+      "Id": "innovative_ordnance.pyrotech",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "innovative_ordnance",
+      "Tier": 0,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/explosivefuel.png",
+      "Name": "Pyrotech",
+      "Description": "Incendiary Missile deals 25% more damage and Fusion Missile 15% more, burns included.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "incendiarymissile",
+          "Key": "",
+          "Amount": 0.25
+        },
+        {
+          "Kind": "damage",
+          "Ability": "fusionmissile",
+          "Key": "",
+          "Amount": 0.15
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.pyrotech (April ablIconSpec 0xE000A4966034B61B; survivor adaptation)"
+    },
+    {
+      "Id": "innovative_ordnance.advanced_targeting",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "innovative_ordnance",
+      "Tier": 0,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/lockandload.png",
+      "Name": "Advanced Targeting",
+      "Description": "Power Shot and Rail Shot deal 20% more damage.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "damage",
+          "Ability": "powershot",
+          "Key": "",
+          "Amount": 0.2
+        },
+        {
+          "Kind": "damage",
+          "Ability": "railshot",
+          "Key": "",
+          "Amount": 0.2
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.advanced_targeting (April ablIconSpec 0xE000A0FBA2F09D48; survivor adaptation)"
+    },
+    {
+      "Id": "innovative_ordnance.sweltering_heat",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "innovative_ordnance",
+      "Tier": 0,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/creepingterror.png",
+      "Name": "Sweltering Heat",
+      "Description": "Incendiary Missile and Fusion Missile burn 2 seconds longer.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "duration",
+          "Ability": "incendiarymissile",
+          "Key": "",
+          "Amount": 2
+        },
+        {
+          "Kind": "duration",
+          "Ability": "fusionmissile",
+          "Key": "",
+          "Amount": 2
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.sweltering_heat (April ablIconSpec 0xE000E28B66A7570F; survivor adaptation)"
+    },
+    {
+      "Id": "innovative_ordnance.combustible_gas_cylinder",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "innovative_ordnance",
+      "Tier": 1,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/plasmaclip.png",
+      "Name": "Combustible Gas Cylinder",
+      "Description": "Power Shot and Rail Shot ignite enemies that are not already burning with a half-strength Incendiary Missile burn.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_gas",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.bounty_hunter.combustible_gas_cylinder (April ablIconSpec 0xE00049BAC6BFF6CA; survivor adaptation)"
+    },
+    {
+      "Id": "innovative_ordnance.superheated_rail",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "innovative_ordnance",
+      "Tier": 1,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/agonizingsaber.png",
+      "Name": "Superheated Rail",
+      "Description": "Rail Shot on a burning enemy spreads your burns to up to 4 nearby enemies.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_superheated_rail",
+          "Amount": 4
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.superheated_rail (April ablIconSpec 0xE000F71BE14DBAAC; survivor adaptation)"
+    },
+    {
+      "Id": "innovative_ordnance.rain_of_fire",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "innovative_ordnance",
+      "Tier": 1,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/deathfromabove.png",
+      "Name": "Rain of Fire",
+      "Description": "Fusion Missile covers 30% more ground and Sweeping Blasters reaches 20% farther.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "radius",
+          "Ability": "fusionmissile",
+          "Key": "",
+          "Amount": 0.3
+        },
+        {
+          "Kind": "radius",
+          "Ability": "sweepingblasters",
+          "Key": "",
+          "Amount": 0.2
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.rain_of_fire (April ablIconSpec 0xE00000E1BC467AC5; survivor adaptation)"
+    },
+    {
+      "Id": "innovative_ordnance.prototype_particle_accelerator",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "innovative_ordnance",
+      "Tier": 2,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/terminate.png",
+      "Name": "Prototype Particle Accelerator",
+      "Description": "Power Shot hits recover 2 seconds of Rail Shot cooldown.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_accelerator",
+          "Amount": 2
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.prototype_particle_accelerator (April ablIconSpec 0xE00058BAC15E2582; survivor adaptation)"
+    },
+    {
+      "Id": "innovative_ordnance.prototype_heat_dampers",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "innovative_ordnance",
+      "Tier": 2,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/determination.png",
+      "Name": "Prototype Heat Dampers",
+      "Description": "Thermal Sensor Override recovers 30% faster and also fully readies Fusion Missile.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "cooldown",
+          "Ability": "thermalsensoroverride",
+          "Key": "",
+          "Amount": 0.3
+        },
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_tso_fusion",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.prototype_heat_dampers (April ablIconSpec 0xE000748CAC9CDB3E; survivor adaptation)"
+    },
+    {
+      "Id": "innovative_ordnance.bursting_flame",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "innovative_ordnance",
+      "Tier": 2,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/burned.png",
+      "Name": "Bursting Flame",
+      "Description": "Power Shot and Rail Shot deal an extra 15% damage per distinct damage-over-time effect you own on the target.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_dot_bonus",
+          "Amount": 0.15
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.firebug.bursting_flame (April ablIconSpec 0xE0007058F941F6DB; survivor adaptation)"
+    },
+    {
+      "Id": "bodyguard.med_tech",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "bodyguard",
+      "Tier": 0,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/medicalcrate.png",
+      "Name": "Med Tech",
+      "Description": "Kolto Missile recovers 20% faster. Its healing cap is unchanged.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "cooldown",
+          "Ability": "koltomissile",
+          "Key": "",
+          "Amount": 0.2
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.bodyguard.med_tech (April ablIconSpec 0xE0002CDF0AF4A100; survivor adaptation)"
+    },
+    {
+      "Id": "bodyguard.energy_overrides",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "bodyguard",
+      "Tier": 0,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/energyshield.png",
+      "Name": "Energy Overrides",
+      "Description": "Energy Shield absorbs 25% more damage and recovers 15% faster.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "shield",
+          "Ability": "ionshield",
+          "Key": "",
+          "Amount": 0.25
+        },
+        {
+          "Kind": "cooldown",
+          "Ability": "ionshield",
+          "Key": "",
+          "Amount": 0.15
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.bodyguard.energy_overrides (April ablIconSpec 0xE0000A034721112A; survivor adaptation)"
+    },
+    {
+      "Id": "bodyguard.critical_efficiency",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "bodyguard",
+      "Tier": 0,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/mirilantrader.png",
+      "Name": "Critical Efficiency",
+      "Description": "Concussion Missile and Jet Boost recover 20% faster.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 0,
+      "Effects": [
+        {
+          "Kind": "cooldown",
+          "Ability": "concussionmissile",
+          "Key": "",
+          "Amount": 0.2
+        },
+        {
+          "Kind": "cooldown",
+          "Ability": "jetboost",
+          "Key": "",
+          "Amount": 0.2
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.bodyguard.critical_efficiency (April ablIconSpec 0xE000CEB135A82970; survivor adaptation)"
+    },
+    {
+      "Id": "bodyguard.kolto_shell",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "bodyguard",
+      "Tier": 1,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/mediumarmors.png",
+      "Name": "Kolto Shell",
+      "Description": "Kolto Shell can mend you 2 more times per activation. Each mend stays 1 HP.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_shell_charges",
+          "Amount": 2
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.bodyguard.kolto_shell (April ablIconSpec 0xE0006E72D51A2D55; survivor adaptation)"
+    },
+    {
+      "Id": "bodyguard.proactive_medicine",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "bodyguard",
+      "Tier": 1,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/armament3.png",
+      "Name": "Proactive Medicine",
+      "Description": "While you stand in a Kolto Missile field your abilities deal 12% more damage. Feeds Arsenal and Innovative Ordnance.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_field_damage",
+          "Amount": 0.12
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.bodyguard.proactive_medicine (April ablIconSpec 0xE00052D2EC33417E; survivor adaptation)"
+    },
+    {
+      "Id": "bodyguard.warden",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "bodyguard",
+      "Tier": 1,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/souterrimpirate.png",
+      "Name": "Warden",
+      "Description": "Concussion Missile gives stunned enemies 2 Heat Signature stacks and, if you own it, your Incendiary Missile burn.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 2,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_warden",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.bodyguard.warden (April ablIconSpec 0xE000E3510B6EA5AD; survivor adaptation)"
+    },
+    {
+      "Id": "bodyguard.supercharge",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "bodyguard",
+      "Tier": 2,
+      "Column": 0,
+      "Icon": "res://Assets/UI/icons/healing.png",
+      "Name": "Supercharge",
+      "Description": "Activating a utility ability grants 15% more damage for 5 seconds.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_supercharge",
+          "Amount": 0.15
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.bodyguard.supercharge (April ablIconSpec 0xE000D906936BCB8A; survivor adaptation)"
+    },
+    {
+      "Id": "bodyguard.reactive_armor",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "bodyguard",
+      "Tier": 2,
+      "Column": 1,
+      "Icon": "res://Assets/UI/icons/armortech.png",
+      "Name": "Reactive Armor",
+      "Description": "Take 8% less damage while Kolto Shell or Energy Shield is active.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_reactive",
+          "Amount": 0.08
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.bodyguard.reactive_armor (April ablIconSpec 0xE00044CA9A29A9E8; survivor adaptation)"
+    },
+    {
+      "Id": "bodyguard.empowered_scans",
+      "Classes": [
+        "mercenary"
+      ],
+      "Tree": "bodyguard",
+      "Tier": 2,
+      "Column": 2,
+      "Icon": "res://Assets/UI/icons/imperialdatapad.png",
+      "Name": "Empowered Scans",
+      "Description": "Jet Boost ignites the enemies it throws back with your Incendiary Missile burn and gives them 1 Heat Signature stack.",
+      "MaxRank": 1,
+      "Cost": 1,
+      "RequiredPoints": 5,
+      "Effects": [
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Key": "mc_jet_burn",
+          "Amount": 1
+        }
+      ],
+      "Source": "abl.bounty_hunter.skill.bodyguard.empowered_scans (April ablIconSpec 0xE000F4DBEF0A825F; survivor adaptation)"
+    }
+  ]
+}

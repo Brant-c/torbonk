@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "explosivedart"
+StartsUnlocked = false
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+Title = "Explosive Dart"
+Icon = "koltoinhibitordart"
+Damage = 14
+CooldownSeconds = 10
+Range = 0.9
+Radius = 0.26
+Area = 0
+SplashMultiplier = 1.0
+WindupSeconds = 0.25
+ChannelSeconds = 0
+RecoverySeconds = 0.4
+GestureSeconds = 1.0
+StartClip = "D3/Dart"
+LoopClip = "D3/Dart"
+EndClip = ""
+PresentationKind = "bhexplosive"
+MuzzleBone = "LeftWrist"
+CastAudio = "res://Assets/BountyHunter/Audio/52225576.wav"
+ImpactAudio = "res://Assets/BountyHunter/Audio/184781114.wav"
+FollowupImpactAudio = "res://Assets/BountyHunter/Audio/43338199.wav"
+ImpactTexture = "res://Assets/BountyHunter/bw_explosion_sphere_single_frame.png"
+EffectTint = Color(1, 0.55, 0.2, 1)
+Description = "Sticks a dart on an enemy. After a 2-second fuse (or if the enemy dies first) it explodes, hitting every enemy in the blast and copying your bleeds and burns between all of them. Powertechs also apply Retractable Blade's bleed to everything it hits. Weaker than Fusion Missile."

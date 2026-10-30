@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "koltoshell"
+StartsUnlocked = false
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+Title = "Kolto Shell"
+Icon = "mediumarmors"
+Category = 1
+Effect = 3
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+Damage = 1
+CooldownSeconds = 30
+Range = 0.9
+BuffSeconds = 0.1
+DamageBuff = 0
+WindupSeconds = 0
+ChannelSeconds = 0
+RecoverySeconds = 0.4
+GestureSeconds = 0.9
+StartClip = "D3/EnergyShield"
+LoopClip = "D3/EnergyShield"
+EndClip = ""
+PresentationKind = "bhshell"
+CastAudio = "res://Assets/BountyHunter/Audio/37334226.wav"
+ImpactAudio = "res://Assets/BountyHunter/Audio/18074432.wav"
+EffectTint = Color(0.35, 1, 0.55, 1)
+Description = "For 20 seconds, taking damage mends 1 HP, at most once every 2 seconds and 4 times per activation."

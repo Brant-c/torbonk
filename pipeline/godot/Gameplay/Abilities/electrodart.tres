@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "electrodart"
+StartsUnlocked = false
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+Title = "Electro Dart"
+Icon = "taserjolt"
+Damage = 10
+CooldownSeconds = 16
+Range = 0.8
+Radius = 0.24
+Area = 4
+SplashMultiplier = 1.0
+MaximumTargets = 3
+WindupSeconds = 0.2
+ChannelSeconds = 0
+RecoverySeconds = 0.4
+GestureSeconds = 1.0
+StartClip = "D3/Dart"
+LoopClip = "D3/Dart"
+EndClip = ""
+PresentationKind = "bhelectro"
+MuzzleBone = "LeftWrist"
+CastAudio = "res://Assets/BountyHunter/Audio/178831994.wav"
+ImpactAudio = "res://Assets/BountyHunter/Audio/395913045.wav"
+ShotAudio = "res://Assets/BountyHunter/Audio/13800022.wav"
+ImpactTexture = "res://Assets/BountyHunter/electric_rings_bw_02.png"
+EffectTint = Color(0.45, 0.75, 1, 1)
+Description = "Stuns up to 3 enemies for 4 seconds, fewer than Carbonize but far longer, and shocks each of them every half second while the stun lasts for 60% of this ability's damage. Elites resist; bosses are immune to the stun."

@@ -1,6 +1,6 @@
 {
-  "passed": true,
-  "failure": null,
+  "passed": false,
+  "failure": "System.Exception: talent damage applied\r\n   at SwtorSurvivors.Talents.TalentsSmoke.Check(String name, Boolean passed) in D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Gameplay\\Talents\\TalentsSmoke.cs:line 15\r\n   at SwtorSurvivors.Talents.TalentsSmoke.Run(FrontendFlow menu) in D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Gameplay\\Talents\\TalentsSmoke.cs:line 74",
   "checks": [
     "isolated profile initialized",
     "27 data talents across three trees",
@@ -32,26 +32,6 @@
     "existing frontend run handoff accepts talents",
     "run starts through existing selection flow",
     "starting ability preserved",
-    "run uses validated saved snapshot",
-    "talent damage applied",
-    "recalculation applies once",
-    "Storm and Death Field hybrid unlocks",
-    "offensive limit retained",
-    "full-slot off-tree unlock remains replacement eligible",
-    "no Sorcerer spec milestones remain",
-    "normal mixed offer at level 2",
-    "ordinary offer can be selected",
-    "normal mixed offer at level 3",
-    "ordinary offer can be selected",
-    "normal mixed offer at level 4",
-    "ordinary offer can be selected",
-    "normal mixed offer at level 5",
-    "ordinary offer can be selected",
-    "existing DoT system accepts talented source",
-    "Death Field still uses existing area propagation",
-    "restart clears temporary run power",
-    "restart preserves talent snapshot without stacking",
-    "respec cannot change active run snapshot",
-    "restore fixture for launch-persistence check"
+    "run uses validated saved snapshot"
   ]
 }

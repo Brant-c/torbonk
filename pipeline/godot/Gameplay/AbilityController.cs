@@ -6,7 +6,10 @@ namespace SwtorSurvivors;
 /// <summary>Fair GCD admission; each ability advances independently of gestures and other effects.</summary>
 public partial class AbilityController : Node
 {
-    [Export] public float GlobalCooldownSeconds { get; set; } = 1.5f;
+    [Export] public float GlobalCooldownSeconds { get; set; } = 1.0f;
+    /// <summary>Cooldown-reduction speed-up applied to the GCD and to gesture-gated cooldown floors; 1 = none.</summary>
+    public float CooldownRate { get; set; } = 1;
+    public const float MinimumGlobalCooldown = .45f;
     [Export] public int OffensiveLimit { get; set; } = 4;
     [Export] public int UtilityLimit { get; set; } = 2;
     public int Limit(AbilityCategory category) => Math.Max(0,category==AbilityCategory.Offensive?OffensiveLimit:UtilityLimit);
@@ -35,7 +38,7 @@ public partial class AbilityController : Node
     public List<AutomaticAbility> Abilities { get; } = new();
     public TargetingService Targeting { get; set; } = null!;
     public double GlobalCooldownRemaining { get; private set; }
-    public double GlobalCooldownDuration { get; private set; } = 1.5;
+    public double GlobalCooldownDuration { get; private set; } = 1.0;
     // Off-GCD exceptions still do not all activate on the same frame.
     [Export] public float MinimumActivationSpacing { get; set; } = 0.18f;
     public AutomaticAbility? Active => Abilities.FirstOrDefault(a=>a.BlocksCasting);
@@ -45,7 +48,7 @@ public partial class AbilityController : Node
     private int ActivationPriority(AutomaticAbility ability)
     {
         var build=ability.Build;
-        if(build?.World.RunConfiguration.AdvancedClassId=="sorcerer" && build.World.Player.StationaryForAbility && ability.Definition.Id is "deathfield" or "storm")return -5;
+        if(build?.World.RunConfiguration.AdvancedClassId=="sorcerer" && build.World.Player.StationaryForAbility && ability.Definition.Id is "deathfield" or "storm")return ability.Definition.Id=="storm"?-6:-5;
         if(build?.World.RunConfiguration.AdvancedClassId=="operative")return build.Pregame.AgentPriority(ability);
         if(build?.World.RunConfiguration.AdvancedClassId=="marauder")return build.Pregame.MarauderPriority(ability);
         if(build?.World.RunConfiguration.AdvancedClassId=="assassin") {
@@ -80,7 +83,7 @@ public partial class AbilityController : Node
             _activationSpacing=Math.Max(0,MinimumActivationSpacing);
             // Never reset a running GCD for an exception which may trigger another GCD.
             if(ability.Definition.TriggersGlobalCooldown && GlobalCooldownRemaining<=0)
-                GlobalCooldownRemaining=GlobalCooldownDuration=float.IsFinite(GlobalCooldownSeconds)?Math.Max(0,GlobalCooldownSeconds):1.5;
+                GlobalCooldownRemaining=GlobalCooldownDuration=float.IsFinite(GlobalCooldownSeconds)?Math.Max(Math.Min(GlobalCooldownSeconds,MinimumGlobalCooldown),GlobalCooldownSeconds/Math.Max(1,CooldownRate)):1.0;
             break;
         }
         // Weapon attacks fill gaps after normal abilities have had first refusal.

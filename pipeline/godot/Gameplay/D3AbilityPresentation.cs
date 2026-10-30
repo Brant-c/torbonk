@@ -57,6 +57,7 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
         if(Definition.PresentationKind=="gas" && Definition.Effect==AbilityEffect.Damage)Projectile(MuzzleWorld(),target.AimPosition,Math.Max(.2,Definition.WindupSeconds));
         BeginMarauder(target);
         BeginRepair(target);
+        BeginBountyHunter(target);
         return Definition.StartClip=="" && !Definition.RequireGesture || Actor.Animator.HasAnimation(Definition.StartClip);
     }
     public void Channel(){ ChannelRepair();if(Definition.Id=="carbonize"){_carbon=1.2;_carbonSpawn=0;} if(Definition.Id=="flamethrower"){_flame=Definition.ChannelSeconds;_flameSpawn=0;} if(Definition.PresentationKind=="flame"){_flame=Math.Max(.1,Definition.ChannelSeconds);_flameSpawn=0;} }
@@ -71,6 +72,7 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
         var at=radial?Actor.GlobalPosition+Vector3.Up*.06f:center;
         if(ImpactAgent(at)){if(!AgentKnifeAbility && Definition.Id!="explosiveprobe")Play(Definition.ImpactAudio,at,3);return;}
         if(ImpactMarauder(at))return;
+        if(ImpactBountyHunter(at))return;
         if(ImpactRepair(at))return;
         if(ImpactAssassin())return;
         Play(Definition.ImpactAudio,at,3);
@@ -255,6 +257,7 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
         _agentOrbitalLock=Math.Max(0,_agentOrbitalLock-delta);
         AdvanceMarauderEffects(delta);
         AdvanceRepair(delta);
+        AdvanceBountyHunter();
         for(int i=_delayed.Count-1;i>=0;i--){var d=_delayed[i];d.at-=delta;if(d.at<=0){_delayed.RemoveAt(i);d.run();}else _delayed[i]=d;}
         if(_gas>0)
         {
@@ -284,13 +287,13 @@ public partial class D3AbilityPresentation : Node3D,IAbilityPresentation
             fx.Update?.Invoke(fx);
         }
     }
-    public void End(bool interrupted){ _flame=0;EndRepair();if(interrupted)Release(); }
-    public void Complete(){ _flame=0;_carbon=0; }
+    public void End(bool interrupted){ _flame=0;EndRepair();if(interrupted)Release();EndBountyHunter(interrupted); }
+    public void Complete(){ _flame=0;_carbon=0;if(GodotObject.IsInstanceValid(_bountyArea))_bountyArea!.Visible=false; }
     public void Release()
     {
         if(GodotObject.IsInstanceValid(ActiveKnife))ActiveKnife!.Stop();ActiveKnife=null;
         ReleaseWarrior();_marauderAura="";_flame=0;_carbon=0;_gas=0;_delayed.Clear();
-        ReleaseRepair();
+        ReleaseRepair();if(GodotObject.IsInstanceValid(_bountyArea))_bountyArea!.Visible=false;
         if(_bubble!=null && GodotObject.IsInstanceValid(_bubble))_bubble.QueueFree();_bubble=null;
         foreach(var e in _effects)if(GodotObject.IsInstanceValid(e.Node))e.Node.QueueFree();
         _effects.Clear();foreach(var v in _voices)if(GodotObject.IsInstanceValid(v))v.Stop();

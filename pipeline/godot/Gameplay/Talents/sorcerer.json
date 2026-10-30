@@ -25,20 +25,20 @@
       "Tier": 0,
       "Column": 0,
       "Icon": "res://Assets/UI/talents/darkinfusion.png",
-      "Name": "Dark Mending",
-      "Description": "Dark Heal recovers its cooldown 10% faster.",
+      "Name": "Dark Absolution",
+      "Description": "Dark Heal recovers 3 seconds of Death Field's remaining cooldown.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 0,
       "Available": true,
       "Effects": [
         {
-          "Kind": "cooldown",
-          "Ability": "darkheal",
-          "Amount": 0.1
+          "Kind": "hook",
+          "Key": "so_heal_field",
+          "Amount": 3
         }
       ],
-      "Source": "0xE0002C6C1E8A74A0"
+      "Source": "Sorcerer rework: Static Barrier removed; distinct mechanic."
     },
     {
       "Id": "corruption.empty_body",
@@ -48,21 +48,21 @@
       "Tree": "corruption",
       "Tier": 0,
       "Column": 1,
-      "Icon": "res://Assets/UI/talents/outerrimveteran.png",
-      "Name": "Empty Body",
-      "Description": "Dark Heal restores 10% more health.",
+      "Icon": "res://Assets/UI/icons/lightningdrain.png",
+      "Name": "Siphoned Vitality",
+      "Description": "Defeating an enemy carrying your damage over time restores 2 health. At most once per second.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 0,
       "Available": true,
       "Effects": [
         {
-          "Kind": "healing",
-          "Ability": "darkheal",
-          "Amount": 0.1
+          "Kind": "hook",
+          "Key": "so_siphon",
+          "Amount": 2
         }
       ],
-      "Source": "0xE00044C9831EB943"
+      "Source": "Sorcerer rework: distinct mechanic replacing a generic stat talent."
     },
     {
       "Id": "corruption.barrier_training",
@@ -70,17 +70,17 @@
         "sorcerer"
       ],
       "Tree": "corruption",
-      "Icon": "res://Assets/UI/talents/darkinfusion.png",
-      "Name": "Barrier Training",
-      "Description": "Static Barrier cooldown recovers 8% faster.",
+      "Icon": "res://Assets/UI/icons/lightningstrike.png",
+      "Name": "Static Discharge",
+      "Description": "Lightning Strike hits recover 0.5 seconds of Dark Heal's remaining cooldown. At most once every 2 seconds.",
       "Effects": [
         {
-          "Kind": "cooldown",
-          "Ability": "barrier",
-          "Amount": 0.08
+          "Kind": "hook",
+          "Key": "so_strike_heal",
+          "Amount": 0.5
         }
       ],
-      "Source": "Existing class artwork; adapted Survivors general training.",
+      "Source": "Sorcerer rework: Static Barrier removed; distinct mechanic.",
       "Tier": 0,
       "Column": 2,
       "MaxRank": 1,
@@ -119,21 +119,21 @@
       "Tree": "corruption",
       "Tier": 1,
       "Column": 1,
-      "Icon": "res://Assets/UI/talents/electricshield.png",
-      "Name": "Efficacious Currents",
-      "Description": "Static Barrier absorbs 15% more damage.",
+      "Icon": "res://Assets/UI/icons/deathfield.png",
+      "Name": "Withering Field",
+      "Description": "Death Field hits slow enemies by 25% for 1.5 seconds.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 2,
       "Available": true,
       "Effects": [
         {
-          "Kind": "shield",
-          "Ability": "barrier",
-          "Amount": 0.15
+          "Kind": "hook",
+          "Key": "so_field_slow",
+          "Amount": 0.25
         }
       ],
-      "Source": "0xE00038BDE2304955"
+      "Source": "Sorcerer rework: Static Barrier removed; distinct mechanic."
     },
     {
       "Id": "corruption.resurgence",
@@ -145,7 +145,7 @@
       "Column": 2,
       "Icon": "res://Assets/UI/talents/smugglerrecuperate.png",
       "Name": "Resurgence",
-      "Description": "Activating Static Barrier below half health restores 3 HP. Once every 12 seconds.",
+      "Description": "Defeating an enemy while below half health restores 1 HP. At most once every 3 seconds.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 2,
@@ -153,11 +153,11 @@
       "Effects": [
         {
           "Kind": "hook",
-          "Key": "barrier_heal",
-          "Amount": 3
+          "Key": "so_kill_mend",
+          "Amount": 1
         }
       ],
-      "Source": "0xE0001927BD907BC0"
+      "Source": "Sorcerer rework: Static Barrier removed; distinct mechanic."
     },
     {
       "Id": "corruption.force_bending",
@@ -169,7 +169,7 @@
       "Column": 0,
       "Icon": "res://Assets/UI/talents/drain_life.png",
       "Name": "Force Bending",
-      "Description": "Static Barrier activation reduces Dark Heal's remaining cooldown by 1 second.",
+      "Description": "Defeating an enemy carrying your damage over time recovers 1 second of Dark Heal's remaining cooldown. At most once per second.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 5,
@@ -177,11 +177,11 @@
       "Effects": [
         {
           "Kind": "hook",
-          "Key": "barrier_mending",
+          "Key": "so_siphon_heal",
           "Amount": 1
         }
       ],
-      "Source": "0xE0007628150E4918"
+      "Source": "Sorcerer rework: Static Barrier removed; distinct mechanic."
     },
     {
       "Id": "corruption.reconstruct",
@@ -191,9 +191,9 @@
       "Tree": "corruption",
       "Tier": 2,
       "Column": 1,
-      "Icon": "res://Assets/UI/talents/recuperativenanotech.png",
+      "Icon": "res://Assets/UI/icons/shock.png",
       "Name": "Reconstruct",
-      "Description": "When a shield breaks, restore 6 HP and retaliate for 8 damage nearby. Once every 20 seconds.",
+      "Description": "Taking damage that leaves you below 35% health shocks nearby enemies for 8 damage. Once every 20 seconds.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 5,
@@ -201,11 +201,11 @@
       "Effects": [
         {
           "Kind": "hook",
-          "Key": "shield_recovery",
-          "Amount": 1
+          "Key": "so_reprisal",
+          "Amount": 8
         }
       ],
-      "Source": "0xE000D59577FE130D"
+      "Source": "Sorcerer rework: Static Barrier removed; distinct mechanic."
     },
     {
       "Id": "corruption.force_surge",
@@ -217,7 +217,7 @@
       "Column": 2,
       "Icon": "res://Assets/UI/talents/berserk.png",
       "Name": "Force Surge",
-      "Description": "Taking damage below 25% health restores 12 HP and reduces Static Barrier's remaining cooldown by 4 seconds. Once every 30 seconds.",
+      "Description": "Taking damage below 25% health recovers 4 seconds of Dark Heal's remaining cooldown. Once every 30 seconds.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 5,
@@ -225,11 +225,11 @@
       "Effects": [
         {
           "Kind": "hook",
-          "Key": "emergency",
-          "Amount": 1
+          "Key": "so_surge",
+          "Amount": 4
         }
       ],
-      "Source": "0xE000924E92F36D88"
+      "Source": "Sorcerer rework: Static Barrier removed; distinct mechanic."
     },
     {
       "Id": "lightning.convection",
@@ -239,32 +239,21 @@
       "Tree": "lightning",
       "Tier": 0,
       "Column": 0,
-      "Icon": "res://Assets/UI/talents/lightningstrike.png",
-      "Name": "Convection",
-      "Description": "Shock, Lightning Strike and Thundering Blast deal 8% more damage.",
+      "Icon": "res://Assets/UI/icons/shock.png",
+      "Name": "Conductive Shock",
+      "Description": "Shock hits recover 0.5 seconds of Thundering Blast cooldown, at most once per 0.5 seconds.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 0,
       "Available": true,
       "Effects": [
         {
-          "Kind": "damage",
-          "Ability": "shock",
-          "Amount": 0.08
-        },
-        {
-          "Kind": "damage",
-          "Ability": "thunderingblast",
-          "Amount": 0.08
-        },
-        {
-          "Kind": "damage",
-          "Ability": "lightningstrike",
-          "Amount": 0.08,
-          "Key": ""
+          "Kind": "hook",
+          "Key": "so_shock_blast",
+          "Amount": 0.5
         }
       ],
-      "Source": "0xE00006BA07D0EF65"
+      "Source": "Sorcerer rework: distinct mechanic replacing a generic stat talent."
     },
     {
       "Id": "lightning.lightning_spire",
@@ -274,52 +263,21 @@
       "Tree": "lightning",
       "Tier": 0,
       "Column": 1,
-      "Icon": "res://Assets/UI/talents/childoftheempire.png",
-      "Name": "Lightning Spire",
-      "Description": "Electrical abilities gain 8% range and Force Storm gains 8% radius.",
+      "Icon": "res://Assets/UI/icons/forcestorm.png",
+      "Name": "Eye of the Storm",
+      "Description": "Force Storm hits recover 0.3 seconds of Lightning Strike cooldown, at most once per 0.5 seconds.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 0,
       "Available": true,
       "Effects": [
         {
-          "Kind": "range",
-          "Ability": "lightning",
-          "Amount": 0.08
-        },
-        {
-          "Kind": "range",
-          "Ability": "shock",
-          "Amount": 0.08
-        },
-        {
-          "Kind": "range",
-          "Ability": "chain",
-          "Amount": 0.08
-        },
-        {
-          "Kind": "range",
-          "Ability": "storm",
-          "Amount": 0.08
-        },
-        {
-          "Kind": "range",
-          "Ability": "thunderingblast",
-          "Amount": 0.08
-        },
-        {
-          "Kind": "radius",
-          "Ability": "storm",
-          "Amount": 0.08
-        },
-        {
-          "Kind": "range",
-          "Ability": "lightningstrike",
-          "Amount": 0.08,
-          "Key": ""
+          "Kind": "hook",
+          "Key": "so_storm_strike",
+          "Amount": 0.3
         }
       ],
-      "Source": "0xE000D1CEE89D6526"
+      "Source": "Sorcerer rework: distinct mechanic replacing a generic stat talent."
     },
     {
       "Id": "lightning.force_training",
@@ -327,17 +285,17 @@
         "sorcerer"
       ],
       "Tree": "lightning",
-      "Icon": "res://Assets/UI/talents/lightningstrike.png",
-      "Name": "Force Training",
-      "Description": "Force Lightning deals 8% more damage.",
+      "Icon": "res://Assets/UI/icons/thundering_blast.png",
+      "Name": "Thunder Reset",
+      "Description": "Thundering Blast recovers 2 seconds of Shock cooldown, at most once every 2 seconds.",
       "Effects": [
         {
-          "Kind": "damage",
-          "Ability": "lightning",
-          "Amount": 0.08
+          "Kind": "hook",
+          "Key": "so_blast_shock",
+          "Amount": 2
         }
       ],
-      "Source": "Existing class artwork; adapted Survivors general training.",
+      "Source": "Sorcerer rework: distinct mechanic replacing a generic stat talent.",
       "Tier": 0,
       "Column": 2,
       "MaxRank": 1,
@@ -354,7 +312,7 @@
       "Column": 0,
       "Icon": "res://Assets/UI/talents/swchildoftheempire.png",
       "Name": "Conduction",
-      "Description": "Every sixth electrical hit reduces Chain Lightning's remaining cooldown by 0.5 seconds. At most once per second.",
+      "Description": "Every sixth Shock, Lightning Strike, Chain Lightning, Force Storm or Thundering Blast hit reduces Chain Lightning's remaining cooldown by 0.5 seconds. At most once per second.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 2,
@@ -376,9 +334,9 @@
       "Tree": "lightning",
       "Tier": 1,
       "Column": 1,
-      "Icon": "res://Assets/UI/talents/forkedlightning.png",
+      "Icon": "res://Assets/UI/icons/forkedlightning.png",
       "Name": "Forked Lightning",
-      "Description": "Force Lightning and Lightning Strike fork to one nearby enemy for 45% damage. Enables Forked Lightning training during a run.",
+      "Description": "Shock and Lightning Strike fork to one nearby enemy for 45% damage. Enables Lightning Strike training during a run.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 2,
@@ -391,7 +349,7 @@
         },
         {
           "Kind": "upgrade",
-          "Ability": "lightning",
+          "Ability": "lightningstrike",
           "Amount": 0.15
         }
       ],
@@ -431,7 +389,7 @@
       "Column": 0,
       "Icon": "res://Assets/UI/talents/sithsorcerer.png",
       "Name": "Lightning Barrage",
-      "Description": "Affliction grants 10% faster Force Lightning ticks for 4 seconds (10 second cooldown). Also triggers Polarity Shift in combat: 25% faster ticks and recovery for 6 seconds, every 30 seconds.",
+      "Description": "Shock hits grant 15% faster cooldown recovery on Shock, Lightning Strike, Chain Lightning, Force Storm and Thundering Blast for 4 seconds (10 second cooldown).",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 5,
@@ -440,13 +398,7 @@
         {
           "Kind": "hook",
           "Key": "barrage",
-          "Amount": 0.1
-        },
-        {
-          "Kind": "hook",
-          "Ability": "",
-          "Amount": 1,
-          "Key": "polarity"
+          "Amount": 0.15
         }
       ],
       "Source": "0xE0008402A7993CA3"
@@ -459,7 +411,7 @@
       "Tree": "lightning",
       "Tier": 2,
       "Column": 1,
-      "Icon": "res://Assets/UI/talents/chainlightning.png",
+      "Icon": "res://Assets/UI/icons/chainlightning.png",
       "Name": "Chain Lightning",
       "Description": "Chain Lightning jumps to one additional enemy. Enables Chain Lightning training during a run.",
       "MaxRank": 1,
@@ -488,9 +440,9 @@
       "Tree": "lightning",
       "Tier": 2,
       "Column": 2,
-      "Icon": "res://Assets/UI/talents/shadowtechnique.png",
+      "Icon": "res://Assets/UI/icons/thundering_blast.png",
       "Name": "Thundering Blast",
-      "Description": "Thundering Blast deals 15% more damage against your Affliction. Enables Thundering Blast training during a run.",
+      "Description": "Thundering Blast deals 15% more damage to enemies below half health. Enables Thundering Blast training during a run.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 5,
@@ -498,7 +450,7 @@
       "Effects": [
         {
           "Kind": "hook",
-          "Key": "afflicted_blast",
+          "Key": "blast_execute",
           "Amount": 0.15
         },
         {
@@ -517,32 +469,21 @@
       "Tree": "madness",
       "Tier": 0,
       "Column": 0,
-      "Icon": "res://Assets/UI/talents/shocked.png",
-      "Name": "Calcify",
-      "Description": "Force Lightning, Affliction and Crushing Darkness deal 6% more damage.",
+      "Icon": "res://Assets/UI/icons/creepingterror.png",
+      "Name": "Festering Wounds",
+      "Description": "Direct damage deals 12% more to enemies carrying two or more of your damage-over-time effects.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 0,
       "Available": true,
       "Effects": [
         {
-          "Kind": "damage",
-          "Ability": "lightning",
-          "Amount": 0.06
-        },
-        {
-          "Kind": "damage",
-          "Ability": "affliction",
-          "Amount": 0.06
-        },
-        {
-          "Kind": "damage",
-          "Ability": "crushingdarkness",
-          "Amount": 0.06,
-          "Key": ""
+          "Kind": "hook",
+          "Key": "so_calcify",
+          "Amount": 0.12
         }
       ],
-      "Source": "0xE00046732128ED1A"
+      "Source": "Sorcerer rework: distinct mechanic replacing a generic stat talent."
     },
     {
       "Id": "madness.force_horrors",
@@ -552,20 +493,21 @@
       "Tree": "madness",
       "Tier": 0,
       "Column": 1,
-      "Icon": "res://Assets/UI/talents/mindcrush.png",
-      "Name": "Force Horrors",
-      "Description": "Affliction, Creeping Terror and Crushing Darkness last 1 second longer.",
+      "Icon": "res://Assets/UI/icons/deathfield.png",
+      "Name": "Dread Field",
+      "Description": "Death Field hits afflict enemies with Affliction if they are not already afflicted.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 0,
       "Available": true,
       "Effects": [
         {
-          "Kind": "duration",
+          "Kind": "hook",
+          "Key": "so_field_afflict",
           "Amount": 1
         }
       ],
-      "Source": "0xE000E93F689BBDE4"
+      "Source": "Sorcerer rework: distinct mechanic replacing a generic stat talent."
     },
     {
       "Id": "madness.force_training",
@@ -573,17 +515,17 @@
         "sorcerer"
       ],
       "Tree": "madness",
-      "Icon": "res://Assets/UI/talents/shocked.png",
-      "Name": "Force Training",
-      "Description": "All damaging abilities deal 6% more damage.",
+      "Icon": "res://Assets/UI/icons/crushingdarkness.png",
+      "Name": "Dark Focus",
+      "Description": "Crushing Darkness hits restore 1 health, at most once every 2 seconds.",
       "Effects": [
         {
-          "Kind": "damage",
-          "Ability": "",
-          "Amount": 0.06
+          "Kind": "hook",
+          "Key": "so_dark_focus",
+          "Amount": 1
         }
       ],
-      "Source": "Existing class artwork; adapted Survivors general training.",
+      "Source": "Sorcerer rework: distinct mechanic replacing a generic stat talent.",
       "Tier": 0,
       "Column": 2,
       "MaxRank": 1,
@@ -598,9 +540,9 @@
       "Tree": "madness",
       "Tier": 1,
       "Column": 0,
-      "Icon": "res://Assets/UI/talents/viciousslash.png",
-      "Name": "Torment",
-      "Description": "Shock extends your Affliction on its target by 0.5 seconds, up to 4 seconds beyond its configured duration.",
+      "Icon": "res://Assets/UI/icons/forcestorm.png",
+      "Name": "Static Torment",
+      "Description": "Shock hits recover 0.5 seconds of Force Storm cooldown, at most once per 0.5 seconds.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 2,
@@ -608,11 +550,11 @@
       "Effects": [
         {
           "Kind": "hook",
-          "Key": "shock_extend",
+          "Key": "shock_storm",
           "Amount": 0.5
         }
       ],
-      "Source": "0xE00060DC144259F1"
+      "Source": "Sorcerer rework: Lightning no longer extends damage over time."
     },
     {
       "Id": "madness.parasitism",
@@ -648,7 +590,7 @@
       "Column": 2,
       "Icon": "res://Assets/UI/talents/cloakofpain.png",
       "Name": "Wrath",
-      "Description": "Every sixth Force Lightning hit reduces Affliction, Creeping Terror and Crushing Darkness cooldowns by 0.5 seconds. At most once per second.",
+      "Description": "Every sixth Shock, Chain Lightning or Thundering Blast hit makes the target suffer one extra tick of each of your damage-over-time effects on it. At most once per second.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 2,
@@ -657,7 +599,7 @@
         {
           "Kind": "hook",
           "Key": "wrath",
-          "Amount": 0.5
+          "Amount": 1
         }
       ],
       "Source": "0xE00016A1BC7AC0AC"

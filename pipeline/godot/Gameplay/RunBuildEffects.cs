@@ -19,8 +19,8 @@ public partial class RunBuildEffects : Node
     public float IncomingMultiplier=>(_reinforced>0?1-_reinforcedReduction:1)*(Pregame?.IncomingMultiplier??1);
     public void Attacked(EnemyAgent enemy,bool shielded)
     {
-        if(enemy.GlobalPosition.DistanceSquaredTo(World.PlayerActor.GlobalPosition)>.36f*.36f || !_energyShield || !shielded || _pyroLock>0 || Talent("pyro_shield")==0 || World.Abilities.Find("ionshield")?.Unlocked!=true)return;
-        _pyroLock=1;enemy.Health.ApplyDamage(8,DamageType.Internal);
+        if(enemy.GlobalPosition.DistanceSquaredTo(World.PlayerActor.GlobalPosition)>.36f*.36f || !_energyShield || !shielded || _pyroLock>0 || Talent("pyro_shield")==0 && Pregame?.PowertechFlameShield!=true || World.Abilities.Find("ionshield")?.Unlocked!=true)return;
+        _pyroLock=1;enemy.Health.ApplyDamage(8,DamageType.Internal);Pregame?.PowertechRetaliated(enemy);
         PowertechStatusVisual.Flash(enemy,"4x4_flame_lick_02_bw",16);
     }
     public GameWorld World {get;set;}=null!;
@@ -71,10 +71,10 @@ public partial class RunBuildEffects : Node
         if(ability.Definition.Category==AbilityCategory.Utility && Talent("haste")>0)
         { _haste=3;World.Progression?.Recalculate(); }
     }
-    public float SpeedMultiplier => (Pregame?.MarauderSpeed??1)* (_haste>0?1.3f:1)*(_buff>0?1+_speedBuff:1)*(1+Item("stride"));
+    public float SpeedMultiplier => (Pregame?.MarauderSpeed??1)*(Pregame?.BountySpeed??1)* (_haste>0?1.3f:1)*(_buff>0?1+_speedBuff:1)*(1+Item("stride"));
     public bool Buffed => _buff>0;
     public void ApplyBuff(AbilityDefinition d)
-    { if(d.Id=="blowforblow" || World.RunConfiguration.AdvancedClassId=="assassin" && d.Id is "forcecloak" or "deflection")return;
+    { if(d.Id is "blowforblow" or "thermalsensoroverride" or "koltoshell" || World.RunConfiguration.AdvancedClassId=="assassin" && d.Id is "forcecloak" or "deflection")return;
         _buff=d.BuffSeconds;_damageBuff=d.DamageBuff;_speedBuff=d.SpeedBuff;World.Progression?.Recalculate(); }
     /// <summary>Per-hit class mechanics that need the ability, not just the target.</summary>
     public void AbilityHit(AutomaticAbility ability,Combatant target)
@@ -104,12 +104,17 @@ public partial class RunBuildEffects : Node
     /// <summary>Last Gasp / Wildfire: an afflicted enemy passes its DoTs on when it dies.</summary>
     public void PassOn(Combatant dead)
     {
-        if(Talent("chain_reaction")>0 && Marked(dead))
+        Pregame?.Defeated(dead);
+        Pregame?.PowertechKilled(dead);
+        if(Talent("chain_reaction")>0 && (Marked(dead) || Pregame?.HeatSignature(dead)>0))
         {
             _marks.Remove(dead.GetInstanceId());
             foreach(var near in World.Targeting.InArea(dead.GlobalPosition,0.2f,0.2f,true).Where(c=>c!=dead).ToArray())near.Health.ApplyDamage(20,DamageType.Energy);
         }
         if(World.RunConfiguration.AdvancedClassId=="sorcerer" || World.Build.Pregame.Mechanic("assassin_transfer")>0)World.Periodic.TransferOwned(World.PlayerActor,dead);
+        // Bounty Hunter burns leap to the nearest unburned enemy when their target dies, with at least 3 s left to spread again.
+        else if(World.RunConfiguration.AdvancedClassId is "powertech" or "mercenary")
+            World.Periodic.TransferOwned(World.PlayerActor,dead,s=>s.Definition.Id is "incendiarymissile" or "immolate" or "fusionmissile",3,.4f);
         if(World.RunConfiguration.AdvancedClassId!="sorcerer" && Talent("last_gasp")>0)
             foreach(var source in World.Periodic.On(dead))Spread(source,dead);
     }
@@ -125,7 +130,7 @@ public partial class RunBuildEffects : Node
         Pregame?.Hit(ability);
         if(ability.Definition.Id=="storm" && Talent("storm_slow")>0 && target is EnemyAgent enemy)enemy.Slow(0.65f,1.4f);
         if(ability.Definition.Id=="deathfield" && Item("vulnerability")>0 && target.Alive)target.Health.VulnerabilitySeconds=4;
-        if(ability.Definition.Id is "lightning" or "lightningstrike" && Talent("fork")>0)
+        if(ability.Definition.Id is "lightningstrike" or "shock" && Talent("fork")>0)
         {
             var excluded=primary.Select(c=>c.GetInstanceId()).ToHashSet();
             var next=World.Targeting.ChainTarget(target.AimPosition,0.3f,excluded);
@@ -151,7 +156,7 @@ public partial class RunBuildEffects : Node
     public override void _Ready() { Pregame=new Talents.TalentRuntime(World);AssassinRelics=new AssassinRelics(this);MarauderRelics=new MarauderRelics(this);JuggernautRelics=new JuggernautRelics(this);World.PlayerActor.Health.Damaged+=Pregame.Damaged;World.PlayerActor.Health.ShieldEnded+=ShieldEnded;World.Spawner!.EnemyKilled+=EnemyKilled;World.Periodic.Ticked+=PeriodicTicked; }
     private void ShieldEnded(bool depleted)
     {
-        Pregame?.ShieldEnded(depleted);
+        if(_energyShield)Pregame?.PowertechEnergyShieldEnded();
         _energyShield=false;_guardianShield=false;
         if(!depleted || Talent("backlash")==0 || !World.PlayerActor.Alive)return;
         foreach(var enemy in World.Targeting.InArea(World.PlayerActor.GlobalPosition,0.35f,0.35f).ToArray())

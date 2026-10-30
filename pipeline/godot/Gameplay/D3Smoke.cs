@@ -20,7 +20,7 @@ public partial class D3Smoke : Node
             string cosmetics=FileAccess.FileExists(Equipment.CosmeticCollection.SavePath)?FileAccess.GetFileAsString(Equipment.CosmeticCollection.SavePath):"<absent>";
             w.ResetCombatWorld();w.Waves!.SetPhysicsProcess(false);w.Spawner!.Running=false;w.Abilities.SetPhysicsProcess(false);w.Player.SetPhysicsProcess(false);w.Periodic.SetPhysicsProcess(false);
             foreach(var enemy in w.Spawner.Enemies.ToArray()){enemy.CombatEnabled=false;enemy.SetPhysicsProcess(false);}
-            Check("selected gameplay profile owns active ability, HUD and equipment",w.Combat.Definition.Id==w.RunConfiguration.Profile.StartingAbility && w.Abilities.Abilities.Count(a=>a.Unlocked)==1 && w.Hud!.ActionSlotCount==12 && w.Equipment.Loadout.Current.Items.OrderBy(i=>i.Key).SequenceEqual(w.Equipment.Loadout.Catalog.Presets.Single(p=>p.Id==w.RunConfiguration.Profile.EquipmentPreset).Items.OrderBy(i=>i.Key)));
+            Check("selected gameplay profile owns active ability, HUD and equipment",w.Combat.Definition.Id==w.RunConfiguration.Profile.StartingAbility && w.Abilities.Abilities.Count(a=>a.Unlocked && !a.Definition.IsBasicAttack)==1 && w.Hud!.ActionSlotCount==12 && w.Equipment.Loadout.Current.Items.OrderBy(i=>i.Key).SequenceEqual(w.Equipment.Loadout.Catalog.Presets.Single(p=>p.Id==w.RunConfiguration.Profile.EquipmentPreset).Items.OrderBy(i=>i.Key)));
             var received=new List<CombatEvent>();w.Events.Resolved+=e=>{if(e.Change.Kind==CombatEventKind.Damage)received.Add(e);};
             var flytext=new List<CombatEvent>();w.Flytext.EntryCreated+=e=>{if(e.Change.Kind==CombatEventKind.Damage)flytext.Add(e);};
             var fixtures=new List<Combatant>();

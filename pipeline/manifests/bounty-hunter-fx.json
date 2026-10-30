@@ -1,0 +1,274 @@
+{
+  "textures": [
+    {
+      "source": "/resources/art/fx/texture/weapon_melee/saber_scorch_01.dds",
+      "output": "godot\\Assets\\BountyHunter\\saber_scorch_01.png",
+      "sha256": "4240b8b71318f76da2a3a6c4f2faf354384b5d35db7f14e55dd519e93b4a6af2"
+    },
+    {
+      "source": "/resources/art/lights/falloff_exponential.dds",
+      "output": "godot\\Assets\\BountyHunter\\falloff_exponential.png",
+      "sha256": "645240a9fbb120b6b72afc63a0609f86b08fd0a7590c3f136cce850162fa1cb7"
+    },
+    {
+      "source": "/resources/art/fx/texture/electricity/512_singlearc_bw_02.dds",
+      "output": "godot\\Assets\\BountyHunter\\512_singlearc_bw_02.png",
+      "sha256": "7d458401042ca31ea401d4e8e608eeb562e2fca07100e181c346c8ea481f85e4"
+    },
+    {
+      "source": "/resources/art/fx/texture/debris/blast_mark_rim.dds",
+      "output": "godot\\Assets\\BountyHunter\\blast_mark_rim.png",
+      "sha256": "26493d771ff69059c21c54d9086eb07efbbf10752603827d3b75b53fa53661c5"
+    },
+    {
+      "source": "/resources/art/fx/texture/symbol/tri_ring_blurred.dds",
+      "output": "godot\\Assets\\BountyHunter\\tri_ring_blurred.png",
+      "sha256": "51690017aea2ca32517eb1584240f59b9b5ad4e12e0322fb99b45222610cb5eb"
+    },
+    {
+      "source": "/resources/art/fx/texture/gradient/32x32_solidwhite_wrap.dds",
+      "output": "godot\\Assets\\BountyHunter\\32x32_solidwhite_wrap.png",
+      "sha256": "b1053f89bb82a79f8d33fe961fb79364943688d6fa733b1de98be88f04359cbb"
+    },
+    {
+      "source": "/resources/art/fx/texture/liquid/proj_oilpuddle_border.dds",
+      "output": "godot\\Assets\\BountyHunter\\proj_oilpuddle_border.png",
+      "sha256": "f972e72896706e81b25ff1a64ae4850400fa3531eec9c602520874a6dc914ffb"
+    },
+    {
+      "source": "/resources/art/fx/texture/liquid/proj_oilpuddle_wrap.dds",
+      "output": "godot\\Assets\\BountyHunter\\proj_oilpuddle_wrap.png",
+      "sha256": "5feac5fb1cc04b3ed0a535bc90b6e4145dbc7c556436a3cc1b6de437ed3478b7"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/proj_hexgrid_tile.dds",
+      "output": "godot\\Assets\\BountyHunter\\proj_hexgrid_tile.png",
+      "sha256": "4d61020014b873eeb1f2a763a317133f116fbc9eac12db05b42968943e803138"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/force_ghost_proj_01.dds",
+      "output": "godot\\Assets\\BountyHunter\\force_ghost_proj_01.png",
+      "sha256": "8f4bcac9d7e01edee8536547a0f3f29cb9d7298c39e06985b322ba3d114ec0ad"
+    },
+    {
+      "source": "/resources/art/fx/texture/symbol/proj_radial_swirl_01.dds",
+      "output": "godot\\Assets\\BountyHunter\\proj_radial_swirl_01.png",
+      "sha256": "e8a073a17a3f467564e63df0496325254e664d148df88c8ddf31a92b5ac4fb61"
+    },
+    {
+      "source": "/resources/art/fx/texture/debris/blast_mark.dds",
+      "output": "godot\\Assets\\BountyHunter\\blast_mark.png",
+      "sha256": "0076de7990c93a0db5fe1c2d9b4bc7ef326244b8541fbcfcd4a1282fd51029a3"
+    },
+    {
+      "source": "/resources/art/fx/texture/trail/trail_misc_02.dds",
+      "output": "godot\\Assets\\BountyHunter\\trail_misc_02.png",
+      "sha256": "bf6a9c40356d893f71c0ed1520a0bdbd22f1f6f3a77cdef64231eb170983c707"
+    },
+    {
+      "source": "/resources/art/defaultassets/black.dds",
+      "output": "godot\\Assets\\BountyHunter\\black.png",
+      "sha256": "52dfe43025076f8a3b6d08d341916b9e38c0ecf7f4e6c75f0097e9ead901da27"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/bw_flare_gray.dds",
+      "output": "godot\\Assets\\BountyHunter\\bw_flare_gray.png",
+      "sha256": "3a05aa3f7e8f429f7d45eb192177c6b6ac127f48978e5a2af53bea26f6848039"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/ring_shock_distortion_01.dds",
+      "output": "godot\\Assets\\BountyHunter\\ring_shock_distortion_01.png",
+      "sha256": "73a9da02fbebe570b9519a958dafea720c15de76d5dd078abb656bd5190a29cf"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/bw_starflare.dds",
+      "output": "godot\\Assets\\BountyHunter\\bw_starflare.png",
+      "sha256": "763265d9e83e5644154a5ad6935bb1369d5729b3c5cb3f149175dbf85df49f11"
+    },
+    {
+      "source": "/resources/art/fx/texture/spark/bw_fx_2x2_sparknglow_01.dds",
+      "output": "godot\\Assets\\BountyHunter\\bw_fx_2x2_sparknglow_01.png",
+      "sha256": "d5dfc9edc3a1f84913173f02881d32d2cada87ea07720b475e6c15f5ff9ed60f"
+    },
+    {
+      "source": "/resources/art/fx/texture/explosion/bw_explosion_sphere_single_frame.dds",
+      "output": "godot\\Assets\\BountyHunter\\bw_explosion_sphere_single_frame.png",
+      "sha256": "71e1a879867299194ba9b6ac05c4ba735d8d916784bc3e4d9c7223f22aac26d7"
+    },
+    {
+      "source": "/resources/art/fx/texture/fire/4x4_flame_lick_tintable.dds",
+      "output": "godot\\Assets\\BountyHunter\\4x4_flame_lick_tintable.png",
+      "sha256": "f8aeac9747db1688183c6ffa90ad63d34ade6c4e93ccb2cb60ef6b14da1c2dd3"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/flare_gray.dds",
+      "output": "godot\\Assets\\BountyHunter\\flare_gray.png",
+      "sha256": "4435c3714f7110351fbb2ffbfa20d3213ff2a081c557203b6d5597eea0ed81df"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/bw_fx_horizontal_flare_orange_hot.dds",
+      "output": "godot\\Assets\\BountyHunter\\bw_fx_horizontal_flare_orange_hot.png",
+      "sha256": "2b5150930e92f21ed05a9a3c947dd69ed69316086d7a6213df104123afd8ee22"
+    },
+    {
+      "source": "/resources/art/fx/texture/trail/trail_basic_01.dds",
+      "output": "godot\\Assets\\BountyHunter\\trail_basic_01.png",
+      "sha256": "84abb5f5a27da9a4c65929762fd7dc9f7a2e7f198dd0ca013af9397ca7dc945f"
+    },
+    {
+      "source": "/resources/art/fx/texture/trail/trail_misc_03.dds",
+      "output": "godot\\Assets\\BountyHunter\\trail_misc_03.png",
+      "sha256": "1f0f3acc734b65d07745284eebfa0ab1291366c9ec29a6712edca9074be68b1c"
+    },
+    {
+      "source": "/resources/art/fx/texture/gradient/fx_gradient_05.dds",
+      "output": "godot\\Assets\\BountyHunter\\fx_gradient_05.png",
+      "sha256": "b910732369355aab70ee775548b24ed9aaf46f42792ee86683f72a5b78f78c71"
+    },
+    {
+      "source": "/resources/art/fx/texture/electricity/electric_rings_bw_02.dds",
+      "output": "godot\\Assets\\BountyHunter\\electric_rings_bw_02.png",
+      "sha256": "2349303fb1928162ed8329d8d373bc9acc9a58e2a7332be414614c4e76e2aae9"
+    },
+    {
+      "source": "/resources/art/fx/texture/fire/4x4_flame_lick_02_bw.dds",
+      "output": "godot\\Assets\\BountyHunter\\4x4_flame_lick_02_bw.png",
+      "sha256": "338df4e4a1e0a4b542c0dc5a4f2160f8b3558ede5085d19535031a09518887db"
+    },
+    {
+      "source": "/resources/art/fx/texture/trail/trail_glob.dds",
+      "output": "godot\\Assets\\BountyHunter\\trail_glob.png",
+      "sha256": "7829047a60adfd243125829fce265a79014960f435df4108dd7c3dd3fe878e71"
+    },
+    {
+      "source": "/resources/art/fx/texture/smoke/fx_2x2_white_smoke_alpha.dds",
+      "output": "godot\\Assets\\BountyHunter\\fx_2x2_white_smoke_alpha.png",
+      "sha256": "2d05e31f34848e978e9da3b0fb5b386e7236055b72ad4db0c88fe6637e6504e6"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/glow_basic_alpha.dds",
+      "output": "godot\\Assets\\BountyHunter\\glow_basic_alpha.png",
+      "sha256": "67e72842c2894ade952a0645fdd73d1da2d2563e3688331d39b8bda98f183a6c"
+    },
+    {
+      "source": "/resources/art/fx/texture/smoke/2x2_smoke_02.dds",
+      "output": "godot\\Assets\\BountyHunter\\2x2_smoke_02.png",
+      "sha256": "7f3ae78b1604cf35a7102a68c4b94c3d625032924e57ec9960fd397b6c08cf7b"
+    },
+    {
+      "source": "/resources/art/fx/texture/fire/fx_2x2_flames_emmissive_bw_01_d.dds",
+      "output": "godot\\Assets\\BountyHunter\\fx_2x2_flames_emmissive_bw_01_d.png",
+      "sha256": "eb2c44d122e5b9e0b5cfed3988b1644331a6bad433559661f83b7df55a7086b4"
+    },
+    {
+      "source": "/resources/art/fx/texture/smoke/2x2volumesmokegradient_blur2.dds",
+      "output": "godot\\Assets\\BountyHunter\\2x2volumesmokegradient_blur2.png",
+      "sha256": "78c94508154cd5c588bc25f1eafa29bd72c68756ee60ef0ff18a6be895dfd177"
+    },
+    {
+      "source": "/resources/art/fx/texture/fire/fx_2x2_roundflames_01_desat.dds",
+      "output": "godot\\Assets\\BountyHunter\\fx_2x2_roundflames_01_desat.png",
+      "sha256": "f05c04fa19dd00055e72683258a9f41ac36ebe23fb05f488b4dc9c9f8a4be90e"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/sphere_displaced_01.dds",
+      "output": "godot\\Assets\\BountyHunter\\sphere_displaced_01.png",
+      "sha256": "ea14390362b6cbfc9d0cd8b1f6d28ab4f61598d1f62e04507812dbad4d45d752"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/2x2_flares.dds",
+      "output": "godot\\Assets\\BountyHunter\\2x2_flares.png",
+      "sha256": "e6ddfe90706196ed11ac2e46c8750d38865f83b16526396d9bc294e1b4497726"
+    },
+    {
+      "source": "/resources/art/fx/texture/smoke/2x2_smoke_screen_clouds.dds",
+      "output": "godot\\Assets\\BountyHunter\\2x2_smoke_screen_clouds.png",
+      "sha256": "2c2a02ae8ba9791591d2420bc1d58e9ebdd016e6155248d2233f0f3829b49094"
+    },
+    {
+      "source": "/resources/art/fx/texture/smoke/bw_fx_mountaintop_dust.dds",
+      "output": "godot\\Assets\\BountyHunter\\bw_fx_mountaintop_dust.png",
+      "sha256": "fe78034c1c7272ea343743b987172005f6f1c254ba58e7007f234d31387e3cb9"
+    },
+    {
+      "source": "/resources/art/fx/texture/liquid/fx_lava_spray_bw.dds",
+      "output": "godot\\Assets\\BountyHunter\\fx_lava_spray_bw.png",
+      "sha256": "a69780f494b367d3edb1d76f4db239efe63ac2b53696054bab1c66b324f525fe"
+    },
+    {
+      "source": "/resources/art/fx/texture/smoke/8x8_billowing_steam.dds",
+      "output": "godot\\Assets\\BountyHunter\\8x8_billowing_steam.png",
+      "sha256": "c87f4f9617c7b79992ac056c93960a55fa6af57379e9205762b8bf0f00c35dfc"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/fx_force_shockwave.dds",
+      "output": "godot\\Assets\\BountyHunter\\fx_force_shockwave.png",
+      "sha256": "dc6af7e2f976ec1f2ec8e4ced774cecc8f7f602002d2bb103c46240d6c424b8d"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/streak_blue_horizontal.dds",
+      "output": "godot\\Assets\\BountyHunter\\streak_blue_horizontal.png",
+      "sha256": "b2ef9df37efc4b21e26a79a75d77678a8432db113ab1a723e8ffbfb3993e5286"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/sc_shields_energycrackle01.dds",
+      "output": "godot\\Assets\\BountyHunter\\sc_shields_energycrackle01.png",
+      "sha256": "6603ad776cb054c43af9d5469f2e132c4e43c4b5cf186fe2ae8decf40c493b29"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/bh_techlines_build_01.dds",
+      "output": "godot\\Assets\\BountyHunter\\bh_techlines_build_01.png",
+      "sha256": "d329454063f7bf308e6d11407cf9c5069e95543282344827f8c15f48577fae56"
+    },
+    {
+      "source": "/resources/art/fx/texture/spark/spark_core.dds",
+      "output": "godot\\Assets\\BountyHunter\\spark_core.png",
+      "sha256": "8a276e0baee225b1bdbe135b004ceb0372a0845840537fa450d3b72e28ba8088"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/2x2_electrical_blast_alpha.dds",
+      "output": "godot\\Assets\\BountyHunter\\2x2_electrical_blast_alpha.png",
+      "sha256": "cf26ee030ad79c102ae7307d1dd204c6d481b30525b8ba9cd4cfbef729d7b57d"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/glow_ring_thin_innergrad_01.dds",
+      "output": "godot\\Assets\\BountyHunter\\glow_ring_thin_innergrad_01.png",
+      "sha256": "da103300b3a8ea7c587c67bb5a51b4618d89e29091935f3f5010f743f0475087"
+    },
+    {
+      "source": "/resources/art/fx/texture/smoke/fx_smoke_10_alpha.dds",
+      "output": "godot\\Assets\\BountyHunter\\fx_smoke_10_alpha.png",
+      "sha256": "6eb24a2e58a09290ee99e6bc2fb78be08fbf3d6c339b182ea3bc1b1b6b571c6b"
+    },
+    {
+      "source": "/resources/art/fx/texture/symbol/bh_reticle_v01.dds",
+      "output": "godot\\Assets\\BountyHunter\\bh_reticle_v01.png",
+      "sha256": "a0d768dcdb89ddac83a9bd02331e73060a9d34de651fdc0b5320bbd3e5dc6a08"
+    },
+    {
+      "source": "/resources/art/fx/texture/spark/fx_blue_red_sparknglow_01.dds",
+      "output": "godot\\Assets\\BountyHunter\\fx_blue_red_sparknglow_01.png",
+      "sha256": "6f2f9dd841f908287371cc907fcd54f76c6018ba3835553982f0afbb954f2fc6"
+    },
+    {
+      "source": "/resources/art/fx/texture/trail/hammershot_trail_base.dds",
+      "output": "godot\\Assets\\BountyHunter\\hammershot_trail_base.png",
+      "sha256": "78b2c7c1ab6b07a0f256c8a1c9cbac62e23235ce79bf9552292ba32259365962"
+    },
+    {
+      "source": "/resources/art/fx/texture/glow/flare_long_01.dds",
+      "output": "godot\\Assets\\BountyHunter\\flare_long_01.png",
+      "sha256": "f49cbc178f12b3189eca998faed7d5c97a9e40ee850184721a8d7b69b17981b0"
+    },
+    {
+      "source": "/resources/art/fx/texture/fire/fx_embers_02.dds",
+      "output": "godot\\Assets\\BountyHunter\\fx_embers_02.png",
+      "sha256": "0e1e3641764eff20e41909fd9e4f54f5b58611da6051b1e300549edb48e2fb07"
+    },
+    {
+      "source": "/resources/art/fx/texture/smoke/2x2_fx_vos_cloud_cover_under_02_bw.dds",
+      "output": "godot\\Assets\\BountyHunter\\2x2_fx_vos_cloud_cover_under_02_bw.png",
+      "sha256": "21901938fa187109ebacefb6defceb706a4015349a3b1a08796ac6478b1a6d2f"
+    }
+  ]
+}

@@ -64,6 +64,9 @@ public sealed class TalentCatalog
         var agent=JsonSerializer.Deserialize<TalentCatalog>(FileAccess.GetFileAsString("res://Gameplay/Talents/agent.json"))!;
         catalog.Trees=catalog.Trees.Concat(agent.Trees).ToArray();
         catalog.Talents=catalog.Talents.Concat(agent.Talents).ToArray();
+        var bountyHunter=JsonSerializer.Deserialize<TalentCatalog>(FileAccess.GetFileAsString("res://Gameplay/Talents/bounty_hunter.json"))!;
+        catalog.Trees=catalog.Trees.Concat(bountyHunter.Trees).ToArray();
+        catalog.Talents=catalog.Talents.Concat(bountyHunter.Talents).ToArray();
         if(catalog.Budget<0 || catalog.Talents.Select(t=>t.Id).Distinct().Count()!=catalog.Talents.Length ||
             catalog.Talents.Any(t=>t.Cost<1 || t.MaxRank<1 || t.RequiredPoints<0 || t.Tier<0 ||
                 !catalog.Trees.Any(tree=>tree.Id==t.Tree) || t.Prerequisites.Any(p=>p.Rank<1 ||

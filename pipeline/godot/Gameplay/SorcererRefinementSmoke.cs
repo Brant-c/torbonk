@@ -61,7 +61,7 @@ public partial class SorcererRefinementSmoke : Node
             await Capture("darkness");
             Check("Death Field hybrid unlock",p.Grant("unlock_deathfield"));var field=w.Abilities.Find("deathfield")!;Cast(field);field.Advance(1);field.Abort();Check("Death Field spreads Crushing Darkness to multiple enemies",w.Periodic.Has(crush,b) && w.Periodic.Has(crush,c));
             w.Periodic.Clear();w.Periodic.Apply(crush,a);float hp=a.Health.Current;w.Periodic.Advance(9);float normal=hp-a.Health.Current;
-            Check("tick mastery learnable",p.Grant("tick"));w.Periodic.Apply(crush,a);hp=a.Health.Current;w.Periodic.Advance(8.9);Check("tick mastery increases damage without shorter duration",hp-a.Health.Current>normal && w.Periodic.Remaining(crush,a)>.09);w.Periodic.Advance(.1);Check("DoT duration unchanged",!w.Periodic.Has(crush,a));
+            Check("tick mastery learnable",p.Grant("sorcerer_tick_crushingdarkness") && p.Grant("sorcerer_tick_crushingdarkness"));w.Periodic.Apply(crush,a);hp=a.Health.Current;w.Periodic.Advance(8.9);Check("tick mastery increases damage without shorter duration",hp-a.Health.Current>normal && w.Periodic.Remaining(crush,a)>.09);w.Periodic.Advance(.1);Check("DoT duration unchanged",!w.Periodic.Has(crush,a));
             p.ResetRun();Check("reset restores slotless Affliction",aff.Unlocked && p.Ranks.Count==0 && w.Abilities.Equipped(AbilityCategory.Offensive)==1);
             Check("Storm and Lightning Strike learnable",p.Grant("unlock_storm") && p.Grant("unlock_lightningstrike"));
             Cast(storm);storm.Advance(.85);Check("Storm no longer blocks casting after gesture",storm.Casting && !storm.BlocksCasting && w.Player.Presentation.GestureOwner!=storm);

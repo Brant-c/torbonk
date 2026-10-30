@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "retractableblade"
+StartsUnlocked = false
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+Title = "Retractable Blade"
+Icon = "retractableblade"
+Damage = 14
+CooldownSeconds = 6
+Range = 0.26
+Radius = 0
+Area = 0
+PeriodicDamage = 5
+PeriodicDuration = 6
+PeriodicInterval = 1
+DamageType = 1
+WindupSeconds = 0.35
+ChannelSeconds = 0
+RecoverySeconds = 0.4
+GestureSeconds = 1.3
+StartClip = "BH/RetractableBlade"
+LoopClip = "BH/RetractableBlade"
+EndClip = ""
+PresentationKind = "bhblade"
+MuzzleBone = "RightWrist"
+CastAudio = "res://Assets/BountyHunter/Audio/748974131.wav"
+WeaponAudio = "res://Assets/BountyHunter/Audio/13393986.wav"
+ImpactAudio = "res://Assets/BountyHunter/Audio/616886755.wav"
+ImpactTexture = "res://Assets/BountyHunter/saber_scorch_01.png"
+EffectTint = Color(1, 0.45, 0.2, 1)
+Description = "Wrist-blade strike that leaves a 6-second bleed. Explosive Dart and Iron Fist copy this bleed onto other enemies."

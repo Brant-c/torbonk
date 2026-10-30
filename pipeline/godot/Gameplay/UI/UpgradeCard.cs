@@ -35,6 +35,7 @@ public partial class UpgradeCard : SwtorButton
         SizeFlagsHorizontal=SizeFlags.ExpandFill;
         var (rarityColor,rarityFrame)=definition.Rarity switch
         {
+            PowerRarity.Standard => (new Color("b4b8bc"),"rarity_premium"),
             PowerRarity.Prototype => (new Color("60c2ed"),"rarity_prototype"),
             PowerRarity.Artifact => (new Color("be8bf1"),"rarity_artifact"),
             _ => (new Color("55d884"),"rarity_premium")

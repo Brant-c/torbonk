@@ -31,6 +31,8 @@ public partial class B8Smoke : Node
             world.ResetCombatWorld();world.Waves!.SetPhysicsProcess(false);world.Spawner!.Running=false;
             var controller=world.Abilities;controller.SetPhysicsProcess(false);controller.Abort();world.Player.SetPhysicsProcess(false);
             var health=world.PlayerActor.Health;var p=world.Progression!;var catalog=p.Upgrades;
+            // Static Barrier and the bundled Death Field / Dark Heal cards left the Sorcerer pool, so this ability smoke loads them directly.
+            UpgradeDefinition Card(string id){var u=(UpgradeDefinition)GD.Load<UpgradeDefinition>($"res://Gameplay/Upgrades/{id}.tres").Duplicate();u.RarityRules=catalog.First().RarityRules;u.AbilityTitle=world.Abilities.Find(u.AbilityId)?.Definition.Title??"";return u;}
             p.LevelAnnouncementSeconds=0.2f;
             world.Events.Resolved+=received.Add;world.Flytext.EntryCreated+=fly.Add;
             var field=controller.Find("deathfield")!;var barrier=controller.Find("barrier")!;var heal=controller.Find("darkheal")!;
@@ -40,8 +42,8 @@ public partial class B8Smoke : Node
                 new[]{"vfx_hand_left","LeftWrist","Chest","Bip01"}.All(b=>world.Player.Presentation.Skeleton.FindBone(b)>=0));
             foreach(var ability in new[]{field,barrier,heal})
             {
-                var unlock=catalog.Single(u=>u.Id=="unlock_"+ability.Definition.Id);
-                Check(ability.Definition.Title+" remains gated before unlock",!ability.TryBegin() && !p.IsEligible(catalog.Single(u=>u.Id==ability.Definition.Id+"_power")));
+                var unlock=Card("unlock_"+ability.Definition.Id);
+                Check(ability.Definition.Title+" remains gated before unlock",!ability.TryBegin() && !p.IsEligible(Card(ability.Definition.Id+"_power")));
                 p.Upgrades=new Godot.Collections.Array<UpgradeDefinition> {unlock,catalog.Single(u=>u.Id=="health"),catalog.Single(u=>u.Id=="speed")};
                 p.AddExperience(p.RequiredExperience);await Until(()=>p.CanChoose);
                 Check(ability.Definition.Title+" unlocks through a real level choice",p.Choose(p.Offers.ToList().IndexOf(unlock)) && ability.Unlocked);
@@ -112,7 +114,7 @@ public partial class B8Smoke : Node
             Check("self defenses activate during offensive cooldown and animations",barrier.Casts>0 && heal.Casts>0 && health.Current>=85 && health.Shielded);
             foreach(var id in new[]{"deathfield","barrier","darkheal"})
             {
-                var power=catalog.Single(u=>u.Id==id+"_power");
+                var power=Card(id+"_power");
                 p.Upgrades=new Godot.Collections.Array<UpgradeDefinition> {power,catalog.Single(u=>u.Id=="health"),catalog.Single(u=>u.Id=="speed")};
                 foreach(var previous in catalog.Where(u=>u.Effect==UpgradeEffect.AbilityPower && p.Rank(u)>0))
                 {var capped=(UpgradeDefinition)previous.Duplicate();capped.MaximumRank=p.Rank(previous);p.Upgrades.Add(capped);}

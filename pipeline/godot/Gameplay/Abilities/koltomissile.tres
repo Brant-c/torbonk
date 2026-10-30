@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "koltomissile"
+StartsUnlocked = false
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+Title = "Kolto Missile"
+Icon = "sonicmissle"
+Category = 1
+Damage = 6
+CooldownSeconds = 16
+Range = 1.0
+Radius = 0.3
+Area = 1
+TargetRule = 1
+Healing = 1
+HealingCap = 4
+WindupSeconds = 0.3
+ChannelSeconds = 0
+RecoverySeconds = 0.4
+GestureSeconds = 1.0
+StartClip = "D3/PistolBracerStart"
+LoopClip = "D3/PistolBracerStart"
+EndClip = "D3/PistolBracerEnd"
+PresentationKind = "bhkolto"
+MuzzleBone = "LeftWrist"
+CastAudio = "res://Assets/BountyHunter/Audio/52225576.wav"
+ImpactAudio = "res://Assets/BountyHunter/Audio/1035213509.wav"
+ImpactTexture = "res://Assets/BountyHunter/fx_force_shockwave.png"
+EffectTint = Color(0.35, 1, 0.55, 1)
+Description = "Kolto-laced missile: light damage to the group it hits, heals 1 HP per enemy hit (at most 4), and leaves a 6-second kolto field. While you stand in it you take 15% less damage."

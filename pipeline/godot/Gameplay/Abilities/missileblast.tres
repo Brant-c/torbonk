@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "missileblast"
+StartsUnlocked = false
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+Title = "Missile Blast"
+Icon = "missileblast"
+Damage = 24
+CooldownSeconds = 6
+Range = 1.0
+Radius = 0.22
+Area = 4
+SplashMultiplier = 0.6
+WindupSeconds = 0.3
+ChannelSeconds = 0
+RecoverySeconds = 0.4
+GestureSeconds = 1.0
+StartClip = "D3/BracerStart"
+LoopClip = "D3/BracerStart"
+EndClip = "D3/BracerEnd"
+PresentationKind = "bhmissileblast"
+MuzzleBone = "LeftWrist"
+CastAudio = "res://Assets/BountyHunter/Audio/27195800.wav"
+ImpactAudio = "res://Assets/BountyHunter/Audio/69058290.wav"
+ImpactTexture = "res://Assets/BountyHunter/bw_explosion_sphere_single_frame.png"
+EffectTint = Color(1, 0.55, 0.2, 1)
+Description = "Bracer missile that bursts on its target, hitting nearby enemies for 60% and giving every enemy it hits 1 Heat Signature stack."

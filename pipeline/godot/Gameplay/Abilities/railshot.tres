@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "railshot"
+StartsUnlocked = false
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+Title = "Rail Shot"
+Icon = "railshot"
+Damage = 40
+CooldownSeconds = 6
+Range = 1.0
+Radius = 0
+Area = 0
+WindupSeconds = 0.3
+ChannelSeconds = 0
+RecoverySeconds = 0.5
+GestureSeconds = 1.0
+StartClip = "D3/PistolBracerStart"
+LoopClip = "D3/PistolBracerStart"
+EndClip = "D3/PistolBracerEnd"
+PresentationKind = "bhrail"
+MuzzleBone = "LeftWrist"
+CastAudio = "res://Assets/BountyHunter/Audio/109578225.wav"
+ImpactAudio = "res://Assets/BountyHunter/Audio/410452388.wav"
+ImpactTexture = "res://Assets/BountyHunter/bw_starflare.png"
+EffectTint = Color(0.55, 0.85, 1, 1)
+Description = "Heavy bracer rail bolt at one enemy. Advanced Prototype hits harder on bleeding targets; Pyrotech and Innovative Ordnance can spread burns with it."

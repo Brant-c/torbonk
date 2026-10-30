@@ -4,7 +4,7 @@ using System.Linq;
 namespace SwtorSurvivors;
 
 public enum UpgradeEffect { Damage, TickRate, Range, Cooldown, Health, Speed, Radius, UnlockAbility, AbilityPower, Mechanic }
-public enum PowerRarity { Premium, Prototype, Artifact }
+public enum PowerRarity { Standard = -1, Premium = 0, Prototype = 1, Artifact = 2 }
 
 /// <summary>Survivors tuning, not restored SWTOR ability rules.</summary>
 [GlobalClass]
@@ -49,12 +49,7 @@ public partial class UpgradeDefinition : Resource
             ? Godot.GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{AbilityId}.tres").Description+" Uses one offensive slot."
             : $"Unlock {Scope}. Adds its automatic ability to your action bar for this run.",
         UpgradeEffect.AbilityPower when MechanicalDescription!="" => MechanicalDescription,
-        UpgradeEffect.AbilityPower => DamagePerRank>0 && AbilityId is not ("deathfield" or "barrier")
-            ? $"{Scope}: +{DamagePerRank*RarityMultiplier:P0} base damage per rank."
-            : AbilityId switch {
-            "deathfield" => $"Death Field: +{DamagePerRank*RarityMultiplier:P0} damage, +{RadiusPerRank*RarityMultiplier:P0} radius, +{CooldownPerRank*RarityMultiplier:P0} cooldown recovery, +{HealingPerRank*RarityMultiplier:P0} healing per target. Healing cap stays 8.",
-            "barrier" => $"Static Barrier: +{ShieldPerRank*RarityMultiplier:P0} capacity, +{DurationPerRank*RarityMultiplier:P0} duration, +{CooldownPerRank*RarityMultiplier:P0} cooldown recovery rate.",
-            _ => $"Dark Heal: +{HealingPerRank*RarityMultiplier:P0} healing, +{CooldownPerRank*RarityMultiplier:P0} cooldown recovery rate; trigger {ThresholdPerRank*RarityMultiplier*100:0.#} percentage points earlier (up to 80% HP)." },
+        UpgradeEffect.AbilityPower => PowerDescription(),
         UpgradeEffect.Damage => $"{Scope}: +{EffectiveAmount:P0} base damage per rank.",
         UpgradeEffect.TickRate => $"{Scope}: +{EffectiveAmount:P0} tick frequency per rank (channels and periodic damage; durations unchanged).",
         UpgradeEffect.Range => $"{Scope}: +{EffectiveAmount:P0} base range per rank.",
@@ -63,4 +58,18 @@ public partial class UpgradeDefinition : Resource
         UpgradeEffect.Health => $"Maximum health +{EffectiveAmount:0} per rank. Heal that amount now.",
         _ => $"Movement speed +{EffectiveAmount:P0} of base per rank."
     };
+
+    // One clause per non-zero axis, so a single-axis card reads as exactly its one effect.
+    private string PowerDescription()
+    {
+        float m=RarityMultiplier;var axes=new System.Collections.Generic.List<string>();
+        if(DamagePerRank>0)axes.Add($"+{DamagePerRank*m:P0} base damage");
+        if(RadiusPerRank>0)axes.Add($"+{RadiusPerRank*m:P0} base radius");
+        if(CooldownPerRank>0)axes.Add($"+{CooldownPerRank*m:P0} cooldown recovery rate");
+        if(HealingPerRank>0)axes.Add($"+{HealingPerRank*m:P0} healing");
+        if(ShieldPerRank>0)axes.Add($"+{ShieldPerRank*m:P0} capacity");
+        if(DurationPerRank>0)axes.Add($"+{DurationPerRank*m:P0} duration");
+        if(ThresholdPerRank>0)axes.Add($"trigger {ThresholdPerRank*m*100:0.#} percentage points earlier (up to 80% HP)");
+        return $"{Scope}: {string.Join(", ",axes)} per rank.";
+    }
 }

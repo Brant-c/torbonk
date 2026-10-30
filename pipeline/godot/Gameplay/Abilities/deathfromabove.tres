@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "deathfromabove"
+StartsUnlocked = false
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+Title = "Death From Above"
+Icon = "deathfromabove"
+Damage = 9
+CooldownSeconds = 18
+Range = 1.2
+Radius = 0.36
+Area = 1
+TargetRule = 1
+PersistentArea = true
+WindupSeconds = 0.4
+ChannelSeconds = 3.0
+TickSeconds = 0.375
+RecoverySeconds = 0.5
+GestureSeconds = 3.53
+MaintainChannelGesture = true
+StartClip = "BH/DeathFromAbove"
+LoopClip = "BH/DeathFromAbove"
+EndClip = ""
+PresentationKind = "bhdfa"
+MuzzleBone = "LeftWrist"
+CastAudio = "res://Assets/BountyHunter/Audio/98468892.wav"
+ChannelAudio = "res://Assets/BountyHunter/Audio/244153238.wav"
+ImpactAudio = "res://Assets/BountyHunter/Audio/19710093.wav"
+ImpactTexture = "res://Assets/BountyHunter/bw_explosion_sphere_single_frame.png"
+EffectTint = Color(1, 0.6, 0.25, 1)
+Description = "Hover on your jetpack and rain eight missile volleys over the densest enemy group for 3 seconds."

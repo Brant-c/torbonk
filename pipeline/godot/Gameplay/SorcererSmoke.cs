@@ -24,6 +24,24 @@ public partial class SorcererSmoke : Node
             Check("correct starting attacks begin unlocked",w.Abilities.Abilities.Count(a=>a.Unlocked)==startingCount && w.Abilities.Equipped(AbilityCategory.Offensive)==(assassin?0:1));
             var ritual=w.Artifacts!.Catalog.Single(a=>a.Id=="run.ritual");
             Check("locked Death Field relic excluded",!w.Artifacts.Eligible(ritual,2));
+            if(!assassin)
+            {
+                // Talent rework: one axis per card, no rank caps, no Static Barrier, no recovery on single-target DoTs.
+                int Axes(UpgradeDefinition u)=>new[]{u.DamagePerRank,u.RadiusPerRank,u.CooldownPerRank,u.HealingPerRank,u.ShieldPerRank,u.DurationPerRank,u.ThresholdPerRank}.Count(x=>x!=0);
+                var powers=p.Upgrades.Where(u=>u.Id.StartsWith("sorcerer_") && u.Effect==UpgradeEffect.AbilityPower).ToArray();
+                Check("every Sorcerer power card moves exactly one axis",powers.Length>=18 && powers.All(u=>Axes(u)==1));
+                Check("Sorcerer scalable cards are never rank-capped",p.Upgrades.Where(u=>u.Effect is UpgradeEffect.AbilityPower or UpgradeEffect.Damage or UpgradeEffect.Speed or UpgradeEffect.Radius or UpgradeEffect.Cooldown or UpgradeEffect.TickRate).All(u=>u.MaximumRank==0));
+                bool Recovery(UpgradeDefinition u)=>u.Effect==UpgradeEffect.Cooldown || u.CooldownPerRank>0;
+                Check("single-target DoTs have no recovery card",!p.Upgrades.Any(u=>Recovery(u) && u.AbilityId is "affliction" or "creepingterror" or "crushingdarkness"));
+                Check("Force Storm, Death Field and Thundering Blast have recovery cards",new[]{"storm","deathfield","thunderingblast"}.All(id=>p.Upgrades.Any(u=>Recovery(u) && u.AbilityId==id)));
+                Check("range and tick cards exist for Force Lightning and Force Storm",new[]{"sorcerer_range_lightning","sorcerer_range_storm","sorcerer_tick_lightning","sorcerer_tick_storm"}.All(id=>p.Upgrades.Any(u=>u.Id==id)));
+                Check("Static Barrier cards and Dark Heal bundle are gone",!p.Upgrades.Any(u=>u.AbilityId=="barrier" || u.Id is "backlash" or "darkheal_power" or "deathfield_power" or "barrier_power") &&
+                    !p.Upgrades.Any(u=>u.Mechanic is "so_pulse" or "so_heal_barrier" or "so_barrier_field" or "barrier_heal" or "barrier_mending" or "shield_recovery" or "emergency"));
+                var heal=p.Upgrades.Single(u=>u.Id=="sorcerer_healing_darkheal");
+                Check("Dark Heal healing card is +5% per rank and healing-only",Math.Abs(heal.HealingPerRank-.05f)<1e-6f && Axes(heal)==1);
+                Check("flat Recklessness, Channel Mastery and Lightning Reach are gone",!p.Upgrades.Any(u=>u.Id is "cooldown" or "tick" or "range"));
+                Check("Affliction cards are not offered to a Lightning-only run",!p.IsEligible(p.Upgrades.Single(u=>u.Id=="sorcerer_power_affliction")));
+            }
             void Cast(AutomaticAbility a)
             {
                 w.Player.Presentation.ResetPresentation();

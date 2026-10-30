@@ -1,39 +1,10 @@
 {
   "class": "marauder",
-  "passed": true,
+  "passed": false,
   "checks": [
     "marauder corridor has line of sight",
     "marauder kit abilities are wired and locked",
-    "marauder pool offers unlock for every kit ability",
-    "marauder pool contains two mechanic talents",
-    "marauder damage track covers the whole kit",
-    "marauder grants annihilate",
-    "marauder grants forcescream",
-    "marauder grants berserk",
-    "marauder slot limits respected",
-    "marauder action bar lists starter, basic and owned kit",
-    "annihilate starts",
-    "annihilate damages its primary target",
-    "annihilate is single-target",
-    "forcescream starts",
-    "forcescream damages its primary target",
-    "forcescream splash reaches neighbours",
-    "annihilate starts",
-    "annihilate starts",
-    "Annihilate: \u002B50% against a bleeding target",
-    "forcescream starts",
-    "Force Scream bleeds primary and both bystanders",
-    "bystanders bleed at half strength",
-    "Berserk fires near enemies",
-    "Berserk grants \u002B25% damage",
-    "Berserk expires",
-    "Last Gasp is eligible",
-    "Last Gasp passes the bleed to the nearest enemy",
-    "Blood Rhythm is eligible",
-    "rupture starts",
-    "Blood Rhythm refunds 0.5 s on the fourth bleed tick",
-    "marauder saber hum is imported, looping and audible",
-    "no kit presentation raised a duplicate hit"
+    "marauder pool offers unlock for every kit ability"
   ],
-  "failure": null
+  "failure": "System.InvalidOperationException: marauder pool contains two mechanic talents\r\n   at SwtorSurvivors.KitSmoke.Check(String text, Boolean pass) in D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Gameplay\\KitSmoke.cs:line 13\r\n   at SwtorSurvivors.KitSmoke.Run(GameWorld w) in D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Gameplay\\KitSmoke.cs:line 80"
 }

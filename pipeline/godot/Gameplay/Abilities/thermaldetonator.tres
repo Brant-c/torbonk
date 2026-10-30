@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "thermaldetonator"
+StartsUnlocked = false
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+Title = "Thermal Detonator"
+Icon = "thermaldetonator"
+Damage = 34
+CooldownSeconds = 12
+Range = 0.9
+Radius = 0.3
+Area = 0
+WindupSeconds = 0.35
+ChannelSeconds = 0
+RecoverySeconds = 0.4
+GestureSeconds = 1.0
+StartClip = "D3/UnarmedGrenade"
+LoopClip = "D3/UnarmedGrenade"
+EndClip = ""
+PresentationKind = "bhthermal"
+MuzzleBone = "LeftWrist"
+CastAudio = "res://Assets/BountyHunter/Audio/878565772.wav"
+ImpactAudio = "res://Assets/BountyHunter/Audio/580915172.wav"
+FollowupImpactAudio = "res://Assets/BountyHunter/Audio/11530015.wav"
+ImpactTexture = "res://Assets/BountyHunter/fx_2x2_roundflames_01_desat.png"
+EffectTint = Color(1, 0.6, 0.25, 1)
+Description = "Lobs a detonator that clamps onto an enemy and blows after 1 second (or when it dies): heavy damage to every enemy in the blast, +15% for each enemy in it bleeding from your Retractable Blade (up to +75%)."

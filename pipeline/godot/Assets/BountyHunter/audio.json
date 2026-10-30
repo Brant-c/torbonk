@@ -1,0 +1,3103 @@
+{
+  "evidence": "Client-derived: original April FXSpec event names, typed HIRC Event ID, wwiser graph and exact HIRC/DIDX bank offsets",
+  "events": {
+    "Play_ability_bountyhunter_armormelt_flamewaveloop": "3912375203",
+    "Play_ability_bountyhunter_armormelt_vent": "1760184336",
+    "Play_ability_bountyhunter_concussionmissiles_bracerfire": "3740045230",
+    "Play_ability_bountyhunter_concussionmissiles_monsterblast": "3070473767",
+    "Play_ability_bountyhunter_concussionmissiles_projectile": "475929414",
+    "Play_ability_bountyhunter_deathfromabove_activate": "1203402806",
+    "Play_ability_bountyhunter_deathfromabove_jetpackloop": "2729333159",
+    "Play_ability_bountyhunter_deathfromabove_jetpacksmallburst": "3755279924",
+    "Play_ability_bountyhunter_electrodart_electromadness": "987931598",
+    "Play_ability_bountyhunter_electrodart_fire": "1003338541",
+    "Play_ability_bountyhunter_electrodart_hit": "3608636756",
+    "Play_ability_bountyhunter_electrodart_projectile": "2021913320",
+    "Play_ability_bountyhunter_electrodart_staticburst": "3778450567",
+    "Play_ability_bountyhunter_fusionmissile_launch": "1217303421",
+    "Play_ability_bountyhunter_fusionmissile_projectile": "2621961465",
+    "Play_ability_bountyhunter_immolate_activate": "18834719",
+    "Play_ability_bountyhunter_immolate_firestart": "990757492",
+    "Play_ability_bountyhunter_immolate_smallfireloop": "1157903767",
+    "Play_ability_bountyhunter_jetcharge_hit": "1533836518",
+    "Play_ability_bountyhunter_jetcharge_jetpackactivate": "1818895560",
+    "Play_ability_bountyhunter_jetcharge_jetpackburst": "4282759507",
+    "Play_ability_bountyhunter_jetcharge_jetpackend": "3181956470",
+    "Play_ability_bountyhunter_koltoshell_buff": "2139306518",
+    "Play_ability_bountyhunter_koltoshell_cast": "404886016",
+    "Play_ability_bountyhunter_marktarget_targetdebuff": "3771044523",
+    "Play_ability_bountyhunter_marktarget_targetloop": "3439214043",
+    "Play_ability_bountyhunter_missileblast_muzzleblast": "1682576839",
+    "Play_ability_bountyhunter_missilefan_getoverhere": "2993962373",
+    "Play_ability_bountyhunter_missiletracking_pulse": "1286981860",
+    "Play_ability_bountyhunter_powershot_projectile": "1474781728",
+    "Play_ability_bountyhunter_powershot_shot": "1803915857",
+    "Play_ability_bountyhunter_railshot_shot": "3407804142",
+    "Play_ability_bountyhunter_railshot_shotcharge": "2562107694",
+    "Play_ability_bountyhunter_rechargeandreload_jetpackactivate": "3712200252",
+    "Play_ability_bountyhunter_rechargeandreload_jetpackloop": "4101149757",
+    "Play_ability_bountyhunter_retractableblade_bracerclick": "3498790758",
+    "Play_ability_bountyhunter_retractableblade_impact": "1911517473",
+    "Play_ability_bountyhunter_retractableblade_preswing": "3005169748",
+    "Play_ability_bountyhunter_retractableblade_retract": "790898454",
+    "Play_ability_bountyhunter_retractableblade_swing": "1664412887",
+    "Play_ability_bountyhunter_rocketboost_buttonpress": "774241460",
+    "Play_ability_bountyhunter_rocketboost_flamespray": "769785571",
+    "Play_ability_bountyhunter_rocketboost_windwhooshcloud": "2035150550",
+    "Play_ability_bountyhunter_sonicmissile_bracerfire": "1094988299",
+    "Play_ability_bountyhunter_tacticalnuke_explosion": "649924111",
+    "Play_ability_bountyhunter_thermalsensoroverride_alarm": "834544240",
+    "Play_ability_bountyhunter_thermalsensoroverride_braceractivate": "3299716551",
+    "Play_ability_bountyhunter_thermalsensoroverride_discharge_primary": "630662740",
+    "Play_ability_bountyhunter_thermalsensoroverride_discharge_secondary": "3255901980",
+    "Play_ability_bountyhunter_thermalsensoroverride_discharge_zap": "4062109203",
+    "Play_ability_trooper_koltobomb_explode": "1212994446",
+    "Play_bountyhunter_explosivedart_explode": "1526306056",
+    "Stop_ability_bountyhunter_armormelt_flamewaveloop": "3497759845",
+    "Stop_ability_bountyhunter_concussionmissiles_projectile": "319952556",
+    "Stop_ability_bountyhunter_deathfromabove_jetpackloop": "1794756353",
+    "Stop_ability_bountyhunter_electrodart_electromadness": "4244194140",
+    "Stop_ability_bountyhunter_electrodart_projectile": "1994357310",
+    "Stop_ability_bountyhunter_fusionmissile_projectile": "2851546287",
+    "Stop_ability_bountyhunter_jetcharge_jetpackburst": "1544676641",
+    "Stop_ability_bountyhunter_marktarget_targetloop": "1710531621",
+    "Stop_ability_bountyhunter_powershot_projectile": "452165434",
+    "Stop_ability_bountyhunter_rechargeandreload_jetpackloop": "2927406799",
+    "Play_ability_trooper_stickygrenade_attach": "1271593648",
+    "Play_ability_smuggler_thermaldetonator_buttonpress": "3026915957",
+    "Play_ability_smuggler_thermaldetonator_explosion": "2973383697",
+    "Play_ability_smuggler_thermaldetonator_explosioncore": "1849650904",
+    "Play_ability_smuggler_thermaldetonator_projectile": "4258479513",
+    "Play_ability_smuggler_thermaldetonator_toss": "2642017649"
+  },
+  "missingEvents": [],
+  "graphs": {
+    "18834719": {
+      "media": [
+        135994990
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s95 #i  ##135994990.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-1861-event.txtp\n# * master volume: auto (9.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[1861] 18834719\n#\n#     CAkActionPlay[1860] 712459672\n#\n#       CAkRanSeqCntr[1813] 921172859\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1812] 220968055\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 135994990\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "404886016": {
+      "media": [
+        37334226,
+        411148884,
+        243620234,
+        18886891
+      ],
+      "wwiserGraph": "  abilities_imperialranged_media.bnk #s372 #i  ##37334226.wem\n  abilities_imperialranged_media.bnk #s375 #i  ##411148884.wem\n group = -R2>1\n  abilities_imperialranged_media.bnk #s324 #i  #v -3.0dB  ##243620234.wem\n  abilities_imperialranged_media.bnk #s325 #i  #v -3.0dB  ##18886891.wem\n group = -R2>1\ngroup = -L2 #@layer-v\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-1961-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[1961] 404886016\n#\n#     CAkActionPlay[1959] 569634139\n#\n#       CAkRanSeqCntr[71] 153231255\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 0\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[69] 343338833\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 37334226\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[70] 444654444\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 411148884\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#     CAkActionPlay[1960] 526839556\n#\n#       CAkRanSeqCntr[74] 760805304\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[73] 397586161\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 243620234\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[72] 132805001\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 18886891\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "475929414": {
+      "media": [
+        562857809
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s96 #e  ##562857809.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-1979-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[1979] 475929414\n#\n#     CAkActionPlay[1978] 646592316\n#\n#       CAkSound[643] 878372198\n#       * [Loop]: 0\n#       * StreamType: 0x00 [Data/bnk]\n#\n#         Source 562857809\n#         * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "630662740": {
+      "media": [
+        191960095,
+        180674454
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s265 #i  ##191960095.wem\n abilities_imperialranged_media.bnk #s266 #i  ##180674454.wem\ngroup = -R2>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2045-event {r}.txtp\n# * master volume: auto (6.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2045] 630662740\n#\n#     CAkActionPlay[2043] 294472321\n#\n#       CAkRanSeqCntr[1539] 703971227\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1538] 662280488\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 191960095\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1537] 542494078\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 180674454\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "649924111": {
+      "media": [
+        19710093,
+        69058290,
+        5798633,
+        47208767,
+        12305225
+      ],
+      "wwiserGraph": "  abilities_imperialranged_media.bnk #s116 #i  ##19710093.wem\n  abilities_imperialranged_media.bnk #s117 #i  ##69058290.wem\n group = -R2>1\n  abilities_imperialranged_media.bnk #s556 #i  #v -3.0dB  ##5798633.wem\n  abilities_imperialranged_media.bnk #s557 #i  #v -3.0dB  ##47208767.wem\n  abilities_imperialranged_media.bnk #s558 #i  #v -3.0dB  ##12305225.wem\n group = -R3>1\ngroup = -L2 #@layer-v\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2049-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2049] 649924111\n#\n#     CAkActionPlay[2048] 691867001\n#\n#       CAkLayerCntr[1096] 666757122\n#\n#         CAkRanSeqCntr[1091] 337931621\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[1089] 627349868\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 19710093\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[1090] 748116199\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 69058290\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkRanSeqCntr[1095] 835029254\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[1094] 955222145\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 5798633\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[1093] 653128480\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 47208767\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[1092] 93958899\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 12305225\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "769785571": {
+      "media": [
+        13240087,
+        100144780,
+        161889074
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s128 #i  ##13240087.wem\n  abilities_imperialranged_media.bnk #s100 #i  ##100144780.wem\n  abilities_imperialranged_media.bnk #s101 #i  ##161889074.wem\n group = -R2>1\ngroup = -L2 #@layer-v\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2078-event {r}.txtp\n# * master volume: auto (3.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2078] 769785571\n#\n#     CAkActionPlay[2077] 475355989\n#\n#       CAkLayerCntr[625] 734451464\n#\n#         CAkRanSeqCntr[621] 583142907\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[620] 949465811\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 13240087\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkRanSeqCntr[624] 1024939539\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[623] 471776252\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 100144780\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[622] 146440776\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 161889074\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "774241460": {
+      "media": [
+        37831727,
+        3967597
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s170 #i  ##37831727.wem\n abilities_imperialranged_media.bnk #s171 #i  ##3967597.wem\ngroup = -R2>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2080-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2080] 774241460\n#\n#     CAkActionPlay[2079] 42394193\n#\n#       CAkRanSeqCntr[609] 660083585\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[607] 431064174\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 37831727\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[608] 573656876\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 3967597\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "790898454": {
+      "media": [
+        821885478
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s169 #i  ##821885478.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2088-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2088] 790898454\n#\n#     CAkActionPlay[2087] 471902721\n#     * [DelayTime]: 1300\n#\n#       CAkRanSeqCntr[1677] 183512206\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1676] 789629955\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 821885478\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "834544240": {
+      "media": [
+        172066514
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s345 #e #l 4.0  ##172066514.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2101-event.txtp\n# * master volume: auto (9.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2101] 834544240\n#\n#     CAkActionPlay[2100] 343955421\n#     * [DelayTime]: 500\n#\n#       CAkRanSeqCntr[1536] 372045868\n#       * sLoopCount: 4\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 4\n#       * bIsContinuous: 0x01\n#       * wAvoidRepeatCount: 2\n#\n#         CAkSound[1535] 540332607\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 172066514\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "987931598": {
+      "media": [
+        135833827,
+        8262027,
+        32918848,
+        191183975,
+        43710584,
+        57320707
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s610 #i  ##135833827.wem\n abilities_imperialranged_media.bnk #s611 #i  ##8262027.wem\n abilities_imperialranged_media.bnk #s612 #i  ##32918848.wem\n abilities_imperialranged_media.bnk #s613 #i  ##191183975.wem\n abilities_imperialranged_media.bnk #s614 #i  ##43710584.wem\n abilities_imperialranged_media.bnk #s615 #i  ##57320707.wem\ngroup = -R6>- #@loop\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2162-event.txtp\n# * master volume: auto (8.5dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2162] 987931598\n#\n#     CAkActionPlay[2161] 145699260\n#\n#       CAkRanSeqCntr[1269] 652219044\n#       * sLoopCount: 0\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 0\n#       * bIsContinuous: 0x01\n#       * wAvoidRepeatCount: 2\n#\n#         CAkSound[1264] 275522348\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 135833827\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1265] 401170883\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 8262027\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1263] 180845510\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 32918848\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1268] 759839806\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 191183975\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1267] 585131207\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 43710584\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1266] 488457976\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 57320707\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "990757492": {
+      "media": [
+        106899704,
+        36020694
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s196 #i  ##106899704.wem\n abilities_imperialranged_media.bnk #s197 #i  ##36020694.wem\ngroup = -R2>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2166-event {r}.txtp\n# * master volume: auto (6.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2166] 990757492\n#\n#     CAkActionPlay[2165] 145000358\n#\n#       CAkRanSeqCntr[1816] 934318740\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1815] 1030005797\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 106899704\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1814] 272141385\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 36020694\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1003338541": {
+      "media": [
+        178831994
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s447 #i  ##178831994.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2170-event.txtp\n# * master volume: auto (3.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2170] 1003338541\n#\n#     CAkActionPlay[2169] 947011675\n#\n#       CAkSound[1258] 149727122\n#       * StreamType: 0x00 [Data/bnk]\n#\n#         Source 178831994\n#         * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1094988299": {
+      "media": [
+        52225576
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s178 #i  ##52225576.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2200-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2200] 1094988299\n#\n#     CAkActionPlay[2199] 740868802\n#\n#       CAkRanSeqCntr[1562] 221004960\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1561] 735145749\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 52225576\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1157903767": {
+      "media": [
+        143981600
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s560 #e  ##143981600.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2232-event.txtp\n# * master volume: auto (15.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2232] 1157903767\n#\n#     CAkActionPlay[2229] 387469998\n#\n#       CAkRanSeqCntr[1818] 944857609\n#       * sLoopCount: 0\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 0\n#       * bIsContinuous: 0x01\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1817] 640478015\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 143981600\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1217303421": {
+      "media": [
+        106642098,
+        240667660,
+        97757946
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s186 #i  ##106642098.wem\n abilities_imperialranged_media.bnk #s187 #i  ##240667660.wem\n abilities_imperialranged_media.bnk #s188 #i  ##97757946.wem\ngroup = -R3>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2256-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2256] 1217303421\n#\n#     CAkActionPlay[2255] 321336192\n#\n#       CAkRanSeqCntr[650] 339216356\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 2\n#\n#         CAkSound[648] 398646032\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 106642098\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[647] 321252395\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 240667660\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[649] 783735307\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 97757946\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1286981860": {
+      "media": [
+        812988156
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s147 #i  ##812988156.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2269-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2269] 1286981860\n#\n#     CAkActionPlay[2268] 54914626\n#\n#       CAkRanSeqCntr[1199] 549813955\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1198] 205950902\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 812988156\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1474781728": {
+      "media": [
+        400181815
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s97 #e  ##400181815.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2320-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2320] 1474781728\n#\n#     CAkActionPlay[2319] 927894777\n#\n#       CAkRanSeqCntr[1388] 131061665\n#       * sLoopCount: 0\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 0\n#       * bIsContinuous: 0x01\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1387] 1020974087\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 400181815\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1526306056": {
+      "media": [
+        19710093,
+        69058290,
+        43338199,
+        2970610,
+        1004158
+      ],
+      "wwiserGraph": "  abilities_imperialranged_media.bnk #s116 #i  #v -3.0dB  ##19710093.wem\n  abilities_imperialranged_media.bnk #s117 #i  #v -3.0dB  ##69058290.wem\n group = -R2>1\n  abilities_imperialranged_media.bnk #s561 #i  ##43338199.wem\n  abilities_imperialranged_media.bnk #s562 #i  ##2970610.wem\n  abilities_imperialranged_media.bnk #s563 #i  ##1004158.wem\n group = -R3>1\ngroup = -L2 #@layer-v\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2328-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2328] 1526306056\n#\n#     CAkActionPlay[2327] 497847455\n#\n#       CAkLayerCntr[1165] 377653462\n#\n#         CAkRanSeqCntr[1160] 466065403\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[1158] 289537292\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 19710093\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[1159] 290230445\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 69058290\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkRanSeqCntr[1164] 874441006\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[1161] 71582224\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 43338199\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[1162] 114838033\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 2970610\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[1163] 327705418\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 1004158\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1533836518": {
+      "media": [
+        234267126,
+        463064279
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s174 #i  ##234267126.wem\n abilities_imperialranged_media.bnk #s175 #i  ##463064279.wem\ngroup = -R2>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2330-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2330] 1533836518\n#\n#     CAkActionPlay[2329] 599160399\n#\n#       CAkRanSeqCntr[1110] 615532227\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1109] 585415535\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 234267126\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1108] 352658712\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 463064279\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1664412887": {
+      "media": [
+        13393986,
+        124925222
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s482 #i  ##13393986.wem\n abilities_imperialranged_media.bnk #s483 #i  ##124925222.wem\ngroup = -R2>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2368-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2368] 1664412887\n#\n#     CAkActionPlay[2367] 75440254\n#\n#       CAkRanSeqCntr[1680] 261107673\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1679] 335819347\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 13393986\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1678] 45108118\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 124925222\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1682576839": {
+      "media": [
+        101412426,
+        27195800,
+        135994990
+      ],
+      "wwiserGraph": "  abilities_imperialranged_media.bnk #s104 #i  ##101412426.wem\n  abilities_imperialranged_media.bnk #s105 #i  ##27195800.wem\n group = -R2>1\n abilities_imperialranged_media.bnk #s95 #i  ##135994990.wem\ngroup = -L2 #@layer-v\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2372-event {r}.txtp\n# * master volume: auto (3.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2372] 1682576839\n#\n#     CAkActionPlay[2371] 747179401\n#\n#       CAkLayerCntr[809] 1041531840\n#\n#         CAkRanSeqCntr[806] 994001864\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[804] 96840685\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 101412426\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[805] 223307382\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 27195800\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkRanSeqCntr[808] 1053834224\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[807] 520055768\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 135994990\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1760184336": {
+      "media": [
+        180333241
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s43 #i  ##180333241.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2408-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2408] 1760184336\n#\n#     CAkActionPlay[2407] 812345405\n#\n#       CAkSound[564] 1043689351\n#       * StreamType: 0x00 [Data/bnk]\n#\n#         Source 180333241\n#         * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1803915857": {
+      "media": [
+        49397809,
+        45905589,
+        33458569,
+        520766059,
+        165843168
+      ],
+      "wwiserGraph": "  abilities_imperialranged_media.bnk #s681 #i  ##49397809.wem\n  abilities_imperialranged_media.bnk #s682 #i  ##45905589.wem\n  abilities_imperialranged_media.bnk #s683 #i  ##33458569.wem\n group = -R3>1\n  abilities_imperialranged_media.bnk #s157 #i  #v -3.0dB  ##520766059.wem\n  abilities_imperialranged_media.bnk #s158 #i  #v -3.0dB  ##165843168.wem\n group = -R2>1\ngroup = -L2 #@layer-v\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2427-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2427] 1803915857\n#\n#     CAkActionPlay[2426] 687640657\n#\n#       CAkLayerCntr[1396] 468423126\n#\n#         CAkRanSeqCntr[1392] 523377568\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 2\n#\n#           CAkSound[1391] 845206015\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 49397809\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[1390] 612511996\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 45905589\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[1389] 559683507\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 33458569\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkRanSeqCntr[1395] 532999340\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[1393] 166909015\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 520766059\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[1394] 205101965\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 165843168\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1818895560": {
+      "media": [
+        247316237
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s21 #i  ##247316237.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2431-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2431] 1818895560\n#\n#     CAkActionPlay[2430] 799843746\n#\n#       CAkRanSeqCntr[1113] 858803799\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkRanSeqCntr[1112] 250249312\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[1111] 564222297\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 247316237\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1911517473": {
+      "media": [
+        616886755,
+        84408456
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s166 #i  ##616886755.wem\n abilities_imperialranged_media.bnk #s167 #i  ##84408456.wem\ngroup = -R2>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2450-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2450] 1911517473\n#\n#     CAkActionPlay[2449] 152328673\n#\n#       CAkRanSeqCntr[1683] 402428927\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1682] 689296070\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 616886755\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1681] 650419346\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 84408456\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "2021913320": {
+      "media": [
+        319090360
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s257 #i  ##319090360.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2479-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2479] 2021913320\n#\n#     CAkActionPlay[2478] 454093591\n#\n#       CAkSound[1259] 455208862\n#       * StreamType: 0x00 [Data/bnk]\n#\n#         Source 319090360\n#         * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "2035150550": {
+      "media": [
+        112640866,
+        669686436
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s88 #i  #v -6.0dB  ##112640866.wem\n abilities_imperialranged_media.bnk #s292 #e  ##669686436.wem\ngroup = -L2 #@layer-v\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2482-event {m}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2482] 2035150550\n#\n#     CAkActionPlay[2480] 370742753\n#\n#       CAkLayerCntr[614] 696014136\n#\n#         CAkRanSeqCntr[611] 682238746\n#         * sLoopCount: 0\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 0\n#         * bIsContinuous: 0x01\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[610] 770846919\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 669686436\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkRanSeqCntr[613] 861736479\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[612] 471910860\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 112640866\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "2139306518": {
+      "media": [
+        18074432,
+        5300942
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s134 #i  ##18074432.wem\n abilities_imperialranged_media.bnk #s135 #i  ##5300942.wem\ngroup = -R2>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2514-event {r}.txtp\n# * master volume: auto (6.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2514] 2139306518\n#\n#     CAkActionPlay[2513] 192005758\n#\n#       CAkRanSeqCntr[68] 71819878\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x01 [Shuffle]\n#       * sLoopCount: 0\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[66] 487528846\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 18074432\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[67] 672576413\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 5300942\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "2562107694": {
+      "media": [
+        109578225,
+        447857370
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s164 #i  ##109578225.wem\n abilities_imperialranged_media.bnk #s165 #i  ##447857370.wem\ngroup = -R2>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2638-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2638] 2562107694\n#\n#     CAkActionPlay[2637] 962276735\n#\n#       CAkRanSeqCntr[886] 237739707\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[885] 993977436\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 109578225\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[884] 351498017\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 447857370\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "2621961465": {
+      "media": [
+        9611007
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s185 #e  ##9611007.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2654-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2654] 2621961465\n#\n#     CAkActionPlay[2653] 827894069\n#\n#       CAkRanSeqCntr[646] 25208002\n#       * sLoopCount: 0\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 0\n#       * bIsContinuous: 0x01\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[645] 1003613724\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 9611007\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "2729333159": {
+      "media": [
+        244153238
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s40 #e  ##244153238.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2696-event.txtp\n# * master volume: auto (3.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2696] 2729333159\n#\n#     CAkActionPlay[2695] 970760149\n#\n#       CAkSound[775] 849782188\n#       * [Loop]: 0\n#       * StreamType: 0x00 [Data/bnk]\n#\n#         Source 244153238\n#         * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "2993962373": {
+      "media": [
+        44588646
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s106 #i  ##44588646.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2773-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2773] 2993962373\n#\n#     CAkActionPlay[2772] 799164039\n#\n#       CAkRanSeqCntr[22] 888155147\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[21] 703521543\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 44588646\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "3005169748": {
+      "media": [
+        748974131
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s168 #i  ##748974131.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2777-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2777] 3005169748\n#\n#     CAkActionPlay[2776] 376472546\n#\n#       CAkRanSeqCntr[1687] 600995046\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1686] 376758731\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 748974131\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "3070473767": {
+      "media": [
+        61370001,
+        11167679,
+        164771299
+      ],
+      "wwiserGraph": "  abilities_imperialranged_media.bnk #s83 #i  ##61370001.wem\n  abilities_imperialranged_media.bnk #s84 #i  ##11167679.wem\n group = -R2>1\n abilities_imperialranged_media.bnk #s535 #i  ##164771299.wem\ngroup = -L2 #@layer-v\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2800-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2800] 3070473767\n#\n#     CAkActionPlay[2799] 979752578\n#\n#       CAkLayerCntr[642] 812676997\n#\n#         CAkRanSeqCntr[640] 131430823\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[639] 467198597\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 61370001\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[638] 54375444\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 11167679\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[641] 278160256\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 164771299\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "3181956470": {
+      "media": [
+        100225084
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s20 #i  ##100225084.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2820-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2820] 3181956470\n#\n#     CAkActionPlay[2819] 773721300\n#\n#       CAkRanSeqCntr[1121] 944653845\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1120] 936715611\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 100225084\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "3255901980": {
+      "media": [
+        11353820,
+        28018133,
+        25747624,
+        18682056,
+        17830882,
+        105286082,
+        37900398
+      ],
+      "wwiserGraph": "  abilities_imperialranged_media.bnk #s293 #i  ##11353820.wem\n  abilities_imperialranged_media.bnk #s294 #i  ##28018133.wem\n  abilities_imperialranged_media.bnk #s295 #i  ##25747624.wem\n group = -R3>1\n  abilities_imperialranged_media.bnk #s275 #i  #v -3.0dB  ##18682056.wem\n  abilities_imperialranged_media.bnk #s276 #i  #v -3.0dB  ##17830882.wem\n  abilities_imperialranged_media.bnk #s277 #i  #v -3.0dB  ##105286082.wem\n  abilities_imperialranged_media.bnk #s278 #i  #v -3.0dB  ##37900398.wem\n group = -R4>1\ngroup = -L2 #@layer-v\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2850-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2850] 3255901980\n#\n#     CAkActionPlay[2849] 42615289\n#\n#       CAkLayerCntr[1555] 1021906220\n#\n#         CAkRanSeqCntr[1549] 344646527\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[1546] 105043227\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 11353820\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[1547] 547881866\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 28018133\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[1548] 1055058929\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 25747624\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkRanSeqCntr[1554] 1005223013\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 2\n#\n#           CAkSound[1552] 523789471\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 18682056\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[1550] 142935311\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 17830882\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[1551] 210329074\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 105286082\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[1553] 934060039\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 37900398\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "3299716551": {
+      "media": [
+        122436999,
+        27119331,
+        12099742
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s340 #i  #v -6.0dB  ##122436999.wem\n  abilities_imperialranged_media.bnk #s348 #i  ##27119331.wem\n  abilities_imperialranged_media.bnk #s349 #i  ##12099742.wem\n group = -R2>1\ngroup = -L2 #@layer-v\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2864-event {r}.txtp\n# * master volume: auto (3.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2864] 3299716551\n#\n#     CAkActionPlay[2863] 77126974\n#\n#       CAkLayerCntr[1545] 862320667\n#\n#         CAkRanSeqCntr[1541] 418991235\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[1540] 281869798\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 122436999\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkRanSeqCntr[1544] 856995213\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[1542] 12868599\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 27119331\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[1543] 894656039\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 12099742\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "3407804142": {
+      "media": [
+        49397809,
+        45905589,
+        33458569,
+        410452388,
+        173726126
+      ],
+      "wwiserGraph": "  abilities_imperialranged_media.bnk #s681 #i  ##49397809.wem\n  abilities_imperialranged_media.bnk #s682 #i  ##45905589.wem\n  abilities_imperialranged_media.bnk #s683 #i  ##33458569.wem\n group = -R3>1\n  abilities_imperialranged_media.bnk #s162 #i  ##410452388.wem\n  abilities_imperialranged_media.bnk #s163 #i  ##173726126.wem\n group = -R2>1\ngroup = -L2 #@layer-v\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2886-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2886] 3407804142\n#\n#     CAkActionPlay[2885] 372298151\n#\n#       CAkLayerCntr[880] 98315130\n#\n#         CAkRanSeqCntr[876] 689938741\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 2\n#\n#           CAkSound[874] 342381880\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 49397809\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[875] 876982430\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 45905589\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[873] 37796067\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 33458569\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkRanSeqCntr[879] 975342315\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[878] 604244696\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 410452388\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[877] 363994623\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 173726126\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "3439214043": {
+      "media": [
+        32107900
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s377 #e  ##32107900.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2893-event.txtp\n# * master volume: auto (3.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2893] 3439214043\n#\n#     CAkActionPlay[2891] 145000774\n#\n#       CAkRanSeqCntr[1124] 412608815\n#       * sLoopCount: 0\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 0\n#       * bIsContinuous: 0x01\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1123] 937807685\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 32107900\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "3498790758": {
+      "media": [
+        169144164
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s91 #i  ##169144164.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2909-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2909] 3498790758\n#\n#     CAkActionPlay[2908] 503264924\n#\n#       CAkRanSeqCntr[1685] 529460662\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1684] 336233658\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 169144164\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "3608636756": {
+      "media": [
+        395913045,
+        241011469
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s486 #i  ##395913045.wem\n abilities_imperialranged_media.bnk #s487 #i  ##241011469.wem\ngroup = -R2>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2932-event {r}.txtp\n# * master volume: auto (3.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2932] 3608636756\n#\n#     CAkActionPlay[2931] 873863879\n#\n#       CAkRanSeqCntr[1262] 475919552\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1260] 575272271\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 395913045\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1261] 994802445\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 241011469\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "3740045230": {
+      "media": [
+        199781222
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s77 #i  ##199781222.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2965-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2965] 3740045230\n#\n#     CAkActionPlay[2964] 718266324\n#\n#       CAkSound[637] 553756403\n#       * StreamType: 0x00 [Data/bnk]\n#\n#         Source 199781222\n#         * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "3755279924": {
+      "media": [
+        98468892
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s87 #i  ##98468892.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2971-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2971] 3755279924\n#\n#     CAkActionPlay[2970] 114599693\n#\n#       CAkSound[752] 126062977\n#       * StreamType: 0x00 [Data/bnk]\n#\n#         Source 98468892\n#         * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "3771044523": {
+      "media": [
+        12809334,
+        94288275
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s327 #i  ##12809334.wem\n abilities_imperialranged_media.bnk #s328 #i  ##94288275.wem\ngroup = -R2>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2980-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2980] 3771044523\n#\n#     CAkActionPlay[2979] 100078850\n#\n#       CAkRanSeqCntr[1135] 927938457\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1133] 395816973\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 12809334\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1134] 455070150\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 94288275\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "3778450567": {
+      "media": [
+        13800022,
+        67837780,
+        70458762,
+        23364535
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s621 #i  ##13800022.wem\n abilities_imperialranged_media.bnk #s622 #i  ##67837780.wem\n abilities_imperialranged_media.bnk #s623 #i  ##70458762.wem\n abilities_imperialranged_media.bnk #s624 #i  ##23364535.wem\ngroup = -R4>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-2982-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[2982] 3778450567\n#\n#     CAkActionPlay[2981] 189327230\n#\n#       CAkRanSeqCntr[1274] 817719505\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x01 [Shuffle]\n#       * sLoopCount: 0\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[1273] 794996620\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 13800022\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1270] 259142785\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 67837780\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1272] 476869357\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 70458762\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1271] 400165279\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 23364535\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "4062109203": {
+      "media": [
+        70220941,
+        187879372,
+        66891228,
+        39115748
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s267 #i  ##70220941.wem\n abilities_imperialranged_media.bnk #s268 #i  ##187879372.wem\n abilities_imperialranged_media.bnk #s269 #i  ##66891228.wem\n abilities_imperialranged_media.bnk #s270 #i  ##39115748.wem\ngroup = -R4>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-3058-event {r}.txtp\n# * master volume: auto (3.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[3058] 4062109203\n#\n#     CAkActionPlay[3057] 706769140\n#\n#       CAkRanSeqCntr[1534] 110599021\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 2\n#\n#         CAkSound[1533] 618369415\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 70220941\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1531] 164731665\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 187879372\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1530] 125133913\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 66891228\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[1532] 342990236\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 39115748\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "4101149757": {
+      "media": [
+        72893356,
+        400181815
+      ],
+      "wwiserGraph": " abilities_imperialranged_media.bnk #s41 #e  #v -6.0dB  ##72893356.wem\n abilities_imperialranged_media.bnk #s97 #e  ##400181815.wem\ngroup = -L2 #@layer-v\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-3066-event {m}.txtp\n# * master volume: auto (3.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[3066] 4101149757\n#\n#     CAkActionPlay[3065] 849676829\n#\n#       CAkLayerCntr[476] 807788143\n#\n#         CAkRanSeqCntr[473] 525441084\n#         * sLoopCount: 0\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 0\n#         * bIsContinuous: 0x01\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[472] 950073770\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 400181815\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkRanSeqCntr[475] 992105375\n#         * sLoopCount: 0\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 0\n#         * bIsContinuous: 0x01\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[474] 235689934\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 72893356\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "4282759507": {
+      "media": [
+        16136487
+      ],
+      "wwiserGraph": "abilities_imperialranged_media.bnk #s202 #i  ##16136487.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_imperialranged_data-3098-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_imperialranged_data.bnk\n#\n# PATH\n#   CAkEvent[3098] 4282759507\n#\n#     CAkActionPlay[3097] 752563380\n#\n#       CAkRanSeqCntr[342] 157015445\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[341] 157335722\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 16136487\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1212994446": {
+      "media": [
+        1035213509,
+        271586202
+      ],
+      "wwiserGraph": " abilities_republicranged_media.bnk #s471 #i  ##1035213509.wem\n abilities_republicranged_media.bnk #s472 #i  ##271586202.wem\ngroup = -R2>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_republicranged_data-2338-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_republicranged_data.bnk\n#\n# PATH\n#   CAkEvent[2338] 1212994446\n#\n#     CAkActionPlay[2337] 399256182\n#\n#       CAkRanSeqCntr[280] 204792145\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[278] 269591093\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 1035213509\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[279] 458249451\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 271586202\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1271593648": {
+      "media": [
+        224018998,
+        184781114
+      ],
+      "wwiserGraph": " abilities_republicranged_media.bnk #s354 #i  ##224018998.wem\n abilities_republicranged_media.bnk #s355 #i  ##184781114.wem\ngroup = -R2>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_republicranged_data-2354-event {r}.txtp\n# * master volume: auto (3.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_republicranged_data.bnk\n#\n# PATH\n#   CAkEvent[2354] 1271593648\n#\n#     CAkActionPlay[2352] 391790248\n#\n#       CAkRanSeqCntr[785] 147726735\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[784] 737263678\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 224018998\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[783] 547379240\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 184781114\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "1849650904": {
+      "media": [
+        67775961,
+        199379833
+      ],
+      "wwiserGraph": " abilities_republicranged_media.bnk #s80 #i  ##67775961.wem\n abilities_republicranged_media.bnk #s81 #i  ##199379833.wem\ngroup = -R2>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_republicranged_data-2476-event {r}.txtp\n# * master volume: auto (3.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_republicranged_data.bnk\n#\n# PATH\n#   CAkEvent[2476] 1849650904\n#\n#     CAkActionPlay[2474] 447426330\n#\n#       CAkRanSeqCntr[561] 40509366\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[560] 383012922\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 67775961\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[559] 226180531\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 199379833\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "2642017649": {
+      "media": [
+        878565772
+      ],
+      "wwiserGraph": "abilities_republicranged_media.bnk #s306 #i  ##878565772.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_republicranged_data-2655-event.txtp\n# * master volume: auto (3.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_republicranged_data.bnk\n#\n# PATH\n#   CAkEvent[2655] 2642017649\n#\n#     CAkActionPlay[2654] 841653153\n#\n#       CAkRanSeqCntr[563] 154585952\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[562] 678000132\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 878565772\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "2973383697": {
+      "media": [
+        43338199,
+        2970610,
+        1004158,
+        11530015,
+        3641672
+      ],
+      "wwiserGraph": "  abilities_republicranged_media.bnk #s443 #i  ##43338199.wem\n  abilities_republicranged_media.bnk #s444 #i  ##2970610.wem\n  abilities_republicranged_media.bnk #s445 #i  ##1004158.wem\n group = -R3>1\n  abilities_republicranged_media.bnk #s59 #i  #v -3.0dB  ##11530015.wem\n  abilities_republicranged_media.bnk #s60 #i  #v -3.0dB  ##3641672.wem\n group = -R2>1\ngroup = -L2 #@layer-v\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_republicranged_data-2732-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_republicranged_data.bnk\n#\n# PATH\n#   CAkEvent[2732] 2973383697\n#\n#     CAkActionPlay[2731] 20656954\n#\n#       CAkLayerCntr[573] 731403906\n#\n#         CAkRanSeqCntr[569] 94110655\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[566] 123535986\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 43338199\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[568] 530361349\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 2970610\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[567] 226947205\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 1004158\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkRanSeqCntr[572] 1015825680\n#         * sLoopCount: 1\n#         * eMode: 0x00 [Random]\n#         * eRandomMode: 0x00 [Normal]\n#         * sLoopCount: 1\n#         * bIsContinuous: 0x00\n#         * wAvoidRepeatCount: 1\n#\n#           CAkSound[571] 998803999\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 11530015\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#           CAkSound[570] 121042782\n#           * StreamType: 0x00 [Data/bnk]\n#\n#             Source 3641672\n#             * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "3026915957": {
+      "media": [
+        27119331,
+        12099742
+      ],
+      "wwiserGraph": " abilities_republicranged_media.bnk #s316 #i  ##27119331.wem\n abilities_republicranged_media.bnk #s317 #i  ##12099742.wem\ngroup = -R2>1\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_republicranged_data-2744-event {r}.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_republicranged_data.bnk\n#\n# PATH\n#   CAkEvent[2744] 3026915957\n#\n#     CAkActionPlay[2743] 247717656\n#\n#       CAkRanSeqCntr[576] 877890892\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[575] 237751723\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 27119331\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#         CAkSound[574] 104288446\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 12099742\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    },
+    "4258479513": {
+      "media": [
+        580915172
+      ],
+      "wwiserGraph": "abilities_republicranged_media.bnk #s305 #i  ##580915172.wem\n\n\n\n# AUTOGENERATED WITH WWISER v20260808\n#\n# abilities_republicranged_data-3055-event.txtp\n# * master volume: auto (0.0dB)\n# - D:/SWTORClassic/torbonk/pipeline/source-assets/april2012/resources/bnk2/abilities_republicranged_data.bnk\n#\n# PATH\n#   CAkEvent[3055] 4258479513\n#\n#     CAkActionPlay[3054] 124026851\n#\n#       CAkRanSeqCntr[565] 633693635\n#       * sLoopCount: 1\n#       * eMode: 0x00 [Random]\n#       * eRandomMode: 0x00 [Normal]\n#       * sLoopCount: 1\n#       * bIsContinuous: 0x00\n#       * wAvoidRepeatCount: 1\n#\n#         CAkSound[564] 196937211\n#         * StreamType: 0x00 [Data/bnk]\n#\n#           Source 580915172\n#           * ulPluginID: 0x00040001 [VORBIS]\n#\n#\n# GAMEVARS\n# - RTPCID: {3673881719=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n# - RTPCID: {3695994288=0.0,100.0} <[Volume]: -96.3,0.0> (default 100.0: 0.0)\n"
+    }
+  },
+  "media": [
+    {
+      "mediaId": 44588646,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3322608,
+      "bytes": 11624,
+      "sourceSha256": "ebdc3dec445a1bf3e6a85aab20a55328eeaed4b7db058b28fa0315db64ae843a",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\44588646.wav",
+      "seconds": 0.7505668934240363
+    },
+    {
+      "mediaId": 18074432,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3940432,
+      "bytes": 7288,
+      "sourceSha256": "f5f5653fee249170328870db416c395ff634e9ca871288a0b0515effb65aa462",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\18074432.wav",
+      "seconds": 1.0104308390022676
+    },
+    {
+      "mediaId": 5300942,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3947728,
+      "bytes": 9046,
+      "sourceSha256": "9eeaa5cd8a5b0662b8d993352d070f0618dcdf4a10e46ec71c4ea2b1bb131f5a",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\5300942.wav",
+      "seconds": 1.220408163265306
+    },
+    {
+      "mediaId": 37334226,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 8660208,
+      "bytes": 29967,
+      "sourceSha256": "f0b19f63cf5970efa05764d615aae3df40b57dc40622db4f4fb9b05c1229793c",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\37334226.wav",
+      "seconds": 2.112471655328798
+    },
+    {
+      "mediaId": 411148884,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 8744928,
+      "bytes": 25813,
+      "sourceSha256": "23de8a6882e55e74dddb5f424bbd1d761f7d2eea32c724238f4d61215d19f371",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\411148884.wav",
+      "seconds": 1.7807709750566894
+    },
+    {
+      "mediaId": 18886891,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 7494896,
+      "bytes": 36724,
+      "sourceSha256": "9ce37cd7555de3f6672ccaed88fccd6753219bc88a4c20d20c74329a78d129b6",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\18886891.wav",
+      "seconds": 2.807777777777778
+    },
+    {
+      "mediaId": 243620234,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 7458336,
+      "bytes": 36545,
+      "sourceSha256": "e55f1c323fbebf7c311057073f0a8071db8353e59049d47852484f88ce55e97b",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\243620234.wav",
+      "seconds": 2.863265306122449
+    },
+    {
+      "mediaId": 16136487,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 5306112,
+      "bytes": 11736,
+      "sourceSha256": "243ad7356c924d7d284093f67bce05bd1c6c76510b5bcd5d1247fbb4262820d1",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\16136487.wav",
+      "seconds": 1.3224489795918368
+    },
+    {
+      "mediaId": 400181815,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3146496,
+      "bytes": 53380,
+      "sourceSha256": "2fca705bedc7b604ecfa4c232e3bd68601bcd209e8f1a58071212d792755f01a",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\400181815.wav",
+      "seconds": 6.027074829931973
+    },
+    {
+      "mediaId": 72893356,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 915984,
+      "bytes": 78360,
+      "sourceSha256": "9f5270396fd645bd6c23f2b96bae6dbd94e04e10e0a046510a974f66cfb74cf5",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\72893356.wav",
+      "seconds": 8.875759637188208
+    },
+    {
+      "mediaId": 180333241,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 1100576,
+      "bytes": 9558,
+      "sourceSha256": "4c2533293660286e542f01a3c8e4a1b581abbb555b1d63c6569701fd80ba7a55",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\180333241.wav",
+      "seconds": 0.773469387755102
+    },
+    {
+      "mediaId": 37831727,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 4749712,
+      "bytes": 5818,
+      "sourceSha256": "4a39a5c41858aadb3cdffab8477bac849c2c03e199537a7ef9b37b5b174714f1",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\37831727.wav",
+      "seconds": 0.5493197278911565
+    },
+    {
+      "mediaId": 3967597,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 4755536,
+      "bytes": 5879,
+      "sourceSha256": "7b256aaee93d4a7724a4b62ef3e583874d37fc4343c14dda8106346c429dbce3",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\3967597.wav",
+      "seconds": 0.5609977324263039
+    },
+    {
+      "mediaId": 669686436,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 6554464,
+      "bytes": 116608,
+      "sourceSha256": "412296822e29cc8f607e8b6fd1c381d1a790155d356821f450600197f75fe7b6",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\669686436.wav",
+      "seconds": 6.6538775510204085
+    },
+    {
+      "mediaId": 112640866,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 2801600,
+      "bytes": 32555,
+      "sourceSha256": "73dc0e350b722e24fcf689b861707a98a13777e29eeeb6ba9c816a49f9d11201",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\112640866.wav",
+      "seconds": 1.8447619047619048
+    },
+    {
+      "mediaId": 13240087,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3680400,
+      "bytes": 15589,
+      "sourceSha256": "4add382a3dee19e0fd76715882f56ea8e1943bcaf0165047f311dc4058303440",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\13240087.wav",
+      "seconds": 1.8424489795918368
+    },
+    {
+      "mediaId": 161889074,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3240368,
+      "bytes": 16961,
+      "sourceSha256": "a305bc7648688b7157aad0d47ae8a327740cd1f712bc0467c10bd457a7166159",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\161889074.wav",
+      "seconds": 0.9468253968253968
+    },
+    {
+      "mediaId": 100144780,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3225328,
+      "bytes": 15037,
+      "sourceSha256": "1459bd47e7c664b8ae5323b38a53cdb1dd17606569d1385d589e710aae068f0b",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\100144780.wav",
+      "seconds": 0.9435374149659864
+    },
+    {
+      "mediaId": 199781222,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 2525952,
+      "bytes": 11666,
+      "sourceSha256": "8092f3e2c1ec4225870db4bec9952f73c6421acd286876914b55d1e20a99e29a",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\199781222.wav",
+      "seconds": 0.7457142857142857
+    },
+    {
+      "mediaId": 11167679,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 2687648,
+      "bytes": 60048,
+      "sourceSha256": "86f396334502ddf21d4392796432c8634d81ce2e722869da75ec9a2a5018c4be",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\11167679.wav",
+      "seconds": 3.973673469387755
+    },
+    {
+      "mediaId": 61370001,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 2628304,
+      "bytes": 59336,
+      "sourceSha256": "60c019098b0e66fb52d97b728d7cc33b1647847122091030d85487650669ed53",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\61370001.wav",
+      "seconds": 4.022857142857143
+    },
+    {
+      "mediaId": 164771299,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 12134448,
+      "bytes": 28957,
+      "sourceSha256": "1eb98b32a9ca183f0c5d8f89d93054dcc9e53a053c2ed90b7c18c3d5edd53e3f",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\164771299.wav",
+      "seconds": 2.794421768707483
+    },
+    {
+      "mediaId": 562857809,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3093104,
+      "bytes": 53380,
+      "sourceSha256": "2fca705bedc7b604ecfa4c232e3bd68601bcd209e8f1a58071212d792755f01a",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\562857809.wav",
+      "seconds": 6.027074829931973
+    },
+    {
+      "mediaId": 9611007,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 5015488,
+      "bytes": 30858,
+      "sourceSha256": "84fd9d08c2ffdb60f938d1f7337c073e5968c5ab1ac200926aae0eeca1aa1c6e",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\9611007.wav",
+      "seconds": 2.7337868480725622
+    },
+    {
+      "mediaId": 240667660,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 5063552,
+      "bytes": 16402,
+      "sourceSha256": "4470ddbf3dee9d9d049708256c093566198a5ef7acff695055a0fbfacef6595a",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\240667660.wav",
+      "seconds": 1.4395238095238094
+    },
+    {
+      "mediaId": 106642098,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 5046352,
+      "bytes": 17186,
+      "sourceSha256": "dbbc853599e6b80f8bc3654671bf394d5179d63ca19392797b6403a4e842b8c6",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\106642098.wav",
+      "seconds": 1.5359183673469388
+    },
+    {
+      "mediaId": 97757946,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 5079968,
+      "bytes": 16972,
+      "sourceSha256": "7186c21757afb77432c4ca3b75204f67e18b4b6ae44c7a334484336de0f5a4ba",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\97757946.wav",
+      "seconds": 1.5171428571428571
+    },
+    {
+      "mediaId": 98468892,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 2782816,
+      "bytes": 18777,
+      "sourceSha256": "824c8fd61612169981c7cfb57e5d9e6147c238f9a31b8d5ddc9bbbf351e4d8f6",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\98468892.wav",
+      "seconds": 2.268684807256236
+    },
+    {
+      "mediaId": 244153238,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 837616,
+      "bytes": 78360,
+      "sourceSha256": "9f5270396fd645bd6c23f2b96bae6dbd94e04e10e0a046510a974f66cfb74cf5",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\244153238.wav",
+      "seconds": 8.875759637188208
+    },
+    {
+      "mediaId": 101412426,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3293552,
+      "bytes": 13194,
+      "sourceSha256": "2c50f4fb1c247882a956d935431819e5d3a9e36fa0227d17ee65d1dfcf9cf2b9",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\101412426.wav",
+      "seconds": 1.0629931972789115
+    },
+    {
+      "mediaId": 27195800,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3306752,
+      "bytes": 15853,
+      "sourceSha256": "0e99421ce05c747732fb5cf69a3330adf17fec73c1a92f4fc6149ee878b5e397",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\27195800.wav",
+      "seconds": 1.36
+    },
+    {
+      "mediaId": 135994990,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3083424,
+      "bytes": 9669,
+      "sourceSha256": "2912a884c1b171484451cd293438697db952ec98eaec055e99e7fbde71d0b9d1",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\135994990.wav",
+      "seconds": 0.9241269841269841
+    },
+    {
+      "mediaId": 33458569,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 13535152,
+      "bytes": 16974,
+      "sourceSha256": "31dfb73b317e51aea17ebb95fe669d9e2a013591eda03521af6df4f43c5992a2",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\33458569.wav",
+      "seconds": 1.3075736961451248
+    },
+    {
+      "mediaId": 49397809,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 13499136,
+      "bytes": 18350,
+      "sourceSha256": "44a3e43fb6356813b99b72a7506a605f817a1659ae3169a5f9440d518ec457d8",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\49397809.wav",
+      "seconds": 1.348639455782313
+    },
+    {
+      "mediaId": 45905589,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 13517488,
+      "bytes": 17656,
+      "sourceSha256": "edc5483fe0d308e7dd485dfc00c4a885694d0b7a755252c56d86e3815575362a",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\45905589.wav",
+      "seconds": 1.3445804988662131
+    },
+    {
+      "mediaId": 173726126,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 4643376,
+      "bytes": 33740,
+      "sourceSha256": "f918a4f2b3cb1a933ec92ff2603cef334b031f78f7cc4cfc77c2dde5796f5f7d",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\173726126.wav",
+      "seconds": 2.393106575963719
+    },
+    {
+      "mediaId": 410452388,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 4602976,
+      "bytes": 40390,
+      "sourceSha256": "3689c32035d7ba5d52bc5c3edae5c92005c7790291c431bb48264468fe2dd594",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\410452388.wav",
+      "seconds": 2.97578231292517
+    },
+    {
+      "mediaId": 447857370,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 4690304,
+      "bytes": 11932,
+      "sourceSha256": "bc877cdc8ecc12f070a25742ec9642b956d3bfe9179d3ea2c5cd60881b18e2f7",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\447857370.wav",
+      "seconds": 0.8924263038548753
+    },
+    {
+      "mediaId": 109578225,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 4677120,
+      "bytes": 13176,
+      "sourceSha256": "7b2e26e7f8649e4742a88687363ad2afcaee3677da447f0d90092f59f29219de",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\109578225.wav",
+      "seconds": 0.9834467120181406
+    },
+    {
+      "mediaId": 19710093,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3502384,
+      "bytes": 15582,
+      "sourceSha256": "532e3979ef3f3d5e857e29d9f09049fb2eb6123800748093bc34f91dd90fbb55",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\19710093.wav",
+      "seconds": 1.5354195011337868
+    },
+    {
+      "mediaId": 69058290,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3517968,
+      "bytes": 19198,
+      "sourceSha256": "823ab1e2e14329066e275f8ae08795a8e12621036b9cf8963f63d01e3598c414",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\69058290.wav",
+      "seconds": 1.782857142857143
+    },
+    {
+      "mediaId": 12305225,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 12595392,
+      "bytes": 34500,
+      "sourceSha256": "e0ac9a361cf17966ce6301c6e9a6ff8b2aa8e3495e7ea6274d509c9f23de0bd7",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\12305225.wav",
+      "seconds": 2.0337868480725625
+    },
+    {
+      "mediaId": 47208767,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 12564032,
+      "bytes": 31351,
+      "sourceSha256": "b423cc86aca5b592cdf546daef523aadc7b4c0b2b86bec26cfa8ea2d8d727873",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\47208767.wav",
+      "seconds": 1.9190476190476191
+    },
+    {
+      "mediaId": 5798633,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 12536048,
+      "bytes": 27983,
+      "sourceSha256": "357f58a79ef08d8facf7152602c70a5205cabb86a384c52bf2b6de85a80ec629",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\5798633.wav",
+      "seconds": 1.6549433106575964
+    },
+    {
+      "mediaId": 463064279,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 4846560,
+      "bytes": 9179,
+      "sourceSha256": "b722dcca4ecd634496c74b32f301c5f8e80050f888571ddf82e5b4e78f3b0301",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\463064279.wav",
+      "seconds": 0.6520181405895692
+    },
+    {
+      "mediaId": 234267126,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 4835520,
+      "bytes": 11035,
+      "sourceSha256": "f73cc943a8168fc8b0ce1ec44eeec9d7b7fdfb3bc98eaf94322220f3f49f1784",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\234267126.wav",
+      "seconds": 0.6641496598639456
+    },
+    {
+      "mediaId": 247316237,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 430240,
+      "bytes": 5285,
+      "sourceSha256": "563d8af29b4d6ee6ae6e9e854dd94160e0d8f61a82f63ce8f3065dce752e52f0",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\247316237.wav",
+      "seconds": 0.5662585034013605
+    },
+    {
+      "mediaId": 100225084,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 422912,
+      "bytes": 7326,
+      "sourceSha256": "b39d0a6779e215a4f01fbfc26afda773a438bf6787be75a36cf890984263a252",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\100225084.wav",
+      "seconds": 0.8129251700680272
+    },
+    {
+      "mediaId": 32107900,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 8796432,
+      "bytes": 113680,
+      "sourceSha256": "8e82b42f9bebf4474ef745eaa7cecc0cc4d4d4153a3100864ababfeca3bb84fa",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\32107900.wav",
+      "seconds": 8.568163265306122
+    },
+    {
+      "mediaId": 12809334,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 7583472,
+      "bytes": 14781,
+      "sourceSha256": "f9d1eb71b01796b959868b316780673265a7458450a861d6df73c6259fe76f02",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\12809334.wav",
+      "seconds": 0.962766439909297
+    },
+    {
+      "mediaId": 94288275,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 7598256,
+      "bytes": 18417,
+      "sourceSha256": "11a4a71699bef26e5e31d24d3bb89e2e91e5d0483599e05afe918f0a35ff5a18",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\94288275.wav",
+      "seconds": 1.2427891156462585
+    },
+    {
+      "mediaId": 19710093,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3502384,
+      "bytes": 15582,
+      "sourceSha256": "532e3979ef3f3d5e857e29d9f09049fb2eb6123800748093bc34f91dd90fbb55",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\19710093.wav",
+      "seconds": 1.5354195011337868
+    },
+    {
+      "mediaId": 69058290,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3517968,
+      "bytes": 19198,
+      "sourceSha256": "823ab1e2e14329066e275f8ae08795a8e12621036b9cf8963f63d01e3598c414",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\69058290.wav",
+      "seconds": 1.782857142857143
+    },
+    {
+      "mediaId": 43338199,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 12708112,
+      "bytes": 25474,
+      "sourceSha256": "18d524cfca142dc1640bfcd6524a6434759ec474f2348a0baa1e03f61723ca1c",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\43338199.wav",
+      "seconds": 1.6667573696145124
+    },
+    {
+      "mediaId": 2970610,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 12733600,
+      "bytes": 15878,
+      "sourceSha256": "37548798cd2ebae3d4c07ac8b7538c889dd2d7c2553e98a9d4c073ffec51d8ef",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\2970610.wav",
+      "seconds": 1.1208843537414965
+    },
+    {
+      "mediaId": 1004158,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 12749488,
+      "bytes": 21851,
+      "sourceSha256": "bc54e9f1ae7faed6ba648c137b65ef06c829bf4938979f70c7ef40d20935f28f",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\1004158.wav",
+      "seconds": 1.2956916099773244
+    },
+    {
+      "mediaId": 812988156,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 4213984,
+      "bytes": 7218,
+      "sourceSha256": "870071f82056551cc29dd3b20345bd3e2c33265c2bf354d00df2246ad6326006",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\812988156.wav",
+      "seconds": 0.6200907029478459
+    },
+    {
+      "mediaId": 178831994,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 9978976,
+      "bytes": 6304,
+      "sourceSha256": "b58438de29de4eb978dc49bc7a6fb283c4183ceeb2bf9f04b2537e6456607727",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\178831994.wav",
+      "seconds": 0.44031746031746033
+    },
+    {
+      "mediaId": 319090360,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 6072272,
+      "bytes": 53630,
+      "sourceSha256": "85d3e46e11ec61bd5126c481990a64326a107464657521b4cf67b4e1b8a1ec6d",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\319090360.wav",
+      "seconds": 4.746848072562358
+    },
+    {
+      "mediaId": 395913045,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 10950896,
+      "bytes": 14690,
+      "sourceSha256": "68978a7d41b70288f73fb6e6d32f018381b650c84f0c5d2484108b2c26c6dafd",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\395913045.wav",
+      "seconds": 1.423265306122449
+    },
+    {
+      "mediaId": 241011469,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 10965600,
+      "bytes": 13487,
+      "sourceSha256": "cdea113ac3e55982c29e656b5b04cc499be5797a32626e73b256dd02779f8c7c",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\241011469.wav",
+      "seconds": 1.3313378684807256
+    },
+    {
+      "mediaId": 32918848,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 13093600,
+      "bytes": 5068,
+      "sourceSha256": "f15a1c3f7bb45075b907b1ff0870c47c46a5826f6ce9d652f0378c97f278860f",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\32918848.wav",
+      "seconds": 0.46104308390022675
+    },
+    {
+      "mediaId": 135833827,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 13082688,
+      "bytes": 4617,
+      "sourceSha256": "7ce78cd16122950457f6208c57f9686bf844d5f9bf5386bbaf9f4227699a8cf6",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\135833827.wav",
+      "seconds": 0.39224489795918366
+    },
+    {
+      "mediaId": 8262027,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 13087312,
+      "bytes": 6274,
+      "sourceSha256": "ed602f6f716bfe6641b03f5faf49c28cb2312389a775ff96968d741121cf6010",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\8262027.wav",
+      "seconds": 0.590702947845805
+    },
+    {
+      "mediaId": 57320707,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 13108976,
+      "bytes": 7433,
+      "sourceSha256": "366f4d88fad02ef5cabd0d27f6fdea01f0f9cdfc0a94b2df3088b3e214df8eb9",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\57320707.wav",
+      "seconds": 0.6878458049886621
+    },
+    {
+      "mediaId": 43710584,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 13103136,
+      "bytes": 5827,
+      "sourceSha256": "0503875d859f8100c9ead80d958db96f458b67cedaaaa26318642972ac7253ce",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\43710584.wav",
+      "seconds": 0.5074603174603175
+    },
+    {
+      "mediaId": 191183975,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 13098672,
+      "bytes": 4462,
+      "sourceSha256": "a0ea25ea99b07ff19a1523c7ff4e7ce39ebae092b22291f46db819752ffd3706",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\191183975.wav",
+      "seconds": 0.4097278911564626
+    },
+    {
+      "mediaId": 67837780,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 13151600,
+      "bytes": 7386,
+      "sourceSha256": "443ebdbb6c7e291be1e6b251e9459dee292ffd1d5f21bb98f5fec4a54c334621",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\67837780.wav",
+      "seconds": 0.6393650793650794
+    },
+    {
+      "mediaId": 23364535,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 13166336,
+      "bytes": 6855,
+      "sourceSha256": "89fe71d5f1144bf7a4a554a4a5dd89786e7518e74c53e20ec87358277630ca3b",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\23364535.wav",
+      "seconds": 0.6476190476190476
+    },
+    {
+      "mediaId": 70458762,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 13158992,
+      "bytes": 7336,
+      "sourceSha256": "67d18c39ef0bf1f5d8a6d2861bc76b3a0ea851edded499470b2bc11057de36a2",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\70458762.wav",
+      "seconds": 0.6530612244897959
+    },
+    {
+      "mediaId": 13800022,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 13143152,
+      "bytes": 8441,
+      "sourceSha256": "a5bd1958edc5261d92b1056b153a0d3709c65af2ed9e7251a0ec43b7388a79c2",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\13800022.wav",
+      "seconds": 0.7234467120181406
+    },
+    {
+      "mediaId": 400181815,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3146496,
+      "bytes": 53380,
+      "sourceSha256": "2fca705bedc7b604ecfa4c232e3bd68601bcd209e8f1a58071212d792755f01a",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\400181815.wav",
+      "seconds": 6.027074829931973
+    },
+    {
+      "mediaId": 33458569,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 13535152,
+      "bytes": 16974,
+      "sourceSha256": "31dfb73b317e51aea17ebb95fe669d9e2a013591eda03521af6df4f43c5992a2",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\33458569.wav",
+      "seconds": 1.3075736961451248
+    },
+    {
+      "mediaId": 45905589,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 13517488,
+      "bytes": 17656,
+      "sourceSha256": "edc5483fe0d308e7dd485dfc00c4a885694d0b7a755252c56d86e3815575362a",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\45905589.wav",
+      "seconds": 1.3445804988662131
+    },
+    {
+      "mediaId": 49397809,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 13499136,
+      "bytes": 18350,
+      "sourceSha256": "44a3e43fb6356813b99b72a7506a605f817a1659ae3169a5f9440d518ec457d8",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\49397809.wav",
+      "seconds": 1.348639455782313
+    },
+    {
+      "mediaId": 520766059,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 4473056,
+      "bytes": 10919,
+      "sourceSha256": "cef0fef236a290c0f459653102fc0f24d4aad58e583e00bd459cfdd17aa19b45",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\520766059.wav",
+      "seconds": 0.6918367346938775
+    },
+    {
+      "mediaId": 165843168,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 4483984,
+      "bytes": 10697,
+      "sourceSha256": "5e86bf87094d6eb36a82a0ca580c7b1ad1313ea8ef0ce2214cdcc74fc3c6b40a",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\165843168.wav",
+      "seconds": 0.6920861678004535
+    },
+    {
+      "mediaId": 66891228,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 6383824,
+      "bytes": 13070,
+      "sourceSha256": "451ce7a27dbcf6edb13919a5540313e995e6df2c6950aecd9e68b330e76d6f02",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\66891228.wav",
+      "seconds": 0.6342857142857142
+    },
+    {
+      "mediaId": 187879372,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 6374432,
+      "bytes": 9378,
+      "sourceSha256": "3c2eae4a7fdab65fdbfc088c91afe116a50cc5551cb64bbdcb9bf78097d1b64f",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\187879372.wav",
+      "seconds": 0.4036281179138322
+    },
+    {
+      "mediaId": 39115748,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 6396896,
+      "bytes": 12984,
+      "sourceSha256": "78296569a1775e0e9f6b4c34841c3389cef689e52ebaa1bf5a03e91c621b3aad",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\39115748.wav",
+      "seconds": 0.6880952380952381
+    },
+    {
+      "mediaId": 70220941,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 6361712,
+      "bytes": 12719,
+      "sourceSha256": "086993b7970e624c3e18f7be8d984bd6d84e89b490c55283d0adad3ef17da1af",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\70220941.wav",
+      "seconds": 0.4990476190476191
+    },
+    {
+      "mediaId": 172066514,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 8151408,
+      "bytes": 8406,
+      "sourceSha256": "da9f1070b701c54067d9d06021e43c12f48a1ff8a4bd8a4181bce8cc883493eb",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\172066514.wav",
+      "seconds": 0.4385487528344671
+    },
+    {
+      "mediaId": 180674454,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 6316736,
+      "bytes": 44968,
+      "sourceSha256": "8865d2b1a74ddd7d108e6fd3aaf48b21e145ebfb7be458d1cf0f77caf8dcb559",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\180674454.wav",
+      "seconds": 3.249342403628118
+    },
+    {
+      "mediaId": 191960095,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 6262992,
+      "bytes": 53735,
+      "sourceSha256": "e41402ea15dc675292cf9ed06b2dbe9c0181f6b36d65c9ce5ce6c8e4d20d0f8a",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\191960095.wav",
+      "seconds": 3.546485260770975
+    },
+    {
+      "mediaId": 122436999,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 8038176,
+      "bytes": 80151,
+      "sourceSha256": "367d510873d8d3809d679d60c2fd4eb6fcf097c2593739df11f0baa928efd0ec",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\122436999.wav",
+      "seconds": 3.587687074829932
+    },
+    {
+      "mediaId": 27119331,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 8172720,
+      "bytes": 6244,
+      "sourceSha256": "d9918c44f21a174dda51b7ceed34b0855d96d3f1e87a8d05890e3435bc05c928",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\27119331.wav",
+      "seconds": 0.5198185941043084
+    },
+    {
+      "mediaId": 12099742,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 8178976,
+      "bytes": 6769,
+      "sourceSha256": "976ac2f3407b245fa2f9cda5505c55f910dc1438b245ed27b114cca9f3de6dad",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\12099742.wav",
+      "seconds": 0.5304308390022676
+    },
+    {
+      "mediaId": 11353820,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 6671072,
+      "bytes": 16326,
+      "sourceSha256": "1c0e3bf738d8f2bf8ff2d10b901175f29f4da7cdf847b308757ae6dfc82014f1",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\11353820.wav",
+      "seconds": 1.3714285714285714
+    },
+    {
+      "mediaId": 28018133,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 6687408,
+      "bytes": 16246,
+      "sourceSha256": "d698964f446572cfd840f0a8dc62d41a64a794dc84817c9793006d75b066cfa1",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\28018133.wav",
+      "seconds": 1.310657596371882
+    },
+    {
+      "mediaId": 25747624,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 6703664,
+      "bytes": 15653,
+      "sourceSha256": "651cac12903ff0915d42323200b2bde014e4994f4b8888dd5c6f70aff5b9b835",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\25747624.wav",
+      "seconds": 1.3126530612244898
+    },
+    {
+      "mediaId": 17830882,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 6452432,
+      "bytes": 15023,
+      "sourceSha256": "a8d3d54e07c657ec17804c42e42188e7ac1f2d690e79a5e3b0f91959f9af4495",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\17830882.wav",
+      "seconds": 0.888390022675737
+    },
+    {
+      "mediaId": 105286082,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 6467456,
+      "bytes": 13344,
+      "sourceSha256": "7c3c0e5f37c5893216e3954fcabb24ea074fd0b3f31ae48b489e04b5ade43b23",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\105286082.wav",
+      "seconds": 0.7520408163265306
+    },
+    {
+      "mediaId": 18682056,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 6442688,
+      "bytes": 9733,
+      "sourceSha256": "1b20d044c46e55d33be56e9dcf3fc16268e675c0316d024e2966ab31aaa7a03a",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\18682056.wav",
+      "seconds": 0.7169387755102041
+    },
+    {
+      "mediaId": 37900398,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 6480800,
+      "bytes": 13390,
+      "sourceSha256": "f4f6155314843a631e06bc1d7d68a6fc1bb4bb4c12006c3fc0ebbd3bd3160050",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\37900398.wav",
+      "seconds": 0.7818820861678004
+    },
+    {
+      "mediaId": 52225576,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 4873120,
+      "bytes": 7483,
+      "sourceSha256": "0676acd5d96a5c33db904520a3bacf0ca76dbdc22638b5c7cc79c6d36e1d63d8",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\52225576.wav",
+      "seconds": 0.7120408163265306
+    },
+    {
+      "mediaId": 821885478,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 4744112,
+      "bytes": 5600,
+      "sourceSha256": "07e61e68d325305bc23ae1be025d1f2209b6cec695fa06cf249ee497ed6c634a",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\821885478.wav",
+      "seconds": 0.381156462585034
+    },
+    {
+      "mediaId": 124925222,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 10927952,
+      "bytes": 4966,
+      "sourceSha256": "7609d3dfeba04a89b3f363236cbf4372796a1649bcc4b85b49c893860f152568",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\124925222.wav",
+      "seconds": 0.24258503401360546
+    },
+    {
+      "mediaId": 13393986,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 10923024,
+      "bytes": 4926,
+      "sourceSha256": "ae358ba4a35bb212f20c899f2c14ecdf7b089e0288f01d42e25954045349acea",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\13393986.wav",
+      "seconds": 0.23759637188208615
+    },
+    {
+      "mediaId": 84408456,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 4720528,
+      "bytes": 14472,
+      "sourceSha256": "115dba009ed91c525b838845f29895fb2697f60b379e9c5bc099470eaa6c29e3",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\84408456.wav",
+      "seconds": 0.6473696145124717
+    },
+    {
+      "mediaId": 616886755,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 4702240,
+      "bytes": 18277,
+      "sourceSha256": "6a2b3de29445b95521139fc3998f32768eb22241e3621980cc6ef1f4ecace8da",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\616886755.wav",
+      "seconds": 0.8515646258503401
+    },
+    {
+      "mediaId": 169144164,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 2933376,
+      "bytes": 5143,
+      "sourceSha256": "b37891ad45ec87fab00f85f9ad4ae32849812fcf45d9daa3c0e32e99b868b0ec",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\169144164.wav",
+      "seconds": 0.35183673469387755
+    },
+    {
+      "mediaId": 748974131,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 4735008,
+      "bytes": 9097,
+      "sourceSha256": "b4393b52f94255a5b561b495fc7d40164c9b612e4542d6de4dc0508bbcf5d884",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\748974131.wav",
+      "seconds": 0.46825396825396826
+    },
+    {
+      "mediaId": 135994990,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 3083424,
+      "bytes": 9669,
+      "sourceSha256": "2912a884c1b171484451cd293438697db952ec98eaec055e99e7fbde71d0b9d1",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\135994990.wav",
+      "seconds": 0.9241269841269841
+    },
+    {
+      "mediaId": 36020694,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 5262912,
+      "bytes": 7879,
+      "sourceSha256": "6e61297e7bb07aa4c6d874c2813defc0f4a61156dbb1771fef65e62c7b9d52ed",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\36020694.wav",
+      "seconds": 0.8162585034013605
+    },
+    {
+      "mediaId": 106899704,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 5253744,
+      "bytes": 9165,
+      "sourceSha256": "dae4cbe7339bea8260731d7123c975d79ab6484f7c33721b2bc8c36234b4ba64",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\106899704.wav",
+      "seconds": 1.0274829931972789
+    },
+    {
+      "mediaId": 143981600,
+      "bankPath": "/resources/bnk2/abilities_imperialranged_media.bnk",
+      "bankId": "1406360855",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0x85395B5DF7E8C4E8",
+        "entryOffset": 40314998,
+        "headerSize": 36,
+        "dataOffset": 40315034,
+        "compressedSize": 13558281,
+        "length": 13558281,
+        "compressionMethod": 0,
+        "crc32Index": "30b1b4c1"
+      },
+      "bankDecodedOffset": 12669008,
+      "bytes": 39090,
+      "sourceSha256": "c2a39697eeea532f557e7d364503cd82511a1693367806fc3f766bca8c74fb7a",
+      "output": "godot\\Assets\\BountyHunter\\Audio\\143981600.wav",
+      "seconds": 3.5729931972789117
+    },
+    {
+      "mediaId": 1035213509,
+      "bankPath": "/resources/bnk2/abilities_republicranged_media.bnk",
+      "bankId": "3535516216",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xAD462509FEA33FA9",
+        "entryOffset": 64644615,
+        "headerSize": 36,
+        "dataOffset": 64644651,
+        "compressedSize": 15923876,
+        "length": 15923876,
+        "compressionMethod": 0,
+        "crc32Index": "bfff623e"
+      },
+      "bankDecodedOffset": 10934928,
+      "bytes": 48013,
+      "sourceSha256": "a3173dce0c967b8f1b89bcd02dab872fdc1ce93fcfc111c21f6fc218300fbd5f",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\1035213509.wav",
+      "seconds": 3.8021768707482995
+    },
+    {
+      "mediaId": 271586202,
+      "bankPath": "/resources/bnk2/abilities_republicranged_media.bnk",
+      "bankId": "3535516216",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xAD462509FEA33FA9",
+        "entryOffset": 64644615,
+        "headerSize": 36,
+        "dataOffset": 64644651,
+        "compressedSize": 15923876,
+        "length": 15923876,
+        "compressionMethod": 0,
+        "crc32Index": "bfff623e"
+      },
+      "bankDecodedOffset": 10982944,
+      "bytes": 50867,
+      "sourceSha256": "c48087c72f5e49be8089691aa31e88d8afd4c7d21d673e9365c35c17f068e8da",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\271586202.wav",
+      "seconds": 3.979591836734694
+    },
+    {
+      "mediaId": 184781114,
+      "bankPath": "/resources/bnk2/abilities_republicranged_media.bnk",
+      "bankId": "3535516216",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xAD462509FEA33FA9",
+        "entryOffset": 64644615,
+        "headerSize": 36,
+        "dataOffset": 64644651,
+        "compressedSize": 15923876,
+        "length": 15923876,
+        "compressionMethod": 0,
+        "crc32Index": "bfff623e"
+      },
+      "bankDecodedOffset": 8026352,
+      "bytes": 12867,
+      "sourceSha256": "a5dc1011bf86a81b294837c046957fce3a23ee8612a3c2b1b262ffdab61dbfd6",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\184781114.wav",
+      "seconds": 1.3912925170068027
+    },
+    {
+      "mediaId": 224018998,
+      "bankPath": "/resources/bnk2/abilities_republicranged_media.bnk",
+      "bankId": "3535516216",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xAD462509FEA33FA9",
+        "entryOffset": 64644615,
+        "headerSize": 36,
+        "dataOffset": 64644651,
+        "compressedSize": 15923876,
+        "length": 15923876,
+        "compressionMethod": 0,
+        "crc32Index": "bfff623e"
+      },
+      "bankDecodedOffset": 8012144,
+      "bytes": 14205,
+      "sourceSha256": "581f147b9dc1d0685b286e8f2a4e4b63a2564c36c12b8b0ca819028cedb6a3bb",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\224018998.wav",
+      "seconds": 1.5666213151927437
+    },
+    {
+      "mediaId": 1035213509,
+      "bankPath": "/resources/bnk2/abilities_republicranged_media.bnk",
+      "bankId": "3535516216",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xAD462509FEA33FA9",
+        "entryOffset": 64644615,
+        "headerSize": 36,
+        "dataOffset": 64644651,
+        "compressedSize": 15923876,
+        "length": 15923876,
+        "compressionMethod": 0,
+        "crc32Index": "bfff623e"
+      },
+      "bankDecodedOffset": 10934928,
+      "bytes": 48013,
+      "sourceSha256": "a3173dce0c967b8f1b89bcd02dab872fdc1ce93fcfc111c21f6fc218300fbd5f",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\1035213509.wav",
+      "seconds": 3.8021768707482995
+    },
+    {
+      "mediaId": 271586202,
+      "bankPath": "/resources/bnk2/abilities_republicranged_media.bnk",
+      "bankId": "3535516216",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xAD462509FEA33FA9",
+        "entryOffset": 64644615,
+        "headerSize": 36,
+        "dataOffset": 64644651,
+        "compressedSize": 15923876,
+        "length": 15923876,
+        "compressionMethod": 0,
+        "crc32Index": "bfff623e"
+      },
+      "bankDecodedOffset": 10982944,
+      "bytes": 50867,
+      "sourceSha256": "c48087c72f5e49be8089691aa31e88d8afd4c7d21d673e9365c35c17f068e8da",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\271586202.wav",
+      "seconds": 3.979591836734694
+    },
+    {
+      "mediaId": 199379833,
+      "bankPath": "/resources/bnk2/abilities_republicranged_media.bnk",
+      "bankId": "3535516216",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xAD462509FEA33FA9",
+        "entryOffset": 64644615,
+        "headerSize": 36,
+        "dataOffset": 64644651,
+        "compressedSize": 15923876,
+        "length": 15923876,
+        "compressionMethod": 0,
+        "crc32Index": "bfff623e"
+      },
+      "bankDecodedOffset": 2511952,
+      "bytes": 34195,
+      "sourceSha256": "cce61b10b4b45525fca7e0336f038a6ce45119875317a874d6c67b16aa4287da",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\199379833.wav",
+      "seconds": 2.8377777777777777
+    },
+    {
+      "mediaId": 67775961,
+      "bankPath": "/resources/bnk2/abilities_republicranged_media.bnk",
+      "bankId": "3535516216",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xAD462509FEA33FA9",
+        "entryOffset": 64644615,
+        "headerSize": 36,
+        "dataOffset": 64644651,
+        "compressedSize": 15923876,
+        "length": 15923876,
+        "compressionMethod": 0,
+        "crc32Index": "bfff623e"
+      },
+      "bankDecodedOffset": 2480064,
+      "bytes": 31875,
+      "sourceSha256": "eb1dc908ceb894d4c415f2c76aba320c646cb73ee931103d861c0334f1b9df1c",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\67775961.wav",
+      "seconds": 2.672562358276644
+    },
+    {
+      "mediaId": 878565772,
+      "bankPath": "/resources/bnk2/abilities_republicranged_media.bnk",
+      "bankId": "3535516216",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xAD462509FEA33FA9",
+        "entryOffset": 64644615,
+        "headerSize": 36,
+        "dataOffset": 64644651,
+        "compressedSize": 15923876,
+        "length": 15923876,
+        "compressionMethod": 0,
+        "crc32Index": "bfff623e"
+      },
+      "bankDecodedOffset": 6952736,
+      "bytes": 7320,
+      "sourceSha256": "44a9cc4ccdb4281fb87243a3bb492fcf207567f5d19d431a685e02c0c97aa505",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\878565772.wav",
+      "seconds": 0.5900680272108844
+    },
+    {
+      "mediaId": 580915172,
+      "bankPath": "/resources/bnk2/abilities_republicranged_media.bnk",
+      "bankId": "3535516216",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xAD462509FEA33FA9",
+        "entryOffset": 64644615,
+        "headerSize": 36,
+        "dataOffset": 64644651,
+        "compressedSize": 15923876,
+        "length": 15923876,
+        "compressionMethod": 0,
+        "crc32Index": "bfff623e"
+      },
+      "bankDecodedOffset": 6933808,
+      "bytes": 18917,
+      "sourceSha256": "9f140a1061b34b102f85eb833d5a41d83c7efb1f19a984334deeff97b1442ffb",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\580915172.wav",
+      "seconds": 1.0726757369614512
+    },
+    {
+      "mediaId": 43338199,
+      "bankPath": "/resources/bnk2/abilities_creatures_media.bnk",
+      "bankId": "2409073383",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xC1517B792C0D6FA0",
+        "entryOffset": 512,
+        "headerSize": 36,
+        "dataOffset": 548,
+        "compressedSize": 17831784,
+        "length": 17831784,
+        "compressionMethod": 0,
+        "crc32Index": "f823773b"
+      },
+      "bankDecodedOffset": 8844576,
+      "bytes": 25474,
+      "sourceSha256": "18d524cfca142dc1640bfcd6524a6434759ec474f2348a0baa1e03f61723ca1c",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\43338199.wav",
+      "seconds": 1.6667573696145124
+    },
+    {
+      "mediaId": 1004158,
+      "bankPath": "/resources/bnk2/abilities_creatures_media.bnk",
+      "bankId": "2409073383",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xC1517B792C0D6FA0",
+        "entryOffset": 512,
+        "headerSize": 36,
+        "dataOffset": 548,
+        "compressedSize": 17831784,
+        "length": 17831784,
+        "compressionMethod": 0,
+        "crc32Index": "f823773b"
+      },
+      "bankDecodedOffset": 8927808,
+      "bytes": 21851,
+      "sourceSha256": "bc54e9f1ae7faed6ba648c137b65ef06c829bf4938979f70c7ef40d20935f28f",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\1004158.wav",
+      "seconds": 1.2956916099773244
+    },
+    {
+      "mediaId": 2970610,
+      "bankPath": "/resources/bnk2/abilities_creatures_media.bnk",
+      "bankId": "2409073383",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xC1517B792C0D6FA0",
+        "entryOffset": 512,
+        "headerSize": 36,
+        "dataOffset": 548,
+        "compressedSize": 17831784,
+        "length": 17831784,
+        "compressionMethod": 0,
+        "crc32Index": "f823773b"
+      },
+      "bankDecodedOffset": 8896784,
+      "bytes": 15878,
+      "sourceSha256": "37548798cd2ebae3d4c07ac8b7538c889dd2d7c2553e98a9d4c073ffec51d8ef",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\2970610.wav",
+      "seconds": 1.1208843537414965
+    },
+    {
+      "mediaId": 3641672,
+      "bankPath": "/resources/bnk2/abilities_creatures_media.bnk",
+      "bankId": "2409073383",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xC1517B792C0D6FA0",
+        "entryOffset": 512,
+        "headerSize": 36,
+        "dataOffset": 548,
+        "compressedSize": 17831784,
+        "length": 17831784,
+        "compressionMethod": 0,
+        "crc32Index": "f823773b"
+      },
+      "bankDecodedOffset": 1771696,
+      "bytes": 28205,
+      "sourceSha256": "7934441558992cf7007ec316e3ce5486b4534c8fae469903a637ae20a5c334c0",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\3641672.wav",
+      "seconds": 2.351065759637188
+    },
+    {
+      "mediaId": 11530015,
+      "bankPath": "/resources/bnk2/abilities_creatures_media.bnk",
+      "bankId": "2409073383",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xC1517B792C0D6FA0",
+        "entryOffset": 512,
+        "headerSize": 36,
+        "dataOffset": 548,
+        "compressedSize": 17831784,
+        "length": 17831784,
+        "compressionMethod": 0,
+        "crc32Index": "f823773b"
+      },
+      "bankDecodedOffset": 1743184,
+      "bytes": 28499,
+      "sourceSha256": "8d94c698bdb7e0888f56a7474461f470b8292d344a1e13081cce4b7a680d0fa8",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\11530015.wav",
+      "seconds": 2.386575963718821
+    },
+    {
+      "mediaId": 12099742,
+      "bankPath": "/resources/bnk2/abilities_republicranged_media.bnk",
+      "bankId": "3535516216",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xAD462509FEA33FA9",
+        "entryOffset": 64644615,
+        "headerSize": 36,
+        "dataOffset": 64644651,
+        "compressedSize": 15923876,
+        "length": 15923876,
+        "compressionMethod": 0,
+        "crc32Index": "bfff623e"
+      },
+      "bankDecodedOffset": 7213120,
+      "bytes": 6769,
+      "sourceSha256": "976ac2f3407b245fa2f9cda5505c55f910dc1438b245ed27b114cca9f3de6dad",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\12099742.wav",
+      "seconds": 0.5304308390022676
+    },
+    {
+      "mediaId": 27119331,
+      "bankPath": "/resources/bnk2/abilities_republicranged_media.bnk",
+      "bankId": "3535516216",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xAD462509FEA33FA9",
+        "entryOffset": 64644615,
+        "headerSize": 36,
+        "dataOffset": 64644651,
+        "compressedSize": 15923876,
+        "length": 15923876,
+        "compressionMethod": 0,
+        "crc32Index": "bfff623e"
+      },
+      "bankDecodedOffset": 7206864,
+      "bytes": 6244,
+      "sourceSha256": "d9918c44f21a174dda51b7ceed34b0855d96d3f1e87a8d05890e3435bc05c928",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\27119331.wav",
+      "seconds": 0.5198185941043084
+    },
+    {
+      "mediaId": 184781114,
+      "bankPath": "/resources/bnk2/abilities_republicranged_media.bnk",
+      "bankId": "3535516216",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xAD462509FEA33FA9",
+        "entryOffset": 64644615,
+        "headerSize": 36,
+        "dataOffset": 64644651,
+        "compressedSize": 15923876,
+        "length": 15923876,
+        "compressionMethod": 0,
+        "crc32Index": "bfff623e"
+      },
+      "bankDecodedOffset": 8026352,
+      "bytes": 12867,
+      "sourceSha256": "a5dc1011bf86a81b294837c046957fce3a23ee8612a3c2b1b262ffdab61dbfd6",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\184781114.wav",
+      "seconds": 1.3912925170068027
+    },
+    {
+      "mediaId": 224018998,
+      "bankPath": "/resources/bnk2/abilities_republicranged_media.bnk",
+      "bankId": "3535516216",
+      "entry": {
+        "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_bnk_audio_1.tor",
+        "archiveHash": "0xAD462509FEA33FA9",
+        "entryOffset": 64644615,
+        "headerSize": 36,
+        "dataOffset": 64644651,
+        "compressedSize": 15923876,
+        "length": 15923876,
+        "compressionMethod": 0,
+        "crc32Index": "bfff623e"
+      },
+      "bankDecodedOffset": 8012144,
+      "bytes": 14205,
+      "sourceSha256": "581f147b9dc1d0685b286e8f2a4e4b63a2564c36c12b8b0ca819028cedb6a3bb",
+      "output": "work\\bountyhunter-republic\\assets\\Audio\\224018998.wav",
+      "seconds": 1.5666213151927437
+    }
+  ],
+  "limits": [
+    "Godot PCM playback approximates Wwise containers, bus gains, spatialization and random history.",
+    "Stop events identify lifecycle; bounded fade/release is authored."
+  ]
+}

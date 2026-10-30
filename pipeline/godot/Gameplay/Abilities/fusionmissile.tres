@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "fusionmissile"
+StartsUnlocked = false
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+Title = "Fusion Missile"
+Icon = "tacticalnuke"
+Damage = 16
+CooldownSeconds = 14
+Range = 1.2
+Radius = 0.3
+Area = 1
+TargetRule = 1
+PeriodicDamage = 4
+PeriodicDuration = 6
+PeriodicInterval = 1
+SpreadsPeriodicEffects = true
+WindupSeconds = 0.9
+ChannelSeconds = 0
+RecoverySeconds = 0.45
+GestureSeconds = 1.3
+StartClip = "BH/MissileStrikeStart"
+LoopClip = "BH/MissileStrikeLoop"
+EndClip = "BH/MissileStrikeEnd"
+PresentationKind = "bhfusion"
+CastAudio = "res://Assets/BountyHunter/Audio/44588646.wav"
+ImpactAudio = "res://Assets/BountyHunter/Audio/69058290.wav"
+ImpactTexture = "res://Assets/BountyHunter/blast_mark_rim.png"
+EffectTint = Color(1, 0.55, 0.2, 1)
+Description = "Missile strike on the thickest group: burns every enemy in the blast for 6 seconds and copies your burns and bleeds between all of them."

@@ -19,6 +19,8 @@ public partial class PresentationRepairSmoke : Node
             var target=new Combatant {Team=CombatTeam.Hostile,Name="PresentationFixture"};target.AddChild(new Health {Name="Health",Maximum=100000});w.AddChild(target);
             target.GlobalPosition=w.PlayerActor.GlobalPosition+Vector3.Right*.15f;
             await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);
+            // Stand-still channels (Mercenary Death From Above) need a grounded, idle player body.
+            if(w.RunConfiguration.AdvancedClassId=="mercenary"){w.Player.TestInput=Vector2.Zero;w.Player.SetPhysicsProcess(true);for(int i=0;i<6;i++)await ToSignal(GetTree(),SceneTree.SignalName.PhysicsFrame);w.Player.SetPhysicsProcess(false);}
             foreach(var a in w.Abilities.Abilities.Where(a=>a.Definition.Id!="lightning"))
             {
                 w.Abilities.ResetCombat();w.Build.Reset();w.Periodic.Clear();w.Player.Presentation.ResetPresentation();w.PlayerActor.Health.ClearShield();target.Health.Restore();
@@ -27,6 +29,8 @@ public partial class PresentationRepairSmoke : Node
                 Check(d.Id+" clip exists",w.Player.Presentation.Animator.HasAnimation(d.StartClip));
                 if(d.Effect==AbilityEffect.Heal)w.PlayerActor.Health.ApplyDamage(w.PlayerActor.Health.Maximum*.75f);
                 var fx=a.Presentation as D3AbilityPresentation;fx?.SetProcess(false);
+                // Thermal Sensor Override only fires once an offensive ability is on a long cooldown.
+                if(d.Id=="thermalsensoroverride" && w.Abilities.Find("heatseeker") is {} longCooldown){longCooldown.SetUnlocked(true);longCooldown.ResetCombat();longCooldown.TryBegin();longCooldown.Interrupt();w.Player.Presentation.ResetPresentation();}
                 Check(d.Id+" starts with gesture",a.TryBegin() && w.Player.Presentation.GestureOwner==a);
                 int shotBefore=fx?.ShotsPresented??0;
                 if(d.Id is "tracer" or "heatseeker" or "incendiarymissile")

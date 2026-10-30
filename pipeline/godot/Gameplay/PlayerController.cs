@@ -19,6 +19,7 @@ public partial class PlayerController : CharacterBody3D
     public bool StationaryForAbility=>ActualVelocity.LengthSquared()<.0009f && Velocity.LengthSquared()<.0009f && IsOnFloor()
         && (TestInput??Input.GetVector("b1_left","b1_right","b1_forward","b1_back")).IsZeroApprox() && !Rig.RunForward;
     public Vector2? TestInput { get; set; }
+    public bool MovementLocked { get; set; }
     public int Recoveries { get; private set; }
     public int WallContacts { get; private set; }
     public long PhysicsSteps { get; private set; }
@@ -68,6 +69,8 @@ public partial class PlayerController : CharacterBody3D
         var input = TestInput ?? (Rig.ControlsEnabled
             ? Input.GetVector("b1_left", "b1_right", "b1_forward", "b1_back") : Vector2.Zero);
         if (TestInput == null && Rig.RunForward) input.Y = -1;
+        // Channels such as Death From Above root the player; queued jumps are discarded.
+        if (MovementLocked) { input = Vector2.Zero; _jumpQueued = false; Velocity = new Vector3(0, Velocity.Y, 0); }
         Step(delta, input);
     }
 

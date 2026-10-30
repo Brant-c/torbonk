@@ -54,7 +54,7 @@ public partial class AbilityIcon : Control
     }
     public void UpdateUpgrade(int rank,PowerRarity rarity)
     {
-        var color=rarity switch {PowerRarity.Prototype=>new Color("60c2ed"),PowerRarity.Artifact=>new Color("be8bf1"),_=>new Color("55d884")};
+        var color=rarity switch {PowerRarity.Standard=>new Color("b4b8bc"),PowerRarity.Prototype=>new Color("60c2ed"),PowerRarity.Artifact=>new Color("be8bf1"),_=>new Color("55d884")};
         _rank.Text=rank>0?$"+{rank}":"";_rank.AddThemeColorOverride("font_color",color);
         _rarity.Visible=rank>0;_rarity.Color=color;
     }

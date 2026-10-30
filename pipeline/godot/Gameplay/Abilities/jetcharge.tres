@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "jetcharge"
+StartsUnlocked = false
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+Title = "Jet Charge"
+Icon = "jetcharge"
+Category = 1
+Damage = 18
+CooldownSeconds = 12
+Range = 0.9
+Radius = 0.2
+Area = 4
+SplashMultiplier = 0.6
+WindupSeconds = 0.3
+ChannelSeconds = 0
+RecoverySeconds = 0.4
+GestureSeconds = 1.3
+StartClip = "BH/JetCharge"
+LoopClip = "BH/JetCharge"
+EndClip = ""
+PresentationKind = "bhjet"
+FullBodyGesture = true
+CastAudio = "res://Assets/BountyHunter/Audio/247316237.wav"
+ImpactAudio = "res://Assets/BountyHunter/Audio/234267126.wav"
+ImpactTexture = "res://Assets/BountyHunter/fx_2x2_white_smoke_alpha.png"
+EffectTint = Color(1, 0.7, 0.4, 1)
+Description = "Jetpack slam at an enemy up to 0.9 away: damages enemies around it and stuns the target for 1.5 seconds."

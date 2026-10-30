@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "concussionmissile"
+StartsUnlocked = false
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+Title = "Concussion Missile"
+Icon = "concussionmissiles"
+Category = 1
+Damage = 4
+CooldownSeconds = 20
+Range = 1.0
+Radius = 0.26
+Area = 4
+SplashMultiplier = 1.0
+MaximumTargets = 5
+WindupSeconds = 0.3
+ChannelSeconds = 0
+RecoverySeconds = 0.4
+GestureSeconds = 1.0
+StartClip = "D3/BracerStart"
+LoopClip = "D3/BracerStart"
+EndClip = "D3/BracerEnd"
+PresentationKind = "bhconcussion"
+MuzzleBone = "LeftWrist"
+CastAudio = "res://Assets/BountyHunter/Audio/199781222.wav"
+ImpactAudio = "res://Assets/BountyHunter/Audio/164771299.wav"
+ImpactTexture = "res://Assets/BountyHunter/2x2_electrical_blast_alpha.png"
+EffectTint = Color(0.6, 0.8, 1, 1)
+Description = "Concussive missile: stuns up to 5 enemies around the target for 2.5 seconds. Elites resist; bosses are immune."

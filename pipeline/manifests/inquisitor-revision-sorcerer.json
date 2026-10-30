@@ -1,5 +1,5 @@
 {
-  "passed": true,
+  "passed": false,
   "checks": [
     "grounded stationary admission",
     "deathfield rejects moving start",
@@ -10,22 +10,7 @@
     "storm survives movement after initiation",
     "stationary area spell wins over ready Shock",
     "thunderingblast starts",
-    "Blast cast audio loops",
-    "Blast release launches without damage",
-    "Blast follows moving endpoint",
-    "Blast arrival applies contact and damage",
-    "thunderingblast starts",
-    "Blast abort cleans projectile and loop",
-    "Strike cleave learns",
-    "lightningstrike starts",
-    "Strike cleave presents every victim",
-    "forcespeed starts",
-    "Force Speed sound loops",
-    "Force Speed loop follows actual buff reset",
-    "Polarity training learns",
-    "polarityshift starts",
-    "Polarity sound loops",
-    "Polarity sound expires"
+    "Blast cast audio loops"
   ],
-  "failure": null
+  "failure": "System.Exception: Blast release launches without damage\r\n   at SwtorSurvivors.InquisitorRevisionSmoke.Check(String label, Boolean ok) in D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Gameplay\\InquisitorRevisionSmoke.cs:line 10\r\n   at SwtorSurvivors.InquisitorRevisionSmoke.Run(GameWorld w) in D:\\SWTORClassic\\torbonk\\pipeline\\godot\\Gameplay\\InquisitorRevisionSmoke.cs:line 42"
 }

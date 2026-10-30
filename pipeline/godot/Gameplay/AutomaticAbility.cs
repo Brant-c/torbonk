@@ -28,6 +28,7 @@ public partial class AutomaticAbility : Node
     public float LastHealing { get; private set; }
     private readonly HashSet<Combatant> _sweepHits=new();
     private bool _spreadSeed;
+    private readonly HashSet<string> _sweepSeeds=new();
     private Vector3 _coneForward;
     private readonly HashSet<ulong> _damaged = new();
     public bool CombatEnabled { get; set; } = true;
@@ -57,7 +58,11 @@ public partial class AutomaticAbility : Node
     private bool _presented;
     private bool _projectileReleased;
     private double _gestureRemaining;
-    public double GestureDuration => Definition.GestureSeconds / (Definition.Effect==AbilityEffect.Damage && Definition.Id!="smash" ? Build?.Pregame.MarauderAnimationHaste??1 : 1);
+    /// <summary>Playtest tuning: long casts no longer hold the rotation. Storm and Death Field keep their authored timing.</summary>
+    public const double MaxGestureSeconds=1.3, MaxRecoverySeconds=.6;
+    private bool KeepsAuthoredTiming => Definition.Id is "storm" or "deathfield" or "deathfromabove";
+    public double RecoveryDuration => KeepsAuthoredTiming?Definition.RecoverySeconds:Math.Min(Definition.RecoverySeconds,MaxRecoverySeconds);
+    public double GestureDuration => (KeepsAuthoredTiming?Definition.GestureSeconds:Math.Min(Definition.GestureSeconds,MaxGestureSeconds)) / (Definition.Effect==AbilityEffect.Damage && Definition.Id!="smash" ? Build?.Pregame.MarauderAnimationHaste??1 : 1);
     private void Present(Action action)
     {
         try { action(); }
@@ -134,10 +139,10 @@ public partial class AutomaticAbility : Node
                 if(fork>=0 && !Targeting.IsValidTarget(CastTarget,Range))CastTarget=Targeting.Acquire(Range,Definition.TargetRule,Radius);
                 if(fork>=0 && _chainRepeats<(fork==3?2:1) && Targeting.IsValidTarget(CastTarget,Range)) {
                     _chainRepeats++;Present(()=>Presentation.End(false));
-                    _gestureRemaining=Definition.GestureSeconds;
+                    _gestureRemaining=GestureDuration;
                     Present(()=>Presentation.Actor.ReleaseGesture(this));
                     Present(()=>Presentation.Actor.TryBeginGesture(this,Definition.StartClip,Definition.GesturePriority,Definition.FullBodyGesture,Definition.KeepFullBodyWhileMoving));
-                    _presented=Presentation.Begin(CastTarget!,GroundCenter,Radius);State=LightningState.Starting;_phaseRemaining=Math.Max(Definition.WindupSeconds,Definition.GestureSeconds);return;
+                    _presented=Presentation.Begin(CastTarget!,GroundCenter,Radius);State=LightningState.Starting;_phaseRemaining=Math.Max(Definition.WindupSeconds,GestureDuration);return;
                 }
                 if(State==LightningState.Channeling) Finish(false,"Burst complete");return; }
         }
@@ -167,6 +172,7 @@ public partial class AutomaticAbility : Node
         if(Build?.Pregame.CanBeginAgent(this)==false)return false;
         if(Build?.Pregame.CanBeginAssassin(this)==false)return false;
         if(Build?.Pregame.CanBeginJuggernaut(this)==false || Build?.Pregame.CanBeginMarauder(this)==false)return false;
+        if(Build?.Pregame.CanBeginBountyHunter(this)==false)return false;
         bool spikeOpening=Definition.Id=="spike" && Build?.World.RunConfiguration.AdvancedClassId=="assassin";
         if(Definition.Effect==AbilityEffect.Heal && (Caster.Health.Current>=Caster.Health.Maximum || Caster.Health.Current>=Caster.Health.Maximum*HealthThreshold)) return false;
         if(Definition.Effect==AbilityEffect.Shield && (Caster.Health.Shielded || Targeting.Acquire(relicRange,AbilityTargetRule.NearestHostile,0)==null)) return false;
@@ -205,10 +211,10 @@ public partial class AutomaticAbility : Node
         if(!spikeOpening && Definition.RequireGesture && Presentation.Actor.Animator.HasAnimation(Definition.StartClip) && !Presentation.Actor.TryBeginGesture(this,Definition.StartClip,Definition.GesturePriority,Definition.FullBodyGesture,Definition.KeepFullBodyWhileMoving))return false;
         CastTarget=target;GroundCenter=target.GlobalPosition;_coneForward=target.GlobalPosition-Caster.GlobalPosition;_projectileReleased=false;
         if(Definition.Area==AbilityArea.FrontalCone)Presentation.Actor.FacingTarget=GroundCenter;
-        _damaged.Clear();_sweepHits.Clear();_spreadSeed=false;LastHealing=0;_stormTicks=0;_chainRepeats=0;_lacerationStrikes=0;
+        _damaged.Clear();_sweepHits.Clear();_spreadSeed=false;_sweepSeeds.Clear();LastHealing=0;_stormTicks=0;_chainRepeats=0;_lacerationStrikes=0;
         if(ChannelSeconds>0) _clock.Reset(Definition.Id=="laceration"?Definition.ChannelSeconds:ChannelSeconds,Definition.Id=="laceration"?Definition.ChannelSeconds:TickSeconds);
         State=LightningState.Starting;_phaseRemaining=Definition.WindupSeconds;
-        CooldownRemaining=CooldownDuration=Math.Max(Definition.Id=="shock" && SorcererRelics.Rank(this,"accelerated_torment")>=0?20:Definition.Id=="storm" && SorcererRelics.Rank(this,"eye_of_the_tempest")>=0?0:CooldownSeconds,Definition.FullBodyGesture?GestureDuration:0);
+        CooldownRemaining=CooldownDuration=Math.Max(Definition.Id=="shock" && SorcererRelics.Rank(this,"accelerated_torment")>=0?20:Definition.Id=="storm" && SorcererRelics.Rank(this,"eye_of_the_tempest")>=0?0:CooldownSeconds,Definition.FullBodyGesture?GestureDuration/Math.Max(1,Build?.World.Abilities.CooldownRate??1):0);
         _gestureRemaining=GestureDuration;
         if(spikeOpening)_gestureRemaining=0;
         if(_gestureRemaining>0) Present(()=>Presentation.Actor.TryBeginGesture(this,Definition.StartClip,Definition.GesturePriority,Definition.FullBodyGesture,Definition.KeepFullBodyWhileMoving));
@@ -272,8 +278,9 @@ public partial class AutomaticAbility : Node
         if(_presented) Present(()=>Presentation.Impact(Definition.Area==AbilityArea.GroundSphere?GroundCenter:CastTarget?.AimPosition??GroundCenter));
         if(Definition.Id=="flamesweep")
         {
-            var burn=Build?.World.Abilities.Find("incendiarymissile");
-            if(burn!=null && targets.Any(t=>Periodic?.Has(burn,t)==true))_spreadSeed=true;
+            // Seeds are only this caster's burns found on targets of this activation.
+            foreach(string id in new[]{"incendiarymissile","immolate"})
+                if(Build?.World.Abilities.Find(id) is {} burn && targets.Any(t=>Periodic?.Has(burn,t)==true)){_spreadSeed=true;_sweepSeeds.Add(id);}
             foreach(var t in targets)_sweepHits.Add(t);
         }
         foreach(var target in targets)
@@ -384,14 +391,15 @@ public partial class AutomaticAbility : Node
     }
     private void Finish(bool interrupted,string reason)
     {
-        if(!interrupted && Definition.Id=="flamesweep" && _spreadSeed && Build?.Talent("combustible_spread")>0)
+        if(!interrupted && Definition.Id=="flamesweep" && _spreadSeed && (Build?.Talent("combustible_spread")>0 || Build?.Pregame.PowertechSweepSpreads==true))
         {
-            var burn=Build.World.Abilities.Find("incendiarymissile");
-            if(burn!=null && burn.Unlocked)foreach(var t in _sweepHits.Where(t=>GodotObject.IsInstanceValid(t) && t.Alive).OrderBy(t=>t.GetInstanceId()).Take(Build.SpreadLimit))Periodic?.Apply(burn,t,Build.SpreadEffectiveness);
+            foreach(string id in _sweepSeeds)
+                if(Build!.World.Abilities.Find(id) is {Unlocked:true} burn)
+                    foreach(var t in _sweepHits.Where(t=>GodotObject.IsInstanceValid(t) && t.Alive).OrderBy(t=>t.GetInstanceId()).Take(Build.SpreadLimit+Build.Pregame.PowertechSpreadLimit))Periodic?.Apply(burn,t,Build.SpreadEffectiveness);
         }
         if(_presented) Present(()=>Presentation.End(interrupted));
         if(!Definition.DetachedArea)Present(()=>Presentation.Actor.SetGestureClip(this,Definition.EndClip));
-        State=LightningState.Ending;_phaseRemaining=Definition.FinishGesture?Math.Max(Definition.RecoverySeconds/(Build?.MarauderRelics?.Acceleration??1),_gestureRemaining):Definition.RecoverySeconds/(Build?.MarauderRelics?.Acceleration??1);LastEvent=reason;
+        State=LightningState.Ending;_phaseRemaining=Definition.FinishGesture?Math.Max(RecoveryDuration/(Build?.MarauderRelics?.Acceleration??1),_gestureRemaining):RecoveryDuration/(Build?.MarauderRelics?.Acceleration??1);LastEvent=reason;
     }
     public void Interrupt()
     {
@@ -416,6 +424,6 @@ public partial class AutomaticAbility : Node
         Abort();Unlocked=unlocked;State=unlocked?LightningState.Idle:LightningState.Disabled;
         LastEvent=unlocked?"Ability unlocked":"Unlock through a level-up choice";
     }
-    public void ResetCombat() { Abort();DamageEvents=0;Casts=0;_damaged.Clear();_sweepHits.Clear();_spreadSeed=false;LastHealing=0;State=Unlocked?LightningState.Idle:LightningState.Disabled;LastEvent="Combat reset"; }
+    public void ResetCombat() { Abort();DamageEvents=0;Casts=0;_damaged.Clear();_sweepHits.Clear();_spreadSeed=false;_sweepSeeds.Clear();LastHealing=0;State=Unlocked?LightningState.Idle:LightningState.Disabled;LastEvent="Combat reset"; }
     public override void _ExitTree() { if(Presentation!=null && GodotObject.IsInstanceValid(Presentation.Actor)) Abort(); }
 }

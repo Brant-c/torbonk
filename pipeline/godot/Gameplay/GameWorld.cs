@@ -363,7 +363,10 @@ public partial class GameWorld : Node3D
         Combat = new AutomaticLightning { Name = "AutomaticLightning", Caster = PlayerActor, Targeting = Targeting, Visual = visual };
         var profile=RunConfiguration.Profile;
         PlayerActor.Health.Maximum=profile.Health;PlayerActor.Health.Restore();Player.MoveSpeed*=profile.Movement;
-        Combat.Configure(GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{(profile.Id=="marauder"?"marauder_"+profile.StartingAbility:profile.StartingAbility)}.tres"));
+        string starter=Talents.TalentRuntime.BountyStartingAbility(profile);
+        Combat.Configure(GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{(profile.Id=="marauder"?"marauder_"+starter:starter)}.tres"));
+        // Bounty Hunter starters (Power Shot, or Arsenal's converted Tracer Missile) are kit resources that default to locked.
+        if(profile.Id is "mercenary" or "powertech"){Combat.Definition.StartsUnlocked=true;Combat.SetUnlocked(true);}
         if(profile.Presentation=="sorcerer")
         {
             Player.Presentation.LoadAbilityAnimations();
@@ -385,6 +388,7 @@ public partial class GameWorld : Node3D
         if(profile.Id=="marauder"){Player.Presentation.LoadMarauderAnimations();Player.Presentation.AddChild(new MarauderBladeTrails {Actor=Player.Presentation});}
         if(profile.Id is "operative" or "sniper"){Player.Presentation.LoadAbilityLibrary("res://Assets/Agent/casts.glb","Agent");Player.Presentation.LoadRifleDirectionalLocomotion(Player.MoveSpeed);}
         if(profile.Id is "mercenary" or "powertech")Player.Presentation.LoadDirectionalLocomotion(false,Player.MoveSpeed,legsOnly:true);
+        if(profile.Id is "mercenary" or "powertech")Player.Presentation.LoadAbilityLibrary("res://Assets/BountyHunter/casts.glb","BH");
         if(profile.Id=="powertech")Player.Presentation.LoadAbilityLibrary("res://Assets/Powertech/casts.glb","PT");
         if(profile.Id=="assassin") {Player.Presentation.LoadDirectionalLocomotion(false,Player.MoveSpeed,true);Player.Presentation.AddChild(new MarauderBladeTrails {Actor=Player.Presentation,Assassin=true});Player.Presentation.LoadAbilityLibrary("res://Assets/B8/casts.glb","B8");Player.Presentation.LoadAbilityLibrary("res://Assets/Assassin/casts.glb","Assassin");Combat.DamagePerTick=Combat.Definition.Damage=12;Combat.CooldownSeconds=Combat.Definition.CooldownSeconds=2.4f;Combat.Radius=Combat.Definition.Radius=.24f;Combat.Definition.Slotless=true;Combat.Definition.Description="Modest saber sweep. Spreads existing Discharge to nearby enemies hit; talents can spread other DoTs. Starts free and can be replaced.";}
         if(profile.Id is "operative" or "sniper"){Combat.Definition.Slotless=true;Combat.Definition.ReplaceableStarter=true;}
@@ -393,7 +397,7 @@ public partial class GameWorld : Node3D
         AddChild(Combat);
         Abilities=new AbilityController { Name="AutomaticAbilities",Targeting=Targeting,
             OffensiveLimit=profile.OffensiveSlots>=0?profile.OffensiveSlots:SlotRules!.OffensiveSlots,UtilityLimit=profile.UtilitySlots>=0?profile.UtilitySlots:SlotRules!.UtilitySlots };
-        if(profile.Id=="marauder")Abilities.GlobalCooldownSeconds=.8f;
+        if(profile.Id=="marauder")Abilities.GlobalCooldownSeconds=.6f;
         Abilities.Abilities.Add(Combat);
         if(profile.BasicAttack!="")
         {
@@ -408,6 +412,7 @@ public partial class GameWorld : Node3D
         // Class kits: locked until a level-up unlocks them; same lifecycle, presentation adapter and slot rules as the starter.
         foreach(string id in profile.Presentation=="sorcerer"?System.Array.Empty<string>():profile.Kit)
         {
+            if(id==Combat.Definition.Id)continue; // A talent-converted starter is never also a kit unlock.
             var definition=GD.Load<AbilityDefinition>($"res://Gameplay/Abilities/{(profile.Id=="juggernaut" && id=="forcescream"?"juggernaut_forcescream":profile.Id=="marauder"?"marauder_"+id:id)}.tres");
             IAbilityPresentation kitVisual;
             if(profile.Id=="assassin" && id=="electrocute"){var electrocute=new ElectrocutePresentation {Actor=Player.Presentation,Definition=definition,World=this};AddChild(electrocute);kitVisual=electrocute;}

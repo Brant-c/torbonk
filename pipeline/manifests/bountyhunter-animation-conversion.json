@@ -1,0 +1,91 @@
+{
+  "clips": [
+    {
+      "name": "RetractableBlade",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_bounty_retractable_blade.jba",
+      "seconds": 1.4666666984558105,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "ImmolateStart",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_immolate_start.jba",
+      "seconds": 0.3333333432674408,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "ImmolateLoop",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_immolate_loop.jba",
+      "seconds": 1.8666666746139526,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "ImmolateEnd",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_immolate_end.jba",
+      "seconds": 1.2000000476837158,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "JetCharge",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_jet_charge.jba",
+      "seconds": 1.4666666984558105,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "DeathFromAbove",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2pistol_death_from_above.jba",
+      "seconds": 3.5333333015441895,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "PowerShotStart",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2pistol_fire_special_start_2.jba",
+      "seconds": 0.5333333611488342,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "PowerShotLoop",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2pistol_fire_special_loop_2.jba",
+      "seconds": 0.46666666865348816,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "PowerShotEnd",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2pistol_fire_special_end_2.jba",
+      "seconds": 0.8666666746139526,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "SweepLoop",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_2pistol_sweep_loop.jba",
+      "seconds": 1.4666666984558105,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "MissileStrikeStart",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_bounty_missile_strike_start.jba",
+      "seconds": 0.9333333373069763,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "MissileStrikeLoop",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_bounty_missile_strike_loop.jba",
+      "seconds": 0.9333333373069763,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "MissileStrikeEnd",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_bounty_missile_strike_end.jba",
+      "seconds": 0.46666666865348816,
+      "sourceFps": 15.0
+    },
+    {
+      "name": "JetBoost",
+      "path": "source-assets\\april2012\\resources\\anim\\humanoid\\bmnnew\\cb_buff_determination.jba",
+      "seconds": 1.0666667222976685,
+      "sourceFps": 15.0
+    }
+  ],
+  "output": "godot\\Assets\\BountyHunter\\casts.glb",
+  "sha256": "79ec4fc0495b6ec0799a0091e7041d0365e2d559ae05ba34717675404f29d2de",
+  "policy": "Same A2 rig/JBA importer and sample timing; additive animation library, no replacement original GLB"
+}

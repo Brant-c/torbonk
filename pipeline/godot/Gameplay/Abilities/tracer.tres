@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource("1")
 Id = "tracer"
+StartsUnlocked = false
 Title = "Tracer Missile"
 Icon = "unexplodedmortarshell"
 Damage = 38

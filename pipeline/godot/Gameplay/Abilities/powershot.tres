@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "powershot"
+StartsUnlocked = false
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true
+ImpactTailsOnTargetDeath = true
+Title = "Power Shot"
+Icon = "hammershot"
+Damage = 30
+CooldownSeconds = 4
+Range = 1.1
+Radius = 0
+Area = 0
+WindupSeconds = 0.5
+ChannelSeconds = 0
+RecoverySeconds = 0.5
+GestureSeconds = 1.3
+StartClip = "BH/PowerShotStart"
+LoopClip = "BH/PowerShotLoop"
+EndClip = "BH/PowerShotEnd"
+PresentationKind = "bhpower"
+MuzzleBone = "RightWeapon"
+ImpactAudio = "res://Assets/BountyHunter/Audio/520766059.wav"
+ImpactTexture = "res://Assets/BountyHunter/bw_starflare.png"
+EffectTint = Color(1, 0.4, 0.15, 1)
+Description = "Charged dual-pistol shot. Deals 15% more damage per distinct damage-over-time effect you own on the target."
