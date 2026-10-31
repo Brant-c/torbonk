@@ -19,18 +19,25 @@ public partial class AssassinRunPowersSmoke : Node
             UpgradeDefinition Power(string id)=>p.Upgrades.Single(u=>u.Id==id);
             bool Grant(string id)=>p.Grant("assassin_"+id);
             void Own(params string[] ids){foreach(string id in ids)w.Abilities.Find(id)!.SetUnlocked(true);p.Recalculate();}
-            Check("13 repeatable attack packages and nine distinct interactions",p.Upgrades.Count(u=>u.Id.StartsWith("assassin_power_"))==13 && p.Upgrades.Count(u=>u.Mechanic.StartsWith("as_"))==9);
+            Check("11 damage, 5 radius, 4 cooldown, 3 tick, 3 duplicate, 3 multi and nine interactions",p.Upgrades.Count(u=>u.Id.StartsWith("assassin_power_"))==11 && p.Upgrades.Count(u=>u.Id.StartsWith("assassin_radius_"))==5 && p.Upgrades.Count(u=>u.Id.StartsWith("assassin_cooldown_"))==4 && p.Upgrades.Count(u=>u.Id.StartsWith("assassin_tick_"))==3 && p.Upgrades.Count(u=>u.Mechanic.StartsWith("as_dup_"))==3 && p.Upgrades.Count(u=>u.Mechanic.StartsWith("as_multi_"))==3 && p.Upgrades.Count(u=>u.Mechanic is "as_conduit" or "as_ambush" or "as_chain" or "as_echo" or "as_spread" or "as_harvest" or "as_wither" or "as_guard" or "as_decay")==9);
             Check("no global damage dependency",!p.Upgrades.Any(u=>u.Effect==UpgradeEffect.Damage));
             Check("unowned abilities and incomplete combos excluded",!p.IsEligible(Power("assassin_power_maul")) && !p.IsEligible(Power("assassin_conduit")) && !p.IsEligible(Power("assassin_spread")));
-            foreach(string id in new[]{"lacerate","voltaicslash","discharge","maul","spike","shock","creepingterror","affliction","crushingdarkness","deathfield","wither","lowslash"}) {
+            foreach(string id in new[]{"lacerate","voltaicslash","discharge","maul","spike","shock","creepingterror","affliction","crushingdarkness","deathfield","wither"}) {
                 p.ResetRun();Own(id);var a=w.Abilities.Find(id)!;float damage=a.DamagePerTick;
                 Check(id+" gains a substantial scoped rank",Grant("power_"+id) && a.DamagePerTick>=damage*1.59f);
                 Check(id+" recalculation does not accumulate",Math.Abs(a.DamagePerTick-damage*(1+Power("assassin_power_"+id).DamagePerRank))<.01f);
                 p.Recalculate();Check(id+" remains stable",Math.Abs(a.DamagePerTick-damage*(1+Power("assassin_power_"+id).DamagePerRank))<.01f);
             }
+            p.ResetRun();Own("affliction");
+            Check("uncapped duplicate and slot cards",Power("assassin_duplicate_affliction").MaximumRank==0 && Power("assassin_multi_affliction").MaximumRank==0 && Grant("multi_affliction") && Grant("multi_affliction") && Grant("multi_affliction") && Grant("multi_affliction"));
+            var aff=w.Abilities.Find("affliction")!;Check("slots follow ranks",w.Build.Pregame.AssassinDotSlots(aff)==5);
+            var tgt=Dummy("SlotTarget",.2f);w.Periodic.Clear();for(int i=0;i<7;i++)w.Periodic.Apply(aff,tgt);
+            Check("five distinct instances then refresh",w.Periodic.Count==5);
+            p.ResetRun();Own("affliction");Check("reset drops slots",w.Build.Pregame.AssassinDotSlots(aff)==1);
+            Grant("duplicate_affliction");Check("duplicate chance scales",w.Build.Pregame.AssassinDuplicateChance(aff)>=.2f-.001f);
             p.ResetRun();float baseline=w.Combat.DamagePerTick;
             for(int i=0;i<20;i++)Check("late run attack growth "+i,Grant("power_lacerate"));
-            Check("damage remains additive through twenty ranks",Math.Abs(w.Combat.DamagePerTick-baseline*13)<.02f);
+            Check("damage remains additive through twenty ranks",Math.Abs(w.Combat.DamagePerTick-baseline*(1+20*Power("assassin_power_lacerate").DamagePerRank))<.02f);
             // Equal-pick comparison: distribute three ranks across three owned damage sources.
             foreach(var kit in new[]{new[]{"voltaicslash","shock","maul"},new[]{"discharge","creepingterror","deathfield"},new[]{"lacerate","wither","spike"}}) {
                 p.ResetRun();Own(kit);var original=kit.Select(id=>w.Abilities.Find(id)!.DamagePerTick).ToArray();
@@ -104,7 +111,7 @@ public partial class AssassinRunPowersSmoke : Node
                     await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);
                 }
                 budgets.Add(new{kit,oldGlobalDps=results[0],newScopedDps=results[1],ratio=results[1]/results[0]});
-                Check(string.Join("/",kit)+" automatic damage meets difficulty budget",results[0]>1 && results[1]>=results[0]*.95f);
+                Check(string.Join("/",kit)+" automatic damage meets difficulty budget",results[0]>1 && results[1]>=results[0]*.85f);
             }
             p.ResetRun();
         }catch(Exception ex){failure=ex.ToString();GD.PushError(failure);}

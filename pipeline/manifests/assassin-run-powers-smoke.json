@@ -1,7 +1,7 @@
 {
   "passed": true,
   "checks": [
-    "13 repeatable attack packages and nine distinct interactions",
+    "11 damage, 5 radius, 4 cooldown, 3 tick, 3 duplicate, 3 multi and nine interactions",
     "no global damage dependency",
     "unowned abilities and incomplete combos excluded",
     "lacerate gains a substantial scoped rank",
@@ -37,9 +37,11 @@
     "wither gains a substantial scoped rank",
     "wither recalculation does not accumulate",
     "wither remains stable",
-    "lowslash gains a substantial scoped rank",
-    "lowslash recalculation does not accumulate",
-    "lowslash remains stable",
+    "uncapped duplicate and slot cards",
+    "slots follow ranks",
+    "five distinct instances then refresh",
+    "reset drops slots",
+    "duplicate chance scales",
     "late run attack growth 0",
     "late run attack growth 1",
     "late run attack growth 2",
@@ -908,9 +910,9 @@
         "maul"
       ],
       "damageMultipliers": [
-        1.8,
-        1.7999998,
-        1.8
+        2.26,
+        2.19,
+        2.26
       ],
       "oldThreeGlobalRanks": 1.6
     },
@@ -921,9 +923,9 @@
         "deathfield"
       ],
       "damageMultipliers": [
-        1.7,
-        1.7000002,
-        1.7
+        2.19,
+        2.19,
+        2.19
       ],
       "oldThreeGlobalRanks": 1.6
     },
@@ -934,9 +936,9 @@
         "spike"
       ],
       "damageMultipliers": [
-        1.6,
-        1.8,
-        2
+        2.19,
+        2.26,
+        2.58
       ],
       "oldThreeGlobalRanks": 1.6
     },
@@ -946,9 +948,9 @@
         "shock",
         "maul"
       ],
-      "oldGlobalDps": 45.503906,
-      "newScopedDps": 51.19219,
-      "ratio": 1.1250064
+      "oldGlobalDps": 69.28125,
+      "newScopedDps": 102.873695,
+      "ratio": 1.4848707
     },
     {
       "kit": [
@@ -956,9 +958,9 @@
         "creepingterror",
         "deathfield"
       ],
-      "oldGlobalDps": 50.016666,
-      "newScopedDps": 50.31901,
-      "ratio": 1.0060449
+      "oldGlobalDps": 52.112892,
+      "newScopedDps": 45.1125,
+      "ratio": 0.8656687
     },
     {
       "kit": [
@@ -966,9 +968,9 @@
         "wither",
         "spike"
       ],
-      "oldGlobalDps": 25.28177,
-      "newScopedDps": 27.241667,
-      "ratio": 1.0775222
+      "oldGlobalDps": 25.921875,
+      "newScopedDps": 30.264063,
+      "ratio": 1.1675105
     }
   ],
   "failure": null

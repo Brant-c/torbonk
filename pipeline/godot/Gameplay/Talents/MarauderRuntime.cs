@@ -15,6 +15,14 @@ public sealed partial class TalentRuntime
     private bool _mrAssaultEmpowered;
     private double _mrBloodthirst,_mrUndying,_mrWard,_mrReaction,_mrMassacre;
     private bool _mrAtaru;
+    private const float MarauderSmashFloor=6f;
+    private readonly Dictionary<string,int> _mrBaseTargets=new();
+    private int MrBaseTargets(AutomaticAbility a)=>_mrBaseTargets.TryGetValue(a.Definition.Id,out var n)?n:_mrBaseTargets[a.Definition.Id]=a.Definition.MaximumTargets;
+    private int _mrTempo,_mrTempoCast,_mrThrowCast,_mrThrowHits;
+    private bool _mrTempoReady;
+    private AutomaticAbility? _mrTempoAbility;
+    private double _mrGoreBase,_mrGoreElapsed;
+    private readonly Dictionary<ulong,(Combatant target,Vector3 position,double remaining)> _mrMarks=new();
     private uint _mrAtaruRoll=17;
     private bool _mrScreamReady,_mrScreamCritical;
     public bool MarauderScreamCritical=>IsMarauder && _mrScreamCritical;
@@ -28,7 +36,7 @@ public sealed partial class TalentRuntime
         :new[]{"rupture","sweepingslash","ravage","annihilate","deadlysaber","forcecrush","saberthrow"};
     private bool MrWeapon(AutomaticAbility a)=>!a.Definition.IsBasicAttack && a.Definition.PresentationKind=="saber" && a.Definition.Effect==AbilityEffect.Damage;
     public float MarauderSpeed=>!IsMarauder?1:_mrPredation>0?1.45f:_mrCamo>0?1.35f:1;
-    private float MarauderIncoming=>!IsMarauder?1:_mrUndying>0?.01f:_mrWard>0?.5f:_mrCamo>0?.35f:_mrObfuscate>0?.7f:_mrPain>0?.8f:_mrPredation>0?.85f:1;
+    private float MarauderIncoming=>!IsMarauder?1:(_mrUndying>0?.01f:_mrWard>0?.5f:_mrCamo>0?.35f:_mrObfuscate>0?.7f:_mrPain>0?.8f:_mrPredation>0?.85f:1)/(1+.01f*CardPower("mrm_resolve"));
     public bool CanBeginMarauder(AutomaticAbility a)=>!IsMarauder || (a.Definition.Id switch {
         "frenzy"=>_world.Abilities.Find("berserk") is {Unlocked:true,CooldownRemaining:>5},
         "deadlysaber"=>_mrDeadly<=0 || _mrCharges<=0,
@@ -79,18 +87,17 @@ public sealed partial class TalentRuntime
         float haste=1+(_mrBerserk>0?.3f:0)+(a.Definition.PresentationKind=="saber" && a.Definition.PeriodicDuration<=0?Mr("mr_alacrity"):0);
         a.TickSeconds/=haste;a.CooldownSeconds/=haste;
         string id=a.Definition.Id;
+        if(id is "sweepingslash" or "saberthrow")MrBaseTargets(a);
         if(id is "rupture" or "forcecrush")a.CooldownSeconds=Math.Max(8,a.CooldownSeconds);
         if(id is "batteringassault" or "massacre" or "gore" or "ravage")a.DamagePerTick*=1+.07f*MrPoints("carnage");
         if(id is "smash" or "forcescream" or "saberthrow" or "intimidatingroar")a.DamagePerTick*=1+.06f*MrPoints("marauder_rage");
-        int cleave=(int)Mr("mr_blademaster");
         if(id=="forcescream" && Mr("mr_dominate")>0){a.Definition.Area=AbilityArea.TargetSplash;a.Radius=.45f;a.Definition.SplashMultiplier=1;}
-        if(id=="sweepingslash") {a.Definition.SpreadsPeriodicEffects=true;a.Radius*=1+Mr("mr_reach");}
-        if(id=="massacre"){a.Definition.Area=AbilityArea.FrontalCone;a.Radius=.55f;a.Definition.MaximumTargets=Mr("mr_cleave")>0?5:3;a.Definition.SplashMultiplier=1;a.CooldownSeconds/=2;}
-        if(id=="ravage"){a.Definition.Area=AbilityArea.FrontalCone;a.Radius=.6f;a.Definition.MaximumTargets=Mr("mr_cleave")>0?6:4;a.Definition.SplashMultiplier=1;}
-        if(id is "massacre" or "ravage"){a.Radius*=1+.08f*Math.Min(3,cleave);a.Definition.MaximumTargets=Math.Min(9,a.Definition.MaximumTargets+Math.Min(3,cleave));}
-        if(id=="smash"){a.CooldownSeconds=Math.Max(10,a.CooldownSeconds);a.Radius*=1+Mr("mr_shockwave");a.Definition.SpreadsPeriodicEffects=true;}
+        if(id=="sweepingslash") {a.Definition.SpreadsPeriodicEffects=true;a.Radius*=1+Mr("mr_reach");a.Definition.MaximumTargets=MrBaseTargets(a)+CardRanks("mrm_target_sweepingslash");}
+        if(id=="massacre"){a.Definition.Area=AbilityArea.FrontalCone;a.Radius=.55f*(1+RadiusCardBoost("marauder_","massacre"));a.Definition.MaximumTargets=(Mr("mr_cleave")>0?5:3)+CardRanks("mrm_target_massacre");a.Definition.SplashMultiplier=1;a.CooldownSeconds/=2;}
+        if(id=="ravage"){a.Definition.Area=AbilityArea.FrontalCone;a.Radius=.6f*(1+RadiusCardBoost("marauder_","ravage"));a.Definition.MaximumTargets=(Mr("mr_cleave")>0?6:4)+CardRanks("mrm_target_ravage");a.Definition.SplashMultiplier=1;}
+        if(id=="smash"){a.CooldownSeconds=Math.Max(MarauderSmashFloor,a.CooldownSeconds);a.Radius*=1+Mr("mr_shockwave");a.Definition.SpreadsPeriodicEffects=true;}
         if(id=="deadlythrow" && Mr("mr_trauma")>0){a.Definition.SlowFactor=.5f;a.Definition.SlowSeconds=3;}
-        if(id=="saberthrow" && Mr("mr_ricochet")>0){a.Definition.MaximumTargets=8;a.Definition.SplashMultiplier=1;}
+        if(id=="saberthrow"){a.Definition.MaximumTargets=(Mr("mr_ricochet")>0?8:MrBaseTargets(a))+CardRanks("mrm_target_saberthrow");if(Mr("mr_ricochet")>0)a.Definition.SplashMultiplier=1;}
     }
     private float MarauderBonus(AutomaticAbility a,Combatant t)
     {
@@ -101,7 +108,9 @@ public sealed partial class TalentRuntime
             +(a.Definition.Id=="deadlythrow" && t.Health.Current<t.Health.Maximum*.3f?.6f:0)
             +(_mrGore>0 && MrWeapon(a)?.6f:0)+(a.Definition.Id=="smash"?_mrSmashBonus+(Mr("mr_fissure")>0?.3f:0):0)
             +(_mrAssaultEmpowered && a.Definition.Id is "ravage" or "massacre"?.4f:0)
-            +(_mrGore>0 && Mr("mr_precision")>0 && a.Definition.Id is "massacre" or "ravage"?.2f:0);
+            +(_mrGore>0 && Mr("mr_precision")>0 && a.Definition.Id is "massacre" or "ravage"?.2f:0)
+            +(a==_mrTempoAbility && a.Casts==_mrTempoCast?.4f*CardPower("mrm_tempo"):0)
+            +(a.Definition.Id is "rupture" or "deadlysaber" or "annihilate" && _mrMarks.ContainsKey(t.GetInstanceId())?.1f*CardPower("mrm_predator"):0);
     }
     private void MarauderActivated(AutomaticAbility a)
     {
@@ -114,20 +123,20 @@ public sealed partial class TalentRuntime
             case "saberward":_mrWard=6;break;
             case "retaliation":_mrReaction=0;break;
             case "batteringassault":_mrAssault=1;break;
-            case "gore":_mrGore=4+2*Mr("mr_gore")+(_world.Build.MarauderRelics.Rank("gore_master") is int gr && gr>=0?.5f+.25f*gr:0);break;
+            case "gore":_mrGore=4+2*Mr("mr_gore")+(_world.Build.MarauderRelics.Rank("gore_master") is int gr && gr>=0?.5f+.25f*gr:0);_mrGoreBase=_mrGore;_mrGoreElapsed=0;break;
             case "massacre":
-                _mrMassacre=6;_mrAssaultEmpowered=_mrAssault>0;_mrAssault=0;
+                _mrMassacre=6;_mrAssaultEmpowered=_mrAssault>0;_mrAssault=0;MarauderTempo(a);
                 if(Mr("mr_bloodletting")>0)_world.Abilities.Find("gore")?.ReduceCooldown(.75f);
                 break;
             case "ravage":
-                _mrAssaultEmpowered=_mrAssault>0;_mrAssault=0;
+                _mrAssaultEmpowered=_mrAssault>0;_mrAssault=0;MarauderTempo(a);
                 if(_mrGore>0 && Mr("mr_overwhelm")>0){_world.Abilities.Find("massacre")?.ReduceCooldown(1.5f);_world.Abilities.Find("frenzy")?.ReduceCooldown(2);}
                 break;
-            case "smash":if(_mrCrush==3 && Mr("mr_shockwave")>0)_world.Abilities.Find("predation")?.ReduceCooldown(4);_mrSmashBonus=_mrCrush*.18f;_mrCrush=0;break;
+            case "smash":QueueSmashEchoes(CardRanks("mrm_aftershock"));if(_mrCrush==3 && Mr("mr_shockwave")>0)_world.Abilities.Find("predation")?.ReduceCooldown(4);_mrSmashBonus=_mrCrush*.18f;_mrCrush=0;break;
             case "frenzy":_mrFrenzy=6;_world.Abilities.Find("berserk")?.ReduceCooldown(30);_world.Abilities.Find("deadlysaber")?.ReduceCooldown(12);break;
             case "deadlysaber":_mrDeadly=6;_mrCharges=3+(int)Mr("mr_charges");break;
             case "berserk":_mrBerserkElapsed=0;_mrBerserk=6+Mr("mr_frenzy");break;
-            case "predation":_mrPredation=6+(_world.Build.MarauderRelics.Rank("predatory_carnage") is int pr && pr>=0?1+pr:0);break;
+            case "predation":MarauderMark();_mrPredation=6+(_world.Build.MarauderRelics.Rank("predatory_carnage") is int pr && pr>=0?1+pr:0);break;
             case "forcecamouflage":_mrCamo=2;break;
             case "obfuscate":_mrObfuscate=3;break;
             case "cloakofpain":_mrPain=4;break;
@@ -145,12 +154,13 @@ public sealed partial class TalentRuntime
     private void MarauderHit(AutomaticAbility a,Combatant t)
     {
         if(!IsMarauder)return;
-        if(a.Definition.Effect==AbilityEffect.Damage && Mr("mr_heal")>0 && Ready("mr_heal",1))_world.PlayerActor.Health.ApplyHealing(1);
+        MarauderCardHit(a,t);
+        if(a.Definition.Effect==AbilityEffect.Damage && Mr("mr_heal")>0 && Ready("mr_heal",1))_world.PlayerActor.Health.ApplyHealing(1*(1+.2f*CardPower("mrm_hunger")));
         if(MarauderAtaruActive && a.Definition.Effect==AbilityEffect.Damage && a.Definition.PresentationKind=="saber" && t.Alive){
             _mrAtaruRoll=unchecked(_mrAtaruRoll*1664525+1013904223);
-            if((a.Definition.Id=="massacre" || _mrAtaruRoll%100<(_mrMassacre>0?50:20)) && Ready("mr_ataru_strike",Math.Min(_world.Build.MarauderRelics.AtaruInterval,Mr("mr_flurry")>0?1.2f:1.5f))){
+            if((a.Definition.Id=="massacre" || _mrAtaruRoll%100<(_mrMassacre>0?50:20)) && Ready("mr_ataru_strike",Math.Max(.6f,Math.Min(_world.Build.MarauderRelics.AtaruInterval,Mr("mr_flurry")>0?1.2f:1.5f)-.1f*CardPower("mrm_surge")))){
                 if(Mr("mr_precision")>0)_mrScreamReady=true;
-                foreach(var at in a.Targeting.InArea(t.GlobalPosition,.45f,a.Range,true).Append(t).Distinct().OrderBy(x=>x==t?0:1).ThenBy(x=>x.SelectionKey,StringComparer.Ordinal).Take(Math.Max(_world.Build.MarauderRelics.AtaruTargets,Mr("mr_flurry")>0?4:3)))
+                foreach(var at in a.Targeting.InArea(t.GlobalPosition,.45f,a.Range,true).Append(t).Distinct().OrderBy(x=>x==t?0:1).ThenBy(x=>x.SelectionKey,StringComparer.Ordinal).Take(Math.Max(_world.Build.MarauderRelics.AtaruTargets,Mr("mr_flurry")>0?4:3)+CardRanks("mrm_surge")))
                     if(at.Health.ApplyDamage(a.DamagePerTick*.4f*_world.Build.MarauderRelics.AtaruBonus*(Mr("mr_flurry")>0?1.25f:1),DamageType.Energy,abilityId:"atarustrike")>0 && a.Presentation is D3AbilityPresentation visual)visual.AtaruImpact(at);
             }
         }
@@ -159,7 +169,7 @@ public sealed partial class TalentRuntime
         if(Mr("mr_rhythm")>0 && Ready("mr_rhythm",.4))_world.Abilities.Find("deadlysaber")?.ReduceCooldown(.5f);
         if(Mr("mr_relentless")>0 && Ready("mr_relentless",.5))_world.Abilities.Find("berserk")?.ReduceCooldown(.5f);
 
-        if(Mr("mr_siphon")>0 && Ready("mr_siphon",2))_world.PlayerActor.Health.ApplyHealing(_world.Periodic.Has(t)?4:2);
+        if(Mr("mr_siphon")>0 && Ready("mr_siphon",2))_world.PlayerActor.Health.ApplyHealing((_world.Periodic.Has(t)?4:2)*(1+.2f*CardPower("mrm_siphon")));
         if(Mr("mr_extend")>0 && _world.Abilities.Find("rupture") is {} r)_world.Periodic.Extend(r,t,.5f,8);
 
 
@@ -172,7 +182,8 @@ public sealed partial class TalentRuntime
             _mrCrush=Math.Min(3,_mrCrush+1);
             if(Mr("mr_forceflow")>0 && Ready("mr_forceflow",1))_world.Abilities.Find("saberthrow")?.ReduceCooldown(.6f);
         } else {
-            if(Mr("mr_heal")>0 && Ready("mr_heal",1))_world.PlayerActor.Health.ApplyHealing(2);
+            if(Mr("mr_heal")>0 && Ready("mr_heal",1))_world.PlayerActor.Health.ApplyHealing(2*(1+.2f*CardPower("mrm_hunger")));
+            if(a.Definition.Id is "rupture" or "deadlysaber" && CardPower("mrm_tempo")>0 && !_mrTempoReady && Ready("mrm_tempo_tick",.5) && ++_mrTempo>=10){_mrTempo=0;_mrTempoReady=true;}
             if(Mr("mr_hemorrhage")>0 && Ready("mr_hemorrhage",1))_world.Abilities.Find("annihilate")?.ReduceCooldown(.4f);
         }
     }
@@ -191,10 +202,60 @@ public sealed partial class TalentRuntime
         if(target.Health.ApplyDamage(damage,type)<=0)return;
         if(source.Presentation is D3AbilityPresentation visual)visual.ProcImpact(target);
     }
-    public void MarauderKilled(){if(IsMarauder && Mr("mr_execution")>0 && Ready("mr_execution",.5)){_world.Abilities.Find("deadlythrow")?.ReduceCooldown(1);_world.Abilities.Find("viciousthrow")?.ReduceCooldown(1);}}
+    public void MarauderKilled(){
+        if(IsMarauder && _mrGore>0 && CardPower("mrm_gore")>0)_mrGore=Math.Max(_mrGore,Math.Min(_mrGore+.5f*CardPower("mrm_gore"),_mrGoreBase*3-_mrGoreElapsed));
+        if(IsMarauder && CardPower("mrm_chain")>0)ExtendMarauderBerserk(.4f*CardPower("mrm_chain"),3*(6+Mr("mr_frenzy")));
+        if(IsMarauder && Mr("mr_execution")>0 && Ready("mr_execution",.5)){_world.Abilities.Find("deadlythrow")?.ReduceCooldown(1);_world.Abilities.Find("viciousthrow")?.ReduceCooldown(1);}}
     private void MarauderDamaged(float amount){if(IsMarauder && amount>0)_mrReaction=4;if(IsMarauder && amount>0 && _mrPain>0 && Ready("mr_reactive",1))foreach(var t in _world.Targeting.InArea(_world.PlayerActor.GlobalPosition,.4f,.4f).Take(3).ToArray())MarauderProc(_world.Abilities.Find("cloakofpain")!,t,4,DamageType.Internal);}
-    private void AdvanceMarauder(double d){_mrBloodthirst=Math.Max(0,_mrBloodthirst-d);_mrUndying=Math.Max(0,_mrUndying-d);_mrWard=Math.Max(0,_mrWard-d);_mrReaction=Math.Max(0,_mrReaction-d);_mrMassacre=Math.Max(0,_mrMassacre-d);_mrFrenzy=Math.Max(0,_mrFrenzy-d);_mrPayoff=Math.Max(0,_mrPayoff-d);bool active=_mrBerserk>0;if(active)_mrBerserkElapsed+=d;_mrBerserk=Math.Max(0,_mrBerserk-d);_mrPredation=Math.Max(0,_mrPredation-d);_mrCamo=Math.Max(0,_mrCamo-d);_mrObfuscate=Math.Max(0,_mrObfuscate-d);_mrPain=Math.Max(0,_mrPain-d);_mrDeadly=Math.Max(0,_mrDeadly-d);_mrGore=Math.Max(0,_mrGore-d);if(active && _mrBerserk==0)_world.Progression?.Recalculate();}
+    private void AdvanceMarauder(double d){
+        if(IsMarauder){if(_mrGore>0)_mrGoreElapsed+=d;AdvanceSmashEchoes(d);AdvanceMarks(d);}
+        _mrBloodthirst=Math.Max(0,_mrBloodthirst-d);_mrUndying=Math.Max(0,_mrUndying-d);_mrWard=Math.Max(0,_mrWard-d);_mrReaction=Math.Max(0,_mrReaction-d);_mrMassacre=Math.Max(0,_mrMassacre-d);_mrFrenzy=Math.Max(0,_mrFrenzy-d);_mrPayoff=Math.Max(0,_mrPayoff-d);bool active=_mrBerserk>0;if(active)_mrBerserkElapsed+=d;_mrBerserk=Math.Max(0,_mrBerserk-d);_mrPredation=Math.Max(0,_mrPredation-d);_mrCamo=Math.Max(0,_mrCamo-d);_mrObfuscate=Math.Max(0,_mrObfuscate-d);_mrPain=Math.Max(0,_mrPain-d);_mrDeadly=Math.Max(0,_mrDeadly-d);_mrGore=Math.Max(0,_mrGore-d);if(active && _mrBerserk==0)_world.Progression?.Recalculate();}
     private double _mrBerserkElapsed;
     public void ExtendMarauderBerserk(float seconds,float cap){if(IsMarauder && _mrBerserk>0)_mrBerserk=Math.Max(_mrBerserk,Math.Min(cap-_mrBerserkElapsed,_mrBerserk+seconds));}
-    private void ResetMarauder(){_mrBloodthirst=_mrUndying=_mrWard=_mrReaction=_mrMassacre=0;_mrAtaru=false;_mrScreamReady=_mrScreamCritical=false;_mrAtaruRoll=17;_mrBerserk=_mrPredation=_mrCamo=_mrObfuscate=_mrPain=_mrDeadly=_mrGore=0;_mrFrenzy=_mrPayoff=0;_mrCharges=_mrCrush=_mrAssault=0;_mrAssaultEmpowered=false;_mrSmashBonus=0;}
+    private void ResetMarauder(){_mrBloodthirst=_mrUndying=_mrWard=_mrReaction=_mrMassacre=0;_mrAtaru=false;_mrScreamReady=_mrScreamCritical=false;_mrAtaruRoll=17;_mrBerserk=_mrPredation=_mrCamo=_mrObfuscate=_mrPain=_mrDeadly=_mrGore=0;_mrFrenzy=_mrPayoff=0;_mrCharges=_mrCrush=_mrAssault=0;_mrAssaultEmpowered=false;_mrSmashBonus=0;_mrTempo=_mrTempoCast=_mrThrowCast=_mrThrowHits=0;_mrTempoReady=false;_mrTempoAbility=null;_mrGoreBase=_mrGoreElapsed=0;_mrMarks.Clear();_smashEchoes.Clear();}
+
+    // Blood Tempo: ten bleed ticks make the next Massacre or Ravage free and stronger.
+    private void MarauderTempo(AutomaticAbility a)
+    {
+        if(!_mrTempoReady || CardPower("mrm_tempo")<=0)return;
+        _mrTempoReady=false;_mrTempoAbility=a;_mrTempoCast=a.Casts;a.ReduceCooldown(999);
+    }
+    private void MarauderMark()
+    {
+        if(CardPower("mrm_predator")<=0)return;
+        var target=_world.Targeting.InArea(_world.PlayerActor.GlobalPosition,.6f,.6f).OrderBy(x=>x.GlobalPosition.DistanceSquaredTo(_world.PlayerActor.GlobalPosition)).ThenBy(x=>x.SelectionKey,StringComparer.Ordinal).FirstOrDefault();
+        if(target!=null)_mrMarks[target.GetInstanceId()]=(target,target.GlobalPosition,8);
+    }
+    private void AdvanceMarks(double d)
+    {
+        foreach(var key in _mrMarks.Keys.ToArray())
+        {
+            var (target,position,remaining)=_mrMarks[key];remaining-=d;
+            if(GodotObject.IsInstanceValid(target) && target.Alive){if(remaining>0)_mrMarks[key]=(target,target.GlobalPosition,remaining);else _mrMarks.Remove(key);continue;}
+            _mrMarks.Remove(key);
+            if(remaining<=0 || CardPower("mrm_predator")<=0 || !_world.PlayerActor.Alive)continue;
+            var next=_world.Targeting.InArea(position,.3f,.3f,true).FirstOrDefault(x=>x.Alive && x!=target && !_mrMarks.ContainsKey(x.GetInstanceId()));
+            if(next!=null)_mrMarks[next.GetInstanceId()]=(next,next.GlobalPosition,Math.Max(remaining,4));
+        }
+    }
+    // Detonate, Siphon Pulse and Scream Contagion react to individual hits.
+    private void MarauderCardHit(AutomaticAbility a,Combatant t)
+    {
+        string id=a.Definition.Id;
+        if(id is "annihilate" or "gore" && t.Alive && CardPower("mrm_detonate")>0)
+            foreach(string bleedId in new[]{"rupture","deadlysaber"})
+                if(_world.Abilities.Find(bleedId) is {Unlocked:true} bleed) {
+                    float damage=_world.Periodic.DetonatePartial(bleed,t,.35f*CardPower("mrm_detonate")*(id=="gore"?.5f:1),6,2);
+                    if(damage>0 && t.Health.ApplyDamage(damage,bleed.Definition.DamageType,false,bleedId)>0 && a.Presentation is D3AbilityPresentation visual)visual.ProcImpact(t);
+                }
+        if(id=="saberthrow" && CardPower("mrm_pulse")>0)
+        {
+            if(_mrThrowCast!=a.Casts){_mrThrowCast=a.Casts;_mrThrowHits=0;}
+            if(++_mrThrowHits==3 && Ready("mrm_pulse",2))_world.PlayerActor.Health.ApplyHealing(2*CardPower("mrm_pulse"));
+        }
+        if(id=="forcescream" && t.Alive && CardRanks("mrm_scream_spread") is var extra && extra>0 && Ready("mrm_scream_spread",.5))
+            foreach(var source in _world.Periodic.SpreadSources(a.Caster,new[]{t}).Where(x=>x.Definition.Id is "rupture" or "deadlysaber" or "forcecrush"))
+                foreach(var near in _world.Targeting.InArea(t.GlobalPosition,.3f,.3f,true).Where(x=>x!=t && x.Alive && !_world.Periodic.Has(source,x)).OrderBy(x=>x.GlobalPosition.DistanceSquaredTo(t.GlobalPosition)).ThenBy(x=>x.SelectionKey,StringComparer.Ordinal).Take(extra).ToArray())
+                    _world.Periodic.Apply(source,near);
+    }
 }

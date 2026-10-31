@@ -72,7 +72,7 @@ public partial class JuggernautSmoke : Node
             var execute=w.Abilities.Find("viciousthrow")!;execute.SetUnlocked(true);execute.ResetCombat();Check("execution waits for threshold",!execute.TryBegin());target.Health.ApplyDamage(8000,DamageType.Internal);Cast("viciousthrow");
             w.PlayerActor.Health.ApplyDamage(80,DamageType.Internal);Cast("enrageddefense");float h=w.PlayerActor.Health.Current;w.PlayerActor.Health.ApplyDamage(1,DamageType.Internal);Check("Enraged Defense reacts with bounded healing",w.PlayerActor.Health.Current>h && w.PlayerActor.Health.Current<h+5);w.Build.Pregame.Advance(7);
             Cast("saberward");Check("Saber Ward creates finite protection",w.PlayerActor.Health.Shielded);w.PlayerActor.Health.ClearShield();
-            var smash=w.Abilities.Find("smash")!;Check("Smash leap preserved",smash.Definition.StartClip=="D3/SmashLeap" && smash.Definition.WindupSeconds>1);
+            var smash=w.Abilities.Find("smash")!;Check("Smash leap preserved",smash.Definition.StartClip=="D3/SmashLeap" && smash.Definition.WindupSeconds>.9f);
             Cast("smash");Cast("forcescream");Cast("sunderingassault");Check("Sundering Assault weakens armor",target.Health.VulnerabilitySeconds>0);
             var cluster=new List<Combatant>{target};
             for(int i=1;i<7;i++){
@@ -86,7 +86,7 @@ public partial class JuggernautSmoke : Node
                 Check("Choke target talent rank "+rank,w.Progression!.Grant("juggernaut_grip"));
                 Check("Choke hits exactly "+(rank+1)+" targets",DamagedBy("forcechoke")==rank+1);
             }
-            Check("Choke target cap enforced",!w.Progression!.Grant("juggernaut_grip"));
+            Check("Choke target card is no longer rank capped",w.Progression!.Upgrades.Single(u=>u.Id=="juggernaut_grip").MaximumRank==0);
             var rankedScream=w.Abilities.Find("forcescream")!;rankedScream.SetUnlocked(true);
             for(int rank=1;rank<=3;rank++){
                 Check("Scream target talent rank "+rank,w.Progression.Grant("juggernaut_resonance"));

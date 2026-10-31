@@ -274,6 +274,7 @@ public partial class GameWorld : Node3D
         if(OS.GetCmdlineUserArgs().Contains("--agent-presentation-smoke")){var smoke=new AgentPresentationSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--agent-expansion-smoke")){var smoke=new AgentExpansionSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--assassin-run-powers-smoke")){var smoke=new AssassinRunPowersSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--warrior-talents-smoke")){var smoke=new WarriorTalentsSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--assassin-expansion-smoke")){var smoke=new AssassinExpansionSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--presentation-repair-smoke")){var smoke=new PresentationRepairSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--kit-smoke"))
@@ -390,7 +391,17 @@ public partial class GameWorld : Node3D
         if(profile.Id is "mercenary" or "powertech")Player.Presentation.LoadDirectionalLocomotion(false,Player.MoveSpeed,legsOnly:true);
         if(profile.Id is "mercenary" or "powertech")Player.Presentation.LoadAbilityLibrary("res://Assets/BountyHunter/casts.glb","BH");
         if(profile.Id=="powertech")Player.Presentation.LoadAbilityLibrary("res://Assets/Powertech/casts.glb","PT");
-        if(profile.Id=="assassin") {Player.Presentation.LoadDirectionalLocomotion(false,Player.MoveSpeed,true);Player.Presentation.AddChild(new MarauderBladeTrails {Actor=Player.Presentation,Assassin=true});Player.Presentation.LoadAbilityLibrary("res://Assets/B8/casts.glb","B8");Player.Presentation.LoadAbilityLibrary("res://Assets/Assassin/casts.glb","Assassin");Combat.DamagePerTick=Combat.Definition.Damage=12;Combat.CooldownSeconds=Combat.Definition.CooldownSeconds=2.4f;Combat.Radius=Combat.Definition.Radius=.24f;Combat.Definition.Slotless=true;Combat.Definition.Description="Modest saber sweep. Spreads existing Discharge to nearby enemies hit; talents can spread other DoTs. Starts free and can be replaced.";}
+        if(profile.Id=="assassin") {Player.Presentation.LoadDirectionalLocomotion(false,Player.MoveSpeed,true);Player.Presentation.AddChild(new MarauderBladeTrails {Actor=Player.Presentation,Assassin=true});Player.Presentation.LoadAbilityLibrary("res://Assets/B8/casts.glb","B8");Player.Presentation.LoadAbilityLibrary("res://Assets/Assassin/casts.glb","Assassin");Combat.CooldownSeconds=Combat.Definition.CooldownSeconds=2.4f;Combat.Definition.Slotless=true;
+            if(Combat.Definition.Id=="voltaicslash") {
+                // Deception's Thrashing Blades converts the starter: a light cleave that hits harder than Lacerate.
+                Combat.DamagePerTick=Combat.Definition.Damage=16;Combat.Radius=Combat.Definition.Radius=.2f;Combat.Definition.StartsUnlocked=true;Combat.SetUnlocked(true);Combat.Definition.ReplaceableStarter=true;
+                var voltaic=new AssassinAbilityPresentation {Actor=Player.Presentation,Definition=Combat.Definition,World=this};AddChild(voltaic);Combat.Presentation=voltaic;
+                Combat.Definition.Description="Fast double-saber strike with a light cleave. Builds up to two charges empowering the next Shock. Starts free and can be replaced.";
+            } else {
+                // Lacerate sweeps a full circle around the Assassin.
+                Combat.DamagePerTick=Combat.Definition.Damage=12;Combat.Radius=Combat.Definition.Radius=.36f;
+                Combat.Definition.Description="Modest saber sweep in every direction. Spreads existing Discharge to nearby enemies hit; talents can spread other DoTs. Starts free and can be replaced.";
+            }}
         if(profile.Id is "operative" or "sniper"){Combat.Definition.Slotless=true;Combat.Definition.ReplaceableStarter=true;}
         if(profile.Id=="sniper")AddChild(new SniperCoverController {Name="SniperCover",World=this});
         Periodic=new PeriodicEffects {Name="PeriodicEffects"};AddChild(Periodic);Combat.Periodic=Periodic;

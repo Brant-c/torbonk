@@ -26,8 +26,8 @@ public partial class MarauderIdentitySmoke : Node
   w.Periodic.Clear();Check("Rupture can seed again after expiry",runtime.CanBeginMarauder(rupture));
   Check("Deadly Saber bleed exceeds Rupture",w.Abilities.Find("deadlysaber")!.Definition.PeriodicDamage>rupture.Definition.PeriodicDamage);
   w.Abilities.Find("ravage")!.SetUnlocked(true);
-  for(int i=0;i<6;i++)Check("cleave rank "+i,p.Grant("marauder_blademaster"));
-  Check("progressive cleave reaches eight targets",w.Abilities.Find("massacre")!.Definition.MaximumTargets==8 && w.Abilities.Find("ravage")!.Definition.MaximumTargets==8);
+  for(int i=0;i<6;i++){Check("massacre reach rank "+i,p.Grant("marauder_target_massacre"));Check("ravage reach rank "+i,p.Grant("marauder_target_ravage"));}
+  Check("uncapped reach grows both cleaves",w.Abilities.Find("massacre")!.Definition.MaximumTargets>=8 && w.Abilities.Find("ravage")!.Definition.MaximumTargets>=8);
   Check("full strength secondary hits",w.Abilities.Find("massacre")!.Definition.SplashMultiplier==1);
   p.ResetRun();GetTree().Quit(0);
  }catch(Exception e){GD.PushError(e.ToString());GetTree().Quit(1);}}

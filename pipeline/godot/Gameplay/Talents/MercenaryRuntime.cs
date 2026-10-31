@@ -21,8 +21,8 @@ public sealed partial class TalentRuntime
     /// <summary>Arsenal's out-of-run Tracer Missile talent converts the Power Shot starter before the run is built.</summary>
     public static string BountyStartingAbility(ClassProfile profile)
     {
-        // Arsenal turns Power Shot into Tracer Missile; Advanced Prototype turns Flame Sweep into Retractable Blade.
-        var (from,key,to)=profile.Id switch {"mercenary"=>("powershot","mc_tracer_conversion","tracer"),"powertech"=>("flamesweep","pt_dart_conversion","retractableblade"),_=>("","","")};
+        // Arsenal turns Power Shot into Tracer Missile; Advanced Prototype turns Flame Sweep into Retractable Blade; Deception turns Lacerate into Voltaic Slash.
+        var (from,key,to)=profile.Id switch {"mercenary"=>("powershot","mc_tracer_conversion","tracer"),"powertech"=>("flamesweep","pt_dart_conversion","retractableblade"),"assassin"=>("lacerate","as_voltaic_conversion","voltaicslash"),_=>("","","")};
         if(key=="" || profile.StartingAbility!=from)return profile.StartingAbility;
         var ranks=TalentProfiles.Load(profile.Id);
         bool converted=TalentCatalog.Current.ForClass(profile.Id).Any(t=>ranks.GetValueOrDefault(t.Id)>0 && t.Effects.Any(e=>e.Kind=="hook" && e.Key==key));

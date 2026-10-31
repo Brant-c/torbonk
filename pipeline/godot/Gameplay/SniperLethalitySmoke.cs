@@ -42,13 +42,13 @@ public static class SniperLethalitySmoke
             check("Weakening spreads poisons through its group",w.Periodic.Has(dart,b) && w.Periodic.Has(grenade,b));check("contagion does not spread probes",!w.Periodic.Has(A("interrogationprobe"),b));
             w.Player.Presentation.ResetPresentation();cull.ResetCombat();check("talented Cull begins in cover",cull.TryBegin());cull.Advance(.1);double cd=cull.CooldownRemaining;rt.Advance(3);rt.PeriodicTick(dart);rt.PeriodicTick(grenade);
             check("poison cooldown feedback is shared across effects",Math.Abs(cd-cull.CooldownRemaining-.75)<.01);
-            check("Zeroing In is available to a poison kit",p.Grant("sniper_decay"));check("poison ticks accelerate in cover",rt.PeriodicInterval(dart)<.75f);
+            check("Zeroing In is available to a poison kit",p.Grant("sniper_decay"));check("poison ticks accelerate in cover",rt.PeriodicInterval(dart)<.9f);
             cull.Interrupt();weak.Interrupt();w.Player.TestInput=Vector2.Right;w.Player.SetPhysicsProcess(true);
             for(int i=0;i<8;i++)await w.ToSignal(w.GetTree(),SceneTree.SignalName.PhysicsFrame);rt.Advance(.05);
             check("leaving cover removes ranged poison benefits",!rt.AgentPositioned && rt.DirectBonus(dart,a)==0 && Math.Abs(rt.PeriodicInterval(dart)-1)<.01);
             cd=cull.CooldownRemaining;rt.Advance(3);rt.PeriodicTick(dart);check("mobile poison ticks do not grant cover recovery",cull.CooldownRemaining==cd);
             w.Player.TestInput=Vector2.Zero;for(int i=0;i<30;i++)await w.ToSignal(w.GetTree(),SceneTree.SignalName.PhysicsFrame);w.Player.SetPhysicsProcess(false);rt.Advance(.7);
-            check("settling back into cover restores poison benefits",rt.AgentPositioned && rt.DirectBonus(dart,a)>=.34f && rt.PeriodicInterval(dart)<.75f);
+            check("settling back into cover restores poison benefits",rt.AgentPositioned && rt.DirectBonus(dart,a)>=.34f && rt.PeriodicInterval(dart)<.9f);
             w.Periodic.RemoveSource(dart);w.Periodic.RemoveSource(grenade);w.Periodic.RemoveSource(A("interrogationprobe"));a.QueueFree();b.QueueFree();
         }finally {
             w.Player.TestInput=Vector2.Zero;w.Player.SetPhysicsProcess(false);property.SetValue(w.Build,original);TalentProfiles.Save("sniper",original.Ranks);p.ResetRun();

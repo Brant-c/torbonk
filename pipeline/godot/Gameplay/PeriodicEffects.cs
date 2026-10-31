@@ -41,6 +41,15 @@ public partial class PeriodicEffects : Node
         if(d.Id=="dart" && source.Build?.Pregame.AgentVenomousBlades==true)relicApplied=true;
         if(d.PeriodicDuration<=0 || d.PeriodicInterval<=0 || !target.Alive)return;
         var key=(source.Caster.GetInstanceId(),d.Id,target.GetInstanceId());
+        // Assassin extra slots: new casts fill free slots as separate instances, then refresh the shortest-lived one.
+        int slots=Math.Max(Math.Max(source.Build?.Pregame.AssassinDotSlots(source)??1,source.Build?.Pregame.WarriorDotSlots(source)??1),source.Build?.Pregame.AgentDotSlots(source)??1);
+        if(slots>1 && _effects.TryGetValue(key,out var primary) && primary.Remaining>0)
+        {
+            var family=_effects.Where(p=>p.Key.Item1==key.Item1 && p.Key.Item3==key.Item3 && (p.Key.Item2==d.Id || p.Key.Item2.StartsWith(d.Id+"#"))).ToList();
+            if(family.Count<slots){int n=1;while(_effects.ContainsKey((key.Item1,d.Id+"#"+n,key.Item3)))n++;key=(key.Item1,d.Id+"#"+n,key.Item3);}
+            else key=family.OrderBy(p=>p.Value.Remaining).First().Key;
+        }
+        bool extra=key.Item2!=d.Id;
         // Lethal Dose: a refresh deepens the poison (+10% per stack, 3 stacks) instead of only restarting it.
         int dose=_effects.TryGetValue(key,out var old)&&(source.Build?.Talent("lethal_dose")??0)>0?Math.Min(3,old.Dose+1):0;
         if(old?.Visual!=null && GodotObject.IsInstanceValid(old.Visual))old.Visual.QueueFree();
@@ -50,6 +59,7 @@ public partial class PeriodicEffects : Node
             Damage=d.PeriodicDamage*scale*(1+.1f*dose)*(source.DamagePerTick/Math.Max(.001f,d.Damage)) };
         _effects[key]=effect;
         RecalculateSlow(target);
+        if(extra){RecalculateSlow(target);return;}
         if(source.Build?.World.RunConfiguration.AdvancedClassId is "marauder" or "juggernaut")
             effect.Visual=PresentationStatusVisual.AttachWarrior(target,d.Id=="forcecrush",()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
         if(d.Id=="discharge")effect.Visual=PresentationStatusVisual.AttachDischarge(target,()=>_effects.TryGetValue(key,out var active) && active==effect && effect.Remaining>0 && GodotObject.IsInstanceValid(source.Caster) && source.Caster.Alive);
@@ -77,10 +87,25 @@ public partial class PeriodicEffects : Node
         applied=target.Health.ApplyDamage(amount,source.Definition.DamageType,false,abilityId);
         return true;
     }
+    /// <summary>Pays out up to <paramref name="capSeconds"/> of this caster's remaining ticks (all simultaneous instances), scaled by <paramref name="fraction"/>, and trims each instance to <paramref name="leaveSeconds"/>.</summary>
+    public float DetonatePartial(AutomaticAbility source,Combatant target,float fraction,double capSeconds,double leaveSeconds)
+    {
+        float total=0;
+        string id=source.Definition.Id;
+        foreach(var pair in _effects.Where(p=>p.Key.Item1==source.Caster.GetInstanceId() && p.Key.Item3==target.GetInstanceId() && (p.Key.Item2==id || p.Key.Item2.StartsWith(id+"#"))).ToArray())
+        {
+            var e=pair.Value;if(e.Remaining<=0)continue;
+            double paid=Math.Min(e.Remaining,capSeconds);
+            double ticks=Math.Max(0,Math.Floor((paid-e.Next)/e.Interval+1.000001));
+            total+=(float)(ticks*e.Damage*fraction)*(source.Build?.DamageMultiplier(source,target)??1)*(source.Build?.Pregame.PeriodicMultiplier(target)??1);
+            e.Remaining=Math.Min(e.Remaining,leaveSeconds);e.Next=Math.Min(e.Next,e.Interval);
+        }
+        return total;
+    }
     /// <param name="only">Optional source filter (Bounty Hunter burns); <paramref name="minimumRemaining"/> keeps late transfers alive long enough to spread again.</param>
     public void TransferOwned(Combatant caster,Combatant dead,Func<AutomaticAbility,bool>? only=null,double minimumRemaining=0,float? reach=null)
     {
-        foreach(var e in _effects.Values.Where(e=>e.Target==dead && e.Source.Caster==caster && e.Remaining>0 && (e.Source.Unlocked || e.RelicApplied) && (only==null || only(e.Source))).ToArray())
+        foreach(var e in _effects.Where(p=>!p.Key.Item2.Contains('#')).Select(p=>p.Value).Where(e=>e.Target==dead && e.Source.Caster==caster && e.Remaining>0 && (e.Source.Unlocked || e.RelicApplied) && (only==null || only(e.Source))).ToArray())
         {
             var skip=_effects.Values.Where(x=>x.Source.Caster==caster && x.Source.Definition.Id==e.Source.Definition.Id).Select(x=>x.Target.GetInstanceId()).ToHashSet();
             skip.Add(dead.GetInstanceId());
@@ -114,6 +139,9 @@ public partial class PeriodicEffects : Node
                 var healKey=(e.Source.Caster.GetInstanceId(),e.Source.Definition.Id);
                 if(e.Source.DamageEvents>before && e.Source.Definition.PeriodicHealing>0 && tickAt+0.00001>=_nextHeal.GetValueOrDefault(healKey))
                 {e.Source.Caster.Health.ApplyHealing(e.Source.Definition.PeriodicHealing);_nextHeal[healKey]=tickAt+1;}
+                float dup=(e.Source.Build?.Pregame.AssassinDuplicateChance(e.Source)??0)+(e.Source.Build?.Pregame.WarriorDuplicateChance(e.Source)??0)+(e.Source.Build?.Pregame.AgentDuplicateChance(e.Source)??0);
+                for(int extraHits=(int)dup+(Random.Shared.NextSingle()<dup-(int)dup?1:0);extraHits>0 && e.Target.Alive;extraHits--)
+                    e.Source.ApplyPeriodicHit(e.Target,e.Damage*(e.Source.Build?.Pregame.PeriodicMultiplier(e.Target)??1));
                 Ticks++;e.Ticks++;Ticked?.Invoke(e.Source,e.Target,e.Ticks);
             }
             if(e.Remaining<=0 || !e.Target.Alive)_effects.Remove(pair.Key);

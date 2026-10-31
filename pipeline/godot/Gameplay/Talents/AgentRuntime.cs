@@ -56,7 +56,7 @@ public sealed partial class TalentRuntime
     {
         if(!IsAgent)return;
         switch(a.Definition.Id){
-            case "blowforblow":if(Hook("agent_counterstrike")>0)_counterstrike=4;break;
+            case "blowforblow":if(Hook("agent_counterstrike")>0)_counterstrike=4+.5f*AgP("counter");break;
             case "entrench":_agentGuard=6;break;
             case "agentescape":_world.PlayerActor.Health.VulnerabilitySeconds=0;break;
             case "koltoprobe":_koltoLife=8;_koltoTick=0;break;
@@ -78,6 +78,7 @@ public sealed partial class TalentRuntime
             if(Hook("agent_energy_overrides")>0){_world.Abilities.Find("orbitalstrike")?.ReduceCooldown(4);_world.Abilities.Find("ballisticshield")?.ReduceCooldown(4);}
         }
         if(a.Definition.Id=="hiddenstrike")_agentOpening=0;
+        AgentCardsActivated(a);
         if(a.Definition.Id is "backstab" or "hiddenstrike" or "laceration" && Hook("agent_opportunity")>0 && Every("agent_opportunity",4))_agentOpening=4;
     }
     private float _agentLacerationBonus;
@@ -94,7 +95,7 @@ public sealed partial class TalentRuntime
             bonus+=.35f*_world.Periodic.On(target).Count(p=>p.Caster==a.Caster && p.Definition.Id is "dart" or "corrosivegrenade");
             if(Hook("agent_microbes")>0 && target.Health.Current<target.Health.Maximum*.3f)bonus+=.2f;
         }
-        return bonus;
+        return bonus+AgentCardBonus(a,target);
     }
     private void AgentHit(AutomaticAbility a,Combatant target)
     {
@@ -125,11 +126,11 @@ public sealed partial class TalentRuntime
     private void AgentPeriodic(AutomaticAbility a)
     {
         if(!IsAgent || a.Definition.Id is not ("dart" or "corrosivegrenade"))return;
-        SniperPoisonTick();
+        SniperPoisonTick();AgentCardsPoisonTick();
         if(Hook("agent_purpose")>0 && Ready("agent_purpose",2))_world.Abilities.Find("agentcull")?.ReduceCooldown(1);
         if(Hook("agent_enduring")>0 && Ready("agent_enduring",1))_world.PlayerActor.Health.ApplyHealing(2,false,"enduring_kolto");
     }
-    private float AgentIncoming=>(_revitalized>0?.9f:1)*(_agentGuard>0?.6f:1)*(AgentPositioned && Hook("agent_dampers")>0?.85f:1);
+    private float AgentIncoming=>(_revitalized>0?.9f:1)*(_agentGuard>0?.6f:1)*(AgentPositioned && Hook("agent_dampers")>0?.85f:1)/(1+.01f*AgP("dampers"))/(1+.01f*(IsOperative && AgentOpening?AgP("veil"):0));
     private void AdvanceAgent(double delta)
     {
         if(!IsAgent)return;
@@ -139,7 +140,7 @@ public sealed partial class TalentRuntime
         _revitalized=Math.Max(0,_revitalized-delta);
         if(_koltoLife>0){_koltoLife=Math.Max(0,_koltoLife-delta);_koltoTick+=delta;if(_koltoTick>=1){_koltoTick-=1;_world.PlayerActor.Health.ApplyHealing(4*(1+Sum("healing","koltoprobe")),false,"koltoprobe");}}
         _stationary=_world.Player.ActualVelocity.Length()<.03?_stationary+delta:0;
-        AdvanceSniper(delta);
+        AdvanceSniper(delta);AdvanceAgentCards(delta);
         _agentOpening=Math.Max(0,_agentOpening-delta);_followup=Math.Max(0,_followup-delta);
         _advantageLife=Math.Max(0,_advantageLife-delta);if(_advantageLife==0)TacticalAdvantage=0;
     }
@@ -148,7 +149,7 @@ public sealed partial class TalentRuntime
     public void AgentRetaliate(EnemyAgent attacker,float received)
     {
         if(!AgentCounterstrikeActive || received<=0 || !float.IsFinite(received) || !GodotObject.IsInstanceValid(attacker) || !attacker.Alive)return;
-        attacker.Health.ApplyDamage(received*1.5f,DamageType.Internal,false,"blowforblow");
+        attacker.Health.ApplyDamage(received*(1.5f+.15f*AgP("counter")),DamageType.Internal,false,"blowforblow");
     }
-    private void ResetAgent(){ResetSniper();TacticalAdvantage=0;_counterstrike=0;_debilitated.Clear();_revitalized=_agentGuard=_koltoLife=_koltoTick=_advantageLife=_followup=_stationary=0;_agentOpening=6;_agentLacerationBonus=0;}
+    private void ResetAgent(){ResetSniper();ResetAgentCards();TacticalAdvantage=0;_counterstrike=0;_debilitated.Clear();_revitalized=_agentGuard=_koltoLife=_koltoTick=_advantageLife=_followup=_stationary=0;_agentOpening=6;_agentLacerationBonus=0;}
 }

@@ -51,7 +51,7 @@ public partial class CarnageReworkSmoke : Node
  }
  TalentProfiles.Save("marauder",new Dictionary<string,int>());
 
- var drops=p.Upgrades.Where(u=>u.Spec=="carnage" && u.Mechanic!="mr_blademaster").ToArray();
+ var drops=p.Upgrades.Where(u=>u.Spec=="carnage" && u.Mechanic.StartsWith("mr_",System.StringComparison.Ordinal)).ToArray();
  Check("nine distinct Carnage interactions",drops.Length==9&&drops.Select(u=>u.Mechanic).Distinct().Count()==9);
  Check("drops share tree descriptions and recovered icons",drops.All(u=>TalentCatalog.Current.ForClass("marauder").Any(t=>t.Tree=="carnage"&&t.Name==u.Title&&t.Description==u.Description)&&ResourceLoader.Exists("res://Assets/UI/icons/"+u.Icon+".png")));
  Check("unowned cleave and Gore improvements excluded",!p.IsEligible(drops.Single(u=>u.Mechanic=="mr_cleave"))&&!p.IsEligible(drops.Single(u=>u.Mechanic=="mr_gore")));
@@ -61,7 +61,9 @@ public partial class CarnageReworkSmoke : Node
  Check("Combat Alacrity drop grants",p.Grant(drops.Single(u=>u.Mechanic=="mr_alacrity").Id));
  Check("run haste matches 15 percent talent",Math.Abs(m.CooldownSeconds-baseMassacre/1.15)<.001&&Math.Abs(rt.PeriodicInterval(rupture)-bleed)<.001&&!rt.MarauderAtaruActive);
  Check("cleave grant",p.Grant("marauder_cleave"));Check("full damage five and six target cleave",m.Definition.MaximumTargets==5&&r.Definition.MaximumTargets==6&&m.Definition.SplashMultiplier==1&&r.Definition.SplashMultiplier==1);
- for(int i=0;i<3;i++)Check("reach rank "+i,p.Grant("marauder_blademaster"));Check("reach improves core attacks and caps",m.Definition.MaximumTargets==8&&r.Definition.MaximumTargets==9&&m.Radius>.55f&&!p.Grant("marauder_blademaster"));
+ for(int i=0;i<3;i++){Check("massacre reach rank "+i,p.Grant("marauder_target_massacre"));Check("ravage reach rank "+i,p.Grant("marauder_target_ravage"));}
+ Check("reach cards add targets with no cap",m.Definition.MaximumTargets==8&&r.Definition.MaximumTargets==9&&p.Grant("marauder_target_massacre")&&m.Definition.MaximumTargets==9);
+ Check("radius card improves the cone",p.Grant("marauder_radius_massacre")&&m.Radius>.55f);
  var targets=new List<Combatant>();for(int i=0;i<6;i++){var t=new Combatant{Name="CarnageTarget"+i,Team=CombatTeam.Hostile};t.AddChild(new Health{Name="Health",Maximum=10000});w.AddChild(t);t.GlobalPosition=w.PlayerActor.GlobalPosition+Vector3.Right*(.1f+.015f*i);targets.Add(t);}
  await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);
  foreach(string tree in new[]{"annihilation","carnage","marauder_rage"}) {

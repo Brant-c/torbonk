@@ -30,6 +30,7 @@ public sealed partial class TalentRuntime
         +(_shroudedEdge>0 && As("as_guard") && a.Definition.Id is "lacerate" or "wither"?.6f:0)
         +(a.Definition.Id=="deathfield" && As("as_harvest")?.3f*Math.Min(3,_world.Periodic.On(t).Count(x=>x.Caster==a.Caster)):0)
         +(a.Definition.Id is "lacerate" or "voltaicslash" or "maul" && t is EnemyAgent e && e.OilRemaining>0?.1f:0)
+        +(Hook("lone_discharge")>0 && _world.Periodic.On(t).Where(x=>x.Caster==a.Caster).Select(x=>x.Definition.Id).Distinct().SequenceEqual(new[]{"discharge"})?Hook("lone_discharge"):0)
         +(AssassinElectrified(t) && a.Definition.Id is "maul" or "voltaicslash"?.35f+Hook("electrocute_burst"):0);
     public string[] EarlyAbilityOrder {
         get {
@@ -59,7 +60,7 @@ public sealed partial class TalentRuntime
             a.Definition.BounceRange=.25f;a.Definition.BounceFalloff=fork?.8f:.65f;
         }
         if(id is "creepingterror" or "affliction" or "crushingdarkness" && As("as_decay"))a.TickSeconds/=1.35f;
-        if(id=="maul" && Hook("maul_cleave")>0){a.Definition.Area=AbilityArea.TargetSplash;a.Radius=.22f;}
+        if(id=="maul" && Hook("maul_cleave")>0){a.Radius=.3f;a.Definition.SplashMultiplier=.7f;}
 
     }
     private void AssassinActivated(AutomaticAbility a)
@@ -77,6 +78,12 @@ public sealed partial class TalentRuntime
         if(id=="electrocute" && target.Alive){
             if(target is EnemyAgent stunned)stunned.Stun(3,false);
             _electrified[target.GetInstanceId()]=6;
+            // Conductive Field: every enemy carrying Discharge is shocked as well, beyond the splash targets.
+            if(Hook("electrocute_area")>0 && _world.Abilities.Find("discharge") is {} discharge)
+                foreach(var carrier in a.Targeting.InArea(a.Caster.GlobalPosition,2f,2f).Where(t=>t!=target && t.Alive && _world.Periodic.Has(discharge,t)).ToArray()) {
+                    if(carrier is EnemyAgent held)held.Stun(3,false);
+                    _electrified[carrier.GetInstanceId()]=6;
+                }
             if(Ready("electrocute_opening",.5)){
                 _opening=4;
                 if(Hook("electrocute_opening")>0)_world.Abilities.Find("maul")?.ReduceCooldown(4);

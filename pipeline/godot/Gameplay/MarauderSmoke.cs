@@ -123,7 +123,7 @@ public partial class MarauderSmoke : Node
   runtime.Activated(scream);Check("Force Scream consumes Ataru critical once",!runtime.MarauderScreamCritical);
   Check("starter has no offensive talent procs",runtime.DirectBonus(w.Combat,target)==0);
   Check("Carnage benefits owned bleeds",runtime.DirectBonus(w.Abilities.Find("annihilate")!,target)>.19f);
-  var smash=w.Abilities.Find("smash")!;smash.CooldownSeconds=.1f;runtime.ApplyStats(smash);Check("Smash cannot become a spam cooldown",smash.CooldownSeconds>=10);
+  var smash=w.Abilities.Find("smash")!;smash.CooldownSeconds=.1f;runtime.ApplyStats(smash);Check("Smash cannot become a spam cooldown",smash.CooldownSeconds>=6);
   w.Progression.ResetRun();Check("restart clears utility state",w.Build.SpeedMultiplier==1 && w.Build.IncomingMultiplier==1);
   w.Build.Pregame.Reset();target.Health.Restore();w.PlayerActor.Health.Restore();
   var reaction=w.Abilities.Find("retaliation")!;reaction.SetUnlocked(true);reaction.ResetCombat();actor.ResetPresentation();

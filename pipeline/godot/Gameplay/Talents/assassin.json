@@ -245,9 +245,9 @@
       "Tree": "deception",
       "Tier": 0,
       "Column": 0,
-      "Icon": "res://Assets/UI/icons/spinningstrike.png",
+      "Icon": "res://Assets/UI/icons/vampiricslash.png",
       "Name": "Thrashing Blades",
-      "Description": "Lacerate and Voltaic Slash deal 20% more damage.",
+      "Description": "Your starting Lacerate becomes Voltaic Slash, which cleaves nearby enemies and hits harder. Lacerate and Voltaic Slash deal 20% more damage. Applies when the run starts.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 0,
@@ -263,6 +263,12 @@
           "Ability": "voltaicslash",
           "Amount": 0.2,
           "Key": ""
+        },
+        {
+          "Kind": "hook",
+          "Ability": "",
+          "Amount": 1,
+          "Key": "as_voltaic_conversion"
         }
       ],
       "Source": "0xE000867C42A5858E (April ablIconSpec; survivor adaptation)"
@@ -324,7 +330,7 @@
       "Column": 0,
       "Icon": "res://Assets/UI/icons/chargedsaber.png",
       "Name": "Conductive Field",
-      "Description": "Lacerate radius increases by 35%. Electrocute also strikes up to two nearby enemies at full damage.",
+      "Description": "Lacerate and Voltaic Slash radius increases by 35%. Electrocute also strikes up to two nearby enemies at full damage, and stuns and exposes every enemy afflicted by Discharge.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 2,
@@ -332,6 +338,12 @@
         {
           "Kind": "radius",
           "Ability": "lacerate",
+          "Amount": 0.35,
+          "Key": ""
+        },
+        {
+          "Kind": "radius",
+          "Ability": "voltaicslash",
           "Amount": 0.35,
           "Key": ""
         },
@@ -379,16 +391,16 @@
       "Source": "0xE000B0F352B3B998 (April ablIconSpec; survivor adaptation)"
     },
     {
-      "Id": "deception.duplicity",
+      "Id": "deception.lone_discharge",
       "Classes": [
         "assassin"
       ],
       "Tree": "deception",
       "Tier": 1,
       "Column": 2,
-      "Icon": "res://Assets/UI/icons/sunderingassault.png",
-      "Name": "Duplicity",
-      "Description": "Cloaked Maul gains another 35% damage.",
+      "Icon": "res://Assets/UI/icons/discharge.png",
+      "Name": "Lone Discharge",
+      "Description": "Your attacks deal 30% more damage to enemies whose only damage-over-time effects of yours are Discharge, however many Discharges they carry.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 2,
@@ -396,11 +408,11 @@
         {
           "Kind": "hook",
           "Ability": "",
-          "Amount": 0.35,
-          "Key": "ambush"
+          "Amount": 0.3,
+          "Key": "lone_discharge"
         }
       ],
-      "Source": "0xE0001E15DD20D045 (April ablIconSpec; survivor adaptation)"
+      "Source": "Survivor adaptation (no April counterpart)"
     },
     {
       "Id": "deception.surging_charge",
@@ -466,7 +478,7 @@
       "Column": 2,
       "Icon": "res://Assets/UI/icons/debuff_moving.png",
       "Name": "Crackling Blades",
-      "Description": "Maul cleaves nearby enemies for 40% damage. Electrocute exposure grants an additional 20% Maul and Voltaic Slash damage.",
+      "Description": "Maul cleaves in a wider arc for more damage. Electrocute exposure grants an additional 20% Maul and Voltaic Slash damage.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 5,

@@ -114,7 +114,7 @@ public static class AbilityTooltips
    "deadlythrow"=>"Ranged saber strike. Deals 60% additional damage below 30% enemy health.",
    "saberthrow"=>"Throw both sabers through a frontal group and return them. Hits twice. Forked Blades increases the target cap and secondary damage.",
    "forcecrush"=>"Periodic Force damage and a slow. Seeds one target, then waits for spreading when a spread attack is equipped. Ticks build up to three charges for empowered Smash. Cooldown stays at least 8s.",
-   "smash"=>"Force burst around you that spreads existing periodic effects. Consumes Crush charges for up to 54% additional damage. Cooldown stays at least 10s.",
+   "smash"=>"Force burst around you that spreads existing periodic effects. Consumes Crush charges for up to 54% additional damage. Cooldown stays at least 6s.",
    "berserk"=>"For 6s, attacks, periodic ticks and cooldown recovery are 30% faster. Lasting Frenzy extends this window by 2s.",
    "predation"=>"For 6s, movement speed increases 45% and incoming damage is reduced 15%.",
    "frenzy"=>"Readies Berserk and Deadly Saber. Activates when learned Berserk has more than 5s remaining on its cooldown.",

@@ -8,27 +8,37 @@ public sealed partial class TalentRuntime
     // Scoped damage needs a larger budget than the old all-kit training rank.
     public IEnumerable<UpgradeDefinition> AssassinRunPowers()
     {
-        foreach(var (id,title,damage,radius,recovery) in new (string,string,float,float,float)[] {
-            ("lacerate","Razor Tempest",.6f,.12f,0),
-            ("voltaicslash","Charged Blades",.8f,0,.1f),
-            ("maul","Killing Edge",.8f,0,.12f),
-            ("spike","Sudden Violence",1f,.15f,.15f),
-            ("shock","Unstable Voltage",.8f,0,.1f),
-            ("discharge","Surging Detonation",.7f,.12f,0),
-            ("creepingterror","Ravenous Terror",.7f,0,.1f),
-            ("affliction","Lingering Torment",.7f,0,.1f),
-            ("crushingdarkness","Crushing Agony",.8f,0,.12f),
-            ("deathfield","Devouring Reach",.7f,.15f,.1f),
-            ("wither","Gathering Darkness",.8f,.15f,.1f),
-            ("lowslash","Cruel Reprisal",1f,0,.15f),
-            ("electrocute","Crackling Pursuit",.8f,0,.1f) }) {
+        foreach(var (id,title,damage) in new (string,string,float)[] {
+            ("lacerate","Razor Tempest",1.19f),("voltaicslash","Charged Blades",1.26f),("maul","Killing Edge",1.26f),("spike","Sudden Violence",1.58f),
+            ("shock","Unstable Voltage",1.19f),("discharge","Surging Detonation",1.19f),("creepingterror","Ravenous Terror",1.19f),("affliction","Lingering Torment",1.19f),
+            ("crushingdarkness","Crushing Agony",1.26f),("deathfield","Devouring Reach",1.19f),("wither","Gathering Darkness",1.26f) }) {
             var a=_world.Abilities.Find(id);if(a==null)continue;
-            string description=$"{a.Definition.Title}: +{damage:P0} base damage per rank"+(a.Definition.PeriodicDamage>0?" (including its periodic damage)":"");
-            if(radius>0)description+=$", +{radius:P0} base radius";
-            if(recovery>0)description+=$", +{recovery:P0} cooldown recovery";
-            yield return new UpgradeDefinition {Id="assassin_power_"+id,Title=title,Icon=a.Definition.Icon,
-                AbilityId=id,Effect=UpgradeEffect.AbilityPower,DamagePerRank=damage,RadiusPerRank=radius,
-                CooldownPerRank=recovery,MechanicalDescription=description+". Bonuses add from base; no rank cap."};
+            yield return new UpgradeDefinition {Id="assassin_power_"+id,Title=title,Icon=a.Definition.Icon,AbilityId=id,Effect=UpgradeEffect.AbilityPower,DamagePerRank=damage};
+        }
+        foreach(var (id,title,amount) in new (string,string,float)[] {
+            ("spike","Wider Violence",.19f),("discharge","Wider Detonation",.15f),("deathfield","Wider Reach",.15f),("wither","Wider Darkness",.15f),("lacerate","Wider Tempest",.15f) }) {
+            var a=_world.Abilities.Find(id);if(a==null)continue;
+            yield return new UpgradeDefinition {Id="assassin_radius_"+id,Title=title,Icon=a.Definition.Icon,AbilityId=id,Effect=UpgradeEffect.AbilityPower,RadiusPerRank=amount};
+        }
+        // Single-target DoTs, Lacerate and Wither deliberately have no recovery card.
+        foreach(var (id,title,amount) in new (string,string,float)[] {
+            ("voltaicslash","Quickened Blades",.18f),("maul","Quickened Edge",.18f),("spike","Quickened Violence",.22f),("shock","Quickened Voltage",.18f) }) {
+            var a=_world.Abilities.Find(id);if(a==null)continue;
+            yield return new UpgradeDefinition {Id="assassin_cooldown_"+id,Title=title,Icon=a.Definition.Icon,AbilityId=id,Effect=UpgradeEffect.AbilityPower,CooldownPerRank=amount};
+        }
+        foreach(var (id,title) in new[] {("affliction","Lingering Pulse"),("creepingterror","Terror Pulse"),("crushingdarkness","Agony Pulse")}) {
+            var a=_world.Abilities.Find(id);if(a==null)continue;
+            yield return new UpgradeDefinition {Id="assassin_tick_"+id,Title=title,Icon=a.Definition.Icon,AbilityId=id,Effect=UpgradeEffect.TickRate,AmountPerRank=.15f};
+        }
+        foreach(var (id,title) in new[] {("affliction","Festering Echo"),("creepingterror","Terror Echo"),("crushingdarkness","Agony Echo")}) {
+            var a=_world.Abilities.Find(id);if(a==null)continue;
+            yield return new UpgradeDefinition {Id="assassin_duplicate_"+id,Title=title,Icon=a.Definition.Icon,AbilityId=id,Effect=UpgradeEffect.Mechanic,Mechanic="as_dup_"+id,
+                AmountPerRank=.2f,MaximumRank=0,MechanicalDescription=$"{a.Definition.Title}: each tick has a +20% chance per rank to strike again (100% guarantees an extra tick). Scales with rarity."};
+        }
+        foreach(var (id,title) in new[] {("affliction","Festering Legion"),("creepingterror","Terror Legion"),("crushingdarkness","Agony Legion")}) {
+            var a=_world.Abilities.Find(id);if(a==null)continue;
+            yield return new UpgradeDefinition {Id="assassin_multi_"+id,Title=title,Icon=a.Definition.Icon,AbilityId=id,Effect=UpgradeEffect.Mechanic,Mechanic="as_multi_"+id,
+                MaximumRank=0,MechanicalDescription=$"{a.Definition.Title}: +1 simultaneous instance per rank on each enemy. Extra casts add a new instance instead of refreshing, until slots are full."};
         }
         foreach(var (key,title,ability,description) in new (string,string,string,string)[] {
             ("as_conduit","Voltaic Conduit","voltaicslash","Voltaic Slash hits recover 1 second of learned Shock and Discharge cooldowns, at most once per 0.5 seconds."),
@@ -62,7 +72,16 @@ public sealed partial class TalentRuntime
             "as_wither"=>Has("wither") && (Has("maul") || Has("voltaicslash")),
             "as_guard"=>(Has("lacerate") || Has("wither")) && (Has("forceshroud") || Has("deflection")),
             "as_decay"=>new[]{"creepingterror","affliction","crushingdarkness"}.Any(Has),
-            _=>true
+            _=>!(u.Mechanic.StartsWith("as_dup_") || u.Mechanic.StartsWith("as_multi_")) || Has(u.AbilityId)
         };
     }
+
+    private float AssassinMechanicPower(string prefix,string id)
+    {
+        if(!IsAssassin || _world.Progression==null || !Has(id))return 0;
+        return _world.Progression.Upgrades.Where(u=>u.Mechanic==prefix+id).Sum(u=>_world.Progression.RankPower(u));
+        bool Has(string a)=>_world.Abilities.Find(a)?.Unlocked==true;
+    }
+    public float AssassinDuplicateChance(AutomaticAbility a)=>AssassinMechanicPower("as_dup_",a.Definition.Id)*.2f;
+    public int AssassinDotSlots(AutomaticAbility a)=>1+(_world.Progression==null?0:_world.Progression.Upgrades.Where(u=>u.Mechanic=="as_multi_"+a.Definition.Id).Sum(u=>_world.Progression.Rank(u)));
 }
