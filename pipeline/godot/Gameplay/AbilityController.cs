@@ -86,7 +86,7 @@ public partial class AbilityController : Node
             _activationSpacing=Math.Max(0,MinimumActivationSpacing);
             // Never reset a running GCD for an exception which may trigger another GCD.
             if(ability.Definition.TriggersGlobalCooldown && GlobalCooldownRemaining<=0)
-                GlobalCooldownRemaining=GlobalCooldownDuration=float.IsFinite(GlobalCooldownSeconds)?Math.Max(Math.Min(GlobalCooldownSeconds,MinimumGlobalCooldown),GlobalCooldownSeconds/Math.Max(1,CooldownRate)):1.0;
+                GlobalCooldownRemaining=GlobalCooldownDuration=float.IsFinite(GlobalCooldownSeconds)?Math.Max(Math.Min(GlobalCooldownSeconds,MinimumGlobalCooldown),GlobalCooldownSeconds/Math.Max(1,CooldownRate)/Math.Max(1,ability.Build?.Pregame.CoverHaste??1)):1.0;
             break;
         }
         // Weapon attacks fill gaps after normal abilities have had first refusal.

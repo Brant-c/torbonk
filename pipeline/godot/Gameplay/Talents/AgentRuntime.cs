@@ -26,11 +26,13 @@ public sealed partial class TalentRuntime
         if(!AgentVenomousBlades || _world.Abilities.Find("dart") is not {Unlocked:true} dart || _world.Abilities.Find("laceration") is not {} lac)return;
         bool free=dart.InheritsFreeSlot;dart.SetUnlocked(false);dart.InheritsFreeSlot=false;lac.InheritsFreeSlot|=free;lac.SetUnlocked(true);
     }
-    public static bool AgentCoverAbility(string id)=>id is "ambush" or "followthrough" or "suppressivefire" or "plasmaprobe" or "orbitalstrike" or "explosiveprobe" or "agentcull";
+    public static bool AgentCoverAbility(string id)=>id is "ambush" or "followthrough" or "suppressivefire" or "plasmaprobe" or "orbitalstrike" or "agentcull";
     public bool AgentOpening=>_agentOpening>0;
     public float DiversionSeconds=>8+1.5f*(IsSniper?AgP("diversion"):0);
     /// <summary>Smoke drops at the caster and persists as a ground area; DiversionEffect disables every enemy standing in it.</summary>
     private void Divert()=>DiversionEffect.Spawn(_world,_world.PlayerActor.GlobalPosition,DiversionSeconds);
+    /// <summary>Snipers in cover cycle abilities faster: shorter global cooldown and quicker gestures.</summary>
+    public float CoverHaste=>IsSniper && AgentPositioned?1.4f:1;
     public bool AgentPositioned=>IsAgent && !IsOperative && _stationary>=.6 && _world.Player.IsOnFloor() && _world.Player.ActualVelocity.Length()<.03f;
     public bool CanBeginAgent(AutomaticAbility a)=>!IsAgent || (!IsOperative && AgentCoverAbility(a.Definition.Id) && !AgentPositioned?false:a.Definition.Id switch {
         "carbineburst"=>!AgentConcealment,

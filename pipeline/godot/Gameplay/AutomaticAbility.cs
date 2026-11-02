@@ -62,7 +62,7 @@ public partial class AutomaticAbility : Node
     public const double MaxGestureSeconds=1.3, MaxRecoverySeconds=.6;
     private bool KeepsAuthoredTiming => Definition.Id is "storm" or "deathfield" or "deathfromabove";
     public double RecoveryDuration => KeepsAuthoredTiming?Definition.RecoverySeconds:Math.Min(Definition.RecoverySeconds,MaxRecoverySeconds);
-    public double GestureDuration => (KeepsAuthoredTiming?Definition.GestureSeconds:Math.Min(Definition.GestureSeconds,MaxGestureSeconds)) / (Definition.Effect==AbilityEffect.Damage && Definition.Id!="smash" ? Build?.Pregame.MarauderAnimationHaste??1 : 1);
+    public double GestureDuration => (KeepsAuthoredTiming?Definition.GestureSeconds:Math.Min(Definition.GestureSeconds,MaxGestureSeconds)) / (Definition.Effect==AbilityEffect.Damage && Definition.Id!="smash" ? Build?.Pregame.MarauderAnimationHaste??1 : 1) / (Build?.Pregame.CoverHaste??1);
     private void Present(Action action)
     {
         try { action(); }

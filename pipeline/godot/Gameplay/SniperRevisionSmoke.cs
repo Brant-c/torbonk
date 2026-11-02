@@ -56,6 +56,9 @@ public partial class SniperRevisionSmoke : Node
                 for(ulong seed=1;seed<=300;seed++){w.Progression.SeedOffers(seed);foreach(var o in (List<UpgradeDefinition>)gen.Invoke(w.Progression,new object[]{8+(int)(seed%8),Array.Empty<UpgradeDefinition>(),3})!)freq[o.Id]=freq.GetValueOrDefault(o.Id)+1;}
                 GD.Print("OFFERFREQ "+string.Join(", ",freq.OrderByDescending(k=>k.Value).Take(25).Select(k=>k.Key+"="+k.Value)));
             }
+            Check("Explosive Probe is no longer a cover ability",!TalentRuntime.AgentCoverAbility("explosiveprobe"));
+            A("explosiveprobe").SetUnlocked(true);A("explosiveprobe").ResetCombat();w.Player.Presentation.ResetPresentation();Check("Explosive Probe casts out of cover",A("explosiveprobe").TryBegin());A("explosiveprobe").Abort();
+            Check("cover haste applies only in cover",rt.AgentPositioned?rt.CoverHaste>1:rt.CoverHaste==1);
             // Diversion
             var enemy=new EnemyAgent{Name="DiversionEnemy",Team=CombatTeam.Hostile,AttackDamage=10};
             Check("Diversion exists and is a Sniper utility",A("diversion").Definition.Category==AbilityCategory.Utility && A("diversion").Definition.Icon=="smokegrenade");
