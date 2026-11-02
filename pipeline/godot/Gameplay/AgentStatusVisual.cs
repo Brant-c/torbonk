@@ -18,7 +18,7 @@ public partial class AgentStatusVisual : Node3D
         bool plasma=id=="plasmaprobe",probe=id=="interrogationprobe" || plasma;
         string texture=plasma?"5x5_flame_lick_04_bw":probe?"2x2_electrical_blast_alpha":"fx_smoke_2x2_alpha";
         int side=plasma?5:2;var image=GD.Load<Texture2D>("res://Assets/Agent/"+texture+".png");
-        node._sprite=new Sprite3D {Texture=image,Hframes=side,Vframes=side,PixelSize=.15f/(image.GetWidth()/side),Shaded=false,Billboard=BaseMaterial3D.BillboardModeEnum.Enabled,Modulate=plasma?new Color(1,.55f,.12f,.8f):probe?new Color(.4f,.7f,1,.75f):id=="diversion"?new Color(.75f,.77f,.8f,.55f):new Color(.35f,.8f,.08f,.6f)};
+        node._sprite=new Sprite3D {Texture=image,Hframes=side,Vframes=side,PixelSize=.15f/(image.GetWidth()/side),Shaded=false,Billboard=BaseMaterial3D.BillboardModeEnum.Enabled,Modulate=plasma?new Color(1,.55f,.12f,.8f):probe?new Color(.4f,.7f,1,.75f):new Color(.35f,.8f,.08f,.6f)};
         node.AddChild(node._sprite);
         if(probe){
             var mesh=GD.Load<PackedScene>(plasma?"res://Assets/Agent/sp_plasma_probe_top.glb":"res://Assets/PresentationRepairs/vfx_probe_mini01.glb").Instantiate<Node3D>();node.AddChild(mesh);Fit(mesh,.045f);mesh.Position=Vector3.Up*.07f;

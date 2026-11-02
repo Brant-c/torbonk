@@ -36,9 +36,9 @@ public sealed partial class TalentRuntime
         float seconds=DiversionSeconds;
         foreach(var e in _world.Targeting.InArea(_world.PlayerActor.GlobalPosition,DiversionRadius,DiversionRadius).OfType<EnemyAgent>().ToArray()){
             e.DiversionRemaining=Math.Max(e.DiversionRemaining,seconds);
-            AgentStatusVisual.Attach(e,"diversion",()=>e.DiversionRemaining>0);
+            DiversionEffect.AttachTarget(e);
         }
-        DiversionSmoke.Spawn(_world,_world.PlayerActor.GlobalPosition,seconds);
+        DiversionEffect.Spawn(_world,_world.PlayerActor.GlobalPosition,seconds);
     }
     /// <summary>Plasma Probes may overlap; Probe Array cards raise the cap.</summary>
     public int PlasmaProbeLimit=>2+(IsSniper?AgR("array"):0);
