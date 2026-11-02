@@ -40,9 +40,9 @@ public partial class SniperRevisionSmoke : Node
                 for(int i=0;i<200 && plasma.State!=LightningState.Cooldown && plasma.State!=LightningState.Idle;i++)plasma.Advance(.05);
                 fields=plasma.ActiveStorms.Count();
             }
-            Check("Plasma Probe keeps two fields at once but not three",fields==2);
-            var pr=w.Progression!;var arrayCard=pr.Upgrades.Single(u=>u.Id=="sniper_array");var diversionCard=pr.Upgrades.SingleOrDefault(u=>u.Id=="unlock_diversion");
-            Check("Probe Array is a purple rarity card and far rarer in offers",arrayCard.Rarity==PowerRarity.Artifact && rt.OfferWeight(arrayCard)<=.2f*Math.Max(1,rt.OfferWeight(pr.Upgrades.First(u=>u.Id=="sniper_suppression"))));
+            Check("Plasma Probe fields stack without a cap",fields==3);
+            var pr=w.Progression!;var diversionCard=pr.Upgrades.SingleOrDefault(u=>u.Id=="unlock_diversion");
+            Check("Probe Array is gone",!pr.Upgrades.Any(u=>u.Id=="sniper_array"));
             Check("Diversion is in the Sniper pool and weighted up",diversionCard!=null && rt.OfferWeight(diversionCard)>=4*(1+0));
             var generate=typeof(RunProgression).GetMethod("GenerateOffers",System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Instance)!;
             int offered=0;

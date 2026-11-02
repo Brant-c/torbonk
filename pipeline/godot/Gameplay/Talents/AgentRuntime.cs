@@ -31,8 +31,6 @@ public sealed partial class TalentRuntime
     public float DiversionSeconds=>8+1.5f*(IsSniper?AgP("diversion"):0);
     /// <summary>Smoke drops at the caster and persists as a ground area; DiversionEffect disables every enemy standing in it.</summary>
     private void Divert()=>DiversionEffect.Spawn(_world,_world.PlayerActor.GlobalPosition,DiversionSeconds);
-    /// <summary>Plasma Probes may overlap; Probe Array cards raise the cap.</summary>
-    public int PlasmaProbeLimit=>2+(IsSniper?AgR("array"):0);
     public bool AgentPositioned=>IsAgent && !IsOperative && _stationary>=.6 && _world.Player.IsOnFloor() && _world.Player.ActualVelocity.Length()<.03f;
     public bool CanBeginAgent(AutomaticAbility a)=>!IsAgent || (!IsOperative && AgentCoverAbility(a.Definition.Id) && !AgentPositioned?false:a.Definition.Id switch {
         "carbineburst"=>!AgentConcealment,

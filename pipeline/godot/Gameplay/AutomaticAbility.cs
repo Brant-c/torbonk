@@ -166,7 +166,6 @@ public partial class AutomaticAbility : Node
     {
         float relicRange=Build?.JuggernautRelics?.Range(this)??Range;
         if(Definition.Id=="storm" && SorcererRelics.Rank(this,"eye_of_the_tempest") is int stormRank && stormRank>=0 && _storms.Count>=stormRank+2)return false;
-        if(Definition.Id=="plasmaprobe" && Build?.Pregame is {} plasmaRt && _storms.Count>=plasmaRt.PlasmaProbeLimit)return false;
         if(!Unlocked || !CombatEnabled || !Caster.Alive || State!=LightningState.Idle || CooldownRemaining>0) return false;
         if(Build?.World.RunConfiguration.AdvancedClassId=="sorcerer" && Definition.Id is "deathfield" or "storm" && !Build.World.Player.StationaryForAbility)return false;
         if(Definition.Effect==AbilityEffect.BallisticField && (!Presentation.Actor.SniperCoverActive || GodotObject.IsInstanceValid(BallisticField) && BallisticField!.Active))return false;
