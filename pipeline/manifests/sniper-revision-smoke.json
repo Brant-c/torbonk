@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "not in cover after moving",
+    "Snipe base damage 66",
+    "Snipe and Series of Shots are no longer cover abilities",
+    "Snipe casts out of cover",
+    "Series of Shots casts out of cover",
+    "Ambush still needs cover",
+    "Snipe ranks normally out of cover",
+    "Snipe ranks lower in cover",
+    "Plasma Probe radius and damage raised",
+    "Plasma Probe keeps two fields at once but not three",
+    "Diversion exists and is a Sniper utility",
+    "diverted enemy cannot attack"
+  ],
+  "failure": null
+}

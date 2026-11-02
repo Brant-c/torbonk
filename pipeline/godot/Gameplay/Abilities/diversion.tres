@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="AbilityDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Gameplay/AbilityDefinition.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Id = "diversion"
+StartsUnlocked = false
+Title = "Diversion"
+Icon = "smokegrenade"
+Category = 1
+Effect = 3
+Damage = 1
+CooldownSeconds = 24
+Range = 1.0
+Radius = 0
+Area = 0
+BuffSeconds = 0
+UsesGlobalCooldown = false
+TriggersGlobalCooldown = false
+RecoverySeconds = 0.3
+GestureSeconds = 0.9
+Description = "Drop a smoke grenade at your feet. Enemies caught in it cannot hit you for four seconds. Used automatically when an enemy is about to strike."
+StartClip = "D3/FocusBuff"
+LoopClip = "D3/FocusBuff"
+EndClip = ""
+ChannelSeconds = 0.0
+WindupSeconds = 0.0
+PresentationKind = "bracer"
+MuzzleBone = "LeftWrist"
+EffectTint = Color(0.7, 0.72, 0.75, 1)
+ImpactTailsOnTargetDeath = true
+CastAudio = "res://Assets/D3/Audio/878565772.wav"
+ImpactAudio = ""
+NearbyTriggerCount = 1
+KnockbackDistance = 0.0
+RequireGesture = true

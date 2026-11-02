@@ -74,7 +74,7 @@ public partial class RunBuildEffects : Node
     public float SpeedMultiplier => (Pregame?.MarauderSpeed??1)*(Pregame?.BountySpeed??1)* (_haste>0?1.3f:1)*(_buff>0?1+_speedBuff:1)*(1+Item("stride"));
     public bool Buffed => _buff>0;
     public void ApplyBuff(AbilityDefinition d)
-    { if(d.Id is "blowforblow" or "thermalsensoroverride" or "koltoshell" || World.RunConfiguration.AdvancedClassId=="assassin" && d.Id is "forcecloak" or "deflection")return;
+    { if(d.Id is "blowforblow" or "thermalsensoroverride" or "koltoshell" or "diversion" || World.RunConfiguration.AdvancedClassId=="assassin" && d.Id is "forcecloak" or "deflection")return;
         _buff=d.BuffSeconds;_damageBuff=d.DamageBuff;_speedBuff=d.SpeedBuff;World.Progression?.Recalculate(); }
     /// <summary>Per-hit class mechanics that need the ability, not just the target.</summary>
     public void AbilityHit(AutomaticAbility ability,Combatant target)

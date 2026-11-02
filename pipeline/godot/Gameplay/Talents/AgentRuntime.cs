@@ -16,6 +16,7 @@ public sealed partial class TalentRuntime
     public bool AgentCounterstrikeReady=>IsOperative && Hook("agent_counterstrike")>0;
     public bool AgentConcealment=>IsOperative && Ranks.Any(p=>p.Value>0 && p.Key.StartsWith("concealment.",StringComparison.Ordinal));
     public bool AgentVenomousBlades=>IsOperative && Hook("agent_venomous_blades")>0;
+    public int SniperPriority(AutomaticAbility a)=>a.Definition.Id=="diversion"?-8:a.Definition.Id=="snipershot" && AgentPositioned?3:0;
     public int AgentPriority(AutomaticAbility a)=>a.Definition.Id switch {
         "debilitate"=>0,"hiddenstrike"=>5,"backstab"=>10,"laceration"=>20,
         "carbineburst"=>25,"severtendon"=>30,"agentcull"=>35,"weakeningblast"=>36,"corrosivegrenade"=>37,
@@ -25,15 +26,30 @@ public sealed partial class TalentRuntime
         if(!AgentVenomousBlades || _world.Abilities.Find("dart") is not {Unlocked:true} dart || _world.Abilities.Find("laceration") is not {} lac)return;
         bool free=dart.InheritsFreeSlot;dart.SetUnlocked(false);dart.InheritsFreeSlot=false;lac.InheritsFreeSlot|=free;lac.SetUnlocked(true);
     }
-    public static bool AgentCoverAbility(string id)=>id is "snipershot" or "ambush" or "seriesofshots" or "followthrough" or "suppressivefire" or "plasmaprobe" or "orbitalstrike" or "explosiveprobe" or "agentcull";
+    public static bool AgentCoverAbility(string id)=>id is "ambush" or "followthrough" or "suppressivefire" or "plasmaprobe" or "orbitalstrike" or "explosiveprobe" or "agentcull";
     public bool AgentOpening=>_agentOpening>0;
+    public const float DiversionRadius=1.6f;
+    public float DiversionSeconds=>4+1.5f*(IsSniper?AgP("diversion"):0);
+    /// <summary>Smoke drops at the caster: every enemy in it loses the ability to hit for the debuff duration.</summary>
+    private void Divert()
+    {
+        float seconds=DiversionSeconds;
+        foreach(var e in _world.Targeting.InArea(_world.PlayerActor.GlobalPosition,DiversionRadius,DiversionRadius).OfType<EnemyAgent>().ToArray()){
+            e.DiversionRemaining=Math.Max(e.DiversionRemaining,seconds);
+            AgentStatusVisual.Attach(e,"diversion",()=>e.DiversionRemaining>0);
+        }
+        DiversionSmoke.Spawn(_world,_world.PlayerActor.GlobalPosition,seconds);
+    }
+    /// <summary>Plasma Probes may overlap; Probe Array cards raise the cap.</summary>
+    public int PlasmaProbeLimit=>2+(IsSniper?AgR("array"):0);
     public bool AgentPositioned=>IsAgent && !IsOperative && _stationary>=.6 && _world.Player.IsOnFloor() && _world.Player.ActualVelocity.Length()<.03f;
     public bool CanBeginAgent(AutomaticAbility a)=>!IsAgent || (!IsOperative && AgentCoverAbility(a.Definition.Id) && !AgentPositioned?false:a.Definition.Id switch {
         "carbineburst"=>!AgentConcealment,
         "blowforblow"=>IsOperative && Hook("agent_counterstrike")>0,
         "dart"=>!AgentVenomousBlades && (!IsOperative || _world.Targeting.InArea(_world.PlayerActor.GlobalPosition,a.Range,a.Range).Any(t=>_world.Periodic.Remaining(a,t)<=2)),
         "hiddenstrike"=>_agentOpening>0, "surgicalprobe"=>TacticalAdvantage>0,
-        "followthrough"=>_followup>0, _=>true});
+        "followthrough"=>_followup>0,
+        "diversion"=>IsSniper && _world.Targeting.InArea(_world.PlayerActor.GlobalPosition,.6f,.6f).OfType<EnemyAgent>().Any(e=>e.AttackImminent), _=>true});
     private void Advantage(){TacticalAdvantage=Math.Min(2,TacticalAdvantage+1);_advantageLife=12;}
     private void SpendAdvantage()
     {
@@ -58,6 +74,7 @@ public sealed partial class TalentRuntime
         switch(a.Definition.Id){
             case "blowforblow":if(Hook("agent_counterstrike")>0)_counterstrike=4+.5f*AgP("counter");break;
             case "entrench":_agentGuard=6;break;
+            case "diversion":Divert();break;
             case "agentescape":_world.PlayerActor.Health.VulnerabilitySeconds=0;break;
             case "koltoprobe":_koltoLife=8;_koltoTick=0;break;
             case "shiv": case "hiddenstrike": Advantage();break;

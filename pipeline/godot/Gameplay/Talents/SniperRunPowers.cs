@@ -41,6 +41,7 @@ public sealed partial class TalentRuntime
                 AmountPerRank=0,MaximumRank=0,MechanicalDescription=$"{a.Definition.Title} ricochets to one additional enemy per rank. No rank cap."};
         }
         UpgradeDefinition M(string id,string title,string icon,string ability,string spec,string key,float amount,string text)=>AgentMech("sniper",id,title,icon,ability,spec,key,amount,text);
+        yield return M("diversion","Dense Smoke","smokegrenade","diversion","marksmanship","diversion",1.5f,"Diversion lasts 1.5 seconds longer per rank.");
         // Marksmanship
         yield return M("crossfire","Crossfire Discipline","ambush","ambush","marksmanship","crossfire",1,"Ambush recovers 1.5 seconds of Followthrough cooldown per rank. Followthrough recovers 2 seconds of Ambush cooldown per rank. Each refund happens once per activation.");
         yield return M("ricochet","Penetrating Rounds","seriesofshots","","marksmanship","ricochet",.05f,"Ambush, Series of Shots and Followthrough retain an extra 5% damage per ricochet jump, per rank (never above 100%).");
@@ -61,6 +62,7 @@ public sealed partial class TalentRuntime
         yield return M("emp","Overclocked EMP","empdischarge","empdischarge","engineering","emp",3,"EMP Discharge also recovers Explosive Probe and Orbital Strike by 3 seconds per rank, once per activation.");
         yield return M("cascade","Cascade Detonation","explosiveprobe","explosiveprobe","engineering","cascade",.3f,"Explosive Probe also pays 30% per rank of up to 6 seconds of remaining Interrogation Probe damage on every probed enemy it strikes.");
         yield return M("relay","Relay Network","plasmaprobe","","engineering","relay",0,"Orbital Strike and Plasma Probe hits on a probed enemy spread your Interrogation Probe to one more nearby enemy per rank, once per second.");
+        yield return M("array","Probe Array","plasmaprobe","plasmaprobe","engineering","array",0,"Plasma Probe may keep one more field active at a time per rank. Fields stack their damage on enemies standing in several.");
         yield return M("lingering","Lingering Plasma","plasmaprobe","plasmaprobe","engineering","lingering",1,"Plasma Probe fields last 1 second longer per rank.");
         yield return M("probeshield","Probe Shielding","interrogationprobe","","engineering","probeshield",3,"Probe hits grant a shield of 3 per rank, once every 6 seconds.");
         // Lethality
@@ -100,7 +102,8 @@ public sealed partial class TalentRuntime
             "snm_emp"=>Has("empdischarge") && (Has("explosiveprobe") || Has("orbitalstrike")),
             "snm_targeting"=>Probe() && (Has("seriesofshots") || Has("explosiveprobe")),
             "snm_relay"=>Probe() && (Has("orbitalstrike") || Has("plasmaprobe")),
-            "snm_lingering"=>Has("plasmaprobe"),
+            "snm_lingering" or "snm_array"=>Has("plasmaprobe"),
+            "snm_diversion"=>Has("diversion"),
             "snm_probeshield"=>Probe() && (Has("explosiveprobe") || Has("plasmaprobe") || Has("orbitalstrike") || Has("seriesofshots")),
             "snm_cull"=>Has("agentcull") && Has("weakeningblast") && Poison(),
             "snm_decay" or "snm_pandemic" or "snm_mending"=>Poison(),
@@ -175,6 +178,7 @@ public sealed partial class TalentRuntime
         bool shot=id is "ambush" or "seriesofshots" or "followthrough";
         float health=t.Health.Maximum>0?t.Health.Current/t.Health.Maximum:1;
         float bonus=0;
+        if(id=="snipershot" && AgentPositioned)bonus+=.6f;
         if(probe && id is "suppressivefire" or "plasmaprobe")bonus+=.3f*AgP("suppression");
         if(probe && id is "seriesofshots" or "explosiveprobe")bonus+=.25f*AgP("targeting");
         if(AgentPositioned && Hook("sn_lethal_cover")>0 && id is "dart" or "corrosivegrenade")bonus+=.2f;

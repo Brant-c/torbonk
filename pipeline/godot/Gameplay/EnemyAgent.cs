@@ -29,8 +29,12 @@ public partial class EnemyAgent : Combatant
     public float LevelDamageMultiplier { get; set; } = 1;
     public double StunRemaining {get;private set;}
     public double OilRemaining {get;set;}
+    /// <summary>Diversion smoke: while above zero this enemy cannot land attacks.</summary>
+    public double DiversionRemaining {get;set;}
+    public bool AttackImminent=>Alive && DiversionRemaining<=0 && Target.Alive && (State==EnemyState.Attack && _attackIn<=.7 || GlobalPosition.DistanceTo(Target.GlobalPosition)<=MeleeRange*1.25f);
     public float DealAttack(float amount,DamageType type=DamageType.Energy)
     {
+        if(DiversionRemaining>0)return 0;
         var build=(Target.GetParent()?.GetParent() as GameWorld)?.Build;
         build?.Attacked(this,Target.Health.Shielded);
         float received=Target.Health.ApplyDamage(amount*LevelDamageMultiplier*(OilRemaining>0?.75f:1)*(build?.IncomingMultiplier??1),type);
@@ -109,7 +113,7 @@ public partial class EnemyAgent : Combatant
     public override void _PhysicsProcess(double delta)
     {
         if (!Alive || !Running) return;
-        RootRemaining=Math.Max(0,RootRemaining-delta);
+        RootRemaining=Math.Max(0,RootRemaining-delta);DiversionRemaining=Math.Max(0,DiversionRemaining-delta);
         OilRemaining=Math.Max(0,OilRemaining-delta);
         if(StunRemaining>0){if(_carbonized)Visual?.CarbonizePose();
         StunRemaining=Math.Max(0,StunRemaining-delta);Body.Velocity=Vector3.Zero;

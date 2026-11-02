@@ -270,10 +270,12 @@ public partial class GameWorld : Node3D
         if(OS.GetCmdlineUserArgs().Contains("--marauder-smoke")){var smoke=new MarauderSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--juggernaut-smoke")){var smoke=new JuggernautSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--sniper-run-powers-smoke")){var smoke=new SniperRunPowersSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--sniper-revision-smoke")){var smoke=new SniperRevisionSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--sniper-cover-smoke")){var smoke=new SniperCoverSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--agent-presentation-smoke")){var smoke=new AgentPresentationSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--agent-expansion-smoke")){var smoke=new AgentExpansionSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--assassin-run-powers-smoke")){var smoke=new AssassinRunPowersSmoke();AddChild(smoke);smoke.Run(this);}
+        if(OS.GetCmdlineUserArgs().Contains("--bounty-run-powers-smoke")){var smoke=new BountyRunPowersSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--warrior-talents-smoke")){var smoke=new WarriorTalentsSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--assassin-expansion-smoke")){var smoke=new AssassinExpansionSmoke();AddChild(smoke);smoke.Run(this);}
         if(OS.GetCmdlineUserArgs().Contains("--presentation-repair-smoke")){var smoke=new PresentationRepairSmoke();AddChild(smoke);smoke.Run(this);}

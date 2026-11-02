@@ -1,0 +1,32 @@
+{
+  "profile": "April2012 (operator labelled)",
+  "maximumFiles": 180,
+  "maximumDecodedBytes": 104857600,
+  "resources": [
+    {
+      "archive": "D:\\SWTORClassic\\swtoremu\\Assets2012April\\swtor_main_gfx_1.tor",
+      "archiveHash": "0xC1E6459AB4984665",
+      "entryOffset": 148657385,
+      "headerSize": 36,
+      "dataOffset": 148657421,
+      "compressedSize": 1487,
+      "length": 2832,
+      "compressionMethod": 1,
+      "crc32Index": "b2772449",
+      "path": "/resources/gfx/icons/smokegrenade.dds",
+      "sha256": "fcaeb7600acfac791bd68b017f7e6944323d60e19a361bffc715e44b43ef1948",
+      "output": "source-assets\\april2012\\resources\\gfx\\icons\\smokegrenade.dds",
+      "archiveSha256": "f1e6bbe42a02828710d44f77de75052833dd42bf370390f6fafd0c0a361fbfbc",
+      "lookupEvidence": "exact path lookup3 hash; unique April entry; decoded bytes hashed"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "diversion",
+      "to": "/resources/gfx/icons/smokegrenade.dds",
+      "relation": "exact ablIconSpec abl.agent.skill.marksmanship.diversion"
+    }
+  ],
+  "unresolved": [],
+  "selection": "human male body type 2; bmnnew skeleton"
+}

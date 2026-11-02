@@ -79,17 +79,17 @@ public partial class AutomaticAbility : Node
     public void Advance(double delta)
     {
         foreach(var storm in _storms.ToArray()) {
-            if(SorcererRelics.Rank(this,"eye_of_the_tempest")<0 || !Unlocked || !CombatEnabled || !Caster.Alive)storm.Abort();
+            if(Definition.Id=="storm" && SorcererRelics.Rank(this,"eye_of_the_tempest")<0 || !Unlocked || !CombatEnabled || !Caster.Alive)storm.Abort();
             else storm.Advance(delta);
             if(!storm.Casting){storm.Abort();((Node)storm.Presentation).QueueFree();_storms.Remove(storm);storm.Free();}
         }
-        if (!_stormInstance && Definition.Id=="storm" && State==LightningState.Channeling && _gestureRemaining<=0 && SorcererRelics.Rank(this,"eye_of_the_tempest")>=0) {
+        if (!_stormInstance && State==LightningState.Channeling && _gestureRemaining<=0 && (Definition.Id=="storm" && SorcererRelics.Rank(this,"eye_of_the_tempest")>=0 || Definition.Id=="plasmaprobe")) {
             var detached=new AutomaticAbility {Definition=Definition,Caster=Caster,Targeting=Targeting,Presentation=Presentation,Build=Build,Periodic=Periodic,
                 DamagePerTick=DamagePerTick,Radius=Radius,Range=Range,TickSeconds=TickSeconds,ChannelSeconds=ChannelSeconds,
                 State=State,GroundCenter=GroundCenter,CastTarget=CastTarget,_clock=_clock,_presented=_presented,_stormInstance=true,_stormTicks=_stormTicks};
             _storms.Add(detached);_clock=new();_presented=false;
             Present(()=>Presentation.Actor.ReleaseGesture(this));
-            var visual=new OriginalAbilityPresentation {Actor=Presentation.Actor,Definition=Definition};GetParent().AddChild(visual);Presentation=visual;
+            Node visual=Definition.Id=="plasmaprobe"?new D3AbilityPresentation {Actor=Presentation.Actor,Definition=Definition}:new OriginalAbilityPresentation {Actor=Presentation.Actor,Definition=Definition};GetParent().AddChild(visual);Presentation=(IAbilityPresentation)visual;
             State=CooldownRemaining>0?LightningState.Cooldown:LightningState.Idle;CastTarget=null;
         }
         if (!Unlocked || !CombatEnabled || !Caster.Alive) { if(State!=LightningState.Disabled) Abort();return; }
@@ -166,6 +166,7 @@ public partial class AutomaticAbility : Node
     {
         float relicRange=Build?.JuggernautRelics?.Range(this)??Range;
         if(Definition.Id=="storm" && SorcererRelics.Rank(this,"eye_of_the_tempest") is int stormRank && stormRank>=0 && _storms.Count>=stormRank+2)return false;
+        if(Definition.Id=="plasmaprobe" && Build?.Pregame is {} plasmaRt && _storms.Count>=plasmaRt.PlasmaProbeLimit)return false;
         if(!Unlocked || !CombatEnabled || !Caster.Alive || State!=LightningState.Idle || CooldownRemaining>0) return false;
         if(Build?.World.RunConfiguration.AdvancedClassId=="sorcerer" && Definition.Id is "deathfield" or "storm" && !Build.World.Player.StationaryForAbility)return false;
         if(Definition.Effect==AbilityEffect.BallisticField && (!Presentation.Actor.SniperCoverActive || GodotObject.IsInstanceValid(BallisticField) && BallisticField!.Active))return false;
@@ -176,7 +177,7 @@ public partial class AutomaticAbility : Node
         bool spikeOpening=Definition.Id=="spike" && Build?.World.RunConfiguration.AdvancedClassId=="assassin";
         if(Definition.Effect==AbilityEffect.Heal && (Caster.Health.Current>=Caster.Health.Maximum || Caster.Health.Current>=Caster.Health.Maximum*HealthThreshold)) return false;
         if(Definition.Effect==AbilityEffect.Shield && (Caster.Health.Shielded || Targeting.Acquire(relicRange,AbilityTargetRule.NearestHostile,0)==null)) return false;
-        if(Definition.Effect==AbilityEffect.Buff && ((Definition.Id=="polarityshift"?Build?.Pregame.PolarityActive==true:Build?.World.RunConfiguration.AdvancedClassId!="marauder" && Build?.Buffed==true) || Targeting.Acquire(relicRange,AbilityTargetRule.NearestHostile,0)==null)) return false;
+        if(Definition.Effect==AbilityEffect.Buff && ((Definition.Id=="polarityshift"?Build?.Pregame.PolarityActive==true:Build?.World.RunConfiguration.AdvancedClassId!="marauder" && Build?.Buffed==true && Definition.Id!="diversion") || Targeting.Acquire(relicRange,AbilityTargetRule.NearestHostile,0)==null)) return false;
         if(Definition.Area==AbilityArea.CasterRadial && Targeting.InArea(Caster.GlobalPosition,AssassinRelicRadius,AssassinRelicRadius).Count()<Math.Max(1,Definition.NearbyTriggerCount)) return false;
         var target=Definition.Area==AbilityArea.CasterRadial || Definition.Effect!=AbilityEffect.Damage?Caster:Targeting.Acquire(relicRange,Definition.TargetRule,Radius);
         if(Definition.PeriodicDuration>0 && Caster==Build?.World.PlayerActor && Build.World.RunConfiguration.AdvancedClassId is "sorcerer" or "assassin")

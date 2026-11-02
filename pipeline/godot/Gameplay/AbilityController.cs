@@ -50,6 +50,7 @@ public partial class AbilityController : Node
         var build=ability.Build;
         if(build?.World.RunConfiguration.AdvancedClassId=="sorcerer" && build.World.Player.StationaryForAbility && ability.Definition.Id is "deathfield" or "storm")return ability.Definition.Id=="storm"?-6:-5;
         if(build?.World.RunConfiguration.AdvancedClassId=="operative")return build.Pregame.AgentPriority(ability);
+        if(build?.World.RunConfiguration.AdvancedClassId=="sniper")return build.Pregame.SniperPriority(ability);
         if(build?.World.RunConfiguration.AdvancedClassId=="marauder")return build.Pregame.MarauderPriority(ability);
         if(build?.World.RunConfiguration.AdvancedClassId=="assassin") {
             if(ability.Definition.Id=="discharge" && build.Pregame.AssassinDeception)return -6;
@@ -58,6 +59,8 @@ public partial class AbilityController : Node
             if(ability.Definition.Id=="shock" && build.Pregame.VoltaicCharges>0)return -2;
             if(ability.Definition.Id=="lacerate")return 1;
         }
+        // Advanced Prototype's Retractable Blade is a bleed filler: every other ability gets first refusal, then the blade, then the weapon attack.
+        if(build?.World.RunConfiguration.AdvancedClassId=="powertech" && ability.Definition.Id=="retractableblade")return 1;
         return AllowHybrid && ability.Definition.Id=="lightning"?1:0;
     }
     private int _next;
