@@ -54,9 +54,13 @@ public partial class SniperRevisionSmoke : Node
             enemy.DiversionRemaining=3;Check("diverted enemy cannot attack",enemy.DiversionRemaining>0);
             enemy.QueueFree();
             var live=w.Spawner.Enemies.FirstOrDefault(x=>GodotObject.IsInstanceValid(x) && x.Alive);
-            DiversionEffect.Spawn(w,w.PlayerActor.GlobalPosition,2f);
-            if(live!=null){live.DiversionRemaining=1.5;DiversionEffect.AttachTarget(live);}
-            for(int i=0;i<90;i++)await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);
+            var far=w.Spawner.Enemies.Where(x=>x!=live && GodotObject.IsInstanceValid(x) && x.Alive).FirstOrDefault();
+            if(live!=null)live.GlobalPosition=w.PlayerActor.GlobalPosition+Vector3.Forward*.2f;
+            if(far!=null){far.GlobalPosition=w.PlayerActor.GlobalPosition+Vector3.Forward*2.5f;far.DiversionRemaining=0;}
+            DiversionEffect.Spawn(w,w.PlayerActor.GlobalPosition,3f);
+            for(int i=0;i<110;i++)await ToSignal(GetTree(),SceneTree.SignalName.ProcessFrame);
+            Check("smoke zone disables enemies inside it only",live==null || live.DiversionRemaining>0 && (far==null || far.DiversionRemaining<=0));
+            Check("smoke zone leaves a persistent ground projection",w.GetNodeOrNull("DiversionEffect")?.GetNodeOrNull("DiversionGround")!=null);
             var effect=w.GetNodeOrNull<DiversionEffect>("DiversionEffect");
             Check("Diversion plays recovered grenade, impact smoke and target fx",effect!=null && effect.GetChildren().OfType<EternityVaultWeather>().Count()==4 && (live==null || live.GetNodeOrNull("DiversionTarget")!=null));
         } catch(Exception ex){failure=ex.ToString();GD.PrintErr("ERROR: "+ex);}

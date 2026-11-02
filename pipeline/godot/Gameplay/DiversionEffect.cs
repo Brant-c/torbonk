@@ -16,12 +16,15 @@ public partial class DiversionEffect : Node3D
     private EternityVaultWeather[] _bursts=Array.Empty<EternityVaultWeather>();
     private (EternityVaultWeather fx,double stop)[] _timed=Array.Empty<(EternityVaultWeather,double)>();
     private EternityVaultWeather? _cloud;
-    private Sprite3D _ring=null!;
+    private StormAreaIndicator? _ground;
+    private ShaderMaterial? _groundMaterial;
+    public const float ZoneRadius=.8f;
+    public static float Radius=>ZoneRadius;
     private AudioStreamPlayer3D _voice=null!;
     public const double ThrowSeconds=.3;
     public static void Spawn(GameWorld world,Vector3 at,float seconds)
     {
-        var e=new DiversionEffect {Name="DiversionEffect",_life=seconds};world.AddChild(e);e.GlobalPosition=at;e.Build(world);
+        var e=new DiversionEffect {Name="DiversionEffect",_life=seconds,_world=world};world.AddChild(e);e.GlobalPosition=at;e.Build(world);
     }
     private static EternityVaultWeather NewFx(Node parent,string name)
     {
@@ -46,8 +49,6 @@ public partial class DiversionEffect : Node3D
         _bursts=new[]{"sp_diversion_impact_01-stop035","sp_diversion_impact_01-stop045"}.Select(n=>NewFx(this,n)).ToArray();
         _timed=new[]{(NewFx(this,"sp_diversion_impact_01-stop100"),1.0)};
         _cloud=NewFx(this,"sp_diversion_impact_01-run");
-        var ring=GD.Load<Texture2D>("res://Assets/Agent/Diversion/blast_ring_01.png");
-        _ring=new Sprite3D {Texture=ring,PixelSize=.001f,Shaded=false,Modulate=new Color(.75f,.9f,.85f,0),Rotation=new Vector3(-Mathf.Pi/2,0,0),Position=Vector3.Up*.01f};AddChild(_ring);
     }
     public override void _Process(double delta)
     {
@@ -59,15 +60,28 @@ public partial class DiversionEffect : Node3D
             foreach(var fx in _bursts){fx.Active=true;fx.Restart();}
             foreach(var (fx,_) in _timed){fx.Active=true;fx.Restart();}
             _cloud!.Active=true;_cloud.Restart();
+            _groundMaterial=new ShaderMaterial {Shader=GD.Load<Shader>("res://Gameplay/DiversionSmoke.gdshader")};
+            _groundMaterial.SetShaderParameter("smoke",GD.Load<Texture2D>("res://Assets/Agent/Diversion/2x2volumesmokegradient_blur2.png"));
+            _groundMaterial.SetShaderParameter("ring",GD.Load<Texture2D>("res://Assets/Agent/Diversion/blast_ring_01.png"));
+            _ground=new StormAreaIndicator {Name="DiversionGround",ProjectionMaterial=_groundMaterial};AddChild(_ground);_ground.UpdateArea(GlobalPosition,ZoneRadius);
             Cue(this,"Play_ability_agent_escape_blast");Cue(this,"Play_ability_agent_escape_smoke");
         }
         double since=_age-ThrowSeconds;
         _bursts[0].Active=since<.35;_bursts[1].Active=since<.45;
         foreach(var (fx,stop) in _timed)fx.Active=since<stop;
-        float ringT=(float)Mathf.Clamp(since/.7,0,1);_ring.Scale=Vector3.One*(Talents.TalentRuntime.DiversionRadius*2*(.15f+.85f*ringT)/(_ring.Texture.GetWidth()*_ring.PixelSize));_ring.Modulate=new Color(.75f,.9f,.85f,.8f*(1-ringT));
+        _groundMaterial?.SetShaderParameter("effect_time",(float)since);
+        _groundMaterial?.SetShaderParameter("fade",(float)Mathf.Clamp(Mathf.Min(since/.5,(_life-since)/1.0),0,1));
         if(since>=_life-.5)_cloud!.Active=false;
         if(since>=_life+3)QueueFree();
     }
+    /// <summary>Like an Oil Slick: enemies standing in the smoke cannot hit you; leaving it ends the effect shortly after.</summary>
+    public override void _PhysicsProcess(double delta)
+    {
+        if(!_impact || _age-ThrowSeconds>=_life || !GodotObject.IsInstanceValid(_world))return;
+        foreach(var t in _world.Targeting.InArea(GlobalPosition,ZoneRadius,ZoneRadius,true))
+            if(t is EnemyAgent e && e.Alive){e.DiversionRemaining=Math.Max(e.DiversionRemaining,.6);AttachTarget(e);}
+    }
+    private GameWorld _world=null!;
     /// <summary>sp_diversion_target_01 follows an affected enemy for as long as its debuff lasts.</summary>
     public static void AttachTarget(EnemyAgent enemy)
     {

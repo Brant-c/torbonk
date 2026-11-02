@@ -28,18 +28,9 @@ public sealed partial class TalentRuntime
     }
     public static bool AgentCoverAbility(string id)=>id is "ambush" or "followthrough" or "suppressivefire" or "plasmaprobe" or "orbitalstrike" or "explosiveprobe" or "agentcull";
     public bool AgentOpening=>_agentOpening>0;
-    public const float DiversionRadius=1.6f;
-    public float DiversionSeconds=>4+1.5f*(IsSniper?AgP("diversion"):0);
-    /// <summary>Smoke drops at the caster: every enemy in it loses the ability to hit for the debuff duration.</summary>
-    private void Divert()
-    {
-        float seconds=DiversionSeconds;
-        foreach(var e in _world.Targeting.InArea(_world.PlayerActor.GlobalPosition,DiversionRadius,DiversionRadius).OfType<EnemyAgent>().ToArray()){
-            e.DiversionRemaining=Math.Max(e.DiversionRemaining,seconds);
-            DiversionEffect.AttachTarget(e);
-        }
-        DiversionEffect.Spawn(_world,_world.PlayerActor.GlobalPosition,seconds);
-    }
+    public float DiversionSeconds=>8+1.5f*(IsSniper?AgP("diversion"):0);
+    /// <summary>Smoke drops at the caster and persists as a ground area; DiversionEffect disables every enemy standing in it.</summary>
+    private void Divert()=>DiversionEffect.Spawn(_world,_world.PlayerActor.GlobalPosition,DiversionSeconds);
     /// <summary>Plasma Probes may overlap; Probe Array cards raise the cap.</summary>
     public int PlasmaProbeLimit=>2+(IsSniper?AgR("array"):0);
     public bool AgentPositioned=>IsAgent && !IsOperative && _stationary>=.6 && _world.Player.IsOnFloor() && _world.Player.ActualVelocity.Length()<.03f;
