@@ -7,25 +7,25 @@
 [ext_resource type="Script" path="res://Gameplay/TombAttack.cs" id="5"]
 
 [sub_resource type="CapsuleShape3D" id="Capsule"]
-radius = 0.1
-height = 0.44
+radius = 0.5
+height = 0.8
 margin = 0.0005
 [node name="AncientDroidProtector" type="CharacterBody3D"]
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-position = Vector3(0,0.22,0)
+position = Vector3(0,0.4,0)
 shape = SubResource("Capsule")
 [node name="Actor" type="Node3D" parent="."]
 script = ExtResource("1")
 Team = 2
 DisplayName = "Whitefang Matriarch"
 ExperienceReward = 90
-CollisionRadius = 0.1
-CollisionHeight = 0.44
+CollisionRadius = 0.5
+CollisionHeight = 0.8
 MoveSpeed = 0.3
 AttackDamage = 7
 AttackInterval = 1.65
-MeleeRange = 0.248
-AimHeight = 0.28600000000000003
+MeleeRange = 1.5
+AimHeight = 0.52
 RewardTier = 2
 GuaranteedReward = true
 KnockbackResistance = 1
@@ -41,7 +41,7 @@ LocomotionStrideSpeed = 0.480217
 [node name="Original" parent="Actor/Visual" instance=ExtResource("4")]
 scale = Vector3(3.2,3.2,3.2)
 [node name="Nameplate" type="Label3D" parent="Actor"]
-position = Vector3(0,0.515,0)
+position = Vector3(0,0.875,0)
 pixel_size = 0.00030
 billboard = 1
 font = ExtResource("6")
