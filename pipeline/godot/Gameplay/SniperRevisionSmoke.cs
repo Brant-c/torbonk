@@ -41,6 +41,13 @@ public partial class SniperRevisionSmoke : Node
                 fields=plasma.ActiveStorms.Count();
             }
             Check("Plasma Probe keeps two fields at once but not three",fields==2);
+            var pr=w.Progression!;var arrayCard=pr.Upgrades.Single(u=>u.Id=="sniper_array");var diversionCard=pr.Upgrades.SingleOrDefault(u=>u.Id=="unlock_diversion");
+            Check("Probe Array is a purple rarity card and far rarer in offers",arrayCard.Rarity==PowerRarity.Artifact && rt.OfferWeight(arrayCard)<=.2f*Math.Max(1,rt.OfferWeight(pr.Upgrades.First(u=>u.Id=="sniper_lingering"))));
+            Check("Diversion is in the Sniper pool and weighted up",diversionCard!=null && rt.OfferWeight(diversionCard)>=4*(1+0));
+            var generate=typeof(RunProgression).GetMethod("GenerateOffers",System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Instance)!;
+            int offered=0;
+            for(ulong seed=1;seed<=80;seed++){pr.SeedOffers(seed);var offers=(List<UpgradeDefinition>)generate.Invoke(pr,new object[]{8+(int)(seed%8),Array.Empty<UpgradeDefinition>(),3})!;if(offers.Any(o=>o.Id=="unlock_diversion"))offered++;}
+            Check("Diversion is eligible and actually offered in runs ("+offered+"/80)",pr.IsEligible(diversionCard!) && offered>=16);
             // Diversion
             var enemy=new EnemyAgent{Name="DiversionEnemy",Team=CombatTeam.Hostile,AttackDamage=10};
             Check("Diversion exists and is a Sniper utility",A("diversion").Definition.Category==AbilityCategory.Utility && A("diversion").Definition.Icon=="smokegrenade");

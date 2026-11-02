@@ -38,7 +38,11 @@ public sealed partial class TalentRuntime
         int investment=trees.Select(AgentPoints).DefaultIfEmpty(0).Max();
         float affinity=_effects.Where(p=>p.effect.Ability!="" && p.effect.Ability==u.AbilityId).Sum(p=>p.rank);
         // Same talent-point preference model as Marauder. Off-tree choices retain weight 1.
-        return 1+.4f*investment+.1f*affinity;
+        float weight=1+.4f*investment+.1f*affinity;
+        // Diversion is a Sniper-wide utility, so it surfaces often until learned; Probe Array is a rare find.
+        if(IsSniper && u.Id=="unlock_diversion")weight*=25;
+        if(IsSniper && u.Mechanic=="snm_array")weight*=.12f;
+        return weight;
     }
 
     // Single-axis mechanic cards (snm_ / opm_) read their rarity-weighted rank power straight from the upgrade list.

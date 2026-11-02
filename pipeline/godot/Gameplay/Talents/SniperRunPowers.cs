@@ -62,7 +62,8 @@ public sealed partial class TalentRuntime
         yield return M("emp","Overclocked EMP","empdischarge","empdischarge","engineering","emp",3,"EMP Discharge also recovers Explosive Probe and Orbital Strike by 3 seconds per rank, once per activation.");
         yield return M("cascade","Cascade Detonation","explosiveprobe","explosiveprobe","engineering","cascade",.3f,"Explosive Probe also pays 30% per rank of up to 6 seconds of remaining Interrogation Probe damage on every probed enemy it strikes.");
         yield return M("relay","Relay Network","plasmaprobe","","engineering","relay",0,"Orbital Strike and Plasma Probe hits on a probed enemy spread your Interrogation Probe to one more nearby enemy per rank, once per second.");
-        yield return M("array","Probe Array","plasmaprobe","plasmaprobe","engineering","array",0,"Plasma Probe may keep one more field active at a time per rank. Fields stack their damage on enemies standing in several.");
+        var array=M("array","Probe Array","plasmaprobe","plasmaprobe","engineering","array",0,"Plasma Probe may keep one more field active at a time per rank. Fields stack their damage on enemies standing in several.");
+        array.Rarity=PowerRarity.Artifact;yield return array;
         yield return M("lingering","Lingering Plasma","plasmaprobe","plasmaprobe","engineering","lingering",1,"Plasma Probe fields last 1 second longer per rank.");
         yield return M("probeshield","Probe Shielding","interrogationprobe","","engineering","probeshield",3,"Probe hits grant a shield of 3 per rank, once every 6 seconds.");
         // Lethality
