@@ -20,10 +20,10 @@ public partial class EternityVaultAtmosphere : Node3D
             // 01_Surface selects exterior_ice_altermative, not the Area default.
             BackgroundMode = Godot.Environment.BGMode.Color, BackgroundColor = new Color(.139f,.194f,.301f),
             AmbientLightSource = Godot.Environment.AmbientSource.Color,
-            AmbientLightColor = new Color(.286f,.376f,.594f), AmbientLightEnergy = .5f,
+            AmbientLightColor = new Color(.286f,.376f,.594f), AmbientLightEnergy = .3f,
             FogEnabled = true, FogLightColor = new Color(.292f,.386f,.606f),
-            FogDensity = .018f, FogSkyAffect = 0,
-            TonemapMode = Godot.Environment.ToneMapper.Filmic,
+            FogDensity = .03f, FogSkyAffect = 0,
+            TonemapMode = Godot.Environment.ToneMapper.Filmic, TonemapExposure = .85f,
             // Scheme: bloom_intensity 1.5, diffuse cutoff 1, specular cutoff .75, emissive bloom 1.
             GlowEnabled = true, GlowIntensity = 1.5f, GlowStrength = 1f, GlowBloom = 0f,
             GlowHdrThreshold = .75f, GlowBlendMode = Godot.Environment.GlowBlendModeEnum.Softlight };
@@ -32,7 +32,7 @@ public partial class EternityVaultAtmosphere : Node3D
         foreach(var light in _world.GetChildren().OfType<DirectionalLight3D>()) {
             bool key=lightIndex++==0;
             light.LightColor = key ? Colors.White : new Color(.5f,.5f,.5f);
-            light.LightEnergy=key?.65f:.15f;
+            light.LightEnergy=key?.35f:.08f; // storm-lit night look: overcast sky, no visible sun
             if(key) light.RotationDegrees=new Vector3(-38.66f,16.2602f,0);
         }
         _sky = GD.Load<PackedScene>("res://Assets/Maps/eternity_vault/bel_raid_skyscene.glb").Instantiate<Node3D>();
