@@ -1,0 +1,60 @@
+"""Trace every authored EV surface/sky FX dependency from April archives."""
+import sys,json,re,hashlib,struct
+from pathlib import Path
+from io import BytesIO
+from PIL import Image
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+import map_scan as scan
+from source_pipeline import ROOT,SOURCE
+from maps_common import records,sections
+from lightning_source import decode_xml
+from prepare_abilities import unpack
+idx=scan.index();nodes={};edges=[];placements=[];graphs={}
+def canonical(raw,kind=''):
+ p=raw.replace('\\','/').lower().strip().lstrip('/')
+ if p.startswith('resources/'):p=p[10:]
+ if '/' not in p and p.endswith('.prt'):p='art/fx/particles/'+p
+ if kind=='fx' and not p.startswith('art/'):p='art/fx/fxspec/'+p
+ if kind=='fx' and not p.endswith('.fxspec'):p+='.fxspec'
+ return '/resources/'+p
+def visit(p):
+ if p in nodes:return
+ b=scan.read(idx,p); nodes[p]=dict(found=b is not None)
+ if b is None:return
+ nodes[p].update(sha256=hashlib.sha256(b).hexdigest(),bytes=len(b))
+ f=SOURCE/p.lstrip('/');f.parent.mkdir(parents=True,exist_ok=True);f.write_bytes(b)
+ refs=[]
+ if p.endswith('.fxspec'):
+  obj=unpack(decode_xml(b).find('.//marshalData/node'));graphs[p]=obj
+  def walk(v):
+   if isinstance(v,dict):
+    for k,x in v.items():
+     if isinstance(x,str) and (k=='_fxResourceName' or 'Texture' in k) and x and re.search(r'\.(prt|dds|gr2|fxspec|ext)$',x,re.I):refs.append((k,canonical(x)))
+     elif isinstance(x,(list,dict)):walk(x)
+   elif isinstance(v,list):
+    for x in v:walk(x)
+  walk(obj)
+ elif p.endswith('.prt'):
+  fields=dict(re.findall(r'^\s*\.(\w+)=(.*)$',b.decode().replace('\r',''),re.M));graphs[p]=fields
+  for k in ('EmitSpec','EmitAtDeathSpec','TextureName'):
+   if fields.get(k):refs.append((k,canonical(fields[k])))
+ elif p.endswith('.gr2'):
+  n=struct.unpack_from('<H',b,26)[0];off=struct.unpack_from('<I',b,88)[0]
+  for i in range(n):
+   o=struct.unpack_from('<I',b,off+i*4)[0];name=b[o:b.index(b'\0',o)].decode();refs.append(('material',canonical('art/shaders/materials/'+name+'.mat')))
+ elif p.endswith('.mat'):
+  import xml.etree.ElementTree as ET
+  for x in ET.fromstring(b).findall('input'):
+   if x.findtext('type')=='texture':refs.append((x.findtext('semantic'),canonical(x.findtext('value')+'.dds')))
+ for label,target in refs:edges.append(dict(source=p,field=label,target=target));visit(target)
+FX=['creatures/droids/bd_silentior_missile_attack_lockon','creatures/droids/bd_silentior_single_muzzle_flash_secondary']
+for name in FX:visit(canonical(name,'fx'))
+out=ROOT/'godot/Assets/Maps/eternity_vault/Xrr3Fx';out.mkdir(parents=True,exist_ok=True)
+for p,node in nodes.items():
+ if p.endswith('.dds') and node['found']:Image.open(BytesIO(scan.read(idx,p))).save(out/(Path(p).stem+'.png'))
+report=dict(evidence='Client-derived',roots=[canonical(n,'fx') for n in FX],nodes=nodes,edges=edges,graphs=graphs)
+(ROOT/'manifests/xrr3-fx-trace.json').write_text(json.dumps(report,indent=2))
+print('MISSING',[p for p,v in nodes.items() if not v['found']])
+for p,g in graphs.items():
+ if p.endswith('.fxspec'):print(p,{k:len(v) for k,v in g.items() if isinstance(v,list)})
+for e in edges:print(Path(e['source']).name,e['field'],e['target'])
