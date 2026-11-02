@@ -14,7 +14,7 @@ public partial class EternityVaultWeather : Node3D
     private sealed class Emitter {
         public Vector3 Origin; public Basis Basis=Basis.Identity; public Dictionary<string,string> E = null!, P = null!;
         public Texture2D Texture = null!; public double Next; public bool CameraCentred; public Vector3 Scale=Vector3.One;
-        public Color Tint=Colors.White; public float LifeScale=1;
+        public Color Tint=Colors.White; public float LifeScale=1; public double Delay;
     }
     private sealed class Particle {
         public Sprite3D Node = null!; public Emitter E = null!;
@@ -25,6 +25,14 @@ public partial class EternityVaultWeather : Node3D
     private readonly List<Particle> _particles = new();
     private readonly RandomNumberGenerator _random = new();
     private double _age;
+    /// <summary>Optional one-shot mode: JSON groups of {placements, emitters, particles}, positioned at this node.</summary>
+    public string[]? Sources;
+    public bool Active=true;
+    public float UnitScale=1;
+    private bool _local=>Sources!=null;
+    private static double Seconds(string s){var p=s.Split(':');return p.Length==3?N(p[0])*3600+N(p[1])*60+N(p[2]):0;}
+    public void Restart(){_age=0;foreach(var e in _emitters)e.Next=e.Delay;}
+    public void Clear(){foreach(var p in _particles)if(GodotObject.IsInstanceValid(p.Node))p.Node.QueueFree();_particles.Clear();}
     private static float N(string s,float fallback=0) => float.TryParse(s,NumberStyles.Float,CultureInfo.InvariantCulture,out float f)?f:fallback;
     private static string F(Dictionary<string,string> d,string key,string fallback="") => d.TryGetValue(key,out var v)&&v!=""?v:fallback;
     private float Sample(string s,float fallback=0) {
@@ -63,6 +71,14 @@ public partial class EternityVaultWeather : Node3D
     }
     public override void _Ready() {
         _random.Seed=201204;
+        if(Sources!=null) {
+            foreach(var path in Sources) {
+                using var fx=JsonDocument.Parse(FileAccess.GetFileAsString(path));
+                foreach(var group in fx.RootElement.EnumerateObject())Load(group.Value);
+            }
+            Restart();
+            GD.Print($"AUTHORED_SOURCE_FX {_emitters.Count} emitters");return;
+        }
         using var doc=JsonDocument.Parse(FileAccess.GetFileAsString("res://Assets/Maps/eternity_vault/authored-weather.json"));
         var root=doc.RootElement;
         Load(root);
@@ -86,7 +102,7 @@ public partial class EternityVaultWeather : Node3D
                 var tint=Entry("_fxTintColor").TrimStart('#').Split(',');
                 Color sourceTint=tint.Length==4?new Color(N(tint[0]),N(tint[1]),N(tint[2]),N(tint[3])):Colors.White;
                 _emitters.Add(new Emitter {Basis=basis*localBasis,Origin=new Vector3(p[0],p[1],p[2])+basis*V(Entry("_fxAttachPosition")), E=fields,
-                    Tint=sourceTint,LifeScale=N(Entry("_fxParticleLifeSpanModifier"),1),
+                    Tint=sourceTint,LifeScale=N(Entry("_fxParticleLifeSpanModifier"),1),Delay=Seconds(Entry("_fxStartDelay","0:00:00")),
                     Scale=V(e.GetProperty("entry").GetProperty("_fxScale").GetString()!),
                     P=JsonSerializer.Deserialize<Dictionary<string,string>>(leaf.GetProperty("fields").GetRawText())!,Texture=GD.Load<Texture2D>(leaf.GetProperty("texture").GetString()!),
                     CameraCentred=root.TryGetProperty("cameraCentred",out var centred)&&centred.GetBoolean()});
@@ -105,10 +121,10 @@ public partial class EternityVaultWeather : Node3D
             mat.SetShaderParameter("source_texture",e.Texture);node.MaterialOverride=mat;
         }
         AddChild(node);
-        Vector3 origin=e.Origin;
-        if(F(e.E,"EmitterShape")=="Box") {var box=V(F(e.E,"BoxSize"))*e.Scale;origin+=e.Basis*(box*new Vector3(_random.RandfRange(-.5f,.5f),_random.RandfRange(-.5f,.5f),_random.RandfRange(-.5f,.5f)));}
+        Vector3 origin=e.Origin+(_local?GlobalPosition:Vector3.Zero);
+        if(F(e.E,"EmitterShape")=="Box") {var box=V(F(e.E,"BoxSize"))*e.Scale*UnitScale;origin+=e.Basis*(box*new Vector3(_random.RandfRange(-.5f,.5f),_random.RandfRange(-.5f,.5f),_random.RandfRange(-.5f,.5f)));}
         string size=F(data,"Size2D");
-        var p=new Particle {Node=node,E=e,Origin=origin,Velocity=e.Basis*V(F(data,"Trajectory",F(data,"Motion"))),Life=Sample(F(data,"LifeSpan"))*e.LifeScale,ColorSample=_random.Randf(),StartFrame=node.Frame,
+        var p=new Particle {Node=node,E=e,Origin=origin,Velocity=e.Basis*V(F(data,"Trajectory",F(data,"Motion")))*UnitScale,Life=Sample(F(data,"LifeSpan"))*e.LifeScale,ColorSample=_random.Randf(),StartFrame=node.Frame,
             Size=size.StartsWith('[')?1:Sample(size),SizeCurve=size.StartsWith('[')?size:"",Spin=Mathf.DegToRad(Sample(F(data,"DeltaRotation2D"))),Rotation=Mathf.DegToRad(Sample(F(e.E,"InitialRotation2D"))),Buoyancy=Sample(F(data,"Buoyancy"))};
         _particles.Add(p);
     }
@@ -116,10 +132,10 @@ public partial class EternityVaultWeather : Node3D
         var camera=GetViewport().GetCamera3D();if(camera==null)return;
         _age+=delta;
         foreach(var e in _emitters) {
-            float distance=e.CameraCentred?e.Origin.Length():camera.GlobalPosition.DistanceTo(e.Origin);
+            float distance=e.CameraCentred?e.Origin.Length():camera.GlobalPosition.DistanceTo(e.Origin+(_local?GlobalPosition:Vector3.Zero));
             if(distance>N(F(e.P,"MaxDistanceFromCamera"),12)+Curve(F(e.P,"XScale2D"),1)) {e.Next=_age;continue;}
             int catchup=0;
-            while(e.Next<=_age && catchup++<8) {
+            while(Active && e.Next<=_age && catchup++<8) {
                 int count=(int)Sample(F(e.E,"NumberToEmit","1"));for(int i=0;i<count;i++)Spawn(e);
                 var rate=e.E["EmitFrequency"];
                 float interval=rate.StartsWith('[')?Curve(rate,(float)(_age%7)/7):Sample(rate);
@@ -138,7 +154,7 @@ public partial class EternityVaultWeather : Node3D
             float speed=N(F(p.E.P,"AnimationSpeed"));
             if(speed!=0)p.Node.Frame=Mathf.PosMod(p.StartFrame+(int)(p.Age*speed),frames);
             float size=p.Size*(p.SizeCurve!=""?Curve(p.SizeCurve,t):1);
-            p.Node.Scale=new Vector3(size*Curve(F(p.E.P,"XScale2D"),t)*p.E.Scale.X,size*Curve(F(p.E.P,"YScale2D"),t)*p.E.Scale.Y,1);
+            p.Node.Scale=new Vector3(size*Curve(F(p.E.P,"XScale2D"),t)*p.E.Scale.X*UnitScale,size*Curve(F(p.E.P,"YScale2D"),t)*p.E.Scale.Y*UnitScale,1);
             Color color=ColorCurve(F(p.E.P,"DiffuseColor"),t,p.ColorSample)*p.E.Tint;
             float d=camera.GlobalPosition.DistanceTo(p.Node.GlobalPosition);
             float near=N(F(p.E.P,"MinDistanceFromCamera")),far=N(F(p.E.P,"MaxDistanceFromCamera"));

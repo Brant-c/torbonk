@@ -58,3 +58,16 @@ print('MISSING',[p for p,v in nodes.items() if not v['found']])
 for p,g in graphs.items():
  if p.endswith('.fxspec'):print(p,{k:len(v) for k,v in g.items() if isinstance(v,list)})
 for e in edges:print(Path(e['source']).name,e['field'],e['target'])
+def vec(v):return [float(x) for x in v.strip('()').split(',')]
+groups={}
+for name in FX:
+ graph=graphs[canonical(name,'fx')];group=dict(placements=[dict(position=[0,0,0],rotation=[0,0,0])],cameraCentred=False,emitters=[],particles={},skipped=[])
+ for entry in graph.get('_fxEmitterList',[]):
+  ep=canonical(entry['_fxResourceName']);fields=graphs.get(ep,{})
+  if fields.get('ParticleType')!='BASIC_EMITTER' or not fields.get('EmitFrequency') or not fields.get('EmitSpec'):group['skipped'].append(dict(path=ep,type=fields.get('ParticleType'),freq=fields.get('EmitFrequency')));continue
+  leafpath=canonical(fields['EmitSpec']);leaf=graphs[leafpath];tex=canonical(leaf['TextureName'])
+  group['emitters'].append(dict(entry=entry,fields=fields,particle=leafpath))
+  group['particles'][leafpath]=dict(fields=leaf,texture='res://Assets/Maps/eternity_vault/Xrr3Fx/'+Path(tex).stem+'.png')
+ groups[name.split('/')[-1]]=group
+[(out.parent/('xrr3-fx-'+k+'.json')).write_text(json.dumps({k:v},indent=1)) for k,v in groups.items()]
+for k,g in groups.items():print(k,len(g['emitters']),'emitters; skipped',g['skipped'])

@@ -24,6 +24,18 @@ public partial class Xrr3Attack : Node
     private readonly List<ShaderMaterial> _materials=new();
     private readonly List<GroundTelegraphSurface> _surfaces=new();
     private int _shape,_step;
+    // Real SWTOR FXSpec particles (bd_silentior_*), traced by scripts/trace_xrr3_fx.py.
+    private const string LockFx="res://Assets/Maps/eternity_vault/xrr3-fx-bd_silentior_missile_attack_lockon.json";
+    private const string MuzzleFx="res://Assets/Maps/eternity_vault/xrr3-fx-bd_silentior_single_muzzle_flash_secondary.json";
+    private const float FxUnitScale=.2f;
+    private readonly List<EternityVaultWeather> _lockFx=new();
+    private EternityVaultWeather _muzzleFx=null!;
+    private double _muzzleLeft;
+    private EternityVaultWeather NewFx(string path){
+        var fx=new EternityVaultWeather {Sources=new[]{path},UnitScale=FxUnitScale,Active=false};
+        _actor.GetTree().CurrentScene.AddChild(fx);return fx;
+    }
+    private void StopFx(){foreach(var fx in _lockFx){fx.Active=false;fx.Clear();}_muzzleFx.Active=false;_muzzleLeft=0;}
     private double _vulnerability,_fireRemaining,_fireTick;
     private readonly Vector3[] _fireCenters=new Vector3[3];
     private readonly List<MeshInstance3D> _fires=new();
@@ -60,11 +72,14 @@ public partial class Xrr3Attack : Node
             var surface=new GroundTelegraphSurface();
             var marker=new MeshInstance3D {Visible=false,Mesh=surface.Mesh,MaterialOverride=mat,CastShadow=GeometryInstance3D.ShadowCastingSetting.Off};
             _actor.GetTree().CurrentScene.AddChild(marker);_materials.Add(mat);_surfaces.Add(surface);_markers.Add(marker);
+            _lockFx.Add(NewFx(LockFx));
         }
+        _muzzleFx=NewFx(MuzzleFx);
     }
     public bool Tick(double delta) {
         if(Phase==BossPhase.Ended || !_actor.Alive || !_actor.Target.Alive){End();return false;}
         TickFire(delta);
+        if(_muzzleLeft>0 && (_muzzleLeft-=delta)<=0)_muzzleFx.Active=false;
         _remaining-=delta;
         if(Phase==BossPhase.Pursuit) {
             if(_remaining>0 || _actor.GlobalPosition.DistanceTo(_actor.Target.GlobalPosition)>6
@@ -118,11 +133,14 @@ public partial class Xrr3Attack : Node
             _centers[i]=p;var marker=_markers[i];marker.GlobalPosition=p+Vector3.Up*.006f;
             marker.Rotation=new Vector3(0,Mathf.Atan2(-_directions[i].X,-_directions[i].Z),0);
             marker.Scale=Vector3.One*(_radius*2);marker.Visible=true;_surfaces[i].Project(marker,_actor.Navigation.Arena);
+            if(_shape==0){_lockFx[i].GlobalPosition=p+Vector3.Up*.01f;_lockFx[i].Restart();_lockFx[i].Active=true;}
             _materials[i].SetShaderParameter("shape",_shape);_materials[i].SetShaderParameter("progress",0f);_materials[i].SetShaderParameter("impact",0f);
         }
     }
     private void Strike() {
         Strikes++;_actor.Visual?.Attack();bool hit=false;
+        foreach(var fx in _lockFx)fx.Active=false;
+        if(_shape!=2){_muzzleFx.GlobalPosition=_actor.GlobalPosition+Vector3.Up*.7f+_directions[0]*.4f;_muzzleFx.Restart();_muzzleFx.Active=true;_muzzleLeft=.4;}
         for(int i=0;i<_count;i++) {
             if(_shape==1 && Mode.MechanicsTier>0 && i!=(_step<_count?_step:0))continue;
             _materials[i].SetShaderParameter("impact",1f);
@@ -138,7 +156,8 @@ public partial class Xrr3Attack : Node
             {_actor.DealAttack((PhaseNumber==3?38:30)*(_vulnerability>0?1.35f:1),DamageType.Kinetic);if(Mode.MechanicsTier>0)_vulnerability=Mode.MechanicsTier==2?14:9;}
         else Dodged++;
     }
-    private void Hide(){foreach(var marker in _markers)marker.Visible=false;}
-    public void End(){Phase=BossPhase.Ended;Instruction="";Hide();ClearFire();}
-    public override void _ExitTree(){ClearFire();foreach(var marker in _markers)if(GodotObject.IsInstanceValid(marker))marker.QueueFree();}
+    private void Hide(){foreach(var marker in _markers)marker.Visible=false;foreach(var fx in _lockFx)fx.Active=false;}
+    public void End(){Phase=BossPhase.Ended;Instruction="";Hide();ClearFire();StopFx();}
+    public override void _ExitTree(){ClearFire();foreach(var marker in _markers)if(GodotObject.IsInstanceValid(marker))marker.QueueFree();
+        foreach(var fx in _lockFx)if(GodotObject.IsInstanceValid(fx))fx.QueueFree();if(GodotObject.IsInstanceValid(_muzzleFx))_muzzleFx.QueueFree();}
 }
