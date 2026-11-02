@@ -40,8 +40,9 @@ public sealed partial class TalentRuntime
         // Same talent-point preference model as Marauder. Off-tree choices retain weight 1.
         float weight=1+.4f*investment+.1f*affinity;
         // Diversion is a Sniper-wide utility, so it surfaces often until learned; Probe Array is a rare find.
-        if(IsSniper && u.Id=="unlock_diversion")weight*=25;
+        if(IsSniper && u.Id=="unlock_diversion")weight*=8;
         if(IsSniper && u.Mechanic=="snm_array")weight*=.12f;
+        if(IsSniper && u.Mechanic=="snm_lingering")weight*=.5f;
         return weight;
     }
 
