@@ -23,7 +23,10 @@ public partial class EternityVaultAtmosphere : Node3D
             AmbientLightColor = new Color(.286f,.376f,.594f), AmbientLightEnergy = .5f,
             FogEnabled = true, FogLightColor = new Color(.292f,.386f,.606f),
             FogDensity = .018f, FogSkyAffect = 0,
-            TonemapMode = Godot.Environment.ToneMapper.Filmic };
+            TonemapMode = Godot.Environment.ToneMapper.Filmic,
+            // Scheme: bloom_intensity 1.5, diffuse cutoff 1, specular cutoff .75, emissive bloom 1.
+            GlowEnabled = true, GlowIntensity = 1.5f, GlowStrength = 1f, GlowBloom = 0f,
+            GlowHdrThreshold = .75f, GlowBlendMode = Godot.Environment.GlowBlendModeEnum.Softlight };
         foreach(var old in _world.FindChildren("*","WorldEnvironment",true,false).OfType<WorldEnvironment>()) old.Environment = env;
         int lightIndex=0;
         foreach(var light in _world.GetChildren().OfType<DirectionalLight3D>()) {
@@ -58,6 +61,49 @@ public partial class EternityVaultAtmosphere : Node3D
             }
         }
         AddChild(new EternityVaultWeather());
+        RestoreLights();
+    }
+    private partial class LightFlicker : Node {
+        public Light3D Light = null!; public float Min, Max, Base; private double _t; private readonly RandomNumberGenerator _rng = new();
+        public override void _Process(double delta) {
+            _t -= delta; if(_t>0) return; _t = _rng.RandfRange(.05f,.2f);
+            Light.LightEnergy = Mathf.Lerp(Min, Max, _rng.Randf());
+        }
+    }
+    /// <summary>Authored 01_Surface light.lit records. Scale is treated as the light's extent in source metres;
+    /// source cone angles are zero, so spots use a fixed 45 degree cone (unresolved).</summary>
+    private void RestoreLights()
+    {
+        using var doc=JsonDocument.Parse(FileAccess.GetFileAsString("res://Assets/Maps/eternity_vault/surface-lights.json"));
+        var ci=System.Globalization.CultureInfo.InvariantCulture;
+        float[] Nums(string v)=>v.Trim('(',')').Split(',').Select(x=>float.Parse(x.Trim(),ci)).ToArray();
+        int count=0;
+        foreach(var l in doc.RootElement.GetProperty("lights").EnumerateArray()) {
+            string Get(string k)=>l.TryGetProperty(k,out var v)?v.GetString()??"":"";
+            if(Get("Hidden")=="true")continue;
+            var pos=Nums(Get("Position"));var rot=Nums(Get("Rotation"))
+                .Select(x=>Mathf.DegToRad(x)).ToArray();var scale=Nums(Get("Scale"));
+            var col=Get("Color").TrimStart('#').Split(',').Select(x=>float.Parse(x,ci)).ToArray();
+            string intensity=Get("Intensity");float min,max;
+            if(intensity.StartsWith("P(")) {
+                var parts=intensity[(intensity.IndexOf('<')+1)..intensity.IndexOf('>')].Split(',');
+                min=float.Parse(parts[0],ci);max=float.Parse(parts[2],ci);
+            } else min=max=float.Parse(intensity,ci);
+            float range=Mathf.Max(scale[0],Mathf.Max(scale[1],scale[2]))*float.Parse(Get("Range"),ci);
+            Light3D light=Get("LightType")=="SPOT"
+                ? new SpotLight3D { SpotRange=range, SpotAngle=45 }
+                : new OmniLight3D { OmniRange=range };
+            light.LightColor=new Color(col[0],col[1],col[2]);
+            light.LightEnergy=(min+max)*.5f; light.ShadowEnabled=Get("CubeShadows")=="true";
+            light.Name="AuthoredLight_"+l.GetProperty("id").GetString();
+            AddChild(light);
+            light.Position=new Vector3(pos[0],pos[1],pos[2]);
+            // Source Euler order matches the map instance transform: Y, X, Z.
+            light.Basis=new Basis(Vector3.Up,rot[1])*new Basis(Vector3.Right,rot[0])*new Basis(Vector3.Back,rot[2]);
+            if(max!=min) AddChild(new LightFlicker { Light=light, Min=min, Max=max });
+            count++;
+        }
+        GD.Print("EV_AUTHORED_LIGHTS_RESTORED "+count);
     }
     private void RestoreHorizon()
     {

@@ -28,7 +28,7 @@ def scene(name,model,title,hp,damage,speed,xp,scale=1,radius=.035,height=.18,pat
   nominal=stride[model]['unitScaleStrideSpeed']*scale
   t=t.replace('[node name="Original" parent="Actor/Visual"',f'RunClip = "Walk"\nLocomotionStrideSpeed = {nominal:.6f}\n[node name="Original" parent="Actor/Visual"')
   t=t.replace('position = Vector3(0,0.275,0)',f'position = Vector3(0,{height+.075:.3f},0)')
-  if name!='Xrr3':line('MeleeRange','0.248')
+  line('MeleeRange','0.52' if name=='Xrr3' else '0.248')
  if name=='IceCat':
   t=t.replace('load_steps=8','load_steps=9').replace('[ext_resource type="Script"', '[ext_resource type="Script" path="res://Gameplay/NpcVocalPresentation.cs" id="vocals"]\n[ext_resource type="Script"',1)
   vocal='[node name="Vocals" type="Node" parent="Actor"]\nscript = ExtResource("vocals")\n'
@@ -43,7 +43,7 @@ scene('Gunner','guard','Prison Suppressor',145,7,.17,12,scale=1.05,height=.23,ra
 scene('IceMatriarch','icecat','Whitefang Matriarch',550,7,.30,90,scale=3.2,height=.44,radius=.10,pattern='cleave',tier=2)
 scene('GuardCaptain','guard','Prison Guard Captain',2200,10,.28,160,scale=2.6,height=.56,radius=.10,pattern='crossfire',tier=2)
 scene('SiegeWarden','guard','Rakata Siege Warden',4400,12,.26,220,scale=2.9,height=.60,radius=.11,pattern='trial',tier=2)
-scene('Xrr3','xrr3','Annihilation Droid XRR-3',18000,14,.18,600,scale=4.5,height=.65,radius=.16,pattern='xrr3',tier=2)
+scene('Xrr3','xrr3','Annihilation Droid XRR-3',18000,14,.18,600,scale=4.5,height=1.1,radius=.4,pattern='xrr3',tier=2)
 base='res://Gameplay/Planets/EternityVault/'
 for name,title in [('IceMatriarch','Whitefang Matriarch'),('GuardCaptain','Prison Guard Captain'),('SiegeWarden','Rakata Siege Warden'),('Xrr3','Annihilation Droid XRR-3')]:
  (out/(name+'Encounter.tres')).write_text(f'''[gd_resource type="Resource" script_class="BossEncounterDefinition" load_steps=3 format=3]
