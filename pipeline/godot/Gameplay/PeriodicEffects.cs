@@ -38,7 +38,6 @@ public partial class PeriodicEffects : Node
     public void Apply(AutomaticAbility source,Combatant target,float scale=1,bool relicApplied=false)
     {
         var d=source.Definition;
-        if(d.Id=="dart" && source.Build?.Pregame.AgentVenomousBlades==true)relicApplied=true;
         if(d.PeriodicDuration<=0 || d.PeriodicInterval<=0 || !target.Alive)return;
         var key=(source.Caster.GetInstanceId(),d.Id,target.GetInstanceId());
         // Assassin extra slots: new casts fill free slots as separate instances, then refresh the shortest-lived one.

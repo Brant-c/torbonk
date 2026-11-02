@@ -109,7 +109,7 @@ public partial class AgentExpansionSmoke : Node
                 concealment.Advance(7);for(int i=0;i<4;i++)concealment.Activated(w.Abilities.Find("backstab")!);
                 Check("knife combo renews offensive opening",concealment.AgentOpening);
                 h=hp.Current;concealment.Activated(w.Abilities.Find("laceration")!);
-                Check("Venomous Blades replaces the old sustain effect",hp.Current==h && concealment.AgentVenomousBlades);
+                Check("Lacerating Blades replaces the old sustain effect",hp.Current==h && concealment.AgentVenomousBlades);
                 concealment.Advance(5);Check("replacement adds no unrelated mitigation",concealment.IncomingMultiplier==1);
                 var control=Load("concealment.advanced_cloaking","concealment.flanking","concealment.culling","concealment.collateral_strike");
                 var mass=w.Abilities.Find("debilitate")!;mass.SetUnlocked(true);mass.ResetCombat();control.ApplyStats(mass);

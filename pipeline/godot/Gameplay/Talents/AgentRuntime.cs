@@ -21,10 +21,11 @@ public sealed partial class TalentRuntime
         "debilitate"=>0,"hiddenstrike"=>5,"backstab"=>10,"laceration"=>20,
         "carbineburst"=>25,"severtendon"=>30,"agentcull"=>35,"weakeningblast"=>36,"corrosivegrenade"=>37,
         "shiv"=>80,"dart"=>90,_=>50};
-    public void ReplaceAgentDart()
+    /// <summary>Lacerating Blades: Laceration takes Shiv's place (and slot); Corrosive Dart is untouched.</summary>
+    public void ReplaceAgentShiv()
     {
-        if(!AgentVenomousBlades || _world.Abilities.Find("dart") is not {Unlocked:true} dart || _world.Abilities.Find("laceration") is not {} lac)return;
-        bool free=dart.InheritsFreeSlot;dart.SetUnlocked(false);dart.InheritsFreeSlot=false;lac.InheritsFreeSlot|=free;lac.SetUnlocked(true);
+        if(!AgentVenomousBlades || _world.Abilities.Find("shiv") is not {Unlocked:true} shiv || _world.Abilities.Find("laceration") is not {} lac)return;
+        bool free=shiv.InheritsFreeSlot;shiv.SetUnlocked(false);shiv.InheritsFreeSlot=false;lac.InheritsFreeSlot|=free;lac.SetUnlocked(true);
     }
     public static bool AgentCoverAbility(string id)=>id is "ambush" or "followthrough" or "suppressivefire" or "plasmaprobe" or "orbitalstrike" or "agentcull";
     public bool AgentOpening=>_agentOpening>0;
@@ -37,7 +38,7 @@ public sealed partial class TalentRuntime
     public bool CanBeginAgent(AutomaticAbility a)=>!IsAgent || (!IsOperative && AgentCoverAbility(a.Definition.Id) && !AgentPositioned?false:a.Definition.Id switch {
         "carbineburst"=>!AgentConcealment,
         "blowforblow"=>IsOperative && Hook("agent_counterstrike")>0,
-        "dart"=>!AgentVenomousBlades && (!IsOperative || _world.Targeting.InArea(_world.PlayerActor.GlobalPosition,a.Range,a.Range).Any(t=>_world.Periodic.Remaining(a,t)<=2)),
+        "dart"=>(!IsOperative || _world.Targeting.InArea(_world.PlayerActor.GlobalPosition,a.Range,a.Range).Any(t=>_world.Periodic.Remaining(a,t)<=2)),
         "hiddenstrike"=>_agentOpening>0, "surgicalprobe"=>TacticalAdvantage>0,
         "followthrough"=>_followup>0,
         "diversion"=>IsSniper && _world.Targeting.InArea(_world.PlayerActor.GlobalPosition,.6f,.6f).OfType<EnemyAgent>().Any(e=>e.AttackImminent), _=>true});
@@ -69,10 +70,13 @@ public sealed partial class TalentRuntime
             case "agentescape":_world.PlayerActor.Health.VulnerabilitySeconds=0;break;
             case "koltoprobe":_koltoLife=8;_koltoTick=0;break;
             case "shiv": case "hiddenstrike": Advantage();break;
-            case "backstab":if(Hook("agent_opportunity")>0)Advantage();break;
+            case "backstab":_agentBackstabBonus=TacticalAdvantage>0?1f:0;SpendAdvantage();if(Hook("agent_opportunity")>0)Advantage();break;
             case "koltoinjection":if(Hook("agent_medical")>0)Advantage();break;
             case "surgicalprobe":if(!(Hook("agent_surgical")>0 && _world.PlayerActor.Health.Current<_world.PlayerActor.Health.Maximum*.3f))SpendAdvantage();break;
-            case "laceration":_agentLacerationBonus=TacticalAdvantage>0?.5f:0;SpendAdvantage();break;
+            case "laceration":
+                // Lacerating Blades replaces Shiv, so Laceration becomes the Tactical Advantage builder and Backstab the spender.
+                if(AgentVenomousBlades)Advantage();else{_agentLacerationBonus=TacticalAdvantage>0?.5f:0;SpendAdvantage();}
+                break;
             case "agentstealth":case "cloakingscreen":_agentOpening=6;break;
             case "snipershot":case "ambush":case "seriesofshots":_followup=6;break;
             case "followthrough":_followup=0;if(Hook("agent_reactive_shots")>0){_world.Abilities.Find("ambush")?.ReduceCooldown(2);_world.Abilities.Find("seriesofshots")?.ReduceCooldown(2);}break;
@@ -89,7 +93,7 @@ public sealed partial class TalentRuntime
         AgentCardsActivated(a);
         if(a.Definition.Id is "backstab" or "hiddenstrike" or "laceration" && Hook("agent_opportunity")>0 && Every("agent_opportunity",4))_agentOpening=4;
     }
-    private float _agentLacerationBonus;
+    private float _agentLacerationBonus,_agentBackstabBonus;
     private float AgentBonus(AutomaticAbility a,Combatant target)
     {
         if(!IsAgent)return 0;
@@ -97,8 +101,9 @@ public sealed partial class TalentRuntime
         if(AgentPositioned && a.Definition.Id is "ambush" or "seriesofshots" or "followthrough" or "suppressivefire" && Hook("agent_nest")>0)bonus+=.25f;
         bool marked=_debilitated.GetValueOrDefault(target.GetInstanceId())>0;
         if(marked)bonus+=.4f;
-        if(a.Definition.Id=="laceration" && Hook("agent_controlled_burst")>0 && (marked || target is EnemyAgent {StunRemaining:>0}))bonus+=.5f;
+        if(a.Definition.Id is "laceration" or "backstab" && Hook("agent_controlled_burst")>0 && (marked || target is EnemyAgent {StunRemaining:>0}))bonus+=a.Definition.Id=="backstab"?1f:.5f;
         if(a.Definition.Id=="laceration")bonus+=_agentLacerationBonus;
+        if(a.Definition.Id=="backstab")bonus+=_agentBackstabBonus;
         if(a.Definition.Id=="agentcull"){
             bonus+=.35f*_world.Periodic.On(target).Count(p=>p.Caster==a.Caster && p.Definition.Id is "dart" or "corrosivegrenade");
             if(Hook("agent_microbes")>0 && target.Health.Current<target.Health.Maximum*.3f)bonus+=.2f;
@@ -121,13 +126,9 @@ public sealed partial class TalentRuntime
         }
         if(a.Definition.Id is "flashbang" or "debilitate" && target is EnemyAgent e)e.Stun(a.Definition.Id=="flashbang"?4:3,false);
         if(a.Definition.Id=="debilitate" && Hook("agent_mass_debilitation")>0 && target.Alive)_debilitated[target.GetInstanceId()]=6;
-        bool bladePoison=a.Definition.Id=="laceration" && AgentVenomousBlades || a.Definition.Id=="backstab" && Hook("agent_acid")>0;
-        if(bladePoison && target.Alive && _world.Abilities.Find("dart") is {} poison){
-            if(a.Definition.Id=="backstab"){
-                if(_world.Periodic.DetonateOwned(poison,target,"acid_blade",out _) && a.Presentation is D3AbilityPresentation visual)visual.PresentAcidBladeDetonation(target);
-                if(target.Alive)_world.Periodic.Apply(poison,target,relicApplied:true);
-            }else if(_world.Periodic.Has(poison,target))_world.Periodic.Extend(poison,target,poison.Definition.PeriodicDuration,poison.Definition.PeriodicDuration);
-            else _world.Periodic.Apply(poison,target,relicApplied:true);
+        if(a.Definition.Id=="backstab" && Hook("agent_acid")>0 && target.Alive && _world.Abilities.Find("dart") is {} poison){
+            if(_world.Periodic.DetonateOwned(poison,target,"acid_blade",out _) && a.Presentation is D3AbilityPresentation visual)visual.PresentAcidBladeDetonation(target);
+            if(target.Alive)_world.Periodic.Apply(poison,target,relicApplied:true);
         }
         if(a.Definition.Id=="seriesofshots" && Hook("agent_railgun")>0 && _world.Abilities.Find("interrogationprobe") is {Unlocked:true} source && target.Alive)_world.Periodic.Apply(source,target);
     }
@@ -159,5 +160,5 @@ public sealed partial class TalentRuntime
         if(!AgentCounterstrikeActive || received<=0 || !float.IsFinite(received) || !GodotObject.IsInstanceValid(attacker) || !attacker.Alive)return;
         attacker.Health.ApplyDamage(received*(1.5f+.15f*AgP("counter")),DamageType.Internal,false,"blowforblow");
     }
-    private void ResetAgent(){ResetSniper();ResetAgentCards();TacticalAdvantage=0;_counterstrike=0;_debilitated.Clear();_revitalized=_agentGuard=_koltoLife=_koltoTick=_advantageLife=_followup=_stationary=0;_agentOpening=6;_agentLacerationBonus=0;}
+    private void ResetAgent(){ResetSniper();ResetAgentCards();TacticalAdvantage=0;_counterstrike=0;_debilitated.Clear();_revitalized=_agentGuard=_koltoLife=_koltoTick=_advantageLife=_followup=_stationary=0;_agentOpening=6;_agentLacerationBonus=_agentBackstabBonus=0;}
 }

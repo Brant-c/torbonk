@@ -459,9 +459,9 @@ public partial class RunProgression : Node3D
         if(World.RunConfiguration.AdvancedClassId=="mercenary" && !World.Build.Pregame.MercenaryUpgradeUsable(upgrade))return false;
         if(upgrade.Mechanic.StartsWith("so_",StringComparison.Ordinal) && (!World.Build.Pregame.SorcererUpgradeUsable(upgrade) || World.Build.Pregame.SorcererTalentRank(upgrade.Mechanic)>0))return false;
         if(World.RunConfiguration.AdvancedClassId=="sorcerer" && upgrade.Id.StartsWith("sorcerer_",StringComparison.Ordinal) && !World.Build.Pregame.SorcererUpgradeUsable(upgrade))return false;
-        if(World.Build.Pregame.AgentVenomousBlades && upgrade.AbilityId=="dart" && upgrade.Effect==UpgradeEffect.UnlockAbility)return false;
+        if(World.Build.Pregame.AgentVenomousBlades && upgrade.AbilityId=="shiv" && upgrade.Effect==UpgradeEffect.UnlockAbility)return false;
         if(_banished.Contains(upgrade.Id) || _banishedAbilities.Contains(upgrade.AbilityId))return false;
-        if(upgrade.Effect==UpgradeEffect.TickRate && !World.Abilities.Abilities.Any(a=>(a.Unlocked || a.Definition.Id=="dart" && World.Build.Pregame.AgentVenomousBlades) && (a.ChannelSeconds>0 || a.Definition.PeriodicDuration>0) && (upgrade.AbilityId=="" || upgrade.AbilityId==a.Definition.Id)))return false;
+        if(upgrade.Effect==UpgradeEffect.TickRate && !World.Abilities.Abilities.Any(a=>a.Unlocked && (a.ChannelSeconds>0 || a.Definition.PeriodicDuration>0) && (upgrade.AbilityId=="" || upgrade.AbilityId==a.Definition.Id)))return false;
         if(World.RunConfiguration.AdvancedClassId=="marauder" && upgrade.Mechanic.StartsWith("mr_",StringComparison.Ordinal) && upgrade.Mechanic!="mr_blademaster" && World.Build.Pregame.MarauderTalentRank(upgrade.Mechanic)+Rank(upgrade)>=1)return false;
         if(World.RunConfiguration.AdvancedClassId=="marauder" && !World.Build.Pregame.MarauderUpgradeUsable(upgrade.Mechanic))return false;
         if(World.RunConfiguration.AdvancedClassId=="juggernaut" && !World.Build.Pregame.JuggernautUpgradeUsable(upgrade))return false;
@@ -474,7 +474,7 @@ public partial class RunProgression : Node3D
         if(upgrade.Mechanic=="polarity")return !World.Build.Pregame.PolarityReady && World.Abilities.Find(upgrade.AbilityId)!=null;
         if(upgrade.AbilityId=="") return upgrade.Effect!=UpgradeEffect.UnlockAbility;
         var ability=World.Abilities.Find(upgrade.AbilityId);
-        return ability!=null && (upgrade.Effect==UpgradeEffect.UnlockAbility?!ability.Unlocked && !World.Abilities.Conflicts(ability) && (World.Abilities.CanUnlock(ability) || ReplacementCandidates(ability)):ability.Unlocked || ability.Definition.Id=="dart" && World.Build.Pregame.AgentVenomousBlades && World.RunConfiguration.AdvancedClassId=="operative");
+        return ability!=null && (upgrade.Effect==UpgradeEffect.UnlockAbility?!ability.Unlocked && !World.Abilities.Conflicts(ability) && (World.Abilities.CanUnlock(ability) || ReplacementCandidates(ability)):ability.Unlocked);
     }
 
     private static bool CanReplace(AutomaticAbility ability)=>ability.Unlocked && !ability.Definition.IsBasicAttack && (!ability.Definition.Slotless || ability.Definition.ReplaceableStarter || ability.Definition.Id is "affliction" or "lacerate" or "viciousslash");
@@ -539,7 +539,7 @@ public partial class RunProgression : Node3D
         World.Abilities.Find("polarityshift")?.SetUnlocked(World.Build.Pregame.PolarityReady);
         AdmitTalentAbility("blowforblow",World.Build.Pregame.AgentCounterstrikeReady);
         if(World.Build.Pregame.AgentConcealment)World.Abilities.Find("carbineburst")?.SetUnlocked(false);
-        World.Build.Pregame.ReplaceAgentDart();
+        World.Build.Pregame.ReplaceAgentShiv();
         foreach(var ability in World.Abilities.Abilities)
         {
             string id=ability.Definition.Id;var original=_abilityBases[id];

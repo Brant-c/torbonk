@@ -215,7 +215,7 @@
       "Column": 1,
       "Name": "Culling",
       "Icon": "res://Assets/UI/icons/lifedrain.png",
-      "Description": "Laceration deals 40% more damage and gains 50% extra damage against stunned enemies or targets marked by Mass Debilitation.",
+      "Description": "Laceration deals 40% more damage and Backstab 50% more. Against stunned enemies or targets marked by Mass Debilitation, Laceration gains 50% extra damage and Backstab 100%.",
       "MaxRank": 1,
       "Cost": 1,
       "RequiredPoints": 0,
@@ -224,6 +224,12 @@
           "Kind": "damage",
           "Ability": "laceration",
           "Amount": 0.4,
+          "Key": ""
+        },
+        {
+          "Kind": "damage",
+          "Ability": "backstab",
+          "Amount": 0.5,
           "Key": ""
         },
         {
@@ -899,12 +905,12 @@
       "Tier": 2,
       "Column": 1,
       "Name": "Meticulously Kept Blades",
-      "Description": "Backstab, Hidden Strike and both Laceration contacts deal 20% more damage. Backstab cleaves 30% farther.",
+      "Description": "Backstab deals 60% more damage and cleaves 30% farther. Hidden Strike and both Laceration contacts deal 20% more damage.",
       "Effects": [
         {
           "Kind": "damage",
           "Ability": "backstab",
-          "Amount": 0.2,
+          "Amount": 0.6,
           "Key": ""
         },
         {
@@ -942,8 +948,8 @@
       "Tree": "concealment",
       "Tier": 2,
       "Column": 2,
-      "Name": "Venomous Blades",
-      "Description": "Laceration replaces your separately cast Corrosive Dart and applies its full poison to every enemy hit. The poison needs no separate ability slot.",
+      "Name": "Lacerating Blades",
+      "Description": "Laceration replaces your Shiv and uses no separate ability slot. Laceration now builds Tactical Advantage instead of spending it; Backstab spends it for 100% bonus damage. Corrosive Dart is unaffected.",
       "Effects": [
         {
           "Kind": "hook",

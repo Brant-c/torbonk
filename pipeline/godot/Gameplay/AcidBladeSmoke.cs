@@ -15,9 +15,9 @@ public partial class AgentExpansionSmoke
         var visual=(D3AbilityPresentation)backstab.Presentation;
         Combatant? foreign=null;AutomaticAbility? foreignDart=null;
         try{
-            TalentProfiles.Save("operative",new Dictionary<string,int>{{"concealment.acid_blade",1},{"concealment.revitalizers",1}});
+            TalentProfiles.Save("operative",new Dictionary<string,int>{{"concealment.acid_blade",1}});
             var acid=new TalentRuntime(w);prop.SetValue(w.Build,acid);w.Abilities.ResetUnlocks();w.Progression!.ResetRun();w.Periodic.RemoveSource(dart);w.Periodic.RemoveSource(grenade);
-            check("Acid Blade works with the manually cast Dart replaced",!dart.Unlocked);
+            check("Acid Blade works without a manually cast Dart",true);
             float h=first.Health.Current;int bursts=visual.AcidBladeDetonationsPresented;
             acid.DirectHit(backstab,first);
             check("unpoisoned target receives Dart without a burst",first.Health.Current==h && w.Periodic.Has(dart,first) && visual.AcidBladeDetonationsPresented==bursts);

@@ -76,7 +76,7 @@ public static class AbilityTooltips
   "as_decay"=>id is "creepingterror" or "affliction" or "crushingdarkness",
   "agent_mass_debilitation"=>id=="debilitate",
   "agent_counterstrike"=>id=="blowforblow",
-  "agent_controlled_burst"=>id=="laceration",
+  "agent_controlled_burst"=>id is "laceration" or "backstab",
   "mr_spread" or "mr_heal"=>id is "sweepingslash" or "smash" or "rupture" or "deadlysaber",
   "mr_cleave" or "mr_blademaster"=>id is "massacre" or "ravage",
   "mr_alacrity" or "mr_flurry"=>id is "ataruform" or "massacre" or "ravage",

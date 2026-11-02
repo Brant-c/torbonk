@@ -44,7 +44,7 @@ public sealed partial class TalentRuntime
         if(id=="severtendon" && t.Alive && AgP("hamstring")>0)_opMarks[t.GetInstanceId()]=6;
         if(id=="laceration" && t.Alive) {
             for(int i=1;i<=AgR("twin");i++)_agEchoes.Add((.25*i,t,a,.5f));
-            if(AgentVenomousBlades && AgP("venomous") is var chance && chance>0 && _world.Abilities.Find("dart") is {} dart) {
+            if(AgP("venomous") is var chance && chance>0 && _world.Abilities.Find("dart") is {Unlocked:true} dart) {
                 for(int extra=(int)chance+(Random.Shared.NextSingle()<chance-(int)chance?1:0);extra>0;extra--)_world.Periodic.Apply(dart,t,relicApplied:true);
             }
         }
@@ -70,7 +70,7 @@ public sealed partial class TalentRuntime
         var next=_world.Targeting.InArea(from.GlobalPosition,.4f,source.Range).Where(x=>x!=from && x.Alive && !_world.Periodic.Has(source,x))
             .OrderBy(x=>x.GlobalPosition.DistanceSquaredTo(from.GlobalPosition)).Take(jumps).ToArray();
         if(next.Length==0 || !Ready("agpandemic_"+source.Definition.Id,2))return;
-        foreach(var target in next)_world.Periodic.Apply(source,target,relicApplied:source.Definition.Id=="dart" && AgentVenomousBlades);
+        foreach(var target in next)_world.Periodic.Apply(source,target,relicApplied:false);
     }
     private void AgentTicked(AutomaticAbility source,Combatant target,int tick)
     {

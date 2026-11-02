@@ -7,12 +7,12 @@ public sealed partial class TalentRuntime
 {
     // Single-axis scoped cards. Debilitate, Sever Tendon and Flashbang are stuns: no recovery card.
     private static readonly (string id,string title,float amount)[] OperativeDamageCards={
-        ("backstab","Razor Edge",.9f),("hiddenstrike","Silent Execution",.9f),("laceration","Serrated Blades",.9f),("shiv","Quick Cuts",.9f),
+        ("backstab","Razor Edge",1.5f),("hiddenstrike","Silent Execution",.9f),("laceration","Serrated Blades",.9f),("shiv","Quick Cuts",.9f),
         ("debilitate","Crippling Strike",.8f),("severtendon","Hamstring Cut",.9f),("dart","Potent Toxin",1f),("corrosivegrenade","Corrosive Cloud",1f),
         ("agentcull","Lethal Barrage",1f),("weakeningblast","Exploited Weakness",1f),("overloadshot","Close Quarters Payload",.9f),
         ("fragmentationgrenade","Fragmentation Cluster",.9f),("carbineburst","Burst Discipline",.9f)};
     private static readonly (string id,string title,float amount)[] OperativeRadiusCards={
-        ("backstab","Wider Edge",.12f),("hiddenstrike","Wider Execution",.12f),("laceration","Wider Blades",.12f),("severtendon","Wider Cut",.12f),
+        ("backstab","Wider Edge",.18f),("hiddenstrike","Wider Execution",.12f),("laceration","Wider Blades",.12f),("severtendon","Wider Cut",.12f),
         ("corrosivegrenade","Wider Cloud",.15f),("agentcull","Wider Barrage",.12f),("fragmentationgrenade","Wider Fragments",.12f)};
     private static readonly (string id,string title,float amount)[] OperativeCooldownCards={
         ("backstab","Quickened Edge",.18f),("hiddenstrike","Quickened Execution",.18f),("laceration","Quickened Blades",.18f),("shiv","Quickened Cuts",.18f),
@@ -38,14 +38,14 @@ public sealed partial class TalentRuntime
         yield return M("exploit","Exploit the Stun","debilitate","","concealment","exploit",.15f,"Stunned or Debilitated enemies take 15% more per rank from Backstab, Hidden Strike, Laceration, Shiv and Sever Tendon.");
         yield return M("veil","Shadow Veil","agentstealth","","concealment","veil",.01f,"While your stealth opening is available, damage taken is divided by 1 plus 1% per rank.");
         yield return M("recovery","Close Quarters Recovery","backstab","","concealment","recovery",2,"Defeating an enemy heals 2 health per rank, at most once per second.");
-        yield return M("venomous_echo","Venomous Echo","laceration","laceration","agent_lethality","venomous",.25f,"With Venomous Blades, each Laceration hit has a 25% chance per rank (100% guarantees one) to add another Dart instance to its victim, filling Dart Legion slots.");
+        yield return M("venomous_echo","Venomous Echo","laceration","laceration","agent_lethality","venomous",.25f,"Each Laceration hit has a 25% chance per rank (100% guarantees one) to add another Dart instance to its victim, filling Dart Legion slots.");
         foreach(var u in AgentLethalityCards("operative"))yield return u;
         if(_world.Abilities.Find("shieldprobe") is {} shield)
             yield return new UpgradeDefinition {Id="operative_shield_shieldprobe",Title="Reinforced Shield",Icon=shield.Definition.Icon,AbilityId="shieldprobe",Spec="concealment",Effect=UpgradeEffect.AbilityPower,ShieldPerRank=.1f};
     }
     public bool OperativeUpgradeUsable(UpgradeDefinition u)
     {
-        bool Has(string id)=>_world.Abilities.Find(id)?.Unlocked==true || id=="dart" && AgentVenomousBlades && _world.Abilities.Find("laceration")?.Unlocked==true;
+        bool Has(string id)=>_world.Abilities.Find(id)?.Unlocked==true;
         bool Poison()=>Has("dart") || Has("corrosivegrenade");
         bool Melee()=>Has("backstab") || Has("laceration") || Has("hiddenstrike");
         if(u.Mechanic.StartsWith("opm_dup_",StringComparison.Ordinal) || u.Mechanic.StartsWith("opm_multi_",StringComparison.Ordinal))return Has(u.AbilityId);
@@ -62,7 +62,7 @@ public sealed partial class TalentRuntime
             "opm_exploit"=>(Has("debilitate") || Has("severtendon") || Has("flashbang")) && (Melee() || Has("shiv")),
             "opm_veil"=>Has("hiddenstrike"),
             "opm_recovery"=>Melee() || Has("shiv"),
-            "opm_venomous"=>AgentVenomousBlades && Has("laceration"),
+            "opm_venomous"=>Has("dart") && Has("laceration"),
             "opm_pandemic" or "opm_mending"=>Poison(),
             "opm_septic"=>Has("agentcull") && Poison(),
             "opm_tempo"=>Poison() && (Has("agentcull") || Has("weakeningblast")),

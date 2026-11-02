@@ -62,7 +62,7 @@ public sealed partial class TalentRuntime
     public bool AgentAxisCard(UpgradeDefinition u)=>u.Effect==UpgradeEffect.TickRate || u.Effect==UpgradeEffect.AbilityPower && (u.RadiusPerRank>0 || u.CooldownPerRank>0) || u.Mechanic.StartsWith(AgentMechPrefix+"target_",StringComparison.Ordinal);
     public bool AgentDefenceCard(UpgradeDefinition u)=>u.ShieldPerRank>0 || u.Effect==UpgradeEffect.Mechanic && u.Mechanic is "snm_dampers" or "snm_focus" or "snm_probeshield" or "snm_mending" or "opm_veil" or "opm_recovery" or "opm_mending";
     private string AgentSpec(string id)=>AgentAbilityTrees(id).FirstOrDefault()??"";
-    private bool OwnsOrVenomous(string id)=>Owns(id) || id=="dart" && AgentVenomousBlades && Owns("laceration");
+    private bool OwnsOrVenomous(string id)=>Owns(id);
 
     private IEnumerable<UpgradeDefinition> AgentAxisCards(string cls,(string id,string title,float amount)[] damage,(string id,string title,float amount)[] radius,
         (string id,string title,float amount)[] cooldown,(string id,string title)[] tick)
